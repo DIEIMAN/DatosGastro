@@ -1,0 +1,7 @@
+id_raw,id_fuente,nombre_evento_original,fecha_original,ubicacion_original,organizador_original,precio_original,fecha_extraccion,calidad_dato,requiere_validacion,motivo_validacion,observaciones_raw
+EV001,F13,Noche de las Heladerías (9ª ed.),13/11/2025 desde 19 h,500+ locales adheridos,"AFADHYA, apoyo BA Capital Gastronómica / MDE",2x1 en 1/4 kg,2026-06-09,media,sí,Fuente privada; requiere lista estructurada de locales adheridos,En el marco de la Semana del Helado Artesanal; Mapa del Sabor con locales por barrio
+EV002,F14,Noche de la Pizza y la Empanada,Anual; fecha 2026 a relevar,Pizzerías adheridas,APPYCE + Escuela Profesional + BA Capital Gastronómica,Promos,2026-06-09,media,sí,Fecha exacta y locales de edición vigente a relevar,Periodicidad anual confirmada desde al menos 2021
+EV003,F08,Food Fest,13-14/09/2025 12-20 h,"La Rural, Av. Santa Fe 4201, Palermo",Privado con apoyo BA Capital Gastronómica,A relevar,2026-06-09,media,sí,Precio/asistentes no estructurados,Feria de tendencias gastronómicas
+EV004,F08,VinoFest,Septiembre 2025,A relevar,"Privado, apoyo BA Capital Gastronómica",A relevar,2026-06-09,media,sí,Datos incompletos,
+EV005,F07,Sabores del Mundo - Festival 2025,2025 (ciclo),Mercados de la Ciudad,DG Desarrollo Gastronómico,Gratuito (a validar),2026-06-09,media,sí,"Validar sedes, fechas y gratuidad",Ciclo de gastronomía de colectividades en mercados barriales
+EV006,F13,Helado bajo las estrellas,10/11/2025,"Planetario, Palermo",AFADHYA,Degustaciones gratuitas,2026-06-09,media,sí,Confirmar detalle de edición,Apertura de la Semana del Helado

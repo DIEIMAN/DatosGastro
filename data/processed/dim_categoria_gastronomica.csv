@@ -1,0 +1,12 @@
+id_categoria,categoria_general,subcategoria,descripcion,ejemplos
+C001,Restauración,restaurante,Restaurantes generales,
+C002,Restauración,parrilla,Parrillas,
+C003,Restauración,bodegón,Bodegones,
+C004,Pizzería / empanadas,pizzería,Pizzerías,
+C005,Cafetería,café notable,Cafés y bares notables,
+C006,Cafetería,café de especialidad,Cafeterías de especialidad,
+C007,Bar,bar notable,Bares notables,
+C008,Bar,bar temático,Bares temáticos,
+C009,Helado y dulce,heladería,Heladerías,
+C010,Espacios,mercado gastronómico,Mercados gastronómicos,
+C011,Espacios,feria itinerante,Ferias itinerantes,

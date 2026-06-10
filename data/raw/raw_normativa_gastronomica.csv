@@ -1,0 +1,2 @@
+id_raw,id_fuente,nombre_norma_original,tipo_norma,tema,fecha_original,url_fuente,fecha_extraccion,calidad_dato,requiere_validacion,motivo_validacion,observaciones_raw
+N001,F10,Disposición PE-DIS-MDECGC-DGDGAS-11-26,Disposición,Convocatoria cafeterías / Prioridad Porteña,2026,https://documentosboletinoficial.buenosaires.gob.ar,2026-06-09,alta,sí,Relevar texto completo y anexos,Fuente primaria para programas e iniciativas

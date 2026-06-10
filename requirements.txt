@@ -1,0 +1,11 @@
+pandas
+requests
+chardet
+ftfy
+python-slugify
+rapidfuzz
+geopandas
+shapely
+folium
+matplotlib
+reportlab

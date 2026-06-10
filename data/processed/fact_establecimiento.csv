@@ -1,0 +1,7 @@
+id_establecimiento,nombre,id_categoria,id_ubicacion,id_fuente,estado,web,redes,telefono,fecha_alta_detectada,fecha_ultima_actualizacion,calidad_dato,requiere_validacion,motivo_validacion,observaciones
+EST001,1893,C001,U67606,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Registro turístico antiguo; requiere cruce con habilitaciones AGC,Registro RL-2017-25630894
+EST002,Aldo'S Restoran Vinoteca,C001,U17769,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Registro turístico antiguo; requiere cruce con habilitaciones AGC,Registro RL-2018-18305233
+EST003,Miramar,C007,U28159,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Registro turístico antiguo; validar vigencia,Registro RL-2019-33060098
+EST004,La Poesía,C007,U95425,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Mojibake en origen; validar vigencia,Nombre con mojibake en origen: LA POESA
+EST005,Cafe Margot,C007,U71261,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Registro turístico antiguo; validar vigencia,Registro RL-2019-33093794
+EST006,Marica Fé,C008,U82564,F01,sin_verificar,No disponible,No disponible,No disponible,No disponible,2026-06-09,media,sí,Mojibake/categoría rota en origen; validar vigencia,Mojibake en origen: Bar Temtico

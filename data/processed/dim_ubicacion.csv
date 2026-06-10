@@ -1,0 +1,13 @@
+id_ubicacion,direccion_original,direccion_normalizada,barrio,comuna,latitud,longitud,codigo_postal,zona,calidad_geo,requiere_validacion,motivo_validacion
+U67606,SCALABRINI ORTIZ 701,Pendiente USIG,Villa Crespo,15,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U17769,MORENO 372,Pendiente USIG,Monserrat,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U28159,SAN JUAN 1999,Pendiente USIG,San Cristobal,3,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U95425,CHILE 502,Pendiente USIG,San Telmo,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U71261,BOEDO 857,Pendiente USIG,Boedo,5,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U82564,HONDURAS 4096,Pendiente USIG,Palermo,14,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U92643,Medrano 1400 e/ El Salvador y Costa Rica,Pendiente USIG,Palermo,14,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U54690,Ayacucho 700 e/ Viamonte y Córdoba,Pendiente USIG,Balvanera,3,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U01215,Brasil y Av. Paseo Colón,Pendiente USIG,San Telmo,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U83874,Virrey Cevallos e H. Yrigoyen,Pendiente USIG,Monserrat,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U97597,Av. Leandro N. Alem 852,Pendiente USIG,Retiro/San Nicolás,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG
+U34504,Av. Rivadavia 5430,Pendiente USIG,Caballito,6,No disponible,No disponible,No disponible,No clasificada,sin_geo,sí,Geocodificación pendiente con USIG

@@ -1,0 +1,3 @@
+-- Usar \copy desde psql ajustando ruta local.
+-- Ejemplo:
+-- \copy gastronomia_caba.dim_fuente FROM data/processed/dim_fuente.csv WITH CSV HEADER ENCODING UTF8;
