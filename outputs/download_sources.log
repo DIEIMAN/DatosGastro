@@ -1,0 +1,10 @@
+
+# download_sources 2026-06-10T11:01:52
+F01	PENDING	0		https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos	falta completar URL directa de recurso en src/config.py
+F02	PENDING	0		https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas	falta completar URL directa de recurso en src/config.py
+F03	PENDING	0		https://data.buenosaires.gob.ar/dataset/ferias-mercados	falta completar URL directa de recurso en src/config.py
+
+# download_sources 2026-06-10T11:06:43
+F01	PENDING	0		https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos	falta completar URL directa de recurso en src/config.py
+F02	PENDING	0		https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas	falta completar URL directa de recurso en src/config.py
+F03	PENDING	0		https://data.buenosaires.gob.ar/dataset/ferias-mercados	falta completar URL directa de recurso en src/config.py

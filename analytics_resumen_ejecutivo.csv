@@ -1,0 +1,7 @@
+indicador,valor,nota
+fuentes_relevadas,16,Catálogo dim_fuente (URLs reales)
+establecimientos_seed,6,"Muestra real F01, no padrón completo"
+eventos_seed,6,Agenda aún no estructurada (F08 HTML)
+programas_seed,6,Sin métricas públicas de impacto detectadas
+mercados_ferias_seed,6,Muestra F03 + relevamiento web
+ubicaciones_geocodificadas,0,Pendiente USIG: 0 con lat/lon (sin geo no hay mapa)

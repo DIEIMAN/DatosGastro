@@ -1,5 +1,7 @@
-indicador,valor,nota
-fuentes_relevadas,16,Versión inicial basada en relevamiento recibido
-establecimientos_seed,6,"Muestra real del documento, no padrón completo"
-eventos_seed,6,Agenda aún no estructurada
-programas_seed,6,Sin métricas públicas de impacto detectadas
+indicador,valor,estado_datos,nota
+fuentes_relevadas,16,datos seed,Reconstruido automaticamente desde data/processed
+establecimientos_modelados,6,datos seed,Reconstruido automaticamente desde data/processed
+eventos_modelados,6,datos seed,Reconstruido automaticamente desde data/processed
+programas_modelados,6,datos seed,Reconstruido automaticamente desde data/processed
+mercados_ferias_modelados,6,datos seed,Reconstruido automaticamente desde data/processed
+registros_que_requieren_validacion,0,datos seed,Reconstruido automaticamente desde data/processed

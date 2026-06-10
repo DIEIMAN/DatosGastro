@@ -1,7 +1,7 @@
-barrio,comuna,categoria_general,subcategoria,cantidad_establecimientos,porcentaje_sobre_total_barrio
-Villa Crespo,15,Restaurante,Restaurante,1,No calculado sobre muestra completa
-Monserrat,1,Restaurante,Restaurante,1,No calculado sobre muestra completa
-San Cristobal,3,Bar Notable,Bar Notable,1,No calculado sobre muestra completa
-San Telmo,1,Bar Notable,Bar Notable,1,No calculado sobre muestra completa
-Boedo,5,Bar Notable,Bar Notable,1,No calculado sobre muestra completa
-Palermo,14,Bar Temático,Bar Temático,1,No calculado sobre muestra completa
+barrio,comuna,categoria_general,subcategoria,cantidad_establecimientos,porcentaje_sobre_total_barrio,estado_datos,nota_estado_datos
+Boedo,5,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+Monserrat,1,Bar,Bar,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+Palermo,14,Bar,Bar,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+San Cristobal,3,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+San Telmo,1,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+Villa Crespo,15,Restaurante,Restaurante,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones

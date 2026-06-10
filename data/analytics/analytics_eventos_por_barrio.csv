@@ -1,2 +1,3 @@
-barrio,comuna,cantidad_eventos,cantidad_eventos_gratuitos,cantidad_eventos_privados,cantidad_eventos_con_apoyo_gcba,tipos_eventos_principales,meses_con_mayor_actividad
-No estructurado,No estructurada,6,Requiere validación,Requiere validación,Requiere validación,"helado, pizza/empanada, ferias, vinos, colectividades",Septiembre/Noviembre según muestra
+barrio,comuna,cantidad_eventos,cantidad_eventos_gratuitos,cantidad_eventos_con_validacion,tipos_eventos_principales,estado_datos,nota_estado_datos
+No determinado,No determinada,4,0,0,evento gastronomico,datos seed,Reconstruido desde data/processed/fact_evento_gastronomico.csv
+Palermo,14,2,0,0,evento gastronomico,datos seed,Reconstruido desde data/processed/fact_evento_gastronomico.csv

@@ -1,5 +1,15 @@
+-- =====================================================================
+-- 02_create_tables.sql  (V2 — DDL completo)
+-- Modelo estrella del Ecosistema Gastronomico de CABA.
+-- Cambios respecto de V1:
+--   * Se agregan las 7 tablas que faltaban (dim_organizador, fact_evento,
+--     fact_programa, fact_mercado_feria y los 3 puentes).
+--   * Se agregan FKs de fact_evento a dim_ubicacion / dim_organizador.
+-- Todas las columnas siguen exactamente los headers de los CSV en data/processed.
+-- =====================================================================
 SET search_path TO gastronomia_caba;
 
+-- ------------------------- DIMENSIONES -------------------------------
 CREATE TABLE IF NOT EXISTS dim_fuente (
   id_fuente text PRIMARY KEY,
   nombre_fuente text,
@@ -8,7 +18,7 @@ CREATE TABLE IF NOT EXISTS dim_fuente (
   url_base text,
   confiabilidad text,
   frecuencia_actualizacion text,
-  fecha_consulta text,
+  fecha_consulta date,
   notas text
 );
 
@@ -17,7 +27,7 @@ CREATE TABLE IF NOT EXISTS dim_ubicacion (
   direccion_original text,
   direccion_normalizada text,
   barrio text,
-  comuna text,
+  comuna text,   -- text: admite "No determinada" del centinela; validar a smallint al cargar padron real
   latitud text,
   longitud text,
   codigo_postal text,
@@ -44,13 +54,13 @@ CREATE TABLE IF NOT EXISTS dim_organizador (
   observaciones text
 );
 
+-- --------------------------- HECHOS ----------------------------------
 CREATE TABLE IF NOT EXISTS fact_establecimiento (
   id_establecimiento text PRIMARY KEY,
   nombre text,
   id_categoria text REFERENCES dim_categoria_gastronomica(id_categoria),
   id_ubicacion text REFERENCES dim_ubicacion(id_ubicacion),
   id_fuente text REFERENCES dim_fuente(id_fuente),
-  url_fuente text,
   estado text,
   web text,
   redes text,
@@ -60,12 +70,7 @@ CREATE TABLE IF NOT EXISTS fact_establecimiento (
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
-  observaciones text,
-  es_gastronomico text,
-  categoria_gastronomica_inferida text,
-  confianza_categoria text,
-  motivo_categoria text,
-  origen_dato text
+  observaciones text
 );
 
 CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
@@ -78,7 +83,6 @@ CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
   id_ubicacion text REFERENCES dim_ubicacion(id_ubicacion),
   id_organizador text REFERENCES dim_organizador(id_organizador),
   id_fuente text REFERENCES dim_fuente(id_fuente),
-  url_fuente text,
   tipo_evento text,
   gratuito text,
   requiere_inscripcion text,
@@ -89,8 +93,7 @@ CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
-  observaciones text,
-  origen_dato text
+  observaciones text
 );
 
 CREATE TABLE IF NOT EXISTS fact_programa_politica (
@@ -107,13 +110,11 @@ CREATE TABLE IF NOT EXISTS fact_programa_politica (
   resultados text,
   metricas_publicadas text,
   id_fuente text REFERENCES dim_fuente(id_fuente),
-  url_fuente text,
   link text,
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
-  observaciones text,
-  origen_dato text
+  observaciones text
 );
 
 CREATE TABLE IF NOT EXISTS fact_mercado_feria (
@@ -128,29 +129,34 @@ CREATE TABLE IF NOT EXISTS fact_mercado_feria (
   rubros text,
   estado text,
   id_fuente text REFERENCES dim_fuente(id_fuente),
-  url_fuente text,
   link text,
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
-  observaciones text,
-  origen_dato text
-);
-
-CREATE TABLE IF NOT EXISTS puente_evento_categoria (
-  id_evento text REFERENCES fact_evento_gastronomico(id_evento),
-  id_categoria text REFERENCES dim_categoria_gastronomica(id_categoria),
   observaciones text
 );
 
+-- --------------------------- PUENTES ---------------------------------
 CREATE TABLE IF NOT EXISTS puente_evento_establecimiento (
   id_evento text REFERENCES fact_evento_gastronomico(id_evento),
   id_establecimiento text REFERENCES fact_establecimiento(id_establecimiento),
-  observaciones text
+  rol text,
+  observaciones text,
+  PRIMARY KEY (id_evento, id_establecimiento)
 );
 
 CREATE TABLE IF NOT EXISTS puente_programa_establecimiento (
   id_programa text REFERENCES fact_programa_politica(id_programa),
   id_establecimiento text REFERENCES fact_establecimiento(id_establecimiento),
-  observaciones text
+  tipo_beneficio text,
+  fecha_participacion text,
+  observaciones text,
+  PRIMARY KEY (id_programa, id_establecimiento)
+);
+
+CREATE TABLE IF NOT EXISTS puente_evento_categoria (
+  id_evento text REFERENCES fact_evento_gastronomico(id_evento),
+  id_categoria text REFERENCES dim_categoria_gastronomica(id_categoria),
+  observaciones text,
+  PRIMARY KEY (id_evento, id_categoria)
 );
