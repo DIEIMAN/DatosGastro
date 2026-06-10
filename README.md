@@ -51,6 +51,8 @@ python src/validate_model.py
 
 `download_sources.py` reporta `PENDING` cuando falta una URL directa. Eso es esperado en la V2 hasta completar `SOURCE_CONFIG` en `src/config.py`.
 
+`build_model.py` busca primero CSV reales en `data/raw/` con patrones `f01_*.csv`, `f02_*.csv` y `f03_*.csv`. Si no los encuentra, usa los `raw_*` seed. El mapeo de columnas queda reportado en `outputs/tablas_resumen/contratos_fuentes.csv` y `docs/contratos_fuentes.md`.
+
 ## Datos seed
 
 Siguen siendo seed/manuales los archivos `raw_*` en `data/raw/`, especialmente establecimientos, eventos, programas y ferias cargadas desde el relevamiento inicial. No representan padrones completos.

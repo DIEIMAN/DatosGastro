@@ -33,6 +33,23 @@ Salidas:
 - `outputs/tablas_resumen/perfilado_fuentes_resumen.csv`
 - `docs/perfilado_fuentes.md`
 
+## 4 bis. Contratos de columnas
+
+`build_model.py` detecta primero archivos reales y usa seeds solo como fallback.
+
+Patrones reconocidos:
+
+- F01: `f01_*.csv`, `*oferta*establecimientos*gastronom*.csv`, `*establecimientos*gastronom*.csv`
+- F02: `f02_*.csv`, `*habilitaciones*aprobadas*.csv`, `*habilitaciones*.csv`
+- F03: `f03_*.csv`, `*ferias*mercados*.csv`, `*ferias*.csv`, `*mercados*.csv`
+
+Despues de correr el modelo se generan:
+
+- `outputs/tablas_resumen/contratos_fuentes.csv`
+- `docs/contratos_fuentes.md`
+
+Si una fuente real trae columnas no reconocidas, ajustar los candidatos en `src/source_contracts.py`.
+
 ## 5. Construir modelo
 
 ```bash

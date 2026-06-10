@@ -6,9 +6,10 @@ from pathlib import Path
 import pandas as pd
 
 from clean_text import clean_dataframe_columns, normalize_proper_name, normalize_text
-from config import DATA_PROCESSED, DATA_RAW
-from normalize_addresses import UNKNOWN_LOCATION_ID, make_location_id, normalize_address_offline
+from config import DATA_PROCESSED, DATA_RAW, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
+from normalize_addresses import UNKNOWN_LOCATION_ID, normalize_address_offline
 from normalize_categories import classify_gastronomic_category, taxonomy_dataframe_rows
+from source_contracts import SourceLoadResult, map_source_columns
 
 TODAY = date.today().isoformat()
 
@@ -28,6 +29,84 @@ def write_csv(df: pd.DataFrame, filename: str) -> None:
     DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
     df.to_csv(DATA_PROCESSED / filename, index=False, encoding="utf-8")
     print(f"OK {filename}: {len(df)} filas")
+
+
+def discover_source_paths(source_id: str) -> tuple[list[Path], str]:
+    source = SOURCE_CONFIG[source_id]
+    real_paths: list[Path] = []
+    for pattern in source.get("raw_patterns", []):
+        real_paths.extend(DATA_RAW.glob(pattern))
+    real_paths = sorted(
+        {
+            path
+            for path in real_paths
+            if path.is_file()
+            and path.suffix.lower() == ".csv"
+            and not path.name.startswith("raw_")
+        }
+    )
+    if real_paths:
+        return real_paths, "real"
+
+    seed_paths = sorted(DATA_RAW.glob(source["seed_glob"]))
+    return seed_paths, "seed"
+
+
+def load_source_data(source_id: str) -> tuple[pd.DataFrame, list[SourceLoadResult]]:
+    paths, origin = discover_source_paths(source_id)
+    frames = []
+    reports: list[SourceLoadResult] = []
+    for path in paths:
+        raw = clean_dataframe_columns(read_csv(path))
+        mapped, report = map_source_columns(raw, source_id, origin, path)
+        frames.append(mapped)
+        reports.append(report)
+    if not frames:
+        empty = pd.DataFrame()
+        reports.append(
+            SourceLoadResult(
+                source_id=source_id,
+                path="",
+                origin="missing",
+                rows=0,
+                mapped_columns="",
+                missing_columns="archivo no encontrado",
+                extra_columns="",
+            )
+        )
+        return empty, reports
+    return pd.concat(frames, ignore_index=True), reports
+
+
+def write_contract_reports(reports: list[SourceLoadResult]) -> None:
+    PROFILE_OUTPUTS.mkdir(parents=True, exist_ok=True)
+    DOCS.mkdir(parents=True, exist_ok=True)
+    rows = [report.__dict__ for report in reports]
+    pd.DataFrame(rows).to_csv(PROFILE_OUTPUTS / "contratos_fuentes.csv", index=False, encoding="utf-8")
+
+    lines = [
+        "# Contratos de fuentes",
+        "",
+        f"Generado: {TODAY}",
+        "",
+        "Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y que columnas pudieron mapearse al contrato canonico.",
+        "",
+    ]
+    for report in reports:
+        lines.extend(
+            [
+                f"## {report.source_id}",
+                "",
+                f"- Archivo: `{report.path or 'No encontrado'}`",
+                f"- Origen: {report.origin}",
+                f"- Filas: {report.rows}",
+                f"- Columnas mapeadas: {report.mapped_columns or 'Ninguna'}",
+                f"- Columnas requeridas faltantes: {report.missing_columns or 'Ninguna'}",
+                f"- Columnas extra no usadas: {report.extra_columns or 'Ninguna'}",
+                "",
+            ]
+        )
+    (DOCS / "contratos_fuentes.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def first_existing(*values, default="No disponible"):
@@ -216,7 +295,7 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "categoria_gastronomica_inferida": category.categoria_gastronomica_inferida,
                 "confianza_categoria": category.confianza_categoria,
                 "motivo_categoria": category.motivo_categoria,
-                "origen_dato": "datos seed" if row.get("id_raw", "").startswith("E") else "datos reales parciales",
+                "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
             }
         )
 
@@ -251,7 +330,7 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "categoria_gastronomica_inferida": category.categoria_gastronomica_inferida,
                 "confianza_categoria": category.confianza_categoria,
                 "motivo_categoria": category.motivo_categoria,
-                "origen_dato": "datos reales parciales",
+                "origen_dato": first_existing(row.get("origen_dato"), default="datos reales parciales"),
             }
         )
     return pd.DataFrame(rows)
@@ -291,7 +370,7 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.Dat
                 "requiere_validacion": first_existing(row.get("requiere_validacion"), default="si"),
                 "motivo_validacion": first_existing(row.get("motivo_validacion"), default="Evento seed pendiente de estructuracion"),
                 "observaciones": first_existing(row.get("observaciones_raw"), default=""),
-                "origen_dato": "datos seed",
+                "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
             }
         )
     return pd.DataFrame(rows)
@@ -405,10 +484,11 @@ def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> int:
-    est = clean_dataframe_columns(read_csv(DATA_RAW / "raw_establecimientos_gastronomicos.csv"))
-    hab = clean_dataframe_columns(read_csv(DATA_RAW / "raw_habilitaciones_aprobadas.csv"))
-    ferias = clean_dataframe_columns(read_csv(DATA_RAW / "raw_ferias_mercados.csv"))
+    est, est_reports = load_source_data("F01")
+    hab, hab_reports = load_source_data("F02")
+    ferias, ferias_reports = load_source_data("F03")
     eventos = clean_dataframe_columns(read_csv(DATA_RAW / "raw_eventos_gastronomicos.csv"))
+    write_contract_reports([*est_reports, *hab_reports, *ferias_reports])
 
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()

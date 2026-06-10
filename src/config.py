@@ -17,6 +17,11 @@ SOURCE_CONFIG = {
         "url": None,
         "target_filename": "f01_oferta_establecimientos_gastronomicos.csv",
         "seed_glob": "raw_establecimientos_gastronomicos.csv",
+        "raw_patterns": [
+            "f01_*.csv",
+            "*oferta*establecimientos*gastronom*.csv",
+            "*establecimientos*gastronom*.csv",
+        ],
         "portal_url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos",
     },
     "F02": {
@@ -25,6 +30,11 @@ SOURCE_CONFIG = {
         "url": None,
         "target_filename": "f02_habilitaciones_aprobadas.csv",
         "seed_glob": "raw_habilitaciones_aprobadas*.csv",
+        "raw_patterns": [
+            "f02_*.csv",
+            "*habilitaciones*aprobadas*.csv",
+            "*habilitaciones*.csv",
+        ],
         "portal_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
     },
     "F03": {
@@ -33,6 +43,12 @@ SOURCE_CONFIG = {
         "url": None,
         "target_filename": "f03_ferias_mercados.csv",
         "seed_glob": "raw_ferias_mercados.csv",
+        "raw_patterns": [
+            "f03_*.csv",
+            "*ferias*mercados*.csv",
+            "*ferias*.csv",
+            "*mercados*.csv",
+        ],
         "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
     },
 }

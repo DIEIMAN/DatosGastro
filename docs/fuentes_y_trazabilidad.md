@@ -24,6 +24,23 @@ Las tablas de hechos deben conservar, cuando corresponde:
 - `motivo_validacion`
 - `origen_dato`
 
+## Contratos de carga
+
+La carga desde `data/raw/` usa contratos flexibles definidos en `src/source_contracts.py`.
+
+Cada corrida de `python src/build_model.py` genera:
+
+- `outputs/tablas_resumen/contratos_fuentes.csv`
+- `docs/contratos_fuentes.md`
+
+Estos archivos indican:
+
+- archivo usado para F01/F02/F03,
+- si fue seed o fuente real,
+- columnas mapeadas al contrato canonico,
+- columnas requeridas faltantes,
+- columnas extra ignoradas por el modelo.
+
 ## Estado de datos
 
 - `datos seed`: datos manuales o muestra inicial.
