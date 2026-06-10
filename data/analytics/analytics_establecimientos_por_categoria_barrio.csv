@@ -1,7 +1,7 @@
-barrio,comuna,categoria_general,subcategoria,cantidad_establecimientos,porcentaje_sobre_total_barrio,estado_datos,nota_estado_datos
-Boedo,5,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
-Monserrat,1,Bar,Bar,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
-Palermo,14,Bar,Bar,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
-San Cristobal,3,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
-San Telmo,1,Bar notable,Bar notable,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
-Villa Crespo,15,Restaurante,Restaurante,1,100.0,datos seed,Reconstruido desde fact_establecimiento + dimensiones
+barrio,comuna,categoria_general,subcategoria,cantidad_establecimientos,porcentaje_sobre_total_barrio,estado_datos,fuentes_utilizadas,urls_fuentes,fecha_consulta_min,fecha_consulta_max,nota_metodologica,limitaciones,apto_dashboard
+Boedo,5,Bar notable,Bar notable,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no
+Monserrat,1,Bar,Bar,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no
+Palermo,14,Bar,Bar,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no
+San Cristobal,3,Bar notable,Bar notable,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no
+San Telmo,1,Bar notable,Bar notable,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no
+Villa Crespo,15,Restaurante,Restaurante,1,100.0,datos seed,F01,https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos,2026-06-09,2026-06-09,"Agrupacion de establecimientos por barrio, comuna y categoria inferida.","Si usa seed, la muestra no representa el universo de establecimientos.",no

@@ -1,0 +1,24 @@
+archivo,capa,filas,columnas,origen_detectado,apto_dashboard,motivo,fuentes_utilizadas,fecha_consulta,requiere_accion
+raw_establecimientos_gastronomicos.csv,seeds,6,12,seed/manual,no,seed/manual; solo desarrollo,F01,2026-06-10,si
+raw_eventos_gastronomicos.csv,seeds,6,12,seed/manual,no,seed/manual; solo desarrollo,F07 | F08 | F13 | F14,2026-06-10,si
+raw_ferias_mercados.csv,seeds,6,14,seed/manual,no,seed/manual; solo desarrollo,F03 | F08 | F15,2026-06-10,si
+raw_fuentes_relevadas.csv,seeds,16,9,seed/manual,no,seed/manual; solo desarrollo,No disponible,2026-06-10,si
+raw_habilitaciones_aprobadas.csv,seeds,0,14,seed/manual,no,archivo vacio o sin filas,No disponible,2026-06-10,si
+raw_normativa_gastronomica.csv,seeds,1,12,seed/manual,no,seed/manual; solo desarrollo,F10,2026-06-10,si
+raw_programas_politicas.csv,seeds,6,11,seed/manual,no,seed/manual; solo desarrollo,F06 | F07 | F09 | F10 | F12,2026-06-10,si
+dim_categoria_gastronomica.csv,processed,17,5,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
+dim_fuente.csv,processed,16,9,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F01 | F02 | F03 | F04 | F05 | F06 | F07 | F08 | F09 | F10 | F11 | F12 | F13 | F14 | F15 | F16,2026-06-10,si
+dim_organizador.csv,processed,6,6,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
+dim_ubicacion.csv,processed,16,12,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
+fact_establecimiento.csv,processed,6,21,datos seed,no,seed/manual; solo desarrollo,F01,2026-06-10,si
+fact_evento_gastronomico.csv,processed,6,22,datos seed,no,seed/manual; solo desarrollo,F07 | F08 | F13 | F14,2026-06-10,si
+fact_mercado_feria.csv,processed,6,18,datos seed,no,seed/manual; solo desarrollo,F03 | F08 | F15,2026-06-10,si
+fact_programa_politica.csv,processed,6,20,datos seed,no,seed/manual; solo desarrollo,F06 | F07 | F09 | F10 | F12,2026-06-10,si
+puente_evento_categoria.csv,processed,0,3,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
+puente_evento_establecimiento.csv,processed,0,4,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
+puente_programa_establecimiento.csv,processed,0,5,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
+analytics_establecimientos_por_categoria_barrio.csv,analytics,6,14,datos seed,no,analytics no apta o basada en seed/parcial,F01,2026-06-10,si
+analytics_eventos_por_barrio.csv,analytics,2,14,datos seed,no,analytics no apta o basada en seed/parcial,F07 | F08 | F13 | F14,2026-06-10,si
+analytics_mapa_oportunidades.csv,analytics,8,17,datos seed,no,analytics no apta o basada en seed/parcial,F01 | F03 | F07 | F08 | F13 | F14 | F15,2026-06-10,si
+analytics_programas_por_anio.csv,analytics,1,11,datos seed,no,analytics no apta o basada en seed/parcial,F06 | F07 | F09 | F10 | F12,2026-06-10,si
+analytics_resumen_ejecutivo.csv,analytics,6,10,datos seed,no,analytics no apta o basada en seed/parcial,F01 | F03 | F06 | F07 | F08 | F09 | F10 | F12 | F13 | F14 | F15,2026-06-10,si

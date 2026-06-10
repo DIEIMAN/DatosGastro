@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-06-10 - V3 control de datos reales y dashboard
+
+- Se separaron seeds/manuales en `data/seeds/` y se reservo `data/raw/` para datos reales.
+- Se agrego modo `--strict-real` a `build_model.py`, `build_analytics.py` y `validate_model.py`.
+- Se reforzo trazabilidad obligatoria en analytics: fuentes, URLs, fechas, metodologia, limitaciones y `apto_dashboard`.
+- Se agrego auditoria real-vs-seed en `src/audit_real_data.py`.
+- Se agregaron `docs/AUDITORIA_DATOS_REALES.md`, `docs/GUIA_FUENTES_DASHBOARD.md` y `docs/GUIA_CARGA_DATOS_REALES.md`.
+- Se evita presentar seeds como datos reales: analytics seed quedan `apto_dashboard = no`.
+
 ## 2026-06-10 - V2 operativa reproducible
 
 - Se agrego configuracion explicita de fuentes en `src/config.py` sin URLs inventadas.

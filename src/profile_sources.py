@@ -12,7 +12,7 @@ except ImportError:  # pragma: no cover - optional dependency
     chardet = None
 
 from clean_text import has_suspect_encoding, is_empty_like, normalize_text
-from config import DATA_RAW, DOCS, PROFILE_OUTPUTS
+from config import DATA_RAW, DATA_SEEDS, DOCS, PROFILE_OUTPUTS
 
 ENCODINGS_TO_TRY = ("utf-8-sig", "utf-8", "latin-1", "cp1252")
 SEPARATORS = (",", ";", "\t", "|")
@@ -76,23 +76,27 @@ def _matching_columns(columns, hints) -> list[str]:
 
 def _frequent_problem_values(df: pd.DataFrame) -> str:
     values = []
-    for column in df.columns:
-        series = df[column].astype(str).map(normalize_text)
+    sample = df.head(5000)
+    for column in sample.columns:
+        series = sample[column].astype(str).map(normalize_text)
         problem = series[series.map(lambda value: is_empty_like(value) or has_suspect_encoding(value))]
         for value, count in problem.value_counts().head(3).items():
             values.append(f"{column}={value or '<vacio>'} ({count})")
     return "; ".join(values[:12])
 
 
-def profile_file(path: Path) -> tuple[dict, pd.DataFrame]:
+def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
     df, encoding, separator = read_csv_profile(path)
     size_bytes = path.stat().st_size
     empty_percent = {}
     for column in df.columns:
-        empty_percent[column] = round(df[column].map(is_empty_like).mean() * 100, 2) if len(df) else 0.0
-    suspected_mojibake = int(
-        df.head(200).astype(str).map(has_suspect_encoding).sum().sum()
-    ) if not df.empty else 0
+        if len(df):
+            normalized = df[column].astype(str).str.strip().str.lower()
+            empty_percent[column] = round(normalized.isin(["", "nan", "none", "null", "s/d", "sd", "sin dato", "no disponible"]).mean() * 100, 2)
+        else:
+            empty_percent[column] = 0.0
+    sample = df.head(5000)
+    suspected_mojibake = int(sample.astype(str).map(has_suspect_encoding).sum().sum()) if not df.empty else 0
     geo_columns = _matching_columns(df.columns, GEO_HINTS)
     temporal_columns = _matching_columns(df.columns, DATE_HINTS)
     dataset_kind = "seed/manual" if path.name.startswith("raw_") or len(df) < 1000 else "dataset completo probable"
@@ -106,6 +110,7 @@ def profile_file(path: Path) -> tuple[dict, pd.DataFrame]:
     summary = {
         "archivo": path.name,
         "ruta": str(path),
+        "capa": layer,
         "tamano_bytes": size_bytes,
         "encoding": encoding,
         "separador": repr(separator),
@@ -113,13 +118,13 @@ def profile_file(path: Path) -> tuple[dict, pd.DataFrame]:
         "columnas_cantidad": len(df.columns),
         "columnas": " | ".join(map(str, df.columns)),
         "nulos_por_columna_pct": " | ".join(f"{col}:{pct}" for col, pct in empty_percent.items()),
-        "duplicados": int(df.duplicated().sum()),
+        "duplicados": int(df.duplicated().sum()) if len(df) <= 250_000 else int(df.head(250_000).duplicated().sum()),
         "campos_geograficos": " | ".join(geo_columns),
         "campos_temporales": " | ".join(temporal_columns),
         "posible_mojibake_celdas_muestra": suspected_mojibake,
         "valores_problematicos_frecuentes": _frequent_problem_values(df),
         "tipo_estimado": dataset_kind,
-        "recomendacion_uso": recommendation,
+        "recomendacion_uso": recommendation + ("; duplicados calculados sobre muestra de 250k filas" if len(df) > 250_000 else ""),
     }
     return summary, df
 
@@ -129,13 +134,14 @@ def write_outputs(summaries: list[dict]) -> None:
     DOCS.mkdir(parents=True, exist_ok=True)
     summary_df = pd.DataFrame(summaries)
     summary_df.to_csv(PROFILE_OUTPUTS / "perfilado_fuentes_resumen.csv", index=False, encoding="utf-8")
+    summary_df.to_csv(PROFILE_OUTPUTS / "perfilado_fuentes.csv", index=False, encoding="utf-8")
 
     lines = [
         "# Perfilado de fuentes",
         "",
         f"Generado: {datetime.now().date().isoformat()}",
         "",
-        "El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*` se tratan como seed/manuales salvo evidencia de dataset completo.",
+        "El perfilado corre sobre los CSV disponibles en `data/raw/` y `data/seeds/`. `data/raw/` se reserva para datos reales; `data/seeds/` contiene fallback de desarrollo.",
         "",
     ]
     for item in summaries:
@@ -162,18 +168,19 @@ def write_outputs(summaries: list[dict]) -> None:
 
 
 def main() -> int:
-    csvs = sorted(DATA_RAW.glob("*.csv"))
+    csvs = [(path, "raw_real") for path in sorted(DATA_RAW.glob("*.csv"))]
+    csvs.extend((path, "seed") for path in sorted(DATA_SEEDS.glob("*.csv")))
     if not csvs:
-        print(f"WARNING no hay CSV en {DATA_RAW}")
+        print(f"WARNING no hay CSV en {DATA_RAW} ni en {DATA_SEEDS}")
         return 0
 
     summaries = []
     errors = []
-    for path in csvs:
+    for path, layer in csvs:
         try:
-            summary, _df = profile_file(path)
+            summary, _df = profile_file(path, layer)
             summaries.append(summary)
-            print(f"OK {path.name}: {summary['filas']} filas, {summary['columnas_cantidad']} columnas")
+            print(f"OK {layer} {path.name}: {summary['filas']} filas, {summary['columnas_cantidad']} columnas")
         except Exception as exc:
             errors.append((path.name, exc))
             print(f"ERROR {path.name}: {exc}")

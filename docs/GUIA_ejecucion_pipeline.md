@@ -14,13 +14,15 @@ Revisar `src/config.py`.
 
 Completar `SOURCE_CONFIG["F01"]["url"]`, `SOURCE_CONFIG["F02"]["url"]` y `SOURCE_CONFIG["F03"]["url"]` solo con URLs directas a archivos descargables oficiales. Si no estan disponibles, dejarlas como `None`.
 
+`data/raw/` queda reservado para CSV reales. Los seeds/manuales viven en `data/seeds/`.
+
 ## 3. Descargar
 
 ```bash
 python src/download_sources.py
 ```
 
-Resultado esperado con V2 inicial: `PENDING` para fuentes sin URL directa. El log queda en `outputs/download_sources.log`.
+Resultado esperado si no hay URL directa: `PENDING`. El log queda en `outputs/download_sources.log`.
 
 ## 4. Perfilar fuentes
 
@@ -35,7 +37,7 @@ Salidas:
 
 ## 4 bis. Contratos de columnas
 
-`build_model.py` detecta primero archivos reales y usa seeds solo como fallback.
+`build_model.py` detecta primero archivos reales en `data/raw/` y usa `data/seeds/` solo como fallback de desarrollo.
 
 Patrones reconocidos:
 
@@ -57,6 +59,13 @@ python src/build_model.py
 ```
 
 Reconstruye `data/processed/` desde `data/raw/`. Si solo hay seed, conserva `origen_dato = datos seed`.
+En modo estricto:
+
+```bash
+python src/build_model.py --strict-real
+```
+
+Falla si faltan F01/F02/F03 reales o si se necesita usar seeds.
 
 ## 6. Construir analytics
 
@@ -65,6 +74,15 @@ python src/build_analytics.py
 ```
 
 Reconstruye `data/analytics/` desde `data/processed/`.
+Todas las salidas analytics incluyen trazabilidad y `apto_dashboard`.
+
+En modo estricto:
+
+```bash
+python src/build_analytics.py --strict-real
+```
+
+Falla si alguna analytics importante usa seed o no es apta para dashboard.
 
 ## 7. Validar
 
@@ -73,3 +91,22 @@ python src/validate_model.py
 ```
 
 La validacion termina con codigo distinto de cero si hay errores graves de estructura, PK, FK o analytics vacias.
+
+En modo estricto:
+
+```bash
+python src/validate_model.py --strict-real
+```
+
+Falla si hay seeds en tablas importantes, si faltan fuentes/URLs/estado de datos, o si una tabla importante no es apta para dashboard.
+
+## 8. Auditar datos reales vs seed
+
+```bash
+python src/audit_real_data.py
+```
+
+Salidas:
+
+- `outputs/tablas_resumen/auditoria_datos_reales.csv`
+- `docs/AUDITORIA_DATOS_REALES.md`

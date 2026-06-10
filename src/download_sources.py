@@ -2,102 +2,111 @@ from __future__ import annotations
 
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urlparse
 
+import pandas as pd
 import requests
 
-from config import DATA_RAW, OUTPUTS, PENDING_URL, SOURCE_CONFIG
+from config import DATA_RAW, OUTPUTS, PROFILE_OUTPUTS, SOURCE_CONFIG
 
 MIN_SIZE_BYTES = 1024
-LOG_PATH = OUTPUTS / "download_sources.log"
 
 
-def _is_pending_url(url: str | None) -> bool:
-    return url is None or str(url).strip() in {"", PENDING_URL, "None"}
+def _pending(url: str | None) -> bool:
+    return url is None or str(url).strip() == ""
 
 
-def _filename_from_url(url: str, fallback: str) -> str:
-    parsed = urlparse(url)
-    name = Path(parsed.path).name
-    return name or fallback
-
-
-def download_file(source_id: str, url: str, target_filename: str | None = None) -> dict:
-    DATA_RAW.mkdir(parents=True, exist_ok=True)
-    source = SOURCE_CONFIG[source_id]
-    filename = target_filename or _filename_from_url(url, source["target_filename"])
-    out_path = DATA_RAW / filename
-
-    response = requests.get(url, timeout=90)
+def _download(url: str) -> requests.Response:
+    response = requests.get(url, timeout=120)
     response.raise_for_status()
-    out_path.write_bytes(response.content)
-    size = out_path.stat().st_size
-    status = "WARNING" if size < MIN_SIZE_BYTES else "OK"
-    return {
-        "source_id": source_id,
-        "status": status,
-        "url": url,
-        "path": str(out_path),
-        "bytes": size,
-        "message": "archivo sospechosamente chico" if status == "WARNING" else "descarga completa",
+    return response
+
+
+def download_resource(key: str, source: dict) -> dict:
+    DATA_RAW.mkdir(parents=True, exist_ok=True)
+    output_path = DATA_RAW / source["output_filename"]
+    started = datetime.now().isoformat(timespec="seconds")
+    url = source.get("download_url")
+
+    row = {
+        "key_fuente": key,
+        "id_fuente": source.get("id_fuente", key),
+        "nombre": source.get("nombre", source.get("name", key)),
+        "download_url": url or "",
+        "output_path": str(output_path),
+        "status": "PENDING",
+        "http_status": "",
+        "size_bytes": 0,
+        "fecha_descarga": started,
+        "error": "",
+        "observaciones": source.get("limitaciones", ""),
     }
+
+    if _pending(url):
+        row["error"] = "download_url pendiente o no publicado"
+        return row
+
+    urls_to_try = [url]
+    if source.get("download_url_cdn"):
+        urls_to_try.append(source["download_url_cdn"])
+
+    last_error = ""
+    for candidate_url in urls_to_try:
+        try:
+            response = _download(candidate_url)
+            output_path.write_bytes(response.content)
+            size = output_path.stat().st_size
+            row["download_url"] = candidate_url
+            row["http_status"] = response.status_code
+            row["size_bytes"] = size
+            if size < MIN_SIZE_BYTES:
+                row["status"] = "WARNING"
+                row["error"] = "archivo sospechosamente chico (<1 KB)"
+            else:
+                row["status"] = "OK"
+            return row
+        except Exception as exc:
+            last_error = str(exc)
+            row["http_status"] = getattr(getattr(exc, "response", None), "status_code", "")
+            continue
+
+    row["status"] = "ERROR"
+    row["error"] = last_error
+    return row
 
 
 def run_downloads() -> list[dict]:
-    results = []
-    for source_id, source in SOURCE_CONFIG.items():
-        url = source.get("url")
-        if _is_pending_url(url):
-            results.append(
-                {
-                    "source_id": source_id,
-                    "status": "PENDING",
-                    "url": source.get("portal_url", ""),
-                    "path": "",
-                    "bytes": 0,
-                    "message": "falta completar URL directa de recurso en src/config.py",
-                }
-            )
+    rows = []
+    for key, source in SOURCE_CONFIG.items():
+        if source.get("formato") not in {"csv", "geojson"}:
             continue
-        try:
-            results.append(download_file(source_id, str(url)))
-        except Exception as exc:
-            results.append(
-                {
-                    "source_id": source_id,
-                    "status": "ERROR",
-                    "url": str(url),
-                    "path": "",
-                    "bytes": 0,
-                    "message": str(exc),
-                }
-            )
-    return results
+        rows.append(download_resource(key, source))
+    return rows
 
 
-def write_log(results: list[dict]) -> None:
+def write_log(rows: list[dict]) -> None:
+    PROFILE_OUTPUTS.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(rows).to_csv(PROFILE_OUTPUTS / "download_log.csv", index=False, encoding="utf-8")
     OUTPUTS.mkdir(parents=True, exist_ok=True)
-    timestamp = datetime.now().isoformat(timespec="seconds")
-    with LOG_PATH.open("a", encoding="utf-8") as fh:
-        fh.write(f"\n# download_sources {timestamp}\n")
-        for result in results:
+    with (OUTPUTS / "download_sources.log").open("a", encoding="utf-8") as fh:
+        fh.write(f"\n# download_sources {datetime.now().isoformat(timespec='seconds')}\n")
+        for row in rows:
             fh.write(
-                "{source_id}\t{status}\t{bytes}\t{path}\t{url}\t{message}\n".format(**result)
+                "{key_fuente}\t{id_fuente}\t{status}\t{size_bytes}\t{output_path}\t{error}\n".format(**row)
             )
 
 
 def main() -> int:
-    results = run_downloads()
-    write_log(results)
+    rows = run_downloads()
+    write_log(rows)
     has_error = False
-    for result in results:
+    for row in rows:
         print(
-            f"{result['status']:7s} {result['source_id']} "
-            f"{result['bytes']:>8} bytes {result['path']} {result['message']}"
+            f"{row['status']:7s} {row['key_fuente']:16s} {row['size_bytes']:>10} bytes "
+            f"{row['output_path']} {row['error']}"
         )
-        if result["status"] == "ERROR":
+        if row["status"] == "ERROR":
             has_error = True
-    print(f"Log: {LOG_PATH}")
+    print(f"Log CSV: {PROFILE_OUTPUTS / 'download_log.csv'}")
     return 1 if has_error else 0
 
 

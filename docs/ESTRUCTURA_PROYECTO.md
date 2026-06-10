@@ -10,7 +10,8 @@ La raiz del repositorio debe quedar liviana:
 ## Carpetas canonicas
 
 - `src/`: codigo ejecutable del pipeline.
-- `data/raw/`: fuentes seed o descargadas.
+- `data/raw/`: fuentes reales descargadas o cargadas manualmente.
+- `data/seeds/`: seeds/manuales de desarrollo.
 - `data/processed/`: modelo normalizado reconstruible.
 - `data/analytics/`: salidas agregadas reconstruibles.
 - `sql/`: scripts SQL vigentes.

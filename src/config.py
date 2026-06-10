@@ -2,6 +2,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = ROOT / "data" / "raw"
+DATA_SEEDS = ROOT / "data" / "seeds"
 DATA_PROCESSED = ROOT / "data" / "processed"
 DATA_ANALYTICS = ROOT / "data" / "analytics"
 OUTPUTS = ROOT / "outputs"
@@ -12,10 +13,22 @@ PENDING_URL = "PENDIENTE_URL_DIRECTA"
 
 SOURCE_CONFIG = {
     "F01": {
+        "id_fuente": "F01",
+        "nombre": "Oferta y Establecimientos Gastronomicos",
         "name": "Oferta y Establecimientos Gastronomicos",
-        "description": "Registro de oferta y establecimientos gastronomicos publicado por BA Data / GCBA.",
-        "url": None,
+        "organismo": "Ente de Turismo - GCBA",
+        "description": "Registro de oferta y establecimientos gastronomicos publicado por Buenos Aires Data / GCBA.",
+        "dataset_url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos",
+        "download_url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos/resource/e66613ef-aaf4-44aa-b89c-638c431fef0e/download",
+        "download_url_cdn": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/ente-de-turismo/oferta-establecimientos-gastronomicos/establecimientos_gastronomicos.csv",
+        "url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos/resource/e66613ef-aaf4-44aa-b89c-638c431fef0e/download",
+        "output_filename": "f01_oferta_establecimientos_gastronomicos.csv",
         "target_filename": "f01_oferta_establecimientos_gastronomicos.csv",
+        "formato": "csv",
+        "prioridad": "alta",
+        "fecha_consulta": "2026-06-10",
+        "limitaciones": "Puede tener mojibake; no trae lat/lon; no trae fecha por registro; puede estar desactualizado.",
+        "required_strict": True,
         "seed_glob": "raw_establecimientos_gastronomicos.csv",
         "raw_patterns": [
             "f01_*.csv",
@@ -24,37 +37,153 @@ SOURCE_CONFIG = {
         ],
         "portal_url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos",
     },
-    "F02": {
-        "name": "Habilitaciones Aprobadas AGC",
-        "description": "Habilitaciones aprobadas por anio publicadas por BA Data / AGC.",
-        "url": None,
-        "target_filename": "f02_habilitaciones_aprobadas.csv",
-        "seed_glob": "raw_habilitaciones_aprobadas*.csv",
-        "raw_patterns": [
-            "f02_*.csv",
-            "*habilitaciones*aprobadas*.csv",
-            "*habilitaciones*.csv",
-        ],
-        "portal_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
-    },
-    "F03": {
-        "name": "Ferias y Mercados",
-        "description": "Ferias, mercados y espacios afines publicados por BA Data / GCBA.",
-        "url": None,
-        "target_filename": "f03_ferias_mercados.csv",
-        "seed_glob": "raw_ferias_mercados.csv",
-        "raw_patterns": [
-            "f03_*.csv",
-            "*ferias*mercados*.csv",
-            "*ferias*.csv",
-            "*mercados*.csv",
-        ],
-        "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
-    },
 }
 
+_F02_RESOURCES = {
+    "F02_2015_2018": ("2015_2018", "2015-2018", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/748176e8-298f-4bda-aa44-3ef4dc560c8c/download"),
+    "F02_2019": ("2019", "2019", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/21343579-cf7e-4fb8-a3bc-8d41710cb077/download"),
+    "F02_2020": ("2020", "2020", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/dd6760a4-92e5-4c43-83f5-33181bac37d8/download"),
+    "F02_2021": ("2021", "2021", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/120a24f6-35f5-49b7-9db2-a03cf621cc36/download"),
+    "F02_2022": ("2022", "2022", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/ed26ea8a-b2dd-4543-a2bb-cd613c99b393/download"),
+    "F02_2023": ("2023", "2023", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/72be4960-7a64-4c31-9751-15155cadf327/download"),
+    "F02_2024": ("2024", "2024", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/af7cb21d-3c26-4227-8271-a898442bf99b/download"),
+    "F02_2025": ("2025", "2025", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas/resource/00cab09a-06fa-43d0-b000-e6b2364a3082/download"),
+}
+
+for key, (suffix, periodo, url) in _F02_RESOURCES.items():
+    SOURCE_CONFIG[key] = {
+        "id_fuente": "F02",
+        "nombre": f"Habilitaciones Aprobadas AGC {periodo}",
+        "name": f"Habilitaciones Aprobadas AGC {periodo}",
+        "organismo": "Agencia Gubernamental de Control - GCBA",
+        "description": "Habilitaciones aprobadas publicadas por Buenos Aires Data / AGC.",
+        "dataset_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
+        "download_url": url,
+        "url": url,
+        "output_filename": f"f02_habilitaciones_aprobadas_{suffix}.csv",
+        "target_filename": f"f02_habilitaciones_aprobadas_{suffix}.csv",
+        "formato": "csv",
+        "prioridad": "alta",
+        "fecha_consulta": "2026-06-10",
+        "limitaciones": "Clasificacion gastronomica inferida desde descripcion de rubro; no se exige recurso 2026.",
+        "periodo_fuente": periodo,
+        "anio_fuente": periodo,
+        "required_strict": True,
+        "seed_glob": "raw_habilitaciones_aprobadas*.csv",
+        "raw_patterns": [f"f02_habilitaciones_aprobadas_{suffix}.csv"],
+        "portal_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
+    }
+
+SOURCE_CONFIG["F02_2026"] = {
+    "id_fuente": "F02",
+    "nombre": "Habilitaciones Aprobadas AGC 2026",
+    "name": "Habilitaciones Aprobadas AGC 2026",
+    "organismo": "Agencia Gubernamental de Control - GCBA",
+    "description": "Entrada opcional futura; no publicada al momento de consulta.",
+    "dataset_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
+    "download_url": None,
+    "url": None,
+    "output_filename": "f02_habilitaciones_aprobadas_2026.csv",
+    "target_filename": "f02_habilitaciones_aprobadas_2026.csv",
+    "formato": "csv",
+    "prioridad": "baja",
+    "fecha_consulta": "2026-06-10",
+    "limitaciones": "No publicado; no requerido para strict-real.",
+    "periodo_fuente": "2026",
+    "anio_fuente": "2026",
+    "required_strict": False,
+    "seed_glob": "raw_habilitaciones_aprobadas*.csv",
+    "raw_patterns": ["f02_habilitaciones_aprobadas_2026.csv"],
+    "portal_url": "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas",
+}
+
+SOURCE_CONFIG.update(
+    {
+        "F03": {
+            "id_fuente": "F03",
+            "nombre": "Ferias y Mercados",
+            "name": "Ferias y Mercados",
+            "organismo": "DG Ferias - Ministerio de Ambiente y Espacio Publico - GCBA",
+            "description": "CSV combinado de ferias y mercados publicado por Buenos Aires Data / GCBA.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1125-resource/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1125-resource/download",
+            "output_filename": "f03_ferias_mercados.csv",
+            "target_filename": "f03_ferias_mercados.csv",
+            "formato": "csv",
+            "prioridad": "alta",
+            "fecha_consulta": "2026-06-10",
+            "limitaciones": "Geometria completa no disponible; GeoJSON separado representa solo FIAB.",
+            "required_strict": True,
+            "seed_glob": "raw_ferias_mercados.csv",
+            "raw_patterns": ["f03_ferias_mercados.csv"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+        },
+        "F03_FERIAS": {
+            "id_fuente": "F03",
+            "nombre": "Ferias",
+            "name": "Ferias",
+            "organismo": "DG Ferias - Ministerio de Ambiente y Espacio Publico - GCBA",
+            "description": "CSV complementario solo ferias.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1121-resource/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1121-resource/download",
+            "output_filename": "f03_ferias.csv",
+            "target_filename": "f03_ferias.csv",
+            "formato": "csv",
+            "prioridad": "media",
+            "fecha_consulta": "2026-06-10",
+            "limitaciones": "Recurso complementario; F03 combinado es el requerido para strict-real.",
+            "required_strict": False,
+            "seed_glob": "raw_ferias_mercados.csv",
+            "raw_patterns": ["f03_ferias.csv"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+        },
+        "F03_MERCADOS": {
+            "id_fuente": "F03",
+            "nombre": "Mercados",
+            "name": "Mercados",
+            "organismo": "DG Ferias - Ministerio de Ambiente y Espacio Publico - GCBA",
+            "description": "CSV complementario solo mercados.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1126-resource/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1126-resource/download",
+            "output_filename": "f03_mercados.csv",
+            "target_filename": "f03_mercados.csv",
+            "formato": "csv",
+            "prioridad": "media",
+            "fecha_consulta": "2026-06-10",
+            "limitaciones": "Recurso complementario; F03 combinado es el requerido para strict-real.",
+            "required_strict": False,
+            "seed_glob": "raw_ferias_mercados.csv",
+            "raw_patterns": ["f03_mercados.csv"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+        },
+        "F03_FIAB_GEOJSON": {
+            "id_fuente": "F03",
+            "nombre": "FIAB GeoJSON",
+            "name": "FIAB GeoJSON",
+            "organismo": "DG Ferias - Ministerio de Ambiente y Espacio Publico - GCBA",
+            "description": "GeoJSON solo FIAB; no representa todas las ferias y mercados.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/89d4e504-2fa8-4703-9c05-2471fa47cdfa/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/89d4e504-2fa8-4703-9c05-2471fa47cdfa/download",
+            "output_filename": "f03_fiab.geojson",
+            "target_filename": "f03_fiab.geojson",
+            "formato": "geojson",
+            "prioridad": "baja",
+            "fecha_consulta": "2026-06-10",
+            "limitaciones": "Solo FIAB; no tratar como capa geografica completa de F03.",
+            "required_strict": False,
+            "seed_glob": "",
+            "raw_patterns": ["f03_fiab.geojson"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/ferias-mercados",
+        },
+    }
+)
+
 # Backwards-compatible alias used by earlier scripts.
-SOURCES = {key: item["url"] for key, item in SOURCE_CONFIG.items()}
+SOURCES = {key: item.get("download_url") for key, item in SOURCE_CONFIG.items()}
 
 BARRIO_COMUNA = {
     "Agronomia": "15",

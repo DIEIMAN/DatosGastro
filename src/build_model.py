@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+import argparse
+import csv
 from datetime import date
 from pathlib import Path
 
 import pandas as pd
 
 from clean_text import clean_dataframe_columns, normalize_proper_name, normalize_text
-from config import DATA_PROCESSED, DATA_RAW, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
+from config import DATA_PROCESSED, DATA_RAW, DATA_SEEDS, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
 from normalize_addresses import UNKNOWN_LOCATION_ID, normalize_address_offline
 from normalize_categories import classify_gastronomic_category, taxonomy_dataframe_rows
 from source_contracts import SourceLoadResult, map_source_columns
@@ -17,12 +19,22 @@ TODAY = date.today().isoformat()
 def read_csv(path: Path) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
+    try:
+        sample = path.read_text(encoding="utf-8-sig", errors="replace")[:8000]
+        dialect = csv.Sniffer().sniff(sample, delimiters=",;\t|")
+        sep = dialect.delimiter
+    except Exception:
+        sep = None
     for encoding in ("utf-8-sig", "utf-8", "latin-1", "cp1252"):
         try:
-            return pd.read_csv(path, dtype=str, keep_default_na=False, encoding=encoding)
+            if sep:
+                return pd.read_csv(path, dtype=str, keep_default_na=False, encoding=encoding, sep=sep)
+            return pd.read_csv(path, dtype=str, keep_default_na=False, encoding=encoding, sep=None, engine="python")
         except UnicodeDecodeError:
             continue
-    return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="latin-1")
+    if sep:
+        return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="latin-1", sep=sep)
+    return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="latin-1", sep=None, engine="python")
 
 
 def write_csv(df: pd.DataFrame, filename: str) -> None:
@@ -31,36 +43,59 @@ def write_csv(df: pd.DataFrame, filename: str) -> None:
     print(f"OK {filename}: {len(df)} filas")
 
 
-def discover_source_paths(source_id: str) -> tuple[list[Path], str]:
-    source = SOURCE_CONFIG[source_id]
-    real_paths: list[Path] = []
-    for pattern in source.get("raw_patterns", []):
-        real_paths.extend(DATA_RAW.glob(pattern))
-    real_paths = sorted(
-        {
-            path
-            for path in real_paths
-            if path.is_file()
-            and path.suffix.lower() == ".csv"
-            and not path.name.startswith("raw_")
-        }
-    )
-    if real_paths:
-        return real_paths, "real"
+def _resource_items(source_id: str, include_optional: bool = True) -> list[tuple[str, dict]]:
+    items = [(key, value) for key, value in SOURCE_CONFIG.items() if value.get("id_fuente") == source_id and value.get("formato") == "csv"]
+    if not include_optional:
+        items = [(key, value) for key, value in items if value.get("required_strict")]
+    return items
 
-    seed_paths = sorted(DATA_RAW.glob(source["seed_glob"]))
-    return seed_paths, "seed"
+
+def discover_source_paths(source_id: str) -> tuple[list[tuple[Path, str, dict]], str]:
+    resources = _resource_items(source_id)
+    real_paths: list[Path] = []
+    real_items: list[tuple[Path, str, dict]] = []
+    for key, source in resources:
+        candidates = []
+        output_filename = source.get("output_filename")
+        if output_filename:
+            candidates.append(DATA_RAW / output_filename)
+        for pattern in source.get("raw_patterns", []):
+            candidates.extend(DATA_RAW.glob(pattern))
+        for path in sorted({candidate for candidate in candidates if candidate.is_file() and candidate.suffix.lower() == ".csv"}):
+            real_items.append((path, key, source))
+    if real_items:
+        return real_items, "real"
+
+    seed_glob = next((source.get("seed_glob") for _, source in resources if source.get("seed_glob")), "")
+    seed_items = [(path, source_id, {"id_fuente": source_id, "fecha_consulta": TODAY}) for path in sorted(DATA_SEEDS.glob(seed_glob))]
+    return seed_items, "seed"
 
 
 def load_source_data(source_id: str) -> tuple[pd.DataFrame, list[SourceLoadResult]]:
     paths, origin = discover_source_paths(source_id)
     frames = []
     reports: list[SourceLoadResult] = []
-    for path in paths:
+    for path, key, source in paths:
         raw = clean_dataframe_columns(read_csv(path))
         mapped, report = map_source_columns(raw, source_id, origin, path)
+        mapped["url_fuente"] = source.get("dataset_url", source.get("download_url", "No disponible"))
+        mapped["download_url"] = source.get("download_url", "")
+        mapped["fecha_consulta"] = source.get("fecha_consulta", TODAY)
+        mapped["periodo_fuente"] = source.get("periodo_fuente", "")
+        mapped["anio_fuente"] = source.get("anio_fuente", source.get("periodo_fuente", ""))
+        mapped["estado_datos"] = "datos reales" if origin == "real" else "datos seed"
         frames.append(mapped)
-        reports.append(report)
+        reports.append(
+            SourceLoadResult(
+                source_id=report.source_id,
+                path=report.path,
+                origin=report.origin,
+                rows=report.rows,
+                mapped_columns=f"recurso={key}; {report.mapped_columns}",
+                missing_columns=report.missing_columns,
+                extra_columns=report.extra_columns,
+            )
+        )
     if not frames:
         empty = pd.DataFrame()
         reports.append(
@@ -109,6 +144,36 @@ def write_contract_reports(reports: list[SourceLoadResult]) -> None:
     (DOCS / "contratos_fuentes.md").write_text("\n".join(lines), encoding="utf-8")
 
 
+def read_seed_csv(filename: str) -> pd.DataFrame:
+    return read_csv(DATA_SEEDS / filename)
+
+
+def strict_real_errors(reports: list[SourceLoadResult], eventos: pd.DataFrame) -> list[str]:
+    errors = []
+    by_path = {Path(report.path).name: report for report in reports if report.path}
+    required_resources = [
+        source
+        for _key, source in SOURCE_CONFIG.items()
+        if source.get("required_strict") and source.get("formato") == "csv"
+    ]
+    for source in required_resources:
+        expected_name = source["output_filename"]
+        report = by_path.get(expected_name)
+        if report is None or report.origin != "real":
+            errors.append(f"{source['id_fuente']} {expected_name}: falta CSV real en data/raw; no se permite fallback seed en --strict-real")
+            continue
+        if report.rows == 0:
+            errors.append(f"{source['id_fuente']} {expected_name}: el CSV real no tiene filas")
+        if report.missing_columns:
+            errors.append(f"{source['id_fuente']} {expected_name}: faltan columnas requeridas: {report.missing_columns}")
+        path = Path(report.path)
+        if path.exists() and path.stat().st_size < 1024:
+            errors.append(f"{source['id_fuente']} {expected_name}: archivo real sospechosamente chico (<1 KB): {path}")
+    if not eventos.empty:
+        errors.append("Eventos: solo hay raw_eventos_gastronomicos.csv seed en data/seeds; fact_evento_gastronomico no puede construirse en --strict-real")
+    return errors
+
+
 def first_existing(*values, default="No disponible"):
     for value in values:
         cleaned = normalize_text(value)
@@ -125,7 +190,7 @@ def source_urls(dim_fuente: pd.DataFrame) -> dict:
 
 
 def build_dim_fuente() -> pd.DataFrame:
-    raw = read_csv(DATA_RAW / "raw_fuentes_relevadas.csv")
+    raw = read_seed_csv("raw_fuentes_relevadas.csv")
     rows = []
     for _, row in raw.iterrows():
         rows.append(
@@ -141,28 +206,25 @@ def build_dim_fuente() -> pd.DataFrame:
                 "notas": first_existing(row.get("observaciones"), default=""),
             }
         )
-    defaults = {
-        "F01": ("Oferta y Establecimientos Gastronomicos", "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos"),
-        "F02": ("Habilitaciones Aprobadas", "https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas"),
-        "F03": ("Ferias y Mercados", "https://data.buenosaires.gob.ar/dataset/ferias-mercados"),
-    }
-    existing = {row["id_fuente"] for row in rows}
-    for source_id, (name, url) in defaults.items():
-        if source_id not in existing:
-            rows.append(
-                {
-                    "id_fuente": source_id,
-                    "nombre_fuente": name,
-                    "tipo_fuente": "Oficial / dato abierto",
-                    "organismo_entidad": "GCBA / BA Data",
-                    "url_base": url,
-                    "confiabilidad": "Pendiente",
-                    "frecuencia_actualizacion": "No disponible",
-                    "fecha_consulta": TODAY,
-                    "notas": "Fuente esperada; falta completar URL directa de descarga si no hay CSV real.",
-                }
-            )
-    return pd.DataFrame(rows).drop_duplicates("id_fuente")
+    for source_id in ("F01", "F02", "F03"):
+        resources = _resource_items(source_id)
+        if not resources:
+            continue
+        first_resource = resources[0][1]
+        rows.append(
+            {
+                "id_fuente": source_id,
+                "nombre_fuente": first_resource.get("nombre", first_resource.get("name", source_id)),
+                "tipo_fuente": "Oficial / dato abierto",
+                "organismo_entidad": first_resource.get("organismo", "GCBA / Buenos Aires Data"),
+                "url_base": first_resource.get("dataset_url", "No disponible"),
+                "confiabilidad": "Alta" if source_id in {"F02", "F03"} else "Media-Alta",
+                "frecuencia_actualizacion": "No disponible",
+                "fecha_consulta": first_resource.get("fecha_consulta", TODAY),
+                "notas": first_resource.get("limitaciones", ""),
+            }
+        )
+    return pd.DataFrame(rows).drop_duplicates("id_fuente", keep="last")
 
 
 def build_dim_categoria() -> pd.DataFrame:
@@ -280,7 +342,8 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "id_categoria": category.id_categoria,
                 "id_ubicacion": location_id,
                 "id_fuente": source_id,
-                "url_fuente": urls.get(source_id, "No disponible"),
+                "url_fuente": first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible")),
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
                 "estado": "sin_verificar",
                 "web": "No disponible",
                 "redes": "No disponible",
@@ -296,6 +359,7 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "confianza_categoria": category.confianza_categoria,
                 "motivo_categoria": category.motivo_categoria,
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
+                "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
             }
         )
 
@@ -308,6 +372,7 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
             continue
         source_id = first_existing(row.get("id_fuente"), default="F02")
         location_id = normalize_address_offline(row.get("direccion_original"), "")["id_ubicacion"]
+        source_url = first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible"))
         rows.append(
             {
                 "id_establecimiento": f"HAB{start + idx + 1:05d}",
@@ -315,7 +380,8 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "id_categoria": category.id_categoria,
                 "id_ubicacion": location_id,
                 "id_fuente": source_id,
-                "url_fuente": urls.get(source_id, "No disponible"),
+                "url_fuente": source_url,
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
                 "estado": "habilitacion_detectada",
                 "web": "No disponible",
                 "redes": "No disponible",
@@ -331,6 +397,9 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "confianza_categoria": category.confianza_categoria,
                 "motivo_categoria": category.motivo_categoria,
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos reales parciales"),
+                "estado_datos": first_existing(row.get("estado_datos"), default="datos reales"),
+                "anio_fuente": first_existing(row.get("anio_fuente"), default=""),
+                "periodo_fuente": first_existing(row.get("periodo_fuente"), default=""),
             }
         )
     return pd.DataFrame(rows)
@@ -359,6 +428,7 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.Dat
                 "id_organizador": infer_organizer_id(row.get("organizador_original")),
                 "id_fuente": source_id,
                 "url_fuente": urls.get(source_id, "No disponible"),
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
                 "tipo_evento": "evento gastronomico",
                 "gratuito": "Requiere validacion",
                 "requiere_inscripcion": "No disponible",
@@ -371,6 +441,7 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.Dat
                 "motivo_validacion": first_existing(row.get("motivo_validacion"), default="Evento seed pendiente de estructuracion"),
                 "observaciones": first_existing(row.get("observaciones_raw"), default=""),
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
+                "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
             }
         )
     return pd.DataFrame(rows)
@@ -394,13 +465,15 @@ def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> 
                 "rubros": "No disponible",
                 "estado": "activo" if first_existing(row.get("requiere_validacion"), default="no") == "no" else "sin_verificar",
                 "id_fuente": source_id,
-                "url_fuente": urls.get(source_id, "No disponible"),
+                "url_fuente": first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible")),
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
                 "link": "No disponible",
                 "calidad_dato": first_existing(row.get("calidad_dato"), default="alta"),
                 "requiere_validacion": first_existing(row.get("requiere_validacion"), default="no"),
                 "motivo_validacion": first_existing(row.get("motivo_validacion"), default=""),
                 "observaciones": first_existing(row.get("observaciones_raw"), default=""),
-                "origen_dato": "datos seed",
+                "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
+                "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
             }
         )
     return pd.DataFrame(rows)
@@ -408,7 +481,7 @@ def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> 
 
 def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
-    raw = clean_dataframe_columns(read_csv(DATA_RAW / "raw_programas_politicas.csv"))
+    raw = clean_dataframe_columns(read_seed_csv("raw_programas_politicas.csv"))
     if raw.empty:
         return pd.DataFrame(
             columns=[
@@ -426,12 +499,14 @@ def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
                 "metricas_publicadas",
                 "id_fuente",
                 "url_fuente",
+                "fecha_consulta",
                 "link",
                 "calidad_dato",
                 "requiere_validacion",
                 "motivo_validacion",
                 "observaciones",
                 "origen_dato",
+                "estado_datos",
             ]
         )
     raw = raw.rename(
@@ -447,6 +522,8 @@ def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
     if "url_fuente" not in raw.columns:
         raw["url_fuente"] = raw.get("id_fuente", "").map(urls).fillna("No disponible")
     raw["origen_dato"] = "datos seed"
+    raw["estado_datos"] = "datos seed"
+    raw["fecha_consulta"] = TODAY
     raw["fecha_inicio"] = raw.get("fecha_inicio", "No disponible")
     raw["fecha_fin"] = raw.get("fecha_fin", "No disponible")
     raw["tipo_programa"] = raw.get("tipo_programa", "promocion/financiamiento/normativa")
@@ -470,12 +547,14 @@ def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
         "metricas_publicadas",
         "id_fuente",
         "url_fuente",
+        "fecha_consulta",
         "link",
         "calidad_dato",
         "requiere_validacion",
         "motivo_validacion",
         "observaciones",
         "origen_dato",
+        "estado_datos",
     ]
     for column in columns:
         if column not in raw.columns:
@@ -484,11 +563,32 @@ def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Construye data/processed desde datos reales o seeds de desarrollo.")
+    parser.add_argument("--strict-real", action="store_true", help="Falla si se usan seeds o faltan F01/F02/F03 reales.")
+    args = parser.parse_args()
+
     est, est_reports = load_source_data("F01")
     hab, hab_reports = load_source_data("F02")
     ferias, ferias_reports = load_source_data("F03")
-    eventos = clean_dataframe_columns(read_csv(DATA_RAW / "raw_eventos_gastronomicos.csv"))
-    write_contract_reports([*est_reports, *hab_reports, *ferias_reports])
+    eventos = clean_dataframe_columns(read_seed_csv("raw_eventos_gastronomicos.csv"))
+    reports = [*est_reports, *hab_reports, *ferias_reports]
+    write_contract_reports(reports)
+    for report in reports:
+        if report.origin == "seed":
+            print(f"WARNING {report.source_id}: usando fallback seed desde {report.path}; no apto para dashboard real")
+        elif report.origin == "real":
+            print(f"OK {report.source_id}: usando CSV real desde {report.path}")
+        else:
+            print(f"WARNING {report.source_id}: no se encontro archivo real ni seed")
+
+    if args.strict_real:
+        errors = strict_real_errors(reports, eventos)
+        if errors:
+            print("ERROR --strict-real no puede construir el modelo:")
+            for error in errors:
+                print(f"ERROR {error}")
+            print("Accion: cargar CSV reales F01/F02/F03 en data/raw/ y volver a correr.")
+            return 1
 
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()

@@ -26,7 +26,7 @@ Las tablas de hechos deben conservar, cuando corresponde:
 
 ## Contratos de carga
 
-La carga desde `data/raw/` usa contratos flexibles definidos en `src/source_contracts.py`.
+La carga desde `data/raw/` usa contratos flexibles definidos en `src/source_contracts.py`. `data/raw/` debe contener solo datos reales. Los seeds/manuales viven en `data/seeds/` y son fallback de desarrollo.
 
 Cada corrida de `python src/build_model.py` genera:
 
@@ -47,6 +47,13 @@ Estos archivos indican:
 - `datos reales parciales`: hay al menos una fuente real cargada, pero no cubre todo el universo.
 - `datos reales completos`: las fuentes reales esperadas estan cargadas y validadas.
 - `datos pendientes de validacion`: no hay evidencia suficiente para clasificar.
+
+## Reglas dashboard
+
+- Si `estado_datos = datos seed`, entonces `apto_dashboard = no`.
+- Si hay mezcla de datos reales y seed, entonces `apto_dashboard = no` hasta validar cobertura.
+- Si faltan `fuentes_utilizadas` o `urls_fuentes`, entonces no se debe publicar como dashboard real.
+- El modo `--strict-real` debe fallar ante cualquiera de esos casos.
 
 ## Regla de prioridad
 

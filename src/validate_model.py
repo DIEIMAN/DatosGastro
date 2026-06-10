@@ -1,11 +1,12 @@
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
 import pandas as pd
 
-from config import DATA_ANALYTICS, DATA_PROCESSED
+from config import DATA_ANALYTICS, DATA_PROCESSED, DATA_RAW, SOURCE_CONFIG
 
 
 EXPECTED_TABLES = {
@@ -36,11 +37,35 @@ FK_CHECKS = [
 ]
 
 TRACEABILITY_COLUMNS = {
-    "fact_establecimiento.csv": ["id_fuente", "url_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion"],
-    "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion"],
-    "fact_programa_politica.csv": ["id_fuente", "url_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion"],
-    "fact_mercado_feria.csv": ["id_fuente", "url_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion"],
+    "fact_establecimiento.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_programa_politica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_mercado_feria.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
 }
+
+IMPORTANT_FACTS = [
+    "fact_establecimiento.csv",
+    "fact_mercado_feria.csv",
+    "fact_evento_gastronomico.csv",
+]
+
+IMPORTANT_ANALYTICS = [
+    "analytics_establecimientos_por_categoria_barrio.csv",
+    "analytics_eventos_por_barrio.csv",
+    "analytics_mapa_oportunidades.csv",
+    "analytics_resumen_ejecutivo.csv",
+]
+
+ANALYTICS_TRACEABILITY_COLUMNS = [
+    "estado_datos",
+    "fuentes_utilizadas",
+    "urls_fuentes",
+    "fecha_consulta_min",
+    "fecha_consulta_max",
+    "nota_metodologica",
+    "limitaciones",
+    "apto_dashboard",
+]
 
 
 def read_csv(path: Path) -> pd.DataFrame:
@@ -52,7 +77,23 @@ def add(messages: list[tuple[str, str]], level: str, text: str) -> None:
     print(f"{level:7s} {text}")
 
 
-def validate() -> int:
+def _real_source_files() -> list[Path]:
+    paths = []
+    for source in SOURCE_CONFIG.values():
+        for pattern in source.get("raw_patterns", []):
+            paths.extend(DATA_RAW.glob(pattern))
+    return sorted({path for path in paths if path.is_file() and path.suffix.lower() == ".csv"})
+
+
+def _required_real_resources() -> list[dict]:
+    return [
+        source
+        for source in SOURCE_CONFIG.values()
+        if source.get("required_strict") and source.get("formato") == "csv"
+    ]
+
+
+def validate(strict_real: bool = False) -> int:
     messages: list[tuple[str, str]] = []
     tables: dict[str, pd.DataFrame] = {}
 
@@ -96,6 +137,26 @@ def validate() -> int:
             add(messages, "ERROR", f"{filename} no tiene columnas de trazabilidad: {missing_columns}")
         else:
             add(messages, "OK", f"{filename} tiene trazabilidad minima")
+        if "origen_dato" in df.columns:
+            has_seed = df["origen_dato"].astype(str).str.contains("seed", case=False, na=False).any()
+            if has_seed:
+                level = "ERROR" if strict_real and filename in IMPORTANT_FACTS else "WARNING"
+                add(messages, level, f"{filename} contiene registros seed; no presentar como datos reales")
+            if strict_real and filename in IMPORTANT_FACTS and df["origen_dato"].astype(str).eq("").any():
+                add(messages, "ERROR", f"{filename} tiene origen_dato vacio")
+
+    est = tables.get("fact_establecimiento.csv")
+    if est is not None and len(est) <= 6 and "origen_dato" in est.columns and est["origen_dato"].astype(str).str.contains("seed", case=False, na=False).all():
+        level = "ERROR" if strict_real else "WARNING"
+        add(messages, level, "fact_establecimiento parece ser solo seed de 6 filas; no apto para dashboard")
+
+    if strict_real:
+        for source in _required_real_resources():
+            path = DATA_RAW / source["output_filename"]
+            if not path.exists():
+                add(messages, "ERROR", f"{source['id_fuente']} no tiene CSV real requerido en data/raw: {source['output_filename']}")
+            elif path.stat().st_size < 1024:
+                add(messages, "ERROR", f"{source['id_fuente']} archivo real menor a 1 KB: {path}")
 
     for filename in EXPECTED_ANALYTICS:
         path = DATA_ANALYTICS / filename
@@ -107,8 +168,26 @@ def validate() -> int:
             add(messages, "ERROR", f"analytics vacia {filename}")
         else:
             add(messages, "OK", f"analytics no vacia {filename} ({len(df)} filas)")
-        if "estado_datos" not in df.columns:
-            add(messages, "WARNING", f"{filename} no tiene estado_datos")
+        missing_analytics_columns = [column for column in ANALYTICS_TRACEABILITY_COLUMNS if column not in df.columns]
+        if missing_analytics_columns:
+            add(messages, "ERROR", f"{filename} no tiene trazabilidad analytics: {missing_analytics_columns}")
+            continue
+        if df["estado_datos"].astype(str).eq("").any():
+            add(messages, "ERROR", f"{filename} tiene estado_datos vacio")
+        if df["fuentes_utilizadas"].astype(str).isin(["", "No disponible"]).any():
+            add(messages, "ERROR", f"{filename} tiene fuentes_utilizadas vacio/no disponible")
+        if df["urls_fuentes"].astype(str).isin(["", "No disponible"]).any():
+            add(messages, "WARNING" if not strict_real else "ERROR", f"{filename} tiene urls_fuentes vacio/no disponible")
+        if df["estado_datos"].astype(str).str.contains("seed", case=False, na=False).any():
+            level = "ERROR" if strict_real and filename in IMPORTANT_ANALYTICS else "WARNING"
+            add(messages, level, f"{filename} esta basada en seeds")
+        if filename in IMPORTANT_ANALYTICS and df["apto_dashboard"].astype(str).ne("si").any():
+            level = "ERROR" if strict_real else "WARNING"
+            add(messages, level, f"{filename} no es apta para dashboard hoy")
+
+    hab = tables.get("fact_establecimiento.csv")
+    if strict_real and hab is not None and not (hab.get("id_fuente", pd.Series(dtype=str)).astype(str) == "F02").any():
+        add(messages, "ERROR", "F02 no aporta registros a fact_establecimiento; no hay monitor de habilitaciones recientes")
 
     errors = sum(1 for level, _ in messages if level == "ERROR")
     warnings = sum(1 for level, _ in messages if level == "WARNING")
@@ -117,4 +196,7 @@ def validate() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(validate())
+    parser = argparse.ArgumentParser(description="Valida modelo, analytics y trazabilidad.")
+    parser.add_argument("--strict-real", action="store_true", help="Falla si hay seeds o analytics no aptas para dashboard.")
+    args = parser.parse_args()
+    sys.exit(validate(strict_real=args.strict_real))

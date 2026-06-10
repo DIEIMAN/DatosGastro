@@ -1,7 +1,0 @@
-id_raw,id_fuente,nombre_original,tipo_original,direccion_original,barrio_original,comuna_original,dias_horarios_original,gestion_original,fecha_extraccion,calidad_dato,requiere_validacion,motivo_validacion,observaciones_raw
-M001,F03,FIAB 12,Feria itinerante,Medrano 1400 e/ El Salvador y Costa Rica,Palermo,14,Miércoles 8-14 h,Pública (DG Ferias),2026-06-09,alta,no,,"Rubros: frutihortícolas, pescadería, panadería, granja, fiambres, limpieza"
-M002,F03,FIAB 24,Feria itinerante,Ayacucho 700 e/ Viamonte y Córdoba,Balvanera,3,Lunes 8-14 h,Pública,2026-06-09,alta,no,,
-M003,F03,FIAB 34 (BA Market Parque Lezama),Feria itinerante,Brasil y Av. Paseo Colón,San Telmo,1,Sábados 10-19 h,Pública,2026-06-09,alta,no,,Asociada a BA Market en CSV oficial
-M004,F03,Sabe La Tierra - Plaza Congreso,Feria itinerante,Virrey Cevallos e H. Yrigoyen,Monserrat,1,Jueves 10-19 h,Mixta,2026-06-09,media,sí,Organización privada operando en circuito FIAB; validar convenio/estado,Organización privada operando en circuito FIAB
-M005,F08,Mercado de los Carruajes,Mercado gastronómico,Av. Leandro N. Alem 852,Retiro/San Nicolás,1,Dom-Mié 8:30-22; Jue-Sáb 8:30-00,Privada con apoyo GCBA,2026-06-09,media,sí,Dato web; validar estado actual y fuente oficial,"Abrió 15/02/2022, pre-apertura en Festival BA Capital Gastronómica"
-M006,F15,Mercado del Progreso,Mercado histórico,Av. Rivadavia 5430,Caballito,6,Lun-Vie 7:30-13 y 17-20; Sáb 7:30-14 y 17-20,Privada,2026-06-09,media,sí,Fuente privada; validar con fuente oficial,174 puestos internos + 17 locales a la calle; data de 1889

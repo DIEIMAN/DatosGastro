@@ -1,7 +1,0 @@
-id_raw,id_fuente,nombre_original,categoria_original,direccion_original,barrio_original,comuna_original,fecha_extraccion,calidad_dato,requiere_validacion,motivo_validacion,observaciones_raw
-E001,F01,1893,Restaurante,SCALABRINI ORTIZ 701,VILLA CRESPO,15,2026-06-09,media,sí,Registro turístico antiguo; requiere cruce con habilitaciones AGC,Registro RL-2017-25630894
-E002,F01,ALDO'S RESTORAN VINOTECA,Restaurante,MORENO 372,MONSERRAT,1,2026-06-09,media,sí,Registro turístico antiguo; requiere cruce con habilitaciones AGC,Registro RL-2018-18305233
-E003,F01,MIRAMAR,Bar Notable,SAN JUAN 1999,SAN CRISTOBAL,3,2026-06-09,media,sí,Registro turístico antiguo; validar vigencia,Registro RL-2019-33060098
-E004,F01,LA POESÍA,Bar Notable,CHILE 502,SAN TELMO,1,2026-06-09,media,sí,Mojibake en origen; validar vigencia,Nombre con mojibake en origen: LA POESA
-E005,F01,CAFE MARGOT,Bar Notable,BOEDO 857,BOEDO,5,2026-06-09,media,sí,Registro turístico antiguo; validar vigencia,Registro RL-2019-33093794
-E006,F01,MARICA FÉ,Bar Temático,HONDURAS 4096,PALERMO,14,2026-06-09,media,sí,Mojibake/categoría rota en origen; validar vigencia,Mojibake en origen: Bar Temtico

@@ -2,11 +2,11 @@
 
 Generado: 2026-06-10
 
-El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*` se tratan como seed/manuales salvo evidencia de dataset completo.
+El perfilado corre sobre los CSV disponibles en `data/raw/` y `data/seeds/`. `data/raw/` se reserva para datos reales; `data/seeds/` contiene fallback de desarrollo.
 
 ## raw_establecimientos_gastronomicos.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_establecimientos_gastronomicos.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_establecimientos_gastronomicos.csv`
 - Tamano: 1169 bytes
 - Encoding: utf-8
 - Separador: ','
@@ -21,7 +21,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_eventos_gastronomicos.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_eventos_gastronomicos.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_eventos_gastronomicos.csv`
 - Tamano: 1599 bytes
 - Encoding: utf-8
 - Separador: ','
@@ -36,7 +36,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_ferias_mercados.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_ferias_mercados.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_ferias_mercados.csv`
 - Tamano: 1582 bytes
 - Encoding: utf-8
 - Separador: ','
@@ -51,7 +51,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_fuentes_relevadas.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_fuentes_relevadas.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_fuentes_relevadas.csv`
 - Tamano: 4250 bytes
 - Encoding: utf-8
 - Separador: ','
@@ -66,7 +66,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_habilitaciones_aprobadas.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_habilitaciones_aprobadas.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_habilitaciones_aprobadas.csv`
 - Tamano: 221 bytes
 - Encoding: ascii
 - Separador: ','
@@ -81,7 +81,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_normativa_gastronomica.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_normativa_gastronomica.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_normativa_gastronomica.csv`
 - Tamano: 431 bytes
 - Encoding: utf-8
 - Separador: ','
@@ -96,7 +96,7 @@ El perfilado corre sobre los CSV disponibles en `data/raw/`. Los archivos `raw_*
 
 ## raw_programas_politicas.csv
 
-- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\raw\raw_programas_politicas.csv`
+- Ruta: `C:\proyectos\Gastronomia\DataGastro\data\seeds\raw_programas_politicas.csv`
 - Tamano: 2081 bytes
 - Encoding: utf-8
 - Separador: ','
