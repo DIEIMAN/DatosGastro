@@ -22,10 +22,14 @@ No se inventan datos ni URLs. Las paginas portal quedan documentadas, pero la de
 - `data/raw/`: CSV seed/manuales y futuros CSV reales descargados.
 - `data/processed/`: dimensiones y hechos normalizados.
 - `data/analytics/`: salidas agregadas para analisis/dashboard.
+- `data/archive/`: artefactos de datos historicos conservados, no usados por el pipeline.
 - `src/`: scripts del pipeline.
 - `sql/`: DDL, carga, queries y vistas.
 - `docs/`: criterios, trazabilidad, limitaciones y guia de ejecucion.
+- `docs/archive/`: documentacion heredada o versiones anteriores.
+- `docs/references/`: fuentes documentales de referencia.
 - `outputs/tablas_resumen/`: perfilado automatico de fuentes.
+- `scripts/compat/`: wrappers de compatibilidad; el punto de entrada canonico sigue siendo `src/`.
 
 ## Instalacion
 
