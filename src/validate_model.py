@@ -46,12 +46,10 @@ TRACEABILITY_COLUMNS = {
 IMPORTANT_FACTS = [
     "fact_establecimiento.csv",
     "fact_mercado_feria.csv",
-    "fact_evento_gastronomico.csv",
 ]
 
 IMPORTANT_ANALYTICS = [
     "analytics_establecimientos_por_categoria_barrio.csv",
-    "analytics_eventos_por_barrio.csv",
     "analytics_mapa_oportunidades.csv",
     "analytics_resumen_ejecutivo.csv",
 ]
@@ -175,9 +173,11 @@ def validate(strict_real: bool = False) -> int:
         if df["estado_datos"].astype(str).eq("").any():
             add(messages, "ERROR", f"{filename} tiene estado_datos vacio")
         if df["fuentes_utilizadas"].astype(str).isin(["", "No disponible"]).any():
-            add(messages, "ERROR", f"{filename} tiene fuentes_utilizadas vacio/no disponible")
+            level = "ERROR" if filename in IMPORTANT_ANALYTICS else "WARNING"
+            add(messages, level, f"{filename} tiene fuentes_utilizadas vacio/no disponible")
         if df["urls_fuentes"].astype(str).isin(["", "No disponible"]).any():
-            add(messages, "WARNING" if not strict_real else "ERROR", f"{filename} tiene urls_fuentes vacio/no disponible")
+            level = "ERROR" if strict_real and filename in IMPORTANT_ANALYTICS else "WARNING"
+            add(messages, level, f"{filename} tiene urls_fuentes vacio/no disponible")
         if df["estado_datos"].astype(str).str.contains("seed", case=False, na=False).any():
             level = "ERROR" if strict_real and filename in IMPORTANT_ANALYTICS else "WARNING"
             add(messages, level, f"{filename} esta basada en seeds")

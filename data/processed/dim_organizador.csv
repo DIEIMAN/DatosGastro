@@ -1,7 +1,3 @@
 id_organizador,nombre_organizador,tipo_organizador,sector,web,observaciones
 O000,No normalizado,No determinado,gastronomia,No disponible,Centinela para organizadores pendientes de normalizacion
-O001,AFADHYA,privado/mixto,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
-O002,APPYCE,privado/mixto,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
-O003,DG Desarrollo Gastronomico,publico,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
-O004,BA Capital Gastronomica,publico/mixto,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
 O999,Privado / mixto no normalizado,privado/mixto,gastronomia,No disponible,"Organizador detectado en texto, requiere normalizacion manual"

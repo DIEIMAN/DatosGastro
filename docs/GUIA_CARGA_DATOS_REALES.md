@@ -10,12 +10,26 @@ No inventar URLs ni fuentes. `data/raw/` es solo para archivos reales descargado
 
 2. F02 Habilitaciones Aprobadas AGC
    - Portal: `https://data.buenosaires.gob.ar/dataset/habilitaciones-aprobadas`
-   - Guardar como: `data/raw/f02_habilitaciones_aprobadas.csv`
-   - Si viene por anio, usar nombres como `data/raw/f02_habilitaciones_aprobadas_2025.csv`
+   - Guardar como:
+     - `data/raw/f02_habilitaciones_aprobadas_2015_2018.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2019.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2020.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2021.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2022.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2023.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2024.csv`
+     - `data/raw/f02_habilitaciones_aprobadas_2025.csv`
+   - No se exige 2026 en `--strict-real` porque no esta publicado.
 
 3. F03 Ferias y Mercados
    - Portal: `https://data.buenosaires.gob.ar/dataset/ferias-mercados`
    - Guardar como: `data/raw/f03_ferias_mercados.csv`
+   - Complementarios:
+     - `data/raw/f03_ferias.csv`
+     - `data/raw/f03_mercados.csv`
+     - `data/raw/f03_fiab.geojson`
+   - El GeoJSON es solo FIAB y no representa toda la capa F03.
+   - Si un archivo descarga con menos de 1 KB, no tratarlo como dataset valido sin revision manual.
 
 ## Escenario A: URLs directas en config
 

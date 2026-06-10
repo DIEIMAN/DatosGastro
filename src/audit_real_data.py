@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import date
 from pathlib import Path
+import csv
 
 import pandas as pd
 
@@ -13,10 +14,21 @@ TODAY = date.today().isoformat()
 def read_csv(path: Path) -> pd.DataFrame:
     if not path.exists() or path.stat().st_size == 0:
         return pd.DataFrame()
-    try:
-        return pd.read_csv(path, dtype=str, keep_default_na=False)
-    except Exception:
+    if path.suffix.lower() != ".csv":
         return pd.DataFrame()
+    try:
+        sample = path.read_text(encoding="utf-8-sig", errors="replace")[:8000]
+        sep = csv.Sniffer().sniff(sample, delimiters=",;\t|").delimiter
+    except Exception:
+        sep = None
+    for encoding in ("utf-8-sig", "utf-8", "latin-1", "cp1250", "cp1252"):
+        try:
+            if sep:
+                return pd.read_csv(path, dtype=str, keep_default_na=False, sep=sep, encoding=encoding)
+            return pd.read_csv(path, dtype=str, keep_default_na=False, sep=None, engine="python", encoding=encoding)
+        except Exception:
+            continue
+    return pd.DataFrame()
 
 
 def classify_file(path: Path, layer: str, df: pd.DataFrame) -> dict:
@@ -87,7 +99,7 @@ def collect_rows() -> list[dict]:
     ):
         if not folder.exists():
             continue
-        for path in sorted(folder.glob("*.csv")):
+        for path in sorted([item for item in folder.iterdir() if item.is_file() and item.suffix.lower() in {".csv", ".geojson"}]):
             rows.append(classify_file(path, layer, read_csv(path)))
     return rows
 

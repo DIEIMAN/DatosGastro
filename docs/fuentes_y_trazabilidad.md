@@ -6,9 +6,15 @@ El proyecto separa pagina portal, URL directa de descarga y datos efectivamente 
 
 | id | fuente | estado V2 |
 | --- | --- | --- |
-| F01 | Oferta y Establecimientos Gastronomicos | Falta URL directa oficial en `src/config.py` |
-| F02 | Habilitaciones Aprobadas AGC | Falta URL directa oficial o lista anual en `src/config.py` |
-| F03 | Ferias y Mercados | Falta URL directa oficial en `src/config.py` |
+| F01 | Oferta y Establecimientos Gastronomicos | URL directa CKAN y CDN registradas |
+| F02 | Habilitaciones Aprobadas AGC | Recursos 2015-2025 registrados; 2026 no publicado/no requerido |
+| F03 | Ferias y Mercados | CSV combinado y recursos complementarios registrados |
+
+Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.py`.
+
+- F01: CKAN + CDN alternativo.
+- F02: recursos 2015-2018 y anuales 2019-2025. F02 2026 no esta publicado y no se exige.
+- F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El GeoJSON es solo FIAB.
 
 Las URLs portal se conservan en `data/raw/raw_fuentes_relevadas.csv` y en `src/config.py`. No se usan como descarga automatica si no apuntan a un archivo directo.
 

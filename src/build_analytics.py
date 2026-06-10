@@ -92,7 +92,6 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
     errors = []
     important = {
         "analytics_establecimientos_por_categoria_barrio.csv",
-        "analytics_eventos_por_barrio.csv",
         "analytics_mapa_oportunidades.csv",
         "analytics_resumen_ejecutivo.csv",
     }
@@ -125,7 +124,31 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
 
 def eventos_por_barrio(eventos: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     if eventos.empty:
-        return pd.DataFrame(columns=["barrio", "comuna", "cantidad_eventos"])
+        df = pd.DataFrame(
+            [
+                {
+                    "barrio": "Sin datos reales",
+                    "comuna": "Sin datos reales",
+                    "cantidad_eventos": 0,
+                    "cantidad_eventos_gratuitos": 0,
+                    "cantidad_eventos_con_validacion": 0,
+                    "tipos_eventos_principales": "Sin fuente real de eventos",
+                }
+            ]
+        )
+        return attach_metadata(
+            df,
+            {
+                "estado_datos": "datos pendientes de validacion",
+                "fuentes_utilizadas": "No disponible",
+                "urls_fuentes": "No disponible",
+                "fecha_consulta_min": "No disponible",
+                "fecha_consulta_max": "No disponible",
+                "nota_metodologica": "No se construyo desde seeds en modo estricto; falta fuente real de eventos.",
+                "limitaciones": "No hay dataset real de eventos gastronomicos cargado.",
+                "apto_dashboard": "no",
+            },
+        )
     merged = eventos.merge(ubicaciones[["id_ubicacion", "barrio", "comuna"]], on="id_ubicacion", how="left")
     grouped = (
         merged.groupby(["barrio", "comuna"], dropna=False)
@@ -176,7 +199,19 @@ def establecimientos_por_categoria_barrio(est: pd.DataFrame, ubicaciones: pd.Dat
 
 def programas_por_anio(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     if programas.empty:
-        return pd.DataFrame(columns=["anio", "cantidad_programas"])
+        return attach_metadata(
+            pd.DataFrame([{"anio": "Sin datos reales", "cantidad_programas": 0, "programas": "Sin fuente real de programas"}]),
+            {
+                "estado_datos": "datos pendientes de validacion",
+                "fuentes_utilizadas": "No disponible",
+                "urls_fuentes": "No disponible",
+                "fecha_consulta_min": "No disponible",
+                "fecha_consulta_max": "No disponible",
+                "nota_metodologica": "No se construyo desde seeds en modo estricto; falta fuente real de programas.",
+                "limitaciones": "No hay dataset real estructurado de programas y politicas.",
+                "apto_dashboard": "no",
+            },
+        )
     work = programas.copy()
     work["anio"] = work["fecha_inicio"].str.extract(r"(\d{4})", expand=False).fillna("No disponible")
     grouped = (

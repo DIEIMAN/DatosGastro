@@ -10,9 +10,9 @@ Ordena fuentes, establecimientos, eventos, programas, ferias y mercados en un mo
 
 ## Fuentes
 
-- F01 Oferta y Establecimientos Gastronomicos: pendiente de URL directa en `src/config.py`.
-- F02 Habilitaciones Aprobadas AGC: pendiente de URL directa en `src/config.py`.
-- F03 Ferias y Mercados: pendiente de URL directa en `src/config.py`.
+- F01 Oferta y Establecimientos Gastronomicos: URL directa CKAN y CDN registradas en `src/config.py`.
+- F02 Habilitaciones Aprobadas AGC: recursos reales 2015-2025 registrados en `src/config.py`; 2026 no esta publicado y no se exige en modo estricto.
+- F03 Ferias y Mercados: CSV combinado, CSV complementarios y GeoJSON FIAB registrados en `src/config.py`.
 - Otras fuentes relevadas en `data/seeds/raw_fuentes_relevadas.csv`.
 
 No se inventan datos ni URLs. Las paginas portal quedan documentadas, pero la descarga automatica requiere enlaces directos a CSV/archivo.
@@ -87,4 +87,4 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 
 ## Proximos pasos
 
-Completar URLs directas oficiales en `src/config.py`, descargar fuentes reales, revisar `docs/perfilado_fuentes.md`, ajustar mapeos de columnas reales y volver a correr validacion.
+Cargar o refrescar fuentes reales con `python src/download_sources.py`, revisar `docs/perfilado_fuentes.md`, y volver a correr el pipeline estricto. Proximo foco: fuente real estructurada de eventos y programas si se quieren dashboards de esas vistas.

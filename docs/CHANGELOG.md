@@ -3,6 +3,8 @@
 ## 2026-06-10 - V3 control de datos reales y dashboard
 
 - Se separaron seeds/manuales en `data/seeds/` y se reservo `data/raw/` para datos reales.
+- Se incorporaron URLs reales verificadas para F01, F02 2015-2025 y F03.
+- Se descargo y proceso F01/F02/F03 reales en modo estricto.
 - Se agrego modo `--strict-real` a `build_model.py`, `build_analytics.py` y `validate_model.py`.
 - Se reforzo trazabilidad obligatoria en analytics: fuentes, URLs, fechas, metodologia, limitaciones y `apto_dashboard`.
 - Se agrego auditoria real-vs-seed en `src/audit_real_data.py`.

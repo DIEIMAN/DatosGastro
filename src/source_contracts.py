@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
@@ -28,7 +29,7 @@ SOURCE_COLUMN_CONTRACTS = {
         "id_fuente": ["id_fuente", "fuente"],
         "nombre_original": ["nombre_original", "nombre", "establecimiento", "nombre_fantasia", "razon_social"],
         "categoria_original": ["categoria_original", "categoria", "rubro", "actividad", "tipo", "clase"],
-        "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "calle", "ubicacion"],
+        "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "direccion_completa", "calle", "ubicacion"],
         "barrio_original": ["barrio_original", "barrio"],
         "comuna_original": ["comuna_original", "comuna"],
         "fecha_extraccion": ["fecha_extraccion", "fecha_consulta", "fecha_actualizacion"],
@@ -43,7 +44,7 @@ SOURCE_COLUMN_CONTRACTS = {
         "anio": ["anio", "ano", "year"],
         "fecha_habilitacion": ["fecha_habilitacion", "fecha", "fecha_aprobacion", "fecha_inicio", "fecha_disposicion", "fecha_acto"],
         "rubro_original": ["rubro_original", "rubro", "actividad", "descripcion_rubro", "tipo_actividad", "descripcion", "actividad_comercial"],
-        "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "calle", "ubicacion"],
+        "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "calles", "calle", "ubicacion"],
         "superficie": ["superficie", "superficie_m2", "metros_cuadrados"],
         "es_gastronomico": ["es_gastronomico"],
         "categoria_gastronomica_inferida": ["categoria_gastronomica_inferida", "categoria"],
@@ -73,13 +74,13 @@ SOURCE_COLUMN_CONTRACTS = {
 
 REQUIRED_COLUMNS = {
     "F01": ["nombre_original", "categoria_original", "direccion_original", "barrio_original"],
-    "F02": ["rubro_original", "direccion_original", "fecha_habilitacion"],
-    "F03": ["nombre_original", "tipo_original", "direccion_original", "barrio_original"],
+    "F02": ["rubro_original", "direccion_original"],
+    "F03": ["nombre_original", "tipo_original"],
 }
 
 
 def _column_key(value: str) -> str:
-    return normalize_text(value, case="lower", remove_accents=True).replace(" ", "_")
+    return re.sub(r"[^a-z0-9]+", "", normalize_text(value, case="lower", remove_accents=True))
 
 
 def map_source_columns(df: pd.DataFrame, source_id: str, origin: str, path: Path) -> tuple[pd.DataFrame, SourceLoadResult]:

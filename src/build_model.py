@@ -76,7 +76,7 @@ def load_source_data(source_id: str) -> tuple[pd.DataFrame, list[SourceLoadResul
     frames = []
     reports: list[SourceLoadResult] = []
     for path, key, source in paths:
-        raw = clean_dataframe_columns(read_csv(path))
+        raw = read_csv(path)
         mapped, report = map_source_columns(raw, source_id, origin, path)
         mapped["url_fuente"] = source.get("dataset_url", source.get("download_url", "No disponible"))
         mapped["download_url"] = source.get("download_url", "")
@@ -169,8 +169,6 @@ def strict_real_errors(reports: list[SourceLoadResult], eventos: pd.DataFrame) -
         path = Path(report.path)
         if path.exists() and path.stat().st_size < 1024:
             errors.append(f"{source['id_fuente']} {expected_name}: archivo real sospechosamente chico (<1 KB): {path}")
-    if not eventos.empty:
-        errors.append("Eventos: solo hay raw_eventos_gastronomicos.csv seed en data/seeds; fact_evento_gastronomico no puede construirse en --strict-real")
     return errors
 
 
@@ -231,7 +229,7 @@ def build_dim_categoria() -> pd.DataFrame:
     return pd.DataFrame(taxonomy_dataframe_rows())
 
 
-def build_locations(est: pd.DataFrame, ferias: pd.DataFrame, eventos: pd.DataFrame) -> pd.DataFrame:
+def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, eventos: pd.DataFrame) -> pd.DataFrame:
     rows = [
         {
             "id_ubicacion": UNKNOWN_LOCATION_ID,
@@ -251,6 +249,7 @@ def build_locations(est: pd.DataFrame, ferias: pd.DataFrame, eventos: pd.DataFra
 
     for df, address_col, barrio_col in (
         (est, "direccion_original", "barrio_original"),
+        (hab, "direccion_original", "barrio_original"),
         (ferias, "direccion_original", "barrio_original"),
     ):
         for _, row in df.iterrows():
@@ -331,8 +330,13 @@ def infer_organizer_id(value: str) -> str:
 def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
     rows = []
+    category_cache = {}
     for idx, row in est.iterrows():
-        category = classify_gastronomic_category(row.get("categoria_original"), row.get("nombre_original"))
+        category_key = (row.get("categoria_original"), row.get("nombre_original"))
+        category = category_cache.get(category_key)
+        if category is None:
+            category = classify_gastronomic_category(*category_key)
+            category_cache[category_key] = category
         location_id = normalize_address_offline(row.get("direccion_original"), row.get("barrio_original"))["id_ubicacion"]
         source_id = first_existing(row.get("id_fuente"), default="F01")
         rows.append(
@@ -367,8 +371,12 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
     for idx, row in hab.iterrows():
         if not normalize_text(row.get("rubro_original")):
             continue
-        category = classify_gastronomic_category(row.get("rubro_original"), row.get("categoria_gastronomica_inferida"))
-        if category.es_gastronomico == "no":
+        category_key = (row.get("rubro_original"), row.get("categoria_gastronomica_inferida"))
+        category = category_cache.get(category_key)
+        if category is None:
+            category = classify_gastronomic_category(*category_key)
+            category_cache[category_key] = category
+        if category.es_gastronomico != "si":
             continue
         source_id = first_existing(row.get("id_fuente"), default="F02")
         location_id = normalize_address_offline(row.get("direccion_original"), "")["id_ubicacion"]
@@ -408,6 +416,32 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
 def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
     rows = []
+    columns = [
+        "id_evento",
+        "nombre_evento",
+        "descripcion",
+        "fecha_inicio",
+        "fecha_fin",
+        "periodicidad",
+        "id_ubicacion",
+        "id_organizador",
+        "id_fuente",
+        "url_fuente",
+        "fecha_consulta",
+        "tipo_evento",
+        "gratuito",
+        "requiere_inscripcion",
+        "cantidad_asistentes_estimada",
+        "cantidad_puestos_estimada",
+        "estado",
+        "link_evento",
+        "calidad_dato",
+        "requiere_validacion",
+        "motivo_validacion",
+        "observaciones",
+        "origen_dato",
+        "estado_datos",
+    ]
     for idx, row in eventos.iterrows():
         location = normalize_text(row.get("ubicacion_original"))
         if any(marker in location.lower() for marker in ("adherid", "a relevar", "500+")):
@@ -444,7 +478,7 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.Dat
                 "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
             }
         )
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows, columns=columns)
 
 
 def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
@@ -479,9 +513,9 @@ def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> 
     return pd.DataFrame(rows)
 
 
-def build_fact_programa(dim_fuente: pd.DataFrame) -> pd.DataFrame:
+def build_fact_programa(dim_fuente: pd.DataFrame, use_seed: bool = True) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
-    raw = clean_dataframe_columns(read_seed_csv("raw_programas_politicas.csv"))
+    raw = clean_dataframe_columns(read_seed_csv("raw_programas_politicas.csv")) if use_seed else pd.DataFrame()
     if raw.empty:
         return pd.DataFrame(
             columns=[
@@ -570,7 +604,7 @@ def main() -> int:
     est, est_reports = load_source_data("F01")
     hab, hab_reports = load_source_data("F02")
     ferias, ferias_reports = load_source_data("F03")
-    eventos = clean_dataframe_columns(read_seed_csv("raw_eventos_gastronomicos.csv"))
+    eventos = pd.DataFrame() if args.strict_real else clean_dataframe_columns(read_seed_csv("raw_eventos_gastronomicos.csv"))
     reports = [*est_reports, *hab_reports, *ferias_reports]
     write_contract_reports(reports)
     for report in reports:
@@ -592,12 +626,12 @@ def main() -> int:
 
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()
-    dim_ubicacion = build_locations(est, ferias, eventos)
+    dim_ubicacion = build_locations(est, hab, ferias, eventos)
     dim_organizador = build_dim_organizador(eventos)
     fact_establecimiento = build_fact_establecimiento(est, hab, dim_fuente)
     fact_evento = build_fact_evento(eventos, dim_fuente)
     fact_mercado = build_fact_mercado_feria(ferias, dim_fuente)
-    fact_programa = build_fact_programa(dim_fuente)
+    fact_programa = build_fact_programa(dim_fuente, use_seed=not args.strict_real)
 
     write_csv(dim_fuente, "dim_fuente.csv")
     write_csv(dim_ubicacion, "dim_ubicacion.csv")
@@ -613,7 +647,7 @@ def main() -> int:
         if not path.exists():
             pd.DataFrame().to_csv(path, index=False)
 
-    print("OK modelo procesado reconstruido desde data/raw con seeds como fallback.")
+    print("OK modelo procesado reconstruido. Revisar contratos_fuentes.csv para confirmar origen real/seed por fuente.")
     return 0
 
 

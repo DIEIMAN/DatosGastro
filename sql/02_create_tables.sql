@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS fact_establecimiento (
   id_ubicacion text REFERENCES dim_ubicacion(id_ubicacion),
   id_fuente text REFERENCES dim_fuente(id_fuente),
   url_fuente text,
+  fecha_consulta text,
   estado text,
   web text,
   redes text,
@@ -65,7 +66,10 @@ CREATE TABLE IF NOT EXISTS fact_establecimiento (
   categoria_gastronomica_inferida text,
   confianza_categoria text,
   motivo_categoria text,
-  origen_dato text
+  origen_dato text,
+  estado_datos text,
+  anio_fuente text,
+  periodo_fuente text
 );
 
 CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
@@ -79,6 +83,7 @@ CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
   id_organizador text REFERENCES dim_organizador(id_organizador),
   id_fuente text REFERENCES dim_fuente(id_fuente),
   url_fuente text,
+  fecha_consulta text,
   tipo_evento text,
   gratuito text,
   requiere_inscripcion text,
@@ -90,7 +95,8 @@ CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
   requiere_validacion text,
   motivo_validacion text,
   observaciones text,
-  origen_dato text
+  origen_dato text,
+  estado_datos text
 );
 
 CREATE TABLE IF NOT EXISTS fact_programa_politica (
@@ -108,12 +114,14 @@ CREATE TABLE IF NOT EXISTS fact_programa_politica (
   metricas_publicadas text,
   id_fuente text REFERENCES dim_fuente(id_fuente),
   url_fuente text,
+  fecha_consulta text,
   link text,
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
   observaciones text,
-  origen_dato text
+  origen_dato text,
+  estado_datos text
 );
 
 CREATE TABLE IF NOT EXISTS fact_mercado_feria (
@@ -129,12 +137,14 @@ CREATE TABLE IF NOT EXISTS fact_mercado_feria (
   estado text,
   id_fuente text REFERENCES dim_fuente(id_fuente),
   url_fuente text,
+  fecha_consulta text,
   link text,
   calidad_dato text,
   requiere_validacion text,
   motivo_validacion text,
   observaciones text,
-  origen_dato text
+  origen_dato text,
+  estado_datos text
 );
 
 CREATE TABLE IF NOT EXISTS puente_evento_categoria (

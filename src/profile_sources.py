@@ -99,7 +99,14 @@ def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
     suspected_mojibake = int(sample.astype(str).map(has_suspect_encoding).sum().sum()) if not df.empty else 0
     geo_columns = _matching_columns(df.columns, GEO_HINTS)
     temporal_columns = _matching_columns(df.columns, DATE_HINTS)
-    dataset_kind = "seed/manual" if path.name.startswith("raw_") or len(df) < 1000 else "dataset completo probable"
+    if layer == "seed":
+        dataset_kind = "seed/manual"
+    elif size_bytes < 1024:
+        dataset_kind = "raw real sospechoso por tamano"
+    elif len(df) < 1000:
+        dataset_kind = "dataset real pequeno"
+    else:
+        dataset_kind = "dataset completo probable"
 
     recommendation = "usar como seed/fallback"
     if dataset_kind == "dataset completo probable":
