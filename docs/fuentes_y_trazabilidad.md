@@ -9,12 +9,16 @@ El proyecto separa pagina portal, URL directa de descarga y datos efectivamente 
 | F01 | Oferta y Establecimientos Gastronomicos | `fact_establecimiento.csv` | Oferta/establecimientos gastronomicos registrados |
 | F02 | Habilitaciones Aprobadas AGC | `fact_habilitacion_gastronomica.csv` | Habilitaciones aprobadas inferidas como gastronomicas |
 | F03 | Ferias y Mercados | `fact_mercado_feria.csv` | Ferias y mercados |
+| F04 | Eventos gastronomicos semiestructurados | `fact_evento_gastronomico.csv` | Relevamiento manual trazable de eventos/activaciones |
+| F05 | Programas y politicas gastronomicas semiestructuradas | `fact_programa_politica.csv` | Catalogo manual trazable de politicas, normativa e instrumentos |
 
 Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.py`.
 
 - F01: CKAN + CDN alternativo.
 - F02: recursos 2015-2018 y anuales 2019-2025. F02 2026 no esta publicado y no se exige.
 - F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El GeoJSON es solo FIAB.
+- F04: CSV manual trazable con fuente por fila. No es dataset oficial estructurado.
+- F05: CSV manual trazable con fuente por fila. No es dataset oficial estructurado ni serie temporal de impacto.
 
 Las URLs portal se conservan en `data/raw/raw_fuentes_relevadas.csv` y en `src/config.py`. No se usan como descarga automatica si no apuntan a un archivo directo.
 
@@ -30,6 +34,15 @@ Regla de comunicacion:
 - Mostrar "4.388 registros de ferias/mercados F03".
 
 Cada metrica debe incluir fuente, URL, fecha de consulta, metodologia y limitaciones.
+
+## F04/F05 semiestructurados
+
+F04 y F05 no provienen de datasets oficiales estructurados. Son relevamientos manuales trazables. No representan el universo completo de eventos ni programas gastronomicos de CABA. Las metricas fuertes solo consideran filas con `apto_dashboard = si`.
+
+Las filas con fechas incompletas, fuentes privadas sin vinculo confirmado, montos desactualizados o validaciones pendientes se conservan como insumo cualitativo y no deben usarse para indicadores fuertes.
+
+- F04 apto fuerte: `apto_dashboard = si`, `requiere_validacion = no`, fecha completa y vinculo GCBA no ambiguo.
+- F05 apto dashboard: fichas/catalogo con `apto_dashboard = si` y vigencia clara; no usar como serie temporal de impacto.
 
 ## Campos de trazabilidad
 

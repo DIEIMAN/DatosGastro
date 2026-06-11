@@ -19,16 +19,24 @@ EXPECTED_TABLES = {
     "fact_evento_gastronomico.csv": "id_evento",
     "fact_programa_politica.csv": "id_programa",
     "fact_mercado_feria.csv": "id_mercado_feria",
+    "puente_evento_programa.csv": "",
 }
 
 EXPECTED_ANALYTICS = [
     "analytics_eventos_por_barrio.csv",
+    "analytics_eventos_por_tipo.csv",
+    "analytics_eventos_por_anio.csv",
+    "analytics_eventos_cualitativos.csv",
     "analytics_establecimientos_por_categoria_barrio.csv",
     "analytics_habilitaciones_por_anio.csv",
     "analytics_habilitaciones_por_barrio.csv",
     "analytics_habilitaciones_por_categoria.csv",
     "analytics_habilitaciones_recientes.csv",
     "analytics_programas_por_anio.csv",
+    "analytics_programas_por_tipo.csv",
+    "analytics_programas_por_estado.csv",
+    "analytics_programas_catalogo.csv",
+    "analytics_programas_cualitativos.csv",
     "analytics_mapa_oportunidades.csv",
     "analytics_resumen_ejecutivo.csv",
 ]
@@ -36,6 +44,8 @@ EXPECTED_ANALYTICS = [
 FK_CHECKS = [
     ("fact_evento_gastronomico.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
     ("fact_evento_gastronomico.csv", "id_organizador", "dim_organizador.csv", "id_organizador"),
+    ("puente_evento_programa.csv", "id_evento", "fact_evento_gastronomico.csv", "id_evento"),
+    ("puente_evento_programa.csv", "id_programa", "fact_programa_politica.csv", "id_programa"),
     ("fact_establecimiento.csv", "id_categoria", "dim_categoria_gastronomica.csv", "id_categoria"),
     ("fact_establecimiento.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
     ("fact_habilitacion_gastronomica.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
@@ -45,8 +55,8 @@ FK_CHECKS = [
 TRACEABILITY_COLUMNS = {
     "fact_establecimiento.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_habilitacion_gastronomica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "periodo_fuente", "anio_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
-    "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
-    "fact_programa_politica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "fecha_consulta", "tipo_vinculo_gcba", "apto_dashboard", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_programa_politica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "tipo_programa", "estado", "apto_dashboard", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_mercado_feria.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
 }
 
@@ -62,6 +72,12 @@ IMPORTANT_ANALYTICS = [
     "analytics_habilitaciones_por_barrio.csv",
     "analytics_habilitaciones_por_categoria.csv",
     "analytics_habilitaciones_recientes.csv",
+    "analytics_eventos_por_barrio.csv",
+    "analytics_eventos_por_tipo.csv",
+    "analytics_eventos_por_anio.csv",
+    "analytics_programas_por_tipo.csv",
+    "analytics_programas_por_estado.csv",
+    "analytics_programas_catalogo.csv",
     "analytics_mapa_oportunidades.csv",
     "analytics_resumen_ejecutivo.csv",
 ]
@@ -115,6 +131,8 @@ def validate(strict_real: bool = False) -> int:
         df = read_csv(path)
         tables[filename] = df
         add(messages, "OK", f"existe {filename} ({len(df)} filas)")
+        if not pk:
+            continue
         if pk not in df.columns:
             add(messages, "ERROR", f"{filename} no tiene PK {pk}")
             continue
@@ -208,6 +226,53 @@ def validate(strict_real: bool = False) -> int:
         for column in ("descripcion_rubro_original", "categoria_gastronomica_inferida", "confianza_categoria", "motivo_categoria"):
             if column not in hab.columns:
                 add(messages, "ERROR", f"fact_habilitacion_gastronomica no tiene {column}")
+
+    eventos = tables.get("fact_evento_gastronomico.csv")
+    if strict_real and eventos is not None:
+        if eventos.empty:
+            add(messages, "ERROR", "fact_evento_gastronomico esta vacia; F04 no se integro")
+        elif not (eventos.get("id_fuente", pd.Series(dtype=str)).astype(str) == "F04").all():
+            add(messages, "ERROR", "fact_evento_gastronomico debe contener solo registros F04 en esta integracion")
+        for column in ("url_fuente", "apto_dashboard", "tipo_vinculo_gcba"):
+            if column not in eventos.columns:
+                add(messages, "ERROR", f"fact_evento_gastronomico no tiene {column}")
+            elif eventos[column].astype(str).isin(["", "No disponible"]).any():
+                add(messages, "ERROR", f"fact_evento_gastronomico tiene {column} vacio/no disponible")
+        if "fecha_completa" in eventos.columns and "apto_dashboard" in eventos.columns and "requiere_validacion" in eventos.columns:
+            bad_dates = eventos[
+                (eventos["fecha_completa"].astype(str) != "si")
+                & (eventos["apto_dashboard"].astype(str) == "si")
+                & (eventos["requiere_validacion"].astype(str) != "si")
+            ]
+            if not bad_dates.empty:
+                add(messages, "ERROR", f"{len(bad_dates)} eventos F04 con fecha incompleta quedaron aptos para metrica fuerte")
+        if {"tipo_organizador", "tipo_vinculo_gcba", "apto_dashboard"}.issubset(eventos.columns):
+            private_only_diffusion = eventos[
+                eventos["tipo_organizador"].astype(str).str.contains("Privado", case=False, na=False)
+                & eventos["tipo_vinculo_gcba"].astype(str).str.contains("Difusion oficial|Requiere validacion", case=False, na=False)
+                & (eventos["apto_dashboard"].astype(str) == "si")
+            ]
+            if not private_only_diffusion.empty:
+                add(messages, "ERROR", f"{len(private_only_diffusion)} eventos privados sin vinculo GCBA confirmado quedaron aptos")
+
+    programas = tables.get("fact_programa_politica.csv")
+    if strict_real and programas is not None:
+        if programas.empty:
+            add(messages, "ERROR", "fact_programa_politica esta vacia; F05 no se integro")
+        elif not (programas.get("id_fuente", pd.Series(dtype=str)).astype(str) == "F05").all():
+            add(messages, "ERROR", "fact_programa_politica debe contener solo registros F05 en esta integracion")
+        for column in ("url_fuente", "apto_dashboard", "tipo_programa", "estado"):
+            if column not in programas.columns:
+                add(messages, "ERROR", f"fact_programa_politica no tiene {column}")
+            elif programas[column].astype(str).isin(["", "No disponible"]).any():
+                add(messages, "ERROR", f"fact_programa_politica tiene {column} vacio/no disponible")
+        if "vigencia_clara" in programas.columns and "apto_dashboard" in programas.columns:
+            bad_vigencia = programas[
+                (programas["vigencia_clara"].astype(str) != "si")
+                & (programas["apto_dashboard"].astype(str) == "si")
+            ]
+            if not bad_vigencia.empty:
+                add(messages, "ERROR", f"{len(bad_vigencia)} programas F05 sin vigencia clara quedaron aptos")
 
     errors = sum(1 for level, _ in messages if level == "ERROR")
     warnings = sum(1 for level, _ in messages if level == "WARNING")

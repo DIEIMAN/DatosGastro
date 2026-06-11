@@ -1,6 +1,6 @@
 # Auditoria de datos reales vs seed
 
-Generado: 2026-06-10
+Generado: 2026-06-11
 
 Regla V3: ninguna salida de dashboard debe presentarse como dato real si deriva de seeds/manuales.
 Regla conceptual: F01 oferta registrada, F02 habilitaciones aprobadas y F03 ferias/mercados se comunican por separado.
@@ -153,7 +153,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### f05_programas_politicas_gastronomicas.csv
 
-- Filas x columnas: 9 x 27
+- Filas x columnas: 9 x 28
 - Origen detectado: dataset real probable
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -257,7 +257,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### dim_organizador.csv
 
-- Filas x columnas: 2 x 6
+- Filas x columnas: 15 x 6
 - Origen detectado: modelo/dimension
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -267,7 +267,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### dim_ubicacion.csv
 
-- Filas x columnas: 27602 x 12
+- Filas x columnas: 27620 x 12
 - Origen detectado: modelo/dimension
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -287,11 +287,11 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_evento_gastronomico.csv
 
-- Filas x columnas: 0 x 24
-- Origen detectado: modelo/dimension
-- Apto dashboard: no
-- Motivo: archivo vacio o sin filas
-- Fuentes: No disponible
+- Filas x columnas: 29 x 42
+- Origen detectado: relevamiento_manual_trazable
+- Apto dashboard: requiere_validacion
+- Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
+- Fuentes: F04
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
 
@@ -317,11 +317,11 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_programa_politica.csv
 
-- Filas x columnas: 0 x 22
-- Origen detectado: modelo/dimension
-- Apto dashboard: no
-- Motivo: archivo vacio o sin filas
-- Fuentes: No disponible
+- Filas x columnas: 9 x 35
+- Origen detectado: relevamiento_manual_trazable
+- Apto dashboard: requiere_validacion
+- Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
+- Fuentes: F05
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
 
@@ -341,6 +341,16 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 - Origen detectado: modelo/dimension
 - Apto dashboard: no
 - Motivo: archivo vacio o sin filas
+- Fuentes: No disponible
+- Riesgo de decision: alto
+- Recomendacion: cargar fuente real o validar cobertura antes de usar
+
+### puente_evento_programa.csv
+
+- Filas x columnas: 10 x 4
+- Origen detectado: modelo/dimension
+- Apto dashboard: requiere_validacion
+- Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
 - Fuentes: No disponible
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
@@ -367,15 +377,45 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 - Riesgo de decision: bajo/normal
 - Recomendacion: puede usarse citando fuentes y fecha
 
-### analytics_eventos_por_barrio.csv
+### analytics_eventos_cualitativos.csv
 
-- Filas x columnas: 1 x 14
-- Origen detectado: datos pendientes de validacion
+- Filas x columnas: 16 x 17
+- Origen detectado: datos reales semiestructurados
 - Apto dashboard: no
 - Motivo: analytics no apta o basada en seed/parcial
-- Fuentes: No disponible
+- Fuentes: F04
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
+
+### analytics_eventos_por_anio.csv
+
+- Filas x columnas: 6 x 10
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F04
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
+
+### analytics_eventos_por_barrio.csv
+
+- Filas x columnas: 10 x 14
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F04
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
+
+### analytics_eventos_por_tipo.csv
+
+- Filas x columnas: 5 x 10
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F04
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
 
 ### analytics_habilitaciones_por_anio.csv
 
@@ -423,19 +463,59 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics
-- Fuentes: F01 | F02 | F03
+- Fuentes: F01 | F02 | F03 | F04
 - Riesgo de decision: bajo/normal
 - Recomendacion: puede usarse citando fuentes y fecha
 
-### analytics_programas_por_anio.csv
+### analytics_programas_catalogo.csv
 
-- Filas x columnas: 1 x 11
-- Origen detectado: datos pendientes de validacion
+- Filas x columnas: 4 x 17
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F05
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
+
+### analytics_programas_cualitativos.csv
+
+- Filas x columnas: 5 x 16
+- Origen detectado: datos reales semiestructurados
 - Apto dashboard: no
 - Motivo: analytics no apta o basada en seed/parcial
-- Fuentes: No disponible
+- Fuentes: F05
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
+
+### analytics_programas_por_anio.csv
+
+- Filas x columnas: 3 x 11
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F05
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
+
+### analytics_programas_por_estado.csv
+
+- Filas x columnas: 3 x 10
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F05
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
+
+### analytics_programas_por_tipo.csv
+
+- Filas x columnas: 4 x 10
+- Origen detectado: datos reales semiestructurados
+- Apto dashboard: si
+- Motivo: apto_dashboard provisto por analytics
+- Fuentes: F05
+- Riesgo de decision: bajo/normal
+- Recomendacion: puede usarse citando fuentes y fecha
 
 ### analytics_resumen_ejecutivo.csv
 
@@ -443,12 +523,12 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics
-- Fuentes: F01 | F02 | F03
+- Fuentes: F01 | F02 | F03 | F04 | F05
 - Riesgo de decision: bajo/normal
 - Recomendacion: puede usarse citando fuentes y fecha
 
 ## Resumen dashboard
 
-- Apto hoy: analytics_establecimientos_por_categoria_barrio.csv, analytics_habilitaciones_por_anio.csv, analytics_habilitaciones_por_barrio.csv, analytics_habilitaciones_por_categoria.csv, analytics_habilitaciones_recientes.csv, analytics_mapa_oportunidades.csv, analytics_resumen_ejecutivo.csv.
-- No apto hoy: analytics_eventos_por_barrio.csv, analytics_programas_por_anio.csv.
+- Apto hoy: analytics_establecimientos_por_categoria_barrio.csv, analytics_eventos_por_anio.csv, analytics_eventos_por_barrio.csv, analytics_eventos_por_tipo.csv, analytics_habilitaciones_por_anio.csv, analytics_habilitaciones_por_barrio.csv, analytics_habilitaciones_por_categoria.csv, analytics_habilitaciones_recientes.csv, analytics_mapa_oportunidades.csv, analytics_programas_catalogo.csv, analytics_programas_por_anio.csv, analytics_programas_por_estado.csv, analytics_programas_por_tipo.csv, analytics_resumen_ejecutivo.csv.
+- No apto hoy: analytics_eventos_cualitativos.csv, analytics_programas_cualitativos.csv.
 - Advertencia obligatoria: no sumar F01 y F02 como establecimientos gastronomicos.

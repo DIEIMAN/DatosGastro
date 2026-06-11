@@ -24,7 +24,9 @@ def write_analytics(df: pd.DataFrame, filename: str) -> None:
 def data_status(*frames: pd.DataFrame) -> str:
     values = []
     for frame in frames:
-        if "origen_dato" in frame.columns:
+        if "estado_datos" in frame.columns:
+            values.extend(frame["estado_datos"].dropna().astype(str).tolist())
+        elif "origen_dato" in frame.columns:
             values.extend(frame["origen_dato"].dropna().astype(str).tolist())
     if not values:
         return "datos pendientes de validacion"
@@ -32,6 +34,8 @@ def data_status(*frames: pd.DataFrame) -> str:
         return "datos seed"
     if any("datos reales" in value for value in values) and any(value == "datos seed" for value in values):
         return "datos reales parciales"
+    if all("datos reales semiestructurados" in value for value in values):
+        return "datos reales semiestructurados"
     if all("datos reales" in value for value in values):
         return "datos reales"
     return "datos pendientes de validacion"
@@ -65,7 +69,7 @@ def traceability_metadata(*frames: pd.DataFrame, method: str, limitations: str, 
         apto = "no"
     elif status == "datos reales parciales":
         apto = "no"
-    elif status == "datos reales" and has_urls:
+    elif status in {"datos reales", "datos reales semiestructurados"} and has_urls:
         apto = "si"
     else:
         apto = "no"
@@ -89,6 +93,42 @@ def attach_metadata(df: pd.DataFrame, metadata: dict) -> pd.DataFrame:
     return result
 
 
+def strong_events(eventos: pd.DataFrame) -> pd.DataFrame:
+    if eventos.empty:
+        return eventos
+    result = eventos[
+        (eventos.get("apto_dashboard", "").astype(str) == "si")
+        & (eventos.get("requiere_validacion", "").astype(str) != "si")
+        & (eventos.get("fecha_completa", "").astype(str) == "si")
+    ].copy()
+    if "tipo_vinculo_gcba" in result.columns:
+        result = result[~result["tipo_vinculo_gcba"].astype(str).str.contains("Difusion oficial|Requiere validacion", case=False, na=False)]
+    return result
+
+
+def qualitative_events(eventos: pd.DataFrame) -> pd.DataFrame:
+    if eventos.empty:
+        return eventos
+    strong_ids = set(strong_events(eventos).get("id_evento", pd.Series(dtype=str)))
+    return eventos[~eventos["id_evento"].isin(strong_ids)].copy()
+
+
+def strong_programs(programas: pd.DataFrame) -> pd.DataFrame:
+    if programas.empty:
+        return programas
+    return programas[
+        (programas.get("apto_dashboard", "").astype(str) == "si")
+        & (programas.get("vigencia_clara", "").astype(str) == "si")
+    ].copy()
+
+
+def qualitative_programs(programas: pd.DataFrame) -> pd.DataFrame:
+    if programas.empty:
+        return programas
+    strong_ids = set(strong_programs(programas).get("id_programa", pd.Series(dtype=str)))
+    return programas[~programas["id_programa"].isin(strong_ids)].copy()
+
+
 def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
     errors = []
     important = {
@@ -97,6 +137,12 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
         "analytics_habilitaciones_por_barrio.csv",
         "analytics_habilitaciones_por_categoria.csv",
         "analytics_habilitaciones_recientes.csv",
+        "analytics_eventos_por_barrio.csv",
+        "analytics_eventos_por_tipo.csv",
+        "analytics_eventos_por_anio.csv",
+        "analytics_programas_por_tipo.csv",
+        "analytics_programas_por_estado.csv",
+        "analytics_programas_catalogo.csv",
         "analytics_mapa_oportunidades.csv",
         "analytics_resumen_ejecutivo.csv",
     }
@@ -128,16 +174,17 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
 
 
 def eventos_por_barrio(eventos: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
-    if eventos.empty:
+    eventos_fuertes = strong_events(eventos)
+    if eventos_fuertes.empty:
         df = pd.DataFrame(
             [
                 {
-                    "barrio": "Sin datos reales",
-                    "comuna": "Sin datos reales",
+                    "barrio": "Sin eventos aptos",
+                    "comuna": "Sin eventos aptos",
                     "cantidad_eventos": 0,
                     "cantidad_eventos_gratuitos": 0,
                     "cantidad_eventos_con_validacion": 0,
-                    "tipos_eventos_principales": "Sin fuente real de eventos",
+                    "tipos_eventos_principales": "Sin eventos aptos para metricas fuertes",
                 }
             ]
         )
@@ -149,12 +196,14 @@ def eventos_por_barrio(eventos: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes
                 "urls_fuentes": "No disponible",
                 "fecha_consulta_min": "No disponible",
                 "fecha_consulta_max": "No disponible",
-                "nota_metodologica": "No se construyo desde seeds en modo estricto; falta fuente real de eventos.",
-                "limitaciones": "No hay dataset real de eventos gastronomicos cargado.",
+                "nota_metodologica": "Conteo fuerte de eventos F04; solo apto_dashboard=si, sin validacion pendiente y con fecha completa.",
+                "limitaciones": "F04 es relevamiento manual trazable, no universo completo de eventos.",
                 "apto_dashboard": "no",
             },
         )
-    merged = eventos.merge(ubicaciones[["id_ubicacion", "barrio", "comuna"]], on="id_ubicacion", how="left")
+    merged = eventos_fuertes.merge(ubicaciones[["id_ubicacion", "barrio", "comuna"]], on="id_ubicacion", how="left", suffixes=("", "_dim"))
+    merged["barrio"] = merged.get("barrio", merged.get("barrio_dim", "")).replace("", pd.NA).fillna(merged.get("barrio_dim", "No determinado"))
+    merged["comuna"] = merged.get("comuna", merged.get("comuna_dim", "")).replace("", pd.NA).fillna(merged.get("comuna_dim", "No determinada"))
     grouped = (
         merged.groupby(["barrio", "comuna"], dropna=False)
         .agg(
@@ -168,11 +217,85 @@ def eventos_por_barrio(eventos: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes
     return attach_metadata(
         grouped,
         traceability_metadata(
-            eventos,
-            method="Conteo de eventos por ubicacion normalizada.",
-            limitations="Eventos seed no representan agenda completa; eventos sin sede fija usan U00000.",
+            eventos_fuertes,
+            method="Conteo fuerte de eventos F04 por ubicacion normalizada.",
+            limitations="Solo filas F04 apto_dashboard=si, sin validacion pendiente y con fecha completa; no representa universo completo.",
             source_catalog=fuentes,
         ),
+    )
+
+
+def eventos_por_tipo(eventos: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    eventos_fuertes = strong_events(eventos)
+    if eventos_fuertes.empty:
+        df = pd.DataFrame([{"tipo_evento": "Sin eventos aptos", "cantidad_eventos": 0}])
+    else:
+        df = (
+            eventos_fuertes.groupby("tipo_evento", dropna=False)
+            .agg(cantidad_eventos=("id_evento", "count"))
+            .reset_index()
+            .sort_values("cantidad_eventos", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            eventos_fuertes,
+            method="Conteo fuerte de eventos F04 por tipo; solo apto_dashboard=si, sin validacion pendiente y con fecha completa.",
+            limitations="F04 no es dataset oficial estructurado ni universo completo de eventos.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def eventos_por_anio(eventos: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    eventos_fuertes = strong_events(eventos)
+    if eventos_fuertes.empty:
+        df = pd.DataFrame([{"anio": "Sin eventos aptos", "cantidad_eventos": 0}])
+    else:
+        df = (
+            eventos_fuertes.groupby("anio", dropna=False)
+            .agg(cantidad_eventos=("id_evento", "count"))
+            .reset_index()
+            .sort_values("anio")
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            eventos_fuertes,
+            method="Conteo fuerte de eventos F04 por anio declarado; no usa fechas incompletas.",
+            limitations="F04 no representa el universo completo; no atribuir totales nacionales a CABA.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def eventos_cualitativos(eventos: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    df = qualitative_events(eventos)
+    keep = [
+        "id_evento",
+        "nombre_evento",
+        "fecha_inicio",
+        "fecha_fin",
+        "tipo_evento",
+        "tipo_vinculo_gcba",
+        "requiere_validacion",
+        "apto_dashboard",
+        "motivo_validacion",
+        "limitaciones",
+        "url_fuente",
+    ]
+    df = df[[column for column in keep if column in df.columns]] if not df.empty else pd.DataFrame(columns=keep)
+    return attach_metadata(
+        df,
+        {
+            **traceability_metadata(
+                eventos,
+                method="Catalogo cualitativo de eventos F04 excluidos de metricas fuertes.",
+                limitations="Incluye fechas incompletas, vinculos no confirmados, difusion oficial o validaciones pendientes.",
+                source_catalog=fuentes,
+            ),
+            "apto_dashboard": "no",
+        },
     )
 
 
@@ -314,22 +437,23 @@ def habilitaciones_recientes(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Dat
 
 
 def programas_por_anio(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
-    if programas.empty:
+    programas_fuertes = strong_programs(programas)
+    if programas_fuertes.empty:
         return attach_metadata(
-            pd.DataFrame([{"anio": "Sin datos reales", "cantidad_programas": 0, "programas": "Sin fuente real de programas"}]),
+            pd.DataFrame([{"anio": "No usar como serie temporal", "cantidad_programas": 0, "programas": "F05 es catalogo, no serie temporal de impacto"}]),
             {
-                "estado_datos": "datos pendientes de validacion",
-                "fuentes_utilizadas": "No disponible",
-                "urls_fuentes": "No disponible",
-                "fecha_consulta_min": "No disponible",
-                "fecha_consulta_max": "No disponible",
-                "nota_metodologica": "No se construyo desde seeds en modo estricto; falta fuente real de programas.",
-                "limitaciones": "No hay dataset real estructurado de programas y politicas.",
+                "estado_datos": "datos reales semiestructurados",
+                "fuentes_utilizadas": "F05",
+                "urls_fuentes": "relevamiento_manual_trazable",
+                "fecha_consulta_min": "2026-06-10",
+                "fecha_consulta_max": "2026-06-10",
+                "nota_metodologica": "F05 es catalogo/fichero; esta salida se conserva por compatibilidad y no debe usarse como serie temporal de impacto.",
+                "limitaciones": "No inventar impacto ni vigencia desde anio_inicio.",
                 "apto_dashboard": "no",
             },
         )
-    work = programas.copy()
-    work["anio"] = work["fecha_inicio"].str.extract(r"(\d{4})", expand=False).fillna("No disponible")
+    work = programas_fuertes.copy()
+    work["anio"] = work["anio_inicio"].where(work["anio_inicio"].astype(str).str.match(r"^\d{4}$"), "No disponible")
     grouped = (
         work.groupby(["anio"], dropna=False)
         .agg(cantidad_programas=("id_programa", "count"), programas=("nombre_programa", lambda s: " | ".join(s)))
@@ -338,22 +462,122 @@ def programas_por_anio(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Dat
     return attach_metadata(
         grouped,
         traceability_metadata(
-            programas,
-            method="Conteo de programas segun anio extraido de fecha_inicio.",
-            limitations="Muchos programas seed no publican fecha de inicio estructurada.",
+            programas_fuertes,
+            method="Conteo descriptivo de fichas F05 aptas por anio_inicio. No es serie temporal de impacto.",
+            limitations="No usar como metrica de impacto; F05 es catalogo curado.",
             source_catalog=fuentes,
         ),
     )
 
 
+def programas_por_tipo(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    programas_fuertes = strong_programs(programas)
+    if programas_fuertes.empty:
+        df = pd.DataFrame([{"tipo_programa": "Sin programas aptos", "cantidad_programas": 0}])
+    else:
+        df = (
+            programas_fuertes.groupby("tipo_programa", dropna=False)
+            .agg(cantidad_programas=("id_programa", "count"))
+            .reset_index()
+            .sort_values("cantidad_programas", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            programas_fuertes,
+            method="Catalogo F05 apto por tipo de programa/politica/instrumento.",
+            limitations="No es serie temporal de impacto; no usar montos viejos como vigentes.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def programas_por_estado(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    programas_fuertes = strong_programs(programas)
+    if programas_fuertes.empty:
+        df = pd.DataFrame([{"estado": "Sin programas aptos", "cantidad_programas": 0}])
+    else:
+        df = (
+            programas_fuertes.groupby("estado", dropna=False)
+            .agg(cantidad_programas=("id_programa", "count"))
+            .reset_index()
+            .sort_values("cantidad_programas", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            programas_fuertes,
+            method="Catalogo F05 apto por estado declarado.",
+            limitations="Vigencia tomada de ficha curada; validar antes de afirmar beneficios vigentes.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def programas_catalogo(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    df = strong_programs(programas)
+    keep = [
+        "id_programa",
+        "nombre_programa",
+        "tipo_programa",
+        "estado",
+        "organismo_responsable",
+        "objetivo",
+        "beneficiarios",
+        "normativa_relacionada",
+        "url_fuente",
+        "limitaciones",
+    ]
+    df = df[[column for column in keep if column in df.columns]] if not df.empty else pd.DataFrame(columns=keep)
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            strong_programs(programas),
+            method="Catalogo de fichas F05 aptas para dashboard informativo.",
+            limitations="No usar como serie temporal ni como medicion de impacto; montos y presupuestos deben validarse aparte.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def programas_cualitativos(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    df = qualitative_programs(programas)
+    keep = [
+        "id_programa",
+        "nombre_programa",
+        "tipo_programa",
+        "estado",
+        "requiere_validacion",
+        "apto_dashboard",
+        "motivo_validacion",
+        "presupuesto",
+        "limitaciones",
+        "url_fuente",
+    ]
+    df = df[[column for column in keep if column in df.columns]] if not df.empty else pd.DataFrame(columns=keep)
+    return attach_metadata(
+        df,
+        {
+            **traceability_metadata(
+                programas,
+                method="Catalogo cualitativo de programas/instrumentos F05 excluidos de indicadores fuertes.",
+                limitations="Incluye antecedentes historicos, instrumentos puntuales, montos desactualizables o vigencia pendiente.",
+                source_catalog=fuentes,
+            ),
+            "apto_dashboard": "no",
+        },
+    )
+
+
 def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, mercados: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    eventos_fuertes = strong_events(eventos)
     base_frames = [ubicaciones[["barrio", "comuna"]]]
     if {"barrio", "comuna"}.issubset(hab.columns):
         base_frames.append(hab[["barrio", "comuna"]])
     barrios = pd.concat(base_frames, ignore_index=True).drop_duplicates()
     est_count = est.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
     hab_count = hab.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(hab.columns) else pd.Series(dtype=int)
-    evt_count = eventos.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
+    evt_count = eventos_fuertes.groupby("barrio").size() if "barrio" in eventos_fuertes.columns else pd.Series(dtype=int)
     mer_count = mercados.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
     rows = []
     for _, row in barrios.iterrows():
@@ -380,7 +604,7 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
         traceability_metadata(
             est,
             hab,
-            eventos,
+            eventos_fuertes,
             mercados,
             method="Cruce territorial separado de oferta F01, habilitaciones F02 y ferias/mercados F03.",
             limitations="No sumar F02 como establecimientos activos; algunas ubicaciones pueden quedar sin barrio normalizado.",
@@ -391,13 +615,15 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
 
 def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, mercados: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     status = data_status(est, hab, mercados)
+    eventos_fuertes = strong_events(eventos)
+    programas_fuertes = strong_programs(programas)
     rows = [
         ("fuentes_relevadas", len(fuentes), status),
         ("establecimientos_oferta_gastronomica_f01", len(est), data_status(est)),
         ("habilitaciones_gastronomicas_f02", len(hab), data_status(hab)),
         ("ferias_mercados_f03", len(mercados), data_status(mercados)),
-        ("eventos_gastronomicos_reales", len(eventos), data_status(eventos)),
-        ("programas_politicas_reales", len(programas), data_status(programas)),
+        ("eventos_gastronomicos_reales_f04_aptos", len(eventos_fuertes), data_status(eventos_fuertes)),
+        ("programas_politicas_reales_f05_aptos", len(programas_fuertes), data_status(programas_fuertes)),
         ("registros_que_requieren_validacion", sum((df.get("requiere_validacion", pd.Series(dtype=str)) == "si").sum() for df in (est, hab, eventos, programas, mercados)), status),
     ]
     df = pd.DataFrame(rows, columns=["indicador", "valor", "estado_datos"])
@@ -410,7 +636,7 @@ def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFram
             programas,
             mercados,
             method="Resumen de conteos principales separados por concepto: F01 oferta, F02 habilitaciones y F03 ferias/mercados.",
-            limitations="No interpretar habilitaciones F02 como establecimientos activos unicos.",
+            limitations="No interpretar F02 como establecimientos activos. F04/F05 solo cuentan filas aptas; cualitativas quedan fuera de metricas fuertes.",
             source_catalog=fuentes,
         ),
     )
@@ -432,12 +658,19 @@ def main() -> int:
 
     analytics = {
         "analytics_eventos_por_barrio.csv": eventos_por_barrio(eventos, ubicaciones, fuentes),
+        "analytics_eventos_por_tipo.csv": eventos_por_tipo(eventos, fuentes),
+        "analytics_eventos_por_anio.csv": eventos_por_anio(eventos, fuentes),
+        "analytics_eventos_cualitativos.csv": eventos_cualitativos(eventos, fuentes),
         "analytics_establecimientos_por_categoria_barrio.csv": establecimientos_por_categoria_barrio(est, ubicaciones, categorias, fuentes),
         "analytics_habilitaciones_por_anio.csv": habilitaciones_por_anio(hab, fuentes),
         "analytics_habilitaciones_por_barrio.csv": habilitaciones_por_barrio(hab, fuentes),
         "analytics_habilitaciones_por_categoria.csv": habilitaciones_por_categoria(hab, fuentes),
         "analytics_habilitaciones_recientes.csv": habilitaciones_recientes(hab, fuentes),
         "analytics_programas_por_anio.csv": programas_por_anio(programas, fuentes),
+        "analytics_programas_por_tipo.csv": programas_por_tipo(programas, fuentes),
+        "analytics_programas_por_estado.csv": programas_por_estado(programas, fuentes),
+        "analytics_programas_catalogo.csv": programas_catalogo(programas, fuentes),
+        "analytics_programas_cualitativos.csv": programas_cualitativos(programas, fuentes),
         "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, hab, eventos, mercados, ubicaciones, fuentes),
         "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, mercados, fuentes),
     }

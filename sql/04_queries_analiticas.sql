@@ -46,6 +46,43 @@ SELECT id_evento, nombre_evento, fecha_inicio, motivo_validacion
 FROM fact_evento_gastronomico
 WHERE id_ubicacion = 'U00000';
 
+-- Eventos F04 aptos por tipo: solo metricas fuertes.
+SELECT tipo_evento, COUNT(*) AS cantidad_eventos
+FROM fact_evento_gastronomico
+WHERE id_fuente = 'F04'
+  AND apto_dashboard = 'si'
+  AND requiere_validacion <> 'si'
+  AND fecha_completa = 'si'
+  AND tipo_vinculo_gcba !~* 'Difusion oficial|Requiere validacion'
+GROUP BY tipo_evento
+ORDER BY cantidad_eventos DESC;
+
+-- Eventos F04 cualitativos: conservados, pero fuera de metricas fuertes.
+SELECT id_evento, nombre_evento, fecha_inicio, tipo_vinculo_gcba, apto_dashboard, motivo_validacion
+FROM fact_evento_gastronomico
+WHERE id_fuente = 'F04'
+  AND (
+    apto_dashboard <> 'si'
+    OR requiere_validacion = 'si'
+    OR fecha_completa <> 'si'
+    OR tipo_vinculo_gcba ~* 'Difusion oficial|Requiere validacion'
+  );
+
+-- Programas F05 aptos por tipo: catalogo, no serie temporal de impacto.
+SELECT tipo_programa, COUNT(*) AS cantidad_programas
+FROM fact_programa_politica
+WHERE id_fuente = 'F05'
+  AND apto_dashboard = 'si'
+  AND vigencia_clara = 'si'
+GROUP BY tipo_programa
+ORDER BY cantidad_programas DESC;
+
+-- Programas F05 cualitativos: antecedentes, instrumentos puntuales o validacion pendiente.
+SELECT id_programa, nombre_programa, tipo_programa, estado, apto_dashboard, motivo_validacion
+FROM fact_programa_politica
+WHERE id_fuente = 'F05'
+  AND (apto_dashboard <> 'si' OR vigencia_clara <> 'si');
+
 -- Cobertura de fuentes por tabla de hechos.
 SELECT id_fuente, COUNT(*) AS registros, 'establecimientos' AS tabla
 FROM fact_establecimiento

@@ -13,9 +13,11 @@ Ordena fuentes, oferta gastronomica registrada, habilitaciones aprobadas, evento
 - F01 Oferta y Establecimientos Gastronomicos: URL directa CKAN y CDN registradas en `src/config.py`. Alimenta `fact_establecimiento.csv`.
 - F02 Habilitaciones Aprobadas AGC: recursos reales 2015-2025 registrados en `src/config.py`; 2026 no esta publicado y no se exige en modo estricto. Alimenta `fact_habilitacion_gastronomica.csv`.
 - F03 Ferias y Mercados: CSV combinado, CSV complementarios y GeoJSON FIAB registrados en `src/config.py`. Alimenta `fact_mercado_feria.csv`.
+- F04 Eventos gastronomicos semiestructurados: relevamiento manual trazable con fuente por fila. Alimenta `fact_evento_gastronomico.csv`.
+- F05 Programas y politicas gastronomicas semiestructuradas: catalogo manual trazable con fuente por fila. Alimenta `fact_programa_politica.csv`.
 - Otras fuentes relevadas en `data/seeds/raw_fuentes_relevadas.csv`.
 
-No se inventan datos ni URLs. Las paginas portal quedan documentadas, pero la descarga automatica requiere enlaces directos a CSV/archivo.
+No se inventan datos ni URLs. Las paginas portal quedan documentadas, pero la descarga automatica requiere enlaces directos a CSV/archivo. F04 y F05 no provienen de datasets oficiales estructurados: son relevamientos manuales trazables y no representan el universo completo de eventos ni programas gastronomicos de CABA.
 
 ## Estructura
 
@@ -52,13 +54,15 @@ python src/validate_model.py
 
 `download_sources.py` reporta `PENDING` cuando falta una URL directa. Eso es esperado hasta completar `SOURCE_CONFIG` en `src/config.py`.
 
-`build_model.py` busca primero CSV reales en `data/raw/` con patrones `f01_*.csv`, `f02_*.csv` y `f03_*.csv`. Si no los encuentra, usa `data/seeds/` como fallback de desarrollo y lo informa en consola. El mapeo de columnas queda reportado en `outputs/tablas_resumen/contratos_fuentes.csv` y `docs/contratos_fuentes.md`.
+`build_model.py` busca primero CSV reales en `data/raw/` con patrones `f01_*.csv`, `f02_*.csv`, `f03_*.csv`, `f04_*.csv` y `f05_*.csv`. Si no los encuentra, usa `data/seeds/` como fallback de desarrollo y lo informa en consola. El mapeo de columnas queda reportado en `outputs/tablas_resumen/contratos_fuentes.csv` y `docs/contratos_fuentes.md`.
 
 Regla conceptual para dashboard:
 
 - `fact_establecimiento.csv` representa solo F01: oferta/establecimientos gastronomicos registrados.
 - `fact_habilitacion_gastronomica.csv` representa solo F02: habilitaciones aprobadas AGC inferidas como gastronomicas por rubro.
 - `fact_mercado_feria.csv` representa solo F03: ferias y mercados.
+- `fact_evento_gastronomico.csv` representa F04: eventos/activaciones relevados manualmente con trazabilidad.
+- `fact_programa_politica.csv` representa F05: catalogo de programas, politicas, normativa e instrumentos.
 
 No sumar F01 + F02 como si fueran establecimientos activos unicos. En particular, no mostrar "90.764 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos. Mostrar metricas separadas con fuente, fecha de consulta y limitaciones.
 
@@ -70,7 +74,7 @@ python src/build_analytics.py --strict-real
 python src/validate_model.py --strict-real
 ```
 
-En modo estricto no se permiten seeds. Si faltan F01/F02/F03 reales, el comando debe fallar.
+En modo estricto no se permiten seeds. Si faltan F01/F02/F03 reales o F04/F05 semiestructurados, el comando debe fallar.
 
 ## Datos seed
 
@@ -81,6 +85,7 @@ Siguen siendo seed/manuales los archivos `raw_*` en `data/seeds/`, especialmente
 - F01 para oferta/listado de establecimientos registrados.
 - F02 para habilitaciones aprobadas por anio y rubro, sin tratarlas como padron vivo.
 - F03 para ferias/mercados completos con geometria o ubicaciones oficiales.
+- F04/F05 para eventos y programas solo como relevamientos manuales trazables; no como datasets oficiales completos.
 
 ## Fuentes en dashboard
 
@@ -91,17 +96,19 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 - 2.823 registros en Oferta Gastronomica F01.
 - 87.934 habilitaciones gastronomicas inferidas desde AGC F02.
 - 4.388 registros de ferias/mercados F03.
-- 0 eventos gastronomicos reales estructurados.
-- 0 programas/politicas reales estructurados.
+- 29 eventos F04 cargados; 13 aptos para metricas fuertes y 16 cualitativos/en validacion/no aptos.
+- 9 programas/instrumentos F05 cargados; 4 aptos para catalogo dashboard y 5 cualitativos/en validacion/no aptos.
 
 ## Limitaciones actuales
 
 - Geocodificacion USIG queda preparada pero no se ejecuta offline.
 - Los eventos sin sede fija usan `U00000`.
+- F04 no representa el universo completo de eventos gastronomicos; las metricas fuertes solo usan `apto_dashboard = si`, `requiere_validacion = no` y fecha completa.
+- F05 es catalogo/fichero, no serie temporal de impacto; no usar montos viejos como vigentes.
 - F02 no representa establecimientos activos unicos: son habilitaciones aprobadas y la clasificacion gastronomica es inferida desde el rubro.
 - F01 no trae vigencia por registro y puede estar desactualizado.
 - Las metricas publicas de impacto de programas no estan estructuradas.
 
 ## Proximos pasos
 
-Cargar o refrescar fuentes reales con `python src/download_sources.py`, revisar `docs/perfilado_fuentes.md`, y volver a correr el pipeline estricto. Proximo foco: fuente real estructurada de eventos y programas si se quieren dashboards de esas vistas.
+Refrescar F01/F02/F03 con `python src/download_sources.py` cuando corresponda, mantener F04/F05 curados con fuente por fila, revisar `docs/perfilado_fuentes.md`, y volver a correr el pipeline estricto. Proximo foco: disenar el dashboard con las advertencias metodologicas visibles.

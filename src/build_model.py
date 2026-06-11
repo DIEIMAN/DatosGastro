@@ -15,6 +15,22 @@ from source_contracts import SourceLoadResult, map_source_columns
 
 TODAY = date.today().isoformat()
 
+NULL_SENTINELS = {
+    "",
+    "No disponible",
+    "No aplica",
+    "No identificado",
+    "No identificada",
+    "No publicado en las fuentes consultadas",
+    "No publicada en las fuentes consultadas",
+    "No publicadas en las fuentes consultadas",
+    "No publicados en las fuentes consultadas",
+    "Requiere validacion",
+    "Multiples barrios",
+    "Multiples comunas",
+    "Toda la Ciudad",
+}
+
 
 def read_csv(path: Path) -> pd.DataFrame:
     if not path.exists():
@@ -80,7 +96,11 @@ def load_source_data(source_id: str) -> tuple[pd.DataFrame, list[SourceLoadResul
     for path, key, source in paths:
         raw = read_csv(path)
         mapped, report = map_source_columns(raw, source_id, origin, path)
-        mapped["url_fuente"] = source.get("dataset_url", source.get("download_url", "No disponible"))
+        default_url = source.get("dataset_url", source.get("download_url", "No disponible"))
+        if "url_fuente" in mapped.columns:
+            mapped["url_fuente"] = mapped["url_fuente"].where(mapped["url_fuente"].astype(str).str.strip().ne(""), default_url)
+        else:
+            mapped["url_fuente"] = default_url
         mapped["download_url"] = source.get("download_url", "")
         mapped["fecha_consulta"] = source.get("fecha_consulta", TODAY)
         mapped["periodo_fuente"] = source.get("periodo_fuente", "")
@@ -182,6 +202,51 @@ def first_existing(*values, default="No disponible"):
     return default
 
 
+def is_sentinel(value: str) -> bool:
+    return normalize_text(value) in NULL_SENTINELS
+
+
+def normalize_yes_no(value: str, default: str = "si") -> str:
+    cleaned = normalize_text(value, case="lower", remove_accents=True)
+    if cleaned in {"si", "s", "yes", "true", "1"}:
+        return "si"
+    if cleaned in {"no", "n", "false", "0"}:
+        return "no"
+    if "requiere validacion" in cleaned:
+        return "si"
+    return default
+
+
+def normalize_dashboard_flag(value: str) -> str:
+    cleaned = normalize_text(value, case="lower", remove_accents=True)
+    if cleaned == "si":
+        return "si"
+    if cleaned == "no":
+        return "no"
+    if "requiere validacion" in cleaned:
+        return "requiere_validacion"
+    return "requiere_validacion"
+
+
+def normalize_quality(value: str) -> tuple[str, str]:
+    original = first_existing(value, default="Media")
+    lowered = normalize_text(original, case="lower", remove_accents=True)
+    if "/" in original or "media" in lowered:
+        return "Media", original
+    if "alta" in lowered:
+        return "Alta", original
+    if "baja" in lowered:
+        return "Baja", original
+    return original, original
+
+
+def has_complete_date(value: str) -> bool:
+    cleaned = normalize_text(value)
+    if is_sentinel(cleaned):
+        return False
+    return bool(pd.to_datetime(pd.Series([cleaned]), errors="coerce").notna().iloc[0])
+
+
 def cached_location(cache: dict[tuple[str, str], dict], address: str, barrio: str) -> dict:
     key = (normalize_text(address), normalize_text(barrio))
     if key not in cache:
@@ -231,7 +296,7 @@ def build_dim_fuente() -> pd.DataFrame:
                 "notas": first_existing(row.get("observaciones"), default=""),
             }
         )
-    for source_id in ("F01", "F02", "F03"):
+    for source_id in ("F01", "F02", "F03", "F04", "F05"):
         resources = _resource_items(source_id)
         if not resources:
             continue
@@ -284,15 +349,11 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
             rows.append(cached_location(location_cache, row.get(address_col), row.get(barrio_col)))
 
     for _, row in eventos.iterrows():
-        location = normalize_text(row.get("ubicacion_original"))
-        if any(marker in location.lower() for marker in ("adherid", "a relevar", "500+")):
+        location = first_existing(row.get("direccion_original"), row.get("ubicacion_original"), default="")
+        barrio_raw = normalize_text(row.get("barrio_original"))
+        if is_sentinel(location) or is_sentinel(barrio_raw) or any(marker in location.lower() for marker in ("adherid", "a relevar", "500+")):
             continue
-        barrio = ""
-        for candidate in ("Palermo", "San Telmo", "Monserrat", "Balvanera"):
-            if candidate.lower() in location.lower():
-                barrio = candidate
-                break
-        rows.append(cached_location(location_cache, location, barrio))
+        rows.append(cached_location(location_cache, location, barrio_raw))
 
     df = pd.DataFrame(rows).drop_duplicates("id_ubicacion")
     return df
@@ -317,13 +378,15 @@ def build_dim_organizador(eventos: pd.DataFrame) -> pd.DataFrame:
             "observaciones": "Organizador detectado en texto, requiere normalizacion manual",
         },
     ]
+    seen = {row["id_organizador"] for row in rows}
+    by_name: dict[str, str] = {}
     known = {
         "afadhya": ("O001", "AFADHYA", "privado/mixto"),
-        "appyce": ("O002", "APPYCE", "privado/mixto"),
+        "apyce": ("O002", "APYCE", "privado/mixto"),
+        "appyce": ("O002", "APYCE", "privado/mixto"),
         "dg desarrollo gastronomico": ("O003", "DG Desarrollo Gastronomico", "publico"),
         "ba capital gastronomica": ("O004", "BA Capital Gastronomica", "publico/mixto"),
     }
-    seen = {row["id_organizador"] for row in rows}
     for _, row in eventos.iterrows():
         text = normalize_text(row.get("organizador_original"), case="lower", remove_accents=True)
         for keyword, (org_id, name, org_type) in known.items():
@@ -339,20 +402,51 @@ def build_dim_organizador(eventos: pd.DataFrame) -> pd.DataFrame:
                     }
                 )
                 seen.add(org_id)
-    return pd.DataFrame(rows).sort_values("id_organizador")
+                by_name[normalize_text(name, case="lower", remove_accents=True)] = org_id
+        original = first_existing(row.get("organizador_original"), default="")
+        if not original or is_sentinel(original):
+            continue
+        normalized = normalize_text(original, case="lower", remove_accents=True)
+        if normalized in by_name:
+            continue
+        if any(keyword in normalized for keyword in known):
+            continue
+        org_id = f"O{len(rows):03d}"
+        rows.append(
+            {
+                "id_organizador": org_id,
+                "nombre_organizador": normalize_proper_name(original),
+                "tipo_organizador": first_existing(row.get("tipo_organizador"), default="No determinado"),
+                "sector": "gastronomia",
+                "web": "No disponible",
+                "observaciones": "Inferido desde F04 relevamiento manual trazable",
+            }
+        )
+        seen.add(org_id)
+        by_name[normalized] = org_id
+    return pd.DataFrame(rows).drop_duplicates("id_organizador").sort_values("id_organizador")
 
 
 def infer_organizer_id(value: str) -> str:
     text = normalize_text(value, case="lower", remove_accents=True)
     if "afadhya" in text:
         return "O001"
-    if "appyce" in text:
+    if "appyce" in text or "apyce" in text:
         return "O002"
     if "ba capital gastronomica" in text or "dg desarrollo gastronomico" in text:
         return "O004"
     if "privado" in text:
         return "O999"
     return "O000"
+
+
+def organizer_lookup(dim_organizador: pd.DataFrame) -> dict[str, str]:
+    if dim_organizador.empty:
+        return {}
+    return {
+        normalize_text(row["nombre_organizador"], case="lower", remove_accents=True): row["id_organizador"]
+        for _, row in dim_organizador.iterrows()
+    }
 
 
 def build_fact_establecimiento(est: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
@@ -452,8 +546,10 @@ def build_fact_habilitacion_gastronomica(hab: pd.DataFrame, dim_fuente: pd.DataF
     return pd.DataFrame(rows)
 
 
-def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
+def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame, dim_organizador: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
+    org_lookup = organizer_lookup(dim_organizador)
+    location_cache: dict[tuple[str, str], dict] = {}
     rows = []
     columns = [
         "id_evento",
@@ -461,60 +557,110 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.Dat
         "descripcion",
         "fecha_inicio",
         "fecha_fin",
+        "anio",
         "periodicidad",
         "id_ubicacion",
+        "ubicacion_original",
+        "direccion_original",
+        "barrio",
+        "comuna",
         "id_organizador",
+        "tipo_organizador",
         "id_fuente",
         "url_fuente",
         "fecha_consulta",
         "tipo_evento",
+        "categoria_gastronomica",
         "gratuito",
         "requiere_inscripcion",
         "cantidad_asistentes_estimada",
         "cantidad_puestos_estimada",
+        "apoyo_gcba",
+        "organismo_gcba_relacionado",
+        "area_gcba_relacionada",
+        "tipo_vinculo_gcba",
         "estado",
         "link_evento",
+        "fuente",
+        "tipo_fuente",
+        "calidad_dato_original",
+        "calidad_dato_normalizada",
         "calidad_dato",
         "requiere_validacion",
         "motivo_validacion",
+        "apto_dashboard",
+        "fecha_completa",
+        "limitaciones",
         "observaciones",
         "origen_dato",
         "estado_datos",
     ]
     for idx, row in eventos.iterrows():
-        location = normalize_text(row.get("ubicacion_original"))
-        if any(marker in location.lower() for marker in ("adherid", "a relevar", "500+")):
-            location_id = UNKNOWN_LOCATION_ID
+        location_text = first_existing(row.get("direccion_original"), row.get("ubicacion_original"), default="")
+        barrio_raw = normalize_text(row.get("barrio_original"))
+        if is_sentinel(location_text) or is_sentinel(barrio_raw):
+            location = {
+                "id_ubicacion": UNKNOWN_LOCATION_ID,
+                "barrio": first_existing(row.get("barrio_original"), default="No determinado"),
+                "comuna": first_existing(row.get("comuna_original"), default="No determinada"),
+            }
         else:
-            barrio = "Palermo" if "palermo" in location.lower() else ""
-            location_id = normalize_address_offline(location, barrio)["id_ubicacion"]
-        source_id = first_existing(row.get("id_fuente"), default="F08")
+            location = cached_location(location_cache, location_text, barrio_raw)
+            if normalize_text(row.get("comuna_original")):
+                location["comuna"] = normalize_text(row.get("comuna_original"))
+        source_id = first_existing(row.get("id_fuente"), default="F04")
+        if source_id != "F04":
+            source_id = "F04"
+        organizer_name = first_existing(row.get("organizador_original"), default="")
+        org_id = org_lookup.get(normalize_text(organizer_name, case="lower", remove_accents=True), infer_organizer_id(organizer_name))
+        quality, quality_original = normalize_quality(row.get("calidad_dato"))
+        apto = normalize_dashboard_flag(row.get("apto_dashboard"))
+        requiere_validacion = normalize_yes_no(row.get("requiere_validacion"), default="si")
+        fecha_completa = "si" if has_complete_date(row.get("fecha_inicio")) and has_complete_date(row.get("fecha_fin")) else "no"
         rows.append(
             {
-                "id_evento": f"EVT{idx + 1:05d}",
-                "nombre_evento": normalize_proper_name(row.get("nombre_evento_original")),
-                "descripcion": first_existing(row.get("observaciones_raw"), default=""),
-                "fecha_inicio": first_existing(row.get("fecha_original"), default="No disponible"),
-                "fecha_fin": "No disponible",
-                "periodicidad": "anual/ciclo" if "anual" in normalize_text(row.get("fecha_original"), case="lower") else "evento puntual",
-                "id_ubicacion": location_id,
-                "id_organizador": infer_organizer_id(row.get("organizador_original")),
+                "id_evento": first_existing(row.get("id_raw"), default=f"F04-{idx + 1:03d}"),
+                "nombre_evento": normalize_proper_name(row.get("nombre_evento")),
+                "descripcion": first_existing(row.get("descripcion"), default=""),
+                "fecha_inicio": first_existing(row.get("fecha_inicio"), default="No disponible"),
+                "fecha_fin": first_existing(row.get("fecha_fin"), default="No disponible"),
+                "anio": first_existing(row.get("anio"), default="No disponible"),
+                "periodicidad": first_existing(row.get("periodicidad"), default="No disponible"),
+                "id_ubicacion": location["id_ubicacion"],
+                "ubicacion_original": first_existing(row.get("ubicacion_original"), default="No disponible"),
+                "direccion_original": first_existing(row.get("direccion_original"), default="No disponible"),
+                "barrio": location["barrio"],
+                "comuna": location["comuna"],
+                "id_organizador": org_id,
+                "tipo_organizador": first_existing(row.get("tipo_organizador"), default="No disponible"),
                 "id_fuente": source_id,
-                "url_fuente": urls.get(source_id, "No disponible"),
+                "url_fuente": first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible")),
                 "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
-                "tipo_evento": "evento gastronomico",
-                "gratuito": "Requiere validacion",
-                "requiere_inscripcion": "No disponible",
-                "cantidad_asistentes_estimada": "No disponible",
-                "cantidad_puestos_estimada": "No disponible",
-                "estado": "sin_verificar",
-                "link_evento": "No disponible",
-                "calidad_dato": first_existing(row.get("calidad_dato"), default="media"),
-                "requiere_validacion": first_existing(row.get("requiere_validacion"), default="si"),
-                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="Evento seed pendiente de estructuracion"),
+                "tipo_evento": first_existing(row.get("tipo_evento"), default="evento gastronomico"),
+                "categoria_gastronomica": first_existing(row.get("categoria_gastronomica"), default="No disponible"),
+                "gratuito": first_existing(row.get("gratuito"), default="No disponible"),
+                "requiere_inscripcion": first_existing(row.get("requiere_inscripcion"), default="No disponible"),
+                "cantidad_asistentes_estimada": first_existing(row.get("cantidad_asistentes"), default="No disponible"),
+                "cantidad_puestos_estimada": first_existing(row.get("cantidad_puestos"), default="No disponible"),
+                "apoyo_gcba": first_existing(row.get("apoyo_gcba"), default="No disponible"),
+                "organismo_gcba_relacionado": first_existing(row.get("organismo_gcba_relacionado"), default="No disponible"),
+                "area_gcba_relacionada": first_existing(row.get("area_gcba_relacionada"), default="No disponible"),
+                "tipo_vinculo_gcba": first_existing(row.get("tipo_vinculo_gcba"), default="Requiere validacion"),
+                "estado": "semiestructurado",
+                "link_evento": first_existing(row.get("url_fuente"), default="No disponible"),
+                "fuente": first_existing(row.get("fuente"), default="No disponible"),
+                "tipo_fuente": first_existing(row.get("tipo_fuente"), default="No disponible"),
+                "calidad_dato_original": quality_original,
+                "calidad_dato_normalizada": quality,
+                "calidad_dato": quality,
+                "requiere_validacion": requiere_validacion,
+                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="No disponible"),
+                "apto_dashboard": apto,
+                "fecha_completa": fecha_completa,
+                "limitaciones": first_existing(row.get("limitaciones"), default="No disponible"),
                 "observaciones": first_existing(row.get("observaciones_raw"), default=""),
-                "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
-                "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
+                "origen_dato": "relevamiento_manual_trazable",
+                "estado_datos": "datos reales semiestructurados",
             }
         )
     return pd.DataFrame(rows, columns=columns)
@@ -552,100 +698,131 @@ def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> 
     return pd.DataFrame(rows)
 
 
-def build_fact_programa(dim_fuente: pd.DataFrame, use_seed: bool = True) -> pd.DataFrame:
+def build_fact_programa(programas: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
-    raw = clean_dataframe_columns(read_seed_csv("raw_programas_politicas.csv")) if use_seed else pd.DataFrame()
-    if raw.empty:
-        return pd.DataFrame(
-            columns=[
-                "id_programa",
-                "nombre_programa",
-                "organismo_responsable",
-                "fecha_inicio",
-                "fecha_fin",
-                "estado",
-                "tipo_programa",
-                "objetivo",
-                "beneficiarios",
-                "alcance_geografico",
-                "resultados",
-                "metricas_publicadas",
-                "id_fuente",
-                "url_fuente",
-                "fecha_consulta",
-                "link",
-                "calidad_dato",
-                "requiere_validacion",
-                "motivo_validacion",
-                "observaciones",
-                "origen_dato",
-                "estado_datos",
-            ]
-        )
-    raw = raw.rename(
-        columns={
-            "id_raw": "id_programa",
-            "nombre_original": "nombre_programa",
-            "organismo_original": "organismo_responsable",
-            "estado_original": "estado",
-            "descripcion_original": "objetivo",
-            "observaciones_raw": "observaciones",
-        }
-    )
-    if "url_fuente" not in raw.columns:
-        raw["url_fuente"] = raw.get("id_fuente", "").map(urls).fillna("No disponible")
-    raw["origen_dato"] = "datos seed"
-    raw["estado_datos"] = "datos seed"
-    raw["fecha_consulta"] = TODAY
-    raw["fecha_inicio"] = raw.get("fecha_inicio", "No disponible")
-    raw["fecha_fin"] = raw.get("fecha_fin", "No disponible")
-    raw["tipo_programa"] = raw.get("tipo_programa", "promocion/financiamiento/normativa")
-    raw["beneficiarios"] = raw.get("beneficiarios", "Comercios gastronomicos / vecinos / turistas")
-    raw["alcance_geografico"] = raw.get("alcance_geografico", "CABA")
-    raw["resultados"] = raw.get("resultados", "No encontrado en fuente publica")
-    raw["metricas_publicadas"] = raw.get("metricas_publicadas", "No encontrado en fuente publica")
-    raw["link"] = raw.get("link", "No disponible")
     columns = [
         "id_programa",
         "nombre_programa",
         "organismo_responsable",
+        "area_dependiente",
         "fecha_inicio",
         "fecha_fin",
+        "anio_inicio",
         "estado",
         "tipo_programa",
+        "descripcion",
         "objetivo",
         "beneficiarios",
         "alcance_geografico",
+        "barrios_comunas",
+        "normativa_relacionada",
+        "presupuesto",
         "resultados",
         "metricas_publicadas",
         "id_fuente",
         "url_fuente",
         "fecha_consulta",
         "link",
+        "fuente",
+        "tipo_fuente",
+        "calidad_dato_original",
+        "calidad_dato_normalizada",
         "calidad_dato",
         "requiere_validacion",
         "motivo_validacion",
+        "apto_dashboard",
+        "vigencia_clara",
+        "limitaciones",
         "observaciones",
         "origen_dato",
         "estado_datos",
     ]
-    for column in columns:
-        if column not in raw.columns:
-            raw[column] = ""
-    return raw[columns]
+    if programas.empty:
+        return pd.DataFrame(columns=columns)
+    rows = []
+    for idx, row in programas.iterrows():
+        source_id = first_existing(row.get("id_fuente"), default="F05")
+        if source_id != "F05":
+            source_id = "F05"
+        quality, quality_original = normalize_quality(row.get("calidad_dato"))
+        estado = first_existing(row.get("estado"), default="No disponible")
+        rows.append(
+            {
+                "id_programa": first_existing(row.get("id_raw"), default=f"F05-{idx + 1:03d}"),
+                "nombre_programa": normalize_proper_name(row.get("nombre_programa")),
+                "organismo_responsable": first_existing(row.get("organismo_responsable"), default="No disponible"),
+                "area_dependiente": first_existing(row.get("area_dependiente"), default="No disponible"),
+                "fecha_inicio": first_existing(row.get("fecha_inicio"), default="No disponible"),
+                "fecha_fin": first_existing(row.get("fecha_fin"), default="No disponible"),
+                "anio_inicio": first_existing(row.get("anio_inicio"), default="No disponible"),
+                "estado": estado,
+                "tipo_programa": first_existing(row.get("tipo_programa"), default="No disponible"),
+                "descripcion": first_existing(row.get("descripcion"), default=""),
+                "objetivo": first_existing(row.get("objetivo"), default="No disponible"),
+                "beneficiarios": first_existing(row.get("beneficiarios"), default="No disponible"),
+                "alcance_geografico": first_existing(row.get("alcance_geografico"), default="No disponible"),
+                "barrios_comunas": first_existing(row.get("barrios_comunas"), default="No disponible"),
+                "normativa_relacionada": first_existing(row.get("normativa_relacionada"), default="No disponible"),
+                "presupuesto": first_existing(row.get("presupuesto"), default="No disponible"),
+                "resultados": first_existing(row.get("resultados_publicados"), default="No disponible"),
+                "metricas_publicadas": first_existing(row.get("metricas_publicadas"), default="No disponible"),
+                "id_fuente": source_id,
+                "url_fuente": first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible")),
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
+                "link": first_existing(row.get("url_fuente"), default="No disponible"),
+                "fuente": first_existing(row.get("fuente"), default="No disponible"),
+                "tipo_fuente": first_existing(row.get("tipo_fuente"), default="No disponible"),
+                "calidad_dato_original": quality_original,
+                "calidad_dato_normalizada": quality,
+                "calidad_dato": quality,
+                "requiere_validacion": normalize_yes_no(row.get("requiere_validacion"), default="si"),
+                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="No disponible"),
+                "apto_dashboard": normalize_dashboard_flag(row.get("apto_dashboard")),
+                "vigencia_clara": "no" if "requiere validacion" in normalize_text(estado, case="lower", remove_accents=True) else "si",
+                "limitaciones": first_existing(row.get("limitaciones"), default="No disponible"),
+                "observaciones": first_existing(row.get("observaciones_raw"), default=""),
+                "origen_dato": "relevamiento_manual_trazable",
+                "estado_datos": "datos reales semiestructurados",
+            }
+        )
+    return pd.DataFrame(rows, columns=columns)
+
+
+def build_puente_evento_programa(fact_evento: pd.DataFrame, fact_programa: pd.DataFrame) -> pd.DataFrame:
+    event_ids = set(fact_evento.get("id_evento", pd.Series(dtype=str)))
+    program_ids = set(fact_programa.get("id_programa", pd.Series(dtype=str)))
+    links = [
+        ("F04-001", "F05-001", "Cafecito BA vinculado al programa marco BA Capital Gastronomica"),
+        ("F04-001", "F05-009", "Convocatoria Cafecito BA 2026 como instrumento puntual"),
+        ("F04-015", "F05-008", "Sabores del Mundo realizado en mercados/patios gastronomicos"),
+        ("F04-016", "F05-008", "Sabores del Mundo realizado en mercados/patios gastronomicos"),
+        ("F04-017", "F05-008", "Sabores del Mundo realizado en mercados/patios gastronomicos"),
+        ("F04-018", "F05-008", "Sabores del Mundo realizado en mercados/patios gastronomicos"),
+        ("F04-024", "F05-003", "Concurso Mejor Cafe Notable vinculado a Bares Notables"),
+        ("F04-007", "F05-002", "Vendimia BA vinculada al Distrito del Vino"),
+        ("F04-010", "F05-001", "Pinto Bodegon vinculado al programa marco BA Capital Gastronomica"),
+        ("F04-011", "F05-001", "Pinto Bodegon vinculado al programa marco BA Capital Gastronomica"),
+    ]
+    rows = [
+        {"id_evento": event_id, "id_programa": program_id, "tipo_vinculo": "vinculo_explicito", "observaciones": note}
+        for event_id, program_id, note in links
+        if event_id in event_ids and program_id in program_ids
+    ]
+    return pd.DataFrame(rows, columns=["id_evento", "id_programa", "tipo_vinculo", "observaciones"])
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Construye data/processed desde datos reales o seeds de desarrollo.")
-    parser.add_argument("--strict-real", action="store_true", help="Falla si se usan seeds o faltan F01/F02/F03 reales.")
+    parser.add_argument("--strict-real", action="store_true", help="Falla si se usan seeds o faltan F01/F02/F03 reales o F04/F05 semiestructurados.")
     args = parser.parse_args()
 
     est, est_reports = load_source_data("F01")
     hab, hab_reports = load_source_data("F02")
     ferias, ferias_reports = load_source_data("F03")
-    eventos = pd.DataFrame() if args.strict_real else clean_dataframe_columns(read_seed_csv("raw_eventos_gastronomicos.csv"))
+    eventos, eventos_reports = load_source_data("F04")
+    programas, programas_reports = load_source_data("F05")
     hab_gastronomica = filter_gastronomic_habilitations(hab)
-    reports = [*est_reports, *hab_reports, *ferias_reports]
+    reports = [*est_reports, *hab_reports, *ferias_reports, *eventos_reports, *programas_reports]
     write_contract_reports(reports)
     for report in reports:
         if report.origin == "seed":
@@ -661,7 +838,7 @@ def main() -> int:
             print("ERROR --strict-real no puede construir el modelo:")
             for error in errors:
                 print(f"ERROR {error}")
-            print("Accion: cargar CSV reales F01/F02/F03 en data/raw/ y volver a correr.")
+            print("Accion: cargar CSV reales F01/F02/F03 y CSV semiestructurados F04/F05 en data/raw/ y volver a correr.")
             return 1
 
     dim_fuente = build_dim_fuente()
@@ -670,9 +847,10 @@ def main() -> int:
     dim_organizador = build_dim_organizador(eventos)
     fact_establecimiento = build_fact_establecimiento(est, dim_fuente)
     fact_habilitacion = build_fact_habilitacion_gastronomica(hab_gastronomica, dim_fuente)
-    fact_evento = build_fact_evento(eventos, dim_fuente)
+    fact_evento = build_fact_evento(eventos, dim_fuente, dim_organizador)
     fact_mercado = build_fact_mercado_feria(ferias, dim_fuente)
-    fact_programa = build_fact_programa(dim_fuente, use_seed=not args.strict_real)
+    fact_programa = build_fact_programa(programas, dim_fuente)
+    puente_evento_programa = build_puente_evento_programa(fact_evento, fact_programa)
 
     write_csv(dim_fuente, "dim_fuente.csv")
     write_csv(dim_ubicacion, "dim_ubicacion.csv")
@@ -683,6 +861,7 @@ def main() -> int:
     write_csv(fact_evento, "fact_evento_gastronomico.csv")
     write_csv(fact_programa, "fact_programa_politica.csv")
     write_csv(fact_mercado, "fact_mercado_feria.csv")
+    write_csv(puente_evento_programa, "puente_evento_programa.csv")
 
     for name in ("puente_evento_categoria.csv", "puente_evento_establecimiento.csv", "puente_programa_establecimiento.csv"):
         path = DATA_PROCESSED / name

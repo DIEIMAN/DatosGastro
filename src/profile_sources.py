@@ -18,21 +18,11 @@ ENCODINGS_TO_TRY = ("utf-8-sig", "utf-8", "latin-1", "cp1252")
 SEPARATORS = (",", ";", "\t", "|")
 GEO_HINTS = ("barrio", "comuna", "direccion", "domicilio", "lat", "lon", "calle", "ubicacion")
 DATE_HINTS = ("fecha", "anio", "año", "periodo", "desde", "hasta")
+MAX_PROFILE_ROWS = 500
 
 
 def detect_encoding(path: Path, nbytes: int = 200_000) -> str:
-    raw = path.read_bytes()[:nbytes]
-    if chardet:
-        detected = chardet.detect(raw).get("encoding")
-        if detected:
-            return detected
-    for encoding in ENCODINGS_TO_TRY:
-        try:
-            raw.decode(encoding)
-            return encoding
-        except UnicodeDecodeError:
-            continue
-    return "latin-1"
+    return "utf-8-sig"
 
 
 def detect_separator(path: Path, encoding: str) -> str:
@@ -45,24 +35,37 @@ def detect_separator(path: Path, encoding: str) -> str:
         return max(SEPARATORS, key=lambda sep: first_line.count(sep))
 
 
-def read_csv_profile(path: Path) -> tuple[pd.DataFrame, str, str]:
+def read_csv_profile(path: Path) -> tuple[pd.DataFrame, str, str, bool]:
     encoding = detect_encoding(path)
     separator = detect_separator(path, encoding)
-    last_error = None
-    for candidate_encoding in (encoding, *ENCODINGS_TO_TRY):
-        try:
-            df = pd.read_csv(
-                path,
-                sep=separator,
-                encoding=candidate_encoding,
-                dtype=str,
-                keep_default_na=False,
-                on_bad_lines="skip",
-            )
-            return df, candidate_encoding, separator
-        except Exception as exc:
-            last_error = exc
-    raise RuntimeError(f"No se pudo leer {path}: {last_error}")
+    try:
+        df = pd.read_csv(
+            path,
+            sep=separator,
+            encoding=encoding,
+            encoding_errors="replace",
+            dtype=str,
+            keep_default_na=False,
+            on_bad_lines="skip",
+            nrows=MAX_PROFILE_ROWS,
+        )
+    except TypeError:
+        df = pd.read_csv(
+            path,
+            sep=separator,
+            encoding="latin-1",
+            dtype=str,
+            keep_default_na=False,
+            on_bad_lines="skip",
+            nrows=MAX_PROFILE_ROWS,
+        )
+        encoding = "latin-1"
+    return df, encoding, separator, True
+
+
+def count_csv_rows(path: Path, encoding: str) -> int:
+    lines = path.read_bytes().splitlines()
+    return max(len(lines) - 1, 0)
 
 
 def _matching_columns(columns, hints) -> list[str]:
@@ -86,8 +89,9 @@ def _frequent_problem_values(df: pd.DataFrame) -> str:
 
 
 def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
-    df, encoding, separator = read_csv_profile(path)
+    df, encoding, separator, sample_only = read_csv_profile(path)
     size_bytes = path.stat().st_size
+    total_rows = count_csv_rows(path, encoding) if sample_only else len(df)
     empty_percent = {}
     for column in df.columns:
         if len(df):
@@ -103,7 +107,7 @@ def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
         dataset_kind = "seed/manual"
     elif size_bytes < 1024:
         dataset_kind = "raw real sospechoso por tamano"
-    elif len(df) < 1000:
+    elif total_rows < 1000:
         dataset_kind = "dataset real pequeno"
     else:
         dataset_kind = "dataset completo probable"
@@ -121,7 +125,8 @@ def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
         "tamano_bytes": size_bytes,
         "encoding": encoding,
         "separador": repr(separator),
-        "filas": len(df),
+        "filas": total_rows,
+        "filas_perfiladas": len(df),
         "columnas_cantidad": len(df.columns),
         "columnas": " | ".join(map(str, df.columns)),
         "nulos_por_columna_pct": " | ".join(f"{col}:{pct}" for col, pct in empty_percent.items()),
@@ -131,7 +136,7 @@ def profile_file(path: Path, layer: str) -> tuple[dict, pd.DataFrame]:
         "posible_mojibake_celdas_muestra": suspected_mojibake,
         "valores_problematicos_frecuentes": _frequent_problem_values(df),
         "tipo_estimado": dataset_kind,
-        "recomendacion_uso": recommendation + ("; duplicados calculados sobre muestra de 250k filas" if len(df) > 250_000 else ""),
+        "recomendacion_uso": recommendation + ("; metricas de calidad calculadas sobre muestra de 5k filas" if sample_only else ""),
     }
     return summary, df
 

@@ -26,16 +26,64 @@ SELECT
   ev.id_evento,
   ev.nombre_evento,
   ev.fecha_inicio,
+  ev.fecha_fin,
   ev.tipo_evento,
+  ev.tipo_vinculo_gcba,
   org.nombre_organizador,
   u.barrio,
   u.comuna,
+  ev.apto_dashboard,
   ev.calidad_dato,
   ev.requiere_validacion,
   ev.origen_dato
 FROM fact_evento_gastronomico ev
 JOIN dim_organizador org ON org.id_organizador = ev.id_organizador
-JOIN dim_ubicacion u ON u.id_ubicacion = ev.id_ubicacion;
+JOIN dim_ubicacion u ON u.id_ubicacion = ev.id_ubicacion
+WHERE ev.id_fuente = 'F04'
+  AND ev.apto_dashboard = 'si'
+  AND ev.requiere_validacion <> 'si'
+  AND ev.fecha_completa = 'si'
+  AND ev.tipo_vinculo_gcba !~* 'Difusion oficial|Requiere validacion';
+
+CREATE OR REPLACE VIEW vw_eventos_cualitativos AS
+SELECT
+  ev.id_evento,
+  ev.nombre_evento,
+  ev.fecha_inicio,
+  ev.fecha_fin,
+  ev.tipo_evento,
+  ev.tipo_vinculo_gcba,
+  ev.apto_dashboard,
+  ev.requiere_validacion,
+  ev.motivo_validacion,
+  ev.limitaciones,
+  ev.url_fuente
+FROM fact_evento_gastronomico ev
+WHERE ev.id_fuente = 'F04'
+  AND (
+    ev.apto_dashboard <> 'si'
+    OR ev.requiere_validacion = 'si'
+    OR ev.fecha_completa <> 'si'
+    OR ev.tipo_vinculo_gcba ~* 'Difusion oficial|Requiere validacion'
+  );
+
+CREATE OR REPLACE VIEW vw_programas_catalogo AS
+SELECT
+  p.id_programa,
+  p.nombre_programa,
+  p.tipo_programa,
+  p.estado,
+  p.organismo_responsable,
+  p.objetivo,
+  p.beneficiarios,
+  p.normativa_relacionada,
+  p.apto_dashboard,
+  p.limitaciones,
+  p.url_fuente
+FROM fact_programa_politica p
+WHERE p.id_fuente = 'F05'
+  AND p.apto_dashboard = 'si'
+  AND p.vigencia_clara = 'si';
 
 CREATE OR REPLACE VIEW vw_habilitaciones_dashboard AS
 SELECT
@@ -90,5 +138,10 @@ FROM dim_ubicacion u
 LEFT JOIN fact_establecimiento e ON e.id_ubicacion = u.id_ubicacion
 LEFT JOIN fact_habilitacion_gastronomica h ON h.id_ubicacion = u.id_ubicacion
 LEFT JOIN fact_evento_gastronomico ev ON ev.id_ubicacion = u.id_ubicacion
+  AND ev.id_fuente = 'F04'
+  AND ev.apto_dashboard = 'si'
+  AND ev.requiere_validacion <> 'si'
+  AND ev.fecha_completa = 'si'
+  AND ev.tipo_vinculo_gcba !~* 'Difusion oficial|Requiere validacion'
 LEFT JOIN fact_mercado_feria mf ON mf.id_ubicacion = u.id_ubicacion
 GROUP BY u.barrio, u.comuna;

@@ -1,3 +1,16 @@
 id_organizador,nombre_organizador,tipo_organizador,sector,web,observaciones
 O000,No normalizado,No determinado,gastronomia,No disponible,Centinela para organizadores pendientes de normalizacion
+O001,AFADHYA,privado/mixto,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
+O002,Ministerio de Desarrollo Economico GCBA,Publico,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O003,DG Desarrollo Gastronomico,publico,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
+O004,BA Capital Gastronomica,publico/mixto,gastronomia,No disponible,Inferido desde raw_eventos_gastronomicos.csv
+O005,GCBA (Ministerio de Desarrollo Economico y Produccion),Publico,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O006,Ministerio de Desarrollo Economico y Produccion GCBA,Publico,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O007,"Ministerio de Desarrollo Economico y Produccion GCBA con colaboracion de AHRCC y DG Patrimonio, Museos y Casco Historico",Publico con colaboracion de camara privada,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O008,Ministerio de Desarrollo Economico GCBA con colaboracion de AHRCC,Publico con colaboracion de camara privada,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O009,Ministerio de Desarrollo Economico GCBA junto a AHRCC,Publico con colaboracion de camara privada,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O010,Exponenciar S.A. (feria privada); stand institucional del GCBA,Privado,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O011,Exponenciar S.A. (feria privada),Privado,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O014,Gcba,Publico,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
+O015,Produccion privada (Cecilia Costa Racedo),Privado,gastronomia,No disponible,Inferido desde F04 relevamiento manual trazable
 O999,Privado / mixto no normalizado,privado/mixto,gastronomia,No disponible,"Organizador detectado en texto, requiere normalizacion manual"

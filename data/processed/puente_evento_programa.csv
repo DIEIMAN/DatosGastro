@@ -1,0 +1,11 @@
+id_evento,id_programa,tipo_vinculo,observaciones
+F04-001,F05-001,vinculo_explicito,Cafecito BA vinculado al programa marco BA Capital Gastronomica
+F04-001,F05-009,vinculo_explicito,Convocatoria Cafecito BA 2026 como instrumento puntual
+F04-015,F05-008,vinculo_explicito,Sabores del Mundo realizado en mercados/patios gastronomicos
+F04-016,F05-008,vinculo_explicito,Sabores del Mundo realizado en mercados/patios gastronomicos
+F04-017,F05-008,vinculo_explicito,Sabores del Mundo realizado en mercados/patios gastronomicos
+F04-018,F05-008,vinculo_explicito,Sabores del Mundo realizado en mercados/patios gastronomicos
+F04-024,F05-003,vinculo_explicito,Concurso Mejor Cafe Notable vinculado a Bares Notables
+F04-007,F05-002,vinculo_explicito,Vendimia BA vinculada al Distrito del Vino
+F04-010,F05-001,vinculo_explicito,Pinto Bodegon vinculado al programa marco BA Capital Gastronomica
+F04-011,F05-001,vinculo_explicito,Pinto Bodegon vinculado al programa marco BA Capital Gastronomica

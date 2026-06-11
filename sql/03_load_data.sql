@@ -13,6 +13,7 @@ SET search_path TO gastronomia_caba;
 \copy fact_evento_gastronomico FROM 'data/processed/fact_evento_gastronomico.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 \copy fact_programa_politica FROM 'data/processed/fact_programa_politica.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 \copy fact_mercado_feria FROM 'data/processed/fact_mercado_feria.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+\copy puente_evento_programa FROM 'data/processed/puente_evento_programa.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 \copy puente_evento_categoria FROM 'data/processed/puente_evento_categoria.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 \copy puente_evento_establecimiento FROM 'data/processed/puente_evento_establecimiento.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');

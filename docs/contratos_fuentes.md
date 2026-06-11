@@ -1,6 +1,6 @@
 # Contratos de fuentes
 
-Generado: 2026-06-10
+Generado: 2026-06-11
 
 Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y que columnas pudieron mapearse al contrato canonico.
 
@@ -111,3 +111,21 @@ Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y 
 - Columnas mapeadas: recurso=F03_MERCADOS; nombre_original <- nombre; direccion_original <- ubicacion; barrio_original <- barrio
 - Columnas requeridas faltantes: tipo_original
 - Columnas extra no usadas: arc_street; nombre_map
+
+## F04
+
+- Archivo: `C:\proyectos\Gastronomia\DataGastro\data\raw\f04_eventos_gastronomicos.csv`
+- Origen: real
+- Filas: 29
+- Columnas mapeadas: recurso=F04; id_raw <- id_evento_raw; nombre_evento <- nombre_evento; descripcion <- descripcion; fecha_inicio <- fecha_inicio; fecha_fin <- fecha_fin; anio <- anio; periodicidad <- periodicidad; ubicacion_original <- ubicacion_original; direccion_original <- direccion_original; barrio_original <- barrio; comuna_original <- comuna; organizador_original <- organizador; tipo_organizador <- tipo_organizador; apoyo_gcba <- apoyo_gcba; organismo_gcba_relacionado <- organismo_gcba_relacionado; area_gcba_relacionada <- area_gcba_relacionada; tipo_vinculo_gcba <- tipo_vinculo_gcba; tipo_evento <- tipo_evento; categoria_gastronomica <- categoria_gastronomica; gratuito <- gratuito; requiere_inscripcion <- requiere_inscripcion; cantidad_asistentes <- cantidad_asistentes; cantidad_puestos <- cantidad_puestos; url_fuente <- url_fuente; fuente <- fuente; tipo_fuente <- tipo_fuente; fecha_consulta <- fecha_consulta; calidad_dato <- calidad_dato; requiere_validacion <- requiere_validacion; motivo_validacion <- motivo_validacion; apto_dashboard <- apto_dashboard; limitaciones <- limitaciones; observaciones_raw <- observaciones
+- Columnas requeridas faltantes: Ninguna
+- Columnas extra no usadas: Ninguna
+
+## F05
+
+- Archivo: `C:\proyectos\Gastronomia\DataGastro\data\raw\f05_programas_politicas_gastronomicas.csv`
+- Origen: real
+- Filas: 9
+- Columnas mapeadas: recurso=F05; id_raw <- id_programa_raw; nombre_programa <- nombre_programa; organismo_responsable <- organismo_responsable; area_dependiente <- area_dependiente; tipo_programa <- tipo_programa; estado <- estado; fecha_inicio <- fecha_inicio; fecha_fin <- fecha_fin; anio_inicio <- anio_inicio; descripcion <- descripcion; objetivo <- objetivo; beneficiarios <- beneficiarios; alcance_geografico <- alcance_geografico; barrios_comunas <- barrios_comunas; normativa_relacionada <- normativa_relacionada; presupuesto <- presupuesto; metricas_publicadas <- metricas_publicadas; resultados_publicados <- resultados_publicados; url_fuente <- url_fuente; fuente <- fuente; tipo_fuente <- tipo_fuente; fecha_consulta <- fecha_consulta; calidad_dato <- calidad_dato; requiere_validacion <- requiere_validacion; motivo_validacion <- motivo_validacion; apto_dashboard <- apto_dashboard; limitaciones <- limitaciones; observaciones_raw <- observaciones
+- Columnas requeridas faltantes: Ninguna
+- Columnas extra no usadas: Ninguna

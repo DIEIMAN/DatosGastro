@@ -2,6 +2,11 @@
 
 ## 2026-06-10 - V3 control de datos reales y dashboard
 
+- Se integraron F04 y F05 como fuentes reales semiestructuradas y trazables: eventos gastronomicos y programas/politicas.
+- Se agrego `puente_evento_programa.csv` para vinculos explicitos F04-F05.
+- Se agregaron analytics F04: eventos por barrio, tipo, anio y cualitativos.
+- Se agregaron analytics F05: programas por tipo, estado, catalogo y cualitativos.
+- Se ajusto `profile_sources.py` para perfilar archivos grandes por muestra y evitar timeouts con F02.
 - Se separo conceptualmente F01/F02/F03: `fact_establecimiento.csv` queda solo para F01, `fact_habilitacion_gastronomica.csv` queda para F02 y `fact_mercado_feria.csv` queda para F03.
 - Se agregaron analytics de habilitaciones por anio, barrio, categoria y recientes.
 - Se actualizo `analytics_resumen_ejecutivo.csv` para informar indicadores separados: oferta F01, habilitaciones F02, ferias/mercados F03, eventos reales y programas reales.

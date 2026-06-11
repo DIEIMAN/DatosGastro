@@ -10,8 +10,8 @@
 - Ajustar mapeos de columnas si BA Data cambia nombres o formatos.
 - Geocodificar direcciones con USIG en una etapa futura con internet.
 - Validar vigencia de F01 contra fuentes oficiales complementarias si se necesita hablar de establecimientos activos.
-- Incorporar fuente real estructurada para eventos gastronomicos.
-- Incorporar fuente real estructurada para programas/politicas.
+- Mantener curado F04 con fuente por fila; si aparece dataset oficial estructurado de eventos, integrarlo como nueva fuente.
+- Mantener curado F05 con fuente por fila; si aparece dataset oficial estructurado de programas/politicas, integrarlo como nueva fuente.
 
 ## Limitaciones actuales
 
@@ -21,7 +21,9 @@
 - La clasificacion gastronomica de F02 es inferida desde descripcion de rubro y requiere cautela en casos ambiguos.
 - F03 incluye recursos con cobertura desigual; `f03_mercados.csv` quedo marcado como sospechoso por tamano menor a 1 KB.
 - Eventos con sedes multiples o no determinadas usan `U00000`.
-- No se publicaron o no se estructuraron metricas de impacto para varios programas.
+- F04 no representa el universo completo de eventos gastronomicos de CABA.
+- F05 no es serie temporal de impacto; no se publicaron o no se estructuraron metricas de impacto para varios programas.
+- Montos historicos de F05 no deben usarse como vigentes sin validar normativa/tarifaria actual.
 - Analytics deben interpretarse segun `estado_datos`, `apto_dashboard`, metodologia y limitaciones.
 
 ## No hacer sin evidencia
