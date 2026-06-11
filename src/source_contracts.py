@@ -45,6 +45,8 @@ SOURCE_COLUMN_CONTRACTS = {
         "fecha_habilitacion": ["fecha_habilitacion", "fecha", "fecha_aprobacion", "fecha_inicio", "fecha_disposicion", "fecha_acto"],
         "rubro_original": ["rubro_original", "rubro", "actividad", "descripcion_rubro", "tipo_actividad", "descripcion", "actividad_comercial"],
         "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "calles", "calle", "ubicacion"],
+        "barrio_original": ["barrio_original", "barrio"],
+        "comuna_original": ["comuna_original", "comuna"],
         "superficie": ["superficie", "superficie_m2", "metros_cuadrados"],
         "es_gastronomico": ["es_gastronomico"],
         "categoria_gastronomica_inferida": ["categoria_gastronomica_inferida", "categoria"],

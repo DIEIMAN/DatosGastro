@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import warnings
 
 import pandas as pd
 
@@ -92,6 +93,10 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
     errors = []
     important = {
         "analytics_establecimientos_por_categoria_barrio.csv",
+        "analytics_habilitaciones_por_anio.csv",
+        "analytics_habilitaciones_por_barrio.csv",
+        "analytics_habilitaciones_por_categoria.csv",
+        "analytics_habilitaciones_recientes.csv",
         "analytics_mapa_oportunidades.csv",
         "analytics_resumen_ejecutivo.csv",
     }
@@ -197,6 +202,117 @@ def establecimientos_por_categoria_barrio(est: pd.DataFrame, ubicaciones: pd.Dat
     )
 
 
+def habilitaciones_por_anio(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if hab.empty:
+        df = pd.DataFrame([{"anio_fuente": "Sin datos", "cantidad_habilitaciones": 0}])
+    else:
+        df = (
+            hab.groupby(["anio_fuente"], dropna=False)
+            .agg(
+                cantidad_habilitaciones=("id_habilitacion", "count"),
+                cantidad_con_validacion=("requiere_validacion", lambda s: (s == "si").sum()),
+            )
+            .reset_index()
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            hab,
+            method="Conteo de habilitaciones gastronomicas F02 por anio/periodo de recurso.",
+            limitations="No representa establecimientos activos unicos; clasificacion gastronomica inferida por rubro.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def habilitaciones_por_barrio(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if hab.empty:
+        df = pd.DataFrame([{"barrio": "Sin datos", "comuna": "Sin datos", "cantidad_habilitaciones": 0}])
+    else:
+        df = (
+            hab.groupby(["barrio", "comuna"], dropna=False)
+            .agg(cantidad_habilitaciones=("id_habilitacion", "count"))
+            .reset_index()
+            .sort_values("cantidad_habilitaciones", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            hab,
+            method="Conteo de habilitaciones gastronomicas F02 por barrio/comuna cuando la ubicacion pudo normalizarse.",
+            limitations="Muchas habilitaciones pueden no tener barrio normalizado; no equivale a locales activos.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def habilitaciones_por_categoria(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if hab.empty:
+        df = pd.DataFrame([{"categoria_gastronomica_inferida": "Sin datos", "cantidad_habilitaciones": 0}])
+    else:
+        df = (
+            hab.groupby(["categoria_gastronomica_inferida"], dropna=False)
+            .agg(
+                cantidad_habilitaciones=("id_habilitacion", "count"),
+                confianza_promedio=("confianza_categoria", lambda s: round(pd.to_numeric(s, errors="coerce").mean(), 3)),
+            )
+            .reset_index()
+            .sort_values("cantidad_habilitaciones", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            hab,
+            method="Conteo de habilitaciones F02 por categoria gastronomica inferida.",
+            limitations="Categorias inferidas por keywords sobre descripcion de rubro.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def habilitaciones_recientes(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if hab.empty:
+        df = pd.DataFrame([{"id_habilitacion": "Sin datos", "fecha_habilitacion": "Sin datos"}])
+    else:
+        df = hab.copy()
+        iso_dates = df["fecha_habilitacion"].astype(str).str.match(r"^\d{4}-\d{2}-\d{2}$", na=False)
+        df["_fecha_sort"] = pd.NaT
+        df.loc[iso_dates, "_fecha_sort"] = pd.to_datetime(df.loc[iso_dates, "fecha_habilitacion"], errors="coerce")
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", UserWarning)
+            df.loc[~iso_dates, "_fecha_sort"] = pd.to_datetime(df.loc[~iso_dates, "fecha_habilitacion"], errors="coerce", dayfirst=True)
+        df = (
+            df.sort_values(["_fecha_sort", "anio_fuente"], ascending=False)
+            .drop(columns=["_fecha_sort"])
+            .head(500)
+        )
+        keep = [
+            "id_habilitacion",
+            "fecha_habilitacion",
+            "anio_fuente",
+            "periodo_fuente",
+            "descripcion_rubro_original",
+            "categoria_gastronomica_inferida",
+            "confianza_categoria",
+            "direccion_original",
+            "barrio",
+            "comuna",
+            "superficie",
+            "requiere_validacion",
+            "motivo_validacion",
+        ]
+        df = df[[column for column in keep if column in df.columns]]
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            hab,
+            method="Ultimas habilitaciones gastronomicas F02 segun fecha_habilitacion disponible.",
+            limitations="No equivale a establecimientos activos; fecha puede faltar en algunos recursos.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
 def programas_por_anio(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     if programas.empty:
         return attach_metadata(
@@ -230,62 +346,71 @@ def programas_por_anio(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Dat
     )
 
 
-def mapa_oportunidades(est: pd.DataFrame, eventos: pd.DataFrame, mercados: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
-    barrios = ubicaciones[["barrio", "comuna"]].drop_duplicates()
-    barrios = barrios[barrios["barrio"].ne("No determinado")]
+def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, mercados: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    base_frames = [ubicaciones[["barrio", "comuna"]]]
+    if {"barrio", "comuna"}.issubset(hab.columns):
+        base_frames.append(hab[["barrio", "comuna"]])
+    barrios = pd.concat(base_frames, ignore_index=True).drop_duplicates()
     est_count = est.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
+    hab_count = hab.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(hab.columns) else pd.Series(dtype=int)
     evt_count = eventos.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
     mer_count = mercados.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
     rows = []
     for _, row in barrios.iterrows():
         barrio = row["barrio"]
+        comuna = row["comuna"]
+        habilitaciones = int(hab_count.get((barrio, comuna), 0))
         rows.append(
             {
                 "barrio": barrio,
-                "comuna": row["comuna"],
-                "densidad_gastronomica": int(est_count.get(barrio, 0)),
+                "comuna": comuna,
+                "densidad_establecimientos_f01": int(est_count.get(barrio, 0)),
+                "cantidad_habilitaciones_f02": habilitaciones,
                 "cantidad_eventos": int(evt_count.get(barrio, 0)),
-                "cantidad_mercados_ferias": int(mer_count.get(barrio, 0)),
+                "cantidad_ferias_mercados_f03": int(mer_count.get(barrio, 0)),
                 "presencia_de_polos": "Requiere validacion",
-                "nivel_actividad_gastronomica": "alto" if int(est_count.get(barrio, 0)) + int(mer_count.get(barrio, 0)) >= 2 else "bajo/muestra seed",
-                "oportunidades_detectadas": "Geocodificar, validar vigencia y cruzar con habilitaciones AGC",
+                "nivel_actividad_gastronomica": "alto" if int(est_count.get(barrio, 0)) + habilitaciones + int(mer_count.get(barrio, 0)) >= 25 else "bajo/medio",
+                "oportunidades_detectadas": "Interpretar F01, F02 y F03 por separado; no sumar habilitaciones como establecimientos activos",
                 "observaciones": "Calculado sobre processed; interpretar segun estado_datos",
             }
         )
-    df = pd.DataFrame(rows).sort_values(["densidad_gastronomica", "cantidad_mercados_ferias"], ascending=False)
+    df = pd.DataFrame(rows).sort_values(["densidad_establecimientos_f01", "cantidad_habilitaciones_f02", "cantidad_ferias_mercados_f03"], ascending=False)
     return attach_metadata(
         df,
         traceability_metadata(
             est,
+            hab,
             eventos,
             mercados,
-            method="Cruce territorial de establecimientos, eventos y mercados/ferias.",
-            limitations="No usar para decisiones si alguna entrada es seed o no tiene geocodificacion validada.",
+            method="Cruce territorial separado de oferta F01, habilitaciones F02 y ferias/mercados F03.",
+            limitations="No sumar F02 como establecimientos activos; algunas ubicaciones pueden quedar sin barrio normalizado.",
             source_catalog=fuentes,
         ),
     )
 
 
-def resumen_ejecutivo(est: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, mercados: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
-    status = data_status(est, eventos, programas, mercados)
+def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, mercados: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    status = data_status(est, hab, mercados)
     rows = [
         ("fuentes_relevadas", len(fuentes), status),
-        ("establecimientos_modelados", len(est), status),
-        ("eventos_modelados", len(eventos), status),
-        ("programas_modelados", len(programas), status),
-        ("mercados_ferias_modelados", len(mercados), status),
-        ("registros_que_requieren_validacion", sum((df.get("requiere_validacion", pd.Series(dtype=str)) == "si").sum() for df in (est, eventos, programas, mercados)), status),
+        ("establecimientos_oferta_gastronomica_f01", len(est), data_status(est)),
+        ("habilitaciones_gastronomicas_f02", len(hab), data_status(hab)),
+        ("ferias_mercados_f03", len(mercados), data_status(mercados)),
+        ("eventos_gastronomicos_reales", len(eventos), data_status(eventos)),
+        ("programas_politicas_reales", len(programas), data_status(programas)),
+        ("registros_que_requieren_validacion", sum((df.get("requiere_validacion", pd.Series(dtype=str)) == "si").sum() for df in (est, hab, eventos, programas, mercados)), status),
     ]
     df = pd.DataFrame(rows, columns=["indicador", "valor", "estado_datos"])
     return attach_metadata(
         df.drop(columns=["estado_datos"]),
         traceability_metadata(
             est,
+            hab,
             eventos,
             programas,
             mercados,
-            method="Resumen de conteos principales del modelo procesado.",
-            limitations="No presentar como dashboard real si estado_datos no es datos reales.",
+            method="Resumen de conteos principales separados por concepto: F01 oferta, F02 habilitaciones y F03 ferias/mercados.",
+            limitations="No interpretar habilitaciones F02 como establecimientos activos unicos.",
             source_catalog=fuentes,
         ),
     )
@@ -300,6 +425,7 @@ def main() -> int:
     ubicaciones = read_processed("dim_ubicacion.csv")
     categorias = read_processed("dim_categoria_gastronomica.csv")
     est = read_processed("fact_establecimiento.csv")
+    hab = read_processed("fact_habilitacion_gastronomica.csv")
     eventos = read_processed("fact_evento_gastronomico.csv")
     programas = read_processed("fact_programa_politica.csv")
     mercados = read_processed("fact_mercado_feria.csv")
@@ -307,9 +433,13 @@ def main() -> int:
     analytics = {
         "analytics_eventos_por_barrio.csv": eventos_por_barrio(eventos, ubicaciones, fuentes),
         "analytics_establecimientos_por_categoria_barrio.csv": establecimientos_por_categoria_barrio(est, ubicaciones, categorias, fuentes),
+        "analytics_habilitaciones_por_anio.csv": habilitaciones_por_anio(hab, fuentes),
+        "analytics_habilitaciones_por_barrio.csv": habilitaciones_por_barrio(hab, fuentes),
+        "analytics_habilitaciones_por_categoria.csv": habilitaciones_por_categoria(hab, fuentes),
+        "analytics_habilitaciones_recientes.csv": habilitaciones_recientes(hab, fuentes),
         "analytics_programas_por_anio.csv": programas_por_anio(programas, fuentes),
-        "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, eventos, mercados, ubicaciones, fuentes),
-        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, eventos, programas, mercados, fuentes),
+        "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, hab, eventos, mercados, ubicaciones, fuentes),
+        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, mercados, fuentes),
     }
     if args.strict_real:
         errors = strict_real_errors(analytics)

@@ -14,9 +14,23 @@ JOIN dim_categoria_gastronomica c ON c.id_categoria = e.id_categoria
 GROUP BY 1, 2, 3, 4
 ORDER BY cantidad_establecimientos DESC;
 
+-- Habilitaciones gastronomicas por anio/periodo F02.
+SELECT
+  anio_fuente,
+  periodo_fuente,
+  categoria_gastronomica_inferida,
+  COUNT(*) AS cantidad_habilitaciones
+FROM fact_habilitacion_gastronomica
+GROUP BY 1, 2, 3
+ORDER BY cantidad_habilitaciones DESC;
+
 -- Registros que requieren validacion.
 SELECT 'establecimiento' AS tipo, id_establecimiento AS id, nombre, motivo_validacion
 FROM fact_establecimiento
+WHERE requiere_validacion = 'si'
+UNION ALL
+SELECT 'habilitacion_gastronomica' AS tipo, id_habilitacion AS id, descripcion_rubro_original AS nombre, motivo_validacion
+FROM fact_habilitacion_gastronomica
 WHERE requiere_validacion = 'si'
 UNION ALL
 SELECT 'evento' AS tipo, id_evento AS id, nombre_evento AS nombre, motivo_validacion
@@ -35,6 +49,10 @@ WHERE id_ubicacion = 'U00000';
 -- Cobertura de fuentes por tabla de hechos.
 SELECT id_fuente, COUNT(*) AS registros, 'establecimientos' AS tabla
 FROM fact_establecimiento
+GROUP BY id_fuente
+UNION ALL
+SELECT id_fuente, COUNT(*) AS registros, 'habilitaciones_gastronomicas' AS tabla
+FROM fact_habilitacion_gastronomica
 GROUP BY id_fuente
 UNION ALL
 SELECT id_fuente, COUNT(*) AS registros, 'eventos' AS tabla

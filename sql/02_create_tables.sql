@@ -72,6 +72,33 @@ CREATE TABLE IF NOT EXISTS fact_establecimiento (
   periodo_fuente text
 );
 
+CREATE TABLE IF NOT EXISTS fact_habilitacion_gastronomica (
+  id_habilitacion text PRIMARY KEY,
+  id_fuente text REFERENCES dim_fuente(id_fuente),
+  url_fuente text,
+  fecha_consulta text,
+  periodo_fuente text,
+  anio_fuente text,
+  fecha_habilitacion text,
+  descripcion_rubro_original text,
+  descripcion_rubro_normalizada text,
+  es_gastronomico text,
+  categoria_gastronomica_inferida text,
+  confianza_categoria text,
+  motivo_categoria text,
+  id_ubicacion text REFERENCES dim_ubicacion(id_ubicacion),
+  direccion_original text,
+  barrio text,
+  comuna text,
+  superficie text,
+  origen_dato text,
+  estado_datos text,
+  calidad_dato text,
+  requiere_validacion text,
+  motivo_validacion text,
+  observaciones text
+);
+
 CREATE TABLE IF NOT EXISTS fact_evento_gastronomico (
   id_evento text PRIMARY KEY,
   nombre_evento text,

@@ -37,9 +37,33 @@ FROM fact_evento_gastronomico ev
 JOIN dim_organizador org ON org.id_organizador = ev.id_organizador
 JOIN dim_ubicacion u ON u.id_ubicacion = ev.id_ubicacion;
 
+CREATE OR REPLACE VIEW vw_habilitaciones_dashboard AS
+SELECT
+  h.id_habilitacion,
+  h.fecha_habilitacion,
+  h.anio_fuente,
+  h.periodo_fuente,
+  h.descripcion_rubro_original,
+  h.categoria_gastronomica_inferida,
+  h.confianza_categoria,
+  h.id_ubicacion,
+  h.direccion_original,
+  h.barrio,
+  h.comuna,
+  h.superficie,
+  h.calidad_dato,
+  h.requiere_validacion,
+  h.origen_dato,
+  h.estado_datos
+FROM fact_habilitacion_gastronomica h;
+
 CREATE OR REPLACE VIEW vw_validaciones_pendientes AS
 SELECT 'establecimiento' AS tipo, id_establecimiento AS id, nombre, motivo_validacion
 FROM fact_establecimiento
+WHERE requiere_validacion = 'si'
+UNION ALL
+SELECT 'habilitacion_gastronomica' AS tipo, id_habilitacion AS id, descripcion_rubro_original AS nombre, motivo_validacion
+FROM fact_habilitacion_gastronomica
 WHERE requiere_validacion = 'si'
 UNION ALL
 SELECT 'evento' AS tipo, id_evento AS id, nombre_evento AS nombre, motivo_validacion
@@ -58,11 +82,13 @@ CREATE OR REPLACE VIEW vw_resumen_barrio AS
 SELECT
   u.barrio,
   u.comuna,
-  COUNT(DISTINCT e.id_establecimiento) AS establecimientos,
+  COUNT(DISTINCT e.id_establecimiento) AS establecimientos_oferta_f01,
+  COUNT(DISTINCT h.id_habilitacion) AS habilitaciones_f02,
   COUNT(DISTINCT ev.id_evento) AS eventos,
-  COUNT(DISTINCT mf.id_mercado_feria) AS mercados_ferias
+  COUNT(DISTINCT mf.id_mercado_feria) AS ferias_mercados_f03
 FROM dim_ubicacion u
 LEFT JOIN fact_establecimiento e ON e.id_ubicacion = u.id_ubicacion
+LEFT JOIN fact_habilitacion_gastronomica h ON h.id_ubicacion = u.id_ubicacion
 LEFT JOIN fact_evento_gastronomico ev ON ev.id_ubicacion = u.id_ubicacion
 LEFT JOIN fact_mercado_feria mf ON mf.id_ubicacion = u.id_ubicacion
 GROUP BY u.barrio, u.comuna;

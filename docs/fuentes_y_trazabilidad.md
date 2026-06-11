@@ -4,11 +4,11 @@ El proyecto separa pagina portal, URL directa de descarga y datos efectivamente 
 
 ## Fuentes principales
 
-| id | fuente | estado V2 |
-| --- | --- | --- |
-| F01 | Oferta y Establecimientos Gastronomicos | URL directa CKAN y CDN registradas |
-| F02 | Habilitaciones Aprobadas AGC | Recursos 2015-2025 registrados; 2026 no publicado/no requerido |
-| F03 | Ferias y Mercados | CSV combinado y recursos complementarios registrados |
+| id | fuente | tabla processed | lectura correcta |
+| --- | --- | --- | --- |
+| F01 | Oferta y Establecimientos Gastronomicos | `fact_establecimiento.csv` | Oferta/establecimientos gastronomicos registrados |
+| F02 | Habilitaciones Aprobadas AGC | `fact_habilitacion_gastronomica.csv` | Habilitaciones aprobadas inferidas como gastronomicas |
+| F03 | Ferias y Mercados | `fact_mercado_feria.csv` | Ferias y mercados |
 
 Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.py`.
 
@@ -17,6 +17,19 @@ Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.p
 - F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El GeoJSON es solo FIAB.
 
 Las URLs portal se conservan en `data/raw/raw_fuentes_relevadas.csv` y en `src/config.py`. No se usan como descarga automatica si no apuntan a un archivo directo.
+
+## Separacion conceptual
+
+F02 no es un padron vivo de establecimientos activos. Es un registro de habilitaciones aprobadas, por eso vive en `fact_habilitacion_gastronomica.csv` y no en `fact_establecimiento.csv`.
+
+Regla de comunicacion:
+
+- No mostrar "90.764 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos.
+- Mostrar "2.823 registros en Oferta Gastronomica F01".
+- Mostrar "87.934 habilitaciones gastronomicas inferidas desde AGC F02".
+- Mostrar "4.388 registros de ferias/mercados F03".
+
+Cada metrica debe incluir fuente, URL, fecha de consulta, metodologia y limitaciones.
 
 ## Campos de trazabilidad
 
@@ -59,6 +72,7 @@ Estos archivos indican:
 - Si `estado_datos = datos seed`, entonces `apto_dashboard = no`.
 - Si hay mezcla de datos reales y seed, entonces `apto_dashboard = no` hasta validar cobertura.
 - Si faltan `fuentes_utilizadas` o `urls_fuentes`, entonces no se debe publicar como dashboard real.
+- Si una analytics llama "establecimientos" a F02, no debe publicarse.
 - El modo `--strict-real` debe fallar ante cualquiera de esos casos.
 
 ## Regla de prioridad

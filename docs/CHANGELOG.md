@@ -2,6 +2,11 @@
 
 ## 2026-06-10 - V3 control de datos reales y dashboard
 
+- Se separo conceptualmente F01/F02/F03: `fact_establecimiento.csv` queda solo para F01, `fact_habilitacion_gastronomica.csv` queda para F02 y `fact_mercado_feria.csv` queda para F03.
+- Se agregaron analytics de habilitaciones por anio, barrio, categoria y recientes.
+- Se actualizo `analytics_resumen_ejecutivo.csv` para informar indicadores separados: oferta F01, habilitaciones F02, ferias/mercados F03, eventos reales y programas reales.
+- Se actualizo `analytics_mapa_oportunidades.csv` para distinguir densidad F01, habilitaciones F02 y ferias/mercados F03.
+- Se reforzo `validate_model.py --strict-real` para validar la nueva tabla F02, trazabilidad, FKs y que F02 no vuelva a mezclarse en `fact_establecimiento.csv`.
 - Se separaron seeds/manuales en `data/seeds/` y se reservo `data/raw/` para datos reales.
 - Se incorporaron URLs reales verificadas para F01, F02 2015-2025 y F03.
 - Se descargo y proceso F01/F02/F03 reales en modo estricto.

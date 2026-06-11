@@ -25,13 +25,15 @@ def read_csv(path: Path) -> pd.DataFrame:
         sep = dialect.delimiter
     except Exception:
         sep = None
-    for encoding in ("utf-8-sig", "utf-8", "latin-1", "cp1252"):
-        try:
-            if sep:
-                return pd.read_csv(path, dtype=str, keep_default_na=False, encoding=encoding, sep=sep)
-            return pd.read_csv(path, dtype=str, keep_default_na=False, encoding=encoding, sep=None, engine="python")
-        except UnicodeDecodeError:
-            continue
+    read_kwargs = {"dtype": str, "keep_default_na": False, "encoding": "utf-8-sig", "encoding_errors": "replace"}
+    try:
+        if sep:
+            return pd.read_csv(path, sep=sep, **read_kwargs)
+        return pd.read_csv(path, sep=None, engine="python", **read_kwargs)
+    except TypeError:
+        read_kwargs.pop("encoding_errors", None)
+    except Exception:
+        pass
     if sep:
         return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="latin-1", sep=sep)
     return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="latin-1", sep=None, engine="python")
@@ -180,6 +182,31 @@ def first_existing(*values, default="No disponible"):
     return default
 
 
+def cached_location(cache: dict[tuple[str, str], dict], address: str, barrio: str) -> dict:
+    key = (normalize_text(address), normalize_text(barrio))
+    if key not in cache:
+        cache[key] = normalize_address_offline(address, barrio)
+    return cache[key].copy()
+
+
+def filter_gastronomic_habilitations(hab: pd.DataFrame) -> pd.DataFrame:
+    if hab.empty:
+        return hab
+    category_cache = {}
+    keep_indexes = []
+    for idx, row in hab.iterrows():
+        if not normalize_text(row.get("rubro_original")):
+            continue
+        category_key = (row.get("rubro_original"), row.get("categoria_gastronomica_inferida"))
+        category = category_cache.get(category_key)
+        if category is None:
+            category = classify_gastronomic_category(*category_key)
+            category_cache[category_key] = category
+        if category.es_gastronomico == "si":
+            keep_indexes.append(idx)
+    return hab.loc[keep_indexes].copy()
+
+
 def source_urls(dim_fuente: pd.DataFrame) -> dict:
     if dim_fuente.empty or "id_fuente" not in dim_fuente.columns:
         return {}
@@ -246,6 +273,7 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
             "motivo_validacion": "Ubicacion centinela para eventos o registros sin sede fija/determinada",
         }
     ]
+    location_cache: dict[tuple[str, str], dict] = {}
 
     for df, address_col, barrio_col in (
         (est, "direccion_original", "barrio_original"),
@@ -253,7 +281,7 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
         (ferias, "direccion_original", "barrio_original"),
     ):
         for _, row in df.iterrows():
-            rows.append(normalize_address_offline(row.get(address_col), row.get(barrio_col)))
+            rows.append(cached_location(location_cache, row.get(address_col), row.get(barrio_col)))
 
     for _, row in eventos.iterrows():
         location = normalize_text(row.get("ubicacion_original"))
@@ -264,7 +292,7 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
             if candidate.lower() in location.lower():
                 barrio = candidate
                 break
-        rows.append(normalize_address_offline(location, barrio))
+        rows.append(cached_location(location_cache, location, barrio))
 
     df = pd.DataFrame(rows).drop_duplicates("id_ubicacion")
     return df
@@ -327,17 +355,18 @@ def infer_organizer_id(value: str) -> str:
     return "O000"
 
 
-def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
+def build_fact_establecimiento(est: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
     rows = []
     category_cache = {}
+    location_cache: dict[tuple[str, str], dict] = {}
     for idx, row in est.iterrows():
         category_key = (row.get("categoria_original"), row.get("nombre_original"))
         category = category_cache.get(category_key)
         if category is None:
             category = classify_gastronomic_category(*category_key)
             category_cache[category_key] = category
-        location_id = normalize_address_offline(row.get("direccion_original"), row.get("barrio_original"))["id_ubicacion"]
+        location_id = cached_location(location_cache, row.get("direccion_original"), row.get("barrio_original"))["id_ubicacion"]
         source_id = first_existing(row.get("id_fuente"), default="F01")
         rows.append(
             {
@@ -364,10 +393,19 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
                 "motivo_categoria": category.motivo_categoria,
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
                 "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
+                "anio_fuente": "",
+                "periodo_fuente": "",
             }
         )
 
-    start = len(rows)
+    return pd.DataFrame(rows)
+
+
+def build_fact_habilitacion_gastronomica(hab: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
+    urls = source_urls(dim_fuente)
+    rows = []
+    category_cache = {}
+    location_cache: dict[tuple[str, str], dict] = {}
     for idx, row in hab.iterrows():
         if not normalize_text(row.get("rubro_original")):
             continue
@@ -379,35 +417,36 @@ def build_fact_establecimiento(est: pd.DataFrame, hab: pd.DataFrame, dim_fuente:
         if category.es_gastronomico != "si":
             continue
         source_id = first_existing(row.get("id_fuente"), default="F02")
-        location_id = normalize_address_offline(row.get("direccion_original"), "")["id_ubicacion"]
+        location = cached_location(location_cache, row.get("direccion_original"), row.get("barrio_original"))
+        if location["comuna"] == "No determinada" and normalize_text(row.get("comuna_original")):
+            location["comuna"] = normalize_text(row.get("comuna_original"))
         source_url = first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible"))
         rows.append(
             {
-                "id_establecimiento": f"HAB{start + idx + 1:05d}",
-                "nombre": "No disponible",
-                "id_categoria": category.id_categoria,
-                "id_ubicacion": location_id,
+                "id_habilitacion": f"HAB{idx + 1:07d}",
                 "id_fuente": source_id,
                 "url_fuente": source_url,
                 "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
-                "estado": "habilitacion_detectada",
-                "web": "No disponible",
-                "redes": "No disponible",
-                "telefono": "No disponible",
-                "fecha_alta_detectada": first_existing(row.get("fecha_habilitacion"), default="No disponible"),
-                "fecha_ultima_actualizacion": first_existing(row.get("fecha_extraccion"), default=TODAY),
-                "calidad_dato": first_existing(row.get("calidad_dato"), default="alta"),
-                "requiere_validacion": first_existing(row.get("requiere_validacion"), default="si"),
-                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="F02 requiere normalizacion de rubro/direccion"),
-                "observaciones": first_existing(row.get("observaciones_raw"), default=""),
+                "periodo_fuente": first_existing(row.get("periodo_fuente"), default=""),
+                "anio_fuente": first_existing(row.get("anio_fuente"), default=""),
+                "fecha_habilitacion": first_existing(row.get("fecha_habilitacion"), default="No disponible"),
+                "descripcion_rubro_original": first_existing(row.get("rubro_original"), default="No disponible"),
+                "descripcion_rubro_normalizada": normalize_text(row.get("rubro_original"), case="lower", remove_accents=True),
                 "es_gastronomico": category.es_gastronomico,
                 "categoria_gastronomica_inferida": category.categoria_gastronomica_inferida,
                 "confianza_categoria": category.confianza_categoria,
                 "motivo_categoria": category.motivo_categoria,
+                "id_ubicacion": location["id_ubicacion"],
+                "direccion_original": first_existing(row.get("direccion_original"), default="No disponible"),
+                "barrio": location["barrio"],
+                "comuna": location["comuna"],
+                "superficie": first_existing(row.get("superficie"), default="No disponible"),
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos reales parciales"),
                 "estado_datos": first_existing(row.get("estado_datos"), default="datos reales"),
-                "anio_fuente": first_existing(row.get("anio_fuente"), default=""),
-                "periodo_fuente": first_existing(row.get("periodo_fuente"), default=""),
+                "calidad_dato": first_existing(row.get("calidad_dato"), default="alta"),
+                "requiere_validacion": first_existing(row.get("requiere_validacion"), default="si"),
+                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="Clasificacion gastronomica inferida desde rubro F02; validar casos ambiguos"),
+                "observaciones": first_existing(row.get("observaciones_raw"), default=""),
             }
         )
     return pd.DataFrame(rows)
@@ -605,6 +644,7 @@ def main() -> int:
     hab, hab_reports = load_source_data("F02")
     ferias, ferias_reports = load_source_data("F03")
     eventos = pd.DataFrame() if args.strict_real else clean_dataframe_columns(read_seed_csv("raw_eventos_gastronomicos.csv"))
+    hab_gastronomica = filter_gastronomic_habilitations(hab)
     reports = [*est_reports, *hab_reports, *ferias_reports]
     write_contract_reports(reports)
     for report in reports:
@@ -626,9 +666,10 @@ def main() -> int:
 
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()
-    dim_ubicacion = build_locations(est, hab, ferias, eventos)
+    dim_ubicacion = build_locations(est, hab_gastronomica, ferias, eventos)
     dim_organizador = build_dim_organizador(eventos)
-    fact_establecimiento = build_fact_establecimiento(est, hab, dim_fuente)
+    fact_establecimiento = build_fact_establecimiento(est, dim_fuente)
+    fact_habilitacion = build_fact_habilitacion_gastronomica(hab_gastronomica, dim_fuente)
     fact_evento = build_fact_evento(eventos, dim_fuente)
     fact_mercado = build_fact_mercado_feria(ferias, dim_fuente)
     fact_programa = build_fact_programa(dim_fuente, use_seed=not args.strict_real)
@@ -638,6 +679,7 @@ def main() -> int:
     write_csv(dim_categoria, "dim_categoria_gastronomica.csv")
     write_csv(dim_organizador, "dim_organizador.csv")
     write_csv(fact_establecimiento, "fact_establecimiento.csv")
+    write_csv(fact_habilitacion, "fact_habilitacion_gastronomica.csv")
     write_csv(fact_evento, "fact_evento_gastronomico.csv")
     write_csv(fact_programa, "fact_programa_politica.csv")
     write_csv(fact_mercado, "fact_mercado_feria.csv")

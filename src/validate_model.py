@@ -15,6 +15,7 @@ EXPECTED_TABLES = {
     "dim_categoria_gastronomica.csv": "id_categoria",
     "dim_organizador.csv": "id_organizador",
     "fact_establecimiento.csv": "id_establecimiento",
+    "fact_habilitacion_gastronomica.csv": "id_habilitacion",
     "fact_evento_gastronomico.csv": "id_evento",
     "fact_programa_politica.csv": "id_programa",
     "fact_mercado_feria.csv": "id_mercado_feria",
@@ -23,6 +24,10 @@ EXPECTED_TABLES = {
 EXPECTED_ANALYTICS = [
     "analytics_eventos_por_barrio.csv",
     "analytics_establecimientos_por_categoria_barrio.csv",
+    "analytics_habilitaciones_por_anio.csv",
+    "analytics_habilitaciones_por_barrio.csv",
+    "analytics_habilitaciones_por_categoria.csv",
+    "analytics_habilitaciones_recientes.csv",
     "analytics_programas_por_anio.csv",
     "analytics_mapa_oportunidades.csv",
     "analytics_resumen_ejecutivo.csv",
@@ -33,11 +38,13 @@ FK_CHECKS = [
     ("fact_evento_gastronomico.csv", "id_organizador", "dim_organizador.csv", "id_organizador"),
     ("fact_establecimiento.csv", "id_categoria", "dim_categoria_gastronomica.csv", "id_categoria"),
     ("fact_establecimiento.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
+    ("fact_habilitacion_gastronomica.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
     ("fact_mercado_feria.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
 ]
 
 TRACEABILITY_COLUMNS = {
     "fact_establecimiento.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_habilitacion_gastronomica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "periodo_fuente", "anio_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_programa_politica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_mercado_feria.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
@@ -45,11 +52,16 @@ TRACEABILITY_COLUMNS = {
 
 IMPORTANT_FACTS = [
     "fact_establecimiento.csv",
+    "fact_habilitacion_gastronomica.csv",
     "fact_mercado_feria.csv",
 ]
 
 IMPORTANT_ANALYTICS = [
     "analytics_establecimientos_por_categoria_barrio.csv",
+    "analytics_habilitaciones_por_anio.csv",
+    "analytics_habilitaciones_por_barrio.csv",
+    "analytics_habilitaciones_por_categoria.csv",
+    "analytics_habilitaciones_recientes.csv",
     "analytics_mapa_oportunidades.csv",
     "analytics_resumen_ejecutivo.csv",
 ]
@@ -147,6 +159,8 @@ def validate(strict_real: bool = False) -> int:
     if est is not None and len(est) <= 6 and "origen_dato" in est.columns and est["origen_dato"].astype(str).str.contains("seed", case=False, na=False).all():
         level = "ERROR" if strict_real else "WARNING"
         add(messages, level, "fact_establecimiento parece ser solo seed de 6 filas; no apto para dashboard")
+    if est is not None and "id_fuente" in est.columns and (est["id_fuente"].astype(str) == "F02").any():
+        add(messages, "ERROR", "fact_establecimiento contiene registros F02; las habilitaciones deben vivir en fact_habilitacion_gastronomica")
 
     if strict_real:
         for source in _required_real_resources():
@@ -185,9 +199,15 @@ def validate(strict_real: bool = False) -> int:
             level = "ERROR" if strict_real else "WARNING"
             add(messages, level, f"{filename} no es apta para dashboard hoy")
 
-    hab = tables.get("fact_establecimiento.csv")
-    if strict_real and hab is not None and not (hab.get("id_fuente", pd.Series(dtype=str)).astype(str) == "F02").any():
-        add(messages, "ERROR", "F02 no aporta registros a fact_establecimiento; no hay monitor de habilitaciones recientes")
+    hab = tables.get("fact_habilitacion_gastronomica.csv")
+    if strict_real and hab is not None:
+        if hab.empty:
+            add(messages, "ERROR", "fact_habilitacion_gastronomica esta vacia; no hay monitor de habilitaciones recientes")
+        elif not (hab.get("id_fuente", pd.Series(dtype=str)).astype(str) == "F02").all():
+            add(messages, "ERROR", "fact_habilitacion_gastronomica debe contener solo registros F02")
+        for column in ("descripcion_rubro_original", "categoria_gastronomica_inferida", "confianza_categoria", "motivo_categoria"):
+            if column not in hab.columns:
+                add(messages, "ERROR", f"fact_habilitacion_gastronomica no tiene {column}")
 
     errors = sum(1 for level, _ in messages if level == "ERROR")
     warnings = sum(1 for level, _ in messages if level == "WARNING")

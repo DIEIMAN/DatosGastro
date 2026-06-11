@@ -12,6 +12,8 @@ f03_ferias.csv,raw,30,15,dataset real probable,requiere_validacion,"requiere rev
 f03_ferias_mercados.csv,raw,4352,7,dataset real probable,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
 f03_fiab.geojson,raw,0,0,dataset real probable,no,archivo vacio o sin filas,No disponible,2026-06-10,si
 f03_mercados.csv,raw,6,5,pendiente/insuficiente,no,archivo menor a 1 KB; no tratar como dataset real,No disponible,2026-06-10,si
+f04_eventos_gastronomicos.csv,raw,29,33,dataset real probable,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
+f05_programas_politicas_gastronomicas.csv,raw,9,27,dataset real probable,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
 raw_establecimientos_gastronomicos.csv,seeds,6,12,seed/manual,no,seed/manual; solo desarrollo,F01,2026-06-10,si
 raw_eventos_gastronomicos.csv,seeds,6,12,seed/manual,no,seed/manual; solo desarrollo,F07 | F08 | F13 | F14,2026-06-10,si
 raw_ferias_mercados.csv,seeds,6,14,seed/manual,no,seed/manual; solo desarrollo,F03 | F08 | F15,2026-06-10,si
@@ -22,16 +24,21 @@ raw_programas_politicas.csv,seeds,6,11,seed/manual,no,seed/manual; solo desarrol
 dim_categoria_gastronomica.csv,processed,17,5,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
 dim_fuente.csv,processed,16,9,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F01 | F02 | F03 | F04 | F05 | F06 | F07 | F08 | F09 | F10 | F11 | F12 | F13 | F14 | F15 | F16,2026-06-10,si
 dim_organizador.csv,processed,2,6,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
-dim_ubicacion.csv,processed,64335,12,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
-fact_establecimiento.csv,processed,90764,25,datos reales parciales,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F01 | F02,2026-06-10,si
+dim_ubicacion.csv,processed,27602,12,modelo/dimension,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",No disponible,2026-06-10,si
+fact_establecimiento.csv,processed,2823,25,datos reales parciales,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F01,2026-06-10,si
 fact_evento_gastronomico.csv,processed,0,24,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
+fact_habilitacion_gastronomica.csv,processed,87934,24,datos reales parciales,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F02,2026-06-10,si
 fact_mercado_feria.csv,processed,4388,20,datos reales parciales,requiere_validacion,"requiere revisar contrato, fuente y cobertura antes de dashboard",F03,2026-06-10,si
 fact_programa_politica.csv,processed,0,22,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
 puente_evento_categoria.csv,processed,0,3,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
 puente_evento_establecimiento.csv,processed,0,4,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
 puente_programa_establecimiento.csv,processed,0,5,modelo/dimension,no,archivo vacio o sin filas,No disponible,2026-06-10,si
-analytics_establecimientos_por_categoria_barrio.csv,analytics,239,14,datos reales,si,apto_dashboard provisto por analytics,F01 | F02,2026-06-10,no
+analytics_establecimientos_por_categoria_barrio.csv,analytics,200,14,datos reales,si,apto_dashboard provisto por analytics,F01,2026-06-10,no
 analytics_eventos_por_barrio.csv,analytics,1,14,datos pendientes de validacion,no,analytics no apta o basada en seed/parcial,No disponible,2026-06-10,si
-analytics_mapa_oportunidades.csv,analytics,44,17,datos reales,si,apto_dashboard provisto por analytics,F01 | F02 | F03,2026-06-10,no
+analytics_habilitaciones_por_anio.csv,analytics,8,11,datos reales,si,apto_dashboard provisto por analytics,F02,2026-06-10,no
+analytics_habilitaciones_por_barrio.csv,analytics,17,11,datos reales,si,apto_dashboard provisto por analytics,F02,2026-06-10,no
+analytics_habilitaciones_por_categoria.csv,analytics,12,11,datos reales,si,apto_dashboard provisto por analytics,F02,2026-06-10,no
+analytics_habilitaciones_recientes.csv,analytics,500,21,datos reales,si,apto_dashboard provisto por analytics,F02,2026-06-10,no
+analytics_mapa_oportunidades.csv,analytics,61,18,datos reales,si,apto_dashboard provisto por analytics,F01 | F02 | F03,2026-06-10,no
 analytics_programas_por_anio.csv,analytics,1,11,datos pendientes de validacion,no,analytics no apta o basada en seed/parcial,No disponible,2026-06-10,si
-analytics_resumen_ejecutivo.csv,analytics,6,10,datos reales,si,apto_dashboard provisto por analytics,F01 | F02 | F03,2026-06-10,no
+analytics_resumen_ejecutivo.csv,analytics,7,10,datos reales,si,apto_dashboard provisto por analytics,F01 | F02 | F03,2026-06-10,no

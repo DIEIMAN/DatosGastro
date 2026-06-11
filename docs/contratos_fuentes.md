@@ -81,9 +81,9 @@ Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y 
 - Archivo: `C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2025.csv`
 - Origen: real
 - Filas: 145483
-- Columnas mapeadas: recurso=F02_2025; rubro_original <- rubro; direccion_original <- domicilio
+- Columnas mapeadas: recurso=F02_2025; rubro_original <- rubro; direccion_original <- domicilio; comuna_original <- comuna
 - Columnas requeridas faltantes: Ninguna
-- Columnas extra no usadas: razon_social; cod_postal_titular; comuna; nropartidamatriz; telefono; disposicion; comentarios
+- Columnas extra no usadas: razon_social; cod_postal_titular; nropartidamatriz; telefono; disposicion; comentarios
 
 ## F03
 

@@ -113,6 +113,7 @@ def write_markdown(rows: list[dict]) -> None:
         f"Generado: {TODAY}",
         "",
         "Regla V3: ninguna salida de dashboard debe presentarse como dato real si deriva de seeds/manuales.",
+        "Regla conceptual: F01 oferta registrada, F02 habilitaciones aprobadas y F03 ferias/mercados se comunican por separado.",
         "",
         "## Decision de estructura",
         "",
@@ -140,14 +141,17 @@ def write_markdown(rows: list[dict]) -> None:
                     "",
                 ]
             )
-    lines.extend(
-        [
-            "## Resumen dashboard",
-            "",
-            "- Apto hoy: ninguna tabla analytics importante es apta para dashboard real mientras F01/F02/F03 usen seeds o falten.",
-            "- No apto hoy: resumen general, establecimientos por barrio/comuna, eventos, ferias/mercados y mapa de oportunidades.",
-        ]
-    )
+    analytics = df[df["capa"] == "analytics"]
+    aptas = analytics[analytics["apto_dashboard"] == "si"]["archivo"].tolist()
+    no_aptas = analytics[analytics["apto_dashboard"] != "si"]["archivo"].tolist()
+    lines.extend(["## Resumen dashboard", ""])
+    if aptas:
+        lines.append("- Apto hoy: " + ", ".join(aptas) + ".")
+    else:
+        lines.append("- Apto hoy: ninguna tabla analytics queda apta para dashboard real.")
+    if no_aptas:
+        lines.append("- No apto hoy: " + ", ".join(no_aptas) + ".")
+    lines.append("- Advertencia obligatoria: no sumar F01 y F02 como establecimientos gastronomicos.")
     (DOCS / "AUDITORIA_DATOS_REALES.md").write_text("\n".join(lines), encoding="utf-8")
 
 
