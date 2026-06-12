@@ -19,7 +19,8 @@
 - F01 es oferta/establecimientos registrados, pero no confirma vigencia actual por registro.
 - F02 son habilitaciones aprobadas AGC; no representan establecimientos activos unicos.
 - La clasificacion gastronomica de F02 es inferida desde descripcion de rubro y requiere cautela en casos ambiguos. La venta minorista de productos alimenticios sin evidencia de servicio gastronomico se clasifica aparte como `Comercio alimenticio minorista` y no se cuenta como habilitacion gastronomica de servicio.
-- F03 incluye recursos con cobertura desigual; `f03_mercados.csv` quedo marcado como sospechoso por tamano menor a 1 KB.
+- F02 2025 tiene esquema distinto y contiene disposiciones de varios anios; queda con `requiere_validacion = si` y no debe usarse como flujo anual comparable. El periodo 2015-2018 tambien es agregado.
+- F03 contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados. Los indicadores principales usan espacios reales; los registros de puestos, si se conservan, quedan solo como insumo tecnico y no se exponen en dashboard.
 - Eventos con sedes multiples o no determinadas usan `U00000`.
 - F04 no representa el universo completo de eventos gastronomicos de CABA.
 - F05 no es serie temporal de impacto; no se publicaron o no se estructuraron metricas de impacto para varios programas.

@@ -8,7 +8,7 @@ El proyecto separa pagina portal, URL directa de descarga y datos efectivamente 
 | --- | --- | --- | --- |
 | F01 | Oferta y Establecimientos Gastronomicos | `fact_establecimiento.csv` | Oferta/establecimientos gastronomicos registrados |
 | F02 | Habilitaciones Aprobadas AGC | `fact_habilitacion_gastronomica.csv` | Habilitaciones aprobadas inferidas como gastronomicas |
-| F03 | Ferias y Mercados | `fact_mercado_feria.csv` | Ferias y mercados |
+| F03 | Ferias y Mercados | `fact_espacio_feria_mercado.csv` / `fact_puesto_feria.csv` | Espacios reales separados de puestos/personas |
 | F04 | Eventos gastronomicos semiestructurados | `fact_evento_gastronomico.csv` | Relevamiento manual trazable de eventos/activaciones |
 | F05 | Programas y politicas gastronomicas semiestructuradas | `fact_programa_politica.csv` | Catalogo manual trazable de politicas, normativa e instrumentos |
 
@@ -16,7 +16,7 @@ Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.p
 
 - F01: CKAN + CDN alternativo.
 - F02: recursos 2015-2018 y anuales 2019-2025. F02 2026 no esta publicado y no se exige.
-- F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El GeoJSON es solo FIAB.
+- F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El CSV combinado es padron de puestos/personas; el GeoJSON es solo FIAB.
 - F04: CSV manual trazable con fuente por fila. No es dataset oficial estructurado.
 - F05: CSV manual trazable con fuente por fila. No es dataset oficial estructurado ni serie temporal de impacto.
 
@@ -30,8 +30,12 @@ Regla de comunicacion:
 
 - No mostrar "40.295 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos.
 - Mostrar "2.823 registros en Oferta Gastronomica F01".
-- Mostrar "37.472 habilitaciones gastronomicas inferidas desde AGC F02".
-- Mostrar "4.572 registros de ferias/mercados F03".
+- Mostrar "44.169 habilitaciones gastronomicas inferidas desde AGC F02".
+- Mostrar "220 espacios reales F03: mercados, ferias especializadas y FIAB".
+- No mostrar puestos/personas F03 como cantidad de ferias o mercados.
+- No usar F02 2025 como flujo anual comparable: el recurso tiene esquema distinto y contiene disposiciones de varios anios. La serie comparable excluye 2025 y el periodo agregado 2015-2018.
+
+F03 contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados. Los indicadores principales usan espacios reales; los registros de puestos, si se conservan, quedan solo como insumo tecnico y no se exponen en dashboard.
 
 Cada metrica debe incluir fuente, URL, fecha de consulta, metodologia y limitaciones.
 

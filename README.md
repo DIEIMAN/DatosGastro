@@ -12,7 +12,7 @@ Ordena fuentes, oferta gastronomica registrada, habilitaciones aprobadas, evento
 
 - F01 Oferta y Establecimientos Gastronomicos: URL directa CKAN y CDN registradas en `src/config.py`. Alimenta `fact_establecimiento.csv`.
 - F02 Habilitaciones Aprobadas AGC: recursos reales 2015-2025 registrados en `src/config.py`; 2026 no esta publicado y no se exige en modo estricto. Alimenta `fact_habilitacion_gastronomica.csv`.
-- F03 Ferias y Mercados: CSV combinado, CSV complementarios y GeoJSON FIAB registrados en `src/config.py`. Alimenta `fact_mercado_feria.csv`.
+- F03 Ferias y Mercados: CSV combinado, CSV complementarios y GeoJSON FIAB registrados en `src/config.py`. Alimenta `fact_espacio_feria_mercado.csv` para espacios reales y `fact_puesto_feria.csv` como insumo tecnico de puestos/personas.
 - F04 Eventos gastronomicos semiestructurados: relevamiento manual trazable con fuente por fila. Alimenta `fact_evento_gastronomico.csv`.
 - F05 Programas y politicas gastronomicas semiestructuradas: catalogo manual trazable con fuente por fila. Alimenta `fact_programa_politica.csv`.
 - Otras fuentes relevadas en `data/seeds/raw_fuentes_relevadas.csv`.
@@ -60,7 +60,8 @@ Regla conceptual para dashboard:
 
 - `fact_establecimiento.csv` representa solo F01: oferta/establecimientos gastronomicos registrados.
 - `fact_habilitacion_gastronomica.csv` representa solo F02: habilitaciones aprobadas AGC inferidas como gastronomicas por rubro.
-- `fact_mercado_feria.csv` representa solo F03: ferias y mercados.
+- `fact_espacio_feria_mercado.csv` representa F03 a grano espacio real: mercados, ferias especializadas y FIAB.
+- `fact_puesto_feria.csv` representa F03 a grano puesto/persona y queda solo como insumo tecnico; no es KPI de espacios ni se expone en dashboard.
 - `fact_evento_gastronomico.csv` representa F04: eventos/activaciones relevados manualmente con trazabilidad.
 - `fact_programa_politica.csv` representa F05: catalogo de programas, politicas, normativa e instrumentos.
 
@@ -107,8 +108,9 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 ## Indicadores base actuales
 
 - 2.823 registros en Oferta Gastronomica F01.
-- 37.472 habilitaciones gastronomicas inferidas desde AGC F02.
-- 4.572 registros de ferias/mercados F03.
+- 44.169 habilitaciones gastronomicas inferidas desde AGC F02.
+- 220 espacios reales F03: 6 mercados, 30 ferias especializadas y 184 FIAB.
+- 4.352 registros de puestos F03 conservados solo como insumo tecnico/auditoria interna.
 - 29 eventos F04 cargados; 13 aptos para metricas fuertes y 16 cualitativos/en validacion/no aptos.
 - 9 programas/instrumentos F05 cargados; 4 aptos para catalogo dashboard y 5 cualitativos/en validacion/no aptos.
 
@@ -119,6 +121,8 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 - F04 no representa el universo completo de eventos gastronomicos; las metricas fuertes solo usan `apto_dashboard = si`, `requiere_validacion = no` y fecha completa.
 - F05 es catalogo/fichero, no serie temporal de impacto; no usar montos viejos como vigentes.
 - F02 no representa establecimientos activos unicos: son habilitaciones aprobadas y la clasificacion gastronomica es inferida desde el rubro.
+- F02 2025 queda marcado con `requiere_validacion = si`: el recurso tiene esquema distinto y contiene disposiciones de varios anios, por lo que no debe leerse como flujo anual comparable. La serie anual excluye 2025 y el periodo agregado 2015-2018 del grafico comparable.
+- F03 contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados. Los indicadores principales usan espacios reales; los registros de puestos, si se conservan, quedan solo como insumo tecnico y no se exponen en dashboard.
 - F01 no trae vigencia por registro y puede estar desactualizado.
 - Las metricas publicas de impacto de programas no estan estructuradas.
 

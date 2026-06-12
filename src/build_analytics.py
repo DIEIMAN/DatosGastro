@@ -137,6 +137,9 @@ def strict_real_errors(analytics: dict[str, pd.DataFrame]) -> list[str]:
         "analytics_habilitaciones_por_barrio.csv",
         "analytics_habilitaciones_por_categoria.csv",
         "analytics_habilitaciones_recientes.csv",
+        "analytics_espacios_ferias_mercados_por_tipo.csv",
+        "analytics_espacios_ferias_mercados_por_comuna.csv",
+        "analytics_fiab_por_comuna.csv",
         "analytics_eventos_por_barrio.csv",
         "analytics_eventos_por_tipo.csv",
         "analytics_eventos_por_anio.csv",
@@ -327,7 +330,16 @@ def establecimientos_por_categoria_barrio(est: pd.DataFrame, ubicaciones: pd.Dat
 
 def habilitaciones_por_anio(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     if hab.empty:
-        df = pd.DataFrame([{"anio_fuente": "Sin datos", "cantidad_habilitaciones": 0}])
+        df = pd.DataFrame(
+            [
+                {
+                    "anio_fuente": "Sin datos",
+                    "cantidad_habilitaciones": 0,
+                    "nota_serie": "Sin datos para construir serie anual",
+                    "comparable_como_flujo_anual": "no",
+                }
+            ]
+        )
     else:
         df = (
             hab.groupby(["anio_fuente"], dropna=False)
@@ -337,12 +349,19 @@ def habilitaciones_por_anio(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Data
             )
             .reset_index()
         )
+        df["anio_fuente"] = df["anio_fuente"].astype(str)
+        non_comparable = df["anio_fuente"].isin(["2015-2018", "2025"])
+        df["comparable_como_flujo_anual"] = "si"
+        df.loc[non_comparable, "comparable_como_flujo_anual"] = "no"
+        df["nota_serie"] = "Comparable como flujo anual del recurso"
+        df.loc[df["anio_fuente"] == "2015-2018", "nota_serie"] = "Periodo agregado 2015-2018; no comparable como flujo anual"
+        df.loc[df["anio_fuente"] == "2025", "nota_serie"] = "Recurso 2025 con esquema distinto: contiene disposiciones de varios anios; no usar como flujo anual"
     return attach_metadata(
         df,
         traceability_metadata(
             hab,
             method="Conteo de habilitaciones gastronomicas F02 por anio/periodo de recurso.",
-            limitations="No representa establecimientos activos unicos; clasificacion gastronomica inferida por rubro.",
+            limitations="No representa establecimientos activos unicos; 2015-2018 es periodo agregado y 2025 no es comparable como flujo anual.",
             source_catalog=fuentes,
         ),
     )
@@ -431,6 +450,70 @@ def habilitaciones_recientes(hab: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Dat
             hab,
             method="Ultimas habilitaciones gastronomicas F02 segun fecha_habilitacion disponible.",
             limitations="No equivale a establecimientos activos; fecha puede faltar en algunos recursos.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def espacios_ferias_mercados_por_tipo(espacios: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if espacios.empty:
+        df = pd.DataFrame([{"tipo_espacio": "Sin espacios", "cantidad_espacios": 0}])
+    else:
+        df = (
+            espacios.groupby("tipo_espacio", dropna=False)
+            .agg(cantidad_espacios=("id_espacio", "count"))
+            .reset_index()
+            .sort_values("cantidad_espacios", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            espacios,
+            method="Conteo de espacios reales F03 por tipo. Excluye padron de puestos/personas.",
+            limitations="F03 tiene recursos con distinto grano; puestos individuales no cuentan como espacios.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def espacios_ferias_mercados_por_comuna(espacios: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    if espacios.empty:
+        df = pd.DataFrame([{"comuna": "Sin espacios", "cantidad_espacios": 0}])
+    else:
+        df = (
+            espacios.groupby("comuna", dropna=False)
+            .agg(cantidad_espacios=("id_espacio", "count"))
+            .reset_index()
+            .sort_values("cantidad_espacios", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            espacios,
+            method="Conteo de espacios reales F03 por comuna declarada o normalizada.",
+            limitations="Mercados sin coordenadas de fuente pueden requerir validacion territorial; puestos no incluidos.",
+            source_catalog=fuentes,
+        ),
+    )
+
+
+def fiab_por_comuna(espacios: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    fiab = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"].copy() if not espacios.empty else pd.DataFrame()
+    if fiab.empty:
+        df = pd.DataFrame([{"comuna": "Sin FIAB", "cantidad_fiab": 0}])
+    else:
+        df = (
+            fiab.groupby("comuna", dropna=False)
+            .agg(cantidad_fiab=("id_espacio", "count"))
+            .reset_index()
+            .sort_values("cantidad_fiab", ascending=False)
+        )
+    return attach_metadata(
+        df,
+        traceability_metadata(
+            fiab,
+            method="Conteo de puntos FIAB desde GeoJSON oficial por comuna.",
+            limitations="FIAB es capa de abastecimiento barrial; no mezclar con ferias especializadas sin aclaracion.",
             source_catalog=fuentes,
         ),
     )
@@ -569,7 +652,7 @@ def programas_cualitativos(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd
     )
 
 
-def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, mercados: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, espacios: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     eventos_fuertes = strong_events(eventos)
     base_frames = [ubicaciones[["barrio", "comuna"]]]
     if {"barrio", "comuna"}.issubset(hab.columns):
@@ -578,12 +661,13 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
     est_count = est.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
     hab_count = hab.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(hab.columns) else pd.Series(dtype=int)
     evt_count = eventos_fuertes.groupby("barrio").size() if "barrio" in eventos_fuertes.columns else pd.Series(dtype=int)
-    mer_count = mercados.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
+    espacio_count = espacios.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(espacios.columns) else pd.Series(dtype=int)
     rows = []
     for _, row in barrios.iterrows():
         barrio = row["barrio"]
         comuna = row["comuna"]
         habilitaciones = int(hab_count.get((barrio, comuna), 0))
+        espacios_f03 = int(espacio_count.get((barrio, comuna), 0))
         rows.append(
             {
                 "barrio": barrio,
@@ -591,42 +675,49 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
                 "densidad_establecimientos_f01": int(est_count.get(barrio, 0)),
                 "cantidad_habilitaciones_f02": habilitaciones,
                 "cantidad_eventos": int(evt_count.get(barrio, 0)),
-                "cantidad_ferias_mercados_f03": int(mer_count.get(barrio, 0)),
+                "cantidad_espacios_ferias_mercados_f03": espacios_f03,
                 "presencia_de_polos": "Requiere validacion",
-                "nivel_actividad_gastronomica": "alto" if int(est_count.get(barrio, 0)) + habilitaciones + int(mer_count.get(barrio, 0)) >= 25 else "bajo/medio",
+                "nivel_actividad_gastronomica": "alto" if int(est_count.get(barrio, 0)) + habilitaciones + espacios_f03 >= 25 else "bajo/medio",
                 "oportunidades_detectadas": "Interpretar F01, F02 y F03 por separado; no sumar habilitaciones como establecimientos activos",
-                "observaciones": "Calculado sobre processed; interpretar segun estado_datos",
+                "observaciones": "F03 usa espacios reales; puestos/personas excluidos del indicador territorial",
             }
         )
-    df = pd.DataFrame(rows).sort_values(["densidad_establecimientos_f01", "cantidad_habilitaciones_f02", "cantidad_ferias_mercados_f03"], ascending=False)
+    df = pd.DataFrame(rows).sort_values(["densidad_establecimientos_f01", "cantidad_habilitaciones_f02", "cantidad_espacios_ferias_mercados_f03"], ascending=False)
     return attach_metadata(
         df,
         traceability_metadata(
             est,
             hab,
             eventos_fuertes,
-            mercados,
-            method="Cruce territorial separado de oferta F01, habilitaciones F02 y ferias/mercados F03.",
-            limitations="No sumar F02 como establecimientos activos; algunas ubicaciones pueden quedar sin barrio normalizado.",
+            espacios,
+            method="Cruce territorial separado de oferta F01, habilitaciones F02 y espacios reales F03.",
+            limitations="No sumar F02 como establecimientos activos; F03 excluye puestos/personas del indicador territorial.",
             source_catalog=fuentes,
         ),
     )
 
 
-def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, mercados: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
-    status = data_status(est, hab, mercados)
+def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, espacios: pd.DataFrame, puestos: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+    status = data_status(est, hab, espacios)
     eventos_fuertes = strong_events(eventos)
     programas_fuertes = strong_programs(programas)
+    mercados = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "Mercado"] if not espacios.empty else pd.DataFrame()
+    ferias = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str).str.contains("Feria", case=False, na=False)] if not espacios.empty else pd.DataFrame()
+    fiab = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"] if not espacios.empty else pd.DataFrame()
     rows = [
-        ("fuentes_relevadas", len(fuentes), status),
-        ("establecimientos_oferta_gastronomica_f01", len(est), data_status(est)),
-        ("habilitaciones_gastronomicas_f02", len(hab), data_status(hab)),
-        ("ferias_mercados_f03", len(mercados), data_status(mercados)),
-        ("eventos_gastronomicos_reales_f04_aptos", len(eventos_fuertes), data_status(eventos_fuertes)),
-        ("programas_politicas_reales_f05_aptos", len(programas_fuertes), data_status(programas_fuertes)),
-        ("registros_que_requieren_validacion", sum((df.get("requiere_validacion", pd.Series(dtype=str)) == "si").sum() for df in (est, hab, eventos, programas, mercados)), status),
+        ("fuentes_relevadas", len(fuentes), status, "dashboard", ""),
+        ("establecimientos_oferta_gastronomica_f01", len(est), data_status(est), "dashboard", ""),
+        ("habilitaciones_gastronomicas_f02", len(hab), data_status(hab), "dashboard", "Habilitaciones, no establecimientos activos"),
+        ("espacios_ferias_mercados_f03", len(espacios), data_status(espacios), "dashboard", "Espacios reales; excluye puestos/personas"),
+        ("mercados_f03", len(mercados), data_status(mercados), "dashboard", "Subconjunto de espacios reales F03"),
+        ("ferias_f03", len(ferias), data_status(ferias), "dashboard", "Ferias especializadas/no alimentarias; no mezclar con FIAB sin aclaracion"),
+        ("fiab_f03", len(fiab), data_status(fiab), "dashboard", "Puntos FIAB de abastecimiento barrial desde GeoJSON"),
+        ("puestos_feria_f03", len(puestos), data_status(puestos), "auditoria_interna", "Grano puesto/persona; no usar como KPI principal ni exponer personas"),
+        ("eventos_gastronomicos_reales_f04_aptos", len(eventos_fuertes), data_status(eventos_fuertes), "dashboard", ""),
+        ("programas_politicas_reales_f05_aptos", len(programas_fuertes), data_status(programas_fuertes), "dashboard", ""),
+        ("registros_que_requieren_validacion", sum((df.get("requiere_validacion", pd.Series(dtype=str)) == "si").sum() for df in (est, hab, eventos, programas, espacios)), status, "tecnico", ""),
     ]
-    df = pd.DataFrame(rows, columns=["indicador", "valor", "estado_datos"])
+    df = pd.DataFrame(rows, columns=["indicador", "valor", "estado_datos", "uso", "advertencia_grano"])
     return attach_metadata(
         df.drop(columns=["estado_datos"]),
         traceability_metadata(
@@ -634,9 +725,9 @@ def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFram
             hab,
             eventos,
             programas,
-            mercados,
-            method="Resumen de conteos principales separados por concepto: F01 oferta, F02 habilitaciones y F03 ferias/mercados.",
-            limitations="No interpretar F02 como establecimientos activos. F04/F05 solo cuentan filas aptas; cualitativas quedan fuera de metricas fuertes.",
+            espacios,
+            method="Resumen de conteos principales separados por concepto: F01 oferta, F02 habilitaciones y F03 espacios reales.",
+            limitations="F03 contiene recursos con distintos niveles de grano; puestos/personas quedan como insumo tecnico y no como KPI principal.",
             source_catalog=fuentes,
         ),
     )
@@ -654,7 +745,8 @@ def main() -> int:
     hab = read_processed("fact_habilitacion_gastronomica.csv")
     eventos = read_processed("fact_evento_gastronomico.csv")
     programas = read_processed("fact_programa_politica.csv")
-    mercados = read_processed("fact_mercado_feria.csv")
+    espacios = read_processed("fact_espacio_feria_mercado.csv")
+    puestos = read_processed("fact_puesto_feria.csv")
 
     analytics = {
         "analytics_eventos_por_barrio.csv": eventos_por_barrio(eventos, ubicaciones, fuentes),
@@ -666,13 +758,16 @@ def main() -> int:
         "analytics_habilitaciones_por_barrio.csv": habilitaciones_por_barrio(hab, fuentes),
         "analytics_habilitaciones_por_categoria.csv": habilitaciones_por_categoria(hab, fuentes),
         "analytics_habilitaciones_recientes.csv": habilitaciones_recientes(hab, fuentes),
+        "analytics_espacios_ferias_mercados_por_tipo.csv": espacios_ferias_mercados_por_tipo(espacios, fuentes),
+        "analytics_espacios_ferias_mercados_por_comuna.csv": espacios_ferias_mercados_por_comuna(espacios, fuentes),
+        "analytics_fiab_por_comuna.csv": fiab_por_comuna(espacios, fuentes),
         "analytics_programas_por_anio.csv": programas_por_anio(programas, fuentes),
         "analytics_programas_por_tipo.csv": programas_por_tipo(programas, fuentes),
         "analytics_programas_por_estado.csv": programas_por_estado(programas, fuentes),
         "analytics_programas_catalogo.csv": programas_catalogo(programas, fuentes),
         "analytics_programas_cualitativos.csv": programas_cualitativos(programas, fuentes),
-        "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, hab, eventos, mercados, ubicaciones, fuentes),
-        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, mercados, fuentes),
+        "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, hab, eventos, espacios, ubicaciones, fuentes),
+        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, espacios, puestos, fuentes),
     }
     if args.strict_real:
         errors = strict_real_errors(analytics)

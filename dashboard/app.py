@@ -165,7 +165,8 @@ programas_cualitativos = read_csv(ANALYTICS / "analytics_programas_cualitativos.
 mapa_oportunidades = read_csv(ANALYTICS / "analytics_mapa_oportunidades.csv")
 
 fact_establecimientos = read_csv(PROCESSED / "fact_establecimiento.csv")
-fact_mercados = read_csv(PROCESSED / "fact_mercado_feria.csv")
+fact_espacios_f03 = read_csv(PROCESSED / "fact_espacio_feria_mercado.csv")
+fact_puestos_f03 = read_csv(PROCESSED / "fact_puesto_feria.csv")
 fact_eventos = read_csv(PROCESSED / "fact_evento_gastronomico.csv")
 fact_programas = read_csv(PROCESSED / "fact_programa_politica.csv")
 dim_fuente = read_csv(PROCESSED / "dim_fuente.csv")
@@ -201,7 +202,7 @@ with tabs[0]:
     cols = st.columns(4)
     cols[0].metric("Oferta gastronomica registrada F01", get_indicator(resumen, "establecimientos_oferta_gastronomica_f01"))
     cols[1].metric("Habilitaciones gastronomicas F02", get_indicator(resumen, "habilitaciones_gastronomicas_f02"))
-    cols[2].metric("Ferias y mercados F03", get_indicator(resumen, "ferias_mercados_f03"))
+    cols[2].metric("Espacios ferias/mercados F03", get_indicator(resumen, "espacios_ferias_mercados_f03"))
     cols[3].metric("Eventos F04 aptos", get_indicator(resumen, "eventos_gastronomicos_reales_f04_aptos"))
 
     cols = st.columns(3)
@@ -248,9 +249,28 @@ with tabs[2]:
     section_warning(
         "F02 son habilitaciones aprobadas por AGC, no establecimientos activos unicos. La clasificacion gastronomica se infiere desde la descripcion del rubro."
     )
+    hab_anio_comparable = hab_anio[
+        hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "si"
+    ].copy() if not hab_anio.empty else pd.DataFrame()
+    hab_anio_no_comparable = hab_anio[
+        hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "no"
+    ].copy() if not hab_anio.empty else pd.DataFrame()
     left, right = st.columns(2)
     with left:
-        bar_chart(hab_anio, "anio_fuente", "cantidad_habilitaciones", "Habilitaciones por anio/periodo")
+        bar_chart(hab_anio_comparable, "anio_fuente", "cantidad_habilitaciones", "Habilitaciones por anio comparable")
+        if not hab_anio_no_comparable.empty:
+            st.warning("2025 y los periodos agregados se muestran aparte: no deben leerse como flujo anual comparable.")
+            st.dataframe(
+                hab_anio_no_comparable[
+                    [
+                        column
+                        for column in ["anio_fuente", "cantidad_habilitaciones", "cantidad_con_validacion", "nota_serie"]
+                        if column in hab_anio_no_comparable.columns
+                    ]
+                ],
+                use_container_width=True,
+                hide_index=True,
+            )
         bar_chart(hab_categoria, "categoria_gastronomica_inferida", "cantidad_habilitaciones", "Habilitaciones por categoria inferida")
     with right:
         bar_chart(hab_barrio, "comuna", "cantidad_habilitaciones", "Habilitaciones por comuna/barrio no normalizado")
@@ -273,24 +293,28 @@ with tabs[2]:
     trace_box(hab_anio)
 
 with tabs[3]:
-    st.header("4. Ferias y mercados F03")
+    st.header("4. Espacios F03")
     section_warning(
-        "F03 integra ferias y mercados. La geometria disponible no representa necesariamente todos los espacios."
+        "F03 contiene recursos con distinto grano. Esta seccion muestra solo espacios reales; puestos/personas quedan fuera de KPIs y no se exponen."
     )
-    st.metric("Registros F03", len(fact_mercados))
-    if not fact_mercados.empty:
+    cols = st.columns(4)
+    cols[0].metric("Espacios reales", get_indicator(resumen, "espacios_ferias_mercados_f03"))
+    cols[1].metric("Mercados", get_indicator(resumen, "mercados_f03"))
+    cols[2].metric("Ferias especializadas", get_indicator(resumen, "ferias_f03"))
+    cols[3].metric("FIAB", get_indicator(resumen, "fiab_f03"))
+    st.caption(f"Puestos/personas conservados solo como insumo tecnico: {get_indicator(resumen, 'puestos_feria_f03')}. No se muestran nombres ni padrones de personas.")
+    if not fact_espacios_f03.empty:
         left, right = st.columns(2)
         with left:
-            tipo = fact_mercados.groupby("tipo_espacio", dropna=False).size().reset_index(name="cantidad")
+            tipo = fact_espacios_f03.groupby("tipo_espacio", dropna=False).size().reset_index(name="cantidad")
             bar_chart(tipo, "tipo_espacio", "cantidad", "Tipo de espacio")
         with right:
-            merged = fact_mercados.copy()
-            barrio_count = merged.groupby("id_ubicacion", dropna=False).size().reset_index(name="cantidad")
-            st.subheader("Registros por ubicacion")
-            st.dataframe(barrio_count.sort_values("cantidad", ascending=False), use_container_width=True, hide_index=True)
+            comuna_count = fact_espacios_f03.groupby("comuna", dropna=False).size().reset_index(name="cantidad")
+            st.subheader("Espacios por comuna")
+            st.dataframe(comuna_count.sort_values("cantidad", ascending=False), use_container_width=True, hide_index=True)
     filter_table(
-        fact_mercados,
-        ["id_mercado_feria", "nombre", "tipo_espacio", "gestion", "dias_funcionamiento", "id_fuente", "url_fuente"],
+        fact_espacios_f03,
+        ["id_espacio", "nombre", "tipo_espacio", "descripcion", "direccion", "barrio", "comuna", "dias_funcionamiento", "productos", "calidad_geo", "id_fuente", "url_fuente"],
         "f03_filter",
     )
 
@@ -377,7 +401,7 @@ with tabs[6]:
             f01_map = ensure_columns(f01_map, ["categoria_general", "dias_funcionamiento", "rubros"])
             f01_map["color"] = f01_map["categoria_general"].map(category_color)
 
-    fiab_all = fact_mercados[fact_mercados.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"].copy() if not fact_mercados.empty else pd.DataFrame()
+    fiab_all = fact_espacios_f03[fact_espacios_f03.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"].copy() if not fact_espacios_f03.empty else pd.DataFrame()
     fiab_map = pd.DataFrame()
     if not fiab_all.empty and not dim_ubicacion.empty:
         fiab_map = fiab_all.merge(dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
@@ -385,6 +409,8 @@ with tabs[6]:
         if not fiab_map.empty:
             fiab_map = ensure_columns(fiab_map, ["categoria_general", "dias_funcionamiento", "rubros"])
             fiab_map["categoria_general"] = "FIAB"
+            if "productos" in fiab_map.columns:
+                fiab_map["rubros"] = fiab_map["productos"]
             fiab_map["color"] = [[40, 150, 95, 220] for _ in range(len(fiab_map))]
 
     metric_cols = st.columns(2)
@@ -462,7 +488,7 @@ with tabs[6]:
         "densidad_establecimientos_f01",
         "cantidad_habilitaciones_f02",
         "cantidad_eventos",
-        "cantidad_ferias_mercados_f03",
+        "cantidad_espacios_ferias_mercados_f03",
         "nivel_actividad_gastronomica",
         "oportunidades_detectadas",
     ]
@@ -496,13 +522,14 @@ with tabs[7]:
 
 with tabs[8]:
     st.header("9. Chequeos de calidad")
-    st.success("Resultado esperado actual: validate_model.py --strict-real => OK=40 WARNING=0 ERROR=0")
+    st.success("Resultado esperado actual: validate_model.py --strict-real => OK=51 WARNING=0 ERROR=0")
     st.subheader("Conteos por fuente")
     conteos = pd.DataFrame(
         [
             {"fuente": "F01 oferta registrada", "filas": get_indicator(resumen, "establecimientos_oferta_gastronomica_f01")},
             {"fuente": "F02 habilitaciones aprobadas", "filas": get_indicator(resumen, "habilitaciones_gastronomicas_f02")},
-            {"fuente": "F03 ferias/mercados", "filas": get_indicator(resumen, "ferias_mercados_f03")},
+            {"fuente": "F03 espacios ferias/mercados", "filas": get_indicator(resumen, "espacios_ferias_mercados_f03")},
+            {"fuente": "F03 puestos/personas solo tecnico", "filas": get_indicator(resumen, "puestos_feria_f03")},
             {"fuente": "F04 eventos aptos", "filas": get_indicator(resumen, "eventos_gastronomicos_reales_f04_aptos")},
             {"fuente": "F05 programas aptos", "filas": get_indicator(resumen, "programas_politicas_reales_f05_aptos")},
         ]
@@ -525,7 +552,7 @@ with tabs[8]:
 
         - F01 no confirma vigencia actual por registro.
         - F02 no son establecimientos activos unicos.
-        - F03 tiene cobertura geografica desigual.
+        - F03 tiene recursos con distinto grano: espacios reales por un lado y puestos/personas solo como insumo tecnico.
         - F04/F05 son relevamientos manuales trazables, no datasets oficiales estructurados.
         - Filas cualitativas o en validacion quedan fuera de metricas fuertes.
         """

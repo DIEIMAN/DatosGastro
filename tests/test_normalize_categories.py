@@ -53,6 +53,30 @@ class ClassifyGastronomicCategoryTest(unittest.TestCase):
         self.assertEqual(result.es_gastronomico, "si")
         self.assertEqual(result.categoria_gastronomica_inferida, "Restaurante")
 
+    def test_plurals_and_derivatives_are_classified(self):
+        cases = [
+            ("parrillas", "Parrilla"),
+            ("pizzas y empanadas", "Pizzeria"),
+            ("bares", "Bar"),
+            ("cafes", "Cafe"),
+            ("sandwicheria", "Comida al paso"),
+        ]
+
+        for text, expected_category in cases:
+            with self.subTest(text=text):
+                result = classify_gastronomic_category(text)
+
+                self.assertEqual(result.es_gastronomico, "si")
+                self.assertEqual(result.categoria_gastronomica_inferida, expected_category)
+
+    def test_bar_false_positives_stay_blocked(self):
+        for text in ("barras", "embarcaciones", "talabarteria"):
+            with self.subTest(text=text):
+                result = classify_gastronomic_category(text)
+
+                self.assertNotEqual(result.categoria_gastronomica_inferida, "Bar")
+                self.assertNotEqual(result.es_gastronomico, "si")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -113,7 +113,7 @@ SOURCE_CONFIG.update(
             "formato": "csv",
             "prioridad": "alta",
             "fecha_consulta": "2026-06-10",
-            "limitaciones": "Geometria completa no disponible; GeoJSON separado representa solo FIAB.",
+            "limitaciones": "F03 mezcla recursos con distinto grano; el CSV combinado es padron de puestos/personas y el GeoJSON separado representa solo FIAB.",
             "required_strict": True,
             "seed_glob": "raw_ferias_mercados.csv",
             "raw_patterns": ["f03_ferias_mercados.csv"],

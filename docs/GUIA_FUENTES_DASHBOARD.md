@@ -13,10 +13,12 @@ Tampoco mostrar ningun total combinado F01+F02 como establecimientos activos.
 Mostrar metricas separadas:
 
 > "2.823 registros en Oferta Gastronomica F01"
-> "37.472 habilitaciones gastronomicas inferidas desde AGC F02"
-> "4.572 registros de ferias/mercados F03"
+> "44.169 habilitaciones gastronomicas inferidas desde AGC F02"
+> "220 espacios reales F03: mercados, ferias especializadas y FIAB"
 
 Cada metrica debe mostrar fuente, URL o dataset, fecha de consulta, procesamiento propio y limitaciones.
+
+F03 contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados. Los indicadores principales usan espacios reales; los registros de puestos, si se conservan, quedan solo como insumo tecnico y no se exponen en dashboard.
 
 ## Resumen general
 
@@ -39,15 +41,15 @@ Cada metrica debe mostrar fuente, URL o dataset, fecha de consulta, procesamient
 - Tablas usadas: `fact_habilitacion_gastronomica.csv`, `analytics_habilitaciones_por_anio.csv`, `analytics_habilitaciones_por_barrio.csv`, `analytics_habilitaciones_por_categoria.csv`, `analytics_habilitaciones_recientes.csv`
 - Fuentes usadas: F02 Habilitaciones Aprobadas AGC, recursos 2015-2025.
 - Texto sugerido: Fuente: Buenos Aires Data / GCBA - Habilitaciones Aprobadas AGC, recursos 2015-2025. Fecha de consulta: 10/06/2026. Procesamiento propio.
-- Limitaciones: clasificacion gastronomica inferida a partir de descripcion de rubro; F02 no equivale a establecimientos activos ni a locales unicos; sin datos 2026 publicados al momento de consulta.
+- Limitaciones: clasificacion gastronomica inferida a partir de descripcion de rubro; F02 no equivale a establecimientos activos ni a locales unicos; sin datos 2026 publicados al momento de consulta. F02 2025 tiene esquema distinto y contiene disposiciones de varios anios; mostrarlo aparte y no usarlo como flujo anual comparable. El periodo 2015-2018 tambien es agregado.
 - Lista hoy: si, con advertencia metodologica obligatoria.
 
 ## Ferias y mercados F03
 
-- Tablas usadas: `fact_mercado_feria.csv`, `dim_ubicacion.csv`
+- Tablas usadas: `fact_espacio_feria_mercado.csv`, `analytics_espacios_ferias_mercados_por_tipo.csv`, `analytics_espacios_ferias_mercados_por_comuna.csv`, `analytics_fiab_por_comuna.csv`, `dim_ubicacion.csv`
 - Fuentes usadas: F03 Ferias y Mercados.
 - Texto sugerido: Fuente: Buenos Aires Data / GCBA - Ferias y Mercados. Fecha de consulta: 10/06/2026. Procesamiento propio.
-- Limitaciones: `f03_mercados.csv` descargo menos de 1 KB y queda como sospechoso; la geometria completa no esta disponible para todos los recursos.
+- Limitaciones: F03 mezcla recursos con distinto grano; el padron de puestos/personas queda fuera de KPIs principales y no se expone en dashboard. FIAB es capa de abastecimiento barrial y no debe mezclarse con ferias especializadas sin aclaracion.
 - Lista hoy: si con advertencia.
 
 ## Eventos gastronomicos
@@ -69,8 +71,8 @@ Cada metrica debe mostrar fuente, URL o dataset, fecha de consulta, procesamient
 ## Mapa de oportunidades
 
 - Tabla usada: `analytics_mapa_oportunidades.csv`
-- Variables: `densidad_establecimientos_f01`, `cantidad_habilitaciones_f02`, `cantidad_ferias_mercados_f03`.
+- Variables: `densidad_establecimientos_f01`, `cantidad_habilitaciones_f02`, `cantidad_espacios_ferias_mercados_f03`.
 - Fuentes usadas: F01, F02, F03 y eventos F04 aptos.
 - Texto sugerido: Elaboracion propia sobre Buenos Aires Data / GCBA y relevamiento manual trazable F04. El mapa separa oferta registrada F01, habilitaciones aprobadas F02, ferias/mercados F03 y eventos F04 aptos. Fecha de consulta: 10/06/2026.
-- Limitaciones: geocodificacion pendiente; algunas ubicaciones quedan a nivel texto/barrio/comuna; no sumar F02 como establecimientos activos; no mapear F04 cualitativo como actividad confirmada.
+- Limitaciones: geocodificacion pendiente para mercados sin coordenadas; no sumar F02 como establecimientos activos; no mapear F04 cualitativo como actividad confirmada; F03 usa espacios reales y excluye puestos/personas.
 - Lista hoy: si con advertencia metodologica.

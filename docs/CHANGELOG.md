@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-06-12 - Correccion F02 categorias y serie anual
+
+- Se ajusto el matching gastronomico F02 para cubrir plurales y derivados sin volver al substring libre.
+- Se marco F02 2025 con validacion metodologica: recurso con esquema distinto y no comparable como flujo anual.
+- Se agregaron `nota_serie` y `comparable_como_flujo_anual` en `analytics_habilitaciones_por_anio.csv`.
+- Se saneo `comuna` en `fact_habilitacion_gastronomica.csv` al dominio 1-15 o `No determinada`.
+
+## 2026-06-12 - Correccion de grano F03
+
+- Se separo F03 en `fact_espacio_feria_mercado.csv` para espacios reales y `fact_puesto_feria.csv` para puestos/personas anonimizadas.
+- Se integro FIAB desde GeoJSON como espacios de abastecimiento barrial, separado de ferias especializadas/no alimentarias.
+- Se reemplazo el KPI ambiguo de ferias/mercados por indicadores de espacios reales: mercados, ferias especializadas y FIAB.
+- Se agregaron analytics F03 por tipo, por comuna y FIAB por comuna.
+- Se actualizo el dashboard para no exponer nombres de personas fisicas ni usar puestos como KPI principal.
+- Se reforzo `validate_model.py --strict-real` para validar grano F03, FIAB integrado, ausencia de campos personales en analytics aptas y coordenadas dentro de CABA.
+
 ## 2026-06-10 - V3 control de datos reales y dashboard
 
 - Se integraron F04 y F05 como fuentes reales semiestructuradas y trazables: eventos gastronomicos y programas/politicas.

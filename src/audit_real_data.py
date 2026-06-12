@@ -65,6 +65,12 @@ def classify_file(path: Path, layer: str, df: pd.DataFrame) -> dict:
     elif layer == "processed" and "origen_dato" in df.columns and df["origen_dato"].astype(str).str.contains("seed", case=False).any():
         apto = "no"
         reason = "tabla procesada contiene registros seed"
+    elif layer == "processed" and "uso" in df.columns and df["uso"].astype(str).eq("auditoria_interna").any():
+        apto = "no"
+        reason = "insumo tecnico/auditoria interna; no exponer en dashboard"
+    elif layer == "processed" and "apto_dashboard" in df.columns and df["apto_dashboard"].astype(str).eq("no").all():
+        apto = "no"
+        reason = "tabla marcada como no apta para dashboard"
     else:
         apto = "requiere_validacion"
         reason = "requiere revisar contrato, fuente y cobertura antes de dashboard"
@@ -114,6 +120,7 @@ def write_markdown(rows: list[dict]) -> None:
         "",
         "Regla V3: ninguna salida de dashboard debe presentarse como dato real si deriva de seeds/manuales.",
         "Regla conceptual: F01 oferta registrada, F02 habilitaciones aprobadas y F03 ferias/mercados se comunican por separado.",
+        "Advertencia F03: contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados; los indicadores principales usan espacios reales.",
         "",
         "## Decision de estructura",
         "",
@@ -152,6 +159,7 @@ def write_markdown(rows: list[dict]) -> None:
     if no_aptas:
         lines.append("- No apto hoy: " + ", ".join(no_aptas) + ".")
     lines.append("- Advertencia obligatoria: no sumar F01 y F02 como establecimientos gastronomicos.")
+    lines.append("- Advertencia F03: no contar puestos/personas como espacios de ferias o mercados.")
     (DOCS / "AUDITORIA_DATOS_REALES.md").write_text("\n".join(lines), encoding="utf-8")
 
 

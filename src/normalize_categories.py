@@ -33,8 +33,8 @@ CATEGORY_BY_NAME = {name: category_id for category_id, name, _ in TAXONOMY}
 KEYWORDS = [
     ("Bar notable", ("bar notable", "bares notables", "cafe notable"), 0.95),
     ("Heladeria", ("helader", "helado"), 0.9),
-    ("Pizzeria", ("pizzer", "pizza", "empanada"), 0.9),
-    ("Parrilla", ("parrilla", "asador", "asado"), 0.9),
+    ("Pizzeria", ("pizz", "empanada"), 0.9),
+    ("Parrilla", ("parrill", "asador", "asado"), 0.9),
     ("Panaderia", ("panader", "panificacion"), 0.9),
     ("Pasteleria", ("pasteler", "confiter", "repost"), 0.85),
     ("Cafe", ("cafe", "cafeter"), 0.85),
@@ -43,7 +43,7 @@ KEYWORDS = [
     ("Feria", ("feria", "fiab", "ba market"), 0.85),
     ("Mercado", ("mercado", "mercado gastronomico"), 0.85),
     ("Comida al paso", ("rotiser", "casa de comidas", "comida al paso", "take away", "sandwich"), 0.8),
-    ("Bar", ("bar", "cervecer", "pub", "vinoteca", "bodegon"), 0.8),
+    ("Bar", ("bar", "cervecer", "pub", "vinotec", "bodegon"), 0.8),
     ("Restaurante", ("restaurante", "restaurant", "restoran", "resto", "cantina"), 0.8),
 ]
 
@@ -53,9 +53,28 @@ PREFIX_KEYWORDS = {
     "confiter",
     "rotiser",
     "cervecer",
+    "pizz",
     "pizzer",
+    "parrill",
     "pasteler",
     "cafeter",
+    "sandwich",
+    "vinotec",
+}
+
+EXACT_PLURAL_PATTERNS = {
+    "bar": r"\bbar(?:es)?\b",
+    "pub": r"\bpubs?\b",
+    "cafe": r"\bcafes?\b",
+    "pizza": r"\bpizzas?\b",
+    "empanada": r"\bempanadas?\b",
+    "helado": r"\bhelados?\b",
+    "asado": r"\basados?\b",
+    "bodegon": r"\bbodegon(?:es)?\b",
+    "cantina": r"\bcantinas?\b",
+    "restoran": r"\brestoran(?:es)?\b",
+    "feria": r"\bferias?\b",
+    "mercado": r"\bmercados?\b",
 }
 
 NON_GASTRO_KEYWORDS = (
@@ -112,6 +131,8 @@ def _keyword_pattern(keyword: str) -> re.Pattern:
         word = words[0]
         if word in PREFIX_KEYWORDS:
             return re.compile(rf"\b{re.escape(word)}\w*")
+        if word in EXACT_PLURAL_PATTERNS:
+            return re.compile(EXACT_PLURAL_PATTERNS[word])
         return re.compile(rf"\b{re.escape(word)}\b")
     return re.compile(r"\b" + r"\s+".join(re.escape(word) for word in words) + r"\b")
 

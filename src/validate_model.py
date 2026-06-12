@@ -23,6 +23,8 @@ EXPECTED_TABLES = {
     "fact_habilitacion_gastronomica.csv": "id_habilitacion",
     "fact_evento_gastronomico.csv": "id_evento",
     "fact_programa_politica.csv": "id_programa",
+    "fact_espacio_feria_mercado.csv": "id_espacio",
+    "fact_puesto_feria.csv": "id_puesto_feria",
     "fact_mercado_feria.csv": "id_mercado_feria",
     "puente_evento_programa.csv": "",
 }
@@ -37,6 +39,9 @@ EXPECTED_ANALYTICS = [
     "analytics_habilitaciones_por_barrio.csv",
     "analytics_habilitaciones_por_categoria.csv",
     "analytics_habilitaciones_recientes.csv",
+    "analytics_espacios_ferias_mercados_por_tipo.csv",
+    "analytics_espacios_ferias_mercados_por_comuna.csv",
+    "analytics_fiab_por_comuna.csv",
     "analytics_programas_por_anio.csv",
     "analytics_programas_por_tipo.csv",
     "analytics_programas_por_estado.csv",
@@ -54,6 +59,7 @@ FK_CHECKS = [
     ("fact_establecimiento.csv", "id_categoria", "dim_categoria_gastronomica.csv", "id_categoria"),
     ("fact_establecimiento.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
     ("fact_habilitacion_gastronomica.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
+    ("fact_espacio_feria_mercado.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
     ("fact_mercado_feria.csv", "id_ubicacion", "dim_ubicacion.csv", "id_ubicacion"),
 ]
 
@@ -62,12 +68,15 @@ TRACEABILITY_COLUMNS = {
     "fact_habilitacion_gastronomica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "periodo_fuente", "anio_fuente", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_evento_gastronomico.csv": ["id_fuente", "url_fuente", "fecha_consulta", "tipo_vinculo_gcba", "apto_dashboard", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
     "fact_programa_politica.csv": ["id_fuente", "url_fuente", "fecha_consulta", "tipo_programa", "estado", "apto_dashboard", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
+    "fact_espacio_feria_mercado.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos", "limitaciones"],
+    "fact_puesto_feria.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos", "apto_dashboard", "uso", "limitaciones"],
     "fact_mercado_feria.csv": ["id_fuente", "url_fuente", "fecha_consulta", "calidad_dato", "requiere_validacion", "motivo_validacion", "origen_dato", "estado_datos"],
 }
 
 IMPORTANT_FACTS = [
     "fact_establecimiento.csv",
     "fact_habilitacion_gastronomica.csv",
+    "fact_espacio_feria_mercado.csv",
     "fact_mercado_feria.csv",
 ]
 
@@ -77,6 +86,9 @@ IMPORTANT_ANALYTICS = [
     "analytics_habilitaciones_por_barrio.csv",
     "analytics_habilitaciones_por_categoria.csv",
     "analytics_habilitaciones_recientes.csv",
+    "analytics_espacios_ferias_mercados_por_tipo.csv",
+    "analytics_espacios_ferias_mercados_por_comuna.csv",
+    "analytics_fiab_por_comuna.csv",
     "analytics_eventos_por_barrio.csv",
     "analytics_eventos_por_tipo.csv",
     "analytics_eventos_por_anio.csv",
@@ -258,6 +270,51 @@ def validate(strict_real: bool = False) -> int:
         for column in ("descripcion_rubro_original", "categoria_gastronomica_inferida", "confianza_categoria", "motivo_categoria"):
             if column not in hab.columns:
                 add(messages, "ERROR", f"fact_habilitacion_gastronomica no tiene {column}")
+        if "comuna" in hab.columns:
+            valid_comunas = {str(value) for value in range(1, 16)} | {"No determinada"}
+            bad_comuna = hab[~hab["comuna"].astype(str).isin(valid_comunas)]
+            if bad_comuna.empty:
+                add(messages, "OK", "fact_habilitacion_gastronomica.comuna usa solo 1-15 o No determinada")
+            else:
+                add(messages, "ERROR", f"fact_habilitacion_gastronomica tiene {len(bad_comuna)} comunas fuera de dominio")
+        else:
+            add(messages, "ERROR", "fact_habilitacion_gastronomica no tiene comuna")
+        if {"anio_fuente", "requiere_validacion", "motivo_validacion"}.issubset(hab.columns):
+            motive = "Recurso 2025 con esquema distinto: contiene disposiciones de varios anios; no usar como flujo anual"
+            rows_2025 = hab[hab["anio_fuente"].astype(str) == "2025"]
+            bad_2025 = rows_2025[
+                (rows_2025["requiere_validacion"].astype(str) != "si")
+                | (rows_2025["motivo_validacion"].astype(str) != motive)
+            ]
+            if bad_2025.empty:
+                add(messages, "OK", "F02 2025 queda marcado como no comparable y requiere validacion")
+            else:
+                add(messages, "ERROR", f"{len(bad_2025)} filas F02 2025 no tienen advertencia metodologica esperada")
+
+    espacios = tables.get("fact_espacio_feria_mercado.csv")
+    puestos = tables.get("fact_puesto_feria.csv")
+    if strict_real and espacios is not None:
+        if espacios.empty:
+            add(messages, "ERROR", "fact_espacio_feria_mercado esta vacia; F03 espacios reales no se integro")
+        forbidden_space_columns = {"apellido", "nombre_persona", "categoria_titularidad", "persona_hash", "puesto", "rubro_puesto", "uso", "apto_dashboard"}
+        leaked_columns = sorted(forbidden_space_columns & set(espacios.columns))
+        if leaked_columns:
+            add(messages, "ERROR", f"fact_espacio_feria_mercado mezcla campos de puestos/personas: {leaked_columns}")
+        if "tipo_espacio" in espacios.columns:
+            bad_types = espacios[espacios["tipo_espacio"].astype(str).str.contains("TITULAR|COTITULAR|PUESTO", case=False, na=False)]
+            if not bad_types.empty:
+                add(messages, "ERROR", f"fact_espacio_feria_mercado contiene {len(bad_types)} filas con tipo de puesto/persona")
+            if (DATA_RAW / "f03_fiab.geojson").exists() and not (espacios["tipo_espacio"].astype(str) == "FIAB").any():
+                add(messages, "ERROR", "f03_fiab.geojson existe pero no hay espacios FIAB integrados")
+    if strict_real and puestos is not None:
+        pii_columns = {"apellido", "nombre", "nombre_persona"}
+        leaked_pii = sorted(pii_columns & set(puestos.columns))
+        if leaked_pii:
+            add(messages, "ERROR", f"fact_puesto_feria expone nombres de personas fisicas: {leaked_pii}")
+        if "apto_dashboard" not in puestos.columns or puestos["apto_dashboard"].astype(str).ne("no").any():
+            add(messages, "ERROR", "fact_puesto_feria debe quedar apto_dashboard=no")
+        if "uso" not in puestos.columns or puestos["uso"].astype(str).ne("auditoria_interna").any():
+            add(messages, "ERROR", "fact_puesto_feria debe quedar con uso=auditoria_interna")
 
     eventos = tables.get("fact_evento_gastronomico.csv")
     if strict_real and eventos is not None:
@@ -305,6 +362,42 @@ def validate(strict_real: bool = False) -> int:
             ]
             if not bad_vigencia.empty:
                 add(messages, "ERROR", f"{len(bad_vigencia)} programas F05 sin vigencia clara quedaron aptos")
+
+    resumen_path = DATA_ANALYTICS / "analytics_resumen_ejecutivo.csv"
+    if strict_real and resumen_path.exists():
+        resumen = read_csv(resumen_path)
+        indicadores = set(resumen.get("indicador", pd.Series(dtype=str)).astype(str))
+        if "ferias_mercados_f03" in indicadores:
+            add(messages, "ERROR", "analytics_resumen_ejecutivo conserva KPI ambiguo ferias_mercados_f03")
+        if "espacios_ferias_mercados_f03" not in indicadores:
+            add(messages, "ERROR", "analytics_resumen_ejecutivo no incluye espacios_ferias_mercados_f03")
+        if "puestos_feria_f03" in indicadores and "uso" in resumen.columns:
+            puesto_rows = resumen[resumen["indicador"].astype(str) == "puestos_feria_f03"]
+            if not puesto_rows.empty and not puesto_rows["uso"].astype(str).eq("auditoria_interna").all():
+                add(messages, "ERROR", "puestos_feria_f03 debe marcarse como auditoria_interna")
+
+    hab_anio_path = DATA_ANALYTICS / "analytics_habilitaciones_por_anio.csv"
+    if strict_real and hab_anio_path.exists():
+        hab_anio = read_csv(hab_anio_path)
+        required_columns = {"nota_serie", "comparable_como_flujo_anual"}
+        missing_columns = sorted(required_columns - set(hab_anio.columns))
+        if missing_columns:
+            add(messages, "ERROR", f"analytics_habilitaciones_por_anio no tiene columnas metodologicas: {missing_columns}")
+        else:
+            non_comparable = hab_anio[hab_anio["anio_fuente"].astype(str).isin(["2015-2018", "2025"])]
+            if not non_comparable.empty and non_comparable["comparable_como_flujo_anual"].astype(str).eq("no").all():
+                add(messages, "OK", "analytics_habilitaciones_por_anio marca 2015-2018 y 2025 como no comparables")
+            else:
+                add(messages, "ERROR", "analytics_habilitaciones_por_anio no marca correctamente periodos no comparables")
+
+    if strict_real:
+        pii_names = {"apellido", "nombre_persona", "persona_hash", "categoria_titularidad"}
+        for path in DATA_ANALYTICS.glob("analytics_*.csv"):
+            df = read_csv(path)
+            if "apto_dashboard" in df.columns and df["apto_dashboard"].astype(str).eq("si").any():
+                leaked = sorted(pii_names & set(df.columns))
+                if leaked:
+                    add(messages, "ERROR", f"{path.name} apta para dashboard expone campos personales: {leaked}")
 
     errors = sum(1 for level, _ in messages if level == "ERROR")
     warnings = sum(1 for level, _ in messages if level == "WARNING")
