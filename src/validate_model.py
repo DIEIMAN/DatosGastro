@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -17,6 +18,7 @@ CABA_LON_MAX = -58.30
 EXPECTED_TABLES = {
     "dim_fuente.csv": "id_fuente",
     "dim_ubicacion.csv": "id_ubicacion",
+    "dim_territorio.csv": "id_territorio",
     "dim_categoria_gastronomica.csv": "id_categoria",
     "dim_organizador.csv": "id_organizador",
     "fact_establecimiento.csv": "id_establecimiento",
@@ -124,6 +126,30 @@ def _coordinate_series(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
 
 
+
+
+def _iter_geojson_coordinates(obj):
+    if isinstance(obj, (list, tuple)):
+        if len(obj) >= 2 and all(isinstance(value, (int, float)) for value in obj[:2]):
+            yield float(obj[1]), float(obj[0])
+        else:
+            for item in obj:
+                yield from _iter_geojson_coordinates(item)
+
+
+def _validate_geojson_bounds(path: Path) -> tuple[bool, int, str]:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return False, 0, f"no se pudo leer {path.name}: {exc}"
+    coords = list(_iter_geojson_coordinates(data.get("features", [])))
+    if not coords:
+        return False, 0, f"{path.name} no contiene coordenadas"
+    out = [coord for coord in coords if not (CABA_LAT_MIN <= coord[0] <= CABA_LAT_MAX and CABA_LON_MIN <= coord[1] <= CABA_LON_MAX)]
+    if out:
+        return False, len(coords), f"{path.name} tiene {len(out)} coordenadas fuera de CABA"
+    return True, len(coords), f"{path.name} geometria dentro de bounding box CABA ({len(coords)} vertices)"
+
 def _real_source_files() -> list[Path]:
     paths = []
     for source in SOURCE_CONFIG.values():
@@ -199,6 +225,40 @@ def validate(strict_real: bool = False) -> int:
             add(messages, "OK", f"dim_ubicacion coordenadas dentro de bounding box CABA ({len(mapped)} filas mapeables)")
         else:
             add(messages, "ERROR", f"dim_ubicacion tiene {len(out_of_bounds)} filas con coordenadas fuera de CABA")
+
+
+
+    dim_territorio = tables.get("dim_territorio.csv")
+    if dim_territorio is not None:
+        if dim_territorio.empty:
+            add(messages, "WARNING", "dim_territorio esta vacia: faltan geo_barrios.geojson/geo_comunas.geojson opcionales")
+        elif {"barrio", "comuna", "centroide_latitud", "centroide_longitud", "calidad_geo"}.issubset(dim_territorio.columns):
+            valid_comunas = {str(value) for value in range(1, 16)} | {"No determinada"}
+            bad_comuna = dim_territorio[~dim_territorio["comuna"].astype(str).isin(valid_comunas)]
+            if bad_comuna.empty:
+                add(messages, "OK", "dim_territorio comunas dentro de dominio 1-15")
+            else:
+                add(messages, "ERROR", f"dim_territorio tiene {len(bad_comuna)} comunas fuera de dominio")
+            lat = _coordinate_series(dim_territorio["centroide_latitud"])
+            lon = _coordinate_series(dim_territorio["centroide_longitud"])
+            mapped = dim_territorio[lat.notna() & lon.notna()]
+            out_of_bounds = mapped[~(lat[lat.notna() & lon.notna()].between(CABA_LAT_MIN, CABA_LAT_MAX) & lon[lat.notna() & lon.notna()].between(CABA_LON_MIN, CABA_LON_MAX))]
+            if out_of_bounds.empty:
+                add(messages, "OK", f"dim_territorio centroides dentro de bounding box CABA ({len(mapped)} filas)")
+            else:
+                add(messages, "ERROR", f"dim_territorio tiene {len(out_of_bounds)} centroides fuera de CABA")
+        else:
+            add(messages, "ERROR", "dim_territorio no tiene columnas territoriales esperadas")
+
+    if strict_real:
+        for geo_name in ("geo_barrios.geojson", "geo_comunas.geojson"):
+            geo_path = DATA_RAW / geo_name
+            if not geo_path.exists():
+                add(messages, "WARNING", f"falta recurso territorial opcional {geo_name}; coropleta queda pendiente")
+            else:
+                ok, _count, text = _validate_geojson_bounds(geo_path)
+                add(messages, "OK" if ok else "ERROR", text)
+
 
     for filename, columns in TRACEABILITY_COLUMNS.items():
         df = tables.get(filename)

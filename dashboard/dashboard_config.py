@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ANALYTICS = ROOT / "data" / "analytics"
 PROCESSED = ROOT / "data" / "processed"
+RAW = ROOT / "data" / "raw"
 DOCS = ROOT / "docs"
 
 TRACE_COLUMNS = [
@@ -41,3 +42,6 @@ CATEGORY_COLORS = {
 DEFAULT_POINT_COLOR = [80, 80, 80, 150]
 FIAB_POINT_COLOR = [40, 150, 95, 220]
 
+
+CHOROPLETH_MIN_COLOR = [241, 245, 249, 60]
+CHOROPLETH_MAX_COLOR = [180, 45, 40, 190]

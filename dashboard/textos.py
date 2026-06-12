@@ -16,6 +16,7 @@ SOURCE_CAPTIONS = {
     "f05": "Fuente: relevamiento manual trazable F05. Catalogo de instrumentos, no serie de impacto.",
     "mapa": "Fuente: Buenos Aires Data (ENTUR / Min. Espacio Publico). Coordenadas provistas por la fuente; no se geocodifico. No se mapean F02, puestos, eventos ni programas.",
     "mapa_oportunidades": "Fuente: analytics_mapa_oportunidades.csv. Universos separados a nivel comuna; no es un score compuesto.",
+    "coropleta_f02": "Fuente: Buenos Aires Data / AGC + GeoJSON oficial de comunas BA Data. Coropleta solo para registros F02 con comuna identificada; no muestra locales activos ni puntos exactos.",
     "resumen": "Fuente: analytics_resumen_ejecutivo.csv, fecha de consulta declarada en cada salida.",
 }
 

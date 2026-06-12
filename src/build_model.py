@@ -9,6 +9,7 @@ from datetime import date
 from pathlib import Path
 
 import pandas as pd
+from shapely.geometry import shape
 
 from clean_text import clean_dataframe_columns, normalize_proper_name, normalize_text
 from config import DATA_PROCESSED, DATA_RAW, DATA_SEEDS, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
@@ -661,6 +662,81 @@ def build_dim_fuente() -> pd.DataFrame:
 def build_dim_categoria() -> pd.DataFrame:
     return pd.DataFrame(taxonomy_dataframe_rows())
 
+
+
+def _geojson_features(filename: str) -> list[dict]:
+    path = DATA_RAW / filename
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    return list(data.get("features") or [])
+
+
+def _feature_centroid(feature: dict) -> tuple[str, str, str, str]:
+    try:
+        geom = shape(feature.get("geometry") or {})
+        if geom.is_empty:
+            return "No disponible", "No disponible", "sin_geo", "Geometria vacia"
+        point = geom.centroid
+        lon = float(point.x)
+        lat = float(point.y)
+        if CABA_LAT_MIN <= lat <= CABA_LAT_MAX and CABA_LON_MIN <= lon <= CABA_LON_MAX:
+            return f"{lat:.8f}", f"{lon:.8f}", "fuente_oficial", "Centroide calculado desde poligono oficial"
+        return f"{lat:.8f}", f"{lon:.8f}", "sospechosa", "Centroide fuera de bounding box CABA"
+    except Exception as exc:
+        return "No disponible", "No disponible", "sin_geo", f"No se pudo calcular centroide: {exc}"
+
+
+def _territory_value(props: dict, names: list[str], default: str = "No disponible") -> str:
+    for name in names:
+        value = props.get(name)
+        if value is not None and normalize_text(value):
+            return normalize_text(value)
+    return default
+
+
+def build_dim_territorio() -> pd.DataFrame:
+    columns = [
+        "id_territorio",
+        "barrio",
+        "barrio_normalizado",
+        "comuna",
+        "centroide_latitud",
+        "centroide_longitud",
+        "fuente_geojson",
+        "fecha_consulta",
+        "calidad_geo",
+        "requiere_validacion",
+        "motivo_validacion",
+    ]
+    features = _geojson_features("geo_barrios.geojson")
+    rows = []
+    for idx, feature in enumerate(features, start=1):
+        props = feature.get("properties") or {}
+        barrio = _territory_value(props, ["barrio", "BARRIO", "nombre", "NOMBRE", "name"], default=f"Barrio {idx}")
+        comuna = normalize_comuna_value(_territory_value(props, ["comuna", "COMUNA"], default="No determinada"))
+        lat, lon, quality, motive = _feature_centroid(feature)
+        rows.append(
+            {
+                "id_territorio": f"T{idx:03d}",
+                "barrio": normalize_proper_name(barrio),
+                "barrio_normalizado": normalize_text(barrio, case="upper", remove_accents=True),
+                "comuna": comuna,
+                "centroide_latitud": lat,
+                "centroide_longitud": lon,
+                "fuente_geojson": "geo_barrios.geojson",
+                "fecha_consulta": SOURCE_CONFIG.get("BARRIOS_GEOJSON", {}).get("fecha_consulta", TODAY),
+                "calidad_geo": quality,
+                "requiere_validacion": "no" if quality == "fuente_oficial" else "si",
+                "motivo_validacion": motive,
+            }
+        )
+    if not rows:
+        return pd.DataFrame(columns=columns)
+    return pd.DataFrame(rows, columns=columns).drop_duplicates("barrio_normalizado", keep="first")
 
 def build_locations(est: pd.DataFrame, hab: pd.DataFrame, espacios_f03: pd.DataFrame, eventos: pd.DataFrame) -> pd.DataFrame:
     rows = [
@@ -1325,6 +1401,7 @@ def main() -> int:
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()
     dim_ubicacion = build_locations(est, hab_gastronomica, f03_espacios, eventos)
+    dim_territorio = build_dim_territorio()
     dim_organizador = build_dim_organizador(eventos)
     fact_establecimiento = build_fact_establecimiento(est, dim_fuente)
     fact_habilitacion = build_fact_habilitacion_gastronomica(hab_gastronomica, dim_fuente)
@@ -1336,6 +1413,7 @@ def main() -> int:
 
     write_csv(dim_fuente, "dim_fuente.csv")
     write_csv(dim_ubicacion, "dim_ubicacion.csv")
+    write_csv(dim_territorio, "dim_territorio.csv")
     write_csv(dim_categoria, "dim_categoria_gastronomica.csv")
     write_csv(dim_organizador, "dim_organizador.csv")
     write_csv(fact_establecimiento, "fact_establecimiento.csv")

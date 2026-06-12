@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from dashboard.components import horizontal_bar, kpi_row, pydeck_map, searchable_table, vertical_bar
+from dashboard.components import horizontal_bar, kpi_row, pydeck_comuna_choropleth, pydeck_map, searchable_table, vertical_bar
 from dashboard.dashboard_config import DOCS, F02_SERIE_ORDER
 from dashboard.data_loader import (
     DashboardData,
@@ -16,6 +16,7 @@ from dashboard.data_loader import (
     numeric_series,
     prepare_f01_map,
     prepare_f03_map,
+    prepare_f02_choropleth,
     top_f01_barrios,
     traceability_rows,
 )
@@ -79,8 +80,15 @@ def render_territorio(data: DashboardData) -> None:
     selected = st.multiselect("Categorias F01", categories, default=categories, key="territorio_categorias")
     f01_map = prepare_f01_map(data, selected)
     st.subheader("Mapa territorial")
-    pydeck_map(f01_map, prepare_f03_map(data), show_f01=True, show_f03=True)
-    st.caption(source_caption("mapa"))
+    map_mode = st.radio("Capa territorial", ["Puntos F01/F03", "Coropleta F02 por comuna"], horizontal=True, key="territorio_modo_mapa")
+    if map_mode == "Puntos F01/F03":
+        pydeck_map(f01_map, prepare_f03_map(data), show_f01=True, show_f03=True)
+        st.caption(source_caption("mapa"))
+    else:
+        geo_comunas, coverage = prepare_f02_choropleth(data)
+        st.warning("La coropleta F02 muestra solo habilitaciones con comuna identificada. No son establecimientos activos ni puntos exactos.")
+        pydeck_comuna_choropleth(geo_comunas, coverage)
+        st.caption(source_caption("coropleta_f02"))
 
     top_barrios = top_f01_barrios(data.est_cat_barrio, limit=15)
     horizontal_bar(

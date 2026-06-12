@@ -150,3 +150,38 @@ def pydeck_map(f01_map: pd.DataFrame, f03_map: pd.DataFrame, *, show_f01: bool =
         ),
         width="stretch",
     )
+
+
+def pydeck_comuna_choropleth(geojson: dict, coverage: float) -> None:
+    if not geojson or not geojson.get("features"):
+        st.info("No está disponible `data/raw/geo_comunas.geojson`. Ejecutá `python src/download_sources.py` y luego reconstruí el modelo para habilitar la coropleta.")
+        return
+    layer = pdk.Layer(
+        "GeoJsonLayer",
+        data=geojson,
+        stroked=True,
+        filled=True,
+        get_fill_color="properties.fill_color",
+        get_line_color=[80, 80, 80, 180],
+        get_line_width=45,
+        pickable=True,
+        opacity=0.72,
+    )
+    st.pydeck_chart(
+        pdk.Deck(
+            map_style=None,
+            initial_view_state=pdk.ViewState(latitude=-34.61, longitude=-58.44, zoom=10, pitch=0),
+            layers=[layer],
+            tooltip={
+                "html": (
+                    "<b>Comuna {comuna}</b><br/>"
+                    "Habilitaciones F02 con comuna: {cantidad_habilitaciones}<br/>"
+                    "% dentro de registros con comuna: {porcentaje_total_identificado}%<br/>"
+                    "Cobertura territorial F02: {coverage}%"
+                ),
+                "style": {"backgroundColor": "#ffffff", "color": "#111111"},
+            },
+        ),
+        width="stretch",
+    )
+    st.caption(f"Coropleta calculada solo sobre registros F02 con comuna identificada. Cobertura territorial actual: {coverage:.1f}% del total F02 clasificado.")

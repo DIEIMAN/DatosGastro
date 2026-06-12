@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import json
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-from dashboard.dashboard_config import ANALYTICS, CATEGORY_COLORS, DEFAULT_POINT_COLOR, FIAB_POINT_COLOR, PROCESSED
+from dashboard.dashboard_config import ANALYTICS, CATEGORY_COLORS, DEFAULT_POINT_COLOR, FIAB_POINT_COLOR, PROCESSED, RAW
 
 
 @dataclass(frozen=True)
@@ -41,6 +42,16 @@ def read_csv(path: Path) -> pd.DataFrame:
         return pd.DataFrame()
     return pd.read_csv(path, dtype=str, keep_default_na=False)
 
+
+
+@st.cache_data(show_spinner=False)
+def read_geojson(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
 
 @st.cache_data(show_spinner=False)
 def load_dashboard_data() -> DashboardData:
@@ -189,6 +200,45 @@ def traceability_rows(analytics_dir: Path = ANALYTICS) -> pd.DataFrame:
         )
     return pd.DataFrame(rows)
 
+
+
+def prepare_f02_choropleth(data: DashboardData) -> tuple[dict, float]:
+    geo = read_geojson(RAW / "geo_comunas.geojson")
+    if not geo or data.hab_barrio.empty:
+        return {}, 0.0
+    df = data.hab_barrio.copy()
+    df["comuna_norm"] = df.get("comuna", pd.Series(dtype=str)).astype(str).str.extract(r"(1[0-5]|[1-9])", expand=False).fillna("")
+    total = numeric_series(df.get("cantidad_habilitaciones", pd.Series(dtype=str))).sum()
+    df = df[df["comuna_norm"].ne("")].copy()
+    by_comuna = df.groupby("comuna_norm")["cantidad_habilitaciones"].apply(lambda s: numeric_series(s).sum()).to_dict()
+    identified = sum(by_comuna.values())
+    coverage = (identified / total * 100) if total else 0.0
+    max_value = max(by_comuna.values()) if by_comuna else 0
+    features = []
+    for feature in geo.get("features", []):
+        props = dict(feature.get("properties") or {})
+        comuna_raw = str(props.get("comuna") or props.get("COMUNA") or props.get("id") or props.get("ID") or "")
+        comuna = ""
+        import re
+        match = re.search(r"(1[0-5]|[1-9])", comuna_raw)
+        if match:
+            comuna = str(int(match.group(1)))
+        value = int(by_comuna.get(comuna, 0))
+        intensity = value / max_value if max_value else 0
+        color = [int(241 - 61 * intensity), int(245 - 200 * intensity), int(249 - 209 * intensity), 80 + int(120 * intensity)]
+        props.update(
+            {
+                "comuna": comuna or comuna_raw,
+                "cantidad_habilitaciones": value,
+                "porcentaje_total_identificado": round((value / identified * 100), 1) if identified else 0,
+                "coverage": round(coverage, 1),
+                "fill_color": color,
+            }
+        )
+        enriched = dict(feature)
+        enriched["properties"] = props
+        features.append(enriched)
+    return {"type": "FeatureCollection", "features": features}, coverage
 
 def linked_events_for_program(program_id: str, data: DashboardData) -> pd.DataFrame:
     if data.puente_evento_programa.empty or data.fact_eventos.empty:

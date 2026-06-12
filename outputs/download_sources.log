@@ -24,3 +24,23 @@ F03	F03	OK	363681	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_ferias_mercad
 F03_FERIAS	F03	OK	7374	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_ferias.csv	
 F03_MERCADOS	F03	WARNING	621	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_mercados.csv	archivo sospechosamente chico (<1 KB)
 F03_FIAB_GEOJSON	F03	OK	103011	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_fiab.geojson	
+
+# download_sources 2026-06-12T14:16:37
+F01	F01	OK	438717	C:\proyectos\Gastronomia\DataGastro\data\raw\f01_oferta_establecimientos_gastronomicos.csv	
+F02_2015_2018	F02	OK	32881680	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2015_2018.csv	
+F02_2019	F02	OK	5865760	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2019.csv	
+F02_2020	F02	OK	3762083	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2020.csv	
+F02_2021	F02	OK	27974706	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2021.csv	
+F02_2022	F02	OK	7945815	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2022.csv	
+F02_2023	F02	OK	1486642	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2023.csv	
+F02_2024	F02	OK	2495081	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2024.csv	
+F02_2025	F02	OK	66925430	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2025.csv	
+F02_2026	F02	PENDING	0	C:\proyectos\Gastronomia\DataGastro\data\raw\f02_habilitaciones_aprobadas_2026.csv	download_url pendiente o no publicado
+F03	F03	OK	363681	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_ferias_mercados.csv	
+F03_FERIAS	F03	OK	7374	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_ferias.csv	
+F03_MERCADOS	F03	WARNING	621	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_mercados.csv	archivo sospechosamente chico (<1 KB)
+F03_FIAB_GEOJSON	F03	OK	103011	C:\proyectos\Gastronomia\DataGastro\data\raw\f03_fiab.geojson	
+F04	F04	PENDING	0	C:\proyectos\Gastronomia\DataGastro\data\raw\f04_eventos_gastronomicos.csv	download_url pendiente o no publicado
+F05	F05	PENDING	0	C:\proyectos\Gastronomia\DataGastro\data\raw\f05_programas_politicas_gastronomicas.csv	download_url pendiente o no publicado
+BARRIOS_GEOJSON	GEO_BARRIOS	OK	763670	C:\proyectos\Gastronomia\DataGastro\data\raw\geo_barrios.geojson	
+COMUNAS_GEOJSON	GEO_COMUNAS	OK	587117	C:\proyectos\Gastronomia\DataGastro\data\raw\geo_comunas.geojson	

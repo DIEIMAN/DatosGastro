@@ -222,6 +222,51 @@ SOURCE_CONFIG.update(
     }
 )
 
+SOURCE_CONFIG.update(
+    {
+        "BARRIOS_GEOJSON": {
+            "id_fuente": "GEO_BARRIOS",
+            "nombre": "Barrios GeoJSON",
+            "name": "Barrios GeoJSON",
+            "organismo": "Buenos Aires Data - DG Gobernanza de Datos Abiertos",
+            "description": "Poligonos oficiales de los barrios de la Ciudad Autonoma de Buenos Aires.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/barrios",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/barrios/resource/1c3d185b-fdc9-474b-b41b-9bd960a3806e/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/barrios/resource/1c3d185b-fdc9-474b-b41b-9bd960a3806e/download",
+            "output_filename": "geo_barrios.geojson",
+            "target_filename": "geo_barrios.geojson",
+            "formato": "geojson",
+            "prioridad": "alta",
+            "fecha_consulta": "2026-06-12",
+            "limitaciones": "Recurso territorial opcional para coropletas y centroides; no requerido por strict-real.",
+            "required_strict": False,
+            "seed_glob": "",
+            "raw_patterns": ["geo_barrios.geojson"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/barrios",
+        },
+        "COMUNAS_GEOJSON": {
+            "id_fuente": "GEO_COMUNAS",
+            "nombre": "Comunas GeoJSON",
+            "name": "Comunas GeoJSON",
+            "organismo": "Buenos Aires Data - DG Gobernanza de Datos Abiertos",
+            "description": "Poligonos oficiales de las comunas de la Ciudad Autonoma de Buenos Aires.",
+            "dataset_url": "https://data.buenosaires.gob.ar/dataset/comunas",
+            "download_url": "https://data.buenosaires.gob.ar/dataset/comunas/resource/b0b627ac-5b47-4574-89ac-6999b63598ee/download",
+            "url": "https://data.buenosaires.gob.ar/dataset/comunas/resource/b0b627ac-5b47-4574-89ac-6999b63598ee/download",
+            "output_filename": "geo_comunas.geojson",
+            "target_filename": "geo_comunas.geojson",
+            "formato": "geojson",
+            "prioridad": "alta",
+            "fecha_consulta": "2026-06-12",
+            "limitaciones": "Recurso territorial opcional para coropletas comunales; no requerido por strict-real.",
+            "required_strict": False,
+            "seed_glob": "",
+            "raw_patterns": ["geo_comunas.geojson"],
+            "portal_url": "https://data.buenosaires.gob.ar/dataset/comunas",
+        },
+    }
+)
+
 # Backwards-compatible alias used by earlier scripts.
 SOURCES = {key: item.get("download_url") for key, item in SOURCE_CONFIG.items()}
 

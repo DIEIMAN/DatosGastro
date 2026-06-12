@@ -1,0 +1,49 @@
+id_territorio,barrio,barrio_normalizado,comuna,centroide_latitud,centroide_longitud,fuente_geojson,fecha_consulta,calidad_geo,requiere_validacion,motivo_validacion
+T001,Agronomia,AGRONOMIA,15,-34.59295035,-58.48867319,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T002,Almagro,ALMAGRO,5,-34.60923219,-58.42174775,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T003,Balvanera,BALVANERA,3,-34.60910424,-58.40306570,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T004,Barracas,BARRACAS,4,-34.64640893,-58.38427503,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T005,Belgrano,BELGRANO,13,-34.55470351,-58.45010446,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T006,La Boca,LA BOCA,4,-34.63107039,-58.35682048,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T007,Boedo,BOEDO,5,-34.62996437,-58.41884274,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T008,Caballito,CABALLITO,6,-34.61683028,-58.44360532,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T009,Chacarita,CHACARITA,15,-34.58837422,-58.45418214,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T010,Coghlan,COGHLAN,12,-34.56063007,-58.47494567,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T011,Colegiales,COLEGIALES,13,-34.57464742,-58.45097020,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T012,Constitucion,CONSTITUCION,1,-34.62504850,-58.38439281,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T013,Flores,FLORES,7,-34.63680760,-58.45826954,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T014,Floresta,FLORESTA,10,-34.62769059,-58.48358803,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T015,Liniers,LINIERS,9,-34.64380065,-58.51912700,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T016,Mataderos,MATADEROS,9,-34.65837766,-58.50173654,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T017,Monserrat,MONSERRAT,1,-34.61269028,-58.37965344,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T018,Monte Castro,MONTE CASTRO,10,-34.61930288,-58.50658054,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T019,Nueva Pompeya,NUEVA POMPEYA,4,-34.65052211,-58.41887933,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T020,Nuñez,NUNEZ,13,-34.54330677,-58.46260611,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T021,Palermo,PALERMO,14,-34.57377583,-58.42229969,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T022,Parque Avellaneda,PARQUE AVELLANEDA,9,-34.64864589,-58.47645592,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T023,Parque Chacabuco,PARQUE CHACABUCO,7,-34.63594434,-58.43769820,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T024,Parque Chas,PARQUE CHAS,15,-34.58552844,-58.47912235,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T025,Parque Patricios,PARQUE PATRICIOS,4,-34.63755464,-58.40167881,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T026,Paternal,PATERNAL,15,-34.59742661,-58.46866618,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T027,Puerto Madero,PUERTO MADERO,1,-34.60906459,-58.35569175,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T028,Recoleta,RECOLETA,2,-34.58556343,-58.39469124,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T029,Retiro,RETIRO,1,-34.58840403,-58.37599438,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T030,Saavedra,SAAVEDRA,12,-34.55308259,-58.48874540,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T031,San Cristobal,SAN CRISTOBAL,3,-34.62386900,-58.40188799,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T032,San Nicolas,SAN NICOLAS,1,-34.60367085,-58.38052017,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T033,San Telmo,SAN TELMO,1,-34.62152487,-58.37154629,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T034,Velez Sarsfield,VELEZ SARSFIELD,10,-34.63136617,-58.49327675,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T035,Versalles,VERSALLES,10,-34.63012789,-58.52241608,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T036,Villa Crespo,VILLA CRESPO,15,-34.59883494,-58.44272737,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T037,Villa Del Parque,VILLA DEL PARQUE,11,-34.60425202,-58.49067744,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T038,Villa Devoto,VILLA DEVOTO,11,-34.60236036,-58.51428178,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T039,Villa Gral. Mitre,VILLA GRAL. MITRE,11,-34.61003384,-58.46894415,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T040,Villa Lugano,VILLA LUGANO,8,-34.67499681,-58.47616750,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T041,Villa Luro,VILLA LURO,10,-34.63641797,-58.50272868,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T042,Villa Ortuzar,VILLA ORTUZAR,15,-34.58097923,-58.46765272,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T043,Villa Pueyrredon,VILLA PUEYRREDON,12,-34.58210899,-58.50349864,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T044,Villa Real,VILLA REAL,10,-34.61949840,-58.52603746,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T045,Villa Riachuelo,VILLA RIACHUELO,8,-34.69187437,-58.46333981,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T046,Villa Santa Rita,VILLA SANTA RITA,11,-34.61619853,-58.48295739,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T047,Villa Soldati,VILLA SOLDATI,8,-34.66542466,-58.44658272,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
+T048,Villa Urquiza,VILLA URQUIZA,12,-34.57154663,-58.48785622,geo_barrios.geojson,2026-06-12,fuente_oficial,no,Centroide calculado desde poligono oficial
