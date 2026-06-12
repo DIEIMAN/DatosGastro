@@ -128,13 +128,55 @@ def _coordinate_series(series: pd.Series) -> pd.Series:
 
 
 
-def _iter_geojson_coordinates(obj):
-    if isinstance(obj, (list, tuple)):
-        if len(obj) >= 2 and all(isinstance(value, (int, float)) for value in obj[:2]):
-            yield float(obj[1]), float(obj[0])
+def _is_number(value) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def _iter_geojson_coordinate_pairs(coordinates):
+    """Yield (lat, lon) pairs from any GeoJSON coordinates nesting.
+
+    GeoJSON stores coordinate positions as [longitude, latitude, ...]. Barrios and
+    comunas are polygonal resources, so the validator must walk nested Polygon
+    and MultiPolygon coordinate arrays instead of expecting flat lat/lon fields.
+    """
+    if isinstance(coordinates, (list, tuple)):
+        if len(coordinates) >= 2 and _is_number(coordinates[0]) and _is_number(coordinates[1]):
+            yield float(coordinates[1]), float(coordinates[0])
         else:
-            for item in obj:
-                yield from _iter_geojson_coordinates(item)
+            for item in coordinates:
+                yield from _iter_geojson_coordinate_pairs(item)
+
+
+def _iter_geojson_geometries(geometry):
+    if not isinstance(geometry, dict):
+        return
+    geometry_type = str(geometry.get("type", ""))
+    if geometry_type == "GeometryCollection":
+        for child in geometry.get("geometries", []) or []:
+            yield from _iter_geojson_geometries(child)
+        return
+    if "coordinates" in geometry:
+        yield geometry
+
+
+def _geometry_coordinate_pairs(geometry) -> list[tuple[float, float]]:
+    pairs: list[tuple[float, float]] = []
+    for geom in _iter_geojson_geometries(geometry):
+        pairs.extend(_iter_geojson_coordinate_pairs(geom.get("coordinates", [])))
+    return pairs
+
+
+def _bounds_intersects_caba(pairs: list[tuple[float, float]]) -> bool:
+    lats = [lat for lat, _lon in pairs]
+    lons = [lon for _lat, lon in pairs]
+    min_lat, max_lat = min(lats), max(lats)
+    min_lon, max_lon = min(lons), max(lons)
+    return not (
+        max_lat < CABA_LAT_MIN
+        or min_lat > CABA_LAT_MAX
+        or max_lon < CABA_LON_MIN
+        or min_lon > CABA_LON_MAX
+    )
 
 
 def _validate_geojson_bounds(path: Path) -> tuple[bool, int, str]:
@@ -142,13 +184,53 @@ def _validate_geojson_bounds(path: Path) -> tuple[bool, int, str]:
         data = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
         return False, 0, f"no se pudo leer {path.name}: {exc}"
-    coords = list(_iter_geojson_coordinates(data.get("features", [])))
-    if not coords:
-        return False, 0, f"{path.name} no contiene coordenadas"
-    out = [coord for coord in coords if not (CABA_LAT_MIN <= coord[0] <= CABA_LAT_MAX and CABA_LON_MIN <= coord[1] <= CABA_LON_MAX)]
-    if out:
-        return False, len(coords), f"{path.name} tiene {len(out)} coordenadas fuera de CABA"
-    return True, len(coords), f"{path.name} geometria dentro de bounding box CABA ({len(coords)} vertices)"
+
+    if not isinstance(data, dict):
+        return False, 0, f"{path.name} no es un GeoJSON valido"
+
+    if data.get("type") == "FeatureCollection":
+        features = data.get("features", [])
+    elif data.get("type") == "Feature":
+        features = [data]
+    elif "coordinates" in data or data.get("type") == "GeometryCollection":
+        features = [{"type": "Feature", "geometry": data, "properties": {}}]
+    else:
+        return False, 0, f"{path.name} no tiene features ni geometria GeoJSON reconocible"
+
+    if not isinstance(features, list) or not features:
+        return False, 0, f"{path.name} no tiene features"
+
+    total_vertices = 0
+    empty_geometries = 0
+    outside_geometries = 0
+    valid_geometries = 0
+
+    for feature in features:
+        if not isinstance(feature, dict):
+            empty_geometries += 1
+            continue
+        geometry = feature.get("geometry")
+        pairs = _geometry_coordinate_pairs(geometry)
+        if not pairs:
+            empty_geometries += 1
+            continue
+        total_vertices += len(pairs)
+        valid_geometries += 1
+        if not _bounds_intersects_caba(pairs):
+            outside_geometries += 1
+
+    if valid_geometries == 0:
+        return False, 0, f"{path.name} no contiene geometrias con coordenadas"
+    if empty_geometries:
+        return False, total_vertices, f"{path.name} tiene {empty_geometries} features sin geometria/coordenadas"
+    if outside_geometries:
+        return False, total_vertices, f"{path.name} tiene {outside_geometries} geometrias fuera de CABA"
+
+    return (
+        True,
+        total_vertices,
+        f"{path.name} contiene {valid_geometries} geometrias validas dentro/intersectando bounding box CABA ({total_vertices} vertices)",
+    )
 
 def _real_source_files() -> list[Path]:
     paths = []
