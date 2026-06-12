@@ -76,6 +76,19 @@ python src/validate_model.py --strict-real
 
 En modo estricto no se permiten seeds. Si faltan F01/F02/F03 reales o F04/F05 semiestructurados, el comando debe fallar.
 
+## Dashboard V1 de validacion
+
+El dashboard local esta en `dashboard/app.py`. Es una app de validacion metodologica, no una pieza final de presentacion.
+
+Instalar dependencias y correr:
+
+```bash
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+
+La app lee `data/analytics/` y `data/processed/`, separa F01/F02/F03/F04/F05, muestra fuentes y limitaciones, y mantiene fuera de metricas fuertes las filas cualitativas o en validacion.
+
 ## Datos seed
 
 Siguen siendo seed/manuales los archivos `raw_*` en `data/seeds/`, especialmente establecimientos, eventos, programas y ferias cargadas desde el relevamiento inicial. No representan padrones completos y no son aptos para dashboard real.

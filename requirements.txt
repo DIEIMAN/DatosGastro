@@ -9,3 +9,4 @@ shapely
 folium
 matplotlib
 reportlab
+streamlit
