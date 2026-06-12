@@ -14,7 +14,7 @@ Mostrar metricas separadas:
 
 > "2.823 registros en Oferta Gastronomica F01"
 > "44.169 habilitaciones gastronomicas inferidas desde AGC F02"
-> "220 espacios reales F03: mercados, ferias especializadas y FIAB"
+> "259 espacios reales F03: mercados, ferias/padrones agregados y FIAB"
 
 Cada metrica debe mostrar fuente, URL o dataset, fecha de consulta, procesamiento propio y limitaciones.
 
@@ -71,7 +71,7 @@ F03 contiene recursos con distintos niveles de grano. Los puestos individuales n
 ## Mapa de oportunidades
 
 - Tabla usada: `analytics_mapa_oportunidades.csv`
-- Variables: `densidad_establecimientos_f01`, `cantidad_habilitaciones_f02`, `cantidad_espacios_ferias_mercados_f03`.
+- Variables: `cantidad_establecimientos_f01`, `cantidad_habilitaciones_f02_con_comuna`, `cantidad_espacios_f03`, `cantidad_eventos_f04_aptos`.
 - Fuentes usadas: F01, F02, F03 y eventos F04 aptos.
 - Texto sugerido: Elaboracion propia sobre Buenos Aires Data / GCBA y relevamiento manual trazable F04. El mapa separa oferta registrada F01, habilitaciones aprobadas F02, ferias/mercados F03 y eventos F04 aptos. Fecha de consulta: 10/06/2026.
 - Limitaciones: geocodificacion pendiente para mercados sin coordenadas; no sumar F02 como establecimientos activos; no mapear F04 cualitativo como actividad confirmada; F03 usa espacios reales y excluye puestos/personas.

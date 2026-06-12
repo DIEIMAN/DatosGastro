@@ -278,7 +278,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_espacio_feria_mercado.csv
 
-- Filas x columnas: 220 x 24
+- Filas x columnas: 259 x 28
 - Origen detectado: datos reales
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -318,7 +318,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_mercado_feria.csv
 
-- Filas x columnas: 220 x 20
+- Filas x columnas: 259 x 22
 - Origen detectado: datos reales
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -390,7 +390,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### analytics_espacios_ferias_mercados_por_comuna.csv
 
-- Filas x columnas: 18 x 10
+- Filas x columnas: 16 x 10
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics
@@ -400,7 +400,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### analytics_espacios_ferias_mercados_por_tipo.csv
 
-- Filas x columnas: 3 x 10
+- Filas x columnas: 4 x 10
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics
@@ -460,7 +460,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### analytics_fiab_por_comuna.csv
 
-- Filas x columnas: 18 x 10
+- Filas x columnas: 15 x 10
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics
@@ -510,7 +510,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### analytics_mapa_oportunidades.csv
 
-- Filas x columnas: 61 x 18
+- Filas x columnas: 15 x 14
 - Origen detectado: datos reales
 - Apto dashboard: si
 - Motivo: apto_dashboard provisto por analytics

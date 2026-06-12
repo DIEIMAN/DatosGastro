@@ -293,6 +293,7 @@ def validate(strict_real: bool = False) -> int:
 
     espacios = tables.get("fact_espacio_feria_mercado.csv")
     puestos = tables.get("fact_puesto_feria.csv")
+    mercado_feria = tables.get("fact_mercado_feria.csv")
     if strict_real and espacios is not None:
         if espacios.empty:
             add(messages, "ERROR", "fact_espacio_feria_mercado esta vacia; F03 espacios reales no se integro")
@@ -306,6 +307,9 @@ def validate(strict_real: bool = False) -> int:
                 add(messages, "ERROR", f"fact_espacio_feria_mercado contiene {len(bad_types)} filas con tipo de puesto/persona")
             if (DATA_RAW / "f03_fiab.geojson").exists() and not (espacios["tipo_espacio"].astype(str) == "FIAB").any():
                 add(messages, "ERROR", "f03_fiab.geojson existe pero no hay espacios FIAB integrados")
+        for column in ("es_gastronomico", "cantidad_puestos", "rubros_principales", "cantidad_puestos_gastronomicos"):
+            if column not in espacios.columns:
+                add(messages, "ERROR", f"fact_espacio_feria_mercado no tiene columna agregada {column}")
     if strict_real and puestos is not None:
         pii_columns = {"apellido", "nombre", "nombre_persona"}
         leaked_pii = sorted(pii_columns & set(puestos.columns))
@@ -315,6 +319,17 @@ def validate(strict_real: bool = False) -> int:
             add(messages, "ERROR", "fact_puesto_feria debe quedar apto_dashboard=no")
         if "uso" not in puestos.columns or puestos["uso"].astype(str).ne("auditoria_interna").any():
             add(messages, "ERROR", "fact_puesto_feria debe quedar con uso=auditoria_interna")
+    if strict_real and mercado_feria is not None:
+        pii_columns = {"apellido", "nombre_persona", "persona_hash", "categoria_titularidad", "rubro_puesto"}
+        leaked_pii = sorted(pii_columns & set(mercado_feria.columns))
+        if leaked_pii:
+            add(messages, "ERROR", f"fact_mercado_feria expone campos personales o de puesto: {leaked_pii}")
+        if "tipo_espacio" in mercado_feria.columns:
+            bad_types = mercado_feria[mercado_feria["tipo_espacio"].astype(str).str.contains("TITULAR|COTITULAR|PUESTO", case=False, na=False)]
+            if bad_types.empty:
+                add(messages, "OK", "fact_mercado_feria no contiene tipos TITULAR/COTITULAR/PUESTO")
+            else:
+                add(messages, "ERROR", f"fact_mercado_feria contiene {len(bad_types)} filas de grano puesto/persona")
 
     eventos = tables.get("fact_evento_gastronomico.csv")
     if strict_real and eventos is not None:
@@ -389,6 +404,26 @@ def validate(strict_real: bool = False) -> int:
                 add(messages, "OK", "analytics_habilitaciones_por_anio marca 2015-2018 y 2025 como no comparables")
             else:
                 add(messages, "ERROR", "analytics_habilitaciones_por_anio no marca correctamente periodos no comparables")
+
+    mapa_path = DATA_ANALYTICS / "analytics_mapa_oportunidades.csv"
+    if strict_real and mapa_path.exists():
+        mapa = read_csv(mapa_path)
+        forbidden_columns = {"presencia_de_polos", "nivel_actividad_gastronomica", "oportunidades_detectadas"}
+        leaked_columns = sorted(forbidden_columns & set(mapa.columns))
+        if leaked_columns:
+            add(messages, "ERROR", f"analytics_mapa_oportunidades conserva columnas placeholder: {leaked_columns}")
+        required_columns = {
+            "comuna",
+            "cantidad_establecimientos_f01",
+            "cantidad_habilitaciones_f02_con_comuna",
+            "cantidad_espacios_f03",
+            "cantidad_eventos_f04_aptos",
+        }
+        missing_columns = sorted(required_columns - set(mapa.columns))
+        if missing_columns:
+            add(messages, "ERROR", f"analytics_mapa_oportunidades no tiene columnas por universo/comuna: {missing_columns}")
+        else:
+            add(messages, "OK", "analytics_mapa_oportunidades usa grano comuna y universos separados")
 
     if strict_real:
         pii_names = {"apellido", "nombre_persona", "persona_hash", "categoria_titularidad"}

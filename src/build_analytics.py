@@ -654,35 +654,38 @@ def programas_cualitativos(programas: pd.DataFrame, fuentes: pd.DataFrame) -> pd
 
 def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, espacios: pd.DataFrame, ubicaciones: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
     eventos_fuertes = strong_events(eventos)
-    base_frames = [ubicaciones[["barrio", "comuna"]]]
-    if {"barrio", "comuna"}.issubset(hab.columns):
-        base_frames.append(hab[["barrio", "comuna"]])
-    barrios = pd.concat(base_frames, ignore_index=True).drop_duplicates()
-    est_count = est.merge(ubicaciones[["id_ubicacion", "barrio"]], on="id_ubicacion", how="left").groupby("barrio").size()
-    hab_count = hab.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(hab.columns) else pd.Series(dtype=int)
-    evt_count = eventos_fuertes.groupby("barrio").size() if "barrio" in eventos_fuertes.columns else pd.Series(dtype=int)
-    espacio_count = espacios.groupby(["barrio", "comuna"]).size() if {"barrio", "comuna"}.issubset(espacios.columns) else pd.Series(dtype=int)
+    comunas = [str(value) for value in range(1, 16)]
+    if not est.empty and not ubicaciones.empty and "id_ubicacion" in est.columns:
+        est_by_comuna = est.merge(ubicaciones[["id_ubicacion", "comuna"]], on="id_ubicacion", how="left")
+        est_count = est_by_comuna[est_by_comuna["comuna"].astype(str).isin(comunas)].groupby("comuna").size()
+    else:
+        est_count = pd.Series(dtype=int)
+    if {"comuna"}.issubset(hab.columns):
+        hab_con_comuna = hab[hab["comuna"].astype(str).isin(comunas)]
+        hab_count = hab_con_comuna.groupby("comuna").size()
+    else:
+        hab_count = pd.Series(dtype=int)
+    if {"comuna"}.issubset(espacios.columns):
+        espacios_count = espacios[espacios["comuna"].astype(str).isin(comunas)].groupby("comuna").size()
+    else:
+        espacios_count = pd.Series(dtype=int)
+    if "comuna" in eventos_fuertes.columns:
+        eventos_count = eventos_fuertes[eventos_fuertes["comuna"].astype(str).isin(comunas)].groupby("comuna").size()
+    else:
+        eventos_count = pd.Series(dtype=int)
     rows = []
-    for _, row in barrios.iterrows():
-        barrio = row["barrio"]
-        comuna = row["comuna"]
-        habilitaciones = int(hab_count.get((barrio, comuna), 0))
-        espacios_f03 = int(espacio_count.get((barrio, comuna), 0))
+    for comuna in comunas:
         rows.append(
             {
-                "barrio": barrio,
                 "comuna": comuna,
-                "densidad_establecimientos_f01": int(est_count.get(barrio, 0)),
-                "cantidad_habilitaciones_f02": habilitaciones,
-                "cantidad_eventos": int(evt_count.get(barrio, 0)),
-                "cantidad_espacios_ferias_mercados_f03": espacios_f03,
-                "presencia_de_polos": "Requiere validacion",
-                "nivel_actividad_gastronomica": "alto" if int(est_count.get(barrio, 0)) + habilitaciones + espacios_f03 >= 25 else "bajo/medio",
-                "oportunidades_detectadas": "Interpretar F01, F02 y F03 por separado; no sumar habilitaciones como establecimientos activos",
-                "observaciones": "F03 usa espacios reales; puestos/personas excluidos del indicador territorial",
+                "cantidad_establecimientos_f01": int(est_count.get(comuna, 0)),
+                "cantidad_habilitaciones_f02_con_comuna": int(hab_count.get(comuna, 0)),
+                "cantidad_espacios_f03": int(espacios_count.get(comuna, 0)),
+                "cantidad_eventos_f04_aptos": int(eventos_count.get(comuna, 0)),
+                "observaciones": "Universos separados; no sumar como establecimientos activos ni como score compuesto.",
             }
         )
-    df = pd.DataFrame(rows).sort_values(["densidad_establecimientos_f01", "cantidad_habilitaciones_f02", "cantidad_espacios_ferias_mercados_f03"], ascending=False)
+    df = pd.DataFrame(rows).sort_values("comuna", key=lambda s: pd.to_numeric(s, errors="coerce"))
     return attach_metadata(
         df,
         traceability_metadata(
@@ -690,8 +693,8 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
             hab,
             eventos_fuertes,
             espacios,
-            method="Cruce territorial separado de oferta F01, habilitaciones F02 y espacios reales F03.",
-            limitations="No sumar F02 como establecimientos activos; F03 excluye puestos/personas del indicador territorial.",
+            method="Cruce territorial a nivel comuna con universos separados: F01, F02 con comuna valida, F03 espacios y F04 aptos.",
+            limitations="No sumar F02 como establecimientos activos; F03 excluye puestos/personas; no contiene score ni placeholders de oportunidad.",
             source_catalog=fuentes,
         ),
     )

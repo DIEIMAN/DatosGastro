@@ -314,7 +314,21 @@ with tabs[3]:
             st.dataframe(comuna_count.sort_values("cantidad", ascending=False), use_container_width=True, hide_index=True)
     filter_table(
         fact_espacios_f03,
-        ["id_espacio", "nombre", "tipo_espacio", "descripcion", "direccion", "barrio", "comuna", "dias_funcionamiento", "productos", "calidad_geo", "id_fuente", "url_fuente"],
+        [
+            "id_espacio",
+            "nombre",
+            "tipo_espacio",
+            "es_gastronomico",
+            "cantidad_puestos",
+            "cantidad_puestos_gastronomicos",
+            "rubros_principales",
+            "direccion",
+            "barrio",
+            "comuna",
+            "calidad_geo",
+            "id_fuente",
+            "url_fuente",
+        ],
         "f03_filter",
     )
 
@@ -483,14 +497,12 @@ with tabs[6]:
     )
 
     cols = [
-        "barrio",
         "comuna",
-        "densidad_establecimientos_f01",
-        "cantidad_habilitaciones_f02",
-        "cantidad_eventos",
-        "cantidad_espacios_ferias_mercados_f03",
-        "nivel_actividad_gastronomica",
-        "oportunidades_detectadas",
+        "cantidad_establecimientos_f01",
+        "cantidad_habilitaciones_f02_con_comuna",
+        "cantidad_espacios_f03",
+        "cantidad_eventos_f04_aptos",
+        "observaciones",
     ]
     filter_table(mapa_oportunidades, cols, "mapa_filter")
     trace_box(mapa_oportunidades)

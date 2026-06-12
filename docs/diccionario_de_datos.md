@@ -12,7 +12,7 @@ Ver tablas en `data/raw`, `data/processed` y `data/analytics`. Campos de calidad
 - `fact_habilitacion_gastronomica`: habilitaciones aprobadas AGC F02 inferidas como gastronomicas por rubro. No representa establecimientos activos unicos.
 - `fact_evento_gastronomico`: eventos y ediciones desde F04, relevamiento manual trazable.
 - `fact_programa_politica`: programas, politicas, normativa e instrumentos desde F05, catalogo manual trazable.
-- `fact_espacio_feria_mercado`: espacios reales F03, con grano 1 fila = 1 mercado, feria especializada o punto FIAB.
+- `fact_espacio_feria_mercado`: espacios reales F03, con grano 1 fila = 1 mercado, feria especializada, feria agregada desde padron o punto FIAB.
 - `fact_puesto_feria`: padron tecnico F03, con grano 1 fila = 1 puesto/persona anonimizada. No apto para dashboard.
 - `fact_mercado_feria`: alias de compatibilidad de espacios F03; no debe usarse para contar puestos.
 - `puente_evento_programa`: vinculos explicitos entre eventos F04 y programas/instrumentos F05.
@@ -29,7 +29,9 @@ Ver tablas en `data/raw`, `data/processed` y `data/analytics`. Campos de calidad
 
 ## `fact_espacio_feria_mercado.csv`
 
-Campos minimos: `id_espacio`, `id_fuente`, `tipo_espacio`, `nombre`, `descripcion`, `direccion`, `barrio`, `comuna`, `latitud`, `longitud`, `calidad_geo`, `dias_funcionamiento`, `horarios`, `productos`, `url_fuente`, `fecha_consulta`, `origen_dato`, `estado_datos`, `calidad_dato`, `requiere_validacion`, `motivo_validacion`, `limitaciones`, `observaciones`.
+Campos minimos: `id_espacio`, `id_fuente`, `tipo_espacio`, `nombre`, `descripcion`, `direccion`, `barrio`, `comuna`, `latitud`, `longitud`, `calidad_geo`, `dias_funcionamiento`, `horarios`, `productos`, `cantidad_puestos`, `rubros_principales`, `cantidad_puestos_gastronomicos`, `es_gastronomico`, `url_fuente`, `fecha_consulta`, `origen_dato`, `estado_datos`, `calidad_dato`, `requiere_validacion`, `motivo_validacion`, `limitaciones`, `observaciones`.
+
+Las ferias agregadas desde padron usan `f03_ferias_mercados.csv` agrupado por `feria`; se descartan nombres y apellidos de personas fisicas. `cantidad_puestos` cuenta registros del padron, `rubros_principales` muestra los 3 rubros mas frecuentes y `cantidad_puestos_gastronomicos` clasifica rubros con la taxonomia gastronomica.
 
 Grano: 1 fila = 1 espacio real. Incluye mercados, ferias especializadas y FIAB cuando existe GeoJSON.
 

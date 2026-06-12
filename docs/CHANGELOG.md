@@ -9,6 +9,8 @@
 
 ## 2026-06-12 - Correccion de grano F03
 
+- Se agrego agregacion del padron F03 por `feria` sin nombres ni apellidos, con cantidad de puestos, rubros principales y puestos gastronomicos.
+- Se actualizo `analytics_mapa_oportunidades.csv` a grano comuna con universos separados y sin columnas placeholder.
 - Se separo F03 en `fact_espacio_feria_mercado.csv` para espacios reales y `fact_puesto_feria.csv` para puestos/personas anonimizadas.
 - Se integro FIAB desde GeoJSON como espacios de abastecimiento barrial, separado de ferias especializadas/no alimentarias.
 - Se reemplazo el KPI ambiguo de ferias/mercados por indicadores de espacios reales: mercados, ferias especializadas y FIAB.

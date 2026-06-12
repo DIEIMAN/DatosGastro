@@ -31,7 +31,7 @@ Regla de comunicacion:
 - No mostrar "40.295 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos.
 - Mostrar "2.823 registros en Oferta Gastronomica F01".
 - Mostrar "44.169 habilitaciones gastronomicas inferidas desde AGC F02".
-- Mostrar "220 espacios reales F03: mercados, ferias especializadas y FIAB".
+- Mostrar "259 espacios reales F03: mercados, ferias/padrones agregados y FIAB".
 - No mostrar puestos/personas F03 como cantidad de ferias o mercados.
 - No usar F02 2025 como flujo anual comparable: el recurso tiene esquema distinto y contiene disposiciones de varios anios. La serie comparable excluye 2025 y el periodo agregado 2015-2018.
 

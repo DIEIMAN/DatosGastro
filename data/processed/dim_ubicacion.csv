@@ -10341,23 +10341,26 @@ UE89DC,AZCUENAGA 796,Pendiente USIG,Balvanera,3,-34.5996429,-58.40110747,No disp
 U9DCD4,URUGUAY 142,Pendiente USIG,San Nicolas,1,-34.60717761,-58.38637192,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U3A886,11 DE SEPTIEMBRE DE 1888 3900,Pendiente USIG,Nunez,13,-34.54336919,-58.46310827,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UAB6F2,TUCUMAN 2002,Pendiente USIG,Balvanera,3,-34.60221271,-58.39569675,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U00000,,No determinada,No determinado,No determinada,-34.60086815,-58.43986319,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-UD1B36,AV. CORDOBA 1750,Pendiente USIG,San Nicolas,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
-U9554B,AV. SAENZ 790,Pendiente USIG,Nueva Pompeya,4,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
 UEA8D5,EZEIZA Y NAZCA,Pendiente USIG,Villa Pueyrredon,12,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
-U7FA8F,AV. JURAMENTO 2527,Pendiente USIG,Belgrano,13,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
-UB6E19,AV. RIVADAVIA Y ROJAS,Pendiente USIG,Caballito,6,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
+U9554B,AV. SAENZ 790,Pendiente USIG,Nueva Pompeya,4,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
+UD1B36,AV. CORDOBA 1750,Pendiente USIG,San Nicolas,1,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
 U79DE8,AV. ALVAREZ THOMAS Y DORREGO,Pendiente USIG,Chacarita,15,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
+UB6E19,AV. RIVADAVIA Y ROJAS,Pendiente USIG,Caballito,6,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
+U46DB0,"LILLO AV. Y MARECHAL, LEOPOLDO",Pendiente USIG,Caballito,6,-34.60724714,-58.43780354,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U70CBB,"DE LA TORRE, LISANDRO AV. Y DIRECTORIO AV.",Pendiente USIG,Mataderos,9,-34.66012396,-58.50277343,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+UE772F,PUEYRREDON AV. Y DEL LIBERTADOR AV.,Pendiente USIG,Recoleta,2,-34.58555904,-58.39209747,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U326E2,LAVALLE Y TALCAHUANO,Pendiente USIG,San Nicolas,1,-34.60242381,-58.38451951,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U220D9,SANTA FE AV. Y THAMES,Pendiente USIG,Palermo,14,-34.5801663,-58.42293249,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U0A9E5,CORRIENTES AV. Y ROSALES AV.,Pendiente USIG,San Nicolas,1,-34.603064,-58.36862355,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U00000,No disponible,No determinada,No determinado,No determinada,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Ubicacion no determinada; preparada para geocodificacion futura con USIG
 U292E6,CORRIENTES AV. Y DORREGO AV.,Pendiente USIG,Chacarita,15,-34.59175882,-58.44790009,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U67916,"CORRIENTES AV. Y ARENAL, CONCEPCION",Pendiente USIG,Chacarita,15,-34.58965268,-58.450172,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U6AFD7,"PATRICIAS ARGENTINAS AV. Y MACHADO, ANTONIO",Pendiente USIG,Caballito,6,-34.60459011,-58.43607955,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U41E96,RIVADAVIA AV. Y BARCO CENTENERA DEL,Pendiente USIG,Caballito,6,-34.62082179,-58.44169232,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U59FF0,DIAZ VELEZ AV. Y CAMPICHUELO,Pendiente USIG,Caballito,6,-34.60827707,-58.43677832,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U46DB0,"LILLO AV. Y MARECHAL, LEOPOLDO",Pendiente USIG,Caballito,6,-34.60724714,-58.43780354,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UF2068,ROSARIO Y BEAUCHEF,Pendiente USIG,Caballito,6,-34.61886702,-58.43435528,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UF253C,CASEROS AV. Y ALMAFUERTE AV.,Pendiente USIG,Parque Patricios,4,-34.63752094,-58.4066399,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U7A8D3,CASEROS AV. Y MONTEAGUDO,Pendiente USIG,Parque Patricios,4,-34.63774711,-58.40572652,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U70CBB,"DE LA TORRE, LISANDRO AV. Y DIRECTORIO AV.",Pendiente USIG,Mataderos,9,-34.66012396,-58.50277343,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U14F1A,HUMBERTO 1º Y DEFENSA,Pendiente USIG,San Telmo,1,-34.6205753,-58.37156472,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UD22A9,"GARCIA, MARTIN AV. Y PASEO COLON AV.",Pendiente USIG,San Telmo,1,-34.62694943,-58.36830735,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U66415,BRASIL AV. Y DEFENSA,Pendiente USIG,San Telmo,1,-34.62553784,-58.37085191,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
@@ -10365,18 +10368,15 @@ U454A3,"GARCIA DEL RIO Y PEREZ, ROQUE",Pendiente USIG,Saavedra,12,-34.55190399,-
 U628EA,DIRECTORIO AV. Y LACARRA,Pendiente USIG,Parque Avellaneda,9,-34.64154017,-58.47990624,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U16324,MALABIA Y COSTA RICA,Pendiente USIG,Palermo,14,-34.58928236,-58.42506938,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UB45D3,HONDURAS Y SERRANO,Pendiente USIG,Palermo,14,-34.58873732,-58.43023004,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U220D9,SANTA FE AV. Y THAMES,Pendiente USIG,Palermo,14,-34.5801663,-58.42293249,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U9C314,SANTA FE AV. Y URIARTE,Pendiente USIG,Palermo,14,-34.58138336,-58.4206421,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U44CEE,CALABRIA AV. Y LANTERI JULIETA,Pendiente USIG,Puerto Madero,1,-34.61293466,-58.3588419,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U0A9E5,CORRIENTES AV. Y ROSALES AV.,Pendiente USIG,San Nicolas,1,-34.603064,-58.36862355,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-U326E2,LAVALLE Y TALCAHUANO,Pendiente USIG,San Nicolas,1,-34.60242381,-58.38451951,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U2FCF3,JURAMENTO AV. Y CUBA,Pendiente USIG,Belgrano,13,-34.56142283,-58.45499783,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U5FB8D,JURAMENTO AV. Y VUELTA DE OBLIGADO,Pendiente USIG,Belgrano,13,-34.56174678,-58.45498469,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
-UE772F,PUEYRREDON AV. Y DEL LIBERTADOR AV.,Pendiente USIG,Recoleta,2,-34.58555904,-58.39209747,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U7C427,DEL LIBERTADOR AV. Y ALVEAR AV.,Pendiente USIG,Recoleta,2,-34.58542761,-58.39072446,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 UE029A,CORDOBA AV. Y JUNIN,Pendiente USIG,Recoleta,2,-34.59941877,-58.39756286,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U9BF21,"DON PEDRO DE MENDOZA AV. Y VALLE IBERLUCEA DEL, DR.",Pendiente USIG,No determinado,No determinada,-34.63943125,-58.36164281,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U990C5,DON PEDRO DE MENDOZA AV. Y PALOS,Pendiente USIG,No determinado,No determinada,-34.63891745,-58.3601794,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
+U7FA8F,AV. JURAMENTO 2527,Pendiente USIG,Belgrano,13,No disponible,No disponible,No disponible,No clasificada,sin_geo,si,Geocodificacion pendiente con USIG
 UAF7A8,ROJAS 1201,Pendiente USIG,Villa Crespo,15,-34.60657162,-58.44791472,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U063F3,"ARENAL, CONCEPCION y CORRIENTES AV., CABA",Pendiente USIG,Chacarita,15,-34.59073621,-58.449732,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial
 U376D9,SARMIENTO y BULNES,Pendiente USIG,Almagro,5,-34.60528531,-58.41903151,No disponible,No clasificada,fuente_oficial,no,Coordenadas provistas por fuente oficial

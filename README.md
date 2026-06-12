@@ -109,7 +109,7 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 
 - 2.823 registros en Oferta Gastronomica F01.
 - 44.169 habilitaciones gastronomicas inferidas desde AGC F02.
-- 220 espacios reales F03: 6 mercados, 30 ferias especializadas y 184 FIAB.
+- 259 espacios reales F03: 6 mercados, 69 ferias/padrones agregados y 184 FIAB.
 - 4.352 registros de puestos F03 conservados solo como insumo tecnico/auditoria interna.
 - 29 eventos F04 cargados; 13 aptos para metricas fuertes y 16 cualitativos/en validacion/no aptos.
 - 9 programas/instrumentos F05 cargados; 4 aptos para catalogo dashboard y 5 cualitativos/en validacion/no aptos.

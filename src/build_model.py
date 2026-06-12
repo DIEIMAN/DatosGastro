@@ -379,6 +379,11 @@ def _source_value(source_key: str, field: str, default: str = "") -> str:
     return "" if value is None else str(value)
 
 
+def _f03_match_key(value) -> str:
+    text = normalize_text(value, case="upper", remove_accents=True)
+    return re.sub(r"\W+", " ", text).strip()
+
+
 def load_f03_ferias_espacios() -> pd.DataFrame:
     path = DATA_RAW / "f03_ferias.csv"
     if not path.exists():
@@ -417,6 +422,17 @@ def load_f03_ferias_espacios() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def load_f03_ferias_lookup() -> dict[str, dict]:
+    ferias = load_f03_ferias_espacios()
+    if ferias.empty:
+        return {}
+    return {
+        _f03_match_key(row.get("nombre")): row.to_dict()
+        for _, row in ferias.iterrows()
+        if _f03_match_key(row.get("nombre"))
+    }
+
+
 def load_f03_mercados_espacios() -> pd.DataFrame:
     path = DATA_RAW / "f03_mercados.csv"
     if not path.exists():
@@ -450,6 +466,95 @@ def load_f03_mercados_espacios() -> pd.DataFrame:
                 "motivo_validacion": "Mercado sin coordenadas de fuente; no geocodificado",
                 "limitaciones": "Sin coordenadas de fuente; no mapear hasta contar con geometria oficial",
                 "observaciones": first_existing(row.get("nombre_map"), default=""),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def load_f03_mercados_lookup() -> dict[str, dict]:
+    mercados = load_f03_mercados_espacios()
+    if mercados.empty:
+        return {}
+    lookup = {}
+    for _, row in mercados.iterrows():
+        row_dict = row.to_dict()
+        for name in (row.get("observaciones"), row.get("nombre")):
+            key = _f03_match_key(name)
+            if key:
+                lookup[key] = row_dict
+    return lookup
+
+
+def top_rubros(values: pd.Series, limit: int = 3) -> str:
+    rubros = values.astype(str).map(normalize_text)
+    rubros = rubros[rubros.ne("")]
+    if rubros.empty:
+        return "No disponible"
+    return " | ".join(rubros.value_counts().head(limit).index.tolist())
+
+
+def load_f03_padron_ferias_espacios() -> pd.DataFrame:
+    path = DATA_RAW / "f03_ferias_mercados.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    raw = read_csv(path)
+    if raw.empty or "feria" not in raw.columns:
+        return pd.DataFrame()
+
+    ferias_lookup = load_f03_ferias_lookup()
+    mercados_lookup = load_f03_mercados_lookup()
+    source_key = "F03"
+    rows = []
+    category_cache = {}
+
+    for idx, (feria, group) in enumerate(raw.groupby("feria", dropna=False)):
+        nombre = first_existing(feria, default=f"Feria sin nombre {idx + 1}")
+        key = _f03_match_key(nombre)
+        mercado_match = mercados_lookup.get(key)
+        feria_match = ferias_lookup.get(key)
+        matched = mercado_match or feria_match or {}
+        tipo = "Mercado" if mercado_match else "Feria padron"
+        gastronomic_count = 0
+        for rubro in group.get("rubro", pd.Series(dtype=str)).astype(str):
+            cache_key = normalize_text(rubro, case="lower", remove_accents=True)
+            category = category_cache.get(cache_key)
+            if category is None:
+                category = classify_gastronomic_category(rubro)
+                category_cache[cache_key] = category
+            if category.es_gastronomico == "si":
+                gastronomic_count += 1
+        es_gastronomico = "si" if tipo == "Mercado" or gastronomic_count > 0 else "no"
+        cantidad_puestos = len(group)
+        match_note = "con match exacto a mercados" if mercado_match else "con match exacto a ferias con geometria" if feria_match else "sin match exacto a catalogos geograficos F03"
+        rows.append(
+            {
+                "id_raw": f"PADRON-FERIA-{idx + 1:03d}",
+                "id_fuente": "F03",
+                "tipo_espacio": tipo,
+                "nombre": normalize_proper_name(nombre),
+                "descripcion": "Espacio agregado desde padron de puestos F03",
+                "direccion": first_existing(matched.get("direccion"), default="No disponible"),
+                "barrio": first_existing(matched.get("barrio"), default="No determinado"),
+                "comuna": first_existing(matched.get("comuna"), default="No determinada"),
+                "latitud": first_existing(matched.get("latitud"), default=""),
+                "longitud": first_existing(matched.get("longitud"), default=""),
+                "dias_funcionamiento": first_existing(matched.get("dias_funcionamiento"), default="No disponible"),
+                "horarios": first_existing(matched.get("horarios"), default="No disponible"),
+                "productos": top_rubros(group.get("rubro", pd.Series(dtype=str))),
+                "cantidad_puestos": str(cantidad_puestos),
+                "rubros_principales": top_rubros(group.get("rubro", pd.Series(dtype=str))),
+                "cantidad_puestos_gastronomicos": str(gastronomic_count),
+                "es_gastronomico": es_gastronomico,
+                "url_fuente": _source_value(source_key, "dataset_url"),
+                "download_url": _source_value(source_key, "download_url"),
+                "fecha_consulta": _source_value(source_key, "fecha_consulta", TODAY),
+                "origen_dato": "datos reales",
+                "estado_datos": "datos reales",
+                "calidad_dato": "alta",
+                "requiere_validacion": "si" if not matched else "no",
+                "motivo_validacion": f"Padron agregado por feria; {match_note}; no contiene nombres ni apellidos",
+                "limitaciones": "Grano espacio agregado desde padron de puestos. No exponer datos personales ni contar titulares/cotitulares como espacios.",
+                "observaciones": f"cantidad_puestos={cantidad_puestos}; cantidad_puestos_gastronomicos={gastronomic_count}",
             }
         )
     return pd.DataFrame(rows)
@@ -950,9 +1055,15 @@ def build_fact_espacio_feria_mercado(espacios: pd.DataFrame) -> pd.DataFrame:
         source_id = first_existing(row.get("id_fuente"), default="F03")
         location = _space_location(row, official_location_cache, location_cache)
         if location["comuna"] == "No determinada" and normalize_text(row.get("comuna")):
-            location["comuna"] = normalize_text(row.get("comuna"))
+            location["comuna"] = normalize_comuna_value(row.get("comuna"))
+        else:
+            location["comuna"] = normalize_comuna_value(location["comuna"])
         tipo = first_existing(row.get("tipo_espacio"), default="No disponible")
         prefix = "FIAB" if tipo == "FIAB" else "ESP"
+        es_gastronomico = first_existing(row.get("es_gastronomico"), default="si" if tipo in {"FIAB", "Mercado"} else "no")
+        cantidad_puestos = first_existing(row.get("cantidad_puestos"), default="No aplica")
+        rubros_principales = first_existing(row.get("rubros_principales"), row.get("productos"), default="No disponible")
+        cantidad_puestos_gastronomicos = first_existing(row.get("cantidad_puestos_gastronomicos"), default="No aplica")
         rows.append(
             {
                 "id_espacio": f"{prefix}{idx + 1:05d}",
@@ -969,6 +1080,10 @@ def build_fact_espacio_feria_mercado(espacios: pd.DataFrame) -> pd.DataFrame:
                 "dias_funcionamiento": first_existing(row.get("dias_funcionamiento"), default="No disponible"),
                 "horarios": first_existing(row.get("horarios"), default="No disponible"),
                 "productos": first_existing(row.get("productos"), default="No disponible"),
+                "cantidad_puestos": cantidad_puestos,
+                "rubros_principales": rubros_principales,
+                "cantidad_puestos_gastronomicos": cantidad_puestos_gastronomicos,
+                "es_gastronomico": es_gastronomico,
                 "url_fuente": first_existing(row.get("url_fuente"), default="No disponible"),
                 "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos reales"),
@@ -990,8 +1105,9 @@ def build_fact_mercado_feria_compat(espacios: pd.DataFrame) -> pd.DataFrame:
     compat = espacios.copy()
     compat["id_mercado_feria"] = compat["id_espacio"]
     compat["gestion"] = "No disponible"
-    compat["cantidad_puestos"] = "No aplica"
-    compat["rubros"] = compat.get("productos", "No disponible")
+    if "cantidad_puestos" not in compat.columns:
+        compat["cantidad_puestos"] = "No aplica"
+    compat["rubros"] = compat.get("rubros_principales", compat.get("productos", "No disponible"))
     compat["estado"] = "activo"
     compat["link"] = compat.get("url_fuente", "No disponible")
     return compat[
@@ -1005,6 +1121,8 @@ def build_fact_mercado_feria_compat(espacios: pd.DataFrame) -> pd.DataFrame:
             "horarios",
             "cantidad_puestos",
             "rubros",
+            "cantidad_puestos_gastronomicos",
+            "es_gastronomico",
             "estado",
             "id_fuente",
             "url_fuente",
@@ -1141,10 +1259,46 @@ def main() -> int:
     est, est_reports = load_source_data("F01")
     hab, hab_reports = load_source_data("F02")
     _f03_contract, ferias_reports = load_source_data("F03")
-    f03_ferias = load_f03_ferias_espacios()
-    f03_mercados = load_f03_mercados_espacios()
+    f03_padron_ferias = load_f03_padron_ferias_espacios()
+    f03_ferias_catalogo = load_f03_ferias_espacios()
+    f03_mercados_catalogo = load_f03_mercados_espacios()
+    padron_keys = set(f03_padron_ferias["nombre"].map(_f03_match_key)) if not f03_padron_ferias.empty else set()
+    if not f03_ferias_catalogo.empty:
+        f03_ferias_catalogo = f03_ferias_catalogo[
+            ~f03_ferias_catalogo["nombre"].map(_f03_match_key).isin(padron_keys)
+        ].copy()
+        f03_ferias_catalogo["cantidad_puestos"] = "No disponible"
+        f03_ferias_catalogo["rubros_principales"] = f03_ferias_catalogo.get("productos", "No disponible")
+        f03_ferias_catalogo["cantidad_puestos_gastronomicos"] = "No disponible"
+        f03_ferias_catalogo["es_gastronomico"] = "no"
+    if not f03_mercados_catalogo.empty:
+        f03_mercados_catalogo = f03_mercados_catalogo[
+            ~f03_mercados_catalogo["observaciones"].map(_f03_match_key).isin(padron_keys)
+            & ~f03_mercados_catalogo["nombre"].map(_f03_match_key).isin(padron_keys)
+        ].copy()
+        f03_mercados_catalogo["cantidad_puestos"] = "No disponible"
+        f03_mercados_catalogo["rubros_principales"] = f03_mercados_catalogo.get("productos", "No disponible")
+        f03_mercados_catalogo["cantidad_puestos_gastronomicos"] = "No disponible"
+        f03_mercados_catalogo["es_gastronomico"] = "si"
     fiab = load_fiab_geojson()
-    f03_espacios = pd.concat([f03_mercados, f03_ferias, fiab.rename(columns={"nombre_original": "nombre", "direccion_original": "direccion", "barrio_original": "barrio", "comuna_original": "comuna", "dias_horarios_original": "dias_funcionamiento", "horario_original": "horarios", "tipo_original": "tipo_espacio"})], ignore_index=True)
+    fiab_espacios = fiab.rename(
+        columns={
+            "nombre_original": "nombre",
+            "direccion_original": "direccion",
+            "barrio_original": "barrio",
+            "comuna_original": "comuna",
+            "dias_horarios_original": "dias_funcionamiento",
+            "horario_original": "horarios",
+            "tipo_original": "tipo_espacio",
+        }
+    )
+    if not fiab_espacios.empty:
+        fiab_espacios["cantidad_puestos"] = "No aplica"
+        fiab_espacios["rubros_principales"] = fiab_espacios.get("productos", "No disponible")
+        fiab_espacios["cantidad_puestos_gastronomicos"] = "No aplica"
+        fiab_espacios["es_gastronomico"] = "si"
+        fiab_espacios["limitaciones"] = "FIAB es capa de abastecimiento barrial; no mezclar con ferias especializadas sin aclaracion."
+    f03_espacios = pd.concat([f03_padron_ferias, f03_ferias_catalogo, f03_mercados_catalogo, fiab_espacios], ignore_index=True)
     f03_puestos = load_f03_puestos()
     eventos, eventos_reports = load_source_data("F04")
     programas, programas_reports = load_source_data("F05")
