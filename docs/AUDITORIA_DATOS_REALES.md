@@ -162,6 +162,26 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 - Riesgo de decision: alto
 - Recomendacion: cargar fuente real o validar cobertura antes de usar
 
+### geo_barrios.geojson
+
+- Filas x columnas: 0 x 0
+- Origen detectado: dataset real probable
+- Apto dashboard: no
+- Motivo: archivo vacio o sin filas
+- Fuentes: No disponible
+- Riesgo de decision: alto
+- Recomendacion: cargar fuente real o validar cobertura antes de usar
+
+### geo_comunas.geojson
+
+- Filas x columnas: 0 x 0
+- Origen detectado: dataset real probable
+- Apto dashboard: no
+- Motivo: archivo vacio o sin filas
+- Fuentes: No disponible
+- Riesgo de decision: alto
+- Recomendacion: cargar fuente real o validar cobertura antes de usar
+
 ## seeds
 
 ### raw_establecimientos_gastronomicos.csv
@@ -259,6 +279,16 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 ### dim_organizador.csv
 
 - Filas x columnas: 15 x 6
+- Origen detectado: modelo/dimension
+- Apto dashboard: requiere_validacion
+- Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
+- Fuentes: No disponible
+- Riesgo de decision: alto
+- Recomendacion: cargar fuente real o validar cobertura antes de usar
+
+### dim_territorio.csv
+
+- Filas x columnas: 48 x 11
 - Origen detectado: modelo/dimension
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard

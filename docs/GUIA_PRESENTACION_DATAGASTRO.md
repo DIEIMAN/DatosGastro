@@ -10,6 +10,14 @@ jupyter notebook notebooks/05_informe_ejecutivo_datagastro.ipynb
 
 o abrirla desde VS Code.
 
+Para exportar una version HTML:
+
+```bash
+jupyter nbconvert --to html notebooks/05_informe_ejecutivo_datagastro.ipynb
+```
+
+No hace falta generar PDF en la demo interna si requiere dependencias externas.
+
 La notebook está pensada como informe ejecutivo reproducible. No reemplaza al dashboard Streamlit; lo complementa.
 
 ## Orden sugerido para presentar
@@ -43,6 +51,7 @@ En una demo interna:
 1. Empezar con la notebook para contar el relato.
 2. Después abrir el dashboard para exploración interactiva.
 3. Cerrar con próximos pasos: geocodificación USIG, permisos de área gastronómica F06 y export ejecutivo.
+4. Usar `docs/CHECKLIST_DEMO_DATAGASTRO.md` para validar comandos, KPIs y frases que no deben afirmarse.
 
 ## Advertencias que deben decirse explícitamente
 

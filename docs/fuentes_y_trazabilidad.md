@@ -14,7 +14,7 @@ El proyecto separa pagina portal, URL directa de descarga y datos efectivamente 
 
 Actualizacion V3: las URLs directas reales quedaron registradas en `src/config.py`.
 
-- F01: CKAN + CDN alternativo.
+- F01: CKAN + CDN alternativo. La descarga valida esquema y volumen minimo para evitar pisar la fuente completa con recursos parciales.
 - F02: recursos 2015-2018 y anuales 2019-2025. F02 2026 no esta publicado y no se exige.
 - F03: CSV combinado, CSV ferias, CSV mercados y GeoJSON FIAB. El CSV combinado es padron de puestos/personas; el GeoJSON es solo FIAB.
 - F04: CSV manual trazable con fuente por fila. No es dataset oficial estructurado.
@@ -34,6 +34,7 @@ Regla de comunicacion:
 - Mostrar "259 espacios reales F03: mercados, ferias/padrones agregados y FIAB".
 - No mostrar puestos/personas F03 como cantidad de ferias o mercados.
 - No usar F02 2025 como flujo anual comparable: el recurso tiene esquema distinto y contiene disposiciones de varios anios. La serie comparable excluye 2025 y el periodo agregado 2015-2018.
+- No geocodificar ni mapear F02 como puntos en esta version.
 
 F03 contiene recursos con distintos niveles de grano. Los puestos individuales no deben interpretarse como ferias o mercados. Los indicadores principales usan espacios reales; los registros de puestos, si se conservan, quedan solo como insumo tecnico y no se exponen en dashboard.
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-06-12 - Version demo estable interna
+
+- Se agrego validacion semantica de descarga para F01: esquema requerido y minimo de filas antes de aceptar el archivo descargado.
+- Se evita que un recurso parcial de F01 reemplace el CSV completo usado por el modelo; si el primario no valida, se prueba el CDN alternativo.
+- Se agrego `docs/CHECKLIST_DEMO_DATAGASTRO.md` con comandos de reconstruccion, KPIs esperados, advertencias de presentacion, cosas que no afirmar y proximos pasos.
+- Se agrego smoke test Streamlit con `streamlit.testing.v1.AppTest` para confirmar que el dashboard arranca sin excepciones.
+- Se actualizaron README, guia de presentacion, fuentes/trazabilidad y pendientes para la demo interna estable.
+
 ## 2026-06-12 - Correccion F02 categorias y serie anual
 
 - Se ajusto el matching gastronomico F02 para cubrir plurales y derivados sin volver al substring libre.

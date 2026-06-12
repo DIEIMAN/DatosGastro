@@ -35,6 +35,8 @@ SOURCE_CONFIG = {
             "*oferta*establecimientos*gastronom*.csv",
             "*establecimientos*gastronom*.csv",
         ],
+        "min_rows": 2500,
+        "required_columns": ["long", "lat", "id", "nombre", "direccion_completa", "barrio", "comuna"],
         "portal_url": "https://data.buenosaires.gob.ar/dataset/oferta-establecimientos-gastronomicos",
     },
 }

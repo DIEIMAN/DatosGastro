@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from io import BytesIO
 from pathlib import Path
 
 import pandas as pd
@@ -19,6 +20,37 @@ def _download(url: str) -> requests.Response:
     response = requests.get(url, timeout=120)
     response.raise_for_status()
     return response
+
+
+def _validate_content(content: bytes, source: dict) -> tuple[bool, str]:
+    min_rows = int(source.get("min_rows") or 0)
+    required_columns = set(source.get("required_columns") or [])
+    if not min_rows and not required_columns:
+        return True, ""
+
+    last_error = ""
+    for encoding in ("utf-8", "latin1", "cp1252"):
+        try:
+            sample = pd.read_csv(
+                BytesIO(content),
+                sep=None,
+                engine="python",
+                nrows=max(min_rows, 1),
+                dtype=str,
+                encoding=encoding,
+            )
+            break
+        except Exception as exc:
+            last_error = str(exc)
+    else:
+        return False, f"no se pudo validar CSV descargado: {last_error}"
+
+    missing = sorted(required_columns - set(sample.columns))
+    if missing:
+        return False, "faltan columnas requeridas: " + ", ".join(missing)
+    if min_rows and len(sample) < min_rows:
+        return False, f"filas insuficientes: {len(sample)} < {min_rows}"
+    return True, ""
 
 
 def download_resource(key: str, source: dict) -> dict:
@@ -53,6 +85,12 @@ def download_resource(key: str, source: dict) -> dict:
     for candidate_url in urls_to_try:
         try:
             response = _download(candidate_url)
+            valid, validation_error = _validate_content(response.content, source)
+            if not valid:
+                last_error = validation_error
+                row["http_status"] = response.status_code
+                continue
+
             output_path.write_bytes(response.content)
             size = output_path.stat().st_size
             row["download_url"] = candidate_url

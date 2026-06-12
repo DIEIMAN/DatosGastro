@@ -9,6 +9,7 @@
 - Revisar `docs/AUDITORIA_DATOS_REALES.md` antes de construir un dashboard.
 - Ajustar mapeos de columnas si BA Data cambia nombres o formatos.
 - Geocodificar direcciones con USIG en una etapa futura con internet.
+- Incorporar permisos de area gastronomica F06 solo como nueva fuente separada en una etapa posterior.
 - Validar vigencia de F01 contra fuentes oficiales complementarias si se necesita hablar de establecimientos activos.
 - Mantener curado F04 con fuente por fila; si aparece dataset oficial estructurado de eventos, integrarlo como nueva fuente.
 - Mantener curado F05 con fuente por fila; si aparece dataset oficial estructurado de programas/politicas, integrarlo como nueva fuente.
@@ -36,3 +37,4 @@
 - No publicar graficos si `apto_dashboard` no es `si`.
 - No sumar F01 y F02 como "establecimientos gastronomicos".
 - No llamar establecimientos a las habilitaciones F02.
+- No implementar scores de oportunidad, metricas de impacto ni geocodificacion masiva F02 en la version demo estable.

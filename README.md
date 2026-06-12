@@ -77,9 +77,9 @@ python src/validate_model.py --strict-real
 
 En modo estricto no se permiten seeds. Si faltan F01/F02/F03 reales o F04/F05 semiestructurados, el comando debe fallar.
 
-## Dashboard V1 de validacion
+## Dashboard demo interna
 
-El dashboard local esta en `dashboard/app.py`. Es una app de validacion metodologica, no una pieza final de presentacion.
+El dashboard local esta en `dashboard/app.py`. La version actual esta orientada a demo interna con narrativa de cinco secciones: Panorama, Territorio, Dinamismo (F02), Ecosistema publico (F03-F05) y Metodologia/calidad.
 
 Instalar dependencias y correr:
 
@@ -88,7 +88,25 @@ pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
 
-La app lee `data/analytics/` y `data/processed/`, separa F01/F02/F03/F04/F05, muestra fuentes y limitaciones, y mantiene fuera de metricas fuertes las filas cualitativas o en validacion.
+La app lee `data/analytics/` y `data/processed/`, separa F01/F02/F03/F04/F05, muestra fuentes y limitaciones, mantiene fuera de metricas fuertes las filas cualitativas o en validacion, no expone datos personales del padron F03 y no mapea F02 como puntos.
+
+Checklist operativo de demo: `docs/CHECKLIST_DEMO_DATAGASTRO.md`.
+
+## Notebook ejecutiva
+
+Abrir:
+
+```bash
+jupyter notebook notebooks/05_informe_ejecutivo_datagastro.ipynb
+```
+
+Exportar a HTML:
+
+```bash
+jupyter nbconvert --to html notebooks/05_informe_ejecutivo_datagastro.ipynb
+```
+
+La notebook lee solo `data/processed/` y `data/analytics/`; no ejecuta descargas.
 
 ## Datos seed
 
