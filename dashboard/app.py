@@ -1,571 +1,319 @@
 from __future__ import annotations
 
-from pathlib import Path
-
 import pandas as pd
-import pydeck as pdk
 import streamlit as st
 
-
-ROOT = Path(__file__).resolve().parents[1]
-ANALYTICS = ROOT / "data" / "analytics"
-PROCESSED = ROOT / "data" / "processed"
-DOCS = ROOT / "docs"
-
-TRACE_COLUMNS = [
-    "estado_datos",
-    "fuentes_utilizadas",
-    "urls_fuentes",
-    "fecha_consulta_min",
-    "fecha_consulta_max",
-    "nota_metodologica",
-    "limitaciones",
-    "apto_dashboard",
-]
-
-
-st.set_page_config(page_title="DataGastro - Dashboard V1", layout="wide")
-
-
-@st.cache_data(show_spinner=False)
-def read_csv(path: Path) -> pd.DataFrame:
-    if not path.exists():
-        return pd.DataFrame()
-    return pd.read_csv(path, dtype=str, keep_default_na=False)
-
-
-def number(value: object) -> int:
-    try:
-        return int(float(str(value).replace(".", "").replace(",", ".")))
-    except Exception:
-        return 0
-
-
-def numeric_series(series: pd.Series) -> pd.Series:
-    return pd.to_numeric(series, errors="coerce").fillna(0).astype(int)
-
-
-def get_indicator(resumen: pd.DataFrame, indicator: str) -> int:
-    if resumen.empty or "indicador" not in resumen.columns:
-        return 0
-    row = resumen[resumen["indicador"] == indicator]
-    if row.empty:
-        return 0
-    return number(row.iloc[0].get("valor", 0))
-
-
-def first_value(df: pd.DataFrame, column: str, default: str = "No disponible") -> str:
-    if df.empty or column not in df.columns:
-        return default
-    values = [str(value) for value in df[column].dropna().unique() if str(value).strip()]
-    return values[0] if values else default
-
-
-def trace_box(df: pd.DataFrame, title: str = "Fuente y metodologia") -> None:
-    with st.expander(title, expanded=False):
-        if df.empty:
-            st.warning("No hay datos cargados para esta seccion.")
-            return
-        for column in TRACE_COLUMNS:
-            if column in df.columns:
-                st.markdown(f"**{column}:** {first_value(df, column)}")
-
-
-def section_warning(text: str) -> None:
-    st.warning(text)
-
-
-def filter_table(df: pd.DataFrame, columns: list[str], key: str) -> pd.DataFrame:
-    if df.empty:
-        st.info("No hay filas para mostrar.")
-        return df
-    query = st.text_input("Filtro de texto", key=key)
-    view = df.copy()
-    if query:
-        mask = view.astype(str).apply(lambda col: col.str.contains(query, case=False, na=False)).any(axis=1)
-        view = view[mask]
-    available = [column for column in columns if column in view.columns]
-    st.dataframe(view[available] if available else view, use_container_width=True, hide_index=True)
-    return view
-
-
-def bar_chart(df: pd.DataFrame, label: str, value: str, title: str, limit: int = 15) -> None:
-    if df.empty or label not in df.columns or value not in df.columns:
-        st.info(f"No hay datos para {title}.")
-        return
-    chart = df[[label, value]].copy()
-    chart[value] = numeric_series(chart[value])
-    chart = chart.sort_values(value, ascending=False).head(limit).set_index(label)
-    st.subheader(title)
-    st.bar_chart(chart)
-
-
-def coordinate_series(series: pd.Series) -> pd.Series:
-    return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
-
-
-def category_color(value: object) -> list[int]:
-    palette = {
-        "Restaurante": [43, 108, 176, 170],
-        "Bar": [214, 94, 96, 170],
-        "Cafe": [136, 86, 167, 170],
-        "Bar notable": [188, 189, 34, 170],
-        "Heladeria": [23, 190, 207, 170],
-        "Pizzeria": [255, 127, 14, 170],
-        "Parrilla": [140, 86, 75, 170],
-        "Panaderia": [44, 160, 44, 170],
-        "Pasteleria": [227, 119, 194, 170],
-        "Mercado": [31, 119, 180, 170],
-        "Feria": [148, 103, 189, 170],
-        "Foodtruck": [127, 127, 127, 170],
-        "Catering": [188, 127, 14, 170],
-        "Comida al paso": [102, 166, 30, 170],
-    }
-    return palette.get(str(value), [80, 80, 80, 150])
-
-
-def map_ready(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty or not {"latitud", "longitud", "calidad_geo"}.issubset(df.columns):
-        return pd.DataFrame()
-    result = df[df["calidad_geo"].astype(str) == "fuente_oficial"].copy()
-    result["latitud_num"] = coordinate_series(result["latitud"])
-    result["longitud_num"] = coordinate_series(result["longitud"])
-    return result.dropna(subset=["latitud_num", "longitud_num"])
-
-
-def ensure_columns(df: pd.DataFrame, columns: list[str], default: str = "") -> pd.DataFrame:
-    result = df.copy()
-    for column in columns:
-        if column not in result.columns:
-            result[column] = default
-    return result
-
-
-def split_fact_by_dashboard(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    if df.empty or "apto_dashboard" not in df.columns:
-        return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
-    apt = df[df["apto_dashboard"].astype(str) == "si"]
-    validation = df[df["apto_dashboard"].astype(str) == "requiere_validacion"]
-    not_apt = df[df["apto_dashboard"].astype(str) == "no"]
-    return apt, validation, not_apt
-
-
-resumen = read_csv(ANALYTICS / "analytics_resumen_ejecutivo.csv")
-est_cat_barrio = read_csv(ANALYTICS / "analytics_establecimientos_por_categoria_barrio.csv")
-hab_anio = read_csv(ANALYTICS / "analytics_habilitaciones_por_anio.csv")
-hab_barrio = read_csv(ANALYTICS / "analytics_habilitaciones_por_barrio.csv")
-hab_categoria = read_csv(ANALYTICS / "analytics_habilitaciones_por_categoria.csv")
-hab_recientes = read_csv(ANALYTICS / "analytics_habilitaciones_recientes.csv")
-eventos_anio = read_csv(ANALYTICS / "analytics_eventos_por_anio.csv")
-eventos_tipo = read_csv(ANALYTICS / "analytics_eventos_por_tipo.csv")
-eventos_barrio = read_csv(ANALYTICS / "analytics_eventos_por_barrio.csv")
-eventos_cualitativos = read_csv(ANALYTICS / "analytics_eventos_cualitativos.csv")
-programas_catalogo = read_csv(ANALYTICS / "analytics_programas_catalogo.csv")
-programas_cualitativos = read_csv(ANALYTICS / "analytics_programas_cualitativos.csv")
-mapa_oportunidades = read_csv(ANALYTICS / "analytics_mapa_oportunidades.csv")
-
-fact_establecimientos = read_csv(PROCESSED / "fact_establecimiento.csv")
-fact_espacios_f03 = read_csv(PROCESSED / "fact_espacio_feria_mercado.csv")
-fact_puestos_f03 = read_csv(PROCESSED / "fact_puesto_feria.csv")
-fact_eventos = read_csv(PROCESSED / "fact_evento_gastronomico.csv")
-fact_programas = read_csv(PROCESSED / "fact_programa_politica.csv")
-dim_fuente = read_csv(PROCESSED / "dim_fuente.csv")
-dim_categoria = read_csv(PROCESSED / "dim_categoria_gastronomica.csv")
-dim_ubicacion = read_csv(PROCESSED / "dim_ubicacion.csv")
-
-eventos_aptos, eventos_validacion, eventos_no_aptos = split_fact_by_dashboard(fact_eventos)
-programas_aptos, programas_validacion, programas_no_aptos = split_fact_by_dashboard(fact_programas)
-
-st.title("DataGastro - Dashboard V1 de validacion")
-st.caption("App local para revisar metricas, fuentes, advertencias y consistencia metodologica. No es dashboard final de presentacion.")
-
-section_warning(
-    "Nunca sumar F01 + F02 como establecimientos gastronomicos. F02 son habilitaciones aprobadas, no establecimientos activos unicos."
+from dashboard.components import horizontal_bar, kpi_row, pydeck_map, searchable_table, vertical_bar
+from dashboard.dashboard_config import DOCS, F02_SERIE_ORDER
+from dashboard.data_loader import (
+    DashboardData,
+    filter_by_dashboard,
+    first_value,
+    get_indicator,
+    linked_events_for_program,
+    load_dashboard_data,
+    number,
+    numeric_series,
+    prepare_f01_map,
+    prepare_f03_map,
+    top_f01_barrios,
+    traceability_rows,
 )
+from dashboard.textos import CRITICAL_WARNINGS, TAB_INTROS, WHAT_IT_DOES_NOT_ANSWER, source_caption
 
-tabs = st.tabs(
-    [
-        "Resumen",
-        "F01 Oferta",
-        "F02 Habilitaciones",
-        "F03 Ferias/Mercados",
-        "F04 Eventos",
-        "F05 Programas",
-        "Mapa",
-        "Fuentes",
-        "Chequeos",
-    ]
-)
 
-with tabs[0]:
-    st.header("1. Resumen ejecutivo")
-    cols = st.columns(4)
-    cols[0].metric("Oferta gastronomica registrada F01", get_indicator(resumen, "establecimientos_oferta_gastronomica_f01"))
-    cols[1].metric("Habilitaciones gastronomicas F02", get_indicator(resumen, "habilitaciones_gastronomicas_f02"))
-    cols[2].metric("Espacios ferias/mercados F03", get_indicator(resumen, "espacios_ferias_mercados_f03"))
-    cols[3].metric("Eventos F04 aptos", get_indicator(resumen, "eventos_gastronomicos_reales_f04_aptos"))
+st.set_page_config(page_title="DataGastro - Preguntas de gestion", layout="wide")
 
-    cols = st.columns(3)
-    cols[0].metric("Eventos F04 en validacion", len(eventos_validacion))
-    cols[1].metric("Eventos F04 no aptos", len(eventos_no_aptos))
-    cols[2].metric("Programas F05 aptos", get_indicator(resumen, "programas_politicas_reales_f05_aptos"))
 
-    cols = st.columns(2)
-    cols[0].metric("Programas F05 en validacion", len(programas_validacion))
-    cols[1].metric("Programas F05 no aptos / historicos", len(programas_no_aptos))
-    trace_box(resumen)
-    st.dataframe(resumen, use_container_width=True, hide_index=True)
+def caption_for(df: pd.DataFrame, source_key: str) -> str:
+    return source_caption(source_key, first_value(df, "fecha_consulta_max"))
 
-with tabs[1]:
-    st.header("2. Oferta gastronomica F01")
-    section_warning(
-        "F01 representa registros de oferta gastronomica publicados por Buenos Aires Data. No confirma vigencia actual por registro."
+
+def metric_value(data: DashboardData, indicator: str) -> int:
+    return get_indicator(data.resumen, indicator)
+
+
+def render_global_header() -> None:
+    st.title("DataGastro - Tablero de gestion")
+    st.caption("Lectura integrada de oferta, habilitaciones, espacios, eventos y programas con reglas metodologicas explicitas.")
+    for warning in CRITICAL_WARNINGS:
+        st.warning(warning)
+
+
+def render_panorama(data: DashboardData) -> None:
+    st.header("Panorama")
+    st.write(TAB_INTROS["panorama"])
+    kpi_row(
+        [
+            ("F01 oferta registrada", f"{metric_value(data, 'establecimientos_oferta_gastronomica_f01'):,}".replace(",", "."), "Registros publicados por Buenos Aires Data; no confirma vigencia actual."),
+            ("F02 habilitaciones", f"{metric_value(data, 'habilitaciones_gastronomicas_f02'):,}".replace(",", "."), "Serie comparable 2019-2024. 2015-2018 es agregado y 2025 se muestra aparte por esquema distinto."),
+            ("F03 espacios", f"{metric_value(data, 'espacios_ferias_mercados_f03'):,}".replace(",", "."), "Espacios reales: mercados, ferias/padron agregado y FIAB. Excluye puestos/personas."),
+            ("F04 eventos aptos", f"{metric_value(data, 'eventos_gastronomicos_reales_f04_aptos'):,}".replace(",", "."), "Solo eventos apto_dashboard=si para metricas fuertes."),
+        ]
     )
-    if not est_cat_barrio.empty:
-        top_cat = (
-            est_cat_barrio.groupby("categoria_general", dropna=False)["cantidad_establecimientos"]
-            .apply(lambda s: numeric_series(s).sum())
-            .reset_index()
+    st.caption(caption_for(data.resumen, "resumen"))
+
+    top_barrios = top_f01_barrios(data.est_cat_barrio)
+    if not top_barrios.empty:
+        text = "; ".join(
+            f"{row.barrio}: {int(row.cantidad)} registros ({row.porcentaje}%)"
+            for row in top_barrios.itertuples(index=False)
         )
-        top_barrios = (
-            est_cat_barrio.groupby("barrio", dropna=False)["cantidad_establecimientos"]
-            .apply(lambda s: numeric_series(s).sum())
-            .reset_index()
-        )
-        left, right = st.columns(2)
-        with left:
-            bar_chart(top_cat, "categoria_general", "cantidad_establecimientos", "Top categorias")
-        with right:
-            bar_chart(top_barrios, "barrio", "cantidad_establecimientos", "Top barrios")
-    filter_table(
-        est_cat_barrio,
-        ["barrio", "comuna", "categoria_general", "subcategoria", "cantidad_establecimientos", "porcentaje_sobre_total_barrio"],
-        "f01_filter",
-    )
-    trace_box(est_cat_barrio)
+        st.info(f"Lectura F01: los 3 barrios con mas oferta registrada son {text}.")
 
-with tabs[2]:
-    st.header("3. Habilitaciones F02")
-    section_warning(
-        "F02 son habilitaciones aprobadas por AGC, no establecimientos activos unicos. La clasificacion gastronomica se infiere desde la descripcion del rubro."
+    st.subheader("Mapa integrado F01/F03")
+    show_f01 = st.checkbox("Mostrar F01 oferta registrada", value=True, key="panorama_f01")
+    show_f03 = st.checkbox("Mostrar F03 espacios", value=True, key="panorama_f03")
+    pydeck_map(prepare_f01_map(data), prepare_f03_map(data), show_f01=show_f01, show_f03=show_f03)
+    st.caption(source_caption("mapa"))
+
+
+def render_territorio(data: DashboardData) -> None:
+    st.header("Territorio")
+    st.write(TAB_INTROS["territorio"])
+    categories = sorted(
+        value
+        for value in data.dim_categoria.get("categoria_general", pd.Series(dtype=str)).dropna().astype(str).unique()
+        if value and value not in {"No gastronomico", "Requiere validacion"}
     )
-    hab_anio_comparable = hab_anio[
-        hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "si"
-    ].copy() if not hab_anio.empty else pd.DataFrame()
-    hab_anio_no_comparable = hab_anio[
-        hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "no"
-    ].copy() if not hab_anio.empty else pd.DataFrame()
+    selected = st.multiselect("Categorias F01", categories, default=categories, key="territorio_categorias")
+    f01_map = prepare_f01_map(data, selected)
+    st.subheader("Mapa territorial")
+    pydeck_map(f01_map, prepare_f03_map(data), show_f01=True, show_f03=True)
+    st.caption(source_caption("mapa"))
+
+    top_barrios = top_f01_barrios(data.est_cat_barrio, limit=15)
+    horizontal_bar(
+        top_barrios,
+        "barrio",
+        "cantidad",
+        "Ranking de barrios por oferta registrada F01",
+        caption=caption_for(data.est_cat_barrio, "f01"),
+    )
+
+    with st.expander("Tabla por comuna - universos separados", expanded=False):
+        searchable_table(
+            data.mapa_oportunidades,
+            [
+                "comuna",
+                "cantidad_establecimientos_f01",
+                "cantidad_habilitaciones_f02_con_comuna",
+                "cantidad_espacios_f03",
+                "cantidad_eventos_f04_aptos",
+                "observaciones",
+            ],
+            "territorio_mapa_oportunidades",
+        )
+        st.caption(caption_for(data.mapa_oportunidades, "mapa_oportunidades"))
+
+
+def render_dinamismo(data: DashboardData) -> None:
+    st.header("Dinamismo (F02)")
+    st.write(TAB_INTROS["dinamismo"])
+    comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "si"].copy()
+    no_comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "no"].copy()
+
+    vertical_bar(
+        comparable,
+        "anio_fuente",
+        "cantidad_habilitaciones",
+        "Habilitaciones F02 por anio comparable",
+        order=F02_SERIE_ORDER,
+        caption=caption_for(data.hab_anio, "f02"),
+    )
+
+    if not no_comparable.empty:
+        metric_items = []
+        for row in no_comparable.itertuples(index=False):
+            metric_items.append(
+                (
+                    f"Periodo {row.anio_fuente}",
+                    f"{number(row.cantidad_habilitaciones):,}".replace(",", "."),
+                    getattr(row, "nota_serie", "No comparable como flujo anual"),
+                )
+            )
+        kpi_row(metric_items)
+        st.warning("Estos periodos se separan de la serie: 2015-2018 es agregado y 2025 tiene esquema distinto.")
+
     left, right = st.columns(2)
     with left:
-        bar_chart(hab_anio_comparable, "anio_fuente", "cantidad_habilitaciones", "Habilitaciones por anio comparable")
-        if not hab_anio_no_comparable.empty:
-            st.warning("2025 y los periodos agregados se muestran aparte: no deben leerse como flujo anual comparable.")
-            st.dataframe(
-                hab_anio_no_comparable[
-                    [
-                        column
-                        for column in ["anio_fuente", "cantidad_habilitaciones", "cantidad_con_validacion", "nota_serie"]
-                        if column in hab_anio_no_comparable.columns
-                    ]
-                ],
-                use_container_width=True,
-                hide_index=True,
-            )
-        bar_chart(hab_categoria, "categoria_gastronomica_inferida", "cantidad_habilitaciones", "Habilitaciones por categoria inferida")
-    with right:
-        bar_chart(hab_barrio, "comuna", "cantidad_habilitaciones", "Habilitaciones por comuna/barrio no normalizado")
-    st.subheader("Habilitaciones recientes")
-    filter_table(
-        hab_recientes,
-        [
-            "id_habilitacion",
-            "fecha_habilitacion",
-            "anio_fuente",
-            "descripcion_rubro_original",
+        horizontal_bar(
+            data.hab_categoria,
             "categoria_gastronomica_inferida",
-            "direccion_original",
-            "barrio",
-            "comuna",
-            "requiere_validacion",
-        ],
-        "f02_recientes_filter",
-    )
-    trace_box(hab_anio)
+            "cantidad_habilitaciones",
+            "Ranking por categoria corregida",
+            caption=caption_for(data.hab_categoria, "f02"),
+        )
+    with right:
+        if not data.hab_barrio.empty:
+            comuna_df = data.hab_barrio[data.hab_barrio["comuna"].astype(str).isin([str(value) for value in range(1, 16)])].copy()
+            total = numeric_series(data.hab_barrio["cantidad_habilitaciones"]).sum() if "cantidad_habilitaciones" in data.hab_barrio.columns else 0
+            identified = numeric_series(comuna_df["cantidad_habilitaciones"]).sum() if not comuna_df.empty else 0
+            coverage = (identified / total * 100) if total else 0
+            st.warning(f"Cobertura territorial F02 identificada por comuna: {coverage:.1f}% del total clasificado.")
+            horizontal_bar(
+                comuna_df,
+                "comuna",
+                "cantidad_habilitaciones",
+                "Habilitaciones F02 por comuna identificada",
+                caption=caption_for(data.hab_barrio, "f02"),
+            )
 
-with tabs[3]:
-    st.header("4. Espacios F03")
-    section_warning(
-        "F03 contiene recursos con distinto grano. Esta seccion muestra solo espacios reales; puestos/personas quedan fuera de KPIs y no se exponen."
+    with st.expander("Tabla de habilitaciones recientes", expanded=False):
+        searchable_table(
+            data.hab_recientes,
+            [
+                "id_habilitacion",
+                "fecha_habilitacion",
+                "anio_fuente",
+                "descripcion_rubro_original",
+                "categoria_gastronomica_inferida",
+                "direccion_original",
+                "barrio",
+                "comuna",
+                "requiere_validacion",
+                "motivo_validacion",
+            ],
+            "dinamismo_recientes",
+        )
+        st.caption(caption_for(data.hab_recientes, "f02"))
+
+
+def render_ecosistema(data: DashboardData) -> None:
+    st.header("Ecosistema publico (F03-F05)")
+    st.write(TAB_INTROS["ecosistema"])
+    f03_tipo = (
+        data.fact_espacios_f03.groupby("tipo_espacio", dropna=False)
+        .size()
+        .reset_index(name="cantidad_espacios")
+        if not data.fact_espacios_f03.empty
+        else pd.DataFrame()
     )
-    cols = st.columns(4)
-    cols[0].metric("Espacios reales", get_indicator(resumen, "espacios_ferias_mercados_f03"))
-    cols[1].metric("Mercados", get_indicator(resumen, "mercados_f03"))
-    cols[2].metric("Ferias especializadas", get_indicator(resumen, "ferias_f03"))
-    cols[3].metric("FIAB", get_indicator(resumen, "fiab_f03"))
-    st.caption(f"Puestos/personas conservados solo como insumo tecnico: {get_indicator(resumen, 'puestos_feria_f03')}. No se muestran nombres ni padrones de personas.")
-    if not fact_espacios_f03.empty:
-        left, right = st.columns(2)
-        with left:
-            tipo = fact_espacios_f03.groupby("tipo_espacio", dropna=False).size().reset_index(name="cantidad")
-            bar_chart(tipo, "tipo_espacio", "cantidad", "Tipo de espacio")
-        with right:
-            comuna_count = fact_espacios_f03.groupby("comuna", dropna=False).size().reset_index(name="cantidad")
-            st.subheader("Espacios por comuna")
-            st.dataframe(comuna_count.sort_values("cantidad", ascending=False), use_container_width=True, hide_index=True)
-    filter_table(
-        fact_espacios_f03,
+    horizontal_bar(
+        f03_tipo,
+        "tipo_espacio",
+        "cantidad_espacios",
+        "F03 por tipo de espacio",
+        caption=source_caption("f03", first_value(data.fact_espacios_f03, "fecha_consulta")),
+    )
+    with st.expander("Listado F03 de espacios", expanded=False):
+        searchable_table(
+            data.fact_espacios_f03,
+            [
+                "id_espacio",
+                "nombre",
+                "tipo_espacio",
+                "es_gastronomico",
+                "cantidad_puestos",
+                "cantidad_puestos_gastronomicos",
+                "rubros_principales",
+                "direccion",
+                "barrio",
+                "comuna",
+                "calidad_geo",
+            ],
+            "ecosistema_f03",
+        )
+
+    eventos_aptos = filter_by_dashboard(data.fact_eventos, "si")
+    eventos_validacion = filter_by_dashboard(data.fact_eventos, "requiere_validacion")
+    eventos_no = filter_by_dashboard(data.fact_eventos, "no")
+    kpi_row(
         [
-            "id_espacio",
-            "nombre",
-            "tipo_espacio",
-            "es_gastronomico",
-            "cantidad_puestos",
-            "cantidad_puestos_gastronomicos",
-            "rubros_principales",
-            "direccion",
-            "barrio",
-            "comuna",
-            "calidad_geo",
-            "id_fuente",
-            "url_fuente",
-        ],
-        "f03_filter",
+            ("F04 aptos", len(eventos_aptos), "Eventos aptos para metricas fuertes."),
+            ("F04 en validacion", len(eventos_validacion), "Eventos con validaciones pendientes."),
+            ("F04 no aptos", len(eventos_no), "Eventos fuera de metricas fuertes."),
+        ]
     )
-
-with tabs[4]:
-    st.header("5. Eventos F04")
-    section_warning(
-        "F04 no es un dataset oficial estructurado. Es un relevamiento manual trazable de eventos vinculados a la politica gastronomica de la Ciudad. Las metricas fuertes solo usan apto_dashboard = si."
-    )
-    cols = st.columns(3)
-    cols[0].metric("Aptos para dashboard", get_indicator(resumen, "eventos_gastronomicos_reales_f04_aptos"))
-    cols[1].metric("En validacion", len(eventos_validacion))
-    cols[2].metric("No aptos", len(eventos_no_aptos))
+    st.warning("F04 tiene N chico y cobertura parcial: usar como evidencia cualitativa, no como universo completo.")
     left, right = st.columns(2)
     with left:
-        bar_chart(eventos_anio, "anio", "cantidad_eventos", "Eventos aptos por anio")
-        bar_chart(eventos_tipo, "tipo_evento", "cantidad_eventos", "Eventos aptos por tipo")
+        vertical_bar(data.eventos_anio, "anio", "cantidad_eventos", "F04 aptos por anio", caption=caption_for(data.eventos_anio, "f04"))
     with right:
-        bar_chart(eventos_barrio, "barrio", "cantidad_eventos", "Eventos aptos por barrio")
-    st.subheader("Eventos cualitativos / en validacion / no aptos")
-    st.dataframe(eventos_cualitativos, use_container_width=True, hide_index=True)
-    st.subheader("Tabla completa F04")
-    filter_table(
-        fact_eventos,
+        horizontal_bar(data.eventos_tipo, "tipo_evento", "cantidad_eventos", "F04 aptos por tipo", caption=caption_for(data.eventos_tipo, "f04"))
+
+    with st.expander("Tabla F04 de eventos aptos", expanded=False):
+        searchable_table(
+            eventos_aptos,
+            ["id_evento", "nombre_evento", "fecha_inicio", "fecha_fin", "tipo_evento", "barrio", "comuna", "url_fuente"],
+            "ecosistema_eventos_aptos",
+        )
+
+    st.subheader("F05 fichas de programas e instrumentos")
+    if data.programas_catalogo.empty:
+        st.info("No hay programas aptos para mostrar.")
+    for row in data.programas_catalogo.itertuples(index=False):
+        program_id = getattr(row, "id_programa", "")
+        with st.expander(f"{program_id} - {getattr(row, 'nombre_programa', 'Programa')}", expanded=False):
+            st.markdown(f"**Objetivo:** {getattr(row, 'objetivo', 'No disponible')}")
+            st.markdown(f"**Beneficiarios:** {getattr(row, 'beneficiarios', 'No disponible')}")
+            st.markdown(f"**Normativa:** {getattr(row, 'normativa_relacionada', 'No disponible')}")
+            url = getattr(row, "url_fuente", "No disponible")
+            st.markdown(f"**URL:** {url}")
+            linked = linked_events_for_program(program_id, data)
+            if linked.empty:
+                st.caption("Sin eventos F04 vinculados en puente_evento_programa.csv.")
+            else:
+                names = linked.get("nombre_evento", pd.Series(dtype=str)).astype(str).tolist()
+                st.markdown("**Eventos vinculados F04:** " + " | ".join(names))
+    st.caption(caption_for(data.programas_catalogo, "f05"))
+
+
+def render_metodologia(data: DashboardData) -> None:
+    st.header("Metodologia y calidad")
+    st.write(TAB_INTROS["metodologia"])
+    st.subheader("Advertencias metodologicas")
+    for warning in CRITICAL_WARNINGS:
+        st.warning(warning)
+    st.subheader("Que NO responde este tablero")
+    for item in WHAT_IT_DOES_NOT_ANSWER:
+        st.markdown(f"- {item}")
+
+    eventos_aptos = filter_by_dashboard(data.fact_eventos, "si")
+    eventos_validacion = filter_by_dashboard(data.fact_eventos, "requiere_validacion")
+    eventos_no = filter_by_dashboard(data.fact_eventos, "no")
+    programas_aptos = filter_by_dashboard(data.fact_programas, "si")
+    programas_validacion = filter_by_dashboard(data.fact_programas, "requiere_validacion")
+    programas_no = filter_by_dashboard(data.fact_programas, "no")
+    kpi_row(
         [
-            "id_evento",
-            "nombre_evento",
-            "fecha_inicio",
-            "fecha_fin",
-            "tipo_evento",
-            "apto_dashboard",
-            "requiere_validacion",
-            "tipo_vinculo_gcba",
-            "url_fuente",
-        ],
-        "f04_filter",
+            ("F04 aptos", len(eventos_aptos), "Aptos para metrica fuerte."),
+            ("F04 validacion/no", len(eventos_validacion) + len(eventos_no), "Fuera de metrica fuerte."),
+            ("F05 aptos", len(programas_aptos), "Aptos como catalogo."),
+            ("F05 validacion/no", len(programas_validacion) + len(programas_no), "Historicos, incompletos o en validacion."),
+        ]
     )
-    trace_box(eventos_tipo)
 
-with tabs[5]:
-    st.header("6. Programas F05")
-    section_warning(
-        "F05 es un catalogo curado de programas, politicas, normativa e instrumentos. No es una serie temporal de impacto y no tiene metricas de presupuesto/resultados estructuradas."
-    )
-    cols = st.columns(3)
-    cols[0].metric("Aptos como catalogo", get_indicator(resumen, "programas_politicas_reales_f05_aptos"))
-    cols[1].metric("En validacion", len(programas_validacion))
-    cols[2].metric("No aptos / historicos", len(programas_no_aptos))
-    st.subheader("Catalogo apto")
-    st.dataframe(programas_catalogo, use_container_width=True, hide_index=True)
-    st.subheader("Programas cualitativos / en validacion / no aptos")
-    st.dataframe(programas_cualitativos, use_container_width=True, hide_index=True)
-    st.subheader("Tabla completa F05")
-    filter_table(
-        fact_programas,
-        [
-            "id_programa",
-            "nombre_programa",
-            "tipo_programa",
-            "estado",
-            "apto_dashboard",
-            "requiere_validacion",
-            "vigencia_clara",
-            "url_fuente",
-        ],
-        "f05_filter",
-    )
-    trace_box(programas_catalogo)
+    st.subheader("Trazabilidad por archivo analytics")
+    st.dataframe(traceability_rows(), width="stretch", hide_index=True)
 
-with tabs[6]:
-    st.header("7. Mapa de oportunidades")
-    section_warning(
-        "La tabla distingue F01, F02 y F03. No mezclar todo en un unico score sin explicar la metodologia."
-    )
-    show_f01 = st.checkbox("Capa F01 oferta registrada", value=True)
-    show_fiab = st.checkbox("Capa F03/FIAB", value=True)
-
-    f01_map = pd.DataFrame()
-    if not fact_establecimientos.empty and not dim_ubicacion.empty:
-        f01_map = fact_establecimientos.merge(dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
-        if not dim_categoria.empty:
-            f01_map = f01_map.merge(dim_categoria[["id_categoria", "categoria_general"]], on="id_categoria", how="left")
-        f01_map = map_ready(f01_map)
-        if not f01_map.empty:
-            f01_map = ensure_columns(f01_map, ["categoria_general", "dias_funcionamiento", "rubros"])
-            f01_map["color"] = f01_map["categoria_general"].map(category_color)
-
-    fiab_all = fact_espacios_f03[fact_espacios_f03.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"].copy() if not fact_espacios_f03.empty else pd.DataFrame()
-    fiab_map = pd.DataFrame()
-    if not fiab_all.empty and not dim_ubicacion.empty:
-        fiab_map = fiab_all.merge(dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
-        fiab_map = map_ready(fiab_map)
-        if not fiab_map.empty:
-            fiab_map = ensure_columns(fiab_map, ["categoria_general", "dias_funcionamiento", "rubros"])
-            fiab_map["categoria_general"] = "FIAB"
-            if "productos" in fiab_map.columns:
-                fiab_map["rubros"] = fiab_map["productos"]
-            fiab_map["color"] = [[40, 150, 95, 220] for _ in range(len(fiab_map))]
-
-    metric_cols = st.columns(2)
-    f01_pct = (len(f01_map) / len(fact_establecimientos) * 100) if len(fact_establecimientos) else 0
-    fiab_pct = (len(fiab_map) / len(fiab_all) * 100) if len(fiab_all) else 0
-    metric_cols[0].metric("F01 con punto mapeable", f"{f01_pct:.1f}%", f"{len(f01_map)} de {len(fact_establecimientos)}")
-    metric_cols[1].metric("F03/FIAB con punto mapeable", f"{fiab_pct:.1f}%", f"{len(fiab_map)} de {len(fiab_all)}")
-    st.caption("Se excluyen del mapa las filas sin `calidad_geo=fuente_oficial`. No se mapean F02, puestos de feria, eventos F04 ni programas F05.")
-
-    layers = []
-    visible_frames = []
-    if show_f01 and not f01_map.empty:
-        visible_frames.append(f01_map)
-        layers.append(
-            pdk.Layer(
-                "ScatterplotLayer",
-                data=f01_map,
-                get_position="[longitud_num, latitud_num]",
-                get_fill_color="color",
-                get_radius=35,
-                pickable=True,
-                opacity=0.75,
-            )
+    with st.expander("dim_fuente", expanded=False):
+        searchable_table(
+            data.dim_fuente,
+            ["id_fuente", "nombre_fuente", "tipo_fuente", "organismo_entidad", "url_base", "fecha_consulta", "notas"],
+            "metodologia_dim_fuente",
         )
-    if show_fiab and not fiab_map.empty:
-        visible_frames.append(fiab_map)
-        layers.append(
-            pdk.Layer(
-                "ScatterplotLayer",
-                data=fiab_map,
-                get_position="[longitud_num, latitud_num]",
-                get_fill_color="color",
-                get_radius=80,
-                pickable=True,
-                opacity=0.9,
-            )
-        )
-    if layers and visible_frames:
-        visible = pd.concat(visible_frames, ignore_index=True)
-        view_state = pdk.ViewState(
-            latitude=float(visible["latitud_num"].mean()),
-            longitude=float(visible["longitud_num"].mean()),
-            zoom=11,
-            pitch=0,
-        )
-        st.pydeck_chart(
-            pdk.Deck(
-                map_style=None,
-                initial_view_state=view_state,
-                layers=layers,
-                tooltip={
-                    "html": (
-                        "<b>{nombre}</b><br/>"
-                        "Categoria: {categoria_general}<br/>"
-                        "Direccion: {direccion_original}<br/>"
-                        "Barrio: {barrio}<br/>"
-                        "Dia: {dias_funcionamiento}<br/>"
-                        "Productos: {rubros}"
-                    ),
-                    "style": {"backgroundColor": "#ffffff", "color": "#111111"},
-                },
-            ),
-            use_container_width=True,
-        )
-    else:
-        st.info("No hay capas seleccionadas con puntos oficiales mapeables.")
 
-    st.caption(
-        "Fuente: Buenos Aires Data (ENTUR / Min. Espacio Publico). Coordenadas provistas por la fuente; no se geocodifico. F01 no confirma vigencia actual por registro."
-    )
-
-    cols = [
-        "comuna",
-        "cantidad_establecimientos_f01",
-        "cantidad_habilitaciones_f02_con_comuna",
-        "cantidad_espacios_f03",
-        "cantidad_eventos_f04_aptos",
-        "observaciones",
-    ]
-    filter_table(mapa_oportunidades, cols, "mapa_filter")
-    trace_box(mapa_oportunidades)
-
-with tabs[7]:
-    st.header("8. Fuentes y trazabilidad")
-    st.subheader("Dimensiones de fuente")
-    st.dataframe(dim_fuente, use_container_width=True, hide_index=True)
     guide = DOCS / "GUIA_FUENTES_DASHBOARD.md"
     if guide.exists():
         with st.expander("Guia de fuentes dashboard", expanded=False):
             st.markdown(guide.read_text(encoding="utf-8"))
-    st.subheader("Trazabilidad por analytics")
-    trace_rows = []
-    for path in sorted(ANALYTICS.glob("analytics_*.csv")):
-        df = read_csv(path)
-        trace_rows.append(
-            {
-                "archivo": path.name,
-                "estado_datos": first_value(df, "estado_datos"),
-                "fuentes_utilizadas": first_value(df, "fuentes_utilizadas"),
-                "fecha_consulta_min": first_value(df, "fecha_consulta_min"),
-                "fecha_consulta_max": first_value(df, "fecha_consulta_max"),
-                "apto_dashboard": first_value(df, "apto_dashboard"),
-                "limitaciones": first_value(df, "limitaciones"),
-            }
-        )
-    st.dataframe(pd.DataFrame(trace_rows), use_container_width=True, hide_index=True)
 
-with tabs[8]:
-    st.header("9. Chequeos de calidad")
-    st.success("Resultado esperado actual: validate_model.py --strict-real => OK=51 WARNING=0 ERROR=0")
-    st.subheader("Conteos por fuente")
-    conteos = pd.DataFrame(
-        [
-            {"fuente": "F01 oferta registrada", "filas": get_indicator(resumen, "establecimientos_oferta_gastronomica_f01")},
-            {"fuente": "F02 habilitaciones aprobadas", "filas": get_indicator(resumen, "habilitaciones_gastronomicas_f02")},
-            {"fuente": "F03 espacios ferias/mercados", "filas": get_indicator(resumen, "espacios_ferias_mercados_f03")},
-            {"fuente": "F03 puestos/personas solo tecnico", "filas": get_indicator(resumen, "puestos_feria_f03")},
-            {"fuente": "F04 eventos aptos", "filas": get_indicator(resumen, "eventos_gastronomicos_reales_f04_aptos")},
-            {"fuente": "F05 programas aptos", "filas": get_indicator(resumen, "programas_politicas_reales_f05_aptos")},
-        ]
-    )
-    st.dataframe(conteos, use_container_width=True, hide_index=True)
-    st.subheader("Aptitud F04/F05")
-    st.dataframe(
-        pd.DataFrame(
-            [
-                {"fuente": "F04", "apto": len(eventos_aptos), "requiere_validacion": len(eventos_validacion), "no_apto": len(eventos_no_aptos)},
-                {"fuente": "F05", "apto": len(programas_aptos), "requiere_validacion": len(programas_validacion), "no_apto": len(programas_no_aptos)},
-            ]
-        ),
-        use_container_width=True,
-        hide_index=True,
-    )
-    st.markdown(
-        """
-        **Advertencias metodologicas principales**
 
-        - F01 no confirma vigencia actual por registro.
-        - F02 no son establecimientos activos unicos.
-        - F03 tiene recursos con distinto grano: espacios reales por un lado y puestos/personas solo como insumo tecnico.
-        - F04/F05 son relevamientos manuales trazables, no datasets oficiales estructurados.
-        - Filas cualitativas o en validacion quedan fuera de metricas fuertes.
-        """
-    )
+def main() -> None:
+    data = load_dashboard_data()
+    render_global_header()
+    tabs = st.tabs(["Panorama", "Territorio", "Dinamismo (F02)", "Ecosistema publico (F03-F05)", "Metodologia y calidad"])
+    with tabs[0]:
+        render_panorama(data)
+    with tabs[1]:
+        render_territorio(data)
+    with tabs[2]:
+        render_dinamismo(data)
+    with tabs[3]:
+        render_ecosistema(data)
+    with tabs[4]:
+        render_metodologia(data)
+
+
+main()
