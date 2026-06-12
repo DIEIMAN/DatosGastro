@@ -14,6 +14,22 @@ def kpi_row(items: list[tuple[str, object, str | None]]) -> None:
         column.metric(label, value, help=help_text)
 
 
+def lectura(text: str) -> None:
+    """Conclusion en lenguaje de gestion, calculada desde los datos visibles."""
+    st.info(f"**Lectura:** {text}")
+
+
+def map_legend(items: list[tuple[str, list[int]]], title: str = "Referencias") -> None:
+    """Leyenda de colores del mapa como chips inline."""
+    chips = " &nbsp; ".join(
+        f"<span style='display:inline-block;width:11px;height:11px;border-radius:2px;"
+        f"background:rgba({c[0]},{c[1]},{c[2]},{(c[3] if len(c) > 3 else 255) / 255});'></span> "
+        f"<span style='font-size:0.85em'>{label}</span>"
+        for label, c in items
+    )
+    st.markdown(f"<div style='margin:0.2em 0 0.6em 0'><b style='font-size:0.85em'>{title}:</b> &nbsp;{chips}</div>", unsafe_allow_html=True)
+
+
 def horizontal_bar(
     df: pd.DataFrame,
     label: str,
@@ -92,7 +108,15 @@ def searchable_table(df: pd.DataFrame, columns: list[str], key: str) -> pd.DataF
     return view
 
 
-def pydeck_map(f01_map: pd.DataFrame, f03_map: pd.DataFrame, *, show_f01: bool = True, show_f03: bool = True) -> None:
+def pydeck_map(
+    f01_map: pd.DataFrame,
+    f03_map: pd.DataFrame,
+    f02_usig_map: pd.DataFrame | None = None,
+    *,
+    show_f01: bool = True,
+    show_f03: bool = True,
+    show_f02_usig: bool = False,
+) -> None:
     layers = []
     visible_frames = []
     if show_f01 and not f01_map.empty:
@@ -106,6 +130,19 @@ def pydeck_map(f01_map: pd.DataFrame, f03_map: pd.DataFrame, *, show_f01: bool =
                 get_radius=35,
                 pickable=True,
                 opacity=0.72,
+            )
+        )
+    if show_f02_usig and f02_usig_map is not None and not f02_usig_map.empty:
+        visible_frames.append(f02_usig_map)
+        layers.append(
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=f02_usig_map,
+                get_position="[longitud_num, latitud_num]",
+                get_fill_color="color",
+                get_radius=24,
+                pickable=True,
+                opacity=0.58,
             )
         )
     if show_f03 and not f03_map.empty:

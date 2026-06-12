@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-06-12 - Geocodificacion USIG F02 con cache
+
+- Se agrego `src/geocode_usig.py` para consultar USIG por tandas, con cache persistente en `data/processed/geo_cache.csv`, `--limit` y `--solo-pendientes`.
+- El cache es idempotente: las direcciones ya registradas no se re-consultan.
+- Se valida bounding box CABA y se marca `sospechosa` toda coordenada fuera de rango.
+- `build_model.py` enriquece `dim_ubicacion` con `usig_exacta` o `usig_aproximada` si existe cache, sin pisar coordenadas `fuente_oficial`.
+- El dashboard puede mostrar F02 USIG como capa opcional apagada por default, solo si el cache supera 90% de exactas.
+- `validate_model.py --strict-real` valida trazabilidad y bbox del cache cuando existe, sin fallar si todavia no fue generado.
+
 ## 2026-06-12 - Version demo estable interna
 
 - Se agrego validacion semantica de descarga para F01: esquema requerido y minimo de filas antes de aceptar el archivo descargado.

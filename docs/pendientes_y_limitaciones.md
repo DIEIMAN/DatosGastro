@@ -8,7 +8,7 @@
 - Revisar `docs/perfilado_fuentes.md` despues de cada descarga.
 - Revisar `docs/AUDITORIA_DATOS_REALES.md` antes de construir un dashboard.
 - Ajustar mapeos de columnas si BA Data cambia nombres o formatos.
-- Geocodificar direcciones con USIG en una etapa futura con internet.
+- Geocodificar direcciones F02 con `src/geocode_usig.py` por tandas y cache persistente en `data/processed/geo_cache.csv`; no promover puntos si la tasa exacta queda por debajo de 90%.
 - Incorporar permisos de area gastronomica F06 solo como nueva fuente separada en una etapa posterior.
 - Validar vigencia de F01 contra fuentes oficiales complementarias si se necesita hablar de establecimientos activos.
 - Mantener curado F04 con fuente por fila; si aparece dataset oficial estructurado de eventos, integrarlo como nueva fuente.
@@ -37,4 +37,4 @@
 - No publicar graficos si `apto_dashboard` no es `si`.
 - No sumar F01 y F02 como "establecimientos gastronomicos".
 - No llamar establecimientos a las habilitaciones F02.
-- No implementar scores de oportunidad, metricas de impacto ni geocodificacion masiva F02 en la version demo estable.
+- No implementar scores de oportunidad, metricas de impacto ni geocodificacion masiva F02 sin cache, rate limit y validacion de calidad.

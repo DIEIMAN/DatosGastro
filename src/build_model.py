@@ -13,6 +13,7 @@ from shapely.geometry import shape
 
 from clean_text import clean_dataframe_columns, normalize_proper_name, normalize_text
 from config import DATA_PROCESSED, DATA_RAW, DATA_SEEDS, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
+from geocode_usig import CACHE_PATH as GEO_CACHE_PATH, cache_key as geo_cache_key
 from normalize_addresses import UNKNOWN_LOCATION_ID, normalize_address_offline
 from normalize_categories import classify_gastronomic_category, taxonomy_dataframe_rows
 from source_contracts import SourceLoadResult, map_source_columns
@@ -789,7 +790,55 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, espacios_f03: pd.DataF
             rows.append(cached_location(location_cache, row.get("direccion"), row.get("barrio")))
 
     df = pd.DataFrame(rows).drop_duplicates("id_ubicacion", keep="last")
-    return df
+    return enrich_locations_with_geo_cache(df)
+
+
+def enrich_locations_with_geo_cache(dim_ubicacion: pd.DataFrame, cache_path: Path = GEO_CACHE_PATH) -> pd.DataFrame:
+    if dim_ubicacion.empty or not cache_path.exists():
+        return dim_ubicacion
+    cache = read_csv(cache_path)
+    required = {"direccion_original", "latitud", "longitud", "estado", "fecha_consulta"}
+    if cache.empty or not required.issubset(cache.columns):
+        return dim_ubicacion
+
+    usable = cache[cache["estado"].astype(str).isin(["exacta", "aproximada"])].copy()
+    if usable.empty:
+        return dim_ubicacion
+    usable["lat_num"] = usable["latitud"].map(parse_coordinate)
+    usable["lon_num"] = usable["longitud"].map(parse_coordinate)
+    usable = usable[
+        usable.apply(lambda row: in_caba_bounds(row["lat_num"], row["lon_num"]), axis=1)
+        & usable["fecha_consulta"].astype(str).str.strip().ne("")
+    ].copy()
+    if usable.empty:
+        return dim_ubicacion
+
+    by_address = {
+        geo_cache_key(row["direccion_original"]): row
+        for _, row in usable.iterrows()
+        if geo_cache_key(row.get("direccion_original"))
+    }
+    result = dim_ubicacion.copy()
+    for idx, row in result.iterrows():
+        if row.get("calidad_geo") == "fuente_oficial":
+            continue
+        match = by_address.get(geo_cache_key(row.get("direccion_original")))
+        if match is None:
+            continue
+        estado = str(match.get("estado", ""))
+        result.at[idx, "latitud"] = format_coordinate(parse_coordinate(match.get("latitud")))
+        result.at[idx, "longitud"] = format_coordinate(parse_coordinate(match.get("longitud")))
+        result.at[idx, "calidad_geo"] = "usig_exacta" if estado == "exacta" else "usig_aproximada"
+        result.at[idx, "direccion_normalizada"] = first_existing(match.get("direccion_normalizada"), row.get("direccion_normalizada"), default="Pendiente USIG")
+        barrio_usig = first_existing(match.get("barrio_usig"), default="")
+        comuna_usig = first_existing(match.get("comuna_usig"), default="")
+        if barrio_usig:
+            result.at[idx, "barrio"] = barrio_usig
+        if comuna_usig:
+            result.at[idx, "comuna"] = normalize_comuna_value(comuna_usig)
+        result.at[idx, "requiere_validacion"] = "no" if estado == "exacta" else "si"
+        result.at[idx, "motivo_validacion"] = f"Geocodificacion USIG desde geo_cache.csv; estado={estado}; precision={first_existing(match.get('precision'), default='No disponible')}"
+    return result
 
 
 def build_dim_organizador(eventos: pd.DataFrame) -> pd.DataFrame:

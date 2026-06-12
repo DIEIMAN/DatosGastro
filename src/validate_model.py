@@ -126,6 +126,45 @@ def _coordinate_series(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
 
 
+def _validate_geo_cache(messages: list[tuple[str, str]]) -> None:
+    path = DATA_PROCESSED / "geo_cache.csv"
+    if not path.exists():
+        add(messages, "OK", "geo_cache.csv no existe; geocodificacion USIG opcional pendiente")
+        return
+    cache = read_csv(path)
+    required = {
+        "direccion_normalizada",
+        "latitud",
+        "longitud",
+        "barrio_usig",
+        "comuna_usig",
+        "precision",
+        "estado",
+        "fecha_consulta",
+    }
+    missing = sorted(required - set(cache.columns))
+    if missing:
+        add(messages, "ERROR", f"geo_cache.csv no tiene columnas de trazabilidad: {missing}")
+        return
+    if cache["fecha_consulta"].astype(str).str.strip().eq("").any():
+        add(messages, "ERROR", "geo_cache.csv tiene fecha_consulta vacia")
+    else:
+        add(messages, "OK", "geo_cache.csv tiene fecha_consulta completa")
+    usable = cache[cache["estado"].astype(str).isin(["exacta", "aproximada"])].copy()
+    if usable.empty:
+        add(messages, "OK", "geo_cache.csv no tiene matches USIG utilizables todavia")
+        return
+    lat = _coordinate_series(usable["latitud"])
+    lon = _coordinate_series(usable["longitud"])
+    bad = usable[
+        ~(lat.between(CABA_LAT_MIN, CABA_LAT_MAX) & lon.between(CABA_LON_MIN, CABA_LON_MAX))
+    ]
+    if bad.empty:
+        add(messages, "OK", f"geo_cache.csv matches USIG dentro de bounding box CABA ({len(usable)} filas)")
+    else:
+        add(messages, "ERROR", f"geo_cache.csv tiene {len(bad)} matches exacta/aproximada fuera de CABA")
+
+
 
 
 def _is_number(value) -> bool:
@@ -307,6 +346,18 @@ def validate(strict_real: bool = False) -> int:
             add(messages, "OK", f"dim_ubicacion coordenadas dentro de bounding box CABA ({len(mapped)} filas mapeables)")
         else:
             add(messages, "ERROR", f"dim_ubicacion tiene {len(out_of_bounds)} filas con coordenadas fuera de CABA")
+        if "calidad_geo" in ubicaciones.columns:
+            usig = ubicaciones[ubicaciones["calidad_geo"].astype(str).str.startswith("usig_")].copy()
+            if not usig.empty:
+                usig_lat = _coordinate_series(usig["latitud"])
+                usig_lon = _coordinate_series(usig["longitud"])
+                bad_usig = usig[
+                    ~(usig_lat.between(CABA_LAT_MIN, CABA_LAT_MAX) & usig_lon.between(CABA_LON_MIN, CABA_LON_MAX))
+                ]
+                if bad_usig.empty:
+                    add(messages, "OK", f"dim_ubicacion calidad_geo usig_* dentro de CABA ({len(usig)} filas)")
+                else:
+                    add(messages, "ERROR", f"dim_ubicacion tiene {len(bad_usig)} filas usig_* fuera de CABA")
 
 
 
@@ -333,6 +384,7 @@ def validate(strict_real: bool = False) -> int:
             add(messages, "ERROR", "dim_territorio no tiene columnas territoriales esperadas")
 
     if strict_real:
+        _validate_geo_cache(messages)
         for geo_name in ("geo_barrios.geojson", "geo_comunas.geojson"):
             geo_path = DATA_RAW / geo_name
             if not geo_path.exists():

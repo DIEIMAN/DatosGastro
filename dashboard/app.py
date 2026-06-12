@@ -1,105 +1,203 @@
+"""DataGastro - tablero de gestion.
+
+Principios de la interfaz:
+- Cada pestana responde una pregunta de gestion, no describe una fuente.
+- Concepto primero; el codigo de fuente (F01-F05) acompana entre parentesis.
+- Una sola regla de lectura global; el detalle metodologico vive en Metodologia.
+- Cada bloque cierra con una "Lectura" calculada desde los datos visibles.
+"""
 from __future__ import annotations
 
 import pandas as pd
 import streamlit as st
 
-from dashboard.components import horizontal_bar, kpi_row, pydeck_comuna_choropleth, pydeck_map, searchable_table, vertical_bar
-from dashboard.dashboard_config import DOCS, F02_SERIE_ORDER
+from dashboard.components import (
+    horizontal_bar,
+    kpi_row,
+    lectura,
+    map_legend,
+    pydeck_comuna_choropleth,
+    pydeck_map,
+    searchable_table,
+    vertical_bar,
+)
+from dashboard.dashboard_config import CATEGORY_COLORS, DOCS, F02_SERIE_ORDER, F02_USIG_POINT_COLOR, FIAB_POINT_COLOR
 from dashboard.data_loader import (
     DashboardData,
     filter_by_dashboard,
     first_value,
     get_indicator,
+    lectura_comuna_f02,
+    lectura_f03,
+    lectura_serie_f02,
     linked_events_for_program,
     load_dashboard_data,
     number,
     numeric_series,
     prepare_f01_map,
-    prepare_f03_map,
     prepare_f02_choropleth,
+    prepare_f02_usig_map,
+    prepare_f03_map,
     top_f01_barrios,
     traceability_rows,
 )
-from dashboard.textos import CRITICAL_WARNINGS, TAB_INTROS, WHAT_IT_DOES_NOT_ANSWER, source_caption
+from dashboard.textos import (
+    ADVERTENCIAS_COMPLETAS,
+    BAJADA,
+    CAPTIONS,
+    INTROS,
+    KPI_HELP,
+    KPI_LABELS,
+    NO_RESPONDE,
+    REGLA_DE_ORO,
+    TABS,
+    TITULO,
+    caption_con_fecha,
+)
+
+st.set_page_config(page_title="DataGastro", layout="wide")
 
 
-st.set_page_config(page_title="DataGastro - Preguntas de gestion", layout="wide")
+def fmt(value: int) -> str:
+    return f"{value:,}".replace(",", ".")
 
 
-def caption_for(df: pd.DataFrame, source_key: str) -> str:
-    return source_caption(source_key, first_value(df, "fecha_consulta_max"))
+def f01_legend_items(f01_map: pd.DataFrame) -> list[tuple[str, list[int]]]:
+    presentes = f01_map["categoria_general"].value_counts().index.tolist() if not f01_map.empty else []
+    return [(cat, CATEGORY_COLORS[cat]) for cat in presentes if cat in CATEGORY_COLORS][:8]
 
 
-def metric_value(data: DashboardData, indicator: str) -> int:
-    return get_indicator(data.resumen, indicator)
-
-
-def render_global_header() -> None:
-    st.title("DataGastro - Tablero de gestion")
-    st.caption("Lectura integrada de oferta, habilitaciones, espacios, eventos y programas con reglas metodologicas explicitas.")
-    for warning in CRITICAL_WARNINGS:
-        st.warning(warning)
+def render_header() -> None:
+    st.title(TITULO)
+    st.markdown(BAJADA)
+    st.info(REGLA_DE_ORO)
 
 
 def render_panorama(data: DashboardData) -> None:
-    st.header("Panorama")
-    st.write(TAB_INTROS["panorama"])
+    st.markdown(INTROS["panorama"])
     kpi_row(
         [
-            ("F01 oferta registrada", f"{metric_value(data, 'establecimientos_oferta_gastronomica_f01'):,}".replace(",", "."), "Registros publicados por Buenos Aires Data; no confirma vigencia actual."),
-            ("F02 habilitaciones", f"{metric_value(data, 'habilitaciones_gastronomicas_f02'):,}".replace(",", "."), "Serie comparable 2019-2024. 2015-2018 es agregado y 2025 se muestra aparte por esquema distinto."),
-            ("F03 espacios", f"{metric_value(data, 'espacios_ferias_mercados_f03'):,}".replace(",", "."), "Espacios reales: mercados, ferias/padron agregado y FIAB. Excluye puestos/personas."),
-            ("F04 eventos aptos", f"{metric_value(data, 'eventos_gastronomicos_reales_f04_aptos'):,}".replace(",", "."), "Solo eventos apto_dashboard=si para metricas fuertes."),
+            (KPI_LABELS["f01"], fmt(get_indicator(data.resumen, "establecimientos_oferta_gastronomica_f01")), KPI_HELP["f01"]),
+            (KPI_LABELS["f02"], fmt(get_indicator(data.resumen, "habilitaciones_gastronomicas_f02")), KPI_HELP["f02"]),
+            (KPI_LABELS["f03"], fmt(get_indicator(data.resumen, "espacios_ferias_mercados_f03")), KPI_HELP["f03"]),
+            (KPI_LABELS["f04"], fmt(get_indicator(data.resumen, "eventos_gastronomicos_reales_f04_aptos")), KPI_HELP["f04"]),
         ]
     )
-    st.caption(caption_for(data.resumen, "resumen"))
+    st.caption(caption_con_fecha("resumen", first_value(data.resumen, "fecha_consulta_max")))
 
+    st.subheader("El mapa del ecosistema")
+    f01_map = prepare_f01_map(data)
+    f03_map = prepare_f03_map(data)
+    f02_usig_map, f02_usig_report = prepare_f02_usig_map(data)
+    col_a, col_b, col_c = st.columns(3)
+    show_f01 = col_a.checkbox(f"Locales de la guia oficial ({len(f01_map)} puntos)", value=True, key="pan_f01")
+    show_f03 = col_b.checkbox(f"Ferias, mercados y FIAB ({len(f03_map)} puntos)", value=True, key="pan_f03")
+    show_f02_usig = col_c.checkbox(
+        f"Habilitaciones geocodificadas USIG ({len(f02_usig_map)} puntos)",
+        value=False,
+        key="pan_f02_usig",
+        disabled=not f02_usig_report["promovible"],
+    )
+    legend_items = f01_legend_items(f01_map) if show_f01 else []
+    if show_f03:
+        legend_items = legend_items + [("Ferias/mercados/FIAB", FIAB_POINT_COLOR)]
+    if show_f02_usig:
+        legend_items = legend_items + [("Habilitaciones F02 USIG", F02_USIG_POINT_COLOR)]
+    if legend_items:
+        map_legend(legend_items)
+    pydeck_map(f01_map, f03_map, f02_usig_map, show_f01=show_f01, show_f03=show_f03, show_f02_usig=show_f02_usig)
+    st.caption(CAPTIONS["mapa"])
+    if f02_usig_report["total"]:
+        st.caption(
+            f"{CAPTIONS['f02_usig']} Cache: {int(f02_usig_report['exacta'])} exactas, "
+            f"{int(f02_usig_report['aproximada'])} aproximadas, tasa exacta {float(f02_usig_report['exact_rate']):.1f}%."
+        )
+    else:
+        st.caption("F02 USIG pendiente: ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
+
+    lecturas = []
     top_barrios = top_f01_barrios(data.est_cat_barrio)
     if not top_barrios.empty:
-        text = "; ".join(
-            f"{row.barrio}: {int(row.cantidad)} registros ({row.porcentaje}%)"
-            for row in top_barrios.itertuples(index=False)
-        )
-        st.info(f"Lectura F01: los 3 barrios con mas oferta registrada son {text}.")
-
-    st.subheader("Mapa integrado F01/F03")
-    show_f01 = st.checkbox("Mostrar F01 oferta registrada", value=True, key="panorama_f01")
-    show_f03 = st.checkbox("Mostrar F03 espacios", value=True, key="panorama_f03")
-    pydeck_map(prepare_f01_map(data), prepare_f03_map(data), show_f01=show_f01, show_f03=show_f03)
-    st.caption(source_caption("mapa"))
+        share = top_barrios["porcentaje"].sum()
+        nombres = ", ".join(top_barrios["barrio"].tolist())
+        lecturas.append(f"{nombres} concentran el {share:.0f}% de la oferta registrada en la guia oficial.")
+    serie = lectura_serie_f02(data.hab_anio)
+    if serie:
+        lecturas.append(serie)
+    f03_txt = lectura_f03(data.fact_espacios_f03)
+    if f03_txt:
+        lecturas.append(f03_txt)
+    for texto in lecturas:
+        lectura(texto)
 
 
 def render_territorio(data: DashboardData) -> None:
-    st.header("Territorio")
-    st.write(TAB_INTROS["territorio"])
-    categories = sorted(
-        value
-        for value in data.dim_categoria.get("categoria_general", pd.Series(dtype=str)).dropna().astype(str).unique()
-        if value and value not in {"No gastronomico", "Requiere validacion"}
+    st.markdown(INTROS["territorio"])
+
+    vista = st.radio(
+        "Que queres ver en el mapa",
+        ["Locales y espacios (puntos exactos)", "Intensidad de habilitaciones por comuna"],
+        horizontal=True,
+        key="terr_vista",
     )
-    selected = st.multiselect("Categorias F01", categories, default=categories, key="territorio_categorias")
-    f01_map = prepare_f01_map(data, selected)
-    st.subheader("Mapa territorial")
-    map_mode = st.radio("Capa territorial", ["Puntos F01/F03", "Coropleta F02 por comuna"], horizontal=True, key="territorio_modo_mapa")
-    if map_mode == "Puntos F01/F03":
-        pydeck_map(f01_map, prepare_f03_map(data), show_f01=True, show_f03=True)
-        st.caption(source_caption("mapa"))
+    if vista == "Locales y espacios (puntos exactos)":
+        categorias = sorted(
+            value
+            for value in data.dim_categoria.get("categoria_general", pd.Series(dtype=str)).dropna().astype(str).unique()
+            if value and value not in {"No gastronomico", "Requiere validacion", "Comercio alimenticio minorista"}
+        )
+        seleccion = st.multiselect("Filtrar por tipo de local", categorias, default=categorias, key="terr_cat")
+        f01_map = prepare_f01_map(data, seleccion)
+        f03_map = prepare_f03_map(data)
+        f02_usig_map, f02_usig_report = prepare_f02_usig_map(data)
+        show_f02_usig = st.checkbox(
+            f"Sumar habilitaciones geocodificadas (USIG) ({len(f02_usig_map)} puntos)",
+            value=False,
+            key="terr_f02_usig",
+            disabled=not f02_usig_report["promovible"],
+        )
+        legend_items = f01_legend_items(f01_map) + [("Ferias/mercados/FIAB", FIAB_POINT_COLOR)]
+        if show_f02_usig:
+            legend_items.append(("Habilitaciones F02 USIG", F02_USIG_POINT_COLOR))
+        map_legend(legend_items)
+        pydeck_map(f01_map, f03_map, f02_usig_map, show_f01=True, show_f03=True, show_f02_usig=show_f02_usig)
+        st.caption(CAPTIONS["mapa"])
+        if f02_usig_report["total"]:
+            st.caption(
+                f"{CAPTIONS['f02_usig']} Cache: {int(f02_usig_report['exacta'])} exactas, "
+                f"{int(f02_usig_report['aproximada'])} aproximadas, tasa exacta {float(f02_usig_report['exact_rate']):.1f}%."
+            )
     else:
         geo_comunas, coverage = prepare_f02_choropleth(data)
-        st.warning("La coropleta F02 muestra solo habilitaciones con comuna identificada. No son establecimientos activos ni puntos exactos.")
         pydeck_comuna_choropleth(geo_comunas, coverage)
-        st.caption(source_caption("coropleta_f02"))
+        st.caption(CAPTIONS["coropleta"])
+        comuna_txt = lectura_comuna_f02(data.hab_barrio)
+        if comuna_txt:
+            lectura(comuna_txt + f" La comuna se conoce en el {coverage:.0f}% de los registros: el resto no entra en esta vista.")
 
-    top_barrios = top_f01_barrios(data.est_cat_barrio, limit=15)
-    horizontal_bar(
-        top_barrios,
-        "barrio",
-        "cantidad",
-        "Ranking de barrios por oferta registrada F01",
-        caption=caption_for(data.est_cat_barrio, "f01"),
-    )
+    st.divider()
+    left, right = st.columns(2)
+    with left:
+        top_barrios = top_f01_barrios(data.est_cat_barrio, limit=15)
+        horizontal_bar(
+            top_barrios,
+            "barrio",
+            "cantidad",
+            "Barrios con mas oferta registrada",
+            caption=caption_con_fecha("f01", first_value(data.est_cat_barrio, "fecha_consulta_max")),
+        )
+    with right:
+        if not data.hab_barrio.empty:
+            comuna_df = data.hab_barrio[data.hab_barrio["comuna"].astype(str).isin([str(v) for v in range(1, 16)])].copy()
+            horizontal_bar(
+                comuna_df,
+                "comuna",
+                "cantidad_habilitaciones",
+                "Comunas con mas habilitaciones aprobadas",
+                caption=caption_con_fecha("f02_comuna", first_value(data.hab_barrio, "fecha_consulta_max")),
+            )
 
-    with st.expander("Tabla por comuna - universos separados", expanded=False):
+    with st.expander("Tabla por comuna: los cuatro universos lado a lado", expanded=False):
         searchable_table(
             data.mapa_oportunidades,
             [
@@ -110,14 +208,14 @@ def render_territorio(data: DashboardData) -> None:
                 "cantidad_eventos_f04_aptos",
                 "observaciones",
             ],
-            "territorio_mapa_oportunidades",
+            "terr_tabla",
         )
-        st.caption(caption_for(data.mapa_oportunidades, "mapa_oportunidades"))
+        st.caption(CAPTIONS["territorio_tabla"])
 
 
 def render_dinamismo(data: DashboardData) -> None:
-    st.header("Dinamismo (F02)")
-    st.write(TAB_INTROS["dinamismo"])
+    st.markdown(INTROS["dinamismo"])
+
     comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "si"].copy()
     no_comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "no"].copy()
 
@@ -125,75 +223,69 @@ def render_dinamismo(data: DashboardData) -> None:
         comparable,
         "anio_fuente",
         "cantidad_habilitaciones",
-        "Habilitaciones F02 por anio comparable",
+        "Habilitaciones gastronomicas aprobadas por anio",
         order=F02_SERIE_ORDER,
-        caption=caption_for(data.hab_anio, "f02"),
+        caption=caption_con_fecha("f02_serie", first_value(data.hab_anio, "fecha_consulta_max")),
     )
+    serie_txt = lectura_serie_f02(data.hab_anio)
+    if serie_txt:
+        lectura(serie_txt)
 
     if not no_comparable.empty:
-        metric_items = []
-        for row in no_comparable.itertuples(index=False):
-            metric_items.append(
-                (
-                    f"Periodo {row.anio_fuente}",
-                    f"{number(row.cantidad_habilitaciones):,}".replace(",", "."),
-                    getattr(row, "nota_serie", "No comparable como flujo anual"),
+        with st.expander("Por que faltan 2015-2018 y 2025 en el grafico", expanded=False):
+            for row in no_comparable.itertuples(index=False):
+                st.markdown(
+                    f"- **{row.anio_fuente}** ({fmt(number(row.cantidad_habilitaciones))} registros): "
+                    f"{getattr(row, 'nota_serie', 'no comparable como flujo anual')}"
                 )
-            )
-        kpi_row(metric_items)
-        st.warning("Estos periodos se separan de la serie: 2015-2018 es agregado y 2025 tiene esquema distinto.")
 
+    st.divider()
     left, right = st.columns(2)
     with left:
         horizontal_bar(
             data.hab_categoria,
             "categoria_gastronomica_inferida",
             "cantidad_habilitaciones",
-            "Ranking por categoria corregida",
-            caption=caption_for(data.hab_categoria, "f02"),
+            "Que tipo de gastronomia se habilita",
+            caption=caption_con_fecha("f02", first_value(data.hab_categoria, "fecha_consulta_max")),
         )
     with right:
         if not data.hab_barrio.empty:
-            comuna_df = data.hab_barrio[data.hab_barrio["comuna"].astype(str).isin([str(value) for value in range(1, 16)])].copy()
+            comuna_df = data.hab_barrio[data.hab_barrio["comuna"].astype(str).isin([str(v) for v in range(1, 16)])].copy()
             total = numeric_series(data.hab_barrio["cantidad_habilitaciones"]).sum() if "cantidad_habilitaciones" in data.hab_barrio.columns else 0
-            identified = numeric_series(comuna_df["cantidad_habilitaciones"]).sum() if not comuna_df.empty else 0
-            coverage = (identified / total * 100) if total else 0
-            st.warning(f"Cobertura territorial F02 identificada por comuna: {coverage:.1f}% del total clasificado.")
+            identificado = numeric_series(comuna_df["cantidad_habilitaciones"]).sum() if not comuna_df.empty else 0
+            cobertura = (identificado / total * 100) if total else 0
             horizontal_bar(
                 comuna_df,
                 "comuna",
                 "cantidad_habilitaciones",
-                "Habilitaciones F02 por comuna identificada",
-                caption=caption_for(data.hab_barrio, "f02"),
+                f"Donde se habilita (comuna conocida en {cobertura:.0f}% de los casos)",
+                caption=caption_con_fecha("f02_comuna", first_value(data.hab_barrio, "fecha_consulta_max")),
             )
 
-    with st.expander("Tabla de habilitaciones recientes", expanded=False):
+    with st.expander("Ultimas habilitaciones con fecha (500)", expanded=False):
         searchable_table(
             data.hab_recientes,
             [
-                "id_habilitacion",
                 "fecha_habilitacion",
                 "anio_fuente",
                 "descripcion_rubro_original",
                 "categoria_gastronomica_inferida",
                 "direccion_original",
-                "barrio",
                 "comuna",
                 "requiere_validacion",
-                "motivo_validacion",
             ],
-            "dinamismo_recientes",
+            "din_recientes",
         )
-        st.caption(caption_for(data.hab_recientes, "f02"))
+        st.caption(caption_con_fecha("f02", first_value(data.hab_recientes, "fecha_consulta_max")))
 
 
 def render_ecosistema(data: DashboardData) -> None:
-    st.header("Ecosistema publico (F03-F05)")
-    st.write(TAB_INTROS["ecosistema"])
+    st.markdown(INTROS["ecosistema"])
+
+    st.subheader("La red de mercados, ferias y abastecimiento barrial")
     f03_tipo = (
-        data.fact_espacios_f03.groupby("tipo_espacio", dropna=False)
-        .size()
-        .reset_index(name="cantidad_espacios")
+        data.fact_espacios_f03.groupby("tipo_espacio", dropna=False).size().reset_index(name="cantidad_espacios")
         if not data.fact_espacios_f03.empty
         else pd.DataFrame()
     )
@@ -201,117 +293,117 @@ def render_ecosistema(data: DashboardData) -> None:
         f03_tipo,
         "tipo_espacio",
         "cantidad_espacios",
-        "F03 por tipo de espacio",
-        caption=source_caption("f03", first_value(data.fact_espacios_f03, "fecha_consulta")),
+        "Espacios por tipo",
+        caption=caption_con_fecha("f03", first_value(data.fact_espacios_f03, "fecha_consulta")),
     )
-    with st.expander("Listado F03 de espacios", expanded=False):
+    f03_txt = lectura_f03(data.fact_espacios_f03)
+    if f03_txt:
+        lectura(f03_txt)
+    with st.expander("Listado de espacios", expanded=False):
         searchable_table(
             data.fact_espacios_f03,
-            [
-                "id_espacio",
-                "nombre",
-                "tipo_espacio",
-                "es_gastronomico",
-                "cantidad_puestos",
-                "cantidad_puestos_gastronomicos",
-                "rubros_principales",
-                "direccion",
-                "barrio",
-                "comuna",
-                "calidad_geo",
-            ],
-            "ecosistema_f03",
+            ["nombre", "tipo_espacio", "es_gastronomico", "cantidad_puestos", "rubros_principales", "direccion", "barrio", "comuna"],
+            "eco_f03",
         )
 
+    st.divider()
+    st.subheader("El calendario de eventos gastronomicos")
     eventos_aptos = filter_by_dashboard(data.fact_eventos, "si")
-    eventos_validacion = filter_by_dashboard(data.fact_eventos, "requiere_validacion")
-    eventos_no = filter_by_dashboard(data.fact_eventos, "no")
-    kpi_row(
-        [
-            ("F04 aptos", len(eventos_aptos), "Eventos aptos para metricas fuertes."),
-            ("F04 en validacion", len(eventos_validacion), "Eventos con validaciones pendientes."),
-            ("F04 no aptos", len(eventos_no), "Eventos fuera de metricas fuertes."),
-        ]
+    eventos_resto = len(data.fact_eventos) - len(eventos_aptos) if not data.fact_eventos.empty else 0
+    st.markdown(
+        f"Se relevaron **{len(data.fact_eventos)}** eventos vinculados a la politica gastronomica; "
+        f"**{len(eventos_aptos)}** estan verificados con fecha completa y vinculo confirmado, y entran en los graficos. "
+        f"Los otros {eventos_resto} quedan como registro cualitativo."
     )
-    st.warning("F04 tiene N chico y cobertura parcial: usar como evidencia cualitativa, no como universo completo.")
     left, right = st.columns(2)
     with left:
-        vertical_bar(data.eventos_anio, "anio", "cantidad_eventos", "F04 aptos por anio", caption=caption_for(data.eventos_anio, "f04"))
+        vertical_bar(
+            data.eventos_anio,
+            "anio",
+            "cantidad_eventos",
+            "Eventos verificados por anio",
+            caption=caption_con_fecha("f04", first_value(data.eventos_anio, "fecha_consulta_max")),
+        )
     with right:
-        horizontal_bar(data.eventos_tipo, "tipo_evento", "cantidad_eventos", "F04 aptos por tipo", caption=caption_for(data.eventos_tipo, "f04"))
-
-    with st.expander("Tabla F04 de eventos aptos", expanded=False):
+        horizontal_bar(
+            data.eventos_tipo,
+            "tipo_evento",
+            "cantidad_eventos",
+            "Eventos verificados por tipo",
+            caption=caption_con_fecha("f04", first_value(data.eventos_tipo, "fecha_consulta_max")),
+        )
+    st.caption("Inventario chico y parcial: leer como evidencia de que existe un calendario sostenido, no como tendencia estadistica.")
+    with st.expander("Eventos verificados", expanded=False):
         searchable_table(
             eventos_aptos,
-            ["id_evento", "nombre_evento", "fecha_inicio", "fecha_fin", "tipo_evento", "barrio", "comuna", "url_fuente"],
-            "ecosistema_eventos_aptos",
+            ["nombre_evento", "fecha_inicio", "fecha_fin", "tipo_evento", "barrio", "url_fuente"],
+            "eco_f04",
         )
 
-    st.subheader("F05 fichas de programas e instrumentos")
+    st.divider()
+    st.subheader("Los programas e instrumentos de la Ciudad")
     if data.programas_catalogo.empty:
-        st.info("No hay programas aptos para mostrar.")
+        st.info("No hay programas verificados para mostrar.")
     for row in data.programas_catalogo.itertuples(index=False):
         program_id = getattr(row, "id_programa", "")
-        with st.expander(f"{program_id} - {getattr(row, 'nombre_programa', 'Programa')}", expanded=False):
+        nombre = getattr(row, "nombre_programa", "Programa")
+        estado = getattr(row, "estado", "")
+        with st.expander(f"{nombre} ({estado})" if estado else str(nombre), expanded=False):
             st.markdown(f"**Objetivo:** {getattr(row, 'objetivo', 'No disponible')}")
             st.markdown(f"**Beneficiarios:** {getattr(row, 'beneficiarios', 'No disponible')}")
             st.markdown(f"**Normativa:** {getattr(row, 'normativa_relacionada', 'No disponible')}")
-            url = getattr(row, "url_fuente", "No disponible")
-            st.markdown(f"**URL:** {url}")
+            st.markdown(f"**Fuente:** {getattr(row, 'url_fuente', 'No disponible')}")
             linked = linked_events_for_program(program_id, data)
-            if linked.empty:
-                st.caption("Sin eventos F04 vinculados en puente_evento_programa.csv.")
-            else:
+            if not linked.empty:
                 names = linked.get("nombre_evento", pd.Series(dtype=str)).astype(str).tolist()
-                st.markdown("**Eventos vinculados F04:** " + " | ".join(names))
-    st.caption(caption_for(data.programas_catalogo, "f05"))
+                st.markdown("**Eventos del programa:** " + " | ".join(sorted(set(names))))
+    st.caption(caption_con_fecha("f05", first_value(data.programas_catalogo, "fecha_consulta_max")))
 
 
 def render_metodologia(data: DashboardData) -> None:
-    st.header("Metodologia y calidad")
-    st.write(TAB_INTROS["metodologia"])
-    st.subheader("Advertencias metodologicas")
-    for warning in CRITICAL_WARNINGS:
-        st.warning(warning)
-    st.subheader("Que NO responde este tablero")
-    for item in WHAT_IT_DOES_NOT_ANSWER:
+    st.markdown(INTROS["metodologia"])
+
+    st.subheader("Reglas de lectura y advertencias")
+    for advertencia in ADVERTENCIAS_COMPLETAS:
+        st.markdown(f"- {advertencia}")
+
+    st.subheader("Preguntas que este tablero NO responde todavia")
+    for item in NO_RESPONDE:
         st.markdown(f"- {item}")
 
+    st.subheader("Aptitud de los relevamientos manuales")
     eventos_aptos = filter_by_dashboard(data.fact_eventos, "si")
-    eventos_validacion = filter_by_dashboard(data.fact_eventos, "requiere_validacion")
-    eventos_no = filter_by_dashboard(data.fact_eventos, "no")
     programas_aptos = filter_by_dashboard(data.fact_programas, "si")
-    programas_validacion = filter_by_dashboard(data.fact_programas, "requiere_validacion")
-    programas_no = filter_by_dashboard(data.fact_programas, "no")
     kpi_row(
         [
-            ("F04 aptos", len(eventos_aptos), "Aptos para metrica fuerte."),
-            ("F04 validacion/no", len(eventos_validacion) + len(eventos_no), "Fuera de metrica fuerte."),
-            ("F05 aptos", len(programas_aptos), "Aptos como catalogo."),
-            ("F05 validacion/no", len(programas_validacion) + len(programas_no), "Historicos, incompletos o en validacion."),
+            ("Eventos verificados (F04)", len(eventos_aptos), "apto_dashboard = si, fecha completa y vinculo confirmado."),
+            ("Eventos cualitativos (F04)", len(data.fact_eventos) - len(eventos_aptos), "En validacion o sin vinculo confirmado; fuera de graficos."),
+            ("Programas verificados (F05)", len(programas_aptos), "Fichas con vigencia clara."),
+            ("Programas cualitativos (F05)", len(data.fact_programas) - len(programas_aptos), "Historicos, incompletos o en validacion."),
         ]
     )
 
-    st.subheader("Trazabilidad por archivo analytics")
+    st.subheader("Trazabilidad por archivo")
     st.dataframe(traceability_rows(), width="stretch", hide_index=True)
 
-    with st.expander("dim_fuente", expanded=False):
+    with st.expander("Catalogo de fuentes (dim_fuente)", expanded=False):
         searchable_table(
             data.dim_fuente,
             ["id_fuente", "nombre_fuente", "tipo_fuente", "organismo_entidad", "url_base", "fecha_consulta", "notas"],
-            "metodologia_dim_fuente",
+            "met_fuentes",
         )
 
     guide = DOCS / "GUIA_FUENTES_DASHBOARD.md"
     if guide.exists():
-        with st.expander("Guia de fuentes dashboard", expanded=False):
+        with st.expander("Guia de fuentes para dashboard", expanded=False):
             st.markdown(guide.read_text(encoding="utf-8"))
+    st.caption("Validacion del modelo: `python src/validate_model.py --strict-real` debe terminar sin errores.")
 
 
 def main() -> None:
     data = load_dashboard_data()
-    render_global_header()
-    tabs = st.tabs(["Panorama", "Territorio", "Dinamismo (F02)", "Ecosistema publico (F03-F05)", "Metodologia y calidad"])
+    render_header()
+    tabs = st.tabs(TABS)
     with tabs[0]:
         render_panorama(data)
     with tabs[1]:

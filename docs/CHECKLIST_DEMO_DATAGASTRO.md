@@ -25,6 +25,17 @@ Warnings aceptables hoy:
 - `F02_2026` como `PENDING`: recurso no publicado y no requerido para `--strict-real`.
 - `F04` y `F05` como `PENDING` en descarga: son relevamientos manuales trazables cargados en `data/raw/`, no datasets oficiales con URL directa.
 - `F03_MERCADOS` con archivo chico: recurso complementario de mercados, validado junto con el resto de F03.
+- `geo_cache.csv` puede no existir: la geocodificacion USIG de F02 es opcional y se corre por tandas.
+
+Para construir o ampliar el cache USIG de F02:
+
+```bash
+python src/geocode_usig.py --limit 500 --solo-pendientes
+python src/build_model.py --strict-real
+python src/validate_model.py --strict-real
+```
+
+La capa de puntos F02 solo debe habilitarse si el reporte del cache muestra tasa `exacta` mayor o igual a 90%.
 
 ## 2. Abrir dashboard
 

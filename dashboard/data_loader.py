@@ -2,12 +2,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-from dashboard.dashboard_config import ANALYTICS, CATEGORY_COLORS, DEFAULT_POINT_COLOR, FIAB_POINT_COLOR, PROCESSED, RAW
+from dashboard.dashboard_config import ANALYTICS, CATEGORY_COLORS, DEFAULT_POINT_COLOR, F02_USIG_POINT_COLOR, FIAB_POINT_COLOR, PROCESSED, RAW
 
 
 @dataclass(frozen=True)
@@ -26,6 +27,7 @@ class DashboardData:
     programas_cualitativos: pd.DataFrame
     mapa_oportunidades: pd.DataFrame
     fact_establecimientos: pd.DataFrame
+    fact_habilitaciones: pd.DataFrame
     fact_espacios_f03: pd.DataFrame
     fact_puestos_f03: pd.DataFrame
     fact_eventos: pd.DataFrame
@@ -34,6 +36,7 @@ class DashboardData:
     dim_fuente: pd.DataFrame
     dim_categoria: pd.DataFrame
     dim_ubicacion: pd.DataFrame
+    geo_cache: pd.DataFrame
 
 
 @st.cache_data(show_spinner=False)
@@ -70,6 +73,7 @@ def load_dashboard_data() -> DashboardData:
         programas_cualitativos=read_csv(ANALYTICS / "analytics_programas_cualitativos.csv"),
         mapa_oportunidades=read_csv(ANALYTICS / "analytics_mapa_oportunidades.csv"),
         fact_establecimientos=read_csv(PROCESSED / "fact_establecimiento.csv"),
+        fact_habilitaciones=read_csv(PROCESSED / "fact_habilitacion_gastronomica.csv"),
         fact_espacios_f03=read_csv(PROCESSED / "fact_espacio_feria_mercado.csv"),
         fact_puestos_f03=read_csv(PROCESSED / "fact_puesto_feria.csv"),
         fact_eventos=read_csv(PROCESSED / "fact_evento_gastronomico.csv"),
@@ -78,6 +82,7 @@ def load_dashboard_data() -> DashboardData:
         dim_fuente=read_csv(PROCESSED / "dim_fuente.csv"),
         dim_categoria=read_csv(PROCESSED / "dim_categoria_gastronomica.csv"),
         dim_ubicacion=read_csv(PROCESSED / "dim_ubicacion.csv"),
+        geo_cache=read_csv(PROCESSED / "geo_cache.csv"),
     )
 
 
@@ -127,6 +132,15 @@ def map_ready(df: pd.DataFrame) -> pd.DataFrame:
     return result.dropna(subset=["latitud_num", "longitud_num"])
 
 
+def map_ready_usig(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty or not {"latitud", "longitud", "calidad_geo"}.issubset(df.columns):
+        return pd.DataFrame()
+    result = df[df["calidad_geo"].astype(str).isin(["usig_exacta", "usig_aproximada"])].copy()
+    result["latitud_num"] = coordinate_series(result["latitud"])
+    result["longitud_num"] = coordinate_series(result["longitud"])
+    return result.dropna(subset=["latitud_num", "longitud_num"])
+
+
 def category_color(value: object) -> list[int]:
     return CATEGORY_COLORS.get(str(value), DEFAULT_POINT_COLOR)
 
@@ -168,6 +182,38 @@ def prepare_f03_map(data: DashboardData) -> pd.DataFrame:
         result["tooltip_categoria"] = result["tipo_espacio"]
         result["tooltip_detalle"] = result["productos"]
     return result
+
+
+def geo_cache_report(geo_cache: pd.DataFrame) -> dict[str, float | int | bool]:
+    if geo_cache.empty or "estado" not in geo_cache.columns:
+        return {"total": 0, "exacta": 0, "aproximada": 0, "exact_rate": 0.0, "promovible": False}
+    counts = geo_cache["estado"].astype(str).value_counts().to_dict()
+    total = len(geo_cache)
+    exact = int(counts.get("exacta", 0))
+    exact_rate = (exact / total * 100) if total else 0.0
+    return {
+        "total": total,
+        "exacta": exact,
+        "aproximada": int(counts.get("aproximada", 0)),
+        "exact_rate": exact_rate,
+        "promovible": bool(total and exact_rate >= 90),
+    }
+
+
+def prepare_f02_usig_map(data: DashboardData) -> tuple[pd.DataFrame, dict[str, float | int | bool]]:
+    report = geo_cache_report(data.geo_cache)
+    if not report["promovible"] or data.fact_habilitaciones.empty or data.dim_ubicacion.empty:
+        return pd.DataFrame(), report
+    result = data.fact_habilitaciones.merge(data.dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
+    result = map_ready_usig(result)
+    result = ensure_columns(result, ["descripcion_rubro_original", "categoria_gastronomica_inferida", "direccion_original", "barrio", "comuna"])
+    if not result.empty:
+        result["color"] = [F02_USIG_POINT_COLOR for _ in range(len(result))]
+        result["capa"] = "F02 USIG"
+        result["tooltip_categoria"] = result["categoria_gastronomica_inferida"]
+        result["tooltip_detalle"] = result["descripcion_rubro_original"]
+        result["nombre"] = "Habilitacion " + result.get("id_habilitacion", pd.Series(dtype=str)).astype(str)
+    return result, report
 
 
 def top_f01_barrios(est_cat_barrio: pd.DataFrame, limit: int = 3) -> pd.DataFrame:
@@ -219,7 +265,6 @@ def prepare_f02_choropleth(data: DashboardData) -> tuple[dict, float]:
         props = dict(feature.get("properties") or {})
         comuna_raw = str(props.get("comuna") or props.get("COMUNA") or props.get("id") or props.get("ID") or "")
         comuna = ""
-        import re
         match = re.search(r"(1[0-5]|[1-9])", comuna_raw)
         if match:
             comuna = str(int(match.group(1)))
@@ -240,6 +285,53 @@ def prepare_f02_choropleth(data: DashboardData) -> tuple[dict, float]:
         features.append(enriched)
     return {"type": "FeatureCollection", "features": features}, coverage
 
+def lectura_serie_f02(hab_anio: pd.DataFrame) -> str:
+    """Resume la serie anual comparable: anio pico, valle y ultimo anio."""
+    if hab_anio.empty or "comparable_como_flujo_anual" not in hab_anio.columns:
+        return ""
+    serie = hab_anio[hab_anio["comparable_como_flujo_anual"].astype(str) == "si"].copy()
+    if serie.empty:
+        return ""
+    serie["n"] = numeric_series(serie["cantidad_habilitaciones"])
+    serie = serie.sort_values("anio_fuente")
+    pico = serie.loc[serie["n"].idxmax()]
+    valle = serie.loc[serie["n"].idxmin()]
+    ultimo = serie.iloc[-1]
+    return (
+        f"En la serie comparable, el anio con mas habilitaciones gastronomicas fue {pico['anio_fuente']} "
+        f"({int(pico['n'])}) y el de menos fue {valle['anio_fuente']} ({int(valle['n'])}). "
+        f"El ultimo anio comparable ({ultimo['anio_fuente']}) registro {int(ultimo['n'])}."
+    )
+
+
+def lectura_comuna_f02(hab_barrio: pd.DataFrame) -> str:
+    """Comuna lider en habilitaciones, sobre los registros con comuna informada."""
+    if hab_barrio.empty or "comuna" not in hab_barrio.columns:
+        return ""
+    df = hab_barrio[hab_barrio["comuna"].astype(str).isin([str(v) for v in range(1, 16)])].copy()
+    if df.empty:
+        return ""
+    df["n"] = numeric_series(df["cantidad_habilitaciones"])
+    df = df.groupby("comuna")["n"].sum().sort_values(ascending=False)
+    total = df.sum()
+    top = df.index[0]
+    share = df.iloc[0] / total * 100 if total else 0
+    return (
+        f"Entre los registros con comuna informada, la comuna {top} concentra el {share:.0f}% "
+        f"de las habilitaciones gastronomicas ({int(df.iloc[0])} sobre {int(total)})."
+    )
+
+
+def lectura_f03(fact_espacios: pd.DataFrame) -> str:
+    """Composicion de los espacios F03 en una frase."""
+    if fact_espacios.empty or "tipo_espacio" not in fact_espacios.columns:
+        return ""
+    tipos = fact_espacios["tipo_espacio"].value_counts()
+    alimentarios = (fact_espacios.get("es_gastronomico", pd.Series(dtype=str)).astype(str) == "si").sum()
+    partes = ", ".join(f"{count} {tipo}" for tipo, count in tipos.items())
+    return f"Hay {len(fact_espacios)} espacios relevados ({partes}); {alimentarios} tienen perfil alimentario."
+
+
 def linked_events_for_program(program_id: str, data: DashboardData) -> pd.DataFrame:
     if data.puente_evento_programa.empty or data.fact_eventos.empty:
         return pd.DataFrame()
@@ -247,4 +339,3 @@ def linked_events_for_program(program_id: str, data: DashboardData) -> pd.DataFr
     if links.empty:
         return pd.DataFrame()
     return links.merge(data.fact_eventos, on="id_evento", how="left", suffixes=("_puente", ""))
-
