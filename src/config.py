@@ -27,7 +27,7 @@ SOURCE_CONFIG = {
         "formato": "csv",
         "prioridad": "alta",
         "fecha_consulta": "2026-06-10",
-        "limitaciones": "Puede tener mojibake; no trae lat/lon; no trae fecha por registro; puede estar desactualizado.",
+        "limitaciones": "Puede tener mojibake; trae lat/lon de fuente para mapa; no trae fecha por registro; puede estar desactualizado.",
         "required_strict": True,
         "seed_glob": "raw_establecimientos_gastronomicos.csv",
         "raw_patterns": [

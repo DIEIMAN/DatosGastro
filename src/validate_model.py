@@ -8,6 +8,11 @@ import pandas as pd
 
 from config import DATA_ANALYTICS, DATA_PROCESSED, DATA_RAW, SOURCE_CONFIG
 
+CABA_LAT_MIN = -34.75
+CABA_LAT_MAX = -34.50
+CABA_LON_MIN = -58.55
+CABA_LON_MAX = -58.30
+
 
 EXPECTED_TABLES = {
     "dim_fuente.csv": "id_fuente",
@@ -103,6 +108,10 @@ def add(messages: list[tuple[str, str]], level: str, text: str) -> None:
     print(f"{level:7s} {text}")
 
 
+def _coordinate_series(series: pd.Series) -> pd.Series:
+    return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
+
+
 def _real_source_files() -> list[Path]:
     paths = []
     for source in SOURCE_CONFIG.values():
@@ -155,6 +164,29 @@ def validate(strict_real: bool = False) -> int:
             add(messages, "ERROR", f"FK sin match {fact_name}.{fact_key}: {missing[:10]}")
         else:
             add(messages, "OK", f"FK valida {fact_name}.{fact_key} -> {dim_name}.{dim_key}")
+
+    ubicaciones = tables.get("dim_ubicacion.csv")
+    if ubicaciones is not None and {"latitud", "longitud"}.issubset(ubicaciones.columns):
+        lat = _coordinate_series(ubicaciones["latitud"])
+        lon = _coordinate_series(ubicaciones["longitud"])
+        has_lat = lat.notna()
+        has_lon = lon.notna()
+        incomplete = ubicaciones[has_lat ^ has_lon]
+        if not incomplete.empty:
+            add(messages, "ERROR", f"dim_ubicacion tiene {len(incomplete)} filas con coordenada incompleta")
+        mapped = ubicaciones[has_lat & has_lon].copy()
+        mapped_lat = lat[has_lat & has_lon]
+        mapped_lon = lon[has_lat & has_lon]
+        out_of_bounds = mapped[
+            ~(
+                mapped_lat.between(CABA_LAT_MIN, CABA_LAT_MAX)
+                & mapped_lon.between(CABA_LON_MIN, CABA_LON_MAX)
+            )
+        ]
+        if out_of_bounds.empty:
+            add(messages, "OK", f"dim_ubicacion coordenadas dentro de bounding box CABA ({len(mapped)} filas mapeables)")
+        else:
+            add(messages, "ERROR", f"dim_ubicacion tiene {len(out_of_bounds)} filas con coordenadas fuera de CABA")
 
     for filename, columns in TRACEABILITY_COLUMNS.items():
         df = tables.get(filename)

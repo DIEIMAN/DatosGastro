@@ -28,10 +28,10 @@ F02 no es un padron vivo de establecimientos activos. Es un registro de habilita
 
 Regla de comunicacion:
 
-- No mostrar "90.764 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos.
+- No mostrar "40.295 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos.
 - Mostrar "2.823 registros en Oferta Gastronomica F01".
-- Mostrar "87.934 habilitaciones gastronomicas inferidas desde AGC F02".
-- Mostrar "4.388 registros de ferias/mercados F03".
+- Mostrar "37.472 habilitaciones gastronomicas inferidas desde AGC F02".
+- Mostrar "4.572 registros de ferias/mercados F03".
 
 Cada metrica debe incluir fuente, URL, fecha de consulta, metodologia y limitaciones.
 

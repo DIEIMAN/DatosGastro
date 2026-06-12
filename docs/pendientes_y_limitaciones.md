@@ -18,7 +18,7 @@
 - Los seeds son fallback de desarrollo y no son aptos para dashboard real.
 - F01 es oferta/establecimientos registrados, pero no confirma vigencia actual por registro.
 - F02 son habilitaciones aprobadas AGC; no representan establecimientos activos unicos.
-- La clasificacion gastronomica de F02 es inferida desde descripcion de rubro y requiere cautela en casos ambiguos.
+- La clasificacion gastronomica de F02 es inferida desde descripcion de rubro y requiere cautela en casos ambiguos. La venta minorista de productos alimenticios sin evidencia de servicio gastronomico se clasifica aparte como `Comercio alimenticio minorista` y no se cuenta como habilitacion gastronomica de servicio.
 - F03 incluye recursos con cobertura desigual; `f03_mercados.csv` quedo marcado como sospechoso por tamano menor a 1 KB.
 - Eventos con sedes multiples o no determinadas usan `U00000`.
 - F04 no representa el universo completo de eventos gastronomicos de CABA.

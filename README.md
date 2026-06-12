@@ -64,7 +64,7 @@ Regla conceptual para dashboard:
 - `fact_evento_gastronomico.csv` representa F04: eventos/activaciones relevados manualmente con trazabilidad.
 - `fact_programa_politica.csv` representa F05: catalogo de programas, politicas, normativa e instrumentos.
 
-No sumar F01 + F02 como si fueran establecimientos activos unicos. En particular, no mostrar "90.764 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos. Mostrar metricas separadas con fuente, fecha de consulta y limitaciones.
+No sumar F01 + F02 como si fueran establecimientos activos unicos. En particular, no mostrar "40.295 establecimientos gastronomicos" ni ningun total combinado F01+F02 como establecimientos. Mostrar metricas separadas con fuente, fecha de consulta y limitaciones.
 
 Para validar si el proyecto esta listo para analisis serio o dashboard real:
 
@@ -107,8 +107,8 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 ## Indicadores base actuales
 
 - 2.823 registros en Oferta Gastronomica F01.
-- 87.934 habilitaciones gastronomicas inferidas desde AGC F02.
-- 4.388 registros de ferias/mercados F03.
+- 37.472 habilitaciones gastronomicas inferidas desde AGC F02.
+- 4.572 registros de ferias/mercados F03.
 - 29 eventos F04 cargados; 13 aptos para metricas fuertes y 16 cualitativos/en validacion/no aptos.
 - 9 programas/instrumentos F05 cargados; 4 aptos para catalogo dashboard y 5 cualitativos/en validacion/no aptos.
 

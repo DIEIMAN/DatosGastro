@@ -297,7 +297,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_habilitacion_gastronomica.csv
 
-- Filas x columnas: 87934 x 24
+- Filas x columnas: 37472 x 24
 - Origen detectado: datos reales parciales
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard
@@ -307,7 +307,7 @@ Se eligio la opcion A: `data/raw/` queda reservado para datos reales descargados
 
 ### fact_mercado_feria.csv
 
-- Filas x columnas: 4388 x 20
+- Filas x columnas: 4572 x 20
 - Origen detectado: datos reales parciales
 - Apto dashboard: requiere_validacion
 - Motivo: requiere revisar contrato, fuente y cobertura antes de dashboard

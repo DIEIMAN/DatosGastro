@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 from datetime import date
 from pathlib import Path
 
@@ -14,6 +15,10 @@ from normalize_categories import classify_gastronomic_category, taxonomy_datafra
 from source_contracts import SourceLoadResult, map_source_columns
 
 TODAY = date.today().isoformat()
+CABA_LAT_MIN = -34.75
+CABA_LAT_MAX = -34.50
+CABA_LON_MIN = -58.55
+CABA_LON_MAX = -58.30
 
 NULL_SENTINELS = {
     "",
@@ -247,11 +252,113 @@ def has_complete_date(value: str) -> bool:
     return bool(pd.to_datetime(pd.Series([cleaned]), errors="coerce").notna().iloc[0])
 
 
+def parse_coordinate(value) -> float | None:
+    text = normalize_text(value)
+    if not text or is_sentinel(text):
+        return None
+    text = text.replace(",", ".")
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def in_caba_bounds(lat: float | None, lon: float | None) -> bool:
+    return (
+        lat is not None
+        and lon is not None
+        and CABA_LAT_MIN <= lat <= CABA_LAT_MAX
+        and CABA_LON_MIN <= lon <= CABA_LON_MAX
+    )
+
+
+def format_coordinate(value: float) -> str:
+    return f"{value:.8f}".rstrip("0").rstrip(".")
+
+
+def official_point_location(address, barrio, lat_value, lon_value, reason: str) -> dict:
+    location = normalize_address_offline(address, barrio)
+    lat = parse_coordinate(lat_value)
+    lon = parse_coordinate(lon_value)
+    if in_caba_bounds(lat, lon):
+        location["latitud"] = format_coordinate(lat)
+        location["longitud"] = format_coordinate(lon)
+        location["calidad_geo"] = "fuente_oficial"
+        location["requiere_validacion"] = "no"
+        location["motivo_validacion"] = reason
+    elif lat is not None or lon is not None:
+        location["latitud"] = "No disponible"
+        location["longitud"] = "No disponible"
+        location["calidad_geo"] = "sospechosa"
+        location["requiere_validacion"] = "si"
+        location["motivo_validacion"] = "Coordenadas de fuente fuera del bounding box CABA; no mapear"
+    return location
+
+
 def cached_location(cache: dict[tuple[str, str], dict], address: str, barrio: str) -> dict:
     key = (normalize_text(address), normalize_text(barrio))
     if key not in cache:
         cache[key] = normalize_address_offline(address, barrio)
     return cache[key].copy()
+
+
+def cached_official_location(cache: dict[tuple[str, str, str, str], dict], row: pd.Series, lat_col: str = "latitud", lon_col: str = "longitud") -> dict:
+    key = (
+        normalize_text(row.get("direccion_original")),
+        normalize_text(row.get("barrio_original")),
+        normalize_text(row.get(lat_col)),
+        normalize_text(row.get(lon_col)),
+    )
+    if key not in cache:
+        cache[key] = official_point_location(
+            row.get("direccion_original"),
+            row.get("barrio_original"),
+            row.get(lat_col),
+            row.get(lon_col),
+            "Coordenadas provistas por fuente oficial",
+        )
+    return cache[key].copy()
+
+
+def load_fiab_geojson() -> pd.DataFrame:
+    path = DATA_RAW / "f03_fiab.geojson"
+    if not path.exists():
+        return pd.DataFrame()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    rows = []
+    for feature in data.get("features", []):
+        props = feature.get("properties") or {}
+        geometry = feature.get("geometry") or {}
+        coordinates = geometry.get("coordinates") or []
+        lon = coordinates[0] if len(coordinates) >= 2 else None
+        lat = coordinates[1] if len(coordinates) >= 2 else None
+        rows.append(
+            {
+                "id_raw": f"FIAB-{props.get('id', len(rows) + 1)}",
+                "id_fuente": "F03",
+                "nombre_original": props.get("nombre", ""),
+                "tipo_original": "FIAB",
+                "direccion_original": props.get("direccion") or props.get("ubicacion") or "",
+                "barrio_original": props.get("barrio", ""),
+                "comuna_original": props.get("comuna", ""),
+                "dias_horarios_original": props.get("dia", ""),
+                "horario_original": props.get("horario", ""),
+                "productos": props.get("productos", ""),
+                "gestion_original": "Ministerio de Espacio Publico",
+                "latitud": lat,
+                "longitud": lon,
+                "url_fuente": SOURCE_CONFIG["F03_FIAB_GEOJSON"].get("dataset_url", ""),
+                "download_url": SOURCE_CONFIG["F03_FIAB_GEOJSON"].get("download_url", ""),
+                "fecha_consulta": SOURCE_CONFIG["F03_FIAB_GEOJSON"].get("fecha_consulta", TODAY),
+                "calidad_dato": "alta",
+                "requiere_validacion": "no",
+                "motivo_validacion": "Coordenadas provistas por GeoJSON FIAB",
+                "observaciones_raw": first_existing(props.get("observacio"), default=""),
+                "origen_dato": "datos reales",
+                "estado_datos": "datos reales",
+            }
+        )
+    return pd.DataFrame(rows)
 
 
 def filter_gastronomic_habilitations(hab: pd.DataFrame) -> pd.DataFrame:
@@ -321,7 +428,7 @@ def build_dim_categoria() -> pd.DataFrame:
     return pd.DataFrame(taxonomy_dataframe_rows())
 
 
-def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, eventos: pd.DataFrame) -> pd.DataFrame:
+def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, eventos: pd.DataFrame, fiab: pd.DataFrame) -> pd.DataFrame:
     rows = [
         {
             "id_ubicacion": UNKNOWN_LOCATION_ID,
@@ -339,9 +446,9 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
         }
     ]
     location_cache: dict[tuple[str, str], dict] = {}
+    official_location_cache: dict[tuple[str, str, str, str], dict] = {}
 
     for df, address_col, barrio_col in (
-        (est, "direccion_original", "barrio_original"),
         (hab, "direccion_original", "barrio_original"),
         (ferias, "direccion_original", "barrio_original"),
     ):
@@ -355,7 +462,13 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, ferias: pd.DataFrame, 
             continue
         rows.append(cached_location(location_cache, location, barrio_raw))
 
-    df = pd.DataFrame(rows).drop_duplicates("id_ubicacion")
+    for _, row in est.iterrows():
+        rows.append(cached_official_location(official_location_cache, row))
+
+    for _, row in fiab.iterrows():
+        rows.append(cached_official_location(official_location_cache, row))
+
+    df = pd.DataFrame(rows).drop_duplicates("id_ubicacion", keep="last")
     return df
 
 
@@ -453,14 +566,14 @@ def build_fact_establecimiento(est: pd.DataFrame, dim_fuente: pd.DataFrame) -> p
     urls = source_urls(dim_fuente)
     rows = []
     category_cache = {}
-    location_cache: dict[tuple[str, str], dict] = {}
+    location_cache: dict[tuple[str, str, str, str], dict] = {}
     for idx, row in est.iterrows():
         category_key = (row.get("categoria_original"), row.get("nombre_original"))
         category = category_cache.get(category_key)
         if category is None:
             category = classify_gastronomic_category(*category_key)
             category_cache[category_key] = category
-        location_id = cached_location(location_cache, row.get("direccion_original"), row.get("barrio_original"))["id_ubicacion"]
+        location_id = cached_official_location(location_cache, row)["id_ubicacion"]
         source_id = first_existing(row.get("id_fuente"), default="F01")
         rows.append(
             {
@@ -666,9 +779,10 @@ def build_fact_evento(eventos: pd.DataFrame, dim_fuente: pd.DataFrame, dim_organ
     return pd.DataFrame(rows, columns=columns)
 
 
-def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
+def build_fact_mercado_feria(ferias: pd.DataFrame, fiab: pd.DataFrame, dim_fuente: pd.DataFrame) -> pd.DataFrame:
     urls = source_urls(dim_fuente)
     rows = []
+    location_cache: dict[tuple[str, str, str, str], dict] = {}
     for idx, row in ferias.iterrows():
         source_id = first_existing(row.get("id_fuente"), default="F03")
         rows.append(
@@ -693,6 +807,33 @@ def build_fact_mercado_feria(ferias: pd.DataFrame, dim_fuente: pd.DataFrame) -> 
                 "observaciones": first_existing(row.get("observaciones_raw"), default=""),
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos seed"),
                 "estado_datos": first_existing(row.get("estado_datos"), default="datos seed"),
+            }
+        )
+    for idx, row in fiab.iterrows():
+        source_id = first_existing(row.get("id_fuente"), default="F03")
+        location = cached_official_location(location_cache, row)
+        rows.append(
+            {
+                "id_mercado_feria": f"FIAB{idx + 1:05d}",
+                "nombre": normalize_proper_name(row.get("nombre_original")),
+                "tipo_espacio": "FIAB",
+                "id_ubicacion": location["id_ubicacion"],
+                "gestion": first_existing(row.get("gestion_original"), default="Ministerio de Espacio Publico"),
+                "dias_funcionamiento": first_existing(row.get("dias_horarios_original"), default="No disponible"),
+                "horarios": first_existing(row.get("horario_original"), default="No disponible"),
+                "cantidad_puestos": "No disponible",
+                "rubros": first_existing(row.get("productos"), default="No disponible"),
+                "estado": "activo",
+                "id_fuente": source_id,
+                "url_fuente": first_existing(row.get("url_fuente"), default=urls.get(source_id, "No disponible")),
+                "fecha_consulta": first_existing(row.get("fecha_consulta"), default=TODAY),
+                "link": first_existing(row.get("download_url"), default="No disponible"),
+                "calidad_dato": first_existing(row.get("calidad_dato"), default="alta"),
+                "requiere_validacion": first_existing(row.get("requiere_validacion"), default="no"),
+                "motivo_validacion": first_existing(row.get("motivo_validacion"), default="Coordenadas provistas por GeoJSON FIAB"),
+                "observaciones": first_existing(row.get("observaciones_raw"), default=""),
+                "origen_dato": first_existing(row.get("origen_dato"), default="datos reales"),
+                "estado_datos": first_existing(row.get("estado_datos"), default="datos reales"),
             }
         )
     return pd.DataFrame(rows)
@@ -819,6 +960,7 @@ def main() -> int:
     est, est_reports = load_source_data("F01")
     hab, hab_reports = load_source_data("F02")
     ferias, ferias_reports = load_source_data("F03")
+    fiab = load_fiab_geojson()
     eventos, eventos_reports = load_source_data("F04")
     programas, programas_reports = load_source_data("F05")
     hab_gastronomica = filter_gastronomic_habilitations(hab)
@@ -843,12 +985,12 @@ def main() -> int:
 
     dim_fuente = build_dim_fuente()
     dim_categoria = build_dim_categoria()
-    dim_ubicacion = build_locations(est, hab_gastronomica, ferias, eventos)
+    dim_ubicacion = build_locations(est, hab_gastronomica, ferias, eventos, fiab)
     dim_organizador = build_dim_organizador(eventos)
     fact_establecimiento = build_fact_establecimiento(est, dim_fuente)
     fact_habilitacion = build_fact_habilitacion_gastronomica(hab_gastronomica, dim_fuente)
     fact_evento = build_fact_evento(eventos, dim_fuente, dim_organizador)
-    fact_mercado = build_fact_mercado_feria(ferias, dim_fuente)
+    fact_mercado = build_fact_mercado_feria(ferias, fiab, dim_fuente)
     fact_programa = build_fact_programa(programas, dim_fuente)
     puente_evento_programa = build_puente_evento_programa(fact_evento, fact_programa)
 

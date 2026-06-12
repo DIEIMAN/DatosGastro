@@ -1,6 +1,6 @@
 # Contratos de fuentes
 
-Generado: 2026-06-11
+Generado: 2026-06-12
 
 Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y que columnas pudieron mapearse al contrato canonico.
 
@@ -9,9 +9,9 @@ Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y 
 - Archivo: `C:\proyectos\Gastronomia\DataGastro\data\raw\f01_oferta_establecimientos_gastronomicos.csv`
 - Origen: real
 - Filas: 2823
-- Columnas mapeadas: recurso=F01; id_raw <- id; nombre_original <- nombre; categoria_original <- categoria; direccion_original <- direccion_completa; barrio_original <- barrio; comuna_original <- comuna
+- Columnas mapeadas: recurso=F01; id_raw <- id; nombre_original <- nombre; categoria_original <- categoria; direccion_original <- direccion_completa; barrio_original <- barrio; comuna_original <- comuna; longitud <- long; latitud <- lat
 - Columnas requeridas faltantes: Ninguna
-- Columnas extra no usadas: long; lat; cocina; ambientacion; telefono; mail; horario; calle_nombre; calle_altura; calle_cruce; codigo_postal; codigo_postal_argentino
+- Columnas extra no usadas: cocina; ambientacion; telefono; mail; horario; calle_nombre; calle_altura; calle_cruce; codigo_postal; codigo_postal_argentino
 
 ## F02
 

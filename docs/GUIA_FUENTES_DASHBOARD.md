@@ -6,15 +6,15 @@ Regla V3: si una vista usa seeds/manuales, debe mostrarse como no apta para dash
 
 Nunca mostrar:
 
-> "90.764 establecimientos gastronomicos"
+> "40.295 establecimientos gastronomicos"
 
 Tampoco mostrar ningun total combinado F01+F02 como establecimientos activos.
 
 Mostrar metricas separadas:
 
 > "2.823 registros en Oferta Gastronomica F01"
-> "87.934 habilitaciones gastronomicas inferidas desde AGC F02"
-> "4.388 registros de ferias/mercados F03"
+> "37.472 habilitaciones gastronomicas inferidas desde AGC F02"
+> "4.572 registros de ferias/mercados F03"
 
 Cada metrica debe mostrar fuente, URL o dataset, fecha de consulta, procesamiento propio y limitaciones.
 

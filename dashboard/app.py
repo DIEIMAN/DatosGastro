@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+import pydeck as pdk
 import streamlit as st
 
 
@@ -99,6 +100,47 @@ def bar_chart(df: pd.DataFrame, label: str, value: str, title: str, limit: int =
     st.bar_chart(chart)
 
 
+def coordinate_series(series: pd.Series) -> pd.Series:
+    return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
+
+
+def category_color(value: object) -> list[int]:
+    palette = {
+        "Restaurante": [43, 108, 176, 170],
+        "Bar": [214, 94, 96, 170],
+        "Cafe": [136, 86, 167, 170],
+        "Bar notable": [188, 189, 34, 170],
+        "Heladeria": [23, 190, 207, 170],
+        "Pizzeria": [255, 127, 14, 170],
+        "Parrilla": [140, 86, 75, 170],
+        "Panaderia": [44, 160, 44, 170],
+        "Pasteleria": [227, 119, 194, 170],
+        "Mercado": [31, 119, 180, 170],
+        "Feria": [148, 103, 189, 170],
+        "Foodtruck": [127, 127, 127, 170],
+        "Catering": [188, 127, 14, 170],
+        "Comida al paso": [102, 166, 30, 170],
+    }
+    return palette.get(str(value), [80, 80, 80, 150])
+
+
+def map_ready(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty or not {"latitud", "longitud", "calidad_geo"}.issubset(df.columns):
+        return pd.DataFrame()
+    result = df[df["calidad_geo"].astype(str) == "fuente_oficial"].copy()
+    result["latitud_num"] = coordinate_series(result["latitud"])
+    result["longitud_num"] = coordinate_series(result["longitud"])
+    return result.dropna(subset=["latitud_num", "longitud_num"])
+
+
+def ensure_columns(df: pd.DataFrame, columns: list[str], default: str = "") -> pd.DataFrame:
+    result = df.copy()
+    for column in columns:
+        if column not in result.columns:
+            result[column] = default
+    return result
+
+
 def split_fact_by_dashboard(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if df.empty or "apto_dashboard" not in df.columns:
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
@@ -122,10 +164,13 @@ programas_catalogo = read_csv(ANALYTICS / "analytics_programas_catalogo.csv")
 programas_cualitativos = read_csv(ANALYTICS / "analytics_programas_cualitativos.csv")
 mapa_oportunidades = read_csv(ANALYTICS / "analytics_mapa_oportunidades.csv")
 
+fact_establecimientos = read_csv(PROCESSED / "fact_establecimiento.csv")
 fact_mercados = read_csv(PROCESSED / "fact_mercado_feria.csv")
 fact_eventos = read_csv(PROCESSED / "fact_evento_gastronomico.csv")
 fact_programas = read_csv(PROCESSED / "fact_programa_politica.csv")
 dim_fuente = read_csv(PROCESSED / "dim_fuente.csv")
+dim_categoria = read_csv(PROCESSED / "dim_categoria_gastronomica.csv")
+dim_ubicacion = read_csv(PROCESSED / "dim_ubicacion.csv")
 
 eventos_aptos, eventos_validacion, eventos_no_aptos = split_fact_by_dashboard(fact_eventos)
 programas_aptos, programas_validacion, programas_no_aptos = split_fact_by_dashboard(fact_programas)
@@ -319,6 +364,98 @@ with tabs[6]:
     section_warning(
         "La tabla distingue F01, F02 y F03. No mezclar todo en un unico score sin explicar la metodologia."
     )
+    show_f01 = st.checkbox("Capa F01 oferta registrada", value=True)
+    show_fiab = st.checkbox("Capa F03/FIAB", value=True)
+
+    f01_map = pd.DataFrame()
+    if not fact_establecimientos.empty and not dim_ubicacion.empty:
+        f01_map = fact_establecimientos.merge(dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
+        if not dim_categoria.empty:
+            f01_map = f01_map.merge(dim_categoria[["id_categoria", "categoria_general"]], on="id_categoria", how="left")
+        f01_map = map_ready(f01_map)
+        if not f01_map.empty:
+            f01_map = ensure_columns(f01_map, ["categoria_general", "dias_funcionamiento", "rubros"])
+            f01_map["color"] = f01_map["categoria_general"].map(category_color)
+
+    fiab_all = fact_mercados[fact_mercados.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"].copy() if not fact_mercados.empty else pd.DataFrame()
+    fiab_map = pd.DataFrame()
+    if not fiab_all.empty and not dim_ubicacion.empty:
+        fiab_map = fiab_all.merge(dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
+        fiab_map = map_ready(fiab_map)
+        if not fiab_map.empty:
+            fiab_map = ensure_columns(fiab_map, ["categoria_general", "dias_funcionamiento", "rubros"])
+            fiab_map["categoria_general"] = "FIAB"
+            fiab_map["color"] = [[40, 150, 95, 220] for _ in range(len(fiab_map))]
+
+    metric_cols = st.columns(2)
+    f01_pct = (len(f01_map) / len(fact_establecimientos) * 100) if len(fact_establecimientos) else 0
+    fiab_pct = (len(fiab_map) / len(fiab_all) * 100) if len(fiab_all) else 0
+    metric_cols[0].metric("F01 con punto mapeable", f"{f01_pct:.1f}%", f"{len(f01_map)} de {len(fact_establecimientos)}")
+    metric_cols[1].metric("F03/FIAB con punto mapeable", f"{fiab_pct:.1f}%", f"{len(fiab_map)} de {len(fiab_all)}")
+    st.caption("Se excluyen del mapa las filas sin `calidad_geo=fuente_oficial`. No se mapean F02, puestos de feria, eventos F04 ni programas F05.")
+
+    layers = []
+    visible_frames = []
+    if show_f01 and not f01_map.empty:
+        visible_frames.append(f01_map)
+        layers.append(
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=f01_map,
+                get_position="[longitud_num, latitud_num]",
+                get_fill_color="color",
+                get_radius=35,
+                pickable=True,
+                opacity=0.75,
+            )
+        )
+    if show_fiab and not fiab_map.empty:
+        visible_frames.append(fiab_map)
+        layers.append(
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=fiab_map,
+                get_position="[longitud_num, latitud_num]",
+                get_fill_color="color",
+                get_radius=80,
+                pickable=True,
+                opacity=0.9,
+            )
+        )
+    if layers and visible_frames:
+        visible = pd.concat(visible_frames, ignore_index=True)
+        view_state = pdk.ViewState(
+            latitude=float(visible["latitud_num"].mean()),
+            longitude=float(visible["longitud_num"].mean()),
+            zoom=11,
+            pitch=0,
+        )
+        st.pydeck_chart(
+            pdk.Deck(
+                map_style=None,
+                initial_view_state=view_state,
+                layers=layers,
+                tooltip={
+                    "html": (
+                        "<b>{nombre}</b><br/>"
+                        "Categoria: {categoria_general}<br/>"
+                        "Direccion: {direccion_original}<br/>"
+                        "Barrio: {barrio}<br/>"
+                        "Dia: {dias_funcionamiento}<br/>"
+                        "Productos: {rubros}"
+                    ),
+                    "style": {"backgroundColor": "#ffffff", "color": "#111111"},
+                },
+            ),
+            use_container_width=True,
+        )
+    else:
+        st.info("No hay capas seleccionadas con puntos oficiales mapeables.")
+
+    st.caption(
+        "Fuente: Buenos Aires Data (ENTUR / Min. Espacio Publico). Coordenadas provistas por la fuente; no se geocodifico. F01 no confirma vigencia actual por registro."
+    )
+
     cols = [
         "barrio",
         "comuna",
@@ -359,7 +496,7 @@ with tabs[7]:
 
 with tabs[8]:
     st.header("9. Chequeos de calidad")
-    st.success("Resultado esperado actual: validate_model.py --strict-real => OK=39 WARNING=0 ERROR=0")
+    st.success("Resultado esperado actual: validate_model.py --strict-real => OK=40 WARNING=0 ERROR=0")
     st.subheader("Conteos por fuente")
     conteos = pd.DataFrame(
         [

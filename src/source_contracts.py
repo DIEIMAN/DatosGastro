@@ -32,6 +32,8 @@ SOURCE_COLUMN_CONTRACTS = {
         "direccion_original": ["direccion_original", "direccion", "domicilio", "domicilio_completo", "direccion_completa", "calle", "ubicacion"],
         "barrio_original": ["barrio_original", "barrio"],
         "comuna_original": ["comuna_original", "comuna"],
+        "longitud": ["longitud", "lon", "lng", "long", "x"],
+        "latitud": ["latitud", "lat", "y"],
         "fecha_extraccion": ["fecha_extraccion", "fecha_consulta", "fecha_actualizacion"],
         "calidad_dato": ["calidad_dato"],
         "requiere_validacion": ["requiere_validacion"],
