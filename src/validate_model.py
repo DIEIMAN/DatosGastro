@@ -347,17 +347,38 @@ def validate(strict_real: bool = False) -> int:
         else:
             add(messages, "ERROR", f"dim_ubicacion tiene {len(out_of_bounds)} filas con coordenadas fuera de CABA")
         if "calidad_geo" in ubicaciones.columns:
-            usig = ubicaciones[ubicaciones["calidad_geo"].astype(str).str.startswith("usig_")].copy()
-            if not usig.empty:
-                usig_lat = _coordinate_series(usig["latitud"])
-                usig_lon = _coordinate_series(usig["longitud"])
-                bad_usig = usig[
+            quality = ubicaciones["calidad_geo"].astype(str)
+            usig_mappable = ubicaciones[quality.isin(["usig_exacta", "usig_aproximada"])].copy()
+            if not usig_mappable.empty:
+                usig_lat = _coordinate_series(usig_mappable["latitud"])
+                usig_lon = _coordinate_series(usig_mappable["longitud"])
+                bad_usig = usig_mappable[
                     ~(usig_lat.between(CABA_LAT_MIN, CABA_LAT_MAX) & usig_lon.between(CABA_LON_MIN, CABA_LON_MAX))
                 ]
                 if bad_usig.empty:
-                    add(messages, "OK", f"dim_ubicacion calidad_geo usig_* dentro de CABA ({len(usig)} filas)")
+                    add(messages, "OK", f"dim_ubicacion USIG mapeable dentro de CABA ({len(usig_mappable)} filas)")
                 else:
-                    add(messages, "ERROR", f"dim_ubicacion tiene {len(bad_usig)} filas usig_* fuera de CABA")
+                    add(messages, "ERROR", f"dim_ubicacion tiene {len(bad_usig)} filas USIG mapeables fuera de CABA")
+            usig_exacta = ubicaciones[quality == "usig_exacta"].copy()
+            if not usig_exacta.empty:
+                exact_lat = _coordinate_series(usig_exacta["latitud"])
+                exact_lon = _coordinate_series(usig_exacta["longitud"])
+                bad_exact = usig_exacta[
+                    ~(exact_lat.between(CABA_LAT_MIN, CABA_LAT_MAX) & exact_lon.between(CABA_LON_MIN, CABA_LON_MAX))
+                ]
+                if bad_exact.empty:
+                    add(messages, "OK", f"dim_ubicacion usig_exacta dentro de bounding box CABA ({len(usig_exacta)} filas)")
+                else:
+                    add(messages, "ERROR", f"dim_ubicacion tiene {len(bad_exact)} filas usig_exacta fuera de CABA")
+            inconsistent = ubicaciones[quality == "usig_comuna_inconsistente"].copy()
+            if not inconsistent.empty:
+                inc_lat = _coordinate_series(inconsistent["latitud"])
+                inc_lon = _coordinate_series(inconsistent["longitud"])
+                leaked = inconsistent[inc_lat.notna() | inc_lon.notna()]
+                if leaked.empty:
+                    add(messages, "OK", f"dim_ubicacion excluye del mapa {len(inconsistent)} filas usig_comuna_inconsistente")
+                else:
+                    add(messages, "ERROR", f"dim_ubicacion tiene {len(leaked)} filas usig_comuna_inconsistente con coordenadas mapeables")
 
 
 

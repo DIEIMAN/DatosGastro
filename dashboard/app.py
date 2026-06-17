@@ -73,6 +73,18 @@ def render_header() -> None:
     st.info(REGLA_DE_ORO)
 
 
+def render_f02_usig_status(report: dict[str, float | int | bool]) -> None:
+    if report["total"]:
+        st.caption(
+            f"{CAPTIONS['f02_usig']} Mapeados: {int(report.get('mapped', 0))} "
+            f"({float(report.get('mapped_pct', 0.0)):.1f}% del total F02). "
+            f"Cache: {int(report['exacta'])} exactas, {int(report['aproximada'])} aproximadas, "
+            f"tasa exacta {float(report['exact_rate']):.1f}%."
+        )
+    else:
+        st.caption("F02 USIG pendiente: ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
+
+
 def render_panorama(data: DashboardData) -> None:
     st.markdown(INTROS["panorama"])
     kpi_row(
@@ -107,13 +119,7 @@ def render_panorama(data: DashboardData) -> None:
         map_legend(legend_items)
     pydeck_map(f01_map, f03_map, f02_usig_map, show_f01=show_f01, show_f03=show_f03, show_f02_usig=show_f02_usig)
     st.caption(CAPTIONS["mapa"])
-    if f02_usig_report["total"]:
-        st.caption(
-            f"{CAPTIONS['f02_usig']} Cache: {int(f02_usig_report['exacta'])} exactas, "
-            f"{int(f02_usig_report['aproximada'])} aproximadas, tasa exacta {float(f02_usig_report['exact_rate']):.1f}%."
-        )
-    else:
-        st.caption("F02 USIG pendiente: ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
+    render_f02_usig_status(f02_usig_report)
 
     lecturas = []
     top_barrios = top_f01_barrios(data.est_cat_barrio)
@@ -162,11 +168,7 @@ def render_territorio(data: DashboardData) -> None:
         map_legend(legend_items)
         pydeck_map(f01_map, f03_map, f02_usig_map, show_f01=True, show_f03=True, show_f02_usig=show_f02_usig)
         st.caption(CAPTIONS["mapa"])
-        if f02_usig_report["total"]:
-            st.caption(
-                f"{CAPTIONS['f02_usig']} Cache: {int(f02_usig_report['exacta'])} exactas, "
-                f"{int(f02_usig_report['aproximada'])} aproximadas, tasa exacta {float(f02_usig_report['exact_rate']):.1f}%."
-            )
+        render_f02_usig_status(f02_usig_report)
     else:
         geo_comunas, coverage = prepare_f02_choropleth(data)
         pydeck_comuna_choropleth(geo_comunas, coverage)

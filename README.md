@@ -88,7 +88,7 @@ pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
 
-La app lee `data/analytics/` y `data/processed/`, separa F01/F02/F03/F04/F05, muestra fuentes y limitaciones, mantiene fuera de metricas fuertes las filas cualitativas o en validacion, no expone datos personales del padron F03 y no mapea F02 como puntos.
+La app lee `data/analytics/` y `data/processed/`, separa F01/F02/F03/F04/F05, muestra fuentes y limitaciones, mantiene fuera de metricas fuertes las filas cualitativas o en validacion, no expone datos personales del padron F03 y solo mapea F02 como capa USIG opcional apagada por default, excluyendo puntos con comuna inconsistente contra la fuente.
 
 Checklist operativo de demo: `docs/CHECKLIST_DEMO_DATAGASTRO.md`.
 
@@ -127,6 +127,7 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 
 - 2.823 registros en Oferta Gastronomica F01.
 - 44.169 habilitaciones gastronomicas inferidas desde AGC F02.
+- 10.261 habilitaciones F02 geocodificadas con USIG exacta y validadas para capa opcional.
 - 259 espacios reales F03: 6 mercados, 69 ferias/padrones agregados y 184 FIAB.
 - 4.352 registros de puestos F03 conservados solo como insumo tecnico/auditoria interna.
 - 29 eventos F04 cargados; 13 aptos para metricas fuertes y 16 cualitativos/en validacion/no aptos.
@@ -134,7 +135,7 @@ Cada salida analytics incluye `fuentes_utilizadas`, `urls_fuentes`, `fecha_consu
 
 ## Limitaciones actuales
 
-- Geocodificacion USIG queda preparada pero no se ejecuta offline.
+- Geocodificacion USIG F02 se ejecuta por tandas con cache; al ultimo corte hay 1.625 direcciones unicas cacheadas y 6.014 pendientes.
 - Los eventos sin sede fija usan `U00000`.
 - F04 no representa el universo completo de eventos gastronomicos; las metricas fuertes solo usan `apto_dashboard = si`, `requiere_validacion = no` y fecha completa.
 - F05 es catalogo/fichero, no serie temporal de impacto; no usar montos viejos como vigentes.

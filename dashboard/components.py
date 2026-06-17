@@ -140,7 +140,10 @@ def pydeck_map(
                 data=f02_usig_map,
                 get_position="[longitud_num, latitud_num]",
                 get_fill_color="color",
+                get_line_color=[112, 37, 32, 220],
                 get_radius=24,
+                stroked=True,
+                line_width_min_pixels=1.5,
                 pickable=True,
                 opacity=0.58,
             )

@@ -49,9 +49,10 @@ INTROS = {
         "oferta registrada y los espacios publicos, y las lecturas principales."
     ),
     "territorio": (
-        "Donde esta la actividad. Los puntos del mapa salen de coordenadas oficiales "
-        "(no se geocodifico ninguna direccion). La vista por comuna muestra donde se "
-        "concentran las habilitaciones aprobadas."
+        "Donde esta la actividad. Los puntos principales salen de coordenadas oficiales. "
+        "La capa opcional USIG de F02 muestra donde se aprueba actividad gastronomica "
+        "formal, no donde hay locales activos, y se dibuja separada de la oferta registrada "
+        "y de los espacios publicos."
     ),
     "dinamismo": (
         "Una habilitacion aprobada es la autorizacion formal para operar un rubro en un "
@@ -80,7 +81,7 @@ ADVERTENCIAS_COMPLETAS = [
     "F03 cuenta espacios (mercados, ferias, paradas FIAB), no puestos. El padron de puestos se agrega por feria y los datos personales se descartan.",
     "Cada parada FIAB es un punto semanal: la misma feria itinerante aparece en varias ubicaciones.",
     "F04 y F05 son relevamientos manuales trazables y parciales; no representan universos completos ni miden impacto.",
-    "Solo se mapean coordenadas provistas por fuentes oficiales, validadas contra el bounding box de CABA. F02 solo puede sumarse como capa experimental si el cache USIG supera 90% de exactas.",
+    "Solo se mapean coordenadas provistas por fuentes oficiales o geocodificaciones F02 validadas. F02 USIG solo puede sumarse como capa opcional si el cache supera 95% de exactas y se excluyen discrepancias de comuna contra la fuente.",
 ]
 
 NO_RESPONDE = [
@@ -99,8 +100,8 @@ CAPTIONS = {
     "f03": "Fuente: Buenos Aires Data / Min. Espacio Publico (F03). Espacios reales; sin puestos ni datos personales.",
     "f04": "Fuente: relevamiento manual trazable sobre comunicaciones oficiales GCBA y Boletin Oficial (F04). Inventario parcial, no universo.",
     "f05": "Fuente: relevamiento manual trazable (F05). Catalogo de instrumentos vigentes; no mide impacto.",
-    "mapa": "Mapa: coordenadas provistas por las fuentes oficiales (F01 y F03). F02 USIG es una capa experimental apagada por default, habilitable solo si el cache supera 90% de exactas; eventos y programas no se mapean como puntos.",
-    "f02_usig": "F02 USIG: geocodificacion por servicios.usig.buenosaires.gob.ar sobre direcciones de habilitaciones. Capa experimental apagada por default; no equivale a locales activos.",
+    "mapa": "Mapa: F01 y F03 usan coordenadas de fuentes oficiales. F02 USIG es una capa opcional apagada por default; eventos y programas no se mapean como puntos.",
+    "f02_usig": "Geocodificado con USIG sobre direccion normalizada; se excluyen puntos cuya comuna no coincide con la fuente. No son locales activos: son habilitaciones aprobadas.",
     "coropleta": "Coropleta: GeoJSON oficial de comunas (BA Data) + habilitaciones F02 con comuna informada. Intensidad = cantidad de habilitaciones, no locales activos.",
     "territorio_tabla": "Tabla por comuna con universos separados; las columnas no se suman entre si.",
     "resumen": "Fuente: salidas analiticas del pipeline con trazabilidad por archivo (ver Metodologia).",

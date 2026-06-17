@@ -68,6 +68,49 @@ class GeoCacheBuildModelTest(unittest.TestCase):
         self.assertEqual(enriched.loc[1, "calidad_geo"], "fuente_oficial")
         self.assertEqual(enriched.loc[1, "latitud"], "-34.60")
 
+    def test_excludes_usig_point_when_f02_source_commune_disagrees(self):
+        dim = pd.DataFrame(
+            [
+                {
+                    "id_ubicacion": "U001",
+                    "direccion_original": "MITRE, EMILIO 381",
+                    "direccion_normalizada": "Pendiente USIG",
+                    "barrio": "No determinado",
+                    "comuna": "6",
+                    "comuna_fuente_f02": "6",
+                    "latitud": "No disponible",
+                    "longitud": "No disponible",
+                    "calidad_geo": "sin_geo",
+                    "requiere_validacion": "si",
+                    "motivo_validacion": "Geocodificacion pendiente con USIG",
+                }
+            ]
+        )
+        cache = pd.DataFrame(
+            [
+                {
+                    "direccion_original": "MITRE, EMILIO 381",
+                    "direccion_normalizada": "B MITRE 381",
+                    "latitud": "-34.605",
+                    "longitud": "-58.38",
+                    "barrio_usig": "San Nicolas",
+                    "comuna_usig": "1",
+                    "precision": "calle_altura",
+                    "estado": "exacta",
+                    "fecha_consulta": "2026-06-12",
+                }
+            ]
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_path = Path(tmp) / "geo_cache.csv"
+            cache.to_csv(cache_path, index=False)
+            enriched = enrich_locations_with_geo_cache(dim, cache_path)
+
+        self.assertEqual(enriched.loc[0, "calidad_geo"], "usig_comuna_inconsistente")
+        self.assertEqual(enriched.loc[0, "requiere_validacion"], "si")
+        self.assertEqual(enriched.loc[0, "latitud"], "No disponible")
+        self.assertIn("difiere", enriched.loc[0, "motivo_validacion"])
+
 
 if __name__ == "__main__":
     unittest.main()

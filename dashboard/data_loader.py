@@ -186,7 +186,7 @@ def prepare_f03_map(data: DashboardData) -> pd.DataFrame:
 
 def geo_cache_report(geo_cache: pd.DataFrame) -> dict[str, float | int | bool]:
     if geo_cache.empty or "estado" not in geo_cache.columns:
-        return {"total": 0, "exacta": 0, "aproximada": 0, "exact_rate": 0.0, "promovible": False}
+        return {"total": 0, "exacta": 0, "aproximada": 0, "exact_rate": 0.0, "promovible": False, "mapped": 0, "mapped_pct": 0.0, "f02_total": 0}
     counts = geo_cache["estado"].astype(str).value_counts().to_dict()
     total = len(geo_cache)
     exact = int(counts.get("exacta", 0))
@@ -196,7 +196,10 @@ def geo_cache_report(geo_cache: pd.DataFrame) -> dict[str, float | int | bool]:
         "exacta": exact,
         "aproximada": int(counts.get("aproximada", 0)),
         "exact_rate": exact_rate,
-        "promovible": bool(total and exact_rate >= 90),
+        "promovible": bool(total and exact_rate >= 95),
+        "mapped": 0,
+        "mapped_pct": 0.0,
+        "f02_total": 0,
     }
 
 
@@ -206,12 +209,24 @@ def prepare_f02_usig_map(data: DashboardData) -> tuple[pd.DataFrame, dict[str, f
         return pd.DataFrame(), report
     result = data.fact_habilitaciones.merge(data.dim_ubicacion, on="id_ubicacion", how="left", suffixes=("", "_ubicacion"))
     result = map_ready_usig(result)
+    if "barrio_ubicacion" in result.columns:
+        result["barrio"] = result["barrio_ubicacion"].where(result["barrio_ubicacion"].astype(str).str.strip().ne(""), result.get("barrio", ""))
+    if "comuna_ubicacion" in result.columns:
+        result["comuna"] = result["comuna_ubicacion"].where(result["comuna_ubicacion"].astype(str).str.strip().ne(""), result.get("comuna", ""))
     result = ensure_columns(result, ["descripcion_rubro_original", "categoria_gastronomica_inferida", "direccion_original", "barrio", "comuna"])
+    report["f02_total"] = len(data.fact_habilitaciones)
+    report["mapped"] = len(result)
+    report["mapped_pct"] = (len(result) / len(data.fact_habilitaciones) * 100) if len(data.fact_habilitaciones) else 0.0
     if not result.empty:
         result["color"] = [F02_USIG_POINT_COLOR for _ in range(len(result))]
         result["capa"] = "F02 USIG"
         result["tooltip_categoria"] = result["categoria_gastronomica_inferida"]
-        result["tooltip_detalle"] = result["descripcion_rubro_original"]
+        result["tooltip_detalle"] = (
+            "Rubro: "
+            + result["descripcion_rubro_original"].astype(str)
+            + "<br/>Direccion original: "
+            + result["direccion_original"].astype(str)
+        )
         result["nombre"] = "Habilitacion " + result.get("id_habilitacion", pd.Series(dtype=str)).astype(str)
     return result, report
 

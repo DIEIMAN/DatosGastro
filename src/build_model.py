@@ -14,7 +14,7 @@ from shapely.geometry import shape
 from clean_text import clean_dataframe_columns, normalize_proper_name, normalize_text
 from config import DATA_PROCESSED, DATA_RAW, DATA_SEEDS, DOCS, PROFILE_OUTPUTS, SOURCE_CONFIG
 from geocode_usig import CACHE_PATH as GEO_CACHE_PATH, cache_key as geo_cache_key
-from normalize_addresses import UNKNOWN_LOCATION_ID, normalize_address_offline
+from normalize_addresses import UNKNOWN_LOCATION_ID, make_location_id, normalize_address_offline
 from normalize_categories import classify_gastronomic_category, taxonomy_dataframe_rows
 from source_contracts import SourceLoadResult, map_source_columns
 
@@ -23,6 +23,7 @@ CABA_LAT_MIN = -34.75
 CABA_LAT_MAX = -34.50
 CABA_LON_MIN = -58.55
 CABA_LON_MAX = -58.30
+VALID_COMUNAS = {str(number) for number in range(1, 16)}
 F02_2025_VALIDATION_MOTIVE = "Recurso 2025 con esquema distinto: contiene disposiciones de varios anios; no usar como flujo anual"
 
 NULL_SENTINELS = {
@@ -237,6 +238,10 @@ def normalize_comuna_value(value: str) -> str:
     return "No determinada"
 
 
+def is_valid_comuna(value: str) -> bool:
+    return normalize_comuna_value(value) in VALID_COMUNAS
+
+
 def normalize_dashboard_flag(value: str) -> str:
     cleaned = normalize_text(value, case="lower", remove_accents=True)
     if cleaned == "si":
@@ -314,6 +319,26 @@ def cached_location(cache: dict[tuple[str, str], dict], address: str, barrio: st
     key = (normalize_text(address), normalize_text(barrio))
     if key not in cache:
         cache[key] = normalize_address_offline(address, barrio)
+    return cache[key].copy()
+
+
+def source_comuna_f02(row: pd.Series) -> str:
+    comuna = normalize_comuna_value(row.get("comuna_original", ""))
+    return comuna if comuna in VALID_COMUNAS else ""
+
+
+def cached_f02_location(cache: dict[tuple[str, str, str], dict], row: pd.Series) -> dict:
+    address = row.get("direccion_original")
+    barrio = row.get("barrio_original")
+    comuna_fuente = source_comuna_f02(row)
+    key = (normalize_text(address), normalize_text(barrio), comuna_fuente)
+    if key not in cache:
+        location = normalize_address_offline(address, barrio)
+        location["comuna_fuente_f02"] = comuna_fuente or "No informada"
+        if comuna_fuente:
+            location["comuna"] = comuna_fuente
+            location["id_ubicacion"] = make_location_id(address, f"{location['barrio']}|F02C{comuna_fuente}")
+        cache[key] = location
     return cache[key].copy()
 
 
@@ -757,13 +782,11 @@ def build_locations(est: pd.DataFrame, hab: pd.DataFrame, espacios_f03: pd.DataF
         }
     ]
     location_cache: dict[tuple[str, str], dict] = {}
+    f02_location_cache: dict[tuple[str, str, str], dict] = {}
     official_location_cache: dict[tuple[str, str, str, str], dict] = {}
 
-    for df, address_col, barrio_col in (
-        (hab, "direccion_original", "barrio_original"),
-    ):
-        for _, row in df.iterrows():
-            rows.append(cached_location(location_cache, row.get(address_col), row.get(barrio_col)))
+    for _, row in hab.iterrows():
+        rows.append(cached_f02_location(f02_location_cache, row))
 
     for _, row in eventos.iterrows():
         location = first_existing(row.get("direccion_original"), row.get("ubicacion_original"), default="")
@@ -797,7 +820,7 @@ def enrich_locations_with_geo_cache(dim_ubicacion: pd.DataFrame, cache_path: Pat
     if dim_ubicacion.empty or not cache_path.exists():
         return dim_ubicacion
     cache = read_csv(cache_path)
-    required = {"direccion_original", "latitud", "longitud", "estado", "fecha_consulta"}
+    required = {"direccion_original", "latitud", "longitud", "comuna_usig", "estado", "fecha_consulta"}
     if cache.empty or not required.issubset(cache.columns):
         return dim_ubicacion
 
@@ -826,16 +849,28 @@ def enrich_locations_with_geo_cache(dim_ubicacion: pd.DataFrame, cache_path: Pat
         if match is None:
             continue
         estado = str(match.get("estado", ""))
+        comuna_fuente = normalize_comuna_value(row.get("comuna_fuente_f02", ""))
+        comuna_usig = normalize_comuna_value(match.get("comuna_usig", ""))
+        if comuna_fuente in VALID_COMUNAS and comuna_usig in VALID_COMUNAS and comuna_fuente != comuna_usig:
+            result.at[idx, "latitud"] = "No disponible"
+            result.at[idx, "longitud"] = "No disponible"
+            result.at[idx, "calidad_geo"] = "usig_comuna_inconsistente"
+            result.at[idx, "direccion_normalizada"] = first_existing(match.get("direccion_normalizada"), row.get("direccion_normalizada"), default="Pendiente USIG")
+            result.at[idx, "requiere_validacion"] = "si"
+            result.at[idx, "motivo_validacion"] = (
+                "Geocodificacion USIG descartada: comuna de fuente F02 "
+                f"({comuna_fuente}) difiere de comuna_usig ({comuna_usig}); no mapear"
+            )
+            continue
         result.at[idx, "latitud"] = format_coordinate(parse_coordinate(match.get("latitud")))
         result.at[idx, "longitud"] = format_coordinate(parse_coordinate(match.get("longitud")))
         result.at[idx, "calidad_geo"] = "usig_exacta" if estado == "exacta" else "usig_aproximada"
         result.at[idx, "direccion_normalizada"] = first_existing(match.get("direccion_normalizada"), row.get("direccion_normalizada"), default="Pendiente USIG")
         barrio_usig = first_existing(match.get("barrio_usig"), default="")
-        comuna_usig = first_existing(match.get("comuna_usig"), default="")
         if barrio_usig:
             result.at[idx, "barrio"] = barrio_usig
-        if comuna_usig:
-            result.at[idx, "comuna"] = normalize_comuna_value(comuna_usig)
+        if comuna_usig in VALID_COMUNAS:
+            result.at[idx, "comuna"] = comuna_usig
         result.at[idx, "requiere_validacion"] = "no" if estado == "exacta" else "si"
         result.at[idx, "motivo_validacion"] = f"Geocodificacion USIG desde geo_cache.csv; estado={estado}; precision={first_existing(match.get('precision'), default='No disponible')}"
     return result
@@ -981,7 +1016,7 @@ def build_fact_habilitacion_gastronomica(hab: pd.DataFrame, dim_fuente: pd.DataF
     urls = source_urls(dim_fuente)
     rows = []
     category_cache = {}
-    location_cache: dict[tuple[str, str], dict] = {}
+    location_cache: dict[tuple[str, str, str], dict] = {}
     for idx, row in hab.iterrows():
         if not normalize_text(row.get("rubro_original")):
             continue
@@ -996,11 +1031,8 @@ def build_fact_habilitacion_gastronomica(hab: pd.DataFrame, dim_fuente: pd.DataF
         periodo_fuente = first_existing(row.get("periodo_fuente"), default="")
         anio_fuente = first_existing(row.get("anio_fuente"), default="")
         is_f02_2025 = source_id == "F02" and (periodo_fuente == "2025" or anio_fuente == "2025")
-        location = cached_location(location_cache, row.get("direccion_original"), row.get("barrio_original"))
-        if location["comuna"] == "No determinada" and normalize_text(row.get("comuna_original")):
-            location["comuna"] = normalize_comuna_value(row.get("comuna_original"))
-        else:
-            location["comuna"] = normalize_comuna_value(location["comuna"])
+        location = cached_f02_location(location_cache, row)
+        location["comuna"] = normalize_comuna_value(location["comuna"])
         requiere_validacion = "si" if is_f02_2025 else first_existing(row.get("requiere_validacion"), default="si")
         motivo_validacion = F02_2025_VALIDATION_MOTIVE if is_f02_2025 else first_existing(
             row.get("motivo_validacion"),
@@ -1026,6 +1058,7 @@ def build_fact_habilitacion_gastronomica(hab: pd.DataFrame, dim_fuente: pd.DataF
                 "direccion_original": first_existing(row.get("direccion_original"), default="No disponible"),
                 "barrio": location["barrio"],
                 "comuna": location["comuna"],
+                "comuna_fuente_original": location.get("comuna_fuente_f02", "No informada"),
                 "superficie": first_existing(row.get("superficie"), default="No disponible"),
                 "origen_dato": first_existing(row.get("origen_dato"), default="datos reales parciales"),
                 "estado_datos": first_existing(row.get("estado_datos"), default="datos reales"),

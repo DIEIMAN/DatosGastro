@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-06-17 - Promocion controlada capa F02 USIG
+
+- Se corrio una tanda de geocodificacion USIG F02 y el cache quedo en 1.625 direcciones unicas: 1.618 exactas, 6 errores y 1 sin match; tasa exacta 99,6%.
+- Se subio el umbral de promocion de la capa F02 USIG a 95% de exactas.
+- `build_model.py` separa ubicaciones F02 por comuna informada por la fuente y marca `calidad_geo="usig_comuna_inconsistente"` cuando `comuna_usig` difiere; esas filas conservan el modelo pero quedan sin coordenadas mapeables.
+- `validate_model.py --strict-real` verifica que `usig_comuna_inconsistente` no tenga coordenadas mapeables y que `usig_exacta` este dentro del bounding box CABA.
+- El dashboard muestra F02 USIG como capa opcional apagada por default, con caption metodologico fijo, total mapeado y porcentaje sobre total F02.
+- `analytics_resumen_ejecutivo.csv` incorpora `habilitaciones_f02_geocodificadas` como conteo de habilitaciones F02 con `usig_exacta` validada.
+
 ## 2026-06-12 - Geocodificacion USIG F02 con cache
 
 - Se agrego `src/geocode_usig.py` para consultar USIG por tandas, con cache persistente en `data/processed/geo_cache.csv`, `--limit` y `--solo-pendientes`.

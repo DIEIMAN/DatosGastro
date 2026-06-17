@@ -700,17 +700,31 @@ def mapa_oportunidades(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFra
     )
 
 
-def resumen_ejecutivo(est: pd.DataFrame, hab: pd.DataFrame, eventos: pd.DataFrame, programas: pd.DataFrame, espacios: pd.DataFrame, puestos: pd.DataFrame, fuentes: pd.DataFrame) -> pd.DataFrame:
+def resumen_ejecutivo(
+    est: pd.DataFrame,
+    hab: pd.DataFrame,
+    eventos: pd.DataFrame,
+    programas: pd.DataFrame,
+    espacios: pd.DataFrame,
+    puestos: pd.DataFrame,
+    fuentes: pd.DataFrame,
+    ubicaciones: pd.DataFrame,
+) -> pd.DataFrame:
     status = data_status(est, hab, espacios)
     eventos_fuertes = strong_events(eventos)
     programas_fuertes = strong_programs(programas)
     mercados = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "Mercado"] if not espacios.empty else pd.DataFrame()
     ferias = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str).str.contains("Feria", case=False, na=False)] if not espacios.empty else pd.DataFrame()
     fiab = espacios[espacios.get("tipo_espacio", pd.Series(dtype=str)).astype(str) == "FIAB"] if not espacios.empty else pd.DataFrame()
+    hab_usig_exacta = 0
+    if not hab.empty and not ubicaciones.empty and {"id_ubicacion", "calidad_geo"}.issubset(ubicaciones.columns):
+        hab_geo = hab.merge(ubicaciones[["id_ubicacion", "calidad_geo"]], on="id_ubicacion", how="left")
+        hab_usig_exacta = int((hab_geo["calidad_geo"].astype(str) == "usig_exacta").sum())
     rows = [
         ("fuentes_relevadas", len(fuentes), status, "dashboard", ""),
         ("establecimientos_oferta_gastronomica_f01", len(est), data_status(est), "dashboard", ""),
         ("habilitaciones_gastronomicas_f02", len(hab), data_status(hab), "dashboard", "Habilitaciones, no establecimientos activos"),
+        ("habilitaciones_f02_geocodificadas", hab_usig_exacta, data_status(hab), "dashboard", "Puntos USIG exactos validados; excluye comuna inconsistente y aproximadas"),
         ("espacios_ferias_mercados_f03", len(espacios), data_status(espacios), "dashboard", "Espacios reales; excluye puestos/personas"),
         ("mercados_f03", len(mercados), data_status(mercados), "dashboard", "Subconjunto de espacios reales F03"),
         ("ferias_f03", len(ferias), data_status(ferias), "dashboard", "Ferias especializadas/no alimentarias; no mezclar con FIAB sin aclaracion"),
@@ -770,7 +784,7 @@ def main() -> int:
         "analytics_programas_catalogo.csv": programas_catalogo(programas, fuentes),
         "analytics_programas_cualitativos.csv": programas_cualitativos(programas, fuentes),
         "analytics_mapa_oportunidades.csv": mapa_oportunidades(est, hab, eventos, espacios, ubicaciones, fuentes),
-        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, espacios, puestos, fuentes),
+        "analytics_resumen_ejecutivo.csv": resumen_ejecutivo(est, hab, eventos, programas, espacios, puestos, fuentes, ubicaciones),
     }
     if args.strict_real:
         errors = strict_real_errors(analytics)

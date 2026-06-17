@@ -1,6 +1,6 @@
 # Contratos de fuentes
 
-Generado: 2026-06-12
+Generado: 2026-06-17
 
 Este reporte muestra que archivo se uso para cada fuente, si fue seed o real, y que columnas pudieron mapearse al contrato canonico.
 
