@@ -4,9 +4,13 @@
 
 - Se agrego `src/geocode_usig.py` para consultar USIG por tandas, con cache persistente en `data/processed/geo_cache.csv`, `--limit` y `--solo-pendientes`.
 - El cache es idempotente: las direcciones ya registradas no se re-consultan.
+- Se agrego normalizacion previa de direcciones F02 con calles invertidas, multiples domicilios separados por `;` y abreviaturas como `GRAL`, `TTE`, `CNEL`, `DR`, `PTE` y `AV`.
+- Se agrego `direccion_consulta` al cache para preservar la direccion original y la direccion enviada a USIG.
+- Se agrego `--reintentar-sin-match` para reconsultar filas cacheadas con `sin_match` o `error` sin duplicar registros.
 - Se valida bounding box CABA y se marca `sospechosa` toda coordenada fuera de rango.
 - `build_model.py` enriquece `dim_ubicacion` con `usig_exacta` o `usig_aproximada` si existe cache, sin pisar coordenadas `fuente_oficial`.
 - El dashboard puede mostrar F02 USIG como capa opcional apagada por default, solo si el cache supera 90% de exactas.
+- Se agrego reporte de consistencia de comuna F02 fuente vs comuna USIG exacta; si la coincidencia es menor a 95%, recomienda no promover la capa.
 - `validate_model.py --strict-real` valida trazabilidad y bbox del cache cuando existe, sin fallar si todavia no fue generado.
 
 ## 2026-06-12 - Version demo estable interna

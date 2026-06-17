@@ -31,11 +31,13 @@ Para construir o ampliar el cache USIG de F02:
 
 ```bash
 python src/geocode_usig.py --limit 500 --solo-pendientes
+python src/geocode_usig.py --reintentar-sin-match
+python src/geocode_usig.py --reporte-consistencia
 python src/build_model.py --strict-real
 python src/validate_model.py --strict-real
 ```
 
-La capa de puntos F02 solo debe habilitarse si el reporte del cache muestra tasa `exacta` mayor o igual a 90%.
+La capa de puntos F02 solo debe habilitarse si el reporte del cache muestra tasa `exacta` mayor o igual a 90% y el reporte de consistencia comuna fuente vs USIG exacta muestra coincidencia mayor o igual a 95%.
 
 ## 2. Abrir dashboard
 
