@@ -4,7 +4,7 @@ import argparse
 import json
 import re
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -21,13 +21,18 @@ CACHE_PATH = DATA_PROCESSED / "geo_cache.csv"
 CACHE_COLUMNS = [
     "direccion_original",
     "direccion_consulta",
+    "direccion_candidatas",
     "direccion_normalizada",
     "latitud",
     "longitud",
     "barrio_usig",
     "comuna_usig",
+    "comuna_fuente",
+    "coincide_comuna",
     "precision",
     "estado",
+    "calidad_geo",
+    "criterio_seleccion",
     "fecha_consulta",
 ]
 
@@ -52,18 +57,28 @@ class GeocodeResult:
     precision: str
     estado: str
     fecha_consulta: str
+    direccion_candidatas: str = ""
+    comuna_fuente: str = ""
+    coincide_comuna: str = ""
+    calidad_geo: str = ""
+    criterio_seleccion: str = ""
 
     def as_row(self) -> dict[str, str]:
         return {
             "direccion_original": self.direccion_original,
             "direccion_consulta": self.direccion_consulta,
+            "direccion_candidatas": self.direccion_candidatas,
             "direccion_normalizada": self.direccion_normalizada,
             "latitud": self.latitud,
             "longitud": self.longitud,
             "barrio_usig": self.barrio_usig,
             "comuna_usig": self.comuna_usig,
+            "comuna_fuente": self.comuna_fuente,
+            "coincide_comuna": self.coincide_comuna,
             "precision": self.precision,
             "estado": self.estado,
+            "calidad_geo": self.calidad_geo,
+            "criterio_seleccion": self.criterio_seleccion,
             "fecha_consulta": self.fecha_consulta,
         }
 
@@ -72,27 +87,92 @@ def cache_key(value: object) -> str:
     return normalize_text(value, case="upper", remove_accents=True)
 
 
+def _dedupe_preserve_order(values: list[str]) -> list[str]:
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        cleaned = re.sub(r"\s+", " ", value).strip()
+        if not cleaned:
+            continue
+        key = cache_key(cleaned)
+        if key and key not in seen:
+            seen.add(key)
+            result.append(cleaned)
+    return result
+
+
+def _clean_address_fragment(value: object) -> str:
+    text = normalize_text(value, case="upper", remove_accents=True)
+    text = text.replace(".", " ")
+    text = re.sub(r"\bSIN\s+NUMERO\s+OFICIAL\b", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _strip_street_noise(value: str, *, expand_titles: bool) -> tuple[str, bool]:
+    text = _clean_address_fragment(value)
+    had_avenue = bool(re.search(r"\b(AV|AVDA|AVENIDA)\b", text))
+    if expand_titles:
+        text = re.sub(r"\bCNEL\b", "CORONEL", text)
+        text = re.sub(r"\bGRAL\b", "GENERAL", text)
+        text = re.sub(r"\bTTE\b", "TENIENTE", text)
+        text = re.sub(r"\bPTE\b", "PRESIDENTE", text)
+    else:
+        text = re.sub(r"\b(GRAL|GENERAL|TTE|TENIENTE|CNEL|CORONEL|PTE|PRESIDENTE)\b", " ", text)
+    text = re.sub(r"\b(DR|DRA|AV|AVDA|AVENIDA)\b", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text, had_avenue
+
+
+def _address_part_candidates(address_part: str) -> list[str]:
+    text = _clean_address_fragment(address_part)
+    if not text:
+        return []
+    height_match = re.search(r"(\d{1,6})\s*$", text)
+    if not height_match:
+        return []
+    height = height_match.group(1)
+    street_text = re.sub(r"\s+\d{1,6}\s*$", "", text).strip(" ,")
+    if not re.search(r"[A-Z]", street_text):
+        return []
+
+    candidates: list[str] = []
+    if "," in street_text:
+        parts = [part.strip() for part in street_text.split(",") if part.strip()]
+        left, left_has_avenue = _strip_street_noise(parts[0], expand_titles=False)
+        right_raw = " ".join(parts[1:])
+        right, right_has_avenue = _strip_street_noise(right_raw, expand_titles=True)
+        has_avenue = left_has_avenue or right_has_avenue
+        if left:
+            candidates.append(f"{left} {height}")
+        if left and right:
+            full = f"{right} {left}".strip()
+            candidates.append(f"{full} {height}")
+            if has_avenue:
+                candidates.append(f"AV {full} {height}")
+    else:
+        street, has_avenue = _strip_street_noise(street_text, expand_titles=False)
+        if street:
+            candidates.append(f"{street} {height}")
+            if has_avenue:
+                candidates.append(f"AV {street} {height}")
+                candidates.append(f"AVENIDA {street} {height}")
+    return _dedupe_preserve_order(candidates)
+
+
+def generate_f02_address_candidates(direccion_original: str) -> list[str]:
+    """Genera candidatas USIG ordenadas para direcciones F02 sin perder trazabilidad."""
+    parts = [part.strip() for part in str(direccion_original or "").split(";") if part.strip()]
+    candidates: list[str] = []
+    for part in parts:
+        candidates.extend(_address_part_candidates(part))
+    return _dedupe_preserve_order(candidates)
+
+
 def normalize_f02_address(direccion: object) -> str:
     """Normaliza direcciones AGC invertidas antes de consultar USIG."""
-    first_address = normalize_text(str(direccion or "").split(";")[0], case="upper", remove_accents=True)
-    if not first_address:
-        return ""
-    first_address = first_address.replace(".", " ")
-    first_address = re.sub(r"\s+", " ", first_address).strip()
-    height_match = re.search(r"(\d{1,6})\s*$", first_address)
-    if not height_match:
-        return first_address
-    height = height_match.group(1)
-
-    if "," in first_address:
-        street = first_address.split(",", 1)[0]
-    else:
-        street = re.sub(r"\s+\d{1,6}\s*$", "", first_address)
-    street = re.sub(r"\b(GRAL|GENERAL|TTE|CNEL|DR|DRA|PTE|AV|AVDA|AVENIDA)\b", " ", street)
-    street = re.sub(r"\s+", " ", street).strip()
-    if not street:
-        street = re.sub(r"\s+\d{1,6}\s*$", "", first_address).strip()
-    return f"{street} {height}".strip()
+    candidates = generate_f02_address_candidates(str(direccion or "").split(";")[0])
+    return candidates[0] if candidates else ""
 
 
 def in_caba_bounds(lat: float | None, lon: float | None) -> bool:
@@ -241,9 +321,112 @@ def parse_usig_payload(
     return GeocodeResult(address, query, normalized, format_coordinate(lat), format_coordinate(lon), barrio, comuna, precision or estado, estado, fecha)
 
 
-def geocode_address(address: str, session: requests.Session | None = None) -> GeocodeResult:
-    client = session or requests.Session()
-    query = normalize_f02_address(address)
+def _quality_for_estado(estado: str, criterio: str) -> str:
+    if estado == "exacta" and criterio == "exacta_sin_control_comuna":
+        return "usig_exacta_sin_control_comuna"
+    if estado == "exacta":
+        return "usig_exacta"
+    if estado == "aproximada":
+        return "usig_aproximada"
+    if estado == "usig_comuna_inconsistente":
+        return "usig_comuna_inconsistente"
+    return estado or "sin_geo"
+
+
+def _with_traceability(
+    result: GeocodeResult,
+    candidates: list[str],
+    comuna_fuente: str = "",
+    criterio: str = "",
+) -> GeocodeResult:
+    comuna_usig = normalize_comuna(result.comuna_usig)
+    coincide = ""
+    if comuna_fuente and comuna_usig:
+        coincide = "si" if comuna_fuente == comuna_usig else "no"
+    return replace(
+        result,
+        direccion_candidatas=" | ".join(candidates),
+        comuna_fuente=comuna_fuente,
+        coincide_comuna=coincide,
+        criterio_seleccion=criterio,
+        calidad_geo=_quality_for_estado(result.estado, criterio),
+    )
+
+
+def _commune_inconsistent_result(
+    exact_result: GeocodeResult,
+    candidates: list[str],
+    comuna_fuente: str,
+) -> GeocodeResult:
+    return replace(
+        exact_result,
+        latitud="",
+        longitud="",
+        estado="usig_comuna_inconsistente",
+        calidad_geo="usig_comuna_inconsistente",
+        comuna_fuente=comuna_fuente,
+        coincide_comuna="no",
+        direccion_candidatas=" | ".join(candidates),
+        criterio_seleccion="exacta_descartada_por_comuna_fuente",
+    )
+
+
+def select_geocode_result(
+    address: str,
+    candidates: list[str],
+    results: list[GeocodeResult],
+    comuna_fuente: str = "",
+) -> GeocodeResult:
+    if not candidates:
+        return GeocodeResult(
+            address,
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "sin_altura_o_codigo_no_consultado",
+            "sin_match",
+            date.today().isoformat(),
+            comuna_fuente=comuna_fuente,
+            calidad_geo="sin_geo",
+            criterio_seleccion="sin_candidatas_validas",
+        )
+    exact_results = [result for result in results if result.estado == "exacta"]
+    if comuna_fuente:
+        for result in exact_results:
+            if normalize_comuna(result.comuna_usig) == comuna_fuente:
+                return _with_traceability(result, candidates, comuna_fuente, "exacta_comuna_coincidente")
+        if exact_results:
+            return _commune_inconsistent_result(exact_results[0], candidates, comuna_fuente)
+    elif exact_results:
+        return _with_traceability(exact_results[0], candidates, "", "exacta_sin_control_comuna")
+
+    for result in results:
+        if result.estado not in {"sin_match", "error"}:
+            return _with_traceability(result, candidates, comuna_fuente, f"{result.estado}_sin_exacta_coincidente")
+    if results:
+        return _with_traceability(results[0], candidates, comuna_fuente, "sin_match_o_error")
+    return GeocodeResult(
+        address,
+        candidates[0],
+        "",
+        "",
+        "",
+        "",
+        "",
+        "sin_respuesta_usig",
+        "sin_match",
+        date.today().isoformat(),
+        direccion_candidatas=" | ".join(candidates),
+        comuna_fuente=comuna_fuente,
+        calidad_geo="sin_geo",
+        criterio_seleccion="sin_resultados",
+    )
+
+
+def _geocode_candidate(address: str, query: str, client: requests.Session) -> GeocodeResult:
     try:
         response = client.get(
             USIG_URL,
@@ -254,6 +437,21 @@ def geocode_address(address: str, session: requests.Session | None = None) -> Ge
         return parse_usig_payload(address, response.json(), direccion_consulta=query)
     except Exception as exc:
         return GeocodeResult(address, query, "", "", "", "", "", str(exc)[:180], "error", date.today().isoformat())
+
+
+def geocode_address(
+    address: str,
+    session: requests.Session | None = None,
+    comuna_fuente: str = "",
+) -> GeocodeResult:
+    client = session or requests.Session()
+    candidates = generate_f02_address_candidates(address)
+    results: list[GeocodeResult] = []
+    for index, query in enumerate(candidates):
+        if index:
+            time.sleep(REQUEST_INTERVAL_SECONDS)
+        results.append(_geocode_candidate(address, query, client))
+    return select_geocode_result(address, candidates, results, normalize_comuna(comuna_fuente))
 
 
 def cache_index(cache: pd.DataFrame) -> set[str]:
