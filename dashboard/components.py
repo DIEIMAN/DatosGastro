@@ -8,6 +8,9 @@ import streamlit as st
 from dashboard.data_loader import numeric_series
 
 
+CARTO_POSITRON_STYLE = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+
+
 def kpi_row(items: list[tuple[str, object, str | None]]) -> None:
     columns = st.columns(len(items))
     for column, (label, value, help_text) in zip(columns, items):
@@ -173,7 +176,7 @@ def pydeck_map(
     )
     st.pydeck_chart(
         pdk.Deck(
-            map_style=None,
+            map_style=CARTO_POSITRON_STYLE,
             initial_view_state=view_state,
             layers=layers,
             tooltip={
@@ -209,7 +212,7 @@ def pydeck_comuna_choropleth(geojson: dict, coverage: float) -> None:
     )
     st.pydeck_chart(
         pdk.Deck(
-            map_style=None,
+            map_style=CARTO_POSITRON_STYLE,
             initial_view_state=pdk.ViewState(latitude=-34.61, longitude=-58.44, zoom=10, pitch=0),
             layers=[layer],
             tooltip={

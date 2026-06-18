@@ -50,7 +50,7 @@ En una demo interna:
 
 1. Empezar con la notebook para contar el relato.
 2. Después abrir el dashboard para exploración interactiva.
-3. Cerrar con próximos pasos: geocodificación USIG, permisos de área gastronómica F06 y export ejecutivo.
+3. Cerrar con próximos pasos: F06 permisos de área gastronómica y export ejecutivo.
 4. Usar `docs/CHECKLIST_DEMO_DATAGASTRO.md` para validar comandos, KPIs y frases que no deben afirmarse.
 
 ## Advertencias que deben decirse explícitamente

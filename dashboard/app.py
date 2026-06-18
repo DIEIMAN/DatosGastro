@@ -85,6 +85,29 @@ def render_f02_usig_status(report: dict[str, float | int | bool]) -> None:
         st.caption("F02 USIG pendiente: ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
 
 
+def lectura_f02_usig_panorama(report: dict[str, float | int | bool]) -> str:
+    mapped = int(report.get("mapped", 0))
+    f02_total = int(report.get("f02_total", 0))
+    if not mapped or not f02_total:
+        return ""
+    return f"F02 geocodificada: {fmt(mapped)} puntos ({float(report.get('mapped_pct', 0.0)):.0f}% de F02), validados por consistencia de comuna."
+
+
+def lectura_no_comparables_f02(no_comparable: pd.DataFrame) -> str:
+    if no_comparable.empty or "cantidad_habilitaciones" not in no_comparable.columns:
+        return ""
+    rows = no_comparable.copy()
+    rows["n"] = numeric_series(rows["cantidad_habilitaciones"])
+    rows = rows[rows["n"] > 0]
+    if rows.empty:
+        return ""
+    detalle = " y ".join(f"{row.anio_fuente} ({fmt(int(row.n))} registros)" for row in rows.itertuples(index=False))
+    return (
+        f"El grueso de las habilitaciones queda en los recursos no comparables {detalle}, mostrados aparte. "
+        "La serie comparable 2019-2024 sirve para leer tendencia interanual, no volumen total."
+    )
+
+
 def render_panorama(data: DashboardData) -> None:
     st.markdown(INTROS["panorama"])
     kpi_row(
@@ -130,6 +153,9 @@ def render_panorama(data: DashboardData) -> None:
     serie = lectura_serie_f02(data.hab_anio)
     if serie:
         lecturas.append(serie)
+    f02_usig_txt = lectura_f02_usig_panorama(f02_usig_report)
+    if f02_usig_txt:
+        lecturas.append(f02_usig_txt)
     f03_txt = lectura_f03(data.fact_espacios_f03)
     if f03_txt:
         lecturas.append(f03_txt)
@@ -220,6 +246,10 @@ def render_dinamismo(data: DashboardData) -> None:
 
     comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "si"].copy()
     no_comparable = data.hab_anio[data.hab_anio.get("comparable_como_flujo_anual", pd.Series(dtype=str)).astype(str) == "no"].copy()
+
+    no_comparable_txt = lectura_no_comparables_f02(no_comparable)
+    if no_comparable_txt:
+        lectura(no_comparable_txt)
 
     vertical_bar(
         comparable,
