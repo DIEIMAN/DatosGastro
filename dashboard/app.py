@@ -16,6 +16,7 @@ from dashboard.components import (
     kpi_row,
     lectura,
     map_legend,
+    pydeck_barrio_choropleth,
     pydeck_comuna_choropleth,
     pydeck_map,
     searchable_table,
@@ -34,6 +35,7 @@ from dashboard.data_loader import (
     load_dashboard_data,
     number,
     numeric_series,
+    prepare_f01_choropleth,
     prepare_f01_map,
     prepare_f02_choropleth,
     prepare_f02_usig_map,
@@ -168,7 +170,11 @@ def render_territorio(data: DashboardData) -> None:
 
     vista = st.radio(
         "Que queres ver en el mapa",
-        ["Locales y espacios (puntos exactos)", "Intensidad de habilitaciones por comuna"],
+        [
+            "Locales y espacios (puntos exactos)",
+            "Intensidad de habilitaciones por comuna",
+            "Oferta registrada por barrio (F01)",
+        ],
         horizontal=True,
         key="terr_vista",
     )
@@ -195,13 +201,17 @@ def render_territorio(data: DashboardData) -> None:
         pydeck_map(f01_map, f03_map, f02_usig_map, show_f01=True, show_f03=True, show_f02_usig=show_f02_usig)
         st.caption(CAPTIONS["mapa"])
         render_f02_usig_status(f02_usig_report)
-    else:
+    elif vista == "Intensidad de habilitaciones por comuna":
         geo_comunas, coverage = prepare_f02_choropleth(data)
         pydeck_comuna_choropleth(geo_comunas, coverage)
         st.caption(CAPTIONS["coropleta"])
         comuna_txt = lectura_comuna_f02(data.hab_barrio)
         if comuna_txt:
             lectura(comuna_txt + f" La comuna se conoce en el {coverage:.0f}% de los registros: el resto no entra en esta vista.")
+    else:
+        geo_barrios = prepare_f01_choropleth(data)
+        pydeck_barrio_choropleth(geo_barrios)
+        st.caption("Oferta registrada F01, no locales activos; densidad solo como referencia.")
 
     st.divider()
     left, right = st.columns(2)

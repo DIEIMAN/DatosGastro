@@ -228,3 +228,36 @@ def pydeck_comuna_choropleth(geojson: dict, coverage: float) -> None:
         width="stretch",
     )
     st.caption(f"Coropleta calculada solo sobre registros F02 con comuna identificada. Cobertura territorial actual: {coverage:.1f}% del total F02 clasificado.")
+
+
+def pydeck_barrio_choropleth(geojson: dict) -> None:
+    if not geojson or not geojson.get("features"):
+        st.info("No esta disponible `data/raw/geo_barrios.geojson` para dibujar la coropleta de barrios.")
+        return
+    layer = pdk.Layer(
+        "GeoJsonLayer",
+        data=geojson,
+        stroked=True,
+        filled=True,
+        get_fill_color="properties.fill_color",
+        get_line_color=[80, 80, 80, 165],
+        get_line_width=35,
+        pickable=True,
+        opacity=0.72,
+    )
+    st.pydeck_chart(
+        pdk.Deck(
+            map_style=CARTO_POSITRON_STYLE,
+            initial_view_state=pdk.ViewState(latitude=-34.61, longitude=-58.44, zoom=10, pitch=0),
+            layers=[layer],
+            tooltip={
+                "html": (
+                    "<b>{barrio}</b><br/>"
+                    "Oferta registrada F01: {cantidad_f01}<br/>"
+                    "Densidad por km2: {densidad_f01_km2}"
+                ),
+                "style": {"backgroundColor": "#ffffff", "color": "#111111"},
+            },
+        ),
+        width="stretch",
+    )

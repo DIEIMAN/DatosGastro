@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 import pandas as pd
@@ -121,6 +122,13 @@ def filter_by_dashboard(df: pd.DataFrame, value: str) -> pd.DataFrame:
 
 def coordinate_series(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series.astype(str).str.replace(",", ".", regex=False), errors="coerce")
+
+
+def normalize_geo_name(value: object) -> str:
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = re.sub(r"[^A-Za-z0-9]+", " ", text).strip().lower()
+    return re.sub(r"\s+", " ", text)
 
 
 def map_ready(df: pd.DataFrame) -> pd.DataFrame:
@@ -299,6 +307,52 @@ def prepare_f02_choropleth(data: DashboardData) -> tuple[dict, float]:
         enriched["properties"] = props
         features.append(enriched)
     return {"type": "FeatureCollection", "features": features}, coverage
+
+
+def prepare_f01_choropleth(data: DashboardData) -> dict:
+    geo = read_geojson(RAW / "geo_barrios.geojson")
+    if not geo or data.fact_establecimientos.empty or data.dim_ubicacion.empty:
+        return {}
+    if "id_ubicacion" not in data.fact_establecimientos.columns or "id_ubicacion" not in data.dim_ubicacion.columns:
+        return {}
+
+    df = data.fact_establecimientos.merge(
+        data.dim_ubicacion[["id_ubicacion", "barrio"]],
+        on="id_ubicacion",
+        how="left",
+    )
+    df["barrio_norm"] = df.get("barrio", pd.Series(dtype=str)).map(normalize_geo_name)
+    df = df[df["barrio_norm"].ne("") & df["barrio_norm"].ne("no determinado")].copy()
+    by_barrio = df.groupby("barrio_norm").size().to_dict()
+    max_value = max(by_barrio.values()) if by_barrio else 0
+
+    features = []
+    for feature in geo.get("features", []):
+        props = dict(feature.get("properties") or {})
+        barrio = str(props.get("nombre") or props.get("barrio") or props.get("BARRIO") or props.get("NOMBRE") or "")
+        barrio_norm = normalize_geo_name(barrio)
+        value = int(by_barrio.get(barrio_norm, 0))
+        try:
+            area_m2 = float(str(props.get("area_metro", 0)).replace(",", "."))
+        except Exception:
+            area_m2 = 0.0
+        area_km2 = area_m2 / 1_000_000 if area_m2 else 0.0
+        density = value / area_km2 if area_km2 else 0.0
+        intensity = value / max_value if max_value else 0
+        color = [int(236 - 176 * intensity), int(245 - 129 * intensity), int(248 - 103 * intensity), 70 + int(135 * intensity)]
+        props.update(
+            {
+                "barrio": barrio,
+                "cantidad_f01": value,
+                "densidad_f01_km2": round(density, 1),
+                "fill_color": color,
+            }
+        )
+        enriched = dict(feature)
+        enriched["properties"] = props
+        features.append(enriched)
+    return {"type": "FeatureCollection", "features": features}
+
 
 def lectura_serie_f02(hab_anio: pd.DataFrame) -> str:
     """Resume la serie anual comparable: anio pico, valle y ultimo anio."""
