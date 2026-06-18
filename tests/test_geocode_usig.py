@@ -10,7 +10,17 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from geocode_usig import consistency_report, normalize_f02_address, parse_usig_payload, pending_addresses, read_cache, write_cache
+from geocode_usig import (
+    GeocodeResult,
+    consistency_report,
+    generate_f02_address_candidates,
+    normalize_f02_address,
+    parse_usig_payload,
+    pending_addresses,
+    read_cache,
+    select_geocode_result,
+    write_cache,
+)
 
 
 class GeocodeUsigTest(unittest.TestCase):
@@ -25,6 +35,69 @@ class GeocodeUsigTest(unittest.TestCase):
         for raw, expected in cases.items():
             with self.subTest(raw=raw):
                 self.assertEqual(normalize_f02_address(raw), expected)
+
+    def test_generate_f02_address_candidates_preserves_inverted_street_parts(self):
+        cases = {
+            "SUAREZ, JOSE LEON 52": ["JOSE LEON SUAREZ 52"],
+            "DIAZ, CNEL. AV. 1944": ["CORONEL DIAZ 1944", "AV CORONEL DIAZ 1944"],
+            "ALVEAR, MARCELO T. De 499": ["MARCELO T DE ALVEAR 499"],
+            "MORENO, JOSE MARIA AV. 100": ["AV JOSE MARIA MORENO 100"],
+            "MITRE, EMILIO 433": ["EMILIO MITRE 433"],
+            "SAENZ, MANUELA 343": ["MANUELA SAENZ 343"],
+            "DE MAYO AV. 852": ["AV DE MAYO 852"],
+            "AV. DEL LIBERTADOR SIN N\u00daMERO OFICIAL 3805": ["AV DEL LIBERTADOR 3805"],
+        }
+
+        for raw, expected_values in cases.items():
+            with self.subTest(raw=raw):
+                candidates = generate_f02_address_candidates(raw)
+                for expected in expected_values:
+                    self.assertIn(expected, candidates)
+
+    def test_generate_f02_address_candidates_keeps_clean_addresses(self):
+        cases = {
+            "NICARAGUA 6048": ["NICARAGUA 6048"],
+            "SALTA 380": ["SALTA 380"],
+            "CORRIENTES AV. 4646": ["CORRIENTES 4646", "AV CORRIENTES 4646"],
+        }
+
+        for raw, expected_values in cases.items():
+            with self.subTest(raw=raw):
+                candidates = generate_f02_address_candidates(raw)
+                for expected in expected_values:
+                    self.assertIn(expected, candidates)
+
+    def test_generate_f02_address_candidates_processes_multiple_addresses(self):
+        candidates = generate_f02_address_candidates("MORENO, JOSE MARIA AV. 100;ROSARIO 495")
+
+        self.assertIn("AV JOSE MARIA MORENO 100", candidates)
+        self.assertIn("ROSARIO 495", candidates)
+
+    def test_select_geocode_result_prefers_exact_source_commune_match(self):
+        results = [
+            GeocodeResult("DIAZ, CNEL. AV. 1944", "DIAZ 1944", "DIAZ 1944", "-34.63", "-58.43", "", "7", "calle_altura", "exacta", "2026-06-18"),
+            GeocodeResult("DIAZ, CNEL. AV. 1944", "AV CORONEL DIAZ 1944", "AV CORONEL DIAZ 1944", "-34.58", "-58.41", "", "14", "calle_altura", "exacta", "2026-06-18"),
+        ]
+
+        selected = select_geocode_result(
+            "DIAZ, CNEL. AV. 1944",
+            ["DIAZ 1944", "CORONEL DIAZ 1944", "AV CORONEL DIAZ 1944"],
+            results,
+            comuna_fuente="14",
+        )
+
+        self.assertEqual(selected.direccion_consulta, "AV CORONEL DIAZ 1944")
+        self.assertEqual(selected.criterio_seleccion, "exacta_comuna_coincidente")
+        self.assertEqual(selected.coincide_comuna, "si")
+
+    def test_select_geocode_result_marks_unmatched_exact_commune_as_inconsistent(self):
+        result = GeocodeResult("MITRE, EMILIO 381", "MITRE 381", "MITRE 381", "-34.60", "-58.38", "", "1", "calle_altura", "exacta", "2026-06-18")
+
+        selected = select_geocode_result("MITRE, EMILIO 381", ["MITRE 381"], [result], comuna_fuente="6")
+
+        self.assertEqual(selected.estado, "usig_comuna_inconsistente")
+        self.assertEqual(selected.latitud, "")
+        self.assertEqual(selected.coincide_comuna, "no")
 
     def test_parse_exact_result_inside_caba(self):
         payload = {

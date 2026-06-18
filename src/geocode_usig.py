@@ -477,6 +477,26 @@ def unique_habilitacion_addresses(path: Path = DATA_PROCESSED / "fact_habilitaci
     return values
 
 
+def source_commune_by_address(path: Path = DATA_PROCESSED / "fact_habilitacion_gastronomica.csv") -> dict[str, str]:
+    if not path.exists():
+        return {}
+    df = pd.read_csv(path, dtype=str, keep_default_na=False, usecols=lambda col: col in {"direccion_original", "comuna"})
+    if not {"direccion_original", "comuna"}.issubset(df.columns):
+        return {}
+    result: dict[str, str] = {}
+    for key, group in df.assign(
+        direccion_key=df["direccion_original"].map(cache_key),
+        comuna_fuente=df["comuna"].map(normalize_comuna),
+    ).groupby("direccion_key"):
+        if not key:
+            continue
+        communes = [value for value in group["comuna_fuente"].astype(str) if value]
+        if not communes:
+            continue
+        result[key] = pd.Series(communes).mode().iloc[0]
+    return result
+
+
 def pending_addresses(addresses: list[str], cache: pd.DataFrame) -> list[str]:
     cached = cache_index(cache)
     return [address for address in addresses if cache_key(address) not in cached]
@@ -560,6 +580,7 @@ def status_report(cache: pd.DataFrame) -> dict[str, float | int]:
         "sin_match": int(counts.get("sin_match", 0)),
         "sospechosa": int(counts.get("sospechosa", 0)),
         "error": int(counts.get("error", 0)),
+        "usig_comuna_inconsistente": int(counts.get("usig_comuna_inconsistente", 0)),
         "exact_rate": exact_rate,
     }
 
@@ -570,6 +591,7 @@ def print_report(cache: pd.DataFrame) -> None:
         "Reporte geo_cache: "
         f"total={report['total']} exacta={report['exacta']} aproximada={report['aproximada']} "
         f"sin_match={report['sin_match']} sospechosa={report['sospechosa']} error={report['error']} "
+        f"usig_comuna_inconsistente={report['usig_comuna_inconsistente']} "
         f"tasa_exacta={report['exact_rate']:.1f}%"
     )
     if report["total"] and report["exact_rate"] < 90:
@@ -614,7 +636,53 @@ def print_consistency_report(
             print(f"- direccion={row.direccion_original} | comuna_fuente={row.comuna_fuente} | comuna_usig={row.comuna_usig}")
 
 
-def retry_sin_match(cache: pd.DataFrame, limit: int) -> pd.DataFrame:
+def _row_source_commune(row: pd.Series, source_communes: dict[str, str]) -> str:
+    return normalize_comuna(row.get("comuna_fuente", "")) or source_communes.get(cache_key(row.get("direccion_original")), "")
+
+
+def _fill_cache_source_communes(cache: pd.DataFrame, source_communes: dict[str, str]) -> pd.DataFrame:
+    if cache.empty:
+        return cache
+    result = cache.copy()
+    for column in ("direccion_candidatas", "comuna_fuente", "coincide_comuna", "calidad_geo", "criterio_seleccion"):
+        if column not in result.columns:
+            result[column] = ""
+    missing_candidates = result["direccion_candidatas"].astype(str).str.strip().eq("")
+    result.loc[missing_candidates, "direccion_candidatas"] = result.loc[missing_candidates, "direccion_original"].map(
+        lambda value: " | ".join(generate_f02_address_candidates(str(value)))
+    )
+    missing_criteria = result["criterio_seleccion"].astype(str).str.strip().eq("")
+    result.loc[missing_criteria, "criterio_seleccion"] = "cache_preexistente_sin_reconsulta"
+    result["comuna_fuente"] = result.apply(lambda row: _row_source_commune(row, source_communes), axis=1)
+    exact_with_commune = result["estado"].astype(str).eq("exacta") & result["comuna_fuente"].astype(str).str.strip().ne("")
+    result.loc[exact_with_commune, "coincide_comuna"] = result.loc[exact_with_commune].apply(
+        lambda row: (
+            "si"
+            if normalize_comuna(row.get("comuna_usig", "")) == normalize_comuna(row.get("comuna_fuente", ""))
+            else "no"
+            if normalize_comuna(row.get("comuna_usig", ""))
+            else ""
+        ),
+        axis=1,
+    )
+    missing_quality = result["calidad_geo"].astype(str).str.strip().eq("")
+    result.loc[missing_quality, "calidad_geo"] = result.loc[missing_quality].apply(
+        lambda row: _quality_for_estado(
+            str(row.get("estado", "")),
+            "exacta_sin_control_comuna" if str(row.get("estado", "")) == "exacta" and not normalize_comuna(row.get("comuna_fuente", "")) else str(row.get("criterio_seleccion", "")),
+        ),
+        axis=1,
+    )
+    return result
+
+
+def _limited_indexes(indexes: list[int], limit: int | None) -> list[int]:
+    if limit is None:
+        return indexes
+    return indexes[: max(limit, 0)]
+
+
+def retry_sin_match(cache: pd.DataFrame, limit: int, source_communes: dict[str, str]) -> pd.DataFrame:
     retry_mask = cache["estado"].astype(str).isin(["sin_match", "error"])
     retry_indexes = cache[retry_mask].index.tolist()[: max(limit, 0)]
     print(f"Reintentando direcciones sin_match/error={len(retry_indexes)}")
@@ -624,18 +692,61 @@ def retry_sin_match(cache: pd.DataFrame, limit: int) -> pd.DataFrame:
         elapsed = time.monotonic() - last_call
         if last_call and elapsed < REQUEST_INTERVAL_SECONDS:
             time.sleep(REQUEST_INTERVAL_SECONDS - elapsed)
-        result = geocode_address(address)
+        result = geocode_address(address, comuna_fuente=_row_source_commune(cache.loc[row_index], source_communes))
         last_call = time.monotonic()
         for column, value in result.as_row().items():
             cache.at[row_index, column] = value
         print(f"{index_number:04d}/{len(retry_indexes):04d} {result.estado:11s} {address} -> {result.direccion_consulta}")
+        if index_number % 25 == 0:
+            write_cache(cache)
+            print(f"Checkpoint cache sin_match/error: {index_number}/{len(retry_indexes)}")
     return cache
 
 
-def run(limit: int, solo_pendientes: bool, reintentar_sin_match: bool) -> int:
+def retry_commune_discrepancies(cache: pd.DataFrame, limit: int | None, source_communes: dict[str, str]) -> pd.DataFrame:
+    cache = _fill_cache_source_communes(cache, source_communes)
+    cache["comuna_usig_norm"] = cache["comuna_usig"].map(normalize_comuna)
+    retry_mask = (
+        cache["estado"].astype(str).eq("exacta")
+        & cache["comuna_fuente"].astype(str).str.strip().ne("")
+        & cache["comuna_usig_norm"].astype(str).str.strip().ne("")
+        & (cache["comuna_fuente"].astype(str) != cache["comuna_usig_norm"].astype(str))
+    )
+    retry_indexes = _limited_indexes(cache[retry_mask].index.tolist(), limit)
+    print(f"Reintentando discrepancias comuna exactas={len(retry_indexes)}")
+    last_call = 0.0
+    for index_number, row_index in enumerate(retry_indexes, start=1):
+        address = str(cache.at[row_index, "direccion_original"])
+        elapsed = time.monotonic() - last_call
+        if last_call and elapsed < REQUEST_INTERVAL_SECONDS:
+            time.sleep(REQUEST_INTERVAL_SECONDS - elapsed)
+        result = geocode_address(address, comuna_fuente=str(cache.at[row_index, "comuna_fuente"]))
+        last_call = time.monotonic()
+        for column, value in result.as_row().items():
+            cache.at[row_index, column] = value
+        print(f"{index_number:04d}/{len(retry_indexes):04d} {result.estado:26s} {address} -> {result.direccion_consulta}")
+        if index_number % 25 == 0:
+            cache = cache.drop(columns=["comuna_usig_norm"], errors="ignore")
+            write_cache(cache)
+            cache["comuna_usig_norm"] = cache["comuna_usig"].map(normalize_comuna)
+            print(f"Checkpoint cache discrepancias: {index_number}/{len(retry_indexes)}")
+    return cache.drop(columns=["comuna_usig_norm"], errors="ignore")
+
+
+def run(limit: int | None, solo_pendientes: bool, reintentar_sin_match: bool, reintentar_discrepancias_comuna: bool) -> int:
     cache = read_cache()
+    source_communes = source_commune_by_address()
+    cache = _fill_cache_source_communes(cache, source_communes)
+    if reintentar_discrepancias_comuna:
+        updated = retry_commune_discrepancies(cache.copy(), limit, source_communes)
+        write_cache(updated)
+        print(f"Cache actualizado: {CACHE_PATH}")
+        refreshed = read_cache()
+        print_report(refreshed)
+        print_consistency_report()
+        return 0
     if reintentar_sin_match:
-        updated = retry_sin_match(cache.copy(), limit)
+        updated = retry_sin_match(cache.copy(), 500 if limit is None else limit, source_communes)
         write_cache(updated)
         print(f"Cache actualizado: {CACHE_PATH}")
         refreshed = read_cache()
@@ -649,7 +760,7 @@ def run(limit: int, solo_pendientes: bool, reintentar_sin_match: bool) -> int:
         print(f"Direcciones unicas F02={len(addresses)}; pendientes={len(to_process)}")
     else:
         print(f"Direcciones unicas F02={len(addresses)}; ya cacheadas={len(addresses) - len(to_process)}; nuevas={len(to_process)}")
-    selected = to_process[: max(limit, 0)]
+    selected = to_process[: max(500 if limit is None else limit, 0)]
 
     rows = cache.to_dict("records")
     last_call = 0.0
@@ -657,7 +768,7 @@ def run(limit: int, solo_pendientes: bool, reintentar_sin_match: bool) -> int:
         elapsed = time.monotonic() - last_call
         if last_call and elapsed < REQUEST_INTERVAL_SECONDS:
             time.sleep(REQUEST_INTERVAL_SECONDS - elapsed)
-        result = geocode_address(address)
+        result = geocode_address(address, comuna_fuente=source_communes.get(cache_key(address), ""))
         last_call = time.monotonic()
         rows.append(result.as_row())
         print(f"{index:04d}/{len(selected):04d} {result.estado:11s} {address}")
@@ -675,15 +786,21 @@ def run(limit: int, solo_pendientes: bool, reintentar_sin_match: bool) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Geocodifica direcciones F02 con USIG y cache persistente.")
-    parser.add_argument("--limit", type=int, default=500, help="Cantidad maxima de direcciones nuevas a consultar.")
+    parser.add_argument("--limit", type=int, default=None, help="Cantidad maxima de direcciones nuevas a consultar.")
     parser.add_argument("--solo-pendientes", action="store_true", help="Procesa solo direcciones ausentes del cache.")
     parser.add_argument("--reintentar-sin-match", action="store_true", help="Reconsulta filas cacheadas con estado sin_match/error usando normalizacion F02 y actualiza esas filas.")
+    parser.add_argument("--reintentar-discrepancias-comuna", action="store_true", help="Reconsulta solo filas exactas cacheadas donde comuna fuente y comuna USIG difieren.")
     parser.add_argument("--reporte-consistencia", action="store_true", help="Solo reporta consistencia comuna fuente vs comuna USIG exacta; no modifica datos.")
     args = parser.parse_args()
     if args.reporte_consistencia:
         print_consistency_report()
         return 0
-    return run(limit=args.limit, solo_pendientes=args.solo_pendientes, reintentar_sin_match=args.reintentar_sin_match)
+    return run(
+        limit=args.limit,
+        solo_pendientes=args.solo_pendientes,
+        reintentar_sin_match=args.reintentar_sin_match,
+        reintentar_discrepancias_comuna=args.reintentar_discrepancias_comuna,
+    )
 
 
 if __name__ == "__main__":
