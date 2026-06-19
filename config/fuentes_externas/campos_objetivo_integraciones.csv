@@ -1,0 +1,28 @@
+campo,tipo,descripcion,sensibilidad
+source_system,Texto,"Sistema de origen: google_places, osm, rappi, peya, mercadopago, pos, etc.",No sensible
+source_place_id,Texto,ID estable del local en la fuente.,No sensible / contractual
+datagastro_place_id,Texto,ID interno normalizado para matching entre fuentes.,No sensible
+nombre_normalizado,Texto,Nombre del comercio normalizado.,Público
+direccion_normalizada,Texto,Dirección normalizada USIG.,Público/operativo
+lat,Decimal,Latitud.,Público/operativo
+lon,Decimal,Longitud.,Público/operativo
+comuna,Entero,Comuna USIG.,Público
+barrio,Texto,Barrio USIG.,Público
+categoria_fuente,Texto,Categoría original de la fuente.,Público
+categoria_datagastro,Texto,Categoría normalizada DataGastro.,Público
+estado_activo_fuente,Texto,Activo/cerrado/temporal/futuro según fuente.,Público/operativo
+horarios,Texto/JSON,Horarios de atención si están disponibles.,Público
+rating,Decimal,Rating público de plataforma.,Público/terceros
+review_count,Entero,Cantidad de reseñas.,Público/terceros
+price_level,Texto,Rango de precios público.,Público/terceros
+delivery_available,Boolean,Tiene delivery según fuente.,Público/operativo
+booking_available,Boolean,Tiene reservas online.,Público/operativo
+mes,Fecha,Mes de agregación para métricas.,No sensible
+orders_count,Entero,Pedidos agregados por local o zona.,Comercial sensible
+gmv_amount,Decimal,Monto bruto agregado.,Comercial sensible
+ticket_avg,Decimal,Ticket promedio agregado.,Comercial sensible
+transactions_count,Entero,Cantidad de transacciones de pago agregadas.,Comercial sensible
+visitors_index,Decimal,Índice de flujo de personas agregado.,Privacidad alta
+data_quality_flag,Texto,exacta/aproximada/sin_match/estimada/opt_in.,No sensible
+permission_basis,Texto,"API pública, convenio, consentimiento, interno GCBA.",Governance
+last_seen_at,Fecha,Última vez visto en la fuente.,No sensible
