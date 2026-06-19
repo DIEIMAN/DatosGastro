@@ -1,0 +1,6 @@
+# Dependencias minimas para regenerar el informe ejecutivo (PDF + figuras).
+# No incluye las del pipeline completo; solo lo necesario para el informe.
+pandas>=1.5
+matplotlib>=3.6
+reportlab>=4.0
+pillow>=9.0

@@ -1,0 +1,145 @@
+% DataGastro - Informe de analisis (version LaTeX alternativa)
+% NOTA: la forma principal de reproducir el informe es el script de ReportLab
+% (scripts/generar_informe_pdf.py). Esta version LaTeX es opcional y usa las
+% mismas figuras de outputs/informe/figures/.
+%
+% Compilar desde la raiz del proyecto:  pdflatex docs/DataGastro_Informe.tex
+%
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+
+\definecolor{ink}{HTML}{22384A}
+\definecolor{accent}{HTML}{C0622D}
+\definecolor{soft}{HTML}{F6EDE6}
+
+\titleformat{\section}{\color{ink}\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\color{ink}\large\bfseries}{}{0em}{}
+\newcommand{\figpath}[1]{../outputs/informe/figures/#1}
+\newmdenv[backgroundcolor=soft,linecolor=accent,linewidth=2pt,topline=false,
+  bottomline=false,rightline=false,skipabove=6pt,skipbelow=6pt,
+  innerleftmargin=10pt,innerrightmargin=10pt,innertopmargin=7pt,innerbottommargin=7pt]{lectura}
+
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{gray}DataGastro \textperiodcentered{} Informe de analisis \textperiodcentered{} Junio de 2026}
+\fancyfoot[R]{\footnotesize\color{gray}\thepage}
+
+\begin{document}
+
+% ---------- Portada ----------
+\begin{titlepage}
+\thispagestyle{empty}
+\colorbox{ink}{\parbox[t][\paperheight][t]{\paperwidth}{%
+\vspace*{4cm}\hspace*{2cm}%
+\begin{minipage}{0.82\paperwidth}
+{\color{white}\fontsize{42}{48}\selectfont\bfseries DataGastro}\\[10pt]
+{\color{white!85}\Large Prototipo de base analitica del ecosistema gastronomico}\\[2pt]
+{\color{white!85}\Large de la Ciudad de Buenos Aires}\\[14pt]
+{\color{accent}\rule{7cm}{2pt}}\\[10pt]
+{\color{white!70}\large Informe de analisis \textperiodcentered{} Junio de 2026}\\[3cm]
+{\color{white!60}\small $\bullet$~Integra cinco registros oficiales y relevamientos propios en un modelo unico y trazable.}\\[4pt]
+{\color{white!60}\small $\bullet$~Construido sobre datos abiertos del Gobierno de la Ciudad de Buenos Aires.}\\[4pt]
+{\color{white!60}\small $\bullet$~Cada fuente se mantiene separada: las cifras no se suman entre si.}
+\end{minipage}}}
+\end{titlepage}
+
+% ---------- Resumen ejecutivo ----------
+\section*{Resumen ejecutivo}
+DataGastro es un prototipo de base analitica que integra, en un unico modelo ordenado y trazable, la informacion publica dispersa sobre el sector gastronomico de la Ciudad de Buenos Aires. Reune cinco registros oficiales y relevamientos propios, y los mantiene separados porque cada uno mide una dimension distinta del mismo fenomeno.
+
+\subsection*{Hallazgos principales}
+\begin{itemize}[leftmargin=*]
+\item \textbf{El sector formal esta documentado a gran escala:} 2.823 locales en la guia oficial de oferta y 44.169 habilitaciones gastronomicas aprobadas integradas en la base, con serie comparable 2019--2024 y periodos no comparables (2015--2018 y 2025) identificados por separado.
+\item \textbf{Por primera vez se puede observar, calle por calle, donde se aprueba actividad gastronomica formal:} el 97\% de las habilitaciones (42.741) fue ubicado en el mapa con el sistema de geolocalizacion oficial del Gobierno de la Ciudad, con una tasa exacta de geocodificacion cercana al 99\% y un control de consistencia territorial por comuna.
+\item \textbf{Volumen y concentracion no coinciden:} si se mide densidad de oferta registrada, San Nicolas y el centro historico aparecen como el nucleo de mayor intensidad territorial, mientras Palermo lidera en cantidad absoluta. Esta lectura surge de la oferta registrada, no de locales activos.
+\item \textbf{La Ciudad gestiona 259 espacios publicos de abastecimiento:} 6 mercados, 69 ferias y 184 puntos de ferias itinerantes de abastecimiento barrial, distribuidos territorialmente en las comunas de la Ciudad.
+\item \textbf{Todo el trabajo es trazable y validado:} cada numero informa su fuente, su fecha y sus limites; el proceso pasa 62 controles de calidad automaticos sin errores y 22 tests automaticos ejecutados correctamente.
+\end{itemize}
+\begin{lectura}\textbf{Lectura.} La fortaleza del prototipo es metodologica: no inventa un numero unico del sector, sino que ordena la evidencia disponible y deja explicito que se puede afirmar y que no. Eso lo hace confiable como insumo de gestion.\end{lectura}
+
+% ---------- 2. Fuentes ----------
+\section*{Las cinco fuentes}
+El principal riesgo al trabajar con estos datos es mezclar universos y comunicar conclusiones que los datos no sostienen. Sumar la oferta registrada con las habilitaciones aprobadas y hablar de ``X establecimientos gastronomicos'' produce un numero que no existe, porque cada fuente describe algo distinto.
+\vspace{4pt}
+
+{\footnotesize
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.2cm} p{3cm} X p{3.2cm}}
+\toprule
+\color{white}\cellcolor{ink}Fuente & \cellcolor{ink}\color{white}Organismo & \cellcolor{ink}\color{white}Que mide & \cellcolor{ink}\color{white}Que NO dice\\
+\midrule
+Oferta registrada (F01) & Ente de Turismo del GCBA & Establecimientos publicados en la guia oficial de gastronomia & No confirma si cada local sigue abierto hoy\\
+Habilitaciones aprobadas (F02) & Agencia Gubernamental de Control (AGC) & Tramites de habilitacion aprobados por rubro gastronomico (recursos 2015--2025) & No son locales activos ni registran cierres\\
+Ferias, mercados y FIAB (F03) & Direccion General de Ferias del GCBA & Espacios reales de abastecimiento publico & No cuenta puestos ni personas, solo espacios\\
+Eventos relevados (F04) & Relevamiento propio con fuente por fila & Inventario trazable de eventos del sector & No es el universo completo de eventos\\
+Programas y politicas (F05) & Relevamiento propio con fuente por fila & Catalogo institucional de programas vigentes & No mide impacto, empleo ni presupuesto\\
+\bottomrule
+\end{tabularx}}
+
+\paragraph{Aclaracion tecnica.} Una primera version del clasificador inflaba el total a 87.934 porque asignaba rubros gastronomicos a actividades como talabarteria o venta de productos envasados. El clasificador definitivo, por coincidencia exacta de terminos, llega a 44.169 habilitaciones genuinamente gastronomicas.
+
+% ---------- 3. Numeros ----------
+\section*{Los numeros principales, separados}
+\begin{center}\includegraphics[width=0.92\textwidth]{\figpath{01_kpis.png}}\end{center}
+\begin{lectura}\textbf{Lectura.} Las habilitaciones tienen un volumen mucho mayor porque acumulan tramites desde 2015. La oferta registrada es una guia estatica. Los espacios publicos son pocos pero geograficamente relevantes. Eventos y programas son catalogos documentados, no estadisticas.\end{lectura}
+
+% ---------- 4. Mapa ----------
+\section*{El mapa del ecosistema}
+Las coordenadas de la oferta registrada y de los espacios publicos vienen de las fuentes oficiales; las de las habilitaciones, del sistema de geolocalizacion del Gobierno de la Ciudad. Solo se muestran puntos con ubicacion validada.
+\begin{center}\includegraphics[width=\textwidth]{\figpath{02_mapa.png}}\end{center}
+\begin{lectura}\textbf{Lectura.} La actividad se concentra en el corredor norte y el centro historico, y se afina hacia el sur. La capa de habilitaciones geolocalizadas permite observar, calle por calle, donde se aprueba actividad formal. Son habilitaciones aprobadas, no locales activos.\end{lectura}
+
+% ---------- 5. Densidad ----------
+\section*{Volumen frente a densidad}
+En cantidad absoluta, Palermo lidera; pero es muy extenso. Si se mide densidad ---locales por kilometro cuadrado--- San Nicolas y el centro historico aparecen como las zonas de mayor concentracion. Corresponde a oferta registrada, no a locales activos.
+\begin{center}\includegraphics[width=\textwidth]{\figpath{03_densidad.png}}\end{center}
+\begin{lectura}\textbf{Lectura.} Palermo lidera en volumen, pero por su tamano la oferta queda diluida. Si se mide densidad de oferta registrada, San Nicolas y el centro historico aparecen como el nucleo de mayor intensidad territorial.\end{lectura}
+
+% ---------- 6. Serie ----------
+\section*{Cuanto se habilita por ano}
+El grafico muestra solo los anos comparables entre si (2019--2024).
+\begin{center}\includegraphics[width=0.92\textwidth]{\figpath{04_serie.png}}\end{center}
+\begin{lectura}\textbf{Lectura.} La serie comparable muestra la dinamica anual, con el impacto de la pandemia en 2020 y la recuperacion posterior. Los periodos 2015--2018 y 2025 se informan por separado para no falsear la comparacion.\end{lectura}
+
+% ---------- 7. Categorias ----------
+\section*{Que tipo de gastronomia se habilita}
+\begin{center}\includegraphics[width=0.92\textwidth]{\figpath{05_categorias.png}}\end{center}
+
+% ---------- 8. Espacios ----------
+\section*{Los espacios publicos de la Ciudad}
+\begin{center}\includegraphics[width=0.92\textwidth]{\figpath{06_espacios.png}}\end{center}
+\begin{lectura}\textbf{Lectura.} Los 259 espacios se reparten en mercados, ferias especializadas y 184 puntos de ferias itinerantes de abastecimiento barrial. Es la red de abastecimiento de proximidad, presente en las 15 comunas y mas equilibrada que la oferta privada.\end{lectura}
+
+% ---------- 9. Limites ----------
+\section*{Que no se puede responder todavia}
+\begin{itemize}[leftmargin=*]
+\item Cuantos locales estan activos hoy: no existe un padron con bajas actualizado.
+\item Cuantos abrieron o cerraron en terminos netos: las habilitaciones no registran bajas.
+\item El impacto economico del sector: empleo, ventas o facturacion.
+\item Si un barrio esta saturado o subatendido: falta un denominador de demanda.
+\item El impacto de eventos o programas: no hay metricas de resultado publicadas.
+\end{itemize}
+\begin{lectura}\textbf{Lectura.} Esta honestidad sobre los limites es lo que hace confiable la base: cada afirmacion esta respaldada, y las que no tienen respaldo no se hacen.\end{lectura}
+
+% ---------- 10. Hoja de ruta ----------
+\section*{Que falta y como se podria mejorar}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Incorporar el dataset operativo de permisos de area gastronomica} como senal parcial de actividad en calle. No todos los locales tienen permiso de mesas y sillas, por lo que no seria un padron completo, sino una senal parcial.
+\item \textbf{Profundizar el analisis territorial} con herramientas de analisis de redes sobre los puntos geolocalizados, para detectar polos y corredores. Modulo exploratorio, no un indicador oficial.
+\item \textbf{Mantener la base actualizada} reejecutando el proceso cuando las fuentes publiquen nuevos datos.
+\end{itemize}
+
+\vspace{6pt}
+\noindent\footnotesize\textcolor{gray}{DataGastro \textperiodcentered{} Datos abiertos del Gobierno de la Ciudad de Buenos Aires y relevamientos trazables. Cada numero informa su fuente, su fecha y sus limites.}
+
+\end{document}
