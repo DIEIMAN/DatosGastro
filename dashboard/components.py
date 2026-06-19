@@ -74,6 +74,7 @@ def vertical_bar(
     order: list[str] | None = None,
     color: str = "#5c7c3f",
     caption: str = "",
+    show_mean_line: bool = False,
 ) -> None:
     st.subheader(title)
     if df.empty or x not in df.columns or y not in df.columns:
@@ -82,7 +83,7 @@ def vertical_bar(
     chart_df = df[[x, y]].copy()
     chart_df[y] = numeric_series(chart_df[y])
     sort = order if order else None
-    chart = (
+    bars = (
         alt.Chart(chart_df)
         .mark_bar(color=color)
         .encode(
@@ -92,6 +93,28 @@ def vertical_bar(
         )
         .properties(height=320)
     )
+    if show_mean_line and not chart_df.empty:
+        mean_val = chart_df[y].mean()
+        mean_df = pd.DataFrame({y: [mean_val]})
+        rule = (
+            alt.Chart(mean_df)
+            .mark_rule(color="#ba4836", strokeDash=[8, 4], strokeWidth=2)
+            .encode(
+                y=alt.Y(f"{y}:Q"),
+                tooltip=[alt.Tooltip(f"{y}:Q", title="Promedio del período")],
+            )
+        )
+        text = (
+            alt.Chart(mean_df)
+            .mark_text(align="right", dx=-4, dy=-8, color="#ba4836", fontSize=11)
+            .encode(
+                y=alt.Y(f"{y}:Q"),
+                text=alt.value(f"Promedio: {int(round(mean_val)):,}".replace(",", ".")),
+            )
+        )
+        chart = alt.layer(bars, rule, text)
+    else:
+        chart = bars
     st.altair_chart(chart, width="stretch")
     if caption:
         st.caption(caption)

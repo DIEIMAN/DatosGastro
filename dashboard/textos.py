@@ -30,17 +30,40 @@ TABS = [
 ]
 
 KPI_LABELS = {
-    "f01": "Locales en la guia oficial",
-    "f02": "Habilitaciones gastronomicas 2015-2025",
-    "f03": "Ferias, mercados y FIAB",
-    "f04": "Eventos relevados aptos",
+    "f01": "Oferta registrada en guia oficial",
+    "f02": "Habilitaciones aprobadas (2015-2025)",
+    "f03": "Espacios de ferias, mercados y FIAB",
+    "f04": "Eventos gastronomicos verificados",
 }
 
 KPI_HELP = {
-    "f01": "Registros de la guia de oferta gastronomica de Buenos Aires Data (F01). No confirma que cada local siga abierto.",
-    "f02": "Habilitaciones aprobadas por AGC clasificadas como gastronomia de servicio (F02). No equivalen a locales activos. La serie anual comparable es 2019-2024.",
-    "f03": "Espacios reales: mercados, ferias de espacio publico y paradas FIAB (F03). No cuenta puestos individuales.",
-    "f04": "Eventos vinculados a la politica gastronomica, relevados manualmente con fuente por fila (F04). Solo los verificados entran en metricas.",
+    "f01": "Fuente 1: guia de oferta gastronomica de Buenos Aires Data / Ente de Turismo del GCBA. No confirma que cada local siga abierto.",
+    "f02": "Fuente 2: habilitaciones aprobadas por la Agencia Gubernamental de Control (AGC), clasificadas como gastronomia de servicio. No equivalen a locales activos. La serie anual comparable es 2019-2024.",
+    "f03": "Fuente 3: espacios reales de ferias, mercados y Ferias Itinerantes de Abastecimiento Barrial (FIAB). No cuenta puestos individuales.",
+    "f04": "Fuente 4: eventos vinculados a la politica gastronomica, relevados manualmente con fuente por fila. Solo los verificados entran en metricas.",
+}
+
+HALLAZGO_DENSIDAD = (
+    "**Hallazgo clave:** en volumen absoluto, Palermo lidera la oferta registrada. "
+    "Pero por densidad (registros por km2), San Nicolas concentra entre 6 y 7 veces "
+    "mas actividad gastronomica. El nucleo real por intensidad es el microcentro y "
+    "el casco historico (San Nicolas, Monserrat, San Telmo), no Palermo. Esta "
+    "diferencia importa para planificacion de uso del suelo y permisos de espacio publico."
+)
+
+GLOSARIO = {
+    "AGC": "Agencia Gubernamental de Control: organismo del GCBA que aprueba habilitaciones comerciales.",
+    "GCBA": "Gobierno de la Ciudad de Buenos Aires.",
+    "USIG": "Sistema de Informacion Geografica del GCBA: servicio oficial para normalizar y ubicar direcciones en el mapa.",
+    "FIAB": "Ferias Itinerantes de Abastecimiento Barrial: ferias de productos frescos que rotan por barrios.",
+    "F01": "Fuente 1: oferta gastronomica registrada en la guia oficial del Ente de Turismo del GCBA.",
+    "F02": "Fuente 2: habilitaciones gastronomicas aprobadas por la Agencia Gubernamental de Control.",
+    "F03": "Fuente 3: espacios de ferias, mercados y FIAB de la Direccion General de Ferias del GCBA.",
+    "F04": "Fuente 4: eventos gastronomicos relevados manualmente con fuente anotada por fila.",
+    "F05": "Fuente 5: programas y politicas gastronomicas relevados manualmente con normativa de referencia.",
+    "Geocodificacion": "Proceso de convertir una direccion de texto en coordenadas geograficas para mostrarla en el mapa.",
+    "Habilitacion": "Autorizacion formal del GCBA para operar un rubro comercial en una direccion.",
+    "Padron vivo": "Registro actualizado de locales activos con altas y bajas. DataGastro no tiene esta fuente todavia.",
 }
 
 INTROS = {

@@ -47,6 +47,8 @@ from dashboard.textos import (
     ADVERTENCIAS_COMPLETAS,
     BAJADA,
     CAPTIONS,
+    GLOSARIO,
+    HALLAZGO_DENSIDAD,
     INTROS,
     KPI_HELP,
     KPI_LABELS,
@@ -77,14 +79,16 @@ def render_header() -> None:
 
 def render_f02_usig_status(report: dict[str, float | int | bool]) -> None:
     if report["total"]:
-        st.caption(
-            f"{CAPTIONS['f02_usig']} Mapeados: {int(report.get('mapped', 0))} "
-            f"({float(report.get('mapped_pct', 0.0)):.1f}% del total F02). "
-            f"Cache: {int(report['exacta'])} exactas, {int(report['aproximada'])} aproximadas, "
-            f"tasa exacta {float(report['exact_rate']):.1f}%."
-        )
+        mapped_pct = float(report.get("mapped_pct", 0.0))
+        mapped = int(report.get("mapped", 0))
+        exact_rate = float(report["exact_rate"])
+        col_a, col_b, col_c = st.columns(3)
+        col_a.metric("Habilitaciones ubicadas en el mapa (USIG)", f"{mapped_pct:.0f}%", help="Porcentaje de habilitaciones F02 geocodificadas con el normalizador oficial del GCBA")
+        col_b.metric("Cantidad geocodificada", fmt(mapped), help="Habilitaciones con coordenadas validadas por USIG")
+        col_c.metric("Tasa de exactitud", f"{exact_rate:.1f}%", help="Porcentaje de consultas USIG con resultado exacto (no aproximado)")
+        st.caption(CAPTIONS["f02_usig"])
     else:
-        st.caption("F02 USIG pendiente: ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
+        st.warning("Geocodificación USIG pendiente. Ejecutar `python src/geocode_usig.py --solo-pendientes` para construir `data/processed/geo_cache.csv`.")
 
 
 def lectura_f02_usig_panorama(report: dict[str, float | int | bool]) -> str:
@@ -212,6 +216,18 @@ def render_territorio(data: DashboardData) -> None:
         geo_barrios = prepare_f01_choropleth(data)
         pydeck_barrio_choropleth(geo_barrios)
         st.caption("Oferta registrada F01, no locales activos; densidad solo como referencia.")
+        col_a, col_b = st.columns(2)
+        col_a.metric(
+            "San Nicolas vs Palermo",
+            "~7x",
+            help="Densidad relativa aproximada de registros por km2 en la oferta registrada.",
+        )
+        col_b.metric(
+            "Lectura territorial",
+            "Densidad",
+            help="Palermo lidera por volumen absoluto; San Nicolas lidera por intensidad territorial.",
+        )
+        st.info(HALLAZGO_DENSIDAD)
 
     st.divider()
     left, right = st.columns(2)
@@ -268,6 +284,7 @@ def render_dinamismo(data: DashboardData) -> None:
         "Habilitaciones gastronomicas aprobadas por anio",
         order=F02_SERIE_ORDER,
         caption=caption_con_fecha("f02_serie", first_value(data.hab_anio, "fecha_consulta_max")),
+        show_mean_line=True,
     )
     serie_txt = lectura_serie_f02(data.hab_anio)
     if serie_txt:
@@ -427,6 +444,12 @@ def render_metodologia(data: DashboardData) -> None:
 
     st.subheader("Trazabilidad por archivo")
     st.dataframe(traceability_rows(), width="stretch", hide_index=True)
+
+    st.subheader("Glosario")
+    glosario_df = pd.DataFrame(
+        [{"Termino": termino, "Definicion": definicion} for termino, definicion in GLOSARIO.items()]
+    )
+    st.dataframe(glosario_df, width="stretch", hide_index=True)
 
     with st.expander("Catalogo de fuentes (dim_fuente)", expanded=False):
         searchable_table(
