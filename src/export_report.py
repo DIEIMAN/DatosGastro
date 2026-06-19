@@ -6,7 +6,7 @@ from pathlib import Path
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import cm
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
@@ -15,10 +15,19 @@ ROOT = Path(__file__).resolve().parents[1]
 RESUMEN_CSV = ROOT / "data" / "analytics" / "analytics_resumen_ejecutivo.csv"
 OUTPUT_PDF = ROOT / "outputs" / "resumen_ejecutivo_datagastro.pdf"
 
+# Fuente especifica por indicador (sufijo de la clave)
+_SOURCE_BY_SUFFIX: list[tuple[str, str]] = [
+    ("_f01", "Ente de Turismo del GCBA"),
+    ("_f02", "AGC / Buenos Aires Data"),
+    ("_f03", "Dir. General de Ferias del GCBA"),
+    ("_f04", "Relevamiento manual trazable"),
+    ("_f05", "Relevamiento manual trazable"),
+]
+
 INDICADORES_PRINCIPALES = {
     "establecimientos_oferta_gastronomica_f01": "Oferta registrada en guia oficial (F01)",
     "habilitaciones_gastronomicas_f02": "Habilitaciones aprobadas (F02)",
-    "habilitaciones_f02_geocodificadas": "Habilitaciones aprobadas geocodificadas con USIG (F02)",
+    "habilitaciones_f02_geocodificadas": "Habilitaciones geocodificadas con USIG (F02)",
     "espacios_ferias_mercados_f03": "Espacios de ferias, mercados y FIAB (F03)",
     "eventos_gastronomicos_reales_f04_aptos": "Eventos gastronomicos verificados (F04)",
     "programas_politicas_reales_f05_aptos": "Programas y politicas verificados (F05)",
@@ -74,70 +83,111 @@ def data_date(rows: list[dict[str, str]]) -> str:
     return max(dates) if dates else "No disponible"
 
 
-def source_text(row: dict[str, str]) -> str:
-    sources = row.get("fuentes_utilizadas", "").strip()
+def infer_source(indicator_key: str) -> str:
+    for suffix, name in _SOURCE_BY_SUFFIX:
+        if suffix in indicator_key:
+            return name
+    return "Ver Metodologia"
+
+
+def source_text(indicator_key: str, row: dict[str, str]) -> str:
+    source = infer_source(indicator_key)
     warning = row.get("advertencia_grano", "").strip()
     if warning:
-        return f"{sources}. {warning}" if sources else warning
-    return sources or "No disponible"
+        return f"{source}. {warning}"
+    return source
 
 
-def build_indicator_table(rows: list[dict[str, str]]) -> Table:
+def build_indicator_table(rows: list[dict[str, str]], cell_style: ParagraphStyle) -> Table:
     indexed = by_indicator(rows)
-    table_rows = [["Indicador separado", "Valor", "Fuente / advertencia"]]
+
+    header = ["Indicador", "Valor", "Fuente"]
+    table_rows: list[list] = [header]
+
     for indicator, label in INDICADORES_PRINCIPALES.items():
         row = indexed.get(indicator)
         if not row:
-            table_rows.append([label, "No disponible", "Indicador ausente en analytics_resumen_ejecutivo.csv"])
+            table_rows.append([
+                Paragraph(label, cell_style),
+                "—",
+                Paragraph("Indicador ausente en analytics_resumen_ejecutivo.csv", cell_style),
+            ])
             continue
-        table_rows.append([label, format_number(row.get("valor", "")), source_text(row)])
+        table_rows.append([
+            Paragraph(label, cell_style),
+            format_number(row.get("valor", "")),
+            Paragraph(source_text(indicator, row), cell_style),
+        ])
 
-    table = Table(table_rows, colWidths=[6.0 * cm, 2.6 * cm, 8.0 * cm], repeatRows=1)
+    # A4 usable width = 21cm - 3cm margins = 18cm
+    table = Table(table_rows, colWidths=[7.2 * cm, 2.3 * cm, 8.5 * cm], repeatRows=1)
     table.setStyle(
-        TableStyle(
-            [
-                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1f4e5f")),
-                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#d0d7de")),
-                ("BACKGROUND", (0, 1), (-1, -1), colors.HexColor("#f8fafc")),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f3f6f8")]),
-            ]
-        )
+        TableStyle([
+            # Header
+            ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1f4e5f")),
+            ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+            ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+            ("FONTSIZE", (0, 0), (-1, 0), 8),
+            # Data rows alternating
+            ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f3f6f8")]),
+            # All cells
+            ("FONTSIZE", (0, 1), (-1, -1), 8),
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("TOPPADDING", (0, 0), (-1, -1), 4),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+            ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#d0d7de")),
+        ])
     )
     return table
 
 
-def bullet_list(items: list[str]) -> str:
-    return "<br/>".join(f"- {item}" for item in items)
+def bullet_paragraph(items: list[str], style: ParagraphStyle) -> list[Paragraph]:
+    return [Paragraph(f"&#8226; {item}", style) for item in items]
 
 
 def build_pdf(rows: list[dict[str, str]]) -> None:
     OUTPUT_PDF.parent.mkdir(parents=True, exist_ok=True)
-    styles = getSampleStyleSheet()
+    base_styles = getSampleStyleSheet()
+
+    cell_style = ParagraphStyle(
+        "TableCell",
+        parent=base_styles["Normal"],
+        fontSize=8,
+        leading=10,
+    )
+    bullet_style = ParagraphStyle(
+        "Bullet",
+        parent=base_styles["BodyText"],
+        fontSize=9,
+        leading=13,
+        leftIndent=10,
+        spaceAfter=2,
+    )
+
     story = []
 
-    story.append(Paragraph("DataGastro — Resumen Ejecutivo", styles["Title"]))
-    story.append(Paragraph(f"Fecha de datos: {data_date(rows)}", styles["Normal"]))
-    story.append(Paragraph(f"Fecha de generacion: {date.today().isoformat()}", styles["Normal"]))
+    story.append(Paragraph("DataGastro — Resumen Ejecutivo", base_styles["Title"]))
+    story.append(Paragraph(f"Fecha de datos: {data_date(rows)}", base_styles["Normal"]))
+    story.append(Paragraph(f"Fecha de generacion: {date.today().isoformat()}", base_styles["Normal"]))
     story.append(Spacer(1, 0.5 * cm))
     story.append(
         Paragraph(
-            "Los indicadores se presentan separados por fuente. No se suma F01 + F02 + F03 porque miden universos distintos.",
-            styles["BodyText"],
+            "Los indicadores se presentan separados por fuente. "
+            "No se suma F01 + F02 + F03 porque miden universos distintos.",
+            base_styles["BodyText"],
         )
     )
     story.append(Spacer(1, 0.4 * cm))
-    story.append(Paragraph("Indicadores principales", styles["Heading2"]))
-    story.append(build_indicator_table(rows))
+    story.append(Paragraph("Indicadores principales", base_styles["Heading2"]))
+    story.append(build_indicator_table(rows, cell_style))
     story.append(Spacer(1, 0.6 * cm))
-    story.append(Paragraph("Que responde hoy", styles["Heading2"]))
-    story.append(Paragraph(bullet_list(QUE_RESPONDE), styles["BodyText"]))
+    story.append(Paragraph("Que responde hoy", base_styles["Heading2"]))
+    story.extend(bullet_paragraph(QUE_RESPONDE, bullet_style))
     story.append(Spacer(1, 0.4 * cm))
-    story.append(Paragraph("Que no responde todavia", styles["Heading2"]))
-    story.append(Paragraph(bullet_list(QUE_NO_RESPONDE), styles["BodyText"]))
+    story.append(Paragraph("Que no responde todavia", base_styles["Heading2"]))
+    story.extend(bullet_paragraph(QUE_NO_RESPONDE, bullet_style))
 
     doc = SimpleDocTemplate(
         str(OUTPUT_PDF),
