@@ -1,0 +1,160 @@
+﻿fuente,osm_type,osm_id,nombre_original,shop,craft,cuisine,nivel_universo,categoria_pastas,patron_detectado,confianza_categoria,addr,lat,lon
+OSM,node,2128283287,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Del Libertador 6628,-34.5512452,-58.4526593
+OSM,node,2135032208,Pasta,pastry,,,B,probable_nombre_pastas,pasta_en_texto,0.5,Jerónimo Salguero 2069,-34.5866712,-58.4126215
+OSM,node,2208155287,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Cabildo 3842,-34.5479501,-58.4692671
+OSM,node,2324395851,La Soberana,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Cabildo 2828,-34.556123,-58.4622623
+OSM,node,2339304726,Bayo,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Juramento 2096,-34.5604198,-58.4536247
+OSM,node,2352917394,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Federico Lacroze 2438,-34.5706415,-58.4450386
+OSM,node,2639140314,Fabrica de Pastas El Aguila,food,,,A,fabrica_pastas,fabrica_pastas,0.9,Segurola 202,-34.6320285,-58.4849617
+OSM,node,2725912759,San José,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Córdoba 3520,-34.5979997,-58.4163217
+OSM,node,2747681045,La Princesa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Echeverría 1580,-34.5583046,-58.4478334
+OSM,node,2971997133,Stella Maris,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Coronel Díaz 1788,-34.5905072,-58.4115424
+OSM,node,2999055979,,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Juan Bautista Alberdi 4916,-34.6452031,-58.4952939
+OSM,node,3014820447,Il Bruno Pasta & Pizza Napoletana,,,pizza;italian;pasta,C,ambiguo_gastronomico,pasta+restaurante,0.3,Felipe Vallese 705,-34.61271,-58.444643
+OSM,node,3070071833,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Santa Fe 3280,-34.588375,-58.4113152
+OSM,node,3126686239,D'Ippo,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Coronel Díaz 1411,-34.5939727,-58.4141455
+OSM,node,3205426280,Pasta Recoleta Bodegon,,,,B,probable_nombre_pastas,pasta_en_texto,0.5, ,-34.5887651,-58.3922339
+OSM,node,3346048933,Pastas Frescas,yes,,,A,pastas_frescas,pastas_frescas,0.9,Avenida Juan Bautista Alberdi ,-34.6226057,-58.4302227
+OSM,node,3346118420,Andrea Doria,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida San Juan ,-34.6267189,-58.4257929
+OSM,node,3455724493,Raviolón,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Peña 3000,-34.5865018,-58.4044972
+OSM,node,3763817871,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Cabildo 1833,-34.5644027,-58.45439
+OSM,node,3855257500,La Nieves,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Bernardo de Irigoyen ,-34.6166216,-58.3801326
+OSM,node,3892102625,Fabrica de Pastas,health_food,,,A,fabrica_pastas,fabrica_pastas,0.9, ,-34.6231056,-58.4610441
+OSM,node,4100023482,Jockey Club,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Luis María Campos 737,-34.5698366,-58.4359366
+OSM,node,4334288841,San Cayetano,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5421288,-58.4715444
+OSM,node,4381407961,Carpi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5422298,-58.4739582
+OSM,node,4394864006,Santa Paula,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6275758,-58.5230058
+OSM,node,4567331612,Farbica de Pastas,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Manuel A. Montes de Oca ,-34.6331394,-58.3760477
+OSM,node,4567364042,Fábrica de Pasta,food,,pasta,B,probable_pastas_produccion_venta,pasta+contexto_produccion,0.6, ,-34.630856,-58.3704208
+OSM,node,4575939556,Pastas Frescas,pasta,,,A,pastas_frescas,osm_shop_pasta,0.8,Del Valle Iberlucea ,-34.6378195,-58.3628757
+OSM,node,4614702146,La Reina de Villa Luro,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Lope de Vega 1314,-34.6275174,-58.5076259
+OSM,node,4633307449,Constituyentes,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5704605,-58.5079524
+OSM,node,4635674133,Farfalla,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.564821,-58.4387703
+OSM,node,4636073791,Milena,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Arce ,-34.5676988,-58.4365446
+OSM,node,4637946155,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Triunvirato 4223,-34.5780493,-58.4803476
+OSM,node,4644852024,Sensación,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Monroe ,-34.5644795,-58.4695839
+OSM,node,4654320271,Morena,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Olazábal ,-34.5737723,-58.4808003
+OSM,node,4654337669,Impacto,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Ángel Justiniano Carranza ,-34.5806069,-58.4359863
+OSM,node,4654364290,Pastas Devoto,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Francisco Beiró ,-34.6060195,-58.511794
+OSM,node,4654642518,La Castellana,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Federico Lacroze ,-34.5775458,-58.4493447
+OSM,node,4656740694,Pastas Frescas Artesanales,,,,A,pastas_frescas,pastas_frescas,0.9,La Niña ,-34.6234914,-58.5105245
+OSM,node,4657050932,La Veronese,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Irigoyen ,-34.6284445,-58.5161927
+OSM,node,4657285855,Romanea,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Monroe 4911,-34.5730954,-58.4844813
+OSM,node,4657793233,La Enqueta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Capitán General Ramón Freire ,-34.5721855,-58.4582773
+OSM,node,4657941258,Fabrica de Pastas,pasta,,,A,fabrica_pastas,osm_shop_pasta,0.8, ,-34.613266,-58.4852255
+OSM,node,4658058597,Paccheri,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Monroe ,-34.570735,-58.4799842
+OSM,node,4658110524,Farfalla Pastas Frescas,pasta,,,A,pastas_frescas,osm_shop_pasta,0.8,Echeverría 3099,-34.5667684,-58.4625207
+OSM,node,4660674301,La Cumbre,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6145023,-58.4955656
+OSM,node,4660716806,Sette Bellezze,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Nazarre ,-34.6028296,-58.4953966
+OSM,node,4674041512,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Jerónimo Salguero 2663,-34.5808598,-58.4088135
+OSM,node,4675151217,La Pasta Frola,pastry,,,B,probable_nombre_pastas,pasta_en_texto,0.5,Avenida Corrientes 1365,-34.6038323,-58.3859754
+OSM,node,4677153604,M Pastereria,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6137468,-58.3726628
+OSM,node,4678917747,La Hispano Americana - Pastas Artesanales,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Estados Unidos ,-34.6185441,-58.3723107
+OSM,node,4684220686,La Confianza,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Carhué ,-34.6406939,-58.5250647
+OSM,node,4687921210,Todo Pasta,,,pasta,B,probable_nombre_pastas,pasta_en_texto,0.5,Avenida Rivadavia ,-34.6145698,-58.4284194
+OSM,node,4689811766,Pastas Savori,,,,B,probable_nombre_pastas,pasta_en_texto,0.5,Avenida Rivadavia ,-34.623342,-58.4486355
+OSM,node,4695983668,Pastas Quintela,food,,,B,probable_nombre_pastas,pasta_en_texto,0.5,Avenida Díaz Vélez ,-34.6086692,-58.4207983
+OSM,node,4699635348,La Porteñita,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Acoyte ,-34.6129466,-58.4384894
+OSM,node,4700107822,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida José María Moreno 176,-34.6200975,-58.4354476
+OSM,node,4700134704,Santa María,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida José María Moreno ,-34.6215782,-58.4349109
+OSM,node,4704104334,Fabrica de Pastas Frescas,yes,,,A,fabrica_pastas,fabrica_pastas,0.9,Avenida Eva Perón ,-34.6458312,-58.4666023
+OSM,node,4704153156,La Leonesa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Carlos Calvo 486,-34.6196356,-58.3726186
+OSM,node,4704502181,Pastas Artesanales,bakery,,,B,probable_pastas_produccion_venta,pasta+contexto_produccion,0.6,Sánchez de Loria ,-34.6152826,-58.412688
+OSM,node,4708681280,La Magistral,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida La Plata ,-34.6198184,-58.4280666
+OSM,node,4709130299,Mar & Sol,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Olivera ,-34.6397608,-58.4861196
+OSM,node,4709185106,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Juan Bautista Alberdi 2402,-34.631396,-58.4617748
+OSM,node,4710697178,Belgrano,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6130804,-58.3833303
+OSM,node,4725094992,Cacique Catriel,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Triunvirato 4177,-34.5784692,-58.4797203
+OSM,node,4727940049,Master,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.600009,-58.4040477
+OSM,node,4746261387,Stella Maris,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6399666,-58.521094
+OSM,node,4764351973,Ieri,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Cuba 1875,-34.563077,-58.4527754
+OSM,node,4936017623,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Superí 1802,-34.5705911,-58.4643534
+OSM,node,4944505489,La Pilar,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Soler 6088,-34.5769855,-58.4376359
+OSM,node,5098844975,Lourdes,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Santa Fe 5008,-34.5771045,-58.4304854
+OSM,node,5218913321,La Pastalinda de Don Chiquillo,confectionery,,,C,sin_senial_pastas,,0.0,Chacabuco 639,-34.615415,-58.3760771
+OSM,node,5223587086,La Leonesa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Doctor Rómulo Naón 2173,-34.5694486,-58.4708053
+OSM,node,5446674203,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Corrientes 5064,-34.600541,-58.4372757
+OSM,node,5446674204,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Rivadavia 6262,-34.626064,-58.4547483
+OSM,node,5446674211,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Pueyrredón 1827,-34.5900217,-58.4000708
+OSM,node,5446674212,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Godoy Cruz 2850,-34.5771614,-58.4240457
+OSM,node,5446674213,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Nogoyá 3190,-34.6038316,-58.4932172
+OSM,node,5446674214,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Cuenca 3230,-34.6003632,-58.4961703
+OSM,node,5837221609,La Confianza,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Franklin ,-34.6099376,-58.4466897
+OSM,node,6181096757,Salsamendi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6406964,-58.5261827
+OSM,node,6189604987,Quique,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Cabildo 471,-34.5714873,-58.4414329
+OSM,node,6388408413,Caprizzi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6042077,-58.4583974
+OSM,node,6394156364,La Nueva Belgrano,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5672629,-58.4548373
+OSM,node,6762348348,Fideo Fresh,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5940898,-58.4294758
+OSM,node,6927523214,Viva la Pasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5582492,-58.4568744
+OSM,node,6951923661,La Reina de Junin,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5574972,-58.4455209
+OSM,node,7115746189,La Victoria,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6158176,-58.4479204
+OSM,node,7626841733,Rochino,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5625187,-58.4427443
+OSM,node,7715440922,Ricapasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Superí 3301,-34.5742949,-58.4600235
+OSM,node,7792912395,La Praderita,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6149526,-58.5266231
+OSM,node,8173777182,Dante,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5544872,-58.4561276
+OSM,node,8459476149,Florencia,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6100002,-58.4214228
+OSM,node,8878969242,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5659295,-58.4367637
+OSM,node,9377909294,La Reina de Saavedra,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5569155,-58.479404
+OSM,node,9563107091,Multipasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Corrientes 4793,-34.6015771,-58.4331024
+OSM,node,9625319845,Farfalla,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Federico Lacroze 2308,-34.5690414,-58.4437741
+OSM,node,9871134985,La Nueva Alfa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5796571,-58.4753182
+OSM,node,10039900226,L'Artisan,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.554155,-58.4596657
+OSM,node,10284039508,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6400621,-58.5085279
+OSM,node,10789231572,Lacroze,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5823161,-58.4523232
+OSM,node,10816124906,Quotidiano - Bar de Pasta,,,,C,ambiguo_gastronomico,pasta+restaurante,0.3, ,-34.5890404,-58.3938965
+OSM,node,11115167005,Salvatore,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Juan María Gutiérrez 3884,-34.5807387,-58.414323
+OSM,node,11206715017,Multipasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Bulnes 1881,-34.5895914,-58.4128801
+OSM,node,11294367982,Del Pratello,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Paraguay 3421,-34.5927629,-58.4137105
+OSM,node,11414684235,Nueva Familia,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6054964,-58.3892188
+OSM,node,11432626496,Quotidiano Bar De Pastas,,,,C,ambiguo_gastronomico,pasta+restaurante,0.3, ,-34.588122,-58.4098601
+OSM,node,11687530169,La Alacena Pastificio,bakery,,,A,pastificio,pastificio,0.9,José Antonio Cabrera 4002,-34.5964052,-58.423272
+OSM,node,11873540059,Fábrica de Pastas Santa Elena,pasta,,,A,fabrica_pastas,osm_shop_pasta,0.8, ,-34.6242695,-58.4074417
+OSM,node,11873643311,Monti Bar de Pastas - Boedo,,,italian,C,ambiguo_gastronomico,pasta+restaurante,0.3, ,-34.6222872,-58.4166306
+OSM,node,11999269391,Pastificio,pasta,,,A,pastificio,osm_shop_pasta,0.8, ,-34.6234037,-58.4542212
+OSM,node,12145263514,Pasta,,,,B,probable_nombre_pastas,pasta_en_texto,0.5, ,-34.5629862,-58.4615667
+OSM,node,12166487216,Otra Pasta,,,,B,probable_nombre_pastas,pasta_en_texto,0.5,Viamonte ,-34.6000104,-58.3763432
+OSM,node,12185279002,La Duquesa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Cabildo 239,-34.5729524,-58.4388201
+OSM,node,12241773572,Pastas Frescas Dani,pasta,,,A,pastas_frescas,osm_shop_pasta,0.8,Beruti 2800,-34.5911763,-58.4042417
+OSM,node,12242839582,Allora,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5827565,-58.4765649
+OSM,node,12292129276,Rochino,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5870023,-58.3991019
+OSM,node,12314543912,El Cóndor,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6336211,-58.4816635
+OSM,node,12321422506,La Nueva Estrella,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,José Andrés Pacheco de Melo 2578,-34.5873226,-58.4007164
+OSM,node,12329522456,Salzamendi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.58593,-58.405052
+OSM,node,12588376663,Raviolandia,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.61805,-58.4691447
+OSM,node,12614244068,La Moderna,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5464059,-58.4634167
+OSM,node,12650491888,Piatto Rosso,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5959414,-58.4046391
+OSM,node,12665046884,,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.582192,-58.4752482
+OSM,node,13109074530,Caprizzi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5912622,-58.3983134
+OSM,node,13153980706,Biasatti,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5642465,-58.4561498
+OSM,node,13254559101,Hoy Pasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.5817708,-58.4064296
+OSM,node,13312148843,L'Artisan,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Elcano 3055,-34.5726611,-58.4593812
+OSM,node,13376145801,La Juventud Argentina,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Nazca 1233,-34.6190252,-58.4751547
+OSM,node,13606898463,La Maldita,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6088759,-58.431857
+OSM,node,13634268202,La Juvenil,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Arenales 1739,-34.5948152,-58.3925682
+OSM,node,13785261077,Raviolandia,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6234837,-58.520938
+OSM,node,13807371463,Dippo,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6159451,-58.464547
+OSM,node,13950533901,Natale,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6149446,-58.3731026
+OSM,way,283511297,Jardín de Infantes Común 02/07° Prof. Marina Margarita Ravioli,,,,B,probable_nombre_pastas,pasta_en_texto,0.5, ,-34.6155815,-58.4341546
+OSM,way,461408423,La Esmeralda,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Ruiz Huidobro 3980,-34.5514673,-58.4873321
+OSM,way,462182550,Pastas Natale,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Almirante Brown ,-34.6369598,-58.357609
+OSM,way,464795896,5 Estrellas,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6350513,-58.4368042
+OSM,way,467274626,Amanda,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Machain ,-34.5552212,-58.4899669
+OSM,way,471143801,Don Leon,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6184194,-58.5195982
+OSM,way,471175596,Milena,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Nueva York 4060,-34.600502,-58.5119858
+OSM,way,471298069,Ananda Pastas,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6125284,-58.5078737
+OSM,way,471529405,Casa America,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida General Mosconi ,-34.5910875,-58.5097241
+OSM,way,471647881,La Candela Pastas Frescas,pasta,,,A,pastas_frescas,osm_shop_pasta,0.8,Álvarez Jonte ,-34.60923,-58.4853599
+OSM,way,473390200,La Estrella,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Álvarez Jonte ,-34.6073071,-58.4771318
+OSM,way,473850927,"Fábrica de Pastas Frescas ""La Nueva Autora""",pasta,,,A,fabrica_pastas,osm_shop_pasta,0.8,Avenida Rivadavia 10588,-34.6395371,-58.5127174
+OSM,way,473883157,Pastas Al Paso y Algo Más,,,pasta,B,probable_nombre_pastas,pasta_en_texto,0.5,Avenida Lope de Vega ,-34.6316254,-58.5020496
+OSM,way,474483928,La Genovesa,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Emilio Castro ,-34.6458761,-58.502011
+OSM,way,474933903,Caprizzi,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6106883,-58.4159157
+OSM,way,475314502,La Matildita,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Díaz Vélez ,-34.6085252,-58.4411414
+OSM,way,475550984,Pastas Artesanales Casa Vázquez,,,pasta,B,probable_pastas_produccion_venta,pasta+contexto_produccion,0.6,Avenida Directorio 538,-34.6282657,-58.4344596
+OSM,way,476150333,Fábrica de Pasta,yes,,,B,probable_pastas_produccion_venta,pasta+contexto_produccion,0.6,Araujo ,-34.6514242,-58.4920523
+OSM,way,476409535,Multipasta,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Acoyte ,-34.6146822,-58.43754
+OSM,way,476463320,Parrilla & Pastas Libre,,,,C,ambiguo_gastronomico,pasta+restaurante,0.3,Avenida Córdoba ,-34.597933,-58.4216871
+OSM,way,477545008,Santa Teresita,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Pedro Goyena ,-34.6249911,-58.4278647
+OSM,way,992808455,Mas Pastas,,,pasta,B,probable_nombre_pastas,pasta_en_texto,0.5, ,-34.5936088,-58.4007931
+OSM,way,1323952091,El Sembrador,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8,Avenida Corrientes 5590,-34.596676,-58.4425309
+OSM,way,1372786373,La Fiorentina,pasta,,,A,casa_pastas_osm,osm_shop_pasta,0.8, ,-34.6645314,-58.4422767

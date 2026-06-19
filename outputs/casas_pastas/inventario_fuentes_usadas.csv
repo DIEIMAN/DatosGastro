@@ -1,0 +1,8 @@
+﻿fuente,path,existe,columnas_relevantes,cantidad_filas,utilidad,observaciones
+"F02 habilitaciones AGC (raw, todos los años)",data/raw/f02_habilitaciones_aprobadas_*.csv,si,"razon_social, rubro, domicilio, comuna, nropartidamatriz, comentarios",192 filas candidatas (con termino pasta),alta (fuente principal de casas/fabricas de pastas),"son habilitaciones/registros administrativos, no locales activos"
+F01 oferta gastronomica (raw),data/raw/f01_oferta_establecimientos_gastronomicos.csv,si,"nombre, categoria, cocina, lat, long, barrio, comuna",1 filas candidatas (con termino pasta),baja (orientada a restaurantes; casi sin casas de pastas),"latin-1, delimitado por ;"
+geo_comunas,data/raw/geo_comunas.geojson,si,"comuna, area (m2), geometry",15,alta (asignacion y densidad por comuna),oficial GCBA
+geo_barrios,data/raw/geo_barrios.geojson,si,"nombre, comuna, area_metro, geometry",48,alta (asignacion y densidad por barrio),oficial GCBA
+geo_cache (geocodificacion existente),data/processed/geo_cache.csv,si,"direccion_original, latitud, longitud, calidad_geo",,media (lat/lon por direccion ya geocodificada),no geocodifica direcciones nuevas; sin servicios externos
+dim_ubicacion,data/processed/dim_ubicacion.csv,si,"direccion_original, latitud, longitud, calidad_geo",,media (lat/lon secundaria),
+dim_territorio,data/processed/dim_territorio.csv,si,"barrio, comuna, centroide",,baja (mapeo barrio-comuna; sin poblacion ni area),no hay poblacion local -> per capita pendiente
