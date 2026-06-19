@@ -83,15 +83,35 @@ En `outputs/casas_pastas/figuras/`:
 `densidad_por_comuna.png`, `densidad_por_barrio.png`.
 Capa de puntos: `outputs/casas_pastas/casas_pastas_maestro.geojson`.
 
-## 8. Contraste auxiliar con OpenStreetMap
+## 8. Marco de lectura institucional (AGC vs OSM)
 
-OSM (fuente colaborativa, **auxiliar**, no oficial) devuelve **138 puntos** clasificados como A
-(132 con el tag explícito `shop=pasta`), 15 B y 6 C en CABA
+Para un informe institucional, los números deben leerse en **tres planos distintos**, sin
+mezclarlos:
+
+| Plano | Fuente | Qué es | Cantidad (A) |
+| --- | --- | --- | --- |
+| **Registro administrativo oficial** | AGC / F02 | Habilitaciones vinculadas a elaboración de pastas. **No** son locales activos. | **10** |
+| **Relevamiento abierto auxiliar** | OpenStreetMap | Puntos mapeados por la comunidad con `shop=pasta` y equivalentes. **No** es padrón oficial ni está verificado. | **138** |
+| **Pendiente de validación** | AGC B + OSM A/B | Indicios fuertes que requieren confirmación manual o API oficial antes de contarse. | 1 (B AGC) + OSM |
+
+OSM clasifica **138 A** (132 con tag explícito `shop=pasta`), 15 B y 6 C en CABA
 (`outputs/casas_pastas/osm_casas_pastas_candidatos.csv`).
 
-> La enorme diferencia entre OSM (~138) y el padrón AGC estricto (10) confirma que la habilitación
-> oficial bajo el rubro de pastas **subrepresenta** al universo real de casas de pastas. OSM no es
-> padrón oficial ni está verificado; sirve para dimensionar la brecha y orientar la validación.
+> **La diferencia AGC (10) vs OSM (138) no debe leerse como un error**, sino como una **diferencia
+> de fuente y de definición**: la habilitación AGC bajo el rubro estricto de pastas captura solo a
+> quienes se habilitaron exactamente con ese rubro, mientras OSM refleja un universo operativo más
+> amplio pero no oficial. Ambos son válidos en su plano. El número oficial es 10; el universo real
+> probable es mayor y queda **pendiente de validación**.
+
+## 8.b Versión publicable
+
+La carpeta cruda `outputs/casas_pastas/` contiene razón social, direcciones e IDs individuales y
+está **excluida de Git** (`.gitignore`). Para informe/PDF usar la versión **sanitizada** (solo
+agregados, sin datos personales) en `outputs/casas_pastas_reporte/`:
+`tabla_resumen_general.csv`, `top_comunas_cantidad.csv`, `top_barrios_cantidad.csv`,
+`top_comunas_densidad.csv`, `top_barrios_densidad.csv`, `comparacion_agc_osm.csv`,
+`limitaciones_metodologicas.csv`, `mapa_nodos_agregado.png`, `mapa_nodos_puntos.geojson`
+(solo AGC, sin nombres).
 
 ## 9. Limitaciones
 

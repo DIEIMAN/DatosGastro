@@ -1,0 +1,8 @@
+﻿indicador,valor,fuente,tipo
+"Universo A estricto (AGC, deduplicado)",10,F02 / AGC,registro administrativo oficial
+Universo B probable (AGC),1,F02 / AGC,pendiente de validacion
+Geolocalizados (A),9,F02 + cache local,oficial
+Sin geolocalizar (A),1,F02,oficial
+Puntos A en OSM (shop=pasta / equiv.),138,OpenStreetMap,relevamiento abierto auxiliar
+Puntos B en OSM,15,OpenStreetMap,auxiliar
+Puntos descartados (C) en OSM,6,OpenStreetMap,auxiliar

@@ -1,2 +1,0 @@
-﻿fuente,archivo_origen,id_registro_original,nombre_original,rubro_original,descripcion_original,patron_detectado,categoria_pastas,confianza_categoria,motivo_categoria,direccion_original,comuna_original,barrio_original,lat,lon,calidad_geo,fecha_habilitacion,observaciones
-F01,f01_oferta_establecimientos_gastronomicos.csv,801,LA PASTA,RESTAURANTE,,pasta+restaurante,ambiguo_gastronomico,0.3,Mencion de pasta en contexto de restaurante/italiano/pizzeria: no es casa/fabrica de pastas,"YRIGOYEN, HIPOLITO 2125",3,Balvanera,-34.61059179,-58.39669742,f01_fuente,,

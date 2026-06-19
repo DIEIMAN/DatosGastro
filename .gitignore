@@ -10,3 +10,7 @@ data/internal_processed/
 outputs/inventario_drive/
 outputs/analisis_interno/
 Algunas Cosas de Drive/
+# Casas/fábricas de pastas: salidas crudas con razón social, nombres de personas,
+# direcciones e IDs individuales (datos sensibles). La versión sanitizada para informe
+# va en outputs/casas_pastas_reporte/ (agregados, sin datos personales).
+outputs/casas_pastas/

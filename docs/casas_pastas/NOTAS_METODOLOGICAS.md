@@ -91,11 +91,27 @@ confitería, cocina italiana, pasta bar, comida italiana, resto`.
   de campos deseados de Places API (New). **No** se ejecuta API, no se usa API key, no hay
   scraping.
 
-## 8. Reglas respetadas
+## 8. Gobernanza de datos y Git
+
+- `outputs/casas_pastas/` (salidas crudas) contiene **razón social** (incluye nombres de personas
+  de unipersonales), **direcciones**, **IDs** (nro. partida matriz) y patrones tipo CUIT en textos.
+  Por eso está **excluida de Git** (`.gitignore`). **No commitear.**
+- Versión **publicable/sanitizada** en `outputs/casas_pastas_reporte/` (generada por
+  `build_reporte_sanitizado.py`): solo agregados por comuna/barrio/fuente/universo, **sin** razón
+  social, nombres, direcciones, teléfonos, mails, CUIT ni IDs individuales. Tiene una guardia que
+  descarta cualquier columna prohibida.
+- `mapa_nodos_puntos.geojson` publicable: solo puntos **AGC/F02** (oficial), con
+  comuna/barrio/categoría/calidad_geo y coordenadas, **sin nombres ni direcciones**. OSM se
+  mantiene aparte (no se publica como padrón).
+- Commiteable: `scripts/casas_pastas/`, `docs/casas_pastas/` y `outputs/casas_pastas_reporte/`.
+  No commiteable: `outputs/casas_pastas/`.
+
+## 9. Reglas respetadas
 
 - No se usó Google Drive ni fuentes internas.
 - No se hizo scraping de plataformas privadas.
 - No se llamó a APIs pagas; OSM (abierto) solo bajo `--run`.
 - No se llamó "locales activos" a las habilitaciones AGC.
+- No se presentó OSM como padrón oficial.
 - No se tocó el pipeline principal ni sus salidas.
 - Universos A y B siempre separados.

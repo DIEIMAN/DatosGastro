@@ -1,0 +1,8 @@
+﻿id,limitacion,implicancia
+L1,"AGC mide habilitaciones, no locales activos",un registro puede estar cerrado hoy
+L2,Rubro AGC estricto angosto,subrepresenta casas de pastas registradas bajo rubros genericos
+L3,Geocodificacion solo con cache local,1 de 10 sin punto; sin servicios externos pagos
+L4,Sin poblacion local,no se calcula densidad por 10.000 habitantes
+L5,OSM colaborativo e incompleto,no es padron oficial; util como contraste y para validar
+L6,N pequeno en universo A,"rankings de densidad sensibles; diagnostico inicial, no censo"
+L7,Diferencia AGC vs OSM,no es error: es diferencia de fuente y definicion
