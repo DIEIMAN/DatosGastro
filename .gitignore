@@ -5,3 +5,7 @@ __pycache__/
 outputs/tmp/
 outputs/*.html
 outputs/*.pdf
+data/internal_raw/
+data/internal_processed/
+outputs/inventario_drive/
+Algunas Cosas de Drive/
