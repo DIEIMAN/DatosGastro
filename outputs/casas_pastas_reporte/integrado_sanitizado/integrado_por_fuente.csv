@@ -1,5 +1,7 @@
 ﻿combinacion_fuentes,cantidad
-osm,101
-google,100
-google+osm,52
-agc,11
+solo OSM,99
+solo Google,98
+Google + OSM,53
+solo AGC,11
+total,261
+multifuente,53

@@ -25,10 +25,16 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import matplotlib.cm as cm  # noqa: E402
+import matplotlib.patheffects as pe  # noqa: E402
 from matplotlib.colors import Normalize  # noqa: E402
 from matplotlib.backends.backend_pdf import PdfPages  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
+from shapely.geometry import shape  # noqa: E402
+
+# Precisión de coordenadas para el GeoJSON compartible (territorial, NO submétrica).
+# 3 decimales ≈ ~110 m en latitud y ~90 m en longitud a la latitud de CABA.
+GEO_DECIMALS = 3
 
 ROOT = Path(__file__).resolve().parents[2]
 INT = ROOT / "outputs" / "casas_pastas_integrado"
@@ -168,18 +174,32 @@ def poligonos(geom):
     return [([c[0] for c in r], [c[1] for c in r]) for r in rings]
 
 
-def centroide(geom):
-    xs, ys = [], []
-    for x, y in poligonos(geom):
-        xs += x; ys += y
-    return (sum(xs) / len(xs), sum(ys) / len(ys)) if xs else (0, 0)
+def label_xy(geom):
+    """Punto de etiqueta garantizado DENTRO del polígono (representative_point)."""
+    try:
+        p = shape(geom).representative_point()
+        return p.x, p.y
+    except Exception:  # noqa: BLE001
+        xs, ys = [], []
+        for x, y in poligonos(geom):
+            xs += x; ys += y
+        return (sum(xs) / len(xs), sum(ys) / len(ys)) if xs else (0, 0)
+
+
+def _texto_contraste(rgba):
+    """Devuelve (color_texto, color_halo) legible según luminancia del fondo."""
+    r, g, b = rgba[0], rgba[1], rgba[2]
+    lum = 0.299 * r + 0.587 * g + 0.114 * b
+    if lum < 0.55:                      # fondo oscuro -> texto blanco, halo oscuro
+        return "white", "#1a1a1a"
+    return "#1a1a1a", "white"           # fondo claro -> texto oscuro, halo blanco
 
 
 def choropleth(fig, rect, features, key_prop, val_by_key, cmap_name, title, label_keys=None,
                etiqueta_num=False):
     ax = fig.add_axes(rect)
     vals = [v for v in val_by_key.values() if v]
-    vmin, vmax = (min(vals), max(vals)) if vals else (0, 1)
+    vmax = max(vals) if vals else 1
     norm = Normalize(vmin=0, vmax=vmax)
     cmap = plt.get_cmap(cmap_name)
     for f in features:
@@ -188,16 +208,17 @@ def choropleth(fig, rect, features, key_prop, val_by_key, cmap_name, title, labe
         else:
             key = f["properties"]["nombre"].title()
         v = val_by_key.get(key, 0)
-        color = cmap(norm(v)) if v else "#f0f0f0"
+        color = cmap(norm(v)) if v else (0.94, 0.94, 0.94, 1.0)
         for xs, ys in poligonos(f["geometry"]):
             ax.fill(xs, ys, facecolor=color, edgecolor="white", lw=0.5, zorder=1)
-        if etiqueta_num:
-            cx, cy = centroide(f["geometry"])
-            ax.text(cx, cy, key, ha="center", va="center", fontsize=7, color="#222222", zorder=4)
-        elif label_keys and key in label_keys:
-            cx, cy = centroide(f["geometry"])
-            ax.text(cx, cy, key, ha="center", va="center", fontsize=6.5, color="#222222",
-                    zorder=4, fontweight="bold")
+        etiqueta = etiqueta_num or (label_keys and key in label_keys)
+        if etiqueta:
+            cx, cy = label_xy(f["geometry"])
+            txtcolor, halo = _texto_contraste(color)
+            size = 7 if etiqueta_num else 6.5
+            ax.text(cx, cy, key, ha="center", va="center", fontsize=size, color=txtcolor,
+                    fontweight="bold", zorder=5,
+                    path_effects=[pe.withStroke(linewidth=1.8, foreground=halo)])
     ax.set_aspect(1.28); ax.axis("off")
     ax.set_title(title, color=AZUL, fontsize=11, loc="left", pad=4)
     sm = cm.ScalarMappable(norm=norm, cmap=cmap); sm.set_array([])
@@ -234,7 +255,10 @@ def main():
         if la is None or lo is None:
             continue
         pts.append({"lat": la, "lon": lo, "clase": r["clase_integrada"], "barrio": r["barrio"]})
-        feats.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": [lo, la]},
+        # Coordenadas REDUCIDAS para el pack compartible (territorial, no submétrica).
+        feats.append({"type": "Feature",
+                      "geometry": {"type": "Point",
+                                   "coordinates": [round(lo, GEO_DECIMALS), round(la, GEO_DECIMALS)]},
                       "properties": {"id_anonimo": f"PT{i:04d}", "clasificacion_integrada": r["clase_integrada"],
                                      "es_cadena_detectada": r["es_cadena_detectada"], "comuna": r["comuna"],
                                      "barrio": r["barrio"]}})
@@ -242,6 +266,16 @@ def main():
     (SAN / "mapa_puntos_sanitizado.geojson").write_text(
         json.dumps({"type": "FeatureCollection", "features": feats}, ensure_ascii=False, indent=1),
         encoding="utf-8")
+
+    # Regenerar integrado_por_fuente.csv ALINEADO a v2 (evita contradicción con el informe).
+    etq_combo = {"osm": "solo OSM", "google": "solo Google", "google+osm": "Google + OSM", "agc": "solo AGC"}
+    filas_fuente = [{"combinacion_fuentes": etq_combo.get(k, k), "cantidad": combos.get(k, 0)}
+                    for k in ("osm", "google", "google+osm", "agc")]
+    filas_fuente.append({"combinacion_fuentes": "total", "cantidad": sum(combos.values())})
+    filas_fuente.append({"combinacion_fuentes": "multifuente", "cantidad": int(rv2["multifuente"])})
+    with (SAN / "integrado_por_fuente.csv").open("w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=["combinacion_fuentes", "cantidad"]); w.writeheader()
+        w.writerows(filas_fuente)
 
     n_tot, n_ind, n_cad = rv2["candidatos_unicos"], int(rv2["independientes"]), int(rv2["cadenas"])
     n_rev, n_multi = rv2["revision_manual_prioritaria"], int(rv2["multifuente"])
@@ -257,7 +291,7 @@ def main():
         # 1. Portada
         fig = page()
         fig.patches.append(Rectangle((0, 0.72), 1, 0.28, transform=fig.transFigure, facecolor=AZUL, zorder=0))
-        fig.text(0.07, 0.90, "DATAGASTRO · DIAGNÓSTICO TERRITORIAL", color="#cdd9e5", fontsize=10, fontweight="bold")
+        fig.text(0.07, 0.90, "DIAGNÓSTICO TERRITORIAL GASTRONÓMICO", color="#cdd9e5", fontsize=10, fontweight="bold")
         fig.text(0.07, 0.815, "Casas de pastas en la\nCiudad de Buenos Aires", color="white",
                  fontsize=27, fontweight="bold", va="center")
         fig.text(0.07, 0.665, "Una lectura territorial del universo operativo probable", fontsize=13.5, color=AZUL)
@@ -279,7 +313,7 @@ def main():
         # 2. Resumen ejecutivo
         fig = page()
         head(fig, "RESUMEN EJECUTIVO", "Qué muestra el cruce de fuentes",
-             "Un universo operativo probable más amplio que el registro oficial, con foco en las casas de barrio.", "2 / 21")
+             "Un universo operativo probable más amplio que el registro oficial, con foco en las casas de barrio.", "2 / 22")
         cards(fig, 0.74, [(n_tot, "candidatos únicos", AZUL), (n_ind, "independientes", VERDE),
                           (n_cad, "en cadenas", NARANJA), (n_multi, "multifuente", VERDE),
                           (n_rev, "revisión manual", GRIS)], h=0.105)
@@ -290,7 +324,7 @@ def main():
             "validación territorial.",
             f"Predominan las casas independientes / de barrio ({n_ind} de {n_tot}); {n_cad} pertenecen a "
             "cadenas, usadas como control de cobertura.",
-            f"{n_multi} candidatos aparecen en más de una fuente: son el núcleo de mayor confianza.",
+            f"{n_multi} candidatos aparecen en más de una fuente: son el núcleo de mayor respaldo cruzado.",
             f"{n_rev} casos quedan en revisión manual; forman parte del control de calidad, no son un error.",
         ])
         insight(fig, 0.20, "El número oficial es el piso; el universo operativo probable es más amplio. "
@@ -301,7 +335,7 @@ def main():
         # 3. Hallazgo principal
         fig = page()
         head(fig, "HALLAZGO PRINCIPAL", "Registro oficial vs. universo operativo probable",
-             "El registro oficial muestra el núcleo estricto; el padrón candidato amplía la lectura.", "3 / 21")
+             "El registro oficial muestra el núcleo estricto; el padrón candidato amplía la lectura.", "3 / 22")
         ax = fig.add_axes([0.13, 0.40, 0.72, 0.34])
         n_tot_i = int(n_tot)
         valores = [11, n_multi, n_tot_i]
@@ -325,7 +359,7 @@ def main():
         # 4. Fuentes y capas (P2)
         fig = page()
         head(fig, "PREGUNTA 2", "¿Por qué el registro oficial no alcanza por sí solo?",
-             "Respuesta: porque mide habilitaciones de un rubro estricto; las fuentes abiertas y operativas amplían cobertura.", "4 / 21")
+             "Respuesta: porque mide habilitaciones de un rubro estricto; las fuentes abiertas y operativas amplían cobertura.", "4 / 22")
         ax = fig.add_axes([0.07, 0.55, 0.86, 0.24]); ax.axis("off")
         data = [["AGC / F02", "Registro oficial", "11", "Habilitaciones; NO implica local activo"],
                 ["OpenStreetMap", "Abierta auxiliar", "152", "Cobertura territorial; no oficial"],
@@ -353,7 +387,7 @@ def main():
         # 5. Mapa general (P3)
         fig = page()
         head(fig, "PREGUNTA 3", "¿Dónde se concentran las casas de pastas candidatas?",
-             "Respuesta: en el corredor norte–centro de la Ciudad, con polos en Palermo, Caballito y Recoleta/Belgrano.", "5 / 21")
+             "Respuesta: en el corredor norte–centro de la Ciudad, con polos en Palermo, Caballito y Recoleta/Belgrano.", "5 / 22")
         ax = fig.add_axes([0.06, 0.13, 0.88, 0.70])
         for f in gc["features"]:
             for xs, ys in poligonos(f["geometry"]):
@@ -363,13 +397,15 @@ def main():
                        edgecolor="white", lw=0.25, zorder=3)
         ax.set_aspect(1.28); ax.axis("off")
         leyenda(ax)
-        foot(fig, "puntos anonimizados, sin nombres ni direcciones. Contornos: comunas GCBA. 259 de 261 candidatos tienen coordenadas.")
+        foot(fig, "El mapa representa 259 candidatos georreferenciados; los 2 restantes integran el conteo "
+                  "general pero no cuentan con coordenadas suficientes para visualización puntual. Puntos "
+                  "anonimizados (sin nombres ni direcciones); contornos: comunas GCBA.")
         pdf.savefig(fig); plt.close(fig)
 
         # 6. Coroplético comuna - cantidad
         fig = page()
         head(fig, "CONCENTRACIÓN TERRITORIAL", "Concentración territorial por comuna",
-             "Cantidad de candidatos por comuna.", "6 / 21")
+             "Cantidad de candidatos por comuna.", "6 / 22")
         choropleth(fig, [0.08, 0.20, 0.82, 0.62], gc["features"], "comuna", dict(com), "YlOrRd",
                    "Candidatos por comuna (cantidad)", etiqueta_num=True)
         insight(fig, 0.10, "Las comunas con más candidatos muestran zonas de alta oferta comercial y "
@@ -380,7 +416,7 @@ def main():
         # 7. Coroplético comuna - densidad
         fig = page()
         head(fig, "DENSIDAD TERRITORIAL", "Densidad territorial por comuna",
-             "Candidatos por km² de superficie oficial.", "7 / 21")
+             "Candidatos por km² de superficie oficial.", "7 / 22")
         choropleth(fig, [0.08, 0.20, 0.82, 0.62], gc["features"], "comuna", dcom, "PuBuGn",
                    "Densidad por comuna (candidatos/km²)", etiqueta_num=True)
         insight(fig, 0.10, "Densidad = candidatos / superficie oficial km². No es densidad por habitante. "
@@ -391,12 +427,12 @@ def main():
         # 8. Ranking comuna
         fig = page()
         head(fig, "PREGUNTA 4", "¿Qué cambia cuando miramos densidad por km²?",
-             "Respuesta: el orden cambia; comunas chicas y céntricas escalan posiciones.", "8 / 21")
+             "Respuesta: el orden cambia; comunas chicas y céntricas escalan posiciones.", "8 / 22")
         topc = com.most_common(8)[::-1]
-        barh(fig, [0.16, 0.55, 0.74, 0.30], [f"Comuna {c}" for c, _ in topc], [n for _, n in topc],
+        barh(fig, [0.16, 0.45, 0.74, 0.29], [f"Comuna {c}" for c, _ in topc], [n for _, n in topc],
              AZUL2, "Top comunas por cantidad", "candidatos")
         dc = dens_com[:8][::-1]
-        barh(fig, [0.16, 0.13, 0.74, 0.30], [f"Comuna {c}" for c, _ in dc], [v for _, v in dc],
+        barh(fig, [0.16, 0.085, 0.74, 0.29], [f"Comuna {c}" for c, _ in dc], [v for _, v in dc],
              "#31a354", "Top comunas por densidad (cand./km²)", "candidatos/km²", valfmt="{:.2f}")
         foot(fig, "cantidad y densidad miden cosas distintas; ambas son lecturas válidas y complementarias.")
         pdf.savefig(fig); plt.close(fig)
@@ -404,7 +440,7 @@ def main():
         # 9. Coroplético barrio - cantidad
         fig = page()
         head(fig, "CONCENTRACIÓN TERRITORIAL", "Concentración por barrio (cantidad)",
-             "Barrios líderes: Palermo, Caballito, Recoleta, Belgrano y Villa Urquiza.", "9 / 21")
+             "Barrios líderes: Palermo, Caballito, Recoleta, Belgrano y Villa Urquiza.", "9 / 22")
         choropleth(fig, [0.06, 0.16, 0.86, 0.66], gb["features"], "barrio", dict(bar), "YlOrRd",
                    "Candidatos por barrio (cantidad)", label_keys=top_barrios)
         foot(fig, "barrios con 0 candidatos en gris claro. Cantidad absoluta.")
@@ -413,7 +449,7 @@ def main():
         # 10. Coroplético barrio - densidad
         fig = page()
         head(fig, "DENSIDAD TERRITORIAL", "Densidad por barrio (candidatos/km²)",
-             "El ranking por densidad puede diferir del de cantidad absoluta.", "10 / 21")
+             "El ranking por densidad puede diferir del de cantidad absoluta.", "10 / 22")
         choropleth(fig, [0.06, 0.16, 0.86, 0.66], gb["features"], "barrio", dbar, "PuBuGn",
                    "Densidad por barrio (candidatos/km²)", label_keys=set(b for b, _ in dens_bar[:5]))
         insight(fig, 0.08, "Los barrios con más candidatos no siempre son los más densos en relación con su "
@@ -424,28 +460,28 @@ def main():
         # 11. Ranking barrio
         fig = page()
         head(fig, "PREGUNTA 5", "¿Qué barrios aparecen como polos del universo candidato?",
-             "Respuesta: Palermo y Caballito lideran; Recoleta y Belgrano empatan en el tercer lugar.", "11 / 21")
+             "Palermo y Caballito lideran; Recoleta y Belgrano empatan tercero (22 c/u).", "11 / 22")
         topb = bar.most_common(10)[::-1]
-        barh(fig, [0.22, 0.52, 0.70, 0.33], [b for b, _ in topb], [n for _, n in topb],
+        barh(fig, [0.22, 0.45, 0.70, 0.29], [b for b, _ in topb], [n for _, n in topb],
              "#7b5ea7", "Top barrios por cantidad", "candidatos")
         db = dens_bar[:10][::-1]
-        barh(fig, [0.22, 0.12, 0.70, 0.33], [b for b, _ in db], [v for _, v in db],
+        barh(fig, [0.22, 0.085, 0.70, 0.29], [b for b, _ in db], [v for _, v in db],
              "#dd8452", "Top barrios por densidad (cand./km²)", "candidatos/km²", valfmt="{:.2f}")
         foot(fig, "Recoleta y Belgrano empatan (22 c/u); se elige Recoleta para el zoom cartográfico.")
         pdf.savefig(fig); plt.close(fig)
 
         # 12-14. Zooms
-        zooms = [("Palermo", "12 / 21", "Palermo concentra el mayor volumen absoluto de candidatos, combinando "
+        zooms = [("Palermo", "12 / 22", "Palermo concentra el mayor volumen absoluto de candidatos, combinando "
                   "cadenas, locales independientes y puntos detectados por más de una fuente."),
-                 ("Caballito", "13 / 21", "Caballito muestra fuerte presencia de casas de barrio y una densidad "
+                 ("Caballito", "13 / 22", "Caballito muestra fuerte presencia de casas de barrio y una densidad "
                   "alta sobre una superficie media."),
-                 ("Recoleta", "14 / 21", "Recoleta empata con Belgrano (22 candidatos c/u); su superficie "
+                 ("Recoleta", "14 / 22", "Recoleta empata con Belgrano (22 candidatos c/u); su superficie "
                   "acotada la ubica entre las de mayor densidad.")]
         for barrio, num, coment in zooms:
             fig = page()
             head(fig, "ZOOM TERRITORIAL", f"Zoom: {barrio}",
                  f"{bar.get(barrio, 0)} candidatos en {barrio} (padrón v2, anonimizado).", num)
-            ax = fig.add_axes([0.08, 0.22, 0.84, 0.60])
+            ax = fig.add_axes([0.08, 0.33, 0.84, 0.50])
             geom = bar_poly.get(barrio)
             xs_all, ys_all = [], []
             if geom:
@@ -460,16 +496,20 @@ def main():
                 mx = (max(xs_all) - min(xs_all)) * 0.08; my = (max(ys_all) - min(ys_all)) * 0.08
                 ax.set_xlim(min(xs_all) - mx, max(xs_all) + mx); ax.set_ylim(min(ys_all) - my, max(ys_all) + my)
             ax.set_aspect(1.28); ax.axis("off")
-            leyenda(ax)
+            # Leyenda FUERA del mapa (debajo), para no pisar los puntos.
+            leg = [Line2D([0], [0], marker="o", color="w", markerfacecolor=c, markersize=8, label=CLASE_LABEL[k])
+                   for k, c in CLASE_COLOR.items()]
+            ax.legend(handles=leg, loc="upper center", bbox_to_anchor=(0.5, -0.03), ncol=3,
+                      fontsize=7.5, frameon=False)
             for j, ln in enumerate(textwrap.wrap(coment, 96)):
-                fig.text(0.07, 0.175 - j * 0.020, ln, fontsize=10.5, color="#222222", style="italic", va="top")
+                fig.text(0.07, 0.165 - j * 0.020, ln, fontsize=10.5, color="#222222", style="italic", va="top")
             foot(fig, "solo puntos anonimizados dentro del barrio; sin nombres ni direcciones.")
             pdf.savefig(fig); plt.close(fig)
 
         # 15. Cadenas e independientes (P6)
         fig = page()
-        head(fig, "PREGUNTA 6", "¿El universo está dominado por cadenas o por casas de barrio?",
-             "Respuesta: predominan las casas independientes / de escala barrial.", "15 / 21")
+        head(fig, "PREGUNTA 6", "¿Predominan las cadenas o las casas de barrio?",
+             "En el universo candidato predominan las casas independientes y de escala barrial.", "15 / 22")
         cards(fig, 0.72, [(n_ind, "independientes / de barrio", VERDE), (n_cad, "en cadenas", NARANJA)], h=0.12)
         ax = fig.add_axes([0.10, 0.50, 0.80, 0.10])
         tot = n_ind + n_cad
@@ -488,7 +528,7 @@ def main():
         # 16. Principales cadenas (P7)
         fig = page()
         head(fig, "PREGUNTA 7", "¿Cuáles son las principales cadenas detectadas?",
-             "Respuesta: La Juvenil encabeza; el resto son cadenas medianas o chicas.", "16 / 21")
+             "Respuesta: La Juvenil encabeza; el resto son cadenas medianas o chicas.", "16 / 22")
         top_cad = [(CADENA_CAPS.get(r["cadena"], r["cadena"].upper()), int(r["sucursales"])) for r in cobertura][:8][::-1]
         barh(fig, [0.34, 0.20, 0.56, 0.60], [c for c, _ in top_cad], [n for _, n in top_cad],
              NARANJA, "Cadenas con más sucursales (control de cobertura)", "sucursales")
@@ -497,16 +537,16 @@ def main():
 
         # 17. Núcleo multifuente (P8)
         fig = page()
-        head(fig, "PREGUNTA 8", "¿Cuál es el núcleo de mayor confianza?",
-             "Respuesta: los candidatos detectados por más de una fuente (multifuente).", "17 / 21")
+        head(fig, "PREGUNTA 8", "¿Cuál es el núcleo de mayor respaldo cruzado?",
+             "Respuesta: los candidatos detectados por más de una fuente (multifuente).", "17 / 22")
         orden = [("agc", "Solo AGC (oficial estricto)"), ("google", "Solo Google (operativo)"),
                  ("osm", "Solo OSM (auxiliar)"), ("google+osm", "Google + OSM (multifuente)")]
         barh(fig, [0.32, 0.50, 0.58, 0.30], [e for _, e in orden][::-1],
              [combos.get(k, 0) for k, _ in orden][::-1], VERDE, "Candidatos por combinación de fuentes", "candidatos")
         bullets(fig, 0.40, [
-            f"{n_multi} candidatos aparecen en más de una fuente (Google + OSM): núcleo de mayor confianza.",
-            "Jerarquía de confianza: multifuente > una sola fuente. Aparecer en más de una fuente aumenta la "
-            "confianza, pero no reemplaza la validación territorial.",
+            f"{n_multi} candidatos aparecen en más de una fuente (Google + OSM): núcleo de mayor respaldo cruzado.",
+            "Aparecer en más de una fuente aumenta la probabilidad de existencia, pero no la confirma: no "
+            "reemplaza la validación territorial.",
             "Los de una sola fuente se conservan como candidatos (oficial estricto si es AGC, operativo si es "
             "Google, auxiliar si es OSM), sin degradar a los independientes.",
         ])
@@ -516,26 +556,25 @@ def main():
         # 18. Revisión manual (P9)
         fig = page()
         head(fig, "PREGUNTA 9", "¿Qué queda pendiente antes de hablar de padrón definitivo?",
-             "Respuesta: la validación manual de los casos dudosos y la verificación territorial.", "18 / 21")
-        bullets(fig, 0.82, [
-            f"{n_rev} casos en revisión manual: dudosos o posibles faltantes que no se descartan ni se "
-            "promueven automáticamente.",
-            "11 cadenas auditadas, sin alertas de inflación. La Juvenil (28) es unión legítima de fuentes "
-            "(19 por Google, 19 por OSM, 10 en común), no duplicados.",
-            "Posibles duplicados revisados: 2 pares; resultaron locales distintos. Falsas fusiones: 0.",
-            "Nombres genéricos ('pastas frescas', 'pastificio', 'fábrica de pasta') reclasificados como "
-            "independientes, no cadenas.",
-            "Pueden existir locales cerrados (que figuran) o faltantes (que no figuran en ninguna fuente).",
-        ], gap=0.044)
-        insight(fig, 0.24, "Hay que separar candidatos fuertes (multifuente) de casos a validar. El número "
-                "definitivo se establece recién tras la validación manual.", color=AZUL)
-        foot(fig, "los 42 casos pendientes son parte del control de calidad, no un error.")
+             "El padrón candidato requiere una etapa de validación manual y territorial antes de "
+             "convertirse en una base definitiva.", "18 / 22")
+        bullets(fig, 0.78, [
+            f"Validar los {n_rev} casos en revisión manual.",
+            "Confirmar el núcleo de mayor respaldo cruzado.",
+            "Revisar especialmente casas independientes y de barrio.",
+            "Verificar cadenas y sucursales con fuentes propias o revisión manual.",
+            "Documentar posibles bajas, cierres o casos mal clasificados.",
+            f"Mantener el {n_tot} como cifra de trabajo, no como cifra pública definitiva.",
+        ], gap=0.05)
+        insight(fig, 0.26, "El número definitivo se establece recién tras la validación manual y territorial. "
+                "El detalle de los chequeos de calidad queda en el anexo metodológico interno.", color=AZUL)
+        foot(fig, "los casos pendientes son parte del control de calidad, no un error.")
         pdf.savefig(fig); plt.close(fig)
 
         # 19. Casos emblemáticos
         fig = page()
         head(fig, "PATRIMONIO GASTRONÓMICO", "Casos emblemáticos (a validar documentalmente)",
-             "Solo se afirma lo que tiene fuente verificable.", "19 / 21", tsize=16)
+             "Solo se afirma lo que tiene fuente verificable.", "19 / 22", tsize=16)
         usar = [h for h in hist if h["usar_en_informe"] == "si"]
         if usar:
             fig.patches.append(Rectangle((0.07, 0.66), 0.86, 0.12, transform=fig.transFigure,
@@ -544,23 +583,50 @@ def main():
             fig.text(0.09, 0.708, "Fundada el 1 de diciembre de 1959 (Colegiales); negocio familiar de tres\n"
                      "generaciones. Fuentes: La Nación y El Cronista.", fontsize=10, color="#222222", va="top")
         bullets(fig, 0.60, [
-            "El resto no tiene antigüedad documentada de forma confiable: Raviolón (referencias secundarias a "
-            "1971) y Master Pastas (marca actual desde 1995, según su sitio) requieren confirmación; Biasatti "
-            "es un pastificio reciente (2020), no histórico.",
+            "El resto no tiene antigüedad documentada de forma confiable: Raviolón (1971, según fuentes "
+            "secundarias de prensa) y Master Pastas (marca actual desde 1995, según su sitio oficial) "
+            "requieren confirmación; Biasatti es un pastificio reciente (2020), no histórico.",
             "Multipasta, Pastas Mazzeo y Caprizzi no presentan año de fundación verificable en las fuentes "
             "consultadas.",
-            "Criterio: no se afirma antigüedad sin fuente. Detalle en 'fuentes_historicas_casas_pastas.csv'.",
+            "Criterio: no se afirma antigüedad sin fuente. Información histórica documentada en anexo "
+            "metodológico interno.",
         ], gap=0.05)
         fig.patches.append(Rectangle((0.07, 0.22), 0.86, 0.06, transform=fig.transFigure,
                                      facecolor="#fff4e6", edgecolor=NARANJA, lw=1.0))
         fig.text(0.09, 0.258, "Casos emblemáticos a validar documentalmente en una próxima etapa.",
                  fontsize=10.5, color="#7a4a10", style="italic", va="top")
-        foot(fig, "no se infiere antigüedad por fama; fuentes registradas en CSV con nivel de confianza.")
+        foot(fig, "no se infiere antigüedad por fama; fuentes registradas en anexo metodológico interno.")
         pdf.savefig(fig); plt.close(fig)
 
-        # 20. Limitaciones
+        # 20. ¿Qué decisión permite tomar este informe? (+ recomendación operativa)
         fig = page()
-        head(fig, "ALCANCE", "Limitaciones", "Qué no afirma este informe.", "20 / 21")
+        head(fig, "USO EJECUTIVO", "¿Qué decisión permite tomar este informe?",
+             "Una hoja de ruta para pasar del padrón candidato a una base validada.", "20 / 22")
+        bullets(fig, 0.82, [
+            "Priorizar la validación territorial en los barrios polo (Palermo, Caballito, Recoleta/Belgrano).",
+            f"Empezar por el núcleo de mayor respaldo cruzado: los {n_multi} candidatos multifuente.",
+            f"Revisar los {n_rev} casos en revisión manual antes de cerrar cifras.",
+            "Priorizar las casas independientes / de barrio: son el núcleo del universo.",
+            f"No usar el {n_tot} como cifra pública definitiva hasta completar la validación.",
+            "Tomar la metodología como prueba de concepto replicable para el análisis territorial gastronómico.",
+        ], gap=0.038)
+        fig.patches.append(Rectangle((0.07, 0.21), 0.86, 0.20, transform=fig.transFigure,
+                                     facecolor=GRISCLARO, edgecolor=AZUL, lw=1.2))
+        fig.text(0.09, 0.385, "Recomendación operativa para las próximas 2–4 semanas",
+                 fontsize=11.5, fontweight="bold", color=AZUL, va="top")
+        for j, paso in enumerate([
+                "1. Validar una muestra piloto en un barrio polo.",
+                "2. Depurar cadenas y nombres genéricos.",
+                "3. Confirmar los candidatos multifuente.",
+                "4. Revisar los independientes prioritarios.",
+                "5. Definir si el padrón candidato alimenta la línea de análisis territorial gastronómico."]):
+            fig.text(0.10, 0.345 - j * 0.026, paso, fontsize=10, color="#222222", va="top")
+        foot(fig, "documento de apoyo a la decisión; el número definitivo requiere validación manual.")
+        pdf.savefig(fig); plt.close(fig)
+
+        # 21. Limitaciones
+        fig = page()
+        head(fig, "ALCANCE", "Limitaciones", "Qué no afirma este informe.", "21 / 22")
         bullets(fig, 0.82, [
             "No es un censo definitivo ni un padrón oficial de casas de pastas: es un padrón candidato.",
             "Google Places y OpenStreetMap no son fuentes oficiales; reflejan visibilidad comercial y "
@@ -574,32 +640,34 @@ def main():
         foot(fig, "padrón candidato no oficial · pendiente de validación manual.")
         pdf.savefig(fig); plt.close(fig)
 
-        # 21. Próximos pasos + cierre metodológico (P10)
+        # 22. Próximos pasos + cierre metodológico (P10)
         fig = page()
-        head(fig, "PREGUNTA 10", "¿Qué aporta esta metodología a DataGastro?",
-             "Respuesta: un método replicable (oficial + abierta + operativa + auditoría) para otros rubros.", "21 / 21")
+        head(fig, "PREGUNTA 10", "¿Qué aporta esta metodología al análisis gastronómico?",
+             "Respuesta: un método replicable (oficial + abierta + operativa + auditoría) para otros rubros.", "22 / 22")
         bullets(fig, 0.82, [
             f"Próximos pasos: validar los {n_rev} casos en revisión; confirmar el núcleo multifuente; revisar "
             "independientes prioritarios; documentar emblemáticos con fuentes.",
-            "Incorporar al pipeline DataGastro solo después de la validación manual, con aprobación.",
+            "Incorporar a la línea de análisis territorial gastronómico solo después de la validación manual, "
+            "con aprobación.",
             "El método combina registro oficial (núcleo), fuentes abiertas y operativas (cobertura) y una "
             "auditoría de calidad (deduplicación, cadenas, nombres genéricos).",
             "Es replicable en otros rubros gastronómicos: pizzerías, heladerías artesanales, cafeterías de "
             "especialidad, panaderías, parrillas y casas de empanadas.",
         ], gap=0.05)
         insight(fig, 0.28, "Resultado: una base analítica reproducible, no oficial, lista para validación "
-                "territorial y eventual incorporación al pipeline DataGastro (con aprobación).", color=VERDE)
-        foot(fig, "DataGastro · padrón candidato no oficial · método replicable en otros rubros gastronómicos.")
+                "territorial y eventual incorporación a la línea de análisis territorial gastronómico "
+                "(con aprobación).", color=VERDE)
+        foot(fig, "padrón candidato no oficial · método replicable en otros rubros gastronómicos.")
         pdf.savefig(fig); plt.close(fig)
 
         d = pdf.infodict()
         d["Title"] = "Casas de pastas en CABA — Padrón candidato integrado (V3 ejecutivo)"
-        d["Author"] = "DataGastro"
+        d["Author"] = "Análisis territorial gastronómico"
         d["Subject"] = "Padrón candidato no oficial (AGC + OSM + Google Places). Pendiente de validación manual."
 
     escribir_md(hoy, rv2, rqc, com, bar, dens_com, dens_bar, combos, cobertura, hist)
     print(f"PDF V3 generado: {PDF}")
-    print(f"Páginas: 21 | tamaño: {PDF.stat().st_size/1024:.0f} KB")
+    print(f"Páginas: 22 | tamaño: {PDF.stat().st_size/1024:.0f} KB")
     print(f"MD V3 generado: {MD}")
     print(f"GeoJSON sanitizado v2: {len(feats)} puntos")
 
@@ -615,7 +683,8 @@ def escribir_md(hoy, rv2, rqc, com, bar, dens_com, dens_bar, combos, cobertura, 
     L.append("## Indicadores\n")
     L.append(f"- **{n_tot}** candidatos únicos · **{rv2['independientes']}** independientes / de barrio · "
              f"**{rv2['cadenas']}** en cadenas · **{rv2['multifuente']}** multifuente · "
-             f"**{rv2['revision_manual_prioritaria']}** en revisión manual.\n")
+             f"**{rv2['revision_manual_prioritaria']}** en revisión manual · "
+             "**259** georreferenciados.\n")
     L.append("## 1. ¿Qué universo permite ver el cruce de fuentes?\n")
     L.append(f"{n_tot} candidatos únicos. No es un padrón oficial ni un censo definitivo: es una base "
              "analítica para validación territorial.\n")
@@ -643,26 +712,42 @@ def escribir_md(hoy, rv2, rqc, com, bar, dens_com, dens_bar, combos, cobertura, 
     L.append("## 7. Principales cadenas (control de cobertura)\n")
     L.append(", ".join(f"{CADENA_CAPS.get(r['cadena'], r['cadena'].upper())} ({r['sucursales']})"
                        for r in cobertura[:7]) + ".\n")
-    L.append("## 8. Núcleo de mayor confianza\n")
+    L.append("## 8. Núcleo de mayor respaldo cruzado\n")
     L.append(f"- {rv2['multifuente']} candidatos multifuente (Google + OSM): base más sólida. Combinaciones: "
              f"solo OSM {combos.get('osm',0)} · solo Google {combos.get('google',0)} · Google+OSM "
              f"{combos.get('google+osm',0)} · solo AGC {combos.get('agc',0)}. Aparecer en más de una fuente "
-             "aumenta la confianza, pero no reemplaza la validación.\n")
+             "aumenta la probabilidad de existencia, pero no la confirma: no reemplaza la validación.\n")
     L.append("## 9. ¿Qué queda pendiente?\n")
-    L.append(f"- {rv2['revision_manual_prioritaria']} casos en revisión manual; validación territorial; "
-             "posibles locales cerrados/faltantes. 11 cadenas auditadas sin alertas; falsas fusiones: "
-             f"{rqc['falsas_fusiones_grupos']}.\n")
+    L.append("El padrón candidato requiere validación manual y territorial antes de convertirse en una base "
+             "definitiva.\n")
+    L.append(f"- Validar los {rv2['revision_manual_prioritaria']} casos en revisión manual.\n"
+             "- Confirmar el núcleo de mayor respaldo cruzado.\n"
+             "- Revisar especialmente casas independientes y de barrio.\n"
+             "- Verificar cadenas y sucursales con fuentes propias o revisión manual.\n"
+             "- Documentar posibles bajas, cierres o casos mal clasificados.\n"
+             f"- Mantener el {n_tot} como cifra de trabajo, no como cifra pública definitiva.\n"
+             "\n(El detalle de los chequeos de calidad queda en el anexo metodológico interno.)\n")
     L.append("## Casos emblemáticos (a validar documentalmente)\n")
     if [h for h in hist if h["usar_en_informe"] == "si"]:
         L.append("- **LA JUVENIL** — fundada el 1 de diciembre de 1959 (Colegiales); negocio familiar de tres "
                  "generaciones. Fuentes: La Nación, El Cronista (caso documentado).")
-    L.append("- Raviolón (1971, secundaria) y Master Pastas (1995) a confirmar; Biasatti reciente (2020). "
-             "Multipasta, Pastas Mazzeo y Caprizzi sin año verificable. Detalle en "
-             "`fuentes_historicas_casas_pastas.csv`. No se infiere antigüedad por fama.\n")
-    L.append("## 10. ¿Qué aporta a DataGastro?\n")
+    L.append("- Raviolón (1971, según fuentes secundarias de prensa) y Master Pastas (1995, según su sitio "
+             "oficial) a confirmar; Biasatti reciente (2020). Multipasta, Pastas Mazzeo y Caprizzi sin año "
+             "verificable. Información histórica documentada en anexo metodológico interno. No se infiere "
+             "antigüedad por fama.\n")
+    L.append("## 10. ¿Qué aporta esta metodología?\n")
     L.append("Un método replicable (registro oficial + fuentes abiertas + señal operativa + auditoría de "
              "calidad) para otros rubros: pizzerías, heladerías artesanales, cafeterías de especialidad, "
              "panaderías, parrillas, casas de empanadas.\n")
+    L.append("## ¿Qué decisión permite tomar este informe?\n")
+    L.append(f"- Priorizar validación territorial en barrios polo; empezar por el núcleo de mayor respaldo "
+             f"cruzado ({rv2['multifuente']} multifuente); revisar los {rv2['revision_manual_prioritaria']} "
+             f"casos manuales; priorizar independientes/de barrio; no usar el {n_tot} como cifra pública "
+             "definitiva hasta validar; usar la metodología como prueba de concepto del análisis "
+             "territorial gastronómico.\n")
+    L.append("**Recomendación operativa (2–4 semanas):** 1) validar muestra piloto en un barrio; 2) depurar "
+             "cadenas y nombres genéricos; 3) confirmar multifuente; 4) revisar independientes prioritarios; "
+             "5) definir si el padrón candidato alimenta la línea de análisis territorial gastronómico.\n")
     L.append("## Limitaciones\n")
     L.append("- No es censo definitivo ni padrón oficial. Google/OSM no son oficiales. AGC es oficial pero "
              "angosto y no implica local activo. Puede haber locales cerrados o faltantes. La deduplicación "

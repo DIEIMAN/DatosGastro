@@ -6,7 +6,7 @@ _Fecha: 2026-06-20 · Versión V3 · **Padrón candidato no oficial, pendiente d
 
 ## Indicadores
 
-- **261** candidatos únicos · **180** independientes / de barrio · **81** en cadenas · **53** multifuente · **42** en revisión manual.
+- **261** candidatos únicos · **180** independientes / de barrio · **81** en cadenas · **53** multifuente · **42** en revisión manual · **259** georreferenciados.
 
 ## 1. ¿Qué universo permite ver el cruce de fuentes?
 
@@ -45,22 +45,37 @@ Palermo y Caballito lideran; Recoleta y Belgrano empatan en el tercer lugar (22 
 
 LA JUVENIL (28), MULTIPASTA (7), CAPRIZZI (4), MASTER PASTAS / PASTAS MASTER (2), MILENA PASTAS ARTESANALES (2), PASTAS MAZZEO (2), RAVIOLON (2).
 
-## 8. Núcleo de mayor confianza
+## 8. Núcleo de mayor respaldo cruzado
 
-- 53 candidatos multifuente (Google + OSM): base más sólida. Combinaciones: solo OSM 99 · solo Google 98 · Google+OSM 53 · solo AGC 11. Aparecer en más de una fuente aumenta la confianza, pero no reemplaza la validación.
+- 53 candidatos multifuente (Google + OSM): base más sólida. Combinaciones: solo OSM 99 · solo Google 98 · Google+OSM 53 · solo AGC 11. Aparecer en más de una fuente aumenta la probabilidad de existencia, pero no la confirma: no reemplaza la validación.
 
 ## 9. ¿Qué queda pendiente?
 
-- 42 casos en revisión manual; validación territorial; posibles locales cerrados/faltantes. 11 cadenas auditadas sin alertas; falsas fusiones: 0.
+El padrón candidato requiere validación manual y territorial antes de convertirse en una base definitiva.
+
+- Validar los 42 casos en revisión manual.
+- Confirmar el núcleo de mayor respaldo cruzado.
+- Revisar especialmente casas independientes y de barrio.
+- Verificar cadenas y sucursales con fuentes propias o revisión manual.
+- Documentar posibles bajas, cierres o casos mal clasificados.
+- Mantener el 261 como cifra de trabajo, no como cifra pública definitiva.
+
+(El detalle de los chequeos de calidad queda en el anexo metodológico interno.)
 
 ## Casos emblemáticos (a validar documentalmente)
 
 - **LA JUVENIL** — fundada el 1 de diciembre de 1959 (Colegiales); negocio familiar de tres generaciones. Fuentes: La Nación, El Cronista (caso documentado).
-- Raviolón (1971, secundaria) y Master Pastas (1995) a confirmar; Biasatti reciente (2020). Multipasta, Pastas Mazzeo y Caprizzi sin año verificable. Detalle en `fuentes_historicas_casas_pastas.csv`. No se infiere antigüedad por fama.
+- Raviolón (1971, según fuentes secundarias de prensa) y Master Pastas (1995, según su sitio oficial) a confirmar; Biasatti reciente (2020). Multipasta, Pastas Mazzeo y Caprizzi sin año verificable. Información histórica documentada en anexo metodológico interno. No se infiere antigüedad por fama.
 
-## 10. ¿Qué aporta a DataGastro?
+## 10. ¿Qué aporta esta metodología?
 
 Un método replicable (registro oficial + fuentes abiertas + señal operativa + auditoría de calidad) para otros rubros: pizzerías, heladerías artesanales, cafeterías de especialidad, panaderías, parrillas, casas de empanadas.
+
+## ¿Qué decisión permite tomar este informe?
+
+- Priorizar validación territorial en barrios polo; empezar por el núcleo de mayor respaldo cruzado (53 multifuente); revisar los 42 casos manuales; priorizar independientes/de barrio; no usar el 261 como cifra pública definitiva hasta validar; usar la metodología como prueba de concepto del análisis territorial gastronómico.
+
+**Recomendación operativa (2–4 semanas):** 1) validar muestra piloto en un barrio; 2) depurar cadenas y nombres genéricos; 3) confirmar multifuente; 4) revisar independientes prioritarios; 5) definir si el padrón candidato alimenta la línea de análisis territorial gastronómico.
 
 ## Limitaciones
 
