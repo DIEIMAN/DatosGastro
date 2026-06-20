@@ -14,3 +14,18 @@ Algunas Cosas de Drive/
 # direcciones e IDs individuales (datos sensibles). La versión sanitizada para informe
 # va en outputs/casas_pastas_reporte/ (agregados, sin datos personales).
 outputs/casas_pastas/
+# Piloto Google Places: resultados crudos con nombres comerciales, direcciones
+# e IDs individuales (datos de terceros). No se commitean.
+outputs/casas_pastas_google_places/
+# Padrón integrado AGC+OSM+Google: contiene nombres/razón social y direcciones
+# individuales (datos de terceros / AGC). Los agregados van al informe sanitizado.
+outputs/casas_pastas_integrado/
+outputs/**/*.pdf
+outputs/**/*.html
+outputs/casas_pastas_google_places/
+# Exports / paquetes compartibles o privados generados localmente (incluye ZIPs y pack privado)
+exports/
+*.zip
+# Secretos / variables de entorno
+.env
+*.env
