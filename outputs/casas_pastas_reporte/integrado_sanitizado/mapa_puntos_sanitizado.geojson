@@ -1,0 +1,4408 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.408007500000004,
+     -34.5948241
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0001",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3983012,
+     -34.5912204
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0002",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4137174,
+     -34.5927923
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0003",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.406159800000005,
+     -34.603082
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0004",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "3",
+    "barrio": "Balvanera"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4039452,
+     -34.5937538
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0005",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.412933,
+     -34.589684
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0006",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.405079799999996,
+     -34.5858956
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0007",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.40424290000001,
+     -34.5911669
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0008",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.389362399999996,
+     -34.6018387
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0009",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3920787,
+     -34.5998034
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0010",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.423298499999994,
+     -34.596439499999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0011",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.404046,
+     -34.599964
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0012",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "3",
+    "barrio": "Balvanera"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.403759599999994,
+     -34.5964701
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0013",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.39999879999999,
+     -34.5900207
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0014",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4113108,
+     -34.588384399999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0015",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.39293999999999,
+     -34.59375
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0016",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.38961769999999,
+     -34.5918912
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0017",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.40940500000001,
+     -34.5919177
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0018",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.416266199999995,
+     -34.5979994
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0019",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4045099,
+     -34.5865084
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0020",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.425837599999994,
+     -34.5829198
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0021",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.383298800000006,
+     -34.6130187
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0022",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "Monserrat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.45618319999999,
+     -34.564217
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0023",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4584889,
+     -34.567713399999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0024",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.451926099999994,
+     -34.629674099999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0025",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4468453,
+     -34.5794278
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0026",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.461512199999994,
+     -34.5629626
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0027",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.424256,
+     -34.6031364
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0028",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4219324,
+     -34.5826771
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0029",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4088494,
+     -34.580785999999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0030",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.470827299999996,
+     -34.5694569
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0031",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.45428239999999,
+     -34.5643545
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0032",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.45263079999999,
+     -34.55125460000001
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0033",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.429979599999996,
+     -34.6160405
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0034",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4354661,
+     -34.620090499999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0035",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4426226,
+     -34.620874
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0036",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.437526000000005,
+     -34.614688
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0037",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4547793,
+     -34.6260736
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0038",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.39251900000001,
+     -34.5948099
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0039",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.416093399999994,
+     -34.6054373
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0040",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4158734,
+     -34.6107583
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0041",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.438353000000006,
+     -34.596717999999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0042",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.406411299999995,
+     -34.630974200000004
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0043",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "Parque Patricios"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4411237,
+     -34.608675999999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0044",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.411462199999995,
+     -34.5964741
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0045",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.422597100000004,
+     -34.5911372
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0046",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4254738,
+     -34.5839387
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0047",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.452738999999994,
+     -34.563072
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0048",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.453655000000005,
+     -34.560466
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0049",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4569657,
+     -34.558135799999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0050",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4598385,
+     -34.5668536
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0051",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4554087,
+     -34.5656903
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0052",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.469656799999996,
+     -34.5644953
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0053",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.442653400000005,
+     -34.6173563
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0054",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449092,
+     -34.6257842
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0055",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4348659,
+     -34.621587399999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0056",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.435674,
+     -34.6029064
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0057",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.45439069999999,
+     -34.6116439
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0058",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.489740000000005,
+     -34.57842
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0059",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4822112,
+     -34.5794885
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0060",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4921314,
+     -34.5699052
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0061",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4796998,
+     -34.5784446
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0062",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.48720539999999,
+     -34.5793493
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0063",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4765732,
+     -34.5827659
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0064",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Parque Chas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.479999,
+     -34.5707701
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0065",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4831115,
+     -34.56570310000001
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0066",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.459810600000004,
+     -34.6286079
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0067",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4564798,
+     -34.6320129
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0068",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4622223,
+     -34.634012399999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0069",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.466077299999995,
+     -34.6259979
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0070",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4588599,
+     -34.615525999999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0071",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.464638699999995,
+     -34.615980199999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0072",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4691827,
+     -34.6179803
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0073",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.459967,
+     -34.6216949
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0074",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.46645199999999,
+     -34.631453
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0075",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.46100980000001,
+     -34.6231004
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0076",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.481618,
+     -34.6335823
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0077",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Floresta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4640436,
+     -34.6298856
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0078",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.445670099999994,
+     -34.627070599999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0079",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.40071589999999,
+     -34.5935604
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0080",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.42632,
+     -34.6028324
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0081",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.421141899999995,
+     -34.6057298
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0082",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.42139899999999,
+     -34.6100244
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0083",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.42082919999999,
+     -34.6087509
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0084",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4286432,
+     -34.6146865
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0085",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.41949030000001,
+     -34.6022356
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0086",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5120163,
+     -34.600440899999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0087",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.511805599999995,
+     -34.6060267
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0088",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.493939600000004,
+     -34.6038375
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0089",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Del Parque"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.52672359999999,
+     -34.6127332
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0090",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.50484239999999,
+     -34.6062997
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0091",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5261216,
+     -34.6146256
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0092",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Real"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.498133300000006,
+     -34.5909427
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0093",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Agronomia"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4239323,
+     -34.5903865
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0094",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.458419,
+     -34.6042442
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0095",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4567371,
+     -34.6014658
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0096",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3920329,
+     -34.6032446
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0097",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.42647299999999,
+     -34.5916098
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0098",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.378783000000006,
+     -34.593171
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0099",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "1",
+    "barrio": "Retiro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.433706400000005,
+     -34.611273499999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0100",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.41478969999999,
+     -34.6254384
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0101",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Boedo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.445116600000006,
+     -34.5706609
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0102",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.43664270000001,
+     -34.5657816
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0103",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.375110799999995,
+     -34.6371112
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0104",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "4",
+    "barrio": "Barracas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.433216900000005,
+     -34.6016206
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0105",
+    "clasificacion_integrada": "A_integrado_multifuente",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.447583699999996,
+     -34.5707173
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0106",
+    "clasificacion_integrada": "A_google_probable",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.51244109999999,
+     -34.601268499999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0107",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.404085099999996,
+     -34.575136199999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0108",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.51723339999999,
+     -34.6119576
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0109",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.419389100000004,
+     -34.5871388
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0110",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.414109999999994,
+     -34.5939609
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0111",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.396095300000006,
+     -34.588954
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0112",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.426678900000006,
+     -34.5848535
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0113",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4370379,
+     -34.6328319
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0114",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Parque Chacabuco"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.418979400000005,
+     -34.6108554
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0115",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4318869,
+     -34.6088591
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0116",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3952649,
+     -34.5928493
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0117",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4166379,
+     -34.585429
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0118",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4180567,
+     -34.5916621
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0119",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4090626,
+     -34.579985799999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0120",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.45488499999999,
+     -34.5672107
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0121",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.462303899999995,
+     -34.5561204
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0122",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4407527,
+     -34.626728799999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0123",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4345561,
+     -34.6252944
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0124",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.430841099999995,
+     -34.6095332
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0125",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.440273000000005,
+     -34.613513600000005
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0126",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4279029,
+     -34.6249931
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0127",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.435591,
+     -34.613219
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0128",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.428099599999996,
+     -34.6198062
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0129",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4860493,
+     -34.5761764
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0130",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.489453999999995,
+     -34.5703649
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0131",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4898313,
+     -34.574152
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0132",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.484526200000005,
+     -34.5730991
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0133",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.484119299999996,
+     -34.5767327
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0134",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4791056,
+     -34.577377
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0135",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4874747,
+     -34.5685009
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0136",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.475161199999995,
+     -34.6190504
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0137",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Santa Rita"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.46394239999999,
+     -34.629879599999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0138",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.48274970000001,
+     -34.624458499999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0139",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Santa Rita"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.404632,
+     -34.5959727
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0140",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.394980499999996,
+     -34.596679
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0141",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.423228200000004,
+     -34.6122947
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0142",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4215034,
+     -34.6069258
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0143",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.42615730000001,
+     -34.6085199
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0144",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4237339,
+     -34.599441899999995
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0145",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5200815,
+     -34.610588299999996
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0146",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.512268,
+     -34.600637
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0147",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.509787200000005,
+     -34.5910339
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0148",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5196366,
+     -34.6184156
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0149",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Real"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5266485,
+     -34.6148868
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0150",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Real"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.511535,
+     -34.5913593
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0151",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "si",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4126215,
+     -34.5866712
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0152",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4692671,
+     -34.5479501
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0153",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "12",
+    "barrio": "Saavedra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4849617,
+     -34.6320285
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0154",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Velez Sarsfield"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4163217,
+     -34.5979997
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0155",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "5",
+    "barrio": "Almagro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4478334,
+     -34.5583046
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0156",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4115424,
+     -34.5905072
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0157",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4952939,
+     -34.6452031
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0158",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "9",
+    "barrio": "Mataderos"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4302227,
+     -34.6226057
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0159",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4257929,
+     -34.6267189
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0160",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "5",
+    "barrio": "Boedo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3801326,
+     -34.6166216
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0161",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "Monserrat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4359366,
+     -34.5698366
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0162",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4715444,
+     -34.5421288
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0163",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Nuñez"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4739582,
+     -34.5422298
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0164",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Saavedra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5230058,
+     -34.6275758
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0165",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Versalles"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3760477,
+     -34.6331394
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0166",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "Barracas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3704208,
+     -34.630856
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0167",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "La Boca"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3628757,
+     -34.6378195
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0168",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "La Boca"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5076259,
+     -34.6275174
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0169",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Luro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5079524,
+     -34.5704605
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0170",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4387703,
+     -34.564821
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0171",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4365446,
+     -34.5676988
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0172",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4803476,
+     -34.5780493
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0173",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4808003,
+     -34.5737723
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0174",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4359863,
+     -34.5806069
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0175",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493447,
+     -34.5775458
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0176",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5105245,
+     -34.6234914
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0177",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Monte Castro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5161927,
+     -34.6284445
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0178",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Luro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4582773,
+     -34.5721855
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0179",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4852255,
+     -34.613266
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0180",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Santa Rita"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4799842,
+     -34.570735
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0181",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4625207,
+     -34.5667684
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0182",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4955656,
+     -34.6145023
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0183",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Monte Castro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4953966,
+     -34.6028296
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0184",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Del Parque"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3859754,
+     -34.6038323
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0185",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3726628,
+     -34.6137468
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0186",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "Monserrat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3723107,
+     -34.6185441
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0187",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Telmo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5250647,
+     -34.6406939
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0188",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "9",
+    "barrio": "Liniers"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4486355,
+     -34.623342
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0189",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4666023,
+     -34.6458312
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0190",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "9",
+    "barrio": "Parque Avellaneda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3726186,
+     -34.6196356
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0191",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Telmo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.412688,
+     -34.6152826
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0192",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "3",
+    "barrio": "Balvanera"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4861196,
+     -34.6397608
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0193",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Velez Sarsfield"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4617748,
+     -34.631396
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0194",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "7",
+    "barrio": "Flores"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3833303,
+     -34.6130804
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0195",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "Monserrat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4797203,
+     -34.5784692
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0196",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Villa Urquiza"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4040477,
+     -34.600009
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0197",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "3",
+    "barrio": "Balvanera"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.521094,
+     -34.6399666
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0198",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "9",
+    "barrio": "Liniers"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4643534,
+     -34.5705911
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0199",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4376359,
+     -34.5769855
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0200",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4304854,
+     -34.5771045
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0201",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4372757,
+     -34.600541
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0202",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4240457,
+     -34.5771614
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0203",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4932172,
+     -34.6038316
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0204",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "11",
+    "barrio": "Villa Del Parque"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4961703,
+     -34.6003632
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0205",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "11",
+    "barrio": "Villa Del Parque"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4466897,
+     -34.6099376
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0206",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5261827,
+     -34.6406964
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0207",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "9",
+    "barrio": "Liniers"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4414329,
+     -34.5714873
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0208",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4294758,
+     -34.5940898
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0209",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4455209,
+     -34.5574972
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0210",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4479204,
+     -34.6158176
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0211",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4427443,
+     -34.5625187
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0212",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4600235,
+     -34.5742949
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0213",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4561276,
+     -34.5544872
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0214",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.479404,
+     -34.5569155
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0215",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Coghlan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4437741,
+     -34.5690414
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0216",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4753182,
+     -34.5796571
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0217",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Villa Ortuzar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4596657,
+     -34.554155
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0218",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5085279,
+     -34.6400621
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0219",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "10",
+    "barrio": "Villa Luro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4523232,
+     -34.5823161
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0220",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Chacarita"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.414323,
+     -34.5807387
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0221",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3892188,
+     -34.6054964
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0222",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4074417,
+     -34.6242695
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0223",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "3",
+    "barrio": "San Cristobal"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4542212,
+     -34.6234037
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0224",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3763432,
+     -34.6000104
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0225",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "San Nicolas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4388201,
+     -34.5729524
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0226",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3991019,
+     -34.5870023
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0227",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4007164,
+     -34.5873226
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0228",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4634167,
+     -34.5464059
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0229",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Nuñez"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4752482,
+     -34.582192
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0230",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "15",
+    "barrio": "Parque Chas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4064296,
+     -34.5817708
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0231",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "14",
+    "barrio": "Palermo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4593812,
+     -34.5726611
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0232",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.520938,
+     -34.6234837
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0233",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "10",
+    "barrio": "Villa Real"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.3731026,
+     -34.6149446
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0234",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "1",
+    "barrio": "Monserrat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4341546,
+     -34.6155815
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0235",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "6",
+    "barrio": "Caballito"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4873321,
+     -34.5514673
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0236",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Saavedra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.357609,
+     -34.6369598
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0237",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "La Boca"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4368042,
+     -34.6350513
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0238",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Parque Chacabuco"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4899669,
+     -34.5552212
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0239",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "12",
+    "barrio": "Saavedra"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5119858,
+     -34.600502
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0240",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5078737,
+     -34.6125284
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0241",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4853599,
+     -34.60923
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0242",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Del Parque"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4771318,
+     -34.6073071
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0243",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Gral. Mitre"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5127174,
+     -34.6395371
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0244",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "9",
+    "barrio": "Liniers"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.5020496,
+     -34.6316254
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0245",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Villa Luro"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.502011,
+     -34.6458761
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0246",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "si",
+    "comuna": "9",
+    "barrio": "Mataderos"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4344596,
+     -34.6282657
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0247",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Parque Chacabuco"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4920523,
+     -34.6514242
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0248",
+    "clasificacion_integrada": "B_revision_manual",
+    "es_cadena_detectada": "no",
+    "comuna": "9",
+    "barrio": "Mataderos"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4425309,
+     -34.596676
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0249",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "15",
+    "barrio": "Villa Crespo"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4422767,
+     -34.6645314
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0250",
+    "clasificacion_integrada": "A_osm_auxiliar",
+    "es_cadena_detectada": "no",
+    "comuna": "8",
+    "barrio": "Villa Soldati"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.447479,
+     -34.570725
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0251",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Colegiales"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.477981,
+     -34.671957
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0252",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "si",
+    "comuna": "8",
+    "barrio": "Villa Lugano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.474706,
+     -34.63799
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0253",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "10",
+    "barrio": "Floresta"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449554,
+     -34.631104
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0254",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "7",
+    "barrio": "Parque Chacabuco"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.519945,
+     -34.610781
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0255",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "11",
+    "barrio": "Villa Devoto"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.453642,
+     -34.56037
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0256",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "13",
+    "barrio": "Belgrano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.49012,
+     -34.663018
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0258",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "si",
+    "comuna": "9",
+    "barrio": "Mataderos"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.368294,
+     -34.64711
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0259",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "4",
+    "barrio": "Barracas"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.392675,
+     -34.588914
+    ]
+   },
+   "properties": {
+    "id_anonimo": "PT0260",
+    "clasificacion_integrada": "A_agc_oficial_estricto",
+    "es_cadena_detectada": "no",
+    "comuna": "2",
+    "barrio": "Recoleta"
+   }
+  }
+ ]
+}

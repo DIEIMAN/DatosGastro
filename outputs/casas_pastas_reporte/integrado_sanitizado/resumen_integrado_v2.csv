@@ -1,0 +1,20 @@
+﻿indicador,valor
+fecha,2026-06-20
+version,v2 (tras resolución de casos revisar_fusion)
+nota,Padrón CANDIDATO no oficial. AGC oficial estricto (no implica local activo); OSM auxiliar; Google operativo.
+candidatos_unicos,261
+candidatos_unicos_v1,264
+fusionados_con_A,2
+descartados_nuevos,1
+clase_A_integrado_multifuente,36
+clase_A_google_probable,70
+clase_A_osm_auxiliar,102
+clase_A_agc_oficial_estricto,11
+clase_B_revision_manual,42
+con_google,151
+con_osm,152
+con_agc,11
+multifuente,53
+cadenas,81
+independientes,180
+revision_manual_prioritaria,42

@@ -1,0 +1,18 @@
+﻿indicador,valor
+fecha,2026-06-20
+nota,Padrón CANDIDATO (no oficial). AGC=oficial estricto/no implica local activo; OSM=auxiliar; Google=operativo no oficial.
+candidatos_unicos,264
+descartados,57
+clase_A_integrado_multifuente,36
+clase_A_google_probable,70
+clase_A_osm_auxiliar,102
+clase_A_agc_oficial_estricto,11
+clase_B_revision_manual,45
+con_google,152
+con_osm,153
+con_agc,11
+multifuente,52
+cadenas,90
+independientes,174
+revision_manual_prioritaria,45
+comunas_baja_cobertura,8
