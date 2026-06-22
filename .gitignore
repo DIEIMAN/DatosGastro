@@ -29,3 +29,7 @@ exports/
 # Secretos / variables de entorno
 .env
 *.env
+# Anexos internos de casas de pastas: listados con nombres individuales para revisión manual
+outputs/casas_pastas_reporte/anexos_internos/
+# Auditoría de recall / faltantes: crudos de terceros, indicios y resultados a validar
+outputs/casas_pastas_recall/

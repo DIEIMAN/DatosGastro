@@ -1,16 +1,20 @@
-"""Informe ejecutivo V3 — Casas de pastas en CABA, padrón candidato integrado.
+"""Informe ejecutivo V4 — Casas de pastas en CABA, padrón candidato integrado.
 
-Versión storytelling DataGastro: cada sección responde una pregunta (pregunta -> respuesta
-ejecutiva -> dato -> visualización -> lectura territorial -> cuidado metodológico). Suma
-mapas coropléticos por comuna y barrio (cantidad y densidad).
+Versión ejecutiva para revisión de jefatura alta / ministro. Misma metodología, KPIs y
+contenido central que la V3, con un cambio principal:
+  1. Portada más institucional / estilo DataGastro (con bajada no técnica y autoría sobria,
+     sin tarjetas de KPIs en portada para no repetirlos con la página de Indicadores).
+  Se conserva el cierre metodológico (PREGUNTA 10) como última página, para no terminar en
+  Limitaciones. 23 páginas, igual que la V3.
 
-Usa SOLO agregados y mapas anonimizados (sin nombres, direcciones, razón social, place_id,
-teléfonos, emails, ratings ni API key). No hace requests. No commitea.
+NO recalcula datos: lee los mismos archivos depurados que la V3. No cambia padrón, clasificación,
+mapas, rankings, fuentes ni recall. Usa SOLO agregados y mapas anonimizados (sin nombres,
+direcciones, razón social, place_id, teléfonos, emails, ratings ni API key). No hace requests.
+No commitea.
 
-Salidas:
-  outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V3.pdf
-  outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V3.md
-  outputs/casas_pastas_reporte/integrado_sanitizado/mapa_puntos_sanitizado.geojson  (v2)
+Salidas (nuevas, no sobrescriben la V3):
+  outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V4.pdf
+  outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V4.md
 """
 from __future__ import annotations
 
@@ -41,8 +45,8 @@ INT = ROOT / "outputs" / "casas_pastas_integrado"
 REP = ROOT / "outputs" / "casas_pastas_reporte"
 SAN = REP / "integrado_sanitizado"
 GEO = ROOT / "data" / "raw"
-PDF = REP / "INFORME_CASAS_PASTAS_INTEGRADO_V3.pdf"
-MD = REP / "INFORME_CASAS_PASTAS_INTEGRADO_V3.md"
+PDF = REP / "INFORME_CASAS_PASTAS_INTEGRADO_V4.pdf"
+MD = REP / "INFORME_CASAS_PASTAS_INTEGRADO_V4.md"
 
 A4 = (8.27, 11.69)
 AZUL = "#1f3b57"
@@ -284,21 +288,44 @@ def main():
     top_barrios = set(b for b, _ in bar.most_common(6))
 
     with PdfPages(PDF) as pdf:
-        # 1. Portada
+        # 1. Portada institucional DataGastro (V4) — sin KPIs (no repetir con Indicadores).
         fig = page()
-        fig.patches.append(Rectangle((0, 0.72), 1, 0.28, transform=fig.transFigure, facecolor=AZUL, zorder=0))
-        fig.text(0.07, 0.90, "DIAGNÓSTICO TERRITORIAL GASTRONÓMICO", color="#cdd9e5", fontsize=10, fontweight="bold")
-        fig.text(0.07, 0.815, "Casas de pastas en la\nCiudad de Buenos Aires", color="white",
-                 fontsize=27, fontweight="bold", va="center")
-        fig.text(0.07, 0.665, "Una lectura territorial del universo operativo probable", fontsize=13.5, color=AZUL)
-        fig.lines.append(Line2D([0.07, 0.55], [0.635, 0.635], color=ROJO, lw=2.5, transform=fig.transFigure))
-        cards(fig, 0.45, [(n_tot, "candidatos únicos\ndepurados", AZUL), (n_ind, "independientes", VERDE),
-                          (n_cad, "en cadenas", NARANJA), (n_multi, "multifuente", VERDE)], h=0.13)
-        fig.text(0.07, 0.33,
-                 "Padrón candidato integrado a partir de registro oficial, fuentes abiertas y señales\n"
-                 "operativas no oficiales. No constituye un censo definitivo ni reemplaza al registro\n"
-                 "administrativo oficial.",
-                 fontsize=11.5, color="#333333", va="top")
+        # Banda institucional superior.
+        fig.patches.append(Rectangle((0, 0.70), 1, 0.30, transform=fig.transFigure, facecolor=AZUL, zorder=0))
+        # Filete rojo de acento sobre el borde inferior de la banda.
+        fig.patches.append(Rectangle((0, 0.694), 1, 0.006, transform=fig.transFigure, facecolor=ROJO, zorder=1))
+        # Masthead de marca.
+        fig.text(0.07, 0.945, "DataGastro", color="white", fontsize=21, fontweight="bold")
+        fig.lines.append(Line2D([0.07, 0.215], [0.927, 0.927], color=ROJO, lw=2.2, transform=fig.transFigure))
+        fig.text(0.07, 0.895, "DIAGNÓSTICO TERRITORIAL GASTRONÓMICO", color="#cdd9e5",
+                 fontsize=10.5, fontweight="bold")
+        # Título principal.
+        fig.text(0.07, 0.805, "Casas de pastas en la\nCiudad de Buenos Aires", color="white",
+                 fontsize=26, fontweight="bold", va="center")
+        # Subtítulo institucional bajo la banda.
+        fig.text(0.07, 0.628, "Padrón candidato depurado y lectura territorial del rubro",
+                 fontsize=14, color=AZUL, fontweight="bold")
+        fig.lines.append(Line2D([0.07, 0.60], [0.598, 0.598], color=ROJO, lw=2.5, transform=fig.transFigure))
+        # Bajada breve, no técnica.
+        bajada = ("Este informe integra registro oficial, fuentes abiertas, señales operativas y revisión "
+                  "manual para aproximar un universo operativo probable de casas de pastas en CABA. El "
+                  "resultado no constituye un censo definitivo ni reemplaza al registro oficial: funciona "
+                  "como base analítica para orientar validaciones y decisiones territoriales.")
+        yb = 0.545
+        for ln in textwrap.wrap(bajada, 90):
+            fig.text(0.07, yb, ln, fontsize=11.5, color="#333333", va="top")
+            yb -= 0.028
+        # Línea sobria de capas metodológicas (cualitativa, no numérica).
+        capas = "Registro oficial   ·   Fuentes abiertas   ·   Señales operativas   ·   Revisión manual"
+        fig.patches.append(Rectangle((0.07, 0.30), 0.86, 0.052, transform=fig.transFigure,
+                                     facecolor=GRISCLARO, edgecolor=AZUL, lw=1.0))
+        fig.text(0.5, 0.326, capas, ha="center", va="center", fontsize=10, color=AZUL, fontweight="bold")
+        # Autoría sobria.
+        fig.lines.append(Line2D([0.07, 0.93], [0.135, 0.135], color="#dddddd", lw=0.8, transform=fig.transFigure))
+        fig.text(0.07, 0.115, "Análisis y desarrollo: Diego Aleman", fontsize=10.5, color=AZUL,
+                 fontweight="bold", va="top")
+        fig.text(0.07, 0.088, "Padrón candidato no oficial · sujeto a verificación territorial.",
+                 fontsize=8.5, color=GRIS, style="italic", va="top")
         pdf.savefig(fig); plt.close(fig)
 
         # 2. Resumen ejecutivo
@@ -689,7 +716,7 @@ def main():
         foot(fig, "padrón candidato no oficial · la verificación territorial final queda pendiente.")
         pdf.savefig(fig); plt.close(fig)
 
-        # 21. Cierre metodológico (P10)
+        # 23. Cierre metodológico (P10) — se conserva para no terminar en Limitaciones.
         fig = page()
         head(fig, "PREGUNTA 10", "¿Qué aporta esta metodología al análisis gastronómico?",
              "Respuesta: un método replicable (oficial + abierta + operativa + auditoría) para otros rubros.", "23 / 23")
@@ -725,7 +752,14 @@ def escribir_md(rv2, com, bar, dens_com, dens_bar, combos, cobertura,
                 con_a, con_o, con_g, n_conf, n_desc, georref):
     n_tot = rv2["candidatos_unicos"]
     n_ind, n_cad, n_multi = rv2["independientes"], rv2["cadenas"], rv2["multifuente"]
-    L = ["# Casas de pastas en CABA — Padrón candidato depurado\n"]
+    L = ["# DataGastro — Diagnóstico territorial gastronómico\n"]
+    L.append("## Casas de pastas en la Ciudad de Buenos Aires\n")
+    L.append("**Padrón candidato depurado y lectura territorial del rubro**\n")
+    L.append("_Análisis y desarrollo: Diego Aleman_\n")
+    L.append("Este informe integra registro oficial, fuentes abiertas, señales operativas y revisión manual "
+             "para aproximar un universo operativo probable de casas de pastas en CABA. El resultado no "
+             "constituye un censo definitivo ni reemplaza al registro oficial: funciona como base analítica "
+             "para orientar validaciones y decisiones territoriales.\n")
     L.append("> Tras una revisión manual de los casos dudosos, el padrón candidato depurado queda conformado "
              f"por **{n_tot}** establecimientos posibles, combinando el registro administrativo oficial "
              "(AGC / F02), el relevamiento abierto auxiliar (OpenStreetMap) y una señal operativa no oficial "

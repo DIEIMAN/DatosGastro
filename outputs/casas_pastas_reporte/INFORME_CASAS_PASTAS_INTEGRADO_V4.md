@@ -1,4 +1,12 @@
-# Casas de pastas en CABA — Padrón candidato depurado
+# DataGastro — Diagnóstico territorial gastronómico
+
+## Casas de pastas en la Ciudad de Buenos Aires
+
+**Padrón candidato depurado y lectura territorial del rubro**
+
+_Análisis y desarrollo: Diego Aleman_
+
+Este informe integra registro oficial, fuentes abiertas, señales operativas y revisión manual para aproximar un universo operativo probable de casas de pastas en CABA. El resultado no constituye un censo definitivo ni reemplaza al registro oficial: funciona como base analítica para orientar validaciones y decisiones territoriales.
 
 > Tras una revisión manual de los casos dudosos, el padrón candidato depurado queda conformado por **254** establecimientos posibles, combinando el registro administrativo oficial (AGC / F02), el relevamiento abierto auxiliar (OpenStreetMap) y una señal operativa no oficial (Google Places). No es un padrón oficial ni un censo definitivo: es una base analítica para validación territorial.
 
