@@ -1,0 +1,7 @@
+caso,campo_en_conflicto,fuente_1,valor_1,fuente_2,valor_2,decision_recomendada,impacto_en_conteo
+Mercado de San Telmo,horarios,Sitio propio mercadosantelmo.com.ar,horario propio del mercado,Turismo BA (EN),horario turistico distinto,no cerrar un unico horario; mantener fuentes divergentes con nota,ninguno
+Mercado del Progreso,horarios,Mercados de la Ciudad (GCBA general),horario general,Ficha Turismo BA,horario de ficha especifica,marcar divergencia; no modificar horario sin validar fuente vigente,ninguno
+Mercado Soho,estado_operativo,Turismo BA 2021 + TN 2024,existencia y propuesta gastronomica,Google Places 2026,CLOSED_PERMANENTLY,mantener en revision; fuentes de existencia no revierten la senal de cierre reciente,ninguno (sigue en revision)
+Mercat Caballito,estado_operativo,Clarin 2021 + El Cronista 2022,apertura del mercado,Google Places 2026,CLOSED_PERMANENTLY,mantener en revision; notas de apertura son antecedentes no estado actual,ninguno (sigue en revision)
+Mercado de los Carruajes,estado_operativo,Infobae 2022,apertura como mercado gourmet,Radio Hache / El Trece 2025,cierre y reconversion a eventos,mantener como cerrado documentado; prevalece la evidencia 2025,ninguno (sigue cerrado)
+Export Perplexity (TN/Infobae/El Trece),trazabilidad_url,Perplexity export,URLs truncadas con tres puntos,Necesidad metodologica,requiere URL completa para fuente final,marcar url_truncada_requiere_verificacion; no usar como fuente final,ninguno

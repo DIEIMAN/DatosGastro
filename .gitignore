@@ -33,3 +33,31 @@ exports/
 outputs/casas_pastas_reporte/anexos_internos/
 # Auditoría de recall / faltantes: crudos de terceros, indicios y resultados a validar
 outputs/casas_pastas_recall/
+
+# === DataGastro V2 (Etapa 1) ===
+# Datos crudos y procesados con filas individuales sensibles (nombre comercial,
+# dirección, place_id/osm_id). No se commitean. Solo se publican agregados sanitizados.
+data/v2/raw/
+data/v2/processed/
+outputs/v2/internal/
+outputs/v2/google_places_raw/
+outputs/v2/osm_raw/
+outputs/v2/documental_raw/
+outputs/v2/**/*.zip
+outputs/v2/**/*.pdf
+# Versionables (agregados / configuración / esquemas / docs / código), se mantienen fuera
+# del ignore por ser no sensibles: data/v2/analytics/, outputs/v2/sanitized/, config/v2/,
+# schemas/v2/, docs/datagastro_v2/, src/v2/
+
+# === Informe Mercados CABA ===
+# Material interno y crudo: no se versiona. Solo se publican agregados sanitizados en
+# outputs/mercados_caba/sanitized/ y la documentación en docs/mercados_caba/.
+outputs/mercados_caba/internal/
+outputs/mercados_caba/internal/google_places_raw/
+outputs/mercados_caba/raw/
+outputs/mercados_caba/**/*.pdf
+outputs/mercados_caba/**/*.zip
+# Fuentes internas crudas de mercados (planillas/PDFs/etc.): nunca se versionan.
+fuentes_internas_mercados_caba/
+.env 
+PROYECTOSGASTROAPARTENOREVISAR/

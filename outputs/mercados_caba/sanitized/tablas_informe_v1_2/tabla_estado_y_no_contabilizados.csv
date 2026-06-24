@@ -1,0 +1,8 @@
+grupo,estado_o_categoria,cantidad,cuenta_como_activo
+activos,activo_sede_fija,13,si
+activos,itinerante_activo,2,si
+no_contabilizados,cerrado_documentado,1,no
+no_contabilizados,distrito_gastronomico_no_mercado,2,no
+no_contabilizados,abasto_barrial_no_gastronomico,3,no
+no_contabilizados,fuera_de_alcance,2,no
+control,pendientes,0,no

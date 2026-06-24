@@ -1,0 +1,9 @@
+id,nombre,categoria_no_conteo,motivo,barrio,comuna,estado_operativo,fuente_principal,nivel_confianza,observacion,fecha_consulta
+NC-0001,Mercado de los Carruajes,cerrado_documentado,cerro definitivamente en abril 2025; se reconvierte a eventos,Retiro,1,cerrado,GCBA + prensa,C1_oficial,antecedente relevante (food hall gourmet 43 puestos),2026-06-23
+NC-0002,Barrio Chino,distrito_gastronomico_no_mercado,distrito comercial con oferta gastronomica; no es un mercado unico,Belgrano,13,activo,TURISMO_BA,C1_oficial,se documenta por relevancia; no cuenta como mercado,2026-06-23
+NC-0003,Los Arcos del Rosedal / Patio de los Arcos,distrito_gastronomico_no_mercado,polo de restaurantes independientes bajo viaducto; no es un mercado unico,Palermo,14,activo,prensa,C5_pendiente_revision,distinto de Distrito Arcos (outlet fuera de alcance),2026-06-23
+NC-0004,Centro de Abastecimiento Municipal Nº 27 (Mercado Pompeya),abasto_no_gastronomico,mercado municipal de abasto barrial sin polo gastronomico central,Nueva Pompeya,4,activo,GCBA,C1_oficial,abasto barrial,2026-06-23
+NC-0005,Centro de Abastecimiento Municipal Nº 116 (Villa Pueyrredon),abasto_no_gastronomico,mercado municipal de abasto barrial con rubros no alimentarios,Villa Pueyrredon,12,activo,GCBA,C1_oficial,abasto barrial,2026-06-23
+NC-0006,Mercado Comunitario Primera Junta,abasto_no_gastronomico,centro de abastecimiento municipal; abasto barrial sin polo gastronomico,Caballito,6,activo,GCBA,C1_oficial,distinto del Mercado del Progreso,2026-06-23
+NC-0007,Mercado de las Pulgas (incluye predio Mercado M1),fuera_de_alcance_no_gastronomico,eje antiguedades y usados; no gastronomico,Chacarita,15,activo,GCBA,C1_oficial,M1 es el nombre administrativo del mismo predio,2026-06-23
+NC-0008,Distrito Arcos,fuera_de_alcance_no_gastronomico,premium outlet; gastronomia accesoria,Palermo,14,activo,prensa,X_fuera_de_alcance,shopping outlet,2026-06-23

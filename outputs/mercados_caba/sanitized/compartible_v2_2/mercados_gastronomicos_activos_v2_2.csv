@@ -1,0 +1,13 @@
+id_candidato,nombre,tipo_mercado_gastronomico,gestion_publica_privada_mixta,barrio,comuna,estado_operativo,activo_para_conteo,web_oficial,horarios_confirmados,nivel_confianza
+MG-0001,Mercado de San Telmo,mercado_con_identidad_historica_gastronomica,mixta,San Telmo,1,activo,si,sitio_propio,pendiente,C1_oficial
+MG-0002,Mercado de Belgrano,mercado_con_identidad_historica_gastronomica,mixta,Belgrano,13,activo,si,institucional_gcba,si,C1_oficial
+MG-0003,Mercado del Progreso,mercado_barrial_alimentario,privada,Caballito,6,activo,si,sitio_propio,si,C1_oficial
+MG-0004,Mercat Villa Crespo,food_hall,privada,Villa Crespo,15,activo,si,institucional_gcba,si,C1_oficial
+MG-0006,Patio de los Lecheros,espacio_tipo_mercado_gastronomico,publica,Caballito,6,activo,si,institucional_gcba,si,C1_oficial
+MG-0008,Mercado Bonpland,mercado_de_productores,mixta,Palermo,14,activo,si,institucional_gcba,si,C1_oficial
+MG-0010,Smart Plaza Patio Parque Patricios,espacio_tipo_mercado_gastronomico,publica,Parque Patricios,4,activo,si,institucional_gcba,si,C1_oficial
+MG-0011,Patio Costanera Norte,espacio_tipo_mercado_gastronomico,mixta,Costanera Norte,13,activo,si,institucional_gcba,si,C1_oficial
+MG-0012,Patio Gastronomico Rodrigo Bueno,espacio_tipo_mercado_gastronomico,publica,Puerto Madero,1,activo,si,institucional_gcba,si,C1_oficial
+MG-0013,Mercado San Nicolas,mercado_con_identidad_historica_gastronomica,mixta,San Nicolas,1,activo,si,institucional_gcba,si,C1_oficial
+MG-0015,Buenos Aires Market,feria_gastronomica,privada,itinerante,0,itinerante,si,sitio_propio,pendiente,C2_sitio_oficial_del_mercado
+MG-0016,Sabe la Tierra,mercado_de_productores,privada,itinerante,0,itinerante,si,sitio_propio,pendiente,C2_sitio_oficial_del_mercado

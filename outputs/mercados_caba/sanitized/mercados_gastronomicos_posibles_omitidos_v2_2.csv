@@ -1,0 +1,15 @@
+id_omitido,nombre,fuente_deteccion,clasificacion,prioridad_revision,accion,observacion,fecha_consulta
+PO-0001,Gourmand Food Hall,google_places+documental,posible_omitido_pendiente_revision,alta,verificar entidad propia y foco gastronomico,esta dentro de Patio Bullrich; definir si tiene entidad propia; NO se suma,2026-06-24
+PO-0002,Mercado Fusion,documental,feria_temporal_no_permanente,media_alta,verificar periodicidad y organizador,encuentro al aire libre en Plaza de las Naciones Unidas; probable evento; NO se suma,2026-06-24
+PO-0003,Feria del Productor al Consumidor (FAUBA),google_places,posible_omitido_pendiente_revision,media,verificar foco gastronomico con fuente oficial,feria de productores en Facultad de Agronomia; NO se suma,2026-06-24
+PO-0004,Mercado Punto Verde,google_places,posible_omitido_pendiente_revision,media,verificar con fuente oficial GCBA,farmers_market/health food; posible programa GCBA; NO se suma,2026-06-24
+PO-0005,Lo Simple Mercado Natural,google_places,dudoso,baja,revisar si es mercado o local,market/cafe natural; NO se suma,2026-06-24
+PO-0006,Feria Leer y Comer,google_places,feria_temporal_no_permanente,baja,verificar continuidad,feria con eje gastronomico a confirmar; NO se suma,2026-06-24
+PO-0007,Andes Mercado,google_places,dudoso,baja,revisar,food_store/restaurant; probablemente local; NO se suma,2026-06-24
+PO-0008,Le marche,google_places,dudoso,baja,revisar,market; posible deli/local; NO se suma,2026-06-24
+PO-0009,Food Fest 2026,documental,evento_gastronomico_no_mercado,baja_para_mercados,derivar a agenda de eventos,festival temporal en La Rural; NO es mercado,2026-06-24
+PO-0010,Festival del Sandwich,documental,evento_gastronomico_no_mercado,baja_para_mercados,derivar a agenda de eventos,festival puntual en Hipodromo de Palermo; NO es mercado,2026-06-24
+PO-0011,Sabor a Buenos Aires,documental,evento_gastronomico_no_mercado,baja_para_mercados,derivar a agenda de eventos,feria temporal en Parque Thays; NO es mercado,2026-06-24
+PO-0012,Food Fest BA,documental,evento_gastronomico_no_mercado,baja_para_mercados,derivar a agenda de eventos,festival en La Rural; NO es mercado,2026-06-24
+PO-0013,Mercado Primera Junta,google_places,dudoso,sin_prioridad,sin_accion,ya documentado como abasto no gastronomico (NC-0006); no es omitido,2026-06-24
+PO-0014,Patio Parque Patricios,google_places,dudoso,sin_prioridad,sin_accion,corresponde a Smart Plaza Parque Patricios (MG-0010) ya activo; no es omitido,2026-06-24

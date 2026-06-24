@@ -1,0 +1,13 @@
+metrica,valor,detalle
+modo,run,dry-run no hace requests
+key_presente,si,leida de entorno/.env (no se imprime)
+queries_validacion,15,uno por mercado activo V1.2
+queries_descubrimiento,12,busqueda de posibles omitidos
+queries_totales_planeadas,27,validacion + descubrimiento
+queries_ejecutadas,25,reales contra Google Places
+errores_api,0,queries con error HTTP/red
+resultados_obtenidos,98,lugares devueltos (todas las queries)
+matches_con_15_activos,15,validaciones con coincidencia de nombre
+posibles_omitidos_pendiente_revision,13,candidatos gastronomicos nuevos (NO se suman al conteo)
+costo_estimado_ejecutado_usd,0.8,"~0.032/req; orden de magnitud, CONFIRMAR pricing"
+estado,ejecutado,ejecutado

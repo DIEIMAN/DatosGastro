@@ -1,0 +1,25 @@
+nombre,barrio_o_zona,estado_google,tipos_google_resumidos,tiene_web,clasificacion_omitido,nivel_confianza_google,accion_recomendada,observacion
+Mercado bazar,CABA,OPERATIONAL,store,no,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Gastrobaires Equipamiento gastronómico,CABA,OPERATIONAL,furniture_store|home_improvement_store|home_goods_store|store,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Bazar Gadol - Gastronomía Integral,CABA,OPERATIONAL,sin_tipos,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Mall Gastronómico S.R.L.,CABA,OPERATIONAL,home_goods_store|store,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Supermercado Botao,CABA,OPERATIONAL,supermarket|butcher_shop|market|grocery_store,no,supermercado_no_mercado,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Gourmand Food Hall,CABA,OPERATIONAL,restaurant|food|service,si,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+SUMAK almacén cooperativo,CABA,OPERATIONAL,grocery_store|food_store|store|food,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Feria de Abasto,CABA,OPERATIONAL,wholesaler|food,si,posible_feria_gastronomica,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Feria del Productor al Consumidor en la Facultad de Agronomía,CABA,OPERATIONAL,tourist_attraction,si,posible_feria_gastronomica,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Alimentos cooperativos,CABA,OPERATIONAL,grocery_store|food_store|store|food,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Mercado Punto Verde,CABA,OPERATIONAL,health_food_store|farmers_market|market|grocery_store,no,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Mercado Primera Junta,CABA,OPERATIONAL,market,no,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Mercado Gourmet Online,CABA,OPERATIONAL,deli|liquor_store|grocery_store|food_store,si,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Bon Marché,CABA,OPERATIONAL,market|grocery_store|food_store|store,si,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Andes Mercado,CABA,OPERATIONAL,food_store|store|restaurant|food,si,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Centro Gastronómico,CABA,OPERATIONAL,hamburger_restaurant|american_restaurant|restaurant|food,no,restaurante_individual_no_mercado,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+La Nueva de Palermo,CABA,OPERATIONAL,wholesaler|food,no,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Silmar Bazar - Palermo,CABA,OPERATIONAL,home_goods_store|store|service,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+IGA Palermo | Instituto Gastronómico de las Américas,CABA,OPERATIONAL,sin_tipos,si,dudoso_pendiente_revision,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Lo Simple Mercado Natural,CABA,OPERATIONAL,coffee_shop|cafe|market|grocery_store,si,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Tomate Estación de Sabores,CABA,OPERATIONAL,restaurant|food,si,restaurante_individual_no_mercado,bajo,descartar_o_revisar,detectado por descubrimiento Google; NO se suma al conteo
+Feria Leer y Comer,CABA,OPERATIONAL,sin_tipos,si,posible_feria_gastronomica,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Le marché,CABA,OPERATIONAL,market,no,posible_mercado_gastronomico,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo
+Patio Parque Patricios,CABA,OPERATIONAL,restaurant|food_court|food,si,posible_food_hall,medio,posible_omitido_pendiente_revision,detectado por descubrimiento Google; NO se suma al conteo

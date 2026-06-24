@@ -1,0 +1,22 @@
+metrica,valor,detalle
+total_candidatos_revisados,26,acumulado (incluye equivalencias CAM y alias M1)
+mercados_en_alcance_total,16,padron candidato V2.2
+mercados_gastronomicos_activos_confirmados_para_conteo,12,lectura conservadora (antes 15)
+de_los_cuales_sede_fija,10,activos de sede fija
+de_los_cuales_itinerantes,2,Buenos Aires Market + Sabe la Tierra
+casos_en_revision_no_contabilizados,3,Mercado Soho + Mercat Caballito + El Galpon
+mercados_cerrados_documentados,1,Mercado de los Carruajes
+mercados_pendientes_metodologicos,0,cierre V1.2 mantenido
+distritos_gastronomicos_no_mercado,2,Barrio Chino + Los Arcos del Rosedal
+abasto_barrial_no_gastronomico,3,Mercado Pompeya + Villa Pueyrredon + Primera Junta
+fuera_de_alcance,2,Mercado de las Pulgas (= M1) + Distrito Arcos
+conteo_anterior_v2,15,version previa con lectura no conservadora
+conteo_nuevo_v2_2,12,lectura conservadora por estado operativo
+gestion_activos_publicos,3,Lecheros + Smart Plaza + Rodrigo Bueno
+gestion_activos_privados,4,Progreso + Mercat Villa Crespo + Buenos Aires Market + Sabe la Tierra
+gestion_activos_mixtos,5,San Telmo + Belgrano + Bonpland + Costanera Norte + San Nicolas
+posibles_omitidos_pendiente_revision,4,Gourmand Food Hall + Feria FAUBA + Mercado Punto Verde (+ Mercado Fusion como feria temporal)
+eventos_gastronomicos_no_mercado,4,Food Fest 2026 + Festival del Sandwich + Sabor a Buenos Aires + Food Fest BA
+documental_v2_1_integrado,si,pack Perplexity en documental_v2_1 (insumo secundario)
+es_censo_o_padron_oficial,no,relevamiento documental; no censo definitivo ni padron oficial
+fecha_corte,2026-06-24,V2.2 conservadora
