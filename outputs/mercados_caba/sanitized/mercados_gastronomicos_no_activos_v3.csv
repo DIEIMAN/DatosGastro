@@ -1,0 +1,12 @@
+id,nombre,categoria,tipo,gestion,barrio,comuna,motivo,observacion_ejecutiva
+MG-0005,Mercado Soho,en_revision,food_hall,privada,Palermo,14,senal de cierre en Google y falta de actividad reciente verificable,Espacio gastronomico relevante; no se cuenta hasta validar
+MG-0014,Mercat Caballito,en_revision,food_hall,privada,Caballito,6,senal de cierre en Google; en fuente oficial solo figura como mencion de evento,Espacio gastronomico relevante; no se cuenta hasta validar
+MG-0009,El Galpon,en_revision,mercado_de_productores,privada,Chacarita,15,match de Google inconsistente y situacion no clara,Mercado de productores relevante; no se cuenta hasta validar
+NC-0001,Mercado de los Carruajes,cerrado_documentado,food_hall,mixta,Retiro,1,cerro definitivamente en abril 2025; se reconvierte a eventos,Antecedente relevante (ex food hall gourmet)
+NC-0002,Barrio Chino,distrito_gastronomico,distrito,mixta,Belgrano,13,distrito comercial con oferta gastronomica; no es un mercado unico,Zona gastronomica relevante; no es un mercado
+NC-0003,Los Arcos del Rosedal,distrito_gastronomico,polo,mixta,Palermo,14,polo de restaurantes independientes; no es un mercado unico,Polo gastronomico; no es un mercado
+NC-0004,CAM 27 Mercado Pompeya,abasto_no_gastronomico,mercado_barrial_alimentario,publica,Nueva Pompeya,4,mercado municipal de abasto sin polo gastronomico central,Abasto barrial; fuera del conteo gastronomico
+NC-0005,CAM 116 Villa Pueyrredon,abasto_no_gastronomico,mercado_barrial_alimentario,publica,Villa Pueyrredon,12,mercado municipal de abasto con rubros no alimentarios,Abasto barrial; fuera del conteo gastronomico
+NC-0006,Mercado Comunitario Primera Junta,abasto_no_gastronomico,mercado_barrial_alimentario,publica,Caballito,6,centro de abastecimiento municipal sin polo gastronomico,Abasto barrial; distinto del Mercado del Progreso
+NC-0007,Mercado de las Pulgas,fuera_de_alcance,mercado_de_antiguedades,publica,Chacarita,15,eje antiguedades y usados; no gastronomico,Incluye el predio Mercado M1; fuera de alcance
+NC-0008,Distrito Arcos,fuera_de_alcance,centro_comercial_outlet,privada,Palermo,14,premium outlet; gastronomia accesoria,Outlet; fuera de alcance

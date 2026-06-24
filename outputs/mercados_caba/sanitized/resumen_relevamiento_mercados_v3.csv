@@ -1,0 +1,22 @@
+metrica,valor,detalle
+mercados_gastronomicos_activos_confirmados_para_conteo,13,V3 incluye Gourmand Food Hall
+de_los_cuales_sede_fija,11,
+de_los_cuales_itinerantes,2,Buenos Aires Market + Sabe la Tierra
+espacios_en_revision_no_activos,3,Mercado Soho + Mercat Caballito + El Galpon
+cerrados_documentados,1,Mercado de los Carruajes
+distritos_gastronomicos_no_mercado,2,Barrio Chino + Los Arcos del Rosedal
+abasto_barrial_no_gastronomico,3,Pompeya + Villa Pueyrredon + Primera Junta
+fuera_de_alcance,2,Mercado de las Pulgas (= M1) + Distrito Arcos
+gestion_publica,3,Lecheros + Smart Plaza + Rodrigo Bueno
+gestion_privada,5,Progreso + Mercat Villa Crespo + Buenos Aires Market + Sabe la Tierra + Gourmand
+gestion_mixta,5,San Telmo + Belgrano + Bonpland + Costanera Norte + San Nicolas
+tipo_mercado_historico,3,San Telmo + Belgrano + San Nicolas
+tipo_food_hall,2,Mercat Villa Crespo + Gourmand
+tipo_patio_gastronomico,4,Lecheros + Smart Plaza + Costanera Norte + Rodrigo Bueno
+tipo_mercado_de_productores,2,Bonpland + Sabe la Tierra
+tipo_mercado_barrial_alimentario,1,Mercado del Progreso
+tipo_feria_gastronomica,1,Buenos Aires Market
+con_horario_confirmado,11,los 2 itinerantes dependen de la sede
+comunas_con_presencia,6,Comunas 1 4 6 13 14 15 (mas itinerantes)
+es_censo_o_padron_oficial,no,relevamiento documental; no censo definitivo ni padron oficial
+fecha_corte,2026-06-24,Informe final V3

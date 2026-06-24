@@ -1,0 +1,14 @@
+id,nombre,horario_resumido,dias_apertura,frecuencia,horario_confirmado
+MG-0001,Mercado de San Telmo,9 a 22 (a confirmar),Lunes a Domingo,diaria_o_casi_diaria,parcial_fuentes_divergentes
+MG-0002,Mercado de Belgrano,frescos 8:30-20; gastronomia 11-24,Lunes a Domingo,diaria_o_casi_diaria,si
+MG-0003,Mercado del Progreso,Lun-Vie 7:30-13 y 17-20; Sab hasta 14,Lunes a Sabado,dias_especificos,si
+MG-0004,Mercat Villa Crespo,12 a 23 (Vie-Sab hasta 01),Martes a Domingo,dias_especificos,si
+MG-0006,Patio de los Lecheros,9 a 24 (Vie-Sab hasta 3),Todos los dias,diaria_o_casi_diaria,si
+MG-0008,Mercado Bonpland,10 a 19/20,Martes Miercoles Viernes y Sabado,dias_especificos,si
+MG-0010,Smart Plaza Parque Patricios,11 a 24 (Vie-Sab hasta 1),Todos los dias,diaria_o_casi_diaria,si
+MG-0011,Patio Costanera Norte,Mie 12-19; Jue-Sab 12-24; Dom 12-21,Miercoles a Domingo,dias_especificos,si
+MG-0012,Patio Gastronomico Rodrigo Bueno,11 a 23,Viernes a Domingo,dias_especificos,si
+MG-0013,Mercado San Nicolas,mercado 8-18; gastronomia 11-24,Lunes a Sabado,dias_especificos,si
+MG-0015,Buenos Aires Market,Fin de semana (por sede),Fines de semana,itinerante,por_sede
+MG-0016,Sabe la Tierra,Fin de semana (por sede),Fines de semana,itinerante,por_sede
+MG-0017,Gourmand Food Hall,Dom-Jue 10-23; Vie-Sab 10-1,Todos los dias,diaria_o_casi_diaria,si

@@ -38,6 +38,10 @@ EXPECTED_DOCS = [
     "20_integracion_documental_v2_1.md", "21_ajuste_conservador_estado_operativo_v2_2.md",
     "22_resumen_ejecutivo_v2_2.md", "INFORME_MERCADOS_GASTRONOMICOS_CABA_V2_2.md",
     "23_integracion_urls_perplexity_v2_3.md",
+    "24_validacion_gourmand_food_hall_v2_4.md", "25_ajuste_conteo_gourmand_v2_4.md",
+    "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V3.md",
+    "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
+    "ANEXO_TECNICO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
 ]
 EXPECTED_CSV = [
     "fuentes_mercados_candidatas.csv", "taxonomia_mercados.csv",
@@ -70,6 +74,14 @@ EXPECTED_CSV = [
     "fuentes_documentales_mercados_v2_3.csv", "afirmaciones_mercados_v2_3.csv",
     "contradicciones_y_brechas_v2_3.csv",
     "fuentes_url_truncadas_requieren_verificacion_v2_3.csv",
+    # --- V2.4 (validacion Gourmand Food Hall) ---
+    "validacion_gourmand_food_hall_v2_4.csv", "mercados_gastronomicos_activos_v2_4.csv",
+    "resumen_relevamiento_mercados_v2_4.csv",
+    # --- V3 informe final entregable ---
+    "mercados_gastronomicos_activos_v3.csv", "mercados_gastronomicos_no_activos_v3.csv",
+    "resumen_relevamiento_mercados_v3.csv", "indicadores_mercados_gastronomicos_v3.csv",
+    "horarios_mercados_gastronomicos_v3.csv", "publicos_objetivo_mercados_v3.csv",
+    "oportunidades_politica_publica_mercados_v3.csv",
 ]
 # CSV -> columnas obligatorias que deben existir en el header
 REQUIRED_COLUMNS = {
@@ -252,6 +264,70 @@ def check_v2_2_conservador(chk):
             chk.error("resumen_v2_2 no reporta 12 activos para conteo")
 
 
+def check_v3_final(chk):
+    """V3: activos_v3 = 13, incluye Gourmand, sin los 3 en revision; informe en tono ejecutivo."""
+    act = SAN_DIR / "mercados_gastronomicos_activos_v3.csv"
+    if act.is_file():
+        with act.open(encoding="utf-8", newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        ids = {(r.get("id") or r.get("id_candidato") or "").strip() for r in rows}
+        if len(rows) == 13:
+            chk.ok("activos_v3 tiene 13 filas")
+        else:
+            chk.error(f"activos_v3 tiene {len(rows)} filas (se esperaban 13)")
+        if "MG-0017" in ids:
+            chk.ok("activos_v3 incluye Gourmand Food Hall (MG-0017)")
+        else:
+            chk.error("activos_v3 no incluye MG-0017 (Gourmand)")
+        intr = sorted(EN_REVISION_V2_2 & ids)
+        if intr:
+            chk.error(f"activos_v3 contiene casos en revision: {intr}")
+        else:
+            chk.ok("activos_v3 no contiene los 3 casos en revision")
+    inf = DOCS_DIR / "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V3.md"
+    if inf.is_file():
+        txt = inf.read_text(encoding="utf-8")
+        if "Resumen ejecutivo" in txt and "Indicadores" in txt:
+            chk.ok("informe final V3 tiene resumen ejecutivo e indicadores (tono ejecutivo)")
+        else:
+            chk.error("informe final V3 sin secciones ejecutivas esperadas")
+        low = txt.lower()
+        meto = low.count("metodolog") + low.count("nivel de confianza") + low.count("c1_oficial")
+        if meto <= 6:
+            chk.ok(f"informe final V3 con baja carga metodologica ({meto} menciones)")
+        else:
+            chk.warn(f"informe final V3 con mucha metodologia ({meto} menciones); revisar tono")
+
+
+def check_v2_4_gourmand(chk):
+    """V2.4: activos_v2_4 = 13, incluye MG-0017 Gourmand y no los 3 en revision; resumen=13."""
+    act = SAN_DIR / "mercados_gastronomicos_activos_v2_4.csv"
+    res = SAN_DIR / "resumen_relevamiento_mercados_v2_4.csv"
+    if act.is_file():
+        with act.open(encoding="utf-8", newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        ids = {r.get("id_candidato", "").strip() for r in rows}
+        if len(rows) == 13:
+            chk.ok("activos_v2_4 tiene 13 filas")
+        else:
+            chk.error(f"activos_v2_4 tiene {len(rows)} filas (se esperaban 13)")
+        if "MG-0017" in ids:
+            chk.ok("activos_v2_4 incluye MG-0017 (Gourmand Food Hall)")
+        else:
+            chk.error("activos_v2_4 no incluye MG-0017 (Gourmand)")
+        intr = sorted(EN_REVISION_V2_2 & ids)
+        if intr:
+            chk.error(f"activos_v2_4 contiene casos en revision: {intr}")
+        else:
+            chk.ok("activos_v2_4 no contiene los 3 casos en revision")
+    if res.is_file():
+        txt = res.read_text(encoding="utf-8").replace(" ", "")
+        if "activos_confirmados_para_conteo,13" in txt:
+            chk.ok("resumen_v2_4 reporta 13 activos para conteo")
+        else:
+            chk.error("resumen_v2_4 no reporta 13 activos para conteo")
+
+
 def check_v2_3_urls(chk):
     """Toda URL con '...' en fuentes_documentales_v2_3 debe marcarse url_truncada_requiere_verificacion."""
     p = SAN_DIR / "fuentes_documentales_mercados_v2_3.csv"
@@ -321,6 +397,8 @@ def main() -> int:
     check_privacy(chk)
     check_internal_gitignored(chk)
     check_v2_2_conservador(chk)
+    check_v2_4_gourmand(chk)
+    check_v3_final(chk)
     check_v2_3_urls(chk)
     check_env_not_tracked(chk)
     check_no_crudos(chk)
