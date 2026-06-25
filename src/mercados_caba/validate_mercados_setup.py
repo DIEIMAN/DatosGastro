@@ -42,6 +42,9 @@ EXPECTED_DOCS = [
     "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V3.md",
     "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
     "ANEXO_TECNICO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
+    "26_especificacion_informe_v4_datagastro.md",
+    "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.md",
+    "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V4.md",
 ]
 EXPECTED_CSV = [
     "fuentes_mercados_candidatas.csv", "taxonomia_mercados.csv",
@@ -82,6 +85,11 @@ EXPECTED_CSV = [
     "resumen_relevamiento_mercados_v3.csv", "indicadores_mercados_gastronomicos_v3.csv",
     "horarios_mercados_gastronomicos_v3.csv", "publicos_objetivo_mercados_v3.csv",
     "oportunidades_politica_publica_mercados_v3.csv",
+    # --- V4 base (estilo DataGastro) ---
+    "mercados_gastronomicos_activos_v4.csv", "mercados_gastronomicos_no_activos_v4.csv",
+    "indicadores_mercados_gastronomicos_v4.csv", "respaldo_fuentes_mercados_v4.csv",
+    "tipologias_mercados_v4.csv", "decisiones_que_permite_tomar_v4.csv",
+    "referencias_documentales_visibles_v4.csv",
 ]
 # CSV -> columnas obligatorias que deben existir en el header
 REQUIRED_COLUMNS = {
@@ -264,6 +272,54 @@ def check_v2_2_conservador(chk):
             chk.error("resumen_v2_2 no reporta 12 activos para conteo")
 
 
+def check_v4_base(chk):
+    """V4: activos_v4 = 13, incluye Gourmand, sin los 3 en revision; tipologias suman 13."""
+    act = SAN_DIR / "mercados_gastronomicos_activos_v4.csv"
+    tip = SAN_DIR / "tipologias_mercados_v4.csv"
+    if act.is_file():
+        with act.open(encoding="utf-8", newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        ids = {r.get("id", "").strip() for r in rows}
+        chk.ok("activos_v4 tiene 13 filas") if len(rows) == 13 else \
+            chk.error(f"activos_v4 tiene {len(rows)} filas (se esperaban 13)")
+        chk.ok("activos_v4 incluye Gourmand (MG-0017)") if "MG-0017" in ids else \
+            chk.error("activos_v4 no incluye MG-0017")
+        intr = sorted(EN_REVISION_V2_2 & ids)
+        chk.error(f"activos_v4 contiene casos en revision: {intr}") if intr else \
+            chk.ok("activos_v4 no contiene los 3 casos en revision")
+        # tipo_primario sin doble conteo: tantas filas como suma de tipos
+        tp = [r.get("tipo_primario", "").strip() for r in rows]
+        if all(tp):
+            chk.ok("activos_v4: todos tienen tipo_primario unico")
+        else:
+            chk.error("activos_v4: hay filas sin tipo_primario")
+    if tip.is_file():
+        with tip.open(encoding="utf-8", newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        suma = sum(int(r["cantidad"]) for r in rows
+                   if r.get("tipo_primario", "").upper() != "TOTAL" and r.get("cantidad", "").isdigit())
+        if suma == 13:
+            chk.ok("tipologias_mercados_v4 suman 13 (sin doble conteo)")
+        else:
+            chk.error(f"tipologias_mercados_v4 suman {suma} (se esperaban 13)")
+    inf = DOCS_DIR / "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.md"
+    if inf.is_file():
+        head = "\n".join(inf.read_text(encoding="utf-8").splitlines()[:40]).lower()
+        if "activos confirmados" in head:
+            chk.error("informe V4 usa 'activos confirmados' como headline (usar 'identificados')")
+        else:
+            chk.ok("informe V4 no usa 'confirmados' como headline")
+    # PDFs disenados y graficos V4 generados
+    for art in ("INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.pdf",
+                "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V4.pdf",
+                "grafico_tipo_primario_v4.png", "grafico_respaldo_fuentes_v4.png",
+                "mapa_mercados_gastronomicos_v4.png"):
+        if (SAN_DIR / art).is_file():
+            chk.ok(f"artefacto V4 presente: {art}")
+        else:
+            chk.error(f"falta artefacto V4: {art}")
+
+
 def check_v3_final(chk):
     """V3: activos_v3 = 13, incluye Gourmand, sin los 3 en revision; informe en tono ejecutivo."""
     act = SAN_DIR / "mercados_gastronomicos_activos_v3.csv"
@@ -399,6 +455,7 @@ def main() -> int:
     check_v2_2_conservador(chk)
     check_v2_4_gourmand(chk)
     check_v3_final(chk)
+    check_v4_base(chk)
     check_v2_3_urls(chk)
     check_env_not_tracked(chk)
     check_no_crudos(chk)

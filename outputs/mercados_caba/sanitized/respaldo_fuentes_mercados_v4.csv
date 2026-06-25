@@ -1,0 +1,14 @@
+id,nombre,fuente_oficial_gcba_turismo,sitio_propio,google_places_operational,documental_prensa,fuente_interna_sanitizada,cantidad_tipos_fuente,es_multifuente,nivel_respaldo_documental
+MG-0001,Mercado de San Telmo,si,si,si,si,no,4,si,alto_documental
+MG-0002,Mercado de Belgrano,si,no,si,si,si,4,si,alto_documental
+MG-0013,Mercado San Nicolas,si,no,si,si,si,4,si,alto_documental
+MG-0003,Mercado del Progreso,si,si,si,si,si,5,si,alto_documental
+MG-0004,Mercat Villa Crespo,si,no,si,si,no,3,si,alto_documental
+MG-0017,Gourmand Food Hall,no,si,si,si,no,3,si,alto_documental
+MG-0006,Patio de los Lecheros,si,no,si,si,no,3,si,alto_documental
+MG-0010,Smart Plaza Parque Patricios,si,no,si,si,no,3,si,alto_documental
+MG-0011,Patio Costanera Norte,si,no,si,no,no,2,si,medio_documental
+MG-0012,Patio Gastronomico Rodrigo Bueno,si,no,si,si,no,3,si,alto_documental
+MG-0008,Mercado Bonpland,si,no,si,si,si,4,si,alto_documental
+MG-0016,Sabe la Tierra,si,si,si,si,no,4,si,alto_documental
+MG-0015,Buenos Aires Market,si,si,si,no,no,3,si,alto_documental

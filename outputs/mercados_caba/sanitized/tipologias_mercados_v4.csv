@@ -1,0 +1,8 @@
+tipo_primario,cantidad,ejemplos
+mercado_historico,3,Mercado de San Telmo / Mercado de Belgrano / Mercado San Nicolas
+mercado_barrial_alimentario,1,Mercado del Progreso
+food_hall,2,Mercat Villa Crespo / Gourmand Food Hall
+patio_gastronomico,4,Patio de los Lecheros / Smart Plaza Parque Patricios / Patio Costanera Norte / Patio Rodrigo Bueno
+mercado_de_productores,2,Mercado Bonpland / Sabe la Tierra
+feria_gastronomica,1,Buenos Aires Market
+TOTAL,13,suma exacta sin doble conteo

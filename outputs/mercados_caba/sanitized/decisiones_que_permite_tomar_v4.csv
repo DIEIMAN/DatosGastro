@@ -1,0 +1,9 @@
+decision,descripcion,mercados_relacionados,requiere_validacion_territorial
+priorizar_circuitos_turisticos,Armar circuitos gastronomicos con los mercados de mayor atractivo turistico,Mercado de San Telmo / Mercado de Belgrano / Gourmand Food Hall,no
+focalizar_economia_social,Fortalecer productores y economia social via mercados y ferias,Mercado Bonpland / Sabe la Tierra / Buenos Aires Market,no
+dinamizar_barrios_con_patios_publicos,Usar patios gastronomicos publicos como dinamizadores barriales,Patio de los Lecheros / Smart Plaza Parque Patricios / Patio Costanera Norte / Patio Rodrigo Bueno,no
+crear_registro_unificado,Construir un catalogo oficial actualizado con tipologia y estado operativo,Todos los activos identificados,no
+estandarizar_informacion_publica,Publicar horarios oferta y gestion de cada mercado de forma homogenea,Todos los activos identificados,no
+preservar_mercados_historicos,Poner en valor mercados con identidad historica gastronomica,Mercado de San Telmo / Mercado de Belgrano / Mercado San Nicolas / Mercado del Progreso,no
+monitorear_aperturas_y_cierres,Seguimiento periodico de espacios con senales de cierre antes de decidir,Mercado Soho / Mercat Caballito / El Galpon,si
+priorizar_validacion_territorial,Definir un orden de validacion en terreno por respaldo documental,Todos (empezando por respaldo medio o a_validar),si
