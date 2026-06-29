@@ -59,5 +59,17 @@ outputs/mercados_caba/**/*.pdf
 outputs/mercados_caba/**/*.zip
 # Fuentes internas crudas de mercados (planillas/PDFs/etc.): nunca se versionan.
 fuentes_internas_mercados_caba/
-.env 
+.env
 PROYECTOSGASTROAPARTENOREVISAR/
+
+# === Reorganización 2026-06-29 (carpetas nuevas) ===
+# Cuarentena previa al borrado: copias de outputs/PDF/zip/QA viejos. No versionar.
+_delete_candidates/
+# Archivo histórico (KEEP_AS_ARCHIVE): docs/informes/packs de versiones superadas. No versionar.
+_archive_historico/
+# Carpetas espejo de subproyectos con copias de entregables (PDF/MD) e insumos.
+# Los originales viven en outputs/ (ya ignorado). Estas copias tampoco se versionan.
+MercadosGastro/final/
+MercadosGastro/archive_review/
+CasasDePastas/final/
+CasasDePastas/archive_review/

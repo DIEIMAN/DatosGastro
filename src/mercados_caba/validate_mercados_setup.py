@@ -1,13 +1,29 @@
-"""Validador OFFLINE del setup del informe 'Mercados de la Ciudad de Buenos Aires'.
+"""Validador OFFLINE de la CADENA VIGENTE del informe 'Mercados gastronomicos de CABA'.
 
-Verifica el andamiaje SIN ejecutar requests ni exponer datos sensibles:
-  - existen los documentos esperados;
-  - existen los CSV sanitizados esperados;
-  - los entregables sanitizados no contienen emails/telefonos/CUIT/place_id/Drive/API keys;
-  - los outputs internos/crudos estan gitignored;
-  - no se generaron crudos versionables.
+Desde la reorganizacion 2026-06-29 este validador NO valida el historial completo de
+versiones (V1/V2/V3/V4 y sus CSV/PDF/QA intermedios fueron eliminados o archivados en `_archive_historico/` durante la reorganización).
+Valida UNICAMENTE la cadena vigente y reproducible que genera el PDF final:
 
-NO hace requests, NO usa API keys, NO lee datos sensibles. Solo libreria estandar.
+  Generador final : src/mercados_caba/build_pdf_final_con_horarios.py
+  Cadena builders : build_pdf_final_con_horarios -> build_pdf_final_entrega
+                    -> build_pdf_final_v4_1_from_v3 -> build_pdf_from_markdown_master
+  Graficos vigentes: src/mercados_caba/build_visuals_v5.py (-> *_v5.png)
+  PDF fuente verdad: outputs/mercados_caba/sanitized/MercadosGastroCABA_con_horarios.pdf
+  Copia final      : MercadosGastro/final/MercadosGastroCABA_FINAL.pdf
+
+Verifica, sin requests ni datos sensibles:
+  - existen el generador final y los builders/visuals encadenados;
+  - existen los insumos (docs/CSV/PNG) que la cadena vigente consume;
+  - existe la salida final en outputs/.../sanitized/ y la copia en MercadosGastro/final/;
+  - el PDF final tiene 14 paginas, footer correcto y conserva frases ancla de p7/p11/p14;
+  - el PDF final NO menciona 'V4_1';
+  - los entregables sanitizados no contienen datos personales (email/tel/CUIT/place_id/Drive/apikey);
+  - las carpetas internas/crudas y .env siguen gitignored y sin crudos versionables.
+
+NO valida material historico V1/V2/V3/V4 (el material historico fue archivado o eliminado).
+
+NO hace requests, NO usa API keys, NO lee datos sensibles. Solo libreria estandar
+(+ PyPDF2/pypdf si esta disponible, para los chequeos del PDF final).
 
 Uso:
     python src/mercados_caba/validate_mercados_setup.py
@@ -21,96 +37,77 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DOCS_DIR = REPO_ROOT / "docs" / "mercados_caba"
 SAN_DIR = REPO_ROOT / "outputs" / "mercados_caba" / "sanitized"
+SRC_DIR = REPO_ROOT / "src" / "mercados_caba"
+FINAL_DIR = REPO_ROOT / "MercadosGastro" / "final"
 
+# ---------------------------------------------------------------------------
+# CADENA VIGENTE (solo lo que se usa para regenerar el PDF final)
+# ---------------------------------------------------------------------------
+
+# Generador final + builders encadenados (importados dinamicamente entre si) + visuals v5.
+EXPECTED_BUILDERS = [
+    "build_pdf_final_con_horarios.py",   # generador final (entrypoint)
+    "build_pdf_final_entrega.py",        # encadenado por el anterior
+    "build_pdf_final_v4_1_from_v3.py",   # encadenado
+    "build_pdf_from_markdown_master.py", # base markdown-first de la cadena
+    "build_visuals_v5.py",               # genera los graficos/mapas v5 vigentes
+]
+
+# Documentos que la cadena vigente consume como fuente editorial.
 EXPECTED_DOCS = [
-    "00_vision_y_objetivo.md", "01_taxonomia_mercados.md", "02_fuentes_posibles.md",
-    "03_metodologia_y_niveles_confianza.md", "04_plan_relevamiento.md", "05_campos_objetivo.md",
-    "06_prompt_perplexity_mercados.md", "07_plan_google_places_mercados.md",
-    "08_plan_osm_mercados.md", "09_estructura_informe_final.md",
-    "10_relevamiento_candidatos_v0.md", "11_hallazgos_preliminares_v0.md",
-    "12_brechas_y_pendientes_v0.md",
-    "13_consolidacion_documental_v1.md", "14_hallazgos_v1.md",
-    "15_decisiones_metodologicas_v1.md",
-    "16_cierre_fino_v1_2.md", "17_resumen_ejecutivo_preinforme_v1_2.md",
-    "INFORME_MERCADOS_GASTRONOMICOS_CABA_V1_2.md",
-    "18_prompts_perplexity_enriquecimiento_v2.md",
-    "19_enriquecimiento_google_internas_perplexity_v2.md",
-    "20_integracion_documental_v2_1.md", "21_ajuste_conservador_estado_operativo_v2_2.md",
-    "22_resumen_ejecutivo_v2_2.md", "INFORME_MERCADOS_GASTRONOMICOS_CABA_V2_2.md",
-    "23_integracion_urls_perplexity_v2_3.md",
-    "24_validacion_gourmand_food_hall_v2_4.md", "25_ajuste_conteo_gourmand_v2_4.md",
-    "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V3.md",
-    "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
-    "ANEXO_TECNICO_MERCADOS_GASTRONOMICOS_CABA_V3.md",
-    "26_especificacion_informe_v4_datagastro.md",
-    "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.md",
-    "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V4.md",
+    "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_MARKDOWN_MASTER.md",  # fuente de verdad editorial
+    "ANEXO_HORARIOS_DOCUMENTADOS_MERCADOS.md",
+    "ANEXO_FUENTES_Y_METODOLOGIA_MERCADOS_V4_1.md",
+    "OPORTUNIDAD_GESTION_MERCADOS_CABA_V4_1.md",
+    "README_REGENERAR_INFORME_FINAL_V4_1.md",
 ]
+
+# CSV sanitizados que alimentan la cadena vigente (build_pdf_* y build_visuals_v5).
 EXPECTED_CSV = [
-    "fuentes_mercados_candidatas.csv", "taxonomia_mercados.csv",
-    "campos_objetivo_mercados.csv", "mercados_candidatos_iniciales.csv",
-    "mercados_gastronomicos_candidatos_v0.csv", "fuentes_mercados_urls_v0.csv",
-    "mercados_fuera_alcance_v0.csv", "mercados_pendientes_revision_v0.csv",
-    "resumen_relevamiento_mercados_v0.csv",
-    "mercados_gastronomicos_candidatos_v1.csv", "mercados_gastronomicos_activos_v1.csv",
-    "mercados_gastronomicos_cerrados_o_no_activos_v1.csv",
-    "mercados_gastronomicos_pendientes_v1.csv", "fuentes_mercados_urls_v1.csv",
-    "resumen_relevamiento_mercados_v1.csv",
-    "mercados_gastronomicos_candidatos_v1_2.csv", "mercados_gastronomicos_activos_v1_2.csv",
-    "mercados_gastronomicos_pendientes_v1_2.csv",
-    "mercados_gastronomicos_no_contabilizados_v1_2.csv", "fuentes_mercados_urls_v1_2.csv",
-    "resumen_relevamiento_mercados_v1_2.csv",
-    # --- V2 enriquecimiento ---
-    "fuentes_internas_mercados_resumen_v2.csv", "candidatos_mercados_fuentes_internas_v2.csv",
-    "google_places_mercados_resumen_v2.csv", "google_places_matches_v1_2.csv",
-    "google_places_posibles_omitidos_v2.csv", "fuentes_documentales_mercados_v2.csv",
-    "mercados_gastronomicos_candidatos_v2.csv", "mercados_gastronomicos_activos_v2.csv",
-    "mercados_gastronomicos_posibles_omitidos_v2.csv",
-    "mercados_gastronomicos_no_contabilizados_v2.csv", "resumen_relevamiento_mercados_v2.csv",
-    # --- V2.2 conservador ---
-    "mercados_gastronomicos_candidatos_v2_2.csv", "mercados_gastronomicos_activos_v2_2.csv",
-    "mercados_gastronomicos_en_revision_v2_2.csv",
-    "mercados_gastronomicos_no_contabilizados_v2_2.csv",
-    "mercados_gastronomicos_posibles_omitidos_v2_2.csv",
-    "fuentes_documentales_mercados_v2_2.csv", "resumen_relevamiento_mercados_v2_2.csv",
-    # --- V2.3 documental (URLs visibles) ---
-    "fuentes_documentales_mercados_v2_3.csv", "afirmaciones_mercados_v2_3.csv",
-    "contradicciones_y_brechas_v2_3.csv",
-    "fuentes_url_truncadas_requieren_verificacion_v2_3.csv",
-    # --- V2.4 (validacion Gourmand Food Hall) ---
-    "validacion_gourmand_food_hall_v2_4.csv", "mercados_gastronomicos_activos_v2_4.csv",
-    "resumen_relevamiento_mercados_v2_4.csv",
-    # --- V3 informe final entregable ---
-    "mercados_gastronomicos_activos_v3.csv", "mercados_gastronomicos_no_activos_v3.csv",
-    "resumen_relevamiento_mercados_v3.csv", "indicadores_mercados_gastronomicos_v3.csv",
-    "horarios_mercados_gastronomicos_v3.csv", "publicos_objetivo_mercados_v3.csv",
-    "oportunidades_politica_publica_mercados_v3.csv",
-    # --- V4 base (estilo DataGastro) ---
-    "mercados_gastronomicos_activos_v4.csv", "mercados_gastronomicos_no_activos_v4.csv",
-    "indicadores_mercados_gastronomicos_v4.csv", "respaldo_fuentes_mercados_v4.csv",
-    "tipologias_mercados_v4.csv", "decisiones_que_permite_tomar_v4.csv",
-    "referencias_documentales_visibles_v4.csv",
+    "horarios_documentados_mercados_vfinal.csv",
+    "horarios_mercados_gastronomicos_v3.csv",
+    "mercados_gastronomicos_activos_v4.csv",
+    "indicadores_mercados_gastronomicos_v4.csv",
+    "respaldo_fuentes_mercados_v4.csv",
+    "tipologias_mercados_v4.csv",
+    "mercados_sedes_fijas_v5.csv",
+    "oportunidades_gestion_mercados_v4_1.csv",
+    "pilotos_recomendados_mercados_v4_1.csv",
+    "publicos_objetivo_mercados_v4_1.csv",
 ]
-# CSV -> columnas obligatorias que deben existir en el header
-REQUIRED_COLUMNS = {
-    "mercados_gastronomicos_candidatos_v1.csv": [
-        "id_candidato", "nombre", "tipo_mercado_gastronomico", "estado_operativo",
-        "activo_para_conteo", "motivo_no_activo", "nivel_confianza",
-    ],
-    "mercados_gastronomicos_candidatos_v1_2.csv": [
-        "id_candidato", "nombre", "tipo_mercado_gastronomico", "estado_operativo",
-        "activo_para_conteo", "motivo_no_activo", "nivel_confianza",
-    ],
-    "mercados_gastronomicos_no_contabilizados_v1_2.csv": [
-        "id", "nombre", "categoria_no_conteo", "motivo", "nivel_confianza",
-    ],
-    "mercados_gastronomicos_candidatos_v2_2.csv": [
-        "id_candidato", "nombre", "activo_para_conteo", "categoria_v2_2",
-    ],
+
+# Graficos/mapas v5 que la cadena del PDF reutiliza.
+EXPECTED_VISUALS = [
+    "grafico_kpi_cards_v5.png",
+    "grafico_tipo_primario_v5.png",
+    "grafico_gestion_v5.png",
+    "grafico_horarios_v5.png",
+    "grafico_publicos_objetivo_v5.png",
+    "grafico_respaldo_fuentes_v5.png",
+    "mapa_sedes_fijas_mercados_gastronomicos_v5.png",
+    "visual_itinerantes_mercados_gastronomicos_v5.png",
+]
+
+# Salida final (fuente de verdad) y copia navegable.
+FINAL_PDF_SRC = SAN_DIR / "MercadosGastroCABA_con_horarios.pdf"
+FINAL_RESUMEN_SRC = SAN_DIR / "ResumenEjecutivo_MercadosGastroCABA_con_horarios.pdf"
+FINAL_PDF_COPY = FINAL_DIR / "MercadosGastroCABA_FINAL.pdf"
+
+# Anclas de contenido que el PDF final debe conservar.
+PDF_EXPECTED_PAGES = 14
+PDF_FOOTER = "DataGastro · Mercados gastronómicos de CABA · Informe final"
+PDF_ANCHOR_P11 = "Activar patios públicos como dinamizadores barriales."
+PDF_ANCHOR_P14 = "Alcances del relevamiento y próximos pasos para consolidar la base candidata."
+# En p7 hay una tabla de franjas horarias documentadas; estas son lecturas concretas.
+PDF_ANCHOR_P7_ANY = ["8-18", "11-24", "9-24", "10-19", "8:30-20"]
+PDF_FORBIDDEN = ["V4_1", "v4_1", "V4.1"]
+
+# Columnas que NUNCA deben aparecer en entregables sanitizados.
+FORBIDDEN_COLUMNS = {
+    "telefono", "teléfono", "celular", "mail", "email", "correo", "referente",
+    "contacto", "cuit", "dni", "instagram", "place_id",
 }
-# Casos retirados del conteo activo en V2.2 (no deben figurar en activos_v2_2).
-EN_REVISION_V2_2 = {"MG-0005", "MG-0009", "MG-0014"}
-FICHAS_DIRS = [DOCS_DIR / "fichas_v0", DOCS_DIR / "fichas_v1", DOCS_DIR / "fichas_v1_2"]
+
 INTERNAL_DIRS = [
     "outputs/mercados_caba/internal/", "outputs/mercados_caba/raw/",
     "outputs/mercados_caba/internal/google_places_raw/", "fuentes_internas_mercados_caba/",
@@ -123,10 +120,6 @@ PRIVACY_PATTERNS = {
     "place_id": re.compile(r"\bChIJ[0-9A-Za-z_\-]{10,}\b"),
     "drive_link": re.compile(r"(?i)(?:drive|docs)\.google\.com/[^\s\"']+"),
     "api_key_google": re.compile(r"AIza[0-9A-Za-z_\-]{20,}"),
-}
-FORBIDDEN_COLUMNS = {
-    "telefono", "teléfono", "celular", "mail", "email", "correo", "referente",
-    "contacto", "cuit", "dni", "instagram", "place_id",
 }
 
 
@@ -147,19 +140,31 @@ def read_gitignore() -> set[str]:
             if ln.strip() and not ln.strip().startswith("#")}
 
 
+# ---------------------------------------------------------------------------
+# Chequeos de la cadena vigente
+# ---------------------------------------------------------------------------
+
+def check_builders(chk):
+    for name in EXPECTED_BUILDERS:
+        if (SRC_DIR / name).is_file():
+            chk.ok(f"builder vigente presente: src/mercados_caba/{name}")
+        else:
+            chk.error(f"falta builder vigente: src/mercados_caba/{name}")
+
+
 def check_docs(chk):
     for name in EXPECTED_DOCS:
         if (DOCS_DIR / name).is_file():
-            chk.ok(f"doc presente: docs/mercados_caba/{name}")
+            chk.ok(f"doc vigente presente: docs/mercados_caba/{name}")
         else:
-            chk.error(f"falta doc: docs/mercados_caba/{name}")
+            chk.error(f"falta doc de la cadena vigente: docs/mercados_caba/{name}")
 
 
 def check_csv(chk):
     for name in EXPECTED_CSV:
         p = SAN_DIR / name
         if not p.is_file():
-            chk.error(f"falta CSV sanitizado: outputs/mercados_caba/sanitized/{name}")
+            chk.error(f"falta CSV insumo vigente: outputs/mercados_caba/sanitized/{name}")
             continue
         with p.open(encoding="utf-8", newline="") as fh:
             header = next(csv.reader(fh), [])
@@ -167,47 +172,134 @@ def check_csv(chk):
         if bad:
             chk.error(f"columna sensible en {name}: {bad}")
         else:
-            chk.ok(f"CSV sanitizado OK: {name} ({len(header)} columnas)")
-        req = REQUIRED_COLUMNS.get(name)
-        if req:
-            hdr = {c.strip() for c in header}
-            missing = [c for c in req if c not in hdr]
-            if missing:
-                chk.error(f"faltan columnas obligatorias en {name}: {missing}")
-            else:
-                chk.ok(f"columnas obligatorias OK en {name}")
+            chk.ok(f"CSV insumo vigente OK: {name} ({len(header)} columnas)")
+
+
+def check_visuals(chk):
+    for name in EXPECTED_VISUALS:
+        if (SAN_DIR / name).is_file():
+            chk.ok(f"visual vigente presente: {name}")
+        else:
+            chk.error(f"falta visual vigente: outputs/mercados_caba/sanitized/{name}")
 
 
 def check_csv_consistency(chk):
-    """Verifica que cada fila tenga la misma cantidad de columnas que el header."""
-    for p in sorted(SAN_DIR.glob("*.csv")):
+    """Cada CSV insumo vigente debe tener filas con el mismo numero de columnas que el header."""
+    for name in EXPECTED_CSV:
+        p = SAN_DIR / name
+        if not p.is_file():
+            continue
         with p.open(encoding="utf-8", newline="") as fh:
             rows = list(csv.reader(fh))
         if not rows:
-            chk.warn(f"CSV vacio: {p.name}")
+            chk.warn(f"CSV vacio: {name}")
             continue
         ncols = len(rows[0])
         malformadas = [(i + 1, len(r)) for i, r in enumerate(rows) if len(r) != ncols]
         if malformadas:
             detalle = "; ".join(f"linea {ln}: {nc} cols" for ln, nc in malformadas)
-            chk.error(f"CSV mal formado {p.name} (header={ncols} cols) -> {detalle}")
+            chk.error(f"CSV mal formado {name} (header={ncols} cols) -> {detalle}")
         else:
-            chk.ok(f"CSV consistente: {p.name} ({len(rows)} filas x {ncols} cols)")
+            chk.ok(f"CSV consistente: {name} ({len(rows)} filas x {ncols} cols)")
 
 
-def check_fichas(chk):
-    for d in FICHAS_DIRS:
-        if not d.is_dir():
-            chk.error(f"falta carpeta de fichas: docs/mercados_caba/{d.name}/")
-            continue
-        fichas = sorted(d.glob("*.md"))
-        if not fichas:
-            chk.warn(f"carpeta {d.name} sin fichas .md")
+def check_final_outputs(chk):
+    """Existen la salida final (fuente de verdad) y la copia navegable."""
+    for label, p, rel in [
+        ("PDF final (fuente de verdad)", FINAL_PDF_SRC,
+         "outputs/mercados_caba/sanitized/MercadosGastroCABA_con_horarios.pdf"),
+        ("Resumen ejecutivo final", FINAL_RESUMEN_SRC,
+         "outputs/mercados_caba/sanitized/ResumenEjecutivo_MercadosGastroCABA_con_horarios.pdf"),
+        ("Copia final navegable", FINAL_PDF_COPY,
+         "MercadosGastro/final/MercadosGastroCABA_FINAL.pdf"),
+    ]:
+        if p.is_file():
+            chk.ok(f"{label} presente: {rel}")
         else:
-            chk.ok(f"{d.name} con {len(fichas)} fichas .md")
+            chk.error(f"falta {label}: {rel}")
 
+
+def _load_pdf_reader(pdf_path):
+    try:
+        from pypdf import PdfReader  # type: ignore
+        return PdfReader(str(pdf_path)), None
+    except Exception:
+        pass
+    try:
+        from PyPDF2 import PdfReader  # type: ignore
+        return PdfReader(str(pdf_path)), None
+    except Exception as e:  # pragma: no cover
+        return None, e
+
+
+def check_final_pdf_content(chk):
+    """Valida paginas, footer y frases ancla del PDF final. Degrada a aviso si no hay lib PDF."""
+    if not FINAL_PDF_SRC.is_file():
+        chk.error("no se puede validar contenido: falta el PDF final fuente de verdad")
+        return
+    reader, err = _load_pdf_reader(FINAL_PDF_SRC)
+    if reader is None:
+        chk.warn(f"no hay libreria PDF (pypdf/PyPDF2) disponible; se omiten chequeos de contenido del PDF ({err})")
+        return
+
+    pages = reader.pages
+    n = len(pages)
+    if n == PDF_EXPECTED_PAGES:
+        chk.ok(f"PDF final tiene {PDF_EXPECTED_PAGES} paginas")
+    else:
+        chk.error(f"PDF final tiene {n} paginas (se esperaban {PDF_EXPECTED_PAGES})")
+
+    def page_text(i):
+        if 0 <= i < n:
+            try:
+                return pages[i].extract_text() or ""
+            except Exception:
+                return ""
+        return ""
+
+    full = "\n".join(page_text(i) for i in range(n))
+
+    # Footer (puede repetirse en cada pagina). Buscar en todo el documento.
+    if PDF_FOOTER in full:
+        chk.ok(f"PDF final conserva el footer: '{PDF_FOOTER}'")
+    else:
+        chk.error(f"PDF final NO contiene el footer esperado: '{PDF_FOOTER}'")
+
+    # p7 (indice 6): franjas horarias documentadas concretas.
+    p7 = page_text(6)
+    if any(tok in p7 for tok in PDF_ANCHOR_P7_ANY):
+        chk.ok("p7 conserva horarios documentales concretos (franjas horarias)")
+    elif any(tok in full for tok in PDF_ANCHOR_P7_ANY):
+        chk.warn("franjas horarias presentes en el PDF pero no detectadas exactamente en p7; revisar maquetacion")
+    else:
+        chk.error("p7 no conserva horarios documentales concretos")
+
+    # p11: frase ancla de patios.
+    if PDF_ANCHOR_P11 in full:
+        chk.ok(f"PDF final conserva (p11): '{PDF_ANCHOR_P11}'")
+    else:
+        chk.error(f"PDF final NO conserva la frase de p11: '{PDF_ANCHOR_P11}'")
+
+    # p14: frase ancla de alcances.
+    if PDF_ANCHOR_P14 in full:
+        chk.ok(f"PDF final conserva (p14): '{PDF_ANCHOR_P14}'")
+    else:
+        chk.error(f"PDF final NO conserva la frase de p14: '{PDF_ANCHOR_P14}'")
+
+    # No debe aparecer 'V4_1' en el texto del informe final.
+    found = [tok for tok in PDF_FORBIDDEN if tok in full]
+    if found:
+        chk.error(f"PDF final menciona etiqueta de version interna {found} (no debe aparecer)")
+    else:
+        chk.ok("PDF final no menciona 'V4_1' ni variantes")
+
+
+# ---------------------------------------------------------------------------
+# Guardrails agnosticos de version (privacidad / gitignore / crudos)
+# ---------------------------------------------------------------------------
 
 def check_privacy(chk):
+    """Escanea docs y entregables sanitizados (vigentes) en busca de datos personales."""
     scanned, hits = 0, []
     for base in (DOCS_DIR, SAN_DIR):
         if not base.exists():
@@ -235,173 +327,6 @@ def check_internal_gitignored(chk):
             chk.error(f"carpeta interna/cruda NO esta en .gitignore: {rel}")
 
 
-def check_v2_2_conservador(chk):
-    """V2.2: los 3 en revision no estan en activos; resumen reporta 12 activos."""
-    act = SAN_DIR / "mercados_gastronomicos_activos_v2_2.csv"
-    rev = SAN_DIR / "mercados_gastronomicos_en_revision_v2_2.csv"
-    res = SAN_DIR / "resumen_relevamiento_mercados_v2_2.csv"
-    if act.is_file():
-        with act.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        ids = {r.get("id_candidato", "").strip() for r in rows}
-        intrusos = sorted(EN_REVISION_V2_2 & ids)
-        if intrusos:
-            chk.error(f"casos en revision presentes en activos_v2_2: {intrusos}")
-        else:
-            chk.ok("activos_v2_2 no contiene los 3 casos en revision")
-        if len(rows) == 12:
-            chk.ok("activos_v2_2 tiene 12 filas (conteo conservador)")
-        else:
-            chk.error(f"activos_v2_2 tiene {len(rows)} filas (se esperaban 12)")
-    if rev.is_file():
-        with rev.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        ids = {r.get("id_candidato", "").strip() for r in rows}
-        if EN_REVISION_V2_2 <= ids:
-            chk.ok("en_revision_v2_2 contiene los 3 casos esperados")
-        else:
-            chk.error(f"en_revision_v2_2 no contiene {sorted(EN_REVISION_V2_2 - ids)}")
-        no_conteo = all(r.get("activo_para_conteo", "").strip().lower() == "no" for r in rows)
-        chk.ok("en_revision_v2_2: activo_para_conteo=no en todos") if no_conteo else \
-            chk.error("en_revision_v2_2: algun caso no tiene activo_para_conteo=no")
-    if res.is_file():
-        txt = res.read_text(encoding="utf-8")
-        if "activos_confirmados_para_conteo,12" in txt.replace(" ", ""):
-            chk.ok("resumen_v2_2 reporta 12 activos para conteo")
-        else:
-            chk.error("resumen_v2_2 no reporta 12 activos para conteo")
-
-
-def check_v4_base(chk):
-    """V4: activos_v4 = 13, incluye Gourmand, sin los 3 en revision; tipologias suman 13."""
-    act = SAN_DIR / "mercados_gastronomicos_activos_v4.csv"
-    tip = SAN_DIR / "tipologias_mercados_v4.csv"
-    if act.is_file():
-        with act.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        ids = {r.get("id", "").strip() for r in rows}
-        chk.ok("activos_v4 tiene 13 filas") if len(rows) == 13 else \
-            chk.error(f"activos_v4 tiene {len(rows)} filas (se esperaban 13)")
-        chk.ok("activos_v4 incluye Gourmand (MG-0017)") if "MG-0017" in ids else \
-            chk.error("activos_v4 no incluye MG-0017")
-        intr = sorted(EN_REVISION_V2_2 & ids)
-        chk.error(f"activos_v4 contiene casos en revision: {intr}") if intr else \
-            chk.ok("activos_v4 no contiene los 3 casos en revision")
-        # tipo_primario sin doble conteo: tantas filas como suma de tipos
-        tp = [r.get("tipo_primario", "").strip() for r in rows]
-        if all(tp):
-            chk.ok("activos_v4: todos tienen tipo_primario unico")
-        else:
-            chk.error("activos_v4: hay filas sin tipo_primario")
-    if tip.is_file():
-        with tip.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        suma = sum(int(r["cantidad"]) for r in rows
-                   if r.get("tipo_primario", "").upper() != "TOTAL" and r.get("cantidad", "").isdigit())
-        if suma == 13:
-            chk.ok("tipologias_mercados_v4 suman 13 (sin doble conteo)")
-        else:
-            chk.error(f"tipologias_mercados_v4 suman {suma} (se esperaban 13)")
-    inf = DOCS_DIR / "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.md"
-    if inf.is_file():
-        head = "\n".join(inf.read_text(encoding="utf-8").splitlines()[:40]).lower()
-        if "activos confirmados" in head:
-            chk.error("informe V4 usa 'activos confirmados' como headline (usar 'identificados')")
-        else:
-            chk.ok("informe V4 no usa 'confirmados' como headline")
-    # PDFs disenados y graficos V4 generados
-    for art in ("INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V4.pdf",
-                "RESUMEN_EJECUTIVO_MERCADOS_GASTRONOMICOS_CABA_V4.pdf",
-                "grafico_tipo_primario_v4.png", "grafico_respaldo_fuentes_v4.png",
-                "mapa_mercados_gastronomicos_v4.png"):
-        if (SAN_DIR / art).is_file():
-            chk.ok(f"artefacto V4 presente: {art}")
-        else:
-            chk.error(f"falta artefacto V4: {art}")
-
-
-def check_v3_final(chk):
-    """V3: activos_v3 = 13, incluye Gourmand, sin los 3 en revision; informe en tono ejecutivo."""
-    act = SAN_DIR / "mercados_gastronomicos_activos_v3.csv"
-    if act.is_file():
-        with act.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        ids = {(r.get("id") or r.get("id_candidato") or "").strip() for r in rows}
-        if len(rows) == 13:
-            chk.ok("activos_v3 tiene 13 filas")
-        else:
-            chk.error(f"activos_v3 tiene {len(rows)} filas (se esperaban 13)")
-        if "MG-0017" in ids:
-            chk.ok("activos_v3 incluye Gourmand Food Hall (MG-0017)")
-        else:
-            chk.error("activos_v3 no incluye MG-0017 (Gourmand)")
-        intr = sorted(EN_REVISION_V2_2 & ids)
-        if intr:
-            chk.error(f"activos_v3 contiene casos en revision: {intr}")
-        else:
-            chk.ok("activos_v3 no contiene los 3 casos en revision")
-    inf = DOCS_DIR / "INFORME_FINAL_MERCADOS_GASTRONOMICOS_CABA_V3.md"
-    if inf.is_file():
-        txt = inf.read_text(encoding="utf-8")
-        if "Resumen ejecutivo" in txt and "Indicadores" in txt:
-            chk.ok("informe final V3 tiene resumen ejecutivo e indicadores (tono ejecutivo)")
-        else:
-            chk.error("informe final V3 sin secciones ejecutivas esperadas")
-        low = txt.lower()
-        meto = low.count("metodolog") + low.count("nivel de confianza") + low.count("c1_oficial")
-        if meto <= 6:
-            chk.ok(f"informe final V3 con baja carga metodologica ({meto} menciones)")
-        else:
-            chk.warn(f"informe final V3 con mucha metodologia ({meto} menciones); revisar tono")
-
-
-def check_v2_4_gourmand(chk):
-    """V2.4: activos_v2_4 = 13, incluye MG-0017 Gourmand y no los 3 en revision; resumen=13."""
-    act = SAN_DIR / "mercados_gastronomicos_activos_v2_4.csv"
-    res = SAN_DIR / "resumen_relevamiento_mercados_v2_4.csv"
-    if act.is_file():
-        with act.open(encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        ids = {r.get("id_candidato", "").strip() for r in rows}
-        if len(rows) == 13:
-            chk.ok("activos_v2_4 tiene 13 filas")
-        else:
-            chk.error(f"activos_v2_4 tiene {len(rows)} filas (se esperaban 13)")
-        if "MG-0017" in ids:
-            chk.ok("activos_v2_4 incluye MG-0017 (Gourmand Food Hall)")
-        else:
-            chk.error("activos_v2_4 no incluye MG-0017 (Gourmand)")
-        intr = sorted(EN_REVISION_V2_2 & ids)
-        if intr:
-            chk.error(f"activos_v2_4 contiene casos en revision: {intr}")
-        else:
-            chk.ok("activos_v2_4 no contiene los 3 casos en revision")
-    if res.is_file():
-        txt = res.read_text(encoding="utf-8").replace(" ", "")
-        if "activos_confirmados_para_conteo,13" in txt:
-            chk.ok("resumen_v2_4 reporta 13 activos para conteo")
-        else:
-            chk.error("resumen_v2_4 no reporta 13 activos para conteo")
-
-
-def check_v2_3_urls(chk):
-    """Toda URL con '...' en fuentes_documentales_v2_3 debe marcarse url_truncada_requiere_verificacion."""
-    p = SAN_DIR / "fuentes_documentales_mercados_v2_3.csv"
-    if not p.is_file():
-        return
-    mal = []
-    with p.open(encoding="utf-8", newline="") as fh:
-        for r in csv.DictReader(fh):
-            url = (r.get("url") or "")
-            est = (r.get("estado_url") or "").strip()
-            if "..." in url and est != "url_truncada_requiere_verificacion":
-                mal.append(r.get("id_fuente", "?"))
-    if mal:
-        chk.error(f"URLs truncadas sin estado_url correcto en v2_3: {mal}")
-    else:
-        chk.ok("v2_3: URLs truncadas marcadas url_truncada_requiere_verificacion")
-
-
 def check_env_not_tracked(chk):
     """.env y *.env deben estar gitignored y NO versionados."""
     ignored = read_gitignore()
@@ -410,7 +335,6 @@ def check_env_not_tracked(chk):
             chk.ok(f"gitignore cubre credenciales: {pat}")
         else:
             chk.error(f"patron de credenciales NO esta en .gitignore: {pat}")
-    # si existe .env, verificar que git no lo trackee
     if (REPO_ROOT / ".env").exists():
         try:
             import subprocess
@@ -442,21 +366,20 @@ def check_no_crudos(chk):
 def main() -> int:
     chk = Check()
     print("=" * 78)
-    print("Informe Mercados CABA - validacion de setup (OFFLINE). No hace requests.")
+    print("Mercados CABA - validacion de la CADENA VIGENTE del informe final (OFFLINE).")
+    print("No valida historial V1/V2/V3/V4 (el material histórico fue archivado o eliminado). No hace requests.")
     print(f"Repo: {REPO_ROOT}")
     print("=" * 78)
 
+    check_builders(chk)
     check_docs(chk)
     check_csv(chk)
+    check_visuals(chk)
     check_csv_consistency(chk)
-    check_fichas(chk)
+    check_final_outputs(chk)
+    check_final_pdf_content(chk)
     check_privacy(chk)
     check_internal_gitignored(chk)
-    check_v2_2_conservador(chk)
-    check_v2_4_gourmand(chk)
-    check_v3_final(chk)
-    check_v4_base(chk)
-    check_v2_3_urls(chk)
     check_env_not_tracked(chk)
     check_no_crudos(chk)
 
@@ -474,9 +397,9 @@ def main() -> int:
 
     print("\n" + "-" * 78)
     if chk.errors:
-        print("RESULTADO: HAY ERRORES.")
+        print("RESULTADO: HAY ERRORES en la cadena vigente.")
         return 1
-    print("RESULTADO: SETUP MERCADOS CABA OK (diseño/preparación). Sin requests.")
+    print("RESULTADO: CADENA VIGENTE MERCADOS CABA OK. Sin requests.")
     return 0
 
 

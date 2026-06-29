@@ -1,0 +1,12 @@
+id,nombre,tipo_primario,gestion,barrio,comuna,lat_aprox,lon_aprox,nota_ubicacion
+MG-0001,Mercado de San Telmo,mercado_historico,mixta,San Telmo,1,-34.61900,-58.37330,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0002,Mercado de Belgrano,mercado_historico,mixta,Belgrano,13,-34.56270,-58.45600,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0013,Mercado San Nicolas,mercado_historico,mixta,San Nicolas,1,-34.60300,-58.38680,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0003,Mercado del Progreso,mercado_barrial_alimentario,privada,Caballito,6,-34.61860,-58.44110,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0004,Mercat Villa Crespo,food_hall,privada,Villa Crespo,15,-34.59680,-58.43810,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0017,Gourmand Food Hall,food_hall,privada,Retiro,1,-34.58890,-58.38380,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0006,Patio de los Lecheros,patio_gastronomico,publica,Caballito,6,-34.61440,-58.44800,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0010,Smart Plaza Parque Patricios,patio_gastronomico,publica,Parque Patricios,4,-34.63580,-58.40050,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0011,Patio Costanera Norte,patio_gastronomico,mixta,Costanera Norte,13,-34.55480,-58.42350,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0012,Patio Gastronomico Rodrigo Bueno,patio_gastronomico,publica,Puerto Madero,1,-34.61770,-58.35850,aproximada_para_lectura_territorial_no_geocodificacion_exacta
+MG-0008,Mercado Bonpland,mercado_de_productores,mixta,Palermo,14,-34.58820,-58.43600,aproximada_para_lectura_territorial_no_geocodificacion_exacta

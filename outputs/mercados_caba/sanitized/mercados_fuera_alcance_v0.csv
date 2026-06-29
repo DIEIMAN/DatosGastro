@@ -1,3 +1,0 @@
-id_fuera,nombre,motivo_exclusion,categoria_real,barrio,fuente_principal,urls_fuente,nivel_confianza,observaciones,fecha_consulta
-FA-0001,Mercado de las Pulgas,eje no gastronomico (antiguedades y usados),mercado_de_antiguedades,Chacarita,F03_ferias (GCBA BA Data),local,X_fuera_de_alcance,registrado como feria/mercado de antiguedades; solo entraria con oferta gastronomica central comprobada,2026-06-23
-FA-0002,Distrito Arcos,shopping/outlet con gastronomia accesoria,centro_comercial_outlet,Palermo,prensa,https://palermonline.com.ar/wordpress/distrito-arcos-el-premium-outlet-el-complejo-comercial-a-cielo-abierto/,X_fuera_de_alcance,premium outlet; la gastronomia no es el eje central,2026-06-23
