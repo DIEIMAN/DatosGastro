@@ -1,6 +1,6 @@
 # QA del consolidado — Tandas Google Places (PolosGastro, Fase 11)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 
 ## Entregables creados
 
@@ -54,7 +54,7 @@ avance por tandas.
 - **No se tocaron** datos fuente, Borrador 2, Borrador 3, Cafecito, Mercados ni Casas de Pastas.
 - **No se borró nada.** La semilla se conserva completa.
 - **No commit / push / staging.** No se usó `git add`.
-- Marca usada: **DGDGAS — Dirección General de Gastronomía** (no "DataGastro" como marca pública).
+- Marca usada: **DGDGAS — Dirección General de Desarrollo Gastronómico** (no "DataGastro" como marca pública).
 - Documentos por tanda conservados como respaldo técnico.
 
 ## Casos críticos acumulados (para decisión humana)

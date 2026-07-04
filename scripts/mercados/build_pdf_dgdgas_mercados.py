@@ -6,7 +6,7 @@ final) y las capas de gestión (metodología, oportunidad, públicos operativos,
 pilotos, límites) van a anexos. NO recalcula datos ni cambia conteos, universo ni estados:
 toma el contenido editorial ya trabajado y reutiliza los visuales V5 sanitizados.
 
-Marca institucional DGDGAS — Dirección General de Gastronomía (Gobierno de la Ciudad de
+Marca institucional DGDGAS — Dirección General de Desarrollo Gastronómico (Gobierno de la Ciudad de
 Buenos Aires). NO usa "DataGastro" como marca pública. No incluye etiquetas de "prueba",
 "borrador", "revisión institucional" ni "documento interno". No hace requests. No commitea.
 No toca los scripts productivos de mercados_caba ni los entregables previos.
@@ -31,7 +31,7 @@ SAN = ROOT / "outputs" / "mercados_caba" / "sanitized"
 OUT = ROOT / "outputs" / "mercados"
 PDF = OUT / "INFORME_MERCADOS_DGDGAS.pdf"
 
-INSTITUCION = "DGDGAS — Dirección General de Gastronomía"
+INSTITUCION = "DGDGAS — Dirección General de Desarrollo Gastronómico"
 GOBIERNO = "Gobierno de la Ciudad de Buenos Aires"
 TITULO = "Mercados gastronómicos de la Ciudad de Buenos Aires — Informe"
 
@@ -450,7 +450,7 @@ def main():
         fig.patches.append(Rectangle((0, 0.674), 1, 0.006, transform=fig.transFigure, facecolor=ROJO, zorder=1))
         fig.text(0.07, 0.945, "DGDGAS", color="white", fontsize=22, fontweight="bold")
         fig.lines.append(Line2D([0.07, 0.205], [0.927, 0.927], color=ROJO, lw=2.2, transform=fig.transFigure))
-        fig.text(0.07, 0.905, "Dirección General de Gastronomía", color="white",
+        fig.text(0.07, 0.905, "Dirección General de Desarrollo Gastronómico", color="white",
                  fontsize=12.5, fontweight="bold")
         fig.text(0.07, 0.878, GOBIERNO.upper(), color="#cdd9e5", fontsize=9.5, fontweight="bold")
         fig.text(0.07, 0.775, "Mercados gastronómicos de la\nCiudad de Buenos Aires", color="white",

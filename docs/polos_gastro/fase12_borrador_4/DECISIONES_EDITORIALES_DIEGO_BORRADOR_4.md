@@ -1,6 +1,6 @@
 # Decisiones editoriales — Borrador 4 PolosGastro (Diego)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 Registra las decisiones editoriales ya tomadas por Diego para el cierre del Borrador 4.
 
 ## 1. Locales cerrados o con vigencia no confirmada
@@ -36,7 +36,7 @@ global** como parte del universo semilla. No se descartan por falta de locales.
 ## 6. Publicabilidad institucional
 
 **Decidido.** El informe **será publicable institucionalmente**, con marca **DGDGAS — Dirección
-General de Gastronomía**. Podría circular hacia **Vicejefatura de Gobierno**.
+General de Desarrollo Gastronómico**. Podría circular hacia **Vicejefatura de Gobierno**.
 
 ## 7. Estilo esperado
 

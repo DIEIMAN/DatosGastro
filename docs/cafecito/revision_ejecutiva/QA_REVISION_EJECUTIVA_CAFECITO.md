@@ -33,7 +33,7 @@ simplificada. Ejecutado con Claude Code (Fable 5).
   `git diff` vacio, HEAD sin cambios en `525480a`.
 - [x] **No se borro nada.** Solo creaciones.
 - [x] **No se uso DataGastro como marca publica.** La version ejecutiva y el resumen para jefatura
-  usan exclusivamente "DGDGAS - Direccion General de Gastronomia". DataGastro no aparece en ningun
+  usan exclusivamente "DGDGAS - Direccion General de Desarrollo Gastronomico". DataGastro no aparece en ningun
   documento destinado a lectura de autoridades (solo en este QA y en el diagnostico interno, como
   nombre de trabajo del repositorio).
 - [x] **No se inventaron datos.** Todas las cifras provienen de

@@ -1,7 +1,7 @@
 token_claude_design,valor_claude_design,token_local_equivalente,valor_local,accion_recomendada,observacion
 $system,DGDGAS Informes - Design System,meta.system,DGDGAS Informes,adaptar,Mantener nombre local breve y declarar origen experimental
 $version,1.0.0,meta.version,1.0.0,adoptar,Coincide
-$publicBrand,DGDGAS - Direccion General de Gastronomia,meta.marca_publica,DGDGAS - Direccion General de Gastronomia,adoptar,DGDGAS queda como marca publica
+$publicBrand,DGDGAS - Direccion General de Desarrollo Gastronomico,meta.marca_publica,DGDGAS - Direccion General de Desarrollo Gastronomico,adoptar,DGDGAS queda como marca publica
 $internalName,DataGastro,meta.nombre_interno,DataGastro,adoptar,Solo uso interno
 color.brand.primary.value,#1F3B57,color.brand.primary,#1F3B57,adoptar,Coincidencia directa
 color.brand.primaryDark.value,#16293D,color.brand.primary_dark,,adaptar,Nuevo token experimental

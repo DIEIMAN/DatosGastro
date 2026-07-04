@@ -27,7 +27,7 @@ Resultado sobre texto extraido del PDF:
 
 - `DGDGAS`: 11 apariciones.
 - `Direccion General de Desarrollo Gastronomico`: 11 apariciones.
-- `Direccion General de Gastronomia`: 0 apariciones.
+- `Direccion General de Desarrollo Gastronomico`: 0 apariciones.
 - `DataGastro`: 0 apariciones.
 - `Ale` como palabra aislada: 0 apariciones.
 - `a validar`: 0 apariciones.

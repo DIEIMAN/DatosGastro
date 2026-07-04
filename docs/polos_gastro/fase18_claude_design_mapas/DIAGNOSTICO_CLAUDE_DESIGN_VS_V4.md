@@ -1,6 +1,6 @@
 # Diagnóstico comparado — Claude Design vs. mapas V4/V17
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Fase 18 — Interpretación de diseño de mapas. Documento de análisis, no de ejecución.
 No ejecuta API, no genera PDF, no genera mapas, no toca datos fuente. No commit / no push / no staging.
 
@@ -105,7 +105,7 @@ verse mostrable para conducción. Claude Design ataca exactamente ese punto.
   Design las confirma como el lugar correcto para los nombres.
 - **La base callejera GCBA (CC-BY-2.5-AR)** incorporada en V3/V4. Es la base urbana correcta y de origen
   institucional; se conserva como soporte tenue.
-- **El pie institucional** "DGDGAS — Dirección General de Gastronomía" y el barrido de campos sensibles ya
+- **El pie institucional** "DGDGAS — Dirección General de Desarrollo Gastronómico" y el barrido de campos sensibles ya
   pasado en V3/V4 (0 `place_id`, rating, API key, rutas, etc.).
 - **Los criterios de inclusión** (cerrados/dudosos fuera del mapa público; duplicados una sola sede;
   Corrientes y Abasto vinculados pero no fusionados).

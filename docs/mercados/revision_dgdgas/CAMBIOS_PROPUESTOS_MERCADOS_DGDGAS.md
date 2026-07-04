@@ -4,7 +4,7 @@ Comparación entre el informe actual (`docs/mercados_caba/INFORME_FINAL_MERCADOS
 
 | Parte del informe actual | Problema detectado | Cambio propuesto | Motivo |
 | --- | --- | --- | --- |
-| Título `# DataGastro — Mercados gastronómicos…` | Usa DataGastro como marca pública | Reemplazado por `# Mercados gastronómicos de la Ciudad de Buenos Aires — Informe` con firma **DGDGAS — Dirección General de Gastronomía · Gobierno de la Ciudad de Buenos Aires** | Guardrail: no usar DataGastro como marca pública; marca visible DGDGAS |
+| Título `# DataGastro — Mercados gastronómicos…` | Usa DataGastro como marca pública | Reemplazado por `# Mercados gastronómicos de la Ciudad de Buenos Aires — Informe` con firma **DGDGAS — Dirección General de Desarrollo Gastronómico · Gobierno de la Ciudad de Buenos Aires** | Guardrail: no usar DataGastro como marca pública; marca visible DGDGAS |
 | Firma `Análisis y desarrollo: Diego Aleman · Familia DataGastro` | Crédito personal + marca DataGastro en pieza institucional | Retirado del cuerpo público (autoría queda en trazabilidad interna) | Pieza institucional, no personal |
 | Pie de página / cierre `DataGastro · Mercados gastronómicos de CABA` | Marca DataGastro en el pie | Pie institucional DGDGAS · Gobierno de la Ciudad de Buenos Aires | Marca visible correcta |
 | Sin índice | Documento sin navegación | Se agregó **Índice** con secciones numeradas | Requisito; lectura de autoridad |

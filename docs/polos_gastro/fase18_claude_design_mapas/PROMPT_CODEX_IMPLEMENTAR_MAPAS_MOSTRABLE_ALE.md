@@ -6,7 +6,7 @@ prompt.
 ---
 
 Retomás **PolosGastro** en el repo `C:\proyectos\Gastronomia\DataGastro`, rama
-`mercados-gastronomicos-v2`. Marca pública visible: **DGDGAS — Dirección General de Gastronomía** (nunca
+`mercados-gastronomicos-v2`. Marca pública visible: **DGDGAS — Dirección General de Desarrollo Gastronómico** (nunca
 "DataGastro").
 
 ## Contexto
@@ -51,7 +51,7 @@ Ante conflicto: manda la **especificación visual** de fase 18; luego el Markdow
    - **Reemplazar solo** las páginas de detalle (7–11) por los mapas V5.
    - Conservar las **cajas laterales de menciones** con las mismas listas del Markdown base V4 (sub-bloque
      "a validar" separado con su nota). **No** agregar ni quitar nombres.
-   - Pie institucional **"DGDGAS — Dirección General de Gastronomía"**.
+   - Pie institucional **"DGDGAS — Dirección General de Desarrollo Gastronómico"**.
    - Fuentes **locales / fallback** (Arial/Calibri). **No** llamar Google Fonts por red.
 3. **Rasterizar y QA:** rasterizar las 18 páginas y generar hoja de contacto para control visual.
 4. **Guardar todo en** `outputs/polos_gastro/fase19_pdf_mostrable_ale/` (mapas, PDF, assets) y las notas

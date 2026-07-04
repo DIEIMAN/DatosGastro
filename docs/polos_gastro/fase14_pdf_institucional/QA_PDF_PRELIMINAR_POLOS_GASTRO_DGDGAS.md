@@ -8,7 +8,7 @@ PDF revisado: `outputs/polos_gastro/fase14_pdf_institucional/INFORME_POLOS_GASTR
 - Estado: **apto como primera version PDF institucional para revision**.
 - Cantidad de paginas: **18**.
 - Formato: A4 vertical.
-- Marca visible: **DGDGAS - Direccion General de Gastronomia**.
+- Marca visible: **DGDGAS - Direccion General de Desarrollo Gastronomico**.
 - El PDF no usa **DataGastro** como marca publica.
 - No se ejecutaron API, llamadas Google Places ni scraping.
 - No se tocaron datos fuente.
@@ -51,7 +51,7 @@ de la pieza.
 ## QA de marca y contenido visible
 
 - [x] No aparece **DataGastro** como marca publica.
-- [x] Marca visible: **DGDGAS - Direccion General de Gastronomia**.
+- [x] Marca visible: **DGDGAS - Direccion General de Desarrollo Gastronomico**.
 - [x] No aparecen `place_id`, `rating`, `user_ratings_total`.
 - [x] No aparecen API keys.
 - [x] No aparece raw JSON.

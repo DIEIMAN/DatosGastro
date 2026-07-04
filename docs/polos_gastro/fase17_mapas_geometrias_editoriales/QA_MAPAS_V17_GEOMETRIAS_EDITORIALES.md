@@ -5,7 +5,7 @@ Fecha de control: 3 de julio de 2026.
 ## Resultado general
 
 - Estado: assets creados para revision visual, sin generar PDF.
-- Marca visible usada en los mapas: **DGDGAS — Dirección General de Gastronomía**.
+- Marca visible usada en los mapas: **DGDGAS — Dirección General de Desarrollo Gastronómico**.
 - Base cartografica: callejero GCBA local ya disponible en el repo.
 - Criterio: subzona aproximada de lectura, eje aproximado o area a reforzar; no limites oficiales.
 

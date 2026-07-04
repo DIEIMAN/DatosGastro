@@ -1,6 +1,6 @@
 # Decisión post corrida ampliada — Google Places (PolosGastro, Fase 11)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno de decisión. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno de decisión. Fecha: 2026-07-02.
 Basado en la corrida ampliada (86) y el consolidado total (106). Ver
 `QA_CORRIDA_AMPLIADA_GOOGLE_PLACES.md` y `ANEXO_CONSOLIDADO_VIGENCIA_Y_GEOLOCALIZACION.md`.
 

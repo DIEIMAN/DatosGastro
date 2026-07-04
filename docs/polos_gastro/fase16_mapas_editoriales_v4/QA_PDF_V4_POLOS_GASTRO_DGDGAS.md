@@ -8,7 +8,7 @@ PDF revisado: `outputs/polos_gastro/fase16_mapas_editoriales_v4/INFORME_POLOS_GA
 - Estado: apto como V4 editorial para revision visual e institucional.
 - Cantidad de paginas: **18**.
 - Formato: A4 vertical.
-- Marca visible: **DGDGAS - Direccion General de Gastronomia**.
+- Marca visible: **DGDGAS - Direccion General de Desarrollo Gastronomico**.
 - El PDF visible no contiene "V4" ni "preliminar".
 - No se ejecutaron APIs ni llamadas Google Places.
 - No se tocaron datos fuente.

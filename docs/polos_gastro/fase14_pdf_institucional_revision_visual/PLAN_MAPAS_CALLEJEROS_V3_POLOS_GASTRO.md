@@ -1,6 +1,6 @@
 # Plan de mejora cartográfica V3 — PolosGastro DGDGAS
 
-Marca pública: **DGDGAS — Dirección General de Gastronomía**.
+Marca pública: **DGDGAS — Dirección General de Desarrollo Gastronómico**.
 Documento de planificación para que Codex rehaga los mapas de detalle con base callejera.
 No ejecuta API, no genera PDF, no genera mapas, no toca datos fuente. No commit / no push / no staging.
 
@@ -129,7 +129,7 @@ registrar **origen, fecha de descarga y licencia** en el anexo cartográfico del
 - Mantener el **mapa global** (pág. 5) sin cambios.
 - **Reemplazar las páginas 7–11** por los nuevos mapas callejeros de detalle.
 - Mantener las **cajas de menciones destacadas** en cada página de detalle.
-- Corregir el pie institucional a **"DGDGAS — Dirección General de Gastronomía"** si en algún lugar
+- Corregir el pie institucional a **"DGDGAS — Dirección General de Desarrollo Gastronómico"** si en algún lugar
   aparece con guion simple u otra variante.
 - **No usar lenguaje técnico ni experimental** en el cuerpo visible.
 

@@ -1,6 +1,6 @@
 # Anexo consolidado — Vigencia y geolocalización auxiliar
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Insumo para el Borrador 4.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Insumo para el Borrador 4.
 Fecha: 2026-07-02. Respaldo técnico: documentos por tanda (ver sección final).
 
 ## 1. Alcance de la capa Google Places

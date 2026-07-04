@@ -6,7 +6,7 @@ exactamente los mismos archivos depurados. Usa SOLO agregados y mapas anonimizad
 nombres, direcciones, razón social, place_id, teléfonos, emails, ratings ni API key).
 No hace requests. No commitea.
 
-Marca institucional DGDGAS — Dirección General de Gastronomía (Gobierno de la Ciudad de
+Marca institucional DGDGAS — Dirección General de Desarrollo Gastronómico (Gobierno de la Ciudad de
 Buenos Aires). NO usa "DataGastro" como marca pública. Título: "Casas de Pastas de la
 Ciudad de Buenos Aires — Informe". No incluye etiquetas de "prueba", "borrador",
 "revisión institucional" ni "documento interno".
@@ -55,7 +55,7 @@ GEO = ROOT / "data" / "raw"
 OUT = ROOT / "outputs" / "casas_de_pastas"
 PDF = OUT / "INFORME_CASAS_DE_PASTAS_DGDGAS.pdf"
 
-INSTITUCION = "DGDGAS — Dirección General de Gastronomía"
+INSTITUCION = "DGDGAS — Dirección General de Desarrollo Gastronómico"
 GOBIERNO = "Gobierno de la Ciudad de Buenos Aires"
 TITULO = "Casas de Pastas de la Ciudad de Buenos Aires — Informe"
 
@@ -317,7 +317,7 @@ def main():
         fig.patches.append(Rectangle((0, 0.694), 1, 0.006, transform=fig.transFigure, facecolor=ROJO, zorder=1))
         fig.text(0.07, 0.945, "DGDGAS", color="white", fontsize=22, fontweight="bold")
         fig.lines.append(Line2D([0.07, 0.205], [0.927, 0.927], color=ROJO, lw=2.2, transform=fig.transFigure))
-        fig.text(0.07, 0.905, "Dirección General de Gastronomía", color="white",
+        fig.text(0.07, 0.905, "Dirección General de Desarrollo Gastronómico", color="white",
                  fontsize=12.5, fontweight="bold")
         fig.text(0.07, 0.878, GOBIERNO.upper(), color="#cdd9e5", fontsize=9.5, fontweight="bold")
         fig.text(0.07, 0.788, "Casas de Pastas de la\nCiudad de Buenos Aires", color="white",
@@ -625,7 +625,7 @@ def main():
 
         d = pdf.infodict()
         d["Title"] = "Casas de Pastas de la Ciudad de Buenos Aires — Informe"
-        d["Author"] = "DGDGAS — Dirección General de Gastronomía"
+        d["Author"] = "DGDGAS — Dirección General de Desarrollo Gastronómico"
         d["Subject"] = "Padrón candidato no oficial (AGC + OSM + Google Places). Sujeto a verificación territorial."
 
     print(f"PDF generado: {PDF}")

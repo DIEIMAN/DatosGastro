@@ -40,7 +40,7 @@ El prompt pedía `docs/casas_de_pastas/revision_institucional/`. La carpeta del 
 | ¿Se tocaron datos fuente? | **No.** Solo se leyeron agregados sanitizados y notas. |
 | ¿Se generó PDF? | **No.** |
 | ¿Se generó DOCX? | **No.** |
-| ¿Se sacó DataGastro como marca pública? | **Sí.** Título y firma ahora son DGDGAS — Dirección General de Gastronomía. |
+| ¿Se sacó DataGastro como marca pública? | **Sí.** Título y firma ahora son DGDGAS — Dirección General de Desarrollo Gastronómico. |
 | ¿Se agregó índice? | **Sí.** Con secciones numeradas. |
 | ¿Se numeraron las secciones? | **Sí** (1 a 10). |
 | ¿Se concentró la metodología? | **Sí** (sección 3 + Anexo A). |

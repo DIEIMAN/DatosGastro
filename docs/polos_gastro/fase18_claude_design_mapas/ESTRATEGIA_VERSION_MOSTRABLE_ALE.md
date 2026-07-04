@@ -1,6 +1,6 @@
 # Estrategia — Versión mostrable para la reunión con Ale
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Fase 18. Documento de decisión operativa. No ejecuta API, no genera PDF, no genera mapas, no toca datos
 fuente. No commit / no push / no staging.
 

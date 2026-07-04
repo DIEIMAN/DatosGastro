@@ -1,6 +1,6 @@
 # Especificación visual — Mapas de detalle, versión mostrable para Ale
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Fase 18 — Especificación derivada de la referencia de Claude Design.
 Documento de criterio, no de ejecución. No ejecuta API, no genera PDF, no genera mapas, no toca datos
 fuente. No commit / no push / no staging.

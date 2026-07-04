@@ -2,7 +2,7 @@
 
 ## Universo semilla, lectura territorial y capa auxiliar de geolocalización
 
-**DGDGAS — Dirección General de Gastronomía**  
+**DGDGAS — Dirección General de Desarrollo Gastronómico**  
 **Gobierno de la Ciudad de Buenos Aires**  
 Fecha de elaboración: julio de 2026
 

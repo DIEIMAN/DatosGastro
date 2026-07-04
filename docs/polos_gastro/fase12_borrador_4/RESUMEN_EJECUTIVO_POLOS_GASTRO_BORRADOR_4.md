@@ -1,6 +1,6 @@
 # Resumen ejecutivo — Polos gastronómicos de la Ciudad (Borrador 4)
 
-DGDGAS — Dirección General de Gastronomía. Documento de trabajo interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento de trabajo interno. Fecha: 2026-07-02.
 
 ## En una mirada
 

@@ -3,7 +3,7 @@
   "meta": {
     "title": "<Titulo del informe>",
     "subtitle": "<Subtitulo o bajada>",
-    "presenta": "DGDGAS – Dirección General de Gastronomía",
+    "presenta": "DGDGAS – Dirección General de Desarrollo Gastronómico",
     "footer": "DGDGAS · <Proyecto> · <Tipo de informe>",
     "version": "PLANTILLA_V1"
   },
@@ -13,7 +13,7 @@
       ["Alcance", "<...>"],
       ["Lugar / territorio", "<...>"],
       ["Periodo / fechas", "<...>"],
-      ["Presenta", "DGDGAS – Dirección General de Gastronomía"]
+      ["Presenta", "DGDGAS – Dirección General de Desarrollo Gastronómico"]
     ]
   },
   "index": [
@@ -39,7 +39,7 @@
             ["Universo", "<Qué mide el dato.>"],
             ["Periodo", "<...>"],
             ["Volumen", "<...>"],
-            ["Presenta", "DGDGAS – Dirección General de Gastronomía"]
+            ["Presenta", "DGDGAS – Dirección General de Desarrollo Gastronómico"]
           ]
         },
         {

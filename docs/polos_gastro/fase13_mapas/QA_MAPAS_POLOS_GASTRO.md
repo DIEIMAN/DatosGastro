@@ -1,6 +1,6 @@
 # QA mapas PolosGastro - fase 13
 
-DGDGAS - Direccion General de Gastronomia. Fecha: 2026-07-02. Control tecnico y metodologico de cierre de assets.
+DGDGAS - Direccion General de Desarrollo Gastronomico. Fecha: 2026-07-02. Control tecnico y metodologico de cierre de assets.
 
 ## Conteos
 
@@ -19,7 +19,7 @@ DGDGAS - Direccion General de Gastronomia. Fecha: 2026-07-02. Control tecnico y 
 - Cerrados/vigencia no confirmada no aparecen como activos: si.
 - Duplicados probables no aparecen como activos: si.
 - No se aceptan puntos dudosos como mapa publico: si.
-- Marca visible en mapas: DGDGAS - Direccion General de Gastronomia.
+- Marca visible en mapas: DGDGAS - Direccion General de Desarrollo Gastronomico.
 - La marca interna del proyecto no se usa como marca publica en assets: si.
 
 ## Campos sensibles

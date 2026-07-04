@@ -2,9 +2,9 @@
   "meta": {
     "system": "DGDGAS Informes",
     "version": "1.0.0",
-    "marca_publica": "DGDGAS - Direccion General de Gastronomia",
+    "marca_publica": "DGDGAS - Direccion General de Desarrollo Gastronomico",
     "nombre_interno": "DataGastro",
-    "descripcion": "Sistema visual reutilizable para informes institucionales en PDF, DOCX y Google Docs de la Direccion General de Gastronomia."
+    "descripcion": "Sistema visual reutilizable para informes institucionales en PDF, DOCX y Google Docs de la Direccion General de Desarrollo Gastronomico."
   },
   "color": {
     "brand": {

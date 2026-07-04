@@ -40,7 +40,7 @@ Resultado: no se observaron solapamientos entre notas inferiores y la firma inst
 
 ## Verificacion textual
 
-- Marca publica visible: DGDGAS - Direccion General de Gastronomia.
+- Marca publica visible: DGDGAS - Direccion General de Desarrollo Gastronomico.
 - `DataGastro`: 0 coincidencias en el texto extraido del PDF.
 - Etiquetas editoriales no permitidas solicitadas: 0 coincidencias exactas en el texto extraido del PDF.
 - Nota pagina 6: `Cantidad absoluta; comparar con la densidad por km² (seccion 4).`

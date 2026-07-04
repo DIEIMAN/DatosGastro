@@ -189,7 +189,7 @@ def number_context(p: dict, stats: dict, ranking_rows: list[dict], sedes_comuna:
     return {
         "n": p["n"],
         "sigla": "DGDGAS",
-        "nombre": "Dirección General de Gastronomía",
+        "nombre": "Dirección General de Desarrollo Gastronómico",
         # perfil
         "edad_top_pct": P(edad.get("25 a 34", 0), base_edad),
         "p1844_pct": P(p1844, base_edad),

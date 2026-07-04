@@ -8,7 +8,7 @@ PDF revisado: `outputs/polos_gastro/fase14_pdf_institucional_revision_visual/INF
 - Estado: **apto como versión preliminar V2 para revisión visual e institucional**.
 - Cantidad de páginas: **18**.
 - Formato: A4 vertical.
-- Marca visible: **DGDGAS - Dirección General de Gastronomía**.
+- Marca visible: **DGDGAS - Dirección General de Desarrollo Gastronómico**.
 - No se ejecutaron API, llamadas Google Places ni scraping.
 - No se tocaron datos fuente.
 - No se hizo commit, push ni staging.

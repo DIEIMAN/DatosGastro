@@ -4,7 +4,7 @@ Comparación entre el informe actual (`outputs/casas_pastas_reporte/INFORME_CASA
 
 | Parte del informe actual | Problema detectado | Cambio propuesto | Motivo |
 | --- | --- | --- | --- |
-| Título `# DataGastro — Diagnóstico territorial gastronómico` | Usa DataGastro como marca pública | Reemplazado por `# Casas de Pastas / Mercados de Pastas — Informe` con firma **DGDGAS — Dirección General de Gastronomía · Gobierno de la Ciudad de Buenos Aires` | Guardrail: no usar DataGastro como marca pública; usar DGDGAS como marca visible |
+| Título `# DataGastro — Diagnóstico territorial gastronómico` | Usa DataGastro como marca pública | Reemplazado por `# Casas de Pastas / Mercados de Pastas — Informe` con firma **DGDGAS — Dirección General de Desarrollo Gastronómico · Gobierno de la Ciudad de Buenos Aires` | Guardrail: no usar DataGastro como marca pública; usar DGDGAS como marca visible |
 | Firma `Análisis y desarrollo: Diego Aleman` | Crédito personal en un informe institucional | Retirado del cuerpo público (autoría no se expone como marca; queda en la trazabilidad interna) | Pieza institucional, no personal |
 | Sin índice | Documento sin navegación | Se agregó **Índice** con secciones numeradas y anclas | Requisito de la revisión; facilita lectura de autoridad |
 | Secciones en formato pregunta ("¿Qué universo…?", "¿Por qué…?", "¿Dónde…?") | Arquitectura de expediente/FAQ, no institucional | Reescritas como secciones numeradas temáticas (2 a 9) | Mejorar títulos y estructura; tono sobrio |

@@ -11,7 +11,7 @@ Copiar y pegar el bloque de abajo en Codex. No ejecutar nada desde este document
 
 ```
 Contexto: repositorio C:\proyectos\Gastronomia\DataGastro, proyecto PolosGastro de la
-DGDGAS (Dirección General de Gastronomía). Ya existe una pieza en fase19:
+DGDGAS (Dirección General de Desarrollo Gastronómico). Ya existe una pieza en fase19:
 - Base editorial: docs/polos_gastro/fase19_pdf_mostrable_ale/INFORME_POLOS_GASTRO_DGDGAS_PDF_BASE_MOSTRABLE_ALE.md
 - PDF actual: outputs/polos_gastro/fase19_pdf_mostrable_ale/INFORME_POLOS_GASTRO_DGDGAS_MOSTRABLE_ALE.pdf
 
@@ -44,8 +44,8 @@ Debes:
 - Limpiar el índice para que tenga solo las 11 entradas de la estructura.
 - Corregir la numeración de pie a formato "N / 11" (1/11 … 11/11); no dejar totales heredados
   como "/18".
-- Usar como marca visible únicamente "DGDGAS — Dirección General de Gastronomía" (nunca
-  "DataGastro"), y pie institucional "DGDGAS — Dirección General de Gastronomía" con raya larga
+- Usar como marca visible únicamente "DGDGAS — Dirección General de Desarrollo Gastronómico" (nunca
+  "DataGastro"), y pie institucional "DGDGAS — Dirección General de Desarrollo Gastronómico" con raya larga
   si el sistema de render lo permite.
 - Mantener los mapas actuales de fase19 tal como están si no hay tiempo para rediseñarlos.
 - Mantener lenguaje prudente ("subzona aproximada", "área de lectura", "eje aproximado", "área

@@ -23,7 +23,7 @@ Referencia de grilla (coordenadas relativas, como en los generadores actuales):
 
 ```
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  (banda brand)
-  DGDGAS – Dirección General de Gastronomía
+  DGDGAS – Dirección General de Desarrollo Gastronómico
   TÍTULO DEL INFORME
   Subtítulo
 ────────────────────────────────

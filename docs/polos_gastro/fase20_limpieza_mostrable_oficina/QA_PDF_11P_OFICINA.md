@@ -1,6 +1,6 @@
 # QA PDF 11P Oficina
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)  
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)  
 **Fecha de control:** 3 de julio de 2026  
 **PDF revisado:** `outputs/polos_gastro/fase20_limpieza_mostrable_oficina/INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA.pdf`
 

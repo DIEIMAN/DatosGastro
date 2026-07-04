@@ -2,7 +2,7 @@
 
 Inventario de componentes reutilizables. Cada informe se arma combinando estos bloques; el layout no se rehace por proyecto. Los valores de estilo referencian `tokens.json`.
 
-**Marca pública:** DGDGAS — Dirección General de Gastronomía · **Nombre interno:** DataGastro (no público).
+**Marca pública:** DGDGAS — Dirección General de Desarrollo Gastronómico · **Nombre interno:** DataGastro (no público).
 **Regla transversal:** no inventar datos, no generar rankings, mapas = referencia territorial (no delimitación oficial), no usar Google Places como fuente pública.
 
 Convención de campos: `token` = marcador de dato que completa cada proyecto (p. ej. `{ig_pct}`); el sistema no fija cifras.
@@ -12,7 +12,7 @@ Convención de campos: `token` = marcador de dato que completa cada proyecto (p.
 ## 1. Portada
 
 - **Propósito.** Apertura institucional del informe.
-- **Campos esperados.** `kickerMarca` (fijo: "DGDGAS – Dirección General de Gastronomía"), `kickerTipo` (p. ej. "Informe de resultados" / "Relevamiento territorial"), `titulo`, `subtitulo`, `descripcion`, `piePresenta`, `fecha`.
+- **Campos esperados.** `kickerMarca` (fijo: "DGDGAS – Dirección General de Desarrollo Gastronómico"), `kickerTipo` (p. ej. "Informe de resultados" / "Relevamiento territorial"), `titulo`, `subtitulo`, `descripcion`, `piePresenta`, `fecha`.
 - **Estilos.** Banda superior `brand.primary`; kicker en `mono` `brand.accent`; título `type.h1`; regla de 34×2px `brand.accent`; bajada `ink.muted`.
 - **Cuándo usarlo.** Siempre, como primera página.
 - **Cuándo no.** Nunca con marca DataGastro; nunca con foto de comida ni estética de folleto.

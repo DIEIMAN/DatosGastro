@@ -1,7 +1,7 @@
 # DGDGAS Informes — Design System v1 (documento maestro)
 
 Documento de referencia del sistema visual y editorial para informes de la
-**Dirección General de Gastronomía (DGDGAS)**. Define marca, tono, estructura,
+**Dirección General de Desarrollo Gastronómico (DGDGAS)**. Define marca, tono, estructura,
 tokens y reglas de contenido. Es la especificación que implementan los
 componentes, plantillas y scripts de este directorio.
 
@@ -9,7 +9,7 @@ componentes, plantillas y scripts de este directorio.
 
 ## 1. Marca
 
-- **Marca pública principal:** `DGDGAS – Dirección General de Gastronomía`.
+- **Marca pública principal:** `DGDGAS – Dirección General de Desarrollo Gastronómico`.
 - **No** usar `DataGastro` como marca pública por defecto. `DataGastro` es el
   nombre interno del sistema/proyecto y solo se nombra en documentación técnica
   cuando corresponde.

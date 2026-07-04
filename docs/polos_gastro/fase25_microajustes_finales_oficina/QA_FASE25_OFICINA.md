@@ -81,7 +81,7 @@
 | Término o patrón buscado | Resultado | Observación |
 | --- | --- | --- |
 | `DataGastro` | 0 | OK |
-| `Dirección General de Gastronomía` | 0 | OK |
+| `Dirección General de Desarrollo Gastronómico` | 0 | OK |
 | `Ale` como palabra aislada | 0 | OK |
 | `a validar` / `validar con Ale` | 0 | OK |
 | `preliminar`, `borrador`, `prueba`, `revisión`, `documento interno` | 0 | OK |

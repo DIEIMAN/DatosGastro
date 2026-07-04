@@ -1,6 +1,6 @@
 # Cafecito BA en tu barrio — Resumen para jefatura
 
-**DGDGAS — Dirección General de Gastronomía** · Junio de 2026
+**DGDGAS — Dirección General de Desarrollo Gastronómico** · Junio de 2026
 
 **Qué se hizo.** Durante el evento Cafecito BA en tu barrio (La Glorieta de Barrancas de Belgrano,
 sábado 27 y domingo 28 de junio de 2026) se encuestó al público con un formulario digital. Se

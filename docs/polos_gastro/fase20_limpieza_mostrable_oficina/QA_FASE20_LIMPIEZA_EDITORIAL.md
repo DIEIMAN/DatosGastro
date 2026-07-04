@@ -1,6 +1,6 @@
 # QA — Fase 20: limpieza editorial mostrable oficina
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)
 **Fecha de control:** 3 de julio de 2026
 
 Control de la fase editorial (solo documentos). **No se ejecutó código, no se generó PDF, no
@@ -69,7 +69,7 @@ Todos en `docs/polos_gastro/fase20_limpieza_mostrable_oficina/`.
 - [x] Los documentos no incluyen `place_id`, `rating`, `user_ratings_total`, API key ni raw JSON
   como contenido público de la pieza.
 - [x] La especificación prohíbe explícitamente esos campos en el PDF.
-- [x] Marca pública: "DGDGAS — Dirección General de Gastronomía"; sin "DataGastro" como marca
+- [x] Marca pública: "DGDGAS — Dirección General de Desarrollo Gastronómico"; sin "DataGastro" como marca
   pública.
 - [x] Lenguaje prudente exigido; subzonas no presentadas como límites oficiales.
 - [x] Referencias internas a rutas, scripts y CSV aparecen solo en documentos de trabajo de

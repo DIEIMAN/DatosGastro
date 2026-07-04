@@ -1,7 +1,7 @@
 # reporting_dgdgas — base de generación de informes DGDGAS (v1)
 
 Base de código **reutilizable** para producir informes institucionales de la
-Dirección General de Gastronomía (DGDGAS) con el sistema visual
+Dirección General de Desarrollo Gastronómico (DGDGAS) con el sistema visual
 `DGDGAS Informes — Design System v1`.
 
 > **Estado:** esqueleto. Estos módulos definen la API, el estilo y el flujo,

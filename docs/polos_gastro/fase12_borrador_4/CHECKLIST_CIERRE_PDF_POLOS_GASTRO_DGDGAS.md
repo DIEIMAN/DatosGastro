@@ -1,13 +1,13 @@
 # Checklist de cierre — PDF institucional PolosGastro DGDGAS
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 Lista de verificación previa a dar por cerrada la pieza PDF institucional del Borrador 4.
 Marcar cada punto antes de la entrega final.
 
 ## Marca e identidad
 
 - [ ] No aparece **"DataGastro"** como marca pública en ningún lugar visible.
-- [ ] La marca visible es **DGDGAS — Dirección General de Gastronomía**.
+- [ ] La marca visible es **DGDGAS — Dirección General de Desarrollo Gastronómico**.
 - [ ] Portada DGDGAS correcta (título, marca, fecha, sin etiquetas internas).
 - [ ] Pie institucional presente y correcto en todas las páginas.
 

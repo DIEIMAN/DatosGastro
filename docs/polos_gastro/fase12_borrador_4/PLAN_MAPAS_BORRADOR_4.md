@@ -1,6 +1,6 @@
 # Plan de mapas — Borrador 4 PolosGastro
 
-DGDGAS — Dirección General de Gastronomía. Documento interno de trabajo. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno de trabajo. Fecha: 2026-07-02.
 Propuesta de mapas para el informe. **No se generan mapas en esta instancia**; es la planificación
 previa a la revisión técnica.
 

@@ -24,7 +24,7 @@ El pedido listaba como archivos base `docs/casas_pastas/INFORME_CASAS_PASTAS_INT
 
 ### Mejoras aplicadas respecto del V4
 
-- Marca institucional **DGDGAS — Dirección General de Gastronomía** + **Gobierno de la Ciudad de Buenos Aires** (se quitó "DataGastro" de la portada y del masthead).
+- Marca institucional **DGDGAS — Dirección General de Desarrollo Gastronómico** + **Gobierno de la Ciudad de Buenos Aires** (se quitó "DataGastro" de la portada y del masthead).
 - Título: **Casas de Pastas de la Ciudad de Buenos Aires — Informe**.
 - Página de **índice** nueva.
 - **Secciones numeradas** de forma correlativa (1–15) y **anexos** (A–D) al final.

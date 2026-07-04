@@ -1,6 +1,6 @@
 # Cambios Fase19 a Fase20
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)  
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)  
 **Fecha:** 3 de julio de 2026
 
 ## Síntesis de cambios

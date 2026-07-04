@@ -1,6 +1,6 @@
 # Herramientas para mejorar los mapas — próxima iteración
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)
 **Fecha:** 3 de julio de 2026
 
 Documento de análisis de opciones para una etapa posterior de trabajo cartográfico. **No es

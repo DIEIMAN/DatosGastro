@@ -28,7 +28,7 @@ Controles sobre `pdf_text_extract.txt` (pdftotext, UTF-8) y revisión visual de 
 | --- | --- |
 | `DGDGAS`: 11 apariciones | OK |
 | `Dirección General de Desarrollo Gastronómico`: 11 apariciones, con acentos correctos | OK |
-| `Dirección General de Gastronomía`: 0 apariciones (texto y revisión visual de mapas) | OK |
+| `Dirección General de Desarrollo Gastronómico`: 0 apariciones (texto y revisión visual de mapas) | OK |
 | Página 5: "Mapa general de polos y ejes gastronómicos" | OK |
 | `Otras referencias de la zona`: 5 apariciones | OK |
 | `Otras referencias del universo semilla`: 0 apariciones | OK |

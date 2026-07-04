@@ -1,6 +1,6 @@
 # Cafecito — Informe de relevamiento
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Gobierno de la Ciudad de Buenos Aires · BA Capital Gastronómica
 Junio de 2026
 

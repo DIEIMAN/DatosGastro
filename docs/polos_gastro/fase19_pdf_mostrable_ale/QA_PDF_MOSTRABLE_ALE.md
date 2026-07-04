@@ -9,7 +9,7 @@ PDF revisado: `outputs/polos_gastro/fase19_pdf_mostrable_ale/INFORME_POLOS_GASTR
 - [x] PDF creado.
 - [x] Cantidad de paginas: **18**.
 - [x] Formato: A4 vertical.
-- [x] Marca visible: **DGDGAS - Direccion General de Gastronomia**.
+- [x] Marca visible: **DGDGAS - Direccion General de Desarrollo Gastronomico**.
 - [x] Portada visible: Polos gastronomicos de la Ciudad de Buenos Aires / Informe / DGDGAS / Gobierno de la Ciudad de Buenos Aires / Julio 2026.
 - [x] No se ejecutaron APIs.
 - [x] No se hicieron llamadas Google Places.

@@ -1,6 +1,6 @@
 # Decisiones humanas acumuladas — Google Places (PolosGastro)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno, en lenguaje simple. Reúne lo que hay
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno, en lenguaje simple. Reúne lo que hay
 que decidir antes de armar el mapa. Fecha: 2026-07-02. No borra nada de la semilla.
 
 ## Locales cerrados (no mostrar como activos hasta validar)

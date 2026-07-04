@@ -13,7 +13,7 @@ Usar esta checklist solo cuando exista autorizacion explicita para trabajar con 
 
 - [ ] Tokens importados.
 - [ ] `meta.system` y version coinciden.
-- [ ] Marca publica coincide: DGDGAS - Direccion General de Gastronomia.
+- [ ] Marca publica coincide: DGDGAS - Direccion General de Desarrollo Gastronomico.
 - [ ] No se usa DataGastro como marca publica por defecto.
 - [ ] Paleta `brand.*` coincide.
 - [ ] Paleta `text.*` coincide.

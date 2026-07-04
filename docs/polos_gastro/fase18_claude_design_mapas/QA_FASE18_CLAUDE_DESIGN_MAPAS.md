@@ -1,6 +1,6 @@
 # QA — Fase 18 Interpretación de diseño de mapas (Claude Design)
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Fecha de control: 3 de julio de 2026.
 Fase de interpretación de diseño. Solo documentos: no se ejecutó código, API, PDF ni mapas.
 
@@ -43,7 +43,7 @@ Fase de interpretación de diseño. Solo documentos: no se ejecutó código, API
 
 ## Privacidad y marca (documentos de esta fase)
 
-- [x] Marca visible usada: **DGDGAS — Dirección General de Gastronomía**.
+- [x] Marca visible usada: **DGDGAS — Dirección General de Desarrollo Gastronómico**.
 - [x] Sin uso de "DataGastro" como marca pública en el contenido de los entregables.
 - [x] Sin campos sensibles ni técnicos en los documentos: sin `place_id`, `rating`,
       `user_ratings_total`, API key, raw JSON, CUIT, DNI, emails, teléfonos.

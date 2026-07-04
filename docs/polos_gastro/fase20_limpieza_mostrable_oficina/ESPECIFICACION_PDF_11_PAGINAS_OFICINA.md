@@ -1,6 +1,6 @@
 # Especificación de PDF limpio de 11 páginas — Oficina
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)
 **Fecha:** 3 de julio de 2026
 **Base de partida:** fase19 (`INFORME_POLOS_GASTRO_DGDGAS_PDF_BASE_MOSTRABLE_ALE.md` y su PDF).
 **Salida final esperada:** `outputs/polos_gastro/fase20_limpieza_mostrable_oficina/INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA.pdf`
@@ -12,8 +12,8 @@ no toca datos fuente.** Define exactamente cómo debe quedar la pieza de 11 pág
 
 ## 1. Reglas transversales (aplican a todas las páginas)
 
-- **Marca visible única:** "DGDGAS — Dirección General de Gastronomía". Nunca "DataGastro".
-- **Pie institucional:** "DGDGAS — Dirección General de Gastronomía" con raya larga (em dash
+- **Marca visible única:** "DGDGAS — Dirección General de Desarrollo Gastronómico". Nunca "DataGastro".
+- **Pie institucional:** "DGDGAS — Dirección General de Desarrollo Gastronómico" con raya larga (em dash
   `—`) si el sistema de render lo permite; si no, guion largo simple.
 - **Numeración de pie:** formato "N / 11" en las once páginas (1/11 … 11/11). Sin totales
   heredados de fase19 ("/18").
@@ -53,7 +53,7 @@ no toca datos fuente.** Define exactamente cómo debe quedar la pieza de 11 pág
 ### Página 1 — Portada
 - Título: "Polos gastronómicos de la Ciudad de Buenos Aires".
 - Subtítulo: "Informe".
-- Marca: "DGDGAS — Dirección General de Gastronomía".
+- Marca: "DGDGAS — Dirección General de Desarrollo Gastronómico".
 - Organismo: "Gobierno de la Ciudad de Buenos Aires".
 - Fecha: "Julio de 2026".
 - **Quitar** cualquier frase de "base editorial", "mostrable", "para Ale".
@@ -140,7 +140,7 @@ reforzar".
 - **Índice:** solo 11 páginas (ver arriba).
 - **Numeración visible:** 1 / 11, 2 / 11, …, 11 / 11.
 - **Resumen ejecutivo:** sin bloque "Para validar con Ale" (texto en su documento propio).
-- **Pie institucional:** "DGDGAS — Dirección General de Gastronomía" con raya larga si el
+- **Pie institucional:** "DGDGAS — Dirección General de Desarrollo Gastronómico" con raya larga si el
   sistema lo permite.
 
 ---
@@ -152,6 +152,6 @@ reforzar".
 - [ ] Numeración "N / 11" en todas las páginas.
 - [ ] Cero "Ale" / "validar con Ale" / "validación interna".
 - [ ] Resumen ejecutivo sin bloque interno ni KPIs.
-- [ ] Marca "DGDGAS — Dirección General de Gastronomía"; sin "DataGastro".
+- [ ] Marca "DGDGAS — Dirección General de Desarrollo Gastronómico"; sin "DataGastro".
 - [ ] Sin campos sensibles/técnicos; sin capturas de Google Maps.
 - [ ] Lenguaje prudente; subzonas no presentadas como límites oficiales.

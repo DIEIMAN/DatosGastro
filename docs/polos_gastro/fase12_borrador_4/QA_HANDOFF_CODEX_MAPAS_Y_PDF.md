@@ -1,6 +1,6 @@
 # QA — Handoff Codex, ajuste de publicabilidad y checklist (Borrador 4 PolosGastro)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 
 ## Entregables de esta instancia
 
@@ -32,5 +32,5 @@ DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07
 - **No commit / push / staging.** No se usó `git add`.
 - **Sin campos sensibles**: place_id, rating, user_ratings_total, API key y raw JSON solo aparecen
   dentro de listas de prohibición (checklist/handoff), como términos a evitar, nunca como valores.
-- **Marca DGDGAS — Dirección General de Gastronomía**; no se usó "DataGastro" como marca pública
+- **Marca DGDGAS — Dirección General de Desarrollo Gastronómico**; no se usó "DataGastro" como marca pública
   (solo mencionada en las listas de prohibición como término a evitar).

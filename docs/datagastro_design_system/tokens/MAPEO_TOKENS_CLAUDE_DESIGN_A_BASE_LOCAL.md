@@ -35,7 +35,7 @@ extension, sin modificar scripts.
 | --- | --- | --- | --- | --- | --- |
 | `$system` | `DGDGAS Informes - Design System` | `meta.system` | `DGDGAS Informes` | adaptar | Mantener nombre local breve y declarar origen en metadata experimental. |
 | `$version` | `1.0.0` | `meta.version` | `1.0.0` | adoptar | Coincide. |
-| `$publicBrand` | `DGDGAS - Direccion General de Gastronomia` | `meta.marca_publica` | `DGDGAS - Direccion General de Gastronomia` | adoptar | Coincide conceptualmente; normalizar guion/acentos segun salida. |
+| `$publicBrand` | `DGDGAS - Direccion General de Desarrollo Gastronomico` | `meta.marca_publica` | `DGDGAS - Direccion General de Desarrollo Gastronomico` | adoptar | Coincide conceptualmente; normalizar guion/acentos segun salida. |
 | `$internalName` | `DataGastro` | `meta.nombre_interno` | `DataGastro` | adoptar | Solo uso interno. |
 | `$notes` | Regla de marca, unidades y no delimitaciones | `meta.descripcion` / documentacion | Descripcion local | adaptar | Es una nota metodologica, no un token operativo. |
 

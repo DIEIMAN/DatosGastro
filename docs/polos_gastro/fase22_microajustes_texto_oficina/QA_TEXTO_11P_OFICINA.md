@@ -12,7 +12,7 @@
 - [x] Se mantiene la estructura de 11 páginas.
 - [x] Se mantiene la sigla `DGDGAS`.
 - [x] Aparece `Dirección General de Desarrollo Gastronómico` en la denominación institucional visible.
-- [x] No aparece `Dirección General de Gastronomía` en el texto extraído del PDF.
+- [x] No aparece `Dirección General de Desarrollo Gastronómico` en el texto extraído del PDF.
 
 ## Controles textuales
 
@@ -24,7 +24,7 @@ Resultados:
 
 - [x] `DGDGAS`: 11 apariciones en el texto extraído.
 - [x] `Dirección General de Desarrollo Gastronómico`: 11 apariciones en el texto extraído.
-- [x] `Dirección General de Gastronomía`: 0 apariciones en el texto extraído.
+- [x] `Dirección General de Desarrollo Gastronómico`: 0 apariciones en el texto extraído.
 - [x] `Otras referencias del universo semilla`: 0 apariciones en el texto extraído.
 - [x] `Otras referencias de la zona`: 5 apariciones en el texto extraído.
 - [x] `Abasto` no aparece mezclado como local; queda en línea separada como área de lectura.

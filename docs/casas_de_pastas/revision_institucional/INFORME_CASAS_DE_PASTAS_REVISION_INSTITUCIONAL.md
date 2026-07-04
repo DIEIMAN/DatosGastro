@@ -1,6 +1,6 @@
 # Casas de Pastas / Mercados de Pastas — Informe
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Gobierno de la Ciudad de Buenos Aires
 
 Diagnóstico territorial del rubro casas de pastas en la Ciudad de Buenos Aires.

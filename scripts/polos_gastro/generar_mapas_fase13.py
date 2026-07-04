@@ -61,7 +61,7 @@ LOCALES_MAPA = TABLES / "locales_para_mapa_revision.csv"
 CRITERIOS_DOC = DOCS / "CRITERIOS_CARTOGRAFICOS_POLOS_GASTRO.md"
 QA_DOC = DOCS / "QA_MAPAS_POLOS_GASTRO.md"
 
-INSTITUCION = "DGDGAS - Direccion General de Gastronomia"
+INSTITUCION = "DGDGAS - Direccion General de Desarrollo Gastronomico"
 FECHA = "2026-07-02"
 
 AZUL = "#1f3b57"
@@ -833,7 +833,7 @@ criterios de publicacion. Ningun mapa de esta fase debe leerse como padron ofici
 - Cerrados/vigencia no confirmada no aparecen como activos: si.
 - Duplicados probables no aparecen como activos: si.
 - No se aceptan puntos dudosos como mapa publico: si.
-- Marca visible en mapas: DGDGAS - Direccion General de Gastronomia.
+- Marca visible en mapas: DGDGAS - Direccion General de Desarrollo Gastronomico.
 - La marca interna del proyecto no se usa como marca publica en assets: si.
 
 ## Campos sensibles

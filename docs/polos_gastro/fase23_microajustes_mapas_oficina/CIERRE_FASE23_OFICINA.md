@@ -25,7 +25,7 @@
 | Índice consistente | OK | Validado en auditoría final: el índice lista portada, índice, resumen, alcance, mapa general, lectura territorial y detalles en páginas 1 a 11. |
 | Marca visible DGDGAS — Dirección General de Desarrollo Gastronómico | OK | Validado en auditoría final y presente en portada/pies del PDF. |
 | Sin DataGastro visible | OK | Texto extraído y revisión visual sin apariciones como marca visible del informe. |
-| Sin Dirección General de Gastronomía | OK | Auditoría final de fase23: 0 apariciones de la denominación incorrecta. |
+| Sin Dirección General de Desarrollo Gastronómico | OK | Auditoría final de fase23: 0 apariciones de la denominación incorrecta. |
 | Sin rastros técnicos visibles | OK | Sin `Google Places`, `place_id`, `API key`, `raw JSON`, scripts, CSV o rutas internas visibles en texto extraído/revisión visual. |
 | Sin datos personales | OK | Sin emails, teléfonos probables, CUIT, DNI, links privados ni claves detectadas en auditoría. |
 | Sin API / scraping / Google Places | OK | No se ejecutaron APIs, scraping ni Google Places en esta pasada; el PDF tampoco contiene esas referencias visibles. |

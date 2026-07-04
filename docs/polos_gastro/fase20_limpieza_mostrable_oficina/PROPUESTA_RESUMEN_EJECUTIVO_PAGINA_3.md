@@ -1,6 +1,6 @@
 # Propuesta de resumen ejecutivo — Página 3
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)
 **Fecha:** 3 de julio de 2026
 **Destino:** página 3 del PDF de 11 páginas (`INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA.pdf`).
 

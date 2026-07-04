@@ -1,6 +1,6 @@
 # Handoff a Codex — Mapas y PDF del Borrador 4 PolosGastro
 
-DGDGAS — Dirección General de Gastronomía. Documento interno de traspaso. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno de traspaso. Fecha: 2026-07-02.
 Este documento explica todo lo necesario para que Codex retome PolosGastro y avance hacia los
 **mapas** y la **pieza PDF institucional**, sin volver a revisar el proceso desde cero.
 

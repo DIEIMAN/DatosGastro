@@ -2,7 +2,7 @@
 
 Guía de implementación del sistema visual. **Este handoff define el sistema; no aplica el diseño a ningún informe todavía.**
 
-- **Marca pública:** DGDGAS — Dirección General de Gastronomía.
+- **Marca pública:** DGDGAS — Dirección General de Desarrollo Gastronómico.
 - **Nombre interno:** DataGastro (nunca visible en portadas, encabezados ni pies).
 - **Fuentes de verdad:** `handoff/tokens.json` + `handoff/COMPONENTES_DGDGAS_DESIGN_SYSTEM.md` + la guía visual `DGDGAS Informes - Design System v1.dc.html`.
 

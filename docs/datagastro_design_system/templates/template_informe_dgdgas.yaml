@@ -23,12 +23,12 @@ meta:
 
 institucion:
   sigla: "DGDGAS"
-  nombre: "Direccion General de Gastronomia"
+  nombre: "Direccion General de Desarrollo Gastronomico"
   marco: "Gobierno de la Ciudad de Buenos Aires - BA Capital Gastronomica"
 
 # ---------------------------------------------------------------- Portada
 portada:
-  kicker_marca: "DGDGAS - Direccion General de Gastronomia"
+  kicker_marca: "DGDGAS - Direccion General de Desarrollo Gastronomico"
   kicker_tipo: "<Informe de resultados / Informe territorial>"
   titulo: "<Titulo del informe>"
   subtitulo: "<Subtitulo o bajada>"
@@ -38,7 +38,7 @@ portada:
     - ["Alcance", "<...>"]
     - ["Lugar / territorio", "<...>"]
     - ["Periodo / fechas", "<...>"]
-    - ["Presenta", "DGDGAS - Direccion General de Gastronomia"]
+    - ["Presenta", "DGDGAS - Direccion General de Desarrollo Gastronomico"]
 
 # ---------------------------------------------------------------- Indice
 # Las paginas deben ser reales; completar al final. Subsecciones con sub: si.

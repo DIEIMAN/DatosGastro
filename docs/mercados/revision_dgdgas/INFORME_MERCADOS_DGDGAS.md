@@ -1,6 +1,6 @@
 # Mercados gastronómicos de la Ciudad de Buenos Aires — Informe
 
-**DGDGAS — Dirección General de Gastronomía**
+**DGDGAS — Dirección General de Desarrollo Gastronómico**
 Gobierno de la Ciudad de Buenos Aires
 
 Universo identificado, caracterización y lectura territorial.

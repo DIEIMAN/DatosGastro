@@ -14,7 +14,7 @@ JavaScript y sin conexion.
 
 ## Que se probo
 
-1. **Portada institucional DGDGAS** con marca publica (DGDGAS - Direccion General de Gastronomia),
+1. **Portada institucional DGDGAS** con marca publica (DGDGAS - Direccion General de Desarrollo Gastronomico),
    panel oscuro `brand.primary_dark`, filete de acento y caja de alcance con la leyenda "no es
    informe final, no delimita oficialmente polos". DataGastro no aparece como marca publica.
 2. **TablaPolos con chips de estado** sobre 8 casos reales del Borrador 3 (Palermo agrupado,

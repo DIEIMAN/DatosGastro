@@ -55,7 +55,7 @@
 - "Productores / consumo consciente" queda dentro de su celda en Anexo C.
 - Los cinco "Primer paso" quedan visibles y completos en Anexo E.
 - El pie institucional se ve consistente en todas las páginas:
-  `DGDGAS — Dirección General de Gastronomía · Gobierno de la Ciudad de Buenos Aires`
+  `DGDGAS — Dirección General de Desarrollo Gastronómico · Gobierno de la Ciudad de Buenos Aires`
 - Las notas inferiores empiezan con mayúscula cuando son frases y no pisan el pie.
 
 ## Verificaciones textuales

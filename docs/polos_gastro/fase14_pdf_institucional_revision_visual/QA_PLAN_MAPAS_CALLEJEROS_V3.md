@@ -26,7 +26,7 @@ una ejecución: en esta sesión no se generaron mapas ni PDF ni se ejecutó API.
 
 ## Guardrails reflejados en el plan
 
-- [x] Marca pública **DGDGAS — Dirección General de Gastronomía**; nunca DataGastro como marca pública.
+- [x] Marca pública **DGDGAS — Dirección General de Desarrollo Gastronómico**; nunca DataGastro como marca pública.
 - [x] Instrucción de excluir `place_id`, `rating`, `user_ratings_total`, API key, raw JSON y rutas locales del PDF público.
 - [x] Cerrados no como activos; duplicados y queries a corregir fuera de los destacados.
 - [x] Corrientes y Abasto diferenciados, con advertencia de no doble conteo.

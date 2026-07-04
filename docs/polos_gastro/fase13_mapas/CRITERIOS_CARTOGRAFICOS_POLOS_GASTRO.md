@@ -1,6 +1,6 @@
 # Criterios cartograficos - PolosGastro
 
-DGDGAS - Direccion General de Gastronomia. Fecha: 2026-07-02. Documento interno para fase 13 de mapas.
+DGDGAS - Direccion General de Desarrollo Gastronomico. Fecha: 2026-07-02. Documento interno para fase 13 de mapas.
 
 ## Alcance
 

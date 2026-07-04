@@ -4,7 +4,7 @@
 # =============================================================================
 #
 # Este archivo define los tokens visuales del sistema de informes de la
-# Direccion General de Gastronomia (DGDGAS). Es la fuente unica de verdad:
+# Direccion General de Desarrollo Gastronomico (DGDGAS). Es la fuente unica de verdad:
 # el JSON (design_tokens_dgdgas.json) y el modulo Python
 # (scripts/shared/reporting_dgdgas/style_tokens_dgdgas.py) deben mantenerse
 # alineados con estos valores.
@@ -21,11 +21,11 @@
 meta:
   system: "DGDGAS Informes"
   version: "1.0.0"
-  marca_publica: "DGDGAS - Direccion General de Gastronomia"
+  marca_publica: "DGDGAS - Direccion General de Desarrollo Gastronomico"
   nombre_interno: "DataGastro"          # solo uso interno / metodologico
   descripcion: >
     Sistema visual reutilizable para informes institucionales en PDF, DOCX y
-    Google Docs de la Direccion General de Gastronomia.
+    Google Docs de la Direccion General de Desarrollo Gastronomico.
 
 # -----------------------------------------------------------------------------
 # COLOR

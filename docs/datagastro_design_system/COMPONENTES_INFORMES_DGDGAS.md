@@ -26,7 +26,7 @@ interno del proyecto.
 
 ```
 ┌──────────────────────────────────────────┐
-│ DGDGAS – Dirección General de Gastronomía │  kicker (brand)
+│ DGDGAS – Dirección General de Desarrollo Gastronómico │  kicker (brand)
 │                                           │
 │  Título del informe                       │  display 26
 │  Subtítulo / bajada                       │  h2
@@ -43,7 +43,7 @@ interno del proyecto.
 ```
 
 **Reglas:** sin logos de terceros no autorizados; sin rutas ni versiones
-internas; «Presenta: DGDGAS – Dirección General de Gastronomía».
+internas; «Presenta: DGDGAS – Dirección General de Desarrollo Gastronómico».
 
 ---
 

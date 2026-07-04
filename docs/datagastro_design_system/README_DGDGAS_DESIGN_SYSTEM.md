@@ -9,7 +9,7 @@ informes (por ejemplo PolosGastro, MercadosGastro, CasasDePastas o nuevos
 relevamientos) se produzcan con una identidad institucional coherente, sobria y
 prudente, sin rehacer el diseño desde cero cada vez.
 
-> **Marca pública por defecto:** `DGDGAS – Dirección General de Gastronomía`.
+> **Marca pública por defecto:** `DGDGAS – Dirección General de Desarrollo Gastronómico`.
 > `DataGastro` es el nombre **interno** del sistema/proyecto y solo aparece en
 > documentación técnica cuando corresponde. No se usa como marca pública.
 

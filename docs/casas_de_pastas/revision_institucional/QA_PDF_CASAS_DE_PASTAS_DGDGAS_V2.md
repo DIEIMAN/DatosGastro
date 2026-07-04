@@ -24,7 +24,7 @@ Segunda iteración: versión más corta y ejecutiva del PDF DGDGAS, con menos ex
 5. **Zoom territorial.** Se mantienen Palermo, Caballito y Belgrano; comentarios acortados para no repetir cantidad/densidad.
 6. **Cadenas.** "Cadenas y casas de barrio" + "Principales cadenas" se unieron en **una sola página** (proporción 68/32 + ranking compacto de cadenas + lectura breve).
 7. **Páginas metodológicas pesadas eliminadas** como páginas independientes: "Núcleo de mayor respaldo cruzado", "Aporte de la revisión manual" y "Metodología: aporte y replicabilidad". Su contenido esencial quedó en bullets breves (sección 1 y nota del anexo C).
-8. **Pie de página.** Ya no repite la advertencia larga de "cuidado metodológico". El pie es institucional (DGDGAS — Dirección General de Gastronomía · Gobierno de la Ciudad de Buenos Aires). Solo algunas páginas puntuales llevan una nota breve; las advertencias se concentran en resumen, sección 1 y anexo C.
+8. **Pie de página.** Ya no repite la advertencia larga de "cuidado metodológico". El pie es institucional (DGDGAS — Dirección General de Desarrollo Gastronómico · Gobierno de la Ciudad de Buenos Aires). Solo algunas páginas puntuales llevan una nota breve; las advertencias se concentran en resumen, sección 1 y anexo C.
 9. **Anexos.** Se conservan: casos con respaldo documental (A), fuentes documentales (B) y limitaciones breves (C). Se eliminó el anexo de metodología larga / replicabilidad (condensado en la nota del anexo C).
 
 ## Páginas / secciones eliminadas o fusionadas

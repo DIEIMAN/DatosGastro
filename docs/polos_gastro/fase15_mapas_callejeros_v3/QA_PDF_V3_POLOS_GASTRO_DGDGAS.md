@@ -8,7 +8,7 @@ PDF revisado: `outputs/polos_gastro/fase15_mapas_callejeros_v3/INFORME_POLOS_GAS
 - Estado: apto como V3 mejorado para revision visual e institucional.
 - Cantidad de paginas: **18**.
 - Formato: A4 vertical.
-- Marca visible: **DGDGAS — Direccion General de Gastronomia**.
+- Marca visible: **DGDGAS — Direccion General de Desarrollo Gastronomico**.
 - No se ejecutaron APIs ni llamadas Google Places.
 - No se tocaron datos fuente.
 - No se hizo commit, push ni staging.
@@ -44,7 +44,7 @@ Se rasterizaron las 18 paginas del PDF en `tmp_pdf_preview/polos_fase15_pdf_v3/`
 - [x] Belgrano R presentado como subzona a reforzar, no polo consolidado.
 - [x] Sin textos fuera de cajas.
 - [x] Sin solapamientos criticos en paginas renderizadas.
-- [x] Pie institucional consistente con DGDGAS — Direccion General de Gastronomia.
+- [x] Pie institucional consistente con DGDGAS — Direccion General de Desarrollo Gastronomico.
 
 ## QA editorial y privacidad
 

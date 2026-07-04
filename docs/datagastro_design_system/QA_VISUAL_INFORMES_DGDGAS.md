@@ -10,11 +10,11 @@ Marcar cada ítem: `[ ]` pendiente · `[x]` verificado · `[n/a]` no aplica.
 
 ## A. Marca y portada
 
-- [ ] Marca pública = `DGDGAS – Dirección General de Gastronomía`.
+- [ ] Marca pública = `DGDGAS – Dirección General de Desarrollo Gastronómico`.
 - [ ] **No** aparece `DataGastro` como marca pública (solo interno, si aplica).
 - [ ] La Dirección es más visible que el nombre interno del proyecto.
 - [ ] Portada institucional, limpia, sin decoración marketinera.
-- [ ] «Presenta: DGDGAS – Dirección General de Gastronomía».
+- [ ] «Presenta: DGDGAS – Dirección General de Desarrollo Gastronómico».
 
 ## B. Estructura y editorial
 

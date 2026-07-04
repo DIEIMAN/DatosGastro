@@ -1,6 +1,6 @@
 # QA — Corrida ampliada Google Places (PolosGastro, Fase 11)
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 
 ## Ejecución
 
@@ -66,4 +66,4 @@ Distribución consolidada:
 - No se reconsultaron los 20 ya consultados (exclusión documentada por id).
 - **No PDF/DOCX/mapas.** No se tocaron datos fuente, Borrador 2/3, Cafecito, Mercados ni Casas de
   Pastas. No se borró nada. **No commit/push/staging.**
-- Marca: **DGDGAS — Dirección General de Gastronomía**.
+- Marca: **DGDGAS — Dirección General de Desarrollo Gastronómico**.

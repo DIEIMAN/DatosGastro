@@ -2,7 +2,7 @@
   "meta": {
     "system": "DGDGAS Informes",
     "version": "1.0.0-claude-design-mapped-v1",
-    "marca_publica": "DGDGAS - Direccion General de Gastronomia",
+    "marca_publica": "DGDGAS - Direccion General de Desarrollo Gastronomico",
     "nombre_interno": "DataGastro",
     "descripcion": "Mapeo experimental de tokens Claude Design v1 a la estructura local de DGDGAS Informes. No reemplaza tokens canonicos.",
     "source_tokens": "docs/datagastro_design_system/claude_design_export_v1/tokens.json",

@@ -1,7 +1,7 @@
 # Polos gastronómicos de la Ciudad de Buenos Aires
 ## Universo semilla, lectura territorial y capa auxiliar de geolocalización
 
-DGDGAS — Dirección General de Gastronomía. Borrador 4, base para la pieza institucional.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Borrador 4, base para la pieza institucional.
 Fecha: 2026-07-02. Ordena y caracteriza el universo de polos; no constituye padrón oficial cerrado.
 
 ---

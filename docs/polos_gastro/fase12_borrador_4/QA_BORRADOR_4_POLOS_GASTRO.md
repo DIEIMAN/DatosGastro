@@ -1,6 +1,6 @@
 # QA — Borrador 4 PolosGastro
 
-DGDGAS — Dirección General de Gastronomía. Documento interno. Fecha: 2026-07-02.
+DGDGAS — Dirección General de Desarrollo Gastronómico. Documento interno. Fecha: 2026-07-02.
 
 ## Entregables creados
 

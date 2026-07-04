@@ -1,6 +1,6 @@
 # Diagnóstico editorial del PDF mostrable actual
 
-**Proyecto:** PolosGastro — DGDGAS (Dirección General de Gastronomía)
+**Proyecto:** PolosGastro — DGDGAS (Dirección General de Desarrollo Gastronómico)
 **Fecha de diagnóstico:** 3 de julio de 2026
 **Pieza revisada:** `outputs/polos_gastro/fase19_pdf_mostrable_ale/INFORME_POLOS_GASTRO_DGDGAS_MOSTRABLE_ALE.pdf`
 **Base editorial revisada:** `docs/polos_gastro/fase19_pdf_mostrable_ale/INFORME_POLOS_GASTRO_DGDGAS_PDF_BASE_MOSTRABLE_ALE.md`
@@ -119,7 +119,7 @@ heredados.
 - **Simplificación de tildes** (según QA): algunos textos secundarios pierden tildes por
   compatibilidad del render. No es bloqueante para mostrar, pero conviene señalarlo para que
   el generador cuide acentuación en portada, índice, títulos y resumen ejecutivo.
-- **Pie institucional:** debe unificarse a "DGDGAS — Dirección General de Gastronomía" con
+- **Pie institucional:** debe unificarse a "DGDGAS — Dirección General de Desarrollo Gastronómico" con
   raya larga (em dash) si el sistema de render lo permite; si no, guion largo simple.
 
 ---
@@ -151,7 +151,7 @@ documento de trabajo. Para una versión mostrable en oficina hay que:
 2. eliminar las secciones 6 a 9 y los anexos (páginas 12 en adelante);
 3. reescribir el resumen ejecutivo sin bloque interno;
 4. reconstruir índice y numeración a 11 páginas;
-5. unificar el pie institucional a "DGDGAS — Dirección General de Gastronomía";
+5. unificar el pie institucional a "DGDGAS — Dirección General de Desarrollo Gastronómico";
 6. mantener el lenguaje prudente ("subzona aproximada", "área de lectura", "eje aproximado",
    "área a reforzar") sin presentar subzonas como límites oficiales.
 

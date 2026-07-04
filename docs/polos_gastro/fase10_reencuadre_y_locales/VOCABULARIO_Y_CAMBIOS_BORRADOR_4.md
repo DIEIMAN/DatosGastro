@@ -59,6 +59,6 @@ Esta clasificacion se propone para Borrador 4. No modifica todavia tablas existe
 - Mantener las referencias de locales como preliminares y obligatorias para la capa de puntos, no
   como prueba de vigencia.
 - Reservar Google Places para geolocalizacion y enriquecimiento interno, con revision manual.
-- Evitar "DataGastro" como marca publica visible; usar DGDGAS - Direccion General de Gastronomia
+- Evitar "DataGastro" como marca publica visible; usar DGDGAS - Direccion General de Desarrollo Gastronomico
   cuando se prepare una pieza externa.
 
