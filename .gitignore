@@ -76,3 +76,17 @@ CasasDePastas/archive_review/
 graphify-out/
 node_modules/
 tmp_pdf_preview/
+
+# === Ajustes 2026-07-04 ===
+# Cache del grafo de graphify (regenerable con `graphify update .`)
+.graphify/
+# Carpeta espejo de Cafecito: copias de entregables + respuestas crudas de encuesta
+# (datos personales, guardrail 7/8). Igual criterio que MercadosGastro/ y CasasDePastas/.
+Cafesito/
+# Outputs mal ubicados dentro de scripts/
+scripts/outputs/
+# Renders de página para QA visual: regenerables con scripts/qa/pdf_check.py.
+# Los contact_sheet_*.png viven fuera de estas carpetas y NO quedan ocultos.
+outputs/**/qa_*_png/
+outputs/**/qa_png_*/
+outputs/**/raster_pages/
