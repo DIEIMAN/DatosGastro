@@ -1,0 +1,340 @@
+{
+  "meta": {
+    "system": "DGDGAS Informes",
+    "version": "1.0.0-claude-design-mapped-v1",
+    "marca_publica": "DGDGAS - Direccion General de Gastronomia",
+    "nombre_interno": "DataGastro",
+    "descripcion": "Mapeo experimental de tokens Claude Design v1 a la estructura local de DGDGAS Informes. No reemplaza tokens canonicos.",
+    "source_tokens": "docs/datagastro_design_system/claude_design_export_v1/tokens.json",
+    "canonical_reference": "docs/datagastro_design_system/tokens/design_tokens_dgdgas.json"
+  },
+  "color": {
+    "brand": {
+      "primary": "#1F3B57",
+      "primary_dark": "#16293D",
+      "secondary": "#2C7FB8",
+      "accent": "#C0762B"
+    },
+    "text": {
+      "primary": "#1B2733",
+      "secondary": "#566573",
+      "muted": "#8A97A3",
+      "on_brand": "#FFFFFF",
+      "on_brand_soft": "#EAF0F5",
+      "table": "#3C4B59"
+    },
+    "surface": {
+      "page": "#FFFFFF",
+      "card": "#F4F6F8",
+      "note": "#F4F6F8",
+      "warm": "#F6F4EF",
+      "warn": "#F4EAE0",
+      "ok": "#E9F1EC",
+      "zebra": "#FAFBFC",
+      "desk": "#E7EAED"
+    },
+    "border": {
+      "subtle": "#DDE3E9",
+      "strong": "#C4CDD6",
+      "soft": "#EDF1F4",
+      "accent": "#C0762B"
+    },
+    "status": {
+      "strong": "#2F6E5B",
+      "medium": "#2C6E9E",
+      "weak": "#9A6B1E",
+      "pending": "#5E6B78",
+      "review": "#2C6E9E",
+      "validation": "#A85B2A",
+      "waiting": "#8A97A3",
+      "context": "#3F7A86",
+      "no_delimita": "#A85B2A",
+      "internal": "#4A5568",
+      "alert": "#A23A2C"
+    },
+    "chart": {
+      "sequence": [
+        "#1F3B57",
+        "#2C7FB8",
+        "#C0762B",
+        "#3F7A86",
+        "#8A97A3"
+      ],
+      "grid": "#DDE3E9",
+      "empty": "#FAFBFC"
+    }
+  },
+  "typography": {
+    "family": {
+      "head": "Libre Franklin, Arial, Franklin Gothic, sans-serif",
+      "body": "Source Sans 3, Calibri, Segoe UI, Arial, sans-serif",
+      "sans": "Source Sans 3, Calibri, Segoe UI, Arial, sans-serif",
+      "serif": "Georgia, Liberation Serif, serif",
+      "mono": "IBM Plex Mono, Consolas, Courier New, monospace"
+    },
+    "role": {
+      "display": "head",
+      "heading": "head",
+      "body": "body",
+      "caption": "mono"
+    },
+    "scale": {
+      "display": 26,
+      "h1": 17,
+      "h2": 12.5,
+      "h3": 10.5,
+      "body": 10.5,
+      "small": 9,
+      "caption": 8,
+      "footer": 8
+    },
+    "weight": {
+      "regular": "normal",
+      "bold": "bold"
+    },
+    "line_height": {
+      "tight": 1.15,
+      "normal": 1.5,
+      "loose": 1.55
+    }
+  },
+  "layout": {
+    "page": {
+      "size": "A4",
+      "width_mm": 210,
+      "height_mm": 297,
+      "orientation": "portrait",
+      "dpi": 200
+    },
+    "margin_frac": {
+      "left": 0.065,
+      "right": 0.065,
+      "top": 0.075,
+      "bottom": 0.075
+    },
+    "margin_mm": {
+      "left": 20,
+      "right": 20,
+      "top": 22,
+      "bottom": 22
+    },
+    "content_width_frac": 0.87,
+    "grid": {
+      "columns": 12,
+      "gutter_mm": 5,
+      "text_column_width_mm": 170
+    }
+  },
+  "spacing": {
+    "unit": 4,
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48
+  },
+  "radius": {
+    "none": 0,
+    "sm": 2,
+    "md": 4,
+    "lg": 4,
+    "pill": 999
+  },
+  "table": {
+    "header_fill": "brand.primary",
+    "header_text": "text.on_brand",
+    "row_fill": "surface.page",
+    "row_fill_alt": "surface.zebra",
+    "border": "border.soft",
+    "border_width": 0.6,
+    "cell_pad_mm": 3.5,
+    "font_size": "small",
+    "header_font_size": "small",
+    "align_default": "left",
+    "align_numeric": "right"
+  },
+  "box": {
+    "question": {
+      "fill": "surface.page",
+      "border": "border.subtle",
+      "accent": "brand.secondary",
+      "radius": "md",
+      "pad_mm": 6
+    },
+    "reading": {
+      "fill": "surface.card",
+      "border": "border.subtle",
+      "accent": "brand.primary",
+      "radius": "md",
+      "pad_mm": 6
+    },
+    "method": {
+      "fill": "surface.warm",
+      "border": "border.subtle",
+      "accent": "brand.accent",
+      "radius": "sm",
+      "pad_mm": 5
+    },
+    "warning": {
+      "fill": "surface.warm",
+      "border": "border.strong",
+      "accent": "status.validation",
+      "radius": "md",
+      "pad_mm": 6
+    },
+    "validation": {
+      "fill": "surface.warn",
+      "border": "border.strong",
+      "accent": "status.validation",
+      "radius": "md",
+      "pad_mm": 6
+    }
+  },
+  "map": {
+    "land_fill": "#EAEDF0",
+    "water_fill": "#FAFBFC",
+    "boundary_line": "#DDE3E9",
+    "boundary_width": 0.5,
+    "point_fill": "brand.secondary",
+    "point_edge": "#FFFFFF",
+    "choropleth_min": "#F4F6F8",
+    "choropleth_max": "#1F3B57",
+    "label_text": "text.secondary",
+    "legend_fill": "surface.page",
+    "legend_border": "border.subtle",
+    "scope_note_required": true,
+    "disclaimer_text": "Referencia territorial; no delimita oficialmente polos.",
+    "source_caption_text": "Base cartografica: Buenos Aires Data - Barrios CABA. No delimitacion oficial de polos."
+  },
+  "footer": {
+    "text_color": "text.muted",
+    "rule_color": "border.subtle",
+    "font_size": "footer",
+    "show_page_number": true,
+    "pattern": "DGDGAS - {proyecto} - {tipo}"
+  },
+  "content_states": {
+    "principal": {
+      "color": "status.strong",
+      "label": "Documentacion fuerte"
+    },
+    "secundario": {
+      "color": "status.medium",
+      "label": "Documentacion media"
+    },
+    "preliminar": {
+      "color": "status.pending",
+      "label": "Pendiente"
+    },
+    "pendiente": {
+      "color": "status.validation",
+      "label": "Requiere validacion"
+    },
+    "en_espera": {
+      "color": "status.waiting",
+      "label": "En espera de evidencia"
+    },
+    "contexto": {
+      "color": "status.context",
+      "label": "Capa objetiva de contexto"
+    },
+    "no_delimita": {
+      "color": "status.no_delimita",
+      "label": "No delimita oficialmente"
+    },
+    "anexo": {
+      "color": "status.internal",
+      "label": "Anexo / caso secundario"
+    },
+    "advertencia": {
+      "color": "status.alert",
+      "label": "Advertencia real"
+    },
+    "validacion": {
+      "color": "status.validation",
+      "label": "Requiere validacion"
+    },
+    "interno": {
+      "color": "status.internal",
+      "label": "Insumo interno / no publicable"
+    },
+    "historico": {
+      "color": "status.context",
+      "label": "Referencia historica"
+    }
+  },
+  "experimental_claude_design": {
+    "status": "evaluacion",
+    "do_not_use_as_canonical": true,
+    "public_brand_rule": "DGDGAS es marca publica; DataGastro es nombre interno.",
+    "map_rule": "Mapas como referencia territorial; no delimitacion oficial; no usar Google Places como base publica.",
+    "state_details": {
+      "fuerte": {
+        "dot": "#2F6E5B",
+        "text": "#245A4A",
+        "bg": "#E9F1EC",
+        "border": "#C7DDD3",
+        "label": "Documentacion fuerte"
+      },
+      "media": {
+        "dot": "#2C6E9E",
+        "text": "#245980",
+        "bg": "#E9F0F6",
+        "border": "#C6D9E8",
+        "label": "Documentacion media"
+      },
+      "debil": {
+        "dot": "#9A6B1E",
+        "text": "#7E571A",
+        "bg": "#F4EEE1",
+        "border": "#E4D5B8",
+        "label": "Documentacion debil"
+      },
+      "validacion": {
+        "dot": "#A85B2A",
+        "text": "#8A4B22",
+        "bg": "#F4EAE0",
+        "border": "#E4CDB8",
+        "label": "Requiere validacion"
+      },
+      "enEspera": {
+        "dot": "#8A97A3",
+        "text": "#4C5964",
+        "bg": "#ECEFF1",
+        "border": "#D3DAE0",
+        "label": "En espera de evidencia"
+      },
+      "interno": {
+        "dot": "#4A5568",
+        "text": "#3E4A57",
+        "bg": "#EBEDF0",
+        "border": "#A9B4BF",
+        "label": "Insumo interno / no publicable"
+      },
+      "alerta": {
+        "dot": "#A23A2C",
+        "text": "#8A2E22",
+        "bg": "#F6E9E7",
+        "border": "#E7C9C4",
+        "label": "Advertencia real"
+      }
+    },
+    "chip": {
+      "shape_radius": 3,
+      "dot_size": 8,
+      "dot_small_size": 6,
+      "text_required": true
+    },
+    "shadow": {
+      "print": "none",
+      "screen": "0 3px 10px rgba(31,59,87,0.07)"
+    },
+    "map_halos": {
+      "nucleo_dot": "#1F3B57",
+      "relevante_dot": "#2C7FB8",
+      "emergente_dot": "#C0762B",
+      "en_espera_border": "1.5px dashed #8A97A3"
+    }
+  }
+}

@@ -1,0 +1,254 @@
+# =============================================================================
+# DGDGAS Informes — Design System v1
+# Tokens de diseño (fuente de verdad, semánticos)
+# =============================================================================
+#
+# Este archivo define los tokens visuales del sistema de informes de la
+# Direccion General de Gastronomia (DGDGAS). Es la fuente unica de verdad:
+# el JSON (design_tokens_dgdgas.json) y el modulo Python
+# (scripts/shared/reporting_dgdgas/style_tokens_dgdgas.py) deben mantenerse
+# alineados con estos valores.
+#
+# Paleta base heredada del informe Cafecito DGDGAS (REVISION_4), tomada como
+# referencia editorial y visual principal. No representa marca comercial:
+# es una paleta institucional sobria de gestion publica.
+#
+# Regla: usar SIEMPRE nombres semanticos (brand.primary, text.secondary...)
+# en los generadores, nunca el HEX directo. Asi el sistema se puede reestilar
+# desde un unico lugar.
+# =============================================================================
+
+meta:
+  system: "DGDGAS Informes"
+  version: "1.0.0"
+  marca_publica: "DGDGAS - Direccion General de Gastronomia"
+  nombre_interno: "DataGastro"          # solo uso interno / metodologico
+  descripcion: >
+    Sistema visual reutilizable para informes institucionales en PDF, DOCX y
+    Google Docs de la Direccion General de Gastronomia.
+
+# -----------------------------------------------------------------------------
+# COLOR
+# -----------------------------------------------------------------------------
+color:
+  brand:
+    primary: "#1F3B57"     # INK  - azul institucional profundo (portada, titulos)
+    secondary: "#2C7FB8"   # BLUE - azul de apoyo (barras, acentos de dato)
+    accent: "#C0762B"      # ORANGE - acento calido, uso moderado (destacar)
+
+  text:
+    primary: "#222222"     # cuerpo principal
+    secondary: "#555555"   # bajadas, epigrafes, notas
+    muted: "#777D86"       # metadatos, pies discretos
+    on_brand: "#FFFFFF"    # texto sobre superficies brand.primary
+
+  surface:
+    page: "#FFFFFF"        # fondo de pagina
+    card: "#EEF2F6"        # cajas de contenido neutras
+    note: "#EAF1F8"        # caja de nota / lectura (azul muy suave)
+    warn: "#F7EBDC"        # caja de alcance / advertencia (naranja suave)
+    ok: "#EAF6EF"          # caja de estado positivo (verde suave)
+    zebra: "#F4F7FA"       # filas alternas de tabla
+
+  border:
+    subtle: "#D9DEE5"      # LINE - separadores finos, bordes de tabla
+    strong: "#B8C2CE"      # bordes marcados, encabezado de tabla
+
+  # Colores de ESTADO (semaforo institucional, sobrio, no alarmista).
+  status:
+    strong: "#1A9850"      # dato consolidado / resultado principal
+    medium: "#C0762B"      # dato parcial / secundario
+    weak: "#B0403A"        # dato debil / poca evidencia (rojo apagado)
+    pending: "#8A6D3B"     # pendiente de validacion (ocre)
+    review: "#2C7FB8"      # en revision / preliminar
+
+  chart:
+    # Secuencia para graficos de barras/categorias. Sobria, sin decoracion.
+    sequence:
+      - "#1F3B57"
+      - "#2C7FB8"
+      - "#C0762B"
+      - "#6F4E37"
+      - "#68717C"
+    grid: "#D7DEE8"
+    empty: "#F2F4F7"       # celda/segmento sin valor
+
+# -----------------------------------------------------------------------------
+# TIPOGRAFIA
+# -----------------------------------------------------------------------------
+typography:
+  # Familias sugeridas. Se priorizan fuentes ampliamente disponibles y de buena
+  # legibilidad institucional. Fallbacks para PDF (matplotlib), DOCX (Word) y
+  # Google Docs.
+  family:
+    sans: "DejaVu Sans, Arial, Liberation Sans, sans-serif"
+    serif: "DejaVu Serif, Georgia, Liberation Serif, serif"
+    mono: "DejaVu Sans Mono, Consolas, monospace"
+  # Rol por defecto: los informes usan sans para todo (institucional, limpio).
+  role:
+    display: "sans"        # titulo de portada
+    heading: "sans"        # titulos de seccion
+    body: "sans"           # cuerpo
+    caption: "sans"        # epigrafes / notas
+
+  # Escala de tamanos en puntos (pt). Pensada para A4.
+  scale:
+    display: 26            # titulo de portada
+    h1: 15                 # titulo de seccion (ej. "1. Datos generales")
+    h2: 12                 # subtitulo / bajada de seccion
+    h3: 10.5               # subtitulo menor / titulo de bloque
+    body: 9.5              # cuerpo
+    small: 8.6             # notas, base/universo, multi-respuesta
+    caption: 7.9           # epigrafes de tabla/grafico
+    footer: 7.5            # pie de pagina
+
+  weight:
+    regular: "normal"
+    bold: "bold"
+
+  line_height:
+    tight: 1.15
+    normal: 1.35
+    loose: 1.5
+
+# -----------------------------------------------------------------------------
+# LAYOUT / PAGINA
+# -----------------------------------------------------------------------------
+layout:
+  page:
+    size: "A4"
+    width_mm: 210
+    height_mm: 297
+    orientation: "portrait"
+    dpi: 200               # render de PDF
+  # Margenes expresados como fraccion del ancho/alto (compatibles con el uso
+  # de coordenadas relativas en matplotlib, como en los generadores actuales).
+  margin_frac:
+    left: 0.065
+    right: 0.065
+    top: 0.075
+    bottom: 0.065
+  # Margenes en mm (para DOCX / Google Docs).
+  margin_mm:
+    left: 20
+    right: 20
+    top: 22
+    bottom: 20
+  content_width_frac: 0.87  # 1 - left - right (aprox), ancho util de contenido
+
+# -----------------------------------------------------------------------------
+# ESPACIADO (escala base 4)
+# -----------------------------------------------------------------------------
+spacing:
+  unit: 4
+  xs: 4
+  sm: 8
+  md: 12
+  lg: 16
+  xl: 24
+  xxl: 32
+
+# -----------------------------------------------------------------------------
+# RADIOS DE BORDE
+# -----------------------------------------------------------------------------
+radius:
+  none: 0
+  sm: 3
+  md: 6
+  lg: 10
+  pill: 999
+
+# -----------------------------------------------------------------------------
+# COMPONENTES: TABLA
+# -----------------------------------------------------------------------------
+table:
+  header_fill: "border.strong"
+  header_text: "text.on_brand"
+  row_fill: "surface.page"
+  row_fill_alt: "surface.zebra"
+  border: "border.subtle"
+  border_width: 0.6
+  cell_pad_mm: 3
+  font_size: "small"
+  header_font_size: "small"
+  align_default: "left"
+  align_numeric: "right"
+
+# -----------------------------------------------------------------------------
+# COMPONENTES: CAJAS
+# -----------------------------------------------------------------------------
+box:
+  question:                 # "Pregunta analizada"
+    fill: "surface.card"
+    border: "border.subtle"
+    accent: "brand.secondary"
+    radius: "md"
+    pad_mm: 6
+  reading:                  # "Lectura de resultados"
+    fill: "surface.note"
+    border: "border.subtle"
+    accent: "brand.primary"
+    radius: "md"
+    pad_mm: 6
+  method:                   # "Nota metodologica"
+    fill: "surface.card"
+    border: "border.subtle"
+    accent: "text.muted"
+    radius: "sm"
+    pad_mm: 5
+  warning:                  # "Alcance / advertencia"
+    fill: "surface.warn"
+    border: "border.subtle"
+    accent: "status.medium"
+    radius: "md"
+    pad_mm: 6
+  validation:               # "Requiere validacion"
+    fill: "surface.warn"
+    border: "border.strong"
+    accent: "status.pending"
+    radius: "md"
+    pad_mm: 6
+
+# -----------------------------------------------------------------------------
+# COMPONENTES: MAPAS
+# -----------------------------------------------------------------------------
+map:
+  # Estilo sobrio para cartografia de referencia territorial (NO limites
+  # oficiales). Barrios/comunas como soporte. Ver reglas en el design system.
+  land_fill: "#F3F5F8"
+  water_fill: "#E4ECF3"
+  boundary_line: "#C3CCD7"      # limites de barrio/comuna, tenue
+  boundary_width: 0.5
+  point_fill: "brand.secondary"
+  point_edge: "#FFFFFF"
+  choropleth_min: "#EAF1F8"
+  choropleth_max: "#1F3B57"
+  label_text: "text.secondary"
+  legend_fill: "surface.page"
+  legend_border: "border.subtle"
+  # Nota de alcance obligatoria en mapas conceptuales/preliminares.
+  scope_note_required: true
+
+# -----------------------------------------------------------------------------
+# COMPONENTES: FOOTER
+# -----------------------------------------------------------------------------
+footer:
+  text_color: "text.muted"
+  rule_color: "border.subtle"
+  font_size: "footer"
+  show_page_number: true
+  # Formato sugerido: "DGDGAS - <Proyecto> - <Tipo de informe>"
+  pattern: "DGDGAS - {proyecto} - {tipo}"
+
+# -----------------------------------------------------------------------------
+# ESTADOS Y VARIANTES DE CONTENIDO (etiquetas semanticas de bloque)
+# -----------------------------------------------------------------------------
+content_states:
+  principal: { color: "status.strong", label: "Resultado principal" }
+  secundario: { color: "status.medium", label: "Resultado secundario" }
+  preliminar: { color: "status.review", label: "Preliminar" }
+  pendiente: { color: "status.pending", label: "Requiere validacion" }
+  anexo: { color: "text.muted", label: "Anexo" }
+  advertencia: { color: "status.medium", label: "Advertencia metodologica" }
+  interno: { color: "text.muted", label: "Uso interno" }
+  historico: { color: "text.muted", label: "Referencia historica" }

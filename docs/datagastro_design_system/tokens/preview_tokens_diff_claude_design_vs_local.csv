@@ -1,0 +1,59 @@
+token_claude_design,valor_claude_design,token_local_equivalente,valor_local,accion_recomendada,observacion
+$system,DGDGAS Informes - Design System,meta.system,DGDGAS Informes,adaptar,Mantener nombre local breve y declarar origen experimental
+$version,1.0.0,meta.version,1.0.0,adoptar,Coincide
+$publicBrand,DGDGAS - Direccion General de Gastronomia,meta.marca_publica,DGDGAS - Direccion General de Gastronomia,adoptar,DGDGAS queda como marca publica
+$internalName,DataGastro,meta.nombre_interno,DataGastro,adoptar,Solo uso interno
+color.brand.primary.value,#1F3B57,color.brand.primary,#1F3B57,adoptar,Coincidencia directa
+color.brand.primaryDark.value,#16293D,color.brand.primary_dark,,adaptar,Nuevo token experimental
+color.brand.secondary.value,#2C7FB8,color.brand.secondary,#2C7FB8,adoptar,Coincidencia directa
+color.brand.accent.value,#C0762B,color.brand.accent,#C0762B,adoptar,Coincidencia directa
+color.ink.base.value,#1B2733,color.text.primary,#222222,adaptar,Probar contraste y legibilidad
+color.ink.muted.value,#566573,color.text.secondary,#555555,adaptar,Cambio menor
+color.ink.faint.value,#8A97A3,color.text.muted,#777D86,adaptar,Mas tenue para captions
+color.surface.paper.value,#FFFFFF,color.surface.page,#FFFFFF,adoptar,Coincide
+color.surface.base.value,#F4F6F8,color.surface.card,#EEF2F6,adaptar,Unifica caja fria
+color.surface.warm.value,#F6F4EF,color.surface.warm,,adaptar,Nuevo token para nota metodologica
+color.surface.subtle.value,#FAFBFC,color.surface.zebra,#F4F7FA,adaptar,Alternancia mas tenue
+color.line.base.value,#DDE3E9,color.border.subtle,#D9DEE5,adaptar,Diferencia menor
+color.line.strong.value,#C4CDD6,color.border.strong,#B8C2CE,adaptar,Diferencia menor
+color.line.soft.value,#EDF1F4,color.border.soft,,adaptar,Nuevo divisor interno
+state.fuerte.dot,#2F6E5B,color.status.strong,#1A9850,adaptar,Evidencia fuerte menos saturada
+state.media.dot,#2C6E9E,color.status.medium,#C0762B,adaptar,Separar evidencia media de acento calido
+state.debil.dot,#9A6B1E,color.status.weak,#B0403A,adaptar,Evita rojo para documentacion debil
+state.pendiente.dot,#5E6B78,color.status.pending,#8A6D3B,adaptar,Pendiente neutro
+state.validacion.dot,#A85B2A,color.status.validation,,adoptar,Nuevo estado requerido
+state.enEspera.dot,#8A97A3,content_states.en_espera,,adoptar,Lenguaje publico para evidencia insuficiente
+state.contexto.dot,#3F7A86,content_states.contexto,,adoptar,Capa objetiva de contexto
+state.noDelimita.dot,#A85B2A,content_states.no_delimita,,adaptar,Usar en cartografia con prudencia
+state.interno.dot,#4A5568,content_states.interno,text.muted,adaptar,No publicable
+state.alerta.dot,#A23A2C,content_states.advertencia,status.medium,adaptar,Solo advertencia real
+typography.family.head.value,Libre Franklin,typography.family.head,,adaptar,Usar fallback DOCX seguro
+typography.family.body.value,Source Sans 3,typography.family.body,,adaptar,Usar fallback DOCX seguro
+typography.family.mono.value,IBM Plex Mono,typography.family.mono,DejaVu Sans Mono / Consolas,adaptar,Usar Consolas/Courier New si no hay fuente
+typography.size.h1.pt,26,typography.scale.display,26,adoptar,Portada/display
+typography.size.h2.pt,17,typography.scale.h1,15,adaptar,Titulo de seccion
+typography.size.h3.pt,12.5,typography.scale.h2,12,adaptar,Subseccion
+typography.size.body.pt,10.5,typography.scale.body,9.5,adaptar,Puede aumentar paginado
+typography.size.small.pt,9,typography.scale.small,8.6,adaptar,Diferencia menor
+typography.size.caption.pt,8,typography.scale.caption,7.9,adoptar,Casi equivalente
+space.xs,4px,spacing.xs,4,adoptar,Coincide
+space.sm,8px,spacing.sm,8,adoptar,Coincide
+space.md,16px,spacing.md,12,adaptar,Cambia densidad
+space.lg,24px,spacing.lg,16,adaptar,Cambia paginado
+space.xl,32px,spacing.xl,24,adaptar,Cambia paginado
+space.xxl,48px,spacing.xxl,32,adaptar,Cambia portada/separadores
+radius.sm,2px,radius.sm,3,adaptar,Criterio mas sobrio
+radius.md,4px,radius.md,6,adaptar,No superar 4px si se adopta
+page.size,A4,layout.page.size,A4,adoptar,Coincide
+page.orientation,portrait,layout.page.orientation,portrait,adoptar,Coincide
+page.marginTop,22mm,layout.margin_mm.top,22,adoptar,Coincide
+page.marginBottom,22mm,layout.margin_mm.bottom,20,adaptar,Aumenta margen inferior
+page.grid.columns,12,layout.grid.columns,,adaptar,Guia futura
+table.header.bg,#1F3B57,table.header_fill,border.strong,adaptar,Header azul institucional
+table.header.text,#EAF0F5,table.header_text,text.on_brand,adaptar,Puede mapear a text.on_brand_soft
+table.rowDivider.color,#EDF1F4,table.border,border.subtle,adaptar,Usar border.soft
+chip.dot.size,8px,experimental_claude_design.chip.dot_size,,dejar_para_despues,Requiere render de chips
+map.barrioFill.value,#EAEDF0,map.land_fill,#F3F5F8,adaptar,Barrios/comunas tenues
+map.haloNucleo.value,radial-gradient,map_halos.nucleo,,dejar_para_despues,Riesgo de parecer delimitacion oficial
+map.disclaimer.text,Referencia territorial - no delimita oficialmente polos,map.disclaimer_text,,adoptar,Obligatorio en mapas territoriales
+shadow.print,none,experimental_claude_design.shadow.print,,adoptar,Sin sombras en PDF/DOCX

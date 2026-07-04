@@ -1,0 +1,159 @@
+{
+  "_comment": "DGDGAS Informes v1 - Plantilla de payload para Google Docs. Copiar y completar con contenido real. Estructura de bloques compatible con el generador DOCX/Docs. Marca publica DGDGAS. No incluir datos individuales, contactos, rutas ni keys. Tipos de bloque soportados: facts, paragraph, table, question, reading, method, warning, bullets, map, image.",
+  "meta": {
+    "title": "<Titulo del informe>",
+    "subtitle": "<Subtitulo o bajada>",
+    "presenta": "DGDGAS – Dirección General de Gastronomía",
+    "footer": "DGDGAS · <Proyecto> · <Tipo de informe>",
+    "version": "PLANTILLA_V1"
+  },
+  "cover": {
+    "intro": "<Descripción breve de qué presenta el informe.>",
+    "facts": [
+      ["Alcance", "<...>"],
+      ["Lugar / territorio", "<...>"],
+      ["Periodo / fechas", "<...>"],
+      ["Presenta", "DGDGAS – Dirección General de Gastronomía"]
+    ]
+  },
+  "index": [
+    { "num": "1", "texto": "Datos generales", "pagina": "3" },
+    { "num": "2", "texto": "Fuente o relevamiento", "pagina": "4" },
+    { "num": "3", "texto": "Preguntas o variables", "pagina": "5" },
+    { "num": "4", "texto": "Resultados", "pagina": "6" },
+    { "num": "5", "texto": "Síntesis", "pagina": "" },
+    { "num": "6", "texto": "Aspectos a considerar", "pagina": "" },
+    { "num": "7", "texto": "Anexos", "pagina": "" }
+  ],
+  "sections": [
+    {
+      "number": "1",
+      "title": "Datos generales",
+      "page": 3,
+      "subtitle": "<Marco, alcance y volumen.>",
+      "blocks": [
+        {
+          "type": "facts",
+          "rows": [
+            ["Modalidad", "<...>"],
+            ["Universo", "<Qué mide el dato.>"],
+            ["Periodo", "<...>"],
+            ["Volumen", "<...>"],
+            ["Presenta", "DGDGAS – Dirección General de Gastronomía"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<Párrafo descriptivo de los datos generales.>"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Preguntas o variables",
+      "page": 5,
+      "subtitle": "<Qué se relevó y de qué tipo.>",
+      "blocks": [
+        {
+          "type": "question",
+          "pregunta": "<Texto de la pregunta o variable>",
+          "tipo": "cerrada",
+          "observa": "<Qué permite observar>"
+        },
+        {
+          "type": "question",
+          "pregunta": "<Texto de la pregunta multi-respuesta>",
+          "tipo": "multi",
+          "observa": "<Qué permite observar>",
+          "nota_multi": "Permitía más de una opción; se muestran menciones y la suma puede superar 100%."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Resultados",
+      "page": 6,
+      "subtitle": "<Resultados observados.>",
+      "blocks": [
+        {
+          "type": "question",
+          "pregunta": "<Pregunta analizada>",
+          "tipo": "cerrada",
+          "observa": "<Qué permite observar>"
+        },
+        {
+          "type": "table",
+          "title": "<Título de la tabla>",
+          "intro": "<Introducción breve.>",
+          "headers": ["Categoría", "Menciones", "% base"],
+          "rows": [
+            ["<...>", 0, "0 %"],
+            ["<...>", 0, "0 %"]
+          ],
+          "base": "<Base / universo>",
+          "fuente": "<Fuente>"
+        },
+        {
+          "type": "reading",
+          "text": "<Lectura descriptiva y prudente del resultado.>"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Síntesis de resultados observados",
+      "page": null,
+      "subtitle": "Principales resultados descriptos.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "intro": "A partir de la evidencia se observa lo siguiente:",
+          "items": [
+            "<Punto de síntesis 1>",
+            "<Punto de síntesis 2>"
+          ]
+        },
+        {
+          "type": "method",
+          "text": "Resultados agregados. <Aclarar alcance / muestra.>"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Aspectos a considerar",
+      "page": null,
+      "subtitle": "Posibles líneas de trabajo, planteadas de manera tentativa.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "intro": "A modo de hipótesis, podrían considerarse los siguientes aspectos:",
+          "items": [
+            "Podría <...>.",
+            "Sería conveniente evaluar <...>."
+          ]
+        },
+        {
+          "type": "warning",
+          "text": "Consideraciones tentativas; no constituyen conclusiones definitivas."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Anexos",
+      "page": null,
+      "subtitle": "Material complementario.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Material complementario. No forma parte de los resultados principales."
+        },
+        {
+          "type": "warning",
+          "text": "<Aclaración de alcance del anexo.>"
+        }
+      ]
+    }
+  ]
+}

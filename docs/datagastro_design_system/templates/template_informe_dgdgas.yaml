@@ -1,0 +1,141 @@
+# =============================================================================
+# DGDGAS Informes — Plantilla de CONTENIDO de informe (v1)
+# =============================================================================
+#
+# Copiar este archivo a la carpeta del proyecto (por ejemplo docs/polos_gastro/)
+# y completarlo con el contenido REAL del informe. El estilo NO va aca: vive en
+# los tokens. Este archivo solo contiene los textos visibles y la estructura.
+#
+# Reglas:
+#   - Marca publica: DGDGAS. No usar DataGastro como marca publica.
+#   - No inventar datos, metricas, fuentes ni conclusiones.
+#   - Preguntas antes de resultados. Recomendaciones en potencial.
+#   - No incluir respuestas individuales, contactos, CUIT/DNI, rutas ni keys.
+#   - Placeholders entre <> son para completar; borrar los que no apliquen.
+# =============================================================================
+
+meta:
+  marca: "DGDGAS"
+  proyecto: "<Nombre del proyecto>"          # ej. PolosGastro
+  tipo: "<Tipo de informe>"                  # ej. Informe territorial
+  fecha_documento: "<Mes de AAAA>"
+  footer: "DGDGAS - <Proyecto> - <Tipo>"
+
+institucion:
+  sigla: "DGDGAS"
+  nombre: "Direccion General de Gastronomia"
+  marco: "Gobierno de la Ciudad de Buenos Aires - BA Capital Gastronomica"
+
+# ---------------------------------------------------------------- Portada
+portada:
+  kicker_marca: "DGDGAS - Direccion General de Gastronomia"
+  kicker_tipo: "<Informe de resultados / Informe territorial>"
+  titulo: "<Titulo del informe>"
+  subtitulo: "<Subtitulo o bajada>"
+  descripcion: "<Descripcion breve, 2 a 4 lineas, de que presenta el informe.>"
+  pie_institucional: "Presenta: {sigla} - {nombre}."
+  datos_generales:                            # ficha de la portada
+    - ["Alcance", "<...>"]
+    - ["Lugar / territorio", "<...>"]
+    - ["Periodo / fechas", "<...>"]
+    - ["Presenta", "DGDGAS - Direccion General de Gastronomia"]
+
+# ---------------------------------------------------------------- Indice
+# Las paginas deben ser reales; completar al final. Subsecciones con sub: si.
+indice:
+  titulo: "Indice"
+  subtitulo: "Contenido del informe."
+  entradas:
+    - { num: "1", texto: "Datos generales", pagina: "3" }
+    - { num: "2", texto: "Fuente o relevamiento", pagina: "4" }
+    - { num: "3", texto: "Preguntas o variables", pagina: "5" }
+    - { num: "4", texto: "Resultados", pagina: "6" }
+    - { num: "5", texto: "Sintesis", pagina: "" }
+    - { num: "6", texto: "Aspectos a considerar", pagina: "" }
+    - { num: "7", texto: "Anexos", pagina: "" }
+
+# ------------------------------------------------- 1. Datos generales
+datos_generales:
+  titulo: "1. Datos generales"
+  subtitulo: "<Marco, alcance y volumen.>"
+  ficha:                                       # ficha de relevamiento (#3)
+    modalidad: "<Como se obtuvo el dato.>"
+    universo: "<Que mide el dato. No convertir registros en 'locales activos'.>"
+    periodo: "<...>"
+    volumen: "<...>"
+
+# --------------------------------------------- 2. Fuente o relevamiento
+fuente:
+  titulo: "2. Fuente o relevamiento"
+  subtitulo: "<Descripcion de la fuente.>"
+  texto: "<De donde provienen los datos y su naturaleza.>"
+
+# ------------------------------------------------ 3. Preguntas / variables
+# Una entrada por pregunta o variable. tipo: cerrada | abierta | multi | consentimiento
+preguntas:
+  titulo: "3. Preguntas o variables"
+  subtitulo: "<Que se relevo y de que tipo.>"
+  intro: "<Introduccion breve.>"
+  items:
+    - pregunta: "<Texto de la pregunta o variable>"
+      tipo: "cerrada"
+      observa: "<Que permite observar>"
+    - pregunta: "<Texto de la pregunta>"
+      tipo: "multi"
+      observa: "<Que permite observar>"
+      nota_multi: "Permitia mas de una opcion; se muestran menciones y la suma puede superar 100%."
+  nota_pie: "<Campos operativos o no analizados, si corresponde.>"
+
+# ------------------------------------------------------- 4. Resultados
+# Un bloque por resultado. Cada uno: pregunta -> grafico/mapa/tabla -> lectura.
+resultados:
+  titulo: "4. Resultados"
+  bloques:
+    - id: "resultado_1"
+      titulo: "<Titulo del resultado>"
+      pregunta: "<Pregunta analizada>"
+      tipo_pregunta: "cerrada"
+      visual: "grafico_barras"                 # grafico_barras | mapa | tabla
+      base: "<Base / universo del grafico>"
+      fuente: "<Fuente>"
+      estado: "principal"                      # principal|secundario|preliminar|pendiente
+      lectura: "<Lectura descriptiva y prudente.>"
+    - id: "resultado_mapa"
+      titulo: "<Titulo del mapa>"
+      visual: "mapa"
+      nota_alcance: "Mapa de referencia territorial; no representa limites oficiales."
+      estado: "preliminar"
+      lectura: "<Lectura territorial.>"
+
+# --------------------------------------------------------- 5. Sintesis
+sintesis:
+  titulo: "5. Sintesis de resultados observados"
+  subtitulo: "Principales resultados descriptos."
+  intro: "A partir de la evidencia se observa lo siguiente:"
+  puntos:
+    - "<Punto de sintesis 1>"
+    - "<Punto de sintesis 2>"
+  nota: "Resultados agregados. <Aclarar alcance / muestra.>"
+
+# --------------------------------------------- 6. Aspectos a considerar
+aspectos:
+  titulo: "6. Aspectos a considerar"
+  subtitulo: "Posibles lineas de trabajo, planteadas de manera tentativa."
+  intro: "A modo de hipotesis, podrian considerarse los siguientes aspectos:"
+  puntos:
+    - "Podria <...>."
+    - "Seria conveniente evaluar <...>."
+  nota: "Consideraciones tentativas; no constituyen conclusiones definitivas."
+
+# ------------------------------------------------------------- 7. Anexos
+anexos:
+  titulo: "7. Anexos"
+  subtitulo: "Material complementario."
+  bloques:
+    - titulo: "<Titulo del anexo>"
+      intro: "Material complementario. No forma parte de los resultados principales."
+      nota_prudente: "<Aclaracion de alcance.>"
+
+# ----------------------------------------------- Nota metodologica breve
+nota_metodologica:
+  texto: "<Nota breve. El detalle extenso va en anexo, no en el cuerpo.>"

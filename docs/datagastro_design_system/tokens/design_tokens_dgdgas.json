@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "system": "DGDGAS Informes",
+    "version": "1.0.0",
+    "marca_publica": "DGDGAS - Direccion General de Gastronomia",
+    "nombre_interno": "DataGastro",
+    "descripcion": "Sistema visual reutilizable para informes institucionales en PDF, DOCX y Google Docs de la Direccion General de Gastronomia."
+  },
+  "color": {
+    "brand": {
+      "primary": "#1F3B57",
+      "secondary": "#2C7FB8",
+      "accent": "#C0762B"
+    },
+    "text": {
+      "primary": "#222222",
+      "secondary": "#555555",
+      "muted": "#777D86",
+      "on_brand": "#FFFFFF"
+    },
+    "surface": {
+      "page": "#FFFFFF",
+      "card": "#EEF2F6",
+      "note": "#EAF1F8",
+      "warn": "#F7EBDC",
+      "ok": "#EAF6EF",
+      "zebra": "#F4F7FA"
+    },
+    "border": {
+      "subtle": "#D9DEE5",
+      "strong": "#B8C2CE"
+    },
+    "status": {
+      "strong": "#1A9850",
+      "medium": "#C0762B",
+      "weak": "#B0403A",
+      "pending": "#8A6D3B",
+      "review": "#2C7FB8"
+    },
+    "chart": {
+      "sequence": ["#1F3B57", "#2C7FB8", "#C0762B", "#6F4E37", "#68717C"],
+      "grid": "#D7DEE8",
+      "empty": "#F2F4F7"
+    }
+  },
+  "typography": {
+    "family": {
+      "sans": "DejaVu Sans, Arial, Liberation Sans, sans-serif",
+      "serif": "DejaVu Serif, Georgia, Liberation Serif, serif",
+      "mono": "DejaVu Sans Mono, Consolas, monospace"
+    },
+    "role": {
+      "display": "sans",
+      "heading": "sans",
+      "body": "sans",
+      "caption": "sans"
+    },
+    "scale": {
+      "display": 26,
+      "h1": 15,
+      "h2": 12,
+      "h3": 10.5,
+      "body": 9.5,
+      "small": 8.6,
+      "caption": 7.9,
+      "footer": 7.5
+    },
+    "weight": {
+      "regular": "normal",
+      "bold": "bold"
+    },
+    "line_height": {
+      "tight": 1.15,
+      "normal": 1.35,
+      "loose": 1.5
+    }
+  },
+  "layout": {
+    "page": {
+      "size": "A4",
+      "width_mm": 210,
+      "height_mm": 297,
+      "orientation": "portrait",
+      "dpi": 200
+    },
+    "margin_frac": {
+      "left": 0.065,
+      "right": 0.065,
+      "top": 0.075,
+      "bottom": 0.065
+    },
+    "margin_mm": {
+      "left": 20,
+      "right": 20,
+      "top": 22,
+      "bottom": 20
+    },
+    "content_width_frac": 0.87
+  },
+  "spacing": {
+    "unit": 4,
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "xxl": 32
+  },
+  "radius": {
+    "none": 0,
+    "sm": 3,
+    "md": 6,
+    "lg": 10,
+    "pill": 999
+  },
+  "table": {
+    "header_fill": "border.strong",
+    "header_text": "text.on_brand",
+    "row_fill": "surface.page",
+    "row_fill_alt": "surface.zebra",
+    "border": "border.subtle",
+    "border_width": 0.6,
+    "cell_pad_mm": 3,
+    "font_size": "small",
+    "header_font_size": "small",
+    "align_default": "left",
+    "align_numeric": "right"
+  },
+  "box": {
+    "question": { "fill": "surface.card", "border": "border.subtle", "accent": "brand.secondary", "radius": "md", "pad_mm": 6 },
+    "reading": { "fill": "surface.note", "border": "border.subtle", "accent": "brand.primary", "radius": "md", "pad_mm": 6 },
+    "method": { "fill": "surface.card", "border": "border.subtle", "accent": "text.muted", "radius": "sm", "pad_mm": 5 },
+    "warning": { "fill": "surface.warn", "border": "border.subtle", "accent": "status.medium", "radius": "md", "pad_mm": 6 },
+    "validation": { "fill": "surface.warn", "border": "border.strong", "accent": "status.pending", "radius": "md", "pad_mm": 6 }
+  },
+  "map": {
+    "land_fill": "#F3F5F8",
+    "water_fill": "#E4ECF3",
+    "boundary_line": "#C3CCD7",
+    "boundary_width": 0.5,
+    "point_fill": "brand.secondary",
+    "point_edge": "#FFFFFF",
+    "choropleth_min": "#EAF1F8",
+    "choropleth_max": "#1F3B57",
+    "label_text": "text.secondary",
+    "legend_fill": "surface.page",
+    "legend_border": "border.subtle",
+    "scope_note_required": true
+  },
+  "footer": {
+    "text_color": "text.muted",
+    "rule_color": "border.subtle",
+    "font_size": "footer",
+    "show_page_number": true,
+    "pattern": "DGDGAS - {proyecto} - {tipo}"
+  },
+  "content_states": {
+    "principal": { "color": "status.strong", "label": "Resultado principal" },
+    "secundario": { "color": "status.medium", "label": "Resultado secundario" },
+    "preliminar": { "color": "status.review", "label": "Preliminar" },
+    "pendiente": { "color": "status.pending", "label": "Requiere validacion" },
+    "anexo": { "color": "text.muted", "label": "Anexo" },
+    "advertencia": { "color": "status.medium", "label": "Advertencia metodologica" },
+    "interno": { "color": "text.muted", "label": "Uso interno" },
+    "historico": { "color": "text.muted", "label": "Referencia historica" }
+  }
+}
