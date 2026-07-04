@@ -43,18 +43,47 @@ carga en cada sesión. **Ante conflicto, ganan los guardrails.**
 ## Entorno
 
 - Windows. Shell primaria PowerShell; Bash disponible para POSIX.
-- Python en `.venv/`. `pandas` disponible; `openpyxl` **no** está instalado: para leer `.xlsx`
-  sin dependencias, usar lectura por `zipfile` + XML (ver `outputs/analisis_interno/.../_*.py`).
+- **Python: invocar SIEMPRE `.venv/Scripts/python.exe`, nunca `python` a secas** (el Python de
+  Microsoft Store lo pisa y no tiene los paquetes del proyecto).
+- Paquetes disponibles en `.venv`: `pandas`, `openpyxl`, `pypdf`, `pymupdf` (importar como
+  `fitz`), `reportlab`, `PIL`, `geopandas`, `matplotlib`, `requests`.
+- **QA visual de PDFs:** usar `scripts/qa/pdf_check.py` (páginas → PNG vía PyMuPDF + texto).
+  Después de generar cualquier PDF, renderizar y **mirar** las páginas antes de darlo por
+  terminado; no alcanza con que el generador corra sin error.
+- **Commits multilínea:** here-string de PowerShell `@'...'@` o `git commit -F archivo.txt`;
+  nunca heredocs bash en PowerShell. Para transformar texto, preferir Python del venv antes que
+  one-liners de `sed`/`awk`.
+- **KPIs de informes:** si existe `kpis_lock.json` junto al generador de un informe, validar con
+  `scripts/qa/validate_kpis.py` antes de entregar; los números canónicos no se cambian sin aviso.
 - Pipeline (no regenerar salidas sin permiso):
   `python src/build_model.py --strict-real`, `python src/build_analytics.py --strict-real`,
   `python src/validate_model.py --strict-real`, `python -m unittest discover tests`.
 
+## Continuidad entre sesiones
+
+- Al iniciar trabajo que continúa algo previo, leer el `docs/revisiones/HANDOFF_*.md` más
+  reciente (un hook de SessionStart lo señala automáticamente).
+- En tareas largas, mantener/actualizar ese handoff sin que Diego lo pida, para que un corte por
+  tokens no pierda contexto.
+
+## Alcance por subproyecto (no re-litigar)
+
+- **Casas de Pastas:** solo casas/fábricas de pastas; NO restaurantes ni restaurantes italianos.
+- **Mercados:** mercados gastronómicos específicamente; NO mercados generales/minoristas.
+- **PolosGastro:** el objetivo NO es franquicias ni solo cadenas grandes. Abasto = subzona del
+  polo Corrientes, no zona propia.
+- **Marca pública:** DGDGAS (Dirección General de Desarrollo Gastronómico); DataGastro solo en docs internos.
+- No tocar los otros subproyectos (Cafecito / Mercados / CasasDePastas / PolosGastro / V2) salvo
+  pedido explícito.
+
 ## graphify
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+This project has a knowledge graph at `.graphify/` (CLI: `@sentropic/graphify`, installed globally
+via npm). The old `graphify-out/` directory is a stale copy from a previous version — do not use it.
 
 Rules:
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+
+- For codebase questions, first run `graphify query "<question>"` when `.graphify/graph.json` exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- Read `.graphify/GRAPH_REPORT.md` only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- graphify is for orienting in **code** (scripts/, src/); for docs e informes, ir directo a los archivos.
