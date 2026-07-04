@@ -1,0 +1,35 @@
+nombre_tabla: dim_marca_cadena
+descripcion: Marcas y cadenas conocidas o detectadas por repeticion de nombre o marca.
+nivel_sensibilidad: bajo
+versionable: true
+clave_primaria: id_marca
+campos:
+  - nombre: id_marca
+    tipo: string
+    descripcion: identificador de la marca
+  - nombre: nombre_marca
+    tipo: string
+    descripcion: nombre de la marca o cadena
+  - nombre: nombre_normalizado
+    tipo: string
+    descripcion: nombre normalizado para matching
+  - nombre: es_marca_conocida
+    tipo: enum
+    valores: [si, no]
+    descripcion: si proviene de lista curada de marcas conocidas
+  - nombre: cantidad_sucursales_detectadas
+    tipo: int
+    descripcion: cantidad de sedes detectadas
+  - nombre: fuentes_evidencia
+    tipo: string
+    descripcion: fuentes que sostienen la deteccion de cadena
+  - nombre: observaciones
+    tipo: string
+    descripcion: notas libres
+campos_obligatorios:
+  - id_marca
+  - nombre_marca
+  - nombre_normalizado
+notas_metodologicas: >-
+  Se marca cadena si el nombre coincide con marca conocida o si el nombre normalizado
+  aparece en dos o mas sedes. Aparicion unica sin marca conocida es independiente.

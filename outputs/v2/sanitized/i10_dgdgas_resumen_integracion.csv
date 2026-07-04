@@ -1,0 +1,9 @@
+metrica,valor,observacion
+total_registros_i10,2480,establecimientos minimizados desde hojas de rubro (no es padron ni censo)
+hojas_procesadas,12,hojas de rubro tratadas como establecimientos
+registros_con_barrio,1525,registros con barrio no vacio
+registros_con_direccion_interna,1617,"direccion solo en staging interno gitignored, nunca sanitizado"
+registros_en_hojas_mixtas,978,Cafe y dulce + Pizza/empanadas/pasta: requieren desagregacion
+registros_pendiente_revision_taxonomica,278,Hamburgueseria + Foodtrucks + Emprendimientos: rubro no estable
+registros_excluidos_por_pii,8350,valores de PII (celular/mail/referente/instagram/cargo) descartados; no se elimino ningun establecimiento
+hojas_excluidas_no_establecimiento,3,"BASE, Organizadores (PII), Comunas (PII): no son establecimientos"

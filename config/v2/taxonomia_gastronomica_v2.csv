@@ -1,0 +1,34 @@
+categoria_principal,subcategoria,incluye,excluye,fuentes_sugeridas,riesgo_metodologico,criterio_de_validacion,es_transversal
+consumo_en_local,restaurantes,servicio de mesa y cocina al plato,rotiserias sin salon y dark kitchens,AGC|Places|Ente Turismo|OSM,medio,salon habilitado mas actividad observable,no
+consumo_en_local,bares,bar y bar notable y pub,venta de bebidas envasadas (vinoteca),AGC|Ente Turismo|Places,medio,barra o salon mas horario nocturno tipico,no
+consumo_en_local,cafeterias,cafe tradicional y confiteria con salon,cafeterias de especialidad (subcat propia),AGC|Places|OSM,medio,salon mas carta de cafe e infusiones,no
+consumo_en_local,cafeterias_de_especialidad,tostado propio o de terceros y metodos filtrados,cadenas de cafe masivo si no aplica,Places|documentales|OSM,alto,senal de especialidad (metodo u origen) verificada,no
+consumo_en_local,pizzerias,pizza al molde media masa o a la piedra,restaurantes italianos genericos,AGC|Places|documentales,medio,producto principal igual a pizza,no
+consumo_en_local,parrillas,parrilla y asador,bodegon sin parrilla,AGC|Places|Ente Turismo,medio,parrilla a la vista o carta de carnes,no
+consumo_en_local,bodegones,cocina portena tradicional de salon,restaurantes de autor,documentales|Ente Turismo|Places,alto,reconocimiento documental mas carta tradicional,no
+consumo_en_local,cervecerias,cerveceria brewpub o bar de cerveza,distribuidoras sin consumo,Places|OSM|documentales,medio,consumo en local mas oferta de cerveza,no
+takeaway_delivery,rotiserias,comida lista para llevar,restaurantes con salon principal,AGC|Places,medio,mostrador de venta para llevar,no
+takeaway_delivery,empanadas,locales de empanadas,restaurantes que solo las ofrecen en carta,AGC|Places,medio,producto principal igual a empanadas,no
+takeaway_delivery,heladerias,heladeria artesanal o industrial con venta,fabricas sin venta al publico,AGC|Places|OSM,bajo,mostrador de venta de helado,no
+produccion_gastronomica,fabricas_de_pastas,elaboracion de pastas frescas,casas de pastas solo reventa,AGC|Places|documentales,alto,obrador o elaboracion declarada o visible,no
+produccion_gastronomica,obradores,obrador de pasteleria panaderia o catering,punto de venta sin elaboracion,AGC|BA Data|documentales,alto,habilitacion de elaboracion o obrador,no
+produccion_gastronomica,tostadores_de_cafe,tostado de cafe para venta o abastecimiento,cafeterias que solo sirven,documentales|Places|web oficial,alto,proceso de tostado declarado,no
+produccion_gastronomica,fabricas_con_venta_al_publico,elaboracion mas local de venta,fabricas sin venta minorista,AGC|BA Data|Places,medio,elaboracion mas venta minorista verificada,no
+venta_especializada,panaderias,pan y factura con elaboracion o venta,grandes superficies con seccion panaderia,AGC|Places|OSM,bajo,local especializado en panificados,no
+venta_especializada,pastelerias,pasteleria y reposteria,panaderias genericas,AGC|Places,medio,oferta principal de pasteleria,no
+venta_especializada,confiterias,confiteria tradicional de venta,confiteria con salon (igual cafeteria),AGC|documentales,medio,foco en venta de confiteria,no
+venta_especializada,casas_de_pastas,venta de pastas frescas (reventa o elaboracion),restaurantes italianos,AGC|Places|OSM|documentales,alto,mostrador de pastas frescas (ver piloto V1),no
+venta_especializada,chocolaterias,chocolate artesanal o industrial y bomboneria,kioscos con chocolates,Places|documentales,medio,producto principal igual a chocolate,no
+venta_especializada,vinotecas,venta de vino y bebidas,bares (consumo en local),Places|OSM|documentales,medio,venta de vino envasado predominante,no
+venta_especializada,queserias,venta especializada de quesos,almacenes genericos,documentales|Places,medio,foco en quesos,no
+venta_especializada,charcuterias,fiambres y embutidos especializados,supermercados,documentales|Places,medio,foco en charcuteria,no
+venta_especializada,dieteticas_gourmet,dietetica con foco gastronomico o gourmet,farmacias y dieteticas de suplementos,Places|OSM,alto,oferta gastronomica gourmet verificable,no
+venta_especializada,almacenes_gastronomicos,almacen o delicatessen especializado,autoservicios genericos,documentales|Places,alto,curaduria de producto gastronomico,no
+ferias_mercados_eventos,mercados_gastronomicos,mercados de abasto o gastronomicos,shoppings genericos,BA Data|F03|Ente Turismo,medio,espacio fisico con puestos gastronomicos,no
+ferias_mercados_eventos,ferias_gastronomicas,ferias itinerantes o permanentes,ferias no gastronomicas,BA Data|F03|F04,medio,feria con oferta gastronomica declarada,no
+ferias_mercados_eventos,eventos_gastronomicos,festivales activaciones y ediciones,eventos sin componente gastronomico,F04|Ente Turismo|documentales,medio,edicion datada con fuente,no
+historico_emblematico,bar_notable,registro Bares Notables GCBA,bares comunes,BA Data (Bares Notables)|documentales,bajo,inclusion en registro oficial Notables,si
+historico_emblematico,caso_emblematico,caso historico o identitario documentado,apertura reciente sin trayectoria,documentales|prensa,alto,dos o mas referencias documentales independientes,si
+cadena_marca,cadena_marca,marca con multiples sedes detectadas,independiente de una sola sede,Places|OSM,medio,nombre normalizado en dos o mas sedes o marca conocida,si
+independiente_barrial,independiente_barrial,establecimiento de una sola sede no de marca,cadenas y franquicias,Places|OSM|AGC,bajo,aparicion unica sin marca conocida,si
+pendiente_revision_taxonomica,pendiente_revision_taxonomica,rubro no resuelto todavia,nada (no se excluye),todas,alto,clasificacion manual posterior,si

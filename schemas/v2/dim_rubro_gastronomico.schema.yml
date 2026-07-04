@@ -1,0 +1,42 @@
+nombre_tabla: dim_rubro_gastronomico
+descripcion: Taxonomia gastronomica V2 de dos niveles con atributos metodologicos.
+nivel_sensibilidad: bajo
+versionable: true
+clave_primaria: id_rubro
+campos:
+  - nombre: id_rubro
+    tipo: string
+    descripcion: identificador del rubro
+  - nombre: categoria_principal
+    tipo: string
+    descripcion: funcion o rol en el ecosistema
+  - nombre: subcategoria
+    tipo: string
+    descripcion: rubro concreto
+  - nombre: incluye
+    tipo: string
+    descripcion: que entra en la subcategoria
+  - nombre: excluye
+    tipo: string
+    descripcion: que no entra para no inflar el universo
+  - nombre: fuentes_sugeridas
+    tipo: string
+    descripcion: fuentes donde se detecta mejor
+  - nombre: riesgo_metodologico
+    tipo: enum
+    valores: [bajo, medio, alto]
+    descripcion: nivel de riesgo de confusion o sesgo
+  - nombre: criterio_de_validacion
+    tipo: string
+    descripcion: como confirmar territorialmente
+  - nombre: es_transversal
+    tipo: enum
+    valores: [si, no]
+    descripcion: si es etiqueta transversal y no rubro funcional excluyente
+campos_obligatorios:
+  - id_rubro
+  - categoria_principal
+  - subcategoria
+notas_metodologicas: >-
+  Rubro dudoso se marca pendiente_revision_taxonomica y no se excluye. Las etiquetas
+  transversales conviven con la categoria funcional. Existe puente a la taxonomia V1.

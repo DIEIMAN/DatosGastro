@@ -1,0 +1,13 @@
+codigo_fuente,nombre_fuente,universo,naturaleza,rol_metodologico,oficial,uso_permitido,limitaciones,sensible,versionable
+F02,AGC / habilitaciones,publica,registro administrativo oficial,ancla oficial de legitimidad (rubro direccion comuna),si,leer salidas publicas existentes sin regenerar,habilitacion no es local activo y puede ser angosto,si,no
+F0x,BA Data / GCBA,publica,datos oficiales abiertos,anclas tematicas oficiales (Bares Notables mercados ferias),si,descarga futura previa aprobacion con ficha de fuente,cobertura tematica parcial por dataset,no,no
+F0x,Ente de Turismo,publica,oferta gastronomica curada,curaduria oficial de oferta,si,descarga futura previa aprobacion o convenio,sesgo turistico sobre zonas y rubros vistosos,no,no
+F03,Ferias y mercados,publica,padron y espacios,espacios reales con grano mixto,si,leer salidas publicas existentes,puestos no son ferias y grano mixto,si,no
+F04,Eventos gastronomicos,publica,relevamiento manual trazable,eventos y ediciones datadas,parcial,leer salidas publicas existentes,no es universo completo de eventos,no,no
+F05,Programas / politicas,publica,catalogo manual trazable,contexto institucional,si,leer salidas publicas existentes,no es universo completo de programas,no,no
+E01,Google Places API,externa,senal operativa no oficial,cobertura amplia y deteccion de actividad y cadenas,no,solo API oficial con topes y aprobacion y presupuesto,no oficial y etiqueta gruesa y datos sensibles,si,no
+E02,OpenStreetMap,externa,fuente abierta auxiliar,cobertura auxiliar geometria y tags de rubro,no,Overpass o extracto sin scraping del sitio,cobertura desigual y calidad variable,si,no
+E03,Web documental / prensa,externa,documental,casos historicos y rubros emblematicos y contexto,no,citar con titulo medio url y fecha,sesgo hacia lo notable y lo centrico,no,no
+E04,Perplexity / busqueda asistida,externa,localizador de fuentes,encontrar fuentes documentales no es fuente final,no,solo como localizador con url verificable,riesgo de alucinacion sin url no entra,no,no
+I01,Revision manual,interna,validacion humana trazable,decide casos B y corrige clasificacion,no,registro trazable de decisiones,depende de criterio del revisor,no,no
+I02,Validacion territorial,interna,trabajo de campo futuro,confirma existencia y actividad real,no,relevamiento posterior priorizado,aun no implementada,si,no

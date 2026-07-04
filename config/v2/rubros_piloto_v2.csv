@@ -1,0 +1,6 @@
+rubro_piloto,subcategorias_incluidas,prioridad,justificacion
+casas_de_pastas,casas_de_pastas|fabricas_de_pastas,1,ya validado en V1 con clasificador A B C reutilizable sirve de puente y prueba de continuidad metodologica
+cafeterias_de_especialidad,cafeterias_de_especialidad,2,rubro emergente bien identificable por nombre con alto valor territorial y baja cobertura en registro oficial
+panaderias_pastelerias,panaderias|pastelerias,3,rubro de alta densidad y tradicion barrial buena cobertura en AGC y OSM util para calibrar deduplicacion a gran escala
+heladerias_artesanales,heladerias,4,rubro acotado y de baja ambiguedad ideal para validar pipeline territorial con bajo ruido
+produccion_gastronomica_obradores,obradores|fabricas_de_pastas|fabricas_con_venta_al_publico,5,caso de mayor riesgo metodologico separa produccion de consumo y prueba reglas de exclusion y validacion

@@ -1,0 +1,33 @@
+nombre_tabla: dim_territorio
+descripcion: Dimension territorial comuna barrio y geometria GCBA para asignacion y densidad.
+nivel_sensibilidad: bajo
+versionable: true
+clave_primaria: id_territorio
+campos:
+  - nombre: id_territorio
+    tipo: string
+    descripcion: identificador territorial
+  - nombre: comuna
+    tipo: string
+    descripcion: comuna CABA
+  - nombre: barrio
+    tipo: string
+    descripcion: barrio CABA
+  - nombre: area_km2
+    tipo: float
+    descripcion: area en kilometros cuadrados desde geometrias GCBA
+  - nombre: geometria_ref
+    tipo: string
+    descripcion: referencia a la geometria de origen
+  - nombre: fuente_geo
+    tipo: string
+    descripcion: fuente de la geometria GCBA
+  - nombre: metodo_asignacion
+    tipo: enum
+    valores: [punto_en_poligono, declarado]
+    descripcion: como se asigno el territorio
+campos_obligatorios:
+  - id_territorio
+  - comuna
+notas_metodologicas: >-
+  Reutiliza geometrias GCBA ya disponibles en data/raw. Distinguir volumen de densidad por km2.

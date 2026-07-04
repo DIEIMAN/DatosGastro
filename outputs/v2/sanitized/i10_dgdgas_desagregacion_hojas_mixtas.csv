@@ -1,0 +1,16 @@
+hoja_origen,subcategoria_v2_destino,cantidad_registros,nivel_confianza,observacion
+Café y dulce,pendiente_desagregar_hoja_mixta,406,baja,"sin match claro, queda pendiente"
+Café y dulce,cafeterias,216,baja,clasificacion tentativa por nombre
+Café y dulce,pastelerias,30,media,clasificacion tentativa por nombre
+Café y dulce,cafeterias_de_especialidad,22,media,clasificacion tentativa por nombre
+Café y dulce,chocolaterias,11,media,clasificacion tentativa por nombre
+Café y dulce,confiterias,9,media,clasificacion tentativa por nombre
+Café y dulce,panaderias,8,media,clasificacion tentativa por nombre
+Emprendimientos,pendiente_revision_taxonomica,65,baja,"sin match claro, queda pendiente"
+Foodtrucks,pendiente_revision_taxonomica,82,baja,"sin match claro, queda pendiente"
+Hamburguesería,pendiente_revision_taxonomica,131,baja,"sin match claro, queda pendiente"
+"Pizza, empanadas y pasta",pendiente_desagregar_hoja_mixta,181,baja,"sin match claro, queda pendiente"
+"Pizza, empanadas y pasta",pizzerias,50,media,clasificacion tentativa por nombre
+"Pizza, empanadas y pasta",casas_de_pastas,19,media,clasificacion tentativa por nombre
+"Pizza, empanadas y pasta",empanadas,19,media,clasificacion tentativa por nombre
+"Pizza, empanadas y pasta",rotiserias,7,media,clasificacion tentativa por nombre

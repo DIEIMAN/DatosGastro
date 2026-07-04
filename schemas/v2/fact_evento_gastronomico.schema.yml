@@ -1,0 +1,45 @@
+nombre_tabla: fact_evento_gastronomico
+descripcion: >-
+  Eventos y ediciones gastronomicas. Hereda F04 relevamiento manual trazable. No representa
+  el universo completo de eventos de CABA.
+nivel_sensibilidad: bajo
+versionable: false
+clave_primaria: id_evento
+campos:
+  - nombre: id_evento
+    tipo: string
+    descripcion: identificador del evento o edicion
+  - nombre: nombre
+    tipo: string
+    descripcion: nombre del evento
+  - nombre: tipo_evento
+    tipo: string
+    descripcion: festival activacion feria edicion
+  - nombre: id_territorio
+    tipo: string
+    descripcion: referencia a dim_territorio
+  - nombre: fecha_completa
+    tipo: date
+    descripcion: fecha de la edicion
+  - nombre: id_organizador
+    tipo: string
+    descripcion: organizador del evento
+  - nombre: id_fuente
+    tipo: string
+    descripcion: referencia a dim_fuente
+  - nombre: url_fuente
+    tipo: string
+    descripcion: url de la fuente
+  - nombre: apto_dashboard
+    tipo: enum
+    valores: [si, no]
+    descripcion: si puede exponerse en dashboard
+  - nombre: limitaciones
+    tipo: string
+    descripcion: limitaciones declaradas
+campos_obligatorios:
+  - id_evento
+  - nombre
+  - id_fuente
+notas_metodologicas: >-
+  Es relevamiento manual trazable con fuente por fila. No es universo completo de eventos.

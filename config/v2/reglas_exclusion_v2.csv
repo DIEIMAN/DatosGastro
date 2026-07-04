@@ -1,0 +1,17 @@
+patron,motivo_exclusion,aplica_a,accion
+restaurante italiano generico sin senal de venta de pastas,restaurante de consumo no comercio especializado,casas_de_pastas|fabricas_de_pastas,descartar_conservado
+trattoria|ristorante|pasta bar,consumo en local no venta especializada,casas_de_pastas,descartar_conservado
+fast food sin rubro especifico,no aporta a rubro especializado,takeaway_delivery,marcar_revision
+cadena de comida rapida internacional,senal generica no especializada,consumo_en_local|takeaway_delivery,marcar_cadena_revision
+escuela|instituto|universidad sin venta al publico,no comercial,produccion_gastronomica|consumo_en_local,descartar
+comedor escolar o institucional,no comercial,consumo_en_local,descartar
+rubro no gastronomico (ferreteria farmacia kiosco indumentaria),fuera del universo gastronomico,todas,descartar
+direccion fuera de CABA (GBA Provincia partidos limitrofes),fuera del area de estudio,todas,descartar
+coordenadas fuera de poligonos GCBA,no asignable a comuna o barrio CABA,todas,marcar_revision
+mismo place_id repetido,duplicado intra fuente,todas,deduplicar
+mismo nombre y direccion normalizados en distinta fuente,duplicado inter fuente,todas,deduplicar
+nombre de marca en dos o mas sedes,posible cadena,cadena_marca,marcar_cadena_revision
+cadena ambigua sin marca conocida ni repeticion clara,no resoluble como cadena,cadena_marca,marcar_indeterminado
+senales mixtas de consumo y produccion no resueltas,ambiguedad consumo vs produccion,produccion_gastronomica|venta_especializada,marcar_revision
+businessStatus CLOSED o CLOSED_TEMPORARILY,posible cierre,todas,flag_posible_cierre
+solo pista de Perplexity sin url verificable,sin respaldo documental,historico_emblematico,no_ingresa_pista_a_verificar

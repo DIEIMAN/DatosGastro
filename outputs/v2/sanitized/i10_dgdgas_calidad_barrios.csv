@@ -1,0 +1,7 @@
+estado_barrio,cantidad_registros,porcentaje,observacion
+normalizado,1380,55.6,barrio mapeado a barrio oficial CABA
+sin_barrio,955,38.5,celda de barrio vacia
+pendiente_revision,62,2.5,"no se pudo mapear, requiere revision"
+ambiguo,42,1.7,referencia generica (CABA/Buenos Aires) o no-barrio
+fuera_caba_probable,29,1.2,localidad fuera de CABA (GBA u otra)
+multiple_barrio,12,0.5,varios barrios en una celda

@@ -1,0 +1,9 @@
+nivel,etiqueta,descripcion,condicion_tipica,limitacion
+C5,multifuente_alto,evidencia concordante en dos o mas fuentes independientes,Google A mas AGC o AGC mas OSM mas documental,no implica local activo confirmado
+C4,oficial_estricto,solo registro administrativo oficial,solo AGC o BA Data,oficial pero no implica actividad
+C4,operativo_probable,solo senal operativa fuerte,solo Google A con nombre o tipo inequivoco,no oficial
+C3,auxiliar_abierto,solo fuente abierta auxiliar,solo OSM con tag claro,completitud desigual
+C2,documental,sostenido por fuentes documentales,caso emblematico con dos o mas referencias sin ancla operativa,no prueba existencia actual
+C1,revision_manual,dudoso o senales mixtas,Google B u OSM ambiguo o rubro confuso,requiere decision humana
+C0,pendiente_taxonomica,rubro no resuelto,no se pudo clasificar el rubro,sin clasificacion final
+X,descartado_conservado,fuera del rubro objetivo,restaurante italiano en busqueda de casas de pastas,se conserva aparte no se borra

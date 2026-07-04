@@ -1,0 +1,108 @@
+nombre_tabla: dim_establecimiento_candidato
+descripcion: >-
+  Tabla central de DataGastro V2. Una fila igual a una entidad gastronomica candidata
+  resuelta tras la deduplicacion entre fuentes. Es padron candidato y universo operativo
+  probable, no censo ni padron oficial.
+nivel_sensibilidad: alto
+versionable: false
+clave_primaria: id_candidato
+campos:
+  - nombre: id_candidato
+    tipo: string
+    descripcion: identificador unico de la entidad resuelta
+  - nombre: nombre_comercial
+    tipo: string
+    descripcion: nombre comercial o razon social. Dato de terceros. No exportar a entregables externos
+    sensible: true
+  - nombre: direccion_normalizada
+    tipo: string
+    descripcion: direccion normalizada sin CABA Buenos Aires Argentina. No exportar a entregables externos
+    sensible: true
+  - nombre: lat
+    tipo: float
+    descripcion: latitud. Sensible a nivel fila
+    sensible: true
+  - nombre: lon
+    tipo: float
+    descripcion: longitud. Sensible a nivel fila
+    sensible: true
+  - nombre: id_territorio
+    tipo: string
+    descripcion: referencia a dim_territorio comuna y barrio
+  - nombre: id_rubro_principal
+    tipo: string
+    descripcion: referencia a dim_rubro_gastronomico
+  - nombre: id_rubro_secundario
+    tipo: string
+    descripcion: rubro secundario opcional para doble funcion
+  - nombre: categoria_secundaria
+    tipo: string
+    descripcion: texto libre de categoria secundaria
+  - nombre: tipo_establecimiento
+    tipo: enum
+    valores: [cadena, independiente, indeterminado]
+    descripcion: clasificacion de organizacion
+  - nombre: id_marca
+    tipo: string
+    descripcion: referencia a dim_marca_cadena si aplica
+  - nombre: es_historico_emblematico
+    tipo: enum
+    valores: [si, no]
+    descripcion: etiqueta transversal de caso historico o emblematico
+  - nombre: nivel_confianza
+    tipo: enum
+    valores: [C0, C1, C2, C3, C4, C5, X]
+    descripcion: nivel de confianza segun niveles_confianza_v2
+  - nombre: etiqueta_confianza
+    tipo: string
+    descripcion: etiqueta legible del nivel de confianza
+  - nombre: fuentes_detectan
+    tipo: string
+    descripcion: lista de codigos de fuente separados por barra
+  - nombre: cantidad_fuentes
+    tipo: int
+    descripcion: cantidad de fuentes independientes que detectan la entidad
+  - nombre: fuente_principal
+    tipo: string
+    descripcion: codigo de la fuente de mayor peso
+  - nombre: requiere_revision_manual
+    tipo: enum
+    valores: [si, no]
+    descripcion: marca de revision humana pendiente
+  - nombre: confirmado_territorial
+    tipo: enum
+    valores: [si, no, pendiente]
+    descripcion: flag transversal de validacion territorial posterior
+  - nombre: business_status
+    tipo: string
+    descripcion: estado operativo segun Google si existe. Origen de flag posible_cierre
+  - nombre: calidad_dato
+    tipo: string
+    descripcion: campo de calidad obligatorio heredado de V1
+  - nombre: requiere_validacion
+    tipo: enum
+    valores: [si, no]
+    descripcion: campo de calidad obligatorio heredado de V1
+  - nombre: motivo_validacion
+    tipo: string
+    descripcion: motivo de validacion
+  - nombre: origen_dato
+    tipo: string
+    descripcion: trazabilidad de origen
+  - nombre: limitaciones
+    tipo: string
+    descripcion: limitaciones declaradas
+  - nombre: observaciones
+    tipo: string
+    descripcion: notas libres
+campos_obligatorios:
+  - id_candidato
+  - id_rubro_principal
+  - nivel_confianza
+  - fuentes_detectan
+  - calidad_dato
+  - requiere_validacion
+notas_metodologicas: >-
+  Multifuente sube confianza. Aparecer en una sola fuente no descarta. Habilitacion no
+  implica local activo. Esta tabla vive en carpeta gitignored por contener nombre comercial
+  y direccion. Solo se publican agregados sanitizados.

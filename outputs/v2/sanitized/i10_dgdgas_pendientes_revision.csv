@@ -1,0 +1,8 @@
+tipo_pendiente,cantidad_registros,motivo,accion_recomendada
+rubro_pendiente_desagregar,587,hoja mixta sin match de nombre a subcategoria,afinar reglas o revision manual
+rubro_pendiente_revision_taxonomica,278,Hamburgueseria/Foodtrucks/Emprendimientos: rubro no estable,decidir subcategoria nueva o mapeo
+barrio_sin_barrio,955,celda de barrio vacia,normalizar/desagregar o excluir si es fuera de CABA
+barrio_ambiguo,42,referencia generica (CABA/Buenos Aires) o no-barrio,normalizar/desagregar o excluir si es fuera de CABA
+barrio_multiple_barrio,12,varios barrios en una celda,normalizar/desagregar o excluir si es fuera de CABA
+barrio_fuera_caba_probable,29,localidad fuera de CABA (GBA u otra),normalizar/desagregar o excluir si es fuera de CABA
+barrio_pendiente_revision,62,"no se pudo mapear, requiere revision",normalizar/desagregar o excluir si es fuera de CABA

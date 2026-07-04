@@ -1,0 +1,19 @@
+codigo_fuente_interna,subcategoria_v2,cobertura_interna,hoja_dgdgas,rol,observacion
+I10_directorio_gastronomico_dgdgas,bares,alta,Bares,validacion,269 locales por rubro requiere minimizar PII
+I10_directorio_gastronomico_dgdgas,bodegones,alta,Bodegones,validacion,97 locales rubro mal cubierto por fuentes oficiales aporte interno valioso
+I10_directorio_gastronomico_dgdgas,cafeterias,media,Café y dulce,validacion,702 registros mezcla cafe pasteleria y confiteria desagregar
+I10_directorio_gastronomico_dgdgas,pastelerias,media,Café y dulce,validacion,subconjunto de cafe y dulce a separar
+I10_directorio_gastronomico_dgdgas,confiterias,baja,Café y dulce,validacion,subconjunto de cafe y dulce a separar
+I10_directorio_gastronomico_dgdgas,restaurantes,alta,Restaurantes,validacion,470 mas 178 cocina internacional mas 50 de autor
+I10_directorio_gastronomico_dgdgas,heladerias,alta,Heladería,validacion,65 locales rubro acotado buen aporte
+I10_directorio_gastronomico_dgdgas,parrillas,alta,Parrillas,validacion,95 locales
+I10_directorio_gastronomico_dgdgas,pizzerias,media,"Pizza, empanadas y pasta",validacion,276 registros mezcla pizza empanadas y pasta desagregar
+I10_directorio_gastronomico_dgdgas,empanadas,media,"Pizza, empanadas y pasta",validacion,subconjunto a separar de pizza y pasta
+I10_directorio_gastronomico_dgdgas,casas_de_pastas,baja,"Pizza, empanadas y pasta",validacion,subconjunto a separar puede cruzar con piloto V1
+I10_directorio_gastronomico_dgdgas,pendiente_revision_taxonomica,media,Hamburguesería,validacion,131 hamburgueserias rubro no estable en taxonomia v2
+I10_directorio_gastronomico_dgdgas,pendiente_revision_taxonomica,media,Foodtrucks,validacion,82 foodtrucks rubro no estable
+I10_directorio_gastronomico_dgdgas,productores_proveedores,baja,Emprendimientos,validacion,65 emprendimientos a clasificar
+I10_directorio_gastronomico_dgdgas,eventos_gastronomicos,baja,Organizadores,solo_contexto,1 fila organizadores util como referencia de actores
+I11_recap_eventos_dgdgas,eventos_gastronomicos,media,Recap eventos,ancla_eventos,ediciones de eventos propios enriquece F04
+I12_seguimiento_ade_dgdgas,eventos_gastronomicos,baja,ADE I SEGUIMIENTO,solo_contexto,seguimiento de foodtrucks y eventos como contexto
+I13_documental_dgdgas,caso_emblematico,baja,Documento Maestro Ecosistema,fuente_documental,documental institucional para contexto y casos no disponible local

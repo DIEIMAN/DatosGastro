@@ -1,0 +1,13 @@
+rubro_origen_hoja,subcategoria_v2_sugerida,cantidad_registros,cantidad_con_barrio,cantidad_con_direccion_interna,cantidad_pendiente_desagregar,nivel_sensibilidad,uso_recomendado
+Bares,bares,269,0,226,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Bodegones,bodegones,97,84,80,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Café y dulce,pendiente_desagregar_hoja_mixta,702,550,525,702,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Cocina internacional,restaurantes,178,133,130,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Emprendimientos,pendiente_revision_taxonomica,65,46,46,65,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Foodtrucks,pendiente_revision_taxonomica,82,68,66,82,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Hamburguesería,pendiente_revision_taxonomica,131,105,95,131,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Heladería,heladerias,65,47,43,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Parrillas,parrillas,95,65,56,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+"Pizza, empanadas y pasta",pendiente_desagregar_hoja_mixta,276,211,149,276,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Restaurantes,restaurantes,470,187,174,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro
+Restaurantes de autor,restaurantes,50,29,27,0,bajo (agregado sin PII),validacion_interna_y_cobertura_por_rubro

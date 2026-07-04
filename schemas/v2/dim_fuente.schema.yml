@@ -1,0 +1,52 @@
+nombre_tabla: dim_fuente
+descripcion: Catalogo de fuentes de DataGastro V2 con su rol metodologico y universo.
+nivel_sensibilidad: bajo
+versionable: true
+clave_primaria: id_fuente
+campos:
+  - nombre: id_fuente
+    tipo: string
+    descripcion: identificador interno
+  - nombre: codigo
+    tipo: string
+    descripcion: codigo de fuente como F02 E01 E02 I01
+  - nombre: nombre
+    tipo: string
+    descripcion: nombre legible de la fuente
+  - nombre: universo
+    tipo: enum
+    valores: [F, I, E]
+    descripcion: publica oficial F interna I externa o privada E
+  - nombre: naturaleza
+    tipo: string
+    descripcion: oficial operativo auxiliar documental o interno
+  - nombre: rol_metodologico
+    tipo: string
+    descripcion: que aporta y como se usa
+  - nombre: oficial
+    tipo: enum
+    valores: [si, no, parcial]
+    descripcion: si es fuente oficial
+  - nombre: url_fuente
+    tipo: string
+    descripcion: url de referencia
+  - nombre: licencia
+    tipo: string
+    descripcion: licencia o condicion de uso
+  - nombre: fecha_consulta
+    tipo: date
+    descripcion: fecha de consulta o corte
+  - nombre: apto_dashboard
+    tipo: enum
+    valores: [si, no]
+    descripcion: si puede exponerse en dashboard
+  - nombre: limitaciones
+    tipo: string
+    descripcion: limitaciones declaradas
+campos_obligatorios:
+  - id_fuente
+  - codigo
+  - universo
+  - naturaleza
+notas_metodologicas: >-
+  No se mezclan universos F I E como un mismo universo sin declarar la fuente por fila.

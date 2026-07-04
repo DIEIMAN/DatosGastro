@@ -1,0 +1,56 @@
+nombre_tabla: fact_trayectoria_documental
+descripcion: Referencias documentales asociadas a entidades o casos historicos y emblematicos.
+nivel_sensibilidad: medio
+versionable: true
+clave_primaria: id_referencia
+campos:
+  - nombre: id_referencia
+    tipo: string
+    descripcion: identificador de la referencia
+  - nombre: id_candidato
+    tipo: string
+    descripcion: entidad asociada si aplica
+  - nombre: id_caso
+    tipo: string
+    descripcion: caso emblematico asociado si no hay entidad concreta
+  - nombre: titulo
+    tipo: string
+    descripcion: titulo de la nota o documento
+  - nombre: medio
+    tipo: string
+    descripcion: medio o sitio o archivo
+  - nombre: url
+    tipo: string
+    descripcion: url verificable
+  - nombre: fecha_publicacion
+    tipo: string
+    descripcion: fecha de publicacion o s/f
+  - nombre: fecha_consulta
+    tipo: date
+    descripcion: fecha de consulta
+  - nombre: autor
+    tipo: string
+    descripcion: autor si consta
+  - nombre: afirmacion_sostenida
+    tipo: string
+    descripcion: que afirma exactamente en una frase
+  - nombre: tipo_fuente
+    tipo: enum
+    valores: [prensa, oficial, institucional, blog, archivo]
+    descripcion: tipo de fuente documental
+  - nombre: confiabilidad
+    tipo: enum
+    valores: [alta, media, baja]
+    descripcion: confiabilidad de la fuente documental
+  - nombre: cita_textual
+    tipo: string
+    descripcion: cita textual breve opcional
+campos_obligatorios:
+  - id_referencia
+  - titulo
+  - url
+  - afirmacion_sostenida
+notas_metodologicas: >-
+  Perplexity y web son localizadores no fuente final. Sin url verificable no entra.
+  Caso emblematico requiere dos o mas referencias independientes media o superior. No se
+  extraen ni publican datos personales que aparezcan en las notas.

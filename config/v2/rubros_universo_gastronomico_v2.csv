@@ -1,0 +1,35 @@
+subcategoria_v2,categoria_principal,prioridad,incluido_en_universo_general,apto_para_informe_especifico,fuentes_principales_probables,requiere_google_places,requiere_osm,requiere_revision_manual,riesgo_de_confusion,observacion
+restaurantes,consumo_en_local,alta,si,si,F02|F01|E01|E02,si,si,si,alto,universo grande conviene segmentar por cocina y barrio
+bares,consumo_en_local,alta,si,si,F02|F01|F07|E01,si,si,si,alto,solapamiento con cafeterias y cervecerias
+cafeterias,consumo_en_local,alta,si,si,F02|F01|F07|E01|E02,si,si,si,alto,distinguir cafeteria comun de especialidad
+cafeterias_de_especialidad,consumo_en_local,alta,si,si,E01|E03|E02,si,si,si,alto,rubro emergente poco capturado por fuentes oficiales
+pizzerias,consumo_en_local,alta,si,si,F02|F01|E01|E03,si,si,si,medio,separar de restaurantes italianos
+parrillas,consumo_en_local,alta,si,si,F02|F01|F06|E01,si,si,si,medio,detectable por categoria y cocina
+bodegones,consumo_en_local,alta,si,si,F06|F07|E03|E01,si,si,si,alto,fuerte componente documental y emblematico
+cervecerias,consumo_en_local,media,si,si,E01|E02|E03,si,si,si,medio,rubro reciente mejor en google y osm
+rotiserias,takeaway_delivery,media,si,si,F02|E01,si,si,si,medio,solapamiento con restaurantes y empanadas
+empanadas,takeaway_delivery,media,si,si,F02|E01,si,si,si,alto,rara vez rubro propio en fuentes oficiales
+heladerias,takeaway_delivery,alta,si,si,F02|F01|E01|E02,si,si,no,bajo,rubro acotado y de baja ambiguedad
+panaderias,venta_especializada,alta,si,si,F02|E01|E02,si,si,si,medio,alta densidad y buena ancla oficial
+pastelerias,venta_especializada,alta,si,si,F02|E01,si,si,si,medio,solapamiento con panaderias y confiterias
+confiterias,venta_especializada,media,si,si,F02|F07|E03,si,si,si,medio,solapamiento con cafeterias y pastelerias
+casas_de_pastas,venta_especializada,alta,si,si,F02|E01|E02|E03,si,si,si,alto,piloto V1 con clasificador reutilizable
+chocolaterias,venta_especializada,media,si,si,E01|E03,si,si,si,medio,mejor en google y documental
+vinotecas,venta_especializada,media,si,si,E01|E02|E03,si,si,si,medio,separar de bares
+queserias,venta_especializada,baja,si,si,E03|E01,si,si,si,medio,rubro de nicho poco en fuentes oficiales
+charcuterias,venta_especializada,baja,si,si,E03|E01,si,si,si,medio,rubro de nicho
+dieteticas_gourmet,venta_especializada,baja,si,si,E01|E02,si,si,si,alto,confusion con dieteticas de suplementos
+almacenes_gastronomicos,venta_especializada,baja,si,si,E03|E01,si,si,si,alto,curaduria dificil de delimitar
+fabricas_de_pastas,produccion_gastronomica,media,si,si,F02|E03|E01,si,si,si,alto,separar produccion de venta y consumo
+obradores,produccion_gastronomica,media,si,si,F02|F08|E03,si,si,si,alto,depende del rubro de elaboracion declarado
+tostadores_de_cafe,produccion_gastronomica,baja,si,si,E03|E01,si,si,si,alto,rubro de nicho poco en fuentes oficiales
+fabricas_con_venta_al_publico,produccion_gastronomica,baja,si,si,F02|F08|E01,si,si,si,alto,combina elaboracion y venta minorista
+mercados_gastronomicos,ferias_mercados_eventos,alta,si,si,F03|F06,no,si,no,bajo,buena ancla oficial como espacios reales
+ferias_gastronomicas,ferias_mercados_eventos,alta,si,si,F03|F04,no,si,no,bajo,separar espacios de puestos
+eventos_gastronomicos,ferias_mercados_eventos,media,si,si,F04|F05|F06|I03,no,no,si,medio,relevamiento manual trazable no universo completo
+productores_proveedores,produccion_gastronomica,media,si,si,E03|I03|F03,si,si,si,alto,incluye productores y proveedores sensibles si son internos
+bar_notable,historico_emblematico,media,si,si,F07|E03,no,no,no,bajo,etiqueta transversal con ancla oficial fuerte
+caso_emblematico,historico_emblematico,media,si,si,E03|F07,no,no,si,alto,requiere dos o mas referencias documentales
+cadena_marca,cadena_marca,media,parcial,no,E01|E02,si,si,si,medio,etiqueta transversal de organizacion no rubro funcional
+independiente_barrial,independiente_barrial,media,parcial,no,E01|E02|F02,si,si,no,bajo,etiqueta transversal central no se subestima
+pendiente_revision_taxonomica,pendiente_revision_taxonomica,pendiente,parcial,no,todas,si,si,si,alto,rubro no resuelto no se excluye

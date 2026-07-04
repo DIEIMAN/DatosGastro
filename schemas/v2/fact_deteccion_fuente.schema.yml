@@ -1,0 +1,62 @@
+nombre_tabla: fact_deteccion_fuente
+descripcion: >-
+  Una fila igual a una aparicion de una entidad en una fuente antes de resolver entidad.
+  Materia prima de la deduplicacion y la trazabilidad.
+nivel_sensibilidad: alto
+versionable: false
+clave_primaria: id_deteccion
+campos:
+  - nombre: id_deteccion
+    tipo: string
+    descripcion: identificador de la deteccion
+  - nombre: id_candidato
+    tipo: string
+    descripcion: entidad resuelta asignada tras deduplicacion
+  - nombre: id_fuente
+    tipo: string
+    descripcion: referencia a dim_fuente
+  - nombre: id_externo_fuente
+    tipo: string
+    descripcion: place_id u osm_id o id_agc. Sensible
+    sensible: true
+  - nombre: nombre_fuente
+    tipo: string
+    descripcion: nombre tal como lo entrega la fuente
+    sensible: true
+  - nombre: direccion_fuente
+    tipo: string
+    descripcion: direccion tal como la entrega la fuente
+    sensible: true
+  - nombre: lat_fuente
+    tipo: float
+    descripcion: latitud entregada por la fuente
+    sensible: true
+  - nombre: lon_fuente
+    tipo: float
+    descripcion: longitud entregada por la fuente
+    sensible: true
+  - nombre: tipos_fuente
+    tipo: string
+    descripcion: types de Google o tags de OSM o rubro AGC
+  - nombre: clasificacion_local
+    tipo: string
+    descripcion: A B C u homologo dentro de la fuente
+  - nombre: confianza_local
+    tipo: string
+    descripcion: confianza dentro de la fuente antes de integrar
+  - nombre: query_origen
+    tipo: string
+    descripcion: query o consulta que origino la deteccion
+  - nombre: fecha_extraccion
+    tipo: date
+    descripcion: fecha de extraccion
+  - nombre: motivo_clasificacion
+    tipo: string
+    descripcion: motivo trazable de la clasificacion local
+campos_obligatorios:
+  - id_deteccion
+  - id_fuente
+  - fecha_extraccion
+notas_metodologicas: >-
+  No sumar detecciones como si fueran entidades. Contiene ids externos y direccion por lo
+  que vive en carpeta gitignored.

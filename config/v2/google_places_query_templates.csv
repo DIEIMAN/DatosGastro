@@ -1,0 +1,25 @@
+subcategoria,query_template,tipo_query,riesgo,requiere_revision_manual
+casas_de_pastas,casa de pastas {barrio} CABA,barrio,bajo,si
+casas_de_pastas,pastas frescas {barrio} CABA,barrio,bajo,si
+casas_de_pastas,pastificio {barrio} CABA,barrio,medio,si
+fabricas_de_pastas,fabrica de pastas {barrio} CABA,barrio,alto,si
+cafeterias_de_especialidad,cafeteria de especialidad {barrio} CABA,barrio,medio,si
+cafeterias_de_especialidad,specialty coffee {barrio} CABA,barrio,medio,si
+cafeterias,cafe {barrio} CABA,barrio,medio,si
+panaderias,panaderia {barrio} CABA,barrio,bajo,si
+pastelerias,pasteleria {barrio} CABA,barrio,medio,si
+heladerias,heladeria artesanal {barrio} CABA,barrio,bajo,si
+pizzerias,pizzeria {barrio} CABA,barrio,medio,si
+parrillas,parrilla {barrio} CABA,barrio,medio,si
+bodegones,bodegon {barrio} CABA,barrio,alto,si
+empanadas,empanadas {barrio} CABA,barrio,medio,si
+rotiserias,rotiseria {barrio} CABA,barrio,medio,si
+chocolaterias,chocolateria {barrio} CABA,barrio,medio,si
+vinotecas,vinoteca {barrio} CABA,barrio,medio,si
+queserias,queseria {barrio} CABA,barrio,medio,si
+charcuterias,charcuteria {barrio} CABA,barrio,medio,si
+cervecerias,cerveceria {barrio} CABA,barrio,medio,si
+tostadores_de_cafe,tostador de cafe {barrio} CABA,barrio,alto,si
+produccion_gastronomica,obrador gastronomico {barrio} CABA,barrio,alto,si
+fabricas_con_venta_al_publico,fabrica de alimentos con venta al publico {barrio} CABA,barrio,alto,si
+mercados_gastronomicos,mercado gastronomico {barrio} CABA,barrio,medio,si

@@ -1,0 +1,104 @@
+barrio_oficial,alias,comuna,tipo_alias,confianza,observacion
+Agronomia,Agronomia,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Almagro,Almagro,5,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Balvanera,Balvanera,3,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Barracas,Barracas,4,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Belgrano,Belgrano,13,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Boedo,Boedo,5,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Caballito,Caballito,6,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Chacarita,Chacarita,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Coghlan,Coghlan,12,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Colegiales,Colegiales,13,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Constitucion,Constitucion,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Flores,Flores,7,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Floresta,Floresta,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+La Boca,La Boca,4,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Liniers,Liniers,9,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Mataderos,Mataderos,9,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Monserrat,Monserrat,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Monte Castro,Monte Castro,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Nueva Pompeya,Nueva Pompeya,4,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Nunez,Nunez,13,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Palermo,Palermo,14,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Parque Avellaneda,Parque Avellaneda,9,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Parque Chacabuco,Parque Chacabuco,7,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Parque Chas,Parque Chas,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Parque Patricios,Parque Patricios,4,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Paternal,Paternal,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Puerto Madero,Puerto Madero,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Recoleta,Recoleta,2,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Retiro,Retiro,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Saavedra,Saavedra,12,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+San Cristobal,San Cristobal,3,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+San Nicolas,San Nicolas,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+San Telmo,San Telmo,1,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Velez Sarsfield,Velez Sarsfield,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Versalles,Versalles,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Crespo,Villa Crespo,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Del Parque,Villa Del Parque,11,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Devoto,Villa Devoto,11,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Gral. Mitre,Villa Gral. Mitre,11,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Lugano,Villa Lugano,8,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Luro,Villa Luro,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Ortuzar,Villa Ortuzar,15,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Pueyrredon,Villa Pueyrredon,12,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Real,Villa Real,10,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Riachuelo,Villa Riachuelo,8,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Santa Rita,Villa Santa Rita,11,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Soldati,Villa Soldati,8,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+Villa Urquiza,Villa Urquiza,12,oficial,alta,barrio oficial CABA (fuente local geo_barrios.geojson)
+La Boca,Boca,4,variante_ortografica,alta,alias mapeado a barrio oficial
+Monserrat,Montserrat,1,variante_ortografica,alta,alias mapeado a barrio oficial
+Paternal,La Paternal,15,variante_ortografica,alta,alias mapeado a barrio oficial
+Nueva Pompeya,Pompeya,4,variante_ortografica,alta,alias mapeado a barrio oficial
+Villa Gral. Mitre,Villa General Mitre,11,variante_ortografica,alta,alias mapeado a barrio oficial
+Villa Gral. Mitre,Villa Gral Mitre,11,variante_ortografica,alta,alias mapeado a barrio oficial
+Villa Devoto,Devoto,11,subzona,media,alias mapeado a barrio oficial
+Villa Lugano,Lugano,8,subzona,media,alias mapeado a barrio oficial
+Villa Urquiza,Urquiza,12,subzona,media,alias mapeado a barrio oficial
+Villa Soldati,Soldati,8,subzona,media,alias mapeado a barrio oficial
+Palermo,Canitas,14,subzona,media,alias mapeado a barrio oficial
+Palermo,Las Canitas,14,subzona,media,alias mapeado a barrio oficial
+Palermo,Palermo Hollywood,14,subzona,media,alias mapeado a barrio oficial
+Palermo,Palermo Soho,14,subzona,media,alias mapeado a barrio oficial
+Palermo,Palermo Viejo,14,subzona,media,alias mapeado a barrio oficial
+Recoleta,Barrio Norte,2,subzona,media,alias mapeado a barrio oficial
+San Nicolas,Microcentro,1,subzona,media,alias mapeado a barrio oficial
+San Nicolas,Tribunales,1,subzona,media,alias mapeado a barrio oficial
+Balvanera,Once,3,subzona,media,alias mapeado a barrio oficial
+Balvanera,Abasto,3,subzona,baja,alias mapeado a barrio oficial
+Balvanera,Congreso,3,subzona,baja,alias mapeado a barrio oficial
+Belgrano,Barrio Chino,13,subzona,media,alias mapeado a barrio oficial
+(sin_barrio_especifico),CABA,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Capital,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Capital Federal,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Buenos Aires,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Ciudad de Buenos Aires,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Cdad. Autonoma de Buenos Aires,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Ciudad Autonoma de Buenos Aires,,generico_caba,alta,"referencia generica a la ciudad, no barrio"
+(sin_barrio_especifico),Todas las sucursales,,no_barrio,alta,no es un barrio
+(sin_barrio_especifico),Varias sucursales,,no_barrio,alta,no es un barrio
+(sin_barrio_especifico),Tienda online,,no_barrio,alta,no es un barrio
+(sin_barrio_especifico),Food Truck,,no_barrio,alta,no es un barrio
+(sin_barrio_especifico),Online,,no_barrio,alta,no es un barrio
+(sin_barrio_especifico),-,,no_barrio,alta,no es un barrio
+(fuera_caba),Berazategui,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Quilmes,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Wilde,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Banfield,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),City Bell,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Moreno,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Haedo,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Canning,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Ituzaingo,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Olivos,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Ramos Mejia,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),La Matanza,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Vicente Lopez,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),GBA,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Lanus,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Avellaneda,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),San Isidro,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Tigre,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Moron,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)
+(fuera_caba),Lomas de Zamora,,fuera_caba,alta,localidad fuera de CABA (GBA u otra)

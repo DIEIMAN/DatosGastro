@@ -1,0 +1,56 @@
+codigo_fuente,subcategoria_v2,cobertura,calidad_esperada,rol,observacion
+F01,restaurantes,media,alta,nucleo_oficial,oferta registrada con categoria y cocina pero no implica local activo
+F01,bares,media,media,nucleo_oficial,categoria presente puede solaparse con cafeterias
+F01,cafeterias,media,media,nucleo_oficial,no distingue cafeterias de especialidad
+F01,cafeterias_de_especialidad,baja,baja,complemento,la oferta no marca especialidad dependera de google y revision
+F01,pizzerias,media,media,nucleo_oficial,detectable por categoria o cocina
+F01,parrillas,media,media,nucleo_oficial,detectable por categoria o cocina
+F01,bodegones,baja,media,complemento,rara vez etiquetado como bodegon en la categoria
+F01,heladerias,baja,media,complemento,cobertura parcial segun categoria
+F01,empanadas,baja,baja,complemento,no suele tener categoria propia
+F01,rotiserias,baja,baja,complemento,cobertura parcial
+F01,venta_especializada,nula,baja,solo_contexto,el dataset es oferta de consumo no comercio especializado
+F01,produccion_gastronomica,nula,baja,solo_contexto,no incluye obradores ni fabricas
+F02,restaurantes,alta,media,nucleo_oficial,amplia cobertura por rubro administrativo pero habilitacion no es local activo
+F02,bares,alta,media,nucleo_oficial,cobertura amplia por descripcion de rubro
+F02,cafeterias,media,media,nucleo_oficial,depende de como se haya descripto el rubro
+F02,cafeterias_de_especialidad,baja,baja,complemento,el rubro administrativo no distingue especialidad
+F02,pizzerias,media,media,nucleo_oficial,depende de descripcion de rubro
+F02,parrillas,media,media,nucleo_oficial,depende de descripcion de rubro
+F02,panaderias,alta,media,nucleo_oficial,rubro de elaboracion y venta suele estar habilitado
+F02,pastelerias,media,media,nucleo_oficial,puede confundirse con panaderia o confiteria
+F02,confiterias,media,media,nucleo_oficial,solapamiento con cafeterias y pastelerias
+F02,heladerias,media,media,nucleo_oficial,detectable por rubro de elaboracion o venta
+F02,rotiserias,media,media,nucleo_oficial,detectable por rubro
+F02,empanadas,baja,baja,complemento,rara vez rubro propio suele caer en rotiseria o restaurante
+F02,casas_de_pastas,media,media,nucleo_oficial,validado en V1 rubro detectable pero angosto
+F02,fabricas_de_pastas,baja,media,nucleo_oficial,depende del rubro de elaboracion declarado
+F02,obradores,baja,media,nucleo_oficial,solo si existe rubro de elaboracion sin venta
+F02,fabricas_con_venta_al_publico,baja,media,nucleo_oficial,depende del rubro administrativo
+F02,tostadores_de_cafe,nula,baja,solo_contexto,rubro administrativo no especifico
+F02,chocolaterias,baja,baja,complemento,rubro poco especifico
+F02,vinotecas,baja,baja,complemento,puede caer en comercio de bebidas
+F02,queserias,baja,baja,complemento,rubro poco especifico
+F02,charcuterias,baja,baja,complemento,rubro poco especifico
+F02,dieteticas_gourmet,baja,baja,complemento,se confunde con dietetica de suplementos
+F02,almacenes_gastronomicos,baja,baja,complemento,rubro poco especifico
+F03,ferias_gastronomicas,alta,alta,nucleo_oficial,buena cobertura de ferias relevadas separar espacios de puestos
+F03,mercados_gastronomicos,alta,alta,nucleo_oficial,cobertura de mercados como espacios reales
+F03,productores_proveedores,media,media,complemento,el padron de puestos puede indicar productores pero es sensible
+F04,eventos_gastronomicos,media,media,nucleo_oficial,relevamiento manual trazable no universo completo
+F05,eventos_gastronomicos,baja,media,solo_contexto,aporta contexto de programas que enmarcan eventos
+F06,restaurantes,baja,media,ancla_institucional,curaduria turistica sesga a oferta vistosa
+F06,bares,baja,media,ancla_institucional,curaduria turistica
+F06,bodegones,baja,media,ancla_institucional,suele incluir bodegones emblematicos
+F06,parrillas,baja,media,ancla_institucional,suele incluir parrillas turisticas
+F06,cafeterias,baja,media,ancla_institucional,curaduria turistica
+F07,bar_notable,alta,alta,nucleo_oficial,registro oficial de bares y cafes notables
+F07,bares,media,alta,ancla_institucional,subconjunto notable no universo de bares
+F07,cafeterias,media,alta,ancla_institucional,incluye cafes notables
+F07,confiterias,media,alta,ancla_institucional,incluye confiterias notables
+F07,bodegones,baja,alta,ancla_institucional,algunos bodegones figuran como notables
+F07,caso_emblematico,media,alta,ancla_institucional,los notables son base de casos emblematicos
+F09,restaurantes,baja,baja,solo_contexto,distritos delimitan territorio no establecimientos
+F09,bares,baja,baja,solo_contexto,contexto territorial de circuitos
+I03,eventos_gastronomicos,baja,media,validacion,catalogo interno de eventos propios aporta validacion no padron publico
+I03,productores_proveedores,baja,media,validacion,puede indicar proveedores pero es sensible y no publicable

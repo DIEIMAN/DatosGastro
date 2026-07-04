@@ -1,0 +1,15 @@
+hoja_origen,patron,campo_aplicable,subcategoria_v2_destino,confianza,accion,observacion
+"Pizza, empanadas y pasta",pizzeria|pizzería|pizza,nombre_local,pizzerias,media,clasificar_tentativo,nombre con termino de pizza
+"Pizza, empanadas y pasta",empanada|empanadas,nombre_local,empanadas,media,clasificar_tentativo,nombre con termino de empanadas
+"Pizza, empanadas y pasta",pasta|pastas|pastificio|raviol|ravioles|sorrentino|noqui|ñoqui|gnocchi|fideos,nombre_local,casas_de_pastas,media,clasificar_tentativo,nombre con termino de pastas
+"Pizza, empanadas y pasta",rotiseria|rotisería,nombre_local,rotiserias,media,clasificar_tentativo,nombre con termino de rotiseria
+Café y dulce,especialidad|specialty|tostador|tostado,nombre_local,cafeterias_de_especialidad,media,clasificar_tentativo,senal de especialidad en el nombre
+Café y dulce,cafe|café|coffee|cafeteria|cafetería,nombre_local,cafeterias,baja,clasificar_tentativo,termino generico de cafe
+Café y dulce,pasteleria|pastelería|torta|tortas|reposteria|repostería,nombre_local,pastelerias,media,clasificar_tentativo,termino de pasteleria
+Café y dulce,confiteria|confitería,nombre_local,confiterias,media,clasificar_tentativo,termino de confiteria
+Café y dulce,chocolate|chocolateria|chocolatería|bombon|bombones,nombre_local,chocolaterias,media,clasificar_tentativo,termino de chocolate
+Café y dulce,helado|heladeria|heladería,nombre_local,heladerias,media,clasificar_tentativo,termino de helado
+Café y dulce,panaderia|panadería|pan artesanal,nombre_local,panaderias,media,clasificar_tentativo,termino de panaderia
+Hamburguesería,.,nombre_local,pendiente_revision_taxonomica,baja,marcar_pendiente,rubro no estable en taxonomia v2 no se excluye
+Foodtrucks,.,nombre_local,pendiente_revision_taxonomica,baja,marcar_pendiente,formato itinerante transversal no se excluye
+Emprendimientos,.,nombre_local,pendiente_revision_taxonomica,baja,marcar_pendiente,rubro a clasificar caso por caso no se excluye

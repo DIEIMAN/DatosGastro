@@ -1,0 +1,39 @@
+nombre_tabla: fact_validacion_manual
+descripcion: Decisiones humanas trazables I01 sobre casos dudosos del padron candidato.
+nivel_sensibilidad: medio
+versionable: false
+clave_primaria: id_validacion
+campos:
+  - nombre: id_validacion
+    tipo: string
+    descripcion: identificador de la validacion
+  - nombre: id_candidato
+    tipo: string
+    descripcion: entidad validada
+  - nombre: revisor
+    tipo: string
+    descripcion: identificador del revisor
+  - nombre: fecha
+    tipo: date
+    descripcion: fecha de la decision
+  - nombre: decision
+    tipo: enum
+    valores: [confirma_rubro, cambia_rubro, descarta, marca_pendiente]
+    descripcion: decision tomada
+  - nombre: nivel_confianza_resultante
+    tipo: string
+    descripcion: nivel de confianza tras la decision
+  - nombre: motivo
+    tipo: string
+    descripcion: motivo de la decision
+  - nombre: evidencia_consultada
+    tipo: string
+    descripcion: evidencia revisada
+campos_obligatorios:
+  - id_validacion
+  - id_candidato
+  - decision
+  - fecha
+notas_metodologicas: >-
+  La revision manual convierte casos C1 en niveles superiores con motivo registrado.
+  Nada se borra los descartados se conservan aparte.
