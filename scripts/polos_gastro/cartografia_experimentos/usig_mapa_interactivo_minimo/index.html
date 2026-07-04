@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototipo mínimo — USIG Mapa Interactivo (CABA)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 16px; color: #222; }
+    h1 { font-size: 18px; }
+    #mapa { height: 520px; width: 100%; max-width: 960px; border: 1px solid #ccc; }
+    .nota { color: #C44536; font-weight: bold; font-size: 13px; margin: 8px 0; }
+    button { margin: 8px 6px 0 0; padding: 6px 10px; }
+    .pie { font-size: 12px; color: #555; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Prototipo mínimo — @usig-gcba/mapa-interactivo</h1>
+  <p class="nota">
+    Prueba técnica aislada. NO es un mapa final, NO geocodifica locales, NO representa
+    delimitaciones oficiales de polos. Solo valida render de CABA y exportación de imagen.
+  </p>
+
+  <div id="mapa"></div>
+  <button id="btn-png">Exportar PNG (getStaticImage)</button>
+  <button id="btn-punto">Agregar punto conceptual de ejemplo</button>
+
+  <p class="pie">
+    Base cartográfica: GOED (GCBA) © OpenStreetMap (ODbL). Centro aproximado: Palermo.
+  </p>
+
+  <!-- Bundle ya compilado del paquete instalado (no se copia al repo). -->
+  <script src="../../../../node_modules/@usig-gcba/mapa-interactivo/lib/MapaInteractivo.js"></script>
+  <script>
+    // 1) Instancia mínima de un mapa de CABA.
+    var mapa = new MapaInteractivo("mapa", {
+      center: [-34.5895, -58.4255], // Palermo aprox. (NO es ubicación de locales)
+      zoom: 13,
+      zoomControl: true,
+      attributionControl: true
+    });
+
+    // 2) Punto conceptual de ejemplo (etiqueta de orientación, no dato geocodificado).
+    document.getElementById("btn-punto").addEventListener("click", function () {
+      mapa.addMarker({ lat: -34.5895, lng: -58.4255 }, true, false, false, false, false, {});
+    });
+
+    // 3) Exportar imagen estática del mapa (solo funciona en browser).
+    document.getElementById("btn-png").addEventListener("click", function () {
+      if (typeof mapa.getStaticImage !== "function") {
+        alert("getStaticImage no disponible en esta versión.");
+        return;
+      }
+      mapa.getStaticImage().then(function (canvas) {
+        var a = document.createElement("a");
+        a.href = canvas.toDataURL();      // puede fallar si algún tile no permite CORS
+        a.download = "prototipo_caba.png";
+        a.click();
+      }).catch(function (err) {
+        alert("No se pudo exportar (posible CORS de tiles): " + err);
+      });
+    });
+  </script>
+</body>
+</html>
