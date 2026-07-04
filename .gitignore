@@ -73,3 +73,6 @@ MercadosGastro/final/
 MercadosGastro/archive_review/
 CasasDePastas/final/
 CasasDePastas/archive_review/
+graphify-out/
+node_modules/
+tmp_pdf_preview/
