@@ -1,0 +1,117 @@
+DOMINGO — REVISION FINAL POST RECALL GOOGLE
+(fecha: 2026-06-21 · rama: casas-pastas-integrado · HEAD: 1b0b1b9 · sin commits nuevos)
+
+Estado general:
+  CONSISTENTE. El padrón depurado post-recall y el informe V3 coinciden en todos los KPIs.
+  Auditoría NO destructiva: no se modificó el padrón ni el informe (no hubo error crítico).
+  1 punto de atención de consistencia (agregados sanitizados viejos coexistiendo) — ver abajo.
+
+KPIs finales (padrón v3 depurado; recompute desde el CSV == resumen == MD):
+  - Total candidatos: 254
+  - Independientes: 173
+  - Cadenas: 81
+  - Multifuente: 53
+  - Georreferenciados: 252
+  - Clases: A_osm_auxiliar 102 · A_google_probable 70 · A_integrado_multifuente 36 ·
+            A_validado_manual 27 · A_google_recall_validado_manual 7 ·
+            A_agc_oficial_estricto 11 · A_documental_validado_manual 1  (suma 254 OK)
+  - Por origen: solo OSM 92 · solo Google 90 · Google+OSM 53 · solo AGC 11 · documental 1 · recall Google 7
+
+Candidatos incorporados (7, clase A_google_recall_validado_manual, geocodificados):
+  - Franccesca - Pastas Artesanales  (Comuna 3, San Cristóbal)
+  - Fábrica de pastas Civitavecchia Pastas Frescas  (Comuna 5, Boedo)
+  - Via Reggio - Pastas Artesanales  (Comuna 5, Boedo)
+  - Señora Pasta  (Comuna 6, Caballito)
+  - Fábrica de Pastas Laurimar  (Comuna 4, Parque Patricios)
+  - Fábrica de Pastas Frescas Buon Giorno Artesanales  (Comuna 4, Parque Patricios)
+  - El Emporio de las Pastas  (Comuna 7, Flores)
+  Todos con coordenadas y comuna/barrio asignados (0 sin comuna).
+
+Casos NO incorporados (confirmado AUSENTES del padrón):
+  - Pastificio Del Pratello (escuela / formación profesional) — ausente OK
+  - La Estrellita (restaurante / nombre genérico) — ausente OK
+  - Rochino Pastas (marca Rochino ya presente: "Rochino Villa Urquiza") — ausente OK
+  - Loto Pastificio y Pastelería — ausente OK
+  - Fabrica de Pastas ROSSO — ausente OK
+
+Pendientes (no incorporados; quedan para validación manual posterior):
+  - Loto Pastificio y Pastelería: verificar si el foco real es pastificio/casa de pastas o pastelería.
+  - Fabrica de Pastas ROSSO: verificar si es el mismo establecimiento que "Piatto Rosso" (presente) o uno aparte.
+
+Pastas Amelia:
+  - 1 sola fila (INTDOC01), clase A_documental_validado_manual. NO duplicada.
+  - Enriquecida: ahora geocodificada (lat/lon presentes; Comuna 5, Boedo). amelia_geocodificada = si.
+  - Las coordenadas viven solo en el padrón interno (gitignored); el GeoJSON sanitizado las redondea a 3 decimales.
+
+Consistencia informe/padrón:
+  - padron_candidato_integrado_v3_depurado.csv: 254 filas (recompute) == resumen_integrado_v3_depurado.csv.
+  - INFORME_..._V3.md: 254 / 173 / 81 / 53 / 252 (coincide).
+  - INFORME_..._V3.pdf: 23 páginas (regenerado).
+  - PUNTO DE ATENCIÓN (no crítico): en integrado_sanitizado/ conviven archivos VIEJOS sin sufijo
+    (resumen_integrado.csv [264], resumen_integrado_v2.csv [261], integrado_por_fuente.csv,
+    integrado_por_comuna.csv, integrado_por_barrio.csv, densidad_*.csv, mapa_puntos_sanitizado.geojson)
+    junto a los nuevos *_v3_depurado (254). Para compartir la carpeta conviene usar SOLO los
+    *_v3_depurado (+ cobertura_cadenas, calidad_google_queries, resumen_auditoria_calidad) o limpiar
+    los viejos en un próximo paso (con confirmación; este audit NO borró nada).
+
+Privacidad:
+  - Sin identificadores tecnicos, credenciales, correos, telefonos ni identificadores fiscales (escaneo estricto del MD: limpio).
+  - Sin ubicaciones puntuales visibles en el informe (los datos individuales quedan solo en salidas internas gitignored).
+  - GeoJSON sanitizado (_v3_depurado): 252 puntos, coords a 3 decimales, props anónimas
+    (id_anonimo, clasificacion_integrada, es_cadena_detectada, comuna, barrio). Sin nombres.
+  - Brutos de Google (outputs/casas_pastas_recall/.../bruto/) dentro de carpeta gitignored: OK.
+
+Git status (resumen):
+  M  .gitignore
+  M  scripts/casas_pastas/build_pdf_integrado_v3.py
+  M  outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V3.md
+  ?? scripts/casas_pastas/aplicar_revision_diego.py
+  ?? scripts/casas_pastas/gen_anexos_revision.py
+  ?? scripts/casas_pastas/google_places_recall_complementario.py
+  ?? scripts/casas_pastas/recall_oficiales_recheck.py
+  ?? outputs/casas_pastas_reporte/integrado_sanitizado/*_v3_depurado.csv (+ .geojson)
+  ?? outputs/casas_pastas_reporte/SABADOALANOCHE_RECALL_GOOGLE_CHECKPOINT.txt
+  ?? outputs/casas_pastas_reporte/DOMINGO_REVISION_FINAL_254.txt
+  ?? notebooks/06_informe_presentacion.ipynb  (AJENO a este trabajo; no incluir)
+  (gitignored, no figuran: outputs/casas_pastas_recall/, outputs/casas_pastas_integrado/,
+   anexos_internos/, el PDF por outputs/**/*.pdf)
+
+Archivos seguros para commit (sin datos sensibles):
+  - .gitignore
+  - scripts/casas_pastas/build_pdf_integrado_v3.py
+  - scripts/casas_pastas/aplicar_revision_diego.py
+  - scripts/casas_pastas/gen_anexos_revision.py
+  - scripts/casas_pastas/google_places_recall_complementario.py
+  - scripts/casas_pastas/recall_oficiales_recheck.py
+  - outputs/casas_pastas_reporte/INFORME_CASAS_PASTAS_INTEGRADO_V3.md
+  - outputs/casas_pastas_reporte/integrado_sanitizado/*_v3_depurado.csv y mapa_puntos_sanitizado_v3_depurado.geojson
+  - (opcional, notas de trabajo, solo nombres comerciales sin PII) SABADO/ DOMINGO .txt
+
+Archivos NO commitear (internos / sensibles / gitignored):
+  - outputs/casas_pastas_integrado/  (padron_v3_depurado.csv, resumen_v3_depurado.csv: datos individuales)
+  - outputs/casas_pastas_recall/      (brutos, propuesta, candidatos: datos individuales)
+  - outputs/casas_pastas_reporte/anexos_internos/  (listados con nombres)
+  - INFORME_..._V3.pdf  (gitignored por outputs/**/*.pdf; se comparte como archivo, no en repo)
+  - notebooks/06_informe_presentacion.ipynb  (ajeno; revisar aparte)
+  - agregados sanitizados VIEJOS sin sufijo (ya en repo): no re-commitear; idealmente limpiar/alinear a v3.
+
+Archivos para subir a ChatGPT (sanitizados, sin PII):
+  - INFORME_CASAS_PASTAS_INTEGRADO_V3.pdf (como archivo)
+  - INFORME_CASAS_PASTAS_INTEGRADO_V3.md
+  - integrado_sanitizado/  SOLO los *_v3_depurado (+ cobertura_cadenas, calidad_google_queries, resumen_auditoria_calidad)
+  - DOMINGO_REVISION_FINAL_254.txt (resumen ejecutivo del estado)
+  NO subir: padrón, recall, anexos internos, brutos.
+
+Archivos para Claude Web:
+  - Lo mismo que ChatGPT (informe + agregados sanitizados v3_depurado).
+  - Opcional para revisión de código: los scripts en scripts/casas_pastas/ (no contienen datos ni credenciales).
+  NO subir datos crudos ni padron con datos individuales.
+
+Recomendación final:
+  - ¿Listo para revisión visual? SÍ. El informe V3 (23 págs) está consistente en 254/173/81/53/252.
+    Sugerido hojear: portada, pág. 2 (resumen), pág. 17 (origen principal, ahora incluye "Recall complementario 7"),
+    pág. 18 (mención de la búsqueda complementaria), pág. 20-21 (casos documentales + fuentes).
+  - Antes del commit/compartir: resolver el punto de atención de los agregados sanitizados viejos
+    (usar solo *_v3_depurado o alinearlos), para no mezclar 254 con 261/264. (Pendiente; requiere tu OK para tocar/limpiar.)
+  - Pendientes de fondo: validar Loto y ROSSO; verificación territorial final antes de uso público.
+  - No se hizo commit ni push. Padrón e informe sin cambios en este audit.

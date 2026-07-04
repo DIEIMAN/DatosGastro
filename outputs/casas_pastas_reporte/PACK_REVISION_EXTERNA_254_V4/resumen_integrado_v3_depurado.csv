@@ -1,0 +1,24 @@
+﻿indicador,valor
+nota,Padrón candidato DEPURADO (no oficial) tras revisión manual de escritorio.
+candidatos_unicos,254
+candidatos_unicos_v2,261
+confirmados_revision_manual,27
+descartados_revision_manual,15
+incorporados_documentales,1
+incorporados_recall_google,7
+amelia_geocodificada,si
+casos_aun_en_revision,0
+clase_A_integrado_multifuente,36
+clase_A_validado_manual,27
+clase_A_documental_validado_manual,1
+clase_A_google_recall_validado_manual,7
+clase_A_google_probable,70
+clase_A_osm_auxiliar,102
+clase_A_agc_oficial_estricto,11
+con_google,150
+con_osm,145
+con_agc,11
+multifuente,53
+cadenas,81
+independientes,173
+georreferenciados,252

@@ -1,0 +1,62 @@
+MANIFIESTO - PACK REVISION EXTERNA 254 (V4)
+
+Fecha/hora: 2026-06-22
+Rama: casas-pastas-integrado
+Proposito: version ejecutiva V4 del informe de casas de pastas en CABA, pensada para
+revision de jefatura alta / ministro. Pack limpio para revision metodologica externa.
+
+ESTADO FINAL CORRECTO (sin cambios respecto de V3)
+- Total candidatos: 254
+- Independientes: 173
+- Cadenas: 81
+- Multifuente: 53
+- Georreferenciados: 252
+
+QUE CAMBIA LA V4 RESPECTO DE LA V3 (solo presentacion; NO cambian datos ni metodologia)
+- Portada institucional estilo DataGastro: masthead "DataGastro", linea "Diagnostico
+  territorial gastronomico", titulo "Casas de pastas en la Ciudad de Buenos Aires",
+  subtitulo "Padron candidato depurado y lectura territorial del rubro", bajada breve no
+  tecnica y autoria sobria "Analisis y desarrollo: equipo tecnico DGDGAS".
+- La portada NO repite los KPIs (van en la pagina de Indicadores). En su lugar lleva una
+  linea cualitativa de capas: Registro oficial / Fuentes abiertas / Senales operativas /
+  Revision manual.
+- Se conserva el cierre metodologico (PREGUNTA 10 - "Que aporta esta metodologia al analisis
+  gastronomico?") como ultima pagina, para no terminar en Limitaciones.
+- Cantidad de paginas: V4 tiene 23 (igual que la V3); el unico cambio de estructura es la
+  portada.
+- No se modifico el padron interno, ni la clasificacion de cadenas, ni el recall, ni los
+  mapas, rankings o fuentes. Conteos sin cambios: 254 / 173 / 81 / 53 / 252.
+
+ARCHIVOS INCLUIDOS (12 + este manifiesto)
+- INFORME_CASAS_PASTAS_INTEGRADO_V4.pdf
+- INFORME_CASAS_PASTAS_INTEGRADO_V4.md
+- DOMINGO_REVISION_FINAL_254.txt
+- resumen_integrado_v3_depurado.csv
+- integrado_por_fuente_v3_depurado.csv
+- integrado_por_comuna_v3_depurado.csv
+- integrado_por_barrio_v3_depurado.csv
+- densidad_integrado_por_comuna_v3_depurado.csv
+- densidad_integrado_por_barrio_v3_depurado.csv
+- mapa_puntos_sanitizado_v3_depurado.geojson
+- cobertura_cadenas_e_independientes.csv
+- calidad_google_queries.csv
+
+EXCLUSIONES
+- padron interno con datos individuales
+- outputs/casas_pastas_integrado/
+- outputs/casas_pastas_recall/
+- outputs/casas_pastas_reporte/anexos_internos/
+- brutos Google y place_id
+- API key, telefonos, emails, CUIT, direcciones
+- archivos agregados viejos sin sufijo v3_depurado
+- notebooks (incluye notebooks/06_informe_presentacion.ipynb)
+- PDF/ZIP/MD de la V3 (no hacen falta en este pack)
+
+CONFIRMACION DE PRIVACIDAD
+- GeoJSON anonimo: id_anonimo, clasificacion_integrada, es_cadena_detectada, comuna, barrio;
+  sin nombres ni ubicaciones puntuales (coordenadas territoriales a 3 decimales).
+- PDF y MD sin place_id, API key, emails, telefonos ni CUIT (verificado).
+- CSVs solo con agregados (conteos, areas, densidades, cobertura de cadenas, calidad de
+  queries); sin filas individuales sensibles.
+- Pack destinado a revision metodologica, no publicacion oficial ni padron definitivo.
+- No commit / no push.
