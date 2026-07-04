@@ -2,7 +2,7 @@
 
 **Universo activo identificado · sedes fijas e itinerancia · base candidata trazable**
 
-_Análisis y desarrollo: Diego Aleman · Familia DataGastro · 2026-06-24_
+_Informe elaborado para uso técnico-institucional de DGDGAS._
 
 > Relevamiento documental y multifuente. No constituye censo ni padrón oficial.
 > Es una base candidata trazable para orientar validaciones territoriales y decisiones de política pública.
