@@ -1,0 +1,16 @@
+min_cluster_size,min_samples,polos,ruido_pct,mediana_locales,mayor,mayor_pct,colapsa,adoptado
+20,5,323,32.7,39,400,1.7,False,False
+20,10,244,45.6,40,507,2.1,False,False
+20,20,146,52.8,47,588,2.5,False,False
+30,5,212,35.5,53,400,1.7,False,False
+30,10,154,41.3,53,1314,5.5,False,False
+30,20,99,53.3,69,701,2.9,False,False
+40,5,148,34.6,71,892,3.7,False,False
+40,10,118,43.4,65,1314,5.5,False,True
+40,20,80,53.3,95,964,4.0,False,False
+60,5,89,36.4,120,1253,5.2,False,False
+60,10,65,46.9,136,1548,6.5,False,False
+60,20,5,3.8,91,22698,94.6,True,False
+80,5,66,36.7,155,1253,5.2,False,False
+80,10,51,45.3,162,1548,6.5,False,False
+80,20,4,4.1,102,22698,94.6,True,False

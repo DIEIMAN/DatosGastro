@@ -1,0 +1,18 @@
+candidato_id,origen,n_locales,ha,locales_x_ha,barrios,comuna,polo_mas_cercano,d_al_polo_entre_puntos_m,d_al_polo_envolventes_m,en_zona_publicada,hull_degenerado
+B002,bloque_interno,35,1.95,17.97,Palermo (35),14,P078,0.0,0.0,no,False
+B003,bloque_interno,30,1.27,23.61,Recoleta (25); Balvanera (5),2; 3,P106,0.0,0.0,no,False
+B001,bloque_interno,26,1.89,13.79,Palermo (26),14,P065,0.0,0.0,Palermo (R01): 26,False
+C001,fuera_de_todo_polo,38,1.19,32.06,Recoleta (38),2,P106,76.1,0.0,Recoleta (R06): 37,False
+C002,fuera_de_todo_polo,36,3.78,9.52,San Cristobal (27); Constitucion (9),1; 3,P085,172.3,172.3,no,False
+C003,fuera_de_todo_polo,34,2.87,11.83,San Nicolas (34),1,P117,30.8,30.2,Puerto Madero (R04): 2; Centro / Microcentro segmentado (R12): 27,False
+C004,fuera_de_todo_polo,32,2.0,15.98,Recoleta (32),2,P110,45.1,16.0,Recoleta (R06): 32,False
+C005,fuera_de_todo_polo,30,3.31,9.06,Belgrano (30),13,P072-7,25.6,0.0,Belgrano (R05): 10,False
+C006,fuera_de_todo_polo,29,2.14,13.57,Nuñez (29),13,P072-1,92.6,92.6,no,False
+C007,fuera_de_todo_polo,27,1.89,14.31,San Nicolas (27),1,P117,14.2,0.0,Centro / Microcentro segmentado (R12): 27,False
+C008,fuera_de_todo_polo,26,1.78,14.6,Retiro (26),1,P118,66.8,64.0,Centro / Microcentro segmentado (R12): 23; Esmeralda-Paraguay (R18): 14,False
+C009,fuera_de_todo_polo,26,1.53,16.99,San Nicolas (25); Monserrat (1),1,P113,24.0,11.1,Centro / Microcentro segmentado (R12): 12,False
+C010,fuera_de_todo_polo,26,2.06,12.62,Palermo (18); Villa Crespo (8),14; 15,P091,71.1,0.0,Palermo (R01): 17; Villa Crespo (R08): 4,False
+C011,fuera_de_todo_polo,26,1.98,13.13,San Nicolas (26),1,P115,60.7,52.0,Puerto Madero (R04): 3,False
+C012,fuera_de_todo_polo,25,2.69,9.28,Recoleta (16); San Nicolas (9),1; 2,P113,14.7,11.3,Recoleta (R06): 1,False
+C013,fuera_de_todo_polo,25,0.98,25.53,San Nicolas (25),1,P117,40.9,40.8,Centro / Microcentro segmentado (R12): 7,False
+C014,fuera_de_todo_polo,25,1.49,16.78,Balvanera (25),3,P101+P099,27.7,9.0,no,False

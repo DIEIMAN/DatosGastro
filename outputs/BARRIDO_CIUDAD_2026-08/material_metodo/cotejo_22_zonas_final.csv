@@ -1,0 +1,23 @@
+referencia_id,nombre,familia,pct_zona_cubierta,encontrada
+R01,Palermo,Polo con subzonas / multiparte,64.7,True
+R02,Avenida Corrientes,Eje o corredor,61.1,True
+R03,San Telmo,Polo,25.8,True
+R04,Puerto Madero,Polo con subzonas / multiparte,9.3,False
+R05,Belgrano,Polo,62.8,True
+R06,Recoleta,Polo,37.1,True
+R07,Costanera Norte,Polo con subzonas / multiparte,16.1,False
+R08,Villa Crespo,Polo,32.3,True
+R09,Chacarita,Referencia dispersa,41.5,True
+R10,Caballito,Polo con subzonas / multiparte,41.7,True
+R11,Boulevard Caseros,Eje o corredor,5.5,False
+R12,Centro / Microcentro segmentado,Area segmentada,38.3,True
+R13,Abasto,Polo,55.4,True
+R14,Avenida Boedo,Eje o corredor,38.1,True
+R15,Devoto,Polo,10.7,False
+R16,Donado-Holmberg,Eje o corredor,14.9,False
+R17,Villa Urquiza,Polo con subzonas / multiparte,29.1,True
+R18,Esmeralda-Paraguay,Referencia dispersa,40.5,True
+R19,Federico Lacroze por tramos,Eje o corredor,28.5,True
+R20,Garcia del Rio,Eje o corredor,1.0,False
+R21,La Paternal,Referencia dispersa,13.2,False
+R22,Villa Pueyrredon,Referencia dispersa,9.3,False

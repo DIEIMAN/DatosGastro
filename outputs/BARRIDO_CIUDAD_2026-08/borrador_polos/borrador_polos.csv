@@ -1,0 +1,119 @@
+polo_id,locales,ha,locales_x_ha,barrio_principal,barrios,n_barrios,corroborados,grupo_dominante,peso_grupo_dominante,abiertos,hull_degenerado,puntos_en_envolvente,aptos_en_envolvente,share_aptos,control_aptitud,pct_ya_publicado,zona_publicada,zonas_que_contiene,es_nuevo
+P072,1314,440.693,2.982,Belgrano,Belgrano;Nuñez;Colegiales,5,310,OSM,0.397,751,False,1761,1742,0.989,True,12.8,R05,R05,False
+P091,728,92.362,7.882,Palermo,Palermo;Villa Crespo,2,184,GCBA_URBANISMO,0.485,343,False,804,792,0.985,True,86.2,R01,,False
+P078,585,102.609,5.701,Palermo,Palermo;Chacarita;Colegiales,3,147,GCBA_URBANISMO,0.424,313,False,611,601,0.984,True,55.0,R01,,False
+P065,361,82.044,4.4,Palermo,Palermo;Belgrano,2,87,GCBA_URBANISMO,0.393,196,False,397,393,0.99,True,70.9,R01,,False
+P103,342,47.459,7.206,San Telmo,San Telmo;Monserrat;Constitucion,3,72,GCBA_URBANISMO,0.409,179,False,363,357,0.983,True,14.4,R03,,True
+P046,291,114.663,2.538,Villa Urquiza,Villa Urquiza;Parque Chas;Villa Ortuzar,3,65,GCBA_URBANISMO,0.371,142,False,359,353,0.983,True,99.9,R17,,False
+P021,262,77.864,3.365,Liniers,Liniers;Versalles,2,41,OSM,0.366,133,False,302,302,1.0,True,0.0,,,True
+P018,244,205.067,1.19,Villa Devoto,Villa Devoto;Villa Real;Monte Castro,3,39,GCBA_URBANISMO,0.369,118,False,297,294,0.99,True,74.6,R15,,False
+P056,210,74.344,2.825,Caballito,Caballito,1,39,GCBA_URBANISMO,0.395,106,False,294,290,0.986,True,54.1,R10,,False
+P073,207,39.19,5.282,Palermo,Palermo,1,51,GCBA_URBANISMO,0.377,117,False,224,222,0.991,True,0.0,,,True
+P113,200,28.006,7.141,San Nicolas,San Nicolas;Balvanera,2,53,GCBA_URBANISMO,0.42,103,False,240,236,0.983,True,74.0,R02,,False
+P106,198,34.213,5.787,Recoleta,Recoleta;Balvanera,2,47,GCBA_URBANISMO,0.338,110,False,260,255,0.981,True,30.9,R06,,False
+P053,196,61.306,3.197,Caballito,Caballito;Boedo;Parque Chacabuco,4,31,GCBA_URBANISMO,0.464,80,False,224,220,0.982,True,73.6,R10,,False
+P027,189,100.838,1.874,Parque Patricios,Parque Patricios;Nueva Pompeya;Boedo,3,43,GCBA_URBANISMO,0.429,88,False,196,195,0.995,True,25.7,R14,,False
+P116,187,19.268,9.705,San Nicolas,San Nicolas,1,55,OVERTURE_FSQ_ATP,0.406,113,False,207,203,0.981,True,83.0,R12,,False
+P063,182,67.538,2.695,Caballito,Caballito;Villa Crespo,2,41,OVERTURE_FSQ_ATP,0.39,98,False,202,200,0.99,True,71.9,R08,,False
+P048,171,50.841,3.363,Colegiales,Colegiales;Villa Ortuzar;Chacarita,3,34,GCBA_URBANISMO,0.48,72,False,181,179,0.989,True,0.0,,,True
+P111,170,14.895,11.413,Monserrat,Monserrat;San Nicolas,2,42,OVERTURE_FSQ_ATP,0.535,116,False,173,172,0.994,True,37.0,R12,,False
+P093,169,27.266,6.198,Balvanera,Balvanera,1,21,GCBA_URBANISMO,0.337,89,False,176,174,0.989,True,85.1,R13,,False
+P025,162,89.546,1.809,Monte Castro,Monte Castro;Villa Luro;Villa Real,4,25,GCBA_URBANISMO,0.451,68,False,181,180,0.994,True,5.2,R15,,True
+P043,161,91.566,1.758,Villa Gral. Mitre,Villa Gral. Mitre;Villa Crespo;Paternal,4,20,GCBA_URBANISMO,0.416,79,False,195,194,0.995,True,63.1,R21,,False
+P082,160,42.403,3.773,Almagro,Almagro,1,35,GCBA_URBANISMO,0.45,72,False,188,186,0.989,True,87.1,R13,,False
+P068,156,40.136,3.887,Chacarita,Chacarita;Colegiales,2,31,GCBA_URBANISMO,0.404,82,False,184,180,0.978,True,78.9,R09,,False
+P076,156,29.178,5.347,Recoleta,Recoleta;Palermo;Almagro,3,44,GCBA_URBANISMO,0.429,77,False,169,166,0.982,True,0.0,,,True
+P045,147,63.36,2.32,Villa Ortuzar,Villa Ortuzar;Parque Chas;Villa Urquiza,3,37,GCBA_URBANISMO,0.415,72,False,172,170,0.988,True,39.7,R17,,False
+P037,142,40.811,3.479,Villa Del Parque,Villa Del Parque,1,24,GCBA_URBANISMO,0.458,64,False,150,147,0.98,True,0.0,,,True
+P004,141,144.021,0.979,Villa Lugano,Villa Lugano;Parque Avellaneda;Mataderos,3,22,GCBA_URBANISMO,0.411,57,False,152,152,1.0,True,0.0,,,True
+P118,136,13.944,9.754,Retiro,Retiro;San Nicolas,2,30,GCBA_URBANISMO,0.39,73,False,150,146,0.973,True,100.0,R18,,False
+P117,131,15.129,8.659,San Nicolas,San Nicolas,1,37,OVERTURE_FSQ_ATP,0.412,80,False,158,157,0.994,True,97.9,R12,,False
+P108,129,18.559,6.951,Monserrat,Monserrat,1,27,OVERTURE_FSQ_ATP,0.38,62,False,129,127,0.984,True,27.0,R12,,False
+P062,129,42.854,3.01,Boedo,Boedo;Almagro;Balvanera,3,21,GCBA_URBANISMO,0.45,51,False,150,148,0.987,True,67.9,R14,,False
+P052,124,36.686,3.38,Floresta,Floresta;Flores;Villa Santa Rita,3,18,GCBA_URBANISMO,0.444,44,False,133,132,0.992,True,0.0,,,True
+P051,123,31.7,3.88,Constitucion,Constitucion,1,17,GCBA_URBANISMO,0.382,58,False,125,124,0.992,True,6.0,R11,,True
+P104,121,24.854,4.868,Recoleta,Recoleta;Palermo,2,27,OVERTURE_FSQ_ATP,0.413,70,False,153,149,0.974,True,0.0,,,True
+P084,119,27.118,4.388,Balvanera,Balvanera;Almagro,2,26,GCBA_URBANISMO,0.42,51,False,135,133,0.985,True,0.0,,,True
+P030,117,29.466,3.971,Puerto Madero,Puerto Madero,1,19,OVERTURE_FSQ_ATP,0.453,81,False,105,104,0.99,True,98.1,R04,,False
+P100,116,12.207,9.502,Monserrat,Monserrat;San Nicolas,2,34,GCBA_URBANISMO,0.448,57,False,109,107,0.982,True,95.8,R12,,False
+P098,115,12.539,9.172,Recoleta,Recoleta,1,25,OVERTURE_FSQ_ATP,0.4,69,False,110,108,0.982,True,92.7,R06,,False
+P110,112,16.304,6.869,Recoleta,Recoleta,1,31,OVERTURE_FSQ_ATP,0.42,70,False,136,135,0.993,True,86.2,R06,,False
+P017,108,69.798,1.547,Liniers,Liniers;Mataderos,2,15,GCBA_URBANISMO,0.472,45,False,116,114,0.983,True,0.0,,,True
+P016,105,26.722,3.929,Villa Devoto,Villa Devoto,1,26,OVERTURE_FSQ_ATP,0.429,56,False,106,104,0.981,True,97.4,R15,,False
+P032,105,20.887,5.027,La Boca,La Boca,1,23,GCBA_URBANISMO,0.429,54,False,103,101,0.981,True,0.0,,,True
+P057,105,26.2,4.008,Caballito,Caballito;Almagro,2,23,OVERTURE_FSQ_ATP,0.362,57,False,114,113,0.991,True,0.0,,,True
+P024,103,50.423,2.043,Nueva Pompeya,Nueva Pompeya,1,13,OVERTURE_FSQ_ATP,0.379,53,False,104,104,1.0,True,0.0,,,True
+P005,100,100.94,0.991,Villa Lugano,Villa Lugano,1,6,GCBA_URBANISMO,0.51,37,False,103,102,0.99,True,0.0,,,True
+P038,96,22.004,4.363,Villa Devoto,Villa Devoto;Agronomia;Villa Del Parque,4,20,GCBA_URBANISMO,0.469,44,False,89,88,0.989,True,4.2,R22,,True
+P020,94,25.095,3.746,Villa Luro,Villa Luro;Liniers,2,15,OVERTURE_FSQ_ATP,0.383,48,False,102,101,0.99,True,0.0,,,True
+P022,93,53.59,1.735,Saavedra,Saavedra;Coghlan,2,12,GCBA_URBANISMO,0.387,43,False,87,86,0.989,True,0.0,,,True
+P003,91,39.823,2.285,Villa Riachuelo,Villa Riachuelo;Villa Lugano,2,10,GCBA_URBANISMO,0.462,39,False,94,94,1.0,True,0.0,,,True
+P012,90,32.805,2.743,Mataderos,Mataderos,1,13,GCBA_URBANISMO,0.433,42,False,90,88,0.978,True,0.0,,,True
+P107,86,10.793,7.968,Balvanera,Balvanera;Recoleta,2,20,GCBA_URBANISMO,0.384,48,False,79,78,0.987,True,0.0,,,True
+P101,81,14.035,5.771,Balvanera,Balvanera,1,21,GCBA_URBANISMO,0.407,40,False,83,83,1.0,True,0.0,,,True
+P092,79,11.706,6.749,Palermo,Palermo,1,19,GCBA_URBANISMO,0.43,40,False,80,80,1.0,True,0.0,,,True
+P088,76,7.793,9.752,Palermo,Palermo,1,21,GCBA_URBANISMO,0.513,35,False,60,59,0.983,True,0.0,,,True
+P081,74,11.229,6.59,Villa Crespo,Villa Crespo,1,16,GCBA_URBANISMO,0.459,33,False,72,71,0.986,True,100.0,R08,,False
+P002,68,63.365,1.073,Villa Soldati,Villa Soldati,1,5,GCBA_URBANISMO,0.368,33,False,82,82,1.0,True,0.0,,,True
+P026,67,27.041,2.478,Parque Patricios,Parque Patricios;Constitucion;Barracas,4,11,GCBA_URBANISMO,0.403,27,False,62,60,0.968,True,0.0,,,True
+P079,66,5.691,11.597,Villa Crespo,Villa Crespo;Almagro;Caballito,3,15,GCBA_URBANISMO,0.409,34,False,56,56,1.0,True,12.6,R08,,True
+P112,66,5.63,11.722,San Nicolas,San Nicolas;Recoleta;Retiro,3,19,GCBA_URBANISMO,0.409,32,False,56,56,1.0,True,73.3,R12,,False
+P066,65,18.019,3.607,Barracas,Barracas,1,14,GCBA_URBANISMO,0.462,23,False,68,66,0.971,True,0.0,,,True
+P115,65,4.268,15.229,Retiro,Retiro,1,16,GCBA_URBANISMO,0.415,32,False,51,50,0.98,True,50.9,R12,,False
+P114,64,5.223,12.253,San Nicolas,San Nicolas,1,14,GCBA_URBANISMO,0.484,33,False,59,58,0.983,True,100.0,R12,,False
+P014,64,45.629,1.403,Flores,Flores;Parque Avellaneda,2,13,GCBA_URBANISMO,0.438,31,False,72,71,0.986,True,0.0,,,True
+P044,62,17.008,3.645,San Cristobal,San Cristobal,1,10,GCBA_URBANISMO,0.387,29,False,55,54,0.982,True,0.0,,,True
+P075,61,11.204,5.445,Chacarita,Chacarita;Villa Crespo,2,13,GCBA_URBANISMO,0.426,30,False,61,60,0.984,True,67.0,R09,,False
+P042,61,11.154,5.469,Velez Sarsfield,Velez Sarsfield;Floresta,2,10,GCBA_URBANISMO,0.377,29,False,59,58,0.983,True,0.0,,,True
+P041,60,12.726,4.715,Floresta,Floresta;Flores,2,7,GCBA_URBANISMO,0.5,23,False,50,49,0.98,True,0.0,,,True
+P077,60,8.604,6.974,Villa Crespo,Villa Crespo,1,11,GCBA_URBANISMO,0.417,33,False,52,50,0.962,True,99.0,R08,,False
+P028,60,12.045,4.981,Villa Pueyrredon,Villa Pueyrredon,1,13,GCBA_URBANISMO,0.4,28,False,52,52,1.0,True,100.0,R22,,False
+P074,58,7.838,7.4,Villa Crespo,Villa Crespo,1,14,GCBA_URBANISMO,0.397,25,False,56,55,0.982,True,100.0,R08,,False
+P087,56,5.797,9.659,Palermo,Palermo,1,11,GCBA_URBANISMO,0.393,30,False,46,45,0.978,True,0.0,,,True
+P086,54,7.949,6.793,Palermo,Palermo;Almagro;Villa Crespo,3,11,OVERTURE_FSQ_ATP,0.389,28,False,50,49,0.98,True,0.0,,,True
+P090,54,6.85,7.884,Palermo,Palermo,1,15,GCBA_URBANISMO,0.407,27,False,46,46,1.0,True,100.0,R01,,False
+P061,54,6.926,7.796,Flores,Flores,1,12,GCBA_URBANISMO,0.426,24,False,44,43,0.977,True,0.0,,,True
+P040,54,10.459,5.163,Villa Santa Rita,Villa Santa Rita;Villa Del Parque,2,11,GCBA_URBANISMO,0.426,25,False,55,55,1.0,True,0.0,,,True
+P047,53,20.494,2.586,Caballito,Caballito,1,7,GCBA_URBANISMO,0.377,26,False,57,57,1.0,True,26.3,R10,,False
+P097,53,7.564,7.007,Recoleta,Recoleta,1,16,OVERTURE_FSQ_ATP,0.415,32,False,54,53,0.981,True,67.8,R06,,False
+P085,53,8.771,6.043,Balvanera,Balvanera;Monserrat;Constitucion,4,11,GCBA_AGC,0.396,23,False,54,54,1.0,True,0.0,,,True
+P033,52,16.676,3.118,La Boca,La Boca,1,7,GCBA_URBANISMO,0.481,22,False,46,46,1.0,True,0.0,,,True
+P095,52,8.541,6.088,Recoleta,Recoleta,1,12,GCBA_URBANISMO,0.404,27,False,59,58,0.983,True,70.5,R06,,False
+P094,51,6.367,8.01,Monserrat,Monserrat,1,15,OVERTURE_FSQ_ATP,0.392,26,False,38,38,1.0,True,0.0,,,True
+P009,50,24.647,2.029,Parque Avellaneda,Parque Avellaneda;Velez Sarsfield;Floresta,3,5,GCBA_URBANISMO,0.34,21,False,41,40,0.976,True,0.0,,,True
+P089,50,4.534,11.028,Palermo,Palermo,1,12,GCBA_URBANISMO,0.42,27,False,42,40,0.952,True,29.5,R01,,False
+P070,50,5.659,8.835,Saavedra,Saavedra;Nuñez,2,10,OSM,0.38,28,False,44,43,0.977,True,0.0,,,True
+P015,50,12.123,4.124,Parque Chacabuco,Parque Chacabuco,1,7,GCBA_URBANISMO,0.52,19,False,41,39,0.951,True,0.0,,,True
+P008,49,23.519,2.083,Barracas,Barracas,1,5,GCBA_URBANISMO,0.408,22,False,32,32,1.0,True,0.0,,,True
+P099,49,9.433,5.195,Monserrat,Monserrat;Balvanera,2,15,GCBA_URBANISMO,0.449,23,False,59,59,1.0,True,0.0,,,True
+P067,49,7.324,6.69,Nuñez,Nuñez,1,15,OVERTURE_FSQ_ATP,0.388,28,False,41,41,1.0,True,0.0,,,True
+P006,48,28.178,1.703,Mataderos,Mataderos,1,6,OVERTURE_FSQ_ATP,0.396,28,False,40,40,1.0,True,0.0,,,True
+P059,48,6.083,7.89,Flores,Flores,1,6,GCBA_URBANISMO,0.521,17,False,46,44,0.957,True,0.0,,,True
+P105,48,5.28,9.091,Recoleta,Recoleta,1,13,GCBA_URBANISMO,0.458,23,False,35,35,1.0,True,21.1,R06,,True
+P083,47,5.666,8.295,Almagro,Almagro,1,12,GCBA_URBANISMO,0.447,22,False,43,43,1.0,True,0.0,,,True
+P058,46,11.393,4.038,Flores,Flores;Parque Chacabuco,2,9,GCBA_URBANISMO,0.391,20,False,60,60,1.0,True,0.0,,,True
+P064,45,9.125,4.932,Palermo,Palermo,1,12,OVERTURE_FSQ_ATP,0.511,33,False,39,38,0.974,True,0.0,,,True
+P007,45,8.956,5.025,Belgrano,Belgrano,1,4,GCBA_URBANISMO,0.4,25,False,37,37,1.0,True,0.0,,,True
+P029,45,13.347,3.372,Boedo,Boedo,1,7,OVERTURE_FSQ_ATP,0.378,23,False,38,38,1.0,True,99.8,R14,,False
+P054,45,4.445,10.124,Caballito,Caballito;Flores,2,11,OSM,0.489,29,False,42,41,0.976,True,20.5,R10,,True
+P071,44,5.821,7.559,Colegiales,Colegiales,1,9,GCBA_URBANISMO,0.409,24,False,34,33,0.971,True,100.0,R19,,False
+P001,44,12.112,3.633,Palermo,Palermo,1,3,OVERTURE_FSQ_ATP,0.727,43,False,36,36,1.0,True,51.3,R07,,False
+P080,44,3.532,12.459,Villa Crespo,Villa Crespo,1,10,GCBA_URBANISMO,0.455,17,False,35,34,0.971,True,100.0,R08,,False
+P060,43,5.851,7.349,Flores,Flores,1,8,GCBA_URBANISMO,0.488,15,False,32,32,1.0,True,0.0,,,True
+P010,43,10.631,4.045,Floresta,Floresta;Velez Sarsfield,2,8,GCBA_URBANISMO,0.419,19,False,36,36,1.0,True,0.0,,,True
+P050,42,5.074,8.277,Caballito,Caballito,1,9,GCBA_URBANISMO,0.5,17,False,35,35,1.0,True,0.0,,,True
+P013,42,10.787,3.893,Mataderos,Mataderos,1,7,GCBA_URBANISMO,0.405,17,False,35,35,1.0,True,0.0,,,True
+P023,42,14.487,2.899,Villa Pueyrredon,Villa Pueyrredon,1,6,GCBA_URBANISMO,0.429,16,False,37,37,1.0,True,100.0,R22,,False
+P069,42,7.594,5.53,Belgrano,Belgrano,1,12,GCBA_URBANISMO,0.5,17,False,40,38,0.95,True,0.0,,,True
+P102,42,3.939,10.664,San Telmo,San Telmo;Barracas,2,9,OSM,0.405,19,False,33,31,0.939,True,21.3,R11,,True
+P031,42,7.579,5.541,Floresta,Floresta;Velez Sarsfield,2,11,GCBA_URBANISMO,0.429,22,False,30,30,1.0,True,0.0,,,True
+P035,42,9.387,4.474,Villa Devoto,Villa Devoto;Villa Pueyrredon,2,7,GCBA_URBANISMO,0.429,20,False,32,32,1.0,True,60.5,R15,,False
+P019,41,20.777,1.973,Parque Patricios,Parque Patricios;San Cristobal,2,7,GCBA_URBANISMO,0.415,14,False,35,35,1.0,True,0.0,,,True
+P011,41,7.08,5.791,Saavedra,Saavedra,1,2,OVERTURE_FSQ_ATP,0.537,33,False,23,22,0.957,True,0.0,,,True
+P096,41,3.856,10.632,Recoleta,Recoleta,1,9,GCBA_URBANISMO,0.341,21,False,30,30,1.0,True,100.0,R06,,False
+P036,41,9.857,4.159,Flores,Flores;Villa Gral. Mitre;Villa Santa Rita,3,8,GCBA_URBANISMO,0.463,18,False,30,30,1.0,True,0.0,,,True
+P039,41,7.933,5.168,Villa Urquiza,Villa Urquiza,1,8,OVERTURE_FSQ_ATP,0.341,21,False,27,27,1.0,True,100.0,R16,,False
+P109,41,3.287,12.472,San Nicolas,San Nicolas;Recoleta;Balvanera,3,12,GCBA_URBANISMO,0.439,23,False,31,31,1.0,True,0.0,,,True
+P034,40,10.66,3.752,Monte Castro,Monte Castro;Villa Del Parque;Villa Santa Rita,3,7,GCBA_URBANISMO,0.45,19,False,36,36,1.0,True,0.0,,,True
+P049,40,7.625,5.246,Caballito,Caballito,1,6,GCBA_URBANISMO,0.475,16,False,33,32,0.97,True,29.6,R10,,False
+P055,40,8.519,4.695,Balvanera,Balvanera,1,12,GCBA_AGC,0.45,16,False,34,34,1.0,True,0.0,,,True

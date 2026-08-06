@@ -1,0 +1,11 @@
+polo_id,barrio_principal,locales,ha,locales_x_ha,zonas_que_contiene,fragmentos_leaf,fragmentos_que_pasan_el_minimo,fragmentos_anotados_sin_rescate,locales_anotados_como_dispersos,se_parte
+P072,Belgrano,1314,440.7,2.98,R05,7,7,0,694,True
+P065,Palermo,361,82.0,4.4,,2,2,0,188,True
+P046,Villa Urquiza,291,114.7,2.54,,0,0,0,0,False
+P021,Liniers,262,77.9,3.36,,0,0,0,0,False
+P018,Villa Devoto,244,205.1,1.19,,2,2,0,109,True
+P027,Parque Patricios,189,100.8,1.87,,0,0,0,0,False
+P025,Monte Castro,162,89.5,1.81,,2,2,0,73,True
+P043,Villa Gral. Mitre,161,91.6,1.76,,0,0,0,0,False
+P004,Villa Lugano,141,144.0,0.98,,0,0,0,0,False
+P005,Villa Lugano,100,100.9,0.99,,0,0,0,0,False

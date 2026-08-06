@@ -1,0 +1,251 @@
+BORRADOR · el precio de la partición, la estructura de los seis y la añada contra la densidad
+====================================================================================================
+
+NO ES UN PRODUCTO. No se publica, no se sella y no toca el Atlas.
+Google Places: 0 requests. Places no está en la base.
+
+§A · EL PRECIO DE LA PARTICIÓN, DESGLOSADO · ¿tejido conectivo o bloque coherente?
+====================================================================================================
+
+  LO PRIMERO, PORQUE YA ESTABA MEDIDO Y CAMBIA LA PREGUNTA: ninguno de los 1.064 locales
+  quedó suelto por caer bajo el mínimo. `leaf` no produjo ni un solo fragmento por debajo de
+  40 locales —la columna `fragmentos_anotados_sin_rescate` dio 0 en los cuatro padres—.
+  Los 1.064 son puntos que el corte profundo etiquetó como RUIDO, no piezas amputadas.
+
+  La prueba, declarada antes de correrla: se vuelve a correr el mismo clustering (eom,
+  min_cluster_size=40, min_samples=10) sobre los sueltos de
+  cada padre, solos. Si de ahí sale un cluster nombrable, había un bloque coherente y la
+  partición lo perdió. Si sale ruido, era tejido.
+
+padre       barrio  piezas_que_quedaron  locales_en_piezas  locales_sueltos  pct_suelto  sueltos_entre_las_piezas  pct_entre_las_piezas  dist_mediana_a_pieza_m  dist_p90_a_pieza_m  bloques_coherentes  mayor_grupo_de_sueltos
+ P018 Villa Devoto                    2                135              109        44.7                         1                   0.9                   569.5              1034.3                   0                       0
+ P025 Monte Castro                    2                 89               73        45.1                         9                  12.3                   274.6               633.2                   0                       0
+ P065      Palermo                    2                173              188        52.1                        29                  15.4                   186.9               399.2                   2                      70
+ P072     Belgrano                    7                620              694        52.8                       441                  63.5                   139.9               326.0                   4                     239
+
+  LOS GRUPOS DE SUELTOS QUE LLEGAN A 40, UNO POR UNO
+    El conteo solo no alcanza: hay que saber dónde está cada grupo y con qué densidad. Un
+    grupo grande y ralo metido ENTRE las piezas es la matriz de baja densidad que la
+    partición quiso sacar; uno compacto y AFUERA es un polo que se perdió.
+padre  bloque  locales   ha  locales_x_ha  centro_dentro_de_la_cascara  pct_del_bloque_entre_las_piezas  dist_a_pieza_mas_cercana_m
+ P065 P065-S1       70 11.8          5.96                        False                              0.0                       291.5
+ P065 P065-S2       59 11.0          5.39                        False                             30.5                       165.3
+ P072 P072-S3      239 61.0          3.92                         True                             34.3                       127.1
+ P072 P072-S4       80 14.9          5.36                         True                            100.0                       241.8
+ P072 P072-S2       79 13.6          5.80                         True                             68.4                       133.4
+ P072 P072-S1       68 16.4          4.14                         True                             92.6                       133.8
+
+    grupos cuyo centro cae ENTRE las piezas (posición de tejido): 4 de 6, 466 locales
+    grupos cuyo centro cae AFUERA de las piezas: 2, 129 locales
+    densidad de estos grupos: mediana 5.38 locales/ha
+
+§A bis · LAS DOS ZONAS PERDIDAS, CON SU FAMILIA DEL ATLAS
+====================================================================================================
+
+  La familia es lo que decide. Perder una «referencia dispersa» la CONFIRMA: no tiene por qué
+  producir un cluster. Perder una con nombre e identidad documental obliga a revisar la
+  partición que la rompió.
+
+  R15 · Devoto
+     familia      : Polo   (registro observado, 1 pieza/s declaradas, 479 ha)
+     soporte      : 119 puntos observados E-PLACES (Z08)
+     cobertura    : 39.3 % antes de partir → 10.7 % después
+     la cubría    : P018 (181 de sus 422 locales)
+     LECTURA      : NO es referencia dispersa — el Atlas la publica como «Polo»,
+                    con identidad propia. Perderla obliga a revisar la partición que la
+                    rompió antes de aceptar el precio.
+
+  R19 · Federico Lacroze por tramos
+     familia      : Eje o corredor   (registro declarado, 3 pieza/s declaradas, 90 ha)
+     soporte      : 2 tramo(s)/area(s) declarada(s)
+     cobertura    : 38.9 % antes de partir → 12.3 % después
+     la cubría    : P065 (57 de sus 185 locales)
+     LECTURA      : NO es referencia dispersa — el Atlas la publica como «Eje o corredor»,
+                    con identidad propia. Perderla obliga a revisar la partición que la
+                    rompió antes de aceptar el precio.
+
+§B · LA CURVA DE SENSIBILIDAD · ¿ausencia de estructura, o ausencia de evidencia?
+====================================================================================================
+
+  Método: el mismo con el que se decidió Belgrano —se unen los puntos que están a menos de
+  un umbral, se cuentan las componentes conexas y sus tamaños, y se mueve el umbral—.
+  Umbrales: 40, 55, 70, 80, 120, 160, 200, 250, 300 m. Los seis últimos son los de
+  la corrida territorial V3; los tres primeros se agregan porque aquel barrido corría sobre
+  clusters candidatos y éste corre sobre puntos sueltos.
+
+  CONTROLES POSITIVOS. El barrido se corre también sobre los cuatro polos que SÍ se
+  partieron. Sin ellos una curva plana no dice nada: no se sabría si el instrumento
+  distingue estructura de ausencia de estructura. Con ellos, una curva plana al lado de una
+  escalonada es una medición.
+
+  Criterio declarado: la curva es PLANA si el número de componentes de 40 locales o
+  más es 1 en TODOS los umbrales. Si en algún tramo aparecen dos o más partes estables de
+  tamaño comparable, ése se parte con el criterio de Belgrano.
+
+  LOS SEIS QUE `leaf` NO PARTIÓ
+    componentes de 40 locales o más, por umbral:
+umbral_m  40   55   70   80   120  160  200  250  300
+polo_id                                              
+P004        0    0    0    0    1    1    1    1    1
+P005        0    0    0    0    1    1    1    1    1
+P021        0    1    1    1    1    1    1    1    1
+P027        0    0    0    0    1    1    1    1    1
+P043        0    0    0    1    1    1    1    1    1
+P046        0    1    1    1    1    1    1    1    1
+
+    P004 (141 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:7;6;5;5;4 | 55m:18;8;8;7;7 | 70m:24;8;8;7;7 | 80m:30;9;8;7;7 | 120m:52;15;13;12;11 | 160m:89;33;14;2;2 | 200m:107;34 | 250m:107;34 | 300m:141
+    P005 (100 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:9;9;5;4;4 | 55m:14;10;9;6;4 | 70m:15;10;9;6;6 | 80m:15;13;12;6;6 | 120m:41;15;11;8;4 | 160m:48;18;13;12;3 | 200m:85;13;2 | 250m:98;2 | 300m:100
+    P021 (262 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:28;23;21;17;14 | 55m:162;10;9;8;8 | 70m:188;22;14;9;8 | 80m:188;23;14;10;8 | 120m:234;28 | 160m:262 | 200m:262 | 250m:262 | 300m:262
+    P027 (189 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:9;8;7;7;7 | 55m:22;20;11;8;8 | 70m:39;20;13;10;10 | 80m:39;20;18;16;15 | 120m:122;34;24;4;1 | 160m:188;1 | 200m:189 | 250m:189 | 300m:189
+    P043 (161 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:11;9;9;8;8 | 55m:28;18;13;11;10 | 70m:28;24;19;15;12 | 80m:48;28;16;13;12 | 120m:143;17;1 | 160m:161 | 200m:161 | 250m:161 | 300m:161
+    P046 (291 locales) → PLANA · no tiene estructura interna
+       tamaños por umbral: 40m:13;9;9;8;8 | 55m:53;18;16;15;13 | 70m:102;25;14;14;13 | 80m:127;22;17;16;14 | 120m:291 | 160m:291 | 200m:291 | 250m:291 | 300m:291
+
+  LOS CONTROLES POSITIVOS
+    componentes de 40 locales o más, por umbral:
+umbral_m  40   55   70   80   120  160  200  250  300
+polo_id                                              
+P018        0    0    1    2    2    1    1    1    1
+P025        0    0    1    1    2    1    1    1    1
+P065        2    2    1    1    1    1    1    1    1
+P072        2    5    2    2    1    1    1    1    1
+
+    P018 (244 locales) → NO PLANA · aparecen partes nombrables
+       tamaños por umbral: 40m:16;16;15;11;11 | 55m:33;19;18;16;14 | 70m:59;36;19;14;11 | 80m:60;41;34;16;11 | 120m:104;83;14;12;10 | 160m:221;13;10 | 200m:234;10 | 250m:244 | 300m:244
+    P025 (162 locales) → NO PLANA · aparecen partes nombrables
+       tamaños por umbral: 40m:22;12;9;7;6 | 55m:35;17;9;8;7 | 70m:48;23;13;9;7 | 80m:52;23;19;18;8 | 120m:70;56;23;4;2 | 160m:132;28;2 | 200m:162 | 250m:162 | 300m:162
+    P065 (361 locales) → NO PLANA · aparecen partes nombrables
+       tamaños por umbral: 40m:44;41;22;17;12 | 55m:104;89;26;24;17 | 70m:312;22;7;7;4 | 80m:331;22;2;2;2 | 120m:361 | 160m:361 | 200m:361 | 250m:361 | 300m:361
+    P072 (1314 locales) → NO PLANA · aparecen partes nombrables
+       tamaños por umbral: 40m:133;66;35;27;24 | 55m:310;250;54;45;41 | 70m:644;422;29;25;23 | 80m:1132;59;23;15;13 | 120m:1314 | 160m:1314 | 200m:1314 | 250m:1314 | 300m:1314
+
+  VEREDICTO
+polo_id                          rol  componentes_de_40_o_mas    curva
+   P004                       entero                        1    PLANA
+   P005                       entero                        1    PLANA
+   P018 control positivo (se partió)                        2 NO PLANA
+   P021                       entero                        1    PLANA
+   P025 control positivo (se partió)                        2 NO PLANA
+   P027                       entero                        1    PLANA
+   P043                       entero                        1    PLANA
+   P046                       entero                        1    PLANA
+   P065 control positivo (se partió)                        2 NO PLANA
+   P072 control positivo (se partió)                        5 NO PLANA
+
+    de los seis enteros: 6 con curva plana, 0 sin ella
+    PLANOS — P004 P005 P021 P027 P043 P046: esto ya no es «leaf no los partió». Es
+    **medimos que no tienen estructura interna**, con un instrumento que en los mismos
+    umbrales sí encuentra estructura en los controles. Quedan enteros, clasificados
+    como referencia dispersa / clase extendida, con la densidad declarada en la ficha.
+
+§C · LA AÑADA CONTRA LA DENSIDAD · ¿las clases separan dentro de cada cohorte?
+====================================================================================================
+
+  EL LÍMITE ESTRUCTURAL, DICHO ANTES QUE CUALQUIER RESULTADO. La añada está ANIDADA dentro
+  del barrio: un barrio tiene una sola añada, así que no hay ningún barrio donde comparar
+  2022 contra 2024. Año y lugar no se pueden separar por diseño, y ninguna prueba de este
+  bloque lo va a lograr. Lo que sí se puede hacer es cambiar la fuente y ver si el resultado
+  aguanta, que es C.3.
+
+  C.1 · ¿CUÁNTA VARIANZA DE LA DENSIDAD EXPLICA LA AÑADA?
+                    count  mean   50%   min    max
+anada_relevamiento                                
+2022                 12.0  4.92  4.34  3.48   9.62
+2023                 53.0  5.53  4.71  0.98  21.64
+2024                 62.0  6.70  6.77  0.99  15.23
+    eta² = 0.037 — la añada explica el 3.7 % de la varianza de la densidad
+    Kruskal–Wallis H = 8.78, p = 0.0124
+    Lectura: las cohortes SÍ difieren en densidad, y la añada explica el 3.7 % de su variación. El 96.3 % restante varía adentro de cada cohorte.
+
+  C.2 · LOS CORTES DE JENKS, COHORTE POR COHORTE
+    si la añada fabricara las clases, cada cohorte cortaría en un lugar distinto
+ anada  polos  corte_bajo  corte_alto  desvio_vs_global_bajo  desvio_vs_global_alto
+  2022     12        4.82        8.12                   0.23                  -0.36
+  2023     53        6.19       15.66                   1.61                   7.19
+  2024     62        5.11        8.86                   0.53                   0.38
+    cortes globales de referencia: 4.58 | 8.48
+
+  C.3 · LA PRUEBA DECISIVA · recalcular la densidad SIN los puntos del Relevamiento
+    Las otras seis fuentes no rotan. Si al sacar la fuente rotativa las clases se
+    reproducen, lo que separa a las clases es el territorio y no el año de medición.
+    La superficie de cada polo NO se recalcula: se mantiene la envolvente, así que lo único
+    que cambia entre las dos densidades es el numerador.
+
+    densidad mediana: 5.35 con todas las fuentes → 3.29 sin el Relevamiento (la escala baja, es esperable)
+    correlación de Spearman entre las dos densidades, polo por polo: 0.975
+    cortes a k = 3: 4.58 | 8.48 con todas las fuentes
+                              3.70 | 10.82 sin el Relevamiento
+
+    MATRIZ DE CONFUSIÓN a k igual · clase con todas las fuentes (filas) contra clase sin el
+    Relevamiento (columnas)
+clase_sin_rus                C · concentración extendida  B · concentración media  A · concentración densa
+clase_densidad                                                                                            
+A · concentración densa                                0                       24                        2
+B · concentración media                               21                       29                        0
+C · concentración extendida                           51                        0                        0
+
+    misma clase: 82 de 127 polos (64.6 %)
+    índice de Rand ajustado entre las dos particiones: 0.391
+    nota · si en vez de fijar k se deja que la regla del GVF lo elija sobre la escala
+    corrida, elige k = 4. Eso NO es que las clases se caigan: con Spearman 0.975
+    el orden de los polos es prácticamente el mismo, y una clase más sobre la misma
+    secuencia parte la serie en otro lugar, no la reordena.
+
+    eta² de la añada sobre la densidad SIN Relevamiento: 0.032 (era 0.037 con todas las fuentes)
+
+  POR QUÉ SE RECLASIFICA UN TERCIO SI EL ORDEN SE CONSERVA · el diagnóstico
+    Se probaron las tres explicaciones candidatas y las dos primeras NO son:
+
+    · ¿dependen del Relevamiento los que cambian? NO. Share del Relevamiento: 40.9 % en los que cambian contra 40.8 % en los que
+      quedan (Mann–Whitney p = 0.51). Todos los polos dependen del Relevamiento en
+      una proporción parecida, así que sacarlo no golpea a unos más que a otros.
+    · ¿estaban pegados a una frontera? NO de manera decisiva. Distancia mediana al corte 0.179 contra 0.228 (p = 0.45):
+      la diferencia va en la dirección esperable pero es chica y no separa los grupos.
+
+    · LA QUE SÍ ES: los que cambian son los DENSOS. Densidad mediana 8.84 en los que cambian contra 3.99 en los que quedan,
+      y todo el movimiento va hacia abajo. Mirando la matriz de confusión: la clase C no
+      pierde ni un polo —los 51 se quedan— y la A pierde 24 de 26.
+
+    EL MECANISMO, que es un defecto del método de corte y no de los datos. Fisher–Jenks
+    minimiza la varianza dentro de cada clase, y la varianza la domina la cola alta. Al
+    sacar el 41 % de los puntos la cola se adelgaza, y el corte superior se va de 8.48
+    a 10.82 —de 1.59× la mediana a 3.29× la mediana—, y casi nadie queda
+    arriba. **La frontera entre las clases densas se mueve con la forma de la cola, no con
+    el territorio.** Es la consecuencia concreta de que la distribución no tenga huecos:
+    sin un vacío que ancle el corte, el corte lo pone la varianza de los pocos extremos.
+
+  VEREDICTO · son dos preguntas distintas y hay que contestarlas por separado
+    umbrales declarados antes de correr: eta² < 0,10 · Spearman ≥ 0,90 · Rand ≥ 0,60
+    obtenido: eta² 0.037 ✓ · Spearman 0.975 ✓ · Rand 0.391 ✗
+
+    1 · ¿LA AÑADA CONTAMINA LAS CLASES? NO.
+        La añada explica el 3.7 % de la varianza de la densidad, y al sacar
+        entera la fuente rotativa —el 41 % de los puntos— baja a 3.2 %.
+        Las tres clases aparecen en las tres cohortes, y los cortes propios de 2022 y
+        2024 caen a menos de medio local/ha de los globales. La clase C no es «relevada
+        en 2022»: el 96 % de la variación de densidad ocurre adentro de cada cohorte.
+
+    2 · ¿SON ROBUSTAS LAS CLASES? LA BAJA SÍ, LAS ALTAS NO.
+        Cambiando el conjunto de puntos, 82 de 127 conservan clase y 45 se mueven. Pero no
+        se mueven parejo:
+          · clase C «concentración extendida» — 51 de 51 conservan la clase. ESTABLE.
+          · clase A «concentración densa»     — 2 de 26 la conservan. NO ESTABLE.
+        **Y esto no lo produjo la añada.** Lo produce que la distribución no tenga
+        huecos: sin un vacío que ancle el corte superior, lo pone la varianza de la cola.
+
+        Consecuencia operativa, y es más precisa que «abandonar las clases»:
+          · «concentración extendida» se puede usar. Es el descriptor que aguanta, y es
+            justamente el que hace falta para los seis del §B y para el sur.
+          · la frontera entre «media» y «densa» NO se puede usar para decidir nada sobre
+            un polo en particular. En la ficha va la densidad exacta primero y la clase
+            después, y ningún polo se trata distinto por estar de un lado de ese corte.
+
+    Y lo que la prueba NO puede decir, por el anidamiento declarado arriba: si la densidad
+    real del territorio cambió entre 2022 y 2024, esto no lo detecta. Lo que descarta es que
+    las clases sean un artefacto de MEDICIÓN de la fuente rotativa.
+

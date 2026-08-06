@@ -1,0 +1,87 @@
+CANDIDATOS BAJO EL MÍNIMO · lo que había y no calificó
+====================================================================================================
+
+  El Atlas escribió «no se identificaron zonas en el extremo sur» y se leyó como que no
+  había nada. Este registro es el antídoto: lista lo que se descartó, para que la frase
+  venga con su evidencia. NO publica ni rescata nada — el mínimo de 40 no se toca.
+
+  banda: 25–39 locales · umbral de contigüidad: 55 m
+  puntos fuera de todo polo: 11293 de 23981
+
+  INSTRUMENTO: contigüidad, NO el HDBSCAN que hizo los 118. Un conglomerado de acá no es
+  «un polo rechazado»: es un grupo de locales contiguos que no llega al mínimo.
+
+----------------------------------------------------------------------------------------------------
+  EL REGISTRO
+
+  · bloque_interno: 3 conglomerados, 91 locales
+  · fuera_de_todo_polo: 14 conglomerados, 405 locales
+
+candidato_id             origen  n_locales  locales_x_ha comuna polo_mas_cercano  d_al_polo_entre_puntos_m                                                       en_zona_publicada
+        B002     bloque_interno         35         17.97     14             P078                       0.0                                                                      no
+        B003     bloque_interno         30         23.61   2; 3             P106                       0.0                                                                      no
+        B001     bloque_interno         26         13.79     14             P065                       0.0                                                       Palermo (R01): 26
+        C001 fuera_de_todo_polo         38         32.06      2             P106                      76.1                                                      Recoleta (R06): 37
+        C002 fuera_de_todo_polo         36          9.52   1; 3             P085                     172.3                                                                      no
+        C003 fuera_de_todo_polo         34         11.83      1             P117                      30.8       Puerto Madero (R04): 2; Centro / Microcentro segmentado (R12): 27
+        C004 fuera_de_todo_polo         32         15.98      2             P110                      45.1                                                      Recoleta (R06): 32
+        C005 fuera_de_todo_polo         30          9.06     13           P072-7                      25.6                                                      Belgrano (R05): 10
+        C006 fuera_de_todo_polo         29         13.57     13           P072-1                      92.6                                                                      no
+        C007 fuera_de_todo_polo         27         14.31      1             P117                      14.2                               Centro / Microcentro segmentado (R12): 27
+        C008 fuera_de_todo_polo         26         14.60      1             P118                      66.8 Centro / Microcentro segmentado (R12): 23; Esmeralda-Paraguay (R18): 14
+        C009 fuera_de_todo_polo         26         16.99      1             P113                      24.0                               Centro / Microcentro segmentado (R12): 12
+        C010 fuera_de_todo_polo         26         12.62 14; 15             P091                      71.1                                Palermo (R01): 17; Villa Crespo (R08): 4
+        C011 fuera_de_todo_polo         26         13.13      1             P115                      60.7                                                  Puerto Madero (R04): 3
+        C012 fuera_de_todo_polo         25          9.28   1; 2             P113                      14.7                                                       Recoleta (R06): 1
+        C013 fuera_de_todo_polo         25         25.53      1             P117                      40.9                                Centro / Microcentro segmentado (R12): 7
+        C014 fuera_de_todo_polo         25         16.78      3        P101+P099                      27.7                                                                      no
+
+----------------------------------------------------------------------------------------------------
+  DÓNDE ESTÁN LOS QUE QUEDARON FUERA DE TODO POLO
+
+    comuna 1        6 conglomerado(s) · 164 locales
+    comuna 13       2 conglomerado(s) · 59 locales
+    comuna 14; 15   1 conglomerado(s) · 26 locales
+    comuna 1; 2     1 conglomerado(s) · 25 locales
+    comuna 1; 3     1 conglomerado(s) · 36 locales
+    comuna 2        2 conglomerado(s) · 70 locales
+    comuna 3        1 conglomerado(s) · 25 locales
+
+    fuera de toda zona publicada: 3 de 14 conglomerados (90 locales)
+
+----------------------------------------------------------------------------------------------------
+  SENSIBILIDAD AL UMBRAL DE CONTIGÜIDAD
+
+ umbral_m  conglomerados_en_banda  locales_en_banda  el_mas_grande
+       40                       1                25             25
+       55                      14               405             38
+       70                      18               550             39
+
+    **La dependencia del umbral es FUERTE y hay que leerla antes que la tabla**: de 1
+    conglomerado a 40 m se pasa a 14 a 55 m y a 18 a 70 m. Este registro NO es una
+    propiedad del territorio: es lo que se ve con un umbral de contigüidad de 55 m, y con
+    otro se ve otra cosa. Se publica con el umbral al lado, siempre, y quien lo use para
+    respaldar una frase tiene que citar el umbral en la misma frase.
+
+    La razón del salto es la del §geométrico: a 40 m el umbral queda por debajo del vecino
+    típico de un tejido denso y casi nada se conecta. No hay un valor «correcto»; hay uno
+    declarado.
+
+----------------------------------------------------------------------------------------------------
+  QUÉ DICE ESTE REGISTRO SOBRE EL SUR
+
+    Con este umbral no aparecen conglomerados de 25–39 locales en las comunas 4, 8 ni 9.
+
+    Y esto se escribe con cuidado, porque es exactamente el lugar donde el Atlas se
+    equivocó: **no significa que no haya actividad en el sur.** Significa que ahí la
+    oferta que la base registra ya quedó adentro de polos que sí califican —el barrido
+    encontró diez— o está más dispersa que 55 m entre locales. El registro dice dónde
+    hubo conglomerados que no llegaron al mínimo, no dónde hay o no hay gastronomía.
+
+====================================================================================================
+  17 candidatos registrados · 496 locales en total
+====================================================================================================
+
+  CÓMO SE USA: al lado de cualquier frase del tipo «no se identificaron polos en X».
+  Y CÓMO NO: ninguno de estos es un polo, ninguno se publica, y el mínimo sigue en 40.
+

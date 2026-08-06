@@ -1,0 +1,2 @@
+archivo,ruta_esperada,script
+belgrano_continuidad_precedente.csv,outputs\polos_gastro\corrida_territorial_v3\belgrano_continuidad.csv,ejecutar_corrida_territorial_v3.py

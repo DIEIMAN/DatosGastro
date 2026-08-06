@@ -1,0 +1,41 @@
+{
+  "etapa": "2 · densidad como atributo, partición y pruebas",
+  "clases_densidad": {
+    "metodo": "Fisher-Jenks",
+    "k": 3,
+    "gvf_minimo": 0.85,
+    "cortes_locales_x_ha": [
+      4.584984485711756,
+      8.476940146071598
+    ],
+    "nombres": [
+      "C · concentración extendida",
+      "B · concentración media",
+      "A · concentración densa"
+    ]
+  },
+  "piso_absoluto_sensibilidad": [
+    2.0,
+    4.0,
+    6.0
+  ],
+  "particion": {
+    "percentil_superficie": 0.9,
+    "metodo": "leaf",
+    "rescate_de_fragmentos": false
+  },
+  "pruebas_artefacto": {
+    "peso_fuente_maximo": 0.7,
+    "rectangularidad_maxima": 0.9,
+    "tolerancia_angular_grados": 5.0,
+    "perimetro_en_ejes_maximo": 0.5,
+    "perimetro_sobre_borde_maximo": 0.3,
+    "buffer_borde_barrio_m": 25,
+    "cobertura_percentiles": [
+      0.1,
+      0.9
+    ]
+  },
+  "estado": "BORRADOR_NO_PUBLICABLE",
+  "places_requests": 0
+}

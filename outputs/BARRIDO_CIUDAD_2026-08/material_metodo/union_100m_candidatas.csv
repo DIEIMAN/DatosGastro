@@ -1,0 +1,40 @@
+par,distancia_m,evaluado_como,continuidad,estabilidad,decision
+P081+P080,9.1,P081+P080,1 cuerpo,leaf la parte en 2,NO UNE
+P090+P089,15.1,P090+P089,1 cuerpo,no se vuelve a partir,UNE
+P091+P088,16.2,P091+P088,2 cuerpos,leaf la parte en 5,NO UNE
+P116+P117,18.7,P116+P117,1 cuerpo,leaf la parte en 2,NO UNE
+P113+P112,20.7,P113+P112,1 cuerpo,leaf la parte en 2,NO UNE
+P081+P077,26.9,P081+P077,1 cuerpo,leaf la parte en 2,NO UNE
+P111+P108,29.2,P111+P108,1 cuerpo,leaf la parte en 2,NO UNE
+P116+P114,35.0,P116+P114,1 cuerpo,leaf la parte en 2,NO UNE
+P098+P097,36.5,P098+P097,1 cuerpo,leaf la parte en 2,NO UNE
+P116+P118,45.7,P116+P118,1 cuerpo,leaf la parte en 2,NO UNE
+P106+P107,46.4,P106+P107,1 cuerpo,leaf la parte en 2,NO UNE
+P118+P117,49.1,P118+P117,1 cuerpo,leaf la parte en 2,NO UNE
+P056+P057,54.0,P056+P057,3 cuerpos,leaf la parte en 3,NO UNE
+P046+P045,54.6,P046+P045,12 cuerpos,leaf la parte en 2,NO UNE
+P027+P019,55.3,P027+P019,20 cuerpos,no se vuelve a partir,NO UNE
+P091+P090,67.1,P091+P090+P089,1 cuerpo,leaf la parte en 4,NO UNE
+P078+P075,71.8,P078+P075,3 cuerpos,leaf la parte en 3,NO UNE
+P091+P092,74.7,P091+P092,1 cuerpo,leaf la parte en 5,NO UNE
+P087+P089,75.9,P087+P090+P089,1 cuerpo,leaf la parte en 2,NO UNE
+P056+P053,76.0,P056+P053,8 cuerpos,leaf la parte en 3,NO UNE
+P082+P083,79.0,P082+P083,1 cuerpo,leaf la parte en 2,NO UNE
+P104+P105,79.3,P104+P105,1 cuerpo,leaf la parte en 2,NO UNE
+P058+P060,80.4,P058+P060,3 cuerpos,no se vuelve a partir,NO UNE
+P113+P109,82.5,P113+P109,2 cuerpos,leaf la parte en 2,NO UNE
+P085+P099,84.0,P085+P099,2 cuerpos,leaf la parte en 2,NO UNE
+P101+P099,85.1,P101+P099,1 cuerpo,no se vuelve a partir,UNE
+P097+P095,85.2,P097+P095,1 cuerpo,leaf la parte en 2,NO UNE
+P061+P060,85.8,P061+P060,2 cuerpos,no se vuelve a partir,NO UNE
+P061+P059,89.1,P061+P059,3 cuerpos,leaf la parte en 2,NO UNE
+P103+P108,89.6,P103+P108,1 cuerpo,leaf la parte en 3,NO UNE
+P118+P115,90.2,P118+P115,2 cuerpos,leaf la parte en 2,NO UNE
+P088+P086,92.8,P088+P086,1 cuerpo,leaf la parte en 2,NO UNE
+P037+P038,93.7,P037+P038,3 cuerpos,leaf la parte en 2,NO UNE
+P112+P114,93.7,P112+P114,2 cuerpos,leaf la parte en 2,NO UNE
+P056+P047,98.0,P056+P047,9 cuerpos,leaf la parte en 3,NO UNE
+P072-4+P072-5,70.2,,,,EXCLUIDA · piezas del mismo padre
+P072-4+P072-3,0.0,,,,EXCLUIDA · piezas del mismo padre
+P072-6+P072-7,34.0,,,,EXCLUIDA · piezas del mismo padre
+P018-2+P018-1,88.4,,,,EXCLUIDA · piezas del mismo padre

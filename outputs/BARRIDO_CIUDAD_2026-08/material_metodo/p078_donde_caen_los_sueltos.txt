@@ -1,0 +1,142 @@
+¿DÓNDE CAEN LOS 123 LOCALES DE P078 QUE QUEDAN AFUERA DE SUS TRES PARTES?
+====================================================================================================
+
+  La excepción de P078 se apoya en un argumento documental: la ficha de R01 Palermo dice que
+  entre Soho, Hollywood y Las Cañitas «hay tramos sin oferta, y esos espacios forman parte de
+  cómo funciona la zona». Si es así, el 21 % de afuera es la estructura de la zona y no un
+  defecto de la partición. Es falsable, y esto lo mide.
+
+  polo P078 · 585 locales · umbral 55 m (el más alto del tramo estable)
+  partes (≥ 40 locales): 3 → 462 locales (79.0 %)
+  sueltos: 123 locales en 25 componentes
+
+  LECTURA DECLARADA ANTES DE CORRER:
+    ≥ 67% entre dos partes → CONFIRMA (tramos sin oferta, excepción firmada)
+    ≤ 33% entre dos partes → NO CONFIRMA (concentrados de un lado)
+    en el medio                → MIXTO, decide una persona
+
+----------------------------------------------------------------------------------------------------
+  LAS TRES PARTES
+parte  locales cuota_de_las_partes   ha
+   S1      333              72.1 % 42.2
+   S2       88              19.0 % 10.3
+   S3       41               8.9 %  3.8
+
+----------------------------------------------------------------------------------------------------
+  MEDIDA PRINCIPAL · ¿ENTRE DOS PARTES, O COLGANDO DE UNA?
+
+    entre dos partes:      9 de 123  (7.3%)
+    colgando de una:     114 de 123  (92.7%)
+
+    **NO CONFIRMA.** La mayoría cuelga por afuera de una sola parte. Eso no es un tramo
+    sin oferta entre partes: hay que mirar qué es antes de firmar la excepción.
+
+    apoyo · adentro del envolvente de las tres partes: 18 de 123 (14.6%)
+
+----------------------------------------------------------------------------------------------------
+  REPARTO POR PARTE MÁS CERCANA · contra la cuota de locales de cada parte
+
+parte_cercana  sueltos  entre_dos  d_mediana_m  pct_de_los_sueltos  cuota_de_locales
+           S1      110          6       120.60                89.4              72.1
+           S2        7          2        63.40                 5.7              19.0
+           S3        6          1        68.85                 4.9               8.9
+
+    La columna `cuota_de_locales` es la expectativa naive: una parte con el 72 % de los
+    locales queda cerca de más sueltos por tamaño, no por concentración. Se lee la
+    diferencia entre las dos columnas, no la primera sola.
+
+----------------------------------------------------------------------------------------------------
+  EN QUÉ TRAMO CAEN · el par de partes que cada suelto separa
+
+  par  locales  d_cercana_mediana  d_segunda_mediana
+S1–S2        6              78.30             230.05
+S1–S3        1              60.40             218.10
+S2–S3        2              63.35             258.55
+
+----------------------------------------------------------------------------------------------------
+  A QUÉ DISTANCIA ESTÁN DE SU PARTE MÁS CERCANA
+
+    mínimo 56 m · p25 79 m · mediana 110 m · p75 169 m · máximo 446 m
+    a menos de 120 m de una parte: 67 de 123 (54%)
+
+    Un suelto a 60–120 m de una parte está en el tramo de enfrente, no en otro barrio. El
+    umbral que lo dejó afuera es de 55 m: la distancia se lee contra ese número.
+
+----------------------------------------------------------------------------------------------------
+  CÓMO SON LAS COMPONENTES SUELTAS
+
+    tamaño · cuántas componentes
+        1  ·  10
+        2  ·  4
+        3  ·  3
+        4  ·  1
+        5  ·  2
+        6  ·  2
+       12  ·  1
+       23  ·  1
+       35  ·  1
+    la más grande tiene 35 locales, contra un mínimo de 40 para ser parte.
+
+    Esto NO decide: en P065 los sueltos también eran esquirlas y ahí sí eran el problema,
+    porque se llevaban el 46,5 % del polo. Acá se llevan el 21 % y el que decide es dónde
+    caen, no cuán chicas son.
+
+----------------------------------------------------------------------------------------------------
+  LOS TRES BLOQUES GRANDES · 70 de los 123 están en sólo tres componentes
+
+bloque  locales  le_faltan_para_ser_parte parte_cercana  d_mediana_m  entre_dos_partes  barrio
+    B1       35                         5            S1        101.1                 0 Palermo
+    B2       23                        17            S1        143.9                 0 Palermo
+    B3       12                        28            S1        122.3                 0 Palermo
+
+    Tres bloques de 35, 23 y 12 contra un mínimo de 40 no son esquirlas: son casi-partes.
+    Y NO se baja el mínimo para recuperarlos (R3): el umbral se fijó antes de mirar quién
+    sobrevivía. Queda anotado que el que más cerca estuvo se quedó a 5 locales.
+
+----------------------------------------------------------------------------------------------------
+  BARRIO Y ZONA PUBLICADA DE LOS SUELTOS
+
+barrio
+Palermo       119
+Chacarita       3
+Colegiales      1
+
+    adentro del polígono publicado R01 Palermo: 12 de 123 (10%)
+
+    CONTROL · la misma medida sobre las partes, que es la única forma de leer el número
+    de arriba. Un 10 % en los sueltos no significa nada si las partes dan parecido.
+
+  grupo  locales  adentro_de_R01  pct
+     S1      333             231 69 %
+     S2       88              42 48 %
+     S3       41              21 51 %
+sueltos      123              12 10 %
+
+    ¿caen adentro de alguna otra zona publicada?
+      R01: 12 locales
+      R08: 3 locales
+      fuera de toda zona publicada: 108 de 123 (88%)
+
+----------------------------------------------------------------------------------------------------
+  ¿ANILLO O SALIENTE? · la pregunta que queda cuando cuelgan todos de la misma parte
+
+    concentración direccional (R): 0.70   ·   rumbo medio: 36°
+      R ≈ 0 → anillo alrededor de S1 (borde difuso)
+      R ≈ 1 → todos para el mismo lado (saliente del polo)
+
+    reparto por sector, desde el centro de S1:
+       N  ██████████████            28
+      NE  ████████████████████████████ 56
+       E                            0
+      SE                            0
+       S  ██                        5
+      SO  ██                        5
+       O  █                         2
+      NO  █████████                 18
+
+====================================================================================================
+VEREDICTO: NO CONFIRMA
+====================================================================================================
+
+  entre dos partes 7.3% · adentro del envolvente 14.6% · adentro de R01 10% · concentración direccional R = 0.70
+

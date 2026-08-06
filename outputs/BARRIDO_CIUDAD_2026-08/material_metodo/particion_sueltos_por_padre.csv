@@ -1,0 +1,5 @@
+padre,barrio,piezas_que_quedaron,locales_en_piezas,locales_sueltos,pct_suelto,sueltos_entre_las_piezas,pct_entre_las_piezas,dist_mediana_a_pieza_m,dist_p90_a_pieza_m,bloques_coherentes,mayor_grupo_de_sueltos
+P018,Villa Devoto,2,135,109,44.7,1,0.9,569.5,1034.3,0,0
+P025,Monte Castro,2,89,73,45.1,9,12.3,274.6,633.2,0,0
+P065,Palermo,2,173,188,52.1,29,15.4,186.9,399.2,2,70
+P072,Belgrano,7,620,694,52.8,441,63.5,139.9,326.0,4,239

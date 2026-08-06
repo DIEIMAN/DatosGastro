@@ -1,0 +1,437 @@
+BORRADOR · la densidad como atributo, la partición de los encadenados y las pruebas
+====================================================================================================
+
+NO ES UN PRODUCTO. No se publica, no se sella y no toca el Atlas.
+Google Places: 0 requests. Places no está en la base.
+
+LO PRIMERO, PORQUE DEFINE QUÉ ES ESTE MAPA Y NO VA EN NINGÚN ANEXO:
+  **10,417 de los 23,981 locales aptos —el 43.4 %— no están
+  en ningún polo.** La mayor parte de la gastronomía de la Ciudad no está en un polo. Este
+  mapa mapea concentraciones; no mapea el sector. Cualquier política pensada sólo en clave
+  de polos deja afuera a la mayoría de los locales.
+
+§1 · DENSIDAD Y SUPERFICIE COMO ATRIBUTOS, Y LA CLASE QUE SALE DE LOS CORTES NATURALES
+====================================================================================================
+
+  La densidad deja de ser compuerta. No hay piso que borre polos: hay un atributo por polo
+  y una clase derivada de la distribución. El motivo no es proteger a los polos del sur —eso
+  no sería argumento—: es que el Atlas YA publica zonas de baja densidad, y un piso duro
+  contradiría el precedente publicado.
+
+  densidad (locales/ha): mín 0.98 | mediana 5.03 | máx 15.23 | el más denso es 16× el menos denso
+  superficie (ha):       mín 3.3 | mediana 14.3 | máx 440.7
+
+  BONDAD DE AJUSTE DE LOS CORTES NATURALES (Fisher–Jenks, óptimo exacto en 1 dimensión)
+    regla declarada: se toma el k MÁS CHICO con GVF ≥ 0.85, no el que mejor queda
+ k    gvf                            cortes
+ 2 0.6992                              6.39
+ 3 0.8506                       4.58 | 8.48
+ 4 0.9124                3.54 | 6.14 | 9.34
+ 5 0.9395        2.86 | 4.79 | 7.28 | 10.38
+ 6 0.9633 2.78 | 4.58 | 6.39 | 8.48 | 10.85
+    k elegido: 3 clases · cortes en 4.58, 8.48 locales/ha
+
+  CONTRASTE CON LOS HUECOS CRUDOS · el criterio con el que se leyó R07
+    si los cortes de Jenks cayeran sobre huecos de la distribución, el corte sería del
+    territorio y no del método. Se busca el hueco antes de aceptar el número.
+ corte  hueco  debajo  encima
+13.851  2.757     117       1
+11.988  0.531     114       4
+10.378  0.508     108      10
+ 6.394  0.392      77      41
+11.221  0.385     111       7
+ 9.939  0.371     107      11
+    corte 4.58 → hueco reportado más cercano a 1.81 locales/ha
+    corte 8.48 → hueco reportado más cercano a 1.46 locales/ha
+
+    Y EL RESULTADO ES NEGATIVO, QUE ES EL DATO: **no hay hueco.** El salto mediano entre
+    dos polos consecutivos es 0.065 locales/ha y el mayor salto interior es
+    0.392: la distribución de densidad de los polos es continua.
+    El hueco de R07 existía porque R07 era un caso extremo —0,03 contra 15,6— y acá no hay
+    nada parecido: los polos llenan el rango sin dejar vacíos.
+
+    Consecuencia, dicha antes de usar las clases: **los cortes son óptimos, no naturales.**
+    Fisher–Jenks da la partición que minimiza la varianza interna —es el mejor lugar donde
+    cortar—, pero no hay un vacío en el territorio que los sostenga. La clase sigue
+    haciendo el trabajo que se le pide, que es dejar de llamar igual a dos cosas con 16×
+    de diferencia; lo que NO puede hacer es fingir que la frontera entre clases es una
+    frontera del territorio. Un polo a 4,5 y uno a 4,7 son prácticamente lo mismo y caen
+    en clases distintas. La densidad exacta va al lado de la clase por ese motivo.
+
+  LAS CLASES, Y QUÉ ZONA YA PUBLICADA CAE EN CADA UNA
+    las 22 del Atlas están medidas con la misma base y clasificadas con los mismos cortes,
+    y aparecen DOS VECES porque hay dos superficies posibles y miden cosas distintas:
+      · por su perímetro publicado — la densidad que implica el mapa del Atlas tal como está
+        dibujado. Un perímetro editorial es más ancho que un hull ajustado a los puntos, así
+        que este número siempre sale más bajo y NO es comparable contra un polo del borrador.
+      · medidas como los polos — envolvente cóncava de sus propios puntos, mismo ratio 0,55.
+        Ésta es la comparación honesta, y es la que hay que mirar.
+                             polos  locales       ha  densidad_min  densidad_max  ha_mediana  locales_por_polo                              zonas_22_por_su_perimetro_publicado                                              zonas_22_medidas_como_los_polos
+clase_densidad                                                                                                                                                                                                                                              
+C · concentración extendida     53     7140  2822.40          0.98          4.47       32.81               135  R03 R04 R07 R08 R09 R10 R11 R13 R14 R15 R16 R17 R19 R20 R21 R22  R01 R03 R04 R06 R07 R08 R09 R10 R11 R12 R13 R14 R15 R16 R17 R19 R20 R21 R22
+B · concentración media         45     4815   765.31          4.70          8.29        9.12               107                                              R01 R02 R06 R12 R18                                                                      R02 R05
+A · concentración densa         20     1609   156.92          8.66         15.23        5.64                80                                                              R05                                                                          R18
+
+  Ningún polo se llama igual que otro con 16 veces su densidad: eso es lo que hace la clase.
+  Y la fila de las zonas publicadas es la que cierra la discusión del piso absoluto: si las
+  zonas que la Dirección ya adoptó aparecen repartidas en las clases bajas —incluso medidas
+  del modo que más las favorece, con su propio hull—, entonces el precedente publicado ya
+  acepta baja densidad y el piso no es una opción disponible.
+
+  ADVERTENCIA DE LECTURA, Y ES IMPORTANTE PORQUE LA TABLA SE PRESTA A LO CONTRARIO. Esta
+  tabla NO dice que las zonas del Atlas sean ralas. Un polo del borrador y una zona
+  publicada no son el mismo tipo de objeto: **el polo es un núcleo extraído por densidad**
+  —el clustering descarta el 43 % de los puntos como dispersos antes de dibujar nada— y
+  **la zona publicada es un perímetro trazado sobre un área**, con todo lo que hay adentro.
+  Comparar sus densidades es comparar un barrio con su cuadra más cargada, y el barrio
+  siempre pierde. La comparación no sirve para juzgar a las zonas publicadas.
+
+  Para lo que SÍ sirve es para lo único que se le pide: mostrar que un piso de densidad
+  calibrado sobre los polos del borrador no se puede trasladar a las zonas publicadas sin
+  borrarlas casi todas. Eso no es un defecto del Atlas: es la prueba de que el piso es el
+  instrumento equivocado para esta pregunta.
+
+§2 · SENSIBILIDAD DEL PISO ABSOLUTO · informativa, no decide nada
+====================================================================================================
+
+  Se corre para saber de qué tamaño es la pregunta, no para aplicarlo. Los tres valores son
+  redondos a propósito: no se eligieron para que sobreviva ningún polo en particular.
+
+ piso_locales_x_ha  polos_que_sobreviven  polos_que_caen  locales_que_sobreviven  pct_locales_que_caen  barrios_que_pierden_todo  comunas_que_pierden_todo  zonas_22_publicadas_que_caerian                                                                          cuales
+               2.0                   106              12                   12145                  10.5                         3                         0                               11                                     R04 R07 R09 R11 R14 R15 R16 R17 R19 R21 R22
+               4.0                    74              44                    7327                  46.0                        18                         2                               16                 R04 R07 R08 R09 R10 R11 R12 R13 R14 R15 R16 R17 R19 R20 R21 R22
+               6.0                    44              74                    4290                  68.4                        28                         5                               20 R01 R03 R04 R05 R06 R07 R08 R09 R10 R11 R12 R13 R14 R15 R16 R17 R19 R20 R21 R22
+
+  La columna que importa es la última: **cuántas de las 22 zonas que la Dirección ya publicó
+  caerían con el mismo piso**. Un piso que borra zonas publicadas no es un criterio de
+  calidad: es un criterio que contradice al Atlas.
+
+§3 · PARTICIÓN DE LOS POLOS ENCADENADOS · criterio declarado antes de mirar el resultado
+====================================================================================================
+
+  QUIÉNES: superficie > percentil 90% (75.4 ha) y densidad
+           < mediana (5.03 locales/ha) → 10 polos
+  CÓMO:    se rehace el clustering sobre los puntos del propio polo con método `leaf`,
+           que toma el corte más profundo del MISMO árbol de densidad que `eom` cortó
+           somero. min_cluster_size y min_samples no se mueven: son los de toda la corrida.
+  SOBRAS:  un fragmento por debajo de 40 locales NO se rescata
+           bajando el umbral. Se anota y sus locales vuelven a contarse como dispersos.
+
+  control · polos que contienen entera una zona publicada: 1 (P072)
+  control · de esos, fuera de la población a partir: 0
+
+  QUÉ PASÓ CON CADA UNO
+polo_id  barrio_principal  locales    ha  locales_x_ha zonas_que_contiene  fragmentos_leaf  fragmentos_que_pasan_el_minimo  fragmentos_anotados_sin_rescate  locales_anotados_como_dispersos  se_parte
+   P072          Belgrano     1314 440.7          2.98                R05                7                               7                                0                              694      True
+   P065           Palermo      361  82.0          4.40                                   2                               2                                0                              188      True
+   P046     Villa Urquiza      291 114.7          2.54                                   0                               0                                0                                0     False
+   P021           Liniers      262  77.9          3.36                                   0                               0                                0                                0     False
+   P018      Villa Devoto      244 205.1          1.19                                   2                               2                                0                              109      True
+   P027  Parque Patricios      189 100.8          1.87                                   0                               0                                0                                0     False
+   P025      Monte Castro      162  89.5          1.81                                   2                               2                                0                               73      True
+   P043 Villa Gral. Mitre      161  91.6          1.76                                   0                               0                                0                                0     False
+   P004      Villa Lugano      141 144.0          0.98                                   0                               0                                0                                0     False
+   P005      Villa Lugano      100 100.9          0.99                                   0                               0                                0                                0     False
+
+    se partieron: 4 de 10 → 13 piezas en lugar de 4 manchas
+    no se partieron (leaf no separa dos piezas ≥ 40): 6 — P046 P021 P027 P043 P004 P005
+    locales que vuelven a contarse como dispersos: 1,064 — se anotan, no se rescatan
+
+    LO QUE COSTÓ, DICHO ANTES DE MOSTRAR EL RESULTADO BONITO. Partir con `leaf` no recorta
+    los bordes de la mancha: la deshace y se queda con los núcleos. De los cuatro polos que
+    se partieron salieron 13 piezas, y en el camino 1,064 locales dejaron de estar en un polo
+    —no por no llegar al mínimo, sino porque el corte profundo los deja como ruido—. El
+    criterio se declaró antes y no se toca; lo que corresponde es que el precio esté a la
+    vista y no adentro de un total.
+
+  EL CONJUNTO FINAL, DESPUÉS DE PARTIR
+    polos: 118 → 127
+    locales en algún polo: 13,564 → 12,500
+    locales fuera de todo polo: 43.4 % → 47.9 %
+    superficie: 3,745 ha → 3,058 ha (15.1 % de la Ciudad)
+    control §5 · envolventes que pasan: 127 de 127
+
+    Las clases NO se recalcularon después de partir: se aplican los cortes declarados en §1
+    sobre el conjunto nuevo. Refitear los cortes acá haría que las clases de antes y las de
+    después dejaran de ser comparables, que es justo lo que la clase viene a arreglar.
+                             polos  locales      ha
+clase_densidad                                     
+C · concentración extendida     51     5163  2029.6
+B · concentración media         50     5231   831.5
+A · concentración densa         26     2106   197.4
+
+  CONTROL DEL CASO TESTIGO · P072 se partió para recuperar R05 Belgrano, ¿lo hizo?
+polo_id barrio_principal  locales    ha  locales_x_ha          clase_densidad  pct_de_R05_que_cubre  pct_de_la_pieza_dentro_de_R05
+ P072-4         Belgrano      212 39.05          5.43 B · concentración media                  39.9                           40.5
+ P072-6         Belgrano      146  7.74         18.87 A · concentración densa                  12.0                           61.7
+ P072-7         Belgrano       68  3.14         21.64 A · concentración densa                   7.9                          100.0
+ P072-2       Colegiales       63  7.11          8.86 A · concentración densa                   0.0                            0.0
+ P072-5       Colegiales       48  5.87          8.18 B · concentración media                   3.0                           20.2
+ P072-1            Nuñez       43  5.11          8.42 B · concentración media                   0.0                            0.0
+ P072-3         Belgrano       40  5.08          7.88 B · concentración media                   0.0                            0.0
+    las piezas juntas cubren el 62.8 % de R05 (la mancha entera cubría el 99,2 %)
+    la pieza que más la cubre es P072-4: 39.9 % de R05, y el 40.5 % de la pieza cae adentro de R05
+    VEREDICTO: la partición hizo lo suyo. R05 sigue encontrada y ya no hay un polo que
+    la contenga entera con otro perímetro once veces más ancho.
+
+  cotejo rehecho sobre el conjunto final: 73 polos nuevos de 127
+  polos que todavía contienen entera una zona publicada: 0
+
+§5 · LA AÑADA DEL RELEVAMIENTO, POLO POR POLO
+====================================================================================================
+
+  El Relevamiento de Usos del Suelo es ROTATIVO: un año por barrio. La ablación mostró que
+  la corrida colapsa sin él y no colapsa sacando los mismos puntos al azar, así que el mapa
+  depende de esa fuente. Un polo dibujado sobre datos de 2022 no es comparable con uno de
+  2024, y la añada viaja ahora con cada polo, en la tabla y adentro del mapa.
+
+  REPARTO DE LOS POLOS POR AÑADA DOMINANTE DE SU BARRIO
+                    polos  locales  pct_puntos_rus_mediana
+anada_relevamiento                                        
+2022                   12      858                    42.9
+2023                   53     4910                    40.9
+2024                   62     6732                    40.7
+    polos con añada mixta (abarcan barrios relevados en años distintos): 29 de 127
+    dependencia del Relevamiento: mediana 40.9 % de los puntos de un polo | máximo 52.1 %
+
+  LA AÑADA NO ESTÁ REPARTIDA AL AZAR, Y ESO ES PEOR QUE SI LO ESTUVIERA
+    El Relevamiento no rota barrio por barrio salteado: rota por zonas. Así que el año de
+    medición y la ubicación viajan juntos, y con ellos la densidad.
+clase_densidad      C · concentración extendida  B · concentración media  A · concentración densa
+anada_relevamiento                                                                               
+2022                                          8                        3                        1
+2023                                         26                       20                        7
+2024                                         17                       27                       18
+
+    comunas donde cae cada añada:
+      2022 · comunas 10, 11
+      2023 · comunas 4, 5, 6, 9, 10, 12, 13, 15
+      2024 · comunas 1, 2, 3, 4, 7, 8, 14
+
+    Consecuencia, y es la que importa: **comparar el centro denso con la periferia extendida
+    es, además, comparar 2024 contra 2023 y 2022.** Los dos efectos están confundidos y con
+    estos datos no se pueden separar. No invalida el mapa; sí invalida cualquier lectura
+    del tipo «tal zona creció respecto de tal otra».
+
+  Consecuencia escrita, no sólo anotada: comparar dos polos de añadas distintas compara dos
+  fotos de años distintos. Y sube la prioridad del diccionario de códigos pedido a
+  Estadística y Censos: si la clasificación de TIPO2 que inferimos está corrida, el mapa se
+  mueve.
+
+§4 · LAS TRES PRUEBAS DE ARTEFACTO
+====================================================================================================
+
+  Los umbrales son los del §3 de CRITERIOS_LECTURA_POLIGONIZACION.md, escritos antes de que
+  el mapa existiera. Se corren sobre TODOS los polos —si no, no hay con qué comparar— y se
+  reportan uno por uno para los del sur, que es lo que se pidió.
+
+  4.1 fuente    · falla si un solo grupo aporta más del 70% de los puntos
+  4.2 grilla    · falla si rectangularidad > 0.9, o más del 50% del perímetro
+                  alineado a los ejes (±5°), o más del 30% del perímetro sobre borde
+                  INTERNO de barrio (±25 m). El perímetro de la Ciudad
+                  se excluye: en el sur los polos tocan el Riachuelo y la General Paz, que
+                  son territorio real. Contarlos daría un falso positivo justo ahí.
+  4.3 cobertura · falla si la cobertura del barrio cae por debajo del p10 de la Ciudad
+                  (p10 = 2.30). Es de UNA COLA, y así lo pide el criterio escrito antes
+                  del mapa: «un cluster en un barrio donde la base es notoriamente floja vale
+                  menos que el mismo cluster donde la base es densa». Cobertura ALTA no es
+                  riesgo de artefacto, es más base sosteniendo el mismo polo. Se informa
+                  igual la lectura de dos colas (p90 = 2.78) para que se vea qué cambia.
+
+  NOTA SOBRE 4.2, QUE HAY QUE LEER ANTES DE LA TABLA. Ninguna de las siete fuentes de la
+  base se bajó por celdas de consulta: F01/F02 y el Relevamiento son volcados
+  administrativos completos, y OSM, Overture y ATP se recortaron por el `bbox` de la Ciudad
+  entera y después por barrios oficiales. Google Places, que sí se consulta por celdas, NO
+  está en la base. No existe la grilla contra la cual cruzar contornos, así que la prueba
+  se corre por la firma geométrica que una grilla dejaría igual, más el único borde de
+  recorte que sí existe: el límite entre barrios.
+
+  RESULTADO SOBRE LOS 127 POLOS · la vara con la que se lee el sur
+    4.1 fuente       pasan 125 de 127 | fallan 2
+    4.2 grilla       pasan 125 de 127 | fallan 2
+    4.3 cobertura    pasan 111 de 127 | fallan 16
+        (dos colas)  pasan 101 de 127 | fallan 26
+    La fila de dos colas está sólo para mostrar cuánto se infla la prueba al mirar la cola
+    equivocada: una banda p10–p90 deja afuera al 20 % de los barrios por construcción, así
+    que ese conteo mide el ancho de la banda y no el riesgo de artefacto.
+    distribución de la firma de grilla en toda la Ciudad: rectangularidad mediana 0.45 | perímetro en ejes mediano 9.5 % | sobre borde interno mediano 1.7 %
+
+  LOS 10 POLOS DE LAS COMUNAS 8 Y 9, UNA PRUEBA POR VEZ Y EL RESULTADO DE CADA UNA
+    Es el hallazgo del cotejo: el Atlas no tiene ninguna zona publicada en estas dos comunas
+    y el clustering encuentra concentraciones ahí con los mismos parámetros que usó en
+    Palermo. Se sostiene porque la parejidad dice que el sur no está peor cubierto. Antes de
+    que salga de la carpeta, las tres pruebas, polo por polo.
+
+    4.1 · ARTEFACTO DE FUENTE — ¿más del 70 % de los puntos de un solo grupo?
+polo_id  barrio_principal  comuna  locales  grupo_dominante  peso_grupo_dominante  pasa_fuente
+   P021           Liniers     9.0      262              OSM                  0.37         True
+   P004      Villa Lugano     9.0      141   GCBA_URBANISMO                  0.41         True
+   P017           Liniers     9.0      108   GCBA_URBANISMO                  0.47         True
+   P005      Villa Lugano     8.0      100   GCBA_URBANISMO                  0.51         True
+   P003   Villa Riachuelo     8.0       91   GCBA_URBANISMO                  0.46         True
+   P012         Mataderos     9.0       90   GCBA_URBANISMO                  0.43         True
+   P002     Villa Soldati     8.0       68   GCBA_URBANISMO                  0.37         True
+   P009 Parque Avellaneda     9.0       50   GCBA_URBANISMO                  0.34         True
+   P006         Mataderos     9.0       48 OVERTURE_FSQ_ATP                  0.40         True
+   P013         Mataderos     9.0       42   GCBA_URBANISMO                  0.40         True
+
+    4.2 · ARTEFACTO DE GRILLA — ¿el contorno tiene forma de celda de consulta?
+polo_id  barrio_principal     ha  vertices  rectangularidad  pct_perimetro_en_ejes  pct_perimetro_sobre_borde_barrio  pasa_grilla
+   P021           Liniers  77.86        15             0.45                   25.0                               3.4         True
+   P004      Villa Lugano 144.02        23             0.42                   10.8                               5.6         True
+   P017           Liniers  69.80        16             0.42                   25.8                               3.4         True
+   P005      Villa Lugano 100.94        18             0.46                   18.5                               0.0         True
+   P003   Villa Riachuelo  39.82        11             0.43                   27.9                               4.2         True
+   P012         Mataderos  32.81        17             0.30                    5.0                               0.0         True
+   P002     Villa Soldati  63.36        18             0.46                   19.3                               0.0         True
+   P009 Parque Avellaneda  24.65        17             0.38                    0.0                              27.6         True
+   P006         Mataderos  28.18        14             0.42                    0.0                               0.0         True
+   P013         Mataderos  10.79        12             0.30                    0.0                               0.0         True
+
+    4.3 · ARTEFACTO DE COBERTURA — la parejidad del barrio, al lado de cada polo
+polo_id  barrio_principal  locales  locales_x_ha              clase_densidad  cobertura_barrio  composicion_barrio  pasa_cobertura  pasa_cobertura_dos_colas
+   P021           Liniers      262          3.36 C · concentración extendida              2.64               148.3            True                      True
+   P004      Villa Lugano      141          0.98 C · concentración extendida              2.59               112.0            True                      True
+   P017           Liniers      108          1.55 C · concentración extendida              2.64               148.3            True                      True
+   P005      Villa Lugano      100          0.99 C · concentración extendida              2.59               112.0            True                      True
+   P003   Villa Riachuelo       91          2.29 C · concentración extendida              2.02                90.7           False                     False
+   P012         Mataderos       90          2.74 C · concentración extendida              2.45               108.9            True                      True
+   P002     Villa Soldati       68          1.07 C · concentración extendida              2.80               129.1            True                     False
+   P009 Parque Avellaneda       50          2.03 C · concentración extendida              2.52                88.6            True                      True
+   P006         Mataderos       48          1.70 C · concentración extendida              2.45               108.9            True                      True
+   P013         Mataderos       42          3.89 C · concentración extendida              2.45               108.9            True                      True
+
+    LAS TRES JUNTAS, con la añada del Relevamiento que sostiene a cada uno
+polo_id  barrio_principal                                    barrios  locales  pasa_fuente  pasa_grilla  pasa_cobertura  pruebas_que_pasa  anada_relevamiento  anada_mixta          anadas  pct_puntos_del_relevamiento
+   P021           Liniers                          Liniers;Versalles      262         True         True            True                 3                2023         True 2023:257;2022:5                         32.1
+   P004      Villa Lugano   Villa Lugano;Parque Avellaneda;Mataderos      141         True         True            True                 3                2023         True 2023:77;2024:64                         41.1
+   P017           Liniers                          Liniers;Mataderos      108         True         True            True                 3                2023        False        2023:108                         47.2
+   P005      Villa Lugano                               Villa Lugano      100         True         True            True                 3                2024        False        2024:100                         51.0
+   P003   Villa Riachuelo               Villa Riachuelo;Villa Lugano       91         True         True           False                 2                2024        False         2024:91                         46.2
+   P012         Mataderos                                  Mataderos       90         True         True            True                 3                2023        False         2023:90                         43.3
+   P002     Villa Soldati                              Villa Soldati       68         True         True            True                 3                2024        False         2024:68                         36.8
+   P009 Parque Avellaneda Parque Avellaneda;Velez Sarsfield;Floresta       50         True         True            True                 3                2023         True 2023:36;2022:14                         34.0
+   P006         Mataderos                                  Mataderos       48         True         True            True                 3                2023        False         2023:48                         35.4
+   P013         Mataderos                                  Mataderos       42         True         True            True                 3                2023        False         2023:42                         40.5
+
+    4.1 fuente    · pasan 10 de 10
+    4.2 grilla    · pasan 10 de 10
+    4.3 cobertura · pasan 9 de 10 — fallan P003
+    las tres      · pasan 9 de 10
+
+    Y el número que convierte la sospecha en hallazgo, repetido acá porque sin él la tabla
+    de arriba no alcanza: la cobertura de la base en el sur (comunas 4, 8 y 9) es 2,50
+    contra 2,45 del resto. El sur no está peor cubierto: tiene menos gastronomía, medida
+    caminando por un tercero.
+
+§6 · LAS ZONAS PUBLICADAS QUE EL CLUSTERING NO ENCUENTRA, CON SU EXPLICACIÓN
+====================================================================================================
+
+  Se evalúa sobre el conjunto de la ETAPA 1, que es el cotejo que está sobre la mesa. Lo que
+  la partición del §3 le hizo a cada zona va en su propia columna, no reemplaza la lista.
+
+  Las tres explicaciones y su orden de probabilidad son las del §4 de
+  CRITERIOS_LECTURA_POLIGONIZACION.md. Ninguna zona publicada se pone en duda acá: el
+  borrador no tiene autoridad para eso.
+
+    E1 · no era una concentración sino una lectura territorial de la Dirección. Se asigna
+         cuando la MAYORÍA (≥ 50%) de los locales de la zona sí
+         está adentro de algún polo, pero esos polos ocupan menos de un cuarto de la
+         superficie publicada: la concentración está, el perímetro es más ancho. No se usa
+         la densidad de la zona para decidirlo: casi todas las publicadas caen en la clase
+         baja por su perímetro editorial, y una regla por densidad le pondría E1 a las siete
+         sin distinguir nada.
+    E2 · la cobertura de la base ahí es floja (cobertura del barrio por debajo del p10 = 2.30).
+    E3 · la zona no se sostiene. Última hipótesis, y no se declara desde un borrador.
+
+  ZONAS NO ENCONTRADAS: 7 de 22
+referencia_id            nombre  ha_zona  locales_en_la_zona  locales_x_ha_hull  pct_zona_cubierta  pct_locales_en_algun_polo  cobertura_barrio                                              explicacion
+          R20    Garcia del Rio     28.4                  61               3.31               24.7                       29.5              2.78             E3 · queda como pregunta, no como conclusión
+          R07   Costanera Norte     38.5                  67               0.83               16.1                       53.7              2.53 E1 · no era una concentración: el perímetro es más ancho
+          R16   Donado-Holmberg    119.0                 121               0.97               14.9                       52.9              2.48 E1 · no era una concentración: el perímetro es más ancho
+          R21       La Paternal    321.0                 208               0.67               13.2                       45.7              2.30                E2 · la cobertura de la base ahí es floja
+          R04     Puerto Madero    314.5                 354               1.24                9.3                       33.6              7.45             E3 · queda como pregunta, no como conclusión
+          R22  Villa Pueyrredon    305.6                 198               0.77                9.3                       58.1              2.30 E1 · no era una concentración: el perímetro es más ancho
+          R11 Boulevard Caseros     50.0                  60               1.11                5.5                       31.7              2.66             E3 · queda como pregunta, no como conclusión
+
+  REPARTO DE LAS EXPLICACIONES
+    3 · E3 · queda como pregunta, no como conclusión — R20 R04 R11
+    3 · E1 · no era una concentración: el perímetro es más ancho — R07 R16 R22
+    1 · E2 · la cobertura de la base ahí es floja — R21
+
+  CASOS AL FILO · la regla los clasifica, pero por poco, y eso se dice
+    R07 · Costanera Norte → E1 · no era una concentración: el perímetro es más ancho
+       queda del lado que queda por: 53.7 % de locales en polo contra un umbral de 50%
+    R16 · Donado-Holmberg → E1 · no era una concentración: el perímetro es más ancho
+       queda del lado que queda por: 52.9 % de locales en polo contra un umbral de 50%
+    R21 · La Paternal → E2 · la cobertura de la base ahí es floja
+       queda del lado que queda por: 45.7 % de locales en polo contra un umbral de 50%; cobertura 2.30 contra un p10 de 2.30
+    R22 · Villa Pueyrredon → E1 · no era una concentración: el perímetro es más ancho
+       queda del lado que queda por: 58.1 % de locales en polo contra un umbral de 50%; cobertura 2.30 contra un p10 de 2.30
+    No se mueve ningún umbral para acomodarlos. Se marca que la asignación es frágil y
+    que un criterio editorial los podría leer del otro lado con el mismo derecho.
+
+  DIVERGENCIA CON LA LECTURA PREVIA, ANOTADA PORQUE NO COINCIDE. La conversación anterior
+  daba por descontado que cuatro de las siete (R21, R22, R04, R16) eran perímetros mucho
+  más anchos que su concentración. Medido con la regla declarada arriba, E1 le toca a tres
+  —R07, R16 y R22— y no a las cuatro esperadas: R21 se va a E2 al filo, y R04 no llega
+  porque sólo un tercio de sus locales cae en algún polo. La regla no se ajustó para
+  reproducir la expectativa.
+
+  UNA POR UNA
+    R20 · Garcia del Rio
+       E3 · queda como pregunta, no como conclusión
+       sólo el 30% de sus 61 locales cae en algún polo y la cobertura del barrio (2.78) no es
+       floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde
+       un borrador: se anota como pregunta para la Dirección
+       ANOTADO ASÍ Y NO RESCATADO: quedó a 0.3 puntos del umbral de 25%. El umbral se fijó
+       antes de correr y no se mueve para alcanzarla.
+
+    R07 · Costanera Norte
+       E1 · no era una concentración: el perímetro es más ancho
+       el 54% de sus 67 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 16.1
+       % de sus 39 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que
+       no produzca un cluster del tamaño de la zona la confirma, no la refuta
+
+    R16 · Donado-Holmberg
+       E1 · no era una concentración: el perímetro es más ancho
+       el 53% de sus 121 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 14.9
+       % de sus 119 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que
+       no produzca un cluster del tamaño de la zona la confirma, no la refuta
+
+    R21 · La Paternal
+       E2 · la cobertura de la base ahí es floja
+       cobertura del barrio 2.30, por debajo del p10 de la Ciudad (2.30): no se concluye nada sobre
+       la zona
+
+    R04 · Puerto Madero
+       E3 · queda como pregunta, no como conclusión
+       sólo el 34% de sus 354 locales cae en algún polo y la cobertura del barrio (7.45) no es
+       floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde
+       un borrador: se anota como pregunta para la Dirección
+       PENDIENTE APARTE: el Relevamiento declara 52 parcelas comerciales activas en
+       todo Puerto Madero, un número implausible que hace sospechar del Relevamiento
+       ahí antes que de la base. Verificar antes de concluir nada sobre R04.
+
+    R22 · Villa Pueyrredon
+       E1 · no era una concentración: el perímetro es más ancho
+       el 58% de sus 198 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 9.3
+       % de sus 306 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que
+       no produzca un cluster del tamaño de la zona la confirma, no la refuta
+
+    R11 · Boulevard Caseros
+       E3 · queda como pregunta, no como conclusión
+       sólo el 32% de sus 60 locales cae en algún polo y la cobertura del barrio (2.66) no es
+       floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde
+       un borrador: se anota como pregunta para la Dirección
+
+  LO QUE LA PARTICIÓN DEL §3 LE HIZO A ESTE COTEJO
+    zonas encontradas: 15 antes de partir → 13 después
+    zonas que estaban encontradas y dejaron de estarlo al partir:
+referencia_id                      nombre  pct_zona_cubierta  pct_zona_cubierta_tras_partir
+          R15                      Devoto               39.3                           10.7
+          R19 Federico Lacroze por tramos               38.9                           12.3
+    No es un problema del cotejo: es el precio de partir, y el §3 lo cuantifica. Partir
+    achica los polos, y polos más chicos cubren menos superficie publicada. La decisión de
+    partir ya estaba tomada; lo que corresponde acá es dejar escrito cuánto costó.
+

@@ -1,0 +1,289 @@
+BORRADOR · primera poligonización de toda la Ciudad desde la base
+====================================================================================================
+
+NO ES UN PRODUCTO. No se publica, no se sella y no toca el Atlas. Se mira.
+Google Places: 0 requests. Places no está en la base.
+
+universo: 23,981 puntos del anillo nucleo con apto_geometria = True
+          (de 27,727 locales de la base, corte 2026-08-05)
+parámetros ÚNICOS para los 48 barrios: min_cluster_size=40, min_samples=10, método=eom, concave_hull_ratio=0.55
+
+====================================================================================================
+RESULTADO
+====================================================================================================
+
+  polos: 118
+  locales agrupados: 13,564 (56.6 %) | dispersos (ruido): 10,417 (43.4 %)
+  superficie total de los polos: 3,745 ha (18.4 % de la superficie de la Ciudad)
+
+  TAMAÑO DE LOS POLOS
+    mínimo           40 locales
+    mediana          66 locales
+    media           115 locales
+    máximo         1314 locales
+    superficie: mediana 14.3 ha | rango 3.3–440.7 ha
+    densidad:   mediana 5.0 locales/ha | rango 1.0–15.2
+
+    distribución por tamaño:
+      40–60         52 polos
+      61–100        22 polos
+      101–200       34 polos
+      201–400        7 polos
+      más de 400     3 polos
+
+  POLOS GRANDES Y POCO DENSOS · candidatos a partir, no resultados para mostrar
+    polos por encima del percentil 90 de superficie y por debajo de la densidad mediana (5.0 locales/ha): 10
+polo_id  barrio_principal  n_barrios                                  barrios  locales    ha  locales_x_ha
+   P072          Belgrano          5                Belgrano;Nuñez;Colegiales     1314 440.7           3.0
+   P065           Palermo          2                         Palermo;Belgrano      361  82.0           4.4
+   P046     Villa Urquiza          3  Villa Urquiza;Parque Chas;Villa Ortuzar      291 114.7           2.5
+   P021           Liniers          2                        Liniers;Versalles      262  77.9           3.4
+   P018      Villa Devoto          3     Villa Devoto;Villa Real;Monte Castro      244 205.1           1.2
+   P027  Parque Patricios          3     Parque Patricios;Nueva Pompeya;Boedo      189 100.8           1.9
+   P025      Monte Castro          4       Monte Castro;Villa Luro;Villa Real      162  89.5           1.8
+   P043 Villa Gral. Mitre          4  Villa Gral. Mitre;Villa Crespo;Paternal      161  91.6           1.8
+   P004      Villa Lugano          3 Villa Lugano;Parque Avellaneda;Mataderos      141 144.0           1.0
+   P005      Villa Lugano          1                             Villa Lugano      100 100.9           1.0
+
+  UN SOLO JUEGO DE PARÁMETROS NO ES UN SOLO UMBRAL DE DENSIDAD
+    HDBSCAN es adaptativo por diseño: no fija una distancia, fija cuántos vecinos hacen
+    denso a un punto, y después deja que la distancia la ponga el territorio. Así que
+    correr los 48 barrios con el mismo `min_cluster_size` y el mismo `min_samples` —que es
+    lo que se pidió y lo que se hizo— NO impone la misma vara de densidad en toda la
+    Ciudad. Impone la misma regla, y la regla da un umbral distinto en cada lugar.
+
+                    polos  locales      ha  densidad_min  densidad_max  ha_por_polo
+locales_x_ha                                                                       
+tercio menos denso     40     5817  2504.5           1.0           3.9         62.6
+tercio medio           39     3854   777.4           3.9           6.7         19.9
+tercio más denso       39     3893   462.7           6.7          15.2         11.9
+    la densidad del polo más denso es 16 veces la del menos denso, y la superficie mediana del tercio menos denso es 5 veces la del más denso.
+
+    Consecuencia práctica, y es la lectura importante de este borrador: en la periferia el
+    método dibuja manchas grandes y flojas, y en el centro dibuja piezas chicas y
+    apretadas. Un polo de Lugano y un polo de San Nicolás llevan la misma etiqueta y no
+    son la misma cosa. Si lo que se quiere es «la misma vara para toda la Ciudad» en el
+    sentido de un mismo piso de densidad, este método no lo da y hay que decidirlo: o se
+    acepta la vara relativa —cada zona contra su entorno— o se pasa a un umbral absoluto
+    en locales por hectárea, que es otra corrida y otra discusión.
+
+  CONTROL §5 · ninguna envolvente derivada mayoritariamente de puntos no aptos
+    envolventes que pasan: 118 de 118
+    share de aptos dentro de la envolvente: mínimo 93.9 % | mediana 98.9 %
+
+  DE QUÉ ESTÁN HECHOS LOS POLOS
+    locales corroborados por 2+ grupos: 2,857 de 13,564 (21.1 %)
+    publicables con identidad abierta: 6,865 (50.6 %)
+    polos con un grupo dominante por encima del 70 % de sus puntos: 1
+    grupo dominante, cuántos polos encabeza:
+      GCBA_URBANISMO            88
+      OVERTURE_FSQ_ATP          23
+      OSM                        5
+      GCBA_AGC                   2
+
+  REPARTO TERRITORIAL
+    barrios con al menos un polo: 42 de 48
+    barrios sin ningún polo (6): Agronomia, Coghlan, Parque Chas, Paternal, Versalles, Villa Real
+
+                  polos  locales     ha
+barrio_principal                       
+Palermo              12     2339  382.1
+Recoleta              9      896  142.3
+Caballito             8      873  267.0
+San Nicolas           6      689   76.5
+Flores                6      296   85.7
+Balvanera             6      548   96.5
+Monserrat             5      515   61.5
+Villa Crespo          5      302   36.9
+Villa Devoto          4      487  263.2
+Floresta              4      269   67.6
+Mataderos             3      180   71.8
+Saavedra              3      184   66.3
+Belgrano              3     1401  457.2
+Parque Patricios      3      297  148.7
+Barracas              2      114   41.5
+
+  DIAGNÓSTICO DEL §10 · ¿los polos siguen a la oferta o siguen a las fuentes?
+    contraste contra el Relevamiento de Usos del Suelo, que caminó los 48 barrios
+    correlación de Spearman entre gastronomía relevada a pie y locales en polos, por barrio: 0.83
+    barrios sin ningún polo: 6
+             rus_gastro  rus_sobre_comercial  puntos_aptos  cobertura
+barrio_k                                                             
+PATERNAL             67               139.29           126       2.30
+VILLA REAL           54               152.11           113       2.48
+PARQUE CHAS          52               137.20            99       2.42
+COGHLAN              45               159.57           108       2.73
+AGRONOMIA            44               137.50            88       2.45
+VERSALLES            25               108.70            84       4.16
+    los seis juntos tienen 287 parcelas gastronómicas relevadas, el 2.6 % de la Ciudad, y su composición mediana es 138 por mil contra 158 de la Ciudad.
+
+    Y el control que importa: ¿algún barrio con MUCHA gastronomía caminada quedó sin polo?
+    barrios sin polo por encima de la mediana de gastronomía relevada (143 parcelas): 0
+
+  SENSIBILIDAD AL UMBRAL · la grilla completa, declarada antes de correr
+    `colapsa` marca las corridas que dejaron de separar polos y devolvieron la Ciudad como
+    una mancha. Su columna `polos` es un número y no es un resultado: no se lee como una
+    corrida más conservadora.
+ min_cluster_size  min_samples  polos  ruido_pct  mediana_locales  mayor  mayor_pct  colapsa  adoptado
+               20            5    323       32.7               39    400        1.7    False     False
+               20           10    244       45.6               40    507        2.1    False     False
+               20           20    146       52.8               47    588        2.5    False     False
+               30            5    212       35.5               53    400        1.7    False     False
+               30           10    154       41.3               53   1314        5.5    False     False
+               30           20     99       53.3               69    701        2.9    False     False
+               40            5    148       34.6               71    892        3.7    False     False
+               40           10    118       43.4               65   1314        5.5    False      True
+               40           20     80       53.3               95    964        4.0    False     False
+               60            5     89       36.4              120   1253        5.2    False     False
+               60           10     65       46.9              136   1548        6.5    False     False
+               60           20      5        3.8               91  22698       94.6     True     False
+               80            5     66       36.7              155   1253        5.2    False     False
+               80           10     51       45.3              162   1548        6.5    False     False
+               80           20      4        4.1              102  22698       94.6     True     False
+    corridas que separan polos: 13 de 15 | rango de polos 51–323 | el adoptado da 118
+
+  ABLACIÓN · se saca un grupo de independencia por vez y se repite la corrida entera
+    un polo «sobrevive» si al menos la mitad de su superficie sigue cubierta sin esa fuente
+    `colapsa` = la corrida sin esa fuente ya no separa polos: devuelve una mancha con más
+    del 50% de los puntos, y entonces la supervivencia no se puede medir
+    `_azar` = el control: 5 sorteos sacando al azar los mismos n puntos
+       grupo_quitado  puntos_restantes  pct_puntos_perdidos  polos_en_la_ablacion  polos_azar_mediana colapsos_azar  mayor_pct  colapsa  polos_originales_que_sobreviven  pct_sobreviven
+            GCBA_AGC             18837                 21.5                    82                  68           2/5        3.3    False                             86.0            72.9
+GCBA_ESPACIO_PUBLICO             23981                  0.0                   118                 118           0/5        5.5    False                            118.0           100.0
+      GCBA_URBANISMO             14980                 37.5                     5                  67           0/5       94.4     True                              NaN             NaN
+                 OSM             18335                 23.5                     5                  77           1/5       94.3     True                              NaN             NaN
+    OVERTURE_FSQ_ATP             15196                 36.6                    64                  65           0/5        6.9    False                             84.0            71.2
+
+    LECTURA, caso por caso — la fila sola no dice nada sin su control:
+      GCBA_AGC               sus puntos son REDUNDANTES: sacarla aguanta mejor que sacar la misma cantidad al azar
+      GCBA_ESPACIO_PUBLICO   no aporta ningún local propio: sus registros llegan siempre pegados a otro
+      GCBA_URBANISMO         la fuente SOSTIENE el mapa: sin ella la corrida se rompe y sacar la misma cantidad de puntos al azar no la rompe nunca
+      OSM                    NO INTERPRETABLE: el azar rompe la corrida 1 de 5 veces. Se midió la densidad que exigen los parámetros, no el peso de la fuente
+      OVERTURE_FSQ_ATP       interpretable: sobrevive el 71 % de los polos
+
+    Y la conclusión que atraviesa la tabla: **el umbral de colapso cae adentro del rango de
+    tamaños que la ablación necesita probar.** Con un solo juego de parámetros calibrado a
+    la densidad actual, esta ablación no puede separar limpiamente «la fuente sostenía el
+    polo» de «faltaron puntos». Es un límite del diseño de la prueba, no un resultado sobre
+    las fuentes, y hay que arreglarlo antes de usar la ablación para decidir nada.
+
+  SENSIBILIDAD AL ANILLO · el mismo parámetro sobre núcleo+ampliado (con panaderías)
+    núcleo:   23,981 puntos → 118 polos, 3,745 ha
+    ampliado: 27,439 puntos → 2 polos, 19,082 ha
+    COLAPSA: el 99.6 % de los puntos del ampliado cae en un solo
+    cluster. Con panaderías y pastelerías adentro, la Ciudad deja de tener polos
+    separables con estos parámetros: pasa a ser una sola mancha continua. No es un
+    resultado alternativo del mapa, es la corrida que no se puede hacer así.
+    Consecuencia: la elección del anillo núcleo NO es cosmética. El ampliado exigiría
+    otros parámetros, y entonces los dos mapas dejarían de ser comparables.
+
+  COTEJO CONTRA LAS 22 ZONAS PUBLICADAS
+    umbrales escritos antes de correr: zona encontrada si el borrador le cubre ≥ 25%; polo nuevo si menos del 25% de su superficie ya estaba publicada
+
+    zonas publicadas que el borrador ENCUENTRA: 15 de 22
+    zonas publicadas que el borrador NO encuentra: 7
+    polos del borrador NUEVOS (fuera de lo publicado): 68 de 118
+    superficie publicada: 3,842 ha | borrador: 3,743 ha | compartida: 1,225 ha
+
+    POLOS QUE CONTIENEN UNA ZONA PUBLICADA ENTERA Y AUN ASÍ SOLAPAN POCO
+    Es el caso que los dos umbrales por separado no ven: el polo es mucho más grande
+    que la zona, así que la zona aparece «encontrada» y el polo aparecería «nuevo».
+    No son polos nuevos: son la misma zona con otro perímetro, mucho más ancho.
+polo_id barrio_principal  locales    ha  locales_x_ha  pct_ya_publicado zonas_que_contiene
+   P072         Belgrano     1314 440.7           3.0              12.8                R05
+
+    LAS 22, UNA POR UNA
+referencia_id                          nombre  ha_zona  polos_que_la_tocan  pct_zona_cubierta  encontrada                         polos
+          R05                        Belgrano     39.6                   1               99.2        True                          P072
+          R01                         Palermo    271.3                   4               63.0        True           P091;P078;P065;P090
+          R02              Avenida Corrientes     49.7                   3               61.1        True                P113;P116;P114
+          R13                          Abasto    109.0                   2               55.4        True                     P093;P082
+          R10                       Caballito    225.4                   4               41.7        True           P056;P053;P047;P049
+          R09                       Chacarita     94.8                   3               41.5        True                P078;P068;P075
+          R18              Esmeralda-Paraguay     48.4                   3               40.5        True                P116;P118;P117
+          R15                          Devoto    478.7                   2               39.3        True                     P018;P016
+          R19     Federico Lacroze por tramos     89.5                   4               38.9        True           P072;P065;P068;P071
+          R12 Centro / Microcentro segmentado    184.1                  10               38.3        True P113;P116;P111;P118;P117;P108
+          R14                   Avenida Boedo    179.5                   3               38.1        True                P027;P062;P029
+          R06                        Recoleta    140.5                   6               37.1        True P106;P098;P110;P097;P095;P096
+          R08                    Villa Crespo    335.5                   7               32.3        True P091;P063;P043;P081;P077;P074
+          R17                   Villa Urquiza    446.6                   2               29.1        True                     P046;P045
+          R03                       San Telmo     25.4                   1               25.8        True                          P103
+          R20                  Garcia del Rio     28.4                   1               24.7       False                          P072
+          R07                 Costanera Norte     38.5                   1               16.1       False                          P001
+          R16                 Donado-Holmberg    119.0                   2               14.9       False                     P045;P039
+          R21                     La Paternal    321.0                   1               13.2       False                          P043
+          R04                   Puerto Madero    314.5                   1                9.3       False                          P030
+          R22                Villa Pueyrredon    305.6                   2                9.3       False                     P028;P023
+          R11               Boulevard Caseros     50.0                   2                5.5       False                     P051;P102
+
+    DÓNDE ESTÁ LO NUEVO · polos del borrador por comuna
+        polos  nuevos  locales  tiene_zona_publicada
+comuna                                              
+7           8       8      470                  True
+1          18       7     2096                  True
+4           7       6      604                  True
+10          6       6      462                  True
+9           6       6      600                 False
+3           6       5      491                  True
+14         11       5     2285                  True
+13          6       4     1665                  True
+8           4       4      400                 False
+2           9       3      896                  True
+5           6       3      554                  True
+6           7       3      691                  True
+11          6       3      627                  True
+12          7       3      618                  True
+15         11       2     1105                  True
+
+    comunas sin NINGUNA zona publicada del Atlas que sí tienen polos en el borrador: 2 — comunas 8, 9, con 10 polos y 1,000 locales
+    Es el hallazgo más grande del cotejo y no depende de ningún umbral: el Atlas no tiene
+    zona publicada en esas comunas, y el clustering encuentra concentraciones ahí con los
+    mismos parámetros que usó en Palermo.
+
+    LOS POLOS DEL BORRADOR QUE NO ESTABAN PUBLICADOS (los 25 más grandes)
+polo_id barrio_principal  locales    ha  locales_x_ha  pct_ya_publicado  corroborados
+   P103        San Telmo      342  47.5           7.2              14.4            72
+   P021          Liniers      262  77.9           3.4               0.0            41
+   P073          Palermo      207  39.2           5.3               0.0            51
+   P048       Colegiales      171  50.8           3.4               0.0            34
+   P025     Monte Castro      162  89.5           1.8               5.2            25
+   P076         Recoleta      156  29.2           5.3               0.0            44
+   P037 Villa Del Parque      142  40.8           3.5               0.0            24
+   P004     Villa Lugano      141 144.0           1.0               0.0            22
+   P052         Floresta      124  36.7           3.4               0.0            18
+   P051     Constitucion      123  31.7           3.9               6.0            17
+   P104         Recoleta      121  24.9           4.9               0.0            27
+   P084        Balvanera      119  27.1           4.4               0.0            26
+   P017          Liniers      108  69.8           1.5               0.0            15
+   P032          La Boca      105  20.9           5.0               0.0            23
+   P057        Caballito      105  26.2           4.0               0.0            23
+   P024    Nueva Pompeya      103  50.4           2.0               0.0            13
+   P005     Villa Lugano      100 100.9           1.0               0.0             6
+   P038     Villa Devoto       96  22.0           4.4               4.2            20
+   P020       Villa Luro       94  25.1           3.7               0.0            15
+   P022         Saavedra       93  53.6           1.7               0.0            12
+   P003  Villa Riachuelo       91  39.8           2.3               0.0            10
+   P012        Mataderos       90  32.8           2.7               0.0            13
+   P107        Balvanera       86  10.8           8.0               0.0            20
+   P101        Balvanera       81  14.0           5.8               0.0            21
+   P092          Palermo       79  11.7           6.7               0.0            19
+
+    LOS POLOS QUE CAEN SOBRE ZONA PUBLICADA (los 15 más grandes)
+polo_id zona_publicada barrio_principal  locales    ha  pct_ya_publicado
+   P072            R05         Belgrano     1314 440.7              12.8
+   P091            R01          Palermo      728  92.4              86.2
+   P078            R01          Palermo      585 102.6              55.0
+   P065            R01          Palermo      361  82.0              70.9
+   P046            R17    Villa Urquiza      291 114.7              99.9
+   P018            R15     Villa Devoto      244 205.1              74.6
+   P056            R10        Caballito      210  74.3              54.1
+   P113            R02      San Nicolas      200  28.0              74.0
+   P106            R06         Recoleta      198  34.2              30.9
+   P053            R10        Caballito      196  61.3              73.6
+   P027            R14 Parque Patricios      189 100.8              25.7
+   P116            R12      San Nicolas      187  19.3              83.0
+   P063            R08        Caballito      182  67.5              71.9
+   P111            R12        Monserrat      170  14.9              37.0
+   P093            R13        Balvanera      169  27.3              85.1
+

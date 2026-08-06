@@ -1,0 +1,19 @@
+bloque,contra,que_es,d_envolventes_m,d_entre_puntos_m,clasificacion,arista_sobre_vacio
+bloque_35,P078·S1,parte de P078,11.3,55.8,prueba de estabilidad,True
+bloque_35,P090+P089,polo · Palermo · 104 loc,315.7,316.0,zonas distintas,False
+bloque_35,P065,polo · Palermo · 361 loc,320.8,320.8,zonas distintas,False
+bloque_35,P087,polo · Palermo · 56 loc,413.2,414.2,zonas distintas,False
+bloque_35,P091,polo · Palermo · 728 loc,467.7,477.6,zonas distintas,False
+bloque_35,P078·S2,parte de P078,674.4,674.4,zonas distintas,False
+bloque_23,P078·S1,parte de P078,75.0,102.2,prueba de estabilidad,False
+bloque_23,P065,polo · Palermo · 361 loc,175.1,175.1,prueba de estabilidad,False
+bloque_23,P078·S2,parte de P078,580.5,580.5,zonas distintas,False
+bloque_23,P090+P089,polo · Palermo · 104 loc,659.1,659.1,zonas distintas,False
+bloque_23,P087,polo · Palermo · 56 loc,664.4,664.5,zonas distintas,False
+bloque_23,P091,polo · Palermo · 728 loc,782.2,790.6,zonas distintas,False
+bloque_12,P078·S1,parte de P078,25.8,80.2,prueba de estabilidad,True
+bloque_12,P065,polo · Palermo · 361 loc,287.8,296.5,zonas distintas,False
+bloque_12,P078·S2,parte de P078,458.1,458.1,zonas distintas,False
+bloque_12,P078·S3,parte de P078,765.2,765.2,zonas distintas,False
+bloque_12,P091,polo · Palermo · 728 loc,846.1,846.1,zonas distintas,False
+bloque_12,P090+P089,polo · Palermo · 104 loc,861.2,861.2,zonas distintas,False

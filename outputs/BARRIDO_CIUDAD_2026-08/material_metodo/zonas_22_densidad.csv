@@ -1,0 +1,23 @@
+referencia_id,nombre,ha_zona,locales,locales_x_ha,barrio_k,ha_hull,locales_x_ha_hull,clase_densidad,clase_densidad_hull
+R01,Palermo,271.288,1358,5.006,PALERMO,324.596,4.184,B · concentración media,C · concentración extendida
+R02,Avenida Corrientes,49.673,354,7.127,SAN NICOLAS,43.332,8.169,B · concentración media,B · concentración media
+R03,San Telmo,25.368,71,2.799,SAN TELMO,16.949,4.189,C · concentración extendida,C · concentración extendida
+R04,Puerto Madero,314.541,354,1.125,PUERTO MADERO,285.615,1.239,C · concentración extendida,C · concentración extendida
+R05,Belgrano,39.647,343,8.651,BELGRANO,74.404,4.61,A · concentración densa,B · concentración media
+R06,Recoleta,140.517,714,5.081,RECOLETA,167.904,4.252,B · concentración media,C · concentración extendida
+R07,Costanera Norte,38.505,67,1.74,PALERMO,80.674,0.831,C · concentración extendida,C · concentración extendida
+R08,Villa Crespo,335.458,823,2.453,VILLA CRESPO,377.916,2.178,C · concentración extendida,C · concentración extendida
+R09,Chacarita,94.811,202,2.131,CHACARITA,130.822,1.544,C · concentración extendida,C · concentración extendida
+R10,Caballito,225.361,508,2.254,CABALLITO,230.425,2.205,C · concentración extendida,C · concentración extendida
+R11,Boulevard Caseros,50.029,60,1.199,BARRACAS,54.158,1.108,C · concentración extendida,C · concentración extendida
+R12,Centro / Microcentro segmentado,184.117,1084,5.888,SAN NICOLAS,273.666,3.961,B · concentración media,C · concentración extendida
+R13,Abasto,109.003,373,3.422,BALVANERA,97.536,3.824,C · concentración extendida,C · concentración extendida
+R14,Avenida Boedo,179.46,245,1.365,BOEDO,167.63,1.462,C · concentración extendida,C · concentración extendida
+R15,Devoto,478.74,422,0.881,VILLA DEVOTO,466.894,0.904,C · concentración extendida,C · concentración extendida
+R16,Donado-Holmberg,118.998,121,1.017,VILLA URQUIZA,125.086,0.967,C · concentración extendida,C · concentración extendida
+R17,Villa Urquiza,446.624,528,1.182,VILLA URQUIZA,441.339,1.196,C · concentración extendida,C · concentración extendida
+R18,Esmeralda-Paraguay,48.391,318,6.571,RETIRO,37.208,8.547,B · concentración media,A · concentración densa
+R19,Federico Lacroze por tramos,89.494,185,2.067,COLEGIALES,94.123,1.966,C · concentración extendida,C · concentración extendida
+R20,Garcia del Rio,28.377,61,2.15,SAAVEDRA,18.456,3.305,C · concentración extendida,C · concentración extendida
+R21,La Paternal,321.013,208,0.648,PATERNAL,311.875,0.667,C · concentración extendida,C · concentración extendida
+R22,Villa Pueyrredon,305.554,198,0.648,VILLA PUEYRREDON,255.884,0.774,C · concentración extendida,C · concentración extendida

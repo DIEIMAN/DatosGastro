@@ -1,0 +1,4 @@
+clase_densidad,polos,locales,ha,densidad_min,densidad_max,ha_mediana,locales_por_polo,zonas_22_por_su_perimetro_publicado,zonas_22_medidas_como_los_polos
+C · concentración extendida,53,7140,2822.4,0.98,4.47,32.81,135,R03 R04 R07 R08 R09 R10 R11 R13 R14 R15 R16 R17 R19 R20 R21 R22,R01 R03 R04 R06 R07 R08 R09 R10 R11 R12 R13 R14 R15 R16 R17 R19 R20 R21 R22
+B · concentración media,45,4815,765.31,4.7,8.29,9.12,107,R01 R02 R06 R12 R18,R02 R05
+A · concentración densa,20,1609,156.92,8.66,15.23,5.64,80,R05,R18

@@ -1,0 +1,179 @@
+¿LOS POLOS GRANDES TIENEN PARTES NOMBRABLES? · barrido de continuidad de Belgrano
+====================================================================================================
+
+NO SE PARTE NADA ACÁ. Esto reporta si hay partes reconocibles adentro de un polo, para que
+la Dirección decida si corresponde publicarlas como subzonas de una zona con nombre común.
+Google Places: 0 requests.
+
+  LA PREGUNTA ES OTRA QUE LA DE LA PARTICIÓN, Y POR ESO LA POBLACIÓN ES OTRA
+    partición · «¿esto son dos cosas que el algoritmo pegó mal?»     → grandes y RALOS
+    partes    · «¿esto es una cosa con partes reconocibles adentro?» → cualquier polo grande
+  El Atlas publica seis zonas como polo con subzonas o partes —Palermo, Belgrano, Costanera
+  Norte, Caballito, Villa Urquiza y Puerto Madero—, y a las tres partes de Belgrano se las
+  encontró este barrido, no una prueba anti-encadenamiento.
+
+  población: polos de 300 locales o más → 4 polos
+  grilla extendida a 20–300 m: la distancia típica entre vecinos
+  escala con 1/√densidad, así que un polo de 8 loc/ha necesita umbrales que la grilla vieja
+  (40–300 m) no tenía. Si las partes sólo existen en los umbrales nuevos, la condición de
+  estabilidad las descarta sola.
+
+  REGLA DE ACEPTACIÓN, declarada antes de correr:
+    1 · las partes se llevan ≥ 80% de los locales del polo
+    2 · el conteo de partes se repite en ≥ 2 umbrales consecutivos
+    3 · cada parte tiene nombre de uso corriente o respaldo documental — **esto no lo
+        decide el algoritmo**; se aporta la evidencia y se decide a ojo
+
+----------------------------------------------------------------------------------------------------
+  P091 · Palermo · 728 locales · 92.4 ha · 7.88 loc/ha · concentración
+     barrios: Palermo;Villa Crespo
+
+ umbral_m  componentes  partes_nombrables  pct_locales_en_esas_componentes  cumple_cobertura            tamanos
+       20          294                  0                              0.0             False  27;18;16;14;11;10
+       25          202                  1                              5.6             False  41;25;23;18;17;16
+       30          129                  3                             27.3             False 101;57;41;30;25;25
+       35           75                  2                             48.8             False 315;40;30;27;22;16
+       40           53                  2                             62.9             False 398;60;23;20;16;15
+       55           10                  1                             91.1              True    663;35;14;8;2;2
+       70            3                  1                             99.6              True            725;2;1
+       80            1                  1                            100.0              True                728
+      120            1                  1                            100.0              True                728
+      160            1                  1                            100.0              True                728
+      200            1                  1                            100.0              True                728
+      250            1                  1                            100.0              True                728
+      300            1                  1                            100.0              True                728
+
+     VEREDICTO: NO tiene partes nombrables y estables.
+       aparecen 2 o más partes en 3 umbrales, pero ninguno llega
+       al 80% de cobertura: el resto queda en esquirlas.
+       cobertura máxima con 2+ partes: 62.9 %
+
+       CUÁN CERCA ESTUVO: su mejor tramo estable son 2 partes en los
+       umbrales 35, 40 m, con cobertura máxima 62.9 %.
+       Le faltan 17.1 puntos de cobertura para pasar.
+
+----------------------------------------------------------------------------------------------------
+  P078 · Palermo · 585 locales · 102.6 ha · 5.70 loc/ha · concentración
+     barrios: Palermo;Chacarita;Colegiales
+
+ umbral_m  componentes  partes_nombrables  pct_locales_en_esas_componentes  cumple_cobertura            tamanos
+       20          300                  0                              0.0             False       23;9;8;8;7;7
+       25          242                  0                              0.0             False  23;17;17;15;14;13
+       30          166                  1                             14.0             False  82;24;21;20;18;15
+       35          126                  1                             18.3             False 107;25;24;24;22;19
+       40           80                  3                             46.2             False 183;46;41;28;26;25
+       55           28                  3                             79.0             False 333;88;41;35;23;12
+       70            8                  2                             94.9              True    508;47;24;2;1;1
+       80            4                  1                             95.4              True         558;24;2;1
+      120            1                  1                            100.0              True                585
+      160            1                  1                            100.0              True                585
+      200            1                  1                            100.0              True                585
+      250            1                  1                            100.0              True                585
+      300            1                  1                            100.0              True                585
+
+     VEREDICTO: NO tiene partes nombrables y estables.
+       hay umbrales que cumplen cobertura (70)
+       pero el conteo no se repite en 2 umbrales consecutivos:
+       la estructura cambia de forma con el umbral, así que es del umbral.
+
+       CUÁN CERCA ESTUVO: su mejor tramo estable son 3 partes en los
+       umbrales 40, 55 m, con cobertura máxima 79.0 %.
+       Le faltan 1.0 puntos de cobertura para pasar.
+       **AL FILO. El umbral se fijó antes de correr y NO se mueve para
+       alcanzarlo.** Pero queda anotado que un criterio editorial podría leerlo
+       del otro lado con el mismo derecho, y que estas partes merecen una
+       mirada a ojo antes de descartarlas.
+
+       LAS PARTES QUE NO SE ACEPTAN, mostradas igual para que la decisión
+       editorial tenga con qué:
+parte  locales   ha  locales_x_ha                                    barrios zona_publicada_encima                estado
+   S1      333 42.2          7.89                              Palermo (333)               R01 67% AL FILO · no aceptada
+   S2       88 10.3          8.50 Palermo (72);Chacarita (13);Colegiales (3)       R01 46%;R09 17% AL FILO · no aceptada
+   S3       41  3.8         10.67                 Palermo (40);Chacarita (1)       R01 66%;R08 22% AL FILO · no aceptada
+
+----------------------------------------------------------------------------------------------------
+  P065 · Palermo · 361 locales · 82.0 ha · 4.40 loc/ha · concentración extendida
+     barrios: Palermo;Belgrano
+
+ umbral_m  componentes  partes_nombrables  pct_locales_en_esas_componentes  cumple_cobertura            tamanos
+       20          186                  0                              0.0             False      15;14;7;7;7;7
+       25          144                  0                              0.0             False      38;11;9;7;7;6
+       30          109                  1                             11.9             False  43;14;12;11;11;10
+       35           84                  1                             11.9             False  43;22;21;16;11;11
+       40           70                  2                             23.5             False  44;41;22;17;12;12
+       55           30                  2                             53.5             False 104;89;26;24;17;17
+       70           11                  1                             86.4              True     312;22;7;7;4;2
+       80            7                  1                             91.7              True     331;22;2;2;2;1
+      120            1                  1                            100.0              True                361
+      160            1                  1                            100.0              True                361
+      200            1                  1                            100.0              True                361
+      250            1                  1                            100.0              True                361
+      300            1                  1                            100.0              True                361
+
+     VEREDICTO: NO tiene partes nombrables y estables.
+       aparecen 2 o más partes en 2 umbrales, pero ninguno llega
+       al 80% de cobertura: el resto queda en esquirlas.
+       cobertura máxima con 2+ partes: 53.5 %
+
+       CUÁN CERCA ESTUVO: su mejor tramo estable son 2 partes en los
+       umbrales 40, 55 m, con cobertura máxima 53.5 %.
+       Le faltan 26.5 puntos de cobertura para pasar.
+
+----------------------------------------------------------------------------------------------------
+  P103 · San Telmo · 342 locales · 47.5 ha · 7.21 loc/ha · concentración
+     barrios: San Telmo;Monserrat;Constitucion
+
+ umbral_m  componentes  partes_nombrables  pct_locales_en_esas_componentes  cumple_cobertura           tamanos
+       20          147                  0                              0.0             False   20;20;13;11;8;8
+       25          111                  0                              0.0             False  39;20;16;14;11;8
+       30           85                  1                             13.7             False 47;20;18;16;15;14
+       35           56                  1                             18.7             False 64;20;20;15;15;15
+       40           36                  1                             23.4             False 80;28;25;20;20;16
+       55           11                  2                             84.2              True  228;60;22;10;9;7
+       70            4                  2                             97.7              True        290;44;7;1
+       80            1                  1                            100.0              True               342
+      120            1                  1                            100.0              True               342
+      160            1                  1                            100.0              True               342
+      200            1                  1                            100.0              True               342
+      250            1                  1                            100.0              True               342
+      300            1                  1                            100.0              True               342
+
+     VEREDICTO: **2 partes nombrables y estables**, en los umbrales 55, 70 m
+       se adopta el más alto del tramo (70 m), que es el que menos fragmenta
+       cobertura: 97.7 % de los locales
+
+parte  locales   ha  locales_x_ha                                       barrios zona_publicada_encima   estado
+   S1      290 35.0          8.28                San Telmo (232);Monserrat (58)               R03 15% ACEPTADA
+   S2       44  4.6          9.49 San Telmo (39);Monserrat (3);Constitucion (2)                     — ACEPTADA
+
+       ATENCIÓN a la proporción: la parte más chica tiene el 15% de la
+       más grande. Esto se parece más a «un cuerpo con un satélite» que a un polo de
+       partes comparables como Belgrano (107 / 82 / 23). Pasa la regla igual, y la
+       decisión de si eso amerita publicarse como subzona es editorial.
+
+       La condición 3 —nombre de uso corriente o respaldo documental— NO la evalúa el
+       algoritmo. La evidencia está en las dos últimas columnas: con qué barrios se
+       corresponde cada parte y qué zona publicada le cae encima.
+
+====================================================================================================
+RESUMEN
+====================================================================================================
+
+polo_id  locales  partes  umbral           veredicto
+   P091      728       0     NaN SIN PARTES ESTABLES
+   P078      585       0     NaN             AL FILO
+   P065      361       0     NaN SIN PARTES ESTABLES
+   P103      342       2    70.0     PARTES ESTABLES
+
+  1 de 4 polos grandes tienen partes nombrables y estables.
+
+  QUÉ SIGNIFICA Y QUÉ NO. Esto NO es una corrección del mapa: es exactamente lo que el
+  Atlas ya publica para seis de sus zonas. Y es el camino por el que puede bajar el
+  número de zonas sin perder información —agrupando polos como partes de una zona con
+  nombre común— en vez de por consolidación geométrica, que en la unión a 100 m sólo
+  produjo 2 fusiones de 35 candidatas.
+
+  LO QUE FALTA, Y NO LO PUEDE HACER UN SCRIPT: ponerles nombre. El §5 del criterio de
+  lectura es explícito en que los nombres son de uso corriente y territorial y no salen
+  de un cluster. La evidencia para hacerlo está en las tablas de arriba.
+

@@ -1,0 +1,49 @@
+POR QUÉ LA GRILLA DE CONTINUIDAD BAJA A 20 m · la justificación geométrica
+====================================================================================================
+
+  La distancia típica entre vecinos escala con 1/√densidad. Para un proceso de puntos de
+  intensidad λ, la distancia media al vecino más cercano es 1/(2·√λ). Duplicar la densidad
+  no acerca los puntos a la mitad: los acerca en un factor √2.
+
+  A 2 loc/ha —la densidad para la que se diseñó la grilla 40–300 m—
+  el vecino típico está a 35.4 m. Un piso de 40 m queda apenas por encima, así
+  que el barrido arranca justo donde la estructura empieza a aparecer.
+
+----------------------------------------------------------------------------------------------------
+  LA LEY, CONTRA LOS DATOS
+
+polo_id barrio_principal  locales  locales_x_ha  vecino_predicho_m  vecino_observado_m  observado_sobre_predicho  piso_viejo_sobre_vecino  piso_nuevo_sobre_vecino
+   P091          Palermo      728          7.88               17.8                14.5                      0.82                      2.8                      1.4
+   P078          Palermo      585          5.70               20.9                17.6                      0.84                      2.3                      1.1
+   P065          Palermo      361          4.40               23.8                16.5                      0.69                      2.4                      1.2
+   P103        San Telmo      342          7.21               18.6                15.2                      0.82                      2.6                      1.3
+
+  `piso_viejo_sobre_vecino` es la lectura operativa: cuántas veces el vecino típico mide el
+  piso de 40 m en cada polo. Cuando ese número pasa de 2, el umbral más bajo de la grilla
+  ya conecta todo y el barrido devuelve «un solo cuerpo» — un resultado de la grilla, no
+  del territorio.
+
+  AJUSTE DE LA LEY: observado/predicho entre 0.69 y 0.84.
+  Los puntos reales están SIEMPRE más juntos que la predicción de Poisson, y tiene que ser
+  así: la gastronomía se agrupa y Poisson supone independencia. La ley da la escala y el
+  orden de magnitud correctos, que es para lo que se la usa. No se la usa para predecir un
+  valor.
+
+----------------------------------------------------------------------------------------------------
+  UN RESULTADO QUE NO ESTABA BUSCADO · el orden se rompe, y dice algo
+
+    orden por densidad nominal (de menor a mayor): P065 < P078 < P103 < P091
+    orden por vecino observado (de más lejos a más cerca): P078 > P065 > P103 > P091
+
+    NO coinciden. El caso que las separa es P065.
+
+    P065 tiene la densidad nominal más baja de los cuatro y sin embargo sus puntos están
+    más juntos que los de P078, que es un 30 % más denso en el papel. Eso es lo que se
+    espera de un polo ENCADENADO: la densidad se mide sobre una envolvente que incluye
+    los vacíos de la unión, así que subestima cuán juntos están los puntos adentro de
+    cada pedazo. La densidad nominal describe la cáscara; el vecino observado describe
+    el tejido.
+
+    Es un control independiente del encadenamiento, y coincide con lo que ya había
+    dicho la curva de continuidad de P065 por otro camino.
+

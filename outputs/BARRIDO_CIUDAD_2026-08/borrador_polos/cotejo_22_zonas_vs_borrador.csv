@@ -1,0 +1,23 @@
+referencia_id,nombre,ha_zona,polos_que_la_tocan,pct_zona_cubierta,encontrada,polos
+R01,Palermo,271.3,4,63.0,True,P091;P078;P065;P090
+R02,Avenida Corrientes,49.7,3,61.1,True,P113;P116;P114
+R03,San Telmo,25.4,1,25.8,True,P103
+R04,Puerto Madero,314.5,1,9.3,False,P030
+R05,Belgrano,39.6,1,99.2,True,P072
+R06,Recoleta,140.5,6,37.1,True,P106;P098;P110;P097;P095;P096
+R07,Costanera Norte,38.5,1,16.1,False,P001
+R08,Villa Crespo,335.5,7,32.3,True,P091;P063;P043;P081;P077;P074
+R09,Chacarita,94.8,3,41.5,True,P078;P068;P075
+R10,Caballito,225.4,4,41.7,True,P056;P053;P047;P049
+R11,Boulevard Caseros,50.0,2,5.5,False,P051;P102
+R12,Centro / Microcentro segmentado,184.1,10,38.3,True,P113;P116;P111;P118;P117;P108
+R13,Abasto,109.0,2,55.4,True,P093;P082
+R14,Avenida Boedo,179.5,3,38.1,True,P027;P062;P029
+R15,Devoto,478.7,2,39.3,True,P018;P016
+R16,Donado-Holmberg,119.0,2,14.9,False,P045;P039
+R17,Villa Urquiza,446.6,2,29.1,True,P046;P045
+R18,Esmeralda-Paraguay,48.4,3,40.5,True,P116;P118;P117
+R19,Federico Lacroze por tramos,89.5,4,38.9,True,P072;P065;P068;P071
+R20,Garcia del Rio,28.4,1,24.7,False,P072
+R21,La Paternal,321.0,1,13.2,False,P043
+R22,Villa Pueyrredon,305.6,2,9.3,False,P028;P023

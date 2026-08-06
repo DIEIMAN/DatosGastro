@@ -1,0 +1,15 @@
+{
+  "eta2": 0.03681489696699139,
+  "eta2_sin_rus": 0.03196237123377562,
+  "kruskal_p": 0.012418796850341937,
+  "spearman_con_sin_rus": 0.9748781402324709,
+  "rand_ajustado": 0.3911465463845839,
+  "k_fijado": 3,
+  "k_libre_sin_rus": 4,
+  "cortes_sin_rus": [
+    3.6962752675260955,
+    10.817552650735305
+  ],
+  "anada_contamina": false,
+  "clases_robustas": false
+}

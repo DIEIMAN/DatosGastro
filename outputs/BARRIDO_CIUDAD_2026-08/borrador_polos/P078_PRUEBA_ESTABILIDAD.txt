@@ -1,0 +1,157 @@
+P078 CONTRA LAS TRES PRUEBAS DE «CUÁNDO DOS POLOS SON UNO»
+====================================================================================================
+
+  Esta prueba nunca se le corrió a P078. La regla es anterior al caso, así que correrla no
+  es cambiar el motivo de la excepción: es aplicar por primera vez la vara que correspondía.
+
+  Y NO revive la excepción de cobertura. Son dos preguntas distintas: una partición puede
+  ser estable y dejar igual el 21 % afuera.
+
+  LECTURA DECLARADA ANTES DE CORRER:
+    n.º de partes = 3 en un rango ≥ 60 m → ESTABLE
+    n.º cambia dentro de ±40 m de 55 m (15–95 m) → ARBITRARIA, P078 entero
+    4+ piezas de tamaño comparable → NI 3 NI 1, se reabre
+
+  grilla: 20–300 m cada 5 m. La lectura está escrita en metros de rango,
+  así que la grilla vieja no tenía resolución para evaluarla. Ninguna vara cambia.
+
+----------------------------------------------------------------------------------------------------
+  LA CURVA COMPLETA · formato Belgrano
+
+ umbral_m  n_componentes  n_partes                         tamanos tamanos_partes  pct_locales
+       20            300         0         23; 9; 8; 8; 7; 7; 7; 6                         0.0
+       25            242         0   23; 17; 17; 15; 14; 13; 13; 9                         0.0
+       30            166         1  82; 24; 21; 20; 18; 15; 14; 13             82         14.0
+       35            126         1 107; 25; 24; 24; 22; 19; 15; 15            107         18.3
+       40             80         3 183; 46; 41; 28; 26; 25; 13; 13    183; 46; 41         46.2
+       45             58         3 291; 41; 40; 32; 18; 14; 13; 10    291; 41; 40         63.6
+       50             40         3  325; 46; 40; 35; 23; 19; 14; 8    325; 46; 40         70.3
+       55             28         3   333; 88; 41; 35; 23; 12; 6; 6    333; 88; 41         79.0
+       60             21         3    379; 92; 43; 23; 15; 6; 5; 4    379; 92; 43         87.9
+       65             14         2      491; 47; 23; 7; 5; 3; 2; 1        491; 47         92.0
+       70              8         2      508; 47; 24; 2; 1; 1; 1; 1        508; 47         94.9
+       75              7         1          555; 24; 2; 1; 1; 1; 1            555         94.9
+       80              4         1                   558; 24; 2; 1            558         95.4
+       85              2         1                          583; 2            583         99.7
+       90              1         1                             585            585        100.0
+       95              1         1                             585            585        100.0
+      100              1         1                             585            585        100.0
+      105              1         1                             585            585        100.0
+      110              1         1                             585            585        100.0
+      115              1         1                             585            585        100.0
+      120              1         1                             585            585        100.0
+      125              1         1                             585            585        100.0
+      130              1         1                             585            585        100.0
+      135              1         1                             585            585        100.0
+      140              1         1                             585            585        100.0
+      145              1         1                             585            585        100.0
+      150              1         1                             585            585        100.0
+      155              1         1                             585            585        100.0
+      160              1         1                             585            585        100.0
+      165              1         1                             585            585        100.0
+      170              1         1                             585            585        100.0
+      175              1         1                             585            585        100.0
+      180              1         1                             585            585        100.0
+      185              1         1                             585            585        100.0
+      190              1         1                             585            585        100.0
+      195              1         1                             585            585        100.0
+      200              1         1                             585            585        100.0
+      205              1         1                             585            585        100.0
+      210              1         1                             585            585        100.0
+      215              1         1                             585            585        100.0
+      220              1         1                             585            585        100.0
+      225              1         1                             585            585        100.0
+      230              1         1                             585            585        100.0
+      235              1         1                             585            585        100.0
+      240              1         1                             585            585        100.0
+      245              1         1                             585            585        100.0
+      250              1         1                             585            585        100.0
+      255              1         1                             585            585        100.0
+      260              1         1                             585            585        100.0
+      265              1         1                             585            585        100.0
+      270              1         1                             585            585        100.0
+      275              1         1                             585            585        100.0
+      280              1         1                             585            585        100.0
+      285              1         1                             585            585        100.0
+      290              1         1                             585            585        100.0
+      295              1         1                             585            585        100.0
+      300              1         1                             585            585        100.0
+
+----------------------------------------------------------------------------------------------------
+  PRUEBA 2 · ESTABILIDAD
+
+    tramo contiguo más largo con 3 partes: 40–60 m  →  **20 m de ancho**
+    condición: ≥ 60 m  →  NO CUMPLE
+
+    ventana ±40 m (15–95 m): n.º de partes toma los valores [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+    condición: no cambia  →  NO CUMPLE
+
+ umbral_m  n_partes tamanos_partes  pct_locales
+       20         0                         0.0
+       25         0                         0.0
+       30         1             82         14.0
+       35         1            107         18.3
+       40         3    183; 46; 41         46.2
+       45         3    291; 41; 40         63.6
+       50         3    325; 46; 40         70.3
+       55         3    333; 88; 41         79.0
+       60         3    379; 92; 43         87.9
+       65         2        491; 47         92.0
+       70         2        508; 47         94.9
+       75         1            555         94.9
+       80         1            558         95.4
+       85         1            583         99.7
+       90         1            585        100.0
+       95         1            585        100.0
+
+    4+ piezas de tamaño comparable (mín/máx ≥ 25%): NO en ningún umbral
+
+    VEREDICTO PRUEBA 2: **ARBITRARIA**
+
+----------------------------------------------------------------------------------------------------
+  PRUEBA 1 · CONTINUIDAD · los vacíos entre las tres partes, formato Recoleta
+
+  par  d_envolventes_m  d_entre_puntos_m
+S1–S2              8.2              60.5
+S1–S3             52.9              70.6
+S2–S3            195.8             195.8
+
+    Recoleta unió nueve núcleos con tres pares a 0,0 m y mediana de 25 m. Acá el vacío más
+    chico entre partes es de 60 m entre puntos.
+    No es la situación de Recoleta: las tres partes están separadas de verdad.
+
+----------------------------------------------------------------------------------------------------
+  PRUEBA 3 · ¿LA DIVISIÓN MEJORA LA LECTURA? · las dos columnas
+
+    S1 · 333 locales
+      calles dominantes : Bonpland · Fitz Roy · Costa Rica · Honduras · Humboldt · Gorriti
+      (base de calles)  : 161/333 locales con dirección
+      zona publicada    : Palermo (R01) 67%
+
+    S2 · 88 locales
+      calles dominantes : Dorrego · Arevalo · Gorriti · Niceto Vega · Jose Antonio Cabrera · Alvarez Thomas
+      (base de calles)  : 51/88 locales con dirección
+      zona publicada    : Palermo (R01) 46%, Chacarita (R09) 17%
+
+    S3 · 41 locales
+      calles dominantes : Niceto Vega · Humboldt · Fitz Roy · Bonpland · Cordoba
+      (base de calles)  : 18/41 locales con dirección
+      zona publicada    : Palermo (R01) 66%, Villa Crespo (R08) 22%
+
+    LÍMITE DE LA LISTA DE CALLES: no hay callejero canónico detrás, así que variantes de
+    una misma calle pueden seguir apareciendo por separado. Es evidencia para un ojo
+    humano, no un recuento por calle, y menos de la mitad de los locales tiene dirección.
+
+    LAS DOS COLUMNAS, para completar a ojo. El algoritmo NO las decide (§5 de
+    CRITERIOS_LECTURA): expone la evidencia y una persona escribe el nombre.
+
+      parte | nombre de uso corriente | respaldo documental propio
+      ------|-------------------------|---------------------------
+      S1    |                         | Palermo (R01) 67%
+      S2    |                         | Palermo (R01) 46%, Chacarita (R09) 17%
+      S3    |                         | Palermo (R01) 66%, Villa Crespo (R08) 22
+
+    Ojo con el respaldo: que las tres caigan sobre R01 Palermo NO es respaldo documental
+    PROPIO de cada parte. R01 respalda al conjunto. Belgrano R sobrevivió con 2 locales
+    porque tenía respaldo propio, no porque cayera adentro de Belgrano.
+

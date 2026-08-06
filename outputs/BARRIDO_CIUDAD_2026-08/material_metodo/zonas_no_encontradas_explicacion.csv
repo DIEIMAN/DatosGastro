@@ -1,0 +1,23 @@
+referencia_id,nombre,ha_zona,locales_en_la_zona,locales_x_ha_perimetro,locales_x_ha_hull,clase_densidad_hull,pct_zona_cubierta,pct_locales_en_algun_polo,cobertura_barrio,explicacion,pct_zona_cubierta_tras_partir,detalle
+R01,Palermo,271.3,1358,5.01,4.18,C · concentración extendida,63.0,89.7,2.53,ENCONTRADA,52.2,
+R02,Avenida Corrientes,49.7,354,7.13,8.17,B · concentración media,61.1,71.5,2.7,ENCONTRADA,61.1,
+R03,San Telmo,25.4,71,2.8,4.19,C · concentración extendida,25.8,53.5,2.53,ENCONTRADA,25.8,
+R04,Puerto Madero,314.5,354,1.13,1.24,C · concentración extendida,9.3,33.6,7.45,"E3 · queda como pregunta, no como conclusión",9.3,"sólo el 34% de sus 354 locales cae en algún polo y la cobertura del barrio (7.45) no es floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde un borrador: se anota como pregunta para la Dirección"
+R05,Belgrano,39.6,343,8.65,4.61,B · concentración media,99.2,99.7,2.9,ENCONTRADA,62.8,
+R06,Recoleta,140.5,714,5.08,4.25,C · concentración extendida,37.1,55.5,2.75,ENCONTRADA,37.1,
+R07,Costanera Norte,38.5,67,1.74,0.83,C · concentración extendida,16.1,53.7,2.53,E1 · no era una concentración: el perímetro es más ancho,16.1,"el 54% de sus 67 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 16.1 % de sus 39 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que no produzca un cluster del tamaño de la zona la confirma, no la refuta"
+R08,Villa Crespo,335.5,823,2.45,2.18,C · concentración extendida,32.3,55.5,2.39,ENCONTRADA,32.3,
+R09,Chacarita,94.8,202,2.13,1.54,C · concentración extendida,41.5,70.3,2.58,ENCONTRADA,41.5,
+R10,Caballito,225.4,508,2.25,2.2,C · concentración extendida,41.7,58.3,2.39,ENCONTRADA,41.7,
+R11,Boulevard Caseros,50.0,60,1.2,1.11,C · concentración extendida,5.5,31.7,2.66,"E3 · queda como pregunta, no como conclusión",5.5,"sólo el 32% de sus 60 locales cae en algún polo y la cobertura del barrio (2.66) no es floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde un borrador: se anota como pregunta para la Dirección"
+R12,Centro / Microcentro segmentado,184.1,1084,5.89,3.96,C · concentración extendida,38.3,61.8,2.7,ENCONTRADA,38.3,
+R13,Abasto,109.0,373,3.42,3.82,C · concentración extendida,55.4,73.2,2.59,ENCONTRADA,55.4,
+R14,Avenida Boedo,179.5,245,1.37,1.46,C · concentración extendida,38.1,77.6,2.39,ENCONTRADA,38.1,
+R15,Devoto,478.7,422,0.88,0.9,C · concentración extendida,39.3,75.6,2.45,ENCONTRADA,10.7,
+R16,Donado-Holmberg,119.0,121,1.02,0.97,C · concentración extendida,14.9,52.9,2.48,E1 · no era una concentración: el perímetro es más ancho,14.9,"el 53% de sus 121 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 14.9 % de sus 119 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que no produzca un cluster del tamaño de la zona la confirma, no la refuta"
+R17,Villa Urquiza,446.6,528,1.18,1.2,C · concentración extendida,29.1,60.6,2.48,ENCONTRADA,29.1,
+R18,Esmeralda-Paraguay,48.4,318,6.57,8.55,A · concentración densa,40.5,61.9,2.91,ENCONTRADA,40.5,
+R19,Federico Lacroze por tramos,89.5,185,2.07,1.97,C · concentración extendida,38.9,78.9,2.4,ENCONTRADA,12.3,
+R20,Garcia del Rio,28.4,61,2.15,3.31,C · concentración extendida,24.7,29.5,2.78,"E3 · queda como pregunta, no como conclusión",1.0,"sólo el 30% de sus 61 locales cae en algún polo y la cobertura del barrio (2.78) no es floja, así que no aplican E1 ni E2. El criterio dice que esta hipótesis no se declara desde un borrador: se anota como pregunta para la Dirección"
+R21,La Paternal,321.0,208,0.65,0.67,C · concentración extendida,13.2,45.7,2.3,E2 · la cobertura de la base ahí es floja,13.2,"cobertura del barrio 2.30, por debajo del p10 de la Ciudad (2.30): no se concluye nada sobre la zona"
+R22,Villa Pueyrredon,305.6,198,0.65,0.77,C · concentración extendida,9.3,58.1,2.3,E1 · no era una concentración: el perímetro es más ancho,9.3,"el 58% de sus 198 locales SÍ está adentro de algún polo, pero esos polos ocupan sólo el 9.3 % de sus 306 ha publicadas. La concentración está; lo que es más ancho es el perímetro. Que no produzca un cluster del tamaño de la zona la confirma, no la refuta"

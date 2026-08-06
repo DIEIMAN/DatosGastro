@@ -1,0 +1,226 @@
+BORRADOR · P065 rehecho, el precio final, las clases a dos y la unión a 100 m
+====================================================================================================
+
+NO ES UN PRODUCTO. No se publica, no se sella y no toca el Atlas.
+Google Places: 0 requests. Places no está en la base.
+
+ACEPTADO SIN CAMBIOS: la partición de P018, P025 y P072. El desglose mostró que sus sueltos
+son tejido —los cuatro grupos de P072 tienen el centro adentro de la cáscara de sus piezas—.
+
+§1 · P065 REHECHO CON EL BARRIDO DE CONTINUIDAD
+====================================================================================================
+
+  361 locales. La partición vieja con `leaf` dejó dos concentraciones afuera de
+  la cáscara, de 70 y 59 locales a 5,96 y 5,39 locales/ha. Eso no se remienda: se rehace.
+
+  REGLA DECLARADA ANTES DE MIRAR: se toma el umbral MÁS ALTO en el que todavía existan dos
+  o más componentes de 40 locales o más. El más alto es el conservador —cuanto más
+  alto, más une—, así que el más alto que todavía separa es el que menos fragmenta.
+
+ umbral_m  componentes  componentes_de_40_o_mas  locales_en_esas_componentes  pct_locales_en_esas_componentes            tamanos
+       40           70                        2                           85                             23.5  44;41;22;17;12;12
+       55           30                        2                          193                             53.5 104;89;26;24;17;17
+       70           11                        1                          312                             86.4     312;22;7;7;4;2
+       80            7                        1                          331                             91.7     331;22;2;2;2;1
+      120            1                        1                          361                            100.0                361
+      160            1                        1                          361                            100.0                361
+      200            1                        1                          361                            100.0                361
+      250            1                        1                          361                            100.0                361
+      300            1                        1                          361                            100.0                361
+
+  UMBRAL ELEGIDO: 55 m → 2 partes nombrables de 104, 89 locales
+    (a 40 m la estructura ya aparece, y a 70 m se funde en una sola: la partición vive
+    en una franja del barrido, no en un solo valor. Eso es lo que la hace estable.)
+
+    locales en las partes: 193 | sueltos: 168 (46.5 %)
+
+  VERIFICACIÓN · contra cosas que no intervinieron en la elección del umbral
+    La condición era explícita: «si aparecen partes estables que incluyan esos dos bloques,
+    ésa es la partición». Así que lo que hay que mirar no es si aparecen partes, sino si
+    esas partes se llevan los bloques que la partición vieja perdió.
+
+    bloque P065-S1 (70 locales, 5.96 loc/ha): 0 de 70 ahora caen en una pieza → NINGUNA
+    bloque P065-S2 (59 locales, 5.39 loc/ha): 42 de 59 ahora caen en una pieza → P065-2
+
+    locales del polo que quedan en alguna parte: 53.5 %
+    peor bloque recapturado: 0.0 %
+
+    VEREDICTO: NO. Esta partición tampoco sirve, y hay que decirlo en vez de acomodarla.
+
+    El diagnóstico está en la columna `pct_locales_en_esas_componentes`: en el umbral
+    elegido las dos partes nombrables se llevan sólo el 53.5 % de los
+    locales, y el resto queda repartido en 28 esquirlas.
+    **P065 no se parte en dos lóbulos: estalla en muchos pedazos.** Es un tejido continuo
+    mirado con lupa, no una estructura de partes. La diferencia con Belgrano es visible en
+    la tabla: allá las tres componentes se llevaban todos los puntos; acá, la mitad se cae.
+
+    Y por eso el bloque S1 no aparece en ninguna parte: no es que la partición lo puso en
+    el lado equivocado, es que a 55 m S1 ya está roto en pedazos por debajo del mínimo.
+
+    CONSECUENCIA, y era la instrucción declarada para este caso: **P065 se revierte y queda
+    entero.** No hay estructura estable que lo divida. Vuelven sus 188 locales sueltos y
+    vuelve R19, que es lo que se quería, pero por el camino honesto: porque el polo no
+    tenía que haberse partido, no porque se lo remiende hasta que dé.
+
+    NOTA SOBRE PALERMO, porque la expectativa era razonable y conviene ubicarla: Soho,
+    Hollywood y Las Cañitas son estructura real, pero NO están en P065. P065 tiene 361
+    locales a 4,40 loc/ha y se estira hacia Chacarita y Colegiales —por eso cubría R19—.
+    Los polos de Palermo con la estructura nombrada son P091 (728 locales, 7,88 loc/ha) y
+    P078 (585, 5,70), que nunca fueron candidatos a partir porque no son grandes y ralos.
+    Si hay que buscar Soho / Hollywood / Las Cañitas, hay que buscarlas ahí.
+
+§4 · UNIÓN A 100 M · evaluada sobre el objeto unido, no transitiva
+====================================================================================================
+
+  Cada candidata se evalúa sobre el RESULTADO UNIDO y las uniones se aplican de a una: si
+  dos polos se unen, la candidata siguiente que los toque se evalúa contra el objeto ya
+  unido. Así A–B a 90 m y B–C a 90 m no encadenan A con C por transitividad: la segunda
+  unión tiene que pasar las pruebas contra el cuerpo A+B entero.
+
+  CONTINUIDAD · los puntos de los dos juntos tienen que formar UNA componente conexa a
+                100 m. Si siguen siendo dos cuerpos, el hueco no lo cierra la oferta.
+  ESTABILIDAD · `leaf` sobre el unido no lo tiene que volver a separar en dos piezas
+                nombrables. **No se une lo que la partición volvería a separar.**
+
+  pares a menos de 100 m: 39
+    excluidos por ser piezas del mismo padre: 4 — P072-4+P072-5, P072-4+P072-3, P072-6+P072-7, P018-2+P018-1
+    (la unión no deshace una partición ya decidida: la prueba de la unión mira las dos
+     piezas solas, y la partición miró el padre entero con su tejido. La segunda tenía la
+     información completa.)
+    candidatas que se evalúan: 35
+
+          par  distancia_m  evaluado_como continuidad           estabilidad                          decision
+    P081+P080          9.1      P081+P080    1 cuerpo    leaf la parte en 2                            NO UNE
+    P090+P089         15.1      P090+P089    1 cuerpo no se vuelve a partir                               UNE
+    P091+P088         16.2      P091+P088   2 cuerpos    leaf la parte en 5                            NO UNE
+    P116+P117         18.7      P116+P117    1 cuerpo    leaf la parte en 2                            NO UNE
+    P113+P112         20.7      P113+P112    1 cuerpo    leaf la parte en 2                            NO UNE
+    P081+P077         26.9      P081+P077    1 cuerpo    leaf la parte en 2                            NO UNE
+    P111+P108         29.2      P111+P108    1 cuerpo    leaf la parte en 2                            NO UNE
+    P116+P114         35.0      P116+P114    1 cuerpo    leaf la parte en 2                            NO UNE
+    P098+P097         36.5      P098+P097    1 cuerpo    leaf la parte en 2                            NO UNE
+    P116+P118         45.7      P116+P118    1 cuerpo    leaf la parte en 2                            NO UNE
+    P106+P107         46.4      P106+P107    1 cuerpo    leaf la parte en 2                            NO UNE
+    P118+P117         49.1      P118+P117    1 cuerpo    leaf la parte en 2                            NO UNE
+    P056+P057         54.0      P056+P057   3 cuerpos    leaf la parte en 3                            NO UNE
+    P046+P045         54.6      P046+P045  12 cuerpos    leaf la parte en 2                            NO UNE
+    P027+P019         55.3      P027+P019  20 cuerpos no se vuelve a partir                            NO UNE
+    P091+P090         67.1 P091+P090+P089    1 cuerpo    leaf la parte en 4                            NO UNE
+    P078+P075         71.8      P078+P075   3 cuerpos    leaf la parte en 3                            NO UNE
+    P091+P092         74.7      P091+P092    1 cuerpo    leaf la parte en 5                            NO UNE
+    P087+P089         75.9 P087+P090+P089    1 cuerpo    leaf la parte en 2                            NO UNE
+    P056+P053         76.0      P056+P053   8 cuerpos    leaf la parte en 3                            NO UNE
+    P082+P083         79.0      P082+P083    1 cuerpo    leaf la parte en 2                            NO UNE
+    P104+P105         79.3      P104+P105    1 cuerpo    leaf la parte en 2                            NO UNE
+    P058+P060         80.4      P058+P060   3 cuerpos no se vuelve a partir                            NO UNE
+    P113+P109         82.5      P113+P109   2 cuerpos    leaf la parte en 2                            NO UNE
+    P085+P099         84.0      P085+P099   2 cuerpos    leaf la parte en 2                            NO UNE
+    P101+P099         85.1      P101+P099    1 cuerpo no se vuelve a partir                               UNE
+    P097+P095         85.2      P097+P095    1 cuerpo    leaf la parte en 2                            NO UNE
+    P061+P060         85.8      P061+P060   2 cuerpos no se vuelve a partir                            NO UNE
+    P061+P059         89.1      P061+P059   3 cuerpos    leaf la parte en 2                            NO UNE
+    P103+P108         89.6      P103+P108    1 cuerpo    leaf la parte en 3                            NO UNE
+    P118+P115         90.2      P118+P115   2 cuerpos    leaf la parte en 2                            NO UNE
+    P088+P086         92.8      P088+P086    1 cuerpo    leaf la parte en 2                            NO UNE
+    P037+P038         93.7      P037+P038   3 cuerpos    leaf la parte en 2                            NO UNE
+    P112+P114         93.7      P112+P114   2 cuerpos    leaf la parte en 2                            NO UNE
+    P056+P047         98.0      P056+P047   9 cuerpos    leaf la parte en 3                            NO UNE
+P072-4+P072-5         70.2                                                  EXCLUIDA · piezas del mismo padre
+P072-4+P072-3          0.0                                                  EXCLUIDA · piezas del mismo padre
+P072-6+P072-7         34.0                                                  EXCLUIDA · piezas del mismo padre
+P018-2+P018-1         88.4                                                  EXCLUIDA · piezas del mismo padre
+
+    uniones aplicadas: 2 · rechazadas: 33 · pares ya unidos por una unión previa: 0
+    rechazadas por continuidad (siguen siendo dos cuerpos a 100 m): 15
+    rechazadas por estabilidad (la partición las volvería a separar): 18
+
+    La columna `evaluado_como` es la que demuestra que no hubo transitividad: cuando un par
+    toca un objeto ya unido, lo que se evaluó fue el objeto entero y no el polo suelto.
+
+§2 · EL PRECIO FINAL
+====================================================================================================
+
+                               etapa  polos  locales_en_polos  pct_fuera   ha  zonas_encontradas
+                etapa 1 · sin partir    118             13564       43.4 3745                 15
+            etapa 2 · leaf en los 10    127             12500       47.9 3058                 13
+etapa 3 · P065 rehecho + unión 100 m    124             12688       47.1 3144                 14
+
+    locales fuera de todo polo: 11,293 de 23,981
+    control §5 · envolventes que pasan: 124 de 124
+
+    LAS DOS ZONAS QUE SE HABÍAN PERDIDO
+referencia_id                      nombre  pct_zona_cubierta  encontrada
+          R15                      Devoto               10.7       False
+          R19 Federico Lacroze por tramos               28.5        True
+
+§3 · LAS CLASES PASAN DE TRES A DOS
+====================================================================================================
+
+  El motivo está medido en el informe anterior y conviene dejarlo acá también, porque es lo
+  que justifica que no haya tres: al cambiar el conjunto de puntos —sacando entera la fuente
+  rotativa— la clase C conservó 51 de 51 y la clase A conservó 2 de 26. Y las dos
+  explicaciones intuitivas de esa inestabilidad resultaron falsas al medirlas: no es
+  dependencia del Relevamiento (40,9 % contra 40,8 %, p = 0,51) ni cercanía al corte (0,179
+  contra 0,228, p = 0,45). Es que Fisher–Jenks minimiza varianza, la varianza la domina la
+  cola alta, y al adelgazarse la cola el corte superior se va de 1,59× la mediana a 3,29×.
+  **La frontera densa/media la pone la forma de la cola, no el territorio.** Por eso no
+  existe y no se publica.
+
+  EL CORTE ES UNA CONVENCIÓN DECLARADA, NO UNA FRONTERA DESCUBIERTA. 4.58 locales/ha,
+  a un pelo de la mediana de 5.21. Ésa es la redacción correcta
+  y es la que hay que usar en todos lados, porque es la que el propio §1 ya obligaba: **no
+  hay hueco en la distribución de densidad**, así que no hay ninguna estructura del
+  territorio que este número esté encontrando. Lo elegimos, y lo decimos.
+
+  Con esa redacción el esquema deja de estar amenazado por el refit. Si dijéramos «acá está
+  la frontera entre concentración y concentración extendida», un método de corte distinto
+  que la mueve nos estaría contradiciendo. Diciendo «elegimos cortar en 4,58», un método
+  distinto que corta en otro lado no contradice nada: elige otra convención.
+
+  El corte NO se recalcula al pasar de tres clases a dos: refitear ahora cambiaría la
+  frontera que se conserva sólo porque se borró la otra.
+
+                         polos  locales       ha  densidad_min  densidad_max
+clase_densidad                                                              
+concentración               71     7034   994.93          4.70         21.64
+concentración extendida     53     5654  2148.60          0.98          4.47
+
+  LA MISMA PRUEBA DE ROBUSTEZ QUE TUMBÓ A LAS TRES CLASES, AHORA SOBRE DOS
+    Se recalcula la densidad sin el Relevamiento —el 41 % de los puntos— y se vuelve a
+    clasificar. Hay dos maneras de trasladar el corte a la escala nueva y dan resultados
+    distintos, así que van las dos:
+
+    (a) CORTE REESCALADO con la mediana (4.58 → 2.79 loc/ha).
+        Es la traslación que corresponde a un clasificador de umbral fijo: la escala baja,
+        el corte baja con ella, y se pregunta si los mismos polos caen del mismo lado.
+        conservan clase: 118 de 124 (95.2 %) · Rand ajustado 0.814
+
+    (b) JENKS REFITEADO a k = 2 sobre la escala nueva (corte 4.53).
+        conservan clase: 85 de 124 (68.5 %) · Rand ajustado 0.128
+        reparto que produce: 92 concentración extendida / 32 concentración
+        Este número es BAJO y no hay que taparlo — pero mide otra cosa: con k = 2 sobre una
+        distribución de cola larga, Jenks pone el corte donde más varianza saca, o sea muy
+        arriba, y produce clases muy desbalanceadas. Es el MISMO defecto que tumbó a las
+        tres clases —el corte lo gobierna la cola—, ahora sobre el único corte que queda.
+
+    QUÉ SE CONCLUYE. La lectura que decide es (a), porque el esquema adoptado es un umbral
+    fijo y no un refit: la pregunta operativa es si un polo cambia de clase cuando cambian
+    los datos, no si Jenks reelige el mismo número.
+    Con el corte reescalado, 95 % de los polos conserva
+    su clase y el Rand pasa el umbral de 0,60 que las tres clases no pasaban. El esquema
+    de dos clases SÍ es reproducible al cambiar el conjunto de puntos.
+
+    Y en los dos casos vale lo mismo, que es la parte que no depende de ningún umbral: la
+    frontera se mueve con la forma de la distribución porque la distribución no tiene
+    huecos. Por eso la ficha lleva la densidad exacta primero.
+
+  Y en la ficha, el orden es: **densidad exacta primero, clase después.**
+
+  LA AÑADA, RECALCULADA SOBRE EL CONJUNTO FINAL
+                    polos  locales
+anada_relevamiento                
+2022                   12      858
+2023                   53     4910
+2024                   59     6920
+    con añada mixta: 30 de 124
+

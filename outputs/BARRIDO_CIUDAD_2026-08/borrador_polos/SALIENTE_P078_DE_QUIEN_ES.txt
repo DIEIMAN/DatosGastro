@@ -1,0 +1,84 @@
+¿DE QUIÉN ES EL SALIENTE N–NE DE P078? · prueba 1, contra TODOS los polos del borrador
+====================================================================================================
+
+  Los bloques se venían leyendo como cola de P078 porque de ahí salieron. Eso es un sesgo
+  de procedencia. La prueba 1 —precedente Recoleta— se aplica contra todo el borrador.
+
+    0 – 50 m      → UNIR, una sola zona, sin discusión
+    50 – 200 m    → prueba de estabilidad
+    > 200 m       → zonas distintas
+
+  Unir NO es bajar el mínimo: el bloque no se rescata por debajo de 40, se reconoce como
+  parte de un cuerpo que ya califica. El mínimo de 40 sigue intacto para todos.
+
+  bloques del saliente medidos: 3 (35, 23, 12 locales)
+
+----------------------------------------------------------------------------------------------------
+  BLOQUE_35 · 35 locales · Palermo · 1.9 ha
+
+   contra                   que_es  d_envolventes_m  d_entre_puntos_m         clasificacion  arista_sobre_vacio
+  P078·S1            parte de P078             11.3              55.8 prueba de estabilidad                True
+P090+P089 polo · Palermo · 104 loc            315.7             316.0       zonas distintas               False
+     P065 polo · Palermo · 361 loc            320.8             320.8       zonas distintas               False
+     P087  polo · Palermo · 56 loc            413.2             414.2       zonas distintas               False
+     P091 polo · Palermo · 728 loc            467.7             477.6       zonas distintas               False
+  P078·S2            parte de P078            674.4             674.4       zonas distintas               False
+
+----------------------------------------------------------------------------------------------------
+  BLOQUE_23 · 23 locales · Palermo · 1.0 ha
+
+   contra                   que_es  d_envolventes_m  d_entre_puntos_m         clasificacion  arista_sobre_vacio
+  P078·S1            parte de P078             75.0             102.2 prueba de estabilidad               False
+     P065 polo · Palermo · 361 loc            175.1             175.1 prueba de estabilidad               False
+  P078·S2            parte de P078            580.5             580.5       zonas distintas               False
+P090+P089 polo · Palermo · 104 loc            659.1             659.1       zonas distintas               False
+     P087  polo · Palermo · 56 loc            664.4             664.5       zonas distintas               False
+     P091 polo · Palermo · 728 loc            782.2             790.6       zonas distintas               False
+
+----------------------------------------------------------------------------------------------------
+  BLOQUE_12 · 12 locales · Palermo · 0.8 ha
+
+   contra                   que_es  d_envolventes_m  d_entre_puntos_m         clasificacion  arista_sobre_vacio
+  P078·S1            parte de P078             25.8              80.2 prueba de estabilidad                True
+     P065 polo · Palermo · 361 loc            287.8             296.5       zonas distintas               False
+  P078·S2            parte de P078            458.1             458.1       zonas distintas               False
+  P078·S3            parte de P078            765.2             765.2       zonas distintas               False
+     P091 polo · Palermo · 728 loc            846.1             846.1       zonas distintas               False
+P090+P089 polo · Palermo · 104 loc            861.2             861.2       zonas distintas               False
+
+====================================================================================================
+  VEREDICTO POR BLOQUE
+====================================================================================================
+
+   bloque  locales barrio_principal  ha  hull_degenerado mas_cercano  d_envolventes_m  d_entre_puntos_m         clasificacion
+bloque_35       35          Palermo 1.9            False     P078·S1             11.3              55.8 prueba de estabilidad
+bloque_23       23          Palermo 1.0            False     P078·S1             75.0             102.2 prueba de estabilidad
+bloque_12       12          Palermo 0.8            False     P078·S1             25.8              80.2 prueba de estabilidad
+
+  AVISO SOBRE LAS DOS COLUMNAS, y no es menor. Para algún bloque la distancia entre
+  envolventes es decenas de metros MENOR que la distancia entre puntos. Eso no es
+  cercanía: es una **arista del hull tendida sobre un vacío**. El borde de una
+  envolvente es un segmento entre dos puntos lejanos, y un tercero puede pasar cerca de
+  ese segmento sin estar cerca de ningún punto.
+
+  Por eso la clasificación se decide con `d_entre_puntos_m`. Usar la de envolventes
+  habría hecho pasar por continuidad —y por debajo del corte de 50 m de Recoleta— una
+  separación real de decenas de metros. En Recoleta los pares que decidieron estaban a
+  0,0 m: se TOCABAN, que es una evidencia distinta de un borde que pasa cerca.
+
+  NINGÚN bloque queda a menos de 50 m de otro polo del borrador. El precedente
+  Recoleta no aplica: no hay a quién unirlos.
+
+  3 bloque(s) caen en la franja 50–200 m, así que pasan
+  a la prueba de estabilidad. Y el vecino más cercano de todos es una PARTE de P078,
+  no otro polo: el saliente es de P078 y de nadie más.
+
+  Queda entonces el camino (c): reportarlo como hallazgo acotado, con redacción R7.
+
+----------------------------------------------------------------------------------------------------
+  ZONA PUBLICADA SOBRE LOS BLOQUES
+
+    bloque_35: ninguna  (de 35 locales)
+    bloque_23: ninguna  (de 23 locales)
+    bloque_12: ninguna  (de 12 locales)
+

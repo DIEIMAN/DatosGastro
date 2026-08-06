@@ -1,0 +1,6 @@
+indicador,formula,columna,nota
+A · razón pedida,base_total ÷ parcelas comerciales del RUS,base_sobre_comercial,NO se puede leer sola: mezcla cobertura y composición. Por eso se reporta partida.
+A.1 · cobertura,base_nucleo ÷ parcelas gastronómicas del RUS,cobertura,"El factor que habla de la base. LÍMITE: el RUS está adentro de la base, así que no puede bajar de 1 y mide cuánto agregan las otras seis fuentes sobre ese piso."
+A.2 · composición,parcelas gastronómicas del RUS ÷ parcelas comerciales del RUS × 1000,rus_sobre_comercial,NO es un defecto de la base: es el territorio. Palermo tiene más gastronomía por comercio que Villa Riachuelo y eso no es sesgo de medición.
+A.3 · aporte de las otras fuentes,cobertura − 1,aporte_otras_fuentes,"La cobertura sin el piso del propio RUS. Mediana 1,46."
+B · locales cada mil habitantes,base_nucleo ÷ población en viviendas particulares × 1000,locales_x_mil,"Población del Censo 2022, verificada contra dos archivos del INDEC. NO es un diagnóstico de cobertura: la gastronomía se ubica donde hay oficinas y turismo, no donde hay camas. La unidad de referencia es la COMUNA, porque el 20,5 % de la población vive en radios que tocan más de un barrio y el barrio exige repartir."
