@@ -1,0 +1,115 @@
+AUDITORÍA · ¿alguna unión firmada se decidió con la distancia entre ENVOLVENTES?
+====================================================================================================
+
+  La distancia entre envolventes es SIEMPRE ≤ que la distancia entre puntos, y a veces
+  mucho menor: el borde de un hull es un segmento tendido entre dos puntos lejanos, y un
+  tercero puede pasar cerca de ese segmento sin estar cerca de ningún punto. En el saliente
+  de P078 la diferencia fue 11,3 m contra 55,8 m — de un lado y del otro del corte de 50 m.
+
+----------------------------------------------------------------------------------------------------
+  1 · QUÉ NÚMERO TRAE EL ARCHIVO
+
+    `distancia_m` reproduce la distancia entre ENVOLVENTES en 35 de 35 pares.
+    Confirmado: la columna publicada del registro de uniones es la del hull.
+
+----------------------------------------------------------------------------------------------------
+  2 · LAS DOS DISTANCIAS, PAR POR PAR
+
+      par decision  d_archivo_m  d_envolventes_m  d_entre_puntos_m  factor  cruza_el_corte_50
+P090+P089      UNE         15.1             15.1              21.6     1.4              False
+P116+P117   NO UNE         18.7             18.7              29.4     1.6              False
+P081+P077   NO UNE         26.9             26.9              42.7     1.6              False
+P081+P080   NO UNE          9.1              9.1              48.0     5.3              False
+P118+P117   NO UNE         49.1             49.1              49.1     1.0              False
+P111+P108   NO UNE         29.2             29.2              53.2     1.8               True
+P056+P057   NO UNE         54.0             54.0              54.1     1.0              False
+P106+P107   NO UNE         46.4             46.4              57.7     1.2               True
+P116+P114   NO UNE         35.0             35.0              59.1     1.7               True
+P116+P118   NO UNE         45.7             45.7              59.2     1.3               True
+P098+P097   NO UNE         36.5             36.5              63.9     1.7               True
+P113+P112   NO UNE         20.7             20.7              68.6     3.3               True
+P091+P092   NO UNE         74.7             74.7              74.7     1.0              False
+P078+P075   NO UNE         71.8             71.8              75.1     1.0              False
+P087+P089   NO UNE         75.9             75.9              75.9     1.0              False
+P082+P083   NO UNE         79.0             79.0              79.0     1.0              False
+P104+P105   NO UNE         79.3             79.3              80.1     1.0              False
+P058+P060   NO UNE         80.4             80.4              82.2     1.0              False
+P097+P095   NO UNE         85.2             85.2              85.2     1.0              False
+P101+P099      UNE         85.1             85.1              85.2     1.0              False
+P061+P060   NO UNE         85.8             85.8              90.8     1.1              False
+P103+P108   NO UNE         89.6             89.6              92.4     1.0              False
+P088+P086   NO UNE         92.8             92.8              92.8     1.0              False
+P037+P038   NO UNE         93.7             93.7              93.7     1.0              False
+P091+P090   NO UNE         67.1             67.1              94.7     1.4              False
+P046+P045   NO UNE         54.6             54.6              95.5     1.7              False
+P056+P047   NO UNE         98.0             98.0              98.0     1.0              False
+P112+P114   NO UNE         93.7             93.7             100.6     1.1              False
+P061+P059   NO UNE         89.1             89.1             102.6     1.2              False
+P113+P109   NO UNE         82.5             82.5             103.4     1.3              False
+P118+P115   NO UNE         90.2             90.2             106.4     1.2              False
+P091+P088   NO UNE         16.2             16.2             119.4     7.4               True
+P056+P053   NO UNE         76.0             76.0             124.9     1.6              False
+P085+P099   NO UNE         84.0             84.0             128.5     1.5              False
+P027+P019   NO UNE         55.3             55.3             135.4     2.4              False
+
+    pares donde las dos columnas caen de lados distintos del corte de 50 m: 7
+    factor mediano entre las dos distancias: 1.2×
+    factor máximo: 7.4×
+
+----------------------------------------------------------------------------------------------------
+  3 · EL VEREDICTO SOBRE LAS DOS UNIONES FIRMADAS
+
+      par decision  d_archivo_m  d_envolventes_m  d_entre_puntos_m  factor  cruza_el_corte_50
+P090+P089      UNE         15.1             15.1              21.6     1.4              False
+P101+P099      UNE         85.1             85.1              85.2     1.0              False
+
+    **NO se recorren, y el motivo importa más que la conclusión.**
+
+    La distancia entre envolventes NUNCA decidió una unión. Lo que hizo fue elegir qué
+    pares se evaluaban: `distancia > UMBRAL_UNION_M: continue`. La decisión misma la
+    tomaron las dos pruebas que siguen, y **las dos corren sobre PUNTOS**:
+
+      · CONTINUIDAD · `componentes(cuerpo, 100)` sobre los puntos de los dos polos juntos,
+        con `cKDTree.query_pairs` — puntos contra puntos, ninguna geometría de por medio.
+      · ESTABILIDAD · `agrupar(cuerpo, ...)` sobre las coordenadas de esos mismos puntos.
+
+    Así que la columna del hull está mal como DESCRIPCIÓN y era inofensiva como FILTRO, por
+    una razón que conviene dejar escrita porque no es obvia: como la distancia entre
+    envolventes es siempre ≤ que la distancia entre puntos, filtrar a 100 m de envolvente
+    deja pasar **todo** par que esté a menos de 100 m entre puntos, y algunos más. El filtro
+    peca de ancho, no de angosto: no se perdió ninguna candidata.
+
+    Lo que sí hay que corregir es la CITA. Las dos uniones no están «a 15,1 m» y «a 85,1 m»:
+      P090+P089: 15.1 m entre envolventes → **21.6 m entre puntos**
+      P101+P099: 85.1 m entre envolventes → **85.2 m entre puntos**
+
+----------------------------------------------------------------------------------------------------
+  4 · Y AL REVÉS: ¿ALGÚN RECHAZO SE SOSTENÍA SÓLO EN EL HULL?
+
+    La pregunta simétrica, que es la que faltaba hacer. Un par rechazado por continuidad
+    NO puede haberse rechazado por el hull —la continuidad mira puntos—, así que acá lo
+    único que se revisa es si algún par quedó AFUERA del filtro por el número equivocado.
+
+    No puede pasar, y es el mismo argumento del §3 al revés: si un par estuviera a menos de
+    100 m entre puntos, su distancia entre envolventes sería aún menor y el filtro lo habría
+    dejado pasar igual. **El filtro ancho protege de este error por construcción.**
+
+    Pares que el filtro dejó entrar y que entre puntos están a MÁS de 100 m: 8
+      par  d_envolventes_m  d_entre_puntos_m decision
+P112+P114             93.7             100.6   NO UNE
+P061+P059             89.1             102.6   NO UNE
+P113+P109             82.5             103.4   NO UNE
+P118+P115             90.2             106.4   NO UNE
+P091+P088             16.2             119.4   NO UNE
+P056+P053             76.0             124.9   NO UNE
+P085+P099             84.0             128.5   NO UNE
+P027+P019             55.3             135.4   NO UNE
+
+    Son los que el hull acercó de más. Todos fueron rechazados igual, por continuidad o
+    estabilidad, así que el error de la columna no llegó a producir ninguna unión.
+
+====================================================================================================
+  35 pares reauditados · 2 uniones firmadas · 0 uniones a recorrer
+  7 pares cambian de lado del corte de 50 m según qué columna se mire
+====================================================================================================
+
