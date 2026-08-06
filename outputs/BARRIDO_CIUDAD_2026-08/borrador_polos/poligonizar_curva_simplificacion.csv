@@ -1,0 +1,9 @@
+tolerancia_m,vertices,vertices_por_polo,ha_total,cambio_area_pct,locales_fuera_de_su_poligono,polos_afectados,desvio_maximo_m,admisible
+0,1971,15.9,3143.5,0.0,0,0,0.0,True
+2,1796,14.5,3143.1,-0.01,133,79,1.9,False
+5,1660,13.4,3140.7,-0.09,245,104,5.7,False
+10,1485,12.0,3134.3,-0.29,411,115,12.5,False
+15,1365,11.0,3125.6,-0.57,574,120,24.2,False
+20,1294,10.4,3125.5,-0.57,654,121,24.2,False
+30,1156,9.3,3121.2,-0.71,855,121,39.9,False
+50,947,7.6,3091.3,-1.66,1307,123,77.8,False
