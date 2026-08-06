@@ -168,3 +168,11 @@ outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v2.csv
 # Cache de respuestas del normalizador de direcciones de USIG: es un espejo local de un servicio
 # de terceros, se rehace solo y no es una fuente.
 outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig.json
+
+# === Tablas internas del piloto de Places de fase11 (2026-07) ===
+# Llevan place_id real, nombre y direccion exacta de terceros. Nunca se versionan (guardrail 8).
+# Estaban sueltas -sin regla y sin rastrear- y un `git add -A` las levanto. La regla existe para
+# que el descuido no alcance: lo que protege un archivo es el .gitignore, no la prolijidad.
+outputs/polos_gastro/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
+outputs/polos_gastro/experimentos/experimentos_google_places/
+notebooks/06_informe_presentacion.ipynb
