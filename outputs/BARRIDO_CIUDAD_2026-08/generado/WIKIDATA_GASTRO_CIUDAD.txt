@@ -1,0 +1,99 @@
+==================================================================================================
+WIKIDATA · QUÉ APORTA A LA BASE GASTRONÓMICA DE LA CIUDAD · CC0
+==================================================================================================
+fecha 2026-08-05 · endpoint https://query.wikidata.org/sparql
+
+§1 · EL VOLUMEN, QUE ES LO PRIMERO QUE HAY QUE MIRAR
+--------------------------------------------------------------------------------------------------
+  clases gastronómicas en el árbol de Wikidata  : 492
+  ítems georreferenciados en la caja de la Ciudad: 6568
+  de ésos, gastronómicos POR TIPO                : 33
+  gastronómicos POR DECLARATORIA (Bar Notable)   : 95
+
+  33 ítems por tipo contra los 27.727 locales de la base. **Wikidata no es una fuente de densidad
+  y no se va a usar como tal.** Eso es exactamente lo que se escribió esperar antes de correr, y
+  no decepciona.
+
+  Pero la consulta por tipo se queda corta por una razón que no es de volumen: de los 95 Bares
+  Notables, sólo 13 están cargados como cafetería, bar o restaurante. **Los otros 82 figuran como
+  «edificio».** Al catalogarlos, lo enciclopédico fue el inmueble y no el negocio que hay adentro.
+  Filtrar gastronomía por `P31` en Wikidata pierde el grueso de lo que importa; hay que preguntar
+  por la declaratoria.
+
+§1b · LOS BARES NOTABLES · EL APORTE QUE JUSTIFICA LA FUENTE
+--------------------------------------------------------------------------------------------------
+  ítems con declaratoria «Bar Notable»    : 95
+  con dirección postal declarada          : 92 (97 %)
+
+  El barrido del catálogo de BA Data —453 datasets— no devolvió **ningún** dataset con esta lista.
+  O sea que hoy el índice abierto más completo de los Bares Notables de la Ciudad está en
+  Wikidata, bajo CC0, y no en el portal del Gobierno que los declaró. Conviene decirlo con
+  cuidado: puede existir y no estar catalogado con esa palabra. Lo verificable es que el barrido
+  no lo encontró.
+
+  Y trae dirección postal en el 97 % de los casos, que es la salida limpia al problema de la
+  coordenada: se geocodifica con USIG desde la dirección y la coordenada de Wikidata no se toca.
+
+  Los diez primeros, para que se vea qué son:
+    Café Tortoni                              Avenida de Mayo 825. Ciudad Autónoma de Buen cafetería
+    Bar Británico                             Brasil 399                                   bar · cafete
+    Café San Bernardo                         Corrientes 5436                              edificio
+    Café de los Angelitos                     Av. Rivadavia 2064                           edificio
+    Esquina Homero Manzi                      San Juan y Boedo                             edificio
+    Café El Estaño 1880                       Aristóbulo del Valle 1100                    edificio
+    La Biela                                  Quintana 600                                 cafetería
+    American Bar                              Diagonal Norte 632                           edificio
+    Café Margot                               Boedo 857                                    edificio
+    Bar de Cao                                Independencia 2400                           edificio
+
+§2 · QUÉ TRAE CADA ÍTEM, QUE ES DONDE ESTÁ EL VALOR
+--------------------------------------------------------------------------------------------------
+  nombre                    :   33 de 33 (100 %)
+  nombre oficial            :    0 de 33 (0 %)
+  año de fundación          :   16 de 33 (48 %)
+  dirección postal          :   23 de 33 (70 %)
+  sitio web oficial         :   11 de 33 (33 %)
+  identificador OSM         :    0 de 33 (0 %)
+  declaratoria patrimonial  :   17 de 33 (52 %)
+
+  Los más antiguos con fecha declarada:
+    1799  Café de los Catalanes                                cafetería
+    1858  Café Tortoni                                         cafetería
+    1887  La Puerto Rico                                       cafetería
+    1890  Café London City                                     cafetería · grandes almacene
+    1893  Banchero                                             pizzería · restaurante
+    1894  Los 36 Billares                                      bar · cafetería
+    1902  El Vesuvio                                           heladería
+    1912  Confitería del Molino                                coffeehouse
+
+  Con declaratoria patrimonial: 17
+    Café Tortoni                                  Bar Notable
+    Confitería del Molino                         Monumento Histórico Nacional de Argentina
+    Bar Británico                                 Bar Notable · Patrimonio Cultural de Buenos Aire
+    Banchero                                      Patrimonio Cultural de Buenos Aires
+    La Biela                                      Bar Notable
+    Confitería del Hotel Castelar                 Bar Notable
+    Café London City                              Bar Notable
+    La Giralda                                    Bar Notable
+    Café de García                                Bar Notable
+    Confitería Ideal                              Bar Notable
+
+§3 · CÓMO ENTRA A LA BASE, Y CÓMO NO
+--------------------------------------------------------------------------------------------------
+  Entra como **capa de enriquecimiento**, nunca como universo ni como grupo de independencia
+  propio: un local que sólo existe en Wikidata no debería crear un registro en la base, porque su
+  existencia la afirma un editor voluntario y no un organismo ni un relevamiento. Lo que sí
+  aporta, sobre locales que la base ya tiene: nombre canónico, año de fundación, declaratoria
+  patrimonial e identificador de OSM.
+
+  La declaratoria es la excepción parcial a esa regla: **«Bar Notable» es un acto administrativo
+  de la Ciudad, no una opinión de un editor.** Wikidata acá es el transporte, no la autoridad. Si
+  un Bar Notable no aparece en la base, eso es un faltante de la base y no un dato dudoso — pero
+  antes de darlo por bueno conviene confirmar la lista contra la normativa, porque el que la
+  transcribió sí es un voluntario.
+
+  **Su coordenada no se copia.** El wiki de OSM advierte que muchas coordenadas de Wikidata vienen
+  de Wikipedia, que las tomó de Google Maps: procedencia viciada. Acá se usó sólo para acotar la
+  consulta y para emparejar, y la columna viaja rotulada `coordenada_no_usable`.
+
+==================================================================================================

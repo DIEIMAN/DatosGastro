@@ -1,0 +1,85 @@
+==================================================================================================
+PERÍMETRO O COBERTURA · POR QUÉ LA BASE NO LLEGA AL MÍNIMO DECLARADO · 0 REQUESTS
+==================================================================================================
+fecha 2026-08-05 · base de 27.727 locales · ninguna cifra publicada se toca
+
+§1 · LAS TRES SUPERFICIES, QUE NO SON LA MISMA
+--------------------------------------------------------------------------------------------------
+  Hectáreas sobre las que cuenta cada perímetro. `precedencia` es el que usó el cotejo;
+  `consulta` es el que usó la corrida que produjo la cifra publicada.
+
+  ref  zona                           precedencia  envolvente  consulta  cons÷prec
+  R12  Centro/Microcentro segmentado        162,4       184,1     241,3      1,49×
+  R13  Abasto                               109,0       109,0     112,3      1,03×
+  R18  Esmeralda–Paraguay                    17,2        48,4      50,2      2,91×
+  R19  Federico Lacroze por tramos           89,5        89,5     126,0      1,41×
+  R20  García del Río                        28,4        28,4      29,0      1,02×
+  R21  La Paternal                          321,0       321,0     335,4      1,04×
+  R22  Villa Pueyrredón                     305,6       305,6     330,5      1,08×
+
+§2 · LA BASE SOBRE CADA PERÍMETRO Y CADA UNIVERSO
+--------------------------------------------------------------------------------------------------
+  `núcleo` es lo que contó el cotejo. `comparable` suma la panificación que la consulta
+  publicada sí pedía (categorías: restaurant, cafe, bar, bakery, meal_takeaway).
+
+  ref   publicada  núcleo/prec  compar/prec  núcleo/cons  compar/cons
+  R12         797          969         1026         1437         1525
+  R13         314          378          421          388          432
+  R18         216          103          110          338          354
+  R19         211          187          207          291          321
+  R20          40           61           72           62           73
+  R21         254          208          261          231          287
+  R22         158          198          235          229          267
+
+§3 · LA RAZÓN, ANTES Y DESPUÉS DE ALINEAR PERÍMETRO Y UNIVERSO
+--------------------------------------------------------------------------------------------------
+  ref  zona                             cotejo  corregida  alcanza   qué era
+  R12  Centro/Microcentro segmentado      1,22       1,91       sí   nunca estuvo por debajo
+  R13  Abasto                             1,20       1,38       sí   nunca estuvo por debajo
+  R18  Esmeralda–Paraguay                 0,48       1,64       sí   era PERÍMETRO/UNIVERSO
+  R19  Federico Lacroze por tramos        0,89       1,52       sí   era PERÍMETRO/UNIVERSO
+  R20  García del Río                     1,52       1,82       sí   nunca estuvo por debajo
+  R21  La Paternal                        0,82       1,13       sí   era PERÍMETRO/UNIVERSO
+  R22  Villa Pueyrredón                   1,25       1,69       sí   nunca estuvo por debajo
+
+§4 · DE DÓNDE SALE LA DIFERENCIA, DESCOMPUESTA
+--------------------------------------------------------------------------------------------------
+  Cuánto aporta cada eje al pasar del conteo del cotejo al conteo comparable. No son
+  intercambiables: si domina el perímetro, la zona nunca estuvo mal medida; si domina el
+  universo, lo que faltaba era contar las panaderías que la consulta publicada sí pedía.
+
+  ref    cotejo  +perímetro  +universo  =comparable   eje dominante
+  R12       969        +468        +88         1525   perímetro (84% de la diferencia)
+  R13       378         +10        +44          432   universo de rubros (81%)
+  R18       103        +235        +16          354   perímetro (94% de la diferencia)
+  R19       187        +104        +30          321   perímetro (78% de la diferencia)
+  R20        61          +1        +11           73   universo de rubros (92%)
+  R21       208         +23        +56          287   universo de rubros (71%)
+  R22       198         +31        +38          267   universo de rubros (55%)
+
+§5 · DENSIDAD POR HECTÁREA SOBRE EL PERÍMETRO DE CONSULTA
+--------------------------------------------------------------------------------------------------
+  Es la comparación que sobrevive a que las superficies difieran.
+
+  ref         ha   base/ha  publicada/ha
+  R12      241,3      6,32          3,30
+  R13      112,3      3,85          2,80
+  R18       50,2      7,05          4,30
+  R19      126,0      2,55          1,67
+  R20       29,0      2,52          1,38
+  R21      335,4      0,86          0,76
+  R22      330,5      0,81          0,48
+
+§6 · QUÉ DECIDE ESTO SOBRE CORRER PLACES
+--------------------------------------------------------------------------------------------------
+  3 de las zonas que aparecían por debajo del mínimo (R18, R19, R21) lo alcanzan en cuanto se
+  cuenta sobre el mismo perímetro y el mismo universo de rubros que la corrida publicada. **No
+  eran faltante de cobertura: eran faltante de comparación.** Consultar Places ahí compraría muy
+  poco, y el diagnóstico que las señalaba como candidatas queda sin efecto.
+
+  Y una advertencia que vale para todo el cotejo: la cifra publicada de estas zonas también salió
+  de Google Places. Que la base la alcance no prueba que la base esté completa: prueba que llega
+  adonde llegó una corrida de Places de julio. El mínimo declarado es una cota inferior de esa
+  corrida, no del territorio.
+
+==================================================================================================

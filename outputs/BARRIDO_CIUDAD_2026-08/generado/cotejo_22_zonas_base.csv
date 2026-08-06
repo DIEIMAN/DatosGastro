@@ -1,0 +1,23 @@
+rid,zona_publicada,metodo,familia,relevado,base_nucleo,base_ampliado,base_aptos,base_corroborados,razon,dir_nucleo
+R01,Palermo,sin conteo,sin conteo,,1380,1454,1358,350,,406
+R02,Avenida Corrientes,sin conteo,sin conteo,,362,385,354,95,,132
+R03,San Telmo,sin conteo,sin conteo,,72,78,71,15,,18
+R04,Puerto Madero,sin conteo,sin conteo,,363,373,354,78,,62
+R05,Belgrano,relevamiento anterior,relevamiento anterior,697.0,354,400,343,76,0.51,100
+R06,Recoleta,sin conteo,sin conteo,,728,805,714,191,,198
+R07,Costanera Norte,relevamiento anterior,relevamiento anterior,72.0,67,67,67,10,0.93,3
+R08,Villa Crespo,relevamiento propio,relevamiento propio,646.0,836,961,823,167,1.29,233
+R09,Chacarita,relevamiento propio,relevamiento propio,327.0,206,231,202,51,0.63,55
+R10,Caballito,relevamiento propio,relevamiento propio,907.0,517,609,508,112,0.57,177
+R11,Boulevard Caseros,relevamiento propio,relevamiento propio,66.0,61,76,60,9,0.92,5
+R12,Centro/Microcentro segmentado,minimo relevado,minimo relevado,797.0,969,1027,951,271,1.22,327
+R13,Abasto,minimo relevado,minimo relevado,314.0,378,421,373,77,1.2,180
+R14,Avenida Boedo,directorio comercial,directorio comercial,79.0,247,303,245,38,3.13,74
+R15,Devoto,directorio comercial,directorio comercial,119.0,428,522,422,75,3.6,139
+R16,Donado–Holmberg,directorio comercial,directorio comercial,40.0,122,140,121,25,3.05,32
+R17,Villa Urquiza,directorio comercial,directorio comercial,189.0,534,640,528,110,2.83,173
+R18,Esmeralda–Paraguay,minimo relevado,minimo relevado,216.0,103,110,100,27,0.48,30
+R19,Federico Lacroze por tramos,minimo relevado,minimo relevado,211.0,187,208,185,48,0.89,54
+R20,García del Río,minimo relevado,minimo relevado,40.0,61,72,61,14,1.52,16
+R21,La Paternal,minimo relevado,minimo relevado,254.0,208,261,208,25,0.82,41
+R22,Villa Pueyrredón,minimo relevado,minimo relevado,158.0,198,235,198,28,1.25,48

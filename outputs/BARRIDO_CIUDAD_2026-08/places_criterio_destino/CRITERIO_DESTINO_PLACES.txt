@@ -1,0 +1,67 @@
+CRITERIO DE DESTINO PARA GOOGLE PLACES · dry-run
+====================================================================================================
+
+NINGUNA LLAMADA EJECUTADA. 0 requests. Esto es un pedido de autorización, no una corrida.
+
+EL CAMBIO DE MARCO, PORQUE CAMBIA PARA QUÉ SIRVE ESTA CORRIDA
+  El destino iba a decidirse contra un denominador externo de completitud. Ese pedido no va,
+  y no va a haber otro: **nunca vamos a tener denominador externo.** Eso deja de ser un
+  pendiente y pasa a ser limitación declarada del §10.
+
+  La propuesta es usar Places para ocupar ese lugar, con lo que Places sí sabe hacer:
+  **sonda de descubrimiento en los barrios donde la base está más flaca.** Si aun ahí
+  aparece poco que no teníamos, la cobertura queda acotada por arriba con un número propio.
+  Si aparece mucho, sabemos dónde y cuánto falta. Hoy no tenemos ninguna de las dos.
+
+  Y el límite que no se relitiga: **Places aporta descubrimiento, NO vigencia.** Nada de
+  esta corrida se puede leer como que un local sigue abierto.
+
+EL CRITERIO, DECLARADO ANTES DE MIRAR QUÉ BARRIOS SALEN
+  1 · `aporte_otras_fuentes` en el tercio más bajo (≤ 1.39)
+  2 · `pct_padron` en el tercio más bajo (≤ 24.7 %)
+  Selección = intersección de los dos, no unión. Flojo en un solo indicador puede ser una
+  rareza de esa fuente; flojo en los dos significa menos patas independientes.
+
+  barrios en el tercio bajo de aporte: 16
+  barrios en el tercio bajo de padrón: 16
+  **en los dos (seleccionados): 5**
+
+                   aporte_otras_fuentes  pct_padron  cobertura  locales_nucleo  rus_gastro  anio_relevamiento  celdas  requests
+VILLA DEL PARQUE                   1.17       23.15       2.17             337         188               2022      15        30
+VILLA LURO                         1.32       21.74       2.32             207         107               2022      11        22
+VILLA GRAL. MITRE                  1.36       23.56       2.36             208         107               2022       9        18
+SAN CRISTOBAL                      1.31       23.20       2.31             250         134               2024       9        18
+PATERNAL                           1.30       19.84       2.30             126          67               2023       9         9
+
+DRY-RUN · el número que hace falta para autorizar
+====================================================================================================
+
+  barrios         : 5
+  celdas          : 53
+  **requests      : 97**  (estimados página por página, no ×3)
+  cota superior ×3: 291 si toda celda paginara al máximo
+
+  franja gratuita mensual   : 5,000 (Text Search, SKU Pro)
+  ya usados en agosto       : 306
+  quedarían usados con esto : 403 (8.1 % de la franja)
+  en el peor caso ×3        : 597 (11.9 %)
+  tope propio declarado     : 600 requests
+  CABE · 97 ≤ 600, y el peor caso ×3 sigue adentro de la franja gratuita.
+
+QUÉ SE MEDIRÍA, ESCRITO ANTES DE CORRER PARA QUE EL RESULTADO SEA FALSABLE
+  Por barrio: cuántos puntos trae Places, cuántos ya están en la base, y cuántos son
+  nuevos. El indicador que importa es **la fracción nueva**, y las dos lecturas están
+  escritas de antemano:
+    · fracción nueva BAJA en los barrios más flacos → la base está más completa de lo que
+      podíamos afirmar, y la afirmación pasa a tener respaldo propio.
+    · fracción nueva ALTA → hay faltante y queda localizado, con su tamaño.
+  Ninguna de las dos se puede anticipar y las dos son publicables. Eso es lo que hace que
+  valga la pena correrla.
+
+LO QUE NO SE HACE CON EL RESULTADO, sin una decisión aparte
+  No entra a la base: la licencia de Places no es redistribuible y por eso la base se
+  construyó sin él. El producto de esta corrida es un número de diagnóstico, no puntos.
+
+PEDIDO DE AUTORIZACIÓN
+  Se solicita autorización para ejecutar 97 requests de Text Search sobre 5 barrios.
+  Sin autorización explícita no se ejecuta nada.

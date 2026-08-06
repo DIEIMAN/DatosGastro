@@ -1,0 +1,70 @@
+﻿rid,zona,barrio,pct_zona_en_barrio
+R01,Palermo,Palermo,92.4
+R01,Palermo,Villa Crespo,3.6
+R01,Palermo,Colegiales,2.4
+R01,Palermo,Chacarita,1.6
+R02,Avenida Corrientes,San Nicolas,85.8
+R02,Avenida Corrientes,Balvanera,14.2
+R03,San Telmo,San Telmo,92.5
+R03,San Telmo,Constitucion,7.5
+R04,Puerto Madero,Puerto Madero,60.1
+R04,Puerto Madero,San Telmo,9.9
+R04,Puerto Madero,La Boca,7.7
+R04,Puerto Madero,Retiro,7.3
+R04,Puerto Madero,Monserrat,6.4
+R04,Puerto Madero,San Nicolas,5.4
+R05,Belgrano,Belgrano,99.8
+R06,Recoleta,Recoleta,100.0
+R07,Costanera Norte,Palermo,57.6
+R07,Costanera Norte,Belgrano,38.6
+R08,Villa Crespo,Villa Crespo,80.2
+R08,Villa Crespo,Caballito,10.3
+R08,Villa Crespo,Palermo,4.1
+R08,Villa Crespo,Paternal,3.1
+R08,Villa Crespo,Chacarita,2.0
+R09,Chacarita,Chacarita,72.8
+R09,Chacarita,Villa Crespo,15.7
+R09,Chacarita,Colegiales,7.3
+R09,Chacarita,Palermo,4.3
+R10,Caballito,Caballito,89.0
+R10,Caballito,Parque Chacabuco,6.9
+R10,Caballito,Flores,2.7
+R10,Caballito,Boedo,1.4
+R11,Boulevard Caseros,Barracas,51.3
+R11,Boulevard Caseros,Constitucion,25.8
+R11,Boulevard Caseros,San Telmo,22.9
+R12,Centro / Microcentro segmentado,San Nicolas,54.5
+R12,Centro / Microcentro segmentado,Retiro,25.4
+R12,Centro / Microcentro segmentado,Monserrat,20.1
+R13,Abasto,Balvanera,54.7
+R13,Abasto,Almagro,45.3
+R14,Avenida Boedo,Boedo,79.2
+R14,Avenida Boedo,Almagro,10.3
+R14,Avenida Boedo,Nueva Pompeya,9.7
+R15,Devoto,Villa Devoto,93.7
+R15,Devoto,Villa Real,4.1
+R16,Donado-Holmberg,Villa Urquiza,81.6
+R16,Donado-Holmberg,Villa Ortuzar,8.5
+R16,Donado-Holmberg,Saavedra,5.2
+R16,Donado-Holmberg,Coghlan,4.6
+R17,Villa Urquiza,Villa Urquiza,88.0
+R17,Villa Urquiza,Saavedra,4.7
+R17,Villa Urquiza,Parque Chas,4.5
+R17,Villa Urquiza,Villa Ortuzar,2.4
+R18,Esmeralda-Paraguay,Retiro,71.7
+R18,Esmeralda-Paraguay,San Nicolas,28.3
+R19,Federico Lacroze por tramos,Colegiales,45.5
+R19,Federico Lacroze por tramos,Palermo,44.9
+R19,Federico Lacroze por tramos,Chacarita,5.4
+R19,Federico Lacroze por tramos,Belgrano,4.3
+R20,Garcia del Rio,Saavedra,91.8
+R20,Garcia del Rio,Nuñez,8.2
+R21,La Paternal,Paternal,60.3
+R21,La Paternal,Villa Crespo,7.9
+R21,La Paternal,Villa Gral. Mitre,7.3
+R21,La Paternal,Agronomia,6.6
+R21,La Paternal,Parque Chas,5.5
+R21,La Paternal,Villa Del Parque,5.4
+R21,La Paternal,Chacarita,3.7
+R21,La Paternal,Villa Ortuzar,2.5
+R22,Villa Pueyrredon,Villa Pueyrredon,100.0

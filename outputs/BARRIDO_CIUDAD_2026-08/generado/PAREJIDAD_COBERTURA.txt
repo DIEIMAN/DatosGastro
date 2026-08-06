@@ -1,0 +1,147 @@
+Parejidad de la cobertura de la base · dos indicadores disponibles hoy
+========================================================================================
+
+Ninguno de los dos es el denominador del Censo Económico. Los dos responden la misma
+pregunta con menor precisión: si la base se aparta de una medición homogénea del
+territorio de manera desigual entre barrios.
+
+base: 27,727 locales, corte 2026-08-05
+Relevamiento de Usos del Suelo: 318,607 parcelas, relevamiento rotativo 2022-2024
+Censo 2022: 3,095,454 personas en viviendas particulares, 3,820 radios
+
+========================================================================================
+INDICADOR A · locales de la base sobre parcelas comerciales, por barrio
+========================================================================================
+
+  CABA: 27,727 locales de la base | 10,888 parcelas gastronómicas del Relevamiento | 58,272 parcelas comerciales activas
+  razón pedida (locales cada 1.000 parcelas comerciales), Ciudad: 475.8
+  descomposición, Ciudad: cobertura 2.55 × composición 186.8 por mil
+
+  DISPERSIÓN ENTRE LOS 48 BARRIOS
+    razón pedida (base/comercial)      mediana  387.70 | CV 1.37 | p90/p10 2.76 | rango 182.72–5442.31 (VILLA RIACHUELO … PUERTO MADERO)
+    composición (RUS/comercial)        mediana  158.17 | CV 0.54 | p90/p10 2.55 | rango 88.63–730.77 (PARQUE AVELLANEDA … PUERTO MADERO)
+    COBERTURA (base/RUS gastro)        mediana    2.46 | CV 0.30 | p90/p10 1.21 | rango 2.02–7.45 (VILLA RIACHUELO … PUERTO MADERO)  [FUERA de la banda escrita]
+      ídem, sin el piso mecánico       mediana    1.46 | CV 0.48 | p90/p10 1.37 | rango 1.02–6.45 (VILLA RIACHUELO … PUERTO MADERO)  [FUERA de la banda escrita]
+
+  El primero mezcla los otros dos. El que habla de la base es el tercero, y el cuarto es
+  el mismo sin la parte que no puede bajar de 1 porque el Relevamiento está adentro.
+
+  QUIÉN ROMPE LA BANDA DEL CV, mirado después de ver el número y rotulado como tal:
+               comercial  rus_gastro  base_total  cobertura
+barrio_k                                                   
+PUERTO MADERO         52          38         283   7.447368
+VERSALLES            230          25         104   4.160000
+RETIRO               865         223         649   2.910314
+BELGRANO            1968         542        1572   2.900369
+VILLA SOLDATI        426          55         154   2.800000
+    sin el 5 % de cada cola: CV 0.07 | rango 2.29–2.90 (42 barrios)
+    Este recorte NO estaba declarado antes de correr. Se informa como diagnóstico de qué
+    mueve el CV, no como veredicto que reemplace al de la banda escrita.
+
+  ¿la cobertura se ordena por el año del relevamiento? (sería artefacto, no cobertura)
+    2022: 11 barrios | cobertura mediana 2.42 | composición mediana 137.5 por mil
+    2023: 19 barrios | cobertura mediana 2.40 | composición mediana 166.9 por mil
+    2024: 18 barrios | cobertura mediana 2.56 | composición mediana 178.8 por mil
+
+  ¿la cobertura cae en el sur? (comunas 4, 8 y 9 — el riesgo declarado en el §0)
+    sur   (10 barrios): cobertura mediana 2.50 | composición mediana 129.1 por mil | razón pedida 340.3
+    resto (38 barrios): cobertura mediana 2.45 | composición mediana 163.3 por mil | razón pedida 406.6
+
+  CONTROL · las dos atribuciones de barrio, la del Relevamiento y la geométrica de la base
+    locales de la base con fuente RUS: 10,890 | parcelas gastronómicas del Relevamiento: 10,888
+    desvío absoluto por barrio: mediana 0 | máximo 2 (VILLA DEVOTO) | suma 2 (0.0 % del universo)
+
+  los 10 barrios donde la base más se despega del Relevamiento:
+               comercial  rus_gastro  base_total  base_sin_rus  base_sobre_comercial  rus_sobre_comercial  cobertura  aporte_otras_fuentes  anio_relevamiento
+barrio_k                                                                                                                                                     
+PUERTO MADERO         52          38         283           245                5442.3                730.8       7.45                  6.45               2024
+VERSALLES            230          25         104            79                 452.2                108.7       4.16                  3.16               2022
+RETIRO               865         223         649           426                 750.3                257.8       2.91                  1.91               2024
+BELGRANO            1968         542        1572          1030                 798.8                275.4       2.90                  1.90               2023
+VILLA SOLDATI        426          55         154            99                 361.5                129.1       2.80                  1.80               2024
+SAAVEDRA             838         143         397           254                 473.7                170.6       2.78                  1.78               2023
+RECOLETA            2771         636        1750          1114                 631.5                229.5       2.75                  1.75               2024
+MONSERRAT           1202         363         994           631                 827.0                302.0       2.74                  1.74               2024
+COGHLAN              282          45         123            78                 436.2                159.6       2.73                  1.73               2023
+NUNEZ                826         205         557           352                 674.3                248.2       2.72                  1.72               2023
+
+  los 10 donde menos:
+                  comercial  rus_gastro  base_total  base_sin_rus  base_sobre_comercial  rus_sobre_comercial  cobertura  aporte_otras_fuentes  anio_relevamiento
+barrio_k                                                                                                                                                        
+VILLA LURO              679         107         248           141                 365.2                157.6       2.32                  1.32               2022
+VILLA ORTUZAR           587         101         234           133                 398.6                172.1       2.32                  1.32               2023
+SAN CRISTOBAL          1025         134         309           175                 301.5                130.7       2.31                  1.31               2024
+PARQUE PATRICIOS        772         139         320           181                 414.5                180.1       2.30                  1.30               2023
+VILLA PUEYRREDON        835         116         267           151                 319.8                138.9       2.30                  1.30               2023
+PATERNAL                481          67         154            87                 320.2                139.3       2.30                  1.30               2023
+FLORES                 2843         410         937           527                 329.6                144.2       2.29                  1.29               2024
+VILLA DEL PARQUE       1107         188         408           220                 368.6                169.8       2.17                  1.17               2022
+MONTE CASTRO            941         116         250           134                 265.7                123.3       2.16                  1.16               2022
+VILLA RIACHUELO         706          64         129            65                 182.7                 90.7       2.02                  1.02               2024
+
+========================================================================================
+INDICADOR B · locales de la base cada mil habitantes
+========================================================================================
+
+  reparto de radios censales entre barrios
+    radios de CABA: 3,820 | radios que tocan más de un barrio: 783 (20.5 %)
+    población en radios partidos: 634,586 (20.5 % del total)
+    población repartida: 3,095,454 de 3,095,454 (perdida contra el borde de la Ciudad: 0)
+
+  CABA: 27,726 locales / 3,095,454 habitantes = 8.96 locales cada mil
+
+  POR COMUNA (unidad exacta: la comuna es el departamento censal, sin reparto)
+        base_total  base_nucleo  poblacion  locales_x_mil  nucleo_x_mil
+comuna                                                                 
+1             4200         3908     221001          19.00         17.68
+14            3652         3375     247252          14.77         13.65
+2             1750         1573     160609          10.90          9.79
+15            1998         1723     195265          10.23          8.82
+13            2620         2316     262330           9.99          8.83
+3             1729         1513     193537           8.93          7.82
+10            1290         1069     171896           7.50          6.22
+11            1498         1239     201905           7.42          6.14
+5             1415         1199     192449           7.35          6.23
+9             1233         1002     167908           7.34          5.97
+6             1417         1214     201764           7.02          6.02
+12            1562         1331     235364           6.64          5.66
+4             1480         1257     227024           6.52          5.54
+7             1288         1068     213262           6.04          5.01
+8              594          481     203888           2.91          2.36
+
+    locales cada mil (comuna)          mediana    7.42 | CV 0.44 | p90/p10 2.12 | rango 2.91–19.00 (8 … 1)
+    locales cada mil (barrio)          mediana    7.65 | CV 0.66 | p90/p10 2.32 | rango 2.27–38.84 (VILLA LUGANO … SAN NICOLAS)
+
+  Se esperaba dispersión alta y se obtuvo dispersión alta: NO es un diagnóstico de
+  cobertura. La gastronomía se ubica donde hay oficinas y turismo, no donde hay camas.
+
+  los 10 barrios con más locales por habitante:
+               base_total  poblacion  locales_x_mil  comuna
+barrio_k                                                   
+SAN NICOLAS          1415      36435          38.84       1
+PUERTO MADERO         283      10942          25.86       1
+MONSERRAT             994      41422          24.00       1
+SAN TELMO             463      21208          21.83       1
+PALERMO              3653     247216          14.78      14
+CHACARITA             395      31292          12.62      15
+LINIERS               529      47099          11.23       9
+VILLA CRESPO          981      87883          11.16      15
+BELGRANO             1572     142139          11.06      13
+RECOLETA             1750     160673          10.89       2
+
+  los 10 con menos:
+                   base_total  poblacion  locales_x_mil  comuna
+barrio_k                                                       
+VERSALLES                 104      16025           6.49      10
+FLORES                    937     151434           6.19       7
+SAN CRISTOBAL             309      49882           6.19       3
+COGHLAN                   123      20801           5.91      12
+VILLA PUEYRREDON          267      46603           5.73      12
+PARQUE CHACABUCO          351      61825           5.68       7
+BARRACAS                  481      97973           4.91       4
+PARQUE AVELLANEDA         232      53370           4.35       9
+VILLA SOLDATI             154      51571           2.99       8
+VILLA LUGANO              311     136738           2.27       8
+
+  sur (comunas 4, 8, 9): 6.52 locales cada mil | resto: 8.21
+

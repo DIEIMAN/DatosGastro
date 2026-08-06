@@ -1,0 +1,76 @@
+Estimación de requests del barrido de Places · NINGUNA LLAMADA EJECUTADA
+==============================================================================
+
+PASO 1 · Control de las 22 zonas ya relevadas
+
+  Es el experimento que decide el plan: si Places captura cerca del 100 % en las zonas
+  relevadas a pie, sustituye al campo y el barrido se hace sin caminar. Si captura como el
+  directorio comercial, el campo sigue haciendo falta.
+
+  las 22 zonas completas: 309 celdas, **539 requests**
+  cota superior si toda celda paginara al máximo (×3): 927 requests
+
+  sólo las 17 zonas con cifra publicada, que son las únicas comparables: 190 celdas, **301 requests**
+  y sólo las 4 relevadas a pie por la Dirección (R08-R11), que es el corazón del control: 51 celdas, **102 requests**
+
+rid                          zona  km2  universo_esperado  celdas  requests tiene_cifra_publicada
+R01                       Palermo 2.71               2231      56       112                    no
+R06                      Recoleta 1.40               1088      28        56                    no
+R10                     Caballito 2.25                907      23        46                    si
+R12 Centro/Microcentro segmentado 1.62                797      20        40                    si
+R02            Avenida Corrientes 0.50                725      19        38                    no
+R05                      Belgrano 0.40                697      18        36                    si
+R08                  Villa Crespo 3.35                646      17        34                    si
+R04                 Puerto Madero 3.14                341      13        26                    no
+R15                        Devoto 4.79                119      20        20                    si
+R17                 Villa Urquiza 4.46                189      18        18                    si
+R09                     Chacarita 0.95                327       9        18                    si
+R13                        Abasto 1.09                314       8        16                    si
+R22              Villa Pueyrredón 3.05                158      13        13                    si
+R21                   La Paternal 3.21                254      13        13                    si
+R18            Esmeralda–Paraguay 0.17                216       6        12                    si
+R19   Federico Lacroze por tramos 0.89                211       6        12                    si
+R14                 Avenida Boedo 1.79                 79       8         8                    si
+R03                     San Telmo 0.25                 99       3         6                    no
+R16               Donado–Holmberg 1.19                 40       5         5                    si
+R07               Costanera Norte 0.39                 72       2         4                    si
+R11             Boulevard Caseros 0.50                 66       2         4                    si
+R20                García del Río 0.28                 40       2         2                    si
+
+PASO 2 · Barrido completo de los 48 barrios
+
+  grilla reproducida desde km² y universo esperado: 48 de 48 barrios coinciden con el CSV
+  celdas: 1.190
+  **requests estimados contando páginas: 2.100**
+  cota superior ×3: 3.570
+
+  franja gratuita mensual (Text Search, SKU Pro): 5.000
+  → **entra en un mes gratuito**, con 2.900 requests de margen
+
+  los diez barrios más caros:
+      barrio   km2  dir_nucleo  univ_est  celdas  requests
+     Palermo 15.93         928      5099     128       256
+   Balvanera  4.34         468      2571      65       130
+ San Nicolas  2.29         433      2379      60       120
+    Recoleta  6.44         429      2357      59       118
+   Caballito  6.85         367      2016      51       102
+    Belgrano  8.06         336      1846      47        94
+     Almagro  4.05         302      1659      42        84
+   Monserrat  2.20         286      1571      40        80
+      Flores  8.59         248      1363      35        70
+Villa Crespo  3.62         236      1297      33        66
+
+  en 27 barrios la grilla la manda la superficie y no la densidad: 644 requests
+    son barrios grandes y poco densos; ahí conviene bajar la grilla a celdas de 1 km antes
+    de correr, porque se pagan celdas que van a volver casi vacías:
+    Villa Lugano (38 celdas, 280 esperados), Villa Soldati (35 celdas, 60 esperados), Barracas (32 celdas, 566 esperados), Mataderos (30 celdas, 505 esperados), Villa Devoto (26 celdas, 857 esperados), Saavedra (23 celdas, 423 esperados)
+
+RESUMEN PARA LA DECISIÓN
+
+  paso 1, control de las zonas con cifra publicada: 301 requests
+  paso 2, barrido de los 48 barrios: 2.100 requests
+  los dos juntos: 2.401 requests contra una franja de 5.000
+
+  El paso 1 hay que correrlo primero y solo: es barato y puede cambiar el paso 2 entero.
+  El precio por encima de la franja no está confirmado y hay que consultarlo antes de
+  planificar cualquier corrida que se pase.

@@ -1,0 +1,28 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "zona": "R08",
+  "nombre": "Villa Crespo",
+  "requests_gastados": 0,
+  "places_nucleo": 81,
+  "padron_nucleo": 233,
+  "padron_nucleo_esperado": 233,
+  "control_de_aceptacion": true,
+  "cifra_publicada": 646,
+  "parcelas_rus": 892,
+  "categorias": {
+    "1 · dirección en el padrón núcleo": 27,
+    "2 · a menos de 25 m de una dirección núcleo": 7,
+    "4 · parcela gastronómica del Relevamiento (no está en el padrón)": 26,
+    "5 · sin coincidencia documental": 21
+  },
+  "pct_sin_padron_nucleo": 66.7,
+  "pct_sin_padron_nucleo_con_proximidad": 58.0,
+  "pct_sin_ninguna_documental": 25.9,
+  "veredicto": "PLACES DESCUBRE · el barrido recupera valor propio",
+  "veredicto_lectura_amplia": "PLACES DESCUBRE · el barrido recupera valor propio",
+  "direcciones_nucleo_confirmadas_por_places": 26,
+  "pct_direcciones_nucleo_confirmadas": 11.2,
+  "business_status": {
+    "OPERATIONAL": 81
+  }
+}

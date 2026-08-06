@@ -1,0 +1,18 @@
+rid,zona,metodo,cifra_publicada,padron_nucleo,pct_padron_sobre_publicada,rus_nucleo,pct_rus_sobre_publicada,places_nucleo,pct_places_sobre_publicada,pct_places_sobre_padron,pct_places_sobre_rus,places_ampliado,cobertura_relevamiento,celdas_repartidas_500m,advertencia
+R05,Belgrano,relevamiento anterior,697,100,14.3,133.0,19.1,29,4.2,29.0,21.8,,si,2,cota inferior: satura a 500 m
+R07,Costanera Norte,relevamiento anterior,72,3,4.2,,,9,12.5,300.0,,,sin cobertura,0,Places > base documental (base chica): la razón invertida no se lee
+R08,Villa Crespo,relevamiento propio,646,233,36.1,339.0,52.5,86,13.3,36.9,25.4,,si,5,
+R09,Chacarita,relevamiento propio,327,55,16.8,81.0,24.8,20,6.1,36.4,24.7,,si,3,
+R10,Caballito,relevamiento propio,907,177,19.5,203.0,22.4,36,4.0,20.3,17.7,,si,0,
+R11,Boulevard Caseros,relevamiento propio,66,5,7.6,22.0,33.3,10,15.2,200.0,45.5,,si,1,cota inferior: satura a 500 m · Places > base documental (base chica): la razón invertida no se lee
+R12,Centro/Microcentro segmentado,minimo relevado,797,327,41.0,358.0,44.9,108,13.6,33.0,30.2,,si,5,cota inferior: satura a 500 m
+R13,Abasto,minimo relevado,314,180,57.3,152.0,48.4,24,7.6,13.3,15.8,,si,1,
+R14,Avenida Boedo,directorio comercial,79,74,93.7,92.0,116.5,20,25.3,27.0,21.7,,si,0,
+R15,Devoto,directorio comercial,119,139,116.8,166.0,139.5,56,47.1,40.3,33.7,,si,1,
+R16,Donado–Holmberg,directorio comercial,40,32,80.0,45.0,112.5,5,12.5,15.6,11.1,,si,0,
+R17,Villa Urquiza,directorio comercial,189,173,91.5,202.0,106.9,41,21.7,23.7,20.3,,si,0,
+R18,Esmeralda–Paraguay,minimo relevado,216,30,13.9,36.0,16.7,11,5.1,36.7,30.6,,si,1,
+R19,Federico Lacroze por tramos,minimo relevado,211,54,25.6,73.0,34.6,16,7.6,29.6,21.9,,si,2,
+R20,García del Río,minimo relevado,40,16,40.0,21.0,52.5,7,17.5,43.8,33.3,,si,0,
+R21,La Paternal,minimo relevado,254,41,16.1,87.0,34.3,14,5.5,34.1,16.1,,si,1,
+R22,Villa Pueyrredón,minimo relevado,158,48,30.4,83.0,52.5,14,8.9,29.2,16.9,,si,1,

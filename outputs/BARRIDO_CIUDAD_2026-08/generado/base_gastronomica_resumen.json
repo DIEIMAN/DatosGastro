@@ -1,0 +1,94 @@
+{
+  "corte": "2026-08-05",
+  "locales": 27727,
+  "registros": 42342,
+  "por_fuente": {
+    "OVERTURE": 13243,
+    "RUS": 10890,
+    "F02": 7502,
+    "OSM": 7270,
+    "F01": 2823,
+    "PERMISOS": 332,
+    "ATP": 282
+  },
+  "n_fuentes": {
+    "1": 22576,
+    "2": 3042,
+    "3": 1565,
+    "4": 505,
+    "5": 39
+  },
+  "nivel_publicacion": {
+    "abierto": 13948,
+    "punto": 13779
+  },
+  "aptos_geometria": 27439,
+  "criterios": {
+    "unico_en_su_local": 21930,
+    "usig_exacta": 17817,
+    "proximidad_y_nombre": 2595
+  },
+  "pares_candidatos_sin_fusionar": 126597,
+  "sensibilidad_radio": {
+    "20.0": {
+      "locales": 29589,
+      "fusiones": 20154,
+      "candidatos": 42455
+    },
+    "40.0": {
+      "locales": 27727,
+      "fusiones": 27552,
+      "candidatos": 126597
+    },
+    "60.0": {
+      "locales": 27385,
+      "fusiones": 29496,
+      "candidatos": 232496
+    }
+  },
+  "controles": [
+    {
+      "control": 3,
+      "nombre": "asignación territorial",
+      "pasa": true,
+      "detalle": "0 locales con punto y sin barrio (los de afuera de la Ciudad ya se filtran)"
+    },
+    {
+      "control": 4,
+      "nombre": "independencia",
+      "pasa": true,
+      "detalle": "máximo de fuentes colapsadas a un mismo grupo en un local: 1. `n_fuentes` cuenta grupos: máximo observado 5"
+    },
+    {
+      "control": 5,
+      "nombre": "publicabilidad",
+      "pasa": true,
+      "detalle": "0 locales marcados `abierto` cuyo único origen es una fuente no redistribuible"
+    },
+    {
+      "control": 7,
+      "nombre": "aptitud geométrica",
+      "pasa": true,
+      "detalle": "27439 de 27727 locales pueden dibujar (99.0 %); 288 no"
+    },
+    {
+      "control": 0,
+      "nombre": "trazabilidad del match",
+      "pasa": true,
+      "detalle": "0 filas de `local_fuente` sin `criterio_match`"
+    }
+  ],
+  "recorte_a_la_ciudad": {
+    "descartados": 26,
+    "por_fuente": {
+      "ATP": 26
+    },
+    "rescatados_en_banda": 3,
+    "banda_m": 50.0
+  },
+  "permisos": {
+    "enganchados": 332,
+    "sin_enganche": 177
+  },
+  "places_cargado": false
+}

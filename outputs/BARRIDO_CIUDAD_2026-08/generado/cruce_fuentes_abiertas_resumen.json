@@ -1,0 +1,40 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "requests_gastados": 0,
+  "zona_rescate": "R08",
+  "radio_m": 40.0,
+  "rescate": {
+    "places_nucleo": 81,
+    "por_fuente": {
+      "OSM": 51,
+      "OVERTURE": 73,
+      "ATP": 1
+    },
+    "union_abiertas": 74,
+    "en_padron": 43,
+    "solo_places": 4,
+    "pct_union_abiertas": 91.4,
+    "sensibilidad_radio": {
+      "20.0": {
+        "OSM": 43,
+        "OVERTURE": 59,
+        "ATP": 0
+      },
+      "40.0": {
+        "OSM": 51,
+        "OVERTURE": 73,
+        "ATP": 1
+      },
+      "60.0": {
+        "OSM": 62,
+        "OVERTURE": 76,
+        "ATP": 2
+      },
+      "100.0": {
+        "OSM": 74,
+        "OVERTURE": 80,
+        "ATP": 4
+      }
+    }
+  }
+}

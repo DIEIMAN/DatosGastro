@@ -1,0 +1,49 @@
+barrio,km2,dir_nucleo,univ_est,celdas,requests,manda
+Palermo,15.93,928,5099,128,256,densidad
+Balvanera,4.34,468,2571,65,130,densidad
+San Nicolas,2.29,433,2379,60,120,densidad
+Recoleta,6.44,429,2357,59,118,densidad
+Caballito,6.85,367,2016,51,102,densidad
+Belgrano,8.06,336,1846,47,94,densidad
+Almagro,4.05,302,1659,42,84,densidad
+Monserrat,2.2,286,1571,40,80,densidad
+Villa Lugano,9.3,51,280,38,38,superficie
+Flores,8.59,248,1363,35,70,densidad
+Villa Soldati,8.69,11,60,35,35,superficie
+Villa Crespo,3.62,236,1297,33,66,densidad
+Barracas,7.96,103,566,32,32,superficie
+Mataderos,7.4,92,505,30,30,superficie
+Villa Urquiza,5.45,206,1132,29,58,densidad
+Villa Devoto,6.41,156,857,26,52,superficie
+Retiro,4.52,174,956,24,48,densidad
+Saavedra,5.54,77,423,23,23,superficie
+La Boca,5.04,55,302,21,21,superficie
+Puerto Madero,5.05,39,214,21,21,superficie
+Colegiales,2.29,139,764,20,40,densidad
+Nueva Pompeya,4.96,52,286,20,20,superficie
+Parque Avellaneda,4.73,50,275,19,19,superficie
+Nuñez,4.5,121,665,18,36,superficie
+Liniers,4.38,114,626,18,36,superficie
+Villa Riachuelo,4.24,25,137,17,17,superficie
+Parque Chacabuco,3.83,72,396,16,32,superficie
+San Telmo,1.23,112,615,16,32,densidad
+Villa Del Parque,3.4,107,588,15,30,densidad
+Parque Patricios,3.75,87,478,15,30,superficie
+Constitucion,2.1,109,599,15,30,densidad
+Villa Pueyrredon,3.3,64,352,14,28,superficie
+Boedo,2.61,99,544,14,28,densidad
+Chacarita,3.12,83,456,13,26,superficie
+Floresta,2.32,81,445,12,24,densidad
+Monte Castro,2.63,65,357,11,22,superficie
+Villa Luro,2.57,42,231,11,22,superficie
+Velez Sarsfield,2.4,60,330,10,20,superficie
+Villa Gral. Mitre,2.16,55,302,9,18,superficie
+San Cristobal,2.04,60,330,9,18,densidad
+Agronomia,2.12,21,115,9,9,superficie
+Villa Santa Rita,2.15,52,286,9,18,superficie
+Paternal,2.23,31,170,9,9,superficie
+Villa Ortuzar,1.85,56,308,8,16,densidad
+Coghlan,1.28,26,143,6,12,superficie
+Villa Real,1.33,38,209,6,12,densidad
+Parque Chas,1.39,24,132,6,12,superficie
+Versalles,1.41,19,104,6,6,superficie

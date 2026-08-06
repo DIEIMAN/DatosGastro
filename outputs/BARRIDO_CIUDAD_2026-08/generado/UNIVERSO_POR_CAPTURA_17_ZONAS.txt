@@ -1,0 +1,67 @@
+==========================================================================================================
+PADRÓN × PLACES COMO CAPTURA-RECAPTURA · 17 ZONAS CON CIFRA PUBLICADA · CERO REQUESTS
+==========================================================================================================
+
+§1 · LAS PREDICCIONES, ESCRITAS ANTES DE CALCULAR
+----------------------------------------------------------------------------------------------------------
+  relevamiento propio     CERCA             dentro de ±25 % de la cifra
+  minimo relevado         POR ENCIMA        la cifra es cota inferior declarada
+  directorio comercial    MUY POR ENCIMA    listados comerciales, chicos por construcción
+  relevamiento anterior   SIN PREDICCIÓN    otra metodología, otra época
+  Zonas con m < 7 coincidencias: se informan y NO se leen.
+
+§2 · LA TABLA
+----------------------------------------------------------------------------------------------------------
+  rid  zona                       publicada  padrón  places    m  m/places      N̂        IC 95 %  N̂/pub  veredicto
+  R05  Belgrano                         697     100      29   11    37,9 %     252        151–351    0,36  sin predicción
+  R07  Costanera Norte                   72       3       9    2    22,2 %      12          10–17    0,17  no se lee · m chico
+  R08  Villa Crespo                     646     233      86   28    32,6 %     701        509–893    1,09  cumple
+  R09  Chacarita                        327      55      20    8    40,0 %     130         73–185    0,40  FALLA
+  R10  Caballito                        907     177      36   16    44,4 %     386        261–511    0,43  FALLA
+  R11  Boulevard Caseros                 66       5      10    2    20,0 %      21          13–34    0,32  no se lee · m chico
+  R12  Centro/Microcentro segmen        797     327     108   40    37,0 %     871       676–1065    1,09  cumple
+  R13  Abasto                           314     180      24   11    45,8 %     376        233–518    1,20  cumple
+  R14  Avenida Boedo                     79      74      20   10    50,0 %     142         90–193    1,80  cumple
+  R15  Devoto                           119     139      56   16    28,6 %     468        298–638    3,94  cumple
+  R16  Donado–Holmberg                   40      32       5    2    40,0 %      65         35–108    1,62  no se lee · m chico
+  R17  Villa Urquiza                    189     173      41   13    31,7 %     521        314–727    2,76  cumple
+  R18  Esmeralda–Paraguay               216      30      11    9    81,8 %      36          32–43    0,17  FALLA
+  R19  Federico Lacroze por tram        211      54      16    8    50,0 %     103         62–143    0,49  FALLA
+  R20  García del Río                    40      16       7    2    28,6 %      44          21–76    1,11  no se lee · m chico
+  R21  La Paternal                      254      41      14    1     7,1 %     314         54–637    1,24  no se lee · m chico
+  R22  Villa Pueyrredón                 158      48      14    4    28,6 %     146         58–237    0,92  no se lee · m chico
+
+§3 · CÓMO SALIÓ CADA PREDICCIÓN
+----------------------------------------------------------------------------------------------------------
+  relevamiento propio     1 de 3 cumplen   (R08=1,09, R09=0,40, R10=0,43)
+  minimo relevado         2 de 4 cumplen   (R12=1,09, R13=1,20, R18=0,17, R19=0,49)
+  directorio comercial    3 de 3 cumplen   (R14=1,80, R15=3,94, R17=2,76)
+  no se leen (m < 7): R07, R11, R16, R20, R21, R22
+
+§4 · LO QUE ESTO HABILITA Y LO QUE NO
+----------------------------------------------------------------------------------------------------------
+  Sobre las zonas con conteo de campo —la única familia con una verdad contra la cual medir— el
+  estimador cumple en 1 de 3. Con ese resultado el estimador no se sostiene y la línea se cierra
+  acá.
+
+  Lo que NO habilita, en ningún caso: publicar un N̂ como cifra de un barrio. Estas cifras son
+  estimaciones con supuestos fuertes; las cifras del Atlas se contaron. No se mezclan, no se
+  promedian y no se comparan en la misma tabla sin decir cuál es cuál.
+
+§5 · LO QUE SÍ SOBREVIVE · LA PROPORCIÓN DE SOLAPE, SIN SUPUESTOS
+----------------------------------------------------------------------------------------------------------
+  La columna `m/places` no es el estimador: es cuántos de los puntos que Places trajo ya estaban
+  en el padrón. No supone independencia, ni población cerrada, ni nada. Se cuenta y listo, y por
+  eso sigue en pie aunque el estimador se haya caído.
+
+  Zonas con al menos 10 puntos de Places: 14
+  Puntos de Places que el padrón YA tiene: mínimo 7,1 % (R21), mediana 37,5 %, máximo 81,8 % (R18)
+  Zonas donde la MAYORÍA de lo que Places trae no está en el padrón: 11 de 14
+
+  Ésta es la respuesta replicada a la pregunta que abrió el cruce de R08, y no depende de una sola
+  zona ni del estimador que se acaba de caer: en casi todas las zonas medidas, la mayor parte de
+  lo que Places encuentra son direcciones que el padrón no tiene. El reparto varía mucho de una
+  zona a otra —y esa variación es en sí misma un hallazgo: dónde el padrón está al día, Places
+  agrega poco—, pero la dirección es siempre la misma.
+
+==========================================================================================================

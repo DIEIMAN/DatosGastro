@@ -1,0 +1,104 @@
+==================================================================================================
+BASE GASTRONÓMICA DE LA CIUDAD · `local` y `local_fuente` · SIN GOOGLE PLACES
+==================================================================================================
+corte 2026-08-05 · esquema del 2026-08-05 · 0 requests de Places
+
+§1 · LO QUE ENTRÓ
+--------------------------------------------------------------------------------------------------
+  fuente        registros      grupo de independencia   licencia
+  OVERTURE          13243            OVERTURE_FSQ_ATP   CDLA-Permissive-2.0
+  RUS               10890              GCBA_URBANISMO   CC-BY-2.5-AR
+  F02                7502                    GCBA_AGC   CC-BY-2.5-AR
+  OSM                7270                         OSM   ODbL (atribución + compartir-igual)
+  F01                2823                GCBA_TURISMO   CC-BY-2.5-AR
+  PERMISOS            332               GCBA_ATENCION   CC-BY-2.5-AR
+  ATP                 282            OVERTURE_FSQ_ATP   CC0 1.0
+  TOTAL             42342
+
+  locales resueltos: 27.727
+  registros por local: 1.53
+
+  Recortados por caer fuera de la Ciudad y de su banda de 50 m: 26
+    ATP 26
+  Rescatados en la banda de borde: 3
+
+  Permisos de vereda enganchados por dirección: 332
+  Permisos sin enganche, que NO crean local: 177
+  Un permiso sin enganche no se convierte en un local nuevo: no trae coordenada, y sin punto no
+  puede dibujar. Se cuenta y se declara en vez de inventarle una ubicación.
+
+§2 · CORROBORACIÓN · en cuántos grupos independientes aparece cada local
+--------------------------------------------------------------------------------------------------
+    1 grupo         22576     81,4 %
+    2 grupos         3042     11,0 %
+    3 grupos         1565      5,6 %
+    4 grupos          505      1,8 %
+    5 grupos           39      0,1 %
+
+  Un local que aparece en un solo grupo es una señal, no un dato corroborado. Que la mayoría esté
+  en uno solo no es un defecto de la base: es la medición de que las fuentes ven cosas distintas,
+  que es exactamente lo que justificaba cruzarlas.
+
+§3 · PUBLICACIÓN EN TRES NIVELES (§6 del esquema)
+--------------------------------------------------------------------------------------------------
+    abierto        13948     50,3 %
+    punto          13779     49,7 %
+
+  Sin Google Places cargado, todo lo que hay es publicable: la restricción aparece recién cuando
+  entre Places, y para los locales que sólo él vea. El cruce de Villa Crespo ya midió cuántos
+  serían: 4 de 81.
+
+§4 · APTITUD GEOMÉTRICA · qué puede dibujar (§5 del esquema)
+--------------------------------------------------------------------------------------------------
+  locales aptos para el dibujo :   27439  (99,0 %)
+  no aptos                     :     288
+    sin coordenada                                    0
+    fuentes en desacuerdo por más del umbral        288
+
+  Éste es el campo que protege el mapa, y existe porque el Atlas ya tropezó con esto: ocho
+  referencias sin puntos terminaron con envolventes derivadas de la geometría de consulta y no de
+  la oferta. Se previene con un campo, no con cuidado.
+
+§5 · CÓMO SE PEGÓ CADA REGISTRO (§7 del esquema)
+--------------------------------------------------------------------------------------------------
+    unico_en_su_local            21930     51,8 %
+    usig_exacta                  17817     42,1 %
+    proximidad_y_nombre           2595      6,1 %
+
+  Pares que quedaron como CANDIDATOS y no fusionaron: 126597
+  Son los que sólo tienen proximidad. No fusionan, y no es prudencia decorativa: la fusión es
+  transitiva, así que una cadena de vecinos a menos de cuarenta metros uno del otro convertiría
+  una cuadra de una avenida en un solo local. Van a revisión con `revisado = pendiente`, que es lo
+  que el esquema manda para los dudosos.
+
+  Sensibilidad al radio (§7 exige publicarla):
+    radio        locales   fusiones   candidatos
+    20 m           29589      20154        42455
+    40 m           27727      27552       126597  <- el usado
+    60 m           27385      29496       232496
+
+§6 · FRESCURA · la última señal de actividad, nunca «abierto» (§4 del esquema)
+--------------------------------------------------------------------------------------------------
+    2026         10977
+    2025           517
+    2024          7038
+    2023          4511
+    2022          1328
+    2021           177
+    2020           147
+    2019           425
+    sin fecha        62
+
+  `frescura` es la fecha de la evidencia positiva más reciente que alguna fuente ofrece sobre ese
+  local. **No dice que esté abierto.** Un local con frescura 2024 puede haber cerrado en 2025 y
+  ninguna de estas fuentes se habría enterado.
+
+§7 · CONTROLES DEL §8
+--------------------------------------------------------------------------------------------------
+  [OK ] asignación territorial     0 locales con punto y sin barrio (los de afuera de la Ciudad ya se filtran)
+  [OK ] independencia              máximo de fuentes colapsadas a un mismo grupo en un local: 1. `n_fuentes` cuenta grupos: máximo observado 5
+  [OK ] publicabilidad             0 locales marcados `abierto` cuyo único origen es una fuente no redistribuible
+  [OK ] aptitud geométrica         27439 de 27727 locales pueden dibujar (99.0 %); 288 no
+  [OK ] trazabilidad del match     0 filas de `local_fuente` sin `criterio_match`
+
+==================================================================================================

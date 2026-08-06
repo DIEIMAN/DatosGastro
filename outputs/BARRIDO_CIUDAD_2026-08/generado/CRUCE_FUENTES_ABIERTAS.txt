@@ -1,0 +1,43 @@
+==================================================================================================
+SOLAPE ENTRE FUENTES ABIERTAS Y RESCATE DE LOS DESCUBRIMIENTOS DE PLACES · 0 REQUESTS
+==================================================================================================
+
+§1 · EL RESCATE · 81 puntos núcleo que Places trajo de R08
+--------------------------------------------------------------------------------------------------
+  fuente abierta    empareja   % de los 81   criterios
+  OSM                     51         63,0 %   proximidad_40m 21 · usig_exacta 15 · proximidad_y_nombre 15
+  OVERTURE                73         90,1 %   usig_exacta 54 · proximidad_40m 16 · proximidad_y_nombre 3
+  ATP                      1          1,2 %   proximidad_40m 1
+  UNIÓN de las tres        74         91,4 %
+
+  Para referencia, el padrón (que también es publicable): 43 de 81  (53,1 %)
+  Puntos que quedan SÓLO en Places, sin identidad publicable: 4  (4,9 %)
+
+  Traducido al esquema (§6): de los 81 puntos que Places trajo de esta zona, 77 pueden entrar a la
+  base como `abierto` —con nombre y dirección, tomados de la fuente abierta que los corrobora— y 4
+  quedan en `agregado`: existen como una cuenta dentro de una celda y nada más. Ése es el precio
+  real de la restricción de Google, medido en vez de supuesto.
+
+  Sensibilidad al radio de emparejamiento:
+    radio              OSM    OVERTURE         ATP
+    20 m                43          59           0
+    40 m                51          73           1  <- el usado
+    60 m                62          76           2
+    100 m               74          80           4
+
+  Duplicar el radio de 20 a 100 m mueve poco el resultado, y eso es lo que había que comprobar: el
+  rescate no depende de dónde se puso el corte. Si dependiera, el número no diría nada sobre las
+  fuentes y sí sobre el parámetro.
+
+§3 · LO QUE ESTE CRUCE NO DICE
+--------------------------------------------------------------------------------------------------
+  1. El rescate se mide sobre UNA zona, Villa Crespo, que es la mejor calibrada que hay —646
+  locales contados a pie— y por eso se eligió. En un barrio donde las fuentes abiertas estén más
+  flacas el rescate va a ser menor, y eso hay que medirlo antes de generalizar a los 48.
+  2. Emparejar no es probar que sea el mismo local. Es la mejor evidencia disponible con cinco
+  fuentes sin identificador común, y por eso cada emparejamiento guarda su criterio: un
+  `usig_exacta` y un `proximidad_40m` no valen lo mismo y la base no los mezcla.
+  3. Los casos dudosos —proximidad sin dirección ni nombre— quedan marcados para revisión, no
+  resueltos por la máquina. Es la regla del esquema (§7) y se sostiene.
+
+==================================================================================================

@@ -1,0 +1,71 @@
+==================================================================================================
+ALL THE PLACES (E07) · corrida 2026-08-01-13-32-15 · recorte de la Ciudad
+==================================================================================================
+licencia CC0 1.0 · dominio público · costo: 0 · grupo de independencia OVERTURE_FSQ_ATP
+
+§1 · EL RECORTE
+--------------------------------------------------------------------------------------------------
+  spiders en la corrida                          :    4898
+  spiders con al menos un punto en la Ciudad     :      78
+  líneas recorridas (una por local en el mundo)  : 44.670.780
+  líneas que pasaron el filtro de bytes          :   6.682
+  puntos dentro del rectángulo de la Ciudad      :    3140
+  puntos dentro de algún barrio                  :    2759
+  de ellos, gastronómicos (dos anillos)          :     282
+  de ellos, anillo núcleo                        :     282
+
+§2 · QUÉ TRAE, Y DE QUÉ MARCAS
+--------------------------------------------------------------------------------------------------
+  9 spiders gastronómicos con presencia en la Ciudad. Los 20 mayores:
+    mcdonalds_latin_america                        111
+    starbucks_ar_cl                                 79
+    burger_king                                     28
+    subway_south_america                            20
+    le_pain_quotidien                               19
+    club_milanesa                                   18
+    sbarro                                           3
+    laveneciana_ar                                   2
+    hard_rock                                        2
+
+  por rubro: Comida al paso 159 · Cafe 98 · Parrilla 18 · Pizzeria 3 · Heladeria 2 · Restaurante 2
+
+§3 · COBERTURA POR BARRIO, CONTRA LAS OTRAS FUENTES
+--------------------------------------------------------------------------------------------------
+               atp_nucleo  osm_nucleo  ovt_nucleo  dir_nucleo
+PALERMO                55        1128        2231         928
+SAN NICOLAS            33         357         845         433
+RECOLETA               28         553         823         429
+BALVANERA              23         242         559         468
+BELGRANO               19         631         626         336
+CABALLITO              12         266         530         367
+MONSERRAT              11         243         522         286
+FLORES                  9         101         321         248
+RETIRO                  9         216         397         174
+VILLA DEVOTO            8         118         237         156
+COLEGIALES              7         134         210         139
+ALMAGRO                 7         159         411         302
+SAAVEDRA                6          90         141          77
+VILLA CRESPO            6         186         421         236
+VILLA URQUIZA           6         174         275         206
+
+  barrios con al menos un punto núcleo de esta fuente: 31 de 48
+
+§4 · QUÉ SE PUEDE Y QUÉ NO SE PUEDE HACER CON ESTO
+--------------------------------------------------------------------------------------------------
+  Los 282 puntos núcleo de esta fuente son el 4,11 % de las 6.861 direcciones núcleo del padrón.
+  No es una fuente de cobertura y no se la va a usar como tal: cubre cadenas, porque un spider
+  existe cuando una marca publica un localizador de sucursales, y el bodegón de la esquina no
+  publica ninguno.
+
+  Para qué sirve, entonces. Primero, es CC0: cualquier local que aparezca acá tiene identidad
+  publicable sin condición ninguna, ni siquiera la atribución de la ODbL. Segundo, son las
+  cadenas, que son justamente los locales que las fuentes documentales registran peor —una cadena
+  tramita una habilitación por sucursal y las sucursales nuevas tardan en aparecer—. Tercero, y es
+  lo que la vuelve barata: ya está bajada y no cuesta un request.
+
+  El solape con Overture hay que darlo por descontado y no contarlo dos veces: 572 POI de Overture
+  en la Ciudad declaran a All The Places como aportante. Por eso las dos comparten grupo de
+  independencia (`OVERTURE_FSQ_ATP`) y una corroboración entre ellas no cuenta como dos fuentes.
+  Cuánto agrega de verdad sobre Overture se mide en el cruce, no acá.
+
+==================================================================================================

@@ -1,0 +1,18 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "requests_gastados": 0,
+  "categorias_de_la_corrida_publicada": [
+    "restaurant",
+    "cafe",
+    "bar",
+    "bakery",
+    "meal_takeaway"
+  ],
+  "zonas_resueltas_por_perimetro_o_universo": [
+    "R18",
+    "R19",
+    "R21"
+  ],
+  "zonas_con_faltante_de_cobertura": [],
+  "faltante_por_zona": {}
+}

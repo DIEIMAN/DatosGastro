@@ -1,0 +1,13 @@
+{
+  "barrios": 5,
+  "celdas": 53,
+  "requests": 97,
+  "cota_superior_x3": 291,
+  "franja_gratuita": 5000,
+  "ya_usados_agosto": 306,
+  "tope_propio": 600,
+  "cabe_en_el_tope": true,
+  "estado": "PENDIENTE_DE_AUTORIZACION",
+  "ejecutado": false,
+  "requests_ejecutados": 0
+}

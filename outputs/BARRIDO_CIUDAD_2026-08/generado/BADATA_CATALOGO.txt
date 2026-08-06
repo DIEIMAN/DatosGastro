@@ -1,0 +1,147 @@
+==================================================================================================
+BA DATA · BARRIDO DEL CATÁLOGO COMPLETO POR API CKAN
+==================================================================================================
+fecha 2026-08-05 · 453 datasets · sin bajar ningún recurso
+
+§1 · QUÉ HAY EN EL CATÁLOGO
+--------------------------------------------------------------------------------------------------
+  datasets totales                                   :   453
+  con columna de coordenada declarada                :   203
+  con columna de dirección declarada                 :   186
+  georreferenciables (coordenada, dirección o SIG)   :   241
+  con vocabulario gastronómico                       :    17
+  con columnas de datos personales                   :   112
+
+  licencias declaradas: CC-BY-2.5-AR 386 · Creative Commons Attribution 62 · CC-BY-4.0 5
+
+§2 · CANDIDATOS NUEVOS · georreferenciables y con vocabulario del rubro
+--------------------------------------------------------------------------------------------------
+  [ 10] Hogares y Paradores
+        hogares-paradores  ·  Ministerio de Desarrollo Humano y Hábitat  ·  CC-BY-2.5-AR
+        coordenada · dirección
+        vocabulario: nocturn
+
+  [  9] Actividades Culturales.
+        actividades-culturales  ·  Ministerio de Cultura  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: mail telefono
+
+  [  9] Casas de Niñas, Niños y Adolescentes.
+        casas-ninas-ninos-adolescentes  ·  Ministerio de Desarrollo Humano y Hábitat  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: mail telefono
+
+  [  9] Comercios con beneficios a ciclistas.
+        comercios-con-beneficios-ciclistas  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: email mail telefono
+
+  [  9] Conjuntos Urbanos y Cooperativas IVC
+        conjuntos-urbanos-cooperativas-ivc  ·  Instituto de Vivienda de la Ciudad (IVC)  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  9] Establecimientos Educativos
+        establecimientos-educativos  ·  Ministerio de Educación  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: email mail telefono
+
+  [  9] Fiscalizaciones
+        fiscalizaciones  ·  Agencia Gubernamental de Control (AGC)  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  9] Jardines Comunitarios.
+        jardines-comunitarios  ·  Ministerio de Desarrollo Humano y Hábitat  ·  CC-BY-4.0
+        coordenada · dirección · DATOS PERSONALES: mail telefono
+
+  [  9] Mapa de Techos Amarillos
+        mapa-techos-solares  ·  Agencia de Protección Ambiental  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  9] Mapa de Techos Verdes.
+        mapa-techos-verdes  ·  Agencia de Protección Ambiental  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  9] Organizadores de Exposiciones
+        organizadores-exposiciones  ·  Ente de Turismo (ENTUR)  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: telefono
+        vocabulario: feria
+
+  [  8] Arbolado público lineal
+        arbolado-publico-lineal  ·  Secretaria de Atención Ciudadana y Gestión C  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] BA Diversa
+        ba-diversa  ·  Ente de Turismo (ENTUR)  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Bicicleterías.
+        bicicleterias  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: email mail telefono
+
+  [  8] Cajones para Carga y Descarga
+        cajones-para-carga-descarga  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Cajones para estacionamiento de motos
+        cajones-para-estacionamiento-motos  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Carteles Escolares Semaforizados
+        carteles-escolares-semaforizados  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Colonias de Verano
+        colonias-de-verano  ·  Secretaría General y Relaciones Internaciona  ·  CC-BY-4.0
+        coordenada · dirección · DATOS PERSONALES: telefono
+
+  [  8] Espacios Verdes
+        espacios-verdes  ·  Subsecretaría de Planeamiento  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Espacios del Distrito de las Artes
+        espacios-distrito-artes  ·  Ministerio de Hacienda y Finanzas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Estaciones Bicicletas Públicas.
+        estaciones-bicicletas-publicas  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Garajes Comerciales
+        garajes-comerciales  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Juegotecas Barriales.
+        juegotecas-barriales  ·  Ministerio de Desarrollo Humano y Hábitat  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: mail telefono
+
+  [  8] Metrobus
+        metrobus  ·  Secretaría de Transporte y Obras Públicas  ·  CC-BY-2.5-AR
+        coordenada · dirección
+
+  [  8] Nacimientos.
+        nacimientos  ·  Dirección General de Estadísticas y Censos  ·  CC-BY-2.5-AR
+        coordenada · dirección · DATOS PERSONALES: documento
+
+
+§3 · LO QUE YA ESTÁ EN EL PROYECTO, PARA NO REPETIRLO
+--------------------------------------------------------------------------------------------------
+  [ 17] espacios-culturales                             CC-BY-2.5-AR
+  [ 16] oferta-establecimientos-gastronomicos           CC-BY-2.5-AR
+  [ 15] ferias-mercados                                 CC-BY-2.5-AR
+  [ 12] locales-bailables                               CC-BY-2.5-AR
+  [ 10] permisos-uso-espacio-publico-area-gastronomica  CC-BY-2.5-AR
+  [  8] venta-de-alimentos                              Creative Commons Attribution
+  [  8] relevamiento-usos-suelo                         CC-BY-2.5-AR
+  [  5] habilitaciones-aprobadas                        CC-BY-2.5-AR
+  [  5] mapa-oportunidades-comerciales-moc              CC-BY-2.5-AR
+
+§4 · CÓMO LEER ESTE INVENTARIO
+--------------------------------------------------------------------------------------------------
+  El puntaje ordena, no decide. Pesa cuatro cosas: vocabulario gastronómico (×3), vocabulario de
+  local comercial, tener coordenada declarada (+4) y tener dirección (+2). Un dataset con puntaje
+  alto puede seguir sin servir —una serie mensual por comuna no entra a una base de locales— y uno
+  con puntaje bajo puede ser clave si su unidad es el local. La ficha de fuente sigue siendo
+  obligatoria antes de integrar nada.
+
+  La columna `columnas_sensibles` no baja el puntaje: marca. Un padrón de permisos con `titular` y
+  `DNI_CUIT` es una fuente legítima y hay que usarla; lo que no se hace es abrir esas columnas. La
+  lista permitida se declara en el script que la lee y el `usecols` de pandas se arma desde esa
+  lista, de modo que lo prohibido no entra en memoria.
+
+==================================================================================================

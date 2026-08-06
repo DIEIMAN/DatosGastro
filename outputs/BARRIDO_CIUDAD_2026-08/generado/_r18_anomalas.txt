@@ -1,0 +1,52 @@
+R18 (Esmeralda-Paraguay, sin el solape con R12): 43 direcciones, 1464 habilitaciones
+  de las cuales 12 anomalas concentran 1357 habilitaciones (92.7%)
+
+=== las 12 direcciones anomalas de R18 ===
+ 121 hab | FLORIDA 765, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 17, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2015-2018/2025 | sin fecha de habilitacion: 120/121 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 753, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 755, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 771, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 777, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 783, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | FLORIDA 785, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | CORDOBA AV. 532, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | CORDOBA AV. 550, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | CORDOBA AV. 552, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+ 120 hab | CORDOBA AV. 570, CABA
+       rubros: Catering 22, Cafe 22, Bar 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+       anios fuente: 2025 | sin fecha de habilitacion: 120/120 | rubro original mas comun: CASA DE LUNCH
+  36 hab | SUIPACHA 637, CABA
+       rubros: Catering 12, Cafe 12, Bar 12
+       anios fuente: 2025 | sin fecha de habilitacion: 36/36 | rubro original mas comun: CASA DE LUNCH
+
+=== las 10 direcciones anomalas mas grandes de toda la Ciudad ===
+ 360 hab | CABILDO AV. 1690, CABA                                  | rubros distintos: 2 | expedientes distintos: 360
+ 360 hab | HERNANDEZ, JOSE 2412, CABA                              | rubros distintos: 2 | expedientes distintos: 360
+ 220 hab | DEL LIBERTADOR AV. 3164, CABA                           | rubros distintos: 5 | expedientes distintos: 220
+ 198 hab | RAVIGNANI, EMILIO, DR. 1906, CABA                       | rubros distintos: 5 | expedientes distintos: 198
+ 198 hab | COSTA RICA 5901, CABA                                   | rubros distintos: 5 | expedientes distintos: 198
+ 180 hab | AVELLANEDA AV. 1899, CABA                               | rubros distintos: 4 | expedientes distintos: 180
+ 180 hab | INDEPENDENCIA AV. 3001, CABA                            | rubros distintos: 3 | expedientes distintos: 180
+ 180 hab | SARMIENTO 985, CABA                                     | rubros distintos: 5 | expedientes distintos: 180
+ 165 hab | SUCRE, ANTONIO JOSE DE, MCAL. 2127, CABA                | rubros distintos: 6 | expedientes distintos: 165
+ 153 hab | CALLAO AV. 1081, CABA                                   | rubros distintos: 5 | expedientes distintos: 153

@@ -1,0 +1,14 @@
+{
+  "fecha": "2026-08-05",
+  "zona": "R08",
+  "cifra_publicada": 646,
+  "places_union_familias": 81,
+  "pct_sobre_publicada": 12.5,
+  "control_una_familia": 76,
+  "requests_gastados": 50,
+  "requests_autorizados": 150,
+  "nivel_maximo_refinamiento": 1,
+  "celdas_en_el_piso": 0,
+  "veredicto": "CONCLUSIÓN FIRME",
+  "errores": []
+}

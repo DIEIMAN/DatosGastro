@@ -1,0 +1,478 @@
+Detector de lotes de permisos · padrón de habilitaciones gastronómicas
+==============================================================================
+
+direcciones anómalas examinadas (más de 20 habilitaciones): 324
+  suman 20,078 habilitaciones = 46.9 % del padrón georreferenciado
+
+agrupadas en lotes (misma firma de rubros y misma cuadra): 45 lotes, 137 direcciones
+  suman 9,697 habilitaciones = 22.6 % del padrón georreferenciado
+
+EL TEST QUE DECIDE: cuánto de la carga es el mismo permiso repetido en otra puerta
+  sobre los 45 lotes con crudo disponible:
+    registros crudos involucrados: 23,694
+    permisos distintos detrás de esos registros: 658
+    proporción de registros que son repetición: mediana 96.4 %, mínimo 83.3 %
+    un mismo permiso llega a figurar en hasta 15 puertas distintas
+
+Las señales, sobre las direcciones agrupadas en lotes:
+  sin fecha de habilitación en el 100 % de sus registros: 137 de 137 direcciones
+  con partida matriz identificable en el crudo 2025: 137 de 137
+  cuya partida abarca más de una dirección: 137 de 137 — o sea, el mismo inmueble cargado en varias puertas
+  máximo de direcciones colgadas de una sola partida: 44
+  partidas distintas por dirección: mediana 1, máximo 2
+
+LOTES DETECTADOS, con nombre y apellido
+
+L01 · VIAMONTE 500-599 · San Nicolas
+    10 direcciones × 120 habilitaciones = 1,200 registros
+    alturas: 501, 509, 515, 521, 525, 529, 541, 545, 547, 549
+    mezcla de rubros idéntica en todas: Bar:22,Cafe:22,Catering:22,Comida al paso:16,Heladeria:16,Pasteleria:16,Restaurante:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 2 por dirección; la partida más extendida abarca 44 direcciones del padrón
+    replicación: 2,527 registros crudos en estas direcciones se reducen a 78 permisos distintos (96.9 % son repetición); un mismo permiso figura en hasta 10 puertas
+
+L02 · FALCON, RAMON L.,CNEL. 7100-7199 · Liniers
+    15 direcciones × 65 habilitaciones = 975 registros
+    alturas: 7115, 7119, 7121, 7123, 7129, 7131, 7135, 7137, 7139, 7145, 7147, 7151, 7155, 7159, 7165
+    mezcla de rubros idéntica en todas: Cafe:30,Comida al paso:5,Heladeria:6,Parrilla:12,Pizzeria:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 28 direcciones del padrón
+    replicación: 5,249 registros crudos en estas direcciones se reducen a 27 permisos distintos (99.5 % son repetición); un mismo permiso figura en hasta 15 puertas
+
+L03 · FLORIDA 700-799 · San Nicolas
+    8 direcciones × 120 habilitaciones = 960 registros
+    alturas: 727, 729, 753, 755, 771, 777, 783, 785
+    mezcla de rubros idéntica en todas: Bar:22,Cafe:22,Catering:22,Comida al paso:16,Heladeria:16,Pasteleria:16,Restaurante:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 2 por dirección; la partida más extendida abarca 44 direcciones del padrón
+    replicación: 1,926 registros crudos en estas direcciones se reducen a 60 permisos distintos (96.9 % son repetición); un mismo permiso figura en hasta 8 puertas
+
+L04 · CORDOBA AV. 500-599 · Retiro
+    4 direcciones × 120 habilitaciones = 480 registros
+    alturas: 532, 550, 552, 570
+    mezcla de rubros idéntica en todas: Bar:22,Cafe:22,Catering:22,Comida al paso:16,Heladeria:16,Pasteleria:16,Restaurante:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 2 por dirección; la partida más extendida abarca 44 direcciones del padrón
+    replicación: 988 registros crudos en estas direcciones se reducen a 60 permisos distintos (93.9 % son repetición); un mismo permiso figura en hasta 4 puertas
+
+L05 · SUAREZ, JOSE LEON 0-99 · Liniers
+    7 direcciones × 65 habilitaciones = 455 registros
+    alturas: 52, 54, 56, 58, 60, 62, 64
+    mezcla de rubros idéntica en todas: Cafe:30,Comida al paso:5,Heladeria:6,Parrilla:12,Pizzeria:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 28 direcciones del padrón
+    replicación: 2,491 registros crudos en estas direcciones se reducen a 26 permisos distintos (99 % son repetición); un mismo permiso figura en hasta 7 puertas
+
+L06 · DEL LIBERTADOR AV. 8500-8599 · Nuñez
+    4 direcciones × 90 habilitaciones = 360 registros
+    alturas: 8520, 8540, 8560, 8580
+    mezcla de rubros idéntica en todas: Bar:10,Catering:20,Comida al paso:20,Pasteleria:20,Restaurante:20
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 8 direcciones del padrón
+    replicación: 522 registros crudos en estas direcciones se reducen a 8 permisos distintos (98.5 % son repetición); un mismo permiso figura en hasta 4 puertas
+
+L07 · BUCARELLI 2100-2199 · Villa Urquiza
+    2 direcciones × 144 habilitaciones = 288 registros
+    alturas: 2179, 2181
+    mezcla de rubros idéntica en todas: Bar:12,Cafe:12,Catering:30,Comida al paso:30,Pizzeria:30,Restaurante:30
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 288 registros crudos en estas direcciones se reducen a 6 permisos distintos (97.9 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L08 · CUENCA 2600-2699 · Villa Del Parque
+    2 direcciones × 140 habilitaciones = 280 registros
+    alturas: 2679, 2685
+    mezcla de rubros idéntica en todas: Comida al paso:60,Panaderia:80
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 280 registros crudos en estas direcciones se reducen a 4 permisos distintos (98.6 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L09 · DEHEZA 1600-1699 · Nuñez
+    3 direcciones × 90 habilitaciones = 270 registros
+    alturas: 1631, 1651, 1671
+    mezcla de rubros idéntica en todas: Bar:10,Catering:20,Comida al paso:20,Pasteleria:20,Restaurante:20
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 8 direcciones del padrón
+    replicación: 390 registros crudos en estas direcciones se reducen a 7 permisos distintos (98.2 % son repetición); un mismo permiso figura en hasta 3 puertas
+
+L10 · MONTIEL 0-99 · Liniers
+    4 direcciones × 65 habilitaciones = 260 registros
+    alturas: 23, 25, 27, 29
+    mezcla de rubros idéntica en todas: Cafe:30,Comida al paso:5,Heladeria:6,Parrilla:12,Pizzeria:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 28 direcciones del padrón
+    replicación: 1,436 registros crudos en estas direcciones se reducen a 27 permisos distintos (98.1 % son repetición); un mismo permiso figura en hasta 4 puertas
+
+L11 · DIAZ, CNEL. AV. 1900-1999 · Palermo
+    3 direcciones × 86 habilitaciones = 258 registros
+    alturas: 1944, 1962, 1998
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:10,Catering:26,Comida al paso:10,Heladeria:4,Parrilla:16,Restaurante:10
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 34 direcciones del padrón
+    replicación: 1,176 registros crudos en estas direcciones se reducen a 57 permisos distintos (95.2 % son repetición); un mismo permiso figura en hasta 3 puertas
+
+L12 · ARENALES 3300-3399 · Palermo
+    3 direcciones × 86 habilitaciones = 258 registros
+    alturas: 3360, 3370, 3390
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:10,Catering:26,Comida al paso:10,Heladeria:4,Parrilla:16,Restaurante:10
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 34 direcciones del padrón
+    replicación: 1,140 registros crudos en estas direcciones se reducen a 51 permisos distintos (95.5 % son repetición); un mismo permiso figura en hasta 3 puertas
+
+L13 · NOGOYA 3200-3299 · Villa Del Parque
+    2 direcciones × 100 habilitaciones = 200 registros
+    alturas: 3202, 3206
+    mezcla de rubros idéntica en todas: Cafe:30,Catering:30,Comida al paso:10,Heladeria:30
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 200 registros crudos en estas direcciones se reducen a 4 permisos distintos (98 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L14 · 3 DE FEBRERO 2700-2799 · Belgrano
+    2 direcciones × 96 habilitaciones = 192 registros
+    alturas: 2770, 2772
+    mezcla de rubros idéntica en todas: Bar:24,Cafe:24,Catering:24,Restaurante:24
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 192 registros crudos en estas direcciones se reducen a 4 permisos distintos (97.9 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L15 · SOLER 5600-5699 · Palermo
+    3 direcciones × 63 habilitaciones = 189 registros
+    alturas: 5608, 5610, 5612
+    mezcla de rubros idéntica en todas: Bar:21,Cafe:21,Restaurante:21
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 189 registros crudos en estas direcciones se reducen a 3 permisos distintos (98.4 % son repetición); un mismo permiso figura en hasta 3 puertas
+
+L16 · SANTA FE AV. 3200-3299 · Palermo
+    2 direcciones × 86 habilitaciones = 172 registros
+    alturas: 3251, 3253
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:10,Catering:26,Comida al paso:10,Heladeria:4,Parrilla:16,Restaurante:10
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 34 direcciones del padrón
+    replicación: 800 registros crudos en estas direcciones se reducen a 51 permisos distintos (93.6 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L17 · AZCUENAGA 2000-2099 · Recoleta
+    6 direcciones × 28 habilitaciones = 168 registros
+    alturas: 2085, 2087, 2091, 2093, 2095, 2097
+    mezcla de rubros idéntica en todas: Cafe:7,Catering:7,Comida al paso:7,Heladeria:7
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 9 direcciones del padrón
+    replicación: 378 registros crudos en estas direcciones se reducen a 11 permisos distintos (97.1 % son repetición); un mismo permiso figura en hasta 6 puertas
+
+L18 · ARENALES 3300-3399 · Palermo
+    2 direcciones × 82 habilitaciones = 164 registros
+    alturas: 3367, 3395
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:10,Catering:26,Comida al paso:10,Parrilla:16,Restaurante:10
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 34 direcciones del padrón
+    replicación: 178 registros crudos en estas direcciones se reducen a 17 permisos distintos (90.4 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L19 · CORRO, MIGUEL C. DEL, CANONIGO AV. 300-399 · Villa Luro
+    2 direcciones × 80 habilitaciones = 160 registros
+    alturas: 356, 358
+    mezcla de rubros idéntica en todas: Bar:20,Cafe:20,Catering:20,Heladeria:20
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 160 registros crudos en estas direcciones se reducen a 4 permisos distintos (97.5 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L20 · REPUBLICA ARABE SIRIA 3300-3399 · Palermo
+    2 direcciones × 77 habilitaciones = 154 registros
+    alturas: 3328, 3330
+    mezcla de rubros idéntica en todas: Bar:7,Cafe:7,Catering:7,Comida al paso:14,Parrilla:14,Pizzeria:14,Restaurante:14
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 154 registros crudos en estas direcciones se reducen a 7 permisos distintos (95.5 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L21 · TALCAHUANO 1000-1099 · Retiro
+    2 direcciones × 72 habilitaciones = 144 registros
+    alturas: 1063, 1065
+    mezcla de rubros idéntica en todas: Comida al paso:36,Heladeria:36
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 360 registros crudos en estas direcciones se reducen a 5 permisos distintos (98.6 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L22 · GODOY CRUZ 1800-1899 · Palermo
+    2 direcciones × 70 habilitaciones = 140 registros
+    alturas: 1853, 1855
+    mezcla de rubros idéntica en todas: Bar:14,Cafe:14,Catering:14,Pasteleria:14,Restaurante:14
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 140 registros crudos en estas direcciones se reducen a 5 permisos distintos (96.4 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L23 · PEDRAZA, MANUELA 2100-2199 · Nuñez
+    2 direcciones × 66 habilitaciones = 132 registros
+    alturas: 2177, 2179
+    mezcla de rubros idéntica en todas: Cafe:33,Restaurante:33
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 132 registros crudos en estas direcciones se reducen a 2 permisos distintos (98.5 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L24 · HONDURAS 4300-4399 · Palermo
+    2 direcciones × 64 habilitaciones = 128 registros
+    alturas: 4308, 4318
+    mezcla de rubros idéntica en todas: Bar:16,Cafe:16,Catering:16,Restaurante:16
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 128 registros crudos en estas direcciones se reducen a 4 permisos distintos (96.9 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L25 · ENTRE RIOS AV. 600-699 · Monserrat
+    2 direcciones × 64 habilitaciones = 128 registros
+    alturas: 648, 650
+    mezcla de rubros idéntica en todas: Comida al paso:32,Panaderia:32
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 160 registros crudos en estas direcciones se reducen a 5 permisos distintos (96.9 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L26 · HONDURAS 4700-4799 · Palermo
+    2 direcciones × 64 habilitaciones = 128 registros
+    alturas: 4731, 4733
+    mezcla de rubros idéntica en todas: Bar:16,Cafe:8,Catering:8,Parrilla:8,Pasteleria:8,Pizzeria:8,Restaurante:8
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 128 registros crudos en estas direcciones se reducen a 8 permisos distintos (93.8 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L27 · SANTA FE AV. 4500-4599 · Palermo
+    2 direcciones × 64 habilitaciones = 128 registros
+    alturas: 4502, 4504
+    mezcla de rubros idéntica en todas: Comida al paso:32,Panaderia:32
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 256 registros crudos en estas direcciones se reducen a 8 permisos distintos (96.9 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L28 · SAN MARTIN AV. 5800-5899 · Agronomia
+    3 direcciones × 42 habilitaciones = 126 registros
+    alturas: 5883, 5885, 5887
+    mezcla de rubros idéntica en todas: Bar:14,Cafe:14,Restaurante:14
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 126 registros crudos en estas direcciones se reducen a 3 permisos distintos (97.6 % son repetición); un mismo permiso figura en hasta 3 puertas
+
+L29 · POSADAS 1000-1099 · Retiro
+    2 direcciones × 60 habilitaciones = 120 registros
+    alturas: 1030, 1032
+    mezcla de rubros idéntica en todas: Bar:12,Cafe:12,Catering:12,Parrilla:12,Restaurante:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 120 registros crudos en estas direcciones se reducen a 5 permisos distintos (95.8 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L30 · NUÑEZ 1600-1699 · Nuñez
+    2 direcciones × 55 habilitaciones = 110 registros
+    alturas: 1648, 1650
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:10,Catering:10,Parrilla:5,Pizzeria:10,Restaurante:10
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 110 registros crudos en estas direcciones se reducen a 6 permisos distintos (94.5 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L31 · LARRAZABAL 3500-3599 · Villa Lugano
+    2 direcciones × 54 habilitaciones = 108 registros
+    alturas: 3541, 3543
+    mezcla de rubros idéntica en todas: Comida al paso:18,Panaderia:36
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 216 registros crudos en estas direcciones se reducen a 6 permisos distintos (97.2 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L32 · ASAMBLEA AV. 2200-2299 · Flores
+    2 direcciones × 50 habilitaciones = 100 registros
+    alturas: 2295, 2299
+    mezcla de rubros idéntica en todas: Bar:10,Cafe:5,Catering:5,Comida al paso:5,Heladeria:5,Parrilla:5,Pasteleria:5,Pizzeria:5,Restaurante:5
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 100 registros crudos en estas direcciones se reducen a 10 permisos distintos (90 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L33 · CALLAO AV. 1000-1099 · Recoleta
+    2 direcciones × 48 habilitaciones = 96 registros
+    alturas: 1090, 1096
+    mezcla de rubros idéntica en todas: Bar:12,Cafe:6,Catering:6,Comida al paso:6,Heladeria:6,Pasteleria:6,Restaurante:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 4 direcciones del padrón
+    replicación: 96 registros crudos en estas direcciones se reducen a 8 permisos distintos (91.7 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L34 · ALVAREZ JONTE AV. 4800-4899 · Monte Castro
+    2 direcciones × 39 habilitaciones = 78 registros
+    alturas: 4871, 4873
+    mezcla de rubros idéntica en todas: Bar:13,Cafe:13,Panaderia:13
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 78 registros crudos en estas direcciones se reducen a 3 permisos distintos (96.2 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L35 · JUSTO, JUAN B. AV. 1200-1299 · Palermo
+    2 direcciones × 33 habilitaciones = 66 registros
+    alturas: 1241, 1243
+    mezcla de rubros idéntica en todas: Catering:22,Panaderia:11
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 88 registros crudos en estas direcciones se reducen a 4 permisos distintos (95.5 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L36 · GUAMINI 4900-4999 · Villa Riachuelo
+    2 direcciones × 32 habilitaciones = 64 registros
+    alturas: 4936, 4938
+    mezcla de rubros idéntica en todas: Comida al paso:16,Panaderia:16
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 96 registros crudos en estas direcciones se reducen a 6 permisos distintos (93.8 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L37 · LAVALLE 700-799 · San Nicolas
+    2 direcciones × 30 habilitaciones = 60 registros
+    alturas: 795, 799
+    mezcla de rubros idéntica en todas: Bar:6,Cafe:3,Catering:3,Comida al paso:3,Heladeria:3,Parrilla:3,Pasteleria:3,Pizzeria:3,Restaurante:3
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 60 registros crudos en estas direcciones se reducen a 10 permisos distintos (83.3 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L38 · SCALABRINI ORTIZ, RAUL AV. 600-699 · Villa Crespo
+    2 direcciones × 30 habilitaciones = 60 registros
+    alturas: 622, 626
+    mezcla de rubros idéntica en todas: Bar:6,Cafe:6,Catering:6,Comida al paso:6,Restaurante:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 96 registros crudos en estas direcciones se reducen a 8 permisos distintos (91.7 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L39 · JUNIN 1900-1999 · Recoleta
+    2 direcciones × 28 habilitaciones = 56 registros
+    alturas: 1960, 1962
+    mezcla de rubros idéntica en todas: Cafe:7,Catering:7,Comida al paso:7,Heladeria:7
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 9 direcciones del padrón
+    replicación: 126 registros crudos en estas direcciones se reducen a 11 permisos distintos (91.3 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L40 · LACROZE, FEDERICO AV. 2400-2499 · Colegiales
+    2 direcciones × 24 habilitaciones = 48 registros
+    alturas: 2425, 2431
+    mezcla de rubros idéntica en todas: Bar:3,Cafe:3,Catering:3,Comida al paso:6,Panaderia:6,Restaurante:3
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 60 registros crudos en estas direcciones se reducen a 10 permisos distintos (83.3 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L41 · BOEDO AV. 1800-1899 · Boedo
+    2 direcciones × 24 habilitaciones = 48 registros
+    alturas: 1834, 1838
+    mezcla de rubros idéntica en todas: Panaderia:24
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 72 registros crudos en estas direcciones se reducen a 3 permisos distintos (95.8 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L42 · GURRUCHAGA 1100-1199 · Villa Crespo
+    2 direcciones × 24 habilitaciones = 48 registros
+    alturas: 1140, 1142
+    mezcla de rubros idéntica en todas: Comida al paso:12,Heladeria:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 120 registros crudos en estas direcciones se reducen a 5 permisos distintos (95.8 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L43 · DEL COMERCIO 1200-1299 · Parque Chacabuco
+    2 direcciones × 24 habilitaciones = 48 registros
+    alturas: 1284, 1286
+    mezcla de rubros idéntica en todas: Bar:6,Cafe:6,Catering:6,Comida al paso:6
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 3 direcciones del padrón
+    replicación: 72 registros crudos en estas direcciones se reducen a 6 permisos distintos (91.7 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L44 · MURGUIONDO 4000-4099 · Villa Lugano
+    2 direcciones × 24 habilitaciones = 48 registros
+    alturas: 4076, 4078
+    mezcla de rubros idéntica en todas: Comida al paso:12,Panaderia:12
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 48 registros crudos en estas direcciones se reducen a 4 permisos distintos (91.7 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+L45 · GURRUCHAGA 600-699 · Villa Crespo
+    2 direcciones × 21 habilitaciones = 42 registros
+    alturas: 689, 691
+    mezcla de rubros idéntica en todas: Parrilla:21
+    sin fecha de habilitación: 100–100 % | años de fuente: 2025
+    partida matriz: hasta 1 por dirección; la partida más extendida abarca 2 direcciones del padrón
+    replicación: 42 registros crudos en estas direcciones se reducen a 1 permisos distintos (97.6 % son repetición); un mismo permiso figura en hasta 2 puertas
+
+DIRECCIONES ANÓMALAS SUELTAS CON LAS MISMAS SEÑALES
+  No forman lote porque no comparten cuadra con otra, pero la carga tiene la misma pinta:
+  sin fecha en el 100 % de los registros y partida matriz compartida con otra dirección.
+
+                        direccion           barrio  habilitaciones  partidas_matriz  direcciones_con_esa_partida anios_fuente
+             HERNANDEZ, JOSE 2412         Belgrano             360              1.0                          2.0         2025
+                 CABILDO AV. 1690         Belgrano             360              1.0                          2.0         2025
+                  COSTA RICA 5901          Palermo             198              1.0                          2.0         2025
+                    SARMIENTO 985      San Nicolas             180              1.0                          2.0         2025
+                   SAN MARTIN 712      San Nicolas             144              2.0                         44.0         2025
+                   SAN MARTIN 714      San Nicolas             120              2.0                         44.0         2025
+                      CUENCA 2796 Villa Del Parque             100              1.0                          3.0         2025
+                    ARENALES 3359          Palermo              98              2.0                         34.0         2025
+                      FLORIDA 725      San Nicolas              96              2.0                         44.0         2025
+           GARCIA, MARTIN AV. 900         Barracas              96              1.0                          2.0         2025
+                        PICO 1612            Nuñez              90              1.0                          8.0         2025
+                      BERUTI 3328          Palermo              86              1.0                         34.0         2025
+   FREIRE, RAMON, CAP. GRAL. 1501       Colegiales              84              1.0                          2.0         2025
+              AVILES, VIRREY 3095       Colegiales              84              1.0                          2.0         2025
+                      FLORIDA 737      San Nicolas              77              2.0                         44.0         2025
+                       PARANA 814         Recoleta              70              1.0                          2.0         2025
+                 CORDOBA AV. 1501         Recoleta              70              1.0                          2.0         2025
+             OCAMPO, VICTORIA 360    Puerto Madero              66              1.0                          3.0         2025
+                  MANSO JUANA 305    Puerto Madero              66              1.0                          3.0         2025
+              RIVADAVIA AV. 11526          Liniers              65              1.0                         28.0         2025
+                   LAVALLEJA 1500          Palermo              64              1.0                          3.0         2025
+          SALGUERO, JERONIMO 2692          Palermo              64              1.0                          2.0         2025
+                 CERVIÑO AV. 3502          Palermo              64              1.0                          2.0         2025
+                      BOLIVAR 693        Monserrat              60              1.0                          2.0         2025
+                        CHILE 501        Monserrat              60              1.0                          2.0         2025
+          DEL LIBERTADOR AV. 2300          Palermo              60              1.0                          2.0         2025
+             DIAZ, CNEL. AV. 2765          Palermo              60              1.0                          2.0         2025
+            DEALESSI, PIERINA 830    Puerto Madero              54              1.0                          2.0         2025
+                      YERBAL 2501           Flores              50              1.0                          2.0         2025
+                  VARELA AV. 1296           Flores              50              1.0                          3.0         2025
+ARTIGAS, JOSE GERVASIO, GRAL. 108           Flores              50              1.0                          2.0         2025
+                   OLAVARRIA 1689         Barracas              48              1.0                          2.0         2025
+                      MONROE 3602         Belgrano              48              1.0                          2.0         2025
+                  MELIAN AV. 2480         Belgrano              48              1.0                          2.0         2025
+                SANTA FE AV. 1806         Recoleta              48              1.0                          4.0         2025
+              DIRECTORIO AV. 2296           Flores              42              1.0                          2.0         2025
+       LACROZE, FEDERICO AV. 3706        Chacarita              42              1.0                          2.0         2025
+                     CHARLONE 594        Chacarita              42              1.0                          2.0         2025
+              DIRECTORIO AV. 2300           Flores              42              1.0                          2.0         2025
+                    FITZ ROY 1415          Palermo              40              1.0                          2.0         2025
+                 BELGRANO AV. 257        Monserrat              40              1.0                          2.0         2025
+                   TALCAHUANO 379      San Nicolas              40              1.0                          2.0         2025
+                 HUMBERTO 1° 1799     Constitucion              36              1.0                          2.0         2025
+              ENTRE RIOS AV. 1098     Constitucion              36              1.0                          2.0         2025
+           ALVAREZ JONTE AV. 6407          Liniers              35              1.0                          2.0         2025
+          JUSTO, JUAN B. AV. 9202          Liniers              35              1.0                          2.0         2025
+     LARRALDE, CRISOLOGO AV. 1899            Nuñez              33              1.0                          2.0         2025
+                      GRECIA 3613            Nuñez              33              1.0                          2.0         2025
+               CORRIENTES AV. 485      San Nicolas              32              1.0                          2.0         2025
+               TERRY, JOSE A. 300        Caballito              32              1.0                          2.0         2025
+                         PERU 215        Monserrat              32              1.0                          2.0         2025
+               TERRY, JOSE A. 286        Caballito              32              1.0                          2.0         2025
+                     NAZCA AV. 12           Flores              30              1.0                          2.0         2025
+               RIVADAVIA AV. 7401           Flores              30              1.0                          2.0         2025
+            COSSETTINI, OLGA 1091    Puerto Madero              30              1.0                          3.0         2025
+                      PAREJA 2997 Villa Pueyrredon              28              1.0                          2.0         2025
+                       IGUAZU 408 Parque Patricios              28              1.0                          2.0         2025
+                      ROSARIO 495        Caballito              28              1.0                          2.0         2025
+       MORENO, JOSE MARIA AV. 100        Caballito              28              1.0                          2.0         2025
+                    ARGERICH 4205 Villa Pueyrredon              28              1.0                          2.0         2025
+                  ELCANO AV. 3189       Colegiales              27              1.0                          2.0         2025
+                       CONDE 1533       Colegiales              27              1.0                          2.0         2025
+          CASTRO, EMILIO AV. 7502        Mataderos              25              1.0                          2.0         2025
+           SUAREZ, JOSE LEON 1511        Mataderos              25              1.0                          2.0         2025
+                    OLAVARRIA 699          La Boca              24              1.0                          2.0         2025
+                      PATRON 6000          Liniers              24              1.0                          2.0         2025
+               LARRAZABAL AV. 502          Liniers              24              1.0                          2.0         2025
+                      MALABIA 406     Villa Crespo              24              1.0                          2.0         2025
+          VUELTA DE OBLIGADO 1101          Palermo              24              1.0                          2.0         2025
+  SCALABRINI ORTIZ, RAUL AV. 2401          Palermo              24              1.0                          2.0         2025
+                      GUEMES 3905          Palermo              24              1.0                          2.0         2025
+                     AGUILAR 2285          Palermo              24              1.0                          2.0         2025
+              CORRIENTES AV. 5301     Villa Crespo              24              1.0                          2.0         2025
+              PUEYRREDON AV. 1802         Recoleta              24              1.0                          2.0         2025
+                 ASAMBLEA AV. 849 Parque Chacabuco              24              1.0                          3.0         2025
+                    PARAGUAY 5100          Palermo              24              1.0                          2.0         2025
+                    HUMBOLDT 2295          Palermo              24              1.0                          2.0         2025
+              CORRIENTES AV. 2900        Balvanera              21              1.0                          2.0         2025
+             BOULOGNE SUR MER 497        Balvanera              21              1.0                          2.0         2025
+
+  son 79 direcciones con 4,650 habilitaciones = 10.9 % del padrón
+
+QUÉ HACER CON ESTO
+  La regla 3 del método ya las saca del conteo de direcciones, así que ninguna cifra
+  publicada está afectada. Lo que hay que revisar es al revés: la columna
+  `habilitaciones` no sirve como indicador de volumen en zonas con lotes, y conviene
+  mostrarla siempre al lado de `dir_outlier`. El listado de acá se puede pasar a la AGC
+  como consulta de calidad de carga del padrón.

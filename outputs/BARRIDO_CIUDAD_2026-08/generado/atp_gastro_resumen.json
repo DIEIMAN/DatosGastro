@@ -1,0 +1,28 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "fuente": "E07 · All The Places",
+  "corrida": "2026-08-01-13-32-15",
+  "licencia": "CC0 1.0 · dominio público",
+  "grupo_independencia": "OVERTURE_FSQ_ATP",
+  "costo": "0 requests de Places",
+  "spiders_totales": 4898,
+  "spiders_con_puntos_en_ciudad": 78,
+  "puntos_en_bbox": 3140,
+  "puntos_en_ciudad": 2759,
+  "atp_nucleo": 282,
+  "atp_ampliado": 282,
+  "padron_nucleo_48": 6861,
+  "atp_sobre_padron_ciudad": 0.0411,
+  "barrios_con_puntos": 31,
+  "spiders_gastronomicos": {
+    "mcdonalds_latin_america": 111,
+    "starbucks_ar_cl": 79,
+    "burger_king": 28,
+    "subway_south_america": 20,
+    "le_pain_quotidien": 19,
+    "club_milanesa": 18,
+    "sbarro": 3,
+    "laveneciana_ar": 2,
+    "hard_rock": 2
+  }
+}

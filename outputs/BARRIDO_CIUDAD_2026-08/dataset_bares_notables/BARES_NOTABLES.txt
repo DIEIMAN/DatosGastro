@@ -1,0 +1,46 @@
+DATASET ABIERTO · Bares Notables de la Ciudad
+====================================================================================================
+
+registros: 95
+geocodificados con USIG: 92 (96.8 %)
+sin resolver: 3
+geocodificados pero fuera de los 48 barrios: 0
+
+LOS DOS RECAUDOS, QUE VAN EN CADA FILA DEL CSV Y EN EL GEOJSON
+  1 · Listado NO exhaustivo: son los Bares Notables cargados en Wikidata con su declaratoria patrimonial, no el registro oficial completo.
+  2 · «Bar Notable» es una declaratoria, es decir un acto administrativo por valor patrimonial, arquitectónico o cultural. NO es una calificación de calidad gastronómica y no debe leerse como recomendación.
+
+POR QUÉ LA DECLARATORIA Y NO EL TIPO
+  81 de los 95 están cargados en Wikidata como «edificio» y no como bar o cafetería.
+  La consulta por tipo devuelve 17; la consulta por declaratoria devuelve 95. Preguntar
+  por el tipo pierde el 82 % del listado.
+
+POR QUÉ NO SE USARON LAS COORDENADAS DE WIKIDATA
+  Procedencia viciada: según el wiki de OSM, buena parte llegó por Wikipedia → Google
+  Maps. Se geocodificó desde la dirección postal con el normalizador oficial de USIG,
+  filtrando `cod_partido = caba` para no traer homónimos del conurbano.
+
+REPARTO POR BARRIO
+
+barrio
+San Nicolas      16
+Monserrat        13
+San Telmo         6
+Recoleta          5
+Retiro            5
+Palermo           5
+La Boca           4
+Almagro           4
+Balvanera         3
+Boedo             3
+San Cristobal     3
+Mataderos         3
+Caballito         3
+Barracas          3
+Belgrano          2
+
+SIN RESOLVER · quedan en el dataset con la dirección declarada y sin punto
+wikidata_id              nombre direccion_declarada
+   Q5782926 Confitería Richmond                 NaN
+   Q5822000       El Gato Negro                 NaN
+  Q60813858         Café Retiro                 NaN

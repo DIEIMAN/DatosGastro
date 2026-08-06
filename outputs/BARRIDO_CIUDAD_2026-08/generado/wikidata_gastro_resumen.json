@@ -1,0 +1,12 @@
+{
+  "fecha_consulta": "2026-08-05",
+  "licencia": "CC0 1.0",
+  "clases_en_el_arbol": 492,
+  "items_georreferenciados_en_la_caja": 6568,
+  "items_gastronomicos_por_tipo": 33,
+  "bares_notables_por_declaratoria": 95,
+  "bares_notables_cargados_como_edificio": 82,
+  "coordenadas_importadas_a_la_base": 0,
+  "motivo": "procedencia viciada (Wikipedia -> Google Maps), segun el wiki de OSM",
+  "geocodificacion_prevista": "USIG desde la direccion postal declarada"
+}

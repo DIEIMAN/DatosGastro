@@ -1,0 +1,82 @@
+=== firmas de rubro repetidas entre direcciones anomalas (mismo tamano y misma mezcla) ===
+direcciones anomalas: 324 | firmas distintas: 166
+
+27 direcciones comparten firma identica de 65 habilitaciones: Cafe 30, Comida al paso 5, Heladeria 6, Parrilla 12, Pizzeria 12
+23 direcciones comparten firma identica de 120 habilitaciones: Bar 22, Cafe 22, Catering 22, Comida al paso 16, Heladeria 16, Pasteleria 16, Restaurante 6
+ 9 direcciones comparten firma identica de 86 habilitaciones: Bar 10, Cafe 10, Catering 26, Comida al paso 10, Heladeria 4, Parrilla 16, Restaurante 10
+ 8 direcciones comparten firma identica de 28 habilitaciones: Cafe 7, Catering 7, Comida al paso 7, Heladeria 7
+ 8 direcciones comparten firma identica de 90 habilitaciones: Bar 10, Catering 20, Comida al paso 20, Pasteleria 20, Restaurante 20
+ 5 direcciones comparten firma identica de 24 habilitaciones: Bar 6, Cafe 6, Catering 6, Comida al paso 6
+ 4 direcciones comparten firma identica de 64 habilitaciones: Comida al paso 32, Panaderia 32
+ 4 direcciones comparten firma identica de 48 habilitaciones: Bar 12, Cafe 6, Catering 6, Comida al paso 6, Heladeria 6, Pasteleria 6, Restaurante 6
+ 4 direcciones comparten firma identica de 32 habilitaciones: Bar 8, Cafe 8, Catering 8, Restaurante 8
+ 3 direcciones comparten firma identica de 42 habilitaciones: Bar 14, Cafe 14, Restaurante 14
+ 3 direcciones comparten firma identica de 32 habilitaciones: Comida al paso 16, Panaderia 16
+ 3 direcciones comparten firma identica de 64 habilitaciones: Bar 16, Cafe 16, Catering 16, Restaurante 16
+ 3 direcciones comparten firma identica de 63 habilitaciones: Bar 21, Cafe 21, Restaurante 21
+ 3 direcciones comparten firma identica de 64 habilitaciones: Bar 8, Cafe 8, Catering 8, Comida al paso 8, Parrilla 8, Pasteleria 8, Pizzeria 8, Restaurante 8
+ 3 direcciones comparten firma identica de 24 habilitaciones: Comida al paso 12, Panaderia 12
+ 3 direcciones comparten firma identica de 100 habilitaciones: Cafe 30, Catering 30, Comida al paso 10, Heladeria 30
+ 3 direcciones comparten firma identica de 50 habilitaciones: Bar 10, Cafe 5, Catering 5, Comida al paso 5, Heladeria 5, Parrilla 5, Pasteleria 5, Pizzeria 5, Restaurante 5
+ 3 direcciones comparten firma identica de 24 habilitaciones: Bar 6, Cafe 6, Pizzeria 6, Restaurante 6
+ 2 direcciones comparten firma identica de 24 habilitaciones: Panaderia 24
+ 2 direcciones comparten firma identica de 40 habilitaciones: Bar 10, Cafe 10, Catering 10, Restaurante 10
+ 2 direcciones comparten firma identica de 39 habilitaciones: Bar 13, Cafe 13, Panaderia 13
+ 2 direcciones comparten firma identica de 36 habilitaciones: Comida al paso 12, Panaderia 12, Pizzeria 12
+ 2 direcciones comparten firma identica de 28 habilitaciones: Bar 7, Cafe 7, Pizzeria 7, Restaurante 7
+ 2 direcciones comparten firma identica de 25 habilitaciones: Bar 5, Cafe 5, Catering 5, Comida al paso 5, Restaurante 5
+ 2 direcciones comparten firma identica de 27 habilitaciones: Bar 6, Cafe 3, Catering 3, Comida al paso 6, Heladeria 3, Pasteleria 3, Restaurante 3
+ 2 direcciones comparten firma identica de 24 habilitaciones: Bar 3, Cafe 3, Catering 3, Comida al paso 3, Heladeria 3, Pasteleria 3, Pizzeria 3, Restaurante 3
+ 2 direcciones comparten firma identica de 24 habilitaciones: Bar 4, Cafe 4, Catering 4, Comida al paso 4, Parrilla 4, Restaurante 4
+ 2 direcciones comparten firma identica de 24 habilitaciones: Bar 4, Cafe 4, Comida al paso 4, Pasteleria 4, Pizzeria 4, Restaurante 4
+ 2 direcciones comparten firma identica de 24 habilitaciones: Catering 6, Comida al paso 6, Pizzeria 6, Restaurante 6
+ 2 direcciones comparten firma identica de 24 habilitaciones: Bar 3, Cafe 3, Catering 3, Comida al paso 6, Panaderia 6, Restaurante 3
+ 2 direcciones comparten firma identica de 24 habilitaciones: Comida al paso 12, Heladeria 12
+ 2 direcciones comparten firma identica de 25 habilitaciones: Bar 5, Cafe 5, Catering 5, Pizzeria 5, Restaurante 5
+ 2 direcciones comparten firma identica de 48 habilitaciones: Bar 8, Cafe 8, Heladeria 16, Pizzeria 8, Restaurante 8
+ 2 direcciones comparten firma identica de 42 habilitaciones: Bar 14, Cafe 14, Catering 14
+ 2 direcciones comparten firma identica de 40 habilitaciones: Bar 8, Cafe 8, Catering 8, Pasteleria 8, Restaurante 8
+ 2 direcciones comparten firma identica de 21 habilitaciones: Parrilla 21
+ 2 direcciones comparten firma identica de 21 habilitaciones: Bar 3, Cafe 3, Catering 3, Parrilla 3, Pasteleria 3, Pizzeria 3, Restaurante 3
+ 2 direcciones comparten firma identica de 21 habilitaciones: Bar 7, Cafe 7, Catering 7
+ 2 direcciones comparten firma identica de 66 habilitaciones: Bar 18, Cafe 18, Catering 12, Comida al paso 18
+ 2 direcciones comparten firma identica de 66 habilitaciones: Cafe 33, Restaurante 33
+ 2 direcciones comparten firma identica de 70 habilitaciones: Bar 20, Cafe 10, Catering 10, Heladeria 10, Pasteleria 10, Restaurante 10
+ 2 direcciones comparten firma identica de 70 habilitaciones: Bar 14, Cafe 14, Catering 14, Pasteleria 14, Restaurante 14
+ 2 direcciones comparten firma identica de 84 habilitaciones: Catering 21, Comida al paso 21, Heladeria 21, Restaurante 21
+ 2 direcciones comparten firma identica de 96 habilitaciones: Bar 24, Cafe 24, Catering 24, Restaurante 24
+ 2 direcciones comparten firma identica de 82 habilitaciones: Bar 10, Cafe 10, Catering 26, Comida al paso 10, Parrilla 16, Restaurante 10
+ 2 direcciones comparten firma identica de 84 habilitaciones: Bar 12, Cafe 12, Catering 12, Comida al paso 12, Parrilla 12, Pizzeria 12, Restaurante 12
+ 2 direcciones comparten firma identica de 96 habilitaciones: Cafe 12, Catering 12, Comida al paso 12, Heladeria 12, Parrilla 12, Pasteleria 12, Pizzeria 12, Restaurante 12
+ 2 direcciones comparten firma identica de 198 habilitaciones: Bar 33, Cafe 66, Catering 33, Comida al paso 33, Restaurante 33
+ 2 direcciones comparten firma identica de 140 habilitaciones: Comida al paso 60, Panaderia 80
+ 2 direcciones comparten firma identica de 144 habilitaciones: Bar 12, Cafe 12, Catering 30, Comida al paso 30, Pizzeria 30, Restaurante 30
+ 2 direcciones comparten firma identica de 360 habilitaciones: Comida al paso 180, Panaderia 180
+ 2 direcciones comparten firma identica de 72 habilitaciones: Comida al paso 36, Heladeria 36
+ 2 direcciones comparten firma identica de 80 habilitaciones: Bar 20, Cafe 20, Catering 20, Heladeria 20
+ 2 direcciones comparten firma identica de 77 habilitaciones: Bar 7, Cafe 7, Catering 7, Comida al paso 14, Parrilla 14, Pizzeria 14, Restaurante 14
+ 2 direcciones comparten firma identica de 54 habilitaciones: Comida al paso 18, Panaderia 36
+ 2 direcciones comparten firma identica de 60 habilitaciones: Bar 12, Cafe 12, Catering 12, Parrilla 12, Restaurante 12
+ 2 direcciones comparten firma identica de 50 habilitaciones: Bar 10, Cafe 10, Catering 10, Pizzeria 10, Restaurante 10
+ 2 direcciones comparten firma identica de 55 habilitaciones: Bar 10, Cafe 10, Catering 10, Parrilla 5, Pizzeria 10, Restaurante 10
+ 2 direcciones comparten firma identica de 60 habilitaciones: Bar 15, Cafe 15, Catering 15, Pasteleria 15
+ 2 direcciones comparten firma identica de 64 habilitaciones: Bar 16, Cafe 8, Catering 8, Parrilla 8, Pasteleria 8, Pizzeria 8, Restaurante 8
+ 2 direcciones comparten firma identica de 48 habilitaciones: Bar 8, Cafe 8, Catering 8, Parrilla 8, Pizzeria 8, Restaurante 8
+ 2 direcciones comparten firma identica de 28 habilitaciones: Bar 4, Cafe 4, Catering 4, Comida al paso 4, Heladeria 4, Pizzeria 4, Restaurante 4
+ 2 direcciones comparten firma identica de 30 habilitaciones: Bar 6, Cafe 3, Catering 3, Comida al paso 3, Heladeria 3, Parrilla 3, Pasteleria 3, Pizzeria 3, Restaurante 3
+ 2 direcciones comparten firma identica de 32 habilitaciones: Catering 16, Comida al paso 16
+ 2 direcciones comparten firma identica de 35 habilitaciones: Cafe 7, Catering 7, Comida al paso 14, Panaderia 7
+ 2 direcciones comparten firma identica de 33 habilitaciones: Comida al paso 11, Parrilla 11, Restaurante 11
+ 2 direcciones comparten firma identica de 33 habilitaciones: Catering 22, Panaderia 11
+ 2 direcciones comparten firma identica de 30 habilitaciones: Bar 6, Cafe 6, Catering 6, Comida al paso 6, Restaurante 6
+ 2 direcciones comparten firma identica de 28 habilitaciones: Bar 7, Cafe 7, Catering 7, Restaurante 7
+ 2 direcciones comparten firma identica de 28 habilitaciones: Bar 4, Cafe 4, Catering 4, Heladeria 4, Parrilla 4, Pizzeria 4, Restaurante 4
+ 2 direcciones comparten firma identica de 36 habilitaciones: Bar 12, Cafe 12, Catering 12
+ 2 direcciones comparten firma identica de 30 habilitaciones: Bar 5, Cafe 5, Catering 5, Heladeria 5, Pizzeria 5, Restaurante 5
+ 2 direcciones comparten firma identica de 30 habilitaciones: Bar 6, Cafe 6, Catering 6, Heladeria 6, Restaurante 6
+ 2 direcciones comparten firma identica de 42 habilitaciones: Bar 6, Cafe 6, Comida al paso 6, Parrilla 6, Pasteleria 6, Pizzeria 6, Restaurante 6
+ 2 direcciones comparten firma identica de 60 habilitaciones: Bar 15, Catering 10, Comida al paso 5, Heladeria 10, Parrilla 5, Pasteleria 10, Restaurante 5
+
+TOTAL: 233 de las 324 direcciones anomalas comparten su firma con al menos otra direccion
+       esas 233 direcciones suman 14782 habilitaciones = 34.5% de las 42.836 georreferenciadas
+       sin fecha de habilitacion en esas direcciones: 100.0%

@@ -1,0 +1,12 @@
+{
+  "registros_crudo": 245563,
+  "pct_registros_multivalor": 13.9,
+  "parcelas_con_mas_de_una_puerta": 15237,
+  "parcelas_totales": 42246,
+  "pct_parcelas_multipuerta": 36.1,
+  "max_puertas_en_una_parcela": 237,
+  "base_global_pct": 99.26,
+  "p_ingenua_pct": 76.1,
+  "p_condicional_pct": 0.97,
+  "partidas_test": 37
+}

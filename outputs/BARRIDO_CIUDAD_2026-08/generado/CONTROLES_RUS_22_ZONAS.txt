@@ -1,0 +1,71 @@
+Las 22 zonas del Atlas sobre el Relevamiento de Usos del Suelo
+==============================================================================
+
+parcelas gastronómicas unicomerciales leídas del SHP: 12,370
+  activas: 12,169 | del anillo núcleo: 10,266
+
+CONTRASTE contra crosswalk_zona_barrio.csv (umbral 1 % de superficie)
+  contra envolventes crudas: 22 de 22 zonas reproducen el crosswalk con desvío ≤ 0,1 pp
+  el crosswalk está calculado sobre las envolventes crudas, sin descontar el solape.
+
+  zonas donde la precedencia cambia el reparto por barrio (y por lo tanto la añada):
+    R12: desvío 6.1 pp contra el crosswalk (sobre envolvente cruda sería 0.0 pp) | faltan [] sobran []
+      crosswalk {'San Nicolas': 54.5, 'Retiro': 25.4, 'Monserrat': 20.1}
+      perímetro contado {'MONSERRAT': 22.8, 'RETIRO': 28.8, 'SAN NICOLAS': 48.4}
+    R18: desvío 27.0 pp contra el crosswalk (sobre envolvente cruda sería 0.0 pp) | faltan [] sobran []
+      crosswalk {'Retiro': 71.7, 'San Nicolas': 28.3}
+      perímetro contado {'RETIRO': 44.7, 'SAN NICOLAS': 55.3}
+  zonas que cruzan más de un barrio: 19 de 22
+
+FACTOR DE CAPTURA CON LAS DOS BASES
+  base de control: habilitaciones. Segunda columna: Relevamiento de Usos del Suelo.
+
+rid                zona_publicada                metodo  relevado  hab_nucleo  captura_hab_% rus_nucleo  captura_rus_% anada_dominante_pct barrios_tocados
+R15                        Devoto  directorio comercial     119.0         139          116.8        166          139.5               100.0               3
+R14                 Avenida Boedo  directorio comercial      79.0          74           93.7         92          116.5                91.9               3
+R17                 Villa Urquiza  directorio comercial     189.0         173           91.5        202          106.9                97.8               4
+R16               Donado–Holmberg  directorio comercial      40.0          32           80.0         45          112.5               100.0               4
+R13                        Abasto       minimo relevado     314.0         180           57.3        152           48.4                54.1               2
+R12 Centro/Microcentro segmentado       minimo relevado     797.0         327           41.0        358           44.9               100.0               3
+R20                García del Río       minimo relevado      40.0          16           40.0         21           52.5               100.0               2
+R08                  Villa Crespo   relevamiento propio     646.0         233           36.1        339           52.5                92.5               6
+R22              Villa Pueyrredón       minimo relevado     158.0          48           30.4         83           52.5               100.0               1
+R19   Federico Lacroze por tramos       minimo relevado     211.0          54           25.6         73           34.6                54.2               3
+R10                     Caballito   relevamiento propio     907.0         177           19.5        203           22.4                94.5               4
+R09                     Chacarita   relevamiento propio     327.0          55           16.8         81           24.8                96.6               4
+R21                   La Paternal       minimo relevado     254.0          41           16.1         87           34.3                75.8               6
+R05                      Belgrano relevamiento anterior     697.0         100           14.3        133           19.1               100.0               1
+R18            Esmeralda–Paraguay       minimo relevado     216.0          30           13.9         36           16.7               100.0               2
+R11             Boulevard Caseros   relevamiento propio      66.0           5            7.6         22           33.3               100.0               3
+R07               Costanera Norte relevamiento anterior      72.0           3            4.2          0            NaN                 NaN               0
+
+  rangos por método, con las dos bases:
+                       zonas  captura_hab_mediana  captura_hab_min  captura_hab_max  captura_rus_mediana  captura_rus_min  captura_rus_max
+metodo                                                                                                                                    
+directorio comercial       4                 92.6             80.0            116.8                114.5            106.9            139.5
+minimo relevado            7                 30.4             13.9             57.3                 44.9             16.7             52.5
+relevamiento anterior      2                  9.2              4.2             14.3                 19.1             19.1             19.1
+relevamiento propio        4                 18.2              7.6             36.1                 29.0             22.4             52.5
+
+  rango de control con habilitaciones (relevamiento propio, 4 zonas): 7.6 – 36.1 %
+  rango con Relevamiento, para la misma cuatro:                      22.4 – 52.5 %
+
+  mezcla de añadas de cada zona con cifra publicada (esto se declara en la ficha):
+    R13 · Abasto                           2023:45.9% 2024:54.1%
+    R19 · Federico Lacroze por tramos      2023:54.2% 2024:45.8%
+    R21 · La Paternal                      2022:24.2% 2023:75.8%
+    R14 · Avenida Boedo                    2023:91.9% 2024:8.1%
+    R08 · Villa Crespo                     2022:0.3% 2023:92.5% 2024:7.2%
+    R10 · Caballito                        2023:94.5% 2024:5.5%
+    R09 · Chacarita                        2023:96.6% 2024:3.4%
+    R17 · Villa Urquiza                    2022:2.2% 2023:97.8%
+    R05 · Belgrano                         2023:100%
+    R11 · Boulevard Caseros                2024:100%
+    R12 · Centro/Microcentro segmentado    2024:100%
+    R15 · Devoto                           2022:100%
+    R16 · Donado–Holmberg                  2023:100%
+    R18 · Esmeralda–Paraguay               2024:100%
+    R20 · García del Río                   2023:100%
+    R22 · Villa Pueyrredón                 2023:100%
+    R07 · Costanera Norte                  
+

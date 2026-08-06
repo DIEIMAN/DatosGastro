@@ -1,0 +1,133 @@
+==================================================================================================
+OVERTURE MAPS · theme places · recorte de la Ciudad · versión 2026-07-22.0
+==================================================================================================
+licencia CDLA-Permissive-2.0 · redistribuible con atribución · costo: 0
+
+§1 · DEL RECTÁNGULO A LOS 48 BARRIOS
+--------------------------------------------------------------------------------------------------
+  POI en el rectángulo de la Ciudad                    :  128992
+  POI que caen dentro de algún barrio (punto en polígono):  115039
+  POI del rectángulo que quedan AFUERA de la Ciudad    :   13953   (10,8 %)
+
+  El rectángulo de la Ciudad entra en La Tablada, Avellaneda y Vicente López. Ese descarte no es
+  una pérdida: es la diferencia entre el filtro barato que la consulta puede empujar al servidor y
+  el recorte real, que es punto en polígono contra los barrios oficiales. Contar sobre el
+  rectángulo habría inflado cada barrio de borde.
+
+§2 · CONTROL DE VOCABULARIO · qué trajo cada categoría
+--------------------------------------------------------------------------------------------------
+  anillo · rubro                         POI
+  núcleo · Pizzeria                     1476
+  núcleo · Parrilla                      330
+  núcleo · Cafe                         1588
+  núcleo · Heladeria                     684
+  núcleo · Comida al paso                754
+  núcleo · Bar                          1934
+  núcleo · Sin especificar               116
+  núcleo · Restaurante                  5039
+  ampliado · Panaderia                  1032
+  ampliado · Pasteleria                  290
+  descartado (venta y producción)        495
+    delicatessen 264 · candy_store 185 · winery 37 · beverage_store 8 · distillery 1
+  fuera de food_and_drink             101301
+
+  Hojas que usaron la regla de respaldo (5466 POI en 73 categorías no enumeradas):
+    restaurant                                    3172
+    sushi_restaurant                               269
+    argentine_restaurant                           266
+    burger_restaurant                              260
+    italian_restaurant                             201
+    peruvian_restaurant                            157
+    vegetarian_restaurant                          101
+    japanese_restaurant                             82
+    chinese_restaurant                              80
+    mexican_restaurant                              66
+    breakfast_and_brunch_restaurant                 64
+    middle_eastern_restaurant                       59
+    chicken_restaurant                              47
+    french_restaurant                               45
+    Son cocinas nacionales y variantes de restaurante; ninguna cambia de anillo.
+
+§3 · LOS TOTALES DE LA CIUDAD, CON SU UNIDAD DECLARADA
+--------------------------------------------------------------------------------------------------
+  Overture · POI núcleo dentro de la Ciudad     :   11921
+  Overture · POI ampliado                       :   13243
+  Padrón · direcciones núcleo (48 barrios)      :    6861
+  Relevamiento · parcelas núcleo activas        :    9108
+  OSM · POI núcleo                              :    6425
+
+  Overture ÷ padrón = 1,74
+
+§4 · SENSIBILIDAD AL CORTE DE CONFIANZA
+--------------------------------------------------------------------------------------------------
+    corte           POI núcleo   % del total
+    >= 0,0               11921        100,0 %  <- el usado (sin filtrar)
+    >= 0,3               10778         90,4 %
+    >= 0,5                9150         76,8 %
+    >= 0,7                6938         58,2 %
+    >= 0,9                3761         31,5 %
+
+  La cifra de titular no filtra por confianza. El corte más discutible —0,5— deja afuera 2771 POI,
+  y ninguna de las lecturas de este informe cambia de signo entre las dos versiones. La columna
+  filtrada viaja igual en el CSV, `ovt_conf_alta`, para que quien quiera usarla no tenga que
+  rehacer nada.
+
+§5 · DE DÓNDE VIENE CADA POI · los grupos de independencia, medidos
+--------------------------------------------------------------------------------------------------
+    Overture                      115039
+    meta                          108946
+    Foursquare                      4046
+    Microsoft                       1521
+    AllThePlaces                     522
+    PinMeTo                            4
+
+  Overture en la Ciudad es, casi entero, el padrón de comercios de Meta. Eso decide dos cosas del
+  esquema: **Overture y OSM son independientes acá** —OSM no aporta un solo registro al recorte,
+  así que su solape mide algo— y **bajar Foursquare por separado agregaría poco**, porque ya viaja
+  adentro y seguiría contando como el mismo grupo de independencia (`OVERTURE_FSQ_ATP`). La
+  prudencia del esquema se mantiene; ahora se sabe que cuesta casi nada.
+
+§6 · COBERTURA POR BARRIO
+--------------------------------------------------------------------------------------------------
+  los 10 barrios donde Overture encuentra más respecto del padrón:
+               ovt_nucleo  osm_nucleo  dir_nucleo  rus_nucleo  ovt_sobre_padron
+PUERTO MADERO         194         128          39          38              4.97
+VILLA SOLDATI          35          35          11          32              3.18
+LA BOCA               149          45          55         117              2.71
+SAN TELMO             298         172         112         168              2.66
+PALERMO              2231        1128         928        1313              2.40
+RETIRO                397         216         174         202              2.28
+VILLA LUGANO          116          40          51          93              2.27
+CHACARITA             165         110          83         133              1.99
+SAN NICOLAS           845         357         433         480              1.95
+RECOLETA              823         553         429         549              1.92
+
+  los 10 donde encuentra menos:
+                   ovt_nucleo  osm_nucleo  dir_nucleo  rus_nucleo  ovt_sobre_padron
+PARQUE PATRICIOS          111          44          87         112              1.28
+BOEDO                     120          74          99         124              1.21
+BALVANERA                 559         242         468         474              1.19
+FLORESTA                   94          45          81         122              1.16
+PARQUE AVELLANEDA          58          23          50          62              1.16
+VELEZ SARSFIELD            68          30          60          62              1.13
+VILLA GRAL. MITRE          60          47          55          82              1.09
+CONSTITUCION              115          60         109         132              1.06
+MONTE CASTRO               68          39          65          86              1.05
+VILLA REAL                 31          29          38          42              0.82
+
+  La razón Overture ÷ padrón va de 0,82 a 4,97, mediana 1,52. Esa dispersión es el sesgo de
+  cobertura de la fuente medido barrio por barrio, y es el número que hay que mirar antes de
+  dibujar cualquier polígono: una fuente que cubre desparejo produce polos donde hubo más datos,
+  no donde hay más oferta.
+
+§7 · LO QUE ESTO SIGNIFICA PARA LA CAPA PUBLICABLE
+--------------------------------------------------------------------------------------------------
+  POI gastronómicos con nombre    :  13243  (100,0 %)
+  POI con dirección en la fuente  :  12922  (97,6 %)
+
+  Todo esto es identidad redistribuible: nombre, dirección e identificador GERS se pueden
+  publicar. Es la diferencia con Google Places, y es lo que decide qué parte de la base va a poder
+  salir como capa abierta. Cuánto de lo que Places descubrió se rescata por esta vía se mide
+  aparte, en el cruce, y es el número que ordena el tamaño del barrido.
+
+==================================================================================================

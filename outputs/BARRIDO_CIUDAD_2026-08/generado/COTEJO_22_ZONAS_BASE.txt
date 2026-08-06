@@ -1,0 +1,102 @@
+==================================================================================================
+LAS 22 ZONAS DEL ATLAS, RECALCULADAS DESDE LA BASE · 0 REQUESTS
+==================================================================================================
+fecha 2026-08-05 · base de 27.727 locales · ninguna cifra publicada se toca
+
+§1 · EL COTEJO, ZONA POR ZONA
+--------------------------------------------------------------------------------------------------
+  ref  zona                           publicada    base   razón  padrón  corrob.  familia
+  R01  Palermo                                —    1380       —     406      350  sin conteo
+  R02  Avenida Corrientes                     —     362       —     132       95  sin conteo
+  R03  San Telmo                              —      72       —      18       15  sin conteo
+  R04  Puerto Madero                          —     363       —      62       78  sin conteo
+  R05  Belgrano                           697.0     354    0,51     100       76  relevamiento anterior
+  R06  Recoleta                               —     728       —     198      191  sin conteo
+  R07  Costanera Norte                     72.0      67    0,93       3       10  relevamiento anterior
+  R08  Villa Crespo                       646.0     836    1,29     233      167  relevamiento propio
+  R09  Chacarita                          327.0     206    0,63      55       51  relevamiento propio
+  R10  Caballito                          907.0     517    0,57     177      112  relevamiento propio
+  R11  Boulevard Caseros                   66.0      61    0,92       5        9  relevamiento propio
+  R12  Centro/Microcentro segmentado      797.0     969    1,22     327      271  minimo relevado
+  R13  Abasto                             314.0     378    1,20     180       77  minimo relevado
+  R14  Avenida Boedo                       79.0     247    3,13      74       38  directorio comercial
+  R15  Devoto                             119.0     428    3,60     139       75  directorio comercial
+  R16  Donado–Holmberg                     40.0     122    3,05      32       25  directorio comercial
+  R17  Villa Urquiza                      189.0     534    2,83     173      110  directorio comercial
+  R18  Esmeralda–Paraguay                 216.0     103    0,48      30       27  minimo relevado
+  R19  Federico Lacroze por tramos        211.0     187    0,89      54       48  minimo relevado
+  R20  García del Río                      40.0      61    1,52      16       14  minimo relevado
+  R21  La Paternal                        254.0     208    0,82      41       25  minimo relevado
+  R22  Villa Pueyrredón                   158.0     198    1,25      48       28  minimo relevado
+  5 zonas sin cifra publicada, que el cotejo no puede evaluar: R01 Palermo, R02 Avenida Corrientes, R03 San Telmo, R04 Puerto Madero, R06 Recoleta
+  La base sí las cuenta, y ese número es información nueva: son zonas que el Atlas describió sin poder contar.
+
+§2 · QUÉ ES CADA CIFRA PUBLICADA, Y QUÉ SE PUEDE CONCLUIR DE SU RAZÓN
+--------------------------------------------------------------------------------------------------
+  RELEVAMIENTO PROPIO · descriptiva, no valida nada
+    la cifra publicada es: capas administrativas + Google Places (72 % Places en R08, 71 % en R10)
+    4 zonas · razón base ÷ publicada 0,57 – 1,29 (mediana 0,78)
+      Consolidación de dos fuentes contra una de siete. Que la base la supere es la ganancia
+      esperada por sumar fuentes, no un problema de la base ni del conteo publicado. Que quede por
+      debajo tampoco prueba falta de cobertura: la base no tiene Places, que es el 70 % de esta
+      cifra.
+    [registro] banda escrita antes de correr: 0,30 – 1,00, 3 de 4 adentro.
+      Se conserva por trazabilidad y NO se lee como veredicto: El conteo publicado se hizo
+      cruzando fuentes sobre el territorio y la base todavía no tiene Places. Que la base
+      quede por debajo es lo esperado; que la superara obligaría a revisar el conteo de campo.
+
+  DIRECTORIO COMERCIAL · descriptiva, no valida nada
+    la cifra publicada es: Google Places solo (100 %)
+    4 zonas · razón base ÷ publicada 2,83 – 3,60 (mediana 3,09)
+      Una fuente contra siete. La razón mide cuánto agrega el resto de las fuentes sobre Places, y
+      nada más.
+    [registro] banda escrita antes de correr: 1,00 – 4,00, 4 de 4 adentro.
+      Se conserva por trazabilidad y NO se lee como veredicto: La cifra publicada salió sólo
+      de Google Places, que en la Ciudad recupera del orden del 12 % de un conteo de campo.
+      Overture aporta mucho más, así que la base tiene que superarla holgadamente.
+
+  MINIMO RELEVADO · COMPARACIÓN FALSABLE
+    la cifra publicada es: Google Places con tope de consulta, declarada «al menos»
+    7 zonas · razón base ÷ publicada 0,48 – 1,52 (mediana 1,20)
+      La ÚNICA comparación con dirección: la base debería alcanzar la cota. Pero sólo vale contada
+      sobre el mismo perímetro y el mismo universo de rubros que la corrida que la produjo — ver
+      diagnosticar_faltante_zonas.py.
+      NO ALCANZA LA COTA · R18 Esmeralda–Paraguay: publicada 216, base 103, razón 0,48
+      NO ALCANZA LA COTA · R19 Federico Lacroze por tramos: publicada 211, base 187, razón 0,89
+      NO ALCANZA LA COTA · R21 La Paternal: publicada 254, base 208, razón 0,82
+      Antes de leer esto como falta de cobertura hay que alinear perímetro y
+      universo de rubros: diagnosticar_faltante_zonas.py.
+    [registro] banda escrita antes de correr: 1,00 – 5,00, 4 de 7 adentro.
+      Se conserva por trazabilidad y NO se lee como veredicto: Son cotas inferiores por tope
+      de consulta. La base tiene que superarlas; si no lo hace, el problema está en la base.
+
+  RELEVAMIENTO ANTERIOR · descriptiva, no valida nada
+    la cifra publicada es: cifra de otra añada, método no reconstruido
+    2 zonas · razón base ÷ publicada 0,51 – 0,93 (mediana 0,72)
+      Sin expectativa. Se reporta el número y no se concluye de él.
+    [registro] banda escrita antes de correr: 0,30 – 3,00, 2 de 2 adentro.
+      Se conserva por trazabilidad y NO se lee como veredicto: Cifras de otra añada y de otro
+      método. La banda es ancha a propósito: no hay una expectativa fuerte y se reporta el
+      número sin forzarlo.
+
+§3 · QUÉ SIGNIFICA ESTO PARA LAS DOS VERDADES PARALELAS
+--------------------------------------------------------------------------------------------------
+  La base **no reproduce** las cifras del Atlas y no tenía por qué. Pero la razón entre las dos
+  tampoco decide cuál es mejor: **toda cifra publicada es una consolidación de fuentes** —una o
+  dos— y la base es una consolidación de siete. Que la base dé más es la ganancia aritmética de
+  sumar fuentes. Un cuadro de «cuántas zonas caen en banda» mediría el tamaño relativo de dos
+  consolidaciones y lo presentaría como validación; por eso se retiró.
+
+  De las cuatro familias, sólo minimo relevado admite una conclusión: su cifra está declarada como
+  cota inferior, así que tiene dirección. Las otras tres se reportan y no se concluyen.
+
+  Lo que NO se puede hacer con esto, y conviene decirlo antes de que alguien lo intente: corregir
+  una cifra publicada con la de la base. Son dos consolidaciones con distinta fecha, distinto
+  perímetro y distinto universo de rubros, y reemplazar una por otra sin decirlo rompería la
+  trazabilidad del Atlas.
+
+  Y falta una pieza para cerrar el cotejo del todo: **la base todavía no tiene Google Places**,
+  que es entre el 70 % y el 100 % de cada cifra publicada. Ese cotejo se repite después de la
+  primera tanda, si se corre.
+
+==================================================================================================

@@ -1,0 +1,122 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "fuentes": [
+    {
+      "fuente": "permisos_gastro",
+      "titulo": "Permisos Uso Espacio Público · Área gastronómica",
+      "organismo": "Secretaría de Atención Ciudadana",
+      "licencia": "CC-BY-2.5-AR",
+      "que_mide": "permisos de mesas y sillas en la vereda, con fecha de vencimiento y estado",
+      "que_no_mide": "no es un padrón de locales: sólo los que pidieron permiso de vereda",
+      "filas": 509,
+      "modo_ubicacion": "direccion",
+      "es_tramo": false,
+      "con_fecha_de_vencimiento": 135,
+      "vigentes_hoy": 135,
+      "vencidos": 0,
+      "vencimiento_maximo": "2031-12-01",
+      "estados": {
+        "OTORGADO": 420,
+        "DENEGADO": 75,
+        "REVOCADO": 11
+      },
+      "con_geometria": 0,
+      "barrio_declarado_reconocido": 497,
+      "barrio_declarado_desconocido": [
+        "LA PATERNAL",
+        "MONTSERRAT"
+      ],
+      "con_calle_y_altura": 509
+    },
+    {
+      "fuente": "venta_alimentos",
+      "titulo": "Permisos para la venta de alimentos en el espacio público",
+      "organismo": "Secretaría de Atención Ciudadana",
+      "licencia": "CC-BY (Creative Commons Attribution)",
+      "que_mide": "permisos de venta de alimentos en la vía pública: puestos y food trucks",
+      "que_no_mide": "no cubre locales a la calle; y su ubicación es un topónimo (`COSTANERA SUR`), no una dirección: no se puede llevar a un punto",
+      "filas": 71,
+      "modo_ubicacion": "barrio",
+      "es_tramo": false,
+      "con_fecha_de_vencimiento": 69,
+      "vigentes_hoy": 59,
+      "vencidos": 10,
+      "vencimiento_maximo": "2027-02-19",
+      "estados": {
+        "OTORGADO": 68,
+        "REVOCADO": 2,
+        "A LA FIRMA": 1
+      },
+      "con_geometria": 0,
+      "barrio_declarado_reconocido": 71,
+      "barrio_declarado_desconocido": []
+    },
+    {
+      "fuente": "bailables",
+      "titulo": "Locales Bailables · registro histórico acumulado",
+      "organismo": "Agencia Gubernamental de Control (AGC)",
+      "licencia": "CC-BY-2.5-AR",
+      "que_mide": "locales bailables inscriptos, con capacidad declarada y estado del registro",
+      "que_no_mide": "no es gastronomía: es nocturnidad. Entra como contexto, no al anillo",
+      "filas": 321,
+      "modo_ubicacion": "punto",
+      "es_tramo": false,
+      "filas_antes_de_colapsar": 54771,
+      "colapsado_por": "numero_registro",
+      "con_fecha_de_vencimiento": 160,
+      "vigentes_hoy": 0,
+      "vencidos": 160,
+      "vencimiento_maximo": "2020-03-07",
+      "con_geometria": 321,
+      "dentro_de_la_ciudad": 319,
+      "registros_distintos_asignados": 319
+    },
+    {
+      "fuente": "espacios_culturales",
+      "titulo": "Espacios culturales",
+      "organismo": "Ministerio de Cultura",
+      "licencia": "CC-BY-2.5-AR",
+      "que_mide": "espacios culturales relevados por Cultura; incluye la subcategoría bares",
+      "que_no_mide": "no es un padrón gastronómico: el bar entra si tiene programación cultural",
+      "filas": 3031,
+      "modo_ubicacion": "punto",
+      "es_tramo": false,
+      "con_geometria": 3031,
+      "dentro_de_la_ciudad": 3030,
+      "registros_distintos_asignados": 3030
+    },
+    {
+      "fuente": "ciclistas",
+      "titulo": "Comercios con beneficios a ciclistas",
+      "organismo": "Secretaría de Transporte y Obras Públicas",
+      "licencia": "CC-BY-2.5-AR",
+      "que_mide": "comercios adheridos al programa de beneficios a ciclistas",
+      "que_no_mide": "es una adhesión voluntaria a un programa, no un universo de comercios",
+      "filas": 107,
+      "modo_ubicacion": "punto",
+      "es_tramo": false,
+      "con_geometria": 107,
+      "dentro_de_la_ciudad": 107,
+      "registros_distintos_asignados": 107
+    },
+    {
+      "fuente": "decks",
+      "titulo": "Expansión de calzada gastronómica (decks)",
+      "organismo": "Secretaría de Transporte y Obras Públicas",
+      "licencia": "CC-BY-2.5-AR",
+      "que_mide": "tramos de calzada donde se autorizó expansión gastronómica",
+      "que_no_mide": "no son locales ni puntos: son segmentos de calle con rango de altura",
+      "filas": 23304,
+      "modo_ubicacion": "punto",
+      "es_tramo": true,
+      "con_geometria": 23304,
+      "dentro_de_la_ciudad": 23308,
+      "registros_distintos_asignados": 23303
+    }
+  ],
+  "no_cargadas": {
+    "fiscalizaciones": "una fila por inspección, no por local. Las cohortes 2020-2025 traen sección/manzana/parcela y ninguna coordenada; las de 2018-2019 sí traen long/lat. Sirve para vigencia por parcela DESPUÉS de colapsar por SMP, y ese colapso es trabajo propio que no se hace de paso.",
+    "vigiladores-locales-bailables": "registro de personas, no de locales. No entra.",
+    "capacitadores-manipuladores-alimentos": "registro de personas. No entra."
+  }
+}

@@ -1,0 +1,23 @@
+rid,zona_publicada,metodo,naturaleza,relevado
+R01,Palermo,sin conteo,no_localizada,
+R02,Avenida Corrientes,sin conteo,no_localizada,
+R03,San Telmo,sin conteo,no_localizada,
+R04,Puerto Madero,sin conteo,no_localizada,
+R05,Belgrano,relevamiento anterior,historica_metodologica,697
+R06,Recoleta,sin conteo,historica_metodologica,
+R07,Costanera Norte,relevamiento anterior,historica_metodologica,72
+R08,Villa Crespo,relevamiento propio,exacta,646
+R09,Chacarita,relevamiento propio,exacta,327
+R10,Caballito,relevamiento propio,exacta,907
+R11,Boulevard Caseros,relevamiento propio,exacta,66
+R12,Centro/Microcentro segmentado,minimo relevado,cota_inferior,797
+R13,Abasto,minimo relevado,cota_inferior,314
+R14,Avenida Boedo,directorio comercial,exacta,79
+R15,Devoto,directorio comercial,exacta,119
+R16,Donado–Holmberg,directorio comercial,exacta,40
+R17,Villa Urquiza,directorio comercial,exacta,189
+R18,Esmeralda–Paraguay,minimo relevado,cota_inferior,216
+R19,Federico Lacroze por tramos,minimo relevado,cota_inferior,211
+R20,García del Río,minimo relevado,cota_inferior,40
+R21,La Paternal,minimo relevado,cota_inferior,254
+R22,Villa Pueyrredón,minimo relevado,cota_inferior,158

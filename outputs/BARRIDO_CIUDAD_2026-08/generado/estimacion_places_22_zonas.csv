@@ -1,0 +1,23 @@
+rid,zona,km2,universo_esperado,celdas,requests,tiene_cifra_publicada
+R01,Palermo,2.71,2231,56,112,no
+R02,Avenida Corrientes,0.5,725,19,38,no
+R03,San Telmo,0.25,99,3,6,no
+R04,Puerto Madero,3.14,341,13,26,no
+R05,Belgrano,0.4,697,18,36,si
+R06,Recoleta,1.4,1088,28,56,no
+R07,Costanera Norte,0.39,72,2,4,si
+R08,Villa Crespo,3.35,646,17,34,si
+R09,Chacarita,0.95,327,9,18,si
+R10,Caballito,2.25,907,23,46,si
+R11,Boulevard Caseros,0.5,66,2,4,si
+R12,Centro/Microcentro segmentado,1.62,797,20,40,si
+R13,Abasto,1.09,314,8,16,si
+R14,Avenida Boedo,1.79,79,8,8,si
+R15,Devoto,4.79,119,20,20,si
+R16,Donado–Holmberg,1.19,40,5,5,si
+R17,Villa Urquiza,4.46,189,18,18,si
+R18,Esmeralda–Paraguay,0.17,216,6,12,si
+R19,Federico Lacroze por tramos,0.89,211,6,12,si
+R20,García del Río,0.28,40,2,2,si
+R21,La Paternal,3.21,254,13,13,si
+R22,Villa Pueyrredón,3.05,158,13,13,si

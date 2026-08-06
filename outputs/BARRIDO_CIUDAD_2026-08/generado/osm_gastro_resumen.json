@@ -1,0 +1,28 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "fuente": "E05 · OpenStreetMap vía Overpass",
+  "licencia": "ODbL · atribución y compartir-igual sobre bases derivadas",
+  "costo": "0 requests de Places; Overpass es gratuito",
+  "elementos_crudos": 11914,
+  "poi_con_coordenada": 11914,
+  "poi_deduplicados": 11826,
+  "poi_colapsados": 88,
+  "sensibilidad_radio_dedup": {
+    "25.0": 11847,
+    "50.0": 11826,
+    "100.0": 11792,
+    "200.0": 11702
+  },
+  "osm_nucleo": 6427,
+  "osm_ampliado": 7270,
+  "descartados": 4556,
+  "padron_nucleo_48": 6861,
+  "rus_nucleo_48": 9108,
+  "osm_sobre_padron_ciudad": 0.937,
+  "poi_con_nombre": 6932,
+  "poi_con_direccion_en_tags": 3970,
+  "poi_con_check_date": 815,
+  "razon_osm_padron_min": 0.32,
+  "razon_osm_padron_mediana": 0.8,
+  "razon_osm_padron_max": 3.28
+}

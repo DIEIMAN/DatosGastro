@@ -1,0 +1,96 @@
+rid,zona,metodo,celda_id,lado_m
+R05,Belgrano,relevamiento anterior,R05_0000,1000.0
+R05,Belgrano,relevamiento anterior,R05_0001,1000.0
+R05,Belgrano,relevamiento anterior,R05_0100,1000.0
+R05,Belgrano,relevamiento anterior,R05_0101,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0002,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0003,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0100,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0101,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0102,1000.0
+R07,Costanera Norte,relevamiento anterior,R07_0200,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0000,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0001,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0002,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0100,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0101,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0102,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0201,1000.0
+R08,Villa Crespo,relevamiento propio,R08_0202,1000.0
+R09,Chacarita,relevamiento propio,R09_0000,1000.0
+R09,Chacarita,relevamiento propio,R09_0001,1000.0
+R09,Chacarita,relevamiento propio,R09_0100,1000.0
+R09,Chacarita,relevamiento propio,R09_0101,1000.0
+R09,Chacarita,relevamiento propio,R09_0200,1000.0
+R09,Chacarita,relevamiento propio,R09_0201,1000.0
+R10,Caballito,relevamiento propio,R10_0000,1000.0
+R10,Caballito,relevamiento propio,R10_0001,1000.0
+R10,Caballito,relevamiento propio,R10_0002,1000.0
+R10,Caballito,relevamiento propio,R10_0100,1000.0
+R10,Caballito,relevamiento propio,R10_0101,1000.0
+R11,Boulevard Caseros,relevamiento propio,R11_0000,1000.0
+R11,Boulevard Caseros,relevamiento propio,R11_0001,1000.0
+R11,Boulevard Caseros,relevamiento propio,R11_0100,1000.0
+R11,Boulevard Caseros,relevamiento propio,R11_0101,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0000,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0001,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0100,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0101,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0200,1000.0
+R12,Centro/Microcentro segmentado,minimo relevado,R12_0201,1000.0
+R13,Abasto,minimo relevado,R13_0000,1000.0
+R13,Abasto,minimo relevado,R13_0001,1000.0
+R14,Avenida Boedo,directorio comercial,R14_0000,1000.0
+R14,Avenida Boedo,directorio comercial,R14_0100,1000.0
+R14,Avenida Boedo,directorio comercial,R14_0200,1000.0
+R15,Devoto,directorio comercial,R15_0000,1000.0
+R15,Devoto,directorio comercial,R15_0001,1000.0
+R15,Devoto,directorio comercial,R15_0002,1000.0
+R15,Devoto,directorio comercial,R15_0100,1000.0
+R15,Devoto,directorio comercial,R15_0101,1000.0
+R15,Devoto,directorio comercial,R15_0102,1000.0
+R15,Devoto,directorio comercial,R15_0200,1000.0
+R15,Devoto,directorio comercial,R15_0201,1000.0
+R15,Devoto,directorio comercial,R15_0202,1000.0
+R15,Devoto,directorio comercial,R15_0300,1000.0
+R15,Devoto,directorio comercial,R15_0301,1000.0
+R15,Devoto,directorio comercial,R15_0302,1000.0
+R15,Devoto,directorio comercial,R15_0401,1000.0
+R16,Donado–Holmberg,directorio comercial,R16_0000,1000.0
+R16,Donado–Holmberg,directorio comercial,R16_0001,1000.0
+R16,Donado–Holmberg,directorio comercial,R16_0100,1000.0
+R16,Donado–Holmberg,directorio comercial,R16_0101,1000.0
+R16,Donado–Holmberg,directorio comercial,R16_0200,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0001,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0002,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0003,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0100,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0101,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0102,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0103,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0200,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0201,1000.0
+R17,Villa Urquiza,directorio comercial,R17_0202,1000.0
+R18,Esmeralda–Paraguay,minimo relevado,R18_0000,1000.0
+R19,Federico Lacroze por tramos,minimo relevado,R19_0000,1000.0
+R19,Federico Lacroze por tramos,minimo relevado,R19_0100,1000.0
+R19,Federico Lacroze por tramos,minimo relevado,R19_0101,1000.0
+R19,Federico Lacroze por tramos,minimo relevado,R19_0200,1000.0
+R19,Federico Lacroze por tramos,minimo relevado,R19_0201,1000.0
+R20,García del Río,minimo relevado,R20_0000,1000.0
+R21,La Paternal,minimo relevado,R21_0000,1000.0
+R21,La Paternal,minimo relevado,R21_0001,1000.0
+R21,La Paternal,minimo relevado,R21_0002,1000.0
+R21,La Paternal,minimo relevado,R21_0003,1000.0
+R21,La Paternal,minimo relevado,R21_0100,1000.0
+R21,La Paternal,minimo relevado,R21_0101,1000.0
+R21,La Paternal,minimo relevado,R21_0200,1000.0
+R21,La Paternal,minimo relevado,R21_0201,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0000,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0001,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0002,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0100,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0101,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0102,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0200,1000.0
+R22,Villa Pueyrredón,minimo relevado,R22_0201,1000.0

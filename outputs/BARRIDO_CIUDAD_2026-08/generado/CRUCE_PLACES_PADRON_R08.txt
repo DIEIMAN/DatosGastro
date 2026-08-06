@@ -1,0 +1,90 @@
+==================================================================================================
+CRUCE PLACES × BASE DOCUMENTAL · R08 · Villa Crespo · CERO REQUESTS
+==================================================================================================
+
+§1 · LOS DOS CONJUNTOS
+--------------------------------------------------------------------------------------------------
+  Places, unión de las tres familias, núcleo, dentro de la envolvente :    81
+  Padrón, direcciones núcleo sin outliers, dentro de la envolvente    :   233
+  Cifra publicada del Atlas (conteo de campo)                         :   646
+  Relevamiento, parcelas gastronómicas dentro de la envolvente       :   892
+  Control de aceptación contra la capa homogénea: reproduce.
+
+§2 · CÓMO SE REPARTEN LOS PUNTOS DE PLACES
+--------------------------------------------------------------------------------------------------
+  categoría                                                       puntos   % del total
+  1 · dirección en el padrón núcleo                                   27         33,3 %
+  2 · a menos de 25 m de una dirección núcleo                          7          8,6 %
+  3 · dirección en el padrón, otro anillo                              0          0,0 %
+  4 · parcela gastronómica del Relevamiento (no está en el padrón)      26         32,1 %
+  5 · sin coincidencia documental                                     21         25,9 %
+  TOTAL                                                               81       100,0 %
+
+  La categoría 1 es coincidencia de dirección: misma calle y altura dentro de ±10. La 2 no
+  coincide en dirección pero tiene una dirección núcleo del padrón a menos de 25 m, y va aparte
+  porque a esa distancia también está el vecino de al lado. Las 3 y 4 son el control contra el
+  resto de la base documental: sin ellas, «no está en el padrón núcleo» se leería como «no lo
+  tiene nadie».
+
+§3 · DE QUÉ ESTÁ HECHO LO QUE NO COINCIDE
+--------------------------------------------------------------------------------------------------
+  En calles donde el padrón núcleo no tiene NINGUNA dirección :    6
+  En la misma calle, a más de ±10 de altura                  :   48
+  Distancia en numeración a la dirección núcleo más cercana de la misma calle: mediana 68, mínimo 11, máximo 354
+
+  De los 21 puntos sin ninguna coincidencia documental, 9 están a ≤ 10 m de una parcela gastronómica del Relevamiento —posible desplazamiento del punto de Google, no descubrimiento— y 8 a más de 30 m de la más cercana.
+
+  Sensibilidad a la tolerancia de altura (el único parámetro elegido a mano):
+    tolerancia       coinciden   % del total
+    ±5                      20         24,7 %
+    ±10                     27         33,3 %  <- la usada
+    ±20                     36         44,4 %
+    ±30                     41         50,6 %
+    ±50                     45         55,6 %
+  Subir la tolerancia no rescata el número: a ±30 ya se están dando por iguales direcciones de
+  manzanas distintas y de veredas opuestas —en la Ciudad el centenar cambia de cuadra y la paridad
+  cambia de vereda— y aun así el reparto se mueve poco. El resultado no depende de dónde se puso
+  el corte.
+
+§4 · EL VEREDICTO, CONTRA LAS BANDAS ESCRITAS ANTES DE CORRER
+--------------------------------------------------------------------------------------------------
+  Puntos de Places SIN dirección en el padrón núcleo :   54 de 81  =  66,7 %
+  Idem, contando también la proximidad ≤ 25 m       :   47 de 81  =  58,0 %
+  Puntos sin coincidencia en NINGUNA documental      :   21 de 81  =  25,9 %
+
+  Contra qué se lee el 33,3 % de coincidencia: el padrón núcleo cubre el 36,1 % de la cifra de
+  campo (233 de 646). Si Places sacara sus puntos al azar de los locales que hay en la calle, ésa
+  es exactamente la proporción que se esperaría ver coincidir. Se observó 33,3 %: la diferencia es
+  de 0,5 desvíos y no se distingue del ruido de muestreo. **Places no está re-sirviendo la base
+  documental**: su solape con el padrón es el que daría el azar, ni más ni menos. Lo que ve, lo ve
+  por su cuenta.
+
+  >>> PLACES DESCUBRE · el barrido recupera valor propio
+      Una parte grande de lo que Places trae no está en ninguna fuente documental. Entonces el barrido
+      aporta cobertura, no sólo vigencia, y la grilla hay que redimensionarla para descubrimiento —no
+      achicarla—. Se replantea con Diego antes de correr nada.
+
+§5 · LA LECTURA RECÍPROCA · QUÉ APORTA PLACES QUE NINGUNA DOCUMENTAL DA
+--------------------------------------------------------------------------------------------------
+  Direcciones núcleo del padrón que Places confirma abiertas hoy: 26 de 233  (11,2 %)
+  Estado operativo declarado por Places: {'OPERATIONAL': 81}
+
+  Ésta es la única pregunta que Places contesta y las documentales no: el padrón no registra bajas
+  y el Relevamiento es una foto de 2022-24. Lo que NO se puede leer al revés: las 207 direcciones
+  que Places no confirma no son locales cerrados. Pueden estar cerradas o pueden estar pasadas el
+  corte del ranking, y la fuente no distingue las dos cosas. Se reporta como cobertura, nunca como
+  tasa de cierre.
+
+§6 · LOS LÍMITES DE ESTE CRUCE
+--------------------------------------------------------------------------------------------------
+  1. La unidad es la dirección, no el local. Un negocio nuevo en una dirección que el padrón
+  registró con otro titular cuenta como coincidencia. El aporte propio de Places no puede ser
+  menor que el que sale acá, y sí puede ser algo mayor.
+  2. El cruce se hace sobre los puntos que Places SÍ trajo. No dice nada sobre los que quedaron
+  pasados el corte del ranking, que la captura-recaptura ya mostró que existen y tienen
+  probabilidad de captura cero.
+  3. Es una zona. Villa Crespo es la mejor calibrada que hay —646 a pie— y por eso se eligió, pero
+  el reparto entre confirmación y descubrimiento puede ser otro donde la base documental es más
+  flaca. Es la advertencia que corresponde antes de generalizar a 48 barrios.
+
+==================================================================================================

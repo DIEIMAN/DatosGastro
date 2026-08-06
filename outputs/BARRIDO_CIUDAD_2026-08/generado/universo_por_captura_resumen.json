@@ -1,0 +1,28 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "requests_gastados": 0,
+  "m_minimo": 7,
+  "tolerancia_acierto": 0.25,
+  "zonas": 17,
+  "zonas_leidas": 10,
+  "campo_aciertos": 1,
+  "campo_total": 3,
+  "por_metodo": {
+    "relevamiento propio": {
+      "cumplen": 1,
+      "leidas": 3
+    },
+    "minimo relevado": {
+      "cumplen": 2,
+      "leidas": 4
+    },
+    "directorio comercial": {
+      "cumplen": 3,
+      "leidas": 3
+    },
+    "relevamiento anterior": {
+      "cumplen": 0,
+      "leidas": 0
+    }
+  }
+}

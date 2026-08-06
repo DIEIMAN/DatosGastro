@@ -1,0 +1,128 @@
+==================================================================================================
+OPENSTREETMAP (E05) · CAPA GASTRONÓMICA DE LA CIUDAD · CERO COSTO
+==================================================================================================
+descarga: 2026-08-05T17:36:58 · endpoint Overpass · 11.914 elementos crudos
+
+§1 · CONTROL DE VOCABULARIO · qué trajo cada tag
+--------------------------------------------------------------------------------------------------
+  anillo · rubro                         POI   tags de OSM
+  núcleo · Restaurante                  2017   amenity=restaurant
+  núcleo · Bar                           576   amenity=bar, amenity=pub, amenity=biergarten
+  núcleo · Cafe                         1629   amenity=cafe
+  núcleo · Comida al paso                998   amenity=fast_food, amenity=food_court
+  núcleo · Heladeria                     542   amenity=ice_cream, shop=ice_cream
+  núcleo · Pizzeria                      459   cuisine=pizza (reparte, no suma)
+  núcleo · Parrilla                      253   cuisine=argentinian|asado|barbecue|steak_house|grill|parrilla (reparte, no suma)
+  ampliado · Panaderia                   667   shop=bakery
+  ampliado · Pasteleria                  180   shop=pastry, shop=confectionery
+  ampliado · Catering                      3   craft=caterer
+
+  descartados aunque la búsqueda los traiga (mismo criterio que el Relevamiento):
+    convenience                               1139
+    supermarket                               1088
+    greengrocer                                595
+    butcher                                    543
+    health_food                                233
+    vending_machine                            170
+    deli                                       143
+    cheese                                     136
+    pasta                                      130
+    alcohol                                    103
+    nightclub                                   70
+    wine                                        59
+    TOTAL descartado                          4556
+
+§2 · DEDUPLICACIÓN INTERNA Y SENSIBILIDAD AL RADIO
+--------------------------------------------------------------------------------------------------
+  POI con coordenada, antes de deduplicar :   11914
+  POI después de deduplicar (50 m)      :   11826   (88 colapsados)
+
+    radio           POI que quedan
+    25 m                     11847
+    50 m                     11826  <- el usado
+    100 m                    11792
+    200 m                    11702
+  Entre 25 y 200 m el resultado se mueve poco: el criterio pide además nombre idéntico, y dos
+  locales con el mismo nombre a doscientos metros son la excepción, no la regla. El corte no está
+  sosteniendo el número.
+
+§3 · LA CIUDAD · LOS TRES TOTALES, CON SU UNIDAD DECLARADA
+--------------------------------------------------------------------------------------------------
+  OSM · POI núcleo, deduplicados                          :    6427
+  OSM · POI ampliado                                      :    7270
+  Padrón · direcciones núcleo (suma de los 48, sin anómalas):    6861
+  Relevamiento · parcelas núcleo activas                  :    9108
+
+  OSM ÷ padrón   = 0,94
+  OSM ÷ Relevamiento = 0,71
+
+  Los tres números cuentan cosas distintas —direcciones, parcelas y POI— y por eso las razones se
+  leen como factor de captura entre fuentes, no como corrección de una sobre otra. Ninguno de los
+  tres es el universo real: el único conteo de campo que existe está en las cuatro zonas del Atlas
+  relevadas a pie.
+
+§4 · COBERTURA POR BARRIO · dónde OSM aporta y dónde no
+--------------------------------------------------------------------------------------------------
+  los 10 barrios donde OSM encuentra más respecto del padrón:
+               osm_nucleo  dir_nucleo  rus_nucleo  osm_sobre_padron  osm_sobre_rus
+PUERTO MADERO         128          39          38              3.28           3.37
+VILLA SOLDATI          35          11          32              3.18           1.09
+BELGRANO              631         336         449              1.88           1.41
+SAN TELMO             172         112         168              1.54           1.02
+CHACARITA             110          83         133              1.33           0.83
+NUNEZ                 160         121         177              1.32           0.90
+RECOLETA              553         429         549              1.29           1.01
+RETIRO                216         174         202              1.24           1.07
+PALERMO              1128         928        1313              1.22           0.86
+AGRONOMIA              25          21          31              1.19           0.81
+
+  los 10 donde encuentra menos:
+                   osm_nucleo  dir_nucleo  rus_nucleo  osm_sobre_padron  osm_sobre_rus
+PATERNAL                   17          31          53              0.55           0.32
+CONSTITUCION               60         109         132              0.55           0.45
+ALMAGRO                   159         302         358              0.53           0.44
+BALVANERA                 242         468         474              0.52           0.51
+VILLA DEL PARQUE           55         107         147              0.51           0.37
+PARQUE PATRICIOS           44          87         112              0.51           0.39
+VELEZ SARSFIELD            30          60          62              0.50           0.48
+PARQUE AVELLANEDA          23          50          62              0.46           0.37
+FLORES                    101         248         329              0.41           0.31
+VILLA RIACHUELO             8          25          51              0.32           0.16
+
+  La razón OSM ÷ padrón va de 0,32 a 3,28, con mediana 0,80. Esa dispersión —de 10 veces entre la
+  punta y la cola— es el sesgo de cobertura de OSM medido, no supuesto: la fuente está mucho mejor
+  mapeada donde ya sabíamos que iba a estarlo. Es exactamente la razón por la que OSM entra como
+  cuarta fuente y no como sustituto de ninguna.
+
+§5 · LO QUE OSM TRAE Y LAS OTRAS NO · dirección, nombre y fecha
+--------------------------------------------------------------------------------------------------
+  POI gastronómicos con nombre        :   6932  (95,4 %)
+  POI con calle y altura en los tags  :   3970  (54,6 %)
+  POI con fecha de verificación en campo (`check_date`):    815  (11,2 %)
+  Última edición del POI: mediana 2024-08-11, más antigua 2009-09-01, más reciente 2026-08-05
+    editados en 2026:    947
+    editados en 2025:   1056
+    editados en 2024:   3463
+    editados en 2023:    392
+    editados en 2022:    186
+    editados en 2021:    106
+
+  La fecha de última edición NO es la fecha en que el local existía: alguien puede corregir hoy el
+  horario de un local cerrado en 2019, y nadie edita el POI de un local que sigue abierto sin
+  cambios. Se informa como lo que es —cuán vivo está el mapeo— y no como señal de vigencia del
+  local. `check_date` sí es una verificación declarada en el terreno, y por eso se cuenta aparte.
+
+§6 · POR QUÉ ESTO IMPORTA PARA LA CAPA PUBLICABLE
+--------------------------------------------------------------------------------------------------
+  De los 7270 POI gastronómicos, 6932 tienen nombre y 3970 tienen calle y altura en los propios
+  tags. Ésa es identidad de origen abierto: un registro emparejado con OSM se puede publicar con
+  nombre y dirección, y uno que sólo existe en Google Places, no. La medición de cuánto rescata
+  efectivamente ese emparejamiento está en `cruzar_fuentes_abiertas.py`, que es el paso siguiente.
+
+  ODbL, y hay que resolverlo antes de publicar, no después: OSM es redistribuible pero con
+  atribución y con cláusula de compartir-igual sobre las bases derivadas. Una base pública que
+  incorpore geometrías o atributos de OSM puede quedar alcanzada por esa cláusula. No lo decide
+  este script ni el equipo técnico: es una decisión de la Dirección, con la letra de la licencia a
+  la vista.
+
+==================================================================================================

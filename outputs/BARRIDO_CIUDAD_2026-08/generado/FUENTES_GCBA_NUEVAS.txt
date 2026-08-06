@@ -1,0 +1,112 @@
+==================================================================================================
+FUENTES NUEVAS DEL GCBA CON COORDENADA · descarga y perfilado
+==================================================================================================
+fecha 2026-08-05 · todas con licencia abierta declarada en BA Data
+
+§1 · QUÉ TRAJO CADA UNA
+--------------------------------------------------------------------------------------------------
+  fuente                   filas  con punto    ubicación   licencia
+  permisos_gastro            509          0    direccion   CC-BY-2.5-AR
+  venta_alimentos             71          0       barrio   CC-BY (Creative Commons Attribution)
+  bailables                  321        321        punto   CC-BY-2.5-AR
+  espacios_culturales       3031       3031        punto   CC-BY-2.5-AR
+  ciclistas                  107        107        punto   CC-BY-2.5-AR
+  decks                    23304      23304        punto   CC-BY-2.5-AR
+
+  · Permisos Uso Espacio Público · Área gastronómica
+    mide      : permisos de mesas y sillas en la vereda, con fecha de vencimiento y estado
+    NO mide   : no es un padrón de locales: sólo los que pidieron permiso de vereda
+    vigencia  : 135 vigentes hoy · 0 vencidos · último vencimiento 2031-12-01
+    estado    : OTORGADO 420 · DENEGADO 75 · REVOCADO 11
+    ubicación : calle y altura en 509 filas; hay que geocodificar con USIG antes de que sirva para dibujar
+
+  · Permisos para la venta de alimentos en el espacio público
+    mide      : permisos de venta de alimentos en la vía pública: puestos y food trucks
+    NO mide   : no cubre locales a la calle; y su ubicación es un topónimo (`COSTANERA SUR`), no una dirección: no se puede llevar a un punto
+    vigencia  : 59 vigentes hoy · 10 vencidos · último vencimiento 2027-02-19
+    estado    : OTORGADO 68 · REVOCADO 2 · A LA FIRMA 1
+    ubicación : sólo barrio declarado. No se puede llevar a un punto
+
+  · Locales Bailables · registro histórico acumulado
+    mide      : locales bailables inscriptos, con capacidad declarada y estado del registro
+    NO mide   : no es gastronomía: es nocturnidad. Entra como contexto, no al anillo
+    vigencia  : 0 vigentes hoy · 160 vencidos · último vencimiento 2020-03-07
+
+  · Espacios culturales
+    mide      : espacios culturales relevados por Cultura; incluye la subcategoría bares
+    NO mide   : no es un padrón gastronómico: el bar entra si tiene programación cultural
+
+  · Comercios con beneficios a ciclistas
+    mide      : comercios adheridos al programa de beneficios a ciclistas
+    NO mide   : es una adhesión voluntaria a un programa, no un universo de comercios
+
+  · Expansión de calzada gastronómica (decks)
+    mide      : tramos de calzada donde se autorizó expansión gastronómica
+    NO mide   : no son locales ni puntos: son segmentos de calle con rango de altura
+
+§2 · LA VIGENCIA CON FECHA, QUE ES LO QUE NINGUNA OTRA FUENTE TIENE
+--------------------------------------------------------------------------------------------------
+  permisos_gastro          135 vigentes de    135  (100,0 %)
+  venta_alimentos           59 vigentes de     69  (85,5 %)
+  bailables                  0 vigentes de    160  (0,0 %)
+
+  Un permiso vigente es **evidencia positiva fechada**, que es lo que el esquema pide para
+  `frescura` (§4). Y hay que decir exactamente qué evidencia es: dice que alguien pagó por tener
+  mesas en la vereda hasta tal fecha, no que el local esté abierto hoy. La diferencia se sostiene
+  en el vocabulario o el campo deja de significar nada.
+
+§3 · REPARTO POR BARRIO
+--------------------------------------------------------------------------------------------------
+               permisos_gastro_registros  venta_alimentos_registros  bailables_registros  espacios_culturales_registros  ciclistas_registros  decks_registros  dir_nucleo
+PALERMO                               88                         12                   83                            291                   53             1032         928
+CABALLITO                             36                          5                    4                            102                    3              898         367
+BELGRANO                              32                          0                   27                            103                    3              827         336
+VILLA CRESPO                          31                          0                    2                            106                    3              534         236
+SAN NICOLAS                           25                          0                   22                            368                    0                2         433
+RECOLETA                              24                          0                   36                            322                    9              267         429
+BALVANERA                             22                         24                   22                            224                    3              130         468
+VILLA URQUIZA                         22                          0                    0                             31                    3              889         206
+VILLA DEVOTO                          20                          0                    2                             21                    0             1253         156
+SAAVEDRA                              17                          0                    2                             28                    7              792          77
+COLEGIALES                            15                          0                    2                             27                    3              362         139
+ALMAGRO                               14                          0                    6                            148                    3              223         302
+SAN TELMO                             12                          1                    2                            116                    1               43         112
+RETIRO                                12                          0                   10                            156                    4               26         174
+FLORES                                11                          2                   18                             53                    0             1082         248
+
+  (48 barrios completos en el CSV; acá van los 15 primeros)
+
+§4 · LO QUE SE MIRÓ Y NO SE CARGÓ, CON EL MOTIVO
+--------------------------------------------------------------------------------------------------
+  · fiscalizaciones
+      una fila por inspección, no por local. Las cohortes 2020-2025 traen sección/manzana/parcela
+      y ninguna coordenada; las de 2018-2019 sí traen long/lat. Sirve para vigencia por parcela
+      DESPUÉS de colapsar por SMP, y ese colapso es trabajo propio que no se hace de paso.
+  · vigiladores-locales-bailables
+      registro de personas, no de locales. No entra.
+  · capacitadores-manipuladores-alimentos
+      registro de personas. No entra.
+
+§5 · LA FICHA DE CKAN NO COINCIDE CON EL ARCHIVO, Y HAY QUE SABERLO
+--------------------------------------------------------------------------------------------------
+  La ficha del portal declara para los dos padrones de permisos columnas de coordenada —`x`/`y` en
+  el gastronómico, `lat`/`long` en el de alimentos—. **Los archivos publicados hoy no las traen.**
+  El gastronómico trae `Dirección` y `Altura`, que sirven pero hay que geocodificar; el de
+  alimentos trae un topónimo (`COSTANERA SUR`) y el barrio, y no se puede llevar a un punto sin un
+  criterio propio.
+
+  No es un defecto de estas dos fuentes: es un aviso sobre el método. El barrido del catálogo por
+  API lee `attributesDescription`, que es metadato declarado, no el archivo. Sirve para ordenar
+  453 datasets y decidir cuáles abrir; **no sirve para afirmar que un dataset tiene coordenadas**.
+  Eso se comprueba abriéndolo, y por eso el inventario ordena candidatos en vez de decidir
+  integraciones.
+
+§6 · PRIVACIDAD
+--------------------------------------------------------------------------------------------------
+  Cuatro de estas fuentes traen datos personales —`titular`, `DNI_CUIT`, `nro_documento`,
+  `TELEFONO`, `MAIL`—. Ninguna de esas columnas se abrió: cada fuente declara su lista de columnas
+  permitidas y el `usecols` se arma desde ahí, así que lo prohibido no entra en memoria. Hay
+  además un control que corta la corrida si una columna prohibida aparece en una salida, y este
+  informe no se habría escrito si hubiera saltado.
+
+==================================================================================================

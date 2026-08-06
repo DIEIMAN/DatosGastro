@@ -1,0 +1,60 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "locales_en_la_base": 27727,
+  "places_en_la_base": false,
+  "conteo_en_banda_retirado": "La cifra publicada de todas las familias es una consolidación de fuentes, no una medición del territorio (METODOLOGIA_REAL_DEL_ATLAS.md §1 y §3). Su razón contra la base compara dos consolidaciones de distinto tamaño y no valida la base.",
+  "por_familia": {
+    "relevamiento propio": {
+      "zonas": 4,
+      "comparacion_falsable": false,
+      "composicion_de_la_cifra": "capas administrativas + Google Places (72 % Places en R08, 71 % en R10)",
+      "razon_min": 0.57,
+      "razon_mediana": 0.775,
+      "razon_max": 1.29,
+      "banda_original": [
+        0.3,
+        1.0
+      ],
+      "en_banda_original": 3
+    },
+    "directorio comercial": {
+      "zonas": 4,
+      "comparacion_falsable": false,
+      "composicion_de_la_cifra": "Google Places solo (100 %)",
+      "razon_min": 2.83,
+      "razon_mediana": 3.09,
+      "razon_max": 3.6,
+      "banda_original": [
+        1.0,
+        4.0
+      ],
+      "en_banda_original": 4
+    },
+    "minimo relevado": {
+      "zonas": 7,
+      "comparacion_falsable": true,
+      "composicion_de_la_cifra": "Google Places con tope de consulta, declarada «al menos»",
+      "razon_min": 0.48,
+      "razon_mediana": 1.2,
+      "razon_max": 1.52,
+      "banda_original": [
+        1.0,
+        5.0
+      ],
+      "en_banda_original": 4
+    },
+    "relevamiento anterior": {
+      "zonas": 2,
+      "comparacion_falsable": false,
+      "composicion_de_la_cifra": "cifra de otra añada, método no reconstruido",
+      "razon_min": 0.51,
+      "razon_mediana": 0.72,
+      "razon_max": 0.93,
+      "banda_original": [
+        0.3,
+        3.0
+      ],
+      "en_banda_original": 2
+    }
+  }
+}

@@ -1,0 +1,18 @@
+rid,zona,metodo,cifra_publicada,padron_nucleo,places_nucleo,m,n_estimado,ic_bajo,ic_alto,razon_sobre_publicada,pct_places_en_padron,prediccion,veredicto
+R05,Belgrano,relevamiento anterior,697,100,29,11,251.5,151.7,351.3,0.36,37.9,SIN PREDICCIÓN,sin predicción
+R07,Costanera Norte,relevamiento anterior,72,3,9,2,12.3,10.0,17.8,0.17,22.2,SIN PREDICCIÓN,no se lee · m chico
+R08,Villa Crespo,relevamiento propio,646,233,86,28,701.0,509.0,893.0,1.09,32.6,CERCA,cumple
+R09,Chacarita,relevamiento propio,327,55,20,8,129.7,73.6,185.8,0.4,40.0,CERCA,FALLA
+R10,Caballito,relevamiento propio,907,177,36,16,386.4,261.3,511.6,0.43,44.4,CERCA,FALLA
+R11,Boulevard Caseros,relevamiento propio,66,5,10,2,21.0,13.0,34.0,0.32,20.0,CERCA,no se lee · m chico
+R12,Centro/Microcentro segmentado,minimo relevado,797,327,108,40,871.0,676.2,1065.8,1.09,37.0,POR ENCIMA,cumple
+R13,Abasto,minimo relevado,314,180,24,11,376.1,233.3,518.9,1.2,45.8,POR ENCIMA,cumple
+R14,Avenida Boedo,directorio comercial,79,74,20,10,142.2,90.5,193.8,1.8,50.0,MUY POR ENCIMA,cumple
+R15,Devoto,directorio comercial,119,139,56,16,468.4,298.1,638.7,3.94,28.6,MUY POR ENCIMA,cumple
+R16,Donado–Holmberg,directorio comercial,40,32,5,2,65.0,35.0,108.6,1.62,40.0,MUY POR ENCIMA,no se lee · m chico
+R17,Villa Urquiza,directorio comercial,189,173,41,13,521.0,314.2,727.8,2.76,31.7,MUY POR ENCIMA,cumple
+R18,Esmeralda–Paraguay,minimo relevado,216,30,11,9,36.2,32.0,43.6,0.17,81.8,POR ENCIMA,FALLA
+R19,Federico Lacroze por tramos,minimo relevado,211,54,16,8,102.9,62.5,143.3,0.49,50.0,POR ENCIMA,FALLA
+R20,García del Río,minimo relevado,40,16,7,2,44.3,21.0,76.2,1.11,28.6,POR ENCIMA,no se lee · m chico
+R21,La Paternal,minimo relevado,254,41,14,1,314.0,54.0,637.8,1.24,7.1,POR ENCIMA,no se lee · m chico
+R22,Villa Pueyrredón,minimo relevado,158,48,14,4,146.0,58.0,237.0,0.92,28.6,POR ENCIMA,no se lee · m chico

@@ -1,0 +1,77 @@
+{
+  "fecha_calculo": "2026-08-05",
+  "corridas": {
+    "muestra_1": [
+      "2026-08-05"
+    ],
+    "muestra_2": [
+      "2026-08-05"
+    ]
+  },
+  "requests_gastados": 0,
+  "n1": 76,
+  "n2": 63,
+  "m": 62,
+  "union_observada": 77,
+  "n_estimado": 77.22,
+  "error_estandar": 0.52,
+  "ic_bajo": 77,
+  "ic_alto": 78.24,
+  "ic_bajo_crudo": 76.2,
+  "solape_sobre_n1": 81.58,
+  "solape_sobre_n2": 98.41,
+  "veredicto": "UNIVERSO ALCANZABLE CASI AGOTADO · conclusión cerrada",
+  "igual_esfuerzo": {
+    "n1": 73,
+    "n2": 63,
+    "m": 62,
+    "union_observada": 74,
+    "n_estimado": 74.17,
+    "error_estandar": 0.45,
+    "ic_bajo": 74,
+    "ic_alto": 75.06,
+    "ic_bajo_crudo": 73.29,
+    "solape_sobre_n1": 84.93,
+    "solape_sobre_n2": 98.41
+  },
+  "celdas_no_consultadas_por_la_2a": [
+    "R08_0101R_0000",
+    "R08_0101R_0001",
+    "R08_0101R_0100",
+    "R08_0101R_0101"
+  ],
+  "celdas_discordantes": [
+    "R08_0101"
+  ],
+  "sensibilidad_tres_familias": {
+    "n2": 81,
+    "m": 64,
+    "n_estimado": 96.1
+  },
+  "heterogeneidad_sin_discordantes": [
+    {
+      "tramo": "1.º cuarto (mejor rankeados)",
+      "locales": 16,
+      "recapturados": 14,
+      "pct_recaptura": 87.5
+    },
+    {
+      "tramo": "2.º cuarto",
+      "locales": 10,
+      "recapturados": 10,
+      "pct_recaptura": 100.0
+    },
+    {
+      "tramo": "3.º cuarto",
+      "locales": 11,
+      "recapturados": 11,
+      "pct_recaptura": 100.0
+    },
+    {
+      "tramo": "4.º cuarto (fondo del ranking)",
+      "locales": 8,
+      "recapturados": 7,
+      "pct_recaptura": 87.5
+    }
+  ]
+}
