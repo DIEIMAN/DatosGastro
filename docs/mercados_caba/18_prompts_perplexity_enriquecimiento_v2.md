@@ -86,3 +86,6 @@ Cada fuente verificada se registra en `fuentes_documentales_mercados_v2.csv` con
 tipo de fuente, título, medio/organismo, URL, fecha de publicación (si existe), fecha de consulta,
 afirmación sostenida, campo que respalda, nivel de confianza, observación. **Sin URL verificable,
 no entra.**
+
+
+

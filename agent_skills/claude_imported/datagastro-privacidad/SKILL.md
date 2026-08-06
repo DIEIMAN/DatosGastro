@@ -3,16 +3,11 @@ name: datagastro-privacidad
 description: Manejo de datos personales y sensibles en DataGastro. Usar al perfilar, analizar o exportar cualquier dato interno con contactos, CUIT/DNI, teléfonos, facturación, ventas, transacciones, nombres de personas o participantes de eventos.
 ---
 
-# Privacidad y datos sensibles
+# datagastro-privacidad — réplica puntero
 
-Contenido canónico: `docs/skills_claude/03_privacidad_datos_sensibles.md`.
+**Contenido canónico:** `.claude/skills/datagastro-privacidad/SKILL.md`. Leer ese archivo antes de
+actuar; esta réplica no duplica el procedimiento para evitar divergencias entre agentes.
+Documento largo: `docs/skills_claude/03_privacidad_datos_sensibles.md`.
 
-Regla central: trabajar con **agregados, perfiles de columnas, conteos y diagnósticos**. **No
-exportar filas individuales sensibles.**
-
-- Nunca exportar: DNI, CUIT/CUIL, CBU, email, teléfono, nombres de personas, montos/ventas por
-  comercio, comprobantes.
-- Sí producir: perfiles de columnas (sin valores), conteos/agregados por comuna/barrio/rubro/mes,
-  diagnósticos de calidad, muestras redactadas.
-- Umbral mínimo de comercios/personas por celda. Salidas a `outputs/analisis_interno/` (ignorada
-  por Git). Redactar por defecto cualquier valor que parezca sensible.
+Ante diferencia entre copias gana la canónica de `.claude/skills/` y, por encima de
+todo, los guardrails (`CLAUDE.md` / `AGENTS.md`).

@@ -28,7 +28,7 @@ vereda, un colectivo o una feria.
 
 | | |
 |---|---|
-| **123.981 locales** relevados en toda la Ciudad | por siete fuentes unidas y depuradas |
+| **23.981 locales** relevados en toda la Ciudad | por siete fuentes unidas y depuradas |
 | **124 concentraciones gastronómicas** | en las quince comunas |
 | **53 %** de los locales está adentro de alguna | el resto está distribuido |
 | **10 concentraciones en las comunas 8 y 9** | alrededor de mil locales |

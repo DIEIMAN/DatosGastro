@@ -10,7 +10,7 @@ mismos criterios de seguridad, privacidad y estilo.
 | `CLAUDE.md` | Archivo raíz de instrucciones | Resumen operativo que Claude carga por sesión; contiene guardrails prioritarios | Claude, reusable por cualquier agente | Alta: reglas de privacidad, fuentes, pipeline, redacción prudente |
 | `.claude/skills/` | Carpeta de skills | Wrappers `SKILL.md` de proyecto para Claude Code | Claude | Alta: guardrails, informes, privacidad, pipeline, fuentes, geodatos |
 | `.claude/settings.local.json` | Configuración local | Permisos/configuración local de Claude | Claude local | No se copia ni se reutiliza como skill; puede contener preferencias locales |
-| `.agents/` | Carpeta | Carpeta reservada para agentes; sin contenido útil detectado | General | Baja por ahora |
+| `.agents/skills/` | Carpeta de skills | Espejo puntero de las nueve skills canónicas de `.claude/skills/` (paridad verificada 2026-07-14) | General | Alta: es el punto de entrada para agentes que no son Claude Code |
 | `.codex/` | Carpeta | Carpeta reservada para Codex; sin contenido útil detectado | Codex | Baja por ahora |
 | `docs/skills_claude/` | Documentación operativa | Fuente canónica de reglas DataGastro para Claude y otros asistentes | General, nacida para Claude | Muy alta: guardrails, metodología, privacidad, informes ejecutivos |
 | `docs/prompts_codex.md` | Prompts | Prompts de trabajo para Codex sobre dashboard, notebook e informe | Codex | Media/alta: útil como referencia, pero son tareas puntuales |
@@ -20,7 +20,9 @@ mismos criterios de seguridad, privacidad y estilo.
 
 ## Skills importadas desde Claude
 
-Se copiaron sin modificar desde `.claude/skills/` a `agent_skills/claude_imported/`:
+Desde 2026-07-14, `agent_skills/claude_imported/` (y su espejo `.agents/skills/`) contiene
+**réplicas puntero**: cada `SKILL.md` conserva nombre y descripción y remite a la copia canónica
+en `.claude/skills/<skill>/SKILL.md`, que es la única fuente del procedimiento:
 
 - `datagastro-guardrails`
 - `datagastro-metodologia-fuentes`
@@ -30,8 +32,10 @@ Se copiaron sin modificar desde `.claude/skills/` a `agent_skills/claude_importe
 - `datagastro-fuentes-externas`
 - `datagastro-informes`
 - `datagastro-limpieza`
+- `datagastro-qa-pdf`
 
-Los originales siguen en `.claude/skills/`. No se borraron ni movieron.
+Los originales siguen en `.claude/skills/`. Ante diferencia, gana la canónica
+(validador: `scripts/infraestructura_agentes_skills_v1_1/check_skills_parity.py`).
 
 ## Skills compartidas
 

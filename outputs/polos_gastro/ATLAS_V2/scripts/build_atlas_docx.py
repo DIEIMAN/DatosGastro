@@ -471,6 +471,30 @@ COMO_SE_CONSTRUYERON_TITULO = "Cómo se construyeron las zonas"
 # sea que ella misma lo dejó abierto—. Se aplica, pero el texto de origen ya no es idéntico
 # al entregado: la Dirección tiene que confirmar la nueva redacción antes de darlo por
 # cerrado, y el comentario de Patricia sigue abierto en el Doc.
+# PROPUESTA PREPARADA Y NO APLICADA · nombrar la fuente (Diego, 2026-08-05)
+#
+# La decisión de nombrar a Google Places se aplicó en `contenido_conduccion.py` y en las reglas
+# de sustitución del generador. **Acá no**, y la razón es la que ya está escrita arriba: este
+# bloque está declarado como texto entregado por la Dirección y Patricia lo dejó abierto con
+# «luego vemos la redacción». Cambiar un texto de la Dirección sin su visto es exactamente lo
+# que no corresponde, aunque el cambio sea el mismo que se aprobó para el resto del documento.
+#
+# La redacción propuesta queda escrita abajo, lista para reemplazar el primer paso en cuanto
+# Patricia dé el visto. No está enganchada a nada: `COMO_SE_CONSTRUYERON` sigue siendo la que
+# se arma más abajo, con el texto vigente.
+PRIMER_PASO_PROPUESTO: list[tuple[str, object]] = [
+    ("p", "Se contaron los locales gastronómicos de cada zona con las fuentes disponibles para "
+          "ese lugar —los datos abiertos del Gobierno de la Ciudad y la información de comercios "
+          "de Google— y se contó una sola vez a los que aparecían en más de una. No todas las "
+          "zonas tenían las mismas fuentes disponibles, y por eso el Atlas distingue cuatro "
+          "situaciones:"),
+    ("b", ["Zonas contadas cruzando datos abiertos con la información de Google.",
+           "Zonas contadas sólo con la información de Google.",
+           "Zonas donde la búsqueda llegó a su tope y el número quedó como un mínimo: "
+           "se escriben con «al menos».",
+           "Zonas que se pudieron describir y ubicar, pero sin un conteo propio."]),
+]
+
 COMO_SE_CONSTRUYERON: list[tuple[str, object]] = [
     ("p", "La lista de las 22 zonas la definió la Dirección a partir del territorio que ya "
           "venía siguiendo; no la produjo un cálculo automático sobre toda la Ciudad. Sobre "

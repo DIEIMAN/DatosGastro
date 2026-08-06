@@ -1,10 +1,4 @@
 {
-  "enabledPlugins": {
-    "code-review@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true,
-    "atomic-agents@claude-plugins-official": true
-  },
   "permissions": {
     "ask": [
       "Bash(git commit*)",
@@ -13,6 +7,9 @@
       "PowerShell(git commit*)",
       "PowerShell(git push*)",
       "PowerShell(git add*)"
+    ],
+    "allow": [
+      "Bash(git log *)"
     ]
   },
   "hooks": {
@@ -46,5 +43,11 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "atomic-agents@claude-plugins-official": true
   }
 }

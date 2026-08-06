@@ -9,7 +9,9 @@ Los resultados de Google NO son "oficiales" y NO se mezclan con AGC ni OSM sin a
 
 SEGURIDAD (guardrails)
 ----------------------
-- La API key se lee SOLO desde la variable de entorno GOOGLE_MAPS_API_KEY.
+- La API key se lee SOLO desde la variable de entorno GOOGLE_MAPS_API_KEY. NO hay que exportarla
+  a mano: vive en el `.env` del repositorio (ignorado por Git) y `cargar_dotenv()` la vuelca al
+  entorno al validar, sin pisar lo que ya esté exportado.
 - Nunca se imprime, loguea, guarda ni commitea la API key.
 - --dry-run es el modo por defecto: NO hace requests reales sin --run.
 - Límites: --max-queries, --max-results, --pause entre requests.
@@ -21,7 +23,7 @@ USO
   # Simulación (no gasta, no llama a la API):
   python scripts/casas_pastas/google_places_piloto.py
 
-  # Ejecución real (requiere GOOGLE_MAPS_API_KEY en el entorno):
+  # Ejecución real (la key sale del `.env`; no hay que exportar nada):
   python scripts/casas_pastas/google_places_piloto.py --run --max-queries 5 --max-results 50
 """
 from __future__ import annotations
@@ -141,7 +143,36 @@ def mostrar_plan(queries: list[str], max_results: int, pause: float, modo: str) 
     print("=" * 72)
 
 
+def cargar_dotenv(ruta: Path | None = None) -> None:
+    """Vuelca `.env` al entorno del proceso **sin pisar lo que ya esté exportado**.
+
+    Mismo arreglo que en `scripts/barrido_ciudad/places_control_zonas.py`: la key vive en el
+    `.env` del repositorio —ignorado por Git— pero nada la exportaba al entorno, así que en una
+    sesión limpia el script abortaba por falta de key teniendo la key ahí.
+
+    - **la sesión gana**: sólo se completa lo que está ausente o vacío;
+    - **sin dependencia nueva**: nada de `python-dotenv`, el entorno corre sin red;
+    - **si `.env` no está, no falla**: sigue de largo y el abort de siempre hace su trabajo.
+
+    El guardarraíl se conserva: la key se sigue leyendo sólo del entorno, no entra por argumento
+    de línea de comandos, no se imprime y no se escribe a disco.
+    """
+    ruta = ruta or ROOT / ".env"
+    if not ruta.exists():
+        return
+    for linea in ruta.read_text(encoding="utf-8-sig").splitlines():
+        linea = linea.strip()
+        if not linea or linea.startswith("#") or "=" not in linea:
+            continue
+        nombre, _, valor = linea.removeprefix("export ").partition("=")
+        nombre = nombre.strip()
+        if not os.environ.get(nombre, "").strip():
+            os.environ[nombre] = valor.strip().strip("\"'")
+
+
 def validar_api_key() -> str | None:
+    """Sólo del entorno, que `cargar_dotenv()` ya completó desde `.env` si hacía falta."""
+    cargar_dotenv()
     key = os.environ.get("GOOGLE_MAPS_API_KEY", "").strip()
     if not key:
         return None

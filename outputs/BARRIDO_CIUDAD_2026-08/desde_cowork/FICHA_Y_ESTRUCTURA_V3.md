@@ -40,7 +40,7 @@ un campo que dice explícitamente qué falta se lee como lo que es.
 | `ejes` | hasta 6 calles dominantes, por conteo | |
 | `pct_con_direccion` | qué fracción de los locales tiene dirección | **es la calidad del dato de ejes** |
 
-### La relación con lo publicado
+### La relación con zonas previas · SÓLO INTERNO, no va en el documento
 
 | campo | contenido |
 |---|---|
@@ -48,10 +48,9 @@ un campo que dice explícitamente qué falta se lee como lo que es.
 | `relacion` | `coincide` · `desborda` · `parte de` · `sin correspondencia` |
 | `nota_de_correspondencia` | una línea cuando la relación no es uno a uno |
 
-**Este bloque es el que más se va a mirar**, porque es el que dice qué cambió entre la V2 y la V3.
-Y ya sabemos que la correspondencia **no es uno a uno en ninguna de las dos direcciones**: R01
-contiene 1.358 locales de los cuales sólo 306 son de P078, y 279 de los 585 de P078 (47,7 %) caen
-fuera de R01.
+**Este bloque NO se publica.** El documento se sostiene solo y no se compara con versiones
+anteriores. Se conserva en la capa de datos como trazabilidad interna, porque la correspondencia
+no es uno a uno en ninguna de las dos direcciones y alguien la va a necesitar.
 
 ### Los hitos
 
@@ -153,18 +152,24 @@ Resumen, con remisión a la **edición técnica** como documento aparte.
 
 **Anexos:** tabla completa de los 124 · correspondencia V2 → V3 · glosario · fuentes y licencias.
 
-## B.2 · Las cinco decisiones editoriales que hay que tomar antes de escribir
+## B.2 · Las decisiones editoriales · TOMADAS
 
-1. **¿Los mapas van por comuna o hay un mapa general desplegable?** (Sugerencia: los dos. El
-   general es el que se va a fotografiar.)
-2. **¿Las fichas llevan foto?** Si sí, hace falta un criterio de qué se fotografía que no
-   privilegie lo pintoresco — o el sur vuelve a quedar mal parado.
-3. **¿Se publica la capa de datos junto con el documento?** Es lo que convierte esto en una base
-   utilizable por terceros, que era el objetivo declarado. Requiere resolver licencias por campo.
-4. **¿La V3 se numera desde cero o conserva los R01–R22?** (Sugerencia: conservar la
-   correspondencia en un anexo y numerar desde cero, porque la relación no es uno a uno.)
-5. **¿Quién firma qué?** La edición técnica y el atlas tienen lectores distintos y podrían tener
-   autorías distintas.
+Cerradas el 6 de agosto de 2026. Detalle y motivos en `DECISIONES_EDITORIALES_V3.md`.
+
+| decisión | resuelto |
+|---|---|
+| los 74 polos sin nombre propio | **«Nombre propuesto»** — la denominación definitiva la define el programa de identidad y marca |
+| capa de datos | **se publica completa** — polígonos y tabla, con licencia resuelta campo por campo |
+| cartografía | **mapa general + uno por comuna** — el general primero |
+| fotos en las fichas | **no van** |
+| numeración | **desde cero**; los `polo_id` quedan en la capa de datos como trazabilidad |
+
+Sigue abierto y es de Diego: **quién firma qué**, **el nombre del enclave de Liniers** (sobran
+cinco) y **dónde se publica la capa**.
+
+**Consecuencia sobre el encabezado de la ficha:** el campo `nivel_del_nombre` se acompaña de
+`leyenda_publicacion`, que trae el texto exacto que va debajo del nombre. Ya está calculado para
+los 124 en `POLOS_NOMBRADOS.csv`.
 
 ## B.3 · Qué está listo y qué falta
 

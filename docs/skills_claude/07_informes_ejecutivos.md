@@ -58,3 +58,22 @@ denominador y su fecha de corte.
   Va a `outputs/analisis_interno/` (ignorada por Git).
 - **Versión publicable**: solo agregados seguros, lista para compartir fuera del área.
 - Cada informe interno debe declarar explícitamente **qué se puede publicar y qué no**.
+
+## 7. Plantilla institucional DGDGAS (defaults obligatorios del primer borrador)
+
+Estos requisitos NO se esperan del pedido: se aplican siempre, sin que Diego los repita.
+(Misma lista que la skill productiva `.claude/skills/datagastro-informes/SKILL.md`.)
+
+- **Marca pública: DGDGAS — Dirección General de Desarrollo Gastronómico.** "DataGastro" nunca
+  aparece en entregables públicos (solo en documentación interna de `docs/`).
+- **Portada:** título + DGDGAS. NO mostrar fecha, número de versión, "documento interno",
+  "borrador", "prueba", "revisión institucional" ni equivalentes en ninguna página.
+- **Índice** y **secciones numeradas** siempre.
+- **Cuerpo documental y expositivo**: metodología, fuentes y respaldo documental van al anexo.
+- **Lenguaje prudente:** "activos identificados", no "confirmados"; "oferta registrada", no
+  "locales activos" si la fuente no lo mide.
+- **KPIs:** si existe `kpis_lock.json` del informe, correr
+  `.venv/Scripts/python.exe scripts/qa/validate_kpis.py <lock> <entregables>` antes de entregar.
+- **QA visual antes de entregar:** para PDFs, usar la skill `datagastro-qa-pdf` (renderizar y
+  mirar todas las páginas). Un PDF no revisado visualmente no está terminado.
+- **Cierre de tarea:** informar siempre las rutas absolutas de los archivos producidos.

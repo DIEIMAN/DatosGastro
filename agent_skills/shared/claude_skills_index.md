@@ -1,8 +1,10 @@
 # Índice compartido de skills Claude importadas
 
-Las skills de `.claude/skills/` fueron copiadas a `agent_skills/claude_imported/` para que Codex
-también pueda consultarlas como referencia. Esta copia es una instantánea segura: no reemplaza los
-originales ni la documentación canónica en `docs/skills_claude/`.
+Desde 2026-07-14, `agent_skills/claude_imported/` y `.agents/skills/` contienen **réplicas
+puntero** (wrappers): conservan nombre y descripción, y remiten a la copia canónica en
+`.claude/skills/<skill>/SKILL.md`. Leer siempre la canónica; las réplicas no duplican el
+procedimiento (así se eliminan divergencias entre agentes). La documentación larga sigue en
+`docs/skills_claude/`.
 
 | Skill | Ruta importada | Cuándo usarla |
 | --- | --- | --- |
@@ -14,10 +16,13 @@ originales ni la documentación canónica en `docs/skills_claude/`.
 | `datagastro-fuentes-externas` | `agent_skills/claude_imported/datagastro-fuentes-externas/SKILL.md` | Al evaluar Google Places, delivery, pagos, redes, POS u otras plataformas externas |
 | `datagastro-informes` | `agent_skills/claude_imported/datagastro-informes/SKILL.md` | Al redactar informes ejecutivos, resúmenes o entregables institucionales |
 | `datagastro-limpieza` | `agent_skills/claude_imported/datagastro-limpieza/SKILL.md` | Antes de proponer borrado, movimiento o limpieza local |
+| `datagastro-qa-pdf` | `agent_skills/claude_imported/datagastro-qa-pdf/SKILL.md` | SIEMPRE después de generar o regenerar un PDF y antes de reportarlo terminado (render + inspección visual) |
 
 ## Regla de uso
 
 Si un pedido toca varias dimensiones, consultar primero guardrails y luego la skill específica.
+Si el pedido implica **correr algo y reportar un resultado**, agregar siempre
+`datagastro_metodo_experimental.md`: `datagastro-guardrails` dice qué no hacer, ésta dice cómo hacer.
 Por ejemplo, un informe con datos de formulario debe combinar: guardrails, privacidad, informes y
 `datagastro_proyectos_cortos.md`.
 
@@ -29,6 +34,7 @@ Además de las skills importadas desde Claude, los agentes deben usar estas guí
 | --- | --- | --- |
 | Reporte con formulario | `agent_skills/shared/datagastro_reporte_formulario.md` | Para Google Forms, XLSX/CSV de respuestas, PDF/DOCX de preguntas y contexto de eventos |
 | QA privacidad entregables | `agent_skills/shared/datagastro_qa_privacidad.md` | Antes de cerrar informes, packs, DOCX, PDF, CSV o Markdown publicables |
+| **Método experimental** | `agent_skills/shared/datagastro_metodo_experimental.md` | **SIEMPRE que una corrida vaya a producir un número que después se lea como conclusión**: bandas escritas antes de correr, control aleatorio en ablaciones, umbrales que no se mueven, curvas de sensibilidad, presupuesto de API, procedencia y licencia, y «no encontramos» ≠ «no existe» |
 
 Para proyectos tipo Cafecito, combinar `datagastro_reporte_formulario.md`,
 `datagastro_qa_privacidad.md`, `datagastro_modelo_informes.md` y la skill importada

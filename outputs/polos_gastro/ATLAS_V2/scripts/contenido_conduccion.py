@@ -662,19 +662,45 @@ ATLAS_REUNE = (
     "dónde está cada una, cuánta oferta se relevó en ella y cómo es ese lugar."
 )
 
+# ---------------------------------------------------------------------------------------
+# Nombrar la fuente · decisión de Diego del 2026-08-05
+#
+# Se dice que la fuente es Google Places, aclarando que es información de Google. Se termina
+# el eufemismo «directorio comercial en línea», que además no le decía nada al lector: un
+# nombre de método no explica por qué un grupo da números tres veces más grandes que otro.
+#
+# Los cuatro grupos pasan a nombrarse por CUÁNTAS FUENTES SE CRUZARON, y con eso la salvedad
+# «estos números no se comparan» deja de ser una afirmación que hay que creer: 907 salió de dos
+# fuentes y 189 de una, y eso se lee solo.
+#
+# NINGUNA CIFRA SE MUEVE. Cambian nombres de grupo y frases explicativas.
+#
+# Contesta además dos comentarios abiertos de Patricia sobre esta misma página: el `[c]`
+# —«cuáles son las formas de relevo y conteo?»— y el `[d]` —«a qué se llama directorio?»—.
+#
+# El detalle pasaje por pasaje está en
+# `outputs/BARRIDO_CIUDAD_2026-08/REESCRITURA_NOMBRAR_LA_FUENTE.md`.
+# ---------------------------------------------------------------------------------------
+
 GRUPOS_RESUMEN = [
-    ("Zonas con relevamiento propio",
+    ("Zonas contadas cruzando dos fuentes",
      "Caballito 907 · Villa Crespo 646 · Chacarita 327 · Boulevard Caseros 66",
-     "Se contó una sola vez a los locales repetidos. No son locales abiertos hoy."),
-    ("Zonas relevadas sobre un directorio comercial en línea",
+     "Se cruzaron los datos abiertos del Gobierno de la Ciudad —el listado de oferta "
+     "gastronómica y el padrón de habilitaciones— con la información de comercios de Google, y "
+     "se contó una sola vez a los locales que aparecían en las dos. No son locales abiertos hoy."),
+    ("Zonas contadas sólo con la información de Google",
      "Villa Urquiza 189 · Devoto 119 · Avenida Boedo 79 · Donado–Holmberg 40",
-     "Un directorio comercial en línea es una base pública de comercios con nombre, rubro y "
-     "dirección: el conteo se hizo sobre esa base y no recorriendo la calle. Mismo criterio "
-     "que el grupo anterior, sobre una fuente distinta."),
-    ("Zonas con un mínimo relevado (se leen con «al menos»)",
+     "Google Places es el servicio que reúne los comercios que aparecen en Google Maps, con "
+     "nombre, rubro y dirección. Es una fuente privada, no oficial: incluye a los locales que "
+     "tienen presencia en Google y deja afuera a los que no la tienen. Acá se usó sola, sin "
+     "cruzarla con los datos abiertos, y por eso estos números no se comparan con los del grupo "
+     "anterior: no indican menos oferta, están construidos con menos fuentes."),
+    ("Zonas con un mínimo, porque la búsqueda llegó a su tope",
      "Centro y Microcentro 797 · Abasto 314 · La Paternal 254 · Esmeralda–Paraguay 216 · "
      "Federico Lacroze 211 · Villa Pueyrredón 158 · García del Río 40",
-     "Puede haber más locales, nunca menos. No son conteos completos."),
+     "El servicio consultado devuelve una cantidad máxima de resultados por consulta. Donde se "
+     "alcanzó ese tope, el conteo quedó incompleto y el número se escribe con «al menos»: puede "
+     "haber más locales, nunca menos. Nunca se estimó lo que faltaba."),
     ("Zonas sin conteo propio",
      "Palermo · Avenida Corrientes · San Telmo · Puerto Madero · Recoleta",
      "Están descriptas y ubicadas. Belgrano y Costanera Norte solo tienen datos de un "
@@ -682,12 +708,12 @@ GRUPOS_RESUMEN = [
 ]
 
 NOTA_GRUPOS = (
-    "Las zonas no se relevaron todas igual: en unas la Dirección hizo su propio relevamiento, "
-    "en otras se partió de un directorio comercial en línea, en otras el relevamiento llegó a "
-    "su tope y el número quedó como un mínimo, y en otras alcanzó para describir el lugar pero "
-    "no para contarlo. Los cuatro grupos que siguen ordenan las zonas según cuál de esas formas "
-    "se usó. Por eso un número más alto no significa más oferta que en otra zona, y los números "
-    "no se suman entre sí."
+    "Las zonas no se contaron todas igual, y por eso sus números no se comparan entre sí. En "
+    "unas se cruzaron dos fuentes; en otras se usó una sola; en otras la búsqueda llegó a su "
+    "tope y el número quedó como un mínimo; y en otras alcanzó para describir el lugar pero no "
+    "para contarlo. Los cuatro grupos que siguen ordenan las zonas según cuál de esas formas se "
+    "usó. Un número más alto no significa más oferta que en otra zona: significa que se contó "
+    "con más fuentes o de otra manera. Los números tampoco se suman entre sí."
 )
 
 FUENTE_UNICA = (
@@ -726,10 +752,10 @@ COMO_LEER = [
      "calle, y otras un conjunto de partes separadas. No forman un ranking ni son 22 polos "
      "equivalentes."),
     ("Por qué los números de distintas zonas no se comparan entre sí",
-     "Cada zona se relevó con un método propio, sobre una fuente propia y con su propia fecha. "
-     "Un número más alto no significa más oferta que en otra zona: significa que se contó de "
-     "otra manera. Tampoco se suman entre sí. Cuando el número viene con «al menos», es un "
-     "mínimo: puede haber más locales, nunca menos."),
+     "Cada zona se contó con las fuentes que había disponibles para ella, y con su propia fecha. "
+     "Un número más alto no significa más oferta que en otra zona: puede significar simplemente "
+     "que se contó con más fuentes. Tampoco se suman entre sí. Cuando el número viene con «al "
+     "menos», es un mínimo: puede haber más locales, nunca menos."),
     ("Qué son las áreas de los mapas",
      "El área de cada mapa envuelve los locales que se relevaron en esa zona: muestra hasta "
      "dónde llegó la oferta encontrada y cómo está repartida. Su forma sigue a los locales y "
@@ -749,8 +775,11 @@ COMO_SE_HIZO_TITULO = "Cómo se hizo este Atlas y qué no dice"
 COMO_SE_HIZO = [
     "El Atlas reúne 22 zonas de la Ciudad donde la Dirección identificó oferta gastronómica "
     "con carácter propio. Cada zona se estudió por separado y con la información disponible "
-    "para ella: en algunas se hizo un relevamiento propio, en otras se usó un directorio "
-    "comercial en línea, y en otras alcanzó para describir el lugar pero no para dar un número.",
+    "para ella. Las dos fuentes del conteo son los datos abiertos del Gobierno de la Ciudad —el "
+    "listado de oferta gastronómica del Ente de Turismo y el padrón de habilitaciones de la "
+    "Agencia Gubernamental de Control— y la información de comercios de Google Places. En "
+    "algunas zonas se cruzaron las dos, en otras se usó sólo una, y en otras alcanzó para "
+    "describir el lugar pero no para dar un número.",
     "Los números cuentan locales relevados en julio de 2026. No son un padrón, no dicen "
     "cuántos locales están abiertos hoy y no se pueden sumar entre zonas.",
     "Cuando un número viene con «al menos», el relevamiento llegó a su tope y quedó "
@@ -759,6 +788,14 @@ COMO_SE_HIZO = [
     "límite oficial ni fue adoptado como tal, y el tamaño del área no mide cantidad de oferta.",
     "El Atlas no ordena las zonas de mejor a peor, no indica dónde conviene invertir y no "
     "reemplaza a ningún registro oficial.",
+    # Párrafo nuevo (2026-08-05). El cierre decía qué NO dice el Atlas sobre las zonas y no
+    # decía nada sobre el límite de las fuentes mismas. Nombrada la fuente, corresponde decir
+    # también qué se queda afuera de las dos, y decirlo como límite del trabajo y no como
+    # afirmación sobre ningún local.
+    "Ninguna de las dos fuentes es un censo de la gastronomía de la Ciudad. Los datos abiertos "
+    "registran trámites, no locales abiertos. Google conoce a los comercios que tienen presencia "
+    "en Google, y no a los que no la tienen. Un local sin trámite reciente y sin ficha en Google "
+    "no aparece en este Atlas, y eso es un límite del trabajo, no una afirmación sobre ese local.",
     "El detalle completo del método, con todas las salvedades del trabajo, está en la edición "
     "técnica de este mismo Atlas.",
 ]

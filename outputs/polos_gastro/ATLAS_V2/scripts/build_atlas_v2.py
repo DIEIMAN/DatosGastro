@@ -701,10 +701,11 @@ PLAIN_LANGUAGE: list[tuple[str, str]] = [
     # --- correccion heredada del corpus (duplicacion de palabra) ---
     (r"\bAnclajes anclajes\b", "Anclajes"),
     # --- frases compuestas: van antes que las reglas generales ---
-    (r"registros Places con DEDUP_CONSERVADOR\s+Z\d+",
-     "registros del directorio comercial en línea, con deduplicación conservadora"),
+    # Las dos que nombran la fuente están en FRASES_POR_EDICION y entran EXACTAMENTE acá. La
+    # posición no es un detalle: más abajo hay una regla general sobre `DEDUP_CONSERVADOR` que,
+    # si corre primero, deshace el texto que estas dos iban a reemplazar entero.
+    ("__ORIGENES_FRASES__", None),
     (r"registros en DEDUP_CONSERVADOR\s+V[\d.]+", "registros con deduplicación conservadora"),
-    (r"dependencia Places\b", "dependencia del directorio comercial en línea"),
     (r"\bfirmas restaurant\b", "consultas de categoría restaurante"),
     (r"saturadas? en restaurant\b", "saturadas en la categoría restaurante"),
     (r"\bKPI canónicos\b", "indicadores canónicos"),
@@ -739,10 +740,9 @@ PLAIN_LANGUAGE: list[tuple[str, str]] = [
     (r"\bproxy\b", "referencia indirecta"),
     (r"\brestaurant\b", "de categoría restaurante"),
     # --- origenes de dato ---
-    (r"\bPlaces\b", "directorio comercial en línea"),
-    (r"\bF01/F02\b", "capas administrativas"),
-    (r"\bF01\s+(\d+)\s+y\s+F02\s+(\d+)", r"capas administrativas \1 y \2"),
-    (r"\bF0\d\b", "capa administrativa"),
+    # Idem: los códigos de fuente entran acá, después de las frases compuestas y antes de las
+    # reglas de linaje.
+    ("__ORIGENES_CODIGOS__", None),
     (r"[Ll]inaje V3/V3\.1\s+[A-Z0-9-]+", "Relevamiento cartográfico previo"),
     (r"\bV3\.1\b", "relevamiento cartográfico previo"),
     (r"universo cartográfico V3\b", "universo del relevamiento cartográfico previo"),
@@ -768,13 +768,124 @@ PLAIN_LANGUAGE: list[tuple[str, str]] = [
 ]
 
 
-def to_plain_language(text: str) -> str:
+# ---------------------------------------------------------------------------------------
+# Nombrar la fuente · decision de Diego del 2026-08-05
+#
+# Estas reglas ESTABAN COMPARTIDAS por las dos ediciones: `sanitize_public_text` corre para
+# las dos y no distinguia cual. Sacarlas de PLAIN_LANGUAGE habria cambiado tambien la
+# tecnica, que esta sellada como V2.1 y no se toca. Por eso van por edicion y no se quitan:
+#
+#   tecnica     conserva palabra por palabra lo que ya decia. Su salida no cambia.
+#   conduccion  nombra la fuente: «Google Places», y a F01/F02 los nombra por su organismo
+#               en vez de por la categoria abstracta «capas administrativas», que no le
+#               decia nada a nadie.
+#
+# NINGUNA CIFRA SE MUEVE. Son nombres y frases explicativas.
+# ---------------------------------------------------------------------------------------
+FRASES_POR_EDICION: dict[str, list[tuple[str, str]]] = {
+    "tecnica": [
+        (r"registros Places con DEDUP_CONSERVADOR\s+Z\d+",
+         "registros del directorio comercial en línea, con deduplicación conservadora"),
+        (r"dependencia Places\b", "dependencia del directorio comercial en línea"),
+    ],
+    "conduccion": [
+        # «deduplicación» está en la lista de términos prohibidos de la conducción
+        # (`lenguaje_conduccion.VOCABULARIO_PROHIBIDO`), así que esta frase se dice en
+        # castellano llano. Reemplazar un eufemismo por otro término vigilado habría hecho
+        # fallar el control de vocabulario, que es lo que ese control tiene que hacer.
+        (r"registros Places con DEDUP_CONSERVADOR\s+Z\d+",
+         "registros de Google Places, sin contar dos veces al mismo local"),
+        (r"dependencia Places\b", "dependencia de Google Places"),
+        # --- el `denominador_metodo` de R14, R15, R16 y R17 · 2026-08-06 ------------------
+        # Variante SIN «registros … con»: el canon de estas cuatro fichas dice
+        # «Places DEDUP_CONSERVADOR Z07 E-PLACES», que la regla de arriba no alcanza porque
+        # espera el «registros … con» delante. Sin esta línea la conducción emitía dos cosas:
+        #
+        #   · `E-PLACES` —el código interno de la extracción de Places del 13 de julio— crudo;
+        #   · «deduplicación», que está en `lenguaje_conduccion.VOCABULARIO_PROHIBIDO`.
+        #
+        # PRECISIÓN SOBRE EL ALCANCE, porque es fácil exagerarlo: hoy este campo **no se
+        # renderiza en ninguna página de la conducción** —esas páginas salen de
+        # `contenido_conduccion.py`— así que no estaba haciendo fallar el control de
+        # vocabulario, que corre sobre las páginas ya compuestas. Lo que se arregla es el
+        # contenido en sí, para que el día que el campo se use no arrastre un código interno
+        # ni un término vigilado.
+        #
+        # Va acá y no en PLAIN_LANGUAGE porque tiene que correr ANTES de la regla general de
+        # `DEDUP_CONSERVADOR`, y va sólo en la conducción porque la técnica está sellada.
+        (r"Places DEDUP_CONSERVADOR\s+Z\d+\s+E-PLACES",
+         "Google Places, sin contar dos veces al mismo local"),
+        # `(RESUMEN_UNIVERSOS_TANDA2_V1)` SE DEJA, aunque también sea un código interno.
+        # No es olvido: `escribir_trazabilidad_lenguaje()` arma el universo de números de la
+        # ficha con `_numeros()`, que extrae dígitos de cualquier parte del texto — incluido
+        # el «2» y el «1» de ese identificador. Sacarlo achica ese universo y puede convertir
+        # un número legítimo del bloque de conducción en un falso «número nuevo». Limpiarlo
+        # requiere tocar antes cómo se arma el universo, y eso es otra tarea.
+    ],
+}
+
+# ASIMETRÍA DELIBERADA ENTRE LAS DOS EDICIONES, PARA QUE NO SE LEA COMO UN OLVIDO
+# ------------------------------------------------------------------------------
+# La edición técnica sigue emitiendo `E-PLACES` y `(RESUMEN_UNIVERSOS_TANDA2_V1)` en crudo.
+# No es que se hayan pasado por alto: **su salida está sellada como V2.1 y cualquier regla que
+# la tocara rompería el sello**, que es la única garantía de que las cifras técnicas no se
+# movieron durante toda la reescritura editorial. Y en una edición técnica un código interno
+# es información, no ruido: dice exactamente de qué extracción salió el número.
+#
+# Si algún día se decide limpiarlos también ahí, es una decisión con resello, no un ajuste de
+# redacción, y hay que rehacer la comparación campo por campo contra el JSON congelado.
+
+ORIGENES_POR_EDICION: dict[str, list[tuple[str, str]]] = {
+    "tecnica": [
+        (r"\bPlaces\b", "directorio comercial en línea"),
+        (r"\bF01/F02\b", "capas administrativas"),
+        (r"\bF01\s+(\d+)\s+y\s+F02\s+(\d+)", r"capas administrativas \1 y \2"),
+        (r"\bF0\d\b", "capa administrativa"),
+    ],
+    "conduccion": [
+        # El lookbehind evita «Google Google Places» donde el texto ya nombra a Google.
+        (r"(?<!Google )\bPlaces\b", "Google Places"),
+        (r"\bF01/F02\b",
+         "el listado de oferta gastronómica del Ente de Turismo y el padrón de habilitaciones "
+         "de la AGC"),
+        (r"\bF01\s+(\d+)\s+y\s+F02\s+(\d+)",
+         r"oferta gastronómica \1 y habilitaciones \2"),
+        (r"\bF01\b", "el listado de oferta gastronómica del Ente de Turismo"),
+        (r"\bF02\b", "el padrón de habilitaciones de la AGC"),
+        # «capas administrativas» también está prohibido en la conducción, así que el respaldo
+        # para el resto de los códigos se dice de otra manera.
+        (r"\bF0\d\b", "un registro del Gobierno de la Ciudad"),
+    ],
+}
+
+
+def reglas_de_lenguaje(edicion: str | None = None) -> list[tuple[str, str]]:
+    """PLAIN_LANGUAGE con las reglas de origen de la edición que corresponda insertadas.
+
+    Los dos marcadores fijan el lugar exacto donde entran, y son dos y no uno porque el orden
+    de PLAIN_LANGUAGE es significativo: las frases compuestas tienen que correr ANTES de la
+    regla general sobre `DEDUP_CONSERVADOR`, y los códigos de fuente DESPUÉS. Juntarlas en un
+    solo bloque cambiaba la salida de la edición técnica, que está sellada.
+    """
+    nombre = edicion or EDICION
+    reglas: list[tuple[str, str]] = []
+    for patron, reemplazo in PLAIN_LANGUAGE:
+        if patron == "__ORIGENES_FRASES__":
+            reglas.extend(FRASES_POR_EDICION[nombre])
+        elif patron == "__ORIGENES_CODIGOS__":
+            reglas.extend(ORIGENES_POR_EDICION[nombre])
+        else:
+            reglas.append((patron, reemplazo))
+    return reglas
+
+
+def to_plain_language(text: str, edicion: str | None = None) -> str:
     """Traduce codigos internos y anglicismos de metodo a lenguaje llano.
 
     Solo reemplaza vocabulario tecnico. No toca ninguna cifra: los numeros,
     cotas y proporciones del canon quedan literalmente iguales.
     """
-    for pattern, replacement in PLAIN_LANGUAGE:
+    for pattern, replacement in reglas_de_lenguaje(edicion):
         text = re.sub(pattern, replacement, text)
     text = re.sub(r"\s{2,}", " ", text)
     return text.replace(" ;", ";").replace(" ,", ",").strip()

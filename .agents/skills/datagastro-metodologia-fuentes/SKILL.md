@@ -3,13 +3,11 @@ name: datagastro-metodologia-fuentes
 description: Clasificar y describir fuentes de datos de DataGastro (públicas F01-F05, internas I01-I99, externas/privadas E01-E99). Usar al sumar, describir, priorizar o decidir si una fuente entra al pipeline o queda en roadmap.
 ---
 
-# Metodología de fuentes
+# datagastro-metodologia-fuentes — réplica puntero
 
-Contenido canónico: `docs/skills_claude/02_metodologia_fuentes.md`.
+**Contenido canónico:** `.claude/skills/datagastro-metodologia-fuentes/SKILL.md`. Leer ese archivo antes de
+actuar; esta réplica no duplica el procedimiento para evitar divergencias entre agentes.
+Documento largo: `docs/skills_claude/02_metodologia_fuentes.md`.
 
-- Espacios de IDs (no mezclar): `F01-F05` públicas actuales, `F06+` públicas nuevas, `I01-I99`
-  internas de gestión, `E01-E99` externas privadas o públicas nuevas de terceros.
-- Ficha mínima de fuente: qué mide / qué NO mide / granularidad / cobertura temporal /
-  cobertura territorial / limitaciones / riesgo de uso / prioridad / destino (pipeline o roadmap).
-- Una fuente entra al pipeline solo con ficha + contrato, ID estable, fecha de corte, pasa
-  `--strict-real`, no mezcla universos ni datos sensibles, y con aprobación de Diego.
+Ante diferencia entre copias gana la canónica de `.claude/skills/` y, por encima de
+todo, los guardrails (`CLAUDE.md` / `AGENTS.md`).

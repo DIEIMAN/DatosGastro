@@ -178,5 +178,46 @@ Requiere pedido explícito: commit/push; modificar superficies protegidas; pipel
 | Plantilla protegidas | `docs/infraestructura_agentes_skills_v1_1/registros/PROTECTED_SURFACES_TEMPLATE.yaml` |
 | Ejemplo Polos | `docs/polos_gastro/PROTECTED_SURFACES.yaml` |
 | Infra V1 (histórica) | `docs/infraestructura_agentes_skills_v1/` (no sobrescribir) |
+| Método experimental | `agent_skills/shared/datagastro_metodo_experimental.md` |
+| Correspondencia de numeración V1 → V1.1 | `docs/infraestructura_agentes_skills_v1_1/CORRESPONDENCIA_SECCIONES_V1_V1_1.md` |
+| Mapeo de roles | `docs/infraestructura_agentes_skills_v1_1/MAPEO_ROLES_HERRAMIENTAS.md` |
+
+---
+
+## 17. Incertidumbre y defensa de lo adoptado
+
+> Esta sección restituye la que existía en la política V1 (§ *Incertidumbre y defensa de lo
+> adoptado*) y que la V1.1 no reprodujo. Su ausencia era una regresión normativa, no una
+> simplificación: es la sección donde vive la obligación de no convertir un límite del trabajo en
+> una afirmación sobre el mundo.
+
+**17.1 · Declarar la incertidumbre real.** Toda cifra publicada declara qué la limita: cobertura,
+fecha de corte, método, y qué queda fuera de su universo. Una cifra sin límite declarado se lee
+como más firme de lo que es.
+
+**17.2 · Preferir «no encontrado» y «no verificable».** Cuando una búsqueda no da resultado, se
+escribe que no se encontró, no que no existe. Vale para texto, tablas, mapas y títulos.
+
+| se escribe | no se escribe |
+| --- | --- |
+| «con la cobertura disponible, no se identificaron X» | «no hay X» |
+| «la última señal de actividad es de AAAA» | «está activo» |
+| «no figura en las fuentes relevadas» | «no existe» |
+
+**17.3 · La ausencia va con su cobertura al lado.** Si un resultado negativo puede explicarse por
+cobertura floja de la fuente en esa zona o categoría, la medida de cobertura acompaña al
+resultado en el mismo lugar, no en una nota al pie.
+
+**17.4 · Defensa de lo adoptado.** Una decisión adoptada se defiende con el criterio con el que
+se tomó, no con el resultado que produjo. Si el criterio no se puede reconstruir, la decisión no
+está adoptada: está heredada.
+
+**17.5 · Método experimental.** Las reglas operativas que hacen cumplible esta sección —bandas
+declaradas antes de correr, control aleatorio en ablaciones, umbrales que no se mueven, curvas de
+sensibilidad, presupuesto declarado antes de gastar y procedencia con licencia por fuente— están
+en `agent_skills/shared/datagastro_metodo_experimental.md` y son de cumplimiento obligatorio para
+cualquier corrida que produzca una cifra reportable.
+
+---
 
 **Fin política v1.1.**

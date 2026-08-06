@@ -39,6 +39,8 @@ carga en cada sesión. **Ante conflicto, ganan los guardrails.**
 - `docs/skills_claude/06_fuentes_externas_privadas.md` — reglas por plataforma externa.
 - `docs/skills_claude/07_informes_ejecutivos.md` — redacción para jefatura.
 - `docs/skills_claude/08_limpieza_archivos_locales.md` — borrado seguro local.
+- `agent_skills/shared/datagastro_metodo_experimental.md` — **método experimental: leer antes de
+  correr cualquier cosa que produzca un número que se vaya a leer como conclusión.**
 
 ## Infraestructura agentes y skills (V1.1, controlada)
 

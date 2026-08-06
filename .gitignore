@@ -119,3 +119,52 @@ outputs/polos_gastro/ATLAS_V2/qa/*.png
 outputs/polos_gastro/ATLAS_V2/scripts/__pycache__/
 outputs/polos_gastro/ATLAS_V2/**/*.zip
 outputs/polos_gastro/ATLAS_V2/**/*.docx
+
+# === Barrido de la Ciudad 2026-08: capturas crudas de fuentes externas ===
+# Se versionan los scripts y las tablas derivadas, no las descargas. El Relevamiento de Usos
+# del Suelo pesa 39,5 MB y se rebaja con la URL del docstring de perfilar_usos_suelo.py; las
+# tablas del MOC se rebajan del portal de datos abiertos.
+outputs/fuentes_externas/usos_suelo/rus_2022_2024.*
+outputs/fuentes_externas/usos_suelo/rus_2017.*
+outputs/fuentes_externas/usos_suelo/_control_*.txt
+outputs/fuentes_externas/moc/*.csv
+outputs/fuentes_externas/moc/*.geojson
+outputs/fuentes_externas/moc/_perfil_moc*.txt
+outputs/fuentes_externas/usos_suelo/rus_2022_2024_shp.zip
+outputs/fuentes_externas/usos_suelo/shp/
+
+# === Fuentes abiertas de POI, agosto 2026 ===
+# Se versionan los scripts y las tablas derivadas por barrio, no las descargas. Overpass, el
+# GeoParquet de Overture y el ZIP de All The Places se rebajan con los propios bajadores.
+outputs/fuentes_externas/osm/_por_tag/
+outputs/fuentes_externas/osm/osm_gastro_caba.json
+outputs/fuentes_externas/osm/osm_gastro_poi.csv
+outputs/fuentes_externas/overture/*.parquet
+outputs/fuentes_externas/overture/overture_gastro_poi.csv
+outputs/fuentes_externas/all_the_places/*.zip
+outputs/fuentes_externas/all_the_places/atp_caba.csv
+outputs/fuentes_externas/badata_catalogo/*.json
+outputs/fuentes_externas/gcba_nuevas/*.xlsx
+outputs/fuentes_externas/gcba_nuevas/*.geojson
+outputs/fuentes_externas/gcba_nuevas/*.csv
+
+# Censo Nacional 2022 (INDEC, CC BY 4.0): 66 MB entre los radios censales del pais y las tablas
+# por radio de CABA. No son microdatos —son conteos ya agregados por radio— y aun asi no se
+# versionan: se rebajan con bajar_censo_2022.py. Lo versionable son las tablas por barrio y por
+# comuna que produce parejidad_cobertura.py.
+outputs/fuentes_externas/censo/*.zip
+
+# La base gastronomica: `local` y `local_fuente` llevan nombre y direccion de comercios. Son
+# redistribuibles por licencia, pero pesan y se regeneran con build_base_gastronomica.py; lo que
+# se versiona es el generador, el informe y los agregados.
+outputs/BARRIDO_CIUDAD_2026-08/base/
+
+# Intermedios regenerables del borrador de polos (2026-08-06). Se versiona `..._v3`, que es la
+# pertenencia vigente y la lee todo script; las dos anteriores son estados superados de la misma
+# tabla y las regenera `polos_p065_union_y_clases.py`.
+outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo.csv
+outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v2.csv
+
+# Cache de respuestas del normalizador de direcciones de USIG: es un espejo local de un servicio
+# de terceros, se rehace solo y no es una fuente.
+outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig.json

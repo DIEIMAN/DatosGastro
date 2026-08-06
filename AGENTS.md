@@ -13,6 +13,10 @@ Para informes DataGastro, consultar antes de trabajar:
 - `agent_skills/shared/datagastro_reporte_formulario.md` para formularios, encuestas y planillas
   de respuestas.
 - `agent_skills/shared/datagastro_qa_privacidad.md` antes de cerrar entregables públicos.
+- `agent_skills/shared/datagastro_metodo_experimental.md` **siempre que una corrida vaya a
+  producir un número que después se lea como conclusión** (bandas antes de correr, control
+  aleatorio, umbrales que no se mueven, curvas de sensibilidad, presupuesto de API, procedencia
+  y licencia, y no confundir «no encontramos» con «no existe»).
 
 Si la tarea toca guardrails, privacidad, fuentes, pipeline, geodatos, fuentes externas o limpieza,
 consultar también la skill importada correspondiente en `agent_skills/claude_imported/`.

@@ -11,15 +11,30 @@ corriendo código sobre los datos.
 | archivo | qué es | estado |
 |---|---|---|
 | `EDICION_TECNICA_METODO.md` | **La edición técnica.** Diez partes y un anexo: de dónde sale cada número del Atlas y del barrido, con las curvas, los controles y los que fallaron | completo |
+| `ATLAS_V3_SECCIONES_V_VI.md` | **Secciones V (apertura), VI y VIII** del Atlas. La VI —lo que se midió y no alcanzó— es la que vuelve honesta toda afirmación de ausencia | completo |
 | `ATLAS_V3_SECCIONES_I_IV_VII.md` | El **texto del Atlas V3**: presentación, qué es un polo, de dónde salen los datos, cómo se leyó el territorio, y qué no dice este atlas | completo · no depende de las fichas |
 | `FICHA_Y_ESTRUCTURA_V3.md` | La **plantilla de las 124 fichas** y el esqueleto del documento, con las 5 decisiones editoriales pendientes | completo |
 | `NOMBRAR_LOS_POLOS.md` | La regla para nombrar los 124, la respuesta a **dónde está Soho**, y el hallazgo sobre el sur | completo · espera `POLOS_PARA_NOMBRAR.csv` para aplicarse |
 | `diccionario_nombres_uso_corriente.csv` | **72 nombres** de áreas gastronómicas de CABA en 4 niveles, con límites de calles y fuente | completo |
 | `hitos_documentales_caba.csv` | **199 distinciones sobre 189 establecimientos**, 6 capas, con fuente y licencia por fila | falta geocodificar |
 | `HITOS_DOCUMENTALES_LEEME.md` | Cómo usar el anterior y sus 9 advertencias | completo |
+| `APORTES_A_LA_PRESENTACION_PLAN_2026.md` | **Lámina por lámina del Plan Gastronomía 2026: qué número va en cada una**, con su advertencia. Es el destino real de todo esto | completo |
+| `RECONCILIACION_HITOS.md` | Qué de la capa de hitos está duplicado con `REFERENTES_2026/` y qué sirve | completo |
+| `POLOS_NOMBRADOS.csv` + `_LEEME.md` | **Los 124 polos nombrados**, con nivel, fuente y la leyenda exacta que va en la ficha | completo · 14 esperan verificación normativa |
+| `DECISIONES_EDITORIALES_V3.md` | Las decisiones editoriales tomadas por Diego, con sus motivos | cerrado |
 | `DECISION_P078_Y_SALIENTE.md` | El razonamiento de por qué la excepción de P078 no se firmaba | cerrado — el repo lo resolvió por estabilidad |
 
 ---
+
+## Contexto: para qué es todo esto
+
+El destino es el **Plan Gastronomía 2026** del Ministerio de Desarrollo Económico. Sus programas
+—clústeres territoriales, oficios artesanales, país/colectividad, Mercados BA, Sitios Icónicos—
+están bien definidos y **les falta el dónde**. Eso es lo que produce este trabajo.
+Ver `APORTES_A_LA_PRESENTACION_PLAN_2026.md`.
+
+**Criterio editorial del Atlas V3:** el documento se sostiene solo. No se compara con versiones
+anteriores ni explica qué cambió.
 
 ## Lo primero que hay que hacer con esto
 
@@ -96,7 +111,7 @@ salvo que el clustering lo haya partido.
 
 ## Qué falta de este lado
 
-- Aplicar el diccionario a los 124 → espera `POLOS_PARA_NOMBRAR.csv`
-- Las 124 fichas → esperan nombres y polígonos
-- Secciones V, VI y VIII del Atlas → esperan las fichas
+- **Las 124 fichas** → esperan la unión de la capa de hitos a los polígonos. Todo lo demás está.
+- Cartografía: mapa general + 15 por comuna
+- La edición técnica a `.docx` con formato
 - La edición técnica a `.docx` con formato de la Dirección
