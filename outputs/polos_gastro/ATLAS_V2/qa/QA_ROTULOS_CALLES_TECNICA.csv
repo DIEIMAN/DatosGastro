@@ -1,0 +1,30 @@
+﻿pagina,referencia_id,tipo,calles
+8,R01,principal,
+9,R01,detalle,Av. del Libertador | Av. Luis María Campos | Av. Cabildo | Av. Intendente Bullrich
+11,R02,principal,Av. Corrientes | Av. 9 de Julio | Av. Callao
+12,R03,principal,Defensa
+13,R02,detalle,Av. Corrientes
+15,R04,principal,
+16,R06,principal,
+18,R05,principal,Av. Cabildo | Av. Juramento
+20,R07,principal,
+22,R08,principal,Thames | Gurruchaga
+23,R08,detalle,
+25,R09,principal,Av. Jorge Newbery | Av. Dorrego
+26,R10,principal,Av. Pedro Goyena
+28,R11,principal,Av. Caseros
+29,R13,principal,Av. Corrientes
+31,R12,principal,
+32,R12,detalle,
+34,R14,principal,Av. Boedo
+35,R15,principal,
+36,R15,detalle,
+38,R16,principal,Donado | Holmberg
+39,R17,principal,Av. Triunvirato | Monroe | Av. Congreso
+41,R18,principal,Esmeralda | Paraguay
+42,R20,principal,Av. García del Río | Av. Cabildo
+43,R20,detalle,Av. García del Río | Av. Cabildo
+45,R19,principal,Av. Federico Lacroze | Av. Cabildo | Av. del Libertador | Av. Álvarez Thomas
+46,R19,detalle,Av. Federico Lacroze | Av. Cabildo
+48,R21,principal,
+50,R22,principal,

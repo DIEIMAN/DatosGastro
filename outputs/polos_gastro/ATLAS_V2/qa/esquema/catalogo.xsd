@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Punto de entrada único: reúne los esquemas de todos los espacios de nombres que hay que
+  conocer para validar las partes del .docx. `build_atlas_docx.py` carga este archivo y con
+  ese único validador recorre parte por parte.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+             schemaLocation="xml.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+             schemaLocation="relationships.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+             schemaLocation="wml.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/math"
+             schemaLocation="math.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/drawingml/2006/main"
+             schemaLocation="dml-main.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+             schemaLocation="dml-wp.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/drawingml/2006/picture"
+             schemaLocation="dml-pic.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/package/2006/content-types"
+             schemaLocation="opc-content-types.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/package/2006/relationships"
+             schemaLocation="opc-relationships.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"
+             schemaLocation="opc-core-properties.xsd"/>
+  <xs:import namespace="http://purl.org/dc/elements/1.1/"
+             schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/"
+             schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"
+             schemaLocation="opc-extended-properties.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"
+             schemaLocation="docPropsVTypes.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/customXml"
+             schemaLocation="customXmlDataProps.xsd"/>
+</xs:schema>

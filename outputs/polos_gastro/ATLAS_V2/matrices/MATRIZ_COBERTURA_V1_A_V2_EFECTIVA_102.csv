@@ -1,0 +1,103 @@
+﻿contenido_v1,pagina_v1,tipo,referencia,destino_v2,pagina_v2,tratamiento,justificacion,verificacion_canonica,riesgo_perdida,mitigacion,pagina_v2_plan_56,verificacion_productor
+Portada,1,APERTURA,—,Portada V2 con año/versión,1,reformular_sin_perdida,C-07,meta V1,bajo,checklist portada,1,CUBIERTO
+Página institucional y alcance,2,APERTURA,—,Combinado en p.2,2,combinar,densidad,apertura V1,bajo,,2,CUBIERTO
+Presentación,3,APERTURA,—,Combinado en p.2,2,combinar,densidad,apertura V1,bajo,,2,CUBIERTO
+Resumen ejecutivo,4,APERTURA,—,Combinado en p.2,2,combinar,densidad,apertura V1,bajo,,2,CUBIERTO
+Índice (2 págs),5-6,APERTURA,—,Índice único p.3,3,combinar,sin índice final,índice V1,bajo,,3,CUBIERTO
+Cómo leer,7,APERTURA,—,p.4,4,combinar,con cifras,V1 p.7,bajo,,4,CUBIERTO
+Tipologías,8,APERTURA,—,p.5 única,5,combinar,C-05,V1 p.8,bajo,no anexo tipologías,5,CUBIERTO
+Metodología y fuentes,9,APERTURA,—,Síntesis p.5 + IDs p.56,5;58,reubicar,sin rutas internas,V1 p.9,medio,C-11,5;56,CUBIERTO
+Alcance de cifras,10,APERTURA,—,p.4,4,combinar,con cómo leer,V1 p.10,bajo,,4,CUBIERTO
+Localizador,11,APERTURA,R01-R22,p.6,6,conservar,C-08,asset localizador,bajo,,6,CUBIERTO
+Ficha editorial R01,12,FICHA,R01,Ficha V2 (7 completa),7,conservar,Contenido canónico completo; compactación de layout,ficha R01,medio si doble,QA campo a campo,7,CUBIERTO
+Mapa principal R01,13,MAPA,R01,Mapa página completa V2,8,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,8,CUBIERTO
+Cifra/cota/naturaleza R01,12,DATO,R01,Ficha V2 + matriz A,7;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,7;51-52,CUBIERTO
+Ficha editorial R02,15,FICHA,R02,Ficha V2 (10 doble),10,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R02,medio si doble,QA campo a campo,10,CUBIERTO
+Mapa principal R02,16,MAPA,R02,Mapa página completa V2,11,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,11,CUBIERTO
+Cifra/cota/naturaleza R02,15,DATO,R02,Ficha V2 + matriz A,10;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,10;51-52,CUBIERTO
+Ficha editorial R03,18,FICHA,R03,Ficha V2 (10 doble),10,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R03,medio si doble,QA campo a campo,10,CUBIERTO
+Mapa principal R03,19,MAPA,R03,Mapa página completa V2,12,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,12,CUBIERTO
+Cifra/cota/naturaleza R03,18,DATO,R03,Ficha V2 + matriz A,10;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,10;51-52,CUBIERTO
+Ficha editorial R04,20,FICHA,R04,Ficha V2 (14 doble),14,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R04,medio si doble,QA campo a campo,14,CUBIERTO
+Mapa principal R04,21,MAPA,R04,Mapa página completa V2,15,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,15,CUBIERTO
+Cifra/cota/naturaleza R04,20,DATO,R04,Ficha V2 + matriz A,14;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,14;51-52,CUBIERTO
+Ficha editorial R05,22,FICHA,R05,Ficha V2 (17 completa),17,conservar,Contenido canónico completo; compactación de layout,ficha R05,medio si doble,QA campo a campo,17,CUBIERTO
+Mapa principal R05,23,MAPA,R05,Mapa página completa V2,18,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,18,CUBIERTO
+Cifra/cota/naturaleza R05,22,DATO,R05,Ficha V2 + matriz A,17;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,17;51-52,CUBIERTO
+Ficha editorial R06,24,FICHA,R06,Ficha V2 (14 doble),14,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R06,medio si doble,QA campo a campo,14,CUBIERTO
+Mapa principal R06,25,MAPA,R06,Mapa página completa V2,16,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,16,CUBIERTO
+Cifra/cota/naturaleza R06,24,DATO,R06,Ficha V2 + matriz A,14;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,14;51-52,CUBIERTO
+Ficha editorial R07,26,FICHA,R07,Ficha V2 (19 completa),19,conservar,Contenido canónico completo; compactación de layout,ficha R07,medio si doble,QA campo a campo,19,CUBIERTO
+Mapa principal R07,27,MAPA,R07,Mapa página completa V2,20,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,20,CUBIERTO
+Cifra/cota/naturaleza R07,26,DATO,R07,Ficha V2 + matriz A,19;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,19;51-52,CUBIERTO
+Ficha editorial R08,28,FICHA,R08,Ficha V2 (21 completa),21,conservar,Contenido canónico completo; compactación de layout,ficha R08,medio si doble,QA campo a campo,21,CUBIERTO
+Mapa principal R08,29,MAPA,R08,Mapa página completa V2,22,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,22,CUBIERTO
+Cifra/cota/naturaleza R08,28,DATO,R08,Ficha V2 + matriz A,21;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,21;51-52,CUBIERTO
+Ficha editorial R09,31,FICHA,R09,Ficha V2 (24 doble),24,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R09,medio si doble,QA campo a campo,24,CUBIERTO
+Mapa principal R09,32,MAPA,R09,Mapa página completa V2,25,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,25,CUBIERTO
+Cifra/cota/naturaleza R09,31,DATO,R09,Ficha V2 + matriz A,24;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,24;51-52,CUBIERTO
+Ficha editorial R10,33,FICHA,R10,Ficha V2 (24 doble),24,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R10,medio si doble,QA campo a campo,24,CUBIERTO
+Mapa principal R10,34,MAPA,R10,Mapa página completa V2,26,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,26,CUBIERTO
+Cifra/cota/naturaleza R10,33,DATO,R10,Ficha V2 + matriz A,24;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,24;51-52,CUBIERTO
+Ficha editorial R11,35,FICHA,R11,Ficha V2 (27 doble),27,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R11,medio si doble,QA campo a campo,27,CUBIERTO
+Mapa principal R11,36,MAPA,R11,Mapa página completa V2,28,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,28,CUBIERTO
+Cifra/cota/naturaleza R11,35,DATO,R11,Ficha V2 + matriz A,27;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,27;51-52,CUBIERTO
+Ficha editorial R12,37,FICHA,R12,Ficha V2 (30 completa),30,conservar,Contenido canónico completo; compactación de layout,ficha R12,medio si doble,QA campo a campo,30,CUBIERTO
+Mapa principal R12,38,MAPA,R12,Mapa página completa V2,31,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,31,CUBIERTO
+Cifra/cota/naturaleza R12,37,DATO,R12,Ficha V2 + matriz A,30;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,30;51-52,CUBIERTO
+Ficha editorial R13,40,FICHA,R13,Ficha V2 (27 doble),27,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R13,medio si doble,QA campo a campo,27,CUBIERTO
+Mapa principal R13,41,MAPA,R13,Mapa página completa V2,29,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,29,CUBIERTO
+Cifra/cota/naturaleza R13,40,DATO,R13,Ficha V2 + matriz A,27;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,27;51-52,CUBIERTO
+Ficha editorial R14,42,FICHA,R14,Ficha V2 (33 doble),33,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R14,medio si doble,QA campo a campo,33,CUBIERTO
+Mapa principal R14,43,MAPA,R14,Mapa página completa V2,34,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,34,CUBIERTO
+Cifra/cota/naturaleza R14,42,DATO,R14,Ficha V2 + matriz A,33;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,33;51-52,CUBIERTO
+Ficha editorial R15,44,FICHA,R15,Ficha V2 (33 doble),33,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R15,medio si doble,QA campo a campo,33,CUBIERTO
+Mapa principal R15,45,MAPA,R15,Mapa página completa V2,35,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,35,CUBIERTO
+Cifra/cota/naturaleza R15,44,DATO,R15,Ficha V2 + matriz A,33;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,33;51-52,CUBIERTO
+Ficha editorial R16,47,FICHA,R16,Ficha V2 (37 doble),37,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R16,medio si doble,QA campo a campo,37,CUBIERTO
+Mapa principal R16,48,MAPA,R16,Mapa página completa V2,38,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,38,CUBIERTO
+Cifra/cota/naturaleza R16,47,DATO,R16,Ficha V2 + matriz A,37;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,37;51-52,CUBIERTO
+Ficha editorial R17,49,FICHA,R17,Ficha V2 (37 doble),37,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R17,medio si doble,QA campo a campo,37,CUBIERTO
+Mapa principal R17,50,MAPA,R17,Mapa página completa V2,39,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,39,CUBIERTO
+Cifra/cota/naturaleza R17,49,DATO,R17,Ficha V2 + matriz A,37;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,37;51-52,CUBIERTO
+Ficha editorial R18,51,FICHA,R18,Ficha V2 (40 doble),40,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R18,medio si doble,QA campo a campo,40,CUBIERTO
+Mapa principal R18,52,MAPA,R18,Mapa página completa V2,41,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,41,CUBIERTO
+Cifra/cota/naturaleza R18,51,DATO,R18,Ficha V2 + matriz A,40;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,40;51-52,CUBIERTO
+Ficha editorial R19,53,FICHA,R19,Ficha V2 (44 completa),44,conservar,Contenido canónico completo; compactación de layout,ficha R19,medio si doble,QA campo a campo,44,CUBIERTO
+Mapa principal R19,54,MAPA,R19,Mapa página completa V2,45,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,45,CUBIERTO
+Cifra/cota/naturaleza R19,53,DATO,R19,Ficha V2 + matriz A,44;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,44;51-52,CUBIERTO
+Ficha editorial R20,56,FICHA,R20,Ficha V2 (40 doble),40,reformular_sin_perdida,Contenido canónico completo; compactación de layout,ficha R20,medio si doble,QA campo a campo,40,CUBIERTO
+Mapa principal R20,57,MAPA,R20,Mapa página completa V2,42,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,42,CUBIERTO
+Cifra/cota/naturaleza R20,56,DATO,R20,Ficha V2 + matriz A,40;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,40;51-52,CUBIERTO
+Ficha editorial R21,59,FICHA,R21,Ficha V2 (47 completa),47,conservar,Contenido canónico completo; compactación de layout,ficha R21,medio si doble,QA campo a campo,47,CUBIERTO
+Mapa principal R21,60,MAPA,R21,Mapa página completa V2,48,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,48,CUBIERTO
+Cifra/cota/naturaleza R21,59,DATO,R21,Ficha V2 + matriz A,47;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,47;51-52,CUBIERTO
+Ficha editorial R22,61,FICHA,R22,Ficha V2 (49 completa),49,conservar,Contenido canónico completo; compactación de layout,ficha R22,medio si doble,QA campo a campo,49,CUBIERTO
+Mapa principal R22,62,MAPA,R22,Mapa página completa V2,50,conservar,Asset congelado sin deformar,PNG/SVG cartografía,bajo,paridad visual,50,CUBIERTO
+Cifra/cota/naturaleza R22,61,DATO,R22,Ficha V2 + matriz A,49;51-52,conservar,100% canónico,ficha+matriz,alto si se omite,QA numérico,49;51-52,CUBIERTO
+Complementaria R01_DETALLE_LAS_CANITAS,14,COMPLEMENTARIA,R01,Comp V2 p.9,9,conservar,Página completa subordinada; D-01 máscara si se aprueba,R01_DETALLE_LAS_CANITAS,bajo,rótulo subordinada,9,CUBIERTO
+Complementaria R02_R13_CONTEXTO_CORRIENTES_ABASTO,17,COMPLEMENTARIA,R02;R13,Comp V2 p.13,13,conservar,Página completa subordinada; D-01 máscara si se aprueba,R02_R13_CONTEXTO_CORRIENTES_ABASTO,bajo,rótulo subordinada,13,CUBIERTO
+Complementaria R08_DETALLE_SATURACIONES_RESIDUALES,30,COMPLEMENTARIA,R08,Comp V2 p.23,23,conservar,Página completa subordinada; D-01 máscara si se aprueba,R08_DETALLE_SATURACIONES_RESIDUALES,bajo,rótulo subordinada,23,CUBIERTO
+Complementaria R12_DETALLE_SUBUNIDADES_SATURACION,39,COMPLEMENTARIA,R12,Comp V2 p.32,32,conservar,Página completa subordinada; D-01 máscara si se aprueba,R12_DETALLE_SUBUNIDADES_SATURACION,bajo,rótulo subordinada,32,CUBIERTO
+Complementaria R15_DETALLE_NUCLEO_PERIFERIA,46,COMPLEMENTARIA,R15,Comp V2 p.36,36,conservar,Página completa subordinada; D-01 máscara si se aprueba,R15_DETALLE_NUCLEO_PERIFERIA,bajo,rótulo subordinada,36,CUBIERTO
+Complementaria R19_DETALLE_LACROZE_CABILDO,55,COMPLEMENTARIA,R19,Comp V2 p.46,46,conservar,Página completa subordinada; D-01 máscara si se aprueba,R19_DETALLE_LACROZE_CABILDO,bajo,rótulo subordinada,46,CUBIERTO
+Complementaria R20_DETALLE_CABILDO_PARQUE_SAAVEDRA,58,COMPLEMENTARIA,R20,Comp V2 p.43,43,conservar,Página completa subordinada; D-01 máscara si se aprueba,R20_DETALLE_CABILDO_PARQUE_SAAVEDRA,bajo,rótulo subordinada,43,CUBIERTO
+Anexo 1 matriz R01-R22,63-64,ANEXO,R01-R22,Anexo A,51-52,combinar,C-03,matriz canónica,bajo,,51-52,CUBIERTO
+Anexo 2 tipologías,65,ANEXO,—,Absorbedo en p.5,5,combinar,C-05,tipologías,bajo,no reabrir anexo tipologías,5,CUBIERTO
+Anexo 3 cifras y cotas,66,ANEXO,—,p.4 + Anexos D/E,4;56;58,reubicar,naturalezas intactas,anexo3,bajo,,4;55;56,CUBIERTO
+Anexo 4 subunidades,67-68,ANEXO,varias,Anexo B,53,combinar,una página densa,anexo4,medio,tabla completa,53,CUBIERTO
+Anexo 5 controles,69,ANEXO,varias,Anexo B,54,combinar,con subunidades,anexo5,bajo,,53,CUBIERTO
+Anexo 6 separaciones,70,ANEXO,varias,Anexo C,55,conservar,lista institucional,anexo6,bajo,,54,CUBIERTO
+Anexos 7-8 BS/saturación,71,ANEXO,varias,Anexo D,57,combinar,con deduplicación,anexo7-8,bajo,,55,CUBIERTO
+Anexo 9 deduplicación,72,ANEXO,varias,Anexo D,57,combinar,,anexo9,bajo,,55,CUBIERTO
+Anexo 10 linaje,73-74,ANEXO,—,Anexo E por IDs,58,reformular_sin_perdida,C-11,anexo10,medio,solo IDs y SHA públicos,56,CUBIERTO
+Anexo 11 decisiones,75,ANEXO,—,Anexo E,58,combinar,,anexo11,bajo,,56,CUBIERTO
+Anexo 12 limitaciones,76,ANEXO,—,p.2/4 + Anexo E D-03,2;4;58,reubicar,D-03,anexo12,bajo,,2;4;56,CUBIERTO
+Anexo 13 glosario,77,ANEXO,—,Anexo E,58,combinar,,anexo13,bajo,,56,CUBIERTO
+Anexo 14 trazabilidad técnica,78,ANEXO,—,Anexo E mínimo + pack técnico,58,reformular_sin_perdida,hashes largos fuera del cuerpo,anexo14,medio,README técnico no público,56,CUBIERTO
+Anexo 15 índice mapas,79-80,ANEXO,R01-R22,Eliminado; cubierto por p.3 y p.6,3;6,combinar,redundante,anexo15,bajo,no regenerar anexo 15,3;6,CUBIERTO
+businessStatus por bloque,71,DATO,varias,Anexo D,56,conservar,,addenda/fichas,alto,,55,CUBIERTO
+Separaciones institucionales,70,REGLA,varias,Anexo C + fichas,55,conservar,,D-E03/actas,alto,,54,CUBIERTO
+Pie estable mapas,mapas,REGLA,todas,Todos los mapas V2,mapas,conservar,texto exacto aprobado,cartografía,alto,string match,mapas,CUBIERTO
+D-E01…D-E08,contrato,DECISION,—,Anexo E + cuerpo,58,conservar,,contrato v1.1,alto,,56,CUBIERTO
+Lecturas territoriales 22 refs,actas,DECISION,R01-R22,Fichas V2,fichas,conservar,sin reapertura territorial,actas T1/T2/A/B/C,alto,QA lecturas,fichas,CUBIERTO

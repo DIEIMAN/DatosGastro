@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- `docProps/core.xml`: título, autor y fechas del archivo. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:dcterms="http://purl.org/dc/terms/"
+           targetNamespace="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dcterms.xsd"/>
+
+  <xs:element name="coreProperties">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="dc:title"/>
+        <xs:element ref="dc:subject"/>
+        <xs:element ref="dc:creator"/>
+        <xs:element ref="dc:description"/>
+        <xs:element ref="dc:identifier"/>
+        <xs:element ref="dc:language"/>
+        <xs:element ref="dcterms:created"/>
+        <xs:element ref="dcterms:modified"/>
+        <xs:element name="keywords" type="xs:string"/>
+        <xs:element name="category" type="xs:string"/>
+        <xs:element name="revision" type="xs:string"/>
+        <xs:element name="version" type="xs:string"/>
+        <xs:element name="lastModifiedBy" type="xs:string"/>
+        <xs:element name="lastPrinted" type="xs:string"/>
+        <xs:element name="contentStatus" type="xs:string"/>
+        <xs:element name="contentType" type="xs:string"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

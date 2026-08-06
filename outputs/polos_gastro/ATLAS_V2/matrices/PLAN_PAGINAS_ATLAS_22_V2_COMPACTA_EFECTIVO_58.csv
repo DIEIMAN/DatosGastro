@@ -1,0 +1,59 @@
+﻿pagina_v2,seccion,titulo,referencias,tipo_pagina,fuente_publica_id,qa_especifico
+1,APERTURA,Portada institucional,—,PORTADA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+2,APERTURA,"Alcance, presentación y resumen ejecutivo",—,APERTURA_COMBINADA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+3,APERTURA,Índice único navegable,—,INDICE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+4,APERTURA,Cómo leer y naturaleza de las cifras,—,LECTURA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+5,APERTURA,Tipologías y metodología,—,TIPOLOGIAS,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+6,APERTURA,Mapa general de la Ciudad,—,MAPA_GENERAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+7,REFERENCIAS,R01 Palermo - ficha editorial,R01,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+8,REFERENCIAS,R01 Palermo - mapa principal,R01,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+9,COMPLEMENTARIAS,Complementaria R01 - Las Cañitas,R01,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+10,REFERENCIAS,R02 Avenida Corrientes y R03 San Telmo - fichas,R02;R03,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+11,REFERENCIAS,R02 Avenida Corrientes - mapa principal,R02,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+12,REFERENCIAS,R03 San Telmo - mapa principal,R03,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+13,COMPLEMENTARIAS,Corrientes-Abasto contextual,R02;R13,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+14,REFERENCIAS,R04 Puerto Madero y R06 Recoleta - fichas,R04;R06,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+15,REFERENCIAS,R04 Puerto Madero - mapa principal,R04,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+16,REFERENCIAS,R06 Recoleta - mapa principal,R06,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+17,REFERENCIAS,R05 Belgrano - ficha editorial,R05,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+18,REFERENCIAS,R05 Belgrano - mapa principal,R05,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+19,REFERENCIAS,R07 Costanera Norte - ficha editorial,R07,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+20,REFERENCIAS,R07 Costanera Norte - mapa principal,R07,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+21,REFERENCIAS,R08 Villa Crespo - ficha editorial,R08,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+22,REFERENCIAS,R08 Villa Crespo - mapa principal,R08,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+23,COMPLEMENTARIAS,Complementaria R08 - Saturaciones residuales,R08,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+24,REFERENCIAS,R09 Chacarita y R10 Caballito - fichas,R09;R10,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+25,REFERENCIAS,R09 Chacarita - mapa principal,R09,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+26,REFERENCIAS,R10 Caballito - mapa principal,R10,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+27,REFERENCIAS,R11 Boulevard Caseros y R13 Abasto - fichas,R11;R13,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+28,REFERENCIAS,R11 Boulevard Caseros - mapa principal,R11,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+29,REFERENCIAS,R13 Abasto - mapa principal,R13,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+30,REFERENCIAS,R12 Centro/Microcentro segmentado - ficha,R12,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+31,REFERENCIAS,R12 Centro/Microcentro - mapa principal,R12,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+32,COMPLEMENTARIAS,Complementaria R12 - Subunidades y saturación,R12,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+33,REFERENCIAS,R14 Avenida Boedo y R15 Devoto - fichas,R14;R15,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+34,REFERENCIAS,R14 Avenida Boedo - mapa principal,R14,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+35,REFERENCIAS,R15 Devoto - mapa principal,R15,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+36,COMPLEMENTARIAS,Complementaria R15 - Núcleo y periferia,R15,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+37,REFERENCIAS,R16 Donado-Holmberg y R17 Villa Urquiza - fichas,R16;R17,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+38,REFERENCIAS,R16 Donado-Holmberg - mapa principal,R16,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+39,REFERENCIAS,R17 Villa Urquiza - mapa principal,R17,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+40,REFERENCIAS,R18 Esmeralda-Paraguay y R20 García del Río - fichas,R18;R20,FICHA_DOBLE,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+41,REFERENCIAS,R18 Esmeralda-Paraguay - mapa principal,R18,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+42,REFERENCIAS,R20 García del Río - mapa principal,R20,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+43,COMPLEMENTARIAS,Complementaria R20 - Cabildo-Parque Saavedra,R20,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+44,REFERENCIAS,R19 Federico Lacroze por tramos - ficha,R19,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+45,REFERENCIAS,R19 Federico Lacroze - mapa principal,R19,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+46,COMPLEMENTARIAS,Complementaria R19 - Lacroze-Cabildo,R19,COMPLEMENTARIA,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+47,REFERENCIAS,R21 La Paternal - ficha editorial,R21,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+48,REFERENCIAS,R21 La Paternal - mapa principal,R21,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+49,REFERENCIAS,R22 Villa Pueyrredón - ficha editorial,R22,FICHA_COMPLETA,SRC-FICHAS-22;SRC-CARTO-22,texto;enlaces;marcadores
+50,REFERENCIAS,R22 Villa Pueyrredón - mapa principal,R22,MAPA_PRINCIPAL,SRC-FICHAS-22;SRC-CARTO-22,asset;escala;pie;enlaces
+51,ANEXOS,Matriz resumen R01-R11 (1 de 2),—,ANEXO_MATRIZ,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+52,ANEXOS,Matriz resumen R12-R22 (2 de 2),—,ANEXO_MATRIZ,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+53,ANEXOS,Subunidades y componentes,—,ANEXO_COMPONENTES,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+54,ANEXOS,"Controles, exclusiones y no-productos",—,ANEXO_CONTROLES,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+55,ANEXOS,Separaciones institucionales y nomenclatura,—,ANEXO_SEPARACIONES,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+56,ANEXOS,"Estado declarado, saturaciones y cobertura",—,ANEXO_STATUS,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+57,ANEXOS,Cómo se contaron los locales,—,ANEXO_RECUENTO,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores
+58,ANEXOS,"Decisiones, limitaciones, glosario y trazabilidad pública",—,ANEXO_CIERRE,SRC-FICHAS-22;ACTAS-CIERRE,texto;enlaces;marcadores

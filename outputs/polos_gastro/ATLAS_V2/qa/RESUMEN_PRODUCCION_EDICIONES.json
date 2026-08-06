@@ -1,0 +1,30 @@
+{
+  "ediciones": [
+    {
+      "edicion": "conduccion",
+      "pdf": "ATLAS_REFERENCIAS_GASTRONOMICAS_CABA_DGDGAS.pdf",
+      "pdf_paginas": 51,
+      "pdf_bytes": 2807057,
+      "pdf_sha256": "e5691c8a5cb1b80b7fec370260b916fdfd176f80910b06e07dc6d6fd61e38c4d",
+      "controles_qa": 31,
+      "enlaces_internos": 118,
+      "marcadores": 44,
+      "visual_finalizado": true
+    },
+    {
+      "edicion": "tecnica",
+      "pdf": "ATLAS_TECNICO_REFERENCIAS_GASTRONOMICAS_CABA_DGDGAS.pdf",
+      "pdf_paginas": 58,
+      "pdf_bytes": 2723391,
+      "pdf_sha256": "3026768de1a0472a8924a41fad98aacb324cfbd50957bd97e61b7fb33d7ff1eb",
+      "controles_qa": 28,
+      "enlaces_internos": 118,
+      "marcadores": 47,
+      "visual_finalizado": true
+    }
+  ],
+  "zip": "PAQUETE_ATLAS_EDICIONES_REVISION.zip",
+  "zip_bytes": 65834339,
+  "zip_sha256": "30b5f42635e6d02670acd779cc2e7394d701ba04195d0b3a88f0de7cc4b86149",
+  "zip_miembros": 158
+}

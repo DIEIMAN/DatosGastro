@@ -40,6 +40,24 @@ carga en cada sesión. **Ante conflicto, ganan los guardrails.**
 - `docs/skills_claude/07_informes_ejecutivos.md` — redacción para jefatura.
 - `docs/skills_claude/08_limpieza_archivos_locales.md` — borrado seguro local.
 
+## Infraestructura agentes y skills (V1.1, controlada)
+
+Paquete documental (no sustituye `.claude/skills/` productivas hasta promoción explícita):
+
+- Política: `docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md`
+- Ciclo y roles: `docs/infraestructura_agentes_skills_v1_1/CICLO_OPERATIVO_UNA_PASADA.md` —
+  una producción → una auditoría independiente → una corrección puntual → decisión → cierre.
+  El QA del productor no es auditoría independiente. Estado vigente de Polos INFORMEFINAL:
+  leer SIEMPRE `outputs/polos_gastro/INFORMEFINAL/ESTADO_GENERAL_INFORMEFINAL.md` y
+  `DECISIONES_CERRADAS_Y_PENDIENTES.md`; ningún mapa técnico es fuente de estatus institucional.
+- Catálogo: `docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json`
+- Guía / evaluación / adaptadores propuestos: `docs/infraestructura_agentes_skills_v1_1/`
+- Skills de procedimiento (V1, reutilizadas): `docs/infraestructura_agentes_skills_v1/skills/`
+- Superficies protegidas: `docs/<subproyecto>/PROTECTED_SURFACES.yaml` (ej. Polos)
+
+Ante conflicto: guardrails (01) > autorización humana de excepciones permitidas > política V1.1 > agente > skill > tarea.
+No crear `.claude/agents/` ni tocar `.claude/settings.json` sin pedido. Coordinador, editor y auditor metodológico no se activan como nativos en V1.1.
+
 ## Entorno
 
 - Windows. Shell primaria PowerShell; Bash disponible para POSIX.

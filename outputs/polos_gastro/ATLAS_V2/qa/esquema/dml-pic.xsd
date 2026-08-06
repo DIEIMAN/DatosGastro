@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- La imagen propiamente dicha dentro del marco gráfico: uno por cada mapa. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"
+           xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+           targetNamespace="http://schemas.openxmlformats.org/drawingml/2006/picture"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:import namespace="http://schemas.openxmlformats.org/drawingml/2006/main"
+             schemaLocation="dml-main.xsd"/>
+
+  <xs:element name="pic">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nvPicPr">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="cNvPr">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:unsignedInt" use="required"/>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="descr" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cNvPicPr">
+                <xs:complexType>
+                  <xs:attribute name="preferRelativeResize" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="blipFill">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="a:blip"/>
+              <xs:element ref="a:stretch"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spPr">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="a:xfrm"/>
+              <xs:element ref="a:prstGeom"/>
+            </xs:choice>
+            <xs:attribute name="bwMode" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Los archivos `.rels`: qué parte apunta a qué parte. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.openxmlformats.org/package/2006/relationships"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="Relationships">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Relationship">
+          <xs:complexType>
+            <xs:attribute name="Id" type="xs:string" use="required"/>
+            <xs:attribute name="Type" type="xs:string" use="required"/>
+            <xs:attribute name="Target" type="xs:string" use="required"/>
+            <xs:attribute name="TargetMode" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Las dos fechas de Dublin Core Terms. Van con `xsi:type="dcterms:W3CDTF"`, así que el tipo
+  tiene que existir con ese nombre: si no, el validador corta por tipo desconocido.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:dcterms="http://purl.org/dc/terms/"
+           targetNamespace="http://purl.org/dc/terms/"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:complexType name="W3CDTF">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="created" type="dcterms:W3CDTF"/>
+  <xs:element name="modified" type="dcterms:W3CDTF"/>
+</xs:schema>

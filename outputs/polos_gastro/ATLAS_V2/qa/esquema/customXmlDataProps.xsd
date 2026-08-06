@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- `customXml/itemProps1.xml`, que también llega desde la plantilla de python-docx. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ds="http://schemas.openxmlformats.org/officeDocument/2006/customXml"
+           targetNamespace="http://schemas.openxmlformats.org/officeDocument/2006/customXml"
+           elementFormDefault="qualified" attributeFormDefault="qualified">
+
+  <xs:element name="datastoreItem">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="schemaRefs">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="schemaRef">
+                <xs:complexType>
+                  <xs:attribute name="uri" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="itemID" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

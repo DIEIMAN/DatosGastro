@@ -1,0 +1,23 @@
+﻿referencia_id,nombre,comunas_nucleo,cantidad,nota
+R01,Palermo,Comuna 13 / Comuna 14 / Comuna 15,3,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R02,Avenida Corrientes,Comuna 1 / Comuna 3,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R03,San Telmo,Comuna 1,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R04,Puerto Madero,Comuna 1 / Comuna 4,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R05,Belgrano,Comuna 13,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R06,Recoleta,Comuna 1 / Comuna 2,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R07,Costanera Norte,Comuna 13 / Comuna 14,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R08,Villa Crespo,Comuna 15,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R09,Chacarita,Comuna 15,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R10,Caballito,Comuna 6,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R11,Boulevard Caseros,Comuna 1 / Comuna 4,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R12,Centro / Microcentro segmentado,Comuna 1,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R13,Abasto,Comuna 3 / Comuna 5,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R14,Avenida Boedo,Comuna 4 / Comuna 5,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R15,Devoto,Comuna 11,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R16,Donado-Holmberg,Comuna 12 / Comuna 15,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R17,Villa Urquiza,Comuna 12,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R18,Esmeralda-Paraguay,Comuna 1,1,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R19,Federico Lacroze por tramos,Comuna 13 / Comuna 14 / Comuna 15,3,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R20,Garcia del Rio,Comuna 12 / Comuna 13,2,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R21,La Paternal,Comuna 11 / Comuna 15 / Comuna 6,3,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura
+R22,Villa Pueyrredon,Comuna 11 / Comuna 12 / Comuna 15,3,ubicacion aproximada sobre el nucleo pre-buffer; no es cobertura

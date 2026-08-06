@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Los vectores tipados de `docProps/app.xml`. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"
+           targetNamespace="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:element name="lpstr" type="xs:string"/>
+  <xs:element name="i4" type="xs:int"/>
+
+  <xs:element name="variant">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="vt:lpstr"/>
+        <xs:element ref="vt:i4"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vector">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="vt:variant"/>
+        <xs:element ref="vt:lpstr"/>
+        <xs:element ref="vt:i4"/>
+      </xs:choice>
+      <xs:attribute name="size" type="xs:unsignedInt" use="required"/>
+      <xs:attribute name="baseType" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

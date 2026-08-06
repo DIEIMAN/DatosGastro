@@ -1,0 +1,32 @@
+﻿control,resultado,detalle
+paginas_exactas,PASS,51
+formato_A4,PASS,51/51
+paginas_no_vacias,PASS,51/51
+texto_seleccionable,PASS,62365
+marcadores_jerarquicos,PASS,44
+marcadores_sin_duplicados,PASS,44
+enlaces_internos,PASS,118
+R01_R22,PASS,22/22
+ausencia_R23,PASS,0
+guardas_rotulos_publicos,PASS,0
+capa_publica_sin_fugas,PASS,0
+reconciliacion_cifras,PASS,completa
+pie_cartografico,PASS,edición sin descargo al pie por decisión editorial; fórmulas retiradas reaparecen en=ninguna
+cartografia_vectorial,PASS,mapas vectoriales=31/31
+mapas_rotulan_lo_que_prometen,PASS,31 mapas; 8 nombran partes en el pie; 0 partes prometidas sin rotular
+sin_imagenes_embebidas,PASS,0 imagenes rasterizadas
+sin_jerga_tecnica,PASS,0
+sin_codigos_internos,PASS,0
+codificacion_limpia,PASS,0
+tildes_intactas,PASS,4/4
+sin_fusiones_indebidas,PASS,15 pares revisados
+tipografias_embebidas,PASS,3/4
+texto_clipeado,PASS,51 páginas; 0 palabras truncadas; 0 fuera de caja; 0 acortes con elipsis
+enlaces_coherentes,PASS,44 referencias «p. N»; todas apuntan a su destino
+cajas_sin_colision,PASS,51 páginas; separación mínima 16 pt respetada
+vocabulario_conduccion,PASS,29 términos vigilados; 0 apariciones en 51 páginas
+diff_cifras_v21_conduccion,PASS,"51 comparaciones, 51 PASS"
+sin_cifrado,PASS,False
+sin_formularios,PASS,0
+sin_javascript,PASS,False
+metadatos_institucionales,PASS,"{'/Author': 'DGDGAS - Dirección General de Desarrollo Gastronómico', '/CreationDate': ""D:20260805113156-03'00'"", '/Creator': 'DGDGAS', '/Keywords': 'DGDGAS, atlas, gastronomía, CABA, cartografía analítica', '/ModDate': ""D:20260805113156-03'00'"", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': '22 lecturas territoriales y cartográficas; representación analítica no oficial', '/Title': 'Atlas de referencias gastronómicas de la Ciudad de Buenos Aires', '/Trapped': '/False'}"

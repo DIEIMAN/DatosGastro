@@ -1,0 +1,46 @@
+# Plantilla — registro de superficies protegidas por subproyecto
+# Copiar a docs/<subproyecto>/PROTECTED_SURFACES.yaml y completar.
+# Política: POLITICA_OPERATIVA_DATAGASTRO v1.1 §2
+
+version: 1
+subproyecto: "<NOMBRE_SUBPROYECTO>"
+actualizado: "YYYY-MM-DD"
+responsable_default: "Diego"
+
+# nivel_proteccion: fuente | pipeline | baseline_cerrada | entregable_oficial | experimental_cerrado | interno_sensible
+superficies:
+  - id: SRC-001
+    ruta_o_patron: "data/raw/**"
+    tipo: fuente_publica_o_cruda
+    motivo: "No alterar insumos originales"
+    nivel_proteccion: fuente
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: PIPE-001
+    ruta_o_patron: "src/build_model.py"
+    tipo: pipeline
+    motivo: "Pipeline público no se modifica sin permiso"
+    nivel_proteccion: pipeline
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: BASE-001
+    ruta_o_patron: "docs/<subproyecto>/<paquete_cerrado>/**"
+    tipo: baseline_o_entregable_cerrado
+    motivo: "Línea cerrada: trabajar en paralelo"
+    nivel_proteccion: baseline_cerrada
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"

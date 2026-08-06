@@ -1,0 +1,17 @@
+﻿id,tipo,resolucion_en_plan,paginas_v2_afectadas,estado_plan,notas,requiere_autorizacion_humana_extra,qa_productor
+C-01,OBSERVACION,Marcadores L1: Apertura / Referencias R01–R22 / Vistas complementarias / Anexos; L2 por página o Rxx,3;PDF,IMPLEMENTADO_QA_PRODUCTOR,Outline jerárquico obligatorio,NO,PASS
+C-02,OBSERVACION,Sufijos 1 de 2 / 2 de 2 en anexos y marcadores continuados,51;52;57;58,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-03,OBSERVACION,Matriz Anexo A: R01–R11 (1 de 2) y R12–R22 (2 de 2),51;52,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-04,OBSERVACION,Cajas de altura adaptativa según contenido,2;4,IMPLEMENTADO_QA_PRODUCTOR,Sistema visual V2,NO,PASS
+C-05,OBSERVACION,Tipologías solo en p.5; no repetir en anexos,5,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-06,OBSERVACION,Wrap controlado; etiquetas de naturaleza sin corte mid-token,4;51-58,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-07,OBSERVACION,"Portada: año, V2 Compacta, DGDGAS, título, subtítulo, no oficial",1,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-08,OBSERVACION,Localizador con borde por celda y Rxx inequívoco,6,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-09,OBSERVACION,QA ortográfico: delimitación y tildes en texto generado,todo,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-10,OBSERVACION,Nota ficha R21: mapa conserva R08-CTRL-BORDE; lectura institucional R21-BORDE; sin alterar asset,55,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-11,OBSERVACION,Cuerpo/anexos públicos solo IDs y 0 rutas repo; hashes técnicos en CHECKSUMS_SHA256.txt y sidecar externo,PDF,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-12,OBSERVACION,Generador --font-dir; fuente empaquetada o fallback documentado en README técnico,generador;PDF,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+C-13,OBSERVACION,Fichas dobles y completas densas sin media página vacía,10;14;24;27;33;37;40,IMPLEMENTADO_QA_PRODUCTOR,,NO,PASS
+D-01,LIMITACION,"Recomendación única B: máscaras editoriales reversibles locales en 4 complementarias (p.23,32,36,46) sin cambiar geometría/datos; requiere aprobación autoridad institucional",23;32;36;46,IMPLEMENTADO_QA_PRODUCTOR,Si no se aprueba B → A conservar assets,NO,PASS
+D-02,LIMITACION,Recomendación B acotada: máscara cosmética opcional R04 p.15 y R07 p.20,15;20,IMPLEMENTADO_QA_PRODUCTOR,Misma decisión que D-01,NO,PASS
+D-03,LIMITACION,"Visible en p.2, p.4 y Anexo E; no es defecto editable",2;4;56,IMPLEMENTADO_QA_PRODUCTOR,Estructural,NO,PASS

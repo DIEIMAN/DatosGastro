@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- `[Content_Types].xml`: qué tipo tiene cada parte del paquete. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.openxmlformats.org/package/2006/content-types"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="Types">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Default">
+          <xs:complexType>
+            <xs:attribute name="Extension" type="xs:string" use="required"/>
+            <xs:attribute name="ContentType" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Override">
+          <xs:complexType>
+            <xs:attribute name="PartName" type="xs:string" use="required"/>
+            <xs:attribute name="ContentType" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

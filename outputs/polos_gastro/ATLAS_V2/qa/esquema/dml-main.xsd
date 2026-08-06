@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DrawingML, el subconjunto que aparece en `word/document.xml`: la cáscara gráfica de cada
+  mapa. El tema (`word/theme/theme1.xml`) usa muchísimo más de este namespace y queda
+  declarado fuera del alcance de la validación, con su motivo, en el propio control.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+           xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+           targetNamespace="http://schemas.openxmlformats.org/drawingml/2006/main"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+             schemaLocation="relationships.xsd"/>
+
+  <xs:element name="graphicFrameLocks">
+    <xs:complexType>
+      <xs:attribute name="noChangeAspect" type="xs:string"/>
+      <xs:attribute name="noGrp" type="xs:string"/>
+      <xs:attribute name="noDrilldown" type="xs:string"/>
+      <xs:attribute name="noSelect" type="xs:string"/>
+      <xs:attribute name="noChangeShapeType" type="xs:string"/>
+      <xs:attribute name="noMove" type="xs:string"/>
+      <xs:attribute name="noResize" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="graphic">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="graphicData">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- El contenido lo define el `uri`; para los mapas es siempre `pic:pic`. -->
+              <xs:any namespace="##other" processContents="strict"
+                      minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="uri" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="blip">
+    <xs:complexType>
+      <xs:attribute ref="r:embed"/>
+      <xs:attribute ref="r:link"/>
+      <xs:attribute name="cstate" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="fillRect">
+    <xs:complexType>
+      <xs:attribute name="l" type="xs:string"/>
+      <xs:attribute name="t" type="xs:string"/>
+      <xs:attribute name="r" type="xs:string"/>
+      <xs:attribute name="b" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="stretch">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a:fillRect"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="off">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:long" use="required"/>
+      <xs:attribute name="y" type="xs:long" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ext">
+    <xs:complexType>
+      <xs:attribute name="cx" type="xs:long" use="required"/>
+      <xs:attribute name="cy" type="xs:long" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="xfrm">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a:off"/>
+        <xs:element ref="a:ext"/>
+      </xs:choice>
+      <xs:attribute name="rot" type="xs:int"/>
+      <xs:attribute name="flipH" type="xs:string"/>
+      <xs:attribute name="flipV" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="prstGeom">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="avLst">
+          <xs:complexType/>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="prst" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

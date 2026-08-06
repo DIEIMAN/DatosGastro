@@ -1,0 +1,52 @@
+﻿ambito,referencia_id,campo,cifras_v21,cifras_conduccion,cifras_no_publicadas_en_conduccion,cifras_nuevas,titular_v21,titular_conduccion,resultado
+ficha,R01,cifras de la ficha,"08, 09",,"08, 09",,sin cifra,sin cifra,PASS
+ficha,R02,cifras de la ficha,"02, 13, 9",9,"02, 13",,sin cifra,sin cifra,PASS
+ficha,R03,cifras de la ficha,"03, 11",,"03, 11",,sin cifra,sin cifra,PASS
+ficha,R04,cifras de la ficha,12,,12,,sin cifra,sin cifra,PASS
+ficha,R05,cifras de la ficha,"0,3975, 0,765, 16, 17, 2, 248, 3, 35,58, 449, 53,23, 623,9, 697, 7",697,"0,3975, 0,765, 16, 17, 2, 248, 3, 35,58, 449, 53,23, 623,9, 7",,697,697,PASS
+ficha,R06,cifras de la ficha,"0,626, 02, 1, 1,218, 165, 18, 3, 46,51, 494,2, 602, 767, 78,49, 9",,"0,626, 02, 1, 1,218, 165, 18, 3, 46,51, 494,2, 602, 767, 78,49, 9",,sin cifra,sin cifra,PASS
+ficha,R07,cifras de la ficha,"0,3922, 0,77, 1, 181,0, 4, 5, 71, 72, 92,96, 98,61",72,"0,3922, 0,77, 1, 181,0, 4, 5, 71, 92,96, 98,61",,72,72,PASS
+ficha,R08,cifras de la ficha,"01, 1, 178, 20, 3, 4, 467, 646, 656, 659, 686",646,"01, 1, 178, 20, 3, 4, 467, 656, 659, 686",,646,646,PASS
+ficha,R09,cifras de la ficha,"02, 09, 1, 115, 116, 140, 19, 2, 211, 327, 332, 336, 346",327,"02, 09, 1, 115, 116, 140, 19, 2, 211, 332, 336, 346",,327,327,PASS
+ficha,R10,cifras de la ficha,"03, 1, 106, 160, 2, 24, 265, 3, 4, 642, 907, 924, 946, 985",907,"03, 1, 106, 160, 2, 24, 265, 3, 4, 642, 924, 946, 985",,907,907,PASS
+ficha,R11,cifras de la ficha,"0, 04, 1, 19, 250, 46, 47, 66, 67, 69","250, 47, 66","0, 04, 1, 19, 46, 67, 69",,66,66,PASS
+ficha,R12,cifras de la ficha,"0, 143, 177, 18, 20, 203, 24,2, 251, 326, 51, 57, 64, 654, 79, 797, 93, 940","143, 797","0, 177, 18, 20, 203, 24,2, 251, 326, 51, 57, 64, 654, 79, 93, 940",,797,797,PASS
+ficha,R13,cifras de la ficha,"02, 1.750, 108, 115, 13, 314, 738, 91","108, 115, 314, 91","02, 1.750, 13, 738",,314,314,PASS
+ficha,R14,cifras de la ficha,"07, 1, 13, 150, 188, 2, 2026, 4, 79","150, 79","07, 1, 13, 188, 2, 2026, 4",,79,79,PASS
+ficha,R15,cifras de la ficha,"07, 119, 13, 20, 2026, 22, 484",119,"07, 13, 20, 2026, 22, 484",,119,119,PASS
+ficha,R16,cifras de la ficha,"07, 1, 13, 17, 2026, 40, 93",40,"07, 1, 13, 17, 2026, 93",,40,40,PASS
+ficha,R17,cifras de la ficha,"07, 13, 16, 17, 189, 2026, 21, 676",189,"07, 13, 16, 17, 2026, 21, 676",,189,189,PASS
+ficha,R18,cifras de la ficha,"0, 06, 100, 12, 200, 216, 282,97, 300, 381,97, 400, 53, 562,35, 566,60, 62, 89","100, 216, 300, 400","0, 06, 12, 200, 282,97, 381,97, 53, 562,35, 566,60, 62, 89",,216,216,PASS
+ficha,R19,cifras de la ficha,"0, 09, 1, 112, 138, 19, 19,7, 190, 2, 204, 211, 22,4, 225, 25, 250, 3, 35, 39, 5, 60, 7","112, 138, 204, 211, 39, 7","0, 09, 1, 19, 19,7, 190, 2, 22,4, 225, 25, 250, 3, 35, 5, 60",,211,211,PASS
+ficha,R20,cifras de la ficha,"0, 1, 106, 165, 20, 22, 2400, 3200, 38, 39, 40, 66","1, 39, 40","0, 106, 165, 20, 22, 2400, 3200, 38, 66",,40,40,PASS
+ficha,R21,cifras de la ficha,"0, 08, 10,8, 110, 12, 15, 19, 2, 200, 22, 237, 242, 254, 3, 300, 36, 4, 4,01, 6,3","12, 19, 237, 242, 254","0, 08, 10,8, 110, 15, 2, 200, 22, 3, 300, 36, 4, 4,01, 6,3",,254,254,PASS
+ficha,R22,cifras de la ficha,"0, 136, 15, 152, 158, 17, 20, 22, 294, 3.432,9, 6, 600, 70, 84","152, 158, 6","0, 136, 15, 17, 20, 22, 294, 3.432,9, 600, 70, 84",,158,158,PASS
+mapa,R01,bloque inferior del mapa,,,,,,,PASS
+mapa,R02,bloque inferior del mapa,9,9,,,,,PASS
+mapa,R03,bloque inferior del mapa,,,,,,,PASS
+mapa,R04,bloque inferior del mapa,,,,,,,PASS
+mapa,R05,bloque inferior del mapa,697,697,,,,,PASS
+mapa,R06,bloque inferior del mapa,,,,,,,PASS
+mapa,R07,bloque inferior del mapa,72,72,,,,,PASS
+mapa,R08,bloque inferior del mapa,646,646,,,,,PASS
+mapa,R09,bloque inferior del mapa,327,327,,,,,PASS
+mapa,R10,bloque inferior del mapa,907,907,,,,,PASS
+mapa,R11,bloque inferior del mapa,66,66,,,,,PASS
+mapa,R12,bloque inferior del mapa,797,797,,,,,PASS
+mapa,R13,bloque inferior del mapa,314,314,,,,,PASS
+mapa,R14,bloque inferior del mapa,79,79,,,,,PASS
+mapa,R15,bloque inferior del mapa,119,119,,,,,PASS
+mapa,R16,bloque inferior del mapa,40,40,,,,,PASS
+mapa,R17,bloque inferior del mapa,189,189,,,,,PASS
+mapa,R18,bloque inferior del mapa,"216, 400","216, 400",,,,,PASS
+mapa,R19,bloque inferior del mapa,"204, 211, 7","204, 211, 7",,,,,PASS
+mapa,R20,bloque inferior del mapa,40,40,,,,,PASS
+mapa,R21,bloque inferior del mapa,"12, 242, 254","12, 242, 254",,,,,PASS
+mapa,R22,bloque inferior del mapa,158,158,,,,,PASS
+ampliacion,R01_DETALLE_LAS_CANITAS,bloque inferior del mapa,,,,,,,PASS
+ampliacion,R02_R13_CONTEXTO_CORRIENTES_ABASTO,bloque inferior del mapa,,,,,,,PASS
+ampliacion,R08_DETALLE_SATURACIONES_RESIDUALES,bloque inferior del mapa,646,646,,,,,PASS
+ampliacion,R12_DETALLE_SUBUNIDADES_SATURACION,bloque inferior del mapa,"143, 797","143, 797",,,,,PASS
+ampliacion,R15_DETALLE_NUCLEO_PERIFERIA,bloque inferior del mapa,119,119,,,,,PASS
+ampliacion,R19_DETALLE_LACROZE_CABILDO,bloque inferior del mapa,211,211,,,,,PASS
+ampliacion,R20_DETALLE_CABILDO_PARQUE_SAAVEDRA,bloque inferior del mapa,40,40,,,,,PASS

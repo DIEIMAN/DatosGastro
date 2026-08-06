@@ -1,0 +1,2961 @@
+DGDGAS
+Dirección General de Desarrollo Gastronómico
+ATLAS DE REFERENCIAS
+GASTRONÓMICAS DE LA CIUDAD DE
+BUENOS AIRES
+22 lecturas territoriales y cartográficas
+EDICIÓN TÉCNICA · respaldo metodológico completo
+Lectura territorial de la oferta gastronómica de la Ciudad,
+elaborada por la Dirección General de Desarrollo Gastronómico.
+LECTURA INSTITUCIONAL
+Veintidós referencias diversas reunidas en una lectura común. Las categorías, cifras y
+métodos no se convierten en un ranking general ni en veintidós polos equivalentes.
+REPRESENTACIÓN CARTOGRÁFICA ANALÍTICA · NO OFICIAL
+
+DGDGAS
+APERTURA
+1. Resumen ejecutivo
+LO QUE MUESTRA ESTE ATLAS
+La Dirección identificó y caracterizó 22 referencias gastronómicas de la Ciudad, presentes en 11 de las
+15 comunas (comunas 1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15). Se agrupan en cinco familias territoriales:
+eje o corredor, 6; polo, 6; polo con subzonas o partes, 5; referencia dispersa, 4; área segmentada, 1.
+No hay referencias identificadas en el sur profundo de la Ciudad.
+Dónde se concentra la oferta relevada
+Las cifras solo se comparan dentro de cada grupo: cada grupo usó un método y un universo propios. Entre grupos no
+son comparables y no se suman.
+Relevamiento propio con deduplicación conservadora
+Caballito 907 · Villa Crespo 646 · Chacarita 327 · Boulevard Caseros 66
+Conteos cerrados. No equivalen a locales en actividad hoy.
+Directorio comercial en línea, deduplicado
+Villa Urquiza 189 · Devoto 119 · Avenida Boedo 79 · Donado–Holmberg 40
+Conteos cerrados sobre una fuente distinta de la anterior.
+Pisos censados (cota inferior, se leen con “al menos”)
+Centro/Microcentro ≥797 · La Paternal ≥254 · Esmeralda–Paraguay ≥216 · Lacroze ≥211 · Villa Pueyrredón ≥158
+· Abasto ≥314 · García del Río ≥40
+Puede haber más casos, nunca menos. No son conteos completos.
+Referencias sin conteo comparable
+Palermo · Avenida Corrientes · San Telmo · Puerto Madero · Recoleta
+Están caracterizadas y ubicadas; Belgrano y Costanera Norte solo tienen antecedentes previos (697 y 72).
+CÓMO USAR ESTE ATLAS
+El mapa de la página 6 ubica las 22 referencias en la Ciudad. Cada referencia tiene después una ficha y un
+mapa propios. Las áreas dibujadas son aproximaciones de lectura territorial: no son límites oficiales, padrón
+de locales ni recomendación comercial. La edición no recalcula universos, no geocodifica y no reabre
+decisiones territoriales.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+2 / 58
+
+DGDGAS
+APERTURA
+2. Índice
+Un único índice con navegación interna.
+Apertura
+1
+Alcance y resumen
+2
+Cómo leer
+4
+Tipologías y metodología
+5
+Localizador
+6
+Referencias R01-R22
+7
+R01 Palermo
+7
+R02 Avenida Corrientes
+10
+R03 San Telmo
+10
+R04 Puerto Madero
+14
+R05 Belgrano
+17
+R06 Recoleta
+14
+R07 Costanera Norte
+19
+R08 Villa Crespo
+21
+R09 Chacarita
+24
+R10 Caballito
+24
+R11 Boulevard Caseros
+27
+R12 Centro/Microcentro
+segmentado
+30
+R13 Abasto
+27
+R14 Avenida Boedo
+33
+R15 Devoto
+33
+R16 Donado–Holmberg
+37
+R17 Villa Urquiza
+37
+R18 Esmeralda–Paraguay
+40
+R19 Federico Lacroze por
+tramos
+44
+R20 García del Río
+40
+R21 La Paternal
+47
+R22 Villa Pueyrredón
+49
+Vistas de detalle
+9
+R01 Las Cañitas
+9
+R02 Corrientes-Abasto
+contextual
+13
+R08 Saturaciones residuales
+23
+R12 Subunidades y
+saturación
+32
+R15 Núcleo y periferia
+36
+R19 Lacroze-Cabildo
+46
+R20 Cabildo-Parque
+Saavedra
+43
+Anexos
+51
+Matriz R01-R11
+51
+Matriz R12-R22
+52
+Subunidades
+53
+Controles y exclusiones
+54
+Separaciones
+55
+Estado declarado y
+cobertura
+56
+Recuento
+57
+Decisiones y trazabilidad
+58
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+3 / 58
+
+DGDGAS
+APERTURA
+3. Cómo leer el Atlas y naturaleza de las cifras
+CIFRA EXACTA
+Se contaron todos los casos que el método
+alcanzó. Es un conteo cerrado, no una medición de
+la actividad de hoy.
+DATO DE REFERENCIA PREVIO
+Proviene de un relevamiento anterior. Sirve para
+describir y comparar en el tiempo, no como
+indicador principal.
+COTA INFERIOR
+Se escribe con el signo ≥ y significa "al menos esta
+cantidad". Es un piso: puede haber más casos,
+nunca menos.
+SIN CIFRA COMPARABLE
+Hay evidencia de la zona, pero no un universo
+único que permita dar un número sin inducir a
+error.
+ESTADO DECLARADO
+Cómo figura cada local: en actividad, cerrado
+temporalmente o cerrado en forma permanente.
+SATURACIÓN
+La consulta llegó al tope de resultados que
+devuelve la fuente. Lo que falta no se estima ni se
+inventa.
+VISTA DE DETALLE
+Amplía una parte de una referencia. No crea una
+referencia nueva ni un límite oficial.
+ADVERTENCIA SOBRE LA GEOMETRÍA
+Los contornos de los mapas son analíticos: ayudan
+a leer el territorio, no delimitan nada de manera
+oficial.
+REGLA GENERAL
+Las 22 referencias no forman un ranking. Cada cifra se obtuvo con un método distinto, sobre un universo
+distinto y con una fecha propia: compararlas entre sí como si midieran lo mismo lleva a conclusiones
+erróneas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+4 / 58
+
+DGDGAS
+APERTURA
+4. Las cinco familias territoriales
+Cinco formas de estar en el territorio. El color de cada familia es el que usa el mapa general.
+Polo  (6)
+Concentración reconocible en torno de un área, con identidad propia.
+R03 San Telmo · Polo
+R05 Belgrano · Polo
+R06 Recoleta · Polo
+R08 Villa Crespo · Polo documentado sin unidad espacial estabilizada
+R13 Abasto · Polo documentado con delimitación provisional
+R15 Devoto · Polo gastronómico con núcleo estable
+Polo con subzonas o partes  (5)
+Un polo que se lee en partes o subzonas separadas, sin unirlas artificialmente.
+R01 Palermo · Polo con subzonas
+R04 Puerto Madero · Polo
+R07 Costanera Norte · Polo multiparte
+R10 Caballito · Lectura multinodo con componentes independientes
+R17 Villa Urquiza · Polo gastronómico multieje
+Eje o corredor  (6)
+La oferta se organiza a lo largo de una calle o avenida, no en una mancha.
+R02 Avenida Corrientes · Corredor gastronómico-cultural
+R11 Boulevard Caseros · Microcentralidad de tramo corto
+R14 Avenida Boedo · Eje gastronómico fragmentado
+R16 Donado–Holmberg · Doble eje con fragmentación por tramos
+R19 Federico Lacroze por tramos · Referencia segmentada por tramos
+R20 García del Río · Tramo localizado de oferta continua y modesta
+Área segmentada  (1)
+Un área que solo se puede leer por subunidades independientes entre sí.
+R12 Centro/Microcentro segmentado · Área gastronómica segmentada
+Referencia dispersa  (4)
+Oferta presente y documentada, sin un núcleo único demostrado.
+R09 Chacarita · Focos independientes Newbery/Dorrego
+R18 Esmeralda–Paraguay · Referencia independiente sin núcleo radial
+R21 La Paternal · Referencia extensa y dispersa sin núcleo único
+R22 Villa Pueyrredón · Oferta extensa y heterogénea
+SOBRE ESTA CLASIFICACIÓN
+La familia describe la forma de estar en el territorio, no la importancia ni el tamaño. La etiqueta específica de
+cada referencia se conserva junto a su nombre y se repite en su ficha. Ninguna familia agrupa cifras: los
+números de cada referencia siguen sin sumarse entre sí.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+5 / 58
+
+DGDGAS
+APERTURA
+5. Las 22 referencias en la Ciudad
+Cada forma es una referencia; el color indica su familia. Cada fila lleva a su ficha.
+11111111
+1
+22222222
+2
+33333333
+3
+44444444
+4
+55555555
+5
+66666666
+6
+77777777
+7
+88888888
+8
+99999999
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+11
+11
+11
+11
+11
+11
+12
+12
+12
+12
+12
+12
+12
+12
+12
+13
+13
+13
+13
+13
+13
+13
+13
+13
+14
+14
+14
+14
+14
+14
+14
+14
+14
+15
+15
+15
+15
+15
+15
+15
+15
+15
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Av. Gral. Paz
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Riachuelo
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+Río de la Plata
+01
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+19
+20
+21
+22
+02
+18
+FAMILIAS
+Polo
+Polo con subzonas o partes
+Eje o corredor
+Área segmentada
+Referencia dispersa
+REFERENCIA
+FICHA
+REFERENCIA
+FICHA
+01 Palermo
+7
+02 Avenida Corrientes
+10
+03 San Telmo
+10
+04 Puerto Madero
+14
+05 Belgrano
+17
+06 Recoleta
+14
+07 Costanera Norte
+19
+08 Villa Crespo
+21
+09 Chacarita
+24
+10 Caballito
+24
+11 Boulevard Caseros
+27
+12 Centro/Microcentro segmentado
+30
+13 Abasto
+27
+14 Avenida Boedo
+33
+15 Devoto
+33
+16 Donado–Holmberg
+37
+17 Villa Urquiza
+37
+18 Esmeralda–Paraguay
+40
+19 Federico Lacroze por tramos
+44
+20 García del Río
+40
+21 La Paternal
+47
+22 Villa Pueyrredón
+49
+El tamaño del área no indica la cantidad de oferta: depende de cuán dispersos estén los registros.
+Números grises sobre el fondo: las 15 comunas. Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Las áreas son aproximaciones de lectura territorial: no son límites oficiales, padrón de locales ni recomendación comercial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+6 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R01 · Palermo
+Polo con subzonas
+Referencia caracterizada; sin conteo comparable entre métodos.
+Lectura
+Polo gastronómico de Palermo (con subzonas)
+Estructura multiparte: la referencia reúne subzonas con identidad propia
+dentro de una lectura común de Palermo.
+Palermo Soho, Palermo Hollywood y Las Cañitas organizan la lectura interna;
+el recorte cartográfico disponible de Las Cañitas no representa por sí solo el
+conjunto.
+La concentración gastronómica es amplia y heterogénea; las
+discontinuidades entre subzonas deben permanecer visibles y no convertirse
+en un polígono normativo único.
+Evidencia y método
+Sin cifra canónica comparable disponible.
+Antecedentes experimentales de microzonas quedan solo en trazabilidad
+técnica y no forman un universo del polo completo.
+Componentes y relaciones
+Palermo Soho: subzona; aporta a la lectura, sin universo canónico separado;
+no comparable.
+Palermo Hollywood: subzona; idem; no comparable.
+Las Cañitas: subzona y recorte cartográfico disponible; aporta a la lectura;
+no representa el total.
+Identidad propia; no absorber R08 ni R09.
+Subzonas internas, no referencias nuevas.
+No polígono oficial único.
+Sin indicador construido con sumas de microzonas.
+Qué no se puede concluir
+No inventar indicador; microzonas experimentales no son universo del polo
+completo
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 8
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+7 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R01 · Palermo · MAPA
+VOLVER A FICHA · p. 7
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Soho
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Palermo Hollywood
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+500 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Palermo, con sus tres subzonas de identidad propia: Palermo Soho,
+Palermo Hollywood y Las Cañitas.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos. Las subzonas se leen juntas, pero no
+existe un universo único cerrado para el polo completo.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Las discontinuidades entre subzonas son
+parte de la lectura y no se cierran en un polígono único.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+8 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R01 · Las Cañitas · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Luis María Campos
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Av. Intendente Bullrich
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+Las Cañitas
+250 m
+N
+Qué muestra este mapa
+Ampliación de Las Cañitas, una de las tres subzonas del polo de Palermo.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Las Cañitas no representa por sí sola al
+conjunto de Palermo.
+área de la referencia
+componente interno
+calle de referencia
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+9 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R02 · Avenida Corrientes
+Corredor gastronómico-cultural
+Referencia caracterizada; sin conteo comparable entre métodos.
+Lectura
+Corredor gastronómico-cultural de Av. Corrientes
+Estructura lineal cultural y gastronómica sobre avenida Corrientes, con lectura de corredor y
+centralidad teatral.
+El tramo editorial histórico se concentra aproximadamente entre 9 de Julio y Callao; esa referencia
+descriptiva no constituye una delimitación oficial.
+Evidencia y método
+Sin cifra canónica comparable disponible.
+La cobertura histórica y la microzona experimental no son indicadores canónicos ni equivalen a
+R13.
+Componentes y relaciones
+R02 ≠ R13.
+Corrientes–Abasto: vínculo / asociación, no equivalencia ni fusión.
+No fusión Corrientes–Abasto.
+No mapa combinado como representación individual.
+Qué no se puede concluir
+No fusionar pizza centro con Abasto; no usar microzonas experimentales como indicador canónico
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 11
+R03 · San Telmo
+Polo
+Referencia caracterizada; sin conteo comparable entre métodos.
+Lectura
+Polo de San Telmo
+Polo asociado al casco histórico de San Telmo, con el Mercado de San Telmo como hito colectivo y
+el eje Defensa como organizador contextual.
+La lectura combina núcleo, tejido histórico y eje de conexión; no requiere extenderse a toda el área
+sur.
+Evidencia y método
+Sin cifra canónica comparable disponible.
+Componentes y relaciones
+Asociación Lezama–R11 sin fusión.
+No extender automáticamente a Barracas o Parque Patricios.
+No fusión con Caseros.
+Qué no se puede concluir
+Asociación con Caseros sin fusión
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 12
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+10 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R02 · Avenida Corrientes · MAPA
+VOLVER A FICHA · p. 10
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. 9 de Julio
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Av. Callao
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+250 m
+N
+Qué muestra este mapa
+Corredor aproximado sobre la avenida Corrientes, en su tramo cultural y gastronómico entre 9 de
+Julio y Callao.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El vínculo con Abasto es contextual: no son
+la misma referencia ni se fusionan.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+11 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R03 · San Telmo · MAPA
+VOLVER A FICHA · p. 10
+Defensa
+Defensa
+Defensa
+Defensa
+Defensa
+Defensa
+Defensa
+Defensa
+Defensa
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+San Telmo
+250 m
+N
+Qué muestra este mapa
+Área aproximada del polo de San Telmo, sobre el casco histórico, con el Mercado de San Telmo
+como hito y el eje Defensa como organizador.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La asociación con Boulevard Caseros no
+implica que sean una sola referencia.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+12 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R02 · Corrientes-Abasto contextual · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Avenida Corrientes
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+500 m
+N
+Qué muestra este mapa
+Vista conjunta del corredor de avenida Corrientes y del polo de Abasto, para mostrar su relación
+espacial.
+Qué mide la cifra
+Ninguna de las dos referencias tiene conteo comparable con la otra.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La vecindad no las convierte en una sola
+referencia: son vínculo y asociación, no equivalencia ni fusión.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+13 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R04 · Puerto Madero
+Polo
+Referencia caracterizada; sin conteo comparable entre métodos.
+Lectura
+Polo de Puerto Madero
+Polo organizado como banda de docks y frente costero, con continuidad longitudinal y distintos
+hitos sobre el borde de Puerto Madero.
+La forma territorial responde mejor a un frente doble y a la sucesión de docks que a un núcleo
+radial único.
+Evidencia y método
+Sin cifra canónica comparable disponible.
+Componentes y relaciones
+No fusionar con R12 ni extender el frente fuera del ámbito documentado.
+No núcleo radial único demostrado.
+Qué no se puede concluir
+Sin universo único en corpus institucional cerrado
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 15
+R06 · Recoleta
+Polo
+Referencia caracterizada; sin conteo comparable entre métodos.
+Lectura
+Polo de Recoleta
+Polo presentado como una unidad territorial pública continua, con diversidad interna que no se
+publica como una lista de núcleos analíticos.
+La corrida del relevamiento previo registró nueve núcleos analíticos, pero esa desagregación queda
+reservada a trazabilidad técnica y no constituye nueve polos.
+Evidencia y método
+Oferta publicable: sin cifra; universo del relevamiento previo 767 histórico metodológico no
+publicable como indicador principal.
+Relevamiento cartográfico previo, solo técnico: universo 767; 602 puntos incluidos; cobertura 78,49
+%; 1 componente público; superficie 1,218 km²; densidad 494,2 puntos/km²; estabilidad 0,626;
+dependencia externa 46,51 %; 165 puntos sin asignar.
+Componentes y relaciones
+Una unidad pública; no publicar nueve núcleos analíticos.
+No fusionar con R18.
+No nueve polos.
+No cifra de oferta pública.
+Qué no se puede concluir
+No inventar oferta numérica; núcleos analíticos no publicar
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 16
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+14 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R04 · Puerto Madero · MAPA
+VOLVER A FICHA · p. 14
+Docks
+Docks
+Docks
+Docks
+Docks
+Docks
+Docks
+Docks
+Docks
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+Dársena Sur
+500 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Puerto Madero, sobre la banda de docks y el frente costero.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El área excluye el espejo de agua de los
+cuatro diques, descontado con cartografía pública de acceso abierto validada contra la capa oficial de cuerpos de
+agua de la Ciudad.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+15 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R06 · Recoleta · MAPA
+VOLVER A FICHA · p. 14
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+Recoleta
+250 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Recoleta, presentada como una unidad territorial continua.
+Qué mide la cifra
+Referencia caracterizada; sin conteo comparable entre métodos.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La diversidad interna del polo no se publica
+como una lista de núcleos.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+16 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R05 · Belgrano
+Polo
+◷
+ANTECEDENTE PREVIO
+697 (universo del relevamiento cartográfico previo; histórico
+metodológico)
+3 centralidades (descriptiva pública)
+Lectura
+Polo de Belgrano
+Polo de escala macroárea con tres centralidades diferenciadas: Barrio Chino,
+Bajo Belgrano y Belgrano R.
+Belgrano R ocupa un rol secundario en la jerarquía editorial, sin perder su
+pertenencia a la referencia.
+Las tres centralidades no son tres referencias nuevas ni deben sumarse
+como universos independientes; la geometría del relevamiento cartográfico
+previo conserva una lectura multiparte.
+Evidencia y método
+Relevamiento cartográfico previo: universo histórico metodológico 697; 248
+puntos incluidos; cobertura 35,58 %; 3 componentes; 7 piezas topológicas;
+superficie 0,3975 km²; densidad descriptiva 623,9 puntos/km²; estabilidad
+0,765; dependencia externa 53,23 %; 449 puntos sin asignar.
+La cifra pública descriptiva autorizada es 3 centralidades. Cobertura,
+estabilidad y universo histórico no son indicador principal ni equivalen a
+locales activos.
+Componentes y relaciones
+Barrio Chino: centralidad; aporta al relevamiento cartográfico previo; no
+universo autónomo.
+Bajo Belgrano: centralidad; aporta al relevamiento cartográfico previo; no
+universo autónomo.
+Belgrano R: centralidad secundaria; aporta al relevamiento cartográfico
+previo; no universo autónomo.
+Tres centralidades internas; no tres polos.
+No absorber R16 o R17.
+No tres referencias autónomas.
+No ranking con cobertura del relevamiento previo.
+Qué no se puede concluir
+El universo y los puntos del relevamiento previo no son 'locales activos' sin
+contexto; la cobertura no es un indicador público principal
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 18
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+17 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R05 · Belgrano · MAPA
+VOLVER A FICHA · p. 17
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Av. Juramento
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Barrio Chino–Belgrano C
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Cabildo–Juramento
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+Belgrano R
+250 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Belgrano, con sus tres centralidades: Barrio Chino–Belgrano C,
+Cabildo–Juramento y Belgrano R.
+Qué mide la cifra
+697 registros de un relevamiento cartográfico previo. Es un antecedente histórico y metodológico, no la
+cifra vigente del polo.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El antecedente de 697 no equivale a locales
+en actividad hoy ni se compara con las cifras de otras referencias.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+18 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R07 · Costanera Norte
+Polo multiparte
+◷
+ANTECEDENTE PREVIO
+72 (universo conciliado del relevamiento previo; histórico
+metodológico)
+4 componentes (descriptiva pública)
+Lectura
+Polo multiparte Costanera Norte
+Polo multiparte compuesto por cuatro componentes y cinco piezas
+topológicas; una de las unidades es, a su vez, multiparte.
+Los vacíos entre componentes son estructurales y deben mostrarse: la
+discontinuidad es parte de la forma territorial, no un error a rellenar.
+La relación con el borde ribereño se mantiene como lectura de conjunto sin
+convertir los componentes en referencias autónomas.
+Evidencia y método
+Relevamiento cartográfico previo: universo conciliado histórico 72; 71 puntos
+incluidos; cobertura 98,61 %; 4 componentes; 5 piezas topológicas;
+superficie 0,3922 km²; densidad 181,0 puntos/km²; estabilidad 0,77;
+dependencia externa 92,96 %; 1 punto sin asignar.
+La cifra pública descriptiva autorizada es 4 componentes; el universo y los
+puntos son históricos metodológicos.
+Componentes y relaciones
+Componentes 1–4: componentes discontinuos; aportan al universo conciliado
+del relevamiento previo; descriptivos.
+Piezas topológicas (5): desagregación técnica; aportan a cuatro
+componentes; no publicables como cinco polos.
+Cuatro componentes discontinuos; conservar vacíos.
+No continuidad artificial entre componentes.
+Qué no se puede concluir
+No omitir vacíos estructurales; dependencia del directorio comercial en línea
+es nota metodológica no cuerpo principal
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 20
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+19 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R07 · Costanera Norte · MAPA
+VOLVER A FICHA · p. 19
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 1
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 2
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 3
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+Componente 4
+500 m
+N
+Qué muestra este mapa
+Área aproximada del polo multiparte de Costanera Norte, formado por cuatro componentes
+separados a lo largo del frente costero.
+Qué mide la cifra
+72 registros de un relevamiento cartográfico previo conciliado. Es un antecedente histórico y
+metodológico.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Los vacíos entre componentes son reales: no
+se unen artificialmente.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+20 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R08 · Villa Crespo
+Polo documentado sin unidad espacial estabilizada
+=
+CIFRA EXACTA
+646
+Lectura
+Polo documentado sin unidad espacial estabilizada
+Polo documentado con identidad propia respecto de Palermo y Chacarita,
+pero sin unidad espacial estabilizada ni contorno cerrado.
+Los antecedentes ubican ejes y nodos sobre Thames, Gurruchaga y Velazco;
+sirven para caracterizar la oferta, no para adoptar una envolvente.
+Los bordes finos quedan diferidos y tres saturaciones residuales se aceptan
+como limitación final, sin nuevas consultas.
+Evidencia y método
+646 registros con deduplicación conservadora: capas administrativas 178,
+directorio comercial en línea 467 y 1 coincidencia mixta.
+Universos de sensibilidad: bruto 686, estricto 656, sensibilidad 659. Tres
+consultas de categoría restaurante quedaron saturadas en 20 resultados y
+se aceptaron como limitación final.
+Componentes y relaciones
+Independiente de Palermo, Chacarita y el borde Rojas–Honorio Pueyrredón.
+Bordes finos diferidos.
+No unidad espacial estabilizada ni polígono cerrado.
+No nuevas consultas.
+Qué no se puede concluir
+3 residuales de categoría restaurante aceptadas como limitación final; sin
+nuevas consultas; bordes finos diferidos
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 22
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+21 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R08 · Villa Crespo · MAPA
+VOLVER A FICHA · p. 21
+Thames
+Thames
+Thames
+Thames
+Thames
+Thames
+Thames
+Thames
+Thames
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Gurruchaga
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+500 m
+N
+Qué muestra este mapa
+Área aproximada de concentración gastronómica en Villa Crespo, sobre los ejes Thames y
+Gurruchaga.
+Qué mide la cifra
+646 registros relevados con deduplicación conservadora. No equivale a locales en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Villa Crespo tiene identidad propia respecto
+de Palermo y Chacarita, y no se absorbe con ellas.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+22 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R08 · Saturaciones residuales · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+Villa Crespo
+500 m
+N
+Qué muestra este mapa
+Los tres puntos de Villa Crespo donde el relevamiento alcanzó su tope de resultados y no pudo
+seguir contando.
+Qué mide la cifra
+646 registros relevados en Villa Crespo; en esos tres puntos el conteo quedó incompleto por tope de la
+consulta.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Los tres círculos marcan un límite del
+relevamiento, no una concentración de oferta.
+área de la referencia
+calle de referencia
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+23 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R09 · Chacarita
+Focos independientes Newbery/Dorrego
+=
+CIFRA EXACTA
+327
+Lectura
+Focos independientes Newbery/Dorrego; estructura no estabilizada; Lacroze control
+Dos focos independientes: Jorge Newbery y Dorrego. La evidencia no sostiene una envolvente
+común ni un polo único.
+Lacroze funciona únicamente como control territorial y no como eje principal de Chacarita.
+Evidencia y método
+327 registros con deduplicación conservadora: capas administrativas 115, directorio comercial en
+línea 211 y 1 coincidencia mixta.
+Universos de sensibilidad: bruto 346, estricto 332, sensibilidad 336. Sin saturaciones residuales.
+Componentes y relaciones
+la subunidad 1 de la zona 2 / Newbery: foco independiente; 116 en recuento técnico con
+deduplicación conservadora; no aditivo.
+la subunidad 2 de la zona 2 / Dorrego: foco independiente; 140 en recuento técnico con
+deduplicación conservadora; no aditivo.
+Lacroze: control territorial; no define universo R09 ni R19; no comparable.
+R09 ≠ R19.
+No Chacalermo ni fusión con Palermo/Villa Crespo.
+Qué no se puede concluir
+Lacroze=control no producto; no Chacalermo; no fusión Palermo/Crespo; no fusión R19
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 25
+R10 · Caballito
+Lectura multinodo con componentes independientes
+=
+CIFRA EXACTA
+907
+Lectura
+Componentes independientes en narrativa multinodo (nodos Goyena; Primera Junta–Mercado del Progreso)
+Narrativa multinodo compuesta por unidades independientes, sin envolvente única.
+Los nodos activos de lectura son Pedro Goyena y Primera Junta–Mercado del Progreso.
+Evidencia y método
+907 registros con deduplicación conservadora: capas administrativas 265 y directorio comercial en línea
+642.
+Universos de sensibilidad: bruto 985, estricto 924, sensibilidad 946. Sin saturaciones residuales.
+Componentes y relaciones
+la subunidad 1 de la zona 3 / Pedro Goyena: nodo; 160 en recuento técnico con deduplicación
+conservadora; no aditivo.
+la subunidad 2 de la zona 3 / Primera Junta–Mercado del Progreso: nodo; 106 en recuento técnico con
+deduplicación conservadora; no aditivo.
+Patio de los Lecheros: control puntual; 2 observaciones técnicas; no producto; no comparable.
+la subunidad 4 de la zona 3 / Parque Rivadavia: pieza retirada; 24 observaciones históricas; no aporta al
+mapa activo; no comparable.
+Lecheros control; la subunidad 4 de la zona 3 retirado; Parque Rivadavia no activo.
+Qué no se puede concluir
+la subunidad 4 de la zona 3 retirado; Lecheros control no adoptable; Rivadavia no activo
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 26
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+24 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R09 · Chacarita · MAPA
+VOLVER A FICHA · p. 24
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Jorge Newbery
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Av. Dorrego
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Corredor Newbery
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+Núcleo Dorrego
+250 m
+N
+Qué muestra este mapa
+Los dos focos gastronómicos independientes de Chacarita: Jorge Newbery y Dorrego.
+Qué mide la cifra
+327 registros relevados en Chacarita con deduplicación conservadora; el mapa muestra los dos focos
+identificados, no la totalidad de los registros. No equivale a locales en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Los focos no forman una envolvente común
+ni un polo único, y no se funden con Palermo, Villa Crespo ni Federico Lacroze.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+25 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R10 · Caballito · MAPA
+VOLVER A FICHA · p. 24
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Av. Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Pedro Goyena
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+Primera Junta–Mercado del Progreso
+500 m
+N
+Qué muestra este mapa
+Los dos núcleos gastronómicos de Caballito: Pedro Goyena y Primera Junta–Mercado del Progreso.
+Qué mide la cifra
+907 registros relevados en Caballito con deduplicación conservadora; el mapa muestra los dos núcleos
+identificados, no la totalidad de los registros. No equivale a locales en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Los núcleos son independientes y no forman
+una envolvente única; Parque Rivadavia fue retirado de la lectura vigente.
+área de la referencia
+componente interno
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+26 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R11 · Boulevard Caseros
+Microcentralidad de tramo corto
+=
+CIFRA EXACTA
+66
+Lectura
+Microcentralidad de tramo corto; corredor documentado solo como antecedente
+Microcentralidad de tramo corto vinculada al entorno Lezama y San Telmo, sin fusión.
+El antecedente documental de corredor se conserva, pero la evidencia espacial no sostiene
+continuidad territorial suficiente para adoptarlo como corredor.
+Evidencia y método
+66 registros con deduplicación conservadora: capas administrativas 19, directorio comercial en
+línea 46 y 1 coincidencia mixta.
+Universos de sensibilidad: bruto 69, estricto 67, sensibilidad 67. No hubo desagregación por
+categoría
+Componentes y relaciones
+Asociada a Lezama/San Telmo sin fusión; no Patricios/Barracas.
+No corredor continuo, polígono único o extensión a Patricios/Barracas.
+Qué no se puede concluir
+Evidencia no sostiene corredor continuo; no Patricios/Barracas; asociada Lezama/San Telmo sin
+fusión
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 28
+R13 · Abasto
+Polo documentado con delimitación provisional
+≥
+COTA INFERIOR
+≥314
+Lectura
+Polo documentado con delimitación provisional
+Polo documentado con delimitación provisional, independiente de R02.
+Los tres tramos técnicos no exhiben un gradiente longitudinal demostrado; tampoco sostienen un
+corredor ni una extensión a todo Balvanera o Almagro.
+Evidencia y método
+≥314 como cota inferior. Tramos técnicos: ≥91, ≥115 y ≥108; no muestran gradiente longitudinal.
+Rectángulo mínimo rotado aproximado: 1.750 × 738 m; diagnóstico descriptivo, no delimitación.
+Componentes y relaciones
+R13 ≠ R02.
+No todo Balvanera/Almagro; combinado Corrientes–Abasto solo contextual.
+No gradiente, corredor, extensión total ni anclajes cuantitativos no verificables.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Anclajes históricos no verificables; sin gradiente/corredor; no todo Balvanera/Almagro; separado de
+R02
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 29
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+27 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R11 · Boulevard Caseros · MAPA
+VOLVER A FICHA · p. 27
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Av. Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+Boulevard Caseros
+250 m
+N
+Qué muestra este mapa
+Área aproximada de la microcentralidad de Boulevard Caseros, un tramo corto vinculado al
+entorno de Lezama y San Telmo.
+Qué mide la cifra
+66 registros relevados con deduplicación conservadora. No equivale a locales en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La evidencia no sostiene un corredor
+continuo, y la lectura no se extiende a Parque Patricios ni Barracas.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+28 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R13 · Abasto · MAPA
+VOLVER A FICHA · p. 27
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Av. Corrientes
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+Abasto
+250 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Abasto, sobre el tramo de avenida Corrientes al que se asocia.
+Qué mide la cifra
+Al menos 314 establecimientos. Es un piso de lo censado, no un conteo completo ni locales en actividad
+hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Abasto es independiente de la referencia de
+avenida Corrientes y su delimitación es provisional.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+29 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R12 · Centro/Microcentro segmentado
+Área gastronómica segmentada
+≥
+COTA INFERIOR
+≥797
+Lectura
+Área gastronómica segmentada (subunidades independientes)
+Área gastronómica segmentada compuesta por subunidades independientes;
+no es un polo único Centro.
+Las pertenencias a subunidades se superponen, por lo que la suma simple de
+subunidades produciría doble conteo.
+Tribunales permanece como componente secundario no comparable y no
+puede convertirse en una referencia adicional ni participar en rankings.
+Evidencia y método
+≥797 establecimientos únicos; ≥940 pertenencias a subunidades; 143
+dobles; reconciliación: 654 con una pertenencia a una subunidad, 143 con dos
+y 0 con tres o más.
+Grupo A: 79/326 combinaciones de consulta (24,2 %) alcanzaron el máximo
+de 20; de categoría restaurante 51/64 saturadas.
+Piso censado; no es conteo completo ni locales activos
+Componentes y relaciones
+Microcentro financiero: subunidad por desagregación de categoría; ≥251
+pertenencias a subunidades; comparable solo dentro del mismo diseño.
+Plaza de Mayo–Monserrat: subunidad por desagregación de categoría; ≥93
+pertenencias a subunidades; mismo criterio de desagregación.
+Avenida de Mayo: subunidad por desagregación de categoría; ≥203
+pertenencias a subunidades; mismo criterio de desagregación.
+Retiro central: subunidad por desagregación de categoría; ≥177 pertenencias
+a subunidades; mismo criterio de desagregación.
+Tribunales: componente secundario; ≥57; no sumar ni ordenar por ranking;
+no comparable por consulta combinada saturada.
+Esmeralda–Paraguay / vínculo con R18: unidad técnica relacionada; R18 se
+conserva como referencia independiente; no aditivo.
+Tribunales no es una referencia maestra adicional.
+No sumar subunidades superpuestas ni fusionar con R18.
+No polo único Centro, suma simple, ranking Tribunales ni referencia maestra
+adicional.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Tribunales ≥57 no comparable y no es referencia adicional; pertenencias a
+subunidades ≥940 con 143 dobles (técnico); no polo único Centro
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 31
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+30 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R12 · Centro/Microcentro segmentado · MAPA
+VOLVER A FICHA · p. 30
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+500 m
+N
+Qué muestra este mapa
+Las subunidades independientes del área gastronómica del Centro y el Microcentro, cada una con
+su propio entorno de referencia.
+Qué mide la cifra
+Al menos 797 establecimientos únicos. Es un piso de lo censado, no un conteo completo ni locales en
+actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. No es un polo único del Centro: las
+subunidades no se suman entre sí porque comparten establecimientos.
+área de la referencia
+componente interno
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+31 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R12 · Subunidades y saturación · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Microcentro financiero
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Plaza de Mayo–Monserrat
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Avenida de Mayo
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Tribunales
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+Retiro central
+500 m
+N
+Qué muestra este mapa
+Las subunidades del Centro y el Microcentro ampliadas, cada una con su nombre.
+Qué mide la cifra
+Al menos 797 establecimientos únicos en el conjunto. Cada subunidad tiene su propio piso, y 143
+establecimientos pertenecen a dos subunidades a la vez.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Las subunidades no se suman entre sí ni se
+ordenan en un ranking, porque comparten establecimientos.
+área de la referencia
+componente interno
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+32 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R14 · Avenida Boedo
+Eje gastronómico fragmentado
+=
+CIFRA EXACTA
+79
+Lectura
+Eje gastronómico fragmentado
+Eje gastronómico fragmentado: la continuidad cultural de avenida Boedo no equivale a un corredor
+gastronómico continuo.
+La banda analítica de 150 m es un parámetro de estudio, no un límite público.
+Evidencia y método
+79 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte
+2026-07-13.
+Capas separadas del mismo corte: capas administrativas 4 y 188. No se suman a directorio
+comercial en línea ni se usan para inflar el indicador.
+Componentes y relaciones
+No corredor continuo; banda de 150 m no límite público.
+No corredor continuo ni polígono.
+Qué no se puede concluir
+Banda 150 m parámetro no límite público; no corredor continuo ni polígono
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 34
+R15 · Devoto
+Polo gastronómico con núcleo estable
+=
+CIFRA EXACTA
+119
+Lectura
+Polo gastronómico con núcleo estable
+Polo gastronómico con núcleo estable en torno de Plaza Arenales y una periferia contextual no
+estabilizada.
+La estabilidad del núcleo no autoriza a extender el producto al barrio administrativo completo.
+Evidencia y método
+119 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte
+2026-07-13.
+Capas separadas: capas administrativas 20 y 484; no aditivas con directorio comercial en línea.
+Componentes y relaciones
+No absorber R22 ni Villa del Parque.
+No periferia estabilizada ni absorción de R22.
+Qué no se puede concluir
+Periferia no estabilizada; sin Villa Pueyrredón ni Villa del Parque
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 35
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+33 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R14 · Avenida Boedo · MAPA
+VOLVER A FICHA · p. 33
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Av. Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+Avenida Boedo
+500 m
+N
+Qué muestra este mapa
+Área aproximada del eje gastronómico de avenida Boedo, fragmentado a lo largo de la avenida.
+Qué mide la cifra
+79 registros de un directorio comercial en línea, con deduplicación conservadora. No equivale a locales en
+actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La continuidad cultural de la avenida no
+equivale a un corredor gastronómico continuo.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+34 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R15 · Devoto · MAPA
+VOLVER A FICHA · p. 33
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+500 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Devoto, con su núcleo estable en torno de Plaza Arenales.
+Qué mide la cifra
+119 registros de un directorio comercial en línea, con deduplicación conservadora. No equivale a locales
+en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. La periferia del polo no está estabilizada y la
+lectura no se extiende a Villa Pueyrredón ni Villa del Parque.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+35 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R15 · Núcleo y periferia · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+Devoto
+500 m
+N
+Qué muestra este mapa
+El polo de Devoto ampliado. Su núcleo estable se organiza en torno de Plaza Arenales; el mapa no
+lo delimita como pieza propia.
+Qué mide la cifra
+119 registros de un directorio comercial en línea, con deduplicación conservadora.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El corpus no cerró un trazado propio para el
+núcleo, así que el mapa muestra el polo completo y no delimita el núcleo.
+área de la referencia
+calle de referencia
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+36 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R16 · Donado–Holmberg
+Doble eje con fragmentación por tramos
+=
+CIFRA EXACTA
+40
+Lectura
+Doble eje gastronómico con fragmentación por tramos
+Doble eje sobre Donado y Holmberg, con fragmentación por tramos y sin envolvente única.
+La denominación institucional es Donado–Holmberg; la glosa DoHo queda como antecedente no
+publicable como nombre principal.
+Evidencia y método
+40 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte
+2026-07-13.
+Capas separadas: capas administrativas 1 y 93; no aditivas con directorio comercial en línea.
+Componentes y relaciones
+Donado–Holmberg no se absorbe en R17.
+No DoHo institucional, envolvente única ni fusión R17.
+Qué no se puede concluir
+No DoHo institucional; no envolvente única; no fusión con Villa Urquiza
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 38
+R17 · Villa Urquiza
+Polo gastronómico multieje
+=
+CIFRA EXACTA
+189
+Lectura
+Polo gastronómico multieje
+Polo gastronómico multieje cuya estructura interna se organiza sobre Triunvirato, Monroe y
+Congreso.
+Los ejes se leen como componentes de una referencia común, sin convertir todo el barrio
+administrativo en geometría gastronómica.
+Evidencia y método
+189 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte
+2026-07-13.
+Capas separadas: capas administrativas 21 y 676; no aditivas con directorio comercial en línea.
+Componentes y relaciones
+Villa Urquiza no absorbe R16.
+No absorción R16 ni barrio completo como geometría.
+Qué no se puede concluir
+No absorber Donado–Holmberg; estructura Triunvirato-Monroe-Congreso interna
+Fuente: Relevamiento propio DGDGAS · datos al 13-07-2026
+IR AL MAPA · p. 39
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+37 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R16 · Donado–Holmberg · MAPA
+VOLVER A FICHA · p. 37
+Donado
+Donado
+Donado
+Donado
+Donado
+Donado
+Donado
+Donado
+Donado
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+Donado–Holmberg
+250 m
+N
+Qué muestra este mapa
+Área aproximada del doble eje de Donado y Holmberg, fragmentado por tramos.
+Qué mide la cifra
+40 registros de un directorio comercial en línea, con deduplicación conservadora. No equivale a locales en
+actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. No forma una envolvente única ni se fusiona
+con Villa Urquiza.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+38 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R17 · Villa Urquiza · MAPA
+VOLVER A FICHA · p. 37
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Av. Triunvirato
+Monroe
+Monroe
+Monroe
+Monroe
+Monroe
+Monroe
+Monroe
+Monroe
+Monroe
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Av. Congreso
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+Villa Urquiza
+500 m
+N
+Qué muestra este mapa
+Área aproximada del polo de Villa Urquiza. De sus tres ejes internos —Triunvirato, Monroe y
+Congreso— el mapa ubica el de Triunvirato, único con trazado cerrado en el corpus.
+Qué mide la cifra
+189 registros de un directorio comercial en línea, con deduplicación conservadora. No equivale a locales
+en actividad hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Villa Urquiza no absorbe la referencia de
+Donado y Holmberg.
+área de la referencia
+calle de referencia
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+39 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R18 · Esmeralda–Paraguay
+Referencia independiente sin núcleo radial
+≥
+COTA INFERIOR
+≥216
+Lectura
+Referencia independiente sin núcleo radial demostrado
+Referencia independiente Esmeralda–Paraguay, con geometría provisional y sin núcleo radial
+demostrado.
+Las densidades mínimas por anillos no sostienen una concentración central ni un gradiente; el
+máximo descriptivo se ubica en bandas intermedias.
+Evidencia y método
+≥216 como cota inferior.
+Densidades mínimas por anillos efectivos: 0–100 m ≥12 / ≥381,97 registros/km²; 100–200 m ≥53 /
+≥562,35 registros/km²; 200–300 m ≥89 / ≥566,60 registros/km²; 300–400 m ≥62 / ≥282,97
+registros/km².
+Componentes y relaciones
+No Nuevo Bajo; no fusionar con R06 o R12.
+No núcleo radial, gradiente, delimitación oficial ni nombre Nuevo Bajo.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Geometría provisional; Nuevo Bajo no canónico; sin concentración central ni gradiente
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 41
+R20 · García del Río
+Tramo localizado de oferta continua y modesta
+≥
+COTA INFERIOR
+≥40
+Lectura
+Referencia/tramo localizado de oferta gastronómica continua y modesta entre Cabildo y Parque Saavedra; leve
+concentración hacia Cabildo y adelgazamiento hacia el parque; no corredor, eje ni polo
+Tramo localizado de oferta gastronómica continua y modesta sobre García del Río 2400–3200, entre Cabildo
+y Parque Saavedra.
+La oferta muestra leve concentración hacia Cabildo y adelgazamiento hacia el parque.
+Evidencia y método
+≥40 deduplicados a partir de 106 observaciones postfiltradas; 66 duplicados internos removidos; 38
+identificadores observados en múltiples centros.
+20 consultas exitosas; 1/20 saturadas en la categoría restaurante; estado declarado 39 en actividad, 1
+cerrado temporalmente y 0 cerrados en forma permanente.
+Componentes y relaciones
+Parque Saavedra: control no-producto; 0 m² de intersección efectiva en la corrida; no comparable.
+Controles espaciales: control; fuera del universo; no comparable.
+Parque Saavedra control no-producto; R20 y R22 separados.
+No corredor, eje, polo, absorción del parque ni universo combinado.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Parque Saavedra control no-producto (intersección 0 m²); tramo 2400–3200; estado declarado 39/1/0;
+separado de R22; sin sensibilidad 165
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 42
+Cada referencia conserva su identidad, su cifra, su advertencia y su fuente; no hay fusión entre ellas.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+40 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R18 · Esmeralda–Paraguay · MAPA
+VOLVER A FICHA · p. 40
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Esmeralda
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+Esmeralda–Paraguay
+250 m
+N
+Qué muestra este mapa
+Área de consulta de 400 metros en torno del cruce de Esmeralda y Paraguay.
+Qué mide la cifra
+Al menos 216 establecimientos. Es un piso de lo censado, no un conteo completo ni locales en actividad
+hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El círculo es el radio con que se consultó la
+zona, no un núcleo demostrado: la referencia no tiene centro radial probado.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+41 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R20 · García del Río · MAPA
+VOLVER A FICHA · p. 40
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+250 m
+N
+Qué muestra este mapa
+Tramo aproximado de oferta continua y modesta sobre García del Río, entre Cabildo y Parque
+Saavedra.
+Qué mide la cifra
+Al menos 40 establecimientos. Es un piso de lo censado, no un conteo completo ni locales en actividad
+hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El tramo no se prolonga antes de Cabildo ni
+dentro del parque, y no constituye un corredor.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+42 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R20 · Cabildo-Parque Saavedra · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Parque Saavedra · control
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. García del Río
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+García del Río
+250 m
+N
+Qué muestra este mapa
+El extremo de García del Río junto a Parque Saavedra, con el parque señalado como área de
+control.
+Qué mide la cifra
+Al menos 40 establecimientos en el tramo. El parque no aporta registros: se usó para verificar que el
+tramo no se extendiera dentro de él.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El parque no integra la referencia.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+43 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R19 · Federico Lacroze por tramos
+Referencia segmentada por tramos
+≥
+COTA INFERIOR
+≥211
+Lectura
+Referencia gastronómica segmentada por tramos
+Referencia segmentada en dos ventanas independientes: el tramo
+Libertador–Cabildo y el tramo Cabildo–Álvarez Thomas.
+El solapamiento observacional en Lacroze–Cabildo identifica un nodo
+compartido, pero no demuestra continuidad de toda la avenida.
+el tercer tramo evaluado queda excluido; el control Lacroze–Chacarita es
+control no-producto; no hay extensión a Dorrego ni fusión con Chacarita/R09.
+Evidencia y método
+≥211 deduplicados; estado declarado 204 en actividad, 7 cerrados
+temporalmente y 0 cerrados en forma permanente.
+el tramo Libertador–Cabildo: ≥112, 5 centros, radio 250 m, 3/25 saturadas,
+≥22,4 registros/centro. el tramo Cabildo–Álvarez Thomas: ≥138, 7 centros,
+radio 225 m, 2/35 saturadas, ≥19,7 registros/centro.
+R19 tuvo 60 consultas de red y 5 consultas de categoría restaurante
+saturadas; registros por centro no equivalen a densidad.
+Piso censado; no es conteo completo ni locales activos
+Componentes y relaciones
+el tramo Libertador–Cabildo: ventana independiente; ≥112; no comparable
+con T2.
+el tramo Cabildo–Álvarez Thomas: ventana independiente; ≥138; no
+comparable con T1.
+Lacroze–Cabildo: nodo de solapamiento; 39 compartidos observacionales; no
+prueba continuidad.
+el tercer tramo evaluado: excluido; no aporta; no producto de primera corrida.
+el control Lacroze–Chacarita: control R09; no aporta a R19; no comparable.
+el tercer tramo evaluado excluido; control Chacarita no aporta; sin fusión R09.
+No polo Lacroze, corredor continuo, avenida completa, T3 ni fusión Chacarita.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+el tercer tramo evaluado excluido; sin corredor continuo; sin fusión
+Chacarita/R09; el control Lacroze–Chacarita control; estado declarado
+204/7/0; no '190 consultas'
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 45
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+44 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R19 · Federico Lacroze por tramos · MAPA
+VOLVER A FICHA · p. 44
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. del Libertador
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Av. Álvarez Thomas
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+500 m
+N
+Qué muestra este mapa
+Los dos tramos independientes de la referencia de Federico Lacroze, entre Libertador y Cabildo y
+entre Cabildo y Álvarez Thomas.
+Qué mide la cifra
+Al menos 211 establecimientos, de los cuales 204 figuran en actividad y 7 cerrados temporalmente. Es un
+piso de lo censado.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Los dos tramos no son comparables entre sí
+y sus cifras no se suman; la referencia no se funde con Chacarita.
+área de la referencia
+componente interno
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+45 / 58
+
+DGDGAS
+VISTAS DE DETALLE
+R19 · Lacroze-Cabildo · VISTA DE DETALLE
+VOLVER A REFERENCIA
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Federico Lacroze
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Av. Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Libertador–Cabildo
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+Federico Lacroze · Cabildo–Álvarez Thomas
+250 m
+N
+Qué muestra este mapa
+Los dos tramos de Federico Lacroze en detalle, con su zona de contacto en torno de Cabildo.
+Qué mide la cifra
+Al menos 211 establecimientos en el conjunto; cada tramo tiene su propio piso y no se suman.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. Que los tramos se toquen no demuestra que
+la oferta sea continua entre ellos.
+área de la referencia
+componente interno
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Vista de detalle · no crea una referencia adicional ni un límite oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+46 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R21 · La Paternal
+Referencia extensa y dispersa sin núcleo único
+≥
+COTA INFERIOR
+≥254
+Lectura
+Referencia gastronómica extensa y dispersa, sin núcleo único demostrado
+Referencia extensa y dispersa, sin núcleo único demostrado ni geometría
+institucional estabilizada.
+la red occidental de calles documentadas es un componente provisional; el
+borde Rojas–Honorio Pueyrredón es un control de borde que no se absorbe
+en Villa Crespo.
+Las métricas de distancia y vecindad son descriptivas y no prueban polo,
+corredor, archipiélago ni red de nodos; Distrito del Vino no funciona como
+referencia indirecta.
+Evidencia y método
+≥254 deduplicados; estado declarado 242 en actividad, 12 cerrados
+temporalmente y 0 cerrados en forma permanente.
+la red occidental de calles documentadas: ≥237, 22 centros, radio 300 m,
+4/110 saturadas, ≥10,8 registros/centro. el borde Rojas–Honorio Pueyrredón:
+19 observados, 3 centros, radio 200 m, 0/15 saturadas y 6,3
+registros/centro.
+Diagonal aproximada 4,01 km y vecino más próximo mediano 36 m:
+métricas descriptivas, no evidencia de una forma adoptable.
+Piso censado; no es conteo completo ni locales activos
+Componentes y relaciones
+la red occidental de calles documentadas: componente provisional; ≥237; no
+comparable con BORDE.
+el borde Rojas–Honorio Pueyrredón: borde/control; 19 observados; 2
+compartidos con OESTE; no comparable.
+el borde Rojas–Honorio Pueyrredón no se absorbe en R08; Devoto y Espacios
+Estrella fuera; Av. San Martín no forzada.
+No polo, corredor, archipiélago, red de nodos ni Distrito del Vino como
+referencia indirecta.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Sin polo/corredor/archipiélago/red; no absorbido por Villa Crespo; Distrito
+Vino no referencia indirecta; estado declarado 242/12/0
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 48
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+47 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R21 · La Paternal · MAPA
+VOLVER A FICHA · p. 47
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Rojas–Honorio Pueyrredón / Belaustegui
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+Red occidental de calles documentadas
+500 m
+N
+Qué muestra este mapa
+Área aproximada de la referencia de La Paternal, extensa y dispersa sobre una red de calles
+documentadas.
+Qué mide la cifra
+Al menos 254 establecimientos, de los cuales 242 figuran en actividad y 12 cerrados temporalmente. Es
+un piso de lo censado.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. No tiene un núcleo único demostrado ni
+geometría estabilizada, y no absorbe el borde de Villa Crespo.
+área de la referencia
+componente interno
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+48 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R22 · Villa Pueyrredón
+Oferta extensa y heterogénea
+≥
+COTA INFERIOR
+≥158
+Lectura
+Oferta gastronómica extensa y heterogénea, con subárea de mayor densidad
+en el centro/centro-este; sin núcleo dominante único ni eje demostrado
+Oferta gastronómica extensa y heterogénea, con una subárea descriptiva de
+mayor densidad en el centro y centro-este.
+La subárea no es un producto nuevo ni un núcleo dominante; avenida San
+Martín no se privilegia como eje.
+El límite barrial y la grilla de 600 m son marcos de muestreo provisionales;
+no se absorben Devoto, Villa Urquiza ni Agronomía y R22 permanece
+separado de R20.
+Evidencia y método
+≥158 deduplicados a partir de 294 observaciones postfiltradas; 136
+duplicados internos removidos; 84 identificadores observados en múltiples
+centros.
+70 consultas exitosas; 6/70 saturadas en la categoría restaurante; estado
+declarado 152 en actividad, 6 cerrados temporalmente y 0 cerrados en
+forma permanente.
+Separación con R20: aproximadamente 3.432,9 m y 0 identificadores
+compartidos; el universo combinado está prohibido.
+Piso censado; no es conteo completo ni locales activos
+Componentes y relaciones
+Centro/centro-este: subárea descriptiva; aporta al universo R22; no producto
+nuevo.
+Controles espaciales: control; fuera del universo; no comparable.
+R20 y R22 separados; no absorción por R15/R17/Agronomía.
+No núcleo dominante, eje San Martín ni absorción por referencias vecinas.
+Qué no se puede concluir
+Piso censado; no es conteo completo ni locales activos
+Subárea descriptiva no producto; Av San Martín no privilegiada; sin
+absorción Devoto/Urquiza/Agronomía; estado declarado 152/6/0; separado
+de R20
+Fuente: Relevamiento propio DGDGAS · datos al 17-07-2026
+IR AL MAPA · p. 50
+Advertencia común: los contornos son analíticos y no oficiales; la oferta registrada o visible no equivale a locales en actividad.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+49 / 58
+
+DGDGAS
+REFERENCIAS R01-R22
+R22 · Villa Pueyrredón · MAPA
+VOLVER A FICHA · p. 49
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+Villa Pueyrredón
+500 m
+N
+Qué muestra este mapa
+Marco de relevamiento de Villa Pueyrredón, con la oferta distribuida de manera extensa y
+heterogénea.
+Qué mide la cifra
+Al menos 158 establecimientos. Es un piso de lo censado, no un conteo completo ni locales en actividad
+hoy.
+Qué no es
+El área es una aproximación de lectura territorial, no un límite oficial. El contorno es el marco con que se relevó el
+barrio, no un área gastronómica: la mayor densidad del centro y centro-este es una descripción, no un núcleo
+adoptado.
+área de la referencia
+calle de referencia
+Trazo punteado: área de consulta declarada, no envolvente de oferta observada.
+Representación cartográfica analítica · no oficial.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+50 / 58
+
+DGDGAS
+ANEXOS
+Anexo A · Matriz resumen R01-R22 · 1 de 2
+Naturaleza, cifra y lectura institucional por referencia.
+Ref.
+Nombre
+Tipología
+Naturaleza
+Cifra / estado
+R01
+Palermo
+Polo con subzonas
+Sin cifra comparable
+Sin cifra canónica comparable
+R02
+Avenida Corrientes
+Corredor gastronómico-cultural
+Sin cifra comparable
+Sin cifra canónica comparable
+R03
+San Telmo
+Polo
+Sin cifra comparable
+Sin cifra canónica comparable
+R04
+Puerto Madero
+Polo
+Sin cifra comparable
+Sin cifra canónica comparable
+R05
+Belgrano
+Polo
+Antecedente
+histórico /
+metodológico
+697 (universo del relevamiento
+cartográfico previo; histórico
+metodológico)
+3 centralidades (descriptiva
+pública)
+R06
+Recoleta
+Polo
+Antecedente
+histórico /
+metodológico
+Sin cifra canónica comparable
+R07
+Costanera Norte
+Polo multiparte
+Antecedente
+histórico /
+metodológico
+72 (universo conciliado del
+relevamiento previo; histórico
+metodológico)
+4 componentes (descriptiva
+pública)
+R08
+Villa Crespo
+Polo documentado sin unidad
+espacial estabilizada
+Cifra exacta
+646
+R09
+Chacarita
+Focos independientes
+Newbery/Dorrego
+Cifra exacta
+327
+R10
+Caballito
+Lectura multinodo con
+componentes independientes
+Cifra exacta
+907
+R11
+Boulevard Caseros
+Microcentralidad de tramo
+corto
+Cifra exacta
+66
+Las cifras no se suman entre sí: cada una tiene su método. Ver la ficha de cada referencia para universo, fecha y advertencias.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+51 / 58
+
+DGDGAS
+ANEXOS
+Anexo A · Matriz resumen R01-R22 · 2 de 2
+Naturaleza, cifra y lectura institucional por referencia.
+Ref.
+Nombre
+Tipología
+Naturaleza
+Cifra / estado
+R12
+Centro/Microcentro
+segmentado
+Área gastronómica
+segmentada
+Cota inferior
+≥797
+R13
+Abasto
+Polo documentado con
+delimitación provisional
+Cota inferior
+≥314
+R14
+Avenida Boedo
+Eje gastronómico fragmentado
+Cifra exacta
+79
+R15
+Devoto
+Polo gastronómico con núcleo
+estable
+Cifra exacta
+119
+R16
+Donado–Holmberg
+Doble eje con fragmentación
+por tramos
+Cifra exacta
+40
+R17
+Villa Urquiza
+Polo gastronómico multieje
+Cifra exacta
+189
+R18
+Esmeralda–Paraguay
+Referencia independiente sin
+núcleo radial
+Cota inferior
+≥216
+R19
+Federico Lacroze por
+tramos
+Referencia segmentada por
+tramos
+Cota inferior
+≥211
+R20
+García del Río
+Tramo localizado de oferta
+continua y modesta
+Cota inferior
+≥40
+R21
+La Paternal
+Referencia extensa y dispersa
+sin núcleo único
+Cota inferior
+≥254
+R22
+Villa Pueyrredón
+Oferta extensa y heterogénea
+Cota inferior
+≥158
+Las cifras no se suman entre sí: cada una tiene su método. Ver la ficha de cada referencia para universo, fecha y advertencias.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+52 / 58
+
+DGDGAS
+ANEXOS
+Anexo B · Subunidades y componentes
+Partes internas de una referencia y cómo se leen.
+Ref.
+Subunidades / componentes
+Regla de lectura
+R01
+Palermo Soho · Palermo Hollywood · Las Cañitas
+Subzonas internas; no referencias nuevas.
+R05
+Barrio Chino · Bajo Belgrano · Belgrano R
+Tres centralidades; no tres polos.
+R07
+Componentes 1-4 · cinco piezas topológicas
+Vacíos estructurales preservados.
+R09
+Newbery · Dorrego
+Focos independientes; Lacroze es control.
+R10
+Goyena · Primera Junta-Mercado del Progreso
+Lectura multinodo; componentes no aditivos.
+R12
+Microcentro financiero · Plaza de
+Mayo–Monserrat · Avenida de Mayo · Retiro
+central · Tribunales · Esmeralda–Paraguay/R18
+Tribunales separado y no comparable; ≥57.
+R19
+el tramo Libertador–Cabildo · el tramo
+Cabildo–Álvarez Thomas · Lacroze-Cabildo
+Ventanas independientes; 39 compartidos no prueban
+continuidad.
+R21
+la red occidental de calles documentadas · el
+borde Rojas–Honorio Pueyrredón
+OESTE ≥237; BORDE 19 observados; no comparables.
+R22
+Centro / centro-este
+Subárea descriptiva; no producto nuevo.
+MEMBRESÍAS Y SOLAPAMIENTOS
+Que un local pertenezca a una subunidad no lo convierte en un establecimiento adicional. Las intersecciones
+observacionales se deduplican en el universo de referencia y no habilitan fusiones.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+53 / 58
+
+DGDGAS
+ANEXOS
+Anexo C · Controles, exclusiones y no-productos
+Elementos que orientan la lectura sin integrar universos.
+Ref.
+Control / exclusión
+Tratamiento
+R09
+Lacroze
+Control territorial; no define R09 ni R19.
+R10
+Patio de los Lecheros
+Control puntual no adoptable; no integra el universo.
+R10
+la subunidad 4 de la zona 3 /
+Parque Rivadavia
+Pieza retirada; no reutilizar.
+R12
+Tribunales
+Componente secundario ≥57; consulta no comparable; fuera de
+rankings.
+R19
+el tercer tramo evaluado
+Excluido; no producto de primera corrida.
+R19
+el control Lacroze–Chacarita
+Control Chacarita; no aporta a R19.
+R20
+Parque Saavedra
+Control no-producto; intersección efectiva 0 m² en la corrida.
+R20/R22
+Controles espaciales
+Fuera del producto; no aportan a universos.
+R21
+el borde Rojas–Honorio
+Pueyrredón
+Borde/control; no absorbido por Villa Crespo.
+REGLA
+Control, borde, exclusión o no-producto no significa ausencia: indica que el elemento no integra el universo ni
+puede utilizarse para ampliar o absorber una referencia.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+54 / 58
+
+DGDGAS
+ANEXOS
+Anexo D · Separaciones institucionales y nomenclatura
+Relaciones que no implican absorción, equivalencia ni fusión.
+R02 ≠ R13
+Corrientes-Abasto es una vista contextual de vínculo; no fusiona las
+referencias.
+R09 ≠ R19
+Chacarita y Federico Lacroze por tramos conservan universos y
+lecturas separados.
+R16 ≠ R17
+Donado-Holmberg no se absorbe en Villa Urquiza.
+R20 ≠ R22
+García del Río y Villa Pueyrredón están separados; el universo
+combinado está prohibido.
+R15 / R17 ≠ R22
+Devoto y Villa Urquiza no absorben Villa Pueyrredón.
+el borde Rojas–Honorio
+Pueyrredón ≠ R08
+El borde/control de R21 no se absorbe en Villa Crespo.
+el control de borde de Villa
+Crespo / el borde…
+La lámina histórica y la ficha usan rótulos distintos para el mismo rol
+de borde/control; prevalece el borde Rojas–Honorio Pueyrredón en
+esta edición.
+Vista de detalle ≠ referencia
+Las siete vistas de detalle no crean referencias nuevas ni
+geometrías oficiales.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+55 / 58
+
+DGDGAS
+ANEXOS
+Anexo E · Estado declarado, saturaciones y cobertura
+Qué informa cada estado y sobre qué total se calcula.
+Referencia
+Operacional / temp. / perm.
+Saturación y denominador
+R19
+204 / 7 / 0
+5 consultas de categoría restaurante saturadas; 60 consultas
+R19.
+R20
+39 / 1 / 0
+1 / 20 de categoría restaurante saturada.
+R21
+242 / 12 / 0
+4 / 110 de categoría restaurante saturadas en OESTE; 0 / 15
+en BORDE.
+R22
+152 / 6 / 0
+6 / 70 de categoría restaurante saturadas.
+R08
+no aplica
+Tres saturaciones residuales de categoría restaurante
+aceptadas como límite final.
+R12
+no aplica
+79 / 326 combinaciones de consulta; de categoría restaurante
+51 / 64; Tribunales 6 / 6.
+Grupo B
+R19 + R21
+9 / 180 consultas de red; 9 / 185 combinaciones de consulta.
+No usar 190 consultas.
+Grupo C
+R20 + R22
+R20 1 / 20; R22 6 / 70.
+CENSURA Y COTA INFERIOR
+Cuando una consulta alcanza el máximo de resultados que devuelve la fuente, el universo observado queda
+incompleto. La cifra con ≥ es un piso censado: no se estima el faltante y no se interpreta como conteo
+completo ni como locales activos.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+56 / 58
+
+DGDGAS
+ANEXOS
+Anexo F · Cómo se contaron los locales
+Qué cuenta cada número y por qué no se suman entre sí.
+R12 · ÚNICOS Y MEMBRESÍAS
+≥797 establecimientos únicos · ≥940 pertenencias
+a subunidades · 143 dobles. Reconciliación: 654 con
+una pertenencia a una subunidad, 143 con dos y 0
+con tres o más.
+R19 · UNIÓN DE VENTANAS
+el tramo Libertador–Cabildo ≥112 y el tramo
+Cabildo–Álvarez Thomas ≥138 son ventanas
+independientes. La unión deduplicada de R19 es
+≥211; no se suman a ciegas.
+R21 · OESTE / BORDE
+la red occidental de calles documentadas ≥237 y el
+borde Rojas–Honorio Pueyrredón 19 observados
+cumplen roles distintos; dos observaciones
+compartidas no habilitan suma simple ni absorción.
+R22 · DEDUPLICACIÓN
+≥158 deduplicados a partir de 294 observaciones
+postfiltradas; 136 duplicados internos removidos;
+84 identificadores observados en múltiples centros.
+MÉTODOS DE RECUENTO
+Consultas de red: pedidos efectivamente enviados a la fuente. Combinaciones de consulta: cada cruce de
+búsqueda y categoría. Consultas repetidas: no agregan registros nuevos. Controles: elementos que quedan
+fuera del universo. Membresías: un mismo local puede pertenecer a más de una subunidad, por eso su total
+puede superar el de establecimientos únicos.
+REGLAS DE ESTA EDICIÓN
+No recomputar universos; no sumar métodos no comparables; no convertir saturación en estimación; no
+construir ranking general; conservar fuente, fecha, universo y naturaleza en cada cifra.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+57 / 58
+
+DGDGAS
+ANEXOS
+Anexo G · Decisiones, limitaciones, glosario y
+trazabilidad pública
+Síntesis final en tres bloques.
+DECISIONES
+D-E01 · R01-R04 sin indicador
+comparable.
+D-E02 · mapa principal y anexos
+según rol aprobado.
+D-E03 · Corrientes-Abasto solo
+contextual.
+D-E04 · reutilización y
+normalización sin redibujar el
+corpus.
+D-E05 · homogeneidad visual
+media.
+D-E06 · cotas con ≥ y sin rankings
+no comparables.
+D-E07 · estructura institucional
+del Atlas.
+D-E08 · separación entre material
+institucional y técnico.
+Lecturas territoriales aprobadas
+para las 22 referencias, sin
+adopción de límites oficiales.
+LÍMITES Y GLOSARIO
+D-03 · cotas inferiores, censura,
+geometrías no oficiales y no
+comparabilidad.
+Cifra exacta · conteo cerrado en
+su método.
+Cota inferior · piso censado, no
+conteo completo.
+Antecedente histórico · valor de
+linaje, no indicador comparable.
+Sin cifra comparable · evidencia
+sin universo único.
+Saturación · máximo de
+resultados alcanzado.
+Membresía · pertenencia a una
+subunidad.
+Control · elemento que no integra
+el universo.
+Vista de detalle · amplía una
+referencia; no crea una nueva.
+Geometría analítica ·
+representación no oficial.
+TRAZABILIDAD PÚBLICA
+Fuentes: relevamiento y
+cartografía propios de la
+Dirección General de Desarrollo
+Gastronómico.
+Fecha de corte general:
+17-07-2026. Tanda 2:
+13-07-2026.
+Esta es la edición técnica. Existe
+además una edición de
+conducción del mismo Atlas, más
+breve y en lenguaje llano, con
+idénticas cifras y geometrías.
+Existe una edición ampliada de
+consulta, de 80 páginas, con el
+detalle metodológico completo.
+La edición es reproducible: se
+conservan contenido, matrices,
+controles de calidad y
+verificaciones de integridad.
+Esta edición no ejecuta consultas
+nuevas, no geocodifica, no
+recalcula universos y no modifica
+las fuentes.
+DGDGAS · Dirección General de
+Desarrollo Gastronómico.
+DGDGAS · Atlas de referencias gastronómicas de la Ciudad de Buenos Aires
+58 / 58

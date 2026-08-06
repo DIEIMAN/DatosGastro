@@ -1,0 +1,23 @@
+﻿referencia_id,nombre,familia,registro,origen,buffer_m,cierre_m,suavizado_chaikin,soporte,detalle_construccion
+R01,Palermo,multiparte,editorial,fase24:palermo,0,80,2,3 poligono(s) editorial(es) cerrados,fase24 key=palermo
+R02,Avenida Corrientes,eje,declarado,fase24:corrientes:line,200,80,2,1 eje(s) declarado(s),fase24 key=corrientes
+R03,San Telmo,polo,editorial,fase24:san_telmo,0,100,3,1 poligono(s) editorial(es) cerrados,fase24 key=san_telmo
+R04,Puerto Madero,multiparte,editorial,fase24:puerto,0,80,2,2 poligono(s) editorial(es) cerrados recortados contra tierra barrial oficial y sin los espejos de agua de los diques 1 a 4,"fase24 key=puerto; agua de los diques sustraida con mascara OpenStreetMap/Overpass (ODbL 1.0, acceso 2026-08-03) validada contra el WMS oficial de IDECABA"
+R05,Belgrano,polo,editorial,v31:belgrano,0,90,2,3 centralidad(es)/componente(s) de presentacion V3.1,"capa de presentacion institucional cerrada V3.1; las piezas se agrupan por centralidad, sin alterar la geometria"
+R06,Recoleta,polo,editorial,v31:recoleta,0,90,2,1 centralidad(es)/componente(s) de presentacion V3.1,"capa de presentacion institucional cerrada V3.1; las piezas se agrupan por centralidad, sin alterar la geometria"
+R07,Costanera Norte,multiparte,editorial,v31:costanera,0,70,2,4 centralidad(es)/componente(s) de presentacion V3.1,"capa de presentacion institucional cerrada V3.1; las piezas se agrupan por centralidad, sin alterar la geometria"
+R08,Villa Crespo,polo,observado,t1:Z01,200,140,2,646 puntos observados (Z01),buffer 200 m sobre puntos del universo deduplicado
+R09,Chacarita,dispersa,observado,t1sub:Z02,200,120,2,"226 de 327 puntos observados, dentro de 2 subunidad(es) declarada(s) (Z02)",envolvente por subunidad declarada: Corredor Newbery (116 puntos) · Nucleo Dorrego (110 puntos)
+R10,Caballito,multiparte,observado,t1sub:Z03,150,110,2,"266 de 907 puntos observados, dentro de 2 subunidad(es) declarada(s) (Z03)",envolvente por subunidad declarada: Pedro Goyena (160 puntos) · Primera Junta-Mercado del Progreso (106 puntos)
+R11,Boulevard Caseros,eje,observado,t1:Z04,120,80,2,66 puntos observados (Z04),buffer 120 m sobre puntos del universo deduplicado
+R12,Centro / Microcentro segmentado,segmentada,declarado,grupo_a:R12,0,60,2,5 area(s) de consulta declarada(s),"5 subunidades operativas; C-S02 sin geometria, C-S08 es control (excluido); C-S07 se comparte con R18"
+R13,Abasto,polo,declarado,grupo_a:R13,0,60,2,1 area(s) de consulta declarada(s),"tramo declarado Corrientes 3000 a 3800, buffer 350 m"
+R14,Avenida Boedo,eje,observado,t2:Z07,200,120,2,79 puntos observados E-PLACES (Z07),buffer 200 m sobre puntos; recortado al area de producto cerrada (D-5d)
+R15,Devoto,polo,observado,t2:Z08,200,130,2,119 puntos observados E-PLACES (Z08),buffer 200 m sobre puntos; recortado al area de producto cerrada (D-5d)
+R16,Donado-Holmberg,eje,observado,t2:Z09,200,110,2,40 puntos observados E-PLACES (Z09),buffer 200 m sobre puntos; recortado al area de producto cerrada (D-5d)
+R17,Villa Urquiza,multiparte,observado,t2:Z10,200,130,2,189 puntos observados E-PLACES (Z10),buffer 200 m sobre puntos; recortado al area de producto cerrada (D-5d)
+R18,Esmeralda-Paraguay,dispersa,declarado,grupo_a:R18,0,0,0,1 area(s) de consulta declarada(s),"disco de consulta de 400 m en torno a Esmeralda y Paraguay (D-5a: sin suavizar, sin punto central)"
+R19,Federico Lacroze por tramos,eje,declarado,grupo_b:R19,0,60,2,2 tramo(s)/area(s) declarada(s),controles CONTROL_NO_PRODUCTO excluidos del producto
+R20,Garcia del Rio,eje,declarado,grupo_c:R20,0,40,2,1 banda declarada corregida,banda plana de 180 m; esquinas ablandadas 30 m y extremos planos preservados (D-5c)
+R21,La Paternal,dispersa,declarado,grupo_b:R21,0,80,2,2 tramo(s)/area(s) declarada(s),controles CONTROL_NO_PRODUCTO excluidos del producto
+R22,Villa Pueyrredon,dispersa,declarado,grupo_c:R22,0,0,0,1 marco de muestreo declarado,marco de relevamiento barrial; sin suavizar y sin grilla interna (D-5b)

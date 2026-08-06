@@ -1,0 +1,7 @@
+﻿metrica,valor
+area_antes_km2,3.369573
+area_agua_sustraida_km2,0.224161
+area_despues_km2,3.145412
+mascara_total_km2,0.403546
+fuente,"OpenStreetMap/Overpass ODbL 1.0; validada contra IDECABA WMS cuerpos_de_agua_mapa_base_v2 (97,113% de coincidencia raster)"
+alcance,solo R04; ninguna otra referencia intersecta la mascara

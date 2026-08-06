@@ -1,0 +1,59 @@
+﻿pagina,render,metodo_inspeccion,hallazgo,estado
+1,render_paginas/pagina_01.png,contact sheet 40% + render 150 dpi,Portada limpia; marca DGDGAS y titulo institucional; sin numero de edicion.,OK
+2,render_paginas/pagina_02.png,contact sheet 40% + render 150 dpi,"Resumen ejecutivo abre con datos de la Ciudad: 22 referencias, 11 comunas, cinco familias y los cuatro grupos de cifras con su advertencia al lado.",OK
+3,render_paginas/pagina_03.png,contact sheet 40% + render 150 dpi,Indice en tres columnas; los encabezados de seccion no quedan huerfanos al pie; los 47 destinos resuelven.,OK
+4,render_paginas/pagina_04.png,contact sheet 40% + render 150 dpi,Ocho fichas de lectura con la clave de naturaleza de las cifras; regla general al pie.,OK
+5,render_paginas/pagina_05.png,contact sheet 40% + render 150 dpi,"Cinco familias con muestra de color, trama y definicion en linea propia; una referencia por renglon a ancho completo, ninguna etiqueta cortada.",OK
+6,render_paginas/pagina_06.png,contact sheet 40% + render 150 dpi,"Mapa general a pagina completa con anclas geograficas (numero de las 15 comunas, Rio de la Plata, Av. Gral. Paz y Riachuelo), advertencia de area vs volumen y tabla de 22 en dos columnas enlazada.",OK
+7,render_paginas/pagina_07.png,contact sheet 40% + render 150 dpi,"R01: la ausencia de cifra aparece como linea secundaria en cuerpo normal, no como titular.",OK
+8,render_paginas/pagina_08.png,contact sheet 40% + render 150 dpi,R01: tres subzonas separadas y rotuladas; sin fusion entre ellas.,OK
+9,render_paginas/pagina_09.png,contact sheet 40% + render 150 dpi,Vista de detalle Las Canitas; zoom correcto sobre la subzona.,OK
+10,render_paginas/pagina_10.png,contact sheet 40% + render 150 dpi,Ficha doble R02/R03; ambas con linea secundaria de ausencia de cifra.,OK
+11,render_paginas/pagina_11.png,contact sheet 40% + render 150 dpi,"R02: corredor continuo de punta a punta; Av. Corrientes, Callao y 9 de Julio rotuladas como calles de referencia.",OK
+12,render_paginas/pagina_12.png,contact sheet 40% + render 150 dpi,R03: contorno organico; desapareció el rectangulo de la edicion anterior.,OK
+13,render_paginas/pagina_13.png,contact sheet 40% + render 150 dpi,Vista contextual R02/R13; las dos formas separadas y rotuladas.,OK
+14,render_paginas/pagina_14.png,contact sheet 40% + render 150 dpi,Ficha doble R04/R06; R06 sin badge de antecedente por no tener cifra publicable.,OK
+15,render_paginas/pagina_15.png,contact sheet 40% + render 150 dpi,"R04: los cuatro diques aparecen como huecos del poligono; el area excluye el espejo de agua y la linea de cierre lo declara con su fuente (D-A-10, BLOQUEADO-01 cerrado).",OK
+16,render_paginas/pagina_16.png,contact sheet 40% + render 150 dpi,R06: unidad continua con su hueco interno preservado.,OK
+17,render_paginas/pagina_17.png,contact sheet 40% + render 150 dpi,R05: badge de antecedente previo con simbolo propio.,OK
+18,render_paginas/pagina_18.png,contact sheet 40% + render 150 dpi,R05: las tres centralidades agrupadas y rotuladas una sola vez cada una; Av. Cabildo y Av. Juramento rotuladas.,OK
+19,render_paginas/pagina_19.png,contact sheet 40% + render 150 dpi,R07: badge de antecedente previo; cuatro componentes declarados.,OK
+20,render_paginas/pagina_20.png,contact sheet 40% + render 150 dpi,"R07: cuatro componentes separados sobre el frente costero, sin conectores artificiales.",OK
+21,render_paginas/pagina_21.png,contact sheet 40% + render 150 dpi,R08: la ficha ocupa la columna completa y la linea de fuente cierra al pie; sin aire muerto en el tercio inferior.,OK
+22,render_paginas/pagina_22.png,contact sheet 40% + render 150 dpi,"R08: envolvente organica con Thames y Gurruchaga rotuladas, las dos calles que nombra el texto de la pagina.",OK
+23,render_paginas/pagina_23.png,contact sheet 40% + render 150 dpi,Vista de detalle R08: los tres puntos de tope de relevamiento marcados con circulo punteado.,OK
+24,render_paginas/pagina_24.png,contact sheet 40% + render 150 dpi,Ficha doble R09/R10; ambas declaran que el mapa no cubre la totalidad de los registros.,OK
+25,render_paginas/pagina_25.png,contact sheet 40% + render 150 dpi,"R09: los dos focos independientes, rotulados y sin envolvente comun; Av. Jorge Newbery y Av. Dorrego rotuladas.",OK
+26,render_paginas/pagina_26.png,contact sheet 40% + render 150 dpi,"R10: los dos nucleos independientes, rotulados.",OK
+27,render_paginas/pagina_27.png,contact sheet 40% + render 150 dpi,Ficha doble R11/R13.,OK
+28,render_paginas/pagina_28.png,contact sheet 40% + render 150 dpi,R11: microcentralidad de tramo corto; no se extiende a Barracas.,OK
+29,render_paginas/pagina_29.png,contact sheet 40% + render 150 dpi,R13: forma suavizada con trazo punteado de area declarada.,OK
+30,render_paginas/pagina_30.png,contact sheet 40% + render 150 dpi,R12: ficha extensa; ocupa la columna completa y cierra al pie.,OK
+31,render_paginas/pagina_31.png,contact sheet 40% + render 150 dpi,R12: cinco subunidades separadas y rotuladas; sin medialunas residuales.,OK
+32,render_paginas/pagina_32.png,contact sheet 40% + render 150 dpi,"Vista de detalle R12: aporta zoom y rotulos, pero se parece mucho al mapa principal.",OBSERVACION
+33,render_paginas/pagina_33.png,contact sheet 40% + render 150 dpi,Ficha doble R14/R15 con badge de cifra exacta.,OK
+34,render_paginas/pagina_34.png,contact sheet 40% + render 150 dpi,R14: eje de Boedo continuo a lo largo de la avenida.,OK
+35,render_paginas/pagina_35.png,contact sheet 40% + render 150 dpi,R15: polo de Devoto con sus huecos internos.,OK
+36,render_paginas/pagina_36.png,contact sheet 40% + render 150 dpi,"Vista de detalle R15: el corpus no cierra geometria del nucleo, asi que la vista repite el polo completo. BLOQUEADO-03 se mantiene abierto por decision; la fuente oficial de Espacios Verdes solo confirma que Plaza Arenales esta en Villa Devoto, Comuna 11.",OBSERVACION
+37,render_paginas/pagina_37.png,contact sheet 40% + render 150 dpi,Ficha doble R16/R17.,OK
+38,render_paginas/pagina_38.png,contact sheet 40% + render 150 dpi,"R16: doble eje fragmentado por tramos, con Donado y Holmberg rotuladas.",OK
+39,render_paginas/pagina_39.png,contact sheet 40% + render 150 dpi,"R17: se dibuja el unico eje con trazado cerrado en el corpus. Monroe y Congreso se rotulan como calles de referencia del callejero oficial, no como ejes de producto: BLOQUEADO-02 se mantiene abierto por decision.",OBSERVACION
+40,render_paginas/pagina_40.png,contact sheet 40% + render 150 dpi,Ficha doble R18/R20 con badge de cota inferior.,OK
+41,render_paginas/pagina_41.png,contact sheet 40% + render 150 dpi,"R18: disco de consulta de 400 m, sin punto central, con trazo punteado.",OK
+42,render_paginas/pagina_42.png,contact sheet 40% + render 150 dpi,R20: banda con esquinas ablandadas y extremos planos preservados; Av. Garcia del Rio y Av. Cabildo rotuladas.,OK
+43,render_paginas/pagina_43.png,contact sheet 40% + render 150 dpi,Vista de detalle R20: el control de Parque Saavedra se distingue del producto.,OK
+44,render_paginas/pagina_44.png,contact sheet 40% + render 150 dpi,R19: la ficha ocupa la columna completa y cierra al pie.,OK
+45,render_paginas/pagina_45.png,contact sheet 40% + render 150 dpi,"R19: dos tramos independientes, rotulados y sin union artificial; Federico Lacroze, Cabildo, Libertador y Alvarez Thomas rotuladas.",OK
+46,render_paginas/pagina_46.png,contact sheet 40% + render 150 dpi,Vista de detalle R19: grafico completo y bloques en el mismo orden que el resto; corregido el corte de la edicion anterior.,OK
+47,render_paginas/pagina_47.png,contact sheet 40% + render 150 dpi,R21: la ficha ocupa la columna completa y cierra al pie.,OK
+48,render_paginas/pagina_48.png,contact sheet 40% + render 150 dpi,R21: tres piezas; los puntos de anclaje del buffer ya no se dibujan.,OK
+49,render_paginas/pagina_49.png,contact sheet 40% + render 150 dpi,R22: ficha con badge de cota inferior; ocupa la columna completa.,OK
+50,render_paginas/pagina_50.png,contact sheet 40% + render 150 dpi,"R22: marco de relevamiento sin la grilla de calculo; rotulado como marco, no como area gastronomica.",OK
+51,render_paginas/pagina_51.png,contact sheet 40% + render 150 dpi,Anexo A 1 de 2: matriz R01-R11 completa y legible.,OK
+52,render_paginas/pagina_52.png,contact sheet 40% + render 150 dpi,Anexo A 2 de 2: matriz R12-R22 completa y legible.,OK
+53,render_paginas/pagina_53.png,contact sheet 40% + render 150 dpi,Anexo B: subunidades y componentes; recoge las partes internas de cada referencia.,OK
+54,render_paginas/pagina_54.png,contact sheet 40% + render 150 dpi,Anexo C: controles y exclusiones; aloja las instrucciones internas que salieron de las paginas de mapa.,OK
+55,render_paginas/pagina_55.png,contact sheet 40% + render 150 dpi,Anexo D: separaciones institucionales; una fila por par que no debe fusionarse.,OK
+56,render_paginas/pagina_56.png,contact sheet 40% + render 150 dpi,Anexo E: estado declarado y saturaciones.,OK
+57,render_paginas/pagina_57.png,contact sheet 40% + render 150 dpi,Anexo F: como se contaron los locales.,OK
+58,render_paginas/pagina_58.png,contact sheet 40% + render 150 dpi,"Anexo G: decisiones, limites, glosario y trazabilidad publica, con CRS y fechas movidos aca desde las paginas de mapa.",OK

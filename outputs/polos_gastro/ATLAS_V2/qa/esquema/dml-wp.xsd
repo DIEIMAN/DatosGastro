@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DrawingML para Word: el envoltorio de cada uno de los 32 mapas. Todos son `wp:inline`
+  (imagen en línea, sin ajuste de texto alrededor); `wp:anchor` se declara vacío porque el
+  documento no lo usa y así, si apareciera uno, la validación lo marcaría.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+           xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+           targetNamespace="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:import namespace="http://schemas.openxmlformats.org/drawingml/2006/main"
+             schemaLocation="dml-main.xsd"/>
+
+  <xs:element name="inline">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="extent">
+          <xs:complexType>
+            <xs:attribute name="cx" type="xs:long" use="required"/>
+            <xs:attribute name="cy" type="xs:long" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="effectExtent">
+          <xs:complexType>
+            <xs:attribute name="l" type="xs:long"/>
+            <xs:attribute name="t" type="xs:long"/>
+            <xs:attribute name="r" type="xs:long"/>
+            <xs:attribute name="b" type="xs:long"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="docPr">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:unsignedInt" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="descr" type="xs:string"/>
+            <xs:attribute name="title" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cNvGraphicFramePr">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="a:graphicFrameLocks"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="a:graphic"/>
+      </xs:choice>
+      <xs:attribute name="distT" type="xs:unsignedInt"/>
+      <xs:attribute name="distB" type="xs:unsignedInt"/>
+      <xs:attribute name="distL" type="xs:unsignedInt"/>
+      <xs:attribute name="distR" type="xs:unsignedInt"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="anchor">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>

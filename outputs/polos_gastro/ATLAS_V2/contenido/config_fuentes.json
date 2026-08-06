@@ -1,0 +1,11 @@
+{
+  "familia_pdf": "AtlasSans",
+  "fuente_resuelta": "DejaVuSans.ttf",
+  "fallbacks": [
+    "--font-dir",
+    "DejaVu Sans incluido en el entorno",
+    "Arial del sistema"
+  ],
+  "portabilidad": "El generador no depende exclusivamente de una ruta del sistema.",
+  "embebido_requerido": true
+}

@@ -1,0 +1,10 @@
+﻿control,pdf,contenido_y_scripts,resultado
+api_key,PASS,PASS,PASS
+email,PASS,PASS,PASS
+telefono,PASS,PASS,PASS
+cuit_dni,PASS,PASS,PASS
+link_privado,PASS,PASS,PASS
+ruta_windows_privada,PASS,PASS,PASS
+id_plataforma,PASS,PASS,PASS
+nombre_decisor,PASS,PASS,PASS
+comercial_sensible,PASS,PASS,PASS

@@ -1,0 +1,11 @@
+{
+  "referencias": 22,
+  "buffer_default_m": 200,
+  "gap_costura_m": 12.0,
+  "registros": {
+    "observado": 8,
+    "editorial": 6,
+    "declarado": 8
+  },
+  "area_total_km2": 38.95
+}

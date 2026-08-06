@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Espacio de nombres de referencias entre partes. Sólo aporta atributos. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+           elementFormDefault="qualified" attributeFormDefault="qualified">
+  <xs:attribute name="id" type="xs:string"/>
+  <xs:attribute name="embed" type="xs:string"/>
+  <xs:attribute name="link" type="xs:string"/>
+</xs:schema>

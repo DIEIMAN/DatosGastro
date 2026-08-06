@@ -1,0 +1,52 @@
+﻿pagina,render,metodo_inspeccion,hallazgo,estado
+1,render_conduccion/pagina_01.png,"render 150 dpi, página por página",Portada limpia; marca DGDGAS y titulo institucional. Los dos rotulos que estaban en versalitas -la caja de lectura y el descargo del pie- pasaron a capitalizacion normal (M-04).,OK
+2,render_conduccion/pagina_02.png,"render 150 dpi, página por página","Resumen ejecutivo: 22 zonas, 11 comunas, cinco familias y los cuatro modos de conteo separados por linea fina. La caja de cierre sigue al ultimo grupo en vez de estar clavada al pie: desaparecio el hueco de 166 pt del medio. El titulo ya no se monta sobre la caja azul (M-02). La fuente y la fecha, una sola vez.",OK
+3,render_conduccion/pagina_03.png,"render 150 dpi, página por página","Indice a dos columnas parejas. La entrada 'Zonas R01-R22 (continua)' lleva a la pagina donde la seccion continua, no al inicio de la seccion (M-08). Los 44 destinos resuelven.",OK
+4,render_conduccion/pagina_04.png,"render 150 dpi, página por página",Tres ideas en tres cajas mas el cierre. Cada caja se ajusta a su texto: se fueron los ~2 cm vacios que tenia cada una debajo (M-05). El sobrante queda al pie de la pagina.,OK
+5,render_conduccion/pagina_05.png,"render 150 dpi, página por página",Cinco familias con muestra de color y definicion; cada zona con su nombre. Separacion de un bloque entre paneles.,OK
+6,render_conduccion/pagina_06.png,"render 150 dpi, página por página","Mapa general con anclas geograficas y tabla de 22 en dos columnas. La nota del pie ahora se ajusta al ancho de la columna: antes media 514,1 pt en una columna de 510,2 y salia de la caja. Los numeros de comuna 1 y 11 se rozan sobre el gris: viene de la cartografia de la V2.1.",OBSERVACION
+7,render_conduccion/pagina_07.png,"render 150 dpi, página por página","Ficha doble R01/R02. Los cuatro bloques del lector; la frase de cifra sin etiqueta ni simbolo; una sola advertencia al pie. Los enlaces 'Ir al mapa' llevan a las paginas 8 y 12, las de esta edicion.",OK
+8,render_conduccion/pagina_08.png,"render 150 dpi, página por página","R01: las tres partes -Palermo Soho, Palermo Hollywood y Las Canitas- separadas y ROTULADAS. Hasta esta corrida el mapa rotulaba 'Palermo' una sola vez y ninguna de las tres partes que la ficha anuncia (S-01).",OK
+9,render_conduccion/pagina_09.png,"render 150 dpi, página por página","Pagina nueva (S-03). Palermo Soho ampliado a 250 m, con Palermo Hollywood en gris al costado y cuatro avenidas del entorno rotuladas.",OK
+10,render_conduccion/pagina_10.png,"render 150 dpi, página por página","Pagina nueva (S-03). Palermo Hollywood ampliado a 250 m, con Palermo Soho en gris y las avenidas del entorno.",OK
+11,render_conduccion/pagina_11.png,"render 150 dpi, página por página","Las Canitas ampliada: encuadre ajustado a la pieza, escala propia de 250 m y avenidas del entorno rotuladas. Antes era el mapa de Palermo entero con otro rotulo (S-02).",OK
+12,render_conduccion/pagina_12.png,"render 150 dpi, página por página",R02: corredor continuo de punta a punta. El rotulo de calle 'Av. Corrientes' se cruza con el rotulo de area 'Avenida Corrientes'; redundancia heredada de la V2.1.,OBSERVACION
+13,render_conduccion/pagina_13.png,"render 150 dpi, página por página","Corrientes y Abasto en un mismo mapa, separados y rotulados.",OK
+14,render_conduccion/pagina_14.png,"render 150 dpi, página por página",Ficha doble R03/R04. R04 declara en tres lineas que el area excluye el agua de los diques.,OK
+15,render_conduccion/pagina_15.png,"render 150 dpi, página por página",R03: contorno organico sobre el casco historico.,OK
+16,render_conduccion/pagina_16.png,"render 150 dpi, página por página","R04: los cuatro diques aparecen como huecos del poligono y las dos partes quedan rotuladas -Docks y Darsena Sur-, recuperadas de la misma fuente cartografica que las de Palermo (S-04).",OK
+17,render_conduccion/pagina_17.png,"render 150 dpi, página por página","Ficha doble R05/R06. R05 dice su cifra como dato de un relevamiento anterior, sin etiqueta tecnica.",OK
+18,render_conduccion/pagina_18.png,"render 150 dpi, página por página",R05: las tres centralidades agrupadas y rotuladas. 'Av. Juramento' se cruza con el rotulo 'Cabildo-Juramento'; heredado de la V2.1.,OBSERVACION
+19,render_conduccion/pagina_19.png,"render 150 dpi, página por página",R06: unidad continua con su hueco interno preservado.,OK
+20,render_conduccion/pagina_20.png,"render 150 dpi, página por página",Ficha doble R07/R08. R08 dice en castellano donde el relevamiento llego a su tope.,OK
+21,render_conduccion/pagina_21.png,"render 150 dpi, página por página","R07: cuatro tramos separados sobre el frente costero, sin conectores artificiales. Los rotulos dicen 'Tramo 1' a 'Tramo 4': en la revision visual de esta corrida decian 'Componente 1' a 'Componente 4', que es la palabra interna y no un nombre.",OK
+22,render_conduccion/pagina_22.png,"render 150 dpi, página por página",R08: envolvente organica con Thames y Gurruchaga rotuladas.,OK
+23,render_conduccion/pagina_23.png,"render 150 dpi, página por página",Ampliacion R08: los tres puntos de tope de relevamiento marcados con circulo punteado.,OK
+24,render_conduccion/pagina_24.png,"render 150 dpi, página por página",Ficha doble R09/R10. Las dos declaran que el mapa no cubre la totalidad de lo relevado.,OK
+25,render_conduccion/pagina_25.png,"render 150 dpi, página por página","R09: los dos focos independientes, rotulados y sin contorno comun. 'Av. Jorge Newbery' se cruza con 'Corredor Newbery'; heredado de la V2.1.",OBSERVACION
+26,render_conduccion/pagina_26.png,"render 150 dpi, página por página","R10: los dos nucleos independientes, rotulados.",OK
+27,render_conduccion/pagina_27.png,"render 150 dpi, página por página",Ficha doble R11/R12. R12 explica en una linea por que los numeros de sus areas no se suman.,OK
+28,render_conduccion/pagina_28.png,"render 150 dpi, página por página",R11: tramo corto; no se extiende a Barracas.,OK
+29,render_conduccion/pagina_29.png,"render 150 dpi, página por página",R12: cinco areas separadas y rotuladas.,OK
+30,render_conduccion/pagina_30.png,"render 150 dpi, página por página","Ampliacion R12: aporta zoom y rotulos, pero se parece mucho al mapa principal. Ya estaba declarado en la V2.1 y no entra en el alcance de esta corrida.",OBSERVACION
+31,render_conduccion/pagina_31.png,"render 150 dpi, página por página","Ficha doble R13/R14. R13 publica los tres tramos con su minimo, sin destacar ninguno.",OK
+32,render_conduccion/pagina_32.png,"render 150 dpi, página por página",R13: forma suavizada con trazo punteado de area declarada.,OK
+33,render_conduccion/pagina_33.png,"render 150 dpi, página por página",R14: eje de Boedo continuo a lo largo de la avenida.,OK
+34,render_conduccion/pagina_34.png,"render 150 dpi, página por página",Ficha doble R15/R16. R16 aclara que 'DoHo' es un apodo y no el nombre.,OK
+35,render_conduccion/pagina_35.png,"render 150 dpi, página por página",R15: polo de Devoto con sus huecos internos.,OK
+36,render_conduccion/pagina_36.png,"render 150 dpi, página por página","Ampliacion R15: no hay trazado propio del nucleo en el corpus, asi que la vista repite el polo completo. BLOQUEADO-03 sigue abierto por decision.",OBSERVACION
+37,render_conduccion/pagina_37.png,"render 150 dpi, página por página",R16: doble eje con Donado y Holmberg rotuladas.,OK
+38,render_conduccion/pagina_38.png,"render 150 dpi, página por página",Ficha doble R17/R18. R17 nombra los tres ejes y explica por que el mapa ubica uno.,OK
+39,render_conduccion/pagina_39.png,"render 150 dpi, página por página",R17: se dibuja el unico eje con recorrido cerrado; Monroe y Congreso como calles de referencia. BLOQUEADO-02 sigue abierto por decision.,OK
+40,render_conduccion/pagina_40.png,"render 150 dpi, página por página","R18: circulo de consulta de 400 m, sin punto central, con trazo punteado.",OK
+41,render_conduccion/pagina_41.png,"render 150 dpi, página por página","Ficha doble R19/R20. Las dos dicen el estado de los locales en castellano, sin la etiqueta de origen.",OK
+42,render_conduccion/pagina_42.png,"render 150 dpi, página por página","R19: dos tramos independientes, rotulados y sin union artificial. Los rotulos de Federico Lacroze y Alvarez Thomas se cruzan en el vertice; heredado de la V2.1.",OBSERVACION
+43,render_conduccion/pagina_43.png,"render 150 dpi, página por página",Ampliacion R19: los dos tramos con su zona de contacto junto a Cabildo.,OK
+44,render_conduccion/pagina_44.png,"render 150 dpi, página por página",R20: banda con esquinas ablandadas y extremos planos preservados.,OK
+45,render_conduccion/pagina_45.png,"render 150 dpi, página por página",Ampliacion R20: el parque se distingue del tramo. 'Av. Garcia del Rio' se cruza con el rotulo de area; heredado de la V2.1.,OBSERVACION
+46,render_conduccion/pagina_46.png,"render 150 dpi, página por página","Ficha doble R21/R22. R21 nombra el sector oeste por el territorio, no por su codigo interno.",OK
+47,render_conduccion/pagina_47.png,"render 150 dpi, página por página",R21: tres piezas; sin puntos de anclaje dibujados.,OK
+48,render_conduccion/pagina_48.png,"render 150 dpi, página por página","R22: marco de relevamiento rotulado como marco, no como area gastronomica.",OK
+49,render_conduccion/pagina_49.png,"render 150 dpi, página por página","Tabla de consulta 1 de 2: cuatro columnas. Se fue la columna 'Que mide la cifra', que repetia lo que dice 'Cuanta oferta hay', y el encabezado 'Que tipo de zona es' ya no se monta sobre el de al lado (M-06).",OK
+50,render_conduccion/pagina_50.png,"render 150 dpi, página por página","Tabla de consulta 2 de 2: mismo criterio, once filas.",OK
+51,render_conduccion/pagina_51.png,"render 150 dpi, página por página","Cierre en media carilla, como pide el encargo original. Junto con las paginas 4 y 5 es de las que mas alto libre dejan al pie, consecuencia declarada de ajustar las cajas a su contenido (M-05) y de no repartir el sobrante a ojo (M-03).",OBSERVACION

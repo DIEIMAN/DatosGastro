@@ -90,3 +90,32 @@ scripts/outputs/
 outputs/**/qa_*_png/
 outputs/**/qa_png_*/
 outputs/**/raster_pages/
+
+# === Piloto Google Places microzonas (2026-07-09) ===
+# Resultados internos de Places con place_id, dirección exacta y campos técnicos
+# (datos de terceros; guardrail 8). Solo se conserva localmente; nunca se versiona.
+outputs/polos_gastro/experimentos/google_places_microzonas_piloto/interno/
+outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/
+
+# Estado temporal de Places de Grupo B; contenido local no versionable.
+outputs/polos_gastro/INFORMEFINAL/codex/grupo_b_ejecucion_v1/estado_temporal/
+outputs/polos_gastro/INFORMEFINAL/codex/grupo_c_ejecucion_v1/estado_temporal/
+
+# Metadatos técnicos internos de fase28 (KPI reservado + incidente de cache); no publicable.
+outputs/polos_gastro/FASE5-29/fase28_ajustes_finales_informe_politico_v2_1/metadatos/interno/
+
+# === Linea ATLAS_V2 (2026-08-05) ===
+# Se versionan las FUENTES, no los productos: scripts/, contenido/, capas/, matrices/,
+# los CSV y MD de qa/, los checksums, los manifiestos, los README y CAMBIOS_CONDUCCION.md.
+# Los PDF, el .docx y los ZIP ya quedan afuera por las reglas outputs/**/*.pdf y outputs/*.zip
+# de mas arriba; estas dos lineas cubren lo que no: los mapas rasterizados de la editable y
+# las hojas de contacto del QA visual, que son productos regenerables y pesan ~50 MB.
+outputs/polos_gastro/ATLAS_V2/assets_docx/
+outputs/polos_gastro/ATLAS_V2/qa/contact_sheets*/
+outputs/polos_gastro/ATLAS_V2/qa/render_*/
+outputs/polos_gastro/ATLAS_V2/qa/_miniaturas/
+outputs/polos_gastro/ATLAS_V2/qa/_paletas/
+outputs/polos_gastro/ATLAS_V2/qa/*.png
+outputs/polos_gastro/ATLAS_V2/scripts/__pycache__/
+outputs/polos_gastro/ATLAS_V2/**/*.zip
+outputs/polos_gastro/ATLAS_V2/**/*.docx

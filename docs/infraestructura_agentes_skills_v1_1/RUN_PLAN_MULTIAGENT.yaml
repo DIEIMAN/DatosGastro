@@ -1,0 +1,77 @@
+# Plantilla + instancia de los casos E2E V1.1
+# Demuestra rutas exclusivas: dos agentes no escriben en la misma carpeta.
+
+version: 1
+run_id: "infra_v1_1_e2e_2026_07_11"
+objetivo: "Probar end-to-end skills maduras y rutas exclusivas sin tocar baselines"
+coordinador: null  # no nativo esta tanda; orquestación por script run_casos_e2e_v1_1.py
+politica: "docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md"
+registro_protegidas: "docs/polos_gastro/PROTECTED_SURFACES.yaml"
+estado: "ejecutado_por_script"
+
+agentes:
+  - id: investigador_documental
+    rol: caso1
+    rutas_exclusivas_escritura:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso1_investigador_documental/"
+    insumos:
+      - "outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/"
+    outputs:
+      - "HANDOFF_DOCUMENTAL_CASO1.md"
+      - "url_sample_results.json"
+    dependencias: []
+
+  - id: cartografo_territorial
+    rol: caso2
+    rutas_exclusivas_escritura:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso2_cartografo_territorial/"
+    insumos:
+      - "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_capa_analitica_v21.geojson"
+    outputs:
+      - "puerto_madero_presentacion_prueba_v1_1.geojson"
+      - "mapa_puerto_madero_presentacion_prueba_v1_1.png"
+      - "HANDOFF_CARTOGRAFICO_CASO2.md"
+    dependencias: []
+
+  - id: integrador_tecnico_editorial
+    rol: caso3
+    rutas_exclusivas_escritura:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso3_integrador/"
+    insumos:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso1_investigador_documental/HANDOFF_DOCUMENTAL_CASO1.md"
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso2_cartografo_territorial/HANDOFF_CARTOGRAFICO_CASO2.md"
+    outputs:
+      - "FICHA_EXPERIMENTAL_INTEGRADA_V1_1.md"
+      - "kpis_lock_prueba_v1_1.json"
+      - "REGISTRO_CONTRADICCIONES.md"
+      - "HANDOFF_EDITORIAL_CASO3.md"
+    dependencias: ["investigador_documental", "cartografo_territorial"]
+
+  - id: auditor_qa
+    rol: caso4
+    rutas_exclusivas_escritura:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso4_auditor_qa/"
+    insumos:
+      - "outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso3_integrador/"
+    outputs:
+      - "INFORME_QA_CASO4.md"
+    dependencias: ["integrador_tecnico_editorial"]
+    nota: "Solo lectura del producto caso3; no corrige ficha/lock"
+
+decisiones_vigentes:
+  - "REC-R02: no usar 150 restaurantes para Recoleta"
+  - "No modificar outputs de integración técnica cerrada (v2.1 pack)"
+  - "No modificar pack evidencia origen"
+  - "No tocar baselines de oficina (PROTECTED_SURFACES.yaml)"
+
+superficies_protegidas_aplicadas:
+  - "POLOS-HIBRIDO-INT-V21-OUT"
+  - "POLOS-EVIDENCIA-PACK"
+  - "POLOS-BASE-OFICINA-CERRADA"
+
+QA_asignado: "auditor_qa"
+autorizacion_humana:
+  commit: false
+  push: false
+  places_api: false
+  modificar_protegidos: false

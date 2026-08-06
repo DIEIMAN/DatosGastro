@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OfficeMath. Del namespace entero, el .docx sólo trae `m:mathPr` dentro de settings.xml:
+  las preferencias de fórmulas que la plantilla de python-docx arrastra. No hay una sola
+  fórmula en el documento.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+           targetNamespace="http://schemas.openxmlformats.org/officeDocument/2006/math"
+           elementFormDefault="qualified" attributeFormDefault="qualified">
+
+  <xs:complexType name="CT_String">
+    <xs:attribute name="val" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="CT_OnOff">
+    <xs:attribute name="val" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:element name="mathPr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mathFont" type="m:CT_String"/>
+        <xs:element name="brkBin" type="m:CT_String"/>
+        <xs:element name="brkBinSub" type="m:CT_String"/>
+        <xs:element name="smallFrac" type="m:CT_OnOff"/>
+        <xs:element name="dispDef" type="m:CT_OnOff"/>
+        <xs:element name="lMargin" type="m:CT_String"/>
+        <xs:element name="rMargin" type="m:CT_String"/>
+        <xs:element name="defJc" type="m:CT_String"/>
+        <xs:element name="wrapIndent" type="m:CT_String"/>
+        <xs:element name="intLim" type="m:CT_String"/>
+        <xs:element name="naryLim" type="m:CT_String"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

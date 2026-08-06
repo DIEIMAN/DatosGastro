@@ -1,0 +1,32 @@
+﻿pagina,referencia_id,tipo,calles
+8,R01,principal,
+9,R01,detalle,Av. Raúl Scalabrini Ortiz | Av. Juan B. Justo | Av. Santa Fe | Av. Córdoba
+10,R01,detalle,Av. Juan B. Justo | Av. Córdoba | Av. Santa Fe | Av. Federico Lacroze
+11,R01,detalle,Av. del Libertador | Av. Luis María Campos | Av. Cabildo | Av. Intendente Bullrich
+12,R02,principal,Av. Corrientes | Av. 9 de Julio | Av. Callao
+13,R02,detalle,Av. Corrientes
+15,R03,principal,Defensa
+16,R04,principal,
+18,R05,principal,Av. Cabildo | Av. Juramento
+19,R06,principal,
+21,R07,principal,
+22,R08,principal,Thames | Gurruchaga
+23,R08,detalle,
+25,R09,principal,Av. Jorge Newbery | Av. Dorrego
+26,R10,principal,Av. Pedro Goyena
+28,R11,principal,Av. Caseros
+29,R12,principal,
+30,R12,detalle,
+32,R13,principal,Av. Corrientes
+33,R14,principal,Av. Boedo
+35,R15,principal,
+36,R15,detalle,
+37,R16,principal,Donado | Holmberg
+39,R17,principal,Av. Triunvirato | Monroe | Av. Congreso
+40,R18,principal,Esmeralda | Paraguay
+42,R19,principal,Av. Federico Lacroze | Av. Cabildo | Av. del Libertador | Av. Álvarez Thomas
+43,R19,detalle,Av. Federico Lacroze | Av. Cabildo
+44,R20,principal,Av. García del Río | Av. Cabildo
+45,R20,detalle,Av. García del Río | Av. Cabildo
+47,R21,principal,
+48,R22,principal,

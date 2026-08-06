@@ -1,0 +1,222 @@
+{
+  "version": "1.1",
+  "fecha": "2026-07-11",
+  "politica": "docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md",
+  "precedencia": [
+    "guardrails_seguridad",
+    "autorizacion_humana_excepciones",
+    "politica_operativa",
+    "agente",
+    "skill",
+    "tarea_puntual"
+  ],
+  "agentes": [
+    {
+      "id": "investigador_documental",
+      "version": "1.1",
+      "mision": "Evidencia documental verificable, URLs, matrices, separación E/I/D, handoffs documentales",
+      "skills_autorizadas": ["auditar_evidencia_documental", "integrar_handoffs", "crear_manifest_hashes_metadata"],
+      "herramientas_permitidas": ["Read", "Grep", "Bash_readonly", "WebFetch_public_sample"],
+      "herramientas_prohibidas": ["Write_on_protected", "git_commit", "Places_API", "edit_geojson"],
+      "rutas_lectura": ["outputs/**/REVISION_EVIDENCIA*", "docs/**/evidencia*", "docs/*/PROTECTED_SURFACES.yaml"],
+      "rutas_escritura": ["outputs/infraestructura_agentes_skills_v1_1/**", "docs/infraestructura_agentes_skills_v1_1/**"],
+      "superficies_protegidas": "registro_subproyecto",
+      "requiere_QA_independiente": true,
+      "puede_trabajar_en_paralelo": true,
+      "formato_handoff": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_DOCUMENTAL.md",
+      "adaptador_claude": "adaptadores/claude_propuestos/investigador_documental.md",
+      "adaptador_codex": "adaptadores/codex/investigador_documental.md",
+      "estado_aptitud": "APTO_PILOTO",
+      "promovido_nativo_esta_tanda": false
+    },
+    {
+      "id": "cartografo_territorial",
+      "version": "1.1",
+      "mision": "Capas analíticas vs presentación, mapas de prueba en línea paralela, hashes de analítica",
+      "skills_autorizadas": ["transformar_cartografia_a_presentacion", "crear_manifest_hashes_metadata", "auditar_git_y_archivos_protegidos", "qa_pdf_pagina_por_pagina"],
+      "herramientas_permitidas": ["Read", "Write_parallel_only", "Bash_venv_python", "Grep"],
+      "herramientas_prohibidas": ["Write_on_baseline", "Places_API", "git_commit", "impose_names"],
+      "rutas_lectura": ["outputs/**/experimentos/**", "docs/*/PROTECTED_SURFACES.yaml"],
+      "rutas_escritura": ["outputs/infraestructura_agentes_skills_v1_1/**"],
+      "superficies_protegidas": "registro_subproyecto",
+      "requiere_QA_independiente": true,
+      "puede_trabajar_en_paralelo": true,
+      "formato_handoff": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_CARTOGRAFICO.md",
+      "adaptador_claude": "adaptadores/claude_propuestos/cartografo_territorial.md",
+      "adaptador_codex": "adaptadores/codex/cartografo_territorial.md",
+      "estado_aptitud": "APTO_PILOTO",
+      "promovido_nativo_esta_tanda": false
+    },
+    {
+      "id": "integrador_tecnico_editorial",
+      "version": "1.1",
+      "mision": "Unir handoffs, detectar inconsistencias, crear versiones nuevas, no modificar líneas anteriores",
+      "skills_autorizadas": ["integrar_handoffs", "gestionar_decisiones_humanas", "validar_metricas_y_kpis", "crear_manifest_hashes_metadata"],
+      "herramientas_permitidas": ["Read", "Write_new_line_only", "Bash_venv_python"],
+      "herramientas_prohibidas": ["Write_on_previous_lines", "silent_contradiction_fix", "git_commit", "reopen_DEC_without_auth"],
+      "rutas_lectura": ["outputs/infraestructura_agentes_skills_v1_1/casos_e2e/**", "docs/**/PROTECTED_SURFACES.yaml"],
+      "rutas_escritura": ["outputs/infraestructura_agentes_skills_v1_1/casos_e2e/caso3_integrador/**"],
+      "superficies_protegidas": "registro_subproyecto",
+      "requiere_QA_independiente": true,
+      "puede_trabajar_en_paralelo": false,
+      "formato_handoff": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_INTEGRACION.md",
+      "adaptador_claude": "adaptadores/claude_propuestos/integrador_tecnico_editorial.md",
+      "adaptador_codex": "adaptadores/codex/integrador_tecnico_editorial.md",
+      "estado_aptitud": "APTO_PILOTO",
+      "promovido_nativo_esta_tanda": false
+    },
+    {
+      "id": "auditor_qa",
+      "version": "1.1",
+      "mision": "QA independiente solo lectura del producto; PDF, KPIs, manifest, privacidad, protegidos, Git; no corrige en silencio",
+      "skills_autorizadas": ["auditar_entregable_experimental", "auditar_git_y_archivos_protegidos", "qa_pdf_pagina_por_pagina", "validar_metricas_y_kpis", "crear_paquete_revision_sanitizado", "crear_manifest_hashes_metadata"],
+      "herramientas_permitidas": ["Read", "Write_qa_reports_only", "Bash_venv_python", "Bash_git_readonly"],
+      "herramientas_prohibidas": ["Edit_product_under_audit", "git_commit", "git_add_dot", "self_approve_as_producer"],
+      "rutas_lectura": ["**"],
+      "rutas_escritura": ["outputs/infraestructura_agentes_skills_v1_1/**/INFORME_QA*", "outputs/infraestructura_agentes_skills_v1_1/**/caso4_auditor_qa/**"],
+      "superficies_protegidas": "registro_subproyecto",
+      "requiere_QA_independiente": false,
+      "puede_trabajar_en_paralelo": true,
+      "formato_handoff": "docs/infraestructura_agentes_skills_v1/plantillas/INFORME_QA.md",
+      "adaptador_claude": "adaptadores/claude_propuestos/auditor_qa.md",
+      "adaptador_codex": "adaptadores/codex/auditor_qa.md",
+      "estado_aptitud": "APTO_PILOTO",
+      "promovido_nativo_esta_tanda": false
+    },
+    {
+      "id": "coordinador",
+      "version": "1.1",
+      "mision": "Orquestación liviana multiagente",
+      "skills_autorizadas": ["integrar_handoffs"],
+      "estado_aptitud": "APTO_DOCUMENTAL",
+      "promovido_nativo_esta_tanda": false,
+      "nota": "No activar como agente nativo en esta tanda"
+    },
+    {
+      "id": "editor_institucional",
+      "version": "1.1",
+      "estado_aptitud": "APTO_DOCUMENTAL",
+      "promovido_nativo_esta_tanda": false,
+      "nota": "No activar como agente nativo en esta tanda"
+    },
+    {
+      "id": "auditor_metodologico",
+      "version": "1.1",
+      "estado_aptitud": "APTO_DOCUMENTAL",
+      "promovido_nativo_esta_tanda": false,
+      "nota": "No activar como agente nativo en esta tanda"
+    }
+  ],
+  "skills": [
+    {
+      "id": "auditar_entregable_experimental",
+      "version": "1.1",
+      "dependencias": ["POLITICA_V1_1"],
+      "scripts": [],
+      "outputs": ["QA_FINAL_*.md"],
+      "autorizacion_humana": ["promover_oficial", "aceptar_bloqueantes"],
+      "pruebas_completadas": ["e2e_caso4_parcial"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/auditar_entregable_experimental/SKILL.md"
+    },
+    {
+      "id": "qa_pdf_pagina_por_pagina",
+      "version": "1.1",
+      "dependencias": ["scripts/qa/pdf_check.py"],
+      "scripts": ["scripts/qa/pdf_check.py"],
+      "outputs": ["qa_png_*/"],
+      "autorizacion_humana": [],
+      "pruebas_completadas": ["e2e_render_available", "v1_caso_b"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/qa_pdf_pagina_por_pagina/SKILL.md"
+    },
+    {
+      "id": "crear_paquete_revision_sanitizado",
+      "version": "1.1",
+      "dependencias": ["empaquetar_revision_v1_1.py"],
+      "scripts": ["scripts/infraestructura_agentes_skills_v1_1/empaquetar_revision_v1_1.py"],
+      "outputs": ["REVISION_*/", "*.zip"],
+      "autorizacion_humana": ["publicar_fuera_area"],
+      "pruebas_completadas": ["e2e_pack_v1_1"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/crear_paquete_revision_sanitizado/SKILL.md"
+    },
+    {
+      "id": "auditar_git_y_archivos_protegidos",
+      "version": "1.1",
+      "dependencias": ["PROTECTED_SURFACES.yaml"],
+      "scripts": [],
+      "outputs": ["verificacion_hashes_*.csv", "seccion_QA"],
+      "autorizacion_humana": ["modificar_protegido", "commit"],
+      "pruebas_completadas": ["e2e_caso2_hash", "e2e_caso4_git"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/auditar_git_y_archivos_protegidos/SKILL.md"
+    },
+    {
+      "id": "crear_manifest_hashes_metadata",
+      "version": "1.1",
+      "dependencias": ["ESQUEMA_MANIFEST_V1_1.md"],
+      "scripts": ["scripts/infraestructura_agentes_skills_v1_1/empaquetar_revision_v1_1.py"],
+      "outputs": ["MANIFEST_CONTENIDO.csv", "CHECKSUMS_SHA256.txt"],
+      "autorizacion_humana": [],
+      "pruebas_completadas": ["e2e_pack_manifest"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/crear_manifest_hashes_metadata/SKILL.md"
+    },
+    {
+      "id": "integrar_handoffs",
+      "version": "1.1",
+      "dependencias": [],
+      "scripts": [],
+      "outputs": ["HANDOFF_*.md"],
+      "autorizacion_humana": ["reabrir_DEC"],
+      "pruebas_completadas": ["e2e_caso3"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/integrar_handoffs/SKILL.md"
+    },
+    {
+      "id": "validar_metricas_y_kpis",
+      "version": "1.1",
+      "dependencias": ["scripts/qa/validate_kpis.py"],
+      "scripts": ["scripts/qa/validate_kpis.py"],
+      "outputs": ["resultados_validate_kpis.json"],
+      "autorizacion_humana": ["cambiar_kpis_lock"],
+      "pruebas_completadas": ["e2e_caso5"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/validar_metricas_y_kpis/SKILL.md"
+    },
+    {
+      "id": "transformar_cartografia_a_presentacion",
+      "version": "1.1",
+      "dependencias": ["geopandas_optional"],
+      "scripts": ["scripts/infraestructura_agentes_skills_v1_1/run_casos_e2e_v1_1.py"],
+      "outputs": ["*_presentacion_*.geojson", "mapa_*.png"],
+      "autorizacion_humana": ["publicar_oficial"],
+      "pruebas_completadas": ["e2e_caso2"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/transformar_cartografia_a_presentacion/SKILL.md"
+    },
+    {
+      "id": "gestionar_decisiones_humanas",
+      "version": "1.1",
+      "dependencias": [],
+      "scripts": [],
+      "outputs": ["REGISTRO_CONTRADICCIONES.md"],
+      "autorizacion_humana": ["firmar_DEC"],
+      "pruebas_completadas": ["e2e_caso3"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/gestionar_decisiones_humanas/SKILL.md"
+    },
+    {
+      "id": "auditar_evidencia_documental",
+      "version": "1.1",
+      "dependencias": [],
+      "scripts": ["scripts/infraestructura_agentes_skills_v1_1/run_casos_e2e_v1_1.py"],
+      "outputs": ["HANDOFF_DOCUMENTAL_*.md", "url_sample_results.json"],
+      "autorizacion_humana": [],
+      "pruebas_completadas": ["e2e_caso1"],
+      "estado": "APTO_PILOTO",
+      "definicion": "docs/infraestructura_agentes_skills_v1/skills/auditar_evidencia_documental/SKILL.md"
+    }
+  ]
+}

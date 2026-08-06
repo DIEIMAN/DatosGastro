@@ -1,0 +1,1087 @@
+{
+  "meta": {
+    "marca": "DGDGAS",
+    "organismo": "Dirección General de Desarrollo Gastronómico",
+    "titulo": "ATLAS DE REFERENCIAS GASTRONÓMICAS DE LA CIUDAD DE BUENOS AIRES",
+    "subtitulo": "22 lecturas territoriales y cartográficas",
+    "edicion": "V2 Compacta",
+    "anio": "2026",
+    "caracter": "Representación cartográfica analítica · no oficial",
+    "paginas": 58,
+    "fecha_corte_general": "17-07-2026"
+  },
+  "criterios": {
+    "sin_ranking_general": true,
+    "geometrias_oficiales": false,
+    "referencias": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22"
+    ],
+    "fuentes_publicas_id": [
+      "SRC-FICHAS-22",
+      "SRC-CARTO-22",
+      "ACT-T1",
+      "ACT-T2",
+      "ACT-GA",
+      "ACT-GB",
+      "ACT-GC",
+      "SRC-ATLAS-V1"
+    ]
+  },
+  "fichas": [
+    {
+      "referencia_id": "R01",
+      "nombre": "Palermo",
+      "tipologia": "Polo con subzonas",
+      "lectura": "Polo gastronómico de Palermo (con subzonas)",
+      "caracterizacion": [
+        "Estructura multiparte: la referencia reúne subzonas con identidad propia dentro de una lectura común de Palermo.",
+        "Palermo Soho, Palermo Hollywood y Las Cañitas organizan la lectura interna; el recorte cartográfico disponible de Las Cañitas no representa por sí solo el conjunto.",
+        "La concentración gastronómica es amplia y heterogénea; las discontinuidades entre subzonas deben permanecer visibles y no convertirse en un polígono normativo único."
+      ],
+      "cifra": "SIN_CIFRA_CANONICA_COMPARABLE",
+      "naturaleza": "no_localizada",
+      "denominador_metodo": "Lectura cerrada de oficina; sin universo único cerrado en corpus institucional cerrado",
+      "detalle_cuantitativo": [
+        "Sin cifra canónica comparable disponible.",
+        "Antecedentes experimentales de microzonas quedan solo en trazabilidad técnica y no forman un universo del polo completo."
+      ],
+      "subunidades": [
+        [
+          "Palermo Soho",
+          "subzona",
+          "aporta a la lectura, sin universo canónico separado",
+          "no comparable",
+          "sin adopción"
+        ],
+        [
+          "Palermo Hollywood",
+          "subzona",
+          "idem",
+          "no comparable",
+          "sin adopción"
+        ],
+        [
+          "Las Cañitas",
+          "subzona y recorte cartográfico disponible",
+          "aporta a la lectura",
+          "no representa el total",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "Identidad propia; no absorber R08 ni R09.",
+        "Subzonas internas, no referencias nuevas."
+      ],
+      "exclusiones": [
+        "No polígono oficial único.",
+        "Sin indicador construido con sumas de microzonas."
+      ],
+      "limitaciones_especificas": [
+        "No inventar indicador; microzonas experimentales no son universo del polo completo"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R01_PALERMO.png"
+    },
+    {
+      "referencia_id": "R02",
+      "nombre": "Avenida Corrientes",
+      "tipologia": "Corredor gastronómico-cultural",
+      "lectura": "Corredor gastronómico-cultural de Av. Corrientes",
+      "caracterizacion": [
+        "Estructura lineal cultural y gastronómica sobre avenida Corrientes, con lectura de corredor y centralidad teatral.",
+        "El tramo editorial histórico se concentra aproximadamente entre 9 de Julio y Callao; esa referencia descriptiva no constituye una delimitación oficial.",
+        "Abasto mantiene una relación contextual con Corrientes, pero es una referencia independiente: la asociación no implica equivalencia, continuidad ni fusión."
+      ],
+      "cifra": "SIN_CIFRA_CANONICA_COMPARABLE",
+      "naturaleza": "no_localizada",
+      "denominador_metodo": "Lectura cerrada; sin universo único cerrado en corpus institucional cerrado",
+      "detalle_cuantitativo": [
+        "Sin cifra canónica comparable disponible.",
+        "La cobertura histórica y la microzona experimental no son indicadores canónicos ni equivalen a R13."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "R02 ≠ R13.",
+        "Corrientes–Abasto: vínculo / asociación, no equivalencia ni fusión."
+      ],
+      "exclusiones": [
+        "No fusión Corrientes–Abasto.",
+        "No mapa combinado como representación individual."
+      ],
+      "limitaciones_especificas": [
+        "No fusionar pizza centro con Abasto; no usar microzonas experimentales como indicador canónico"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R02_AVENIDA_CORRIENTES.png"
+    },
+    {
+      "referencia_id": "R03",
+      "nombre": "San Telmo",
+      "tipologia": "Polo",
+      "lectura": "Polo de San Telmo",
+      "caracterizacion": [
+        "Polo asociado al casco histórico de San Telmo, con el Mercado de San Telmo como hito colectivo y el eje Defensa como organizador contextual.",
+        "La lectura combina núcleo, tejido histórico y eje de conexión; no requiere extenderse a toda el área sur.",
+        "Boulevard Caseros y el entorno Lezama se registran como asociación territorial sin fusión con R03."
+      ],
+      "cifra": "SIN_CIFRA_CANONICA_COMPARABLE",
+      "naturaleza": "no_localizada",
+      "denominador_metodo": "Lectura cerrada de oficina",
+      "detalle_cuantitativo": [
+        "Sin cifra canónica comparable disponible."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Asociación Lezama–R11 sin fusión.",
+        "No extender automáticamente a Barracas o Parque Patricios."
+      ],
+      "exclusiones": [
+        "No fusión con Caseros."
+      ],
+      "limitaciones_especificas": [
+        "Asociación con Caseros sin fusión"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R03_SAN_TELMO.png"
+    },
+    {
+      "referencia_id": "R04",
+      "nombre": "Puerto Madero",
+      "tipologia": "Polo",
+      "lectura": "Polo de Puerto Madero",
+      "caracterizacion": [
+        "Polo organizado como banda de docks y frente costero, con continuidad longitudinal y distintos hitos sobre el borde de Puerto Madero.",
+        "La forma territorial responde mejor a un frente doble y a la sucesión de docks que a un núcleo radial único.",
+        "La lectura es descriptiva y cerrada; no equivale a un límite normativo ni habilita expansión fuera del frente documentado."
+      ],
+      "cifra": "SIN_CIFRA_CANONICA_COMPARABLE",
+      "naturaleza": "no_localizada",
+      "denominador_metodo": "Lectura cerrada de oficina",
+      "detalle_cuantitativo": [
+        "Sin cifra canónica comparable disponible."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "No fusionar con R12 ni extender el frente fuera del ámbito documentado."
+      ],
+      "exclusiones": [
+        "No núcleo radial único demostrado."
+      ],
+      "limitaciones_especificas": [
+        "Sin universo único en corpus institucional cerrado"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R04_PUERTO_MADERO.png"
+    },
+    {
+      "referencia_id": "R05",
+      "nombre": "Belgrano",
+      "tipologia": "Polo",
+      "lectura": "Polo de Belgrano",
+      "caracterizacion": [
+        "Polo de escala macroárea con tres centralidades diferenciadas: Barrio Chino, Bajo Belgrano y Belgrano R.",
+        "Belgrano R ocupa un rol secundario en la jerarquía editorial, sin perder su pertenencia a la referencia.",
+        "Las tres centralidades no son tres referencias nuevas ni deben sumarse como universos independientes; la geometría del relevamiento cartográfico previo conserva una lectura multiparte."
+      ],
+      "cifra": "697 (universo del relevamiento cartográfico previo; histórico metodológico) | 3 centralidades (descriptiva pública)",
+      "naturaleza": "historica_metodologica",
+      "denominador_metodo": "KPI_LOCK cartográfico relevamiento previo / editorial V2; no reabrir relevamiento previo sin pedido",
+      "detalle_cuantitativo": [
+        "Relevamiento cartográfico previo: universo histórico metodológico 697; 248 puntos incluidos; cobertura 35,58 %; 3 componentes; 7 piezas topológicas; superficie 0,3975 km²; densidad descriptiva 623,9 puntos/km²; estabilidad 0,765; dependencia externa 53,23 %; 449 puntos sin asignar.",
+        "La cifra pública descriptiva autorizada es 3 centralidades. Cobertura, estabilidad y universo histórico no son indicador principal ni equivalen a locales activos."
+      ],
+      "subunidades": [
+        [
+          "Barrio Chino",
+          "centralidad",
+          "aporta al relevamiento cartográfico previo",
+          "no universo autónomo",
+          "sin adopción"
+        ],
+        [
+          "Bajo Belgrano",
+          "centralidad",
+          "aporta al relevamiento cartográfico previo",
+          "no universo autónomo",
+          "sin adopción"
+        ],
+        [
+          "Belgrano R",
+          "centralidad secundaria",
+          "aporta al relevamiento cartográfico previo",
+          "no universo autónomo",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "Tres centralidades internas; no tres polos.",
+        "No absorber R16 o R17."
+      ],
+      "exclusiones": [
+        "No tres referencias autónomas.",
+        "No ranking con cobertura del relevamiento previo."
+      ],
+      "limitaciones_especificas": [
+        "El universo y los puntos del relevamiento previo no son 'locales activos' sin contexto; la cobertura no es un indicador público principal"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R05_BELGRANO.png"
+    },
+    {
+      "referencia_id": "R06",
+      "nombre": "Recoleta",
+      "tipologia": "Polo",
+      "lectura": "Polo de Recoleta",
+      "caracterizacion": [
+        "Polo presentado como una unidad territorial pública continua, con diversidad interna que no se publica como una lista de núcleos analíticos.",
+        "La corrida del relevamiento previo registró nueve núcleos analíticos, pero esa desagregación queda reservada a trazabilidad técnica y no constituye nueve polos.",
+        "La unidad pública no implica delimitación oficial ni autoriza una cifra de oferta como indicador principal."
+      ],
+      "cifra": "SIN_CIFRA_CANONICA_COMPARABLE",
+      "naturaleza": "historica_metodologica",
+      "denominador_metodo": "KPI_LOCK relevamiento previo; decisión editorial REC-R02 sin cifra de oferta",
+      "detalle_cuantitativo": [
+        "Sin cifra canónica comparable disponible para publicación.",
+        "Relevamiento cartográfico previo, solo técnico: universo 767; 602 puntos incluidos; cobertura 78,49 %; 1 componente público; superficie 1,218 km²; densidad 494,2 puntos/km²; estabilidad 0,626; dependencia externa 46,51 %; 165 puntos sin asignar.",
+        "Los 9 núcleos analíticos no se publican ni se convierten en subreferencias."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Una unidad pública; no publicar nueve núcleos analíticos.",
+        "No fusionar con R18."
+      ],
+      "exclusiones": [
+        "No nueve polos.",
+        "No cifra de oferta pública."
+      ],
+      "limitaciones_especificas": [
+        "No inventar oferta numérica; núcleos analíticos no publicar"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R06_RECOLETA.png",
+      "etiqueta_publica_cifra": "Sin cifra canónica comparable",
+      "glosa_cifra": "Oferta publicable: sin cifra; universo V3 767 histórico metodológico no publicable como KPI principal."
+    },
+    {
+      "referencia_id": "R07",
+      "nombre": "Costanera Norte",
+      "tipologia": "Polo multiparte",
+      "lectura": "Polo multiparte Costanera Norte",
+      "caracterizacion": [
+        "Polo multiparte compuesto por cuatro componentes y cinco piezas topológicas; una de las unidades es, a su vez, multiparte.",
+        "Los vacíos entre componentes son estructurales y deben mostrarse: la discontinuidad es parte de la forma territorial, no un error a rellenar.",
+        "La relación con el borde ribereño se mantiene como lectura de conjunto sin convertir los componentes en referencias autónomas."
+      ],
+      "cifra": "72 (universo conciliado del relevamiento previo; histórico metodológico) | 4 componentes (descriptiva pública)",
+      "naturaleza": "historica_metodologica",
+      "denominador_metodo": "KPI_LOCK relevamiento previo",
+      "detalle_cuantitativo": [
+        "Relevamiento cartográfico previo: universo conciliado histórico 72; 71 puntos incluidos; cobertura 98,61 %; 4 componentes; 5 piezas topológicas; superficie 0,3922 km²; densidad 181,0 puntos/km²; estabilidad 0,77; dependencia externa 92,96 %; 1 punto sin asignar.",
+        "La cifra pública descriptiva autorizada es 4 componentes; el universo y los puntos son históricos metodológicos."
+      ],
+      "subunidades": [
+        [
+          "Componentes 1–4",
+          "componentes discontinuos",
+          "aportan al universo conciliado del relevamiento previo",
+          "descriptivos",
+          "sin adopción"
+        ],
+        [
+          "Piezas topológicas (5)",
+          "desagregación técnica",
+          "aportan a cuatro componentes",
+          "no publicables como cinco polos",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "Cuatro componentes discontinuos; conservar vacíos."
+      ],
+      "exclusiones": [
+        "No continuidad artificial entre componentes."
+      ],
+      "limitaciones_especificas": [
+        "No omitir vacíos estructurales; dependencia del directorio comercial en línea es nota metodológica no cuerpo principal"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R07_COSTANERA_NORTE.png"
+    },
+    {
+      "referencia_id": "R08",
+      "nombre": "Villa Crespo",
+      "tipologia": "Polo documentado sin unidad espacial estabilizada",
+      "lectura": "Polo documentado sin unidad espacial estabilizada",
+      "caracterizacion": [
+        "Polo documentado con identidad propia respecto de Palermo y Chacarita, pero sin unidad espacial estabilizada ni contorno cerrado.",
+        "Los antecedentes ubican ejes y nodos sobre Thames, Gurruchaga y Velazco; sirven para caracterizar la oferta, no para adoptar una envolvente.",
+        "Los bordes finos quedan diferidos y tres saturaciones residuales se aceptan como limitación final, sin nuevas consultas."
+      ],
+      "cifra": "646",
+      "naturaleza": "exacta",
+      "denominador_metodo": "recuento con deduplicación conservadora Z01 (RESUMEN_UNIVERSOS_TANDA1_V4_4)",
+      "detalle_cuantitativo": [
+        "646 registros con deduplicación conservadora: capas administrativas 178, directorio comercial en línea 467 y 1 coincidencia mixta.",
+        "Universos de sensibilidad: bruto 686, estricto 656, sensibilidad 659. Tres consultas de categoría restaurante quedaron saturadas en 20 resultados y se aceptaron como limitación final."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Independiente de Palermo, Chacarita y el borde Rojas–Honorio Pueyrredón.",
+        "Bordes finos diferidos."
+      ],
+      "exclusiones": [
+        "No unidad espacial estabilizada ni polígono cerrado.",
+        "No nuevas consultas."
+      ],
+      "limitaciones_especificas": [
+        "3 residuales de categoría restaurante aceptadas como limitación final; sin nuevas consultas; bordes finos diferidos"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R08_VILLA_CRESPO.png"
+    },
+    {
+      "referencia_id": "R09",
+      "nombre": "Chacarita",
+      "tipologia": "Focos independientes Newbery/Dorrego",
+      "lectura": "Focos independientes Newbery/Dorrego; estructura no estabilizada; Lacroze control",
+      "caracterizacion": [
+        "Dos focos independientes: Jorge Newbery y Dorrego. La evidencia no sostiene una envolvente común ni un polo único.",
+        "Lacroze funciona únicamente como control territorial y no como eje principal de Chacarita.",
+        "La referencia permanece separada de Palermo, Villa Crespo y R19; no se utiliza el nombre híbrido Chacalermo."
+      ],
+      "cifra": "327",
+      "naturaleza": "exacta",
+      "denominador_metodo": "recuento con deduplicación conservadora Z02",
+      "detalle_cuantitativo": [
+        "327 registros con deduplicación conservadora: capas administrativas 115, directorio comercial en línea 211 y 1 coincidencia mixta.",
+        "Universos de sensibilidad: bruto 346, estricto 332, sensibilidad 336. Sin saturaciones residuales."
+      ],
+      "subunidades": [
+        [
+          "la subunidad 1 de la zona 2 / Newbery",
+          "foco independiente",
+          "116 en recuento técnico con deduplicación conservadora",
+          "no aditivo",
+          "sin adopción"
+        ],
+        [
+          "la subunidad 2 de la zona 2 / Dorrego",
+          "foco independiente",
+          "140 en recuento técnico con deduplicación conservadora",
+          "no aditivo",
+          "sin adopción"
+        ],
+        [
+          "Lacroze",
+          "control territorial",
+          "no define universo R09 ni R19",
+          "no comparable",
+          "control"
+        ]
+      ],
+      "relaciones": [
+        "R09 ≠ R19.",
+        "No Chacalermo ni fusión con Palermo/Villa Crespo."
+      ],
+      "exclusiones": [
+        "No polo único, envolvente común, Chacalermo ni Lacroze como eje."
+      ],
+      "limitaciones_especificas": [
+        "Lacroze=control no producto; no Chacalermo; no fusión Palermo/Crespo; no fusión R19"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R09_CHACARITA.png"
+    },
+    {
+      "referencia_id": "R10",
+      "nombre": "Caballito",
+      "tipologia": "Lectura multinodo con componentes independientes",
+      "lectura": "Componentes independientes en narrativa multinodo (nodos Goyena; Primera Junta–Mercado del Progreso)",
+      "caracterizacion": [
+        "Narrativa multinodo compuesta por unidades independientes, sin envolvente única.",
+        "Los nodos activos de lectura son Pedro Goyena y Primera Junta–Mercado del Progreso.",
+        "Patio de los Lecheros es control puntual no adoptable; Parque Rivadavia queda como antecedente documental sin componente cartográfico activo y la subunidad 4 de la zona 3 no puede reutilizarse."
+      ],
+      "cifra": "907",
+      "naturaleza": "exacta",
+      "denominador_metodo": "recuento con deduplicación conservadora Z03",
+      "detalle_cuantitativo": [
+        "907 registros con deduplicación conservadora: capas administrativas 265 y directorio comercial en línea 642.",
+        "Universos de sensibilidad: bruto 985, estricto 924, sensibilidad 946. Sin saturaciones residuales.",
+        "Los conteos de S4 y controles no forman parte de una lectura cartográfica activa."
+      ],
+      "subunidades": [
+        [
+          "la subunidad 1 de la zona 3 / Pedro Goyena",
+          "nodo",
+          "160 en recuento técnico con deduplicación conservadora",
+          "no aditivo",
+          "sin adopción"
+        ],
+        [
+          "la subunidad 2 de la zona 3 / Primera Junta–Mercado del Progreso",
+          "nodo",
+          "106 en recuento técnico con deduplicación conservadora",
+          "no aditivo",
+          "sin adopción"
+        ],
+        [
+          "Patio de los Lecheros",
+          "control puntual",
+          "2 observaciones técnicas; no producto",
+          "no comparable",
+          "no adoptable"
+        ],
+        [
+          "la subunidad 4 de la zona 3 / Parque Rivadavia",
+          "pieza retirada",
+          "24 observaciones históricas; no aporta al mapa activo",
+          "no comparable",
+          "prohibido reutilizar"
+        ]
+      ],
+      "relaciones": [
+        "Lecheros control; la subunidad 4 de la zona 3 retirado; Parque Rivadavia no activo."
+      ],
+      "exclusiones": [
+        "No polo único, envolvente, Lecheros como polo, S4 ni Rivadavia activo."
+      ],
+      "limitaciones_especificas": [
+        "la subunidad 4 de la zona 3 retirado; Lecheros control no adoptable; Rivadavia no activo"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R10_CABALLITO.png"
+    },
+    {
+      "referencia_id": "R11",
+      "nombre": "Boulevard Caseros",
+      "tipologia": "Microcentralidad de tramo corto",
+      "lectura": "Microcentralidad de tramo corto; corredor documentado solo como antecedente",
+      "caracterizacion": [
+        "Microcentralidad de tramo corto vinculada al entorno Lezama y San Telmo, sin fusión.",
+        "El antecedente documental de corredor se conserva, pero la evidencia espacial no sostiene continuidad territorial suficiente para adoptarlo como corredor.",
+        "No se extiende a Parque Patricios ni al resto de Barracas y no se construye un polígono único."
+      ],
+      "cifra": "66",
+      "naturaleza": "exacta",
+      "denominador_metodo": "recuento con deduplicación conservadora Z04; 0 category-split",
+      "detalle_cuantitativo": [
+        "66 registros con deduplicación conservadora: capas administrativas 19, directorio comercial en línea 46 y 1 coincidencia mixta.",
+        "Universos de sensibilidad: bruto 69, estricto 67, sensibilidad 67. No hubo desagregación por categoría",
+        "47 puntos quedaron a 250 m del eje documentado; la métrica no demuestra un corredor continuo."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Asociada a Lezama/San Telmo sin fusión; no Patricios/Barracas."
+      ],
+      "exclusiones": [
+        "No corredor continuo, polígono único o extensión a Patricios/Barracas."
+      ],
+      "limitaciones_especificas": [
+        "Evidencia no sostiene corredor continuo; no Patricios/Barracas; asociada Lezama/San Telmo sin fusión"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R11_BOULEVARD_CASEROS.png"
+    },
+    {
+      "referencia_id": "R12",
+      "nombre": "Centro/Microcentro segmentado",
+      "tipologia": "Área gastronómica segmentada",
+      "lectura": "Área gastronómica segmentada (subunidades independientes)",
+      "caracterizacion": [
+        "Área gastronómica segmentada compuesta por subunidades independientes; no es un polo único Centro.",
+        "Las pertenencias a subunidades se superponen, por lo que la suma simple de subunidades produciría doble conteo.",
+        "Tribunales permanece como componente secundario no comparable y no puede convertirse en una referencia adicional ni participar en rankings."
+      ],
+      "cifra": "≥797",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior censada Grupo A corrección técnica; no sumar subunidades superpuestas",
+      "detalle_cuantitativo": [
+        "≥797 establecimientos únicos; ≥940 pertenencias a subunidades; 143 dobles; reconciliación: 654 con una pertenencia a una subunidad, 143 con dos y 0 con tres o más.",
+        "Grupo A: 79/326 combinaciones de consulta (24,2 %) alcanzaron el máximo de 20; de categoría restaurante 51/64 saturadas.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [
+        [
+          "Microcentro financiero",
+          "subunidad por desagregación de categoría",
+          "≥251 pertenencias a subunidades",
+          "comparable solo dentro del mismo diseño",
+          "sin adopción"
+        ],
+        [
+          "Plaza de Mayo–Monserrat",
+          "subunidad por desagregación de categoría",
+          "≥93 pertenencias a subunidades",
+          "mismo criterio de desagregación",
+          "sin adopción"
+        ],
+        [
+          "Avenida de Mayo",
+          "subunidad por desagregación de categoría",
+          "≥203 pertenencias a subunidades",
+          "mismo criterio de desagregación",
+          "sin adopción"
+        ],
+        [
+          "Retiro central",
+          "subunidad por desagregación de categoría",
+          "≥177 pertenencias a subunidades",
+          "mismo criterio de desagregación",
+          "sin adopción"
+        ],
+        [
+          "Tribunales",
+          "componente secundario",
+          "≥57; no sumar ni ordenar por ranking",
+          "no comparable por consulta combinada saturada",
+          "sin adopción"
+        ],
+        [
+          "Esmeralda–Paraguay / vínculo con R18",
+          "unidad técnica relacionada",
+          "R18 se conserva como referencia independiente",
+          "no aditivo",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "Tribunales no es una referencia maestra adicional.",
+        "No sumar subunidades superpuestas ni fusionar con R18."
+      ],
+      "exclusiones": [
+        "No polo único Centro, suma simple, ranking Tribunales ni referencia maestra adicional."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Tribunales ≥57 no comparable y no es referencia adicional; pertenencias a subunidades ≥940 con 143 dobles (técnico); no polo único Centro"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R12_CENTRO_MICROCENTRO_SEGMENTADO.png"
+    },
+    {
+      "referencia_id": "R13",
+      "nombre": "Abasto",
+      "tipologia": "Polo documentado con delimitación provisional",
+      "lectura": "Polo documentado con delimitación provisional",
+      "caracterizacion": [
+        "Polo documentado con delimitación provisional, independiente de R02.",
+        "Los tres tramos técnicos no exhiben un gradiente longitudinal demostrado; tampoco sostienen un corredor ni una extensión a todo Balvanera o Almagro.",
+        "Los anclajes históricos mencionados en antecedentes no son verificables cuantitativamente en el paquete vigente."
+      ],
+      "cifra": "≥314",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo A corrección técnica",
+      "detalle_cuantitativo": [
+        "≥314 como cota inferior. Tramos técnicos: ≥91, ≥115 y ≥108; no muestran gradiente longitudinal.",
+        "Rectángulo mínimo rotado aproximado: 1.750 × 738 m; diagnóstico descriptivo, no delimitación.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "R13 ≠ R02.",
+        "No todo Balvanera/Almagro; combinado Corrientes–Abasto solo contextual."
+      ],
+      "exclusiones": [
+        "No gradiente, corredor, extensión total ni anclajes cuantitativos no verificables."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Anclajes históricos no verificables; sin gradiente/corredor; no todo Balvanera/Almagro; separado de R02"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R13_ABASTO.png"
+    },
+    {
+      "referencia_id": "R14",
+      "nombre": "Avenida Boedo",
+      "tipologia": "Eje gastronómico fragmentado",
+      "lectura": "Eje gastronómico fragmentado",
+      "caracterizacion": [
+        "Eje gastronómico fragmentado: la continuidad cultural de avenida Boedo no equivale a un corredor gastronómico continuo.",
+        "La banda analítica de 150 m es un parámetro de estudio, no un límite público.",
+        "La lectura prioriza tramos y discontinuidades; no adopta un polígono ni una geometría oficial."
+      ],
+      "cifra": "79",
+      "naturaleza": "exacta",
+      "denominador_metodo": "directorio comercial en línea recuento con deduplicación conservadora E-PLACES (RESUMEN_UNIVERSOS_TANDA2_V1); capas administrativas no sumar a ciegas",
+      "detalle_cuantitativo": [
+        "79 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte 2026-07-13.",
+        "Capas separadas del mismo corte: capas administrativas 4 y 188. No se suman a directorio comercial en línea ni se usan para inflar el indicador."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "No corredor continuo; banda de 150 m no límite público."
+      ],
+      "exclusiones": [
+        "No corredor continuo ni polígono."
+      ],
+      "limitaciones_especificas": [
+        "Banda 150 m parámetro no límite público; no corredor continuo ni polígono"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R14_AVENIDA_BOEDO.png"
+    },
+    {
+      "referencia_id": "R15",
+      "nombre": "Devoto",
+      "tipologia": "Polo gastronómico con núcleo estable",
+      "lectura": "Polo gastronómico con núcleo estable",
+      "caracterizacion": [
+        "Polo gastronómico con núcleo estable en torno de Plaza Arenales y una periferia contextual no estabilizada.",
+        "La estabilidad del núcleo no autoriza a extender el producto al barrio administrativo completo.",
+        "Villa Pueyrredón y Villa del Parque quedan fuera; R22 se mantiene como referencia separada."
+      ],
+      "cifra": "119",
+      "naturaleza": "exacta",
+      "denominador_metodo": "directorio comercial en línea recuento con deduplicación conservadora E-PLACES",
+      "detalle_cuantitativo": [
+        "119 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte 2026-07-13.",
+        "Capas separadas: capas administrativas 20 y 484; no aditivas con directorio comercial en línea."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "No absorber R22 ni Villa del Parque."
+      ],
+      "exclusiones": [
+        "No periferia estabilizada ni absorción de R22."
+      ],
+      "limitaciones_especificas": [
+        "Periferia no estabilizada; sin Villa Pueyrredón ni Villa del Parque"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R15_DEVOTO.png"
+    },
+    {
+      "referencia_id": "R16",
+      "nombre": "Donado–Holmberg",
+      "tipologia": "Doble eje con fragmentación por tramos",
+      "lectura": "Doble eje gastronómico con fragmentación por tramos",
+      "caracterizacion": [
+        "Doble eje sobre Donado y Holmberg, con fragmentación por tramos y sin envolvente única.",
+        "La denominación institucional es Donado–Holmberg; la glosa DoHo queda como antecedente no publicable como nombre principal.",
+        "La referencia no se absorbe en Villa Urquiza ni se fusiona con R17."
+      ],
+      "cifra": "40",
+      "naturaleza": "exacta",
+      "denominador_metodo": "directorio comercial en línea recuento con deduplicación conservadora E-PLACES",
+      "detalle_cuantitativo": [
+        "40 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte 2026-07-13.",
+        "Capas separadas: capas administrativas 1 y 93; no aditivas con directorio comercial en línea."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Donado–Holmberg no se absorbe en R17."
+      ],
+      "exclusiones": [
+        "No DoHo institucional, envolvente única ni fusión R17."
+      ],
+      "limitaciones_especificas": [
+        "No DoHo institucional; no envolvente única; no fusión con Villa Urquiza"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R16_DONADO_HOLMBERG.png"
+    },
+    {
+      "referencia_id": "R17",
+      "nombre": "Villa Urquiza",
+      "tipologia": "Polo gastronómico multieje",
+      "lectura": "Polo gastronómico multieje",
+      "caracterizacion": [
+        "Polo gastronómico multieje cuya estructura interna se organiza sobre Triunvirato, Monroe y Congreso.",
+        "Los ejes se leen como componentes de una referencia común, sin convertir todo el barrio administrativo en geometría gastronómica.",
+        "Donado–Holmberg permanece separado y no se absorbe en R17."
+      ],
+      "cifra": "189",
+      "naturaleza": "exacta",
+      "denominador_metodo": "directorio comercial en línea recuento con deduplicación conservadora E-PLACES",
+      "detalle_cuantitativo": [
+        "189 registros del directorio comercial en línea, con deduplicación conservadora, fecha de corte 2026-07-13.",
+        "Capas separadas: capas administrativas 21 y 676; no aditivas con directorio comercial en línea."
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "Villa Urquiza no absorbe R16."
+      ],
+      "exclusiones": [
+        "No absorción R16 ni barrio completo como geometría."
+      ],
+      "limitaciones_especificas": [
+        "No absorber Donado–Holmberg; estructura Triunvirato-Monroe-Congreso interna"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "13-07-2026",
+      "mapa_principal": "R17_VILLA_URQUIZA.png"
+    },
+    {
+      "referencia_id": "R18",
+      "nombre": "Esmeralda–Paraguay",
+      "tipologia": "Referencia independiente sin núcleo radial",
+      "lectura": "Referencia independiente sin núcleo radial demostrado",
+      "caracterizacion": [
+        "Referencia independiente Esmeralda–Paraguay, con geometría provisional y sin núcleo radial demostrado.",
+        "Las densidades mínimas por anillos no sostienen una concentración central ni un gradiente; el máximo descriptivo se ubica en bandas intermedias.",
+        "Nuevo Bajo no es nombre canónico y no puede usarse para extender o renombrar la referencia."
+      ],
+      "cifra": "≥216",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo A corrección técnica",
+      "detalle_cuantitativo": [
+        "≥216 como cota inferior.",
+        "Densidades mínimas por anillos efectivos: 0–100 m ≥12 / ≥381,97 registros/km²; 100–200 m ≥53 / ≥562,35 registros/km²; 200–300 m ≥89 / ≥566,60 registros/km²; 300–400 m ≥62 / ≥282,97 registros/km².",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [],
+      "relaciones": [
+        "No Nuevo Bajo; no fusionar con R06 o R12."
+      ],
+      "exclusiones": [
+        "No núcleo radial, gradiente, delimitación oficial ni nombre Nuevo Bajo."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Geometría provisional; Nuevo Bajo no canónico; sin concentración central ni gradiente"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R18_ESMERALDA_PARAGUAY.png"
+    },
+    {
+      "referencia_id": "R19",
+      "nombre": "Federico Lacroze por tramos",
+      "tipologia": "Referencia segmentada por tramos",
+      "lectura": "Referencia gastronómica segmentada por tramos",
+      "caracterizacion": [
+        "Referencia segmentada en dos ventanas independientes: el tramo Libertador–Cabildo y el tramo Cabildo–Álvarez Thomas.",
+        "El solapamiento observacional en Lacroze–Cabildo identifica un nodo compartido, pero no demuestra continuidad de toda la avenida.",
+        "el tercer tramo evaluado queda excluido; el control Lacroze–Chacarita es control no-producto; no hay extensión a Dorrego ni fusión con Chacarita/R09."
+      ],
+      "cifra": "≥211",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo B; el tramo Libertador–Cabildo≥112 y el tramo Cabildo–Álvarez Thomas≥138 no comparables entre sí; no sumar a ciegas",
+      "detalle_cuantitativo": [
+        "≥211 deduplicados; estado declarado 204 en actividad, 7 cerrados temporalmente y 0 cerrados en forma permanente.",
+        "el tramo Libertador–Cabildo: ≥112, 5 centros, radio 250 m, 3/25 saturadas, ≥22,4 registros/centro. el tramo Cabildo–Álvarez Thomas: ≥138, 7 centros, radio 225 m, 2/35 saturadas, ≥19,7 registros/centro.",
+        "R19 tuvo 60 consultas de red y 5 consultas de categoría restaurante saturadas; registros por centro no equivalen a densidad.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [
+        [
+          "el tramo Libertador–Cabildo",
+          "ventana independiente",
+          "≥112",
+          "no comparable con T2",
+          "sin adopción"
+        ],
+        [
+          "el tramo Cabildo–Álvarez Thomas",
+          "ventana independiente",
+          "≥138",
+          "no comparable con T1",
+          "sin adopción"
+        ],
+        [
+          "Lacroze–Cabildo",
+          "nodo de solapamiento",
+          "39 compartidos observacionales",
+          "no prueba continuidad",
+          "sin adopción"
+        ],
+        [
+          "el tercer tramo evaluado",
+          "excluido",
+          "no aporta",
+          "no producto de primera corrida",
+          "excluido"
+        ],
+        [
+          "el control Lacroze–Chacarita",
+          "control R09",
+          "no aporta a R19",
+          "no comparable",
+          "control"
+        ]
+      ],
+      "relaciones": [
+        "el tercer tramo evaluado excluido; control Chacarita no aporta; sin fusión R09."
+      ],
+      "exclusiones": [
+        "No polo Lacroze, corredor continuo, avenida completa, T3 ni fusión Chacarita."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "el tercer tramo evaluado excluido; sin corredor continuo; sin fusión Chacarita/R09; el control Lacroze–Chacarita control; estado declarado 204/7/0; no '190 consultas'"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R19_FEDERICO_LACROZE_POR_TRAMOS.png"
+    },
+    {
+      "referencia_id": "R20",
+      "nombre": "García del Río",
+      "tipologia": "Tramo localizado de oferta continua y modesta",
+      "lectura": "Referencia/tramo localizado de oferta gastronómica continua y modesta entre Cabildo y Parque Saavedra; leve concentración hacia Cabildo y adelgazamiento hacia el parque; no corredor, eje ni polo",
+      "caracterizacion": [
+        "Tramo localizado de oferta gastronómica continua y modesta sobre García del Río 2400–3200, entre Cabildo y Parque Saavedra.",
+        "La oferta muestra leve concentración hacia Cabildo y adelgazamiento hacia el parque.",
+        "La evidencia no habilita corredor, eje ni polo; Parque Saavedra es control no-producto y R20 permanece separado de R22."
+      ],
+      "cifra": "≥40",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo C ZIP corregido; sat 1/20 de categoría restaurante",
+      "detalle_cuantitativo": [
+        "≥40 deduplicados a partir de 106 observaciones postfiltradas; 66 duplicados internos removidos; 38 identificadores observados en múltiples centros.",
+        "20 consultas exitosas; 1/20 saturadas en la categoría restaurante; estado declarado 39 en actividad, 1 cerrado temporalmente y 0 cerrados en forma permanente.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [
+        [
+          "Parque Saavedra",
+          "control no-producto",
+          "0 m² de intersección efectiva en la corrida",
+          "no comparable",
+          "control"
+        ],
+        [
+          "Controles espaciales",
+          "control",
+          "fuera del universo",
+          "no comparable",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "Parque Saavedra control no-producto; R20 y R22 separados."
+      ],
+      "exclusiones": [
+        "No corredor, eje, polo, absorción del parque ni universo combinado."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Parque Saavedra control no-producto (intersección 0 m²); tramo 2400–3200; estado declarado 39/1/0; separado de R22; sin sensibilidad 165"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R20_GARCIA_DEL_RIO.png"
+    },
+    {
+      "referencia_id": "R21",
+      "nombre": "La Paternal",
+      "tipologia": "Referencia extensa y dispersa sin núcleo único",
+      "lectura": "Referencia gastronómica extensa y dispersa, sin núcleo único demostrado",
+      "caracterizacion": [
+        "Referencia extensa y dispersa, sin núcleo único demostrado ni geometría institucional estabilizada.",
+        "la red occidental de calles documentadas es un componente provisional; el borde Rojas–Honorio Pueyrredón es un control de borde que no se absorbe en Villa Crespo.",
+        "Las métricas de distancia y vecindad son descriptivas y no prueban polo, corredor, archipiélago ni red de nodos; Distrito del Vino no funciona como referencia indirecta."
+      ],
+      "cifra": "≥254",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo B; la red occidental de calles documentadas≥237 componente provisional; el borde Rojas–Honorio Pueyrredón=19 observado no comparable",
+      "detalle_cuantitativo": [
+        "≥254 deduplicados; estado declarado 242 en actividad, 12 cerrados temporalmente y 0 cerrados en forma permanente.",
+        "la red occidental de calles documentadas: ≥237, 22 centros, radio 300 m, 4/110 saturadas, ≥10,8 registros/centro. el borde Rojas–Honorio Pueyrredón: 19 observados, 3 centros, radio 200 m, 0/15 saturadas y 6,3 registros/centro.",
+        "Diagonal aproximada 4,01 km y vecino más próximo mediano 36 m: métricas descriptivas, no evidencia de una forma adoptable.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [
+        [
+          "la red occidental de calles documentadas",
+          "componente provisional",
+          "≥237",
+          "no comparable con BORDE",
+          "sin adopción"
+        ],
+        [
+          "el borde Rojas–Honorio Pueyrredón",
+          "borde/control",
+          "19 observados; 2 compartidos con OESTE",
+          "no comparable",
+          "no absorbido por R08"
+        ]
+      ],
+      "relaciones": [
+        "el borde Rojas–Honorio Pueyrredón no se absorbe en R08; Devoto y Espacios Estrella fuera; Av. San Martín no forzada."
+      ],
+      "exclusiones": [
+        "No polo, corredor, archipiélago, red de nodos ni Distrito del Vino como referencia indirecta."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Sin polo/corredor/archipiélago/red; no absorbido por Villa Crespo; Distrito Vino no referencia indirecta; estado declarado 242/12/0"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R21_LA_PATERNAL.png"
+    },
+    {
+      "referencia_id": "R22",
+      "nombre": "Villa Pueyrredón",
+      "tipologia": "Oferta extensa y heterogénea",
+      "lectura": "Oferta gastronómica extensa y heterogénea, con subárea de mayor densidad en el centro/centro-este; sin núcleo dominante único ni eje demostrado",
+      "caracterizacion": [
+        "Oferta gastronómica extensa y heterogénea, con una subárea descriptiva de mayor densidad en el centro y centro-este.",
+        "La subárea no es un producto nuevo ni un núcleo dominante; avenida San Martín no se privilegia como eje.",
+        "El límite barrial y la grilla de 600 m son marcos de muestreo provisionales; no se absorben Devoto, Villa Urquiza ni Agronomía y R22 permanece separado de R20."
+      ],
+      "cifra": "≥158",
+      "naturaleza": "cota_inferior",
+      "denominador_metodo": "Cota inferior Grupo C ZIP corregido; sat 6/70 de categoría restaurante; grilla neutral 600 m",
+      "detalle_cuantitativo": [
+        "≥158 deduplicados a partir de 294 observaciones postfiltradas; 136 duplicados internos removidos; 84 identificadores observados en múltiples centros.",
+        "70 consultas exitosas; 6/70 saturadas en la categoría restaurante; estado declarado 152 en actividad, 6 cerrados temporalmente y 0 cerrados en forma permanente.",
+        "Separación con R20: aproximadamente 3.432,9 m y 0 identificadores compartidos; el universo combinado está prohibido.",
+        "Piso censado; no es conteo completo ni locales activos"
+      ],
+      "subunidades": [
+        [
+          "Centro/centro-este",
+          "subárea descriptiva",
+          "aporta al universo R22",
+          "no producto nuevo",
+          "sin adopción"
+        ],
+        [
+          "Controles espaciales",
+          "control",
+          "fuera del universo",
+          "no comparable",
+          "sin adopción"
+        ]
+      ],
+      "relaciones": [
+        "R20 y R22 separados; no absorción por R15/R17/Agronomía."
+      ],
+      "exclusiones": [
+        "No núcleo dominante, eje San Martín ni absorción por referencias vecinas."
+      ],
+      "limitaciones_especificas": [
+        "Piso censado; no es conteo completo ni locales activos",
+        "Subárea descriptiva no producto; Av San Martín no privilegiada; sin absorción Devoto/Urquiza/Agronomía; estado declarado 152/6/0; separado de R20"
+      ],
+      "caveat_geometrico": "Representación analítica/editorial sin delimitación oficial.",
+      "fuente_id": "Relevamiento propio DGDGAS",
+      "fecha_corte": "17-07-2026",
+      "mapa_principal": "R22_VILLA_PUEYRREDON.png"
+    }
+  ],
+  "complementarias": [
+    {
+      "referencia": "R01",
+      "archivo": "R01_DETALLE_LAS_CANITAS.png",
+      "titulo": "Las Cañitas",
+      "lectura": "Amplía una subzona de Palermo; no representa el conjunto ni crea una referencia."
+    },
+    {
+      "referencia": "R02",
+      "archivo": "R02_R13_CONTEXTO_CORRIENTES_ABASTO.png",
+      "titulo": "Corrientes-Abasto contextual",
+      "lectura": "Muestra vínculo y asociación; R02 y R13 permanecen separados."
+    },
+    {
+      "referencia": "R08",
+      "archivo": "R08_DETALLE_SATURACIONES_RESIDUALES.png",
+      "titulo": "Saturaciones residuales",
+      "lectura": "Conserva tres saturaciones restaurant como límite final de cobertura."
+    },
+    {
+      "referencia": "R12",
+      "archivo": "R12_DETALLE_SUBUNIDADES_SATURACION.png",
+      "titulo": "Subunidades y saturación",
+      "lectura": "Presenta ratios por subunidad sin convertirlos en ranking."
+    },
+    {
+      "referencia": "R15",
+      "archivo": "R15_DETALLE_NUCLEO_PERIFERIA.png",
+      "titulo": "Núcleo y periferia",
+      "lectura": "Distingue el núcleo estable de una periferia no estabilizada."
+    },
+    {
+      "referencia": "R19",
+      "archivo": "R19_DETALLE_LACROZE_CABILDO.png",
+      "titulo": "Lacroze-Cabildo",
+      "lectura": "Amplía la superposición observacional de LAC-T1/LAC-T2 sin probar continuidad."
+    },
+    {
+      "referencia": "R20",
+      "archivo": "R20_DETALLE_CABILDO_PARQUE_SAAVEDRA.png",
+      "titulo": "Cabildo-Parque Saavedra",
+      "lectura": "Parque Saavedra es control y no integra el producto territorial."
+    }
+  ],
+  "anexos": {
+    "paginas": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "reglas": [
+      "No sumar universos o membresías no comparables.",
+      "Una vista de detalle no crea una referencia.",
+      "Las geometrías son analíticas y no oficiales.",
+      "Las cotas inferiores son pisos censados."
+    ]
+  }
+}
