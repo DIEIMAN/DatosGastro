@@ -1,0 +1,759 @@
+tipo,clave,direcciones,n_formas,formas
+sobre_plegado,RIVADAVIA,320,6,RIVADAVIA AV. (194) · Avenida Rivadavia (101) · Av. Rivadavia (11) · RIVADAVIA (10) · Rivadavia (3) · Av Rivadavia (1)
+sobre_plegado,CORRIENTES,211,9,"CORRIENTES AV. (105) · Avenida Corrientes (86) · Av. Corrientes (10) · Corrientes (3) · Av Corrientes (3) · Corrientes, (1) · Avenida Corrientes, (1) · Avda Corrientes y (1) · AV. CORRIENTES (1)"
+sobre_plegado,CORDOBA,159,9,CORDOBA AV. (90) · Avenida Córdoba (57) · Av. Córdoba (4) · Córdoba (2) · CORDOBA (2) · Av. Cordoba (1) · Av Córdoba (1) · Av Cordoba (1) · AV. Córdoba (1)
+sobre_plegado,CABILDO,146,5,CABILDO AV. (70) · Avenida Cabildo (63) · Av. Cabildo (11) · Av Cabildo (1) · AV CABILDO (1)
+sobre_plegado,SAN MARTIN,144,11,Avenida San Martín (57) · SAN MARTIN AV. (52) · SAN MARTIN (15) · San Martín (13) · San Martin (1) · Av. San Martín (1) · Av. San Martin (1) · Av San Martín y (1) · Av San Martín (1) · AV.SAN MARTIN (1)
+sobre_plegado,SANTA FE,127,8,"SANTA FE AV. (72) · Avenida Santa Fe (42) · Av. Santa Fe (4) · Av. Santa Fé (3) · Av santa fé (3) · Av. Santa fé (1) · Av. Santa Fe, (1) · Av Santa Fe (1)"
+sobre_plegado,JUAN BAUTISTA ALBERDI,119,4,"ALBERDI, JUAN BAUTISTA AV. (67) · Avenida Juan Bautista Alberdi (50) · C1406GRL, Av. Juan Bautista Alberdi (1) · Av. Juan Bautista Alberdi (1)"
+sobre_plegado,DEL LIBERTADOR,105,7,DEL LIBERTADOR AV. (49) · Avenida del Libertador (31) · Avenida Del Libertador (18) · Av. del Libertador (4) · Av. Del Libertador (1) · Av del Libertador (1) · AV DEL LIBERTADOR (1)
+sobre_plegado,SARMIENTO,102,6,"SARMIENTO (66) · Sarmiento (31) · Avenida Sarmiento (2) · SARMIENTO AV. (1) · Presidente Sarmiento (1) · Avenida Sarmiento, (1)"
+sobre_plegado,DIRECTORIO,101,2,DIRECTORIO AV. (60) · Avenida Directorio (41)
+sobre_plegado,SAN JUAN,98,3,Avenida San Juan (49) · SAN JUAN AV. (47) · Av. San Juan (2)
+sobre_plegado,EVA PERON,93,4,"PERON, EVA AV. (45) · Avenida Eva Perón (44) · Av. Eva Perón (3) · Av Eva Peron (1)"
+sobre_plegado,MONROE,92,5,MONROE (43) · Monroe (31) · MONROE AV. (9) · Avenida Monroe (7) · Av. Monroe (2)
+sobre_plegado,PARAGUAY,91,2,PARAGUAY (59) · Paraguay (32)
+sobre_plegado,NAZCA,90,5,NAZCA AV. (40) · Avenida Nazca (27) · NAZCA (12) · Nazca (9) · Av. Nazca (2)
+sobre_plegado,BELGRANO,84,7,BELGRANO AV. (43) · Avenida Belgrano (30) · Belgrano (7) · BELGRANO (1) · Avenida General Belgrano (1) · Av. Belgrano (1) · Av Belgrano (1)
+sobre_plegado,LAVALLE,84,3,LAVALLE (64) · Lavalle (19) · lavalle (1)
+sobre_plegado,RAUL SCALABRINI ORTIZ,82,5,"SCALABRINI ORTIZ, RAUL AV. (40) · Avenida Raúl Scalabrini Ortiz (33) · SCALABRINI ORTIZ, RAUL (7) · Raúl Scalabrini Ortiz (1) · Av. Raúl Scalabrini Ortiz (1)"
+sobre_plegado,JUAN DOMINGO PERON,77,6,"PERON, JUAN DOMINGO, TTE. GENERAL (49) · Teniente General Juan Domingo Perón (21) · Tte. Gral. Juan Domingo Perón (4) · Tte. General Juan Domingo Perón (1) · Avenida Presidente Juan Domingo Perón (1) · Av. Tte. Gral Juan Domingo Perón (1)"
+sobre_plegado,TUCUMAN,77,3,TUCUMAN (57) · Tucumán (18) · Tucuman (2)
+sobre_plegado,JUAN B JUSTO,75,2,"JUSTO, JUAN B. AV. (41) · Avenida Juan B. Justo (34)"
+sobre_plegado,HIPOLITO YRIGOYEN,74,4,"YRIGOYEN, HIPOLITO (30) · Avenida Hipólito Yrigoyen (17) · Hipólito Yrigoyen (16) · YRIGOYEN, HIPOLITO AV. (11)"
+sobre_plegado,LOPE DE VEGA,74,4,Avenida Lope de Vega (38) · LOPE DE VEGA AV. (32) · LOPE DE VEGA (3) · Lope de Vega (1)
+sobre_plegado,INDEPENDENCIA,73,4,INDEPENDENCIA AV. (44) · Avenida Independencia (25) · Av. Independencia (3) · Independencia (1)
+sobre_plegado,PUEYRREDON,71,5,PUEYRREDON AV. (46) · Avenida Pueyrredón (21) · Av. Pueyrredón (2) · Av. Pueyrredon (1) · Av Pueyrredón (1)
+sobre_plegado,LA PLATA,70,3,LA PLATA AV. (41) · Avenida La Plata (27) · Av. La Plata (2)
+sobre_plegado,ALVAREZ JONTE,69,6,ALVAREZ JONTE AV. (29) · Álvarez Jonte (18) · Avenida Álvarez Jonte (12) · ALVAREZ JONTE (8) · Av. Alvarez Jonte (1) · Alvarez Jonte (1)
+sobre_plegado,OLAZABAL,69,6,OLAZABAL AV. (20) · Avenida Olazábal (19) · OLAZABAL (16) · Olazábal (12) · olazabal (1) · Av. Olazábal (1)
+sobre_plegado,VIAMONTE,68,2,VIAMONTE (41) · Viamonte (27)
+sobre_plegado,FEDERICO LACROZE,67,7,"LACROZE, FEDERICO AV. (34) · Avenida Federico Lacroze (21) · LACROZE, FEDERICO (5) · Av. Federico Lacroze (4) · av.federico lacroze (1) · Federico Lacroze (1) · Av Federico Lacroze (1)"
+sobre_plegado,GORRITI,67,2,GORRITI (34) · Gorriti (33)
+sobre_plegado,BARTOLOME MITRE,65,4,"MITRE, BARTOLOME (38) · Bartolomé Mitre (25) · C1201AAX, Bartolomé Mitre (1) · Avenida Presidente Bartolomé Mitre (1)"
+sobre_plegado,MARCELO T DE ALVEAR,65,3,"ALVEAR, MARCELO T. De (37) · Marcelo T. de Alvear (27) · Marcelo t. de alvear (1)"
+sobre_plegado,FRANCISCO BEIRO,60,5,"BEIRO, FRANCISCO AV. (41) · Avenida Francisco Beiró (13) · Av. Francisco Beiró (4) · Av. Francisco Beiro (1) · Av .Francisco Beiró (1)"
+sobre_plegado,GAONA,60,3,GAONA AV. (37) · Avenida Gaona (21) · Av. Gaona (2)
+sobre_plegado,HONDURAS,60,4,HONDURAS (28) · Honduras (21) · HONDURAS AV. (6) · Avenida Honduras (5)
+sobre_plegado,CONGRESO,59,5,Avenida Congreso (23) · CONGRESO AV. (21) · CONGRESO (9) · Congreso (5) · Av. Congreso (1)
+sobre_plegado,ALICIA MOREAU DE JUSTO,58,5,"MOREAU DE JUSTO, ALICIA AV. (28) · Avenida Alicia Moreau de Justo (24) · Alicia Moreau de Justo (3) · Av. Alicia Moreau de Justo (2) · Alicia Moreau De Justo (1)"
+sobre_plegado,ALVAREZ THOMAS,58,5,ALVAREZ THOMAS AV. (38) · Avenida Álvarez Thomas (17) · Av. Álvarez Thomas (1) · Av Álvarez thomas (1) · Alvarez Thomas (1)
+sobre_plegado,JURAMENTO,58,4,Juramento (21) · JURAMENTO AV. (18) · JURAMENTO (14) · Avenida Juramento (5)
+sobre_plegado,CARLOS CALVO,57,4,"CALVO, CARLOS (24) · Carlos Calvo (22) · Avenida Carlos Calvo (6) · CALVO, CARLOS AV. (5)"
+sobre_plegado,LAS HERAS,57,9,"LAS HERAS GENERAL AV. (34) · Avenida General Las Heras (13) · General Las Heras (2) · Av. Las Heras (2) · Av. Gral. Las Heras (2) · Las heras (1) · Las Heras (1) · LAS HERAS, GENERAL (1) · Avenida Las Heras (1)"
+sobre_plegado,CIUDAD DE LA PAZ,55,4,CIUDAD DE LA PAZ (33) · Ciudad de La Paz (17) · Ciudad de la Paz (4) · Ciudad De La Paz (1)
+sobre_plegado,ENTRE RIOS,55,4,ENTRE RIOS AV. (35) · Avenida Entre Ríos (16) · Av. Entre Ríos (3) · Av. Entre Rios (1)
+sobre_plegado,ARENALES,54,3,ARENALES (33) · Arenales (20) · Calle Arenales (1)
+sobre_plegado,CALLAO,54,4,CALLAO AV. (34) · Avenida Callao (14) · Av. Callao (4) · Callao (2)
+sobre_plegado,JERONIMO SALGUERO,54,3,"SALGUERO, JERONIMO (31) · Jerónimo Salguero (22) · Av. Jerónimo Salguero (1)"
+sobre_plegado,MORENO,54,3,MORENO (33) · Moreno (20) · moreno (1)
+sobre_plegado,TRIUNVIRATO,54,4,TRIUNVIRATO AV. (38) · Avenida Triunvirato (14) · Triunvirato (1) · Av. Triunvirato (1)
+sobre_plegado,COSTA RICA,53,2,COSTA RICA (31) · Costa Rica (22)
+sobre_plegado,MONTEVIDEO,53,3,"MONTEVIDEO (27) · Montevideo (25) · Montevideo, (1)"
+sobre_plegado,CASEROS,52,4,CASEROS AV. (31) · Avenida Caseros (19) · Av. Caseros (1) · Av Caseros (1)
+sobre_plegado,CHARCAS,52,2,CHARCAS (34) · Charcas (18)
+sobre_plegado,RODRIGUEZ PENA,50,4,RODRIGUEZ PEÑA (25) · Rodríguez Peña (18) · RODRIGUEZ PEÃâA (6) · Rodriguez Peña (1)
+sobre_plegado,AVELLANEDA,49,4,Avenida Avellaneda (19) · AVELLANEDA AV. (15) · AVELLANEDA (11) · Avellaneda (4)
+sobre_plegado,DORREGO,49,6,Avenida Dorrego (24) · DORREGO AV. (13) · DORREGO (8) · Dorrego (2) · Av. Dorrego (1) · Av Dorrego (1)
+sobre_plegado,MALABIA,49,2,MALABIA (26) · Malabia (23)
+sobre_plegado,PEDRO GOYENA,49,3,"GOYENA, PEDRO AV. (30) · Avenida Pedro Goyena (17) · Av. Pedro Goyena (2)"
+sobre_plegado,THAMES,48,2,THAMES (29) · Thames (19)
+sobre_plegado,JULIAN ALVAREZ,47,4,"Julián Álvarez (26) · ALVAREZ, JULIAN (18) · Julian Alvarez (2) · C1414DRJ, Julián Álvarez (1)"
+sobre_plegado,CUENCA,46,2,CUENCA (30) · Cuenca (16)
+sobre_plegado,JUNIN,46,4,JUNIN (28) · Junín (16) · junin (1) · CALLE JUNIN (1)
+sobre_plegado,ECHEVERRIA,45,2,ECHEVERRIA (23) · Echeverría (22)
+sobre_plegado,JUNCAL,45,2,Juncal (24) · JUNCAL (21)
+sobre_plegado,SEGUROLA,45,3,SEGUROLA AV. (22) · Avenida Segurola (15) · Segurola (8)
+sobre_plegado,DEFENSA,44,2,Defensa (28) · DEFENSA (16)
+sobre_plegado,ESMERALDA,44,2,ESMERALDA (28) · Esmeralda (16)
+sobre_plegado,BONPLAND,43,2,Bonpland (22) · BONPLAND (21)
+sobre_plegado,EMILIO CASTRO,42,5,"CASTRO, EMILIO AV. (21) · Avenida Emilio Castro (18) · CASTRO, EMILIO (1) · Av. Emilio Castro (1) · Av Emilio Castro (1)"
+sobre_plegado,FLORIDA,42,3,"Florida (26) · FLORIDA (15) · Florida, (1)"
+sobre_plegado,MENDOZA,42,3,Mendoza (20) · MENDOZA (19) · MENDOZA AV. (3)
+sobre_plegado,RAMON L FALCON,42,4,"FALCON, RAMON L.,CNEL. (24) · Coronel Ramón L. Falcón (13) · FALCON, RAMON L.,CNEL. AV. (4) · Ramón L. Falcón (1)"
+sobre_plegado,URUGUAY,42,3,URUGUAY (22) · Uruguay (11) · URUGUAY AV. (9)
+sobre_plegado,ADOLFO ALSINA,41,2,"ALSINA, ADOLFO (30) · Adolfo Alsina (11)"
+sobre_plegado,MEXICO,41,2,MEXICO (21) · México (20)
+sobre_plegado,SUIPACHA,41,2,SUIPACHA (27) · Suipacha (14)
+sobre_plegado,AMENABAR,40,4,"Amenábar (22) · AMENABAR (16) · Amenábar, (1) · Amenabar (1)"
+sobre_plegado,BOEDO,40,5,BOEDO AV. (20) · Avenida Boedo (12) · Av. Boedo (4) · Boedo (2) · BOEDO (2)
+sobre_plegado,BRASIL,40,5,BRASIL (21) · Brasil (11) · Avenida Brasil (4) · BRASIL AV. (3) · Av. Brasil (1)
+sobre_plegado,SALTA,40,2,SALTA (33) · Salta (7)
+sobre_plegado,BOLIVAR,39,2,BOLIVAR (21) · Bolívar (18)
+sobre_plegado,JUAN DE GARAY,39,2,"GARAY, JUAN DE AV. (20) · Avenida Juan de Garay (19)"
+sobre_plegado,SAENZ,39,4,Avenida Sáenz (23) · SAENZ AV. (14) · Avenida Saenz (1) · Av. Sáenz (1)
+sobre_plegado,EL SALVADOR,38,2,EL SALVADOR (22) · El Salvador (16)
+sobre_plegado,AGUERO,37,3,AGUERO (19) · Agüero (17) · Aguero (1)
+sobre_plegado,CRISOLOGO LARRALDE,37,3,"LARRALDE, CRISOLOGO AV. (24) · Crisólogo Larralde (12) · Avda Crisologo Larralde (1)"
+sobre_plegado,DE MAYO,37,5,Avenida de Mayo (19) · DE MAYO AV. (15) · avenida de mayo (1) · Av. de Mayo (1) · Av de Mayo (1)
+sobre_plegado,NOGOYA,37,2,NOGOYA (24) · Nogoyá (13)
+sobre_plegado,REGIMIENTO DE PATRICIOS,37,2,Avenida Regimiento de Patricios (19) · REGIMIENTO DE PATRICIOS AV. (18)
+sobre_plegado,SOLER,37,2,SOLER (20) · Soler (17)
+sobre_plegado,CRAMER,36,5,"Avenida Crámer (12) · CRAMER AV. (10) · CRAMER (7) · Crámer (6) · Cramer, (1)"
+sobre_plegado,HUMBOLDT,36,2,HUMBOLDT (24) · Humboldt (12)
+sobre_plegado,LA PAMPA,36,2,La Pampa (23) · LA PAMPA (13)
+sobre_plegado,SANCHEZ DE BUSTAMANTE,36,2,SANCHEZ DE BUSTAMANTE (22) · Sánchez de Bustamante (14)
+sobre_plegado,ARAOZ,35,2,ARAOZ (18) · Aráoz (17)
+sobre_plegado,AYACUCHO,35,2,AYACUCHO (24) · Ayacucho (11)
+sobre_plegado,BULNES,35,2,Bulnes (21) · BULNES (14)
+sobre_plegado,ESTADOS UNIDOS,35,2,ESTADOS UNIDOS (23) · Estados Unidos (12)
+sobre_plegado,GURRUCHAGA,35,2,GURRUCHAGA (20) · Gurruchaga (15)
+sobre_plegado,MAIPU,35,3,MAIPU (22) · Maipú (11) · Avenida Maipú (2)
+sobre_plegado,SERRANO,35,2,SERRANO (22) · Serrano (13)
+sobre_plegado,ANGEL GALLARDO,34,2,"GALLARDO, ANGEL AV. (21) · Avenida Ángel Gallardo (13)"
+sobre_plegado,FITZ ROY,34,2,Fitz Roy (17) · FITZ ROY (17)
+sobre_plegado,JUAN BAUTISTA JUSTO,34,2,Avenida Juan Bautista Justo (32) · Av. Juan Bautista Justo (2)
+sobre_plegado,MEDRANO,34,4,MEDRANO AV. (17) · Avenida Medrano (9) · MEDRANO (7) · Medrano (1)
+sobre_plegado,AZCUENAGA,33,3,AZCUENAGA (19) · Azcuénaga (13) · Azcuenaga (1)
+sobre_plegado,BILLINGHURST,33,2,BILLINGHURST (18) · Billinghurst (15)
+sobre_plegado,CHACABUCO,33,2,Chacabuco (18) · CHACABUCO (15)
+sobre_plegado,GODOY CRUZ,33,2,Godoy Cruz (18) · GODOY CRUZ (15)
+sobre_plegado,MOSCONI,33,5,MOSCONI GENERAL AV. (18) · Avenida General Mosconi (12) · mosconi (1) · Av. Mosconi (1) · Av. Gral. Mosconi (1)
+sobre_plegado,ARMENIA,32,2,ARMENIA (17) · Armenia (15)
+sobre_plegado,CARLOS PELLEGRINI,32,2,"PELLEGRINI, CARLOS (21) · Carlos Pellegrini (11)"
+sobre_plegado,DIAZ VELEZ,32,2,DIAZ VELEZ AV. (17) · Avenida Díaz Vélez (15)
+sobre_plegado,DONATO ALVAREZ,32,5,"Avenida Teniente General Donato Álvarez (14) · ALVAREZ, DONATO, Tte. Gral. (9) · ALVAREZ, DONATO, Tte. Gral. AV. (7) · Teniente General Donato Álvarez (1) · Av. Tte. Gral. Donato Álvarez (1)"
+sobre_plegado,RECONQUISTA,32,2,RECONQUISTA (24) · Reconquista (8)
+sobre_plegado,CHILE,31,3,CHILE (20) · Chile (8) · CHILE AV. (3)
+sobre_plegado,DE LOS CONSTITUYENTES,31,4,DE LOS CONSTITUYENTES AV. (19) · Avenida de los Constituyentes (10) · Av. de los Constituyentes (1) · Av. De los Constituyentes (1)
+sobre_plegado,GASCON,31,3,GASCON (18) · Gascón (12) · Gascon (1)
+sobre_plegado,JORGE LUIS BORGES,31,2,"Jorge Luis Borges (16) · BORGES, JORGE LUIS (15)"
+sobre_plegado,JORGE NEWBERY,31,4,"Avenida Jorge Newbery (11) · Jorge Newbery (10) · NEWBERY, JORGE AV. (6) · NEWBERY, JORGE (4)"
+sobre_plegado,LISANDRO DE LA TORRE,31,6,"Avenida Lisandro de la Torre (11) · DE LA TORRE, LISANDRO (8) · DE LA TORRE, LISANDRO AV. (5) · Lisandro de la Torre (4) · Av. Lisandro de la Torre (2) · av. lisandro de la torre (1)"
+sobre_plegado,NICETO VEGA,31,5,"Avenida Coronel Niceto Vega (14) · VEGA, NICETO, Cnel. AV. (7) · Coronel Niceto Vega (5) · VEGA, NICETO, Cnel. (3) · Niceto Vega (2)"
+sobre_plegado,PARANA,31,4,PARANA (16) · Paraná (13) · Parana (1) · Avenida Paraná (1)
+sobre_plegado,PERU,31,3,PERU (19) · Perú (10) · Peru (2)
+sobre_plegado,RIOBAMBA,31,2,RIOBAMBA (25) · Riobamba (6)
+sobre_plegado,YERBAL,31,2,YERBAL (17) · Yerbal (14)
+sobre_plegado,ACOYTE,30,4,Avenida Acoyte (17) · ACOYTE AV. (8) · ACOYTE (4) · Acoyte (1)
+sobre_plegado,LA RIOJA,30,2,LA RIOJA (21) · La Rioja (9)
+sobre_plegado,MONTES DE OCA,30,5,MONTES DE OCA AV. (17) · Avenida Montes de Oca (10) · Montes de oca (1) · Montes De Oca (1) · Av. Montes de Oca (1)
+sobre_plegado,REPUBLICA BOLIVARIANA DE VENEZUELA,30,2,REPUBLICA BOLIVARIANA DE VENEZUELA (20) · República Bolivariana de Venezuela (10)
+sobre_plegado,BLANCO ENCALADA,29,2,BLANCO ENCALADA (16) · Blanco Encalada (13)
+sobre_plegado,ELCANO,29,4,ELCANO AV. (15) · Avenida Elcano (12) · ELCANO (1) · Av. Elcano (1)
+sobre_plegado,GUEMES,29,3,GUEMES (17) · Güemes (11) · guemes (1)
+sobre_plegado,JOSE ANTONIO CABRERA,29,2,José Antonio Cabrera (28) · Jose Antonio Cabrera (1)
+sobre_plegado,JOSE MARIA MORENO,29,3,"MORENO, JOSE MARIA AV. (23) · Avenida José María Moreno (5) · Jose María Moreno (1)"
+sobre_plegado,MONTIEL,29,2,MONTIEL (16) · Montiel (13)
+sobre_plegado,NICARAGUA,29,2,NICARAGUA (16) · Nicaragua (13)
+sobre_plegado,AGUIRRE,28,4,AGUIRRE (15) · Aguirre (11) · aguirre (1) · Agüirre (1)
+sobre_plegado,ANTONIO JOSE DE SUCRE,28,3,"Mariscal Antonio José de Sucre (15) · SUCRE, ANTONIO JOSE de, Mcal. (12) · Mariscal Antonio José De Sucre (1)"
+sobre_plegado,AREVALO,28,2,AREVALO (15) · Arévalo (13)
+sobre_plegado,CARABOBO,28,3,CARABOBO AV. (14) · Avenida Carabobo (13) · 📍Av. Carabobo (1)
+sobre_plegado,DE LOS INCAS,28,2,DE LOS INCAS AV. (16) · Avenida de los Incas (12)
+sobre_plegado,DIAZ,28,4,"DIAZ, CNEL. AV. (16) · Avenida Coronel Díaz (10) · Av. Coronel Díaz (1) · Av. Coronel Diaz (1)"
+sobre_plegado,LARREA,28,2,LARREA (19) · Larrea (9)
+sobre_plegado,LIBERTAD,28,2,Libertad (16) · LIBERTAD (12)
+sobre_plegado,ARRIBENOS,27,3,Arribeños (13) · ARRIBEÑOS (11) · ARRIBEÃâOS (3)
+sobre_plegado,VICENTE LOPEZ,27,3,"LOPEZ, VICENTE (15) · Vicente López (11) · vicente Lopez (1)"
+sobre_plegado,11 DE SEPTIEMBRE,26,3,11 DE SEPTIEMBRE DE (15) · 11 de Septiembre de (10) · 11 De Septiembre (1)
+sobre_plegado,GUATEMALA,26,2,GUATEMALA (18) · Guatemala (8)
+sobre_plegado,JOSE GERVASIO ARTIGAS,26,4,"ARTIGAS, JOSE GERVASIO, GRAL. (21) · Gral. José Gervasio Artigas (3) · José Gervasio Artigas (1) · General José Gervasio Artigas (1)"
+sobre_plegado,TACUARI,26,3,TACUARI (15) · Tacuarí (10) · Tacuari (1)
+sobre_plegado,VARELA,26,4,VARELA AV. (14) · Avenida Varela (5) · Varela (4) · VARELA (3)
+sobre_plegado,25 DE MAYO,25,3,25 DE MAYO (16) · 25 de Mayo (8) · 25 De Mayo (1)
+sobre_plegado,COSTANERA RAFAEL OBLIGADO,25,4,Avenida Costanera Rafael Obligado (18) · Av. Costanera Rafael Obligado (5) · Avda. Costanera Rafael Obligado (1) · AV. COSTANERA RAFAEL OBLIGADO (1)
+sobre_plegado,CUBA,25,2,Cuba (15) · CUBA (10)
+sobre_plegado,IBERA,25,3,Iberá (13) · IBERA (11) · Ibera (1)
+sobre_plegado,JUAN RAMIREZ DE VELASCO,24,2,"RAMIREZ DE VELASCO, JUAN (16) · Juan Ramírez de Velasco (8)"
+sobre_plegado,LIMA,24,2,LIMA (15) · Lima (9)
+sobre_plegado,SANABRIA,24,2,Sanabria (13) · SANABRIA (11)
+sobre_plegado,TALCAHUANO,24,2,TALCAHUANO (18) · Talcahuano (6)
+sobre_plegado,TINOGASTA,24,2,Tinogasta (13) · TINOGASTA (11)
+sobre_plegado,URIARTE,24,2,URIARTE (14) · Uriarte (10)
+sobre_plegado,BERNARDO DE IRIGOYEN,23,3,"Bernardo de Irigoyen (15) · IRIGOYEN, BERNARDO de (7) · Avenida Bernardo de Irigoyen (1)"
+sobre_plegado,BERUTI,23,2,BERUTI (18) · Beruti (5)
+sobre_plegado,CERRITO,23,2,CERRITO (14) · Cerrito (9)
+sobre_plegado,GUARDIA VIEJA,23,2,Guardia Vieja (14) · GUARDIA VIEJA (9)
+sobre_plegado,LARRAZABAL,23,6,LARRAZABAL AV. (7) · Avenida Larrazábal (7) · LARRAZABAL (6) · Larrazábal (1) · Larrazabal (1) · Av. Larrazábal (1)
+sobre_plegado,MOLDES,23,2,MOLDES (15) · Moldes (8)
+sobre_plegado,MONTANESES,23,3,Montañeses (15) · MONTAÑESES (6) · MONTAÃâESES (2)
+sobre_plegado,PIEDRAS,23,3,Piedras (11) · PIEDRAS (11) · Calle Piedras (1)
+sobre_plegado,VUELTA DE OBLIGADO,23,2,Vuelta de Obligado (14) · VUELTA DE OBLIGADO (9)
+sobre_plegado,BROWN,22,3,"BROWN, ALTE. AV. (11) · Avenida Almirante Brown (10) · Av Alte Brown (1)"
+sobre_plegado,CERVINO,22,4,Cerviño (10) · CERVIÑO AV. (9) · CERVIÃâO AV. (2) · Av. Cerviño (1)
+sobre_plegado,MIGUELETES,22,2,MIGUELETES (12) · Migueletes (10)
+sobre_plegado,OLGA COSSETTINI,22,2,"Olga Cossettini (11) · COSSETTINI, OLGA (11)"
+sobre_plegado,ARCOS,21,2,Arcos (17) · ARCOS (4)
+sobre_plegado,BOYACA,21,6,BOYACA AV. (6) · Avenida Boyacá (6) · Boyacá (4) · BOYACA (3) · Boyaca (1) · Av. Boyacá (1)
+sobre_plegado,FELIPE VALLESE,21,2,"VALLESE, FELIPE (15) · Felipe Vallese (6)"
+sobre_plegado,HOLMBERG,21,2,Holmberg (11) · HOLMBERG (10)
+sobre_plegado,NUNEZ,21,3,Núñez (10) · NUÑEZ (10) · Nuñez (1)
+sobre_plegado,VIRREY DEL PINO,21,3,"Virrey del Pino (11) · PINO, Virrey del (7) · Virrey Del Pino (3)"
+sobre_plegado,ZAPIOLA,21,2,ZAPIOLA (15) · Zapiola (6)
+sobre_plegado,ARCE,20,2,ARCE (11) · Arce (9)
+sobre_plegado,ASAMBLEA,20,3,ASAMBLEA AV. (10) · Avenida Asamblea (9) · Av. Asamblea (1)
+sobre_plegado,CHIVILCOY,20,5,Avenida Chivilcoy (9) · CHIVILCOY AV. (7) · Chivilcoy (2) · chivilcoy (1) · CHIVILCOY (1)
+sobre_plegado,COCHABAMBA,20,2,Cochabamba (16) · COCHABAMBA (4)
+sobre_plegado,ECUADOR,20,2,Ecuador (11) · ECUADOR (9)
+sobre_plegado,ESTADO DE ISRAEL,20,3,ESTADO DE ISRAEL AV. (10) · Avenida Estado de Israel (9) · Av. Estado de Israel (1)
+sobre_plegado,HONORIO PUEYRREDON,20,3,"PUEYRREDON, HONORIO, DR. AV. (12) · Avenida Honorio Pueyrredón (6) · Av. Dr. Honorio Pueyrredón (2)"
+sobre_plegado,JEAN JAURES,20,3,"JAURES, JEAN (9) · Jean Jaurés (8) · Jean Jaures (3)"
+sobre_plegado,JOSE BONIFACIO,20,2,"José Bonifacio (12) · BONIFACIO, JOSE (8)"
+sobre_plegado,JUJUY,20,3,JUJUY AV. (13) · Avenida Jujuy (6) · av. Jujuy (1)
+sobre_plegado,LUIS SAENZ PENA,20,3,"Presidente Luis Sáenz Peña (10) · SAENZ PEÑA, LUIS, PRES. (8) · SAENZ PEÃâA, LUIS, PRES. (2)"
+sobre_plegado,SALVADOR MARIA DEL CARRIL,20,2,"CARRIL, SALVADOR MARIA DEL AV. (11) · Avenida Salvador María del Carril (9)"
+sobre_plegado,SUAREZ,20,4,SUAREZ (9) · Avenida Suárez (5) · Suárez (3) · SUAREZ AV. (3)
+sobre_plegado,URQUIZA,20,3,"URQUIZA, Gral. (14) · General Urquiza (5) · Urquiza (1)"
+sobre_plegado,BAEZ,19,2,Báez (11) · BAEZ (8)
+sobre_plegado,CABELLO,19,2,CABELLO (13) · Cabello (6)
+sobre_plegado,CHICLANA,19,2,CHICLANA AV. (12) · Avenida Chiclana (7)
+sobre_plegado,COMBATE DE LOS POZOS,19,2,COMBATE DE LOS POZOS (12) · Combate de los Pozos (7)
+sobre_plegado,LEANDRO N ALEM,19,3,"ALEM, LEANDRO N. AV. (13) · Avenida Leandro N. Alem (5) · Av. Leandro N. Alem (1)"
+sobre_plegado,MARTINIANO CHILAVERT,19,2,"CHILAVERT, MARTINIANO, CORONEL (10) · Coronel Martiniano Chilavert (9)"
+sobre_plegado,OLIVERA,19,2,Avenida Olivera (14) · OLIVERA AV. (5)
+sobre_plegado,PAVON,19,4,Avenida Pavón (8) · PAVON (5) · Pavón (3) · PAVON AV. (3)
+sobre_plegado,RICARDO BALBIN,19,2,"BALBIN, RICARDO, DR. AV. (18) · Av. Ricardo Balbin (1)"
+sobre_plegado,RIESTRA,19,3,Avenida Riestra (10) · RIESTRA AV. (6) · Av. Riestra (3)
+sobre_plegado,ROOSEVELT FRANKLIN D,19,2,ROOSEVELT FRANKLIN D. (10) · ROOSEVELT FRANKLIN D. AV. (9)
+sobre_plegado,SAN JOSE,19,3,SAN JOSE (12) · San José (6) · pasaje san josè (1)
+sobre_plegado,SOLDADO DE LA INDEPENDENCIA,19,2,SOLDADO DE LA INDEPENDENCIA (10) · Soldado de la Independencia (9)
+sobre_plegado,ALBERTI,18,2,ALBERTI (10) · Alberti (8)
+sobre_plegado,BALCARCE,18,2,BALCARCE (11) · Balcarce (7)
+sobre_plegado,FIGUEROA ALCORTA,18,4,"Avenida Presidente Figueroa Alcorta (10) · FIGUEROA ALCORTA, PRES. AV. (6) · Av. Pres. Figueroa Alcorta (1) · Av. Figueroa alcorta (1)"
+sobre_plegado,FOREST,18,3,"Avenida Forest (10) · FOREST AV. (7) · Avenida Forest, (1)"
+sobre_plegado,FRENCH,18,2,FRENCH (12) · French (6)
+sobre_plegado,LAFUENTE,18,4,Avenida Lafuente (10) · LAFUENTE (6) · Lafuente (1) · LAFUENTE AV. (1)
+sobre_plegado,LUCIO NORBERTO MANSILLA,18,2,"General Lucio Norberto Mansilla (10) · MANSILLA, LUCIO NORBERTO, GENERAL (8)"
+sobre_plegado,MANUEL UGARTE,18,2,"Manuel Ugarte (10) · UGARTE, MANUEL (8)"
+sobre_plegado,MARIO BRAVO,18,2,"Mario Bravo (9) · BRAVO, MARIO (9)"
+sobre_plegado,MURGUIONDO,18,2,Murguiondo (10) · MURGUIONDO (8)
+sobre_plegado,NEUQUEN,18,2,NEUQUEN (11) · Neuquén (7)
+sobre_plegado,NUEVA YORK,18,2,Nueva York (13) · NUEVA YORK (5)
+sobre_plegado,BRANDSEN,17,2,Brandsen (9) · BRANDSEN (8)
+sobre_plegado,DE LOS CORRALES,17,2,Avenida de los Corrales (13) · DE LOS CORRALES AV. (4)
+sobre_plegado,ESCALADA,17,5,ESCALADA AV. (7) · Avenida Escalada (5) · Escalada (2) · ESCALADA (2) · Av. Escalada (1)
+sobre_plegado,FRAGA,17,2,Fraga (12) · FRAGA (5)
+sobre_plegado,LAPRIDA,17,2,Laprida (9) · LAPRIDA (8)
+sobre_plegado,LUIS MARIA CAMPOS,17,3,Avenida Luis María Campos (15) · Luis Maria Campos (1) · Av. Luis Maria Campos (1)
+sobre_plegado,MANUELA PEDRAZA,17,2,"PEDRAZA, MANUELA (12) · Manuela Pedraza (5)"
+sobre_plegado,PENA,17,2,PEÑA (9) · Peña (8)
+sobre_plegado,ROQUE SAENZ PENA,17,6,"Avenida Presidente Roque Sáenz Peña (11) · SAENZ PEÃâA, ROQUE, PRES. AV. (2) · SAENZ PEÑA, ROQUE, PRES. AV. (1) · Av. Pres. Roque Sáenz Peña (1) · Av Roque Saenz Peña (1) · Av Pres. Roque Sáenz Pena (1)"
+sobre_plegado,VIDAL,17,2,VIDAL (10) · Vidal (7)
+sobre_plegado,BERMUDEZ,16,2,BERMUDEZ (11) · Bermúdez (5)
+sobre_plegado,CONSTITUCION,16,3,CONSTITUCION (10) · Constitución (5) · Constitucion (1)
+sobre_plegado,DONADO,16,2,DONADO (12) · Donado (4)
+sobre_plegado,EMILIO MITRE,16,2,"MITRE, EMILIO (8) · Emilio Mitre (8)"
+sobre_plegado,GARCIA DEL RIO,16,4,Avenida García del Río (6) · García del Río (5) · GARCIA DEL RIO AV. (3) · GARCIA DEL RIO (2)
+sobre_plegado,HIDALGO,16,2,HIDALGO (10) · Hidalgo (6)
+sobre_plegado,IRIARTE,16,4,"Avenida General Iriarte (7) · IRIARTE, GRAL. AV. (3) · IRIARTE, GRAL. (3) · Avenida Iriarte (3)"
+sobre_plegado,MORON,16,2,Morón (8) · MORON (8)
+sobre_plegado,ROJAS,16,2,Rojas (9) · ROJAS (7)
+sobre_plegado,ROSARIO,16,2,ROSARIO (14) · Rosario (2)
+sobre_plegado,WARNES,16,2,WARNES AV. (9) · Avenida Warnes (7)
+sobre_plegado,BACACAY,15,2,BACACAY (8) · Bacacay (7)
+sobre_plegado,CONDE,15,2,CONDE (8) · Conde (7)
+sobre_plegado,CURAPALIGUE,15,4,CURAPALIGUE (7) · Avenida Curapaligüe (4) · Curapaligüe (3) · Av. Curapaligüe (1)
+sobre_plegado,LAVALLEJA,15,2,Lavalleja (10) · LAVALLEJA (5)
+sobre_plegado,MALVINAS ARGENTINAS,15,2,Malvinas Argentinas (8) · MALVINAS ARGENTINAS (7)
+sobre_plegado,OLLEROS,15,4,OLLEROS (8) · Olleros (3) · OLLEROS AV. (3) · Avenida Olleros (1)
+sobre_plegado,SANTIAGO DEL ESTERO,15,2,Santiago del Estero (8) · SANTIAGO DEL ESTERO (7)
+sobre_plegado,SUPERI,15,2,Superí (10) · SUPERI (5)
+sobre_plegado,ARGERICH,14,2,Argerich (7) · ARGERICH (7)
+sobre_plegado,CAP RAMON FREIRE,14,2,"FREIRE, RAMON, CAP. GRAL. (13) · Cap. Gral. Ramón Freire (1)"
+sobre_plegado,CHARLONE,14,2,CHARLONE (8) · Charlone (6)
+sobre_plegado,EMILIO LAMARCA,14,2,"LAMARCA, EMILIO (9) · Emilio Lamarca (5)"
+sobre_plegado,FRANCISCO ACUNA DE FIGUEROA,14,3,"ACUÑA DE FIGUEROA, FRANCISCO (8) · Francisco Acuña de Figueroa (5) · ACUÃâA DE FIGUEROA, FRANCISCO (1)"
+sobre_plegado,JOSE HERNANDEZ,14,2,"José Hernández (8) · HERNANDEZ, JOSE (6)"
+sobre_plegado,JOSE LEON SUAREZ,14,2,"José León Suárez (9) · SUAREZ, JOSE LEON (5)"
+sobre_plegado,LOYOLA,14,2,Loyola (7) · LOYOLA (7)
+sobre_plegado,PASEO COLON,14,2,PASEO COLON AV. (7) · Avenida Paseo Colón (7)
+sobre_plegado,POSADAS,14,3,POSADAS (8) · Posadas (5) · Calle Posadas (1)
+sobre_plegado,SANCHEZ DE LORIA,14,3,Sánchez de Loria (8) · SANCHEZ DE LORIA (5) · Sanchez de Loria (1)
+sobre_plegado,SANTOS DUMONT,14,2,"DUMONT, SANTOS (8) · Santos Dumont (6)"
+sobre_plegado,SOLIS,14,2,SOLIS (9) · Solís (5)
+sobre_plegado,3 DE FEBRERO,13,2,3 de Febrero (7) · 3 DE FEBRERO (6)
+sobre_plegado,ALMAFUERTE,13,2,Avenida Almafuerte (7) · ALMAFUERTE AV. (6)
+sobre_plegado,BOGOTA,13,2,Bogotá (8) · BOGOTA (5)
+sobre_plegado,CAMPANA,13,2,CAMPANA (7) · Campana (6)
+sobre_plegado,CASTANARES,13,2,Avenida Castañares (10) · CASTAÑARES AV. (3)
+sobre_plegado,CASTILLO,13,2,Castillo (7) · CASTILLO (6)
+sobre_plegado,CATAMARCA,13,3,Catamarca (6) · CATAMARCA (6) · catamarca (1)
+sobre_plegado,COLOMBRES,13,2,Colombres (8) · COLOMBRES (5)
+sobre_plegado,FRANCISCO RABANAL,13,2,"Avenida Intendente Francisco Rabanal (9) · RABANAL, FRANCISCO, INTENDENTE AV. (4)"
+sobre_plegado,GUAYAQUIL,13,3,GUAYAQUIL (8) · Guayaquil (4) · guayaquil (1)
+sobre_plegado,HELGUERA,13,2,Helguera (7) · HELGUERA (6)
+sobre_plegado,HUMAHUACA,13,2,Humahuaca (7) · HUMAHUACA (6)
+sobre_plegado,JUAN B AMBROSETTI,13,2,"Juan B. Ambrosetti (9) · AMBROSETTI, JUAN B. (4)"
+sobre_plegado,MARIANO ACOSTA,13,4,"Mariano Acosta (9) · ACOSTA, MARIANO AV. (2) · Avenida Mariano Acosta (1) · Av. Mariano Acosta (1)"
+sobre_plegado,MERCEDES,13,2,Mercedes (8) · MERCEDES (5)
+sobre_plegado,PICHINCHA,13,3,Pichincha (7) · PICHINCHA (5) · PICHINCHA AV. (1)
+sobre_plegado,SAN PEDRITO,13,4,SAN PEDRITO AV. (5) · Avenida San Pedrito (5) · SAN PEDRITO (2) · San Pedrito (1)
+sobre_plegado,TEODORO GARCIA,13,2,"Teodoro García (8) · GARCIA, TEODORO (5)"
+sobre_plegado,VEDIA,13,2,Vedia (9) · VEDIA (4)
+sobre_plegado,VERA,13,2,Vera (8) · VERA (5)
+sobre_plegado,ANGEL JUSTINIANO CARRANZA,12,2,"CARRANZA, ANGEL JUSTINIANO (7) · Ángel Justiniano Carranza (5)"
+sobre_plegado,BAHIA BLANCA,12,2,Bahía Blanca (8) · BAHIA BLANCA (4)
+sobre_plegado,CAMARGO,12,2,CAMARGO (10) · Camargo (2)
+sobre_plegado,CONCEPCION ARENAL,12,2,"Concepción Arenal (10) · ARENAL, CONCEPCION (2)"
+sobre_plegado,CORVALAN,12,2,Corvalán (9) · CORVALAN (3)
+sobre_plegado,DOBLAS,12,2,DOBLAS (10) · Doblas (2)
+sobre_plegado,FERNANDEZ DE ENCISO,12,2,Fernández de Enciso (9) · FERNANDEZ DE ENCISO (3)
+sobre_plegado,GUAMINI,12,3,GUAMINI (6) · Guaminí (5) · Guamini (1)
+sobre_plegado,JOAQUIN V GONZALEZ,12,2,"GONZALEZ, JOAQUIN V. (7) · Joaquín V. González (5)"
+sobre_plegado,MARIANO ACHA,12,2,"ACHA, MARIANO, Gral. (7) · Mariano Acha (5)"
+sobre_plegado,MATHEU,12,3,MATHEU (6) · Matheu (5) · matheu (1)
+sobre_plegado,MAURE,12,2,Maure (6) · MAURE (6)
+sobre_plegado,MELINCUE,12,2,MELINCUE (7) · Melincué (5)
+sobre_plegado,OSVALDO CRUZ,12,3,"Avenida Osvaldo Cruz (8) · CRUZ, OSVALDO AV. (3) · Osvaldo Cruz (1)"
+sobre_plegado,PAZ,12,3,"PAZ, GRAL. AV. (7) · Avenida General Paz (3) · General Paz (2)"
+sobre_plegado,RAFAEL OBLIGADO,12,2,Avenida Rafael Obligado (11) · Av. Rafael Obligado (1)
+sobre_plegado,SAN ISIDRO LABRADOR,12,2,SAN ISIDRO LABRADOR AV. (6) · Avenida San Isidro Labrador (6)
+sobre_plegado,VIRREY CEVALLOS,12,2,"Virrey Cevallos (6) · CEVALLOS, Virrey (6)"
+sobre_plegado,YATAY,12,2,Yatay (8) · YATAY (4)
+sobre_plegado,ZABALA,12,2,Zabala (8) · ZABALA (4)
+sobre_plegado,BAUNESS,11,2,BAUNESS (6) · Bauness (5)
+sobre_plegado,BUCARELLI,11,2,BUCARELLI (6) · Bucarelli (5)
+sobre_plegado,CAMARONES,11,2,CAMARONES (8) · Camarones (3)
+sobre_plegado,CARHUE,11,3,Carhué (7) · Carhue (2) · CARHUE (2)
+sobre_plegado,CASTRO BARROS,11,3,Castro Barros (5) · CASTRO BARROS AV. (3) · CASTRO BARROS (3)
+sobre_plegado,CESAR DIAZ,11,2,"General César Díaz (8) · DIAZ, CESAR, GRAL. (3)"
+sobre_plegado,COBO,11,2,COBO AV. (6) · Avenida Cobo (5)
+sobre_plegado,CONCORDIA,11,3,Concórdia (4) · CONCORDIA (4) · Concordia (3)
+sobre_plegado,FRANCISCO BILBAO,11,4,"Francisco Bilbao (5) · BILBAO, FRANCISCO AV. (3) · BILBAO, FRANCISCO (2) · Avenida Francisco Bilbao (1)"
+sobre_plegado,GALLO,11,2,Gallo (7) · GALLO (4)
+sobre_plegado,GREGORIO ARAOZ DE LAMADRID,11,3,"General Gregorio Aráoz de Lamadrid (6) · ARAOZ DE LAMADRID, GREGORIO, GRAL. (4) · Gral. Gregorio Aráoz de Lamadrid (1)"
+sobre_plegado,LUIS VIALE,11,2,"Luis Viale (7) · VIALE, LUIS (4)"
+sobre_plegado,MANUEL MONTES DE OCA,11,2,"MONTES DE OCA, MANUEL (10) · MANUEL MONTES DE OCA AV. (1)"
+sobre_plegado,MARCOS SASTRE,11,2,"Marcos Sastre (10) · SASTRE, MARCOS (1)"
+sobre_plegado,OLAVARRIA,11,2,Olavarría (6) · OLAVARRIA (5)
+sobre_plegado,PASTEUR,11,2,PASTEUR (10) · Pasteur (1)
+sobre_plegado,QUESADA,11,2,QUESADA (7) · Quesada (4)
+sobre_plegado,RIO DE JANEIRO,11,2,Río de Janeiro (6) · RIO DE JANEIRO (5)
+sobre_plegado,SANTO TOME,11,2,SANTO TOME (6) · Santo Tomé (5)
+sobre_plegado,24 DE NOVIEMBRE,10,2,24 DE NOVIEMBRE (7) · 24 de Noviembre (3)
+sobre_plegado,ACEVEDO,10,2,Acevedo (6) · ACEVEDO (4)
+sobre_plegado,AUSTRIA,10,2,AUSTRIA (6) · Austria (4)
+sobre_plegado,CARRASCO,10,2,Carrasco (5) · CARRASCO AV. (5)
+sobre_plegado,CONDARCO,10,2,Condarco (8) · CONDARCO (2)
+sobre_plegado,CONESA,10,2,Conesa (5) · CONESA (5)
+sobre_plegado,DOCTOR LUIS BELAUSTEGUI,10,2,Doctor Luis Beláustegui (9) · Doctor Luis Belaustegui (1)
+sobre_plegado,FORMOSA,10,2,Formosa (5) · FORMOSA (5)
+sobre_plegado,GUEVARA,10,2,Guevara (6) · GUEVARA (4)
+sobre_plegado,IRIGOYEN,10,2,Irigoyen (5) · IRIGOYEN (5)
+sobre_plegado,LEOPOLDO MARECHAL,10,3,"Leopoldo Marechal (4) · MARECHAL, LEOPOLDO (3) · Avenida Leopoldo Marechal (3)"
+sobre_plegado,LUNA,10,2,Luna (8) · LUNA (2)
+sobre_plegado,MELIAN,10,4,MELIAN AV. (5) · Avenida Melián (3) · Av. Melián (1) · Av. Melian (1)
+sobre_plegado,O'HIGGINS,10,3,O'HIGGINS (6) · O'Higgins (3) · O'higgins (1)
+sobre_plegado,PASO,10,2,PASO (8) · Paso (2)
+sobre_plegado,ROSETI,10,2,Roseti (6) · ROSETI (4)
+sobre_plegado,SAN NICOLAS,10,2,San Nicolás (6) · SAN NICOLAS (4)
+sobre_plegado,TOMAS MANUEL DE ANCHORENA,10,2,"ANCHORENA, TOMAS MANUEL DE, DR. (8) · Tomás Manuel de Anchorena (2)"
+sobre_plegado,TRES ARROYOS,10,2,Tres Arroyos (6) · TRES ARROYOS (4)
+sobre_plegado,USPALLATA,10,2,Uspallata (5) · USPALLATA (5)
+sobre_plegado,WENCESLAO VILLAFANE,10,3,"Wenceslao Villafañe (6) · VILLAFAÑE, WENCESLAO (2) · VILLAFAÃâE, WENCESLAO (2)"
+sobre_plegado,ZUVIRIA,10,2,Zuviría (6) · ZUVIRIA (4)
+sobre_plegado,AMANCIO ALCORTA,9,2,"Avenida Amancio Alcorta (8) · ALCORTA, AMANCIO AV. (1)"
+sobre_plegado,ARGENTINA,9,4,"Avenida Argentina (4) · Argentina (2) · ARGENTINA AV. (2) · C1439HQE, Av. Argentina (1)"
+sobre_plegado,ARISTOBULO DEL VALLE,9,3,"VALLE, ARISTOBULO DEL (6) · Aristóbulo del Valle (2) · Aristóbulo Del Valle (1)"
+sobre_plegado,BOULOGNE SUR MER,9,2,BOULOGNE SUR MER (6) · Boulogne Sur Mer (3)
+sobre_plegado,CANADA DE GOMEZ,9,2,Cañada de Gómez (7) · CAÑADA DE GOMEZ (2)
+sobre_plegado,CESPEDES,9,2,CESPEDES (5) · Céspedes (4)
+sobre_plegado,DARWIN,9,2,Darwin (5) · DARWIN (4)
+sobre_plegado,DEAN FUNES,9,3,Deán Funes (4) · DEAN FUNES (4) · dean funes (1)
+sobre_plegado,DEL BARCO CENTENERA,9,4,"Avenida del Barco Centenera (5) · Del Barco Centenera (2) · Del Barco Centenera, (1) · Av. del Barco Centenera (1)"
+sobre_plegado,FRANCISCO FERNANDEZ DE LA CRUZ,9,2,Avenida General Francisco Fernández de La Cruz (8) · Av. Gral. Francisco Fernández de la Cruz (1)
+sobre_plegado,GUIDO,9,2,GUIDO (7) · Guido (2)
+sobre_plegado,JOSE ANDRES PACHECO DE MELO,9,2,"PACHECO DE MELO, JOSE ANDRES (8) · José Andrés Pacheco de Melo (1)"
+sobre_plegado,JOSE PEDRO VARELA,9,2,"VARELA, JOSE PEDRO (6) · José Pedro Varela (3)"
+sobre_plegado,LLAVALLOL,9,2,Llavallol (6) · LLAVALLOL (3)
+sobre_plegado,LUIS BELAUSTEGUI,9,2,"BELAUSTEGUI, LUIS, Dr. (8) · Dr. Luis Beláustegui (1)"
+sobre_plegado,MARTIN GARCIA,9,3,"Avenida Martín García (6) · GARCIA, MARTIN AV. (2) · Martín García (1)"
+sobre_plegado,NAZARRE,9,2,Nazarre (6) · NAZARRE (3)
+sobre_plegado,NICOLAS REPETTO,9,3,"REPETTO, NICOLAS, DR. (6) · Nicolás Repetto (2) · Nicolas Repetto (1)"
+sobre_plegado,PASCO,9,2,PASCO (7) · Pasco (2)
+sobre_plegado,RAMALLO,9,2,RAMALLO (6) · Ramallo (3)
+sobre_plegado,REPUBLICA ARABE SIRIA,9,3,REPUBLICA ARABE SIRIA (5) · República Árabe Siria (3) · Republica Árabe Siria (1)
+sobre_plegado,SAN JOSE DE CALASANZ,9,2,SAN JOSE DE CALASANZ (5) · San José de Calasanz (4)
+sobre_plegado,TIMOTEO GORDILLO,9,2,"Timoteo Gordillo (7) · GORDILLO, TIMOTEO (2)"
+sobre_plegado,VALLE,9,2,VALLE (7) · Valle (2)
+sobre_plegado,VIRREY LORETO,9,2,"Virrey Loreto (7) · LORETO, Virrey (2)"
+sobre_plegado,ARROYO,8,2,Arroyo (7) · ARROYO (1)
+sobre_plegado,BASUALDO,8,2,Basualdo (4) · BASUALDO (4)
+sobre_plegado,BENJAMIN MATIENZO,8,3,"Teniente Benjamín Matienzo (4) · MATIENZO, BENJAMIN, TENIENTE (3) · Benjamín Matienzo (1)"
+sobre_plegado,BRAGADO,8,2,BRAGADO (5) · Bragado (3)
+sobre_plegado,CALIFORNIA,8,2,California (5) · CALIFORNIA (3)
+sobre_plegado,CUCHA CUCHA,8,2,Cucha Cucha (5) · CUCHA CUCHA (3)
+sobre_plegado,DIAZ COLODRERO,8,2,DIAZ COLODRERO (5) · Díaz Colodrero (3)
+sobre_plegado,DON PEDRO DE MENDOZA,8,2,DON PEDRO DE MENDOZA AV. (6) · Avenida Don Pedro de Mendoza (2)
+sobre_plegado,ESTADO PLURINACIONAL DE BOLIVIA,8,2,ESTADO PLURINACIONAL DE BOLIVIA (5) · Estado Plurinacional de Bolivia (3)
+sobre_plegado,ESTEBAN BONORINO,8,2,"BONORINO, ESTEBAN, Cnel. AV. (4) · Avenida Coronel Esteban Bonorino (4)"
+sobre_plegado,GOROSTIAGA,8,2,GOROSTIAGA (6) · Gorostiaga (2)
+sobre_plegado,JOSE MARMOL,8,2,"MARMOL, JOSE (6) · José Mármol (2)"
+sobre_plegado,JUAN AGUSTIN GARCIA,8,3,"Juan Agustín García (4) · GARCIA, JUAN AGUSTIN (3) · Juan Agustin Garcia (1)"
+sobre_plegado,LAFINUR,8,2,Lafinur (5) · LAFINUR (3)
+sobre_plegado,MANUEL A RODRIGUEZ,8,2,"Teniente Gral. Manuel A. Rodríguez (4) · RODRIGUEZ, MANUEL A., GENERAL (4)"
+sobre_plegado,MAZA,8,3,"Maza (4) · MAZA (3) · Maza, (1)"
+sobre_plegado,NAHUEL HUAPI,8,2,NAHUEL HUAPI (5) · Nahuel Huapi (3)
+sobre_plegado,NICASIO ORONO,8,2,"OROÑO, NICASIO (5) · Nicasio Oroño (3)"
+sobre_plegado,PACHECO,8,2,PACHECO (6) · Pacheco (2)
+sobre_plegado,PEDRO LOZANO,8,2,"LOZANO, PEDRO (5) · Pedro Lozano (3)"
+sobre_plegado,PIERINA DEALESSI,8,2,"DEALESSI, PIERINA (5) · Pierina Dealessi (3)"
+sobre_plegado,PRIMERA JUNTA,8,2,PRIMERA JUNTA (5) · Primera Junta (3)
+sobre_plegado,PRINGLES,8,2,Pringles (4) · PRINGLES (4)
+sobre_plegado,RONDEAU,8,2,RONDEAU (6) · Rondeau (2)
+sobre_plegado,SAN LUIS,8,2,San Luis (4) · SAN LUIS (4)
+sobre_plegado,SIMBRON,8,2,SIMBRON (5) · Simbrón (3)
+sobre_plegado,TRONADOR,8,2,Tronador (6) · TRONADOR (2)
+sobre_plegado,UGARTECHE,8,2,UGARTECHE (5) · Ugarteche (3)
+sobre_plegado,VIEL,8,2,Viel (4) · VIEL (4)
+sobre_plegado,A MAGARINOS CERVANTES,7,2,"MAGARIÑOS CERVANTES, A. (6) · MAGARIÃâOS CERVANTES, A. (1)"
+sobre_plegado,ANDONAEGUI,7,2,ANDONAEGUI (5) · Andonaegui (2)
+sobre_plegado,ARIAS,7,2,ARIAS (4) · Arias (3)
+sobre_plegado,ARREGUI,7,4,Arregui (3) · ARREGUI (2) · Avenida Arregui (1) · ARREGUI AV. (1)
+sobre_plegado,ASUNCION,7,2,ASUNCION (4) · Asunción (3)
+sobre_plegado,BENITO JUAREZ,7,2,"Benito Juárez (4) · JUAREZ, BENITO (3)"
+sobre_plegado,CAAGUAZU,7,2,Caaguazú (4) · CAAGUAZU (3)
+sobre_plegado,CARACAS,7,2,CARACAS (4) · Caracas (3)
+sobre_plegado,DON BOSCO,7,2,Don Bosco (4) · DON BOSCO (3)
+sobre_plegado,ENRIQUE MARTINEZ,7,2,"General Enrique Martínez (4) · MARTINEZ, ENRIQUE, GRAL. (3)"
+sobre_plegado,ESPINOSA,7,2,Espinosa (5) · ESPINOSA (2)
+sobre_plegado,ESTADO DE PALESTINA,7,2,Estado de Palestina (5) · ESTADO DE PALESTINA (2)
+sobre_plegado,ESTOMBA,7,2,ESTOMBA (6) · Estomba (1)
+sobre_plegado,FRANKLIN D ROOSEVELT,7,2,Franklin D. Roosevelt (4) · Avenida Franklin D. Roosevelt (3)
+sobre_plegado,GUISE,7,2,GUISE (5) · Guise (2)
+sobre_plegado,HABANA,7,2,HABANA (4) · Habana (3)
+sobre_plegado,INCLAN,7,2,Inclán (6) · INCLAN (1)
+sobre_plegado,JOSE PASCUAL TAMBORINI,7,3,"José Pascual Tamborini (4) · TAMBORINI, JOSE PASCUAL (2) · C1431AHF, José Pascual Tamborini (1)"
+sobre_plegado,JUAN FRANCISCO SEGUI,7,2,"SEGUI, JUAN FRANCISCO (6) · Juan Francisco Seguí (1)"
+sobre_plegado,LACARRA,7,4,LACARRA (3) · Lacarra (2) · Avenida Lacarra (1) · Av. Lacarra (1)
+sobre_plegado,LINCOLN,7,2,LINCOLN AV. (4) · Avenida Lincoln (3)
+sobre_plegado,MANUEL QUINTANA,7,2,"QUINTANA, MANUEL, PRES. (4) · QUINTANA, MANUEL, PRES. AV. (3)"
+sobre_plegado,MANUEL R TRELLES,7,4,"Manuel R. Trelles (3) · TRELLES, MANUEL R. (2) · TRELLES, MANUEL R. AV. (1) · Avenida Manuel R. Trelles (1)"
+sobre_plegado,MIRALLA,7,2,Miralla (4) · MIRALLA (3)
+sobre_plegado,MIRANDA,7,2,MIRANDA (5) · Miranda (2)
+sobre_plegado,MURILLO,7,2,MURILLO (4) · Murillo (3)
+sobre_plegado,ORTEGA Y GASSET,7,2,ORTEGA Y GASSET (6) · Ortega y Gasset (1)
+sobre_plegado,PADILLA,7,2,PADILLA (6) · Padilla (1)
+sobre_plegado,PAEZ,7,2,PAEZ (6) · Páez (1)
+sobre_plegado,PIERES,7,2,Pieres (4) · PIERES (3)
+sobre_plegado,ROCA,7,2,Avenida Coronel Roca (5) · Roca (2)
+sobre_plegado,RUIZ HUIDOBRO,7,4,Ruiz Huidobro (3) · Avenida Ruiz Huidobro (2) · RUIZ HUIDOBRO AV. (1) · Av. Ruiz Huidobro (1)
+sobre_plegado,SANTANDER,7,2,Santander (6) · santander (1)
+sobre_plegado,SINCLAIR,7,2,SINCLAIR (5) · Sinclair (2)
+sobre_plegado,VALENTIN GOMEZ,7,2,"GOMEZ, VALENTIN (5) · Valentín Gómez (2)"
+sobre_plegado,VIRGILIO,7,2,Virgilio (5) · VIRGILIO (2)
+sobre_plegado,VIRREY ARREDONDO,7,2,"ARREDONDO, Virrey (5) · Virrey Arredondo (2)"
+sobre_plegado,ZAPATA,7,2,Zapata (4) · ZAPATA (3)
+sobre_plegado,ZELARRAYAN,7,2,Zelarrayán (6) · ZELARRAYAN (1)
+sobre_plegado,AVALOS,6,2,Ávalos (4) · AVALOS (2)
+sobre_plegado,AVELINO DIAZ,6,2,"DIAZ, AVELINO (3) · Avelino Díaz (3)"
+sobre_plegado,AZOPARDO,6,2,AZOPARDO (5) · Azopardo (1)
+sobre_plegado,BEAZLEY,6,2,Beazley (3) · BEAZLEY (3)
+sobre_plegado,CACHIMAYO,6,2,Cachimayo (4) · CACHIMAYO (2)
+sobre_plegado,CHORROARIN,6,2,Avenida Chorroarín (4) · CHORROARIN AV. (2)
+sobre_plegado,COMBATIENTES DE MALVINAS,6,3,COMBATIENTES DE MALVINAS AV. (3) · Avenida Combatientes de Malvinas (2) · Av. Combatientes de Malvinas (1)
+sobre_plegado,COSQUIN,6,3,COSQUIN (3) · Cosquín (2) · Cosquin (1)
+sobre_plegado,DELGADO,6,2,DELGADO (4) · Delgado (2)
+sobre_plegado,FEDERICO GARCIA LORCA,6,2,"GARCIA LORCA, FEDERICO (3) · Federico García Lorca (3)"
+sobre_plegado,FONROUGE,6,2,FONROUGE (4) · Fonrouge (2)
+sobre_plegado,FRAGATA SARMIENTO,6,2,FRAGATA Pres. SARMIENTO (4) · Fragata Presidente Sarmiento (2)
+sobre_plegado,FRANKLIN,6,2,Franklin (4) · FRANKLIN (2)
+sobre_plegado,GAVILAN,6,2,Gavilán (3) · GAVILAN (3)
+sobre_plegado,GUALEGUAYCHU,6,2,Gualeguaychú (4) · GUALEGUAYCHU (2)
+sobre_plegado,GUARDIA NACIONAL,6,2,Guardia Nacional (4) · GUARDIA NACIONAL (2)
+sobre_plegado,HERNAN M GIRALT,6,2,Av. Int. Hernan M. Giralt (5) · Avenida Int. Hernán M. Giralt (1)
+sobre_plegado,IBARROLA,6,2,Ibarrola (3) · IBARROLA (3)
+sobre_plegado,INFANTA ISABEL,6,4,Avenida Infanta Isabel (3) · infanta Isabel (1) · Infanta isabel (1) · Av. Infanta Isabel (1)
+sobre_plegado,JUAN MARIA GUTIERREZ,6,2,"Juan María Gutiérrez (3) · GUTIERREZ, JUAN MARIA (3)"
+sobre_plegado,JULIO A ROCA,6,3,"ROCA, JULIO A., PRESIDENTE AV. (4) · Avenida Presidente Julio A. Roca (1) · Av. Presidente Julio A. Roca (1)"
+sobre_plegado,LAMBARE,6,2,Lambaré (3) · LAMBARE (3)
+sobre_plegado,LERMA,6,2,Lerma (4) · LERMA (2)
+sobre_plegado,LLERENA,6,2,LLERENA (5) · Llerena (1)
+sobre_plegado,LUGONES,6,2,Lugones (4) · LUGONES (2)
+sobre_plegado,MARCOS PAZ,6,2,"PAZ, MARCOS (3) · Marcos Paz (3)"
+sobre_plegado,MENDEZ DE ANDES,6,2,MENDEZ DE ANDES (4) · Méndez de Andes (2)
+sobre_plegado,MUNIZ,6,2,Muñiz (4) · MUÑIZ (2)
+sobre_plegado,NECOCHEA,6,2,NECOCHEA (4) · Necochea (2)
+sobre_plegado,ORTIZ DE OCAMPO,6,3,Avenida Ortíz de Ocampo (3) · ORTIZ DE OCAMPO (2) · Avenida Ortiz de Ocampo (1)
+sobre_plegado,PEDRO CALDERON DE LA BARCA,6,2,"Pedro Calderón de la Barca (5) · CALDERON DE LA BARCA, PEDRO (1)"
+sobre_plegado,PEPIRI,6,3,Pepirí (3) · PEPIRI (2) · Pepiri (1)
+sobre_plegado,PERITO MORENO,6,3,Avenida Perito Moreno (4) · Perito Moreno (1) · Av. Perito Moreno (1)
+sobre_plegado,PERON,6,6,pte. peron (1) · Pte Peron (1) · Presidente peron (1) · PRESIDENTE PERON (1) · Avenida Presidente Perón (1) · Av. Presidente Perón (1)
+sobre_plegado,PI Y MARGALL,6,2,PI Y MARGALL (5) · Pi y Margall (1)
+sobre_plegado,PUAN,6,2,Puán (4) · PUAN (2)
+sobre_plegado,RAMON FALCON,6,3,Coronel Ramón Falcón (3) · Avenida Coronel Ramón Falcón (2) · Ramon Falcon (1)
+sobre_plegado,RIGLOS,6,2,Riglos (4) · RIGLOS (2)
+sobre_plegado,SAAVEDRA,6,2,SAAVEDRA (4) · Saavedra (2)
+sobre_plegado,SAN BLAS,6,2,San Blas (4) · SAN BLAS (2)
+sobre_plegado,TERRADA,6,2,Terrada (3) · TERRADA (3)
+sobre_plegado,VELEZ SARSFIELD,6,3,Avenida Vélez Sársfield (3) · VELEZ SARSFIELD AV. (2) · Av. Velez Sarsfield (1)
+sobre_plegado,VENANCIO FLORES,6,2,"FLORES, VENANCIO, Gral. (5) · Venancio Flores (1)"
+sobre_plegado,VIEYTES,6,2,VIEYTES (5) · Vieytes (1)
+sobre_plegado,VIRREY AVILES,6,2,"Virrey Avilés (4) · AVILES, VIRREY (2)"
+sobre_plegado,ACASSUSO,5,2,ACASSUSO (3) · Acassuso (2)
+sobre_plegado,AIME PAINE,5,2,Aimé Paine (4) · Calle Aime Paine (1)
+sobre_plegado,ALBARINO,5,2,Albariño (4) · ALBARIÑO (1)
+sobre_plegado,ANDALGALA,5,2,Andalgalá (3) · ANDALGALA (2)
+sobre_plegado,ARAUJO,5,2,ARAUJO (3) · Araujo (2)
+sobre_plegado,BARZANA,5,2,Barzana (4) · BARZANA (1)
+sobre_plegado,BEAUCHEF,5,2,Beauchef (4) · BEAUCHEF (1)
+sobre_plegado,BESARES,5,2,BESARES (4) · Besares (1)
+sobre_plegado,BUENOS AIRES,5,3,Buenos aires (3) · buenos aires (1) · Buenos Aires (1)
+sobre_plegado,CAFAYATE,5,2,Cafayate (3) · CAFAYATE (2)
+sobre_plegado,CAMPICHUELO,5,2,Campichuelo (4) · CAMPICHUELO (1)
+sobre_plegado,CERVANTES,5,2,Cervantes (3) · CERVANTES (2)
+sobre_plegado,CORTINA,5,2,Cortina (3) · CORTINA (2)
+sobre_plegado,FRUCTUOSO RIVERA,5,3,"RIVERA, FRUCTUOSO, GENERAL (2) · General Fructuoso Rivera (2) · Gral. Fructuoso Rivera (1)"
+sobre_plegado,GALLARDO,5,2,GALLARDO (4) · Gallardo (1)
+sobre_plegado,GALVAN,5,2,Galván (4) · GALVAN (1)
+sobre_plegado,GARIBALDI,5,2,Garibaldi (3) · GARIBALDI (2)
+sobre_plegado,GREGORIO DE LAFERRERE,5,3,"Gregorio de Laferrere (3) · LAFERRERE, GREGORIO de (1) · Calle Gregorio De Laferrere (1)"
+sobre_plegado,JARAMILLO,5,2,JARAMILLO (3) · Jaramillo (2)
+sobre_plegado,JUAN MANUEL BLANES,5,2,"Juan Manuel Blanes (4) · BLANES, JUAN MANUEL (1)"
+sobre_plegado,LAVARDEN,5,2,Lavardén (4) · LAVARDEN (1)
+sobre_plegado,LUZURIAGA,5,2,LUZURIAGA (3) · Luzuriaga (2)
+sobre_plegado,MAGALLANES,5,2,MAGALLANES (3) · Magallanes (2)
+sobre_plegado,MARTIN RODRIGUEZ,5,2,"RODRIGUEZ, MARTIN (3) · Martín Rodríguez (2)"
+sobre_plegado,MARTINEZ CASTRO,5,2,MARTINEZ CASTRO (3) · Martínez Castro (2)
+sobre_plegado,MINONES,5,2,Miñones (4) · MIÃâONES (1)
+sobre_plegado,OLIDEN,5,2,Oliden (3) · OLIDEN (2)
+sobre_plegado,PAREJA,5,2,Pareja (4) · PAREJA (1)
+sobre_plegado,PAROISSIEN,5,2,PAROISSIEN (3) · Paroissien (2)
+sobre_plegado,PERDRIEL,5,2,Perdriel (3) · PERDRIEL (2)
+sobre_plegado,PINTO,5,2,Pinto (4) · GRAL Pinto (1)
+sobre_plegado,PINZON,5,2,Pinzón (3) · PINZON (2)
+sobre_plegado,PLAZA,5,2,PLAZA (4) · Plaza (1)
+sobre_plegado,POLA,5,2,Pola (4) · POLA (1)
+sobre_plegado,PORTELA,5,2,Portela (3) · PORTELA (2)
+sobre_plegado,QUINTANA,5,4,Presidente Quintana (2) · Quintana (1) · QUINTANA (1) · Avenida Presidente Quintana (1)
+sobre_plegado,RINCON,5,2,RINCON (4) · Rincón (1)
+sobre_plegado,SAN ANTONIO,5,2,San Antonio (4) · SAN ANTONIO (1)
+sobre_plegado,SARANDI,5,2,SARANDI (4) · Sarandí (1)
+sobre_plegado,SENILLOSA,5,2,Senillosa (3) · SENILLOSA (2)
+sobre_plegado,TRAFUL,5,2,TRAFUL (3) · Traful (2)
+sobre_plegado,TREINTA Y TRES ORIENTALES,5,2,Treinta y Tres Orientales (4) · TREINTA Y TRES ORIENTALES (1)
+sobre_plegado,VILELA,5,2,VILELA (4) · Vilela (1)
+sobre_plegado,ZAVALETA,5,2,ZAVALETA (4) · Zavaleta (1)
+sobre_plegado,14 DE JULIO,4,2,14 de Julio (3) · 14 DE JULIO (1)
+sobre_plegado,ALBARELLOS,4,2,Avenida Albarellos (2) · ALBARELLOS AV. (2)
+sobre_plegado,ALVEAR,4,2,Avenida Alvear (3) · ALVEAR AV. (1)
+sobre_plegado,ANTARTIDA ARGENTINA,4,3,Antártida Argentina (2) · Avenida Antártida Argentina (1) · Av. Antártida Argentina (1)
+sobre_plegado,APOLINARIO FIGUEROA,4,2,Coronel Apolinario Figueroa (3) · APOLINARIO FIGUEROA (1)
+sobre_plegado,BALBASTRO,4,2,Balbastro (2) · BALBASTRO (2)
+sobre_plegado,BALDOMERO FERNANDEZ MORENO,4,2,"FERNANDEZ MORENO, BALDOMERO (2) · Baldomero Fernández Moreno (2)"
+sobre_plegado,BENJAMIN VICTORICA,4,2,Avenida General Benjamín Victorica (3) · Av. Gral. Benjamín Victorica (1)
+sobre_plegado,BOUCHARD,4,3,BOUCHARD (2) · bouchard (1) · Bouchard (1)
+sobre_plegado,BULLRICH,4,3,"Avenida Intendente Bullrich (2) · Bullrich (1) · BULLRICH, INT. AV. (1)"
+sobre_plegado,CAMACUA,4,2,Camacuá (2) · CAMACUA (2)
+sobre_plegado,CARLOS GARDEL,4,2,"GARDEL, CARLOS (2) · Carlos Gardel (2)"
+sobre_plegado,CHASCOMUS,4,2,Chascomús (2) · CHASCOMUS (2)
+sobre_plegado,COMODORO MARTIN RIVADAVIA,4,2,Avenida Comodoro Martín Rivadavia (3) · Comodoro Martín Rivadavia (1)
+sobre_plegado,CORRALES,4,2,CORRALES (3) · Corrales (1)
+sobre_plegado,CORRALES VIEJOS,4,2,CORRALES VIEJOS (3) · Corrales Viejos (1)
+sobre_plegado,CRISOSTOMO ALVAREZ,4,2,"ALVAREZ, CRISOSTOMO (3) · Crisóstomo Álvarez (1)"
+sobre_plegado,CULLEN,4,2,CULLEN (3) · Cullen (1)
+sobre_plegado,CUZCO,4,2,"CUZCO (3) · Cuzco, (1)"
+sobre_plegado,DELFIN GALLO,4,2,"GALLO, DELFIN (3) · Delfín Gallo (1)"
+sobre_plegado,ELPIDIO GONZALEZ,4,2,"GONZALEZ, ELPIDIO (2) · Elpidio González (2)"
+sobre_plegado,FAMATINA,4,2,FAMATINA (3) · Famatina (1)
+sobre_plegado,GARCIA DE COSSIO,4,3,GARCIA DE COSSIO (2) · García de Cossio (1) · García De Cossio (1)
+sobre_plegado,HEREDIA,4,2,Heredia (2) · HEREDIA (2)
+sobre_plegado,HERRERA,4,2,Herrera (3) · HERRERA (1)
+sobre_plegado,HOMERO,4,3,Homero (2) · homero (1) · HOMERO (1)
+sobre_plegado,HORTIGUERA,4,2,Hortiguera (2) · HORTIGUERA (2)
+sobre_plegado,IGUAZU,4,2,Iguazú (3) · IGUAZU (1)
+sobre_plegado,JOSE BARROS PAZOS,4,2,"José Barros Pazos (3) · BARROS PAZOS, JOSE (1)"
+sobre_plegado,JOSE LEON CABEZON,4,2,"CABEZON, JOSE LEON (3) · José León Cabezón (1)"
+sobre_plegado,LARRAYA,4,2,Larraya (2) · LARRAYA (2)
+sobre_plegado,LASCANO,4,2,LASCANO (3) · Lascano (1)
+sobre_plegado,LIBERTADOR,4,4,Libertador (1) · Av. libertador (1) · Av. Libertador (1) · AV LIBERTADOR (1)
+sobre_plegado,LOS PATOS,4,2,Los Patos (2) · LOS PATOS (2)
+sobre_plegado,LUIS MARIA DRAGO,4,2,"Luis María Drago (2) · DRAGO, LUIS MARIA (2)"
+sobre_plegado,LUJAN,4,3,Luján (2) · Lujan (1) · LUJAN (1)
+sobre_plegado,MARTIN DE GAINZA,4,2,"General Martín de Gainza (2) · GAINZA, MARTIN DE, GRAL. (2)"
+sobre_plegado,MARTINEZ ROSAS,4,2,Martínez Rosas (3) · MARTINEZ ROSAS (1)
+sobre_plegado,MILLER,4,2,Miller (3) · MILLER (1)
+sobre_plegado,MONTEAGUDO,4,2,Monteagudo (3) · MONTEAGUDO (1)
+sobre_plegado,PALOS,4,2,Palos (3) · PALOS (1)
+sobre_plegado,PATAGONES,4,2,PATAGONES (3) · Patagones (1)
+sobre_plegado,PATRON,4,2,PATRON (3) · Patrón (1)
+sobre_plegado,PEDERNERA,4,2,Pedernera (2) · PEDERNERA (2)
+sobre_plegado,PERGAMINO,4,2,Pergamino (3) · PERGAMINO (1)
+sobre_plegado,PICO,4,2,PICO (3) · Pico (1)
+sobre_plegado,POTOSI,4,2,POTOSI (3) · Potosí (1)
+sobre_plegado,PUMACAHUA,4,2,PUMACAHUA (3) · Pumacahua (1)
+sobre_plegado,QUEVEDO,4,2,Quevedo (2) · QUEVEDO (2)
+sobre_plegado,RAMON LISTA,4,2,"LISTA, RAMON, CORONEL (3) · Coronel Ramón Lista (1)"
+sobre_plegado,REMEDIOS,4,3,Remedios (2) · REMEDIOS (1) · Avenida Remedios (1)
+sobre_plegado,RESERVISTAS ARGENTINOS,4,2,Avenida Reservistas Argentinos (3) · RESERVISTAS ARGENTINOS AV. (1)
+sobre_plegado,ROCAMORA,4,2,ROCAMORA (3) · Rocamora (1)
+sobre_plegado,ROMULO NAON,4,2,"Rómulo Naón (2) · NAON, ROMULO (2)"
+sobre_plegado,RUPERTO GODOY,4,2,"Ruperto Godoy (2) · GODOY, RUPERTO (2)"
+sobre_plegado,RUTA,4,2,Ruta (3) · ruta (1)
+sobre_plegado,SALADILLO,4,2,Saladillo (2) · SALADILLO (2)
+sobre_plegado,SALCEDO,4,2,Salcedo (2) · SALCEDO (2)
+sobre_plegado,SAN LORENZO,4,2,San Lorenzo (3) · SAN LORENZO (1)
+sobre_plegado,SANTO DOMINGO,4,2,Santo Domingo (2) · SANTO DOMINGO (2)
+sobre_plegado,SARAZA,4,2,Saraza (2) · SARAZA (2)
+sobre_plegado,SOMELLERA,4,2,SOMELLERA (3) · Somellera (1)
+sobre_plegado,TOMAS A LE BRETON,4,3,"LE BRETON, TOMAS A. (2) · Tomás A. Le Bretón, (1) · Tomás A. Le Bretón (1)"
+sobre_plegado,TRES SARGENTOS,4,2,TRES SARGENTOS (3) · Tres Sargentos (1)
+sobre_plegado,ULRICO SCHMIDL,4,2,"Ulrico Schmidl (3) · SCHMIDL, ULRICO (1)"
+sobre_plegado,VENTURA BOSCH,4,2,"Ventura Bosch (3) · BOSCH, VENTURA (1)"
+sobre_plegado,VICTOR MARTINEZ,4,2,"MARTINEZ, VICTOR (3) · Víctor Martínez (1)"
+sobre_plegado,ZANARTU,4,2,Zañartú (3) · ZAÑARTU (1)
+sobre_plegado,15 DE NOVIEMBRE,3,2,15 DE NOVIEMBRE DE (2) · 15 de Noviembre de (1)
+sobre_plegado,AGRELO,3,2,AGRELO (2) · Agrelo (1)
+sobre_plegado,AGUILAR,3,2,AGUILAR (2) · Aguilar (1)
+sobre_plegado,ALLENDE,3,2,ALLENDE (2) · Allende (1)
+sobre_plegado,ALVARADO,3,2,ALVARADO (2) · Alvarado (1)
+sobre_plegado,ANTEZANA,3,2,Antezana (2) · ANTEZANA (1)
+sobre_plegado,ATUEL,3,2,ATUEL (2) · Atuel (1)
+sobre_plegado,BARRAGAN,3,2,BARRAGAN (2) · Barragán (1)
+sobre_plegado,BERNALDES,3,2,Bernaldes (2) · BERNALDES (1)
+sobre_plegado,BRUIX,3,2,Avenida Bruix (2) · BRUIX AV. (1)
+sobre_plegado,CACHI,3,2,CACHI (2) · Cachi (1)
+sobre_plegado,CAMPOS SALLES,3,2,Campos Salles (2) · CAMPOS SALLES (1)
+sobre_plegado,CANTILO,3,2,Cantilo (2) · Avenida Intendente Cantilo (1)
+sobre_plegado,CARABELAS,3,2,CARABELAS (2) · Carabelas (1)
+sobre_plegado,CASTEX,3,2,Castex (2) · CASTEX (1)
+sobre_plegado,CORREA,3,2,Correa (2) · CORREA (1)
+sobre_plegado,COSTANERA RAFAEL OBLIGADO S/N,3,2,Av. Costanera Rafael Obligado s/n (2) · Av. Costanera Rafael Obligado S/N (1)
+sobre_plegado,DARREGUEYRA,3,2,DARREGUEYRA (2) · Darregueyra (1)
+sobre_plegado,DEMARIA,3,2,Demaría (2) · DEMARIA (1)
+sobre_plegado,HUBAC,3,2,HUBAC (2) · Hubac (1)
+sobre_plegado,HUERGO,3,3,"Huergo (1) · HUERGO, ING. AV. (1) · HUERGO (1)"
+sobre_plegado,ITUZAINGO,3,2,Ituzaingó (2) · ITUZAINGO (1)
+sobre_plegado,JOSE LEON PAGANO,3,2,"José León Pagano (2) · PAGANO, JOSE LEON (1)"
+sobre_plegado,JOSE MARTI,3,2,"MARTI, JOSE (2) · José Martí (1)"
+sobre_plegado,LA MADRID,3,2,la madrid (2) · La Madrid (1)
+sobre_plegado,LAGUNA,3,2,Laguna (2) · laguna (1)
+sobre_plegado,LISBOA,3,2,Lisboa (2) · lisboa (1)
+sobre_plegado,MANZONI,3,2,Manzoni (2) · MANZONI (1)
+sobre_plegado,MARTINIANO LEGUIZAMON,3,2,"Martiniano Leguizamón (2) · LEGUIZAMON, MARTINIANO (1)"
+sobre_plegado,MUNECAS,3,2,MUÑECAS (2) · Muñecas (1)
+sobre_plegado,NAVARRO,3,2,Navarro (2) · NAVARRO (1)
+sobre_plegado,PALPA,3,2,PALPA (2) · Palpa (1)
+sobre_plegado,POSTA,3,2,Posta (2) · POSTA (1)
+sobre_plegado,QUINTINO BOCAYUVA,3,2,"BOCAYUVA, QUINTINO (2) · Quintino Bocayuva (1)"
+sobre_plegado,QUITO,3,2,Quito (2) · QUITO (1)
+sobre_plegado,RAMOS MEJIA,3,3,Ramos Mejía (1) · RAMOS MEJIA (1) · Av Ramos Mejia (1)
+sobre_plegado,REPUBLICA DE LA INDIA,3,2,República de la India (2) · REPUBLICA DE LA INDIA (1)
+sobre_plegado,RICARDO GUTIERREZ,3,2,"Ricardo Gutiérrez (2) · GUTIERREZ, RICARDO (1)"
+sobre_plegado,RIO LIMAY,3,2,RIO LIMAY (2) · Río Limay (1)
+sobre_plegado,ROGELIO YRURTIA,3,2,"Rogelio Yrurtia (2) · YRURTIA, ROGELIO (1)"
+sobre_plegado,RUY DIAZ DE GUZMAN,3,2,Ruy Díaz de Guzmán (2) · RUY DIAZ DE GUZMAN (1)
+sobre_plegado,SAN BENITO DE PALERMO,3,2,SAN BENITO DE PALERMO (2) · San Benito de Palermo (1)
+sobre_plegado,SEVERO GARCIA GRANDE DE ZEQUEIRA,3,2,"Severo García Grande de Zequeira (2) · GARCIA GRANDE DE ZEQUEIRA, SEVERO (1)"
+sobre_plegado,TAGLE,3,2,TAGLE (2) · Tagle (1)
+sobre_plegado,TANDIL,3,2,Tandil (2) · TANDIL (1)
+sobre_plegado,TONELERO,3,2,Tonelero (2) · TONELERO (1)
+sobre_plegado,VENTURA DE LA VEGA,3,3,"Ventura de la Vega (1) · Ventura de La Vega (1) · VEGA, VENTURA de la (1)"
+sobre_plegado,VIDT,3,2,VIDT (2) · Vidt (1)
+sobre_plegado,VIRREY OLAGUER Y FELIU,3,2,"Virrey Olaguer y Feliú (2) · OLAGUER Y FELIU, VIRREY (1)"
+sobre_plegado,ACHAVAL,2,2,Achával (1) · ACHAVAL (1)
+sobre_plegado,AIZPURUA,2,2,Aizpurúa (1) · AIZPURUA (1)
+sobre_plegado,ALPACA,2,2,Alpaca (1) · ALPACA (1)
+sobre_plegado,ANASAGASTI,2,2,Anasagasti (1) · ANASAGASTI (1)
+sobre_plegado,ANCON,2,2,Ancón (1) · ANCON (1)
+sobre_plegado,ANDRES ARGUIBEL,2,2,"Andrés Arguibel (1) · ARGUIBEL, ANDRES (1)"
+sobre_plegado,ARENGREEN,2,2,Arengreen (1) · ARENGREEN (1)
+sobre_plegado,ARTURO JAURETCHE,2,2,"JAURETCHE, ARTURO (1) · Arturo Jauretche (1)"
+sobre_plegado,BENITO PEREZ GALDOS,2,2,"PEREZ GALDOS, BENITO AV. (1) · Benito Pérez Galdós (1)"
+sobre_plegado,BOLANOS,2,2,Bolaños (1) · BOLAÑOS (1)
+sobre_plegado,CANDELARIA,2,2,Candelaria (1) · CANDELARIA (1)
+sobre_plegado,CANONIGO MIGUEL C DEL CORRO,2,2,"CORRO, MIGUEL C. DEL, CANONIGO AV. (1) · Avenida Canónigo Miguel C. del Corro (1)"
+sobre_plegado,CARLOS H PERETTE,2,2,Carlos H. Perette (1) · Carlos H Perette (1)
+sobre_plegado,CASAFOUST,2,2,Casafoust (1) · CASAFOUST (1)
+sobre_plegado,CASTRO,2,2,Castro (1) · CASTRO (1)
+sobre_plegado,CATULO CASTILLO,2,2,"Cátulo Castillo (1) · CASTILLO, CATULO (1)"
+sobre_plegado,CAVIA,2,2,Cavia (1) · CAVIA (1)
+sobre_plegado,CHENAUT,2,2,Chenaut (1) · Avenida General Chenaut (1)
+sobre_plegado,CLAY,2,2,Clay (1) · CLAY (1)
+sobre_plegado,CROVARA,2,2,Avenida Intendente Crovara (1) · AV CROVARA (1)
+sobre_plegado,CULPINA,2,2,Culpina (1) · CULPINA (1)
+sobre_plegado,DOCTOR ROMULO NAON,2,2,Doctor Rómulo Naón (1) · Avenida Doctor Rómulo Naón (1)
+sobre_plegado,DUPUY,2,2,Dupuy (1) · DUPUY (1)
+sobre_plegado,EDUARDO MADERO,2,2,"MADERO, EDUARDO AV. (1) · Avenida Eduardo Madero (1)"
+sobre_plegado,F J SEGUI,2,2,"SEGUI, F. J., ALTE. (1) · Almirante F. J. Seguí (1)"
+sobre_plegado,FALUCHO,2,2,Falucho (1) · FALUCHO (1)
+sobre_plegado,FERRE,2,2,Ferré (1) · FERRE (1)
+sobre_plegado,FLORENCIO BALCARCE,2,2,"Florencio Balcarce (1) · BALCARCE, FLORENCIO (1)"
+sobre_plegado,GABRIELA MISTRAL,2,2,"MISTRAL, GABRIELA (1) · Gabriela Mistral (1)"
+sobre_plegado,GIBSON,2,2,Gibson (1) · GIBSON (1)
+sobre_plegado,GRECIA,2,2,Grecia (1) · GRECIA (1)
+sobre_plegado,GREGORIO POMAR,2,2,"Teniente Coronel Gregorio Pomar (1) · POMAR, GREGORIO Tte. Cnel. (1)"
+sobre_plegado,GRITO DE ASENCIO,2,2,Grito de Asencio (1) · GRITO DE ASENCIO (1)
+sobre_plegado,GUAYRA,2,2,Guayra (1) · GUAYRA (1)
+sobre_plegado,GUILLERMO UDAONDO,2,2,"UDAONDO, GUILLERMO AV. (1) · Avenida Guillermo Udaondo (1)"
+sobre_plegado,HORNOS,2,2,"HORNOS, Gral. (1) · Avenida General Hornos (1)"
+sobre_plegado,JOSE EVARISTO URIBURU,2,2,Presidente José Evaristo Uriburu (1) · Pres. José Evaristo Uriburu (1)
+sobre_plegado,JOSE JUAN BIEDMA,2,2,"José Juan Biedma (1) · BIEDMA, JOSE JUAN (1)"
+sobre_plegado,JUAN B ALBERDI,2,2,Juan B. Alberdi (1) · Av. Juan B. Alberdi (1)
+sobre_plegado,JUAN MANUEL DE ROSAS,2,2,Juan Manuel de Rosas (1) · Avenida Juan Manuel de Rosas (1)
+sobre_plegado,LADINES,2,2,Ladines (1) · LADINES (1)
+sobre_plegado,LIDORO J QUINTEROS,2,2,"QUINTEROS, LIDORO J. AV. (1) · Avenida Lidoro J. Quinteros (1)"
+sobre_plegado,LINNEO,2,2,Linneo (1) · LINNEO (1)
+sobre_plegado,MAHATMA GANDHI,2,2,"Mahatma Gandhi (1) · GANDHI, MAHATMA (1)"
+sobre_plegado,MANUEL PORCEL DE PERALTA,2,2,"PORCEL DE PERALTA, MANUEL (1) · Manuel Porcel de Peralta (1)"
+sobre_plegado,MANUEL RICARDO TRELLES,2,2,Manuel Ricardo Trelles (1) · Avenida Manuel Ricardo Trelles (1)
+sobre_plegado,MARCELINO E FREYRE,2,2,Avenida Coronel Marcelino E. Freyre (1) · Av. Coronel Marcelino E. Freyre (1)
+sobre_plegado,MILTON,2,2,Milton (1) · MILTON (1)
+sobre_plegado,MONTEVERDE,2,2,monteverde (1) · Monteverde (1)
+sobre_plegado,PAGOLA,2,2,Pagola (1) · Coronel Pagola (1)
+sobre_plegado,PANAMA,2,2,Panamá (1) · Av.Panamá (1)
+sobre_plegado,PAUNERO,2,2,Paunero (1) · PAUNERO (1)
+sobre_plegado,PIEDRA BUENA,2,2,"PIEDRA BUENA AV. (1) · C1439GWR, Av. Piedra Buena (1)"
+sobre_plegado,PILAR,2,2,Pilar (1) · PILAR (1)
+sobre_plegado,QUERANDIES,2,2,querandies (1) · QUERANDIES (1)
+sobre_plegado,RAMSAY,2,2,Ramsay (1) · RAMSAY (1)
+sobre_plegado,RAULET,2,2,Raulet (1) · RAULET (1)
+sobre_plegado,RAWSON,2,2,Rawson (1) · RAWSON (1)
+sobre_plegado,REPUBLICA DE INDONESIA,2,2,República de Indonesia (1) · REPUBLICA DE INDONESIA (1)
+sobre_plegado,SANTA ELENA,2,2,Santa Elena (1) · SANTA ELENA (1)
+sobre_plegado,SANTIAGO DE LAS CARRERAS,2,2,"Santiago de las Carreras (1) · CARRERAS, SANTIAGO de las (1)"
+sobre_plegado,SARGENTO CABRAL,2,2,sargento cabral (1) · Sargento Cabral (1)
+sobre_plegado,SCALABRINI ORTIZ,2,2,scalabrini ortiz (1) · Scalabrini Ortiz (1)
+sobre_plegado,TEODORO VILARDEBO,2,2,"VILARDEBO, TEODORO (1) · Teodoro Vilardebo (1)"
+sobre_plegado,VALENTIN VIRASORO,2,2,"Valentín Virasoro (1) · VIRASORO, VALENTIN (1)"
+sobre_plegado,VICTORIA OCAMPO,2,2,"Victoria Ocampo (1) · OCAMPO, VICTORIA (1)"
+sobre_plegado,VILLA DEVOTO,2,2,villa devoto (1) · Villa Devoto (1)
+sobre_plegado,WHITE,2,2,White (1) · WHITE (1)
+sobre_plegado,ZARRAGA,2,2,Zárraga (1) · ZARRAGA (1)
+sub_plegado_sospechado,SAN MARTIN | S MARTIN,150,2,SAN MARTIN (144) · S MARTIN (6)
+sub_plegado_sospechado,SANTA FE | STA FE | R DE SANTA FE,131,3,SANTA FE (127) · STA FE (3) · R DE SANTA FE (1)
+sub_plegado_sospechado,DEL LIBERTADOR | LIBERTADOR,109,2,DEL LIBERTADOR (105) · LIBERTADOR (4)
+sub_plegado_sospechado,RAMON L FALCON | RAMON FALCON,48,2,RAMON L FALCON (42) · RAMON FALCON (6)
+sub_plegado_sospechado,ECHEVERRIA | E ECHEVERRIA,46,2,ECHEVERRIA (45) · E ECHEVERRIA (1)
+sub_plegado_sospechado,MOSCONI | E MOSCONI,40,2,MOSCONI (33) · E MOSCONI (7)
+sub_plegado_sospechado,LA PAMPA | PAMPA,37,2,LA PAMPA (36) · PAMPA (1)
+sub_plegado_sospechado,BARCO CENTENERA | DEL BARCO CENTENERA | BARCO DEL CENTENERA,36,3,BARCO CENTENERA (21) · DEL BARCO CENTENERA (9) · BARCO DEL CENTENERA (6)
+sub_plegado_sospechado,CARLOS PELLEGRINI | CARLOS E PELLEGRINI,33,2,CARLOS PELLEGRINI (32) · CARLOS E PELLEGRINI (1)
+sub_plegado_sospechado,DE LOS CONSTITUYENTES | CONSTITUYENTES,32,2,DE LOS CONSTITUYENTES (31) · CONSTITUYENTES (1)
+sub_plegado_sospechado,COSTANERA RAFAEL OBLIGADO | COSTANERA OBLIGADO RAFAEL | RAFAEL OBLIGADO COSTANERA,29,3,COSTANERA RAFAEL OBLIGADO (25) · COSTANERA OBLIGADO RAFAEL (3) · RAFAEL OBLIGADO COSTANERA (1)
+sub_plegado_sospechado,ROOSEVELT FRANKLIN D | FRANKLIN D ROOSEVELT,26,2,ROOSEVELT FRANKLIN D (19) · FRANKLIN D ROOSEVELT (7)
+sub_plegado_sospechado,URIBURU JOSE E | JOSE E URIBURU,26,2,URIBURU JOSE E (18) · JOSE E URIBURU (8)
+sub_plegado_sospechado,SUAREZ | P SUAREZ,21,2,SUAREZ (20) · P SUAREZ (1)
+sub_plegado_sospechado,JUANA MANSO | MANSO JUANA,21,2,JUANA MANSO (16) · MANSO JUANA (5)
+sub_plegado_sospechado,DE LOS CORRALES | CORRALES,21,2,DE LOS CORRALES (17) · CORRALES (4)
+sub_plegado_sospechado,HUMBERTO | HUMBERTO I,19,2,HUMBERTO (10) · HUMBERTO I (9)
+sub_plegado_sospechado,LAPRIDA | F N DE LAPRIDA,18,2,LAPRIDA (17) · F N DE LAPRIDA (1)
+sub_plegado_sospechado,FRAGA | M FRAGA,18,2,FRAGA (17) · M FRAGA (1)
+sub_plegado_sospechado,F FERNANDEZ DE LA CRUZ | FERNANDEZ DE LA CRUZ,16,2,F FERNANDEZ DE LA CRUZ (12) · FERNANDEZ DE LA CRUZ (4)
+sub_plegado_sospechado,MANUEL MONTES DE OCA | MANUEL A MONTES DE OCA,15,2,MANUEL MONTES DE OCA (11) · MANUEL A MONTES DE OCA (4)
+sub_plegado_sospechado,3 DE FEBRERO | 4 DE FEBRERO,14,2,3 DE FEBRERO (13) · 4 DE FEBRERO (1)
+sub_plegado_sospechado,FRAY JUSTO SANTA MARIA DE ORO | FRAY JUSTO STA MARIA DE ORO,13,2,FRAY JUSTO SANTA MARIA DE ORO (12) · FRAY JUSTO STA MARIA DE ORO (1)
+sub_plegado_sospechado,D APOLINARIO FIGUEROA | APOLINARIO FIGUEROA | APOLINARIO D FIGUEROA,11,3,D APOLINARIO FIGUEROA (4) · APOLINARIO FIGUEROA (4) · APOLINARIO D FIGUEROA (3)
+sub_plegado_sospechado,LINIERS VIRREY | VIRREY LINIERS,9,2,LINIERS VIRREY (5) · VIRREY LINIERS (4)
+sub_plegado_sospechado,VALLE IBERLUCEA | DEL VALLE IBERLUCEA,8,2,VALLE IBERLUCEA (5) · DEL VALLE IBERLUCEA (3)
+sub_plegado_sospechado,JUANA AZURDUY | AZURDUY JUANA,8,2,JUANA AZURDUY (6) · AZURDUY JUANA (2)
+sub_plegado_sospechado,PERON | J D PERON,7,2,PERON (6) · J D PERON (1)
+sub_plegado_sospechado,TRAFUL | TRAFUL N,6,2,TRAFUL (5) · TRAFUL N (1)
+sub_plegado_sospechado,BUENOS AIRES | BUENOS AIRES N,6,2,BUENOS AIRES (5) · BUENOS AIRES N (1)
+sub_plegado_sospechado,SANTO DOMINGO | STO DOMINGO,5,2,SANTO DOMINGO (4) · STO DOMINGO (1)
+sub_plegado_sospechado,JUANA MANUELA GORRITI | GORRITI JUANA MANUELA,5,2,JUANA MANUELA GORRITI (3) · GORRITI JUANA MANUELA (2)
+sub_plegado_sospechado,COMODORO MARTIN RIVADAVIA | COMODORO RIVADAVIA MARTIN,5,2,COMODORO MARTIN RIVADAVIA (4) · COMODORO RIVADAVIA MARTIN (1)
+sub_plegado_sospechado,LA MADRID | MADRID,4,2,LA MADRID (3) · MADRID (1)
+sub_plegado_sospechado,B MITRE | E MITRE | MITRE,4,3,B MITRE (2) · E MITRE (1) · MITRE (1)
+sub_plegado_sospechado,COSTANERA RAFAEL OBLIGADO S/N | RAFAEL OBLIGADO COSTANERA S/N,4,2,COSTANERA RAFAEL OBLIGADO S/N (3) · RAFAEL OBLIGADO COSTANERA S/N (1)
+sub_plegado_sospechado,ARTIGAS MANUEL | MANUEL DE ARTIGAS,3,2,ARTIGAS MANUEL (2) · MANUEL DE ARTIGAS (1)
+sub_plegado_sospechado,CANONIGO MIGUEL C DEL CORRO | CANONIGO MIGUEL DEL CORRO,3,2,CANONIGO MIGUEL C DEL CORRO (2) · CANONIGO MIGUEL DEL CORRO (1)
+sub_plegado_sospechado,FINOCHIETTO ENRIQUE | ENRIQUE FINOCHIETTO,3,2,FINOCHIETTO ENRIQUE (2) · ENRIQUE FINOCHIETTO (1)
+sub_plegado_sospechado,FLORES | T FLORES,3,2,FLORES (2) · T FLORES (1)
+sub_plegado_sospechado,5 DE JULIO | 9 DE JULIO,2,2,5 DE JULIO (1) · 9 DE JULIO (1)
+sub_plegado_sospechado,DEL COMERCIO | COMERCIO,2,2,DEL COMERCIO (1) · COMERCIO (1)
+sub_plegado_sospechado,ARANGUREN | J F ARANGUREN,2,2,ARANGUREN (1) · J F ARANGUREN (1)
+sub_plegado_sospechado,EL CEIBO | CEIBO,2,2,EL CEIBO (1) · CEIBO (1)
+sub_plegado_sospechado,ARTIGAS | J G DE ARTIGAS,2,2,ARTIGAS (1) · J G DE ARTIGAS (1)
+sub_plegado_sospechado,CLUB DE PESCADORES | CLUB DE LOS PESCADORES,2,2,CLUB DE PESCADORES (1) · CLUB DE LOS PESCADORES (1)

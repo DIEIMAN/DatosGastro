@@ -1,0 +1,535 @@
+INVENTARIO DE NOMBRES DE CALLE · las formas que toma una calle en esta base
+====================================================================================================
+
+  14280 direcciones con nombre de calle legible, de 27727 locales de la base.
+  2737 formas crudas distintas → 1663 claves.
+
+  El inventario existe porque el normalizador se escribió caso por caso: cada bicho de la
+  familia R8 se arregló cuando alguien lo vio en una tabla. Los que nadie miró siguen ahí.
+
+----------------------------------------------------------------------------------------------------
+  (A) VARIANTES DISTINTAS QUE PRODUCEN LA MISMA CLAVE · ordenadas por frecuencia
+
+      712 claves reciben más de una forma cruda (12700 direcciones).
+
+      La mayoría son plegados CORRECTOS y ésa es la parte que funciona. Lo que hay que
+      revisar acá son los pocos grupos donde dos nombres realmente distintos cayeron juntos.
+
+    RIVADAVIA  (320 direcciones, 6 formas)
+          194  RIVADAVIA AV.
+          101  Avenida Rivadavia
+           11  Av. Rivadavia
+           10  RIVADAVIA
+            3  Rivadavia
+            1  Av Rivadavia
+    CORRIENTES  (211 direcciones, 9 formas)
+          105  CORRIENTES AV.
+           86  Avenida Corrientes
+           10  Av. Corrientes
+            3  Corrientes
+            3  Av Corrientes
+            1  Corrientes,
+            1  Avenida Corrientes,
+            1  Avda Corrientes y
+               … y 1 formas más
+    CORDOBA  (159 direcciones, 9 formas)
+           90  CORDOBA AV.
+           57  Avenida Córdoba
+            4  Av. Córdoba
+            2  Córdoba
+            2  CORDOBA
+            1  Av. Cordoba
+            1  Av Córdoba
+            1  Av Cordoba
+               … y 1 formas más
+    CABILDO  (146 direcciones, 5 formas)
+           70  CABILDO AV.
+           63  Avenida Cabildo
+           11  Av. Cabildo
+            1  Av Cabildo
+            1  AV CABILDO
+    SAN MARTIN  (144 direcciones, 11 formas)
+           57  Avenida San Martín
+           52  SAN MARTIN AV.
+           15  SAN MARTIN
+           13  San Martín
+            1  San Martin
+            1  Av. San Martín
+            1  Av. San Martin
+            1  Av San Martín y
+               … y 3 formas más
+    SANTA FE  (127 direcciones, 8 formas)
+           72  SANTA FE AV.
+           42  Avenida Santa Fe
+            4  Av. Santa Fe
+            3  Av. Santa Fé
+            3  Av santa fé
+            1  Av. Santa fé
+            1  Av. Santa Fe,
+            1  Av Santa Fe
+    JUAN BAUTISTA ALBERDI  (119 direcciones, 4 formas)
+           67  ALBERDI, JUAN BAUTISTA AV.
+           50  Avenida Juan Bautista Alberdi
+            1  C1406GRL, Av. Juan Bautista Alberdi
+            1  Av. Juan Bautista Alberdi
+    DEL LIBERTADOR  (105 direcciones, 7 formas)
+           49  DEL LIBERTADOR AV.
+           31  Avenida del Libertador
+           18  Avenida Del Libertador
+            4  Av. del Libertador
+            1  Av. Del Libertador
+            1  Av del Libertador
+            1  AV DEL LIBERTADOR
+    SARMIENTO  (102 direcciones, 6 formas)
+           66  SARMIENTO
+           31  Sarmiento
+            2  Avenida Sarmiento
+            1  SARMIENTO AV.
+            1  Presidente Sarmiento
+            1  Avenida Sarmiento,
+    DIRECTORIO  (101 direcciones, 2 formas)
+           60  DIRECTORIO AV.
+           41  Avenida Directorio
+    SAN JUAN  (98 direcciones, 3 formas)
+           49  Avenida San Juan
+           47  SAN JUAN AV.
+            2  Av. San Juan
+    EVA PERON  (93 direcciones, 4 formas)
+           45  PERON, EVA AV.
+           44  Avenida Eva Perón
+            3  Av. Eva Perón
+            1  Av Eva Peron
+    MONROE  (92 direcciones, 5 formas)
+           43  MONROE
+           31  Monroe
+            9  MONROE AV.
+            7  Avenida Monroe
+            2  Av. Monroe
+    PARAGUAY  (91 direcciones, 2 formas)
+           59  PARAGUAY
+           32  Paraguay
+    NAZCA  (90 direcciones, 5 formas)
+           40  NAZCA AV.
+           27  Avenida Nazca
+           12  NAZCA
+            9  Nazca
+            2  Av. Nazca
+    BELGRANO  (84 direcciones, 7 formas)
+           43  BELGRANO AV.
+           30  Avenida Belgrano
+            7  Belgrano
+            1  BELGRANO
+            1  Avenida General Belgrano
+            1  Av. Belgrano
+            1  Av Belgrano
+    LAVALLE  (84 direcciones, 3 formas)
+           64  LAVALLE
+           19  Lavalle
+            1  lavalle
+    RAUL SCALABRINI ORTIZ  (82 direcciones, 5 formas)
+           40  SCALABRINI ORTIZ, RAUL AV.
+           33  Avenida Raúl Scalabrini Ortiz
+            7  SCALABRINI ORTIZ, RAUL
+            1  Raúl Scalabrini Ortiz
+            1  Av. Raúl Scalabrini Ortiz
+    JUAN DOMINGO PERON  (77 direcciones, 6 formas)
+           49  PERON, JUAN DOMINGO, TTE. GENERAL
+           21  Teniente General Juan Domingo Perón
+            4  Tte. Gral. Juan Domingo Perón
+            1  Tte. General Juan Domingo Perón
+            1  Avenida Presidente Juan Domingo Perón
+            1  Av. Tte. Gral Juan Domingo Perón
+    TUCUMAN  (77 direcciones, 3 formas)
+           57  TUCUMAN
+           18  Tucumán
+            2  Tucuman
+    JUAN B JUSTO  (75 direcciones, 2 formas)
+           41  JUSTO, JUAN B. AV.
+           34  Avenida Juan B. Justo
+    HIPOLITO YRIGOYEN  (74 direcciones, 4 formas)
+           30  YRIGOYEN, HIPOLITO
+           17  Avenida Hipólito Yrigoyen
+           16  Hipólito Yrigoyen
+           11  YRIGOYEN, HIPOLITO AV.
+    LOPE DE VEGA  (74 direcciones, 4 formas)
+           38  Avenida Lope de Vega
+           32  LOPE DE VEGA AV.
+            3  LOPE DE VEGA
+            1  Lope de Vega
+    INDEPENDENCIA  (73 direcciones, 4 formas)
+           44  INDEPENDENCIA AV.
+           25  Avenida Independencia
+            3  Av. Independencia
+            1  Independencia
+    PUEYRREDON  (71 direcciones, 5 formas)
+           46  PUEYRREDON AV.
+           21  Avenida Pueyrredón
+            2  Av. Pueyrredón
+            1  Av. Pueyrredon
+            1  Av Pueyrredón
+    LA PLATA  (70 direcciones, 3 formas)
+           41  LA PLATA AV.
+           27  Avenida La Plata
+            2  Av. La Plata
+    ALVAREZ JONTE  (69 direcciones, 6 formas)
+           29  ALVAREZ JONTE AV.
+           18  Álvarez Jonte
+           12  Avenida Álvarez Jonte
+            8  ALVAREZ JONTE
+            1  Av. Alvarez Jonte
+            1  Alvarez Jonte
+    OLAZABAL  (69 direcciones, 6 formas)
+           20  OLAZABAL AV.
+           19  Avenida Olazábal
+           16  OLAZABAL
+           12  Olazábal
+            1  olazabal
+            1  Av. Olazábal
+    VIAMONTE  (68 direcciones, 2 formas)
+           41  VIAMONTE
+           27  Viamonte
+    FEDERICO LACROZE  (67 direcciones, 7 formas)
+           34  LACROZE, FEDERICO AV.
+           21  Avenida Federico Lacroze
+            5  LACROZE, FEDERICO
+            4  Av. Federico Lacroze
+            1  av.federico lacroze
+            1  Federico Lacroze
+            1  Av Federico Lacroze
+    GORRITI  (67 direcciones, 2 formas)
+           34  GORRITI
+           33  Gorriti
+    BARTOLOME MITRE  (65 direcciones, 4 formas)
+           38  MITRE, BARTOLOME
+           25  Bartolomé Mitre
+            1  C1201AAX, Bartolomé Mitre
+            1  Avenida Presidente Bartolomé Mitre
+    MARCELO T DE ALVEAR  (65 direcciones, 3 formas)
+           37  ALVEAR, MARCELO T. De
+           27  Marcelo T. de Alvear
+            1  Marcelo t. de alvear
+    FRANCISCO BEIRO  (60 direcciones, 5 formas)
+           41  BEIRO, FRANCISCO AV.
+           13  Avenida Francisco Beiró
+            4  Av. Francisco Beiró
+            1  Av. Francisco Beiro
+            1  Av .Francisco Beiró
+    GAONA  (60 direcciones, 3 formas)
+           37  GAONA AV.
+           21  Avenida Gaona
+            2  Av. Gaona
+    HONDURAS  (60 direcciones, 4 formas)
+           28  HONDURAS
+           21  Honduras
+            6  HONDURAS AV.
+            5  Avenida Honduras
+    CONGRESO  (59 direcciones, 5 formas)
+           23  Avenida Congreso
+           21  CONGRESO AV.
+            9  CONGRESO
+            5  Congreso
+            1  Av. Congreso
+    ALICIA MOREAU DE JUSTO  (58 direcciones, 5 formas)
+           28  MOREAU DE JUSTO, ALICIA AV.
+           24  Avenida Alicia Moreau de Justo
+            3  Alicia Moreau de Justo
+            2  Av. Alicia Moreau de Justo
+            1  Alicia Moreau De Justo
+    ALVAREZ THOMAS  (58 direcciones, 5 formas)
+           38  ALVAREZ THOMAS AV.
+           17  Avenida Álvarez Thomas
+            1  Av. Álvarez Thomas
+            1  Av Álvarez thomas
+            1  Alvarez Thomas
+    JURAMENTO  (58 direcciones, 4 formas)
+           21  Juramento
+           18  JURAMENTO AV.
+           14  JURAMENTO
+            5  Avenida Juramento
+    CARLOS CALVO  (57 direcciones, 4 formas)
+           24  CALVO, CARLOS
+           22  Carlos Calvo
+            6  Avenida Carlos Calvo
+            5  CALVO, CARLOS AV.
+    LAS HERAS  (57 direcciones, 9 formas)
+           34  LAS HERAS GENERAL AV.
+           13  Avenida General Las Heras
+            2  General Las Heras
+            2  Av. Las Heras
+            2  Av. Gral. Las Heras
+            1  Las heras
+            1  Las Heras
+            1  LAS HERAS, GENERAL
+               … y 1 formas más
+    CIUDAD DE LA PAZ  (55 direcciones, 4 formas)
+           33  CIUDAD DE LA PAZ
+           17  Ciudad de La Paz
+            4  Ciudad de la Paz
+            1  Ciudad De La Paz
+    ENTRE RIOS  (55 direcciones, 4 formas)
+           35  ENTRE RIOS AV.
+           16  Avenida Entre Ríos
+            3  Av. Entre Ríos
+            1  Av. Entre Rios
+    ARENALES  (54 direcciones, 3 formas)
+           33  ARENALES
+           20  Arenales
+            1  Calle Arenales
+    CALLAO  (54 direcciones, 4 formas)
+           34  CALLAO AV.
+           14  Avenida Callao
+            4  Av. Callao
+            2  Callao
+    JERONIMO SALGUERO  (54 direcciones, 3 formas)
+           31  SALGUERO, JERONIMO
+           22  Jerónimo Salguero
+            1  Av. Jerónimo Salguero
+    MORENO  (54 direcciones, 3 formas)
+           33  MORENO
+           20  Moreno
+            1  moreno
+    TRIUNVIRATO  (54 direcciones, 4 formas)
+           38  TRIUNVIRATO AV.
+           14  Avenida Triunvirato
+            1  Triunvirato
+            1  Av. Triunvirato
+    COSTA RICA  (53 direcciones, 2 formas)
+           31  COSTA RICA
+           22  Costa Rica
+    MONTEVIDEO  (53 direcciones, 3 formas)
+           27  MONTEVIDEO
+           25  Montevideo
+            1  Montevideo,
+    CASEROS  (52 direcciones, 4 formas)
+           31  CASEROS AV.
+           19  Avenida Caseros
+            1  Av. Caseros
+            1  Av Caseros
+    CHARCAS  (52 direcciones, 2 formas)
+           34  CHARCAS
+           18  Charcas
+    RODRIGUEZ PENA  (50 direcciones, 4 formas)
+           25  RODRIGUEZ PEÑA
+           18  Rodríguez Peña
+            6  RODRIGUEZ PEÃâA
+            1  Rodriguez Peña
+    AVELLANEDA  (49 direcciones, 4 formas)
+           19  Avenida Avellaneda
+           15  AVELLANEDA AV.
+           11  AVELLANEDA
+            4  Avellaneda
+    DORREGO  (49 direcciones, 6 formas)
+           24  Avenida Dorrego
+           13  DORREGO AV.
+            8  DORREGO
+            2  Dorrego
+            1  Av. Dorrego
+            1  Av Dorrego
+    MALABIA  (49 direcciones, 2 formas)
+           26  MALABIA
+           23  Malabia
+    PEDRO GOYENA  (49 direcciones, 3 formas)
+           30  GOYENA, PEDRO AV.
+           17  Avenida Pedro Goyena
+            2  Av. Pedro Goyena
+    THAMES  (48 direcciones, 2 formas)
+           29  THAMES
+           19  Thames
+    JULIAN ALVAREZ  (47 direcciones, 4 formas)
+           26  Julián Álvarez
+           18  ALVAREZ, JULIAN
+            2  Julian Alvarez
+            1  C1414DRJ, Julián Álvarez
+
+----------------------------------------------------------------------------------------------------
+  (B) CLAVES DISTINTAS QUE PROBABLEMENTE SEAN LA MISMA CALLE · el bug de la familia R8
+
+      46 grupos sospechosos, 97 claves involucradas, 1025 direcciones.
+
+      Cada grupo es una calle que HOY se cuenta como dos o más. Es exactamente lo que le
+      pasó a Niceto Vega: la misma calle en dos filas, con la mitad de los locales cada una.
+
+      150 direcciones repartidas en 2 claves:
+          144  SAN MARTIN
+            6  S MARTIN
+      131 direcciones repartidas en 3 claves:
+          127  SANTA FE
+            3  STA FE
+            1  R DE SANTA FE
+      109 direcciones repartidas en 2 claves:
+          105  DEL LIBERTADOR
+            4  LIBERTADOR
+       48 direcciones repartidas en 2 claves:
+           42  RAMON L FALCON
+            6  RAMON FALCON
+       46 direcciones repartidas en 2 claves:
+           45  ECHEVERRIA
+            1  E ECHEVERRIA
+       40 direcciones repartidas en 2 claves:
+           33  MOSCONI
+            7  E MOSCONI
+       37 direcciones repartidas en 2 claves:
+           36  LA PAMPA
+            1  PAMPA
+       36 direcciones repartidas en 3 claves:
+           21  BARCO CENTENERA
+            9  DEL BARCO CENTENERA
+            6  BARCO DEL CENTENERA
+       33 direcciones repartidas en 2 claves:
+           32  CARLOS PELLEGRINI
+            1  CARLOS E PELLEGRINI
+       32 direcciones repartidas en 2 claves:
+           31  DE LOS CONSTITUYENTES
+            1  CONSTITUYENTES
+       29 direcciones repartidas en 3 claves:
+           25  COSTANERA RAFAEL OBLIGADO
+            3  COSTANERA OBLIGADO RAFAEL
+            1  RAFAEL OBLIGADO COSTANERA
+       26 direcciones repartidas en 2 claves:
+           19  ROOSEVELT FRANKLIN D
+            7  FRANKLIN D ROOSEVELT
+       26 direcciones repartidas en 2 claves:
+           18  URIBURU JOSE E
+            8  JOSE E URIBURU
+       21 direcciones repartidas en 2 claves:
+           20  SUAREZ
+            1  P SUAREZ
+       21 direcciones repartidas en 2 claves:
+           16  JUANA MANSO
+            5  MANSO JUANA
+       21 direcciones repartidas en 2 claves:
+           17  DE LOS CORRALES
+            4  CORRALES
+       19 direcciones repartidas en 2 claves:
+           10  HUMBERTO
+            9  HUMBERTO I
+       18 direcciones repartidas en 2 claves:
+           17  LAPRIDA
+            1  F N DE LAPRIDA
+       18 direcciones repartidas en 2 claves:
+           17  FRAGA
+            1  M FRAGA
+       16 direcciones repartidas en 2 claves:
+           12  F FERNANDEZ DE LA CRUZ
+            4  FERNANDEZ DE LA CRUZ
+       15 direcciones repartidas en 2 claves:
+           11  MANUEL MONTES DE OCA
+            4  MANUEL A MONTES DE OCA
+       14 direcciones repartidas en 2 claves:
+           13  3 DE FEBRERO
+            1  4 DE FEBRERO
+       13 direcciones repartidas en 2 claves:
+           12  FRAY JUSTO SANTA MARIA DE ORO
+            1  FRAY JUSTO STA MARIA DE ORO
+       11 direcciones repartidas en 3 claves:
+            4  D APOLINARIO FIGUEROA
+            4  APOLINARIO FIGUEROA
+            3  APOLINARIO D FIGUEROA
+        9 direcciones repartidas en 2 claves:
+            5  LINIERS VIRREY
+            4  VIRREY LINIERS
+        8 direcciones repartidas en 2 claves:
+            5  VALLE IBERLUCEA
+            3  DEL VALLE IBERLUCEA
+        8 direcciones repartidas en 2 claves:
+            6  JUANA AZURDUY
+            2  AZURDUY JUANA
+        7 direcciones repartidas en 2 claves:
+            6  PERON
+            1  J D PERON
+        6 direcciones repartidas en 2 claves:
+            5  TRAFUL
+            1  TRAFUL N
+        6 direcciones repartidas en 2 claves:
+            5  BUENOS AIRES
+            1  BUENOS AIRES N
+        5 direcciones repartidas en 2 claves:
+            4  SANTO DOMINGO
+            1  STO DOMINGO
+        5 direcciones repartidas en 2 claves:
+            3  JUANA MANUELA GORRITI
+            2  GORRITI JUANA MANUELA
+        5 direcciones repartidas en 2 claves:
+            4  COMODORO MARTIN RIVADAVIA
+            1  COMODORO RIVADAVIA MARTIN
+        4 direcciones repartidas en 2 claves:
+            3  LA MADRID
+            1  MADRID
+        4 direcciones repartidas en 3 claves:
+            2  B MITRE
+            1  E MITRE
+            1  MITRE
+        4 direcciones repartidas en 2 claves:
+            3  COSTANERA RAFAEL OBLIGADO S/N
+            1  RAFAEL OBLIGADO COSTANERA S/N
+        3 direcciones repartidas en 2 claves:
+            2  ARTIGAS MANUEL
+            1  MANUEL DE ARTIGAS
+        3 direcciones repartidas en 2 claves:
+            2  CANONIGO MIGUEL C DEL CORRO
+            1  CANONIGO MIGUEL DEL CORRO
+        3 direcciones repartidas en 2 claves:
+            2  FINOCHIETTO ENRIQUE
+            1  ENRIQUE FINOCHIETTO
+        3 direcciones repartidas en 2 claves:
+            2  FLORES
+            1  T FLORES
+        2 direcciones repartidas en 2 claves:
+            1  5 DE JULIO
+            1  9 DE JULIO
+        2 direcciones repartidas en 2 claves:
+            1  DEL COMERCIO
+            1  COMERCIO
+        2 direcciones repartidas en 2 claves:
+            1  ARANGUREN
+            1  J F ARANGUREN
+        2 direcciones repartidas en 2 claves:
+            1  EL CEIBO
+            1  CEIBO
+        2 direcciones repartidas en 2 claves:
+            1  ARTIGAS
+            1  J G DE ARTIGAS
+        2 direcciones repartidas en 2 claves:
+            1  CLUB DE PESCADORES
+            1  CLUB DE LOS PESCADORES
+
+----------------------------------------------------------------------------------------------------
+  (C) PATOLOGÍAS PUNTUALES DE LA FORMA CRUDA
+
+      · MOJIBAKE: 22 direcciones. El texto pasó dos veces por una
+        conversión equivocada de codificación y la ñ quedó como una ristra de símbolos.
+              6  'RODRIGUEZ PEÃ\x83â\x80\x98A'  →  clave 'RODRIGUEZ PENA'
+              3  'ARRIBEÃ\x83â\x80\x98OS'  →  clave 'ARRIBENOS'
+              2  'SAENZ PEÃ\x83â\x80\x98A, LUIS, PRES.'  →  clave 'LUIS SAENZ PENA'
+              2  'MONTAÃ\x83â\x80\x98ESES'  →  clave 'MONTANESES'
+              2  'SAENZ PEÃ\x83â\x80\x98A, ROQUE, PRES. AV.'  →  clave 'ROQUE SAENZ PENA'
+              2  'VILLAFAÃ\x83â\x80\x98E, WENCESLAO'  →  clave 'WENCESLAO VILLAFANE'
+              2  'CERVIÃ\x83â\x80\x98O AV.'  →  clave 'CERVINO'
+              1  'ACUÃ\x83â\x80\x98A DE FIGUEROA, FRANCISCO'  →  clave 'FRANCISCO ACUNA DE FIGUEROA'
+              1  'MAGARIÃ\x83â\x80\x98OS CERVANTES, A.'  →  clave 'A MAGARINOS CERVANTES'
+              1  'MIÃ\x83â\x80\x98ONES'  →  clave 'MINONES'
+
+      · CÓDIGO POSTAL pegado al nombre: 6 direcciones.
+              1  'C1414DRJ, Julián Álvarez'  →  clave 'JULIAN ALVAREZ'
+              1  'C1439GWR, Av. Piedra Buena'  →  clave 'PIEDRA BUENA'
+              1  'C1439HQE, Av. Argentina'  →  clave 'ARGENTINA'
+              1  'C1406GRL, Av. Juan Bautista Alberdi'  →  clave 'JUAN BAUTISTA ALBERDI'
+              1  'C1201AAX, Bartolomé Mitre'  →  clave 'BARTOLOME MITRE'
+              1  'C1431AHF, José Pascual Tamborini'  →  clave 'JOSE PASCUAL TAMBORINI'
+
+      · CLAVE TERMINADA EN CONECTOR: 0 direcciones. Es la marca de un nombre
+        recortado — «11 de Septiembre de 1888» pierde el año y queda «11 DE SEPTIEMBRE DE».
+
+      · CLAVES CON UNA SOLA DIRECCIÓN: 736 de 1663. No son
+        todas errores —hay calles con un solo local— pero es donde se esconde el resto.
+
+====================================================================================================
+  712 grupos de sobre-plegado · 46 grupos de sub-plegado sospechado
+====================================================================================================
+
+  QUÉ SE HACE CON ESTO: el bloque (B) es la lista de trabajo. Cada grupo es una calle
+  contada dos veces hoy. Lo que se puede arreglar mecánicamente —mojibake, marcadores en
+  cualquier posición, tratamientos abreviados, códigos postales— se arregla en `calle()`
+  con su caso en el test. Lo que necesita un callejero canónico —una inicial contra un
+  nombre completo— NO se arregla adivinando: se anota y espera a la fuente.
+
