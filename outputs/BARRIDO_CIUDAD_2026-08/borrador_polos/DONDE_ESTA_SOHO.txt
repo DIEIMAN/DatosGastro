@@ -1,0 +1,144 @@
+¿DÓNDE ESTÁ PALERMO SOHO? · la pregunta que abrió la prueba 3 de P078
+====================================================================================================
+
+  LECTURA DECLARADA ANTES DE CORRER:
+    un solo polo tiene las cuatro calles   → Soho es ese polo, se nombra
+    las calles se reparten entre 2+ polos  → Soho está partido por el clustering
+    ninguna de esas calles concentra       → Soho es una marca, no una concentración (R7)
+
+  LÍMITE DEL INSTRUMENTO, ANTES QUE EL RESULTADO: la calle sale de normalizar el campo de
+  dirección y NO hay callejero canónico detrás. Un conteo bajo puede ser una calle sin
+  oferta o una calle cuyos locales no traen dirección. Se lee contra la tasa del polo.
+
+----------------------------------------------------------------------------------------------------
+  §1 · LA ESQUINA Serrano Y Honduras
+
+    locales con dirección sobre Serrano: 31
+    locales con dirección sobre Honduras: 52
+
+    El par más cercano entre las dos calles está a 21 m. La esquina
+    se toma como el punto medio de ese par: no es geocodificación, es la mejor
+    aproximación disponible sin callejero, y con esa distancia alcanza para ubicarla.
+
+    polígonos del borrador que CONTIENEN la esquina: 1 — P091
+    local asignado más cercano a la esquina: 2 m, del polo P091
+    el polo de los dos locales del par: P091 y P091
+
+----------------------------------------------------------------------------------------------------
+  §2 · CÓMO SE REPARTEN LAS CALLES DE SOHO ENTRE LOS POLOS
+
+            calle  locales_con_direccion                                     en_polos  fuera_de_todo_polo  polos_distintos
+          Serrano                     31                P091 (17); P077 (6); P074 (3)                   5                3
+           Thames                     42 P091 (16); P090+P089 (8); P077 (4); P074 (1)                  13                4
+          Armenia                     30                                    P091 (22)                   8                1
+Jorge Luis Borges                     27                     P091 (16); P090+P089 (6)                   5                2
+           Borges                      0                                            —                   0                0
+
+    Y EL CONTRASTE, que es lo que vuelve interpretable el número de arriba: las calles del
+    corazón de Hollywood, medidas con el mismo instrumento y en la misma base.
+
+     calle  locales_con_direccion                       en_polos  polos_distintos
+  Fitz Roy                     32                      P078 (29)                1
+  Bonpland                     42            P078 (27); P075 (9)                2
+  Humboldt                     34            P078 (25); P043 (1)                2
+Costa Rica                     49           P091 (22); P078 (19)                2
+   Gorriti                     60 P091 (20); P078 (19); P088 (7)                4
+
+----------------------------------------------------------------------------------------------------
+  §3 · CUÁL DE LOS TRES CASOS DECLARADOS SE CUMPLIÓ
+
+    locales con dirección sobre las calles de Soho: 130
+    polos distintos que las contienen: 4
+
+    reparto agregado de las cinco claves por polo:
+      P091         71 locales de calles de Soho · el polo tiene 728 locales y 316 con dirección (43 %)
+      P090+P089    14 locales de calles de Soho · el polo tiene 104 locales y 52 con dirección (50 %)
+      P077         10 locales de calles de Soho · el polo tiene 60 locales y 26 con dirección (43 %)
+      P074          4 locales de calles de Soho · el polo tiene 58 locales y 32 con dirección (55 %)
+
+    EL POLO QUE MÁS CALLES DE SOHO CONTIENE ES P091, con 71 de los 130.
+    Representan el 22.5 % de sus locales con dirección.
+
+    Sus calles dominantes, que es lo segundo que Diego pidió:
+        25  Raul Scalabrini Ortiz
+        22  Armenia  ← SOHO
+        22  Costa Rica
+        20  Gorriti
+        20  Honduras
+        19  Malabia
+        17  Gurruchaga
+        17  Serrano  ← SOHO
+        16  El Salvador
+        16  Thames  ← SOHO
+        16  Jorge Luis Borges  ← SOHO
+        13  Nicaragua
+
+    Puestos que ocupan las calles de Soho en el ranking del polo: [2, 8, 10, 11]
+
+    CONTINUIDAD ENTRE LOS POLOS QUE SE REPARTEN LAS CALLES · entre PUNTOS, que es la
+    única distancia que decide (regla 4 de CUANDO_DOS_POLOS_SON_UNO):
+
+      P091 ↔ P090+P089: **94.7 m entre puntos** (39.6 m entre envolventes, que no decide)
+      P091 ↔ P077: **237.0 m entre puntos** (237.0 m entre envolventes, que no decide)
+      P091 ↔ P074: **803.6 m entre puntos** (799.9 m entre envolventes, que no decide)
+      P090+P089 ↔ P077: **1231.9 m entre puntos** (1231.6 m entre envolventes, que no decide)
+      P090+P089 ↔ P074: **1768.6 m entre puntos** (1768.6 m entre envolventes, que no decide)
+      P077 ↔ P074: **209.8 m entre puntos** (204.2 m entre envolventes, que no decide)
+
+----------------------------------------------------------------------------------------------------
+  §4 · Y LA TERCERA SUBZONA, PARA CERRAR LA HIPÓTESIS ENTERA
+
+    Si Soho es un polo y Hollywood es otro, falta Las Cañitas. Se mide igual.
+
+          calle  locales_con_direccion           en_polos  fuera_de_todo_polo
+           Baez                     17          P065 (17)                   0
+           Arce                     17          P065 (17)                   0
+        Chenaut                      2 P065 (1); P104 (1)                   0
+Ortega Y Gasset                      6           P065 (5)                   1
+          Maure                     11           P065 (6)                   5
+         Huergo                      3           P065 (2)                   1
+
+      P065         48 locales de calles de Cañitas · el polo tiene 361 locales
+      P104          1 locales de calles de Cañitas · el polo tiene 121 locales
+
+----------------------------------------------------------------------------------------------------
+  §5 · LA HIPÓTESIS DE LAS TRES SUBZONAS, RESUELTA — Y UNA NOTA ANTERIOR QUE HAY QUE CORREGIR
+
+    Las tres subzonas de Palermo SÍ están en el borrador. Lo que no está —y es lo que las
+    pruebas de estabilidad venían sin encontrar— es un polo ÚNICO que se parta en tres.
+    Están como polos separados, que es otra cosa y se nombra distinto:
+
+      Palermo Soho       → P091  (la esquina Serrano y Honduras cae adentro)
+      Palermo Hollywood  → P078  (Fitz Roy, Bonpland, Humboldt — prueba 3 de la estabilidad)
+      Las Cañitas        → dentro de P065 (Báez 17/17 y Arce 17/17 de sus locales)
+
+    La hipótesis acertaba los LUGARES y erraba la FORMA. Palermo no es un polo con tres
+    partes: son varios polos, y tres de ellos llevan los nombres de uso corriente. Por eso
+    ninguna curva de estabilidad los encontraba — se los estaba buscando adentro de un polo
+    en vez de entre polos.
+
+    Y HAY UNA NOTA ESCRITA QUE ESTO CORRIGE. `polos_p065_union_y_clases.py` dice, al
+    revertir la partición de P065: «Soho, Hollywood y Las Cañitas son estructura real, pero
+    NO están en P065». Es correcta para Soho y para Hollywood, y **es incorrecta para Las
+    Cañitas**: las dos calles centrales de Cañitas están enteras adentro de P065. La
+    decisión de revertir P065 no cambia —se tomó por la curva de estabilidad, no por esta
+    nota—, pero la nota queda mal y hay que corregirla donde está escrita.
+
+    Calles dominantes de P065, para ver con qué peso entra Cañitas en un polo de 361 locales:
+        18  Soldado De La Independencia
+        17  Arce  ← CAÑITAS
+        17  Baez  ← CAÑITAS
+        14  Migueletes
+        14  Luis Maria Campos
+        10  Santa Fe
+         8  Federico Lacroze
+         8  Arevalo
+         8  Jorge Newbery
+         7  Gorostiaga
+
+====================================================================================================
+  LO QUE ESTE SCRIPT NO RESPONDE, y conviene que quede escrito: si Soho merece ser una zona
+  del Atlas. Eso no lo decide un conteo de calles. Lo que el conteo dice es dónde caen los
+  locales que llevan esas direcciones, y con qué peso dentro del polo que los contiene.
+====================================================================================================
+
