@@ -844,6 +844,33 @@ patrimonio gastronómico de esa zona y no estar en ninguna base, no tener habili
 perfil en Places. Queda afuera, inevitablemente, y eso es un límite del instrumento — no una
 afirmación sobre su existencia.
 
+**El Atlas ve fachadas.** Este instrumento mide **fachadas contiguas**, y hay economías migrantes
+que no toman esa forma. El relevamiento de enclaves comunitarios de agosto de 2026 dejó tres
+resultados negativos que no son ausencias sino cegueras del método, y por eso la vía D tiene un
+valor propio para ellos, `no_medible_con_este_instrumento`:
+
+- La presencia **senegalesa** en Once y Constitución es de **venta ambulante**. No produce
+  establecimiento habilitado, así que no produce fachada, así que este instrumento no la ve. La
+  gastronomía africana con puerta que sí existe está en Villa Crespo, fuera de esos barrios: son
+  dos fenómenos distintos y el Atlas no debe fusionarlos.
+- La colectividad **japonesa** se instaló por **dispersión de rubro** —tintorerías,
+  floricultura— y nunca por concentración de cuadra.
+- La presencia **china fuera del Barrio Chino** está dispersa **por diseño**: el formato dominante
+  es el supermercado de barrio, cuyo modelo de negocio exige una boca por zona sin competencia
+  interna. La forma del negocio produce dispersión.
+
+En los tres casos el Atlas va a decir «no hay enclave». Lo correcto es decir que **este
+instrumento mide fachadas contiguas y estas economías no toman esa forma**. Si no queda escrito,
+con el tiempo un «no medido» se lee como «no existe», que es la afirmación que no tenemos.
+
+Y la contracara, que es la misma distinción: `medida_sin_enclave` **no es** `no_medida`. El Barrio
+Charrúa —Barrio General San Martín, ocupado en 1957— está medido y el resultado es negativo: tres
+fuentes independientes, incluida una nota extensa de prensa boliviana dedicada íntegramente al
+barrio, y ninguna nombra un solo local de comida. Tiene la Fiesta de la Virgen de Copacabana desde
+1972 y no tiene comercio permanente. **Eso es un hallazgo.** El Abasto, hasta agosto de 2026,
+figuraba `cerrada` cuando lo que pasaba era que no lo habíamos medido: **eso era una laguna.**
+Registrar las dos con la misma etiqueta borra la diferencia entre saber y no saber.
+
 **No dice cuál es «el» mapa de polos.** «Polo gastronómico» es una categoría de lectura
 territorial, no una entidad natural (§1). Lo que este trabajo produce no es la verdad: es **una
 decisión reproducible, con precedente y con sus sensibilidades publicadas**. Que es lo defendible.

@@ -1,0 +1,110 @@
+LOS CINCO BORDES · USIG, no suposición
+====================================================================================================
+
+  Tres lecturas por dirección, dos de ellas independientes entre sí:
+      1. USIG /normalizar    → el punto de la puerta
+      2. USIG /datos_utiles  → barrio y comuna DEL PUNTO (servicio distinto)
+      3. geo_barrios.geojson → el polígono oficial del GCBA que ya está en el repositorio
+
+  Google Places: 0 requests.
+
+----------------------------------------------------------------------------------------------------
+  EL CONTROL · La Academia, cuyo error ya está documentado
+
+      La Academia · Av. Callao 368
+          el catálogo dice:      catálogo oficial: Comuna 5
+          USIG /datos_utiles:    Balvanera, Comuna 3
+          polígono GCBA:         Balvanera
+      EL CONTROL PASA: USIG contradice al catálogo en el caso donde ya sabíamos que el
+      catálogo estaba mal. El procedimiento distingue.
+
+----------------------------------------------------------------------------------------------------
+  LOS BORDES, UNO POR UNO
+
+      La Escuela · Manuela Pedraza 2803
+          normalizada:        PEDRAZA, MANUELA 2803, CABA
+          USIG barrio/comuna: Nuñez · Comuna 13
+          polígono GCBA:      Nuñez
+          fuente A:           catálogo Bares Notables: Núñez, Comuna 13
+          fuente B:           La Nación: «un clásico de Saavedra»; La Comuna 12: a metros de Saavedra y Coghlan
+          decide:             decide la única vía B de Núñez (Z41)
+
+      La Mezzetta · Av. Alvarez Thomas 1321
+          normalizada:        ALVAREZ THOMAS AV. 1321, CABA
+          USIG barrio/comuna: Villa Ortuzar · Comuna 15
+          polígono GCBA:      Villa Ortuzar
+          fuente A:           Canal 26 / El Cronista: Villa Ortúzar
+          fuente B:           esquina de Av. de los Incas, borde con Chacarita; el GCBA la da en Álvarez Thomas 1311
+          decide:             decide si la Pizzería Emblemática cuenta para Z44 Villa Ortúzar o para R09 Chacarita
+
+      Vereda Adentro · 11 de Septiembre 3201
+          normalizada:        11 DE SEPTIEMBRE DE 1888 3201, CABA
+          USIG barrio/comuna: Nuñez · Comuna 13
+          polígono GCBA:      Nuñez
+          fuente A:           Ohlalá: Núñez
+          fuente B:           El Cronista: Saavedra
+          decide:             adscripción de un local del corredor norte
+
+      Corte Comedor · Av. Olazabal 1391
+          normalizada:        OLAZABAL 1391, CABA
+          USIG barrio/comuna: Belgrano · Comuna 13
+          polígono GCBA:      Belgrano
+          fuente A:           Time Out: Núñez
+          fuente B:           la altura de Olazábal corresponde a Belgrano
+          decide:             adscripción; la altura y el barrio publicado no coinciden
+
+      E06 · Av. Avellaneda 3069 · Av. Avellaneda 3069
+          normalizada:        AVELLANEDA AV. 3069, CABA
+          USIG barrio/comuna: Flores · Comuna 7
+          polígono GCBA:      Flores
+          fuente A:           Diario de Flores y GCBA: Flores
+          fuente B:           La Nación y Nueva Ciudad: Floresta
+          decide:             franja limítrofe del enclave sefardí (E06) y del coreano de Ruperto Godoy (E04)
+
+      E06 · Cuenca 954 · Cuenca 954
+          normalizada:        CUENCA 954, CABA
+          USIG barrio/comuna: Villa Santa Rita · Comuna 11
+          polígono GCBA:      Villa Santa Rita
+          fuente A:           Diario de Flores y GCBA: Flores
+          fuente B:           La Nación y Nueva Ciudad: Floresta
+          decide:             franja limítrofe del enclave sefardí (E06)
+
+      E06 · Campana 685 · Campana 685
+          normalizada:        CAMPANA 685, CABA
+          USIG barrio/comuna: Floresta · Comuna 10
+          polígono GCBA:      Floresta
+          fuente A:           Diario de Flores y GCBA: Flores
+          fuente B:           La Nación y Nueva Ciudad: Floresta
+          decide:             franja limítrofe del enclave sefardí (E06)
+
+      E04 · Ruperto Godoy 700 · Ruperto Godoy 700
+          USIG NO RESUELVE la dirección. Queda sin adscribir; no se supone.
+
+      E04 · Ruperto Godoy 800 · Ruperto Godoy 800
+          normalizada:        GODOY, RUPERTO 800, CABA
+          USIG barrio/comuna: Flores · Comuna 7
+          polígono GCBA:      Flores
+          fuente A:           GCBA y Diario de Flores: Flores
+          fuente B:           La Nación 2020 «Corea Soho»: Floresta
+          decide:             cabecera alta del Pasaje Ruperto Godoy (E04)
+
+----------------------------------------------------------------------------------------------------
+  RESUMEN
+
+      establecimiento               USIG            polígono GCBA   comuna      
+      La Escuela                    Nuñez           Nuñez           Comuna 13   
+      La Mezzetta                   Villa Ortuzar   Villa Ortuzar   Comuna 15   
+      Vereda Adentro                Nuñez           Nuñez           Comuna 13   
+      Corte Comedor                 Belgrano        Belgrano        Comuna 13   
+      E06 · Av. Avellaneda 3069     Flores          Flores          Comuna 7    
+      E06 · Cuenca 954              Villa Santa Rit Villa Santa Rit Comuna 11   
+      E06 · Campana 685             Floresta        Floresta        Comuna 10   
+      E04 · Ruperto Godoy 700       nan             nan             nan         
+      E04 · Ruperto Godoy 800       Flores          Flores          Comuna 7    
+
+      direcciones donde las dos lecturas oficiales NO coinciden: 0
+
+      USIG resuelve la adscripción ADMINISTRATIVA. Que una nota titule «un clásico de
+      Saavedra» sigue siendo cierto como uso: lo que se corrige es el campo de la matriz,
+      no la cita.
+

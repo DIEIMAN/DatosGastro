@@ -168,6 +168,7 @@ outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v2.csv
 # Cache de respuestas del normalizador de direcciones de USIG: es un espejo local de un servicio
 # de terceros, se rehace solo y no es una fuente.
 outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig.json
+outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig_datos_utiles.json
 
 # === Tablas internas del piloto de Places de fase11 (2026-07) ===
 # Llevan place_id real, nombre y direccion exacta de terceros. Nunca se versionan (guardrail 8).

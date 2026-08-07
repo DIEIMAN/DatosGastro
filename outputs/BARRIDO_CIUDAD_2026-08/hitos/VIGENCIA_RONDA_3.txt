@@ -1,0 +1,159 @@
+RONDA 3 · VIGENCIA CON CINCO VALORES, LAS DOCE ALTAS Y LA PROCEDENCIA DEL CATÁLOGO
+====================================================================================================
+
+  capa de entrada: 220 hitos · lo declarado está en LECTURA_PREVIA_RONDA_3.md
+  Google Places: 0 requests. Nada se vuelve a descargar.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LA VIGENCIA, CON CINCO VALORES
+
+      El vocabulario del hito: si · no · en_disputa · dudosa · sin_verificar
+      El de la fila de la matriz —via_B_soporte— es otro y sale del cruce, no de acá.
+
+      estado        clave                             filas   hito(s)
+      DUDOSA        BAR OVIEDO                            1   BAR OVIEDO
+      DUDOSA        EL FARO                               1   EL FARO
+      DUDOSA        PENA LOS AMIGOS BAR EL CHINO          1   Pena Los Amigos / Bar El Chino
+      EN_DISPUTA    LOS LAURELES                          1   Los Laureles
+      NO            NEW BRIGHTON                          1   The New Brighton
+      SI            EL TOKIO                              1   El Tokio
+      SI            EL FORTIN                             1   El Fortin
+      SI            EL BUZON                              1   El Buzón
+      SI            EL CEDRON                             1   El Cedron
+      SI            CONDE                                 1   Bar Conde
+      SI            GALGOS                                1   LOS GALGOS
+      SI            ATLANTICO                             1   Floreria Atlantico
+      SI            CASA BURGIO                           1   Casa Burgio
+
+      NO ESTÁN EN LA CAPA (se declaran, no se inventan):
+            CASA BOGOTA / BOGOTA — se quería marcar si
+            CASA MADRILIA / ALVAREZ JONTE — se quería marcar si
+            CARRUAJES / ALEM — se quería marcar no
+
+      El reparto que queda:
+            sin_verificar     207
+            si                  8
+            dudosa              3
+            en_disputa          1
+            no                  1
+
+      hitos cuyo estado CAMBIÓ respecto de la ronda 2: 10
+            Floreria Atlantico                  sin_verificar   →  si
+            EL FARO                             sin_verificar   →  dudosa
+            El Buzón                            sin_verificar   →  si
+            El Tokio                            sin_verificar   →  si
+            LOS GALGOS                          sin_verificar   →  si
+            Los Laureles                        no              →  en_disputa
+            The New Brighton                    sin_verificar   →  no
+            Bar Conde                           sin_verificar   →  si
+            El Fortin                           sin_verificar   →  si
+            El Cedron                           sin_verificar   →  si
+
+      LA REVERSIÓN, dicha entera: la ronda 2 puso Los Laureles en `no` y con eso P008
+      Barracas dejó de abrir vía B. Ese `no` era una lectura de una sola fuente. Pasa a
+      `en_disputa`, que no abre ni cierra, y P008 vuelve a quedar pendiente.
+
+      Y lo que NO se marcó, que también es una decisión: los cuatro Bares Notables de
+      Retiro y Casa Watson llegaron etiquetados «dudosos». El motivo que traen —«el
+      catálogo no acredita apertura»— vale para los 90 y es la definición misma de
+      `sin_verificar`. `dudosa` se reserva para donde hay un motivo positivo para dudar:
+      Bar Oviedo (sin observación de campo desde 2013) y El Faro (única fuente, 2011).
+
+----------------------------------------------------------------------------------------------------
+  TAREA 6 · LAS DOCE ALTAS DEL 03/08/2026
+
+      12 de 12 ya estaban en la capa de hitos.
+            Bar Portuario                 Pinzon 102                      H088
+            Boca a Boca                   Av. Benito Perez Galdos 207     H004   ← la lista de altas dice «Av. Benito Perez Galdos 207»; la capa tiene «Av. Benito Perez Galdos 201»
+            Cafe Rivas                    Estados Unidos 302              H087
+            Bar Via 71                    Viamonte 1771                   H017
+            La Opera                      Av. Corrientes 1799             H068
+            Josephina's Cafe              Guido 1532                      H089
+            Cafe Cortazar                 Jose Antonio Cabrera 3797       H021
+            La Orquidea                   Av. Corrientes 4101             H063
+            Confiteria El Greco           Av. Rivadavia 5353              H090
+            Plaza Cafe                    Av. Rivadavia 4732              H030
+            Bar Conde                     Av. Federico Lacroze 3193       H010
+            La Escuela                    Manuela Pedraza 2803            H041
+
+      declaratoria_localizada = «no · sólo prensa» para las doce. No se localizó el número
+      de resolución ni su publicación en el Boletín Oficial: la fuente son La Nación del 6
+      de agosto y Canal 26 del 3, con Infobae y Perfil como réplicas.
+
+      EL SÍNTOMA, con el nombre corregido:
+            La prosa de la ronda 3 §6 nombra «La Ópera (Av. Corrientes 4101, Almagro)» como el caso
+            conflictivo. En el CSV que la acompaña, Av. Corrientes 4101 / Almagro es LA ORQUÍDEA, y
+            La Ópera figura aparte en Av. Corrientes 1799 / San Nicolás. La capa tiene los dos: H063
+            La Orquidea (4101) y H068 La Opera (1799). El síntoma de la reedición es real; el nombre
+            con el que se lo cita es el equivocado, y no es lo mismo porque cambia la referencia que
+            toca.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 6 · PROCEDENCIA · SHA-256 Y FECHA DE LO QUE HAY EN DISCO
+
+      No se volvió a descargar nada. Lo que se hashea es lo que las corridas usaron; bajar
+      el PDF hoy daría un tercer contenido y perdería la trazabilidad de lo ya corrido.
+
+      outputs\polos_gastro\REFERENTES_2026\_fuentes\bares_notables_consolidado_2025_anexo_res_1225_2026.pdf
+            anexo del catálogo consolidado de Bares Notables (PDF)
+            sha256   75481a8abb834409a774d43a8cac92e90657d0a253077f6727b4ff45b2c99704
+            en disco desde 2026-08-04T00:56:56+00:00 · 145,453 bytes · 90 entradas
+            identificador interno del documento: IF-2026-10314379-GCABA-DGPMYCH
+      outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\hitos_documentales_caba.csv
+            transcripción documental que cita RES-MCGC-3758-24 como fuente
+            sha256   6ef25242f9ffba579b120e64d1eef134534f0fb9d456fd6f9dfb63f16c960b56
+            en disco desde 2026-08-06T20:02:53+00:00 · 61,791 bytes · 199 entradas
+      outputs\BARRIDO_CIUDAD_2026-08\hitos\bares_notables_canon_boletin.csv
+            canon de 90 que la ronda 2 fijó a partir de la transcripción
+            sha256   8ce68ba2bbfbf4d188e2c682f3869906cd69b29b8dbdd6a6a55fa7a445e9e4a5
+            en disco desde 2026-08-07T13:47:28+00:00 · 21,290 bytes · 90 entradas
+      outputs\BARRIDO_CIUDAD_2026-08\dataset_bares_notables\bares_notables_caba.csv
+            lista de Wikidata (95), fuente independiente
+            sha256   c5f49d496409ab6cc9e52ead12b0e443236a75e3c3f02d03a2f8918386073c23
+            en disco desde 2026-08-06T16:07:57+00:00 · 63,034 bytes · 95 entradas
+      outputs\polos_gastro\REFERENTES_2026\matriz_referentes_final_2026.csv
+            lista del GCBA (84), fuente independiente
+            sha256   39060beebfeeb7c5ca1bab0d502035bdc2a4e37ba26c983a5e09ef13ccb71c05
+            en disco desde 2026-08-04T02:18:38+00:00 · 87,671 bytes · 169 entradas
+
+      QUÉ TRAE EL CONTENIDO QUE TENEMOS, contra las doce altas del 03/08/2026
+
+            ESTÁ    Bar Portuario
+            ESTÁ    Boca a Boca
+            ESTÁ    Cafe Rivas
+            ESTÁ    Bar Via 71
+            ESTÁ    La Opera
+            ESTÁ    Josephina's Cafe
+            ESTÁ    Cafe Cortazar
+            ESTÁ    La Orquidea
+            ESTÁ    Confiteria El Greco
+            ESTÁ    Plaza Cafe
+            ESTÁ    Bar Conde
+            ESTÁ    La Escuela
+
+      12 de 12 en un anexo cuya hoja de firmas está fechada el
+      26 de febrero de 2026 —seis meses antes de la fecha de las altas—, con 90
+      entradas. Diego reporta que la URL de la Res. MCGC 3758/24 sirve HOY un PDF de
+      88 entradas con 7 de las 12, sin El Greco ni Plaza Café.
+
+      Entonces circulan TRES contenidos, no dos:
+            90 entradas · el que está en disco desde el 03/08/2026, firmado 26/02/2026
+            88 entradas · el que la URL sirve hoy
+            84 y 95     · las listas del GCBA y de Wikidata, ya cruzadas en la ronda 2
+
+      Y una consecuencia que no es de forma: si un documento firmado en febrero de
+      2026 ya lista los doce, entonces «alta del 3 de agosto» no describe el acto
+      declaratorio. Puede ser la fecha de difusión de un catálogo ya consolidado. NO
+      SE AFIRMA CUÁL DE LAS DOS COSAS ES: se afirma que la prensa y el documento no
+      dicen lo mismo, y que la resolución que declararía las altas sigue sin
+      localizarse.
+
+      El «1225/2026» del nombre del archivo es NUESTRO, no del documento: ese número
+      no aparece en el texto del PDF. El identificador que sí es suyo es el GEDO
+      IF-2026-10314379-GCABA-DGPMYCH. La procedencia se cita por ése.
+
+====================================================================================================
+  220 hitos · 215 con punto · 8 verificados abiertos · 1 cerrados · 1 en disputa
+  la capa de la ronda 2 queda intacta en hitos_capa_2026.csv; esto escribe hitos_capa_2026_r3.csv
+====================================================================================================
+

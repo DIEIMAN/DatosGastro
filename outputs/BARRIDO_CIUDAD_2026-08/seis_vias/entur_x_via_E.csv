@@ -1,0 +1,23 @@
+referencia_id,nombre,entur_2019,base_2026,razon,razon_clase,via_E_abierta,via_E_n_grupos,anio_mediana,cuadrante,anios_e1_e4
+R01,Palermo,200,1358,0.14727540500736377,alta,si,4,2023.5,alta + vía E abierta,2021;2023;2024;2026
+R02,Avenida Corrientes,88,354,0.24858757062146894,alta,si,3,2026.0,alta + vía E abierta,2026
+R03,San Telmo,18,71,0.2535211267605634,alta,si,3,2025.0,alta + vía E abierta,2021;2025;2026
+R04,Puerto Madero,72,354,0.2033898305084746,alta,si,2,2022.0,alta + vía E abierta,2021;2023
+R05,Belgrano,21,343,0.061224489795918366,baja,si,3,2025.0,baja + vía E abierta,2023;2025;2026
+R06,Recoleta,146,714,0.20448179271708683,alta,si,2,2023.5,alta + vía E abierta,2021;2026
+R07,Costanera Norte,2,67,0.029850746268656716,baja,no,1,2025.0,baja + vía E cerrada,2025;2025
+R08,Villa Crespo,49,823,0.05953827460510328,baja,si,2,2025.0,baja + vía E abierta,2025;2025;2025;2025
+R09,Chacarita,15,202,0.07425742574257425,alta,si,3,2024.0,alta + vía E abierta,2024;2024;2026
+R10,Caballito,68,508,0.13385826771653545,alta,si,2,2021.0,alta + vía E abierta,2021
+R11,Boulevard Caseros,6,60,0.1,alta,si,2,2019.0,alta + vía E abierta,2017;2021
+R12,Centro / Microcentro segmentado,275,1084,0.253690036900369,alta,no,1,2026.0,alta + vía E cerrada,2026
+R13,Abasto,7,373,0.01876675603217158,baja,no,0,,baja + vía E cerrada,
+R14,Avenida Boedo,9,245,0.036734693877551024,baja,no,0,,baja + vía E cerrada,
+R15,Devoto,24,422,0.05687203791469194,baja,si,3,2025.0,baja + vía E abierta,2025;2025
+R16,Donado-Holmberg,5,121,0.04132231404958678,baja,si,4,2021.0,baja + vía E abierta,2017;2018;2021;2024;2025
+R17,Villa Urquiza,17,528,0.032196969696969696,baja,si,2,2025.0,baja + vía E abierta,2024;2025;2025
+R18,Esmeralda-Paraguay,62,318,0.1949685534591195,alta,no,0,,alta + vía E cerrada,
+R19,Federico Lacroze por tramos,16,185,0.08648648648648649,alta,si,5,2024.0,alta + vía E abierta,2023;2023;2024;2024;2026
+R20,Garcia del Rio,4,61,0.06557377049180328,baja,si,2,2024.0,baja + vía E abierta,2021;2023;2025;2026
+R21,La Paternal,9,208,0.04326923076923077,baja,si,2,2024.0,baja + vía E abierta,2024;2024;2026
+R22,Villa Pueyrredon,10,198,0.050505050505050504,baja,no,0,,baja + vía E cerrada,

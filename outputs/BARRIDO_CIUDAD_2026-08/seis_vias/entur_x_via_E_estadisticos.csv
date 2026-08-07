@@ -1,0 +1,2 @@
+rho_razon_vs_via_E,p_spearman,rho_razon_vs_n_locales,permutaciones,semilla,nulo_p95,nulo_p99,p_empirico,veredicto_H1,control_a,control_b,H2_emergente_mediana,H2_declive_mediana,zonas_nombradas_acertadas,zonas_nombradas_total
+0.2523,0.2572,0.2095,1000,20260807,0.361,0.4947,0.119,CONFIRMADA,PASA,FALLA,2025.0,2026.0,8,11

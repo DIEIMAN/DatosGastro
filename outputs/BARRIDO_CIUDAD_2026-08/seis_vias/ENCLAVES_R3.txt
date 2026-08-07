@@ -1,0 +1,130 @@
+LOS QUINCE ENCLAVES · geometría donde la fuente la permite, y no donde no
+====================================================================================================
+
+  entrada: 15 enclaves · lo declarado está en LECTURA_PREVIA_RONDA_3.md §3-§4
+  Google Places: 0 requests.
+
+  El reparto de estados de vía D que trae la fuente:
+      abierta                             9   E01, E02, E03, E04, E05, E06, E07, E09, E12
+      medida_sin_enclave                  3   E08, E10, E14
+      no_medible_con_este_instrumento     2   E11, E13
+      enclave_en_formacion                1   E15
+
+      `enclave_en_formacion` (E15) es un QUINTO valor que el CSV trae y la consigna no
+      nombra. No se pliega a ninguno de los cuatro: es un `medida_sin_enclave` con fecha
+      de vencimiento, y queda para que Diego lo confirme o lo pliegue.
+
+----------------------------------------------------------------------------------------------------
+  CÓMO SE RESOLVIÓ CADA TRAMO
+
+      E01 · AGÜERO entre CORRIENTES AV. y GOMEZ, VALENTIN: 117 m de eje (la calle dentro del marco: 1,232 m)
+      E01 · JAURES, JEAN entre #600 y #699: 108 m de eje (la calle dentro del marco: 1,431 m)
+      E01 · ZELAYA: la fuente la nombra sin cabecera; entra entera dentro del marco (281 m)
+      E02 · ARRIBEÑOS entre JURAMENTO y OLAZABAL: 255 m de eje (la calle dentro del marco: 1,367 m)
+      E02 · MENDOZA entre MONTAÑESES y __VIAS__: 130 m de eje (la calle dentro del marco: 3,448 m)
+      E03 · CARABOBO AV. entre CASTAÑARES AV. y PERON, EVA AV.: 768 m de eje (la calle dentro del marco: 1,345 m)
+      E04 · GODOY, RUPERTO entre HELGUERA y CUENCA: 118 m de eje (la calle dentro del marco: 118 m)
+      E05 · TUCUMAN entre #2379 y #2802: 464 m de eje (la calle dentro del marco: 1,841 m)
+      E05 · PASO entre #706 y #757: 109 m de eje (la calle dentro del marco: 1,244 m)
+      E05 · ECUADOR entre #594 y #742: 161 m de eje (la calle dentro del marco: 1,394 m)
+      E05 · SAN LUIS entre #2427 y #2742: 395 m de eje (la calle dentro del marco: 1,024 m)
+      E05 · PUEYRREDON AV. entre #336 y #880: 756 m de eje (la calle dentro del marco: 1,319 m)
+      E06 · AVELLANEDA AV. entre #2395 y #2701: 441 m de eje (la calle dentro del marco: 3,836 m)
+      E06 · ARANGUREN, JUAN F., DR. entre #2941 y #3192: 378 m de eje (la calle dentro del marco: 6,718 m)
+      E06 · ARGERICH #809-#843: el rango es más corto que la cuadra; se toma 1 segmento(s) del callejero que contienen a las cabeceras
+      E06 · ARGERICH entre #809 y #843: 119 m de eje (la calle dentro del marco: 7,025 m)
+      E06 · CUENCA entre #180 y #515: 384 m de eje (la calle dentro del marco: 6,759 m)
+      E07 · SUAREZ, JOSE LEON: falta un corte; se toma la calle entera dentro del marco, sin inventar el punto
+      E07 · SUAREZ, JOSE LEON entre RIVADAVIA AV. y None: 1,955 m de eje (la calle dentro del marco: 1,955 m)
+      E07 · FALCON, RAMON L.,CNEL.: la fuente la nombra sin cabecera; entra entera dentro del marco (1,728 m)
+      E07 · IBARROLA: la fuente la nombra sin cabecera; entra entera dentro del marco (1,298 m)
+      E08: sin receta — no recibe geometría (medida_sin_enclave)
+      E09: 6 de 6 puertas geocodificadas; sin eje, porque la fuente no da cabeceras
+      E10: sin receta — no recibe geometría (medida_sin_enclave)
+      E11: sin receta — no recibe geometría (no_medible_con_este_instrumento)
+      E12: sin receta — no recibe geometría (abierta)
+      E13: sin receta — no recibe geometría (no_medible_con_este_instrumento)
+      E14: sin receta — no recibe geometría (medida_sin_enclave)
+      E15: sin receta — no recibe geometría (enclave_en_formacion)
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA
+
+      id   colectividad                método           tramos     eje m       ha   computa  estado
+      E01  peruana                     eje+buffer            3       506     28.8   si       abierta
+      E02  china (con presencia taiwan eje+buffer            2       385     17.6   si       abierta
+      E03  coreana                     eje+buffer            1       768     30.1   si       abierta
+      E04  coreana (extension comercia eje+buffer            1       118     10.6   si       abierta
+      E05  judia (askenazi historica,  eje+buffer            5     1,885     56.5   si       abierta
+      E06  judia sefardi y ortodoxa    eje+buffer            4     1,322     59.2   no       abierta
+      E07  boliviana                   eje+buffer            3     4,981    131.7   si       abierta
+      E08  boliviana (quechua altiplan sin geometría         0         0      0.0   no       medida_sin_enclave
+      E09  coreana (desplazamiento a R puntos+buffer         6         0     30.8   si       abierta
+      E10  paraguaya                   sin geometría         0         0      0.0   no       medida_sin_enclave
+      E11  senegalesa y africana subsa sin geometría         0         0      0.0   no       no_medible_con_este_instrumento
+      E12  armenia                     sin geometría         0         0      0.0   no       abierta
+      E13  japonesa                    sin geometría         0         0      0.0   no       no_medible_con_este_instrumento
+      E14  china fuera del Barrio Chin sin geometría         0         0      0.0   no       medida_sin_enclave
+      E15  venezolana y colombiana     sin geometría         0         0      0.0   no       enclave_en_formacion
+
+      con geometría: 8 de 15 · computan vía D: 7
+      la ronda 1 tenía 4 enclaves cruzables; ahora son 7.
+
+      GEOMETRÍA SIN CÓMPUTO · E06: n_grupos = 1 y de 2015: una sola fuente no delimita al mismo nivel que las demás
+
+----------------------------------------------------------------------------------------------------
+  E01 · EL CORREDOR PERUANO DEL ABASTO, QUE ES LO QUE FALTABA
+
+      3 tramos · 506 m de eje · 28.8 ha con el buffer declarado de 150 m
+
+      Eje primario: Agüero entre Av. Corrientes y Valentín Gómez, altura 400-450.
+      Ejes secundarios: Jean Jaurès y Zelaya, que la fuente nombra SIN cabecera y por
+      eso entran enteros dentro de Balvanera, igual que Ramón Falcón e Ibarrola en
+      Liniers. No se les inventa el corte.
+
+      Y lo que NO entró: Guardia Vieja 3372 y Av. Corrientes 3564. La fuente los da
+      como anexos por establecimiento, no por continuidad. Meterlos en el eje habría
+      convertido dos puntos sueltos en corredor.
+
+      es_normativa = no. Y la nota que viaja con la fila:
+            «Corredor Peruano» NO es normativo: es una placa del 02/06/2012 puesta por vecinos, come
+            rciantes y el Consulado del Perú. No hay ley, ordenanza, resolución ni declaración de in
+            terés. Y la cuadra 400 de Agüero está en recambio asiático desde 2024, así que la delimi
+            tación de 2012 y la de 2025 describen realidades distintas.
+
+----------------------------------------------------------------------------------------------------
+  LOS QUE NO RECIBEN GEOMETRÍA, Y POR QUÉ
+
+      E08 · boliviana (quechua altiplanica)
+            estado: medida_sin_enclave
+            RESULTADO NEGATIVO MEDIDO, no laguna. Hay enclave, hay evento gastronomico anual, NO hay oferta comercial estable. De haber locales, Charrua seria el enclave boliviano de mayor pro
+      E10 · paraguaya
+            estado: medida_sin_enclave
+            Es una de las colectividades mas numerosas del AMBA y aun asi NO produce enclave gastronomico delimitable en CABA. Hipotesis a no cargar como dato: su asentamiento es fuertemente s
+      E11 · senegalesa y africana subsahariana
+            estado: no_medible_con_este_instrumento
+            LA PRESENCIA SENEGALESA EN ONCE Y CONSTITUCION ES DE VENTA AMBULANTE, NO DE GASTRONOMIA CON LOCAL. Son dos fenomenos distintos y el Atlas no debe fusionarlos. ESTO ES UN LIMITE DEL
+      E12 · armenia
+            estado: abierta
+            Hay institucion armenia densa y hay gastronomia armenia, pero NO se verifico que coincidan territorialmente. El eje institucional esta sobre calle Armenia; los restaurantes no tien
+      E13 · japonesa
+            estado: no_medible_con_este_instrumento
+            El patron historico japones fue de DISPERSION POR RUBRO (tintorerias, floricultura) y no de concentracion por cuadra: exactamente el patron que una metodologia basada en contiguida
+      E14 · china fuera del Barrio Chino
+            estado: medida_sin_enclave
+            LA AUSENCIA DE ENCLAVE CHINO FUERA DE BELGRANO NO ES AZAR: ES LA FORMA DEL NEGOCIO. Un supermercado chino compite consigo mismo si se agrupa. La via D china de la Ciudad esta conce
+      E15 · venezolana y colombiana
+            estado: enclave_en_formacion
+            LA LECTURA CORRECTA ES 'TODAVIA NO', NO 'NO'. Patron clasico de enclave en formacion: primero nodos aislados, despues institucion (Centro Venezolano Argentino, 2025), y recien desp
+
+      E08 Charrúa merece la aclaración: tiene el MEJOR perímetro físico del Atlas —Av.
+      Bonorino, Av. Fernández de la Cruz y las vías del Belgrano Sur, dos avenidas y una
+      traza ferroviaria— y aun así no se poligoniza. Le falta el cuarto borde, y sobre
+      todo: su estado es `medida_sin_enclave`. Darle área sugeriría que hay algo adentro
+      que medir, y tres fuentes independientes —incluida una nota extensa de prensa
+      boliviana dedicada al barrio— no nombran un solo local de comida.
+
+====================================================================================================
+  15 enclaves · 8 con geometría · 7 computan vía D · Places: 0 requests
+====================================================================================================
+

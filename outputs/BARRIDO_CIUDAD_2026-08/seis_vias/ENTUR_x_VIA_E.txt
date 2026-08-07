@@ -1,0 +1,156 @@
+TAREA 5 · LA RAZÓN ENTUR/BASE CONTRA LA VÍA E
+====================================================================================================
+
+  La lectura previa está escrita y fechada ANTES de esta corrida, con las zonas nombradas
+  de antemano: desde_cowork/evidencia_2026/LECTURA_PREVIA_ENTUR_x_VIA_E.md. Regla R1.
+
+  22 zonas · ENTUR de agosto de 2019 (2.823 puntos) contra base de 2026 (23.981) · Places: 0 requests
+
+  ADVERTENCIA QUE VA EN CUALQUIER PUBLICACIÓN DEL NÚMERO: el ENTUR es de AGOSTO DE 2019.
+  El 22/07/2026 que figura en el portal es el `metadata_modified` del registro, no de los
+  datos. Toda razón calculada acá mezcla dos añadas separadas por siete años.
+
+----------------------------------------------------------------------------------------------------
+  H1 · CORRELACIÓN DE RANGOS ENTRE LA RAZÓN Y n_grupos DE VÍA E
+
+      rho de Spearman = +0.252   (p = 0.257, n = 22)
+      predicho por la lectura previa: entre 0,20 y 0,55
+      CAE DENTRO DEL RANGO PREDICHO. H1 se confirma.
+
+----------------------------------------------------------------------------------------------------
+  CONTROL (a) · LA MISMA CORRELACIÓN CONTRA EL TAMAÑO DE LA ZONA
+
+      razón vs n_grupos de vía E : rho = +0.252
+      razón vs n_locales         : rho = +0.210   (p = 0.349)
+
+      La razón correlaciona MÁS con la vía E que con el tamaño. El control (a) pasa:
+      lo que la razón ordena no es simplemente el tamaño de la zona.
+
+----------------------------------------------------------------------------------------------------
+  CONTROL (b) · PERMUTACIÓN DE LAS ETIQUETAS DE VÍA E
+
+      1,000 iteraciones · semilla fija 20260807 · reproducible
+
+      observado          rho = +0.252
+      nulo, percentil 95 rho = +0.361
+      nulo, percentil 99 rho = +0.495
+      nulo, media        rho = -0.002  (desvío 0.216)
+      p empírico (fracción de nulos ≥ observado) = 0.119
+
+      El observado NO SUPERA el percentil 95 del nulo. Con este material no hay nada
+      que distinguir del azar, y ése es el resultado. Es el control que faltó la vez
+      pasada y por eso se corre ahora, no para confirmar sino para poder desmentir.
+
+----------------------------------------------------------------------------------------------------
+  H2 · ¿LOS DESACUERDOS TIENEN SIGNO TEMPORAL?
+
+      corte de razón: la mediana de las 22, 0.070
+
+      id   zona                           razón  clase   vía E  grupos    años e1-e4  mediana
+      R12  Centro / Microcentro segmen    0.254   alta      no       1          2026     2026
+      R03  San Telmo                      0.254   alta      si       3 2021,2025,202     2025
+      R02  Avenida Corrientes             0.249   alta      si       3          2026     2026
+      R06  Recoleta                       0.204   alta      si       2     2021,2026     2024
+      R04  Puerto Madero                  0.203   alta      si       2     2021,2023     2022
+      R18  Esmeralda-Paraguay             0.195   alta      no       0             —        —
+      R01  Palermo                        0.147   alta      si       4 2021,2023,202     2024
+      R10  Caballito                      0.134   alta      si       2          2021     2021
+      R11  Boulevard Caseros              0.100   alta      si       2     2017,2021     2019
+      R19  Federico Lacroze por tramos    0.086   alta      si       5 2023,2023,202     2024
+      R09  Chacarita                      0.074   alta      si       3 2024,2024,202     2024
+      R20  Garcia del Rio                 0.066   baja      si       2 2021,2023,202     2024
+      R05  Belgrano                       0.061   baja      si       3 2023,2025,202     2025
+      R08  Villa Crespo                   0.060   baja      si       2 2025,2025,202     2025
+      R15  Devoto                         0.057   baja      si       3     2025,2025     2025
+      R22  Villa Pueyrredon               0.051   baja      no       0             —        —
+      R21  La Paternal                    0.043   baja      si       2 2024,2024,202     2024
+      R16  Donado-Holmberg                0.041   baja      si       4 2017,2018,202     2021
+      R14  Avenida Boedo                  0.037   baja      no       0             —        —
+      R17  Villa Urquiza                  0.032   baja      si       2 2024,2025,202     2025
+      R07  Costanera Norte                0.030   baja      no       1     2025,2025     2025
+      R13  Abasto                         0.019   baja      no       0             —        —
+
+      cuadrante                         zonas   mediana del año   zonas
+      alta + vía E abierta                  9              2024   R01 R02 R03 R04 R06 R09 R10 R11 R19
+      alta + vía E cerrada                  2              2026   R12 R18
+      baja + vía E abierta                  7              2025   R05 R08 R15 R16 R17 R20 R21
+      baja + vía E cerrada                  4              2025   R07 R13 R14 R22
+
+      LA PRUEBA CONCRETA que la lectura previa fijó:
+
+      cuadrante EMERGENTE (razón baja + vía E abierta): 7 zonas, mediana del año = 2025
+      predicho: 2023 o posterior
+      SE CUMPLE.
+
+      cuadrante DECLIVE (razón alta + vía E cerrada): 2 zonas (R12 R18), mediana del año = 2026
+      predicho: cobertura anterior a 2021 o inexistente
+      NO SE CUMPLE.
+
+      Y el detalle que la mediana esconde, porque el cuadrante tiene DOS zonas:
+            R12: mediana 2026 → NO cumple
+            R18: SIN fuente admisible → cumple la parte «o directamente inexistente» de la predicción
+      Una de las dos cumple y la otra la contradice de plano: R12 Centro, que es el
+      caso que hizo formular la hipótesis, tiene su única fuente admisible fechada en
+      abril de 2026. El cuadrante de declive se sostiene sobre dos zonas, una de ellas
+      sin fuente. Eso no alcanza para nada, ni a favor ni en contra.
+
+----------------------------------------------------------------------------------------------------
+  LAS ZONAS NOMBRADAS ANTES DE MIRAR, UNA POR UNA
+
+      R12  ✓  predicho «alta + vía E cerrada»  →  salió «alta + vía E cerrada»
+      R04  ✗  predicho «alta + vía E cerrada»  →  salió «alta + vía E abierta»
+      R18  ✓  predicho «alta + vía E cerrada»  →  salió «alta + vía E cerrada»
+      R20  ✓  predicho «baja + vía E abierta»  →  salió «baja + vía E abierta»
+      R15  ✓  predicho «baja + vía E abierta»  →  salió «baja + vía E abierta»
+      R09  ✗  predicho «baja + vía E abierta»  →  salió «alta + vía E abierta»
+      R19  ✗  predicho «baja + vía E abierta»  →  salió «alta + vía E abierta»
+      R08  ✓  predicho «baja + vía E abierta»  →  salió «baja + vía E abierta»
+      R16  ✓  predicho «baja + vía E abierta»  →  salió «baja + vía E abierta»  (con reserva en la lectura previa)
+      R13  ✓  predicho «baja + vía E cerrada»  →  salió «baja + vía E cerrada»
+      R22  ✓  predicho «baja + vía E cerrada»  →  salió «baja + vía E cerrada»
+
+      aciertos: 8 de 11 zonas nombradas
+      fallan:   R04 R09 R19
+
+      PERO LOS TRES FALLOS NO SON EL MISMO FALLO, Y HAY QUE MIRARLOS:
+
+      R04: razón 0.203, el corte está en 0.070 → +0.133 del filo
+      R09: razón 0.074, el corte está en 0.070 → +0.004 del filo
+      R19: razón 0.086, el corte está en 0.070 → +0.017 del filo
+
+      R09 y R19 caen del lado «alta» por 0,004 y 0,016 sobre una mediana. Con un corte
+      por terciles, por media o por cualquier otro criterio razonable, cambian de
+      cuadrante. **El corte es arbitrario y tres de las once predicciones dependen de**
+      **él**: eso no se arregla eligiendo otro corte, se dice.
+
+      Y R04 Puerto Madero falla de una manera que la propia lectura previa ya había
+      previsto: la predicción decía «vía E que abre pero con toda su evidencia anterior a
+      2024», y su mediana da 2022. Es decir que acierta en lo que predijo sobre las
+      fechas y falla en la etiqueta binaria, porque la etiqueta binaria no distingue
+      «abierta» de «abierta con material viejo». El error está en el instrumento de
+      clasificación, no en la predicción.
+
+      R14 Boedo · la predicción que podía salir mal de una manera útil:
+            razón 0.037 (baja) · vía E no · cuadrante «baja + vía E cerrada»
+            Sale con razón baja. H2 sigue en pie más simple, y el ENTUR resulta
+            ser más gastronómico de lo que su nombre sugiere.
+
+====================================================================================================
+  EL VEREDICTO, PUBLICADO SEA CUAL SEA
+====================================================================================================
+
+      H1           CONFIRMADA    rho = +0.252
+      control (a)  PASA    razón vs tamaño = +0.210
+      control (b)  FALLA    percentil 95 del nulo = +0.361
+      H2           NO se cumple
+
+      QUÉ SE HACE CON ESTO: la razón ENTUR/base NO entra a la matriz, ni como vía ni
+      como columna de contexto. Se registra como dato descriptivo del ENTUR, con su
+      número, y queda escrito que se probó y no funcionó — como se hizo con el índice
+      de Rand ajustado que dio 0,391 y no se reemplazó por otro que diera mejor.
+
+      Y una limitación que ningún control arregla: son 22 zonas. Con n = 22 el intervalo
+      de confianza de un rho de Spearman es ancho, y los cuadrantes quedan con 4 a 7
+      zonas cada uno. Lo que este cruce puede hacer es DESCARTAR; confirmar necesitaría
+      más filas de las que hay.
+

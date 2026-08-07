@@ -1,0 +1,6 @@
+local,direccion,anio_fuente,geocodificado,distancia_al_eje_idecba_m,dentro_del_buffer_150m,calle
+El Conejo,Jose Leon Suarez 216,2016,si,176.0,no,Jose Leon Suarez
+Miriam,Ibarrola 7184,2016,si,151.7,no,Ibarrola
+Pollo Copacabana,Ibarrola 7276,2016,si,144.4,si,Ibarrola
+Pollo Copacabana (2),Ibarrola 7291,2016,si,136.0,si,Ibarrola
+Rico Pollo,Ibarrola 7193,2016,si,142.6,si,Ibarrola

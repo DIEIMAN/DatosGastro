@@ -1,0 +1,141 @@
+RONDA 3 · LA VÍA B POR SOPORTE Y LA VÍA D CON CUATRO ESTADOS
+====================================================================================================
+
+  hitos con punto: 215 · enclaves con geometría: 8 · cruzables: 7
+  Vías A, C y F: se leen de la ronda 2 sin recalcular. Sus insumos no se movieron.
+  Google Places: 0 requests.
+
+  El estado de los hitos que entra al cómputo:
+      sin_verificar     207
+      si                  8
+      dudosa              3
+      en_disputa          1
+      no                  1
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LA VÍA B, RECONTADA CON `via_B_soporte`
+
+      via_B_soporte       filas   abre
+      activo                  7   sí
+      mixto                   0   sí
+      en_disputa              1   pendiente
+      sin_verificar          36   pendiente
+      extinguido              0   no
+      sin_hitos              48   no
+      TOTAL                  92   (sobre las 92 con soporte)
+
+      EL DELTA CONTRA LA RONDA 2:  43 de 94  →  7 de 94
+      y 37 filas quedan PENDIENTES, que no es ni abre ni no abre. 48 no abren.
+
+      Esas 43 no se perdieron: nunca existieron. La ronda 2 contaba como «abre» todo hito
+      que no estuviera verificado cerrado, es decir 212 hitos que nadie miró. Con 8
+      verificados abiertos en 220 fichas, el número honesto es éste.
+
+      Las filas que SÍ abren, con el hito que las abre:
+            PG012_AVENIDA_CORRIENTESAvenida Corrientes          activo    LOS GALGOS
+            PG019_AVENIDA_FEDERICO_LACROZE_DESDE_LIBERTADOR_Federico Lacroze / Liberta  activo    Bar Conde
+            PGF2_COLEGIALES         Colegiales                  activo    Bar Conde
+            PGF2_RETIRO             Retiro                      activo    Floreria Atlantico
+            PGR_P012                P012 · Mataderos            activo    El Cedron
+            PGR_P025-2              P025-2 · Monte Castro       activo    El Fortin
+            PGR_P034                P034 · Monte Castro         activo    El Tokio
+
+      Las filas EXTINGUIDAS —hubo hitos, todos verificados cerrados—: 0
+      Se publican igual, como capa histórica: la trayectoria es un hecho del pasado que no
+      se revierte. Lo que no hacen es abrir la vía.
+
+      Las filas EN DISPUTA: 1
+            PGR_P008                P008 · Barracas             Los Laureles
+
+      LA REVERSIÓN · PGR_P008 P008 · Barracas: soporte = en_disputa, vía B = pendiente
+            hitos adentro: 1.0 · «Los Laureles»
+      La ronda 2 la había cerrado. No está cerrada: está pendiente, que es distinto.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2-3 · LA VÍA D, CON CUATRO ESTADOS Y SIETE ENCLAVES CRUZABLES
+
+      no_medida                  80 de 92 con soporte
+      abierta                    12 de 92 con soporte
+
+      EL DELTA CONTRA LA RONDA 2:  7 abiertas de 94  →  12 de 94
+      Y las que antes decían `no` ahora dicen `no_medida`, que es lo que son: 87 filas
+      escritas como cerradas cuando lo que pasaba era que no las habíamos medido.
+
+      Las que abren vía D:
+            PG006A_BARRIO_CHINO     Barrio Chino                  E02
+            PG011_MICROCENTRO_CENTRO_RENOVADOMicrocentro y Centro          E09
+            PG013_ABASTO            Abasto                        E01; E05
+            PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAYNuevo Bajo en Retiro / Esmer  E09
+            PGF2_RETIRO             Retiro                        E09
+            PGF2_FLORES             Flores                        E03; E04
+            PGF2_FLORESTA           Floresta                      E04
+            PGR_P021                P021 · Liniers                E07
+            PGR_P052                P052 · Floresta               E04
+            PGR_P017                P017 · Liniers                E07
+            PGR_P020                P020 · Villa Luro             E07
+            PGR_P107                P107 · Balvanera              E05
+
+      Filas que tocan un enclave que NO computa (se ve, no cuenta): 4
+            PGF2_FLORES             Flores                        E06
+            PGF2_FLORESTA           Floresta                      E06
+            PGR_P052                P052 · Floresta               E06
+            PGR_P041                P041 · Floresta               E06
+
+----------------------------------------------------------------------------------------------------
+  LAS 94 FILAS · cuántas abren cada vía, con la regla nueva
+
+      A · densidad          89 de 94
+      B · trayectoria        7 de 94   (37 pendientes)
+      C · mercados           4 de 94
+      D · comunidades       12 de 94   (80 pendientes)
+      F · corredor          53 de 94
+      E · reconocimiento     —   la llena Diego; el cruce contra el ENTUR va aparte
+
+            0 vía(s) abiertas: 1 filas
+            1 vía(s) abiertas: 27 filas
+            2 vía(s) abiertas: 54 filas
+            3 vía(s) abiertas: 10 filas
+
+      filas con CERO vías abiertas: 1 (de las cuales 1 tienen alguna PENDIENTE)
+
+====================================================================================================
+  EL CONTROL · las 22 publicadas, con la regla nueva
+====================================================================================================
+
+  id   zona                            A  B  C  D  F  abren  pend   soporte B / estado D
+  R01  Palermo                         X  ?  X  ?  ·      2     2   sin_verificar / no_medida
+  R02  Avenida Corrientes              X  X  ·  ?  X      3     1   activo / no_medida
+  R03  San Telmo                       ·  ?  ·  ?  ·      0     2   sin_verificar / no_medida
+  R04  Puerto Madero                   X  ?  ·  ?  X      2     2   sin_verificar / no_medida
+  R05  Belgrano                        X  ?  X  X  ·      3     1   sin_verificar / abierta
+  R06  Recoleta                        X  ?  ·  ?  ·      1     2   sin_verificar / no_medida
+  R07  Costanera Norte                 X  ?  X  ?  X      3     2   sin_verificar / no_medida
+  R08  Villa Crespo                    X  ?  ·  ?  ·      1     2   sin_verificar / no_medida
+  R09  Chacarita                       X  ?  ·  ?  ·      1     2   sin_verificar / no_medida
+  R10  Caballito                       X  ?  X  ?  ·      2     2   sin_verificar / no_medida
+  R11  Boulevard Caseros               ·  ?  ·  ?  X      1     2   sin_verificar / no_medida
+  R12  Centro / Microcentro segmenta   X  ?  ·  X  ·      2     1   sin_verificar / abierta
+  R13  Abasto                          X  ?  ·  X  X      3     1   sin_verificar / abierta
+  R14  Avenida Boedo                   X  ?  ·  ?  X      2     2   sin_verificar / no_medida
+  R15  Devoto                          X  ?  ·  ?  X      2     2   sin_verificar / no_medida
+  R16  Donado-Holmberg                 X  ·  ·  ?  X      2     1   sin_hitos / no_medida
+  R17  Villa Urquiza                   X  ?  ·  ?  ·      1     2   sin_verificar / no_medida
+  R18  Esmeralda-Paraguay              X  ?  ·  X  ·      2     1   sin_verificar / abierta
+  R19  Federico Lacroze por tramos     X  X  ·  ?  X      3     1   activo / no_medida
+  R20  Garcia del Rio                  ·  ·  ·  ?  X      1     1   sin_hitos / no_medida
+  R21  La Paternal                     X  ?  ·  ?  ·      1     2   sin_verificar / no_medida
+  R22  Villa Pueyrredon                X  ·  ·  ?  ·      1     1   sin_hitos / no_medida
+
+      zonas con al menos una vía ABIERTA: 21 de 22
+      zonas con cero abiertas:            1
+            R03 San Telmo: 2 vía(s) pendiente(s) · B = sin_verificar
+
+      La ronda 2 decía «las 22 abren al menos una vía medible» y era cierto con su regla.
+      Con la regla de presencia, la afirmación que se sostiene es la de las vías A, C y F,
+      que no dependen de vigencia. La vía B de las 22 está casi entera PENDIENTE, y eso no
+      es un resultado sobre el territorio: es el estado de nuestra verificación.
+
+====================================================================================================
+  94 filas y 22 zonas · vía B 7 abren / 37 pendientes · vía D 12 abiertas · Places: 0 requests
+====================================================================================================
+

@@ -1,0 +1,163 @@
+RONDA 3 · LINIERS, EL VIADUCTO DE NÚÑEZ Y R18
+====================================================================================================
+
+  base: 23,981 locales · polos publicables: 124
+  Lo declarado está en LECTURA_PREVIA_RONDA_3.md §5 y §6. Google Places: 0 requests.
+
+====================================================================================================
+  1 · ¿LA CONVERGENCIA DEL IDECBA SE SOSTIENE CON DATOS O ES COINCIDENCIA DE CALLE?
+====================================================================================================
+
+      el eje del IDECBA: Ramón Falcón 6801-7299 (eje_id 30, relevamiento 1.er cuatrimestre 2026)
+
+      LAS DOS RAMÓN FALCÓN DEL CALLEJERO, dentro de Liniers:
+            «FALCON, RAMON L.,CNEL.»        21 segmentos ·  1,728 m · alturas 0-7300
+            «FALCON, RAMON L.,CNEL. AV.»     1 segmentos ·    128 m · alturas 5902-6000
+      El eje del IDECBA cae sobre la PRIMERA. La receta del enclave de la ronda 1 usaba la
+      segunda: 900 números más al oeste que el Mercado Andino. Queda corregido en
+      `enclaves_ronda_3.py` y anotado acá, porque cambia dónde está E07.
+
+      el tramo del IDECBA: 6 segmentos, 613 m, alturas 6802-7300 · la calle entera en Liniers mide 1,728 m
+
+      LOS LOCALES BOLIVIANOS CON ALTURA, CONTRA EL EJE DEL IDECBA
+
+      local                   dirección                   dist. al eje   ≤150 m
+      El Conejo               Jose Leon Suarez 216               176 m       no
+      Miriam                  Ibarrola 7184                      152 m       no
+      Pollo Copacabana        Ibarrola 7276                      144 m       si
+      Pollo Copacabana (2)    Ibarrola 7291                      136 m       si
+      Rico Pollo              Ibarrola 7193                      143 m       si
+
+      locales sobre Ramón Falcón: 0 de 5
+      locales a ≤150 m del tramo del IDECBA: 3 de 5
+
+      ¿EL TRAMO DEL IDECBA ES MÁS DENSO EN GASTRONOMÍA QUE EL RESTO DE LA CALLE?
+
+      tramo                                  largo   locales    por km
+      Ramón Falcón 6801-7299 (IDECBA)         613m       116     189.2
+      resto de R. Falcón en Liniers           879m        51      58.0
+
+      LO QUE SE PUEDE AFIRMAR:
+      Ninguno de los locales bolivianos documentados está sobre Ramón Falcón. La
+      convergencia NO es entre el eje comercial del IDECBA y los locales bolivianos:
+      es entre el eje y el POLÍGONO del enclave, que se construyó con tres calles y
+      una de ellas es Ramón Falcón. Sigue siendo una convergencia —dos instrumentos
+      ciegos entre sí que señalan el mismo lugar—, pero es una convergencia de área,
+      no de puerta, y decirla como si fuera de puerta la sobrevende.
+
+      Y una limitación que no se arregla midiendo: los cinco locales son de 2016 y ninguno
+      tiene vigencia verificada. Lo que se comparó es un eje relevado en 2026 contra
+      puertas publicadas hace diez años.
+
+====================================================================================================
+  2 · NÚÑEZ · EL VIADUCTO MITRE CONTRA LO QUE ENCONTRÓ EL CLUSTERING
+====================================================================================================
+
+      el callejero oficial marca 18 cruces «Tren Elevado» en Colegiales, Belgrano, Nuñez.
+      No son un viaducto sino dos ramales, y separarlos es la primera decisión:
+            a 300 m: 4 componentes, tamaños [13, 2, 2, 1]
+            a 400 m: 4 componentes, tamaños [13, 2, 2, 1]
+            a 500 m: 4 componentes, tamaños [13, 2, 2, 1]
+      El resultado no cambia en todo el rango: el umbral no está sosteniendo la partición.
+
+      la componente mayor tiene 13 cruces: BLANCO ENCALADA, ECHEVERRIA, HERNANDEZ, JOSE, JURAMENTO AV., LA PAMPA, MENDOZA, MONROE, OLAZABAL, PINO, VIRREY DEL, ROOSEVELT FRANKLIN D., SUCRE, ANTONIO JOSE DE, MCAL.
+
+      traza reconstruida: 1.43 km · declarado por la fuente: 3.5 km
+      DIFERENCIA MAYOR AL 25 %. La fuente empieza el paseo en Federico Lacroze y
+      Libertador, que es Colegiales; los cruces que el callejero marca como tren
+      elevado en estos tres barrios llegan hasta Virrey del Pino y no más al sur.
+      Lo que se mide acá es EL TRAMO BELGRANO-NÚÑEZ del viaducto, no los 3,5 km
+      enteros, y todo lo que sigue se lee sobre ese tramo.
+
+      corredor con 150 m por lado: 49.0 ha
+      locales de la base adentro: 245
+      densidad: 5.00 locales/ha · 171.4 por km de traza
+
+      LA CIFRA DE LA FUENTE: 58 locales inaugurados en tres
+      tramos (enero de 2025) = 16.6
+      por km. No entra a ninguna columna: mide inauguraciones acumuladas, no puertas
+      abiertas hoy, y no es comparable con `n_locales`, que sale de la base.
+
+      QUÉ ENCONTRÓ EL CLUSTERING AHÍ: 2 polos publicables tocan el
+      corredor.
+
+      polo        locales       ha   loc/ha   del polo adentro
+      P072-6          146      7.7    18.87                85%
+      P072-7           68      3.1    21.64                95%
+
+      distancia media al vecino más cercano dentro del corredor: 14 m
+      pares a ≤60 m (el umbral de continuidad declarado): 1702
+
+      LO QUE SE PUEDE AFIRMAR:
+      El clustering SÍ encontró el corredor: 2 de los 2 polos que lo tocan tienen más de la mitad de sus locales
+      adentro. No es un polo que roza el corredor: es un polo que ES el corredor.
+      La lectura previa había anticipado lo contrario —que 16,6 locales por km no
+      forman cadena a 60 m— y esa predicción SE CAYÓ: la base tiene ahí una
+      densidad muy superior a la que la cifra de prensa sugiere.
+
+      Y la razón de la diferencia con la cifra de prensa, que importa: los 58 locales
+      son los INAUGURADOS bajo el viaducto; la base cuenta toda la gastronomía del
+      corredor, incluida la que ya estaba en las calles que el viaducto atraviesa.
+      Son dos universos distintos y el más grande no valida al más chico.
+
+====================================================================================================
+  3 · R18 ESMERALDA-PARAGUAY A LA LUZ DE Z46 RETIRO
+====================================================================================================
+
+      establecimiento                 dirección                     en R18    dist.  en R12
+      Centro Cultural Coreano         Maipu 972                         si      0 m      si
+      Mr. HO                          Paraguay 884                      si      0 m      si
+      Kimchi Garden                   San Martin 687                    no     83 m      si
+      Kuro Neko                       Paraguay 831                      si      0 m      si
+      Saigon Noodle Bar               M. T. de Alvear 818               si      0 m      si
+      Fa Song Song                    Esmeralda y M. T. de Alvear       si      0 m      si
+      (derrame) Carlos Pellegrini 117 Carlos Pellegrini 1179            no     56 m      no
+
+      del clúster documentado, 5 de 7 puertas caen DENTRO de R18.
+      la envolvente convexa del clúster mide 11.1 ha contra las 48.4 ha de R18
+      de esa envolvente, 98 % cae dentro de R18
+
+      LO QUE SE PUEDE AFIRMAR:
+      Con las puertas documentadas, R18 NO se queda corta: el clúster coreano cabe
+      adentro. La hipótesis de que R18 fuera el borde sur de un polo de Retiro más
+      grande NO se sostiene con este material — se sostiene lo contrario, que R18 es
+      4 veces más grande que el clúster que la justifica.
+
+      PERO EL MATERIAL ES CHICO Y HAY QUE DECIRLO. La fuente de mayo de 2026 habla de
+      un direccionario de 25 restaurantes coreanos y acá hay 7 puertas
+      con dirección publicada. Si las 25 se extienden al norte o al oeste, el número
+      cambia. La medición se hizo sobre lo que se puede geocodificar, no sobre lo que
+      la nota afirma, y con 7 de 25 no se cierra la pregunta: se acota.
+
+      En cualquiera de los dos casos, redibujar R18 es una DECISIÓN de Diego sobre
+      geometría publicada, no un resultado de esta corrida: acá sólo está el número.
+
+      Y una consecuencia que sí es de esta corrida: con E09 cargado, R18 pasa a abrir vía
+      D. Antes decía `no`. Ahora dice `abierta`, y por el clúster coreano-asiático.
+
+====================================================================================================
+  4 · LAS SEIS ZONAS DEL NORTE, CONTRA LA DENSIDAD QUE MIDE LA BASE
+====================================================================================================
+
+      El relevamiento documental dice «5 entran, 1 no». Lo que el repositorio puede aportar
+      es lo único que a esas fichas les falta: densidad por conteo. Se mide sobre el
+      polígono del barrio, que es grueso —una zona no es su barrio— y por eso el número
+      sirve para descartar, no para confirmar.
+
+      id   zona                      veredicto                           locales       ha   loc/ha
+      Z41  Nunez                     ENTRA                                   494      450     1.10
+      Z42  Coghlan                   ENTRA                                   108      128     0.84
+      Z43  Colegiales                ENTRA                                   441      229     1.93
+      Z44  Villa Ortuzar             ENTRA                                   201      185     1.08
+      Z45  Belgrano R y Barrancas de NO ENTRA COMO ZONA AUTONOMA               sin barrio homónimo
+      Z46  Retiro                    ENTRA                                   598      452     1.32
+
+      COGHLAN es el caso que la propia ficha marca como el más expuesto: entra por el
+      mínimo estricto, con dos vías, y su vía C depende de UN local relevado por la MISMA
+      fuente que sostiene la mitad de su vía E. El número de arriba es lo que la base ve
+      en el barrio entero; si esa densidad no se sostiene, la ficha hay que revisarla.
+
+====================================================================================================
+  Google Places: 0 requests · ninguna geometría publicada modificada
+====================================================================================================
+
