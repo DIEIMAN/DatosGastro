@@ -1,0 +1,144 @@
+CONTROL · ¿el relevamiento ve lo que la curaduría ya había visto?
+====================================================================================================
+
+  32 candidatos de la matriz V2 contra 124 polos del borrador (12688 locales asignados).
+
+  APARECE = algún polo del borrador pone, dentro del territorio que la propia curaduría le
+  declaró, más locales que el umbral. El territorio sale de `barrios_asociados` de la base
+  de delimitación; para los candidatos de tipo avenida o corredor, de la calle nombrada.
+
+----------------------------------------------------------------------------------------------------
+  DOS SONDAS Y DOS UMBRALES, porque no miden sobre la misma base
+
+      sonda de BARRIO  → umbral 40 locales (el min_cluster_size del borrador)
+      sonda de CALLE   → umbral 20 locales, porque sólo ve los que tienen
+                          dirección: 50.0% de los asignados. Pedirle 40
+                          sobre una avenida sería pedirle el doble que a un barrio, y el
+                          sesgo caería justo sobre los candidatos descartados, que son
+                          casi todos avenidas.
+
+      SIN RESOLUCIÓN   → 6 candidatos: son subzonas dentro de un barrio y la sonda de barrio
+                          devolvería el barrio entero. Sus bordes NO se usan como sonda:
+                          contar los locales sobre las avenidas que delimitan Palermo Soho
+                          mediría el perímetro y no la zona.
+
+----------------------------------------------------------------------------------------------------
+  EL RESULTADO, por decisión de la curaduría
+
+  grupo                               cand.  aparecen   no  sin resol.
+  incluir_* (los que entraron)           20        13    3           4
+  mencionar_en_anexo                      7         5    1           1
+  no_incluir_aun (los descartados)        5         0    4           1
+  TOTAL                                  32        18    8           6
+
+----------------------------------------------------------------------------------------------------
+  CANDIDATO POR CANDIDATO
+
+  ── INCLUIR ──
+    ??  Palermo Soho                               [sin resolución]
+         DONDE_ESTA_SOHO.txt lo resolvió directo: Soho es P091 (728 locales).
+    ??  Palermo Hollywood                          [sin resolución]
+         DONDE_ESTA_SOHO.txt: Hollywood es P078 (585 locales).
+    ??  Las Canitas                                [sin resolución]
+         DONDE_ESTA_SOHO.txt: Cañitas está dentro de P065 (Báez 17/17).
+    SÍ  Villa Crespo                               P081 (74); P077 (60); P063 (59); P074 (58); P043 (47); P080 (44); P079 (43)
+    SÍ  Puerto Madero                              P030 (117)
+    SÍ  San Telmo                                  P103 (278)
+    SÍ  Chacarita                                  P068 (136); P075 (59)
+    ??  Barrio Chino                               [sin resolución]
+         Subzona de Belgrano sin calle interior declarada en la delimitación.
+    SÍ  Recoleta                                   P106 (145); P098 (115); P110 (112); P104 (93); P076 (81); P097 (53); P095 (52); P105 (48); P096 (41)
+    SÍ  Caballito                                  P056 (210); P063 (123); P053 (119); P057 (77); P047 (53); P050 (42); P049 (40)
+    NO  Costanera Norte                            [calle]
+         territorio: BELGRANO; NUNEZ; PALERMO; RECOLETA · calle Costanera Rafael Obligado — 17 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R07 tiene encima: P001
+    SÍ  Microcentro y Centro                       P116 (187); P111 (170); P113 (164); P118 (136); P117 (131); P108 (129); P100 (116); P115 (65); P114 (64); P103 (62); P112 (58); P094 (51)
+    SÍ  Avenida Corrientes                         P113 (27); P093 (20)
+    SÍ  Devoto                                     P016 (105); P018-1 (62); P038 (40)
+    NO  DoHo / Donado-Holmberg                     [calle]
+         territorio: BELGRANO; VILLA URQUIZA · calle Donado; Holmberg; Echeverria; Virrey del Pino — 38 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R16 tiene encima: P045; P039
+    SÍ  Villa Urquiza                              P046 (286); P039 (41)
+    NO  Paternal                                   [barrio]
+         territorio: PATERNAL — 37 locales asignados, ninguno con 40+ en un mismo polo
+         su envolvente R21 tiene encima: P043
+    SÍ  Colegiales                                 P048 (134); P071 (44)
+    SÍ  Monserrat                                  P111 (154); P108 (129); P100 (92); P103 (62); P094 (51)
+    SÍ  Retiro                                     P118 (114); P115 (65)
+
+  ── ANEXO ──
+    ??  Belgrano R                                 [sin resolución]
+         Sub-barrio sin delimitación propia: la sonda de barrio da todo Belgrano.
+    NO  Avenida Caseros / Barracas                 [calle]
+         territorio: BARRACAS · calle Caseros — 2 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R11 tiene encima: P051; P102
+    SÍ  Abasto                                     P093 (169); P101+P099 (100); P107 (67); P084 (64); P106 (53); P055 (40)
+    SÍ  Nuevo Bajo en Retiro / Esmeralda y Paraguay P118 (20)
+    SÍ  Flores                                     P052 (56); P061 (54); P014 (49); P059 (48); P058 (43); P060 (43)
+    SÍ  Floresta                                   P052 (61); P041 (53)
+    SÍ  Parque Patricios                           P027 (130)
+
+  ── NO INCLUIR AUN ──
+    ??  Bajo Belgrano                              [sin resolución]
+         Subzona de Belgrano sin calle interior declarada en la delimitación.
+    NO  Avenida Boedo                              [calle]
+         territorio: BOEDO · calle Boedo — 17 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R14 tiene encima: P027; P062; P029
+    NO  Federico Lacroze / Libertador a Cabildo    [calle]
+         territorio: BELGRANO; COLEGIALES · calle Federico Lacroze — 26 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R19 tiene encima: P065; P068; P072-2; P071
+    NO  Parque Saavedra / Garcia del Rio           [calle]
+         territorio: SAAVEDRA · calle Garcia del Rio — 2 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R20 tiene encima: P072-1
+    NO  Villa Pueyrredon / Av. San Martin          [calle]
+         territorio: VILLA PUEYRREDON · calle San Martin — 0 locales asignados, ninguno con 20+ en un mismo polo
+         su envolvente R22 tiene encima: P038; P028; P023; P035
+
+----------------------------------------------------------------------------------------------------
+  SENSIBILIDAD AL UMBRAL · un resultado que se da vuelta con el umbral no es un resultado
+
+      Sobre los 17 candidatos con sonda de barrio:
+          umbral  20 locales → aparecen 17 de 17
+          umbral  40 locales → aparecen 16 de 17
+          umbral  80 locales → aparecen 13 de 17
+
+----------------------------------------------------------------------------------------------------
+  LA OTRA LECTURA DE «LOS 22»: las envolventes publicadas del Atlas
+
+      22 envolventes referidas por los 32 candidatos; 22 tienen al menos un polo del borrador encima.
+      sin ningún polo encima: ninguna
+
+----------------------------------------------------------------------------------------------------
+  LA LECTURA, contra lo declarado antes de correr
+
+      · De los 20 con decisión `incluir_*`: **13 aparecen**, 3 no, y 4
+        quedan sin resolución. Tres de esos cuatro —Soho, Hollywood, Cañitas— ya los había
+        resuelto `DONDE_ESTA_SOHO.txt` de otra forma y aparecen: contándolos, 16 de 20.
+      · De las 22 envolventes publicadas, **22 tienen polos encima**. Por esta lectura de
+        «los 22», la respuesta es completa.
+      · De los 5 `no_incluir_aun` —los descartados duros—: **0 aparecen.**
+      · De los 7 de anexo: 5 aparecen.
+
+      La rama que se cumple es la SEGUNDA, y con una salvedad:
+
+          «la mayoría aparece y ningún descartado → sirve para CONFIRMAR, no para
+           DESCUBRIR».
+
+      Ningún candidato descartado a propósito tiene evidencia medida que lo rescate. Ése era
+      el hallazgo más valioso posible y **no está**: los cinco que la curaduría dejó afuera
+      siguen sin concentración propia.
+
+      La salvedad es el anexo. Cinco de siete aparecen, y dos con volumen grande —Abasto
+      con 169 locales en un polo, Parque Patricios con 130—. Si «descartado» incluyera al
+      anexo, la lectura sería la primera. No se decide acá: son dos grupos distintos y la
+      diferencia entre ellos es de la curaduría, no de la medición.
+
+      Y LO QUE NINGÚN «NO» SIGNIFICA: los 8 que no aparecen tienen polos sobre su
+      envolvente publicada. El instrumento no está ciego ahí — encuentra concentración,
+      pero no recortada como el candidato. Un corredor de avenida de 17 locales con
+      dirección no puede formar un polo cuyo mínimo es 40.
+
+====================================================================================================
+  18 de 32 candidatos aparecen como concentración medida. Google Places: 0 requests.
+====================================================================================================
+
