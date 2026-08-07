@@ -1,0 +1,40 @@
+RONDA 4 · LA VÍA D RECOMPUTADA CONTRA LA GEOMETRÍA NUEVA DE E02 Y E07
+====================================================================================================
+
+  Sólo la vía D. A, B, C y F se leen de la ronda 3 sin recalcular.
+  Google Places: 0 requests.
+
+      enclave    ha ronda 3  ha ronda 4   computa
+      E01              28.8        28.8   si
+      E02              17.6        30.7   si  ←
+      E03              30.0        30.1   si
+      E04              10.6        10.6   si
+      E05              56.5        56.5   si
+      E06              59.2        59.2   no
+      E07             131.7        15.6   si  ←
+      E09              30.8        30.8   si
+
+----------------------------------------------------------------------------------------------------
+  LAS 94 FILAS
+
+      vía D abierta:  12 → 10
+      filas que cambian de estado: 2
+            PGR_P017                  P017 · Liniers              abierta → no_medida   E07 → 
+            PGR_P020                  P020 · Villa Luro           abierta → no_medida   E07 → 
+
+      filas cuyo NÚMERO de vías abiertas cambia: 2
+            PGR_P017                  P017 · Liniers              2 → 1
+            PGR_P020                  P020 · Villa Luro           3 → 2
+
+----------------------------------------------------------------------------------------------------
+  LAS 22 ZONAS
+
+      vía D abierta:  4 → 4
+      filas que cambian de estado: 0
+
+      filas cuyo NÚMERO de vías abiertas cambia: 0
+
+====================================================================================================
+  la ronda 3 queda intacta; esto escribe seis_vias_94_filas_r4.csv y seis_vias_22_zonas_r4.csv
+====================================================================================================
+

@@ -1,0 +1,142 @@
+RONDA 4 · E07 LINIERS CON LA DELIMITACIÓN DE FUENTE, E02 CON NÚCLEO Y CORREDOR
+====================================================================================================
+
+  Se reescriben DOS de los quince enclaves. Los otros trece se copian de la ronda 3.
+  Google Places: 0 requests. USIG sí, una consulta por dirección y cacheada.
+
+----------------------------------------------------------------------------------------------------
+  E07 LINIERS · EL EJE QUE DICEN LAS FUENTES, Y CUÁNTO MIDE
+
+      LA CALLE, CON LA TRAMPA DE LA RONDA 3 YA RESUELTA (largos dentro de Liniers)
+            «FALCON, RAMON L.,CNEL.»         1,728 m   la del Mercado Andino · es ÉSTA
+            «FALCON, RAMON L.,CNEL. AV.»       128 m   la que usaba la ronda 1: 900 números al oeste
+            «BOSCH, VENTURA»                 1,232 m   la cuarta calle verdadera, en Liniers
+            «MONTIEL» (Liniers)              1,901 m   NO entra: una sola fuente, sin fecha ni firma
+
+      LA MEDICIÓN, CONTRA LA DE LA FUENTE
+
+            eje sobre José León Suárez, Ramón Falcón → Ventura Bosch: 284.0 m
+            la misma distancia en línea recta entre los dos cruces:   284.0 m
+            lo que mide Ciocoletto (2019), «aproximadamente»:         300 m
+            lo que midió cowork con USIG:                             285 m
+
+            diferencia contra cowork: -1.0 m (0.4 %)
+            diferencia contra el paper: -16.0 m (5.3 %)
+
+            Las dos mediciones no son el mismo objeto y conviene decirlo: USIG devuelve la
+            distancia entre dos PUNTOS de altura, y esto mide la LONGITUD DEL EJE del
+            callejero entre dos cruces. Sobre una calle recta las dos convergen; el número
+            del paper es «aproximadamente 300 m» y no admite más precisión que ésa.
+
+----------------------------------------------------------------------------------------------------
+  E02 BARRIO CHINO · EL NÚCLEO MEDIDO Y EL CORREDOR DEL VIADUCTO
+
+      EL NÚCLEO · Arribeños entre Juramento y Olazábal
+            255.2 m de eje  (cowork con USIG: 256 m · diferencia -0.8 m)
+            Dos cuadras, con Mendoza en el medio. La cifra se sostiene.
+
+      EL CORREDOR · la traza del viaducto del Mitre, del callejero oficial
+            7 cruces marcados `Tren Elevado` entre MONROE y ECHEVERRIA, en orden:
+                  MONROE
+                  MONROE
+                  BLANCO ENCALADA
+                  OLAZABAL
+                  MENDOZA
+                  JURAMENTO AV.
+                  ECHEVERRIA
+            traza: 720 m
+
+            rumbo del núcleo:   145.3°
+            rumbo del corredor: 126.2°
+            ángulo entre los dos: 19.1°
+
+            **CORRECCIÓN A LA DESCRIPCIÓN.** El corredor NO es perpendicular al eje
+            histórico: es casi PARALELO. Arribeños corre al lado de las vías, no las
+            cruza —por eso el núcleo está «bajo el viaducto» sin cruzarlo—, y el paseo
+            que corre debajo del viaducto corre junto a Arribeños, desplazado. La forma
+            que sale no es una cruz: son dos bandas paralelas separadas por la traza.
+
+            núcleo   14.7 ha  ·  corredor   28.5 ha  ·  unión   30.7 ha
+            se solapan 12.5 ha, el 85 % del núcleo
+            (buffer declarado de 150 m, una cuadra a cada lado, el mismo de los quince)
+
+----------------------------------------------------------------------------------------------------
+  LOS 57 ESTABLECIMIENTOS · dónde caen, que es lo que decide la forma
+
+      E02 · 51 establecimientos del Barrio Chino
+
+            zona                   n   qué son
+            nucleo                39   dentro de las dos cuadras de Arribeños, ±150 m
+            corredor               6   fuera del núcleo, sobre el viaducto, ±150 m
+            afuera                 4   fuera de los dos
+            sin_geocodificar       2   USIG no los resuelve o no tienen altura
+
+      La precedencia está declarada: el núcleo gana. Un establecimiento a 80 m del eje de
+      Arribeños y a 90 m de la traza cuenta como núcleo, no como corredor. Sin esa regla
+      las dos bandas se solapan y el reparto no significa nada.
+
+      LOS DE «CORREDOR»:
+            Cochino                         Blanco Encalada         1800             162 m del núcleo ·    28 m del corredor
+            Sura                            Blanco Encalada         1800             162 m del núcleo ·    28 m del corredor
+            Dokdo                           Blanco Encalada         1820             191 m del núcleo ·     7 m del corredor
+            Tyta Patisserie                 11 de Septiembre de 18  2451             233 m del núcleo ·    54 m del corredor
+            Las Carnitas                    Monroe                  1785             275 m del núcleo ·    95 m del corredor
+            Garbis                          Monroe                  1799             281 m del núcleo ·    77 m del corredor
+
+      LOS DE «AFUERA»:
+            Ma La Tang                      Mendoza                 1583             159 m del núcleo ·   218 m del corredor
+            Shanghai Express                Av. del Libertador      6023             279 m del núcleo ·   287 m del corredor
+            Gokana Omakase                  Monroe                  1625             279 m del núcleo ·   268 m del corredor
+            Sachi | The Handroll House      F. D. Roosevelt         1702             368 m del núcleo ·   200 m del corredor
+
+      LOS DE «SIN_GEOCODIFICAR»:
+            Ultramarinos                    Pasaje Arribenos        1980          — USIG NO resuelve «Pasaje Arribenos 1980»
+            Templo Chong Kuan               Montaneses              s/altura      — sin altura en la fuente
+
+      LA AÑADA CONTRA LA ZONA · lo reciente, ¿está en el corredor?
+
+            añada             núcleo  corredor  afuera   total
+            2024-2026             17         4       4      25
+            2018-2023              6         2       0       8
+            hasta 2017             9         0       0       9
+            sin fecha              7         0       0       7
+
+      EL RADIO, MEDIDO CONTRA LAS DOS BANDAS
+
+            la cuadra de Belgrano, medida acá: 128 m (el núcleo son dos)
+            radio de cuatro manzanas: 510 m → 81.7 ha
+            núcleo + corredor:                  30.7 ha
+
+            el radio contiene    45 de 49 puertas geocodificadas, en 81.7 ha
+            las dos bandas       45 de 49, en 30.7 ha
+
+            Por puerta contenida: el radio gasta 1.82 ha, las bandas 0.68 ha.
+
+      E07 · 6 establecimientos de Liniers
+            Salteneria El Conejo            Jose Leon Suarez        216           dentro_E07         4 m del eje
+            Pollo Broaster                  Ibarrola                7239          dentro_E07        44 m del eje
+            Restaurante Miriam              Ibarrola                7184          dentro_E07        36 m del eje
+            Pollo Copacabana                Ibarrola                7276 y 7291   dentro_E07        98 m del eje
+            Rico Pollo                      Ibarrola                7193          dentro_E07        16 m del eje
+            JAMUY                           Jose Leon Suarez        al 100        dentro_E07        11 m del eje
+
+      6 de 6 caen dentro del eje con su buffer. Las cinco puertas
+      de Ibarrola no necesitan un eje propio: Ibarrola está a una cuadra de José León
+      Suárez y el buffer declarado de 150 m ya las contiene. Agregarle a E07 las tres
+      transversales enteras habría sido volver al cuadrante por otra puerta.
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA · lo que cambia y lo que no
+
+      E02   eje      385 m →      975 m   ·     17.6 ha →   30.7 ha
+      E07   eje    4,981 m →      284 m   ·    131.7 ha →   15.6 ha
+
+      E07 se achica porque deja de ser tres calles enteras dentro de Liniers y pasa a ser
+      el eje de 300 m que la fuente arbitrada mide. La ronda 3 no lo tenía inflado por
+      error de cálculo: lo tenía inflado porque la consigna no daba cabeceras y la regla
+      «sin cabecera entra entera» hizo lo que tenía que hacer con lo que había.
+
+====================================================================================================
+  E02 y E07 reescritos · 57 puertas, 55 geocodificadas · USIG: 0 consultas nuevas · Places: 0 requests
+====================================================================================================
+

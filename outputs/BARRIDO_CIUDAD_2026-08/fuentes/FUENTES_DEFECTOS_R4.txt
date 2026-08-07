@@ -1,0 +1,154 @@
+RONDA 4 · FUENTES CON DEFECTO ESTRUCTURAL, Y TRES DATOS DE VIGENCIA
+====================================================================================================
+
+  0 consultas a cualquier servicio. Todo sale de lo que ya está en disco.
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA · CUATRO FUENTES CON DEFECTO ESTRUCTURAL
+
+      FD-01 · cronista.com
+            clase        re-sellado masivo de archivo
+            se detecta   dominio = cronista.com Y fecha_actualizacion = 2025-09-24
+            PROHÍBE      leer la fecha de actualización como fecha de verificación del dato
+            sigue val.   el contenido, con la añada de su fecha de ORIGEN
+
+      FD-02 · catálogo consolidado de Bares Notables (Res. MCGC 3758/24)
+            clase        atribución territorial errónea
+            se detecta   campo barrio o comuna del catálogo, para cualquier entrada
+            PROHÍBE      usar el barrio/comuna del catálogo como dato territorial sin cotejar USIG
+            sigue val.   la declaratoria, el nombre y la dirección postal
+
+      FD-03 · PDF del catálogo servido bajo la URL de la Res. MCGC 3758/24
+            clase        contenido mutable bajo cita estable
+            se detecta   cita del catálogo sin SHA-256 ni fecha de descarga
+            PROHÍBE      citar «el catálogo» sin decir cuál de los contenidos
+            sigue val.   cada contenido, citado por su hash y su identificador interno
+
+      FD-04 · Time Out Buenos Aires
+            clase        atribución territorial errónea
+            se detecta   campo barrio de una nota de Time Out
+            PROHÍBE      usar el barrio que declara Time Out como dato territorial
+            sigue val.   la distinción editorial y la dirección de puerta
+
+----------------------------------------------------------------------------------------------------
+  DÓNDE PEGA FD-01 EN LO NUESTRO
+
+      5 establecimientos del Barrio Chino citados de El Cronista 26/08/2021.
+            Fujisan
+            China Rose
+            Dogg
+            Las Carnitas
+            Garbis
+
+      6 hitos de la capa salen de cronista.com y NO tienen fecha de
+      actualización registrada por nosotros:
+            DIR-006   Pin Pun                       Pizzería emblemática      Almagro
+            DIR-009   La Mezzetta                   Pizzería emblemática      Villa Ortuzar
+            DIR-015   San Carlos                    Pizzería emblemática      Caballito
+            DIR-017   Gran Pizzeria Jose            Pizzería emblemática      Villa Devoto
+            DIR-020   San Antonio                   Pizzería emblemática      Boedo
+            DIR-025   Napoli                        Heladería histórica       San Cristobal
+
+      Éstos quedan `pendiente_de_comprobacion`, no descartados. La regla se evalúa sobre
+      un campo que no tenemos: registrar la fecha de actualización de esas seis notas es
+      trabajo de la ronda que viene, y es barato comparado con lo que decide.
+
+      10 citas de la evidencia documental invocan a El Cronista con la
+      actualización de 2025 como si fuera añada:
+            enclaves_establecimientos_E02_E07.csv  E02 Fujisan            nota
+                  Declarado 'Sitio de Interes Cultural de la Ciudad' por el GCBA: dato factual, NO computa como 
+            enclaves_establecimientos_E02_E07.csv  E02 China Rose         nota
+                  VER ALERTA EL CRONISTA 24/09/2025.
+            enclaves_establecimientos_E02_E07.csv  E02 Dogg               nota
+                  VER ALERTA EL CRONISTA 24/09/2025.
+            enclaves_establecimientos_E02_E07.csv  E02 Las Carnitas       nota
+                  No asiatico DENTRO del poligono. VER ALERTA EL CRONISTA 24/09/2025.
+            enclaves_establecimientos_E02_E07.csv  E02 Garbis             nota
+                  No asiatico DENTRO del poligono. VER ALERTA EL CRONISTA 24/09/2025.
+            seis_vias_ronda_3_norte.csv           Z46 Retiro             alerta_vigencia
+                  CRITICA. El Mercado de los Carruajes (Av. Leandro N. Alem 852) CERRO a fines de abril de 2025,
+            via_E_22_referencias.csv              R03 San Telmo          via_E_reconocimiento
+                  La Nacion (2026), El Cronista (2021, act. 2025) y Time Out BA (2025, Mercado de San Telmo) tra
+            via_E_94_filas.csv                    PG004_SAN_TELMO San T  via_E_reconocimiento
+                  La Nacion (2026), El Cronista (2021, act. 2025) y Time Out (2025) tratan a San Telmo como circ
+            vigencia_verificada_ronda_2.csv       Casa Watson Vuelta de  por_que_importa
+                  DESCARTADO POR RE-SELLADO: El Cronista publico la nota el 28/07/2022 y la 'actualizo' el 24/09
+            vigencia_verificada_ronda_2.csv       Bar Don Juan (catalog  por_que_importa
+                  Nada la inclina DENTRO de ventana; fuera de ventana el cuadro es bueno. La probabilidad real d
+
+      La que más pesa es R03 San Telmo, porque su vía E cuenta a El Cronista «2021, act.
+      2025» como uno de los grupos independientes. Con FD-01 aplicado, ese grupo tiene
+      añada 2021, no 2025 — y R03 ya venía con cero vías abiertas.
+
+      Y 1 FALSO(S) POSITIVO(S), que quedan en la tabla marcados como tales
+      para que nadie los aplique de más:
+            via_E_22_referencias.csv              R15 Devoto             via_E_fuentes
+                  La Nacion / Que Sale 24/06/2025 | Time Out BA 24/09/2025 | El Cronista 'Por que Villa Devoto e
+            R15 Villa Devoto cita «Time Out BA 24/09/2025»: misma fecha, OTRO medio.
+            FD-01 es dominio + fecha, no fecha sola. Time Out tiene su propio defecto
+            (FD-04) y es de barrio, no de fecha.
+
+      Y EL CONTRAEJEMPLO, que es el que sostiene que la marca sea por fecha y no por medio:
+            la nota de El Cronista sobre Los Laureles del 05/08/2026 está publicada 12:33
+            y actualizada 12:34. Un minuto. Eso es una corrección de redacción, no un
+            re-sellado, y esa nota sigue contando. FD-01 no dice «El Cronista no sirve»:
+            dice que una fecha concreta de actualización no acredita nada.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 5 · LOS DOS DATOS SUELTOS DEL BARRIO CHINO
+
+      Todos Contentos     dudoso_probablemente_abierto    cargado
+            zona: nucleo · cerró en julio de 2020 tras más de 35 años, con 14 empleados (iProfesional 04/07/2020), 
+
+      Hong Kong Style     cerrado                         cargado
+            zona: nucleo · cerró en mayo de 2020 tras 20 años (iProfesional 04/07/2020). Sin ninguna evidencia de r
+
+      Dragon Porteno      cerrado                         cargado
+            zona: nucleo · cerró con 8 despidos (iProfesional 04/07/2020). Sin evidencia de reapertura.
+
+      SOBRE EL VOCABULARIO, que no es un detalle: `dudoso_probablemente_abierto` es un
+      valor que la capa de HITOS no tiene. Su vocabulario es si · no · en_disputa ·
+      dudosa · sin_verificar, y `dudosa` no dice hacia qué lado se duda. Acá el estado
+      viaja partido en dos campos —`vigencia` = dudoso_probablemente_abierto y
+      `sentido_de_la_duda` = probablemente_abierto— para que si mañana entra a la capa
+      de hitos se pliegue a `dudosa` sin perder la dirección de la duda.
+
+      Y los dos cerrados no son simétricos con El Tokio: El Tokio y Todos Contentos
+      reabrieron sin que ningún listado lo registrara. Hong Kong Style y Dragón Porteño
+      cierran con la MISMA nota de iProfesional y sin nada después. Que la fuente del
+      cierre sea la misma para los tres es justamente el motivo para no leer el
+      silencio posterior como confirmación: la nota de 2020 no vuelve a mirar.
+
+----------------------------------------------------------------------------------------------------
+  EL CONFLICTO DE BOCA A BOCA · confirmado, y sin resolver
+
+      capa                                id            dirección                         nota
+      hitos_capa_2026_r3.csv              H004          Av. Benito Perez Galdos 201       nan USIG sobre la dirección del Boletín
+      bares_notables_altas_2026-08-03.csv —             Av. Benito Perez Galdos 207        
+      base/local.csv                      LOC003143     PEREZ GALDOS, BENITO AV. 102      F02 OTRO LOCAL, misma calle
+      base/local.csv                      LOC013582     Benito Pérez Galdós 207           OVERTURE Boca a Boca Restaurant
+
+      CONFIRMADO: la lista de las doce altas dice 207 y la capa de hitos tiene 201, que es
+      la altura del Boletín Oficial. La capa ya traía la discrepancia anotada —«prensa
+      consigna altura 207»—, así que el conflicto no es nuevo: es el mismo, y sigue
+      abierto.
+
+      Lo que agrega esta ronda es que la base gastronómica tiene las DOS alturas como dos
+      registros distintos y de fuentes distintas, y ninguna de las dos las reconcilia.
+
+      NO SE RESUELVE ACÁ, y el motivo es que las dos fuentes son del mismo rango: el
+      Boletín dice una cosa y la prensa de la declaratoria dice otra, y no tenemos la
+      resolución de las altas —que es la que zanjaría— porque sigue sin localizarse.
+
+      LO QUE SÍ SE PUEDE DECIR CON UN NÚMERO: el punto del 201 (USIG sobre el Boletín)
+      y el punto del 207 (Overture) están a 2.6 m. Es la misma puerta con
+      dos alturas publicadas, no dos locales. El conflicto es documental y no mueve
+      ninguna medición: mismo polo, mismo barrio, misma celda de la matriz.
+
+      Queda como `conflicto_direccion` y se verifica en campo, que es de las pocas cosas
+      que una verificación de campo resuelve mejor que cualquier documento.
+
+====================================================================================================
+  4 fuentes con defecto · 22 marcas aplicadas · 3 estados de vigencia cargados · 0 consultas
+====================================================================================================
+

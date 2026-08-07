@@ -1,0 +1,19 @@
+polo_id,nombre_polo,hito_id,hito,tipo,direccion,barrio_declarado,estado_del_hito,vigencia_fecha,es_patrimonio_normativo,via_B_soporte,n_hitos
+PG004_SAN_TELMO,San Telmo,H009,Bar El Federal,Bar Notable,Carlos Calvo 595,,sin_verificar,,False,sin_verificar,1
+PG010_AVENIDA_CASEROS_BARRACAS,Avenida Caseros / Barracas,H019,Britanico,Bar Notable,Brasil 399,,sin_verificar,,False,sin_verificar,1
+PG017_VILLA_URQUIZA,Villa Urquiza,H023,Cafe de la U,Bar Notable,Av. Triunvirato 4801,,sin_verificar,,False,sin_verificar,1
+PGF2_FLORES,Flores,H065,LA FARMACIA,Bar Notable,Av. Directorio 2400,,sin_verificar,,False,sin_verificar,1
+PGR_P004,P004 · Villa Lugano,H199,Yiyo el Zeneize,Mercado/patio,Av. Eva Peron 4402,Parque Avellaneda,sin_verificar,,True,sin_verificar,1
+PGR_P013,P013 · Mataderos,H007,Bar del Glorias,Bar Notable,Andalgala 1982,,sin_verificar,,False,sin_verificar,1
+PGR_P021,P021 · Liniers,DIR-023,El Ciervo,Heladería histórica,Carhue 124,Liniers,sin_verificar,,False,sin_verificar,1
+PGR_P032,P032 · La Boca,H069,LA PERLA,Bar Notable,Av. Don Pedro de Mendoza 1899,,sin_verificar,,False,sin_verificar,1
+PGR_P044,P044 · San Cristobal,DIR-024,Saverio Helados,Heladería histórica,Av. San Juan 2809,San Cristobal,sin_verificar,,False,sin_verificar,1
+PGR_P066,P066 · Barracas,DIR-014,Los Campeones,Pizzería emblemática,Av. Montes de Oca 856,Barracas,sin_verificar,,False,sin_verificar,1
+PGR_P084,P084 · Balvanera,H071,LAS VIOLETAS,Bar Notable,Av. Rivadavia 3899,,sin_verificar,,False,sin_verificar,1
+PGR_P088,P088 · Palermo,MIC-014,La Alacena Trattoria,MICHELIN,Gascón 1401,Palermo,sin_verificar,,False,sin_verificar,1
+PGR_P092,P092 · Palermo,H085,Varela Varelita,Bar Notable,Av. Scalabrini Ortiz 2102,,sin_verificar,,False,sin_verificar,1
+PGR_P101+P099,P101+P099 · Balvanera,H024,CAFE DE LOS ANGELITOS,Bar Notable,Av. Rivadavia 2100,,sin_verificar,,False,sin_verificar,1
+PGR_P008,P008 · Barracas,H076,Los Laureles,Bar Notable,Av. Iriarte 2290,,en_disputa,2026-08-05,False,en_disputa,1
+PG019_AVENIDA_FEDERICO_LACROZE_DESDE_LIBERTADOR_,Federico Lacroze / Libertador a Cabildo,H010,Bar Conde,Bar Notable,Federico Lacroze 3193,,si,2026-07-29,False,activo,1
+PGR_P025-2,P025-2 · Monte Castro,DIR-002,El Fortin,Pizzería emblemática,,Monte Castro,si,2025-08-26,False,activo,1
+PGR_P034,P034 · Monte Castro,H055,El Tokio,Bar Notable,Alvarez Jonte 3550,,si,2026-08-05,False,activo,1

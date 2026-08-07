@@ -1,0 +1,109 @@
+RONDA 4 · PRIORIDAD DE VERIFICACIÓN · QUÉ HITO MUEVE LA MATRIZ
+====================================================================================================
+
+  capa: 220 hitos · 215 con punto · 211 en algún estado pendiente
+  No se verifica nada acá: se ordena el trabajo. 0 consultas a cualquier servicio.
+
+----------------------------------------------------------------------------------------------------
+  DE DÓNDE SALE EL CUELLO DE BOTELLA
+
+      filas de las 94 con al menos un hito adentro: 44
+            sin_verificar     36
+            activo             7
+            en_disputa         1
+
+----------------------------------------------------------------------------------------------------
+  LISTA 1 · LAS FRÁGILES · la vía B de la fila cuelga de UN SOLO hito
+
+      18 filas de las 44 con hitos dependen de uno solo.
+      De ésas, 15 tienen ese único hito sin resolver: verificarlo decide la fila entera,
+      en cualquiera de los dos sentidos. Es el caso P008 / Los Laureles, que ya nos costó
+      una reversión.
+
+      fila                    polo                      hito                          estado         qué pasa si
+      PG004_SAN_TELMO         San Telmo                 Bar El Federal                sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PG010_AVENIDA_CASEROS_B Avenida Caseros / Barraca Britanico                     sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PG017_VILLA_URQUIZA     Villa Urquiza             Cafe de la U                  sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGF2_FLORES             Flores                    LA FARMACIA                   sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P004                P004 · Villa Lugano       Yiyo el Zeneize               sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P013                P013 · Mataderos          Bar del Glorias               sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P021                P021 · Liniers            El Ciervo                     sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P032                P032 · La Boca            LA PERLA                      sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P044                P044 · San Cristobal      Saverio Helados               sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P066                P066 · Barracas           Los Campeones                 sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P084                P084 · Balvanera          LAS VIOLETAS                  sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P088                P088 · Palermo            La Alacena Trattoria          sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P092                P092 · Palermo            Varela Varelita               sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P101+P099           P101+P099 · Balvanera     CAFE DE LOS ANGELITOS         sin_verificar  abierto→activo · cerrado→EXTINGUIDA
+      PGR_P008                P008 · Barracas           Los Laureles                  en_disputa     abierto→activo · cerrado→EXTINGUIDA
+      PG019_AVENIDA_FEDERICO_ Federico Lacroze / Libert Bar Conde                     si             ya resuelta (activo)
+      PGR_P025-2              P025-2 · Monte Castro     El Fortin                     si             ya resuelta (activo)
+      PGR_P034                P034 · Monte Castro       El Tokio                      si             ya resuelta (activo)
+
+      Y el escalón de al lado, que la consigna no pide y conviene tener: 0 filas
+      con más de un hito donde queda UN SOLO pendiente y ninguno abierto. Verificar ése
+      cierra la fila sin margen: si da cerrado, la fila queda extinguida completa.
+
+----------------------------------------------------------------------------------------------------
+  LISTA 2 · LOS QUE RINDEN · el hito que está adentro de más filas
+
+      206 hitos pendientes en total, de los cuales 134 caen adentro de alguna de las 94.
+      Los otros 72 no tocan ninguna fila: verificarlos no mueve la matriz, y por eso no encabezan la ronda.
+
+      hito                            barrio             filas zonas  abre cierra   estado        tipo
+      Tancat                          Retiro                 3     2     2      0   sin_verificar Restaurante Icónico
+      Confiteria Saint Moritz         nan                    3     2     2      0   sin_verificar Bar Notable
+      FLORIDA GARDEN                  nan                    3     2     2      0   sin_verificar Bar Notable
+      PLAZA BAR                       nan                    3     2     2      0   sin_verificar Bar Notable
+      El Imparcial                    Monserrat              2     1     2      0   sin_verificar Restaurante Icónico
+      36 BILLARES                     nan                    2     1     2      0   sin_verificar Bar Notable
+      Café Tortoni                    nan                    2     1     2      0   sin_verificar Bar Notable
+      El Querandi                     nan                    2     1     2      0   sin_verificar Bar Notable
+      LA PUERTO RICO                  nan                    2     1     2      0   sin_verificar Bar Notable
+      Zum Edelweiss                   San Nicolas            2     2     1      0   sin_verificar Restaurante Icónico
+      LA GIRALDA                      nan                    2     2     1      0   sin_verificar Bar Notable
+      Petit Colón                     nan                    2     2     1      0   sin_verificar Bar Notable
+      Guerrin                         San Nicolas            2     2     1      0   sin_verificar Pizzería emblemática
+      ANAFE                           Colegiales             2     0     1      0   sin_verificar MICHELIN
+      Mercado Bonpland                nan                    1     1     1      0   sin_verificar Mercado/patio
+      Mercado del Progreso            nan                    1     1     1      0   sin_verificar Mercado/patio
+      Patio Costanera Norte           Belgrano               1     1     1      0   sin_verificar Mercado/patio
+      A Fuego Fuerte                  Palermo                1     1     1      0   sin_verificar MICHELIN
+      Alcanfor                        Villa Crespo           1     1     1      0   sin_verificar MICHELIN
+      Anchoíta                        Chacarita              1     1     1      0   sin_verificar MICHELIN
+      Aramburu                        Recoleta               1     1     1      0   sin_verificar MICHELIN
+      Bis Bistró                      Recoleta               1     1     1      0   sin_verificar MICHELIN
+      Cabaña Las Lilas                Puerto Madero          1     1     1      0   sin_verificar MICHELIN
+      Casa Veltri                     Recoleta               1     1     1      0   sin_verificar MICHELIN
+      Crizia                          Palermo                1     1     1      0   sin_verificar MICHELIN
+      Don Julio                       Palermo                1     1     1      0   sin_verificar MICHELIN
+      El Preferido de Palermo         Palermo                1     1     1      0   sin_verificar MICHELIN
+      Fervor                          Recoleta               1     1     1      0   sin_verificar MICHELIN
+      Fico                            Villa Crespo           1     1     1      0   sin_verificar MICHELIN
+      Fogón Asado                     Palermo                1     1     1      0   sin_verificar MICHELIN
+
+      `abre`   = filas hoy pendientes que pasarían a `activo` con un solo «está abierto».
+      `cierra` = filas que quedarían RESUELTAS con un «está cerrado», porque era el último
+                 pendiente que les quedaba. Las dos columnas no se suman: son dos futuros
+                 distintos del mismo hito.
+
+----------------------------------------------------------------------------------------------------
+  EL ORDEN DE ATAQUE QUE SALE DE CRUZAR LAS DOS LISTAS
+
+      TANDA A · 15 hitos que son el ÚNICO de su fila. Cada verificación
+                decide una fila completa, para los dos lados. Máxima consecuencia por
+                consulta, y es donde está el riesgo de repetir la reversión de P008.
+      TANDA B · 14 hitos que están en DOS O MÁS filas. Una consulta, varias
+                celdas. Rinden aunque no decidan solos.
+      TANDA C · 105 hitos en una sola fila que comparten con otros. Se
+                verifican después: mueven la matriz sólo si el resultado es «abierto».
+      FUERA   · 72 hitos pendientes que no caen en ninguna fila. No entran a esta ronda.
+
+      Las tandas A y B juntas son 29 verificaciones y tocan 22 filas distintas
+      de las 44 que tienen hitos. Contra las 220 fichas de la capa entera, es 13 % del trabajo
+      para 50 % de las filas con hitos.
+
+====================================================================================================
+  18 filas frágiles · 134 hitos pendientes con fila · tanda A 15 + tanda B 14 · 0 consultas
+====================================================================================================
+

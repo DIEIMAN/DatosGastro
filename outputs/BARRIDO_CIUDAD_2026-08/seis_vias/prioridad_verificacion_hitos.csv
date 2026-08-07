@@ -1,0 +1,216 @@
+hito_id,nombre,tipo,direccion,barrio_declarado,vigencia_verificada,vigencia_fecha,pendiente,filas_94,zonas_22,filas_que_abre_si_abre,filas_que_resuelve_si_cierra,decide_una_fila_sola,cuales_94,cuales_22,es_alta_2026_08_03
+ICO-015,Tancat,Restaurante Icónico,PARAGUAY 645,Retiro,sin_verificar,,True,3,2,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAY; PGF2_RETIRO,R12; R18,False
+H043,Confiteria Saint Moritz,Bar Notable,Esmeralda 894,,sin_verificar,,True,3,2,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAY; PGF2_RETIRO,R12; R18,False
+H058,FLORIDA GARDEN,Bar Notable,Florida 899,,sin_verificar,,True,3,2,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAY; PGF2_RETIRO,R12; R18,False
+H082,PLAZA BAR,Bar Notable,Florida 1005,,sin_verificar,,True,3,2,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAY; PGF2_RETIRO,R12; R18,False
+ICO-002,El Imparcial,Restaurante Icónico,"YRIGOYEN, HIPOLITO 1201",Monserrat,sin_verificar,,True,2,1,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PGF2_MONTSERRAT,R12,False
+H074,36 BILLARES,Bar Notable,Av. de Mayo 1265,,sin_verificar,,True,2,1,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PGF2_MONTSERRAT,R12,False
+H035,Café Tortoni,Bar Notable,Av. de Mayo 825,,sin_verificar,,True,2,1,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PGF2_MONTSERRAT,R12,False
+H053,El Querandi,Bar Notable,Peru 302,,sin_verificar,,True,2,1,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PGF2_MONTSERRAT,R12,False
+H070,LA PUERTO RICO,Bar Notable,Alsina 420,,sin_verificar,,True,2,1,2,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PGF2_MONTSERRAT,R12,False
+ICO-016,Zum Edelweiss,Restaurante Icónico,LIBERTAD 431,San Nicolas,sin_verificar,,True,2,2,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG012_AVENIDA_CORRIENTES,R02; R12,False
+H067,LA GIRALDA,Bar Notable,Av. Corrientes 1453,,sin_verificar,,True,2,2,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG012_AVENIDA_CORRIENTES,R02; R12,False
+H081,Petit Colón,Bar Notable,Libertad 505,,sin_verificar,,True,2,2,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG012_AVENIDA_CORRIENTES,R02; R12,False
+DIR-003,Guerrin,Pizzería emblemática,Av. Corrientes 1368,San Nicolas,sin_verificar,,True,2,2,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO; PG012_AVENIDA_CORRIENTES,R02; R12,False
+MIC-013,ANAFE,MICHELIN,Virrey Avilés 3216,Colegiales,sin_verificar,,True,2,0,1,0,False,PGF2_COLEGIALES; PGR_P048,,False
+MG-0008,Mercado Bonpland,Mercado/patio,Bonpland 1660,,sin_verificar,,True,1,1,1,0,False,PG001B_PALERMO_HOLLYWOOD,R01,False
+MG-0003,Mercado del Progreso,Mercado/patio,Av. Rivadavia 5430,,sin_verificar,,True,1,1,1,0,False,PG008_CABALLITO,R10,False
+MG-0011,Patio Costanera Norte,Mercado/patio,Avenida Costanera Rafael Obligado 7010,Belgrano,sin_verificar,,True,1,1,1,0,False,PG009_COSTANERA_NORTE,R07,False
+MIC-020,A Fuego Fuerte,MICHELIN,Bonpland 1670,Palermo,sin_verificar,,True,1,1,1,0,False,PG001B_PALERMO_HOLLYWOOD,R01,False
+MIC-019,Alcanfor,MICHELIN,Aguirre 949,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+MIC-018,Anchoíta,MICHELIN,Juan Ramírez de Velasco 1520,Chacarita,sin_verificar,,True,1,1,1,0,False,PG005_CHACARITA,R09,False
+MIC-045,Aramburu,MICHELIN,Vicente López 1661,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+MIC-049,Bis Bistró,MICHELIN,Vicente López 1661 Local 12,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+MIC-051,Cabaña Las Lilas,MICHELIN,Avenida Alicia Moreau de Justo 516,Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+MIC-035,Casa Veltri,MICHELIN,Juncal 1642,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+MIC-009,Crizia,MICHELIN,Fitz Roy 1819,Palermo,sin_verificar,,True,1,1,1,0,False,PG001B_PALERMO_HOLLYWOOD,R01,False
+MIC-023,Don Julio,MICHELIN,Guatemala 4699,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+MIC-038,El Preferido de Palermo,MICHELIN,Jorge Luis Borges 2108,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+MIC-057,Fervor,MICHELIN,Posadas 1519,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+MIC-004,Fico,MICHELIN,Muñecas 775,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+MIC-021,Fogón Asado,MICHELIN,Uriarte 1423,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+MIC-005,Han,MICHELIN,Vera 966,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+MIC-016,Julia,MICHELIN,Loyola 807,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+MIC-053,La Cabaña,MICHELIN,Avenida Alicia Moreau de Justo 580,Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+MIC-015,Mengano,MICHELIN,José Antonio Cabrera 5172,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+MIC-006,Mercado de Liniers,MICHELIN,Gorriti 6012,Palermo,sin_verificar,,True,1,1,1,0,False,PG001B_PALERMO_HOLLYWOOD,R01,False
+MIC-029,Michel Rolland Grill & Wine,MICHELIN,Juana Manso 1760,Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+MIC-003,MN Santa Inés,MICHELIN,Ávalos 360,Paternal,sin_verificar,,True,1,1,1,0,False,PG021_CIRCUITO_GASTRONOMICO_DE_PATERNAL,R21,False
+MIC-034,Niño Gordo,MICHELIN,Thames 1810,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+MIC-010,Reliquia,MICHELIN,Ángel Justiniano Carranza 1601,Palermo,sin_verificar,,True,1,1,1,0,False,PG001B_PALERMO_HOLLYWOOD,R01,False
+MIC-030,Roux,MICHELIN,Peña 2300,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+MIC-002,Trescha,MICHELIN,Murillo 725,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+ICO-001,Albamonte Ristorante,Restaurante Icónico,CORRIENTES AV. 6735,Chacarita,sin_verificar,,True,1,1,1,0,False,PG005_CHACARITA,R09,False
+ICO-006,Estilo Campo,Restaurante Icónico,"MOREAU DE JUSTO, ALICIA AV. 1840",Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+ICO-007,Happening,Restaurante Icónico,"OBLIGADO RAFAEL, AV.COSTANERA 7030",Belgrano,sin_verificar,,True,1,1,1,0,False,PG009_COSTANERA_NORTE,R07,False
+ICO-011,Marcelo Restaurante,Restaurante Icónico,"MOREAU DE JUSTO, ALICIA AV. 1140",Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+ICO-013,Restaurante Oviedo,Restaurante Icónico,BERUTI 2602,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+ICO-014,Sorrento,Restaurante Icónico,"MOREAU DE JUSTO, ALICIA AV. 420",Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+H149,Don Julio,Ranking internacional,Guatemala 4699,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H150,Nino Gordo,Ranking internacional,Thames 1810,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H151,El Preferido de Palermo,Ranking internacional,Jorge Luis Borges 2108,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H152,El Mercado (Faena),Ranking internacional,Martha Salotti 445,Puerto Madero,sin_verificar,,True,1,1,1,0,False,PG003_PUERTO_MADERO,R04,False
+H153,Aramburu,Ranking internacional,Vicente Lopez 1661,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+H154,Trescha,Ranking internacional,Murillo 725,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+H155,Crizia,Ranking internacional,Gorriti 5143,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H156,Julia,Ranking internacional,Loyola 807,Villa Crespo,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+H159,Gran Dabbang,Ranking internacional,Av. Raul Scalabrini Ortiz 1543,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H160,Don Julio,Ranking internacional,Guatemala 4699,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H162,CoChinChina,Ranking internacional,Armenia 1540,Palermo,sin_verificar,,True,1,1,1,0,False,PG001A_PALERMO_SOHO,R01,False
+H006,BAR DEL ALVEAR PALACE HOTEL,Bar Notable,Av. Alvear 1891,,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+H009,Bar El Federal,Bar Notable,Carlos Calvo 595,,sin_verificar,,True,1,1,1,1,True,PG004_SAN_TELMO,R03,False
+H019,Britanico,Bar Notable,Brasil 399,,sin_verificar,,True,1,1,1,1,True,PG010_AVENIDA_CASEROS_BARRACAS,R11,False
+H029,CAFE PALACIO,Bar Notable,Av. Federico Lacroze 3901,,sin_verificar,,True,1,1,1,0,False,PG005_CHACARITA,R09,False
+H023,Cafe de la U,Bar Notable,Av. Triunvirato 4801,,sin_verificar,,True,1,1,1,1,True,PG017_VILLA_URQUIZA,R17,False
+H086,Café Margot,Bar Notable,Av. Boedo 857,,sin_verificar,,True,1,1,1,0,False,PG014_AVENIDA_BOEDO,R14,False
+H022,Café de García,Bar Notable,Sanabria 3302,,sin_verificar,,True,1,1,1,0,False,PG015_DEVOTO,R15,False
+H039,Claridge's,Bar Notable,Tucuman 535,,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H042,Confitería Ideal,Bar Notable,Suipacha 384,,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H054,EL SIMBOLO,Bar Notable,Av. Corrientes 3787,,sin_verificar,,True,1,1,1,0,False,PG013_ABASTO,R13,False
+H044,El Banderin,Bar Notable,Guardia Vieja 3601,,sin_verificar,,True,1,1,1,0,False,PG013_ABASTO,R13,False
+H057,Esquina Homero Manzi,Bar Notable,Av. San Juan 3601,,sin_verificar,,True,1,1,1,0,False,PG014_AVENIDA_BOEDO,R14,False
+H061,LA BIELA,Bar Notable,Av. Quintana 600,,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+H072,Le Caravelle,Bar Notable,Lavalle 726,,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H080,Paulin,Bar Notable,Sarmiento 635,,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H033,SAN BERNARDO,Bar Notable,Av. Corrientes 5436,,sin_verificar,,True,1,1,1,0,False,PG002_VILLA_CRESPO,R08,False
+H083,STYLO CAFE,Bar Notable,Fernandez de Enciso 3934,,sin_verificar,,True,1,1,1,0,False,PG015_DEVOTO,R15,False
+H003,Bar Bidou,Bar Notable,Av. Roque Saenz Pena 858,,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H090,Confiteria El Greco,Bar Notable,Av. Rivadavia 5353,,sin_verificar,,True,1,1,1,0,False,PG008_CABALLITO,R10,True
+DIR-005,Las Cuartetas,Pizzería emblemática,Av. Corrientes 838,San Nicolas,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+DIR-006,Pin Pun,Pizzería emblemática,Av. Corrientes 3954,Almagro,sin_verificar,,True,1,1,1,0,False,PG013_ABASTO,R13,False
+DIR-012,Los Maestros,Pizzería emblemática,Parana 1249,Recoleta,sin_verificar,,True,1,1,1,0,False,PG007_RECOLETA,R06,False
+DIR-016,Torino Norte,Pizzería emblemática,Av. Juan B. Justo 3995,La Paternal,sin_verificar,,True,1,1,1,0,False,PG021_CIRCUITO_GASTRONOMICO_DE_PATERNAL,R21,False
+DIR-017,Gran Pizzeria Jose,Pizzería emblemática,Av. San Martin 6915,Villa Devoto,sin_verificar,,True,1,1,1,0,False,PG015_DEVOTO,R15,False
+DIR-018,El Palacio de la Pizza,Pizzería emblemática,Av. Corrientes 751,San Nicolas,sin_verificar,,True,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+DIR-020,San Antonio,Pizzería emblemática,Av. Juan de Garay 3602,Boedo,sin_verificar,,True,1,1,1,0,False,PG014_AVENIDA_BOEDO,R14,False
+DIR-021,Santolin,Heladería histórica,Av. San Martin 3185,La Paternal,sin_verificar,,True,1,1,1,0,False,PG021_CIRCUITO_GASTRONOMICO_DE_PATERNAL,R21,False
+MIC-032,Buri Omakase,MICHELIN,Guatemala 5781,Palermo,sin_verificar,,True,1,0,1,0,False,PG001B_PALERMO_HOLLYWOOD,,False
+MIC-054,Kōnā,MICHELIN,Castañeda 1899,Belgrano,sin_verificar,,True,1,0,1,0,False,PGR_P007,,False
+MIC-014,La Alacena Trattoria,MICHELIN,Gascón 1401,Palermo,sin_verificar,,True,1,0,1,1,True,PGR_P088,,False
+MIC-037,Mishiguene,MICHELIN,Lafinur 3368,Palermo,sin_verificar,,True,1,0,1,0,False,PGR_P073,,False
+MIC-056,Narda Comedor,MICHELIN,Mariscal Antonio José de Sucre 664,Belgrano,sin_verificar,,True,1,0,1,0,False,PGR_P007,,False
+MIC-022,Nika Club Omakase,MICHELIN,Nicaragua 5952,Palermo,sin_verificar,,True,1,0,1,0,False,PG001B_PALERMO_HOLLYWOOD,,False
+MIC-026,Uni Omakase,MICHELIN,Guatemala 5820,Palermo,sin_verificar,,True,1,0,1,0,False,PG001B_PALERMO_HOLLYWOOD,,False
+ICO-008,Il Matterello,Restaurante Icónico,"RODRIGUEZ, MARTIN 517",La Boca,sin_verificar,,True,1,0,1,0,False,PGR_P033,,False
+H158,Mishiguene,Ranking internacional,Lafinur 3368,Palermo,sin_verificar,,True,1,0,1,0,False,PGR_P073,,False
+H199,Yiyo el Zeneize,Mercado/patio,Av. Eva Peron 4402,Parque Avellaneda,sin_verificar,,True,1,0,1,1,True,PGR_P004,,False
+H079,8 ESQUINAS,Bar Notable,Av. Forest 1186,,sin_verificar,,True,1,0,1,0,False,PGR_P048,,False
+H012,BAR OVIEDO,Bar Notable,Av. Lisandro de la Torre 2407,,dudosa,2021-03-01,True,1,0,1,0,False,PGR_P006,,False
+H015,BAR SEDDON,Bar Notable,Defensa 695,,sin_verificar,,True,1,0,1,0,False,PGF2_MONTSERRAT,,False
+H007,Bar del Glorias,Bar Notable,Andalgala 1982,,sin_verificar,,True,1,0,1,1,True,PGR_P013,,False
+H024,CAFE DE LOS ANGELITOS,Bar Notable,Av. Rivadavia 2100,,sin_verificar,,True,1,0,1,1,True,PGR_P101+P099,,False
+H032,Café Roma,Bar Notable,San Luis 3101,,sin_verificar,,True,1,0,1,0,False,PGR_P033,,False
+H031,Café Roma,Bar Notable,Olavarria 409,,sin_verificar,,True,1,0,1,0,False,PGR_P033,,False
+H008,EL COLONIAL,Bar Notable,Av. Belgrano 599,,sin_verificar,,True,1,0,1,0,False,PGF2_MONTSERRAT,,False
+H065,LA FARMACIA,Bar Notable,Av. Directorio 2400,,sin_verificar,,True,1,0,1,1,True,PGF2_FLORES,,False
+H069,LA PERLA,Bar Notable,Av. Don Pedro de Mendoza 1899,,sin_verificar,,True,1,0,1,1,True,PGR_P032,,False
+H071,LAS VIOLETAS,Bar Notable,Av. Rivadavia 3899,,sin_verificar,,True,1,0,1,1,True,PGR_P084,,False
+H073,London City,Bar Notable,Av. de Mayo 599,,sin_verificar,,True,1,0,1,0,False,PGF2_MONTSERRAT,,False
+H076,Los Laureles,Bar Notable,Av. Iriarte 2290,,en_disputa,2026-08-05,True,1,0,1,1,True,PGR_P008,,False
+H085,Varela Varelita,Bar Notable,Av. Scalabrini Ortiz 2102,,sin_verificar,,True,1,0,1,1,True,PGR_P092,,False
+H040,Clásica y moderna,Bar Notable,Av. Callao 892,,sin_verificar,,True,1,0,1,0,False,PGR_P109,,False
+H030,Plaza Café,Bar Notable,Av. Rivadavia 4732,,sin_verificar,,True,1,0,1,0,False,PGR_P057,,True
+H017,Bar Via 71,Bar Notable,Viamonte 1771,,sin_verificar,,True,1,0,1,0,False,PGR_P109,,True
+H020,Cabildo de Buenos Aires,Bar Notable,Peru 86,,sin_verificar,,True,1,0,1,0,False,PGF2_MONTSERRAT,,False
+DIR-009,La Mezzetta,Pizzería emblemática,Av. Alvarez Thomas 1321,Villa Ortuzar,sin_verificar,,True,1,0,1,0,False,PGR_P048,,False
+DIR-010,Banchero,Pizzería emblemática,Suarez 396,La Boca,sin_verificar,,True,1,0,1,0,False,PGR_P033,,False
+DIR-014,Los Campeones,Pizzería emblemática,Av. Montes de Oca 856,Barracas,sin_verificar,,True,1,0,1,1,True,PGR_P066,,False
+DIR-015,San Carlos,Pizzería emblemática,Av. Rivadavia 4548,Caballito,sin_verificar,,True,1,0,1,0,False,PGR_P057,,False
+DIR-023,El Ciervo,Heladería histórica,Carhue 124,Liniers,sin_verificar,,True,1,0,1,1,True,PGR_P021,,False
+DIR-024,Saverio Helados,Heladería histórica,Av. San Juan 2809,San Cristobal,sin_verificar,,True,1,0,1,1,True,PGR_P044,,False
+PAT-002,Bar Catedral Tango,Patrimonio normativo,Timoteo Gordillo 2498,Mataderos,sin_verificar,,True,1,0,1,0,False,PGR_P006,,False
+PAT-003,Edificios Administrativos del Antiguo Matadero,Patrimonio normativo,Av. Lisandro de la Torre y Av. de los Corrales,Mataderos,sin_verificar,,True,1,0,1,0,False,PGR_P006,,False
+H038,Celta Bar,Bar Notable,Sarmiento 1702,,sin_verificar,,True,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,False
+H050,El Gato Negro,Bar Notable,Av. Corrientes 1669,,sin_verificar,,True,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,False
+H060,La Academia,Bar Notable,Av. Callao 368,,sin_verificar,,True,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,False
+H011,Bar Lavalle,Bar Notable,Lavalle 1693,,sin_verificar,,True,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,False
+H068,La Opera,Bar Notable,Av. Corrientes 1799,,sin_verificar,,True,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,True
+MIC-048,Chuchú,MICHELIN,Avenida del Libertador 405,Retiro,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,False
+MIC-044,Elena,MICHELIN,Posadas 1086/88,Retiro,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,False
+MIC-042,Osaka Concepción,MICHELIN,Concepción Arenal 2913,Colegiales,sin_verificar,,True,1,0,0,0,False,PGF2_COLEGIALES,,False
+MIC-050,Presencia,MICHELIN,Montevideo 1789,Retiro,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,False
+H001,9 de Julio,Bar Notable,Larrazabal 1276,,sin_verificar,,True,1,0,0,0,False,PGR_P012,,False
+H002,Barbaro,Bar Notable,Tres Sargentos 415,,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,False
+H089,Josephina's Cafe,Bar Notable,Guido 1532,,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,True
+DIR-004,El Cuartito,Pizzería emblemática,Talcahuano 937,Retiro / San Nicolas,sin_verificar,,True,1,0,0,0,False,PGF2_RETIRO,,False
+MG-0002,Mercado de Belgrano,Mercado/patio,Av. Juramento 2527,,sin_verificar,,True,0,1,0,0,False,,R05,False
+MIC-041,Raggio Osteria,MICHELIN,Gurruchaga 2121,Palermo,sin_verificar,,True,0,1,0,0,False,,R01,False
+H161,Tres Monos,Ranking internacional,Guatemala 4899,Palermo,sin_verificar,,True,0,1,0,0,False,,R01,False
+H163,Victor Audio Bar,Ranking internacional,Soler 5130,Palermo,sin_verificar,,True,0,1,0,0,False,,R01,False
+DIR-008,Angelin,Pizzería emblemática,Av. Cordoba 5270,Villa Crespo,sin_verificar,,True,0,1,0,0,False,,R01,False
+MG-0001,Mercado de San Telmo,Mercado/patio,Defensa 961,San Telmo,sin_verificar,,True,0,0,0,0,False,,,False
+MG-0006,Patio de los Lecheros,Mercado/patio,Av. Tte. Gral. Donato Alvarez 175,,sin_verificar,,True,0,0,0,0,False,,,False
+MG-0012,Patio Gastronomico Rodrigo Bueno,Mercado/patio,Av. Espana 2230,,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-001,4ta Pared,MICHELIN,Habana 3499,Villa Devoto,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-011,Ácido,MICHELIN,Charlone 999,Chacarita,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-012,Ajo Negro - Mar de Tapas,MICHELIN,Avenida Córdoba 6237,Chacarita,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-058,Casa Cavia,MICHELIN,Cavia 2985,Palermo,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-052,Casa Palanti,MICHELIN,Ortiz de Ocampo 2901,Palermo,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-025,Caseros,MICHELIN,Avenida Caseros 486,Barracas,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-008,Chuí,MICHELIN,Loyola 1250,Villa Crespo,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-043,Corte Comedor,MICHELIN,Avenida Olazábal 1391,Belgrano,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-046,Duhau Restaurante & Vinoteca,MICHELIN,Avenida Alvear 1661,Recoleta,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-039,Evelia,MICHELIN,Campos Salles 1712,Nuñez,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-024,Garabato Bistro,MICHELIN,O'Higgins 3424,Nuñez,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-047,Gioia Cocina Botánica,MICHELIN,Posadas 1350,Recoleta,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-007,Horta,MICHELIN,Aguirre 1080,Villa Crespo,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-036,José El Carnicero,MICHELIN,Thames 2316,Palermo,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-040,Ness,MICHELIN,Grecia 3691,Nuñez,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-017,Picarón,MICHELIN,Avenida Dorrego 866,Chacarita,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-033,Piedra Pasillo Al Fondo,MICHELIN,Campos Salles 2145,Nuñez,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-031,República del Fuego,MICHELIN,Juncal 2682,Recoleta,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-027,Restó SCA,MICHELIN,Montevideo 938,Recoleta,sin_verificar,,True,0,0,0,0,False,,,False
+MIC-055,Sottovoce,MICHELIN,Avenida del Libertador 1098,Recoleta,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-003,El Mirasol de Boedo,Restaurante Icónico,BOEDO 136,Almagro,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-004,El Puentecito,Restaurante Icónico,LUJAN 2101,Barracas,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-005,El Tropezón,Restaurante Icónico,CALLAO AV. 248,Balvanera,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-009,La Brigada,Restaurante Icónico,ESTADOS UNIDOS 465,San Telmo,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-010,"La Estancia, Asador Criollo",Restaurante Icónico,LAVALLE 941,San Nicolas,sin_verificar,,True,0,0,0,0,False,,,False
+ICO-012,Miramar,Restaurante Icónico,SAN JUAN AV. 1999,San Cristobal,sin_verificar,,True,0,0,0,0,False,,,False
+H157,Ness,Ranking internacional,Grecia 3691,Nunez,sin_verificar,,True,0,0,0,0,False,,,False
+H013,BAR PLAZA DORREGO,Bar Notable,Defensa 1098,,sin_verificar,,True,0,0,0,0,False,,,False
+H014,BAR QUINTINO,Bar Notable,Carlos Calvo 4002,,sin_verificar,,True,0,0,0,0,False,,,False
+H016,BAR SUR,Bar Notable,Estados Unidos 299,,sin_verificar,,True,0,0,0,0,False,,,False
+H018,BOSTON CITY,Bar Notable,Florida 165 local 3,,sin_verificar,,True,0,0,0,0,False,,,False
+H059,Bar Imperio,Bar Notable,Av. Callao 181,,sin_verificar,,True,0,0,0,0,False,,,False
+H005,Bar de Cao,Bar Notable,Av. Independencia 2400,,sin_verificar,,True,0,0,0,0,False,,,False
+H034,CAFE THIBON,Bar Notable,Montevideo 723,,sin_verificar,,True,0,0,0,0,False,,,False
+H036,CAFETABAC,Bar Notable,Av. del Libertador 2300,,sin_verificar,,True,0,0,0,0,False,,,False
+H037,CASA WATSON,Bar Notable,Vuelta de Obligado 2072,,sin_verificar,,True,0,0,0,0,False,,,False
+H027,Café Montecarlo,Bar Notable,Paraguay 5491,,sin_verificar,,True,0,0,0,0,False,,,False
+H025,DON JUAN,Bar Notable,Camarones 2702,,sin_verificar,,True,0,0,0,0,False,,,False
+H047,EL COLECCIONISTA,Bar Notable,Av. Rivadavia 4929,,sin_verificar,,True,0,0,0,0,False,,,False
+H049,EL FARO,Bar Notable,Av. de los Constituyentes 4099,,dudosa,2011-05-01,True,0,0,0,0,False,,,False
+H048,El Estano 1880,Bar Notable,Aristobulo del Valle 1100,,sin_verificar,,True,0,0,0,0,False,,,False
+H052,El Progreso,Bar Notable,Av. Montes de Oca 1700,,sin_verificar,,True,0,0,0,0,False,,,False
+H056,El Viejo Buzon,Bar Notable,Neuquen 1100,,sin_verificar,,True,0,0,0,0,False,,,False
+H051,HIPOPOTAMO,Bar Notable,Brasil 401,,sin_verificar,,True,0,0,0,0,False,,,False
+H026,LA POESIA,Bar Notable,Chile 502,,sin_verificar,,True,0,0,0,0,False,,,False
+H062,La Buena Medida,Bar Notable,Suarez 101,,sin_verificar,,True,0,0,0,0,False,,,False
+H064,La Esquina de Anibal Troilo,Bar Notable,Paraguay 1500,,sin_verificar,,True,0,0,0,0,False,,,False
+H066,La Flor de Barracas,Bar Notable,Suarez 2095,,sin_verificar,,True,0,0,0,0,False,,,False
+H078,Miramar,Bar Notable,Sarandi 1190,,sin_verificar,,True,0,0,0,0,False,,,False
+H045,12 de octubre,Bar Notable,Bulnes 331,,sin_verificar,,True,0,0,0,0,False,,,False
+H028,Café Olimpo,Bar Notable,Irigoyen 1491,,sin_verificar,,True,0,0,0,0,False,,,False
+H077,Mar Azul,Bar Notable,Tucuman 1700,,sin_verificar,,True,0,0,0,0,False,,,False
+H004,Bar Boca a Boca,Bar Notable,Av. Benito Perez Galdos 201,,sin_verificar,,True,0,0,0,0,False,,,True
+H021,Cafe Cortazar,Bar Notable,Jose Antonio Cabrera 3797,,sin_verificar,,True,0,0,0,0,False,,,True
+H087,Cafe Rivas,Bar Notable,Estados Unidos 302,,sin_verificar,,True,0,0,0,0,False,,,True
+H088,El Portuario,Bar Notable,Pinzon 102,,sin_verificar,,True,0,0,0,0,False,,,True
+H041,La Escuela,Bar Notable,Manuela Pedraza 2803,,sin_verificar,,True,0,0,0,0,False,,,True
+H063,La Orquidea,Bar Notable,Av. Corrientes 4101,,sin_verificar,,True,0,0,0,0,False,,,True
+DIR-001,La Americana,Pizzería emblemática,Av. Callao 83,Balvanera (Congreso),sin_verificar,,True,0,0,0,0,False,,,False
+DIR-013,Pirilo,Pizzería emblemática,Defensa 821,San Telmo,sin_verificar,,True,0,0,0,0,False,,,False
+DIR-019,El Trebol 1969,Pizzería emblemática,Av. Angel Gallardo 3,Villa Crespo,sin_verificar,,True,0,0,0,0,False,,,False
+DIR-022,Tino,Heladería histórica,Av. Diaz Velez 4520,Caballito,sin_verificar,,True,0,0,0,0,False,,,False
+DIR-025,Napoli,Heladería histórica,Av. Entre Rios 1167,San Cristobal,sin_verificar,,True,0,0,0,0,False,,,False
+PAT-001,Pena Los Amigos / Bar El Chino,Patrimonio normativo,Beazley 3566,Nueva Pompeya,dudosa,2026-08-07,True,0,0,0,0,False,,,False
+H084,The New Brighton,Bar Notable,Sarmiento 645,,no,2026-03-18,False,1,1,1,0,False,PG011_MICROCENTRO_CENTRO_RENOVADO,R12,False
+H010,Bar Conde,Bar Notable,Federico Lacroze 3193,,si,2026-07-29,False,2,1,0,0,False,PG019_AVENIDA_FEDERICO_LACROZE_DESDE_LIBERTADOR_; PGF2_COLEGIALES,R19,True
+H075,LOS GALGOS,Bar Notable,Av. Callao 501,,si,2026-08-02,False,1,1,0,0,False,PG012_AVENIDA_CORRIENTES,R02,False
+H164,Floreria Atlantico,Ranking internacional,Arroyo 872,Retiro,si,2024-12-20,False,1,0,0,0,False,PGF2_RETIRO,,False
+H055,El Tokio,Bar Notable,Alvarez Jonte 3550,,si,2026-08-05,False,1,0,0,0,False,PGR_P034,,False
+DIR-002,El Fortin,Pizzería emblemática,,Monte Castro,si,2025-08-26,False,1,0,0,0,False,PGR_P025-2,,False
+DIR-011,El Cedron,Pizzería emblemática,Av. Juan B. Alberdi 6101,Mataderos,si,2025-12-05,False,1,0,0,0,False,PGR_P012,,False
+H046,El Buzón,Bar Notable,Esquiu 1393,,si,2025-08-10,False,0,0,0,0,False,,,False
+DIR-007,Casa Burgio,Pizzería emblemática,Av. Cabildo 2477,Belgrano,si,2026-08-07,False,0,0,0,0,False,,,False
