@@ -1,0 +1,81 @@
+eje_id,eje,calle,altura_desde,altura_hasta,altura_texto
+1,Alberdi,Alberdi,3601,4099,3601-4099
+2,Almagro,Av. Rivadavia,3401,4099,3401-4099
+3,Av. Belgrano,Av. Belgrano,1801,2799,1801-2799
+4,Av. Patricios,Av. Reg. de los Patricios,301,999,301-999
+5,Av. San Martín,Av. San Martín,1801,2799,1801-2799
+6,Avellaneda,Avellaneda,2701,3799,2701-3799
+6,Avellaneda,Bogotá,2901,3499,2901-3499
+6,Avellaneda,Aranguren,2901,3499,2901-3499
+7,Boedo,Av. Boedo,701,1099,701-1099
+7,Boedo,Av. San Juan,3501,3699,3501-3699
+7,Boedo,Independencia,3501,3699,3501-3699
+8,Caballito,Acoyte,1,199,1-199
+8,Caballito,Av. Rivadavia,4401,5499,4401-5499
+8,Caballito,José Maria Moreno,1,99,1-99
+9,Cabildo,Av. Cabildo,1501,3799,1501-3799
+10,Chacarita,Lacroze,3501,4199,3501-4199
+11,Chilavert,Chilavert,6101,6999,6101-6999
+11,Chilavert,Guaminí,4801,4999,4801-4999
+12,Colegiales,Av. Cabildo,501,899,501-899
+12,Colegiales,Lacroze,2301,2899,2301-2899
+13,Constitución,Brasil,1101,1299,1101-1299
+13,Constitución,Lima,1601,1799,1601-1799
+13,Constitución,Salta,1601,1799,1601-1799
+14,Córdoba Facultad,Av. Córdoba,2201,2699,2201-2699
+15,Córdoba Tribunales,Av. Córdoba,1301,1899,1301-1899
+16,Córdoba y Scalabrini Ortiz,Av. Córdoba,4301,4999,4301-4999
+17,Corrientes y Callao,Av. Corrientes,1101,1799,1101-1799
+18,Corrientes y Medrano,Av. Corrientes,3601,4799,3601-4799
+19,Corrientes y Pueyrredón,Av. Corrientes,2101,2899,2101-2899
+20,Corrientes y Scalabrini Ortiz,Av. Corrientes,5201,5699,5201-5699
+20,Corrientes y Scalabrini Ortiz,Scalabrini Ortiz,201,799,201-799
+21,Cuenca,Av. Cuenca,2701,3499,2701-3499
+22,Defensa,Defensa,801,1499,801-1499
+23,Devoto,Lope de Vega,2801,3499,2801-3499
+23,Devoto,Francisco Beiró,5201,5499,5201-5499
+24,Entre Ríos,Av. Entre Ríos,201,1199,201-1199
+25,Flores,Av. Rivadavia,6201,7399,6201-7399
+25,Flores,Av. Nazca,1,499,1-499
+26,Flores Sur,Varela,1101,1399,1101-1399
+27,Florida,Florida,1,999,1-999
+28,Lavalle,Corrientes,501,999,501-999
+28,Lavalle,Lavalle,501,999,501-999
+28,Lavalle,Esmeralda,401,599,401-599
+29,Libertad,Libertad,1,499,1-499
+30,Liniers,Ramón Falcón,6801,7299,6801-7299
+31,Mataderos,Av. Alberdi,5501,6299,5501-6299
+32,Monserrat,Av. Belgrano,1101,1799,1101-1799
+33,Monte Castro,Álvarez Jonte,4501,5399,4501-5399
+34,Montes de Oca,Montes de Oca,501,1199,501-1199
+35,Once,Av. Rivadavia,2101,3199,2101-3199
+35,Once,Pueyrredón,1,599,1-599
+36,Palermo Soho,El Salvador,4601,4799,4601-4799
+36,Palermo Soho,Honduras,4701,4999,4701-4999
+36,Palermo Soho,Serrano / Borges,1501,1799,1501-1799
+36,Palermo Soho,Gurruchaga,1601,1899,1601-1899
+36,Palermo Soho,Armenia,1501,1799,1501-1799
+36,Palermo Soho,Malabia,1601,1799,1601-1799
+37,Parque Avellaneda,Av. Alberdi,4301,4899,4301-4899
+38,Parque Patricios,Av. Caseros,2601,2999,2601-2999
+38,Parque Patricios,La Rioja,1901,2199,1901-2199
+39,Puerto Madero,A. M. De Justo,101,2099,101-2099
+40,Recoleta,Av. Alvear,1801,1999,1801-1999
+40,Recoleta,Junín,1701,1799,1701-1799
+40,Recoleta,Ortiz,1801,1899,1801-1899
+40,Recoleta,Quintana,401,599,401-599
+40,Recoleta,Vicente López,2001,2199,2001-2199
+41,Riestra,Murguiondo,4001,4399,4001-4399
+41,Riestra,Riestra,5501,5799,5501-5799
+42,Sáenz,Sáenz,801,1399,801-1399
+43,Santa Fe y Callao,Av. Santa Fe,1101,2499,1101-2499
+44,Santa Fe y Coronel Díaz,Av. Santa Fe,2501,3299,2501-3299
+45,Santa Fe y Scalabrini Ortiz,Av. Santa Fe,3301,3699,3301-3699
+45,Santa Fe y Scalabrini Ortiz,Scalabrini Ortiz,2301,2599,2301-2599
+46,Triunvirato,Av. Triunvirato,3601,4699,3601-4699
+46,Triunvirato,Monroe,4801,5399,4801-5399
+47,Villa Crespo,Aguirre,701,899,701-899
+47,Villa Crespo,Gurruchaga,701,999,701-999
+47,Villa Crespo,Loyola,601,799,601-799
+48,Warnes,Dorrego,1,299,1-299
+48,Warnes,Warnes,701,1599,701-1599

@@ -176,3 +176,9 @@ outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig.json
 outputs/polos_gastro/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
 outputs/polos_gastro/experimentos/experimentos_google_places/
 notebooks/06_informe_presentacion.ipynb
+
+# Crudos del dataset del Ente de Turismo (2026-08-07). El archivo trae `telefono` y `mail` de
+# cada establecimiento: es dato abierto CC-BY y son comercios, no personas, pero el guardrail 7
+# nombra emails y telefonos sin esa distincion y no se la hacemos nosotros. Lo que se versiona es
+# la derivada `*_sin_contacto` y el perfil; el crudo se rehace corriendo el script.
+outputs/BARRIDO_CIUDAD_2026-08/entur/crudos/

@@ -1,0 +1,49 @@
+recurso,columna,tipo,no_nulos,filas,distintos,ejemplo
+oferta_gastronomica.csv,long,str,2823,2823,2703,"-58,36330675"
+oferta_gastronomica.csv,lat,str,2823,2823,2702,"-34,62296347"
+oferta_gastronomica.csv,id,int64,2823,2823,2823,1602
+oferta_gastronomica.csv,nombre,str,2823,2823,2554,GUANTANAMERA
+oferta_gastronomica.csv,categoria,str,2707,2823,8,RESTAURANTE
+oferta_gastronomica.csv,cocina,str,2464,2823,52,CUBANA
+oferta_gastronomica.csv,ambientacion,str,2264,2823,57,MODERNO
+oferta_gastronomica.csv,telefono,str,2303,2823,2246,[columna de contacto · no se transcribe]
+oferta_gastronomica.csv,mail,str,472,2823,403,[columna de contacto · no se transcribe]
+oferta_gastronomica.csv,horario,str,725,2823,387,lunes a domingo de 8 a 00
+oferta_gastronomica.csv,calle_nombre,str,2823,2823,455,MOREAU DE JUSTO ALICIA
+oferta_gastronomica.csv,calle_altura,int64,2823,2823,1778,2092
+oferta_gastronomica.csv,calle_cruce,str,6,2823,5,"JUSTO, JUAN B"
+oferta_gastronomica.csv,direccion_completa,str,2822,2823,2745,"MOREAU DE JUSTO, ALICIA AV. 2092"
+oferta_gastronomica.csv,barrio,str,2823,2823,47,Puerto Madero
+oferta_gastronomica.csv,comuna,int64,2823,2823,15,1
+oferta_gastronomica.csv,codigo_postal,float64,2766,2823,234,1107.0
+oferta_gastronomica.csv,codigo_postal_argentino,str,2757,2823,2075,C1107AFP
+establecimientos_gastronomicos.csv,nro_registro,str,124,124,123,RL-2017-25630894- -DGCCO
+establecimientos_gastronomicos.csv,rubro,str,124,124,15,Restaurante
+establecimientos_gastronomicos.csv,establecimiento,str,124,124,122,1893
+establecimientos_gastronomicos.csv,domicilio_completo,str,124,124,124,SCALABRINI ORTIZ 701
+establecimientos_gastronomicos.csv,barrio,str,124,124,27,VILLA CRESPO
+establecimientos_gastronomicos.csv,comuna,int64,124,124,12,15
+establecimientos_gastronomicos.csv,telefono,str,124,124,124,[columna de contacto · no se transcribe]
+establecimientos_gastronomicos.csv,email,str,122,124,102,[columna de contacto · no se transcribe]
+establecimientos_gastronomicos.csv,facebook,str,124,124,61,[columna de contacto · no se transcribe]
+establecimientos_gastronomicos.csv,web,str,124,124,91,[columna de contacto · no se transcribe]
+establecimientos_gastronomicos.csv,accesibilidad,float64,0,124,0,
+oferta-gastronomica.geojson,long,float64,2823,2823,2705,-58.3633067544777
+oferta-gastronomica.geojson,lat,float64,2823,2823,2705,-34.6229634698018
+oferta-gastronomica.geojson,id,int32,2823,2823,2823,1602
+oferta-gastronomica.geojson,nombre,str,2823,2823,2554,GUANTANAMERA
+oferta-gastronomica.geojson,categoria,str,2707,2823,8,RESTAURANTE
+oferta-gastronomica.geojson,cocina,str,2464,2823,52,CUBANA
+oferta-gastronomica.geojson,ambientacion,str,2264,2823,57,MODERNO
+oferta-gastronomica.geojson,telefono,str,2303,2823,2246,[columna de contacto · no se transcribe]
+oferta-gastronomica.geojson,mail,str,472,2823,403,[columna de contacto · no se transcribe]
+oferta-gastronomica.geojson,horario,str,725,2823,387,lunes a domingo de 8 a 00
+oferta-gastronomica.geojson,calle_nombre,str,2823,2823,455,MOREAU DE JUSTO ALICIA
+oferta-gastronomica.geojson,calle_altura,int32,2823,2823,1778,2092
+oferta-gastronomica.geojson,calle_cruce,str,6,2823,5,"JUSTO, JUAN B"
+oferta-gastronomica.geojson,direccion_completa,str,2822,2823,2745,"MOREAU DE JUSTO, ALICIA AV. 2092"
+oferta-gastronomica.geojson,barrio,str,2823,2823,47,Puerto Madero
+oferta-gastronomica.geojson,comuna,str,2823,2823,15,Comuna 1
+oferta-gastronomica.geojson,codigo_postal,float64,2766,2823,234,1107.0
+oferta-gastronomica.geojson,codigo_postal_argentino,str,2757,2823,2075,C1107AFP
+oferta-gastronomica.geojson,geometry,geometry,2823,2823,2705,POINT (-58.3633067544777 -34.6229634698018)

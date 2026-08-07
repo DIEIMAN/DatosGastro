@@ -50,6 +50,8 @@ COLUMNAS_NUEVAS = [
     ("via_B_50best", "via_B_50best"),
     ("via_B_patrimonio_normativo", "via_B_patrimonio_normativo"),
     ("via_B_total", "via_B_total"),
+    ("via_B_cerrados", "via_B_cerrados"),
+    ("via_B_dudosos", "via_B_dudosos"),
     ("via_B_abierta", "via_B_abierta"),
     ("via_C_mercado_patio", "via_C_mercado_patio"),
     ("via_C_cual", "via_C_cual"),

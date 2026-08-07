@@ -1,0 +1,158 @@
+IDECBA · ejes comerciales · los dos .xlsx bajados y leídos
+====================================================================================================
+
+  AC_EJ_48_GLOS.xlsx  (15,115 bytes)  ←  https://estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/06/AC_EJ_48_GLOS.xlsx
+  AC_EJ_2026_03.xlsx  (37,000 bytes)  ←  https://estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/06/AC_EJ_2026_03.xlsx
+
+----------------------------------------------------------------------------------------------------
+  AC_EJ_48_GLOS.xlsx · 1 hoja(s): ['AC_EJ_48_GLOS']
+
+      hoja «AC_EJ_48_GLOS» — 83 filas × 4 columnas
+            0 | Ejes Comerciales. Calle y altura. 
+            1 | Eje | Calle | Altura
+            2 | 1 | Alberdi | Alberdi | 3601-4099
+            3 | 2 | Almagro | Av. Rivadavia | 3401-4099
+            4 | 3 | Av. Belgrano | Av. Belgrano | 1801-2799
+            5 | 4 | Av. Patricios | Av. Reg. de los Patricios | 301-999
+            6 | 5 | Av. San Martín | Av. San Martín | 1801-2799
+            7 | 6 | Avellaneda | Avellaneda | 2701-3799
+            8 | Bogotá | 2901-3499
+            9 | Aranguren | 2901-3499
+           10 | 7 | Boedo | Av. Boedo | 701-1099
+           11 | Av. San Juan | 3501-3699
+           12 | Independencia | 3501-3699
+           13 | 8 | Caballito | Acoyte | 1-199
+          ... 69 filas más
+
+----------------------------------------------------------------------------------------------------
+  AC_EJ_2026_03.xlsx · 6 hoja(s): ['AC_EJ_2026_03', '1er. cuatr. de 2026 ', '3er. cuatr. de 2025', '2do. cuatr. de 2025', '1er. cuatr. de 2025', 'Ficha Técnica']
+
+      hoja «AC_EJ_2026_03» — 6 filas × 1 columnas
+            0 | Locales relevados, ocupados, densi
+            1 | 1er. cuatrimestre de 2026
+            2 | 3er. cuatrimestre de 2025
+            3 | 2do. cuatrimestre de 2025
+            4 | 1er. cuatrimestre de 2025
+            5 | Ficha Técnica
+
+      hoja «1er. cuatr. de 2026 » — 52 filas × 7 columnas
+            0 | Locales relevados, ocupados, densi
+            1 | Eje | Locales Relevados | Locales Ocupados | Tasa de ocupación       (%) | Variación interrelevamiento (p.p.) | Variación interanual           (p. | Densidad comercial (relevados por 
+            2 | Total | 12896 | 11605 | 89.98914392059554 | -1.3505986751557515 | -1.5615672729727947 | 13.807280513918629
+            3 | Alberdi | 117 | 112 | 95.72649572649573 | 2.564102564102569 | 3.418803418803421 | 11.7
+            4 | Almagro | 199 | 188 | 94.47236180904522 | 1.005025125628137 | -0.9821836455002284 | 14.214285714285714
+            5 | Av. Belgrano | 211 | 191 | 90.52132701421802 | -2.301639492959012 | -3.198479749067019 | 10.55
+            6 | Av. Patricios | 144 | 127 | 88.19444444444444 | 1.1196145124716566 | 1.1196145124716566 | 10.285714285714286
+            7 | Av. San Martín | 225 | 200 | 88.88888888888889 | 2.2817460317460245 | 3.1746031746031775 | 11.25
+            8 | Avellaneda | 1073 | 1015 | 94.5945945945946 | -1.7502976265862884 | -0.22501687626571254 | 23.32608695652174
+            9 | Boedo | 227 | 207 | 91.18942731277532 | -2.6970355693207466 | -1.8236731239058912 | 14.1875
+           10 | Caballito | 366 | 354 | 96.72131147540983 | -0.2732240437158424 | -0.2649898944531799 | 13.071428571428571
+           11 | Cabildo | 679 | 623 | 91.75257731958763 | -1.7958097771865624 | -3.8421363368000385 | 14.76086956521739
+           12 | Chacarita | 134 | 123 | 91.7910447761194 | -0.12071992976294155 | -1.5913081650570717 | 9.571428571428571
+           13 | Chilavert | 306 | 271 | 88.56209150326796 | -1.6659215260479954 | -2.376419823592869 | 13.909090909090908
+          ... 38 filas más
+
+      hoja «3er. cuatr. de 2025» — 53 filas × 7 columnas
+            0 | Locales relevados, ocupados, densi
+            1 | Eje | Locales Relevados | Locales Ocupados | Tasa de ocupación       (%) | Variación interrelevamiento (p.p.) | Variación interanual           (p. | Densidad comercial (relevados por 
+            2 | Total | 12898 | 11781 | 91.33974259575129 | -0.14566649163937484 | . | 13.809421841541756
+            3 | Alberdi | 117 | 109 | 93.16239316239316 | 0.8547008547008517 | . | 11.7
+            4 | Almagro | 199 | 186 | 93.46733668341709 | 2.5125628140703498 | . | 14.214285714285714
+            5 | Av. Belgrano | 209 | 194 | 92.82296650717703 | -1.407802723592198 | . | 10.45
+            6 | Av. Patricios | 147 | 128 | 87.07482993197279 | -0.08733223018937508 | . | 10.5
+            7 | Av. San Martín | 224 | 194 | 86.60714285714286 | 0.892857142857153 | . | 11.2
+            8 | Avellaneda | 1067 | 1028 | 96.34489222118088 | 0.27012586604070066 | . | 23.195652173913043
+            9 | Boedo | 229 | 215 | 93.88646288209607 | 0 | . | 14.3125
+           10 | Caballito | 366 | 355 | 96.99453551912568 | 0.008234149262662527 | . | 13.071428571428571
+           11 | Cabildo | 682 | 638 | 93.54838709677419 | -1.1730205278592365 | . | 14.826086956521738
+           12 | Chacarita | 136 | 125 | 91.91176470588235 | -0.7352941176470722 | . | 9.714285714285714
+           13 | Chilavert | 307 | 277 | 90.22801302931596 | 0.8731743196385366 | . | 13.954545454545455
+          ... 39 filas más
+
+      hoja «2do. cuatr. de 2025» — 53 filas × 7 columnas
+            0 | Locales relevados, ocupados, densi
+            1 | Eje | Locales Relevados | Locales Ocupados | Tasa de ocupación       (%) | Variación interrelevamiento (p.p.) | Variación interanual           (p. | Densidad comercial (relevados por 
+            2 | Total | 12919 | 11819 | 91.48540908739066 | -0.0653021061776684 | . | 13.831905781584583
+            3 | Alberdi | 117 | 108 | 92.3076923076923 | 0 | . | 11.7
+            4 | Almagro | 199 | 181 | 90.95477386934674 | -4.499771585198715 | . | 14.214285714285714
+            5 | Av. Belgrano | 208 | 196 | 94.23076923076923 | 0.510962467484191 | . | 10.4
+            6 | Av. Patricios | 148 | 129 | 87.16216216216216 | 0.08733223018937508 | . | 10.571428571428571
+            7 | Av. San Martín | 224 | 192 | 85.71428571428571 | 0 | . | 11.2
+            8 | Avellaneda | 1070 | 1028 | 96.07476635514018 | 1.2551548842798752 | . | 23.26086956521739
+            9 | Boedo | 229 | 215 | 93.88646288209607 | 0.8733624454148554 | . | 14.3125
+           10 | Caballito | 365 | 354 | 96.98630136986301 | 0 | . | 13.035714285714286
+           11 | Cabildo | 682 | 646 | 94.72140762463343 | -0.8733060317542396 | . | 14.826086956521738
+           12 | Chacarita | 136 | 126 | 92.64705882352942 | -0.735294117647058 | . | 9.714285714285714
+           13 | Chilavert | 310 | 277 | 89.35483870967742 | -1.5836726171834101 | . | 14.090909090909092
+          ... 39 filas más
+
+      hoja «1er. cuatr. de 2025» — 53 filas × 7 columnas
+            0 | Locales relevados, ocupados, densi
+            1 | Eje | Locales Relevados | Locales Ocupados | Tasa de ocupación       (%) | Variación interrelevamiento (p.p.) | Variación interanual           (p. | Densidad comercial (relevados por 
+            2 | Total | 12936 | 11843 | 91.55071119356833 | . | . | 13.850107066381156
+            3 | Alberdi | 117 | 108 | 92.3076923076923 | . | . | 11.7
+            4 | Almagro | 198 | 189 | 95.45454545454545 | . | . | 14.142857142857142
+            5 | Av. Belgrano | 207 | 194 | 93.71980676328504 | . | . | 10.35
+            6 | Av. Patricios | 147 | 128 | 87.07482993197279 | . | . | 10.5
+            7 | Av. San Martín | 224 | 192 | 85.71428571428571 | . | . | 11.2
+            8 | Avellaneda | 1081 | 1025 | 94.81961147086031 | . | . | 23.5
+            9 | Boedo | 229 | 213 | 93.01310043668121 | . | . | 14.3125
+           10 | Caballito | 365 | 354 | 96.98630136986301 | . | . | 13.035714285714286
+           11 | Cabildo | 681 | 651 | 95.59471365638767 | . | . | 14.804347826086957
+           12 | Chacarita | 136 | 127 | 93.38235294117648 | . | . | 9.714285714285714
+           13 | Chilavert | 309 | 281 | 90.93851132686083 | . | . | 14.045454545454545
+          ... 39 filas más
+
+      hoja «Ficha Técnica» — 33 filas × 2 columnas
+            0 | FICHA TÉCNICA
+            1 | Archivo | AC_EJ_2026_03
+            2 | Área Temática  | COMERCIO INTERIOR
+            3 | Tema  | LOCALES COMERCIALES
+            4 | Subtema | EJES COMERCIALES
+            5 | Serie 1 | Locales relevados 
+            6 | Objetivo | Presentar información sobre los lo
+            7 | Variable 1  | Locales relevados por eje comercia
+            8 | Definición operativa  | Corresponde a los locales relevado
+            9 | Unidad de medida | Unidades
+           10 | Método de cálculo (fórmula) | No corresponde 
+           11 | Serie 2 | Locales ocupados 
+           12 | Objetivo | Presentar información sobre el est
+           13 | Variable 1  | Locales ocupados por eje comercial
+          ... 19 filas más
+
+----------------------------------------------------------------------------------------------------
+  LA DELIMITACIÓN VIGENTE · 48 ejes, calle y altura
+
+      80 tramos para 48 ejes (19 ejes tienen más de una calle)
+
+----------------------------------------------------------------------------------------------------
+  CONTRA LO QUE EL REPOSITORIO VENÍA USANDO (informe 437, mayo de 2010)
+
+      Mataderos
+          usábamos:  Alberdi 5401-6199
+          vigente:   Av. Alberdi 5501-6299
+      Liniers
+          usábamos:  Rivadavia 10801-11699
+          vigente:   Ramón Falcón 6801-7299
+
+----------------------------------------------------------------------------------------------------
+  EL RELEVAMIENTO · 1.er cuatrimestre de 2026
+
+      48 ejes con dato
+      Los 48 nombres del glosario y los del relevamiento coinciden exactamente.
+      TOTAL Ciudad: 12,896 locales relevados · 11,605 ocupados · tasa de ocupación 90.0 %
+
+      eje                           relevados  ocupados  ocupación  dens/cuadra
+      Avellaneda                        1,073     1,015      94.6%         23.3
+      Libertad                            228       201      88.2%         22.8
+      Flores Sur                          121       112      92.6%         20.2
+      Corrientes y Pueyrredón             299       290      97.0%         18.7
+      Monte Castro                        335       291      86.9%         18.6
+      Liniers                             182       169      92.9%         18.2
+      Santa Fe y Coronel Díaz             291       272      93.5%         18.2
+      Sáenz                               212       185      87.3%         17.7
+
+====================================================================================================
+  crudos en outputs\BARRIDO_CIUDAD_2026-08\idecba\crudos · hojas volcadas a CSV en outputs\BARRIDO_CIUDAD_2026-08\idecba
+====================================================================================================
+

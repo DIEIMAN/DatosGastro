@@ -1,31 +1,44 @@
 LAS SEIS VÍAS · las columnas medibles, sobre las 94 filas y sobre las 22 publicadas
 ====================================================================================================
 
-  puntos: 23,981 · hitos con punto: 187 · mercados ubicables: 8 · enclaves: 4
+  puntos: 23,981 · hitos con punto: 215 · mercados ubicables: 8 · enclaves: 4
   Todo lo declarado está en LECTURA_PREVIA.md. Google Places: 0 requests.
 
 ----------------------------------------------------------------------------------------------------
   LA COBERTURA DE LOS HITOS, AL LADO DEL CONTEO Y NO AL PIE
 
-      tipo                        hitos  con punto  sin punto
-      Bar Notable                    90         90          0
-      Heladería histórica             5          0          5
-      MICHELIN                       58         57          1
-      Mercado/patio                  12          8          4
-      Pizzería emblemática           20          0         20
-      Ranking internacional          16         16          0
-      Restaurante Icónico            16         16          0
+      tipo                        hitos  con punto  sin punto  cerrados  dudosos
+      Bar Notable                    90         90          0         1        1
+      Heladería histórica             5          5          0         0        0
+      MICHELIN                       58         57          1         0        0
+      Mercado/patio                  12          8          4         0        0
+      Patrimonio normativo            3          3          0         0        1
+      Pizzería emblemática           20         20          0         0        0
+      Ranking internacional          16         16          0         0        0
+      Restaurante Icónico            16         16          0         0        0
 
-      patrimonio normativo (ubicables): 2
-            Mercado de San Telmo — Mercado o patio documentado
-            Yiyo el Zeneize — Patrimonio historico y cultural inmaterial (Ley CABA 6.533)
-      Estaba avisado en LECTURA_PREVIA §4: la columna sale casi entera en cero y eso
-      es un hueco de la fuente, no un resultado sobre el territorio. La Esquina Homero
-      Manzi, que la definición cita como Sitio Histórico Nacional, figura en la capa
-      sólo como Bar Notable: su declaratoria nacional no está cargada en ningún lado.
+      patrimonio normativo (ubicables): 10
+            Mercado de San Telmo                          Monumento Historico Nacional
+            El Puentecito                                 Declarado de Interes Cultural
+            Yiyo el Zeneize                               Patrimonio historico y patrimonio cultural i
+            BAR OVIEDO                                    Sitio de Interes Cultural + APH 21 proteccio
+            Esquina Homero Manzi                          Sitio Historico Nacional
+            Banchero                                      Sitio de Interes Cultural
+            El Cedron                                     Sitio de Interes Cultural
+            Pena Los Amigos / Bar El Chino                Sitio de Interes Cultural
+            Bar Catedral Tango                            Sitio de Interes Cultural
+            Edificios Administrativos del Antiguo Matade  Monumento Historico Nacional + APH 21
 
-      Un 0 en una fila puede ser «no hay» o «no sabemos dónde». Las 20 pizzerías y las 5
-      heladerías sin altura no se ubican en el centroide del barrio: quedan sin punto.
+      vigencia · cerrados verificados: 1 · dudosos: 2 · sin verificar: 211
+            NO       Los Laureles                    cerró a fines de julio de 2026; el circuito gastronómico oficial del G
+            DUDOSA   BAR OVIEDO                      catálogo oficial lo lista y APH 21 lo protege, pero la última observac
+            DUDOSA   Pena Los Amigos / Bar El Chino  Sitio de Interés Cultural 1999; sin cobertura posterior a 2017
+      Los cerrados NO abren vía B (regla de LECTURA_PREVIA_RONDA_2 §2). Los dudosos sí,
+      y el conteo de dudosos viaja al lado del total en cada fila de la matriz.
+
+      Un 0 en una fila puede ser «no hay» o «no sabemos dónde». Las pizzerías y heladerías
+      ya tienen punto; los 5 que quedan sin ubicar son 4 mercados sin dirección publicada
+      y 1 MICHELIN.
 
 ----------------------------------------------------------------------------------------------------
   CÓMO SE CONSTRUYERON LOS CUATRO ENCLAVES (vía D)
@@ -56,16 +69,16 @@ LAS SEIS VÍAS · las columnas medibles, sobre las 94 filas y sobre las 22 publi
   TAREA 1 · LAS 94 FILAS · cuántas abren cada vía
 
       A · densidad          89 de 94
-      B · trayectoria       40 de 94
+      B · trayectoria       43 de 94
       C · mercados           4 de 94
       D · comunidades        7 de 94
       F · corredor          53 de 94
       E · reconocimiento     —   columna vacía a propósito: la llena Diego
 
       vías medibles abiertas por fila (sobre las 92 con soporte):
-            1.0 vía(s): 17 filas
-            2.0 vía(s): 50 filas
-            3.0 vía(s): 24 filas
+            1.0 vía(s): 16 filas
+            2.0 vía(s): 49 filas
+            3.0 vía(s): 26 filas
             4.0 vía(s): 1 filas
       filas con CERO vías medibles abiertas: 0
 
@@ -102,23 +115,23 @@ LAS SEIS VÍAS · las columnas medibles, sobre las 94 filas y sobre las 22 publi
   id   zona                              A  B  C  D  F  total   hitos
   R05  Belgrano                          X  X  X  X  ·      4   1
   R07  Costanera Norte                   X  X  X  ·  X      4   2
-  R01  Palermo                           X  X  X  ·  ·      3   20
-  R02  Avenida Corrientes                X  X  ·  ·  X      3   9
+  R01  Palermo                           X  X  X  ·  ·      3   21
+  R02  Avenida Corrientes                X  X  ·  ·  X      3   10
   R04  Puerto Madero                     X  X  ·  ·  X      3   7
   R10  Caballito                         X  X  X  ·  ·      3   2
-  R13  Abasto                            X  X  ·  ·  X      3   2
-  R14  Avenida Boedo                     X  X  ·  ·  X      3   2
-  R15  Devoto                            X  X  ·  ·  X      3   2
+  R13  Abasto                            X  X  ·  ·  X      3   3
+  R14  Avenida Boedo                     X  X  ·  ·  X      3   3
+  R15  Devoto                            X  X  ·  ·  X      3   3
   R19  Federico Lacroze por tramos       X  X  ·  ·  X      3   1
-  R06  Recoleta                          X  X  ·  ·  ·      2   9
+  R06  Recoleta                          X  X  ·  ·  ·      2   10
   R08  Villa Crespo                      X  X  ·  ·  ·      2   8
   R09  Chacarita                         X  X  ·  ·  ·      2   3
   R11  Boulevard Caseros                 ·  X  ·  ·  X      2   1
-  R12  Centro / Microcentro segmentado   X  X  ·  ·  ·      2   18
+  R12  Centro / Microcentro segmentado   X  X  ·  ·  ·      2   21
   R16  Donado-Holmberg                   X  ·  ·  ·  X      2   0
   R17  Villa Urquiza                     X  X  ·  ·  ·      2   1
   R18  Esmeralda-Paraguay                X  X  ·  ·  ·      2   4
-  R21  La Paternal                       X  X  ·  ·  ·      2   1
+  R21  La Paternal                       X  X  ·  ·  ·      2   3
   R03  San Telmo                         ·  X  ·  ·  ·      1   1
   R20  Garcia del Rio                    ·  ·  ·  ·  X      1   0
   R22  Villa Pueyrredon                  X  ·  ·  ·  ·      1   0

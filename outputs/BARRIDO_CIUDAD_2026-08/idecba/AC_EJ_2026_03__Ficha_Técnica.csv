@@ -1,0 +1,33 @@
+FICHA TÉCNICA,
+Archivo,AC_EJ_2026_03
+Área Temática ,COMERCIO INTERIOR
+Tema ,LOCALES COMERCIALES
+Subtema,EJES COMERCIALES
+Serie 1,Locales relevados 
+Objetivo,"Presentar información sobre los locales relevados en los ejes comerciales de la Ciudad de Buenos Aires. Los ejes comerciales están constituidos por calles o intersecciones, las cuales fueron seleccionadas en función de tres variables: densidad comercial, ubicación territorial y actividades predominantes en ellas."
+Variable 1 ,Locales relevados por eje comercial 
+Definición operativa ,"Corresponde a los locales relevados en cada uno de los ejes comerciales de la Ciudad de Buenos Aires. Se considera Local el establecimiento separado y estructuralmente independiente, identificable visualmente, que desarrolla una actividad con fines comerciales (venta de bienes y/o oferta de servicios) y/o productivos. En la práctica, el concepto comprende a todos los locales con atención al público y con acceso directo desde la calle; no incluye locales en el interior de galerías ni shoppings (solo se relevan los que tienen vidriera a la vereda). Tampoco se consideran puestos de revistas y de flores, ferias informales y comercios ubicados en andenes ferroviarios o subterráneos. Asimismo, quedan fuera de la definición los locales que desarrollan actividades sin fines de lucro tales como educación pública, salud pública, dependencias gubernamentales, cementerios, asociaciones civiles, obras sociales, centros de jubilados, centros culturales, clubes sociales, museos, bibliotecas y templos religiosos"
+Unidad de medida,Unidades
+Método de cálculo (fórmula),No corresponde 
+Serie 2,Locales ocupados 
+Objetivo,Presentar información sobre el estado de ocupación de los locales comerciales en los ejes comerciales de la Ciudad de Buenos Aires
+Variable 1 ,Locales ocupados por eje comercial 
+Definición operativa ,Corresponde a los comercios que se encuentran abiertos o prestando servicios el día del relevamiento en cada uno de los ejes comerciales de la Ciudad de Buenos Aires
+Unidad de medida,Unidades
+Método de cálculo (fórmula),No corresponde 
+Serie 3,Tasa de ocupación 
+Objetivo,Presentar la evolución de la ocupación de locales comerciales en los ejes comerciales de la Ciudad de Buenos Aires
+Variable 1 ,Tasa de ocupación por eje comercial 
+Definición operativa ,Corresponde a la sumatoria de los locales ocupados sobre el total de locales relevados en cada uno de los ejes comerciales de la Ciudad de Buenos Aires
+Unidad de medida,Porcentaje
+Método de cálculo (fórmula),"Cociente de los locales ocupados sobre los locales relevados, expresado en porcentaje"
+Serie 4,Densidad comercial
+Objetivo,Presentar información sobre la densidad comercial (locales por frente de manzana) en los ejes comerciales de la Ciudad de Buenos Aires
+Variable 1 ,Densidad comercial por eje comercial
+Definición operativa ,Corresponde al promedio de locales relevados por frente de manzana (independientemente del estado) en cada uno de los ejes comerciales de la Ciudad de Buenos Aires
+Unidad de medida,Unidades
+Método de cálculo (fórmula),Cociente de la cantidad de locales sobre el total de frentes de manzana relevados
+Periodicidad de recepción (información secundaria),No corresponde 
+Periodicidad de recolección (información primaria),Cuatrimestral
+Periodicidad de difusión ,Cuatrimestral
+Fuente,Instituto de Estadística y Censos de la Ciudad Autónoma de Buenos Aires (Jefatura de Gabinete de Ministros - GCBA)

@@ -1,0 +1,131 @@
+ENTE DE TURISMO · «Oferta y Establecimientos gastronómicos» · bajado desde el repositorio
+====================================================================================================
+
+  título:     Oferta y Establecimientos gastronómicos
+  licencia:   CC-BY-2.5-AR  → redistribuible
+  organismo:  Ente de Turismo (ENTUR)
+  metadata_modified del DATASET: 2026-07-22T13:13:22.725228
+
+----------------------------------------------------------------------------------------------------
+  LA FECHA DEL REGISTRO NO ES LA FECHA DE LOS ARCHIVOS
+
+      formato   last_modified del recurso     recurso
+      XLSX      2019-08-05T10:59:26.543103    Oferta gastronómica (XLSX)
+      CSV       2019-08-05T10:59:26.543103    Oferta gastronómica
+      XLSX      2019-08-05T11:26:49.845576    Establecimientos Gastronómicos (XLSX)
+      CSV       2019-08-05T11:26:49.845576    Establecimientos Gastronómicos
+      ZIP       2019-08-05T11:33:20.011060    Establecimientos Gastronómicos (SHP)
+      GeoJSON   2019-05-03T17:11:47.236460    Oferta gastronómica (GeoJSON)
+      ZIP       2019-05-03T17:09:04.022572    Oferta gastronómica (SHP)
+
+      años de los archivos: ['2019']
+      año del registro:     2026
+
+      XLSX: registrado y no bajado (ZIP/XLSX duplican al CSV)
+      bajado: oferta_gastronomica.csv  (438,717 bytes)
+          codificación: latin-1
+          2,823 filas × 18 columnas
+          derivada sin contacto: 16 columnas (2 quitadas por guardrail 7)
+      XLSX: registrado y no bajado (ZIP/XLSX duplican al CSV)
+      bajado: establecimientos_gastronomicos.csv  (20,687 bytes)
+          codificación: latin-1
+          124 filas × 11 columnas
+          derivada sin contacto: 7 columnas (4 quitadas por guardrail 7)
+      ZIP: registrado y no bajado (ZIP/XLSX duplican al CSV)
+      bajado: oferta-gastronomica.geojson  (1,678,491 bytes)
+          2,823 filas × 19 columnas
+          derivada sin contacto: 17 columnas (2 quitadas por guardrail 7)
+      ZIP: registrado y no bajado (ZIP/XLSX duplican al CSV)
+
+----------------------------------------------------------------------------------------------------
+  QUÉ TRAE CADA TABLA
+
+      establecimientos_gastronomicos.csv — 124 filas
+          nro_registro                  124 no nulos     123 distintos   RL-2017-25630894- -DGCCO
+          rubro                         124 no nulos      15 distintos   Restaurante
+          establecimiento               124 no nulos     122 distintos   1893
+          domicilio_completo            124 no nulos     124 distintos   SCALABRINI ORTIZ 701
+          barrio                        124 no nulos      27 distintos   VILLA CRESPO
+          comuna                        124 no nulos      12 distintos   15
+          telefono                      124 no nulos     124 distintos   [columna de contacto · no se transcribe]
+          email                         122 no nulos     102 distintos   [columna de contacto · no se transcribe]
+          facebook                      124 no nulos      61 distintos   [columna de contacto · no se transcribe]
+          web                           124 no nulos      91 distintos   [columna de contacto · no se transcribe]
+          accesibilidad                   0 no nulos       0 distintos   
+
+      oferta-gastronomica.geojson — 2,823 filas
+          long                         2823 no nulos    2705 distintos   -58.3633067544777
+          lat                          2823 no nulos    2705 distintos   -34.6229634698018
+          id                           2823 no nulos    2823 distintos   1602
+          nombre                       2823 no nulos    2554 distintos   GUANTANAMERA
+          categoria                    2707 no nulos       8 distintos   RESTAURANTE
+          cocina                       2464 no nulos      52 distintos   CUBANA
+          ambientacion                 2264 no nulos      57 distintos   MODERNO
+          telefono                     2303 no nulos    2246 distintos   [columna de contacto · no se transcribe]
+          mail                          472 no nulos     403 distintos   [columna de contacto · no se transcribe]
+          horario                       725 no nulos     387 distintos   lunes a domingo de 8 a 00
+          calle_nombre                 2823 no nulos     455 distintos   MOREAU DE JUSTO ALICIA
+          calle_altura                 2823 no nulos    1778 distintos   2092
+          calle_cruce                     6 no nulos       5 distintos   JUSTO, JUAN B
+          direccion_completa           2822 no nulos    2745 distintos   MOREAU DE JUSTO, ALICIA AV. 2092
+          barrio                       2823 no nulos      47 distintos   Puerto Madero
+          comuna                       2823 no nulos      15 distintos   Comuna 1
+          codigo_postal                2766 no nulos     234 distintos   1107.0
+          codigo_postal_argentino      2757 no nulos    2075 distintos   C1107AFP
+          geometry                     2823 no nulos    2705 distintos   POINT (-58.3633067544777 -34.6229634698018)
+
+      oferta_gastronomica.csv — 2,823 filas
+          long                         2823 no nulos    2703 distintos   -58,36330675
+          lat                          2823 no nulos    2702 distintos   -34,62296347
+          id                           2823 no nulos    2823 distintos   1602
+          nombre                       2823 no nulos    2554 distintos   GUANTANAMERA
+          categoria                    2707 no nulos       8 distintos   RESTAURANTE
+          cocina                       2464 no nulos      52 distintos   CUBANA
+          ambientacion                 2264 no nulos      57 distintos   MODERNO
+          telefono                     2303 no nulos    2246 distintos   [columna de contacto · no se transcribe]
+          mail                          472 no nulos     403 distintos   [columna de contacto · no se transcribe]
+          horario                       725 no nulos     387 distintos   lunes a domingo de 8 a 00
+          calle_nombre                 2823 no nulos     455 distintos   MOREAU DE JUSTO ALICIA
+          calle_altura                 2823 no nulos    1778 distintos   2092
+          calle_cruce                     6 no nulos       5 distintos   JUSTO, JUAN B
+          direccion_completa           2822 no nulos    2745 distintos   MOREAU DE JUSTO, ALICIA AV. 2092
+          barrio                       2823 no nulos      47 distintos   Puerto Madero
+          comuna                       2823 no nulos      15 distintos   1
+          codigo_postal                2766 no nulos     234 distintos   1107.0
+          codigo_postal_argentino      2757 no nulos    2075 distintos   C1107AFP
+
+----------------------------------------------------------------------------------------------------
+  CONTRA LA BASE · ¿puede esta fuente resolver la vía A «por conteo real»?
+
+      ENTUR (2019):        2,823 puntos en toda la Ciudad
+      base del barrido:    23,981 puntos del anillo núcleo
+      razón ENTUR/base:    0.12
+
+      id   zona                               ENTUR    base   razón
+      R01  Palermo                              200    1358    0.15
+      R02  Avenida Corrientes                    88     354    0.25
+      R03  San Telmo                             18      71    0.25
+      R04  Puerto Madero                         72     354    0.20
+      R05  Belgrano                              21     343    0.06
+      R06  Recoleta                             146     714    0.20
+      R07  Costanera Norte                        2      67    0.03
+      R08  Villa Crespo                          49     823    0.06
+      R09  Chacarita                             15     202    0.07
+      R10  Caballito                             68     508    0.13
+      R11  Boulevard Caseros                      6      60    0.10
+      R12  Centro / Microcentro segmentado      275    1084    0.25
+      R13  Abasto                                 7     373    0.02
+      R14  Avenida Boedo                          9     245    0.04
+      R15  Devoto                                24     422    0.06
+      R16  Donado-Holmberg                        5     121    0.04
+      R17  Villa Urquiza                         17     528    0.03
+      R18  Esmeralda-Paraguay                    62     318    0.19
+      R19  Federico Lacroze por tramos           16     185    0.09
+      R20  Garcia del Rio                         4      61    0.07
+      R21  La Paternal                            9     208    0.04
+      R22  Villa Pueyrredon                      10     198    0.05
+
+====================================================================================================
+  crudos en outputs\BARRIDO_CIUDAD_2026-08\entur\crudos · perfil en perfil_columnas_entur.csv · Google Places: 0 requests
+====================================================================================================
+

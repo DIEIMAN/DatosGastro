@@ -4,7 +4,7 @@ MATRIZ · las columnas medibles de las seis vías, incorporadas
 ====================================================================================================
 
   filas:    94   (sin cambios)
-  columnas: 51 → 51
+  columnas: 51 → 53
   las 23 columnas previas: verificadas celda por celda, 0 diferencias
 
   Columnas nuevas, en este orden y todas al final:
@@ -25,6 +25,8 @@ MATRIZ · las columnas medibles de las seis vías, incorporadas
         via_B_50best                      92 de 94 con valor
         via_B_patrimonio_normativo        92 de 94 con valor
         via_B_total                       92 de 94 con valor
+        via_B_cerrados                    92 de 94 con valor
+        via_B_dudosos                     92 de 94 con valor
         via_B_abierta                     92 de 94 con valor
         via_C_mercado_patio               92 de 94 con valor
         via_C_cual                         4 de 94 con valor

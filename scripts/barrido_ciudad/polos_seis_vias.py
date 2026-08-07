@@ -68,7 +68,7 @@ from polos_soporte import (  # noqa: E402
 
 OUT = BARRIDO / "seis_vias"
 HITOS = BARRIDO / "hitos"
-DOCUMENTAL = BARRIDO / "desde_cowork" / "hitos_documentales_caba.csv"
+CAPA_2026 = HITOS / "hitos_capa_2026.csv"
 
 # --------------------------------------------------------------------------- lo declarado
 UMBRAL_CONTINUIDAD_M = 60           # ≈ media cuadra: dos locales «en el mismo tramo»
@@ -98,38 +98,22 @@ def sin_tildes(texto: str) -> str:
 
 
 def capa_hitos_vigente() -> tuple[gpd.GeoDataFrame, pd.DataFrame]:
-    """La capa de hitos con el bloque de Bar Notable reemplazado por el canon del Boletín."""
-    capa = pd.read_csv(HITOS / "hitos_capa_unificada.csv")
-    canon = pd.read_csv(HITOS / "bares_notables_canon_boletin.csv")
+    """La capa de hitos 2026, que arma `hitos_cargar_evidencia_2026.py` y acá sólo se lee.
 
-    otros = capa[capa.tipo != "Bar Notable"].copy()
-    nuevos = pd.DataFrame({
-        "hito_id": canon.id_boletin,
-        "nombre": canon.bar,
-        "tipo": "Bar Notable",
-        "reconocimiento": "Bar Notable (Boletín Oficial · declaratoria)",
-        "direccion": canon.direccion_boletin,
-        "barrio_declarado": np.nan,
-        "latitud": canon.latitud,
-        "longitud": canon.longitud,
-        "origen": "BOLETIN_90 (canon) · " + canon.origen_punto.fillna(""),
-        "fuente_primaria": "Boletín Oficial CABA",
-        "edicion_o_anio": np.nan,
-        "confianza": "alta",
-    })
-    vigente = pd.concat([otros, nuevos], ignore_index=True)
-
-    # `patrimonio normativo` se saca del catálogo documental, que es el que guarda el acto: la
-    # capa unificada lo pierde al reescribir `reconocimiento` de los mercados.
-    documental = pd.read_csv(DOCUMENTAL)
-    patrimonio = documental[documental.distincion.astype(str).str.contains(
-        PATRON_PATRIMONIO, case=False, na=False, regex=True)]
-    claves_patrimonio = {sin_tildes(n).upper().strip() for n in patrimonio.nombre}
-    vigente["es_patrimonio_normativo"] = vigente.nombre.map(
-        lambda n: sin_tildes(n).upper().strip() in claves_patrimonio)
-    # El reconocimiento de la propia capa también cuenta cuando nombra un acto.
-    vigente["es_patrimonio_normativo"] |= vigente.reconocimiento.astype(str).str.contains(
-        PATRON_PATRIMONIO, case=False, na=False, regex=True)
+    Antes esta función reconstruía la capa cada vez. Ahora la capa vive en disco con su propia
+    corrida y su propio reporte: se puede mirar, versionar y comparar contra la de ayer. Un
+    insumo que sólo existe adentro de la memoria del script que lo consume no se puede auditar.
+    """
+    if not CAPA_2026.exists():
+        raise SystemExit(
+            f"falta {CAPA_2026.relative_to(ROOT)} — correr antes "
+            "scripts/barrido_ciudad/hitos_cargar_evidencia_2026.py")
+    vigente = pd.read_csv(CAPA_2026)
+    for columna, defecto in [("es_patrimonio_normativo", False),
+                             ("vigencia_verificada", "sin_verificar")]:
+        if columna not in vigente.columns:
+            raise SystemExit(f"la capa 2026 no trae `{columna}`: corrida abortada")
+        vigente[columna] = vigente[columna].fillna(defecto)
 
     con_punto = vigente[vigente.latitud.notna() & vigente.longitud.notna()].copy()
     geo = gpd.GeoDataFrame(
@@ -141,6 +125,8 @@ def capa_hitos_vigente() -> tuple[gpd.GeoDataFrame, pd.DataFrame]:
             "hitos": len(g),
             "con_punto": int(g.latitud.notna().sum()),
             "sin_punto": int(g.latitud.isna().sum()),
+            "cerrados": int((g.vigencia_verificada == "no").sum()),
+            "dudosos": int((g.vigencia_verificada == "dudosa").sum()),
         })).reset_index()
     return geo.reset_index(drop=True), cobertura
 
@@ -213,25 +199,33 @@ def main() -> int:
     p("-" * 100)
     p("  LA COBERTURA DE LOS HITOS, AL LADO DEL CONTEO Y NO AL PIE")
     p("")
-    p(f"      {'tipo':<26}{'hitos':>7}{'con punto':>11}{'sin punto':>11}")
+    p(f"      {'tipo':<26}{'hitos':>7}{'con punto':>11}{'sin punto':>11}"
+      f"{'cerrados':>10}{'dudosos':>9}")
     for fila in cobertura_hitos.itertuples():
-        p(f"      {fila.tipo:<26}{fila.hitos:>7}{fila.con_punto:>11}{fila.sin_punto:>11}")
+        p(f"      {fila.tipo:<26}{fila.hitos:>7}{fila.con_punto:>11}{fila.sin_punto:>11}"
+          f"{fila.cerrados:>10}{fila.dudosos:>9}")
     patrimonio_total = int(hitos.es_patrimonio_normativo.sum())
     p("")
     p(f"      patrimonio normativo (ubicables): {patrimonio_total}")
     for fila in hitos[hitos.es_patrimonio_normativo].itertuples():
-        p(f"            {fila.nombre} — {fila.reconocimiento}")
+        p(f"            {fila.nombre[:44]:<46}{str(fila.patrimonio_declaratoria)[:44]}")
     if patrimonio_total == 0:
         p("      CORTE R8: la columna de patrimonio normativo llegó vacía entera. No se reporta")
         p("      ninguna conclusión sobre ella.")
-    else:
-        p("      Estaba avisado en LECTURA_PREVIA §4: la columna sale casi entera en cero y eso")
-        p("      es un hueco de la fuente, no un resultado sobre el territorio. La Esquina Homero")
-        p("      Manzi, que la definición cita como Sitio Histórico Nacional, figura en la capa")
-        p("      sólo como Bar Notable: su declaratoria nacional no está cargada en ningún lado.")
     p("")
-    p("      Un 0 en una fila puede ser «no hay» o «no sabemos dónde». Las 20 pizzerías y las 5")
-    p("      heladerías sin altura no se ubican en el centroide del barrio: quedan sin punto.")
+    cerrados = hitos[hitos.vigencia_verificada == "no"]
+    dudosos = hitos[hitos.vigencia_verificada == "dudosa"]
+    p(f"      vigencia · cerrados verificados: {len(cerrados)} · dudosos: {len(dudosos)} · "
+      f"sin verificar: {int((hitos.vigencia_verificada == 'sin_verificar').sum())}")
+    for fila in pd.concat([cerrados, dudosos]).itertuples():
+        p(f"            {fila.vigencia_verificada.upper():<9}{fila.nombre[:30]:<32}"
+          f"{str(fila.vigencia_fuente)[:70]}")
+    p("      Los cerrados NO abren vía B (regla de LECTURA_PREVIA_RONDA_2 §2). Los dudosos sí,")
+    p("      y el conteo de dudosos viaja al lado del total en cada fila de la matriz.")
+    p("")
+    p("      Un 0 en una fila puede ser «no hay» o «no sabemos dónde». Las pizzerías y heladerías")
+    p("      ya tienen punto; los 5 que quedan sin ubicar son 4 mercados sin dirección publicada")
+    p("      y 1 MICHELIN.")
     p("")
 
     def medir_capa(capa: gpd.GeoDataFrame, clave: str) -> pd.DataFrame:
@@ -276,7 +270,14 @@ def main() -> int:
                 registro[f"via_B_{columna}"] = int((propios.tipo == tipo).sum())
             registro["via_B_patrimonio_normativo"] = int(propios.es_patrimonio_normativo.sum())
             registro["via_B_total"] = len(propios)
-            registro["via_B_abierta"] = "si" if len(propios) else "no"
+            # Regla declarada en LECTURA_PREVIA_RONDA_2 §2: un hito verificado como CERRADO no
+            # abre la vía. Los Laureles cerró en julio de 2026 y el circuito oficial lo sigue
+            # publicando; certificar trayectoria con un local que ya no existe es el error que
+            # después se cita. Los dudosos y los sin verificar sí cuentan, y se ven al lado.
+            cerrados = propios[propios.vigencia_verificada == "no"]
+            registro["via_B_cerrados"] = len(cerrados)
+            registro["via_B_dudosos"] = int((propios.vigencia_verificada == "dudosa").sum())
+            registro["via_B_abierta"] = "si" if len(propios) - len(cerrados) > 0 else "no"
             registro["via_B_nombres"] = "; ".join(sorted(propios.nombre.astype(str))[:12])
 
             suyos = mercados_dentro[mercados_dentro[clave] == identificador]

@@ -1,0 +1,115 @@
+CAPA DE HITOS 2026 · direcciones, patrimonio normativo y vigencia verificada
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LAS DIRECCIONES QUE FALTABAN
+
+      entrada: 25 filas · 25 con dirección · 15 de calidad alta
+
+      geocodificados: 25 de 25
+            por esquina, altura vacía: El Fortin (Av. Alvarez Jonte y Av. Lope de Vega)
+
+      LOS CINCO CONFLICTOS · las variantes cargadas y la distancia entre ellas
+
+          La Americana
+              · Av. Callao 83                   sitio oficial · Comuna 3    Balvanera
+              una sola variante con punto: el conflicto no es de dirección
+
+          La Mezzetta
+              · Av. Alvarez Thomas 1321         prensa (Cronista)           Villa Ortuzar
+              · Av. Alvarez Thomas 1311         GCBA                        Chacarita
+              distancia máxima entre variantes: 12 m — MISMA ESQUINA: no cambia ningún polígono
+
+          Banchero
+              · Suarez 396                      GCBA                        La Boca
+              · Av. Almirante Brown 1220        canal26                     La Boca
+              distancia máxima entre variantes: 28 m — MISMA ESQUINA: no cambia ningún polígono
+
+          San Carlos
+              · Av. Rivadavia 4548              dos fuentes                 Caballito
+              · Av. Rivadavia y Av. La Plata    prensa (descripcion)        Caballito
+              distancia máxima entre variantes: 80 m — MISMA CUADRA: no cambia ningún polígono
+
+          Saverio Helados
+              · Av. San Juan 2809               oficial                     San Cristobal
+              · Av. San Juan 2816               La Nacion                   San Cristobal
+              · Av. San Juan 2727               fundacional (YA NO OPERA)   San Cristobal
+              distancia máxima entre variantes: 136 m — MATERIAL: puede caer en polígonos distintos
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · LA CAPA patrimonio_normativo
+
+      10 establecimientos · 10 geocodificados (antes la columna tenía 2 hitos)
+
+          Esquina Homero Manzi                          Sitio Historico Nacional                      -
+          Pena Los Amigos / Bar El Chino                Sitio de Interes Cultural                     norma 421/99
+          Pizzeria Banchero                             Sitio de Interes Cultural                     Norma 143/02
+          Bar Oviedo                                    Sitio de Interes Cultural + APH 21 proteccio  -
+          Bar Catedral Tango                            Sitio de Interes Cultural                     -
+          Pizzeria El Cedron                            Sitio de Interes Cultural                     -
+          El Puentecito                                 Declarado de Interes Cultural                 -
+          Edificios Administrativos del Antiguo Matade  Monumento Historico Nacional + APH 21         Decreto 1021/1979 ⚠
+          Mercado de San Telmo                          Monumento Historico Nacional                  Decreto 12/2001
+          Yiyo el Zeneize                               Patrimonio historico y patrimonio cultural i  Ley CABA 6.533
+
+      DOS RESERVAS, y viajan en la columna `nota` de la capa:
+          · Decreto 1021/1979 (Antiguo Matadero) sale de una fuente barrial y FALTA
+            confirmarlo contra el registro nacional. Entra marcado, no entra validado.
+          · El Mercado de San Telmo queda 64 m afuera de la envolvente R03. Se carga con
+            su dirección real: el problema es de la delimitación de la zona, no del hito.
+
+      Y el caso que conviene mirar: la Ley 6.533 declara patrimonio la CARTA GASTRONÓMICA
+      de Yiyo el Zeneize, no sólo el edificio. Es el patrimonio gastronómico por normativa
+      más nítido de la Ciudad y no tiene equivalente en las otras nueve.
+
+      marcados sobre hitos que ya estaban: 7 → ['Mercado de San Telmo ← Mercado de San Telmo', 'El Puentecito ← El Puentecito', 'Yiyo el Zeneize ← Yiyo el Zeneize', 'BAR OVIEDO ← Bar Oviedo', 'Esquina Homero Manzi ← Esquina Homero Manzi', 'Banchero ← Pizzeria Banchero', 'El Cedron ← Pizzeria El Cedron']
+      agregados como fila nueva:           3 → ['Pena Los Amigos / Bar El Chino', 'Bar Catedral Tango', 'Edificios Administrativos del Antiguo Matadero']
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · vigencia_verificada / vigencia_fuente / vigencia_fecha
+
+          NO            LOS LAURELES                      1 fila(s)
+          DUDOSA        BAR OVIEDO                        1 fila(s)
+          DUDOSA        PENA LOS AMIGOS BAR EL CHINO      1 fila(s)
+          SI            CASA BURGIO                       1 fila(s)
+
+          sin_verificar     216
+          dudosa              2
+          no                  1
+          si                  1
+
+      `sin_verificar` es un CUARTO valor y está a propósito. Los tres del enunciado —si,
+      no, dudosa— suponen que alguien miró, y sobre estos hitos nadie miró. Poner `si` por
+      omisión sería exactamente el error que Los Laureles acaba de demostrar.
+
+      Y 10 cierres confirmados que NO están en la capa quedan en
+      `cierres_registrados_fuera_de_la_capa.csv` como lista de guardia, para que ninguno
+      entre en una carga futura sin que salte:
+          Bar Lisandro                      bar notable     1908                  cierre confirmado
+          El Malevo                         bar             —                     cierre confirmado
+          Banchero · sucursal Once          pizzería        —                     cierre de la sucursal; la casa de La Boca sigue
+          Saverio · local fundacional       heladería       Av. San Juan 2727     ya no opera
+          Gino                              heladería       Liniers               cierre confirmado
+          Venus                             heladería       Liniers               cierre confirmado
+          Vecchio                           heladería       Liniers               cierre confirmado
+          Fratelli                          heladería       Liniers               cierre confirmado
+          La Veneciana                      heladería       Liniers               cierre confirmado
+          Sandro                            heladería       Liniers               cierre confirmado
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA 2026 · cobertura por tipo, que es lo que cambia la vía B
+
+      tipo                        hitos  con punto   antes
+      Bar Notable                    90         90      84
+      Heladería histórica             5          5       0
+      MICHELIN                       58         57      57
+      Mercado/patio                  12          8       8
+      Patrimonio normativo            3          3       0
+      Pizzería emblemática           20         20       0
+      Ranking internacional          16         16      16
+      Restaurante Icónico            16         16      16
+
+====================================================================================================
+  220 hitos · 215 con punto · 10 patrimonio normativo · Google Places: 0 requests
+====================================================================================================
+
