@@ -58,7 +58,7 @@ from borrador_polos_ciudad import (  # noqa: E402
     CRS_METRICO, ENVOLVENTES_22, PARAMETROS, cargar_puntos,
 )
 from polos_atributos_clases import OUT  # noqa: E402
-from polos_foco_menor import calle  # noqa: E402
+from normalizar_calles import resolutor_desde  # noqa: E402
 
 CALLES_TOP = 6
 SOLAPE_MINIMO = 0.02      # por debajo de esto la zona publicada apenas roza el polo y no se lista
@@ -90,6 +90,11 @@ def main() -> int:
     corte = json.loads((OUT / "parametros_v2.json").read_text(
         encoding="utf-8"))["clases_densidad"]["cortes_locales_x_ha"][0]
 
+    # El resolutor se arma sobre TODA la base y no polo por polo: si cada polo eligiera su
+    # etiqueta con sus propios locales, la misma calle podría salir «Juana Manso» en un polo y
+    # «Manso Juana» en el de al lado. La etiqueta la decide el corpus entero, una vez.
+    resolutor = resolutor_desde(geo)
+
     asignados = geo[geo.polo_unido != ""].reset_index(drop=True)
     xy = np.c_[asignados.geometry.x.to_numpy(), asignados.geometry.y.to_numpy()]
     etiqueta = asignados.polo_unido.to_numpy()
@@ -118,7 +123,7 @@ def main() -> int:
         fila_atributos = atributos[atributos.polo_id == polo.polo_id].iloc[0]
 
         con_direccion = cuerpo.direccion_norm.dropna()
-        calles = con_direccion.map(calle)
+        calles = con_direccion.map(resolutor.etiqueta)
         calles = calles[calles.str.len() > 2].value_counts().head(CALLES_TOP)
 
         # --- zonas publicadas encima, con los dos porcentajes

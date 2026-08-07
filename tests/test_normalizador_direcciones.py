@@ -29,7 +29,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "barrido_ciudad"))
 
 from dataset_bares_notables import limpiar  # noqa: E402
-from polos_foco_menor import calle  # noqa: E402
+from normalizar_calles import (  # noqa: E402
+    MARCADORES, MARCADORES_PAREADOS, ResolutorDeCalles, calle, clave_calle,
+)
 
 
 class LimpiezaDeDirecciones(unittest.TestCase):
@@ -198,6 +200,201 @@ class ClaveDeCalle(unittest.TestCase):
         """
         self.assertEqual(calle("RAMON L. FALCON 2400"), "RAMON L FALCON")
         self.assertEqual(calle("S. MARTIN 1200"), "S MARTIN")
+
+
+class ClaveInsensibleAlOrden(unittest.TestCase):
+    """El CUARTO bicho de la serie R8: la misma calle escrita en otro orden.
+
+    La desinversión se dispara con la coma, y el inventario mostró que la coma **no siempre
+    está**: `ROOSEVELT FRANKLIN D.` viene invertido y sin coma, y `URIBURU JOSE E., Pres.` tiene
+    la coma separando el tratamiento y no el apellido. Es la misma causa que Niceto Vega —una
+    regla apoyada en una marca que falta— y produce el mismo daño: la calle en dos filas, con la
+    mitad de los locales cada una, y sin avisar.
+
+    El arreglo no adivina el orden: la clave es el CONJUNTO de tokens, así que las dos escrituras
+    caen juntas sin que nadie declare cuál está bien.
+    """
+
+    def test_invertido_sin_coma_cae_en_la_misma_clave(self):
+        """Los casos medidos del inventario, los seis."""
+        pares = [
+            ("ROOSEVELT FRANKLIN D. 2200", "Franklin D. Roosevelt 2200"),
+            ("MANSO JUANA 1500", "Juana Manso 1500"),
+            ("URIBURU JOSE E., Pres. 700", "Presidente José E. Uriburu 700"),
+            ("LINIERS VIRREY 1400", "Virrey Liniers 1400"),
+            ("AZURDUY JUANA 100", "Juana Azurduy 100"),
+            ("OBLIGADO RAFAEL, Av.Costanera 7010", "Avenida Costanera Rafael Obligado 7010"),
+        ]
+        for invertida, natural in pares:
+            with self.subTest(invertida=invertida):
+                self.assertEqual(clave_calle(invertida), clave_calle(natural))
+
+    def test_el_articulo_corrido_al_final_tambien_pliega(self):
+        """`BARCO CENTENERA del` es «Avenida del Barco Centenera» con el artículo al final.
+
+        Es el caso que el CONJUNTO resuelve y el multiconjunto no: el recorte de cola se comía ese
+        «del» —existe porque «11 de Septiembre de 1888» pierde el año con la altura— y lo dejaba
+        en `BARCO CENTENERA`, separado de las otras dos formas. Con conjunto, el token está o no
+        está y da igual dónde.
+        """
+        for variante in ("BARCO CENTENERA del 1300", "Av. del Barco Centenera 1300",
+                         "Barco del Centenera 1300"):
+            with self.subTest(variante=variante):
+                self.assertEqual(clave_calle(variante), clave_calle("Del Barco Centenera 1300"))
+        # Y con el artículo al final Y el tratamiento después de la coma, que es como viene:
+        self.assertEqual(clave_calle("VALLE IBERLUCEA del, Dr. 1271"),
+                         clave_calle("Doctor del Valle Iberlucea 938"))
+        self.assertEqual(clave_calle("ARTIGAS MANUEL de 5125"),
+                         clave_calle("Manuel de Artigas 5125"))
+
+    def test_el_conector_colgando_sigue_plegando(self):
+        """Lo que hacía el recorte de cola lo hace ahora el conjunto, sin regla aparte."""
+        self.assertEqual(clave_calle("11 de Septiembre de 1888 2200"),
+                         clave_calle("11 de Septiembre 2200"))
+
+    # ------------------------------------------------------------------ CASOS NEGATIVOS
+    # Todo lo que el conjunto NO tiene que plegar. Sin esto, «insensible al orden» se convierte en
+    # «insensible a todo» y el arreglo pasa de sub-plegar a sobre-plegar, que es peor: sub-plegar
+    # parte una calle en dos y se nota; sobre-plegar junta dos calles y no se nota nunca.
+
+    def test_NEGATIVO_los_numeros_distinguen_calles(self):
+        """«3 de Febrero» y «4 de Febrero» son dos calles y comparten todo menos el número.
+
+        La clave agresiva del inventario las juntaba porque tiraba los tokens de un carácter. Ésta
+        no tira nada, y por eso el caso queda acá: es el falso positivo que el detector tenía y el
+        arreglo no puede heredar.
+        """
+        self.assertNotEqual(clave_calle("3 de Febrero 1200"), clave_calle("4 de Febrero 1200"))
+        self.assertNotEqual(clave_calle("5 de Julio 100"), clave_calle("9 de Julio 100"))
+
+    def test_NEGATIVO_las_iniciales_siguen_sin_plegarse(self):
+        """El residuo declarado no se cuela por la puerta de atrás.
+
+        Plegar `RAMON L FALCON` con `RAMON FALCON` haría lo mismo con `S MARTIN` y `SAN MARTIN`, y
+        ahí la inicial no es inicial: es *San*. Sigue esperando callejero.
+        """
+        self.assertNotEqual(clave_calle("RAMON L. FALCON 2400"), clave_calle("Ramón Falcón 2400"))
+        self.assertNotEqual(clave_calle("S. MARTIN 1200"), clave_calle("San Martín 1200"))
+        self.assertNotEqual(clave_calle("E. MOSCONI 100"), clave_calle("Mosconi 100"))
+
+    def test_NEGATIVO_los_sufijos_de_rumbo_distinguen_calles(self):
+        """«Traful N.» y «Traful S.» son dos calles distintas y difieren en una sola letra."""
+        self.assertNotEqual(clave_calle("Traful N. 100"), clave_calle("Traful S. 100"))
+
+    def test_NEGATIVO_el_articulo_de_cabeza_no_se_recorta(self):
+        """La otra mitad del residuo: acá la forma larga es el nombre real y la corta un recorte.
+
+        `LA PAMPA` no es `PAMPA` ni `DE LOS CONSTITUYENTES` es `CONSTITUYENTES`. El conjunto no
+        los pliega porque el artículo es un token, y está bien que no lo haga: decidir que sí
+        sería sobre-plegar por comodidad.
+        """
+        self.assertNotEqual(clave_calle("La Pampa 1200"), clave_calle("Pampa 1200"))
+        self.assertNotEqual(clave_calle("De los Constituyentes 3200"),
+                            clave_calle("Constituyentes 3200"))
+        self.assertNotEqual(clave_calle("Humberto I 800"), clave_calle("Humberto 800"))
+
+    def test_NEGATIVO_dos_calles_distintas_no_caen_juntas(self):
+        """Control grueso: calles sin relación siguen separadas."""
+        self.assertNotEqual(clave_calle("Carlos Calvo 800"), clave_calle("Chacabuco 800"))
+        self.assertNotEqual(clave_calle("Juana Manso 100"), clave_calle("Juana Azurduy 100"))
+
+    def test_la_clave_no_es_publicable_y_la_etiqueta_si(self):
+        """La clave sale ilegible a propósito; lo que se publica es la etiqueta."""
+        self.assertEqual(clave_calle("Del Barco Centenera 1300"), "BARCO CENTENERA DEL")
+
+
+class MarcadoresPareados(unittest.TestCase):
+    """Una abreviatura sin su forma larga parte la calle en dos, y eso ya pasó.
+
+    La tabla tenía `DR` y no `DOCTOR`: «VALLE IBERLUCEA del, Dr.» perdía el tratamiento y
+    «Doctor del Valle Iberlucea» lo conservaba, así que la misma calle quedaba en dos claves. El
+    par explícito convierte el olvido en algo que se ve.
+    """
+
+    def test_toda_abreviatura_tiene_su_forma_larga_en_la_tabla(self):
+        """La invariante, y no un caso: si falta un lado, el test lo dice antes que el inventario."""
+        for corta, larga in MARCADORES_PAREADOS.items():
+            with self.subTest(marcador=corta):
+                self.assertIn(corta, MARCADORES)
+                self.assertIn(larga, MARCADORES)
+
+    def test_doctor_abreviado_y_largo_pliegan(self):
+        """El caso que destapó el faltante, con la forma cruda tal como viene del padrón."""
+        self.assertEqual(clave_calle("VALLE IBERLUCEA del, Dr. 1271"),
+                         clave_calle("Doctor del Valle Iberlucea 938"))
+        self.assertEqual(calle("Doctor Ricardo Rojas 400"), calle("Dr. Ricardo Rojas 400"))
+
+    def test_NEGATIVO_una_calle_que_empieza_como_el_tratamiento_no_se_toca(self):
+        """La familia de «Esquiu» otra vez: es token entero, así que el prefijo no alcanza."""
+        self.assertEqual(calle("Doctores 100"), "DOCTORES")
+        self.assertEqual(calle("Ingeniero 100"), "")          # sólo el tratamiento: no hay calle
+        self.assertEqual(calle("Ingenieros 100"), "INGENIEROS")
+        self.assertEqual(calle("Presidencia 100"), "PRESIDENCIA")
+
+
+class AbreviaturasQueSeEstiran(unittest.TestCase):
+    """«STA FE» es Santa Fe: acá la palabra es parte del nombre y se estira, no se tira."""
+
+    def test_santa_y_santo_abreviados(self):
+        self.assertEqual(calle("STA FE AV. 1200"), calle("Avenida Santa Fe 1200"))
+        self.assertEqual(calle("STO DOMINGO 500"), calle("Santo Domingo 500"))
+        self.assertEqual(calle("FRAY JUSTO STA MARIA DE ORO 2400"),
+                         calle("Fray Justo Santa María de Oro 2400"))
+
+    def test_NEGATIVO_la_S_sola_no_se_estira_y_es_el_residuo_declarado(self):
+        """`S. MARTIN` es *San* Martín, pero `S` también es una inicial y no se distinguen.
+
+        Estirarla uniría `S MARTIN` con `SAN MARTIN` —correcto— y también `E MOSCONI` con
+        cualquier cosa que empiece con E. Espera callejero, como las demás iniciales.
+        """
+        self.assertEqual(calle("S. MARTIN 1200"), "S MARTIN")
+        self.assertNotEqual(clave_calle("S. MARTIN 1200"), clave_calle("San Martín 1200"))
+
+
+class EtiquetaElegidaPorLaFuente(unittest.TestCase):
+    """Cuál de las dos escrituras se publica. La decide la fuente, no la frecuencia.
+
+    El padrón (F01/F02/RUS/PERMISOS) asienta la calle invertida; OSM, Overture y ATP la escriben
+    en orden natural. Elegir por mayoría simple da mal: `ROOSEVELT FRANKLIN D` le gana 19 a 7 a
+    `FRANKLIN D ROOSEVELT` y está al revés. Sobre los 12 grupos del corpus la regla de la fuente
+    acierta 12 de 12, y en 5 corrige a la mayoría.
+    """
+
+    def test_gana_la_forma_de_la_fuente_que_no_invierte_aunque_sea_minoria(self):
+        direcciones = ["ROOSEVELT FRANKLIN D. 2200"] * 19 + ["Franklin D. Roosevelt 2200"] * 7
+        fuentes = ["F02"] * 19 + ["OVERTURE"] * 7
+        resolutor = ResolutorDeCalles(direcciones, fuentes)
+        self.assertEqual(resolutor.etiqueta("ROOSEVELT FRANKLIN D. 2200"), "FRANKLIN D ROOSEVELT")
+        self.assertEqual(resolutor.etiqueta("Franklin D. Roosevelt 2200"), "FRANKLIN D ROOSEVELT")
+
+    def test_una_fuente_mixta_no_cuenta_como_orden_natural(self):
+        """`F02;OVERTURE` no sirve para decidir: no se sabe de cuál de las dos salió el domicilio.
+
+        Sólo votan las filas cuyas fuentes son TODAS de las que no invierten. Acá eso deja al
+        grupo sin votos y se cae a la moda, que es lo declarado para ese caso.
+        """
+        resolutor = ResolutorDeCalles(
+            ["MANSO JUANA 1500"] * 3 + ["Juana Manso 1500"],
+            ["F02", "F02;OVERTURE", "RUS", "F01;OVERTURE"])
+        self.assertEqual(resolutor.etiqueta("MANSO JUANA 1500"), "MANSO JUANA")
+        self.assertEqual(resolutor.base_de_la_etiqueta[clave_calle("MANSO JUANA 1500")][0],
+                         "solo_padron_moda")
+
+    def test_sin_fuente_que_no_invierta_cae_a_la_moda_y_lo_declara(self):
+        resolutor = ResolutorDeCalles(["MANSO JUANA 1500"] * 5, ["F02"] * 5)
+        clave = clave_calle("MANSO JUANA 1500")
+        self.assertEqual(resolutor.etiquetas[clave], "MANSO JUANA")
+        self.assertEqual(resolutor.base_de_la_etiqueta[clave], ("solo_padron_moda", 5))
+
+    def test_la_etiqueta_no_depende_del_orden_en_que_se_leyo_la_base(self):
+        """Dos formas empatadas no pueden dar etiquetas distintas según cómo vino ordenado el CSV."""
+        a = ResolutorDeCalles(["MANSO JUANA 1500", "Juana Manso 1500"], ["OSM", "OVERTURE"])
+        b = ResolutorDeCalles(["Juana Manso 1500", "MANSO JUANA 1500"], ["OVERTURE", "OSM"])
+        self.assertEqual(a.etiqueta("Juana Manso 1500"), b.etiqueta("Juana Manso 1500"))
+
+    def test_una_calle_que_no_esta_en_el_corpus_devuelve_su_forma_legible(self):
+        resolutor = ResolutorDeCalles(["Chacabuco 800"], ["OSM"])
+        self.assertEqual(resolutor.etiqueta("Gorriti 4800"), "GORRITI")
 
 
 if __name__ == "__main__":

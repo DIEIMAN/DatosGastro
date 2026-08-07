@@ -54,7 +54,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from borrador_polos_ciudad import BASE  # noqa: E402
 from polos_atributos_clases import OUT  # noqa: E402
-from polos_foco_menor import calle  # noqa: E402
+from normalizar_calles import calle, resolutor_desde  # noqa: E402
 
 # Tratamientos y su forma larga. Para la clave AGRESIVA de detección, no para contar.
 EQUIVALENCIAS = {
@@ -104,8 +104,12 @@ def main() -> int:
     base = pd.read_csv(BASE, low_memory=False)
     direcciones = base.direccion_norm.dropna()
 
+    # La clave que se mide es la que el proyecto usa REALMENTE para agrupar, no `calle()` sola.
+    # Si el inventario midiera con `calle()` seguiría contando como abiertos los 12 grupos de orden
+    # que el resolutor ya cerró, y el residuo saldría más grande de lo que es.
+    resolutor = resolutor_desde(base)
     crudas = direcciones.map(parte_calle)
-    claves = direcciones.map(calle)
+    claves = direcciones.map(resolutor.etiqueta)
     tabla = pd.DataFrame({"cruda": crudas, "clave": claves})
     tabla = tabla[tabla.clave.str.len() > 2]
 

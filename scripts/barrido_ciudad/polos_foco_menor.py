@@ -37,9 +37,7 @@ USO
 from __future__ import annotations
 
 import io
-import re
 import sys
-import unicodedata
 import warnings
 from pathlib import Path
 
@@ -56,25 +54,17 @@ from borrador_polos_ciudad import (  # noqa: E402
 )
 from polos_atributos_clases import OUT  # noqa: E402
 from polos_particion_anada_estructura import MINIMO, componentes  # noqa: E402
+# El normalizador vivía acá adentro por accidente histórico —éste fue el primer script que lo
+# necesitó— y ese domicilio es parte de por qué se parchó caso por caso cuatro veces. Ahora vive en
+# `normalizar_calles.py`. Se reexporta para no romper a quien lo importaba de acá.
+from normalizar_calles import (  # noqa: E402,F401
+    ABREVIATURAS_DE_NOMBRE, CONECTORES_COLA, CPA, MARCADORES, MARCADORES_PAREADOS,
+    ResolutorDeCalles, calle, clave_calle, reparar_mojibake, resolutor_desde,
+)
 
 # Los polos con partes aceptadas por `polos_partes_nombrables.py`, con el umbral adoptado.
 # Se lee del resumen para no repetir el barrido y para que un cambio allá llegue solo.
 RESUMEN = OUT / "partes_nombrables_resumen.csv"
-
-# Palabras que no son el nombre de la calle. Se comparan como TOKEN ENTERO y no como prefijo: así
-# el bug de la familia «Esquiu» —«AV» matcheando adentro de «AVELLANEDA»— no puede volver, porque
-# la comparación es de igualdad y no de subcadena.
-MARCADORES = {
-    "AV", "AVDA", "AVE", "AVENIDA", "CALLE", "PASAJE", "PJE",
-    "CNEL", "CORONEL", "GRAL", "GENERAL", "TTE", "TENIENTE", "MCAL", "MARISCAL",
-    "ALTE", "ALMIRANTE", "BRIG", "BRIGADIER", "INT", "INTENDENTE",
-    "DR", "DRA", "PROF", "ING", "PTE", "PRES", "PRESIDENTE",
-}
-# Conectores que sólo aparecen sueltos en un extremo cuando el nombre quedó recortado:
-# «11 de Septiembre de 1888» pierde el año con la altura y termina en «DE».
-CONECTORES_COLA = {"DE", "DEL", "Y", "LA", "EL"}
-# Código postal argentino pegado al nombre: «BARTOLOME MITRE C1201AAX».
-CPA = re.compile(r"^[A-Z]\d{4}[A-Z]{3}$")
 
 # --- LAS DECISIONES REGISTRADAS. No las calcula el script: las tomó una persona, y acá quedan
 # con su motivo para que se puedan discutir sin releer una conversación.
@@ -88,91 +78,6 @@ DECISIONES = {
         ),
     },
 }
-
-
-def reparar_mojibake(texto: str, vueltas: int = 3) -> str:
-    """Deshace una conversión de codificación equivocada, tantas veces como se haya aplicado.
-
-    `ARRIBEÃ\\x83â\\x80\\x98OS` es «Arribeños» que pasó DOS veces por el mismo error: se leyó como
-    cp1252 un texto que estaba en UTF-8, se volvió a guardar en UTF-8, y volvió a leerse mal. Se
-    deshace igual que se hizo —volver a bytes y releer como UTF-8— hasta que deje de cambiar.
-
-    El caso negativo es lo que lo vuelve seguro: «Cañitas» pasada a bytes da `F1`, que **no es
-    UTF-8 válido**, así que el intento falla y el texto sano vuelve intacto. Sólo se transforma lo
-    que efectivamente era mojibake, porque sólo el mojibake decodifica limpio.
-    """
-    for _ in range(vueltas):
-        crudo = bytearray()
-        for caracter in texto:
-            try:
-                crudo += caracter.encode("cp1252")
-            except UnicodeEncodeError:
-                try:
-                    crudo += caracter.encode("latin-1")
-                except UnicodeEncodeError:
-                    return texto
-        try:
-            candidato = bytes(crudo).decode("utf-8")
-        except UnicodeDecodeError:
-            return texto
-        if candidato == texto:
-            return texto
-        texto = candidato
-    return texto
-
-
-def calle(direccion: str) -> str:
-    """La calle de una dirección normalizada, sin altura y con el orden natural.
-
-    Seis convenciones mezcladas en el mismo campo, y cada una parte una calle en dos si no se
-    pliega. Las seis están vistas en la base, con su volumen medido en
-    `INVENTARIO_NOMBRES_DE_CALLE.txt`:
-
-        «Carlos Calvo»  vs  «CALVO, CARLOS»              → se desinvierte la coma
-        «INDEPENDENCIA AV.»  vs  «Avenida Independencia» → se saca el marcador, esté donde esté
-        «Chacabuco»  vs  «CHACABUCO»                     → se pliega la caja
-        «Arévalo»  vs  «Arevalo»                         → se pliegan las tildes
-        «ARRIBEÃ\\x83â\\x80\\x98OS»  vs  «Arribeños»      → se repara el mojibake
-        «BARTOLOME MITRE C1201AAX»                       → se tira el código postal pegado
-
-    POR QUÉ EL MARCADOR SE SACA DE CUALQUIER POSICIÓN Y NO SÓLO DE LOS EXTREMOS
-    ---------------------------------------------------------------------------
-    Porque **la desinversión lo pone en el medio**, y ésa es la continuación exacta del bug de
-    Niceto Vega. `CALVO, CARLOS AV.` tiene el marcador al final del último segmento; al dar vuelta
-    los segmentos queda `CARLOS AV. CALVO`, con el «AV.» en el medio, donde ninguna regla de
-    extremos lo alcanza. El inventario lo encontró 23 veces —Alberdi, Scalabrini Ortiz, Juan B.
-    Justo, Yrigoyen, Lacroze, Beiro, Moreau de Justo, Goyena…— siempre partiendo la calle en dos
-    filas de tamaño parecido, que es la forma más difícil de notar a ojo.
-
-    El precio de sacar por posición libre sería el bug de «Esquiu», y no se paga: la comparación
-    es de **token entero contra un conjunto**, no de prefijo, así que «AVELLANEDA» no puede
-    matchear «AV» ni por accidente.
-
-    LO QUE ESTA FUNCIÓN NO HACE, A PROPÓSITO
-    -----------------------------------------
-    **No toca las iniciales.** «RAMON L. FALCON» y «RAMON FALCON» se siguen contando aparte, y lo
-    mismo «E. MOSCONI» / «MOSCONI». Tirar las letras sueltas los uniría, pero el mismo inventario
-    muestra por qué no se puede: «S. MARTIN» es *San* Martín, no la inicial de un nombre, y las
-    dos formas son indistinguibles sin un callejero canónico. Se anota como residuo y espera a la
-    fuente en vez de resolverse adivinando.
-    """
-    texto = reparar_mojibake(str(direccion))
-    texto = re.sub(r"\s+\d.*$", "", texto).strip()
-    # Tildes: «Arévalo» y «Arevalo» son la misma calle y el campo trae las dos.
-    texto = unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode("ascii")
-    # La inversión puede tener MÁS DE UNA coma: «VEGA, NICETO, Cnel. AV.» es
-    # «Avenida Coronel Niceto Vega». Se dan vuelta todos los segmentos, no sólo el primero.
-    if "," in texto:
-        texto = " ".join(s.strip() for s in reversed(texto.split(",")) if s.strip())
-    # El punto separa tanto como el espacio: «AV.SAN MARTIN» viene sin espacio detrás del punto y
-    # sin esto el marcador queda pegado al nombre y no se reconoce.
-    tokens = [t for t in re.split(r"[\s.]+", texto.upper()) if t]
-    tokens = [t for t in tokens if t not in MARCADORES and not CPA.match(t)]
-    # Sólo en la cola: «11 DE SEPTIEMBRE DE» perdió el año, pero «DE LOS CONSTITUYENTES» empieza
-    # así de verdad y recortarle el «DE» inventaría otra calle.
-    while tokens and tokens[-1] in CONECTORES_COLA:
-        tokens.pop()
-    return " ".join(tokens)
 
 
 def main() -> int:
@@ -189,6 +94,9 @@ def main() -> int:
     zonas = gpd.read_file(ENVOLVENTES_22).to_crs(CRS_METRICO)
     resumen = pd.read_csv(RESUMEN)
     aceptados = resumen[resumen.veredicto == "PARTES ESTABLES"]
+    # Sobre toda la base, no sobre el foco: la etiqueta de una calle no puede depender de en qué
+    # recorte se la esté mirando.
+    resolutor = resolutor_desde(geo)
 
     p("FOCO MENOR · un foco secundario que no llega a subzona")
     p("=" * 100)
@@ -216,7 +124,7 @@ def main() -> int:
             # en una nota: la mitad de este foco no tiene dirección, y una línea de ficha que diga
             # «sobre Chacabuco» tiene que dejar ver que sale de 24 locales y no de 44.
             con_direccion = int(foco.direccion_norm.notna().sum())
-            calles = foco.direccion_norm.dropna().map(calle)
+            calles = foco.direccion_norm.dropna().map(resolutor.etiqueta)
             calles = calles[calles.str.len() > 2].value_counts()
             geometria = foco.geometry.union_all().convex_hull
             solapes = {z.referencia_id: geometria.intersection(z.geometry).area / geometria.area
