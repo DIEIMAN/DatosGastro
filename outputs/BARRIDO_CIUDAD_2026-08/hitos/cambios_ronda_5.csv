@@ -1,0 +1,94 @@
+hito_id,nombre,campo,valor_antes,valor_despues,motivo,tarea,fecha
+H030,Plaza Café,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 85/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H004,Bar Boca a Boca,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 20/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H010,Bar Conde,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 5/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H017,Bar Via 71,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 19/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H021,Cafe Cortazar,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 23/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H087,Cafe Rivas,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 28/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H090,Confiteria El Greco,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 38/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H088,El Portuario,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 14/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H089,Josephina's Cafe,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 58/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H041,La Escuela,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 62/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H068,La Opera,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 66/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H063,La Orquidea,declaratoria_localizada,no · sólo prensa,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 67/90, firmado 26/02/2026, verificado por descarga directa 2026-08-07",Diff contra la Res. 1225/26 descargada: la entrada aparece en el consolidado oficial con este número de orden.,TAREA_1,2026-08-07
+H032,Roma del Abasto,nombre,Café Roma,Roma del Abasto,H032 y H031 eran el mismo nombre normalizado (Café Roma) por una fusión que tomó 'Roma del Abasto' como variante de nombre de Café Roma cuando son dos establecimientos distintos del consolidado (órdenes 29 y 86).,TAREA_1,2026-08-07
+H032,Roma del Abasto,direccion,San Luis 3101,Anchorena 806,"Domicilio real según Res. 1225/26 orden 86/90. La dirección previa, 'San Luis 3101', no corresponde a Café Roma (Olavarría 409) ni a Roma del Abasto (Anchorena 806): es un artefacto del emparejamiento por nombre.",TAREA_1,2026-08-07
+H032,Roma del Abasto,barrio_declarado,,Balvanera,"Balvanera, Comuna 5 según Res. 1225/26 orden 86/90.",TAREA_1,2026-08-07
+H032,Roma del Abasto,latitud,-34.636242,,"Las coordenadas previas eran las de H031 (Café Roma, Olavarría 409) mal reasignadas. Sin geocodificar hasta correr USIG sobre 'Anchorena 806, CABA'; no se inventa un punto.",TAREA_1,2026-08-07
+H032,Roma del Abasto,longitud,-58.358759,,Ídem latitud.,TAREA_1,2026-08-07
+H032,Roma del Abasto,declaratoria_localizada,,"sí · RES-MCGC-1225-26 (IF-2026-10314379-GCABA-DGPMYCH), orden 86/90, firmado 26/02/2026","Alta real que Diego no había señalado en su lista de movimientos; la encontró el diff sistemático, no una lectura dirigida.",TAREA_1,2026-08-07
+H032,Roma del Abasto,nota_carga,,"CORREGIDO ronda 5: esta fila decía 'Café Roma / San Luis 3101' por un bug de fusión de nombres_vistos. Es Roma del Abasto, Anchorena 806, alta real de la Res. 1225/26 (orden 86/90) no detectada hasta el diff de ronda 5. Pendiente: geocodificar.",Documentar la corrección en la propia fila.,TAREA_1,2026-08-07
+H094,Bar Iberia,(fila nueva),,alta agregada,"Reingresa en 1225/26, no existía como hito.",TAREA_1,2026-08-07
+H082,PLAZA BAR,vigencia_verificada,sin_verificar,cerrado_con_reapertura_anunciada,"Hotel cerrado desde 29/04/2017, contenido rematado en 2021, ampliación de 1948 demolida en 2022; Clarín/Viva 15/02/2025 y Tango y Milonga 02/01/2025 describen obra en curso con reapertura programada 2028. El bar histórico se conserva: no es cierre definitivo.",TAREA_2,2026-08-07
+H082,PLAZA BAR,vigencia_fecha,,reapertura anunciada 2028,,TAREA_2,2026-08-07
+H082,PLAZA BAR,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H082,PLAZA BAR,nota_ronda_5,,"Sigue publicado en el catálogo vigente (orden 84/90). Es la ausencia más antigua de la capa (nueve años) y el caso que fija el criterio: un listado inerte no prueba vigencia, pero acá hay evidencia positiva y fechada de reapertura en curso.",,TAREA_2,2026-08-07
+H062,La Buena Medida,vigencia_verificada,sin_verificar,no,Canal 26 03/12/2025 y BAE Negocios 02/12/2025: cerró en octubre de 2025 por falta de renovación del alquiler. Ya había cerrado antes y reabierto en septiembre de 2021; este es el cierre definitivo.,TAREA_2,2026-08-07
+H062,La Buena Medida,vigencia_fecha,,2025-10,,TAREA_2,2026-08-07
+H062,La Buena Medida,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H062,La Buena Medida,nota_ronda_5,,"Sigue publicado en el catálogo vigente (orden 61/90), pese a una consolidación completa NUEVE MESES después del cierre. Peor caso que Plaza Bar en ese sentido.",,TAREA_2,2026-08-07
+H084,The New Brighton,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H057,Esquina Homero Manzi,vigencia_verificada,sin_verificar,en_riesgo,"Infobae 07/05/2026: condena laboral de $220 millones por juicio de dos bailarines de tango; el administrador la describe como impagable. Corroboran Página/12, La Nación y Canal 26 (06-08/05/2026). Sin cierre consumado al 07/08/2026.",TAREA_2,2026-08-07
+H057,Esquina Homero Manzi,vigencia_fecha,,2026-05-07,,TAREA_2,2026-08-07
+H057,Esquina Homero Manzi,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H057,Esquina Homero Manzi,vigencia_revisar_hasta,,2026-11-05,,TAREA_2,2026-08-07
+H057,Esquina Homero Manzi,nota_ronda_5,,"Es el hito más visible de R14 Av. Boedo: sala de espectáculos propia, no sólo bar. Revisar en 90 días.",,TAREA_2,2026-08-07
+H064,La Esquina de Anibal Troilo,vigencia_verificada,sin_verificar,senalado_no_cerrado,"Única baja del consolidado entre 3758/24 y 1225/26. Foursquare la rotula 'Ahora cerrado' (título indexado, la página bloquea por robots); la última pieza que la describe operativa es de marzo de 2022. NO se encontró nota de cierre.",TAREA_2,2026-08-07
+H064,La Esquina de Anibal Troilo,vigencia_nivel,,ninguno,,TAREA_2,2026-08-07
+H064,La Esquina de Anibal Troilo,nota_ronda_5,,"La baja del catálogo es indicio, no prueba: hay un caso documentado (Los Andes, auditoría de cierres) donde una baja no correspondió a un cierre ni a cambio de rubro. Señalada, no cerrada en firme.",,TAREA_2,2026-08-07
+H060,La Academia,barrio_declarado,,San Nicolás,"USIG /datos_utiles sobre Montevideo 341 (consulta 2026-08-07) responde San Nicolás, Comuna 1 — CONTRADICE dos fuentes a la vez: la auditoría de cierres decía Balvanera, y el propio anexo de la Res. 1225/26 la lista como 'San Nicolás. Comuna 5', que es internamente inconsistente (San Nicolás es Comuna 1, no 5). Se adopta USIG por ser la fuente administrativa del punto, no una atribución editorial.",TAREA_2,2026-08-07
+H060,La Academia,direccion,Av. Callao 368,Montevideo 341,"Clarín / Infobae 27/07/2025: 'La Academia mudó sus juegos y sus fantasmas' al local de Pippo (cerrado en agosto de 2020), Montevideo 341. El anexo 3758/24 la publicaba en Av. Callao 368 con el local ya vacío: reinterpreta el 'error de comuna' que se arrastraba — no era sólo georreferencia, la ficha estaba en una dirección muerta.",TAREA_2,2026-08-07
+H060,La Academia,vigencia_verificada,sin_verificar,si,"Reapertura con mudanza el 19/06/2025, en el domicilio nuevo.",TAREA_2,2026-08-07
+H060,La Academia,vigencia_fecha,,2025-06-19,,TAREA_2,2026-08-07
+H060,La Academia,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H040,Clásica y moderna,barrio_declarado,,Recoleta,"El catálogo la da en San Nicolás, que es incorrecto: Av. Callao 892 es Recoleta.",TAREA_2,2026-08-07
+H040,Clásica y moderna,vigencia_verificada,sin_verificar,si,"Vendida en febrero de 2019, reabierta en diciembre de 2023 tras inversión (Wikipedia con citas). Estuvo publicada CUATRO AÑOS mientras estaba cerrada; se 'corrigió' porque volvió a abrir, no por auditoría del catálogo — mismo patrón que Plaza Bar.",TAREA_2,2026-08-07
+H040,Clásica y moderna,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H034,CAFE THIBON,vigencia_verificada,sin_verificar,si,"Anuncio de cierre en enero de 2023 (Pura Ciudad: 'la dinastía Thibon ha llegado a su fin'); nueva gestión operando desde 2024 (Vinómanos 03/05/2024, toma Jorge Crespo, dueño de El Gato Negro). Precedente de continuidad con cambio de gestión.",TAREA_2,2026-08-07
+H034,CAFE THIBON,vigencia_nivel,,v2,,TAREA_2,2026-08-07
+H058,FLORIDA GARDEN,vigencia_verificada,sin_verificar,si,Ficha con actividad y horario todos los días de 7 a 23; sitio propio online que permite reservas; teléfono 4312-7902 vigente.,TAREA_3,2026-08-07
+H058,FLORIDA GARDEN,vigencia_fuente,,Ficha con actividad y horario todos los días de 7 a 23; sitio propio online que permite reservas; teléfono 4312-7902 vigente.,,TAREA_3,2026-08-07
+H058,FLORIDA GARDEN,vigencia_fecha,,2026-08-07,,TAREA_3,2026-08-07
+H058,FLORIDA GARDEN,vigencia_nivel,,v2,,TAREA_3,2026-08-07
+H037,CASA WATSON,vigencia_verificada,sin_verificar,si,"RESEÑA DE UNA VISITA FAMILIAR escrita el 05/07/2026 que describe haber almorzado allí, 33 días antes de la verificación. Sigue operando como Casa Watson; 'ex Capisci' queda como antecedente histórico, no como nombre vigente.",TAREA_3,2026-08-07
+H037,CASA WATSON,vigencia_fuente,,"RESEÑA DE UNA VISITA FAMILIAR escrita el 05/07/2026 que describe haber almorzado allí, 33 días antes de la verificación. Sigue operando como Casa Watson; 'ex Capisci' queda como antecedente histórico, no como nombre vigente.",,TAREA_3,2026-08-07
+H037,CASA WATSON,vigencia_fecha,,2026-08-07,,TAREA_3,2026-08-07
+H037,CASA WATSON,vigencia_nivel,,v3,,TAREA_3,2026-08-07
+H025,DON JUAN,vigencia_verificada,sin_verificar,si,"Ficha con horarios vigentes y actividad; otra fuente actualizada el 06/06/2026 mantiene establecimiento, dirección e Instagram @donjuan_elbar.",TAREA_3,2026-08-07
+H025,DON JUAN,vigencia_fuente,,"Ficha con horarios vigentes y actividad; otra fuente actualizada el 06/06/2026 mantiene establecimiento, dirección e Instagram @donjuan_elbar.",,TAREA_3,2026-08-07
+H025,DON JUAN,vigencia_fecha,,2026-08-07,,TAREA_3,2026-08-07
+H025,DON JUAN,vigencia_nivel,,v2,,TAREA_3,2026-08-07
+H005,Bar de Cao,vigencia_verificada,sin_verificar,si,"Ficha local operativa con teléfono 4943-3694 y horario vigente; Tripadvisor mantiene establecimiento, teléfono y horarios actuales.",TAREA_3,2026-08-07
+H005,Bar de Cao,vigencia_fuente,,"Ficha local operativa con teléfono 4943-3694 y horario vigente; Tripadvisor mantiene establecimiento, teléfono y horarios actuales.",,TAREA_3,2026-08-07
+H005,Bar de Cao,vigencia_fecha,,2026-08-07,,TAREA_3,2026-08-07
+H005,Bar de Cao,vigencia_nivel,,v2,,TAREA_3,2026-08-07
+H065,LA FARMACIA,vigencia_verificada,sin_verificar,si,Ficha operativa con horarios vigentes y base extensa de reseñas; Tripadvisor operativa con horarios actuales; Turismo de la Ciudad conserva la ficha institucional.,TAREA_3,2026-08-07
+H065,LA FARMACIA,vigencia_fuente,,Ficha operativa con horarios vigentes y base extensa de reseñas; Tripadvisor operativa con horarios actuales; Turismo de la Ciudad conserva la ficha institucional.,,TAREA_3,2026-08-07
+H065,LA FARMACIA,vigencia_fecha,,2026-08-07,,TAREA_3,2026-08-07
+H065,LA FARMACIA,vigencia_nivel,,v2,,TAREA_3,2026-08-07
+H076,Los Laureles,vigencia_verificada,en_disputa,si,"REVIERTE P008: Turismo de la Ciudad mantiene una ficha ACTUALIZADA que describe la reapertura por nuevos propietarios y publica horarios nuevos y específicos (lun-mié 12-15; jue-vie 12-15 y 20-00; sáb 20-2; dom 12-16). Distinción de fuente: un listado INERTE que arrastra una ficha vieja no prueba nada (caso Plaza Bar, nueve años), pero una ficha EDITADA ACTIVAMENTE para describir un cambio SÍ es evidencia. Son dos objetos distintos.",TAREA_3,2026-08-07
+H076,Los Laureles,vigencia_fuente,"La Nación 05/08/2026 «El último adiós de Los Laureles» CONTRA Canal 26 05/08/2026 «Los Laureles no cierra… ya anunció nueva milonga». El sitio de turismo del GCBA lo sigue publicando sin nota. Tres fuentes, tres estados.","Turismo de la Ciudad (ficha activamente editada, no listado inerte); contradice la nota de El Cronista sobre el mismo local (ver FD-01, ronda 4).",,TAREA_3,2026-08-07
+H076,Los Laureles,vigencia_fecha,2026-08-05,2026-08-07,,TAREA_3,2026-08-07
+H076,Los Laureles,vigencia_nivel,,v2,,TAREA_3,2026-08-07
+H076,Los Laureles,nota_ronda_5,,El hito sigue frágil: el inmueble está en venta y el arreglo actual es un alquiler puente. Reabre la vía B de P008 Barracas.,,TAREA_3,2026-08-07
+H043,Confiteria Saint Moritz,vigencia_verificada,sin_verificar,dudosa,Ficha comercial continua en Esmeralda 890/894 con el mismo teléfono 4311-7311 y horarios publicados. Restaurant Guru actualizado el 30/03/2026 recoge actividad de clientes durante 2026. Sin prueba fechada posterior al 08/06/2026.,TAREA_3,2026-08-07
+H043,Confiteria Saint Moritz,vigencia_sentido_duda,,probablemente_abierto,,TAREA_3,2026-08-07
+H043,Confiteria Saint Moritz,vigencia_nivel,,v4,,TAREA_3,2026-08-07
+H002,Barbaro,vigencia_verificada,sin_verificar,dudosa,"Ficha actual con Instagram y teléfono, pero CONTRADICCIÓN: una fuente consultada el 21/07/2026 da horario lunes a sábado; la ficha local estructurada devuelve un horario mucho más reducido — patrón de retracción antes del cierre (caso El Buzón).",TAREA_3,2026-08-07
+H002,Barbaro,vigencia_sentido_duda,,probablemente_abierto,,TAREA_3,2026-08-07
+H002,Barbaro,vigencia_nivel,,v4,,TAREA_3,2026-08-07
+H002,Barbaro,nota_ronda_5,,"Confirmado: 'Bar Bar O' del catálogo es anomalía de transcripción, la denominación comercial es Barbaro. Priorizar llamada o Places.",,TAREA_3,2026-08-07
+H028,Café Olimpo,vigencia_verificada,sin_verificar,estado_operativo_pendiente,"La ficha del negocio sigue existiendo en Irigoyen 1491 y conserva teléfono; otra ficha actual trae horario. Pero sin reseña, publicación ni evidencia de visita en los últimos 60 días. Tripadvisor lo muestra sin horarios y prácticamente sin actividad reciente. Único de los diez que no se pudo resolver.",TAREA_3,2026-08-07
+H028,Café Olimpo,vigencia_nivel,,ninguno,,TAREA_3,2026-08-07
+H028,Café Olimpo,nota_ronda_5,,"Único Notable de Villa Luro (Z31): el caso que justifica Places por sí solo. Teléfonos: 3647-7287 y 6051-1069. El catálogo oficial lo llama 'Bar Olimpo' (orden 12/90), no 'Café Olimpo'.",,TAREA_3,2026-08-07
+H060,La Academia,latitud,-34.604902,-34.604920,"Geocodificado con USIG (Montevideo 341, CABA), consulta 2026-08-07.",TAREA_1,2026-08-07
+H060,La Academia,longitud,-58.392357,-58.389323,,TAREA_1,2026-08-07
+H060,La Academia,barrio_declarado,San Nicolás,San Nicolas,,TAREA_1,2026-08-07
+H060,La Academia,metodo_geocodificacion,"REFERENTES_2026 (GCBA, ya geocodificado)",USIG normalizador + datos_utiles (ronda 5),,TAREA_1,2026-08-07
+H032,Roma del Abasto,latitud,,-34.599397,"Geocodificado con USIG (Anchorena 806, CABA), consulta 2026-08-07.",TAREA_1,2026-08-07
+H032,Roma del Abasto,longitud,,-58.408726,,TAREA_1,2026-08-07
+H032,Roma del Abasto,metodo_geocodificacion,"REFERENTES_2026 (GCBA, ya geocodificado)",USIG normalizador + datos_utiles (ronda 5),,TAREA_1,2026-08-07
+H094,Bar Iberia,latitud,,-34.609258,"Geocodificado con USIG (Av. de Mayo 1196, CABA), consulta 2026-08-07.",TAREA_1,2026-08-07
+H094,Bar Iberia,longitud,,-58.383303,,TAREA_1,2026-08-07
+H094,Bar Iberia,barrio_declarado,Montserrat,Monserrat,,TAREA_1,2026-08-07
+H094,Bar Iberia,metodo_geocodificacion,,USIG normalizador + datos_utiles (ronda 5),,TAREA_1,2026-08-07

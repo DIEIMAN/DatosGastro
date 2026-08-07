@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 Aug 2026 20:17:25 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Thu, 19 Mar 2026 12:48:12 GMT
+ETag: "2382d-64d5ffb42ce9c"
+Accept-Ranges: bytes
+Content-Length: 145453
+Cache-Control: no-cache, no-store, must-revalidate, private
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Origin: https://sls.qa.gcba.gob.ar
+Content-Type: application/pdf
+Set-Cookie: BIGipServerPool_BO_prd=822154250.20480.0000; path=/; Httponly; Secure
+

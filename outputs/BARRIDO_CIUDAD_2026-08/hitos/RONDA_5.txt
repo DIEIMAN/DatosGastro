@@ -1,0 +1,52 @@
+==============================================================================
+RONDA 5 · catálogo 1225/26, auditoría de cierres, cierre de vigencia ronda 2
+==============================================================================
+
+DESCARGA DE LA RES. MCGC 1225/26
+  URL: https://documentosboletinoficial.buenosaires.gob.ar/publico/PE-RES-MCGC-MCGC-1225-26-ANX.pdf
+  descargado_utc: 2026-08-07T20:37:06Z
+  sha256: 75481a8abb834409a774d43a8cac92e90657d0a253077f6727b4ff45b2c99704
+  bytes: 145453
+  archivo ya en disco desde ronda 3: C:\proyectos\Gastronomia\DataGastro\outputs\polos_gastro\REFERENTES_2026\_fuentes\bares_notables_consolidado_2025_anexo_res_1225_2026.pdf
+  hash coincide byte a byte: True
+
+TAREA 1 · declaratoria_localizada de las 12 altas, contra la Res. 1225/26
+  H030 Plaza Café: declaratoria_localizada -> orden 85/90
+  H004 Bar Boca a Boca: declaratoria_localizada -> orden 20/90
+  H010 Bar Conde: declaratoria_localizada -> orden 5/90
+  H017 Bar Vía 71: declaratoria_localizada -> orden 19/90
+  H021 Café Cortázar: declaratoria_localizada -> orden 23/90
+  H087 Café Rivas: declaratoria_localizada -> orden 28/90
+  H090 Confitería El Greco: declaratoria_localizada -> orden 38/90
+  H088 El Portuario: declaratoria_localizada -> orden 14/90
+  H089 Josephina's Café: declaratoria_localizada -> orden 58/90
+  H041 La Escuela: declaratoria_localizada -> orden 62/90
+  H068 La Ópera: declaratoria_localizada -> orden 66/90
+  H063 La Orquídea: declaratoria_localizada -> orden 67/90
+
+TAREA 1 · bug de fusión encontrado por el diff: H032 no es un segundo Café Roma
+  antes: nombre='Café Roma' direccion='San Luis 3101' lat='-34.636242' lon='-58.358759'
+  después: nombre='Roma del Abasto' direccion='Anchorena 806' (coordenadas limpiadas, pendiente de geocodificar)
+
+TAREA 1 · Bar Iberia reingresa (3758/24 → 1225/26) — no existía como hito, se agrega
+  H094 Bar Iberia agregado (Av. de Mayo 1196, sin geocodificar todavía)
+
+TAREA 2 · auditoría de cierres (11 filas)
+  Aplicado: Plaza Bar, La Buena Medida, The New Brighton, Esquina Homero Manzi, La Esquina de Aníbal Troilo, La Academia, Clásica y Moderna, Café Thibon.
+  Sin acción (ya resueltos / fuera de todo catálogo, quedan documentados en la auditoría pero no tocan la capa): Confitería del Hotel Castelar (baja en 3758/24), El Palacio de la Papa Frita (no figura en 33/23 ni 3758/24 ni 1225/26), Bar Iberia (ver TAREA 1).
+
+TAREA 3 · vigencia ronda 2 cerrada (10 filas verificadas por Diego)
+  Aplicado: Florida Garden, Casa Watson, Bar Don Juan, Bar de Cao, La Farmacia, Los Laureles (revierte P008), Confitería Saint Moritz, Bárbaro, Café Olimpo.
+
+TAREA 3 · El Sol de Galicia: NO es un hito de esta capa (es churrería, no Bar Notable)
+  Dirección correcta (sitio oficial): Luis Viale 2867. Confirmando con USIG antes de tocar
+  cualquier fila de vía B que lo cite en otro archivo (no vive en hitos_capa_2026).
+
+USIG · confirmando las dos direcciones que TAREA 2/3 corrigen
+  La Academia (nueva): 'Montevideo 341' -> USIG barrio=San Nicolas comuna=Comuna 1 x=-58.389323 y=-34.604920
+  El Sol de Galicia (corregida): 'Luis Viale 2867' -> USIG barrio=Villa Santa Rita comuna=Comuna 11 x=-58.474595 y=-34.619178
+  Roma del Abasto (bug de fusión): 'Anchorena 806' -> USIG barrio=Balvanera comuna=Comuna 3 x=-58.408726 y=-34.599397
+  Bar Iberia (alta nueva): 'Av. de Mayo 1196' -> USIG barrio=Monserrat comuna=Comuna 1 x=-58.383303 y=-34.609258
+
+Guardado: C:\proyectos\Gastronomia\DataGastro\outputs\BARRIDO_CIUDAD_2026-08\hitos\hitos_capa_2026_r5.csv (221 filas, 31 columnas)
+Guardado: C:\proyectos\Gastronomia\DataGastro\outputs\BARRIDO_CIUDAD_2026-08\hitos\cambios_ronda_5.csv (93 cambios registrados)
