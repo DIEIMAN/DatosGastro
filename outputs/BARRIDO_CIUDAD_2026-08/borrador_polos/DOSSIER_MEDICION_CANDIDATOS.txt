@@ -1,0 +1,625 @@
+DOSSIER DE MEDICIÓN · los candidatos sin zona publicada encima
+==============================================================================================================
+
+  62 de 124 polos del borrador no tienen ninguna zona publicada encima: 4678 locales.
+
+  Es el estado actual DESCRITO. No se agrupó, no se redibujó y no se movió ningún umbral.
+  El identificador para cruzar es `polo_id`; el lugar, `barrio_principal` + `calles_dominantes`.
+
+  CUATRO COLUMNAS QUE SE PUEDEN LEER MAL:
+
+   · calles_dominantes    — dónde caen los locales CON DIRECCIÓN, no un censo por calle.
+   · n_hitos_adentro      — mide dónde miran las guías, no dónde hay oferta. Son dos
+                            geografías distintas (encuadre de REFERENTES_2026). Y es un
+                            PISO: 30 hitos de la capa no tienen coordenadas.
+   · d_a_zona_publicada_m — ENTRE PUNTOS, no entre envolventes (regla 4 de CUANDO_DOS_POLOS).
+   · ha / locales_x_ha    — medidas al ratio 0,55 del hull cóncavo, que es una convención.
+
+--------------------------------------------------------------------------------------------------------------
+  LA TABLA, resumida. El CSV lleva las columnas largas enteras.
+
+  polo_id  n_locales     ha  locales_x_ha          clase_densidad  barrio_principal   comunas  pct_locales_con_direccion  n_hitos_adentro  d_a_zona_publicada_m
+     P021        262  77.86         3.365 concentración extendida           Liniers     9; 10                       42.7                0                2002.7
+     P073        207  39.19         5.282           concentración           Palermo        14                       45.4                2                 596.9
+     P048        171  50.84         3.363 concentración extendida        Colegiales    13; 15                       46.8                2                 312.6
+     P076        156  29.18         5.347           concentración          Recoleta  2; 5; 14                       50.6                1                 229.1
+     P037        142  40.81         3.479 concentración extendida  Villa Del Parque        11                       49.3                0                 959.6
+     P004        141 144.02         0.979 concentración extendida      Villa Lugano      8; 9                       58.9                1                3346.7
+P101+P099        130  36.93         3.520 concentración extendida         Balvanera      1; 3                       55.4                1                 281.6
+     P052        124  36.69         3.380 concentración extendida          Floresta 7; 10; 11                       51.6                0                1495.6
+     P104        121  24.85         4.868           concentración          Recoleta     2; 14                       50.4                0                 147.8
+     P084        119  27.12         4.388 concentración extendida         Balvanera      3; 5                       53.8                1                 382.1
+     P017        108  69.80         1.547 concentración extendida           Liniers         9                       45.4                0                3007.8
+     P057        105  26.20         4.008 concentración extendida         Caballito      5; 6                       60.0                0                 252.8
+     P032        105  20.89         5.027           concentración           La Boca         4                       50.5                1                1083.8
+     P024        103  50.42         2.043 concentración extendida     Nueva Pompeya         4                       61.2                0                 136.8
+     P005        100 100.94         0.991 concentración extendida      Villa Lugano         8                       46.0                0                5333.0
+     P020         94  25.10         3.746 concentración extendida        Villa Luro     9; 10                       56.4                0                2911.6
+     P022         93  53.59         1.735 concentración extendida          Saavedra        12                       49.5                0                1091.8
+     P003         91  39.82         2.285 concentración extendida   Villa Riachuelo         8                       53.8                0                6264.9
+     P012         90  32.80         2.743 concentración extendida         Mataderos         9                       52.2                1                4261.8
+     P107         86  10.79         7.968           concentración         Balvanera      2; 3                       50.0                0                 268.7
+     P092         79  11.71         6.749           concentración           Palermo        14                       44.3                1                  74.7
+     P088         76   7.79         9.752           concentración           Palermo        14                       44.7                1                 152.7
+     P002         68  63.36         1.073 concentración extendida     Villa Soldati         8                       51.5                0                2945.0
+     P026         67  27.04         2.478 concentración extendida  Parque Patricios   1; 3; 4                       56.7                0                 415.8
+     P066         65  18.02         3.607 concentración extendida          Barracas         4                       53.8                0                 606.0
+     P014         64  45.63         1.403 concentración extendida            Flores      7; 9                       54.7                0                1529.8
+     P044         62  17.01         3.645 concentración extendida     San Cristobal         3                       50.0                0                 435.0
+     P042         61  11.15         5.469           concentración   Velez Sarsfield        10                       55.7                0                2591.4
+     P041         60  12.73         4.715           concentración          Floresta     7; 10                       48.3                0                1818.2
+     P087         56   5.80         9.659           concentración           Palermo        14                       46.4                0                 311.2
+     P061         54   6.93         7.796           concentración            Flores         7                       48.1                0                 848.0
+     P040         54  10.46         5.163           concentración  Villa Santa Rita        11                       50.0                0                1321.8
+     P086         54   7.95         6.793           concentración           Palermo 5; 14; 15                       57.4                0                 285.6
+     P085         53   8.77         6.043           concentración         Balvanera      1; 3                       64.2                0                 660.0
+     P033         52  16.68         3.118 concentración extendida           La Boca         4                       44.2                2                 839.1
+     P094         51   6.37         8.010           concentración         Monserrat         1                       60.8                0                 306.1
+     P070         50   5.66         8.835           concentración          Saavedra    12; 13                       46.0                0                 634.9
+     P015         50  12.12         4.124 concentración extendida  Parque Chacabuco         7                       44.0                0                 528.8
+     P009         50  24.65         2.029 concentración extendida Parque Avellaneda     9; 10                       62.0                0                2269.8
+     P067         49   7.32         6.690           concentración             Nuñez        13                       49.0                0                 326.3
+     P008         49  23.52         2.083 concentración extendida          Barracas         4                       51.0                1                1733.6
+     P006         48  28.18         1.703 concentración extendida         Mataderos         9                       64.6                1                5336.2
+     P059         48   6.08         7.890           concentración            Flores         7                       43.8                0                1175.4
+     P083         47   5.67         8.295           concentración           Almagro         5                       40.4                0                 212.9
+   P025-2         47   4.89         9.618           concentración      Monte Castro        10                       51.1                0                1180.0
+     P058         46  11.39         4.038 concentración extendida            Flores         7                       58.7                0                 215.7
+     P007         45   8.96         5.025           concentración          Belgrano        13                       35.6                2                 704.4
+     P064         45   9.12         4.932           concentración           Palermo        14                       66.7                0                 640.4
+     P060         43   5.85         7.349           concentración            Flores         7                       48.8                0                 430.9
+     P010         43  10.63         4.045 concentración extendida          Floresta        10                       55.8                0                2057.1
+     P031         42   7.58         5.541           concentración          Floresta        10                       47.6                0                2826.1
+   P025-1         42  10.19         4.120 concentración extendida      Monte Castro        10                       50.0                0                1195.5
+     P013         42  10.79         3.893 concentración extendida         Mataderos         9                       59.5                1                4770.6
+     P050         42   5.07         8.277           concentración         Caballito         6                       45.2                0                 291.6
+     P069         42   7.59         5.530           concentración          Belgrano        13                       47.6                0                 177.0
+     P011         41   7.08         5.791           concentración          Saavedra        12                       58.5                0                1564.9
+     P019         41  20.78         1.973 concentración extendida  Parque Patricios      3; 4                       51.2                0                1107.1
+     P036         41   9.86         4.159 concentración extendida            Flores     7; 11                       51.2                0                1131.3
+     P109         41   3.29        12.472           concentración       San Nicolas   1; 2; 3                       39.0                0                 180.7
+     P055         40   8.52         4.695           concentración         Balvanera         3                       60.0                0                 524.3
+     P034         40  10.66         3.752 concentración extendida      Monte Castro    10; 11                       50.0                1                1500.8
+   P072-3         40   5.08         7.880           concentración          Belgrano        13                       50.0                0                  88.2
+
+--------------------------------------------------------------------------------------------------------------
+  FICHA POR CANDIDATO
+
+  P021 · 262 locales · 77.86 ha · 3.365 loc/ha (concentración extendida)
+      barrios:  Liniers (257); Versalles (5)
+      comunas:  9; 10
+      calles:   Rivadavia (26); Ramon L Falcon (8); Montiel (7); Ibarrola (6); Carhue (6); Francisco De Viedma (5)
+                (sobre el 42.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2002.7 m de la zona publicada más cercana, entre puntos
+
+  P073 · 207 locales · 39.19 ha · 5.282 loc/ha (concentración)
+      barrios:  Palermo (207)
+      comunas:  14
+      calles:   Cabello (18); Cervino (15); Las Heras (8); Jeronimo Salguero (7); Republica Arabe Siria (7); Ugarteche (7)
+                (sobre el 45.4 % de los locales, que son los que tienen dirección)
+      hitos:    Mishiguene (MICHELIN); Mishiguene (Ranking internacional)
+      a 596.9 m de la zona publicada más cercana, entre puntos
+
+  P048 · 171 locales · 50.84 ha · 3.363 loc/ha (concentración extendida)
+      barrios:  Colegiales (134); Villa Ortuzar (28); Chacarita (9)
+      comunas:  13; 15
+      calles:   Elcano (19); Alvarez Thomas (11); Zapiola (7); Cap Ramon Freire (6); Capitan Ramon Freire (6); Virrey Aviles (4)
+                (sobre el 46.8 % de los locales, que son los que tienen dirección)
+      hitos:    8 ESQUINAS (Bar Notable); ANAFE (MICHELIN)
+      a 312.6 m de la zona publicada más cercana, entre puntos
+
+  P076 · 156 locales · 29.18 ha · 5.347 loc/ha (concentración)
+      barrios:  Recoleta (81); Palermo (72); Almagro (3)
+      comunas:  2; 5; 14
+      calles:   Sanchez De Bustamante (9); Mario Bravo (9); Billinghurst (8); Diaz (8); Paraguay (6); Guise (6)
+                (sobre el 50.6 % de los locales, que son los que tienen dirección)
+      hitos:    CAFE NOSTALGIA (Bar Notable)
+      a 229.1 m de la zona publicada más cercana, entre puntos
+
+  P037 · 142 locales · 40.81 ha · 3.479 loc/ha (concentración extendida)
+      barrios:  Villa Del Parque (142)
+      comunas:  11
+      calles:   Nogoya (11); Cuenca (9); Tinogasta (8); Nazca (8); Marcos Sastre (7); Melincue (6)
+                (sobre el 49.3 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 959.6 m de la zona publicada más cercana, entre puntos
+
+  P004 · 141 locales · 144.02 ha · 0.979 loc/ha (concentración extendida)
+      barrios:  Villa Lugano (64); Parque Avellaneda (58); Mataderos (19)
+      comunas:  8; 9
+      calles:   Eva Peron (28); Escalada (7); San Juan (6); Castanares (5); Miralla (4); Olivera (3)
+                (sobre el 58.9 % de los locales, que son los que tienen dirección)
+      hitos:    Yiyo el Zeneize (Mercado/patio)
+      a 3346.7 m de la zona publicada más cercana, entre puntos
+
+  P101+P099 · 130 locales · 36.93 ha · 3.52 loc/ha (concentración extendida)
+      barrios:  Balvanera (100); Monserrat (30)
+      comunas:  1; 3
+      calles:   Rivadavia (21); Entre Rios (8); Hipolito Yrigoyen (7); Belgrano (5); Solis (5); Combate De Los Pozos (5)
+                (sobre el 55.4 % de los locales, que son los que tienen dirección)
+      hitos:    CAFE DE LOS ANGELITOS (Bar Notable)
+      a 281.6 m de la zona publicada más cercana, entre puntos
+
+  P052 · 124 locales · 36.69 ha · 3.38 loc/ha (concentración extendida)
+      barrios:  Floresta (61); Flores (56); Villa Santa Rita (7)
+      comunas:  7; 10; 11
+      calles:   Moron (14); Felipe Vallese (6); Juan F Aranguren (5); Cuenca (5); Ruperto Godoy (4); San Nicolas (4)
+                (sobre el 51.6 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1495.6 m de la zona publicada más cercana, entre puntos
+
+  P104 · 121 locales · 24.85 ha · 4.868 loc/ha (concentración)
+      barrios:  Recoleta (93); Palermo (28)
+      comunas:  2; 14
+      calles:   Billinghurst (9); Juncal (7); French (6); Alto Palermo Shopping (6); Sanchez De Bustamante (5); Santa Fe (5)
+                (sobre el 50.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 147.8 m de la zona publicada más cercana, entre puntos
+
+  P084 · 119 locales · 27.12 ha · 4.388 loc/ha (concentración extendida)
+      barrios:  Balvanera (64); Almagro (55)
+      comunas:  3; 5
+      calles:   Rivadavia (35); Hipolito Yrigoyen (7); La Rioja (3); 24 De Noviembre (3); Medrano (2); Urquiza (2)
+                (sobre el 53.8 % de los locales, que son los que tienen dirección)
+      hitos:    LAS VIOLETAS (Bar Notable)
+      a 382.1 m de la zona publicada más cercana, entre puntos
+
+  P017 · 108 locales · 69.8 ha · 1.547 loc/ha (concentración extendida)
+      barrios:  Liniers (74); Mataderos (34)
+      comunas:  9
+      calles:   Emilio Castro (18); Lisandro De La Torre (7); Montiel (4); Acassuso (3); Palmar (2); Timoteo Gordillo (2)
+                (sobre el 45.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 3007.8 m de la zona publicada más cercana, entre puntos
+
+  P057 · 105 locales · 26.2 ha · 4.008 loc/ha (concentración extendida)
+      barrios:  Caballito (77); Almagro (28)
+      comunas:  5; 6
+      calles:   La Plata (19); Rivadavia (17); Guayaquil (5); Rosario (5); Doblas (3); Otamendi (1)
+                (sobre el 60.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 252.8 m de la zona publicada más cercana, entre puntos
+
+  P032 · 105 locales · 20.89 ha · 5.027 loc/ha (concentración)
+      barrios:  La Boca (105)
+      comunas:  4
+      calles:   Del Valle Iberlucea (10); Gregorio Araoz De Lamadrid (9); Brandsen (6); Olavarria (4); Garibaldi (4); Magallanes (3)
+                (sobre el 50.5 % de los locales, que son los que tienen dirección)
+      hitos:    LA PERLA (Bar Notable)
+      a 1083.8 m de la zona publicada más cercana, entre puntos
+
+  P024 · 103 locales · 50.42 ha · 2.043 loc/ha (concentración extendida)
+      barrios:  Nueva Pompeya (103)
+      comunas:  4
+      calles:   Saenz (31); Beazley (6); Almafuerte (4); Echauri (3); Ventura De La Vega (2); Lynch (2)
+                (sobre el 61.2 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 136.8 m de la zona publicada más cercana, entre puntos
+
+  P005 · 100 locales · 100.94 ha · 0.991 loc/ha (concentración extendida)
+      barrios:  Villa Lugano (100)
+      comunas:  8
+      calles:   Murguiondo (10); Riestra (6); Argentina (5); Larrazabal (4); Somellera (3); Delfin Gallo (3)
+                (sobre el 46.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 5333.0 m de la zona publicada más cercana, entre puntos
+
+  P020 · 94 locales · 25.1 ha · 3.746 loc/ha (concentración extendida)
+      barrios:  Villa Luro (93); Liniers (1)
+      comunas:  9; 10
+      calles:   Rivadavia (22); Corvalan (4); Ramon L Falcon (4); Lope De Vega (3); Basualdo (3); Guardia Nacional (2)
+                (sobre el 56.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2911.6 m de la zona publicada más cercana, entre puntos
+
+  P022 · 93 locales · 53.59 ha · 1.735 loc/ha (concentración extendida)
+      barrios:  Saavedra (83); Coghlan (10)
+      comunas:  12
+      calles:   Ricardo Balbin (14); Nunez (3); Melian (3); Crisologo Larralde (3); Washington (3); Paroissien (2)
+                (sobre el 49.5 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1091.8 m de la zona publicada más cercana, entre puntos
+
+  P003 · 91 locales · 39.82 ha · 2.285 loc/ha (concentración extendida)
+      barrios:  Villa Riachuelo (87); Villa Lugano (4)
+      comunas:  8
+      calles:   Martiniano Chilavert (15); Guamini (8); F Fernandez De La Cruz (5); Canada De Gomez (5); Montiel (3); Lisandro De La Torre (2)
+                (sobre el 53.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 6264.9 m de la zona publicada más cercana, entre puntos
+
+  P012 · 90 locales · 32.8 ha · 2.743 loc/ha (concentración extendida)
+      barrios:  Mataderos (90)
+      comunas:  9
+      calles:   Juan Bautista Alberdi (25); Larrazabal (5); Bragado (3); Pieres (3); Lisandro De La Torre (2); Martiniano Leguizamon (2)
+                (sobre el 52.2 % de los locales, que son los que tienen dirección)
+      hitos:    9 DE JULIO (Bar Notable)
+      a 4261.8 m de la zona publicada más cercana, entre puntos
+
+  P107 · 86 locales · 10.79 ha · 7.968 loc/ha (concentración)
+      barrios:  Balvanera (67); Recoleta (19)
+      comunas:  2; 3
+      calles:   Cordoba (16); Junin (9); Pasteur (5); Viamonte (5); Tucuman (4); Azcuenaga (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 268.7 m de la zona publicada más cercana, entre puntos
+
+  P092 · 79 locales · 11.71 ha · 6.749 loc/ha (concentración)
+      barrios:  Palermo (79)
+      comunas:  14
+      calles:   Charcas (8); Paraguay (7); Araoz (7); Medrano (3); Raul Scalabrini Ortiz (3); Jeronimo Salguero (2)
+                (sobre el 44.3 % de los locales, que son los que tienen dirección)
+      hitos:    VARELA VARELITA (Bar Notable)
+      a 74.7 m de la zona publicada más cercana, entre puntos
+
+  P088 · 76 locales · 7.79 ha · 9.752 loc/ha (concentración)
+      barrios:  Palermo (76)
+      comunas:  14
+      calles:   Gascon (7); Honduras (7); Gorriti (7); Lavalleja (4); Julian Alvarez (4); Jose A Cabrera (3)
+                (sobre el 44.7 % de los locales, que son los que tienen dirección)
+      hitos:    La Alacena Trattoria (MICHELIN)
+      a 152.7 m de la zona publicada más cercana, entre puntos
+
+  P002 · 68 locales · 63.36 ha · 1.073 loc/ha (concentración extendida)
+      barrios:  Villa Soldati (68)
+      comunas:  8
+      calles:   Lafuente (6); Mariano Acosta (4); Francisco Rabanal (3); Francisco Fernandez De La Cruz (3); Fco Fernandez De La Cruz (3); Pedro I Rivera (2)
+                (sobre el 51.5 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2945.0 m de la zona publicada más cercana, entre puntos
+
+  P026 · 67 locales · 27.04 ha · 2.478 loc/ha (concentración extendida)
+      barrios:  Parque Patricios (31); Constitucion (20); Barracas (15); San Cristobal (1)
+      comunas:  1; 3; 4
+      calles:   Entre Rios (8); Caseros (7); Perdriel (5); Solis (4); Enrique Finochietto (2); Combate De Los Pozos (2)
+                (sobre el 56.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 415.8 m de la zona publicada más cercana, entre puntos
+
+  P066 · 65 locales · 18.02 ha · 3.607 loc/ha (concentración extendida)
+      barrios:  Barracas (65)
+      comunas:  4
+      calles:   Suarez (11); Montes De Oca (9); Manuel Montes De Oca (2); Uspallata (2); Aristobulo Del Valle (2); Martin Garcia (2)
+                (sobre el 53.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 606.0 m de la zona publicada más cercana, entre puntos
+
+  P014 · 64 locales · 45.63 ha · 1.403 loc/ha (concentración extendida)
+      barrios:  Flores (49); Parque Avellaneda (15)
+      comunas:  7; 9
+      calles:   Eva Peron (15); Varela (12); Enrique Martinez (1); Martinez Castro (1); Portela (1); San Pedrito (1)
+                (sobre el 54.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1529.8 m de la zona publicada más cercana, entre puntos
+
+  P044 · 62 locales · 17.01 ha · 3.645 loc/ha (concentración extendida)
+      barrios:  San Cristobal (62)
+      comunas:  3
+      calles:   San Juan (21); Urquiza (3); La Rioja (3); Entre Rios (1); Dean Funes (1); Alberti (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 435.0 m de la zona publicada más cercana, entre puntos
+
+  P042 · 61 locales · 11.15 ha · 5.469 loc/ha (concentración)
+      barrios:  Velez Sarsfield (53); Floresta (8)
+      comunas:  10
+      calles:   Rivadavia (20); Segurola (3); Carrasco (2); Dip Nac Osvaldo E Benedetti (1); Olivera (1); Bolanos (1)
+                (sobre el 55.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2591.4 m de la zona publicada más cercana, entre puntos
+
+  P041 · 60 locales · 12.73 ha · 4.715 loc/ha (concentración)
+      barrios:  Floresta (53); Flores (7)
+      comunas:  7; 10
+      calles:   Rivadavia (14); Venancio Flores (4); Bacacay (2); Cuenca (2); Portela (1); Pergamino (1)
+                (sobre el 48.3 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1818.2 m de la zona publicada más cercana, entre puntos
+
+  P087 · 56 locales · 5.8 ha · 9.659 loc/ha (concentración)
+      barrios:  Palermo (56)
+      comunas:  14
+      calles:   Godoy Cruz (8); Santa Fe (5); Beruti (2); Fray Justo Santamaria De Oro (2); Fray Justo Santa Maria De Oro (2); Juan Bautista Justo (2)
+                (sobre el 46.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 311.2 m de la zona publicada más cercana, entre puntos
+
+  P061 · 54 locales · 6.93 ha · 7.796 loc/ha (concentración)
+      barrios:  Flores (54)
+      comunas:  7
+      calles:   Jose Gervasio Artigas (5); Yerbal (4); Varela (3); Ramon L Falcon (3); Rivadavia (3); Jose G Artigas (3)
+                (sobre el 48.1 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 848.0 m de la zona publicada más cercana, entre puntos
+
+  P040 · 54 locales · 10.46 ha · 5.163 loc/ha (concentración)
+      barrios:  Villa Santa Rita (36); Villa Del Parque (18)
+      comunas:  11
+      calles:   Nazca (19); Alvarez Jonte (3); Adolfo P Carranza (2); Abasto De Bs As (1); Elpidio Gonzalez (1); San Blas (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1321.8 m de la zona publicada más cercana, entre puntos
+
+  P086 · 54 locales · 7.95 ha · 6.793 loc/ha (concentración)
+      barrios:  Palermo (30); Almagro (13); Villa Crespo (11)
+      comunas:  5; 14; 15
+      calles:   Cordoba (15); Gascon (4); Medrano (3); Francisco Acuna De Figueroa (3); Estado De Palestina (3); Lavalle (1)
+                (sobre el 57.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 285.6 m de la zona publicada más cercana, entre puntos
+
+  P085 · 53 locales · 8.77 ha · 6.043 loc/ha (concentración)
+      barrios:  Balvanera (21); Monserrat (15); Constitucion (10); San Cristobal (7)
+      comunas:  1; 3
+      calles:   Entre Rios (14); Independencia (12); Solis (3); Combate De Los Pozos (3); Chile (2)
+                (sobre el 64.2 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 660.0 m de la zona publicada más cercana, entre puntos
+
+  P033 · 52 locales · 16.68 ha · 3.118 loc/ha (concentración extendida)
+      barrios:  La Boca (52)
+      comunas:  4
+      calles:   Brown (10); Necochea (3); Wenceslao Villafane (3); Suarez (1); Olavarria (1); Martin Rodriguez (1)
+                (sobre el 44.2 % de los locales, que son los que tienen dirección)
+      hitos:    CAFE ROMA (Bar Notable); Il Matterello (Restaurante Icónico)
+      a 839.1 m de la zona publicada más cercana, entre puntos
+
+  P094 · 51 locales · 6.37 ha · 8.01 loc/ha (concentración)
+      barrios:  Monserrat (51)
+      comunas:  1
+      calles:   Salta (13); Mexico (4); Lima (4); Chile (3); Belgrano (3); Republica Bolivariana De Venezuela (3)
+                (sobre el 60.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 306.1 m de la zona publicada más cercana, entre puntos
+
+  P070 · 50 locales · 5.66 ha · 8.835 loc/ha (concentración)
+      barrios:  Saavedra (28); Nuñez (22)
+      comunas:  12; 13
+      calles:   Cabildo (12); San Isidro Labrador (4); Ramallo (3); Cuenca (1); Pico (1); Arias (1)
+                (sobre el 46.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 634.9 m de la zona publicada más cercana, entre puntos
+
+  P015 · 50 locales · 12.12 ha · 4.124 loc/ha (concentración extendida)
+      barrios:  Parque Chacabuco (50)
+      comunas:  7
+      calles:   Asamblea (10); Del Barco Centenera (7); Avelino Diaz (2); Castanares (1); Emilio Mitre (1); Cachimayo (1)
+                (sobre el 44.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 528.8 m de la zona publicada más cercana, entre puntos
+
+  P009 · 50 locales · 24.65 ha · 2.029 loc/ha (concentración extendida)
+      barrios:  Parque Avellaneda (26); Velez Sarsfield (14); Floresta (10)
+      comunas:  9; 10
+      calles:   Directorio (13); Lacarra (4); Juan Bautista Alberdi (4); Olivera (4); Jose Bonifacio (2); Bolanos (1)
+                (sobre el 62.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2269.8 m de la zona publicada más cercana, entre puntos
+
+  P067 · 49 locales · 7.32 ha · 6.69 loc/ha (concentración)
+      barrios:  Nuñez (49)
+      comunas:  13
+      calles:   Crisologo Larralde (10); 11 De Septiembre (4); Arribenos (3); Del Libertador (2); Nunez (2); Jaramillo (1)
+                (sobre el 49.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 326.3 m de la zona publicada más cercana, entre puntos
+
+  P008 · 49 locales · 23.52 ha · 2.083 loc/ha (concentración extendida)
+      barrios:  Barracas (49)
+      comunas:  4
+      calles:   Vieytes (6); Iriarte (5); San Antonio (4); Hipolito Vieytes (3); California (1); Goncalves Dias (1)
+                (sobre el 51.0 % de los locales, que son los que tienen dirección)
+      hitos:    LOS LAURELES (Bar Notable)
+      a 1733.6 m de la zona publicada más cercana, entre puntos
+
+  P006 · 48 locales · 28.18 ha · 1.703 loc/ha (concentración extendida)
+      barrios:  Mataderos (48)
+      comunas:  9
+      calles:   De Los Corrales (15); Lisandro De La Torre (8); Cosquin (2); Cardenas (1); Guamini (1); Lisandro De La Torre Y Tandil\N (1)
+                (sobre el 64.6 % de los locales, que son los que tienen dirección)
+      hitos:    BAR OVIEDO (Bar Notable)
+      a 5336.2 m de la zona publicada más cercana, entre puntos
+
+  P059 · 48 locales · 6.08 ha · 7.89 loc/ha (concentración)
+      barrios:  Flores (48)
+      comunas:  7
+      calles:   Nazca (8); Rivadavia (6); San Pedrito (2); Yerbal (2); Venancio Flores (1); Bacacay (1)
+                (sobre el 43.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1175.4 m de la zona publicada más cercana, entre puntos
+
+  P083 · 47 locales · 5.67 ha · 8.295 loc/ha (concentración)
+      barrios:  Almagro (47)
+      comunas:  5
+      calles:   Juan Domingo Peron (8); Gascon (5); Sarmiento (2); Eva Peron (2); Estado De Palestina (1); Corrientes (1)
+                (sobre el 40.4 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 212.9 m de la zona publicada más cercana, entre puntos
+
+  P025-2 · 47 locales · 4.89 ha · 9.618 loc/ha (concentración)
+      barrios:  Monte Castro (40); Villa Luro (7)
+      comunas:  10
+      calles:   Lope De Vega (12); Alvarez Jonte (7); Cuenca (1); La Nina (1); Calderon De La Barca (1); Jose Maria Verduga (1)
+                (sobre el 51.1 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1180.0 m de la zona publicada más cercana, entre puntos
+
+  P058 · 46 locales · 11.39 ha · 4.038 loc/ha (concentración extendida)
+      barrios:  Flores (43); Parque Chacabuco (3)
+      comunas:  7
+      calles:   Carabobo (10); Directorio (5); Boyaca (4); Juan Bautista Alberdi (2); Rivadavia (2); Fray Luis Beltran (1)
+                (sobre el 58.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 215.7 m de la zona publicada más cercana, entre puntos
+
+  P007 · 45 locales · 8.96 ha · 5.025 loc/ha (concentración)
+      barrios:  Belgrano (45)
+      comunas:  13
+      calles:   Antonio Jose De Sucre (8); Figueroa Alcorta (2); La Pampa (2); Castaneda (2); Echeverria (1); Ramsay (1)
+                (sobre el 35.6 % de los locales, que son los que tienen dirección)
+      hitos:    Kōnā (MICHELIN); Narda Comedor (MICHELIN)
+      a 704.4 m de la zona publicada más cercana, entre puntos
+
+  P064 · 45 locales · 9.12 ha · 4.932 loc/ha (concentración)
+      barrios:  Palermo (45)
+      comunas:  14
+      calles:   Sinclair (5); Del Libertador (5); Cervino (3); Infanta Isabel (3); Demaria (2); Juan Francisco Segui (2)
+                (sobre el 66.7 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 640.4 m de la zona publicada más cercana, entre puntos
+
+  P060 · 43 locales · 5.85 ha · 7.349 loc/ha (concentración)
+      barrios:  Flores (43)
+      comunas:  7
+      calles:   Rivadavia (6); Ramon L Falcon (4); Esteban Bonorino (3); Rivera Indarte (3); Gavilan (1); Membrillar (1)
+                (sobre el 48.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 430.9 m de la zona publicada más cercana, entre puntos
+
+  P010 · 43 locales · 10.63 ha · 4.045 loc/ha (concentración extendida)
+      barrios:  Floresta (26); Velez Sarsfield (17)
+      comunas:  10
+      calles:   Segurola (11); Sanabria (3); Alejandro Magarinos Cervantes (3); Cesar Diaz (2); San Blas (2); Camarones (1)
+                (sobre el 55.8 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2057.1 m de la zona publicada más cercana, entre puntos
+
+  P031 · 42 locales · 7.58 ha · 5.541 loc/ha (concentración)
+      barrios:  Floresta (32); Velez Sarsfield (10)
+      comunas:  10
+      calles:   Gaona (6); Segurola (4); Juan B Justo (3); Avellaneda (2); Mercedes (2); Juan Bautista Justo (2)
+                (sobre el 47.6 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 2826.1 m de la zona publicada más cercana, entre puntos
+
+  P025-1 · 42 locales · 10.19 ha · 4.12 loc/ha (concentración extendida)
+      barrios:  Monte Castro (42)
+      comunas:  10
+      calles:   Alvarez Jonte (12); Segurola (5); Allende (1); Miranda (1); Benito Juarez (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1195.5 m de la zona publicada más cercana, entre puntos
+
+  P013 · 42 locales · 10.79 ha · 3.893 loc/ha (concentración extendida)
+      barrios:  Mataderos (42)
+      comunas:  9
+      calles:   Juan Bautista Alberdi (13); Andalgala (2); Saladillo (1); Cuenca (1); Bragado (1); Severo Garcia Grande De Zequeira (1)
+                (sobre el 59.5 % de los locales, que son los que tienen dirección)
+      hitos:    CLUB GLORIAS ARGENTINAS (Bar Notable)
+      a 4770.6 m de la zona publicada más cercana, entre puntos
+
+  P050 · 42 locales · 5.07 ha · 8.277 loc/ha (concentración)
+      barrios:  Caballito (42)
+      comunas:  6
+      calles:   Hidalgo (7); Honorio Pueyrredon (6); Felipe Vallese (3); Arengreen (2); Mendez De Andes (1)
+                (sobre el 45.2 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 291.6 m de la zona publicada más cercana, entre puntos
+
+  P069 · 42 locales · 7.59 ha · 5.53 loc/ha (concentración)
+      barrios:  Belgrano (42)
+      comunas:  13
+      calles:   Echeverria (8); Zapiola (4); Juramento (3); Conde (2); Cap Ramon Freire (1); Cramer (1)
+                (sobre el 47.6 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 177.0 m de la zona publicada más cercana, entre puntos
+
+  P011 · 41 locales · 7.08 ha · 5.791 loc/ha (concentración)
+      barrios:  Saavedra (41)
+      comunas:  12
+      calles:   Vedia (8); Dot Baires Shopping (3); Tronador (2); Posta (2); Melian (2); Pico (1)
+                (sobre el 58.5 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1564.9 m de la zona publicada más cercana, entre puntos
+
+  P019 · 41 locales · 20.78 ha · 1.973 loc/ha (concentración extendida)
+      barrios:  Parque Patricios (26); San Cristobal (15)
+      comunas:  3; 4
+      calles:   Brasil (5); Alberti (4); Jujuy (3); Juan De Garay (3); Matheu (2); Inclan (1)
+                (sobre el 51.2 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1107.1 m de la zona publicada más cercana, entre puntos
+
+  P036 · 41 locales · 9.86 ha · 4.159 loc/ha (concentración extendida)
+      barrios:  Flores (28); Villa Gral. Mitre (12); Villa Santa Rita (1)
+      comunas:  7; 11
+      calles:   Gaona (14); Boyaca (3); Gavilan (2); Jose Gervasio Artigas (1); 1584 Gaona (1)
+                (sobre el 51.2 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 1131.3 m de la zona publicada más cercana, entre puntos
+
+  P109 · 41 locales · 3.29 ha · 12.472 loc/ha (concentración)
+      barrios:  San Nicolas (14); Recoleta (14); Balvanera (13)
+      comunas:  1; 2; 3
+      calles:   Callao (7); Cordoba (5); Viamonte (2); Paraguay (1); Riobamba (1)
+                (sobre el 39.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 180.7 m de la zona publicada más cercana, entre puntos
+
+  P055 · 40 locales · 8.52 ha · 4.695 loc/ha (concentración)
+      barrios:  Balvanera (40)
+      comunas:  3
+      calles:   La Rioja (9); Urquiza (6); Mexico (2); Independencia (2); Agrelo (1); Belgrano (1)
+                (sobre el 60.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 524.3 m de la zona publicada más cercana, entre puntos
+
+  P034 · 40 locales · 10.66 ha · 3.752 loc/ha (concentración extendida)
+      barrios:  Monte Castro (14); Villa Del Parque (14); Villa Santa Rita (12)
+      comunas:  10; 11
+      calles:   Alvarez Jonte (9); Emilio Lamarca (4); Miranda (2); Bahia Blanca (2); Lascano (1); Tokio (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    EL TOKIO (Bar Notable)
+      a 1500.8 m de la zona publicada más cercana, entre puntos
+
+  P072-3 · 40 locales · 5.08 ha · 7.88 loc/ha (concentración)
+      barrios:  Belgrano (40)
+      comunas:  13
+      calles:   Monroe (13); Cramer (3); Zapiola (1); Ricardo Balbin (1); Vidal (1); Moldes (1)
+                (sobre el 50.0 % de los locales, que son los que tienen dirección)
+      hitos:    ninguno
+      a 88.2 m de la zona publicada más cercana, entre puntos
+
+--------------------------------------------------------------------------------------------------------------
+  LO QUE CONVIENE MIRAR ANTES DE SALIR A BUSCAR FUENTES
+
+  · candidatos de 100 locales o más: 15. Son los que más pesan si se confirman.
+      P021      262 locales · Liniers
+      P073      207 locales · Palermo
+      P048      171 locales · Colegiales
+      P076      156 locales · Recoleta
+      P037      142 locales · Villa Del Parque
+      P004      141 locales · Villa Lugano
+      P101+P099  130 locales · Balvanera
+      P052      124 locales · Floresta
+      P104      121 locales · Recoleta
+      P084      119 locales · Balvanera
+      P017      108 locales · Liniers
+      P057      105 locales · Caballito
+      P032      105 locales · La Boca
+      P024      103 locales · Nueva Pompeya
+      P005      100 locales · Villa Lugano
+
+  · candidatos donde MENOS de la mitad tiene dirección: 24. En ésos las calles
+    se apoyan en poca evidencia y no alcanzan para nombrar el lugar solas.
+
+  · candidatos sin ningún hito adentro: 46 de 62. **No es un
+    veredicto sobre ellos**: es que los catálogos de distinciones no relevaron esas zonas.
+
+  · los 10 más lejos de todo lo publicado, entre puntos — donde el Atlas no llega:
+      P003         6265 m ·   91 locales · Villa Riachuelo
+      P006         5336 m ·   48 locales · Mataderos
+      P005         5333 m ·  100 locales · Villa Lugano
+      P013         4771 m ·   42 locales · Mataderos
+      P012         4262 m ·   90 locales · Mataderos
+      P004         3347 m ·  141 locales · Villa Lugano
+      P017         3008 m ·  108 locales · Liniers
+      P002         2945 m ·   68 locales · Villa Soldati
+      P020         2912 m ·   94 locales · Villa Luro
+      P031         2826 m ·   42 locales · Floresta
+
+==============================================================================================================
+  62 candidatos · 4678 locales · 1486 ha · 20 hitos · Google Places: 0 requests
+==============================================================================================================
+
