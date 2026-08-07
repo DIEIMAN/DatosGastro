@@ -1,0 +1,41 @@
+EXTENSIÓN DE LA MATRIZ DE VALIDACIÓN · filas nuevas y una columna, sin tocar lo que había
+====================================================================================================
+
+  matriz actual: 32 filas × 22 columnas
+  candidatos del dossier a agregar: 62
+
+----------------------------------------------------------------------------------------------------
+  1 · LA COLUMNA NUEVA sobre las 32 filas que ya estaban
+
+      si                21
+      no                 8
+      sin_resolucion     3
+
+      Los `sin_resolucion` son 3 y están declarados: Barrio Chino, Bajo Belgrano y
+      Belgrano R son subzonas de Belgrano y la sonda trabaja a resolución de barrio.
+
+----------------------------------------------------------------------------------------------------
+  2 · LAS FILAS NUEVAS
+
+      62 filas. Todas con `evidencia_relevamiento_propio` = si, por construcción: entran
+      justamente porque hay concentración medida.
+
+      vacías por pedido — las llena Diego: cantidad_fuentes_total, cantidad_fuentes_alta, cantidad_fuentes_media, cantidad_fuentes_baja, cantidad_fuentes_requiere_revision, hay_fuente_oficial, hay_fuente_periodistica, hay_fuente_datos_abiertos, hay_fuente_turistica, hay_fuente_academica, hay_delimitacion_explicita, hay_locales_mencionados, url_pendiente
+      vacías por criterio — son curaduría: tipo_area_revisado, nivel_consolidacion_revisado, estado_validacion, decision_para_informe
+
+      39 de 62 caen en el territorio declarado de una fila que ya
+      estaba. Quedan anotadas, no fusionadas: fusionarlas es decisión de curaduría.
+
+----------------------------------------------------------------------------------------------------
+  3 · VERIFICACIÓN · que las 32 filas de antes estén intactas
+
+      columnas originales en el mismo orden: SÍ
+      columna nueva al final: SÍ
+      celdas cambiadas en las 32 filas originales: ninguna
+
+  ESCRITA: outputs\polos_gastro\matriz_validacion_polos_gastro.csv — 94 filas × 23 columnas
+
+====================================================================================================
+  32 filas intactas + 62 nuevas = 94 · 22 columnas + 1 = 23 · Google Places: 0 requests
+====================================================================================================
+
