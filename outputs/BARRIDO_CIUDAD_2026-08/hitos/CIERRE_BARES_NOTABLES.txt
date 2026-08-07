@@ -1,0 +1,95 @@
+BARES NOTABLES · los homónimos cerrados y el Boletín como declaratoria
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+  a · LAS FUSIONES NUEVAS · mismo nombre, misma altura, calle escrita distinto
+
+      pares fusionados: 3   (el enunciado hablaba de 4 líneas)
+
+      CAFE PALACIO (LACROZE, FEDERICO AV. 3901, CABA)
+          +  Café Palacio (Av. F. Lacroze 3901)
+          BOLETIN_90+GCBA_84  +  WIKIDATA_95  →  BOLETIN_90+GCBA_84+WIKIDATA_95
+
+      EL PREFERIDO DE PALERMO (BORGES, JORGE LUIS 2108, CABA)
+          +  El Preferido de Palermo (Jorge L. Borges 2108)
+          GCBA_84  +  WIKIDATA_95  →  GCBA_84+WIKIDATA_95
+
+      Bar Bidou (Diagonal Norte 858)
+          +  Bar Bidou (Av. Roque Saenz Pena 858)
+          WIKIDATA_95  +  BOLETIN_90  →  BOLETIN_90+WIKIDATA_95
+
+      LA EQUIVALENCIA DE CALLES QUE CADA FUSIÓN IMPLICA, que es dato para el normalizador:
+          «BORGES JORGE LUIS»  =  «BORGES JORGE L»
+          «DIAGONAL NORTE»  =  «PENA ROQUE SAENZ»
+          «FEDERICO LACROZE»  =  «F LACROZE»
+
+      Las de iniciales —F LACROZE / FEDERICO LACROZE, J L BORGES / JORGE LUIS BORGES— son
+      el residuo que `normalizar_calles.py` declara abierto y que espera callejero. La de
+      Roque Sáenz Peña / Diagonal Norte NO es residuo: son dos nombres oficiales de la
+      misma calle, y ninguna regla de tokens la va a cerrar nunca. Es tabla, no regla.
+
+----------------------------------------------------------------------------------------------------
+  EL NÚMERO, CONTRA EL PREDICHO
+
+      bares distintos         114  →  111
+      en las TRES listas      70  →  71      (el enunciado predecía 74)
+
+      NO da 74, y el motivo estaba escrito antes de correr. De los tres bares
+      fusionados sólo uno queda en las tres listas; los otros dos juntan dos listas
+      cada uno. Las cuatro líneas impresas eran tres bares.
+
+      GCBA  WIKI  BOLETIN   bares
+      si    si    si         71  ← en las tres
+      no    no    si         12
+      no    si    no          8
+      si    si    no          8
+      no    si    si          7
+      si    no    no          5
+
+----------------------------------------------------------------------------------------------------
+  b · EL CANON · manda el BOLETÍN OFICIAL, que es la declaratoria
+
+      en el canon:   90
+      fuera:         21   — NO se descartan; van anotados con su origen
+
+      · sólo Wikidata       8   (eran 11 antes de las fusiones)
+            American Bar  —  Diagonal Norte 632
+            Bar Carlitos  —  Carlos Calvo 2607
+            Café Retiro  —  sin dirección
+            Café de los Incas  —  Av. De los Incas 3909
+            Confitería Queen Bess  —  Av. Santa Fe 868
+            Confitería Richmond  —  sin dirección
+            Confitería del Hotel Castelar  —  Av. de Mayo 1148/50/52
+            Victoria  —  Bolívar 104
+
+      · sólo GCBA           5   el enunciado no los nombra, y también
+                              quedan fuera del canon: el catálogo del GCBA es oficial
+                              pero no es la declaratoria
+            BAR LAVALLE  —  LAVALLE 2407, CABA
+            BIDOU DE LAS LUCES  —  PERU 269, CABA
+            CAFE VICTORIA  —  ENTRE RIOS AV. 114, CABA
+            CONFITERIA DEL HOTEL CASTELAR  —  DE MAYO AV. 1048, CABA
+            OLIMPO  —  ARREGUI 5794, CABA
+
+      · GCBA + Wikidata     8   dos fuentes coinciden y el Boletín no los tiene:
+                              son los que más merecen que alguien mire el acto
+            CAFE NOSTALGIA  —  SOLER 3599, CABA | Soler 3599
+            Café Los Andes  —  SCALABRINI ORTIZ, RAUL AV. 1312, CABA | Scalabrini Ortiz 1312
+            Café Monserrat  —  SAN JOSE 524, CABA | San Jose 524
+            Café de la Esquina  —  Av. Del Libertador 6196 | DEL LIBERTADOR AV. 6169, CABA
+            El Preferido de Palermo  —  BORGES, JORGE LUIS 2108, CABA | Jorge L. Borges 2108
+            IBERIA  —  Av. De Mayo 1196 | DE MAYO AV. 1196, CABA
+            LA EMBAJADA  —  SANTIAGO DEL ESTERO 88, CABA | Santiago del Estero 88
+            LA NUEVA ANDALUZA  —  CAMARONES 1412, CABA | Camarones 1412
+
+----------------------------------------------------------------------------------------------------
+  LAS COORDENADAS DEL CANON · USIG, cero requests pagos
+
+      heredadas del catálogo del GCBA    71
+      geocodificadas con USIG            19
+      sin coordenada                      0
+
+====================================================================================================
+  canon 90 bares (90 con punto) · fuera del canon 21 anotados · en las tres 71 · Places: 0 requests
+====================================================================================================
+

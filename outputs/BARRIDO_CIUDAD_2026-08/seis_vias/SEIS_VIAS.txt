@@ -1,0 +1,141 @@
+LAS SEIS VÍAS · las columnas medibles, sobre las 94 filas y sobre las 22 publicadas
+====================================================================================================
+
+  puntos: 23,981 · hitos con punto: 187 · mercados ubicables: 8 · enclaves: 4
+  Todo lo declarado está en LECTURA_PREVIA.md. Google Places: 0 requests.
+
+----------------------------------------------------------------------------------------------------
+  LA COBERTURA DE LOS HITOS, AL LADO DEL CONTEO Y NO AL PIE
+
+      tipo                        hitos  con punto  sin punto
+      Bar Notable                    90         90          0
+      Heladería histórica             5          0          5
+      MICHELIN                       58         57          1
+      Mercado/patio                  12          8          4
+      Pizzería emblemática           20          0         20
+      Ranking internacional          16         16          0
+      Restaurante Icónico            16         16          0
+
+      patrimonio normativo (ubicables): 2
+            Mercado de San Telmo — Mercado o patio documentado
+            Yiyo el Zeneize — Patrimonio historico y cultural inmaterial (Ley CABA 6.533)
+      Estaba avisado en LECTURA_PREVIA §4: la columna sale casi entera en cero y eso
+      es un hueco de la fuente, no un resultado sobre el territorio. La Esquina Homero
+      Manzi, que la definición cita como Sitio Histórico Nacional, figura en la capa
+      sólo como Bar Notable: su declaratoria nacional no está cargada en ningún lado.
+
+      Un 0 en una fila puede ser «no hay» o «no sabemos dónde». Las 20 pizzerías y las 5
+      heladerías sin altura no se ubican en el centroide del barrio: quedan sin punto.
+
+----------------------------------------------------------------------------------------------------
+  CÓMO SE CONSTRUYERON LOS CUATRO ENCLAVES (vía D)
+
+      Barrio Chino · ARRIBEÑOS entre JURAMENTO y OLAZABAL: 255 m de eje (la calle dentro del marco: 1,367 m)
+      Barrio Chino · MENDOZA: «las vías» = 1 segmento(s) que el callejero marca con cruce ferroviario en tipo_ffcc
+      Barrio Chino · MENDOZA entre MONTAÑESES y __VIAS__: 130 m de eje (la calle dentro del marco: 3,448 m)
+      Barrio Coreano Baek-ku · CARABOBO AV. entre CASTAÑARES AV. y PERON, EVA AV.: 768 m de eje (la calle dentro del marco: 1,345 m)
+      Pasaje Ruperto Godoy · GODOY, RUPERTO entre HELGUERA y CUENCA: 118 m de eje (la calle dentro del marco: 118 m)
+      Microcentro boliviano de Liniers · SUAREZ, JOSE LEON entre RIVADAVIA AV. y None: 1,402 m de eje (la calle dentro del marco: 1,955 m)
+      Microcentro boliviano de Liniers · FALCON, RAMON L.,CNEL. AV.: la delimitación la nombra sin decir entre qué y qué; entra entera dentro del marco (128 m)
+      Microcentro boliviano de Liniers · IBARROLA: la delimitación la nombra sin decir entre qué y qué; entra entera dentro del marco (1,298 m)
+
+      enclave                             tramos     eje m       ha
+      Barrio Chino                             2       385     17.6
+      Barrio Coreano Baek-ku                   1       768     30.1
+      Pasaje Ruperto Godoy                     1       118     10.6
+      Microcentro boliviano de Liniers         3     2,828    104.1
+
+  LA CURVA DEL BUFFER (R4) · cuántas de las 94 tocan algún enclave según el radio
+            50m     100m     150m     200m     300m
+              5        7        7        7        7
+
+      Cambia sólo entre 50 y 100 m y después queda plano hasta 300. El valor elegido
+      —150 m— cae adentro de la meseta, así que no está sosteniendo el resultado.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LAS 94 FILAS · cuántas abren cada vía
+
+      A · densidad          89 de 94
+      B · trayectoria       40 de 94
+      C · mercados           4 de 94
+      D · comunidades        7 de 94
+      F · corredor          53 de 94
+      E · reconocimiento     —   columna vacía a propósito: la llena Diego
+
+      vías medibles abiertas por fila (sobre las 92 con soporte):
+            1.0 vía(s): 17 filas
+            2.0 vía(s): 50 filas
+            3.0 vía(s): 24 filas
+            4.0 vía(s): 1 filas
+      filas con CERO vías medibles abiertas: 0
+
+      Las que abren vía D (comunidades):
+            PG006A_BARRIO_CHINO       Barrio Chino              Barrio Chino
+            PGF2_FLORES               Flores                    Barrio Coreano Baek-ku; Pasaje Ruperto Godoy
+            PGF2_FLORESTA             Floresta                  Pasaje Ruperto Godoy
+            PGR_P021                  P021 · Liniers            Microcentro boliviano de Liniers
+            PGR_P052                  P052 · Floresta           Pasaje Ruperto Godoy
+            PGR_P017                  P017 · Liniers            Microcentro boliviano de Liniers
+            PGR_P020                  P020 · Villa Luro         Microcentro boliviano de Liniers
+
+      Las que abren vía C (mercados y patios):
+            PG001B_PALERMO_HOLLYWOOD  Palermo Hollywood         Mercado Bonpland
+            PG008_CABALLITO           Caballito                 Mercado del Progreso
+            PG009_COSTANERA_NORTE     Costanera Norte           Patio Costanera Norte
+            PGR_P004                  P004 · Villa Lugano       Yiyo el Zeneize
+
+      Y los 4 mercados ubicables que NO caen en ninguna de las 94 —que es
+      cobertura del recorte, no ausencia del mercado—:
+            Mercado de Belgrano
+            Mercado de San Telmo
+            Patio Gastronomico Rodrigo Bueno
+            Patio de los Lecheros
+
+  LA CURVA DE LA PERTENENCIA (R4) · cuántas de las 94 abren vía A según el corte
+            25%      50%      75%     100%
+             90       89       85       13
+
+====================================================================================================
+  TAREA 4 · EL CONTROL · por cuántas vías medibles entra cada una de las 22
+====================================================================================================
+
+  id   zona                              A  B  C  D  F  total   hitos
+  R05  Belgrano                          X  X  X  X  ·      4   1
+  R07  Costanera Norte                   X  X  X  ·  X      4   2
+  R01  Palermo                           X  X  X  ·  ·      3   20
+  R02  Avenida Corrientes                X  X  ·  ·  X      3   9
+  R04  Puerto Madero                     X  X  ·  ·  X      3   7
+  R10  Caballito                         X  X  X  ·  ·      3   2
+  R13  Abasto                            X  X  ·  ·  X      3   2
+  R14  Avenida Boedo                     X  X  ·  ·  X      3   2
+  R15  Devoto                            X  X  ·  ·  X      3   2
+  R19  Federico Lacroze por tramos       X  X  ·  ·  X      3   1
+  R06  Recoleta                          X  X  ·  ·  ·      2   9
+  R08  Villa Crespo                      X  X  ·  ·  ·      2   8
+  R09  Chacarita                         X  X  ·  ·  ·      2   3
+  R11  Boulevard Caseros                 ·  X  ·  ·  X      2   1
+  R12  Centro / Microcentro segmentado   X  X  ·  ·  ·      2   18
+  R16  Donado-Holmberg                   X  ·  ·  ·  X      2   0
+  R17  Villa Urquiza                     X  X  ·  ·  ·      2   1
+  R18  Esmeralda-Paraguay                X  X  ·  ·  ·      2   4
+  R21  La Paternal                       X  X  ·  ·  ·      2   1
+  R03  San Telmo                         ·  X  ·  ·  ·      1   1
+  R20  Garcia del Rio                    ·  ·  ·  ·  X      1   0
+  R22  Villa Pueyrredon                  X  ·  ·  ·  ·      1   0
+
+      zonas con al menos una vía medible abierta: 22 de 22
+      zonas con CERO:                             0
+
+      RAMA DECLARADA · «todas las 22 abren al menos una vía medible» →
+      LA GRILLA SE SOSTIENE SOLA. No depende del trabajo documental para funcionar.
+
+      Distribución:
+            1 vía(s): 3 zonas
+            2 vía(s): 9 zonas
+            3 vía(s): 8 zonas
+            4 vía(s): 2 zonas
+
+====================================================================================================
+  94 filas y 22 zonas medidas · vía E vacía a propósito · rama del índice: B · Places: 0 requests
+====================================================================================================
+

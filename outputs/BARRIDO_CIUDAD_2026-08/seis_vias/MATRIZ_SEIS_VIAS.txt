@@ -1,0 +1,43 @@
+  Las columnas ['soporte_clase', 'soporte_detalle', 'via_A_n_locales', 'via_A_ha', 'via_A_locales_x_ha', 'via_A_continuidad_60m', 'via_A_vecino_medio_m', 'via_A_vecino_sobre_poisson', 'via_A_abierta', 'via_B_bar_notable', 'via_B_restaurante_iconico', 'via_B_pizzeria_emblematica', 'via_B_heladeria_historica', 'via_B_michelin', 'via_B_50best', 'via_B_patrimonio_normativo', 'via_B_total', 'via_B_abierta', 'via_C_mercado_patio', 'via_C_cual', 'via_D_enclave', 'via_E_reconocimiento', 'via_F_elongacion', 'via_F_frac_banda_100m', 'via_F_ancho_p80_m', 'via_F_largo_m', 'via_F_forma', 'n_vias_medibles'] ya estaban: la corrida las reescribe en su lugar y no
+  mueve el orden. Es lo que pasa al volver a correr esto, y está bien.
+MATRIZ · las columnas medibles de las seis vías, incorporadas
+====================================================================================================
+
+  filas:    94   (sin cambios)
+  columnas: 51 → 51
+  las 23 columnas previas: verificadas celda por celda, 0 diferencias
+
+  Columnas nuevas, en este orden y todas al final:
+        soporte_clase                     94 de 94 con valor
+        soporte_detalle                   94 de 94 con valor
+        via_A_n_locales                   92 de 94 con valor
+        via_A_ha                          92 de 94 con valor
+        via_A_locales_x_ha                92 de 94 con valor
+        via_A_continuidad_60m             92 de 94 con valor
+        via_A_vecino_medio_m              92 de 94 con valor
+        via_A_vecino_sobre_poisson        92 de 94 con valor
+        via_A_abierta                     92 de 94 con valor
+        via_B_bar_notable                 92 de 94 con valor
+        via_B_restaurante_iconico         92 de 94 con valor
+        via_B_pizzeria_emblematica        92 de 94 con valor
+        via_B_heladeria_historica         92 de 94 con valor
+        via_B_michelin                    92 de 94 con valor
+        via_B_50best                      92 de 94 con valor
+        via_B_patrimonio_normativo        92 de 94 con valor
+        via_B_total                       92 de 94 con valor
+        via_B_abierta                     92 de 94 con valor
+        via_C_mercado_patio               92 de 94 con valor
+        via_C_cual                         4 de 94 con valor
+        via_D_enclave                      7 de 94 con valor
+        via_E_reconocimiento               0 de 94 con valor  ← vacía a propósito: la llena Diego
+        via_F_elongacion                  92 de 94 con valor
+        via_F_frac_banda_100m             92 de 94 con valor
+        via_F_ancho_p80_m                 92 de 94 con valor
+        via_F_largo_m                     92 de 94 con valor
+        via_F_forma                       92 de 94 con valor
+        n_vias_medibles                   92 de 94 con valor
+
+====================================================================================================
+  outputs\polos_gastro\matriz_validacion_polos_gastro.csv · Google Places: 0 requests
+====================================================================================================
+

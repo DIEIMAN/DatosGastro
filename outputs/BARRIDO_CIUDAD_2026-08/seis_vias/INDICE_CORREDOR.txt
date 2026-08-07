@@ -1,0 +1,124 @@
+ÍNDICE DE CORREDOR · calibrado contra las 22 del Atlas, que ya están clasificadas
+====================================================================================================
+
+  universo de puntos: 23,981 locales del anillo núcleo con apto_geometria = True
+  índice: elongacion = σ1/σ2 sobre PCA en EPSG:5347
+  corte declarado: 2.0 · muestra mínima: 20 puntos
+  Todo esto estaba escrito en LECTURA_PREVIA.md antes de correr. Google Places: 0 requests.
+
+----------------------------------------------------------------------------------------------------
+  EL RANKING DE LAS 22, con la familia al lado. Ordenado por el índice.
+
+  id   zona                              familia                              n   elong  banda100  ancho80   largo   rect
+  R07  Costanera Norte                   Polo con subzonas / multiparte      67    8.06      0.64      165   3,164   6.92
+  R19  Federico Lacroze por tramos       Eje o corredor                     185    7.14      0.64      148   2,269   4.80 ←
+  R02  Avenida Corrientes                Eje o corredor                     354    4.27      0.61      135   1,229   3.68 ←
+  R14  Avenida Boedo                     Eje o corredor                     245    4.08      0.45      281   2,233   3.19 ←
+  R04  Puerto Madero                     Polo con subzonas / multiparte     354    3.41      0.16      324   2,700   3.69
+  R16  Donado-Holmberg                   Eje o corredor                     121    3.38      0.46      193   1,831   3.33 ←
+  R11  Boulevard Caseros                 Eje o corredor                      60    2.95      0.43      219   1,345   2.55 ←
+  R13  Abasto                            Polo                               373    2.61      0.43      240   1,401   2.43
+  R20  Garcia del Rio                    Eje o corredor                      61    2.54      0.67      121     711   2.28 ←
+  R15  Devoto                            Polo                               422    2.42      0.19      530   3,057   1.79
+  R01  Palermo                           Polo con subzonas / multiparte    1358    1.90      0.15      579   2,696   1.54
+  R08  Villa Crespo                      Polo                               823    1.83      0.18      523   2,307   1.66
+  R10  Caballito                         Polo con subzonas / multiparte     508    1.76      0.14      463   2,134   1.66
+  R21  La Paternal                       Referencia dispersa                208    1.76      0.12      529   2,490   1.47
+  R05  Belgrano                          Polo                               343    1.70      0.44      382   1,169   1.37
+  R22  Villa Pueyrredon                  Referencia dispersa                198    1.62      0.19      446   1,780   1.53
+  R17  Villa Urquiza                     Polo con subzonas / multiparte     528    1.56      0.21      540   2,222   1.39
+  R09  Chacarita                         Referencia dispersa                202    1.42      0.22      402   1,576   1.71
+  R12  Centro / Microcentro segmentado   Area segmentada                   1084    1.30      0.17      585   1,743   1.20
+  R06  Recoleta                          Polo                               714    1.24      0.10      437   1,359   1.25
+  R03  San Telmo                         Polo                                71    1.16      0.56      167     577   1.31
+  R18  Esmeralda-Paraguay                Referencia dispersa                318    1.14      0.41      226     618   1.00
+
+----------------------------------------------------------------------------------------------------
+  EL VEREDICTO, contra la lectura escrita antes
+
+      «Eje o corredor»: 6 zonas   —el enunciado decía 5; R20 García del
+      Río también está declarada corredor en la columna `familia`, y se calibra con las 6
+      «Polo»:           6 zonas
+
+      corredores con elongacion >= 2.0:  6 de 6 medibles
+            OK  R19 Federico Lacroze por tramos      7.14
+            OK  R02 Avenida Corrientes               4.27
+            OK  R14 Avenida Boedo                    4.08
+            OK  R16 Donado-Holmberg                  3.38
+            OK  R11 Boulevard Caseros                2.95
+            OK  R20 Garcia del Rio                   2.54
+
+      «Polo» con elongacion < 2.0:       4 de 6 medibles
+            NO  R13 Abasto                           2.61
+            NO  R15 Devoto                           2.42
+            OK  R08 Villa Crespo                     1.83
+            OK  R05 Belgrano                         1.70
+            OK  R06 Recoleta                         1.24
+            OK  R03 San Telmo                        1.16
+
+      AUC(corredor vs Polo) con las 6:  0.972
+      AUC con las 5 del enunciado:      1.000
+
+      RAMA B · SEPARACIÓN PARCIAL · el índice se publica con su curva y NO decide solo: acompaña al criterio
+
+----------------------------------------------------------------------------------------------------
+  LA CIRCULARIDAD, medida y no supuesta
+
+      Las 22 envolventes son dibujos editoriales. Si los puntos sólo repiten la forma del
+      polígono, el índice está leyendo la mano del cartógrafo y no el territorio.
+
+      rho de Spearman entre elongacion (puntos) y elongacion_rect (polígono): 0.949
+      >= 0.8  →  CALIBRACIÓN CONTAMINADA. El veredicto de arriba
+      vale con esta salvedad pegada: sobre las 94, cuyos polígonos salen de un
+      procedimiento uniforme, la calibración transfiere sólo en parte.
+
+----------------------------------------------------------------------------------------------------
+  LA CURVA DE LA BANDA (R4) · el resultado depende de los 100 m elegidos a mano
+
+  familia                                50m      75m     100m     150m     200m
+  Eje o corredor                        0.28     0.42     0.54     0.73     0.86
+  Polo                                  0.14     0.23     0.32     0.44     0.54
+
+      Es la fracción media de puntos dentro de la banda. Si la brecha entre las dos filas
+      se sostiene a lo largo del rango, la elección de los 100 m no es la mitad del
+      resultado; si se cierra, sí lo es.
+
+----------------------------------------------------------------------------------------------------
+  APLICADO A LAS 94 FILAS DE LA MATRIZ
+
+      con índice:        92
+      sin índice:        2   (soporte ausente o menos de 20 puntos)
+            2 por: sin soporte geométrico
+      elongacion >= 2.0:  53 de 92
+
+      Las diez de forma más alargada:
+            PGR_P042                    P042 · Velez Sarsfield      9.51   polo del borrador
+            PG009_COSTANERA_NORTE       Costanera Norte             8.06   envolvente publicada
+            PG019_AVENIDA_FEDERICO_LAC  Federico Lacroze / Liber    7.14   envolvente publicada
+            PGR_P036                    P036 · Flores               7.09   polo del borrador
+            PGR_P084                    P084 · Balvanera            5.90   polo del borrador
+            PGR_P044                    P044 · San Cristobal        5.65   polo del borrador
+            PGR_P020                    P020 · Villa Luro           5.51   polo del borrador
+            PGR_P013                    P013 · Mataderos            5.33   polo del borrador
+            PGR_P012                    P012 · Mataderos            5.29   polo del borrador
+            PGR_P072-3                  P072-3 · Belgrano           5.22   polo del borrador
+
+----------------------------------------------------------------------------------------------------
+  LA TRANSFERENCIA DE ESCALA, que es la salvedad grande y no la chica
+
+      El corte se calibró sobre envolventes editoriales y se aplica sobre polos de un
+      algoritmo, que son un orden de magnitud más chicos. Si la mayoría de los polos
+      queda arriba del corte, el corte no discrimina a esa escala: describe lo normal.
+
+      soporte                       n  mediana ha  mediana elong  >= corte
+      barrio administrativo         6       303.3           1.69      33%
+      enclave comunitario           1        17.6           1.61       0%
+      envolvente publicada         20       129.8           2.12      50%
+      polo del borrador            65        12.7           2.23      63%
+
+      La lectura honesta de esa tabla va en el informe, no acá: el número la fija.
+
+====================================================================================================
+  RAMA B · rho de circularidad 0.949 · 92 de 94 con índice · Places: 0 requests
+====================================================================================================
+

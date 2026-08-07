@@ -1,0 +1,22 @@
+bar,nombres_vistos,direcciones_vistas,direccion_boletin,id_boletin,nombre_gcba,direccion_gcba,en_GCBA_84,en_WIKIDATA_95,en_BOLETIN_90,n_listas,emparejado_por
+CAFE NOSTALGIA,CAFE NOSTALGIA | Café Nostalgia,"SOLER 3599, CABA | Soler 3599",,,CAFE NOSTALGIA,"SOLER 3599, CABA",si,si,no,2,domicilio
+Café Los Andes,CAFE LOS ANDES | Café Los Andes,"SCALABRINI ORTIZ, RAUL AV. 1312, CABA | Scalabrini Ortiz 1312",,,CAFE LOS ANDES,"SCALABRINI ORTIZ, RAUL AV. 1312, CABA",si,si,no,2,domicilio
+Café Monserrat,CAFE MONTSERRAT | Café Monserrat,"SAN JOSE 524, CABA | San Jose 524",,,CAFE MONTSERRAT,"SAN JOSE 524, CABA",si,si,no,2,domicilio
+Café de la Esquina,CAFE DE LA ESQUINA | Café de la Esquina,"Av. Del Libertador 6196 | DEL LIBERTADOR AV. 6169, CABA",,,CAFE DE LA ESQUINA,"DEL LIBERTADOR AV. 6169, CABA",si,si,no,2,nombre+calle
+El Preferido de Palermo,EL PREFERIDO DE PALERMO | El Preferido de Palermo,"BORGES, JORGE LUIS 2108, CABA | Jorge L. Borges 2108",,,EL PREFERIDO DE PALERMO,"BORGES, JORGE LUIS 2108, CABA",si,si,no,2,nombre+altura (homonimo cerrado)
+IBERIA,Bar iberia | IBERIA,"Av. De Mayo 1196 | DE MAYO AV. 1196, CABA",,,IBERIA,"DE MAYO AV. 1196, CABA",si,si,no,2,domicilio
+LA EMBAJADA,LA EMBAJADA | La Embajada,"SANTIAGO DEL ESTERO 88, CABA | Santiago del Estero 88",,,LA EMBAJADA,"SANTIAGO DEL ESTERO 88, CABA",si,si,no,2,domicilio
+LA NUEVA ANDALUZA,LA NUEVA ANDALUZA | La Nueva Andaluza,"CAMARONES 1412, CABA | Camarones 1412",,,LA NUEVA ANDALUZA,"CAMARONES 1412, CABA",si,si,no,2,domicilio
+American Bar,American Bar,Diagonal Norte 632,,,,,no,si,no,1,unico
+BAR LAVALLE,BAR LAVALLE,"LAVALLE 2407, CABA",,,BAR LAVALLE,"LAVALLE 2407, CABA",si,no,no,1,unico
+BIDOU DE LAS LUCES,BIDOU DE LAS LUCES,"PERU 269, CABA",,,BIDOU DE LAS LUCES,"PERU 269, CABA",si,no,no,1,unico
+Bar Carlitos,Bar Carlitos,Carlos Calvo 2607,,,,,no,si,no,1,unico
+CAFE VICTORIA,CAFE VICTORIA,"ENTRE RIOS AV. 114, CABA",,,CAFE VICTORIA,"ENTRE RIOS AV. 114, CABA",si,no,no,1,unico
+CONFITERIA DEL HOTEL CASTELAR,CONFITERIA DEL HOTEL CASTELAR,"DE MAYO AV. 1048, CABA",,,CONFITERIA DEL HOTEL CASTELAR,"DE MAYO AV. 1048, CABA",si,no,no,1,unico
+Café Retiro,Café Retiro,,,,,,no,si,no,1,unico
+Café de los Incas,Café de los Incas,Av. De los Incas 3909,,,,,no,si,no,1,unico
+Confitería Queen Bess,Confitería Queen Bess,Av. Santa Fe 868,,,,,no,si,no,1,unico
+Confitería Richmond,Confitería Richmond,,,,,,no,si,no,1,unico
+Confitería del Hotel Castelar,Confitería del Hotel Castelar,Av. de Mayo 1148/50/52,,,,,no,si,no,1,unico
+OLIMPO,OLIMPO,"ARREGUI 5794, CABA",,,OLIMPO,"ARREGUI 5794, CABA",si,no,no,1,unico
+Victoria,Victoria,Bolívar 104,,,,,no,si,no,1,unico
