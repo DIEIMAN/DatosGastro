@@ -1,0 +1,58 @@
+CAPA DE HITOS UNIFICADA · REFERENTES_2026 manda; el CSV documental completa
+====================================================================================================
+
+  REFERENTES_2026: 169 filas, 159 con coordenadas
+  hitos_documentales_caba.csv: 199 filas
+
+----------------------------------------------------------------------------------------------------
+  1 · EL DESCARTE, fila por fila y no como total
+
+    bar_notable                90 filas descartadas — REFERENTES_2026 tiene 84 y está geocodificado
+    michelin                   58 filas descartadas — REFERENTES_2026 tiene 58 y está geocodificado
+    TOTAL descartado          148 filas
+
+  Aportan: 51 filas.
+    pizzeria_emblematica       20
+    ranking_internacional      16
+    mercado_o_patrimonio       10
+    heladeria_historica         5
+
+----------------------------------------------------------------------------------------------------
+  2 · RELLENO DE MERCADOS · se completa la fila que ya estaba, no se agrega una nueva
+
+      cobertura ANTES: 2 de 11 con coordenadas
+
+      Mercado de San Telmo                   → MG-0001: ya tenía coordenadas, se respeta (no suma cobertura)
+      Mercado Belgrano                       → MG-0002: se completa con «Av. Juramento 2527»
+      Mercado Bonpland                       → MG-0008: se completa con «Bonpland 1660»
+      Mercado San Nicolas                    → MG-0013: sigue sin dirección en las dos fuentes
+      Mercado del Progreso                   → MG-0003: se completa con «Av. Rivadavia 5430»
+      Patio de los Lecheros                  → MG-0006: se completa con «Av. Tte. Gral. Donato Alvarez 175»
+      Patio Costanera Norte                  → MG-0011: ya tenía coordenadas, se respeta (no suma cobertura)
+      Patio Rodrigo Bueno                    → MG-0012: se completa con «Av. Espana 2230»
+      Smart Plaza Patio Parque Patricios     → MG-0010: sigue sin dirección en las dos fuentes
+      Yiyo el Zeneize                        → NO está entre los 11: entra como fila nueva
+
+----------------------------------------------------------------------------------------------------
+  3 · GEOCODIFICACIÓN CON USIG · sólo lo que no tiene coordenadas y sí tiene dirección
+
+      23 filas para geocodificar. Las que ya venían de REFERENTES no se tocan.
+
+      resueltas: 22 de 23
+      sin resolver: Ultramarinos
+
+      quedan SIN coordenadas: 30 filas, y no se inventan.
+        Pizzería emblemática        20
+        Heladería histórica          5
+        Mercado/patio                4
+        MICHELIN                     1
+
+      Las pizzerías y heladerías vienen con nombre y barrio, sin altura. Ponerlas en el
+      centroide del barrio sería colocar un hito donde no está: entran declaradas y sin punto.
+
+      cobertura de mercados DESPUÉS: 8 de 12 — la reconciliación estimaba ~9 de 11.
+
+====================================================================================================
+  211 hitos en la capa · 181 con punto · 148 filas descartadas por duplicado · Google Places: 0 requests
+====================================================================================================
+

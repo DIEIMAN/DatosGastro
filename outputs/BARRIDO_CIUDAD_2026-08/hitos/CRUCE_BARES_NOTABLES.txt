@@ -1,0 +1,136 @@
+BARES NOTABLES · las tres listas cruzadas. Quién tiene qué, sin decidir cuál manda.
+====================================================================================================
+
+  GCBA_84         84 filas · 84 con domicilio utilizable
+  WIKIDATA_95     95 filas · 91 con domicilio utilizable
+  BOLETIN_90      90 filas · 90 con domicilio utilizable
+
+  El cruce es en dos pasadas: (calle, altura) primero —identidad fuerte, con la clave de
+  `normalizar_calles.py`— y nombre plegado después, sobre lo que quedó suelto. Cada
+  emparejamiento dice por cuál de los dos caminos se hizo.
+
+----------------------------------------------------------------------------------------------------
+  EL RESULTADO
+
+      114 bares distintos entre las tres listas.
+
+      GCBA  WIKI  BOLETIN   bares
+      si    si    si         70  ← en las tres
+      no    no    si         13
+      no    si    no         11
+      si    si    no          7
+      no    si    si          6
+      si    no    no          6
+      si    no    si          1
+
+      En las TRES: 70. En una sola: 30.
+
+      Los tres totales —84, 95, 90— no son tres recortes de una misma lista: cada una tiene
+      bares que las otras dos no tienen. No hay una que contenga a las demás.
+
+      SÓLO en GCBA_84: 6
+          BAR LAVALLE  —  LAVALLE 2407, CABA
+          BIDOU DE LAS LUCES  —  PERU 269, CABA
+          CAFE VICTORIA  —  ENTRE RIOS AV. 114, CABA
+          CONFITERIA DEL HOTEL CASTELAR  —  DE MAYO AV. 1048, CABA
+          EL PREFERIDO DE PALERMO  —  BORGES, JORGE LUIS 2108, CABA
+          OLIMPO  —  ARREGUI 5794, CABA
+
+      SÓLO en WIKIDATA_95: 11
+          American Bar  —  Diagonal Norte 632
+          Bar Bidou  —  Diagonal Norte 858
+          Bar Carlitos  —  Carlos Calvo 2607
+          Café Palacio  —  Av. F. Lacroze 3901
+          Café Retiro  —  sin dirección
+          Café de los Incas  —  Av. De los Incas 3909
+          Confitería Queen Bess  —  Av. Santa Fe 868
+          Confitería Richmond  —  sin dirección
+          Confitería del Hotel Castelar  —  Av. de Mayo 1148/50/52
+          El Preferido de Palermo  —  Jorge L. Borges 2108
+          Victoria  —  Bolívar 104
+
+      SÓLO en BOLETIN_90: 13
+          Bar Bidou  —  Av. Roque Saenz Pena 858
+          Bar Boca a Boca  —  Av. Benito Perez Galdos 201
+          Bar Conde  —  Federico Lacroze 3193
+          Bar Via 71  —  Viamonte 1771
+          Cabildo de Buenos Aires  —  Peru 86
+          Cafe Cortazar  —  Jose Antonio Cabrera 3797
+          Cafe Rivas  —  Estados Unidos 302
+          Confiteria El Greco  —  Av. Rivadavia 5353
+          El Portuario  —  Pinzon 102
+          Josephina's Cafe  —  Guido 1532
+          La Escuela  —  Manuela Pedraza 2803
+          La Opera  —  Av. Corrientes 1799
+          La Orquidea  —  Av. Corrientes 4101
+
+----------------------------------------------------------------------------------------------------
+  LO QUE SE FUSIONÓ POR EL CAMINO DÉBIL, para que se pueda revisar sin releer los archivos
+
+      · por nombre + misma calle, altura a menos de 50: 8
+          36 BILLARES (DE MAYO AV. 1265, CABA)  +  Los 36 Billares (Avenida de Mayo 1262)
+          BAR EL FEDERAL (CALVO, CARLOS 595, CABA)  +  Bar El Federal (Carlos Calvo 599)
+          BAR PLAZA DORREGO (DEFENSA 1096, CABA)  +  Bar Plaza Dorrego (Defensa 1098)
+          CAFE DE LA ESQUINA (DEL LIBERTADOR AV. 6169, CABA)  +  Café de la Esquina (Av. Del Libertador 6196)
+          CAFE DE LOS ANGELITOS (RIVADAVIA AV. 2100, CABA)  +  Café de los Angelitos (Av. Rivadavia 2064)
+          CELTA BAR (SARMIENTO 1702, CABA)  +  Celta Bar (Sarmiento 1701)
+          EL PROGRESO (MONTES DE OCA, MANUEL AV. 1700, CABA)  +  El Progreso (Av. Montes de Oca 1702)
+          PAULIN (SARMIENTO 635, CABA)  +  Paulín (Sarmiento 643)
+
+      · sin domicilio utilizable, pegados sólo por nombre: 2
+          Esquina Homero Manzi → ESQUINA HOMERO MANZI
+          El Gato Negro → El Gato Negro
+
+      · MISMO NOMBRE EN OTRA CALLE: 19 pares. **No se fusionan**, y por eso
+        están acá: puede ser un homónimo de verdad o el mismo bar con la calle escrita de
+        otra forma, y las dos cosas se ven igual desde el dato.
+
+        MISMA ALTURA (4) — casi siempre la misma calle escrita distinto,
+        y casi siempre por el residuo de las iniciales que el normalizador declara abierto:
+          Bar Bidou (Av. Roque Saenz Pena 858)
+              vs  Bar Bidou (Diagonal Norte 858)
+          CAFE PALACIO (LACROZE, FEDERICO AV. 3901, CABA)
+              vs  Café Palacio (Av. F. Lacroze 3901)
+          Cafe Palacio (Av. Federico Lacroze 3901)
+              vs  Café Palacio (Av. F. Lacroze 3901)
+          EL PREFERIDO DE PALERMO (BORGES, JORGE LUIS 2108, CABA)
+              vs  El Preferido de Palermo (Jorge L. Borges 2108)
+
+        ALTURA DISTINTA (15) — acá es más probable que sean dos bares:
+          BAR LAVALLE (LAVALLE 2407, CABA)
+              vs  Bar Lavalle (Lavalle 1693)
+          CAFE ROMA (OLAVARRIA 409, CABA)
+              vs  CAFE ROMA (SAN LUIS 3101, CABA)
+          CAFE ROMA (OLAVARRIA 409, CABA)
+              vs  Café Roma (San Luis 3101)
+          CAFE ROMA (SAN LUIS 3101, CABA)
+              vs  Cafe Roma (Olavarria 409)
+          CAFE ROMA (SAN LUIS 3101, CABA)
+              vs  Café Roma (Olavarria 409)
+          CAFE VICTORIA (ENTRE RIOS AV. 114, CABA)
+              vs  Victoria (Bolívar 104)
+          CONFITERIA DEL HOTEL CASTELAR (DE MAYO AV. 1048, CABA)
+              vs  Confitería del Hotel Castelar (Av. de Mayo 1148/50/52)
+          Cafe Olimpo (Irigoyen 1491)
+              vs  OLIMPO (ARREGUI 5794, CABA)
+          Cafe Plaza (Av. Rivadavia 4732)
+              vs  PLAZA BAR (FLORIDA 1005, CABA)
+          Cafe Plaza (Av. Rivadavia 4732)
+              vs  Plaza Bar (Florida 1005)
+          Cafe Roma (Olavarria 409)
+              vs  Café Roma (San Luis 3101)
+          Café Olimpo (Irigoyen 1491)
+              vs  OLIMPO (ARREGUI 5794, CABA)
+          Café Roma (Olavarria 409)
+              vs  Café Roma (San Luis 3101)
+          PLAZA BAR (FLORIDA 1005, CABA)
+              vs  Plaza Café (Av. Rivadavia 4732)
+          Plaza Bar (Florida 1005)
+              vs  Plaza Café (Av. Rivadavia 4732)
+
+====================================================================================================
+  114 bares · 70 en las tres listas · NO se decide cuál manda: eso
+  necesita la fecha de corte y el acto administrativo de cada lista, que no está en los
+  archivos. Google Places: 0 requests.
+====================================================================================================
+
