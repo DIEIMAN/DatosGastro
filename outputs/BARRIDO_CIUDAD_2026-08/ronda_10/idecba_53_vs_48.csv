@@ -1,0 +1,48 @@
+zona,eje_pdf,tasa_ocupacion_pct_pdf,var_interanual_pp_pdf,que_es_en_el_atlas,clave,eje_xlsx,locales_relevados,locales_ocupados,cuadras,densidad_comercial_por_cuadra,tasa_ocupacion_pct_xlsx,var_interrelevamiento_pp,var_interanual_pp_xlsx,d_tasa,d_var
+Centro,Av. Belgrano,92.7,-0.4,,AV BELGRANO,Av. Belgrano,211,191,20.0,10.55,90.5,-2.3,-3.2,2.2,2.8
+Centro,Cordoba Facultad,93.6,-1.3,,CORDOBA FACULTAD,Córdoba Facultad,98,84,10.0,9.8,85.7,-5.9,-8.0,7.9,6.7
+Centro,Cordoba Tribunales,91.7,4.6,,CORDOBA TRIBUNALES,Córdoba Tribunales,136,122,12.0,11.33,89.7,0.8,4.3,2.0,0.3
+Centro,Corrientes y Callao,89.9,-1.8,,CORRIENTES Y CALLAO,Corrientes y Callao,168,158,14.0,12.0,94.0,4.0,1.1,-4.1,-2.9
+Centro,Corrientes y Pueyrredon,91.7,-1.8,,CORRIENTES Y PUEYRREDON,Corrientes y Pueyrredón,299,290,16.0,18.69,97.0,2.0,0.6,-5.3,-2.4
+Centro,Entre Rios,89.2,0.9,,ENTRE RIOS,Entre Ríos,311,281,20.0,15.55,90.4,-0.6,-0.6,-1.2,1.5
+Centro,Florida,89.3,-1.9,R12 Centro · Plaza Bar (Florida 1005) cerrado hace 9 anos,FLORIDA,Florida,310,269,20.0,15.5,86.8,-2.6,-3.2,2.5,1.3
+Centro,Libertad,89.1,1.7,~5 locales vacios por cuadra,LIBERTAD,Libertad,228,201,10.0,22.8,88.2,-1.0,2.5,0.9,-0.8
+Centro,Monserrat,87.7,-2.0,Z47 · 9 Notables segun el catalogo,MONSERRAT,Monserrat,139,123,14.0,9.93,88.5,1.3,-1.4,-0.8,-0.6
+Centro,Once,95.0,1.1,enclave judio · la mas alta del Centro,ONCE,Once,511,471,34.0,15.03,92.2,-2.7,-1.6,2.8,2.7
+Centro,Puerto Madero,90.0,3.6,referencia publicada · sube,PUERTO MADERO,Puerto Madero,89,78,40.0,2.23,87.6,-2.4,1.3,2.4,2.3
+Centro,Santa Fe y Callao,91.8,-3.0,,SANTA FE Y CALLAO,Santa Fe y Callao,416,369,28.0,14.86,88.7,-2.9,-6.8,3.1,3.8
+Norte,Cabildo,93.5,-0.3,entorno de R20,CABILDO,Cabildo,679,623,46.0,14.76,91.8,-1.8,-3.8,1.7,3.5
+Norte,Chacarita,89.1,-0.3,R09 · fusionado en Chacagiales,CHACARITA,Chacarita,134,123,14.0,9.57,91.8,-0.1,-1.6,-2.7,1.3
+Norte,Colegiales,92.5,0.0,Z43,COLEGIALES,Colegiales,239,218,20.0,11.95,91.2,0.0,-0.4,1.3,0.4
+Norte,Cordoba y Scalabrini Ortiz,84.7,-2.4,,CORDOBA Y SCALABRINI ORTIZ,Córdoba y Scalabrini Ortiz,192,158,14.0,13.71,82.3,-2.5,-4.6,2.4,2.2
+Norte,Palermo Soho,85.5,-5.5,subzona · SEGUNDA MAYOR CAIDA DE LOS 53,PALERMO SOHO,Palermo Soho,331,289,32.0,10.34,87.3,-0.6,-1.4,-1.8,-4.1
+Norte,Recoleta,88.8,-2.0,referencia publicada,RECOLETA,Recoleta,95,85,16.0,5.94,89.5,1.1,-3.2,-0.7,1.2
+Norte,Santa Fe y Coronel Diaz,94.9,-2.1,,SANTA FE Y CORONEL DIAZ,Santa Fe y Coronel Díaz,291,272,16.0,18.19,93.5,-1.4,-1.4,1.4,-0.7
+Norte,Santa Fe y Scalabrini Ortiz,91.3,-1.0,,SANTA FE Y SCALABRINI ORTIZ,Santa Fe y Scalabrini Ortiz,154,138,14.0,11.0,89.6,-3.2,-3.8,1.7,2.8
+Norte,Triunvirato,92.2,-1.1,,TRIUNVIRATO,Triunvirato,559,515,34.0,16.44,92.1,-0.0,-1.3,0.1,0.2
+Oeste,Almagro,91.2,-1.5,Z37 · la unica que abre las seis vias,ALMAGRO,Almagro,199,188,14.0,14.21,94.5,1.0,-1.0,-3.3,-0.5
+Oeste,Av. San Martin,86.8,-1.8,entorno de R21 La Paternal,AV SAN MARTIN,Av. San Martín,225,200,20.0,11.25,88.9,2.3,3.2,-2.1,-5.0
+Oeste,Avellaneda,96.6,-1.2,LA MAS ALTA DE LOS 53,AVELLANEDA,Avellaneda,1073,1015,46.0,23.33,94.6,-1.8,-0.2,2.0,-1.0
+Oeste,Caballito,95.6,-0.8,,CABALLITO,Caballito,366,354,28.0,13.07,96.7,-0.3,-0.3,-1.1,-0.5
+Oeste,Corrientes y Medrano,93.4,0.1,,CORRIENTES Y MEDRANO,Corrientes y Medrano,339,306,24.0,14.12,90.3,-3.9,-2.7,3.1,2.8
+Oeste,Corrientes y Scalabrini Ortiz,89.8,1.9,,CORRIENTES Y SCALABRINI ORTIZ,Corrientes y Scalabrini Ortiz,338,296,22.0,15.36,87.6,-1.4,-2.2,2.2,4.1
+Oeste,Cuenca,93.1,0.9,,CUENCA,Cuenca,274,258,16.0,17.12,94.2,1.1,0.7,-1.1,0.2
+Oeste,Devoto,86.4,-1.8,,DEVOTO,Devoto,320,282,20.0,16.0,88.1,0.0,-1.8,-1.7,0.0
+Oeste,Flores,93.0,-1.6,Z23 casco historico,FLORES,Flores,518,469,34.0,15.24,90.5,-3.3,-2.4,2.5,0.8
+Oeste,Liniers,86.6,-4.6,E07 Mercado Andino · CAE FUERTE — y es caso testigo de la lamina 4,LINIERS,Liniers,182,169,10.0,18.2,92.9,1.1,0.0,-6.3,-4.6
+Oeste,Monte Castro,90.7,-2.6,El Fortin,MONTE CASTRO,Monte Castro,335,291,18.0,18.61,86.9,-2.7,-5.1,3.8,2.5
+Oeste,Villa Crespo,90.5,0.6,R08,VILLA CRESPO,Villa Crespo,163,130,14.0,11.64,79.8,-10.9,-9.1,10.7,9.7
+Oeste,Warnes,85.6,-1.4,entorno de R21,WARNES,Warnes,252,208,24.0,10.5,82.5,-6.2,-6.8,3.1,5.4
+Sur,Alberdi,93.5,3.1,NO ESTA EN NUESTRA MATRIZ · sube,ALBERDI,Alberdi,117,112,10.0,11.7,95.7,2.6,3.4,-2.2,-0.3
+Sur,Av. Patricios,88.5,0.3,,AV PATRICIOS,Av. Patricios,144,127,14.0,10.29,88.2,1.1,1.1,0.3,-0.8
+Sur,Boedo,88.4,0.5,,BOEDO,Boedo,227,207,16.0,14.19,91.2,-2.7,-1.8,-2.8,2.3
+Sur,Chilavert,90.4,-1.3,NO ESTA EN NUESTRA MATRIZ,CHILAVERT,Chilavert,306,271,22.0,13.91,88.6,-1.7,-2.4,1.8,1.1
+Sur,Constitucion,91.4,2.1,,CONSTITUCION,Constitución,139,125,12.0,11.58,89.9,-0.8,1.5,1.5,0.6
+Sur,Defensa,81.8,-5.4,"R03 San Telmo · TERCERA MAYOR CAIDA · ~4,6 locales vacios por cuadra · y su via E ya estaba en dos grupos",DEFENSA,Defensa,191,162,14.0,13.64,84.8,3.1,2.7,-3.0,-8.1
+Sur,Flores Sur,87.9,-1.3,Bajo Flores · enclave coreano,FLORES SUR,Flores Sur,121,112,6.0,20.17,92.6,0.0,3.3,-4.7,-4.6
+Sur,Mataderos,89.0,-0.1,,MATADEROS,Mataderos,221,204,16.0,13.81,92.3,0.0,-1.4,-3.3,1.3
+Sur,Montes de Oca,87.1,-0.4,P008 Barracas · corredor 280-1702 y CCCA,MONTES DE OCA,Montes de Oca,146,131,14.0,10.43,89.7,-1.1,-1.9,-2.6,1.5
+Sur,Parque Avellaneda,78.8,3.0,"SEGUNDA PEOR OCUPACION pero SUBE · ~4,9 locales vacios por cuadra",PARQUE AVELLANEDA,Parque Avellaneda,153,119,12.0,12.75,77.8,-0.3,2.5,1.0,0.5
+Sur,Parque Patricios,90.2,0.0,,PARQUE PATRICIOS,Parque Patricios,204,182,14.0,14.57,89.2,-1.0,1.4,1.0,-1.4
+Sur,Riestra,85.4,0.6,NO ESTA EN NUESTRA MATRIZ,RIESTRA,Riestra,201,171,14.0,14.36,85.1,-0.5,-0.6,0.3,1.2
+Sur,Saenz,85.6,0.7,"Av. Saenz · La Blanqueada (1802-2017) · ~4,9 locales vacios por cuadra",SAENZ,Sáenz,212,185,12.0,17.67,87.3,-0.9,-1.5,-1.7,2.2

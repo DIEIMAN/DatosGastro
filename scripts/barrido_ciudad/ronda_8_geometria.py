@@ -92,7 +92,24 @@ def p_factory(buffer: io.StringIO):
     return p
 
 
-def tramo_entre(callejero, calle, corte_a, corte_b, marco):
+# A cuánto puede estar un corte del eje y seguir siendo una esquina. Por encima de esto, el
+# `nearest_points` de abajo estaría inventando un ancla. La ronda 9 encontró un caso a 761 m.
+TOLERANCIA_CORTE_M = 40.0
+
+
+class AnclaFueraDelEje(RuntimeError):
+    """Un corte no toca el eje. Falla ruidoso a propósito: R8.
+
+    La versión original caía en `nearest_points` a cualquier distancia y devolvía un tramo
+    anclado en un punto que no es una esquina, sin avisar. Así se produjo el falso tramo
+    «Av. Cabildo–Av. Balbín» de R20, cuyo extremo oeste quedó 761 m fuera del eje: García del
+    Río no cruza Av. Cabildo, porque esa mitad del corredor se llama «GARCIA DEL RIO AV.».
+
+    Ver `callejero_canonico.py` — el eje hay que pedirlo canonicalizado.
+    """
+
+
+def tramo_entre(callejero, calle, corte_a, corte_b, marco, tolerancia_m=TOLERANCIA_CORTE_M):
     partes, _ = piezas_en_marco(callejero, calle, marco)
     if not partes:
         return None
@@ -104,6 +121,14 @@ def tramo_entre(callejero, calle, corte_a, corte_b, marco):
             return None
         union_otra = unary_union(list(otra.geometry))
         interseccion = eje.intersection(union_otra)
+        if interseccion.is_empty:
+            distancia = eje.distance(union_otra)
+            if distancia > tolerancia_m:
+                raise AnclaFueraDelEje(
+                    f"«{corte}» no toca el eje de «{calle}»: queda a {distancia:,.0f} m, más que "
+                    f"la tolerancia de {tolerancia_m:.0f} m. Anclar ahí inventaría una esquina. "
+                    f"Revisar si «{calle}» está partida en varios nombres oficiales "
+                    f"(callejero_canonico.familias) o si el corte es el equivocado.")
         puntos.append(interseccion.centroid if not interseccion.is_empty
                       else nearest_points(eje, union_otra)[0])
     a, b = puntos

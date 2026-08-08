@@ -1,0 +1,132 @@
+====================================================================================================
+  RONDA 10 · Palermo por eliminación, Monserrat reconciliado, y las dos erratas
+  2026-08-08 · Google Places: 0 requests
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LA CAPA FD SE RECONCILIA CONTRA EL ARCHIVO CANÓNICO
+
+      el archivo trae 3: FD-20, FD-21, FD-22
+
+      LO QUE LA RONDA 9 CARGÓ COMO FD-20 NO ES FD-20.
+        cargué  · FD-20 = «Google Places · businessStatus»
+        canónico· FD-20 = «La quiebra decretada leida como cierre — patron de titulo, n»
+        el mío es, en el archivo, FD-21. Se corrige por el archivo: el catálogo es de
+        Diego y este proceso no lo numera.
+
+      la capa FD queda en 22: FD-01, FD-02, FD-03, FD-04, FD-05, FD-06, FD-07, FD-08, FD-09, FD-10, FD-11, FD-12, FD-13, FD-14, FD-15, FD-16, FD-17, FD-18, FD-19, FD-20, FD-21, FD-22
+      COMPLETA. FD-01 a FD-22 sin huecos, por primera vez.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · PALERMO POR ELIMINACIÓN
+
+  (a) R12 · ¿el padre contiene a R01 con CERO superficie perdida?
+
+      R01 pierde 0.000000 m² dentro de R01 ∪ Soho ∪ Hollywood ∪ Cañitas
+      (por predicado, `covers()` dice: False — y por eso NO se usa)
+      Soho          pierde 0.000000 m²
+      Hollywood     pierde 0.000000 m²
+      Las Cañitas   pierde 0.000000 m²
+
+      el padre mide 385.51 ha · 1916 locales
+      LA OPCIÓN A SE SOSTIENE: el padre contiene a los cuatro sin perder superficie.
+
+  y la comprobación de que la opción B se caía:
+      si el padre fuera SÓLO las tres subzonas, R01 perdería 108.50 ha
+      y 188 locales publicados. Por eso la opción B no era viable.
+
+  (b) QUÉ SON esos locales · ¿un área coherente o un remiendo?
+
+      el residuo son 8 piezas de más de 0,1 ha:
+
+         #        ha  locales   barrio dominante
+         1     40.17      134   Palermo (100 %)
+         2     31.42       15   Palermo (100 %)
+         3     11.07       25   Villa Crespo (88 %)
+         4     10.74        1   Palermo (100 %)
+         5      6.71        6   Colegiales (97 %)
+         6      4.64        5   Palermo (100 %)
+         7      3.21        2   Chacarita (96 %)
+         8      0.54        0   Chacarita (100 %)
+
+      la pieza mayor concentra 40.17 ha de 108.5 (37 %) y 134 de 188 locales (71 %).
+      ES UN ÁREA COHERENTE, NO UN REMIENDO: una sola pieza lleva la mayoría.
+      La figura que corresponde es un polo con subzonas, y esta pieza es una subzona
+      más — la que no tiene nombre todavía.
+
+  (c) el Polo Concepción se resuelve CON Palermo, no aparte
+
+      «ARENAL, CONCEPCION» canonicalizada: familia = ['ARENAL CONCEPCION']
+      eje entero: 3,253 m
+           263 m del eje (  8 %) caen dentro de R01 Palermo
+
+      CUIDADO CON LOS DOS OBJETOS, que no son el mismo:
+        el EJE ENTERO de Concepción Arenal mide 3,253 m y sólo 263 m (8 %) caen en R01.
+        el TRAMO Zapiola–Conesa mide 143 m, y es el 47 % de SU área a 150 m el que cae
+        adentro de R01 — medido en la ronda 9.
+
+      El 47 % es del tramo, no del eje. Y con eso alcanza para lo que hay que decidir:
+      el tramo que la fuente nombra como Polo Concepción está pisado por R01 casi a la
+      mitad, así que NO se puede delimitar desde Colegiales sin tocar Palermo. Se
+      resuelve en el sistema de Palermo y sale de la delimitación de Z43.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · MONSERRAT · el catálogo dice 9 y la capa tiene 2
+
+  (a) ¿la capa simplemente no tiene los 90 cargados?
+
+      Bares Notables en la capa: 91 de los 90 del catálogo consolidado.
+      NO es que falten: están casi todos. El problema es OTRO.
+
+      el catálogo dice    en la capa  barrio que la capa declara  dirección
+      El Colonial         sí          nan                         Av. Belgrano 599
+      Iberia              sí          Monserrat                   Av. de Mayo 1196
+      Seddon              sí          Monserrat                   Defensa 695
+      Cabildo             sí          nan                         Peru 86
+      Tortoni             sí          nan                         Av. de Mayo 825
+      El Querandí         sí          nan                         Peru 302
+      La Puerto Rico      sí          nan                         Alsina 420
+      London City         sí          nan                         Av. de Mayo 599
+      Los 36 Billares     sí          nan                         Av. de Mayo 1265
+
+      9 de los 9 están en la capa. Los que 'faltaban' NO faltan:
+      **están cargados con OTRO barrio declarado.** El conteo de 2 salía de filtrar por
+      `barrio_declarado`, que es un campo de texto que viene de la fuente y no de la
+      geometría. Es R13: la atribución se verificó contra el campo, no contra la entidad.
+
+  (b) EL LÍMITE NORTE DE MONSERRAT, medido contra la capa oficial de barrios
+
+      Av. Rivadavia    distancia a Monserrat     0 m · a San Nicolás     0 m · corre sobre el borde de Monserrat      0 m
+      Av. de Mayo      distancia a Monserrat     0 m · a San Nicolás     0 m · corre sobre el borde de Monserrat      0 m
+
+      EL VEREDICTO, por posición de los cuatro de Av. de Mayo:
+        Iberia             Av. de Mayo 1196         cae en Monserrat
+        Tortoni            Av. de Mayo 825          cae en Monserrat
+        London City        Av. de Mayo 599          cae en Monserrat
+        Los 36 Billares    Av. de Mayo 1265         cae en Monserrat
+
+----------------------------------------------------------------------------------------------------
+  TAREA 4 · LAS DOS ERRATAS
+
+  (a) via_C de PGR_P004 · Villa Lugano
+      PGR_P004: via_C_abierta «si» → «no» (era Yiyo el Zeneize, retipado)
+      queda con 1 vía geométrica abierta (la A) y las tres documentales cerradas en S_LUGANO.
+      → seis_vias_94_filas_r10.csv
+
+  (b) la cola de R20
+      ANTES: 24.75 ha (40.6 %) · 54 locales (53 %)
+      AHORA: 28,63 ha (47 %) · 31 locales (30 %)
+
+      La cola es MÁS grande en superficie y MÁS CHICA en locales. La frase «más de la
+      mitad de los establecimientos están en la parte sin respaldo» se cae: son el 30 %.
+      Las calles: MANZANARES, GARCIA DEL RIO, PAROISSIEN, MELIAN AV., BALBIN, RICARDO, DR. AV., JARAMILLO…
+
+====================================================================================================
+  SALIDAS
+    outputs\BARRIDO_CIUDAD_2026-08\fuentes\fuentes_defectos_conocidos_r10.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_10\palermo_contencion_y_residuo.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_10\palermo_los_407_por_zona.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_10\monserrat_catalogo_vs_capa.csv
+    outputs\BARRIDO_CIUDAD_2026-08\seis_vias\seis_vias_94_filas_r10.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_10\cola_de_R20_corregida.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_10\RONDA_10.txt

@@ -1,0 +1,10 @@
+medicion,valor
+R01 pierde dentro del padre (m²),0.0
+covers() por predicado,False
+padre · ha,385.51
+padre · locales,1916
+R01 perdería sin R01 en el padre · ha,108.5
+R01 perdería sin R01 en el padre · locales,188
+"residuo · piezas > 0,1 ha",8
+residuo · ha,108.5
+residuo · locales,188

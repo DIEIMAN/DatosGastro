@@ -1,0 +1,91 @@
+IDECBA · ejes comerciales · la serie de cuatro cuatrimestres
+====================================================================================================
+
+  relevamiento A PIE del GCBA. No depende de Places ni de ninguna fuente caída esta semana.
+
+      2025_c1: 48 ejes · 12,936 relevados · 11,843 ocupados · 91.6 % de ocupación
+      2025_c2: 48 ejes · 12,919 relevados · 11,819 ocupados · 91.5 % de ocupación
+      2025_c3: 48 ejes · 12,898 relevados · 11,781 ocupados · 91.3 % de ocupación
+      2026_c1: 48 ejes · 12,896 relevados · 11,605 ocupados · 90.0 % de ocupación
+
+----------------------------------------------------------------------------------------------------
+  VARIACIÓN INTERANUAL · 1.er cuatrimestre de 2025 → 1.er cuatrimestre de 2026
+
+      eje                            ocup. 2025 ocup. 2026    var %  tasa 2026   Δ pp
+
+      LOS DIEZ QUE MÁS CAEN
+      Villa Crespo                          144        130    -9.7%      79.8%   -9.1
+      Montes de Oca                         143        131    -8.4%      89.7%   -1.9
+      Warnes                                227        208    -8.4%      82.5%   -6.8
+      Santa Fe y Callao                     400        369    -7.8%      88.7%   -6.8
+      Córdoba Facultad                       90         84    -6.7%      85.7%   -8.0
+      Monte Castro                          308        291    -5.5%      86.9%   -5.1
+      Córdoba y Scalabrini Ortiz            166        158    -4.8%      82.3%   -4.6
+      Cabildo                               651        623    -4.3%      91.8%   -3.8
+      Flores                                488        469    -3.9%      90.5%   -2.4
+      Corrientes y Scalabrini Ortiz         307        296    -3.6%      87.6%   -2.2
+
+      LOS DIEZ QUE MÁS SUBEN
+      Córdoba Tribunales                    117        122     4.3%      89.7%    4.3
+      Av. San Martín                        192        200     4.2%      88.9%    3.2
+      Defensa                               156        162     3.8%      84.8%    2.7
+      Flores Sur                            108        112     3.7%      92.6%    3.3
+      Alberdi                               108        112     3.7%      95.7%    3.4
+      Parque Avellaneda                     116        119     2.6%      77.8%    2.5
+      Puerto Madero                          76         78     2.6%      87.6%    1.3
+      Constitución                          122        125     2.5%      89.9%    1.5
+      Libertad                              197        201     2.0%      88.2%    2.5
+      Parque Patricios                      180        182     1.1%      89.2%    1.4
+
+      TOTAL de los 48 ejes con serie completa: 11,843 → 11,605 ocupados (-2.0 %)
+
+----------------------------------------------------------------------------------------------------
+  EL CRUCE CON EL ATLAS · NOMINAL, no geométrico
+
+      el CSV de cowork mapea 53 ejes. **Son 48 los vigentes, no 53**: el
+      universo pasó de 37 a 53 y de 53 a 48 entre 2010 y hoy, y el glosario vigente
+      trae 48. Los nombres del glosario y los del relevamiento coinciden exactamente.
+
+      con dato del IDECBA y presentes en el Atlas: 27
+      con dato del IDECBA y NO en el Atlas:        20
+
+      LOS QUE YA TENEMOS, ordenados por variación interanual:
+        eje                         zona del Atlas                       var %    tasa
+        Villa Crespo                SI                                   -9.7%   79.8%
+        Warnes                      SI — entorno de R21                  -8.4%   82.5%
+        Montes de Oca               SI — P008 Barracas, corredor 280     -8.4%   89.7%
+        Monte Castro                parcial — El Fortin                  -5.5%   86.9%
+        Cabildo                     SI — entorno R20 / Belgrano          -4.3%   91.8%
+        Flores                      SI — Z23 casco historico             -3.9%   90.5%
+        Florida                     SI — R12 / Plaza Bar                 -3.6%   86.8%
+        Recoleta                    SI — referencia publicada            -3.4%   89.5%
+        Palermo Soho                SI — subzona                         -3.3%   87.3%
+        Chacarita                   SI — R09, fusionado en Chacagial     -3.1%   91.8%
+        Boedo                       SI                                   -2.8%   91.2%
+        Saenz                       SI — Av. Saenz, capa de memoria      -2.6%   87.3%
+        Mataderos                   SI                                   -1.9%   92.3%
+        Once                        SI — enclave judio y zona            -1.9%   92.2%
+        Devoto                      parcial                              -1.7%   88.1%
+        Monserrat                   SI — Z47                             -1.6%   88.5%
+        Almagro                     SI — Z37, abre las seis vias         -0.5%   94.5%
+        Colegiales                  SI — Z43, sin perimetro propio        0.0%   91.2%
+        Caballito                   SI                                    0.0%   96.7%
+        Liniers                     SI — E07 Mercado Andino               0.6%   92.9%
+        Parque Patricios            parcial                               1.1%   89.2%
+        Constitucion                parcial                               2.5%   89.9%
+        Parque Avellaneda           parcial                               2.6%   77.8%
+        Puerto Madero               SI — referencia publicada             2.6%   87.6%
+        Flores Sur                  SI — Bajo Flores, enclave corean      3.7%   92.6%
+        Defensa                     SI — R03 San Telmo                    3.8%   84.8%
+        Av. San Martin              parcial — R21                         4.2%   88.9%
+
+      POR QUÉ EL CRUCE ES NOMINAL Y NO GEOMÉTRICO: el IDECBA delimita por calle y
+      altura, y la base tiene `direccion_norm` vacía en el 46,6 % (Parte X). Este
+      cruce dice QUÉ EJES TENEMOS, no le atribuye a ninguna zona la tasa de su eje.
+      Para eso hay que construir los 80 tramos del glosario como geometría.
+
+  DOS DELIMITACIONES QUE VENÍAMOS USANDO MAL (informe 437, mayo de 2010):
+      Mataderos  usábamos Alberdi 5401-6199   · vigente Av. Alberdi 5501-6299
+      Liniers    usábamos Rivadavia 10801-11699 · vigente Ramón Falcón 6801-7299
+
+  salidas: idecba_serie_48_ejes.csv · idecba_x_atlas.csv

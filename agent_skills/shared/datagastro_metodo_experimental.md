@@ -5,7 +5,7 @@ description: Reglas para producir resultados que aguanten. Se aplica cada vez qu
 
 # Método experimental · DataGastro
 
-Estas catorce reglas no salieron de un manual. Salieron de errores concretos de este proyecto, y
+Estas quince reglas no salieron de un manual. Salieron de errores concretos de este proyecto, y
 cada una tiene abajo el caso que la originó. Son duras: si una corrida no las cumple, su
 resultado no se reporta como conclusión.
 
@@ -25,7 +25,7 @@ Va **antes** de las diez, no adentro.
 |---|---|---|
 | **R1–R8** | ¿el número es correcto? | un número equivocado |
 | **R9–R13** | ¿a qué objeto pertenece el dato? | un número correcto atribuido al objeto equivocado |
-| **R14 + pregunta cero** | ¿de qué estoy hablando? | una categoría que no existe fuera del instrumento |
+| **R14, R15 + pregunta cero** | ¿de qué estoy hablando? | una categoría que no existe fuera del instrumento |
 
 **El segundo bloque es peor que el primero**, porque sus productos resisten cualquier
 verificación aritmética: los números cierran. El tercero es peor todavía, porque no hay contra qué
@@ -289,6 +289,26 @@ entiende.
 
 > **De dónde salió.** La tercera clase del reparto de la vía B, ronda 7 — una categoría que nadie
 > había diseñado y que apareció sola en la tabla.
+
+---
+
+## R15 · Una predicción que se cumple se audita igual que una que falla
+
+**El momento de mayor riesgo del método no es el resultado inesperado: es el esperado.** Un
+resultado que contradice la hipótesis se revisa solo, porque incomoda. Uno que la confirma pasa
+sin que nadie le mire la tripa.
+
+> **De dónde salió.** La hipótesis pre-registrada decía que si La Perla del Once volvía
+> `OPERATIONAL`, Places seguía al lugar y había que reescribir v2b. Volvió `OPERATIONAL` — la
+> predicción se cumplió exactamente— y la lectura ya escrita se disparó sola. **Era otro
+> establecimiento.** Places había devuelto «La Americana, La Reina de las Empanadas», el comercio
+> que ocupa hoy el local, y el campo que lo habría mostrado —`displayName`— no estaba en la
+> máscara. La conclusión correcta y la incorrecta tenían el mismo resultado observable.
+
+**Operativamente:** el control de identidad del resultado se corre **antes** de aplicar la lectura
+pre-registrada, no después. Y una predicción cumplida se reporta con la misma auditoría que una
+fallida — quién es el referente, con qué campo se verificó, y qué otra explicación produciría el
+mismo número.
 
 ---
 

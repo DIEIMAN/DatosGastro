@@ -1,0 +1,54 @@
+zona_idecba,eje,esta_en_el_atlas,clave,eje_idecba,relevados,ocupados,tasa_ocupacion,densidad,relevados_2025_c1,ocupados_2025_c1,tasa_ocupacion_2025_c1,var_ocupados_interanual_pct,var_tasa_pp,ocupados_2025_c2,ocupados_2025_c3,en_el_atlas
+Norte,Cabildo,SI — entorno R20 / Belgrano,CABILDO,Cabildo,679.0,623.0,91.75257731958763,14.76086956521739,681.0,651.0,95.59471365638767,-4.3,-3.8,646.0,638.0,True
+Norte,Canitas,SI — subzona de Palermo en discusion,CANITAS,,,,,,,,,,,,,True
+Norte,Chacarita,"SI — R09, fusionado en Chacagiales",CHACARITA,Chacarita,134.0,123.0,91.7910447761194,9.571428571428571,136.0,127.0,93.38235294117648,-3.1,-1.6,126.0,125.0,True
+Norte,Colegiales,"SI — Z43, sin perimetro propio",COLEGIALES,Colegiales,239.0,218.0,91.21338912133892,11.95,238.0,218.0,91.59663865546219,0.0,-0.4,217.0,218.0,True
+Norte,Cordoba y Scalabrini Ortiz,NO — candidato a evaluar con las seis vias,CORDOBA Y SCALABRINI ORTIZ,Córdoba y Scalabrini Ortiz,192.0,158.0,82.29166666666666,13.714285714285714,191.0,166.0,86.91099476439791,-4.8,-4.6,162.0,162.0,False
+Norte,Palermo Hollywood,SI — subzona,PALERMO HOLLYWOOD,,,,,,,,,,,,,True
+Norte,Palermo Soho,SI — subzona,PALERMO SOHO,Palermo Soho,331.0,289.0,87.31117824773413,10.34375,337.0,299.0,88.72403560830861,-3.3,-1.4,294.0,291.0,True
+Norte,Recoleta,SI — referencia publicada,RECOLETA,Recoleta,95.0,85.0,89.47368421052632,5.9375,95.0,88.0,92.63157894736842,-3.4,-3.2,85.0,84.0,True
+Norte,Santa Fe y Coronel Diaz,NO — candidato a evaluar con las seis vias,SANTA FE Y CORONEL DIAZ,Santa Fe y Coronel Díaz,291.0,272.0,93.47079037800687,18.1875,292.0,277.0,94.86301369863014,-1.8,-1.4,278.0,276.0,False
+Norte,Santa Fe y Scalabrini Ortiz,NO — candidato a evaluar con las seis vias,SANTA FE Y SCALABRINI ORTIZ,Santa Fe y Scalabrini Ortiz,154.0,138.0,89.6103896103896,11.0,152.0,142.0,93.42105263157895,-2.8,-3.8,145.0,141.0,False
+Norte,Triunvirato,NO — candidato a evaluar con las seis vias,TRIUNVIRATO,Triunvirato,559.0,515.0,92.12880143112702,16.441176470588236,561.0,524.0,93.40463458110517,-1.7,-1.3,523.0,516.0,False
+Centro,Av. Belgrano,NO — candidato a evaluar con las seis vias,AV BELGRANO,Av. Belgrano,211.0,191.0,90.52132701421802,10.55,207.0,194.0,93.71980676328504,-1.5,-3.2,196.0,194.0,False
+Centro,Cordoba Facultad,NO — candidato a evaluar con las seis vias,CORDOBA FACULTAD,Córdoba Facultad,98.0,84.0,85.71428571428571,9.8,96.0,90.0,93.75,-6.7,-8.0,88.0,87.0,False
+Centro,Cordoba Tribunales,NO — candidato a evaluar con las seis vias,CORDOBA TRIBUNALES,Córdoba Tribunales,136.0,122.0,89.70588235294117,11.333333333333334,137.0,117.0,85.40145985401459,4.3,4.3,120.0,120.0,False
+Centro,Corrientes y Callao,NO — candidato a evaluar con las seis vias,CORRIENTES Y CALLAO,Corrientes y Callao,168.0,158.0,94.04761904761905,12.0,170.0,158.0,92.94117647058823,0.0,1.1,157.0,153.0,False
+Centro,Corrientes y Pueyrredon,NO — candidato a evaluar con las seis vias,CORRIENTES Y PUEYRREDON,Corrientes y Pueyrredón,299.0,290.0,96.98996655518395,18.6875,303.0,292.0,96.36963696369637,-0.7,0.6,293.0,284.0,False
+Centro,Entre Rios,NO — candidato a evaluar con las seis vias,ENTRE RIOS,Entre Ríos,311.0,281.0,90.35369774919614,15.55,308.0,280.0,90.9090909090909,0.4,-0.6,280.0,282.0,False
+Centro,Florida,SI — R12 / Plaza Bar,FLORIDA,Florida,310.0,269.0,86.7741935483871,15.5,310.0,279.0,90.0,-3.6,-3.2,282.0,277.0,True
+Centro,Jujuy,NO — candidato a evaluar con las seis vias,JUJUY,,,,,,,,,,,,,False
+Centro,Libertad,NO — candidato a evaluar con las seis vias,LIBERTAD,Libertad,228.0,201.0,88.1578947368421,22.8,230.0,197.0,85.65217391304348,2.0,2.5,203.0,205.0,False
+Centro,Microcentro,SI — R12 Centro,MICROCENTRO,,,,,,,,,,,,,True
+Centro,Monserrat,SI — Z47,MONSERRAT,Monserrat,139.0,123.0,88.48920863309353,9.928571428571429,139.0,125.0,89.92805755395683,-1.6,-1.4,123.0,122.0,True
+Centro,Once,SI — enclave judio y zona,ONCE,Once,511.0,471.0,92.17221135029354,15.029411764705882,512.0,480.0,93.75,-1.9,-1.6,481.0,484.0,True
+Centro,Puerto Madero,SI — referencia publicada,PUERTO MADERO,Puerto Madero,89.0,78.0,87.64044943820225,2.225,88.0,76.0,86.36363636363636,2.6,1.3,81.0,81.0,True
+Centro,Santa Fe y Callao,NO — candidato a evaluar con las seis vias,SANTA FE Y CALLAO,Santa Fe y Callao,416.0,369.0,88.70192307692307,14.857142857142858,419.0,400.0,95.4653937947494,-7.8,-6.8,391.0,380.0,False
+Oeste,Almagro,"SI — Z37, abre las seis vias",ALMAGRO,Almagro,199.0,188.0,94.47236180904522,14.214285714285714,198.0,189.0,95.45454545454545,-0.5,-1.0,181.0,186.0,True
+Oeste,Av. San Martin,parcial — R21,AV SAN MARTIN,Av. San Martín,225.0,200.0,88.88888888888889,11.25,224.0,192.0,85.71428571428571,4.2,3.2,192.0,194.0,True
+Oeste,Avellaneda,NO — candidato a evaluar con las seis vias,AVELLANEDA,Avellaneda,1073.0,1015.0,94.5945945945946,23.32608695652174,1081.0,1025.0,94.81961147086031,-1.0,-0.2,1028.0,1028.0,False
+Oeste,Caballito,SI,CABALLITO,Caballito,366.0,354.0,96.72131147540983,13.071428571428571,365.0,354.0,96.98630136986301,0.0,-0.3,354.0,355.0,True
+Oeste,Corrientes y Medrano,NO — candidato a evaluar con las seis vias,CORRIENTES Y MEDRANO,Corrientes y Medrano,339.0,306.0,90.2654867256637,14.125,339.0,315.0,92.92035398230088,-2.9,-2.7,319.0,320.0,False
+Oeste,Corrientes y Scalabrini Ortiz,NO — candidato a evaluar con las seis vias,CORRIENTES Y SCALABRINI ORTIZ,Corrientes y Scalabrini Ortiz,338.0,296.0,87.57396449704143,15.363636363636363,342.0,307.0,89.76608187134502,-3.6,-2.2,299.0,300.0,False
+Oeste,Cuenca,NO — candidato a evaluar con las seis vias,CUENCA,Cuenca,274.0,258.0,94.16058394160584,17.125,277.0,259.0,93.50180505415162,-0.4,0.7,259.0,255.0,False
+Oeste,Devoto,parcial,DEVOTO,Devoto,320.0,282.0,88.125,16.0,319.0,287.0,89.96865203761756,-1.7,-1.8,285.0,281.0,True
+Oeste,Flores,SI — Z23 casco historico,FLORES,Flores,518.0,469.0,90.54054054054053,15.235294117647058,525.0,488.0,92.95238095238095,-3.9,-2.4,483.0,489.0,True
+Oeste,Liniers,SI — E07 Mercado Andino,LINIERS,Liniers,182.0,169.0,92.85714285714286,18.2,181.0,168.0,92.81767955801105,0.6,0.0,167.0,166.0,True
+Oeste,Monte Castro,parcial — El Fortin,MONTE CASTRO,Monte Castro,335.0,291.0,86.86567164179104,18.61111111111111,335.0,308.0,91.94029850746269,-5.5,-5.1,302.0,300.0,True
+Oeste,Murillo,NO — candidato a evaluar con las seis vias,MURILLO,,,,,,,,,,,,,False
+Oeste,Nazca,parcial — borde de Z23,NAZCA,,,,,,,,,,,,,True
+Oeste,Villa Crespo,SI,VILLA CRESPO,Villa Crespo,163.0,130.0,79.75460122699386,11.642857142857142,162.0,144.0,88.88888888888889,-9.7,-9.1,142.0,146.0,True
+Oeste,Warnes,SI — entorno de R21,WARNES,Warnes,252.0,208.0,82.53968253968253,10.5,254.0,227.0,89.37007874015748,-8.4,-6.8,224.0,221.0,True
+Sur,Alberdi,NO — candidato a evaluar con las seis vias,ALBERDI,Alberdi,117.0,112.0,95.72649572649573,11.7,117.0,108.0,92.3076923076923,3.7,3.4,108.0,109.0,False
+Sur,Av. Patricios,NO — candidato a evaluar con las seis vias,AV PATRICIOS,Av. Patricios,144.0,127.0,88.19444444444444,10.285714285714286,147.0,128.0,87.07482993197279,-0.8,1.1,129.0,128.0,False
+Sur,Boedo,SI,BOEDO,Boedo,227.0,207.0,91.18942731277532,14.1875,229.0,213.0,93.01310043668121,-2.8,-1.8,215.0,215.0,True
+Sur,Chilavert,NO — candidato a evaluar con las seis vias,CHILAVERT,Chilavert,306.0,271.0,88.56209150326796,13.909090909090908,309.0,281.0,90.93851132686083,-3.6,-2.4,277.0,277.0,False
+Sur,Constitucion,parcial,CONSTITUCION,Constitución,139.0,125.0,89.92805755395683,11.583333333333334,138.0,122.0,88.40579710144928,2.5,1.5,128.0,127.0,True
+Sur,Defensa,SI — R03 San Telmo,DEFENSA,Defensa,191.0,162.0,84.81675392670157,13.642857142857142,190.0,156.0,82.10526315789474,3.8,2.7,158.0,156.0,True
+Sur,Flores Sur,"SI — Bajo Flores, enclave coreano",FLORES SUR,Flores Sur,121.0,112.0,92.56198347107438,20.166666666666668,121.0,108.0,89.25619834710744,3.7,3.3,107.0,112.0,True
+Sur,Mataderos,SI,MATADEROS,Mataderos,221.0,204.0,92.3076923076923,13.8125,222.0,208.0,93.69369369369369,-1.9,-1.4,210.0,204.0,True
+Sur,Montes de Oca,"SI — P008 Barracas, corredor 280-1702",MONTES DE OCA,Montes de Oca,146.0,131.0,89.72602739726028,10.428571428571429,156.0,143.0,91.66666666666666,-8.4,-1.9,141.0,138.0,True
+Sur,Parque Avellaneda,parcial,PARQUE AVELLANEDA,Parque Avellaneda,153.0,119.0,77.77777777777779,12.75,154.0,116.0,75.32467532467533,2.6,2.5,114.0,121.0,True
+Sur,Parque Patricios,parcial,PARQUE PATRICIOS,Parque Patricios,204.0,182.0,89.2156862745098,14.571428571428571,205.0,180.0,87.8048780487805,1.1,1.4,182.0,184.0,True
+Sur,Riestra,NO — candidato a evaluar con las seis vias,RIESTRA,Riestra,201.0,171.0,85.07462686567165,14.357142857142858,202.0,173.0,85.64356435643565,-1.2,-0.6,169.0,172.0,False
+Sur,Saenz,"SI — Av. Saenz, capa de memoria (La Blanqueada)",SAENZ,Sáenz,212.0,185.0,87.26415094339622,17.666666666666668,214.0,190.0,88.78504672897196,-2.6,-1.5,188.0,187.0,True
