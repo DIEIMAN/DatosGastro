@@ -156,3 +156,76 @@ hallazgo de la ronda 4.
 sobre el documento, y resultó falsa. La lección no reemplaza a la anterior: la amplía. Los metadatos
 no acreditan, y una afirmación de cierre que no se puede auditar tampoco — por más que suene a
 observación del territorio.
+
+---
+
+## Ronda 8 · cuatro trampas nuevas, y una que no es de fuente
+
+Las cuatro de la ronda 8 se separan del patrón anterior de una forma que conviene nombrar: **FD-01
+a FD-04 eran errores del documento sobre sí mismo, FD-12 una afirmación falsa sobre un
+establecimiento, y estas cuatro son sobre el CANAL** —dónde vive el dato, qué queda cuando el canal
+se cae, y qué le pasa al dato cuando pasa por una redacción.
+
+### FD-16 · el dato que sólo sobrevive en el slug de una URL
+
+El portal `obras.buenosaires.gob.ar` fue retirado y hace 302 a mantenimiento. El tramo del CCCA de
+Av. Montes de Oca —entre Benito Quinquela Martín y Av. Martín García— existe hoy **únicamente en el
+slug de la URL canónica**, indexada y reaparecida en dos búsquedas independientes. El cuerpo no se
+pudo abrir y no hay corroboración en prosa.
+
+**La lectura de slugs entra como ruta de rescate, y se señala siempre como tal.** No es lo mismo que
+haber leído la página: es haber leído cómo alguien la tituló. Sirve para no perder un dato que ya no
+está en ningún lado, y no sirve como cita.
+
+### FD-17 · cronista.com fabrica antigüedades
+
+Dos notas del mismo dominio sobre El Puentecito dicen «hace 150 años» y «hace 200 años». El dominio
+ya tenía FD-01 por re-sellado masivo de archivo: **además de re-sellar fechas, fabrica
+antigüedades**. Ninguna de las dos cifras entra.
+
+Es el defecto que obliga a la ficha de El Puentecito a hacer algo que conviene generalizar:
+consignar **1750 como el SITIO** —pulpería y posta de carretas, dato del GCBA— y **~1876 como el
+ESTABLECIMIENTO GASTRONÓMICO**, atribuyendo cada cifra a su fuente. Un local y el lugar donde está
+no tienen por qué tener la misma edad, y sumarlas en un solo número es lo que produce el «200 años».
+
+### FD-18 · reetiquetado editorial de una distinción real
+
+Canal 26 llamó **«salón de la fama porteño»** a lo que es la lista de **Pizzerías Emblemáticas de
+APyCE**. El reconocimiento existe y está verificado contra el sitio del organizador; el «salón de la
+fama» no existe en ningún lado.
+
+**Si se copia la etiqueta de prensa, el Atlas registra una institución inexistente**, y peor: una
+que suena a padrón. Las distinciones entran con el nombre que les da su organizador, siempre.
+
+### FD-19 · fichas vivas y momias con el mismo tono
+
+La ficha del GCBA de El Puentecito fue editada el **20/02/2026**. La de Los Campeones lleva inerte
+desde el **08/09/2021**, casi cinco años. **Las dos dicen frases institucionales del mismo estilo**,
+y el tono no distingue una de otra: «todo un emblema de la identidad de Barracas» se lee igual de
+firme venga de la ficha viva o de la momia.
+
+Consecuencia operativa: **fechar ficha por ficha**, una por una, antes de usarla. El portal es el
+mismo y el registro es el mismo; lo único que separa un dato de hoy de uno de hace cinco años es la
+fecha de última modificación, que hay que ir a buscar.
+
+---
+
+## Una nota que no es de fuente, y va acá porque falla igual de callada
+
+**`covers()` de GEOS devuelve `False` sobre geometrías cuya diferencia mide exactamente 0,0 m².**
+
+Apareció verificando la regla de que las referencias publicadas sólo se amplían. El polígono nuevo
+se construye como unión del viejo con la ampliación, así que contiene al viejo por construcción; el
+predicado topológico igual dice que no. Medido en R19 y en R21: `vieja.difference(nueva).area` da
+exactamente `0.0`, `difference` devuelve una geometría vacía, y `covers()` y `within()` devuelven
+`False`. En R19 falla sobre **una de las tres partes** de la envolvente y acierta sobre las otras
+dos. Es una falla de robustez de `relate` con vértices casi colineales, no un polígono que se
+achicó.
+
+**La regla que queda:** la contención se verifica por **superficie perdida**, nunca por el
+predicado. Y se reporta el desacuerdo entre los dos en vez de elegir el que conviene.
+
+Pertenece a esta sección por el mismo motivo que las trampas de fuente: **falla sin tirar ningún
+error**. Un `if not nueva.covers(vieja): raise` habría abortado una corrida correcta, y —peor— un
+`assert` invertido habría dado por buena una que perdía superficie. Las dos formas de equivocarse
+están disponibles y ninguna avisa.

@@ -1,0 +1,72 @@
+orden,tramo,establecimiento,direccion,barrio,prioridad,clase_test,lo_que_sabemos,dias_desde_el_hecho,esperado,fuente_direccion,hito_id,altura_esperada
+0,(a) test de calibracion,Plaza Bar,Florida 1005,,0,calibracion,cerrado desde abril de 2017,3285,CLOSED_PERMANENTLY,,H082,1005
+1,(a) test de calibracion,La Buena Medida,Suarez 101,,0,calibracion,cerrada desde octubre de 2025,280,CLOSED_PERMANENTLY,,H062,101
+2,(a) test de calibracion,The New Brighton,Sarmiento 645,,0,calibracion,quiebra declarada el 18/03/2026,143,CLOSED_PERMANENTLY,,H084,645
+3,(b) test de reapertura,El Tokio,Av. Alvarez Jonte 3550,,0,reapertura,"cerró en 2023, reabrió en 2025",0,OPERATIONAL,,H055,3550
+4,(b) test de reapertura,Los Laureles,Av. Iriarte 2290,,0,reapertura,"cerró en julio de 2026, ya reabrió",0,OPERATIONAL,,H076,2290
+5,(c) prioridad 1 · hitos únicos,Cafe de la U,Av. Triunvirato 4801,Villa Urquiza,1,,,,,catalogo_90_notables_cruzado.csv,H023,4801
+6,(c) prioridad 1 · hitos únicos,MN Santa Ines,Ávalos 360,La Paternal,1,,,,,hitos_capa_2026_r7.csv,MIC-003,360
+7,(c) prioridad 1 · hitos únicos,Britanico,Brasil 399,Barracas / San Telmo,1,,,,,hitos_capa_2026_r7.csv,H019,399
+8,(c) prioridad 1 · hitos únicos,San Bernardo,Av. Corrientes 5436,Villa Crespo,1,,,,,hitos_capa_2026_r7.csv,H033,5436
+9,(c) prioridad 1 · hitos únicos,Esquina Homero Manzi,Av. San Juan 3601,Boedo,1,,,,,catalogo_90_notables_cruzado.csv,H057,3601
+10,(c) prioridad 1 · hitos únicos,Cafe de Garcia,Sanabria 3302,Villa Devoto,1,,,,,catalogo_90_notables_cruzado.csv,H022,3302
+11,(d) prioridad 4 · catálogo sin verificar,Bar Lavalle,Lavalle 1693,,4,,,,,hitos_capa_2026_r7.csv,H011,1693
+12,(d) prioridad 4 · catálogo sin verificar,Celta Bar,Sarmiento 1702,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H038,1702
+13,(d) prioridad 4 · catálogo sin verificar,El Gato Negro,Av. Corrientes 1669,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H050,1669
+14,(d) prioridad 4 · catálogo sin verificar,La Giralda,Av. Corrientes 1453,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H067,1453
+15,(d) prioridad 4 · catálogo sin verificar,Los Galgos (Callao 501),Av. Callao 501,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H075,501
+16,(d) prioridad 4 · catálogo sin verificar,La Opera (Av. Corrientes 1799),Av. Corrientes 1799,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H068,1799
+17,(d) prioridad 4 · catálogo sin verificar,Petit Colon,Libertad 505,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H081,505
+18,(d) prioridad 4 · catálogo sin verificar,Zum Edelweiss,LIBERTAD 431,,4,,,,,hitos_capa_2026_r7.csv,ICO-016,431
+19,(d) prioridad 4 · catálogo sin verificar,Bar Bidou,Av. Roque Saenz Pena 858,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H003,858
+20,(d) prioridad 4 · catálogo sin verificar,Claridge's (Tucuman 535),Tucuman 535,,4,,,,,hitos_capa_2026_r7.csv,H039,535
+21,(d) prioridad 4 · catálogo sin verificar,Confiteria Ideal (Suipacha 384),Suipacha 384,,4,,,,,hitos_capa_2026_r7.csv,H042,384
+22,(d) prioridad 4 · catálogo sin verificar,La Puerto Rico (Alsina 420),Alsina 420,Monserrat,4,,,,,catalogo_90_notables_cruzado.csv,H070,420
+23,(d) prioridad 4 · catálogo sin verificar,Le Caravelle,Lavalle 726,San Nicolas,4,,,,,catalogo_90_notables_cruzado.csv,H072,726
+24,(d) prioridad 4 · catálogo sin verificar,El Querandi (Peru 302),Peru 302,Monserrat,4,,,,,catalogo_90_notables_cruzado.csv,H053,302
+25,(d) prioridad 4 · catálogo sin verificar,Bar del Alvear Palace Hotel,Av. Alvear 1891,Recoleta,4,,,,,catalogo_90_notables_cruzado.csv,H006,1891
+26,(d) prioridad 4 · catálogo sin verificar,La Biela,Av. Quintana 600,Recoleta,4,,,,,catalogo_90_notables_cruzado.csv,H061,600
+27,(d) prioridad 4 · catálogo sin verificar,Aramburu,Vicente Lopez 1661,,4,,,,,hitos_capa_2026_r7.csv,H153,1661
+28,(d) prioridad 4 · catálogo sin verificar,Bis Bistro,Vicente López 1661 Local 12,,4,,,,,hitos_capa_2026_r7.csv,MIC-049,1661
+29,(d) prioridad 4 · catálogo sin verificar,Casa Veltri,Juncal 1642,,4,,,,,hitos_capa_2026_r7.csv,MIC-035,1642
+30,(d) prioridad 4 · catálogo sin verificar,Fervor,Posadas 1519,,4,,,,,hitos_capa_2026_r7.csv,MIC-057,1519
+31,(d) prioridad 4 · catálogo sin verificar,Restaurante Oviedo,BERUTI 2602,,4,,,,,hitos_capa_2026_r7.csv,ICO-013,2602
+32,(d) prioridad 4 · catálogo sin verificar,Roux,Peña 2300,,4,,,,,hitos_capa_2026_r7.csv,MIC-030,2300
+33,(d) prioridad 4 · catálogo sin verificar,Cabana Las Lilas,Avenida Alicia Moreau de Justo 516,,4,,,,,hitos_capa_2026_r7.csv,MIC-051,516
+34,(d) prioridad 4 · catálogo sin verificar,La Cabana,Avenida Alicia Moreau de Justo 580,,4,,,,,hitos_capa_2026_r7.csv,MIC-053,580
+35,(d) prioridad 4 · catálogo sin verificar,Estilo Campo,"MOREAU DE JUSTO, ALICIA AV. 1840",,4,,,,,hitos_capa_2026_r7.csv,ICO-006,1840
+36,(d) prioridad 4 · catálogo sin verificar,El Mercado (Faena),Martha Salotti 445,,4,,,,,hitos_capa_2026_r7.csv,H152,445
+37,(d) prioridad 4 · catálogo sin verificar,Marcelo Restaurante,"MOREAU DE JUSTO, ALICIA AV. 1140",,4,,,,,hitos_capa_2026_r7.csv,ICO-011,1140
+38,(d) prioridad 4 · catálogo sin verificar,Michel Rolland Grill & Wine,Juana Manso 1760,,4,,,,,hitos_capa_2026_r7.csv,MIC-029,1760
+39,(d) prioridad 4 · catálogo sin verificar,Sorrento,"MOREAU DE JUSTO, ALICIA AV. 420",,4,,,,,hitos_capa_2026_r7.csv,ICO-014,420
+40,(d) prioridad 4 · catálogo sin verificar,Alcanfor,Aguirre 949,,4,,,,,hitos_capa_2026_r7.csv,MIC-019,949
+41,(d) prioridad 4 · catálogo sin verificar,Fico,Muñecas 775,,4,,,,,hitos_capa_2026_r7.csv,MIC-004,775
+42,(d) prioridad 4 · catálogo sin verificar,Han,Vera 966,,4,,,,,hitos_capa_2026_r7.csv,MIC-005,966
+43,(d) prioridad 4 · catálogo sin verificar,Julia,Loyola 807,,4,,,,,hitos_capa_2026_r7.csv,H156,807
+44,(d) prioridad 4 · catálogo sin verificar,Trescha,Murillo 725,,4,,,,,hitos_capa_2026_r7.csv,H154,725
+45,(d) prioridad 4 · catálogo sin verificar,Don Julio,Guatemala 4699,,4,,,,,hitos_capa_2026_r7.csv,H160,4699
+46,(d) prioridad 4 · catálogo sin verificar,Crizia,Gorriti 5143,,4,,,,,hitos_capa_2026_r7.csv,H155,5143
+47,(d) prioridad 4 · catálogo sin verificar,CoChinChina,Armenia 1540,,4,,,,,hitos_capa_2026_r7.csv,H162,1540
+48,(d) prioridad 4 · catálogo sin verificar,A Fuego Fuerte,Bonpland 1670,,4,,,,,hitos_capa_2026_r7.csv,MIC-020,1670
+49,(d) prioridad 4 · catálogo sin verificar,El Preferido de Palermo,Jorge Luis Borges 2108,,4,,,,,hitos_capa_2026_r7.csv,H151,2108
+50,(d) prioridad 4 · catálogo sin verificar,Fogon Asado,Uriarte 1423,,4,,,,,hitos_capa_2026_r7.csv,MIC-021,1423
+51,(d) prioridad 4 · catálogo sin verificar,Gran Dabbang,Av. Raul Scalabrini Ortiz 1543,,4,,,,,hitos_capa_2026_r7.csv,H159,1543
+52,(d) prioridad 4 · catálogo sin verificar,Mengano,José Antonio Cabrera 5172,,4,,,,,hitos_capa_2026_r7.csv,MIC-015,5172
+53,(d) prioridad 4 · catálogo sin verificar,Albamonte Ristorante,CORRIENTES AV. 6735,,4,,,,,hitos_capa_2026_r7.csv,ICO-001,6735
+54,(d) prioridad 4 · catálogo sin verificar,Anchoita,Juan Ramírez de Velasco 1520,,4,,,,,hitos_capa_2026_r7.csv,MIC-018,1520
+55,(d) prioridad 4 · catálogo sin verificar,Museo Fotografico Simik (ex Cafe Palacio),Av. Federico Lacroze 3901,Chacarita,4,,,,,catalogo_90_notables_cruzado.csv,,3901
+56,(d) prioridad 4 · catálogo sin verificar,Mercado de Belgrano,Av. Juramento 2527,,4,,,,,hitos_capa_2026_r7.csv,MG-0002,2527
+57,(d) prioridad 4 · catálogo sin verificar,Mercado del Progreso,Av. Rivadavia 5430,,4,,,,,hitos_capa_2026_r7.csv,MG-0003,5430
+58,(d) prioridad 4 · catálogo sin verificar,Confiteria El Greco (Av. Rivadavia 5353),Av. Rivadavia 5353,Caballito,4,,,,,catalogo_90_notables_cruzado.csv,H090,5353
+59,(d) prioridad 4 · catálogo sin verificar,Plaza Cafe (Av. Rivadavia 4732),Av. Rivadavia 4732,Caballito,4,,,,,catalogo_90_notables_cruzado.csv,H030,4732
+60,(d) prioridad 4 · catálogo sin verificar,Happening,"OBLIGADO RAFAEL, AV.COSTANERA 7030",,4,,,,,hitos_capa_2026_r7.csv,ICO-007,7030
+61,(d) prioridad 4 · catálogo sin verificar,Patio Costanera Norte,Avenida Costanera Rafael Obligado 7010,,4,,,,,hitos_capa_2026_r7.csv,MG-0011,7010
+62,(d) prioridad 4 · catálogo sin verificar,Cafe Margot (Boedo 857),Av. Boedo 857,Boedo,4,,,,,catalogo_90_notables_cruzado.csv,H086,857
+63,(d) prioridad 4 · catálogo sin verificar,Stylo Cafe (Fernandez de Enciso 3934),Fernandez de Enciso 3934,Villa Devoto,4,,,,,catalogo_90_notables_cruzado.csv,H083,3934
+64,(e) el resto · prioridad 2,Casa Watson,Vuelta de Obligado 2072,Belgrano,2,,,,,lista_places_prioridad.csv,H037,2072
+65,(e) el resto · prioridad 2,Varela Varelita,Av. Scalabrini Ortiz 2102,Palermo,2,,,,,catalogo_90_notables_cruzado.csv,H085,2102
+66,(e) el resto · prioridad 2,Cafe Olimpo,Irigoyen 1491 esq. Arregui,MONTE CASTRO (no Villa Luro),2,,,,,lista_places_prioridad.csv,H028,1491
+67,(e) el resto · prioridad 2,La Perla (de Caminito),Av. Don Pedro de Mendoza 1899,La Boca,2,,,,,catalogo_90_notables_cruzado.csv,H069,1899
+68,(e) el resto · prioridad 3,Confiteria Saint Moritz,Esmeralda 894,Retiro,3,,,,,catalogo_90_notables_cruzado.csv,H043,894
+69,(e) el resto · prioridad 3,Florida Garden,Florida 899,Retiro,3,,,,,catalogo_90_notables_cruzado.csv,H058,899
+70,(e) el resto · prioridad 3,Barbaro (catalogo: 'Bar Bar O'),Tres Sargentos 415,Retiro,3,,,,,lista_places_prioridad.csv,H002,415

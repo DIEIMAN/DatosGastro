@@ -1,0 +1,4 @@
+subzona_id,nombre,clase,ha,locales,conserva_todo_lo_publicado,superficie_perdida_m2,predicado_covers_geos
+R09,Chacarita,referencia publicada,94.81,202,True,0.0,False
+R19,Federico Lacroze (ampliada en la ronda 7),referencia publicada,303.28,532,True,0.0,False
+Z43,Colegiales,"zona nueva, a escala de barrio",229.08,441,True,0.0,True

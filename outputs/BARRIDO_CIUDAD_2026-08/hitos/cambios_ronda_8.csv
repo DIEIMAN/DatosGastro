@@ -1,0 +1,181 @@
+hito_id,nombre,campo,valor_antes,valor_despues,motivo,tarea,fecha
+H009,Bar El Federal,vigencia_verificada,sin_verificar,si,"Veredicto de `vigencia_tanda_A_centro.csv`, confirmado por Diego en la ronda 8.",TAREA_2,2026-08-08
+H009,Bar El Federal,vigencia_nivel,,v3,,TAREA_2,2026-08-08
+H009,Bar El Federal,vigencia_fuente,,"Tripadvisor, reseña del 21/07/2026: «Very historic. We expected it to be very touristic but we were pleasantly surprised for the bar to be quiet and civilised.» Segunda reseña de julio de 2026 de otro usuario. Ficha activa, horario 8 a 2 todos los días.",,TAREA_2,2026-08-08
+H009,Bar El Federal,vigencia_fecha,,2026-07-21,,TAREA_2,2026-08-08
+H009,Bar El Federal,nota_ronda_8,,R03 San Telmo. Es la fila más expuesta de las 22: su vía E quedó en dos grupos por FD-01.,,TAREA_2,2026-08-08
+H074,36 BILLARES,vigencia_verificada,sin_verificar,si,"Veredicto de `vigencia_tanda_A_centro.csv`, confirmado por Diego en la ronda 8.",TAREA_2,2026-08-08
+H074,36 BILLARES,vigencia_nivel,,v3,,TAREA_2,2026-08-08
+H074,36 BILLARES,vigencia_fuente,,"Tripadvisor, reseña del 04/07/2026, y SEGUNDA reseña independiente del 28/06/2026 que describe arañas originales y mesas de pool en uso. Dos reseñas con día visible en la misma ventana.",,TAREA_2,2026-08-08
+H074,36 BILLARES,vigencia_fecha,,2026-07-04,,TAREA_2,2026-08-08
+H074,36 BILLARES,nota_ronda_8,,"Z47 Monserrat. Con este y Café Tortoni, Monserrat pasa a tener tres verificados.",,TAREA_2,2026-08-08
+H035,Café Tortoni,vigencia_verificada,sin_verificar,si,"Veredicto de `vigencia_tanda_A_centro.csv`, confirmado por Diego en la ronda 8.",TAREA_2,2026-08-08
+H035,Café Tortoni,vigencia_nivel,,v3,,TAREA_2,2026-08-08
+H035,Café Tortoni,vigencia_fuente,,"Tripadvisor, reseña del 26/05/2026 (Thayane B., 3/5): «Only valid for the tourist experience», con churros y chocolate mediocres. Crítica pero inequívocamente presencial y fechada. Segunda del 29/04/2026, tercera del 20/04/2026.",,TAREA_2,2026-08-08
+H035,Café Tortoni,vigencia_fecha,,2026-05-26,,TAREA_2,2026-08-08
+H035,Café Tortoni,nota_ronda_8,,Z47 Monserrat. DESPLAZA la nota de Canal 26 del 17/07/2026 que lo daba operativo citando Wikipedia al pie: ya no hace falta apoyarse en ella.,,TAREA_2,2026-08-08
+H024,CAFE DE LOS ANGELITOS,vigencia_verificada,sin_verificar,si,"Veredicto de `vigencia_tanda_A_centro.csv`, confirmado por Diego en la ronda 8.",TAREA_2,2026-08-08
+H024,CAFE DE LOS ANGELITOS,vigencia_nivel,,v3,,TAREA_2,2026-08-08
+H024,CAFE DE LOS ANGELITOS,vigencia_fuente,,"Tripadvisor, reseña del 25/05/2026 (Sue S., Kingston, Canadá, 5/5). Segunda reseña de mayo de 2026 en la ficha de atracción. Sitio propio operativo con rundown de función vigente y motor de reservas activo.",,TAREA_2,2026-08-08
+H024,CAFE DE LOS ANGELITOS,vigencia_fecha,,2026-05-25,,TAREA_2,2026-08-08
+H024,CAFE DE LOS ANGELITOS,nota_ronda_8,,"Z36 Balvanera-Congreso, que la decisión 13 fusionó en Z47. Antecedente adverso único y viejo, asentado: Ámbito 29/09/2017, allanamiento por presunto lavado; no consigna clausura y está a nueve años.",,TAREA_2,2026-08-08
+H085,Varela Varelita,vigencia_verificada,sin_verificar,si,"Veredicto de `vigencia_tanda_A_centro.csv`, confirmado por Diego en la ronda 8.",TAREA_2,2026-08-08
+H085,Varela Varelita,vigencia_nivel,,v3,,TAREA_2,2026-08-08
+H085,Varela Varelita,vigencia_fuente,,"Tripadvisor .com, reseña del 25/06/2026 (Beatrice K., Francia). Segunda en .com.ar del 02/06/2026, que es ancla fuerte: «nunca fui atendido, después de esperar 20 minutos decidimos retirarnos». Relato de servicio en mesa, imposible de reciclar de material promocional.",,TAREA_2,2026-08-08
+H085,Varela Varelita,vigencia_fecha,,2026-06-25,,TAREA_2,2026-08-08
+H085,Varela Varelita,nota_ronda_8,,R01 Palermo. La dirección ya está corregida en la capa: Av. Scalabrini Ortiz 2102.,,TAREA_2,2026-08-08
+H082,PLAZA BAR,places_business_status,,CLOSED_PERMANENTLY,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H082,PLAZA BAR,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H082,PLAZA BAR,nota_ronda_8,,"Places lo da CLOSED_PERMANENTLY, coincidiendo con lo que la capa ya tenía por otra vía. Corrobora en v2b; no cambia el veredicto.",,TAREA_1,2026-08-08
+H062,La Buena Medida,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H062,La Buena Medida,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H084,The New Brighton,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H084,The New Brighton,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H055,El Tokio,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H055,El Tokio,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H076,Los Laureles,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H076,Los Laureles,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H023,Cafe de la U,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H023,Cafe de la U,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-003,MN Santa Inés,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-003,MN Santa Inés,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H019,Britanico,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H019,Britanico,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H033,SAN BERNARDO,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H033,SAN BERNARDO,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H057,Esquina Homero Manzi,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H057,Esquina Homero Manzi,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H022,Café de García,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H022,Café de García,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H011,Bar Lavalle,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H011,Bar Lavalle,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H038,Celta Bar,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H038,Celta Bar,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H050,El Gato Negro,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H050,El Gato Negro,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H067,LA GIRALDA,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H067,LA GIRALDA,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H075,LOS GALGOS,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H075,LOS GALGOS,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H068,La Opera,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H068,La Opera,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H081,Petit Colón,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H081,Petit Colón,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-016,Zum Edelweiss,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-016,Zum Edelweiss,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H003,Bar Bidou,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H003,Bar Bidou,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H039,Claridge's,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H039,Claridge's,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H042,Confitería Ideal,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H042,Confitería Ideal,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H070,LA PUERTO RICO,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H070,LA PUERTO RICO,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H072,Le Caravelle,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H072,Le Caravelle,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H053,El Querandi,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H053,El Querandi,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H006,BAR DEL ALVEAR PALACE HOTEL,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H006,BAR DEL ALVEAR PALACE HOTEL,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H061,LA BIELA,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H061,LA BIELA,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H153,Aramburu,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H153,Aramburu,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-049,Bis Bistró,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-049,Bis Bistró,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-035,Casa Veltri,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-035,Casa Veltri,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-057,Fervor,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-057,Fervor,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-013,Restaurante Oviedo,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-013,Restaurante Oviedo,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-030,Roux,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-030,Roux,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-051,Cabaña Las Lilas,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-051,Cabaña Las Lilas,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-053,La Cabaña,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-053,La Cabaña,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-006,Estilo Campo,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-006,Estilo Campo,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H152,El Mercado (Faena),places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H152,El Mercado (Faena),vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-011,Marcelo Restaurante,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-011,Marcelo Restaurante,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-029,Michel Rolland Grill & Wine,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-029,Michel Rolland Grill & Wine,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-014,Sorrento,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-014,Sorrento,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-019,Alcanfor,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-019,Alcanfor,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-004,Fico,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-004,Fico,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-005,Han,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-005,Han,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H156,Julia,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H156,Julia,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H154,Trescha,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H154,Trescha,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H160,Don Julio,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H160,Don Julio,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H155,Crizia,nota_ronda_8,,"Places devolvió otro local (consultada «Gorriti 5143» · devuelta «Fitz Roy 1819, C1414 Cdad. Autónoma de Buenos Aires»): la consulta NO se atribuye a este establecimiento.",,TAREA_1,2026-08-08
+H162,CoChinChina,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H162,CoChinChina,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-020,A Fuego Fuerte,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-020,A Fuego Fuerte,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H151,El Preferido de Palermo,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H151,El Preferido de Palermo,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-021,Fogón Asado,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-021,Fogón Asado,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H159,Gran Dabbang,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H159,Gran Dabbang,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-015,Mengano,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-015,Mengano,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-001,Albamonte Ristorante,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-001,Albamonte Ristorante,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MIC-018,Anchoíta,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MIC-018,Anchoíta,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MG-0002,Mercado de Belgrano,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MG-0002,Mercado de Belgrano,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MG-0003,Mercado del Progreso,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MG-0003,Mercado del Progreso,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H090,Confiteria El Greco,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H090,Confiteria El Greco,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H030,Plaza Café,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H030,Plaza Café,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+ICO-007,Happening,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+ICO-007,Happening,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+MG-0011,Patio Costanera Norte,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+MG-0011,Patio Costanera Norte,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H086,Café Margot,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H086,Café Margot,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H083,STYLO CAFE,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H083,STYLO CAFE,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H037,CASA WATSON,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H037,CASA WATSON,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H085,Varela Varelita,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H085,Varela Varelita,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H028,Café Olimpo,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H028,Café Olimpo,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H069,LA PERLA,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H069,LA PERLA,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H043,Confiteria Saint Moritz,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H043,Confiteria Saint Moritz,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H058,FLORIDA GARDEN,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H058,FLORIDA GARDEN,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H002,Barbaro,places_business_status,,OPERATIONAL,Consulta de Places de la ronda 8.,TAREA_1,2026-08-08
+H002,Barbaro,vigencia_fecha_consulta,,2026-08-08,"Places NO trae la fecha del dato: sin esta columna el estado es infechable, que es el defecto FD-01 aplicado a otra fuente.",TAREA_1,2026-08-08
+H199,Yiyo el Zeneize,tipo,Mercado/patio,Restaurante/bodegón,"RETIPADO: estaba como `Mercado/patio` y no es un mercado. Es un bodegón, y la Ley CABA 6.533 declara patrimonio su CARTA GASTRONÓMICA, no el local como mercado. El tipo venía de una lectura apresurada del reconocimiento.",TAREA_4,2026-08-08
+H199,Yiyo el Zeneize,reconocimiento,Patrimonio historico y cultural inmaterial (Ley CABA 6.533),Patrimonio historico y cultural inmaterial (Ley CABA 6.533) — la declaratoria recae sobre la carta gastronómica,Precisión de qué declara la norma.,TAREA_4,2026-08-08
+H199,Yiyo el Zeneize,nota_ronda_8,,"Era la ÚNICA vía C de las 94 filas que no se apoyaba en un mercado de la lista oficial. Con el retipado, la vía C de su fila se cae: se recalcula en `ronda_8_geometria_y_vias.py`.",,TAREA_4,2026-08-08
+ICO-004,El Puentecito,vigencia_verificada,sin_verificar,probablemente_abierto,"NO CERRÓ. La alarma era una atribución equivocada: la pieza que la zona perdió es LOS LAURELES (Av. Iriarte 2290), a 1,5 km. Listado el 07/07/2026 entre los 16 Restaurantes Icónicos: v4, y v4 solo da probablemente_abierto.",TAREA_5,2026-08-08
+ICO-004,El Puentecito,vigencia_nivel,,v4,,TAREA_5,2026-08-08
+ICO-004,El Puentecito,vigencia_fuente,,"La Nación 07/07/2026, entre los 16 Restaurantes Icónicos",,TAREA_5,2026-08-08
+ICO-004,El Puentecito,vigencia_fecha,,2026-07-07,,TAREA_5,2026-08-08
+ICO-004,El Puentecito,direccion_variante,,Vieytes 1895,Misma ochava: Vieytes 1895 esq. Pedro de Luján 2101.,TAREA_5,2026-08-08
+ICO-004,El Puentecito,nota_ronda_8,,"DOS CIFRAS DE ANTIGÜEDAD, CADA UNA CON SU FUENTE Y SU OBJETO. 1750 es el SITIO —pulpería y posta de carretas—, y es dato del GCBA sin respaldo en prensa. ~1876 es el ESTABLECIMIENTO GASTRONÓMICO, que es lo que dicen las notas («hace ~150 años»). La ficha tiene que consignar las dos por separado y atribuir cada una. cronista.com publica además dos notas mutuamente contradictorias: ver FD-17.",,TAREA_5,2026-08-08
+DIR-014,Los Campeones,vigencia_verificada,sin_verificar,probablemente_abierto,"Pizzería Emblemática de la camada de mayo de 2026, VERIFICADA CONTRA EL SITIO DEL ORGANIZADOR (apyce.org/pizzerias-emblematicas). v5 por la cobertura del acto + v4 por el listado; ninguno de los dos acredita verificado_abierto.",TAREA_5,2026-08-08
+DIR-014,Los Campeones,vigencia_nivel,,v5,,TAREA_5,2026-08-08
+DIR-014,Los Campeones,vigencia_fuente,,apyce.org/pizzerias-emblematicas (el organizador) + Infobae 29/05/2026,,TAREA_5,2026-08-08
+DIR-014,Los Campeones,vigencia_fecha,,2026-05-29,,TAREA_5,2026-08-08
+DIR-014,Los Campeones,edicion_o_anio,2026,1954,,TAREA_5,2026-08-08
+DIR-014,Los Campeones,nota_ronda_8,,"ES PIZZERÍA, de 1954, no bar ni bodegón: fundada por cuatro amigos futboleros y el nombre se eligió para no ofender a ninguna hinchada. Pizza a la piedra en horno a leña de quebracho. NO es Bar Notable —confirmado, ausente del catálogo—. La cita «todo un emblema de la identidad de Barracas» que circulaba viene de una ficha del GCBA inerte desde el 08/09/2021: ver FD-19. La etiqueta «salón de la fama porteño» de la prensa no existe: ver FD-18.",,TAREA_5,2026-08-08

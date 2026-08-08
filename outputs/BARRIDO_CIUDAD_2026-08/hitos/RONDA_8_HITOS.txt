@@ -1,0 +1,90 @@
+RONDA 8 · LOS CINCO QUE FALTABAN, BARRACAS, EL RETIPADO Y CUATRO TRAMPAS
+====================================================================================================
+
+  capa de entrada: hitos_capa_2026_r7.csv · 225 hitos
+  Google Places: 0 requests en este guion (el resultado viene del CSV de la corrida).
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · LOS CINCO VEREDICTOS QUE LA RONDA 7 DEJÓ AFUERA
+
+  Quedaron fuera por alcance, no por duda: nunca estuvieron bloqueados por el enum y
+  ninguna de las veinte decisiones los nombraba. Diego los confirma.
+
+   H009 · Bar El Federal           sin_verificar    → si · v3 (dato del 2026-07-21)
+   H074 · Los 36 Billares          sin_verificar    → si · v3 (dato del 2026-07-04)
+   H035 · Café Tortoni             sin_verificar    → si · v3 (dato del 2026-05-26)
+   H024 · Café de los Angelitos    sin_verificar    → si · v3 (dato del 2026-05-25)
+   H085 · Varela Varelita          sin_verificar    → si · v3 (dato del 2026-06-25)
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 (cola) · EL RESULTADO DE PLACES, INCORPORADO CON LA ASIMETRÍA PUESTA
+
+   consultas incorporadas a la capa: 69
+   veredictos MOVIDOS por Places: 0
+   no atribuidas (sin hito o identidad dudosa): 2
+
+   NINGÚN VEREDICTO SE MOVIÓ, Y ESO NO ES QUE LA CORRIDA HAYA FALLADO. La asimetría
+   estaba declarada antes de gastar: un OPERATIONAL no sube a nadie. El único
+   CLOSED_PERMANENTLY —Plaza Bar— ya estaba cerrado en la capa desde antes.
+
+   LO QUE SÍ PRODUJO ES LA MEDICIÓN DEL PROPIO PLACES, que es lo que se compró:
+   de tres cierres conocidos marca UNO. Plaza Bar (nueve años) sí; La Buena Medida
+   (280 días) y The New Brighton (143 días, con quiebra declarada por la Justicia) los
+   da OPERATIONAL. El piso de detección está por encima de los 280 días.
+
+   CONSECUENCIA PARA LA ESCALA: v2b sirve para acreditar cierre cuando Places lo
+   afirma, y NO sirve para descartar cierre cuando calla. Un OPERATIONAL de Places es
+   compatible con un local cerrado hace nueve meses. Eso hay que escribirlo en la
+   escala antes de que alguien lea los 70 OPERATIONAL como 70 confirmaciones.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 4 (b) · YIYO EL ZENEIZE NO ES UN MERCADO
+
+   H199 · tipo `Mercado/patio` → `Restaurante/bodegón` · registro_oficial ley_especifica
+   La Ley 6.533 declara patrimonio la CARTA, no el local como mercado.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 5 · BARRACAS · TRES OBJETOS, CERO ALTAS
+
+   Cruzado contra la capa ANTES de dar de alta nada, que es la regla:
+
+      El Puentecito   → ya está como ICO-004 (Restaurante Icónico). Actualización.
+      Los Campeones   → ya está como DIR-014 (Pizzería emblemática). Actualización.
+      CCCA Montes de Oca → NO es un hito: es un anclaje de zona. Va a su propia tabla.
+
+   ICO-004 · El Puentecito → probablemente_abierto · v4
+   DIR-014 · Los Campeones → probablemente_abierto · v5
+
+   anclaje CCCA registrado en anclajes_normativos_r8.csv, como figura administrativa.
+   ES EL ANCLAJE QUE LE FALTABA A Barracas · Montes de Oca, que hasta ahora se sostenía
+   sólo en direcciones sueltas. Y no es una ley: eso queda escrito en el propio registro.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 6 · FD-16 A FD-19
+
+   FD-16 · dato normativo que sólo sobrevive en el SLUG de una URL [nuevo]
+        fuente: obras.buenosaires.gob.ar (portal de obras del GCBA, retirado)
+   FD-17 · fabricación de antigüedad                            [nuevo]
+        fuente: cronista.com
+   FD-18 · reetiquetado editorial de una distinción real        [nuevo]
+        fuente: canal26.com y prensa que reetiqueta distinciones
+   FD-19 · fichas vivas y momias con el mismo tono              [nuevo]
+        fuente: fichas de establecimientos de buenosaires.gob.ar
+
+   la capa de fuentes con defecto pasa de 5 a 9.
+
+   marcas aplicadas: +4 · la capa de marcas queda en 28.
+
+----------------------------------------------------------------------------------------------------
+      sin_verificar                         176
+      si                                     31
+      dudosa                                  8
+      probablemente_abierto                   5
+      no                                      2
+      en_riesgo                               1
+      senalado_no_cerrado                     1
+      cerrado_con_reapertura_anunciada        1
+
+  capa de salida: hitos_capa_2026_r8.csv · 225 hitos · 38 columnas
+  cambios: 180
+  Google Places: 0 requests en este guion.

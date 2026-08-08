@@ -1,0 +1,173 @@
+RONDA 8 · PLACES, CORRIDA INCREMENTAL POR PRIORIDADES
+====================================================================================================
+
+  EL PRECIO, ANTES DEL PRIMER REQUEST
+
+  No se puede leer la consola de facturación de Diego desde este proceso. Lo que sí se
+  verificó y queda escrito es la lista de precios pública:
+
+      developers.google.com/maps/billing-and-pricing/pricing, consultada el 2026-08-08: Text Search Enterprise, 1.000 gratis por mes y USD 35,00 por 1.000 en el tramo 1.001-100.000. NO es la consola de facturación de Diego.
+
+  ESTA CORRIDA CAE EN ENTERPRISE, y no por elección: `places.regularOpeningHours` es campo
+  Enterprise y se factura al SKU más alto que toque la máscara. Los tres campos los fijó la
+  decisión 4.
+
+  Las corridas de Places de agosto de este repositorio —control de zonas, techo de zona,
+  sonda de barrios— usan una máscara SIN `regularOpeningHours`: consumieron Pro, no el cupo
+  Enterprise. Con 71 requests contra 1,000 gratis
+  mensuales, lo esperable es USD 0,00. NO es una garantía: el cupo es de la cuenta y este
+  proceso no puede verlo. Por eso hay tope duro y por eso se corta al primer error.
+
+  tope de esta corrida: 71 requests
+  costo máximo si el cupo Enterprise ya estuviera agotado: USD 2.48
+
+----------------------------------------------------------------------------------------------------
+  LA COLA
+
+      (a) test de calibracion                        3 consultas
+      (b) test de reapertura                         2 consultas
+      (c) prioridad 1 · hitos únicos                 6 consultas
+      (d) prioridad 4 · catálogo sin verificar      53 consultas
+      (e) el resto · prioridad 2                     4 consultas
+      (e) el resto · prioridad 3                     3 consultas
+      TOTAL                                         71
+
+  NOTA DE CONTEO · `lista_places_prioridad.csv` trae 71 filas, repartidas {1: np.int64(6), 2: np.int64(6), 3: np.int64(6), 4: np.int64(53)}.
+  La tarea habla de «los 58 del catálogo» para la prioridad 4 y en el archivo hay 53.
+  Se corre lo que trae el archivo.
+
+----------------------------------------------------------------------------------------------------
+  EJECUCIÓN
+
+   ✗ [CALIBRACION] Plaza Bar            CLOSED_PERMANENTLY   esperado CLOSED_PERMANENTLY   ACIERTA
+   · [CALIBRACION] La Buena Medida      OPERATIONAL          esperado CLOSED_PERMANENTLY   FALLA
+   · [CALIBRACION] The New Brighton     OPERATIONAL          esperado CLOSED_PERMANENTLY   FALLA
+   · [REAPERTURA ] El Tokio             OPERATIONAL          esperado OPERATIONAL          ACIERTA
+   · [REAPERTURA ] Los Laureles         OPERATIONAL          esperado OPERATIONAL          ACIERTA
+   · Cafe de la U                         OPERATIONAL          altura=ok
+   · MN Santa Ines                        OPERATIONAL          altura=ok
+   · Britanico                            OPERATIONAL          altura=ok
+   · San Bernardo                         OPERATIONAL          altura=ok
+   · Esquina Homero Manzi                 OPERATIONAL          altura=ok
+   · Cafe de Garcia                       OPERATIONAL          altura=ok
+   · Bar Lavalle                          OPERATIONAL          altura=ok
+   · Celta Bar                            OPERATIONAL          altura=ok
+   · El Gato Negro                        OPERATIONAL          altura=ok
+   · La Giralda                           OPERATIONAL          altura=ok
+   · Los Galgos (Callao 501)              OPERATIONAL          altura=ok
+   · La Opera (Av. Corrientes 1799)       OPERATIONAL          altura=ok
+   · Petit Colon                          OPERATIONAL          altura=ok
+   · Zum Edelweiss                        OPERATIONAL          altura=ok
+   · Bar Bidou                            OPERATIONAL          altura=ok
+   · Claridge's (Tucuman 535)             OPERATIONAL          altura=ok
+   · Confiteria Ideal (Suipacha 384)      OPERATIONAL          altura=ok
+   · La Puerto Rico (Alsina 420)          OPERATIONAL          altura=ok
+   · Le Caravelle                         OPERATIONAL          altura=ok
+   · El Querandi (Peru 302)               OPERATIONAL          altura=ok
+   · Bar del Alvear Palace Hotel          OPERATIONAL          altura=ok
+   · La Biela                             OPERATIONAL          altura=ok
+   · Aramburu                             OPERATIONAL          altura=ok
+   · Bis Bistro                           OPERATIONAL          altura=ok
+   · Casa Veltri                          OPERATIONAL          altura=ok
+   · Fervor                               OPERATIONAL          altura=ok
+   · Restaurante Oviedo                   OPERATIONAL          altura=ok
+   · Roux                                 OPERATIONAL          altura=ok
+   · Cabana Las Lilas                     OPERATIONAL          altura=ok
+   · La Cabana                            OPERATIONAL          altura=ok
+   · Estilo Campo                         OPERATIONAL          altura=ok
+   · El Mercado (Faena)                   OPERATIONAL          altura=ok
+   · Marcelo Restaurante                  OPERATIONAL          altura=ok
+   · Michel Rolland Grill & Wine          OPERATIONAL          altura=ok
+   · Sorrento                             OPERATIONAL          altura=ok
+   · Alcanfor                             OPERATIONAL          altura=ok
+   · Fico                                 OPERATIONAL          altura=ok
+   · Han                                  OPERATIONAL          altura=ok
+   · Julia                                OPERATIONAL          altura=ok
+   · Trescha                              OPERATIONAL          altura=ok
+   · Don Julio                            OPERATIONAL          altura=ok
+   · Crizia                               OPERATIONAL          altura=—
+   · CoChinChina                          OPERATIONAL          altura=ok
+   · A Fuego Fuerte                       OPERATIONAL          altura=ok
+   · El Preferido de Palermo              OPERATIONAL          altura=ok
+   · Fogon Asado                          OPERATIONAL          altura=ok
+   · Gran Dabbang                         OPERATIONAL          altura=ok
+   · Mengano                              OPERATIONAL          altura=ok
+   · Albamonte Ristorante                 OPERATIONAL          altura=ok
+   · Anchoita                             OPERATIONAL          altura=ok
+   · Museo Fotografico Simik (ex Cafe P   OPERATIONAL          altura=ok
+   · Mercado de Belgrano                  OPERATIONAL          altura=ok
+   · Mercado del Progreso                 OPERATIONAL          altura=ok
+   · Confiteria El Greco (Av. Rivadavia   OPERATIONAL          altura=ok
+   · Plaza Cafe (Av. Rivadavia 4732)      OPERATIONAL          altura=ok
+   · Happening                            OPERATIONAL          altura=ok
+   · Patio Costanera Norte                OPERATIONAL          altura=ok
+   · Cafe Margot (Boedo 857)              OPERATIONAL          altura=ok
+   · Stylo Cafe (Fernandez de Enciso 39   OPERATIONAL          altura=ok
+   · Casa Watson                          OPERATIONAL          altura=ok
+   · Varela Varelita                      OPERATIONAL          altura=ok
+   · Cafe Olimpo                          OPERATIONAL          altura=ok
+   · La Perla (de Caminito)               OPERATIONAL          altura=ok
+   · Confiteria Saint Moritz              OPERATIONAL          altura=ok
+   · Florida Garden                       OPERATIONAL          altura=ok
+   · Barbaro (catalogo: 'Bar Bar O')      OPERATIONAL          altura=ok
+
+----------------------------------------------------------------------------------------------------
+  LO QUE DIJERON LOS CINCO TESTS · ES LO MÁS IMPORTANTE DE LA CORRIDA
+
+   establecimiento      lo que sabemos                           días  Places dice                    
+   Plaza Bar            cerrado desde abril de 2017              3285  CLOSED_PERMANENTLY     ACIERTA 
+   La Buena Medida      cerrada desde octubre de 2025             280  OPERATIONAL            FALLA   
+   The New Brighton     quiebra declarada el 18/03/2026           143  OPERATIONAL            FALLA   
+   El Tokio             cerró en 2023, reabrió en 2025              0  OPERATIONAL            ACIERTA 
+   Los Laureles         cerró en julio de 2026, ya reabrió          0  OPERATIONAL            ACIERTA 
+
+   De los tres cierres conocidos, Places marca 1 de 3.
+   EL CORTE DE DETECCIÓN ESTÁ POR ENCIMA DE LOS 280 DÍAS: hay un cierre de
+   esa antigüedad que Places no marca. Todo `OPERATIONAL` de esta corrida se lee
+   con ese límite encima.
+
+----------------------------------------------------------------------------------------------------
+  CONSUMO Y CORTE
+
+   requests efectivamente gastados en esta corrida: 0
+   consultas resueltas (incluye caché de corridas previas): 71 de 71
+   costo si el cupo Enterprise estaba libre: USD 0,00 (0 ≤ 1,000 gratis mensuales)
+   costo si el cupo ya estaba agotado: USD 0.00
+   cuál de los dos fue, sólo lo dice la consola de facturación.
+
+   NO se cortó: la cola entró completa.
+
+----------------------------------------------------------------------------------------------------
+  EL REPARTO
+
+      OPERATIONAL                70   NO acredita abierto: dice que nadie reportó lo contrario
+      CLOSED_PERMANENTLY          1   acredita CERRADO con fuerza: es una afirmación positiva 
+
+----------------------------------------------------------------------------------------------------
+  CONTROL DE IDENTIDAD · ¿Places devolvió el local que le pedimos?
+
+      exacta                         60
+      misma cuadra                   10
+      OTRA CALLE                      1
+
+  10 devolvieron la misma calle con una altura a menos de 30 números — numeración de
+  fachada, ochava o portal contiguo—. Se dan por buenas y quedan registradas:
+      El Tokio                         3550 contra 3548 (2 de diferencia)
+      Bar Lavalle                      1693 contra 1699 (6 de diferencia)
+      La Puerto Rico (Alsina 420)      420 contra 416 (4 de diferencia)
+      El Querandi (Peru 302)           302 contra 322 (20 de diferencia)
+      La Biela                         600 contra 596 (4 de diferencia)
+      Sorrento                         420 contra 410 (10 de diferencia)
+      Plaza Cafe (Av. Rivadavia 4732   4732 contra 4720 (12 de diferencia)
+      Casa Watson                      2072 contra 2070 (2 de diferencia)
+      La Perla (de Caminito)           1899 contra 1895 (4 de diferencia)
+      Confiteria Saint Moritz          894 contra 890 (4 de diferencia)
+
+  1 NO se pueden atribuir al establecimiento sin revisarlas a mano:
+      Crizia                           [OTRA CALLE] consultada «Gorriti 5143» · devuelta «Fitz Roy 1819, C1414 Cdad. Autónoma de Buenos Aires»
+
+  NADA DE ESTO SE APLICA SOLO A LA CAPA. Un CLOSED_PERMANENTLY es la afirmación más
+  cara de equivocar y FD-12 ya probó que una marca de cierre puede ser falsa.
+
+  crudo (con dirección y horarios) en: outputs\analisis_interno\places_vigencia_2026-08 · Git lo ignora
+  veredictos versionables en: places_resultado_r8.csv

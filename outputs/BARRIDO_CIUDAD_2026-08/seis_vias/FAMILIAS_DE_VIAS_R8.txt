@@ -29,13 +29,13 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
       Z47 · YRIGOYEN, HIPOLITO 1100-1300: 305 m de eje
       Z47 · CALLAO AV. 200-400: 395 m de eje
 
-  zonas en total: 52 (21 referencias publicadas + 31 nuevas)
+  zonas en total: 51 (21 referencias publicadas + 30 nuevas)
   R18 no está: la decisión 5 la absorbió en Z46 y dejó de ser referencia independiente.
 
 ----------------------------------------------------------------------------------------------------
   DECISIÓN 1 · LA FIAB NO ABRE LA VÍA C, COMPROBADO CONTRA EL PADRÓN
 
-  padrón de FIAB del GCBA: 184 ferias · hitos tipo Mercado/patio con punto: 8
+  padrón de FIAB del GCBA: 184 ferias · hitos tipo Mercado/patio con punto: 7
 
       MG-0008   Mercado Bonpland                   FIAB más cercana a     549 m   
       MG-0002   Mercado de Belgrano                FIAB más cercana a     803 m   
@@ -44,9 +44,8 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
       MG-0011   Patio Costanera Norte              FIAB más cercana a   1,098 m   
       MG-0006   Patio de los Lecheros              FIAB más cercana a     202 m   
       MG-0012   Patio Gastronomico Rodrigo Bueno   FIAB más cercana a     759 m   
-      H199      Yiyo el Zeneize                    FIAB más cercana a     325 m   
 
-  0 de los 8 mercados/patios de la capa son en realidad una
+  0 de los 7 mercados/patios de la capa son en realidad una
   FIAB. NINGUNA de las cuatro vías C abiertas en las 94 filas se apoya en una feria
   itinerante, así que la decisión 1 NO mueve ninguna fila de la matriz.
 
@@ -54,21 +53,15 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   Ese dato viene de la delimitación textual de cada zona y no es reproducible desde el
   repositorio: acá se registra su procedencia, no se lo vuelve a derivar.
 
-  Y UN HALLAZGO QUE APARECE AL MIRAR LA LISTA, que no es de la decisión 1 pero es del
-  mismo criterio —«mercado, patio o galería EN ACTIVIDAD»—:
-
-      H199 · Yiyo el Zeneize (Av. Eva Peron 4402) está tipado
-      Mercado/patio, pero su reconocimiento es «Patrimonio historico y cultural inmaterial (Ley CABA 6.533)».
-
-      Es la ÚNICA vía C de las 94 que no se apoya en un mercado de la lista oficial
-      (abre PGR_P004 · Villa Lugano). No se toca acá: cambiar un tipo cambia la vía C
-      de una fila, y esta ronda tiene el mandato de no mover A, C ni F. Queda
-      señalado para que Diego decida.
-
 ----------------------------------------------------------------------------------------------------
   LA VÍA C, RECONTADA CONTRA LA CAPA DE HITOS VIGENTE
 
-   ninguna fila cambia de vía C.
+   PGR_P004       P004 · Villa Lugano          vía C si → no  (era: Yiyo el Zeneize)
+
+   Es la consecuencia del retipado de la tarea 4: el hito que abría esa vía C no era
+   un mercado. La fila no pierde el reconocimiento —la Ley 6.533 sigue declarando
+   patrimonio su carta— pierde la VÍA C, que exige mercado, patio o galería en
+   actividad. Es exactamente la misma regla que la decisión 1 aplicó a la FIAB.
 
 ----------------------------------------------------------------------------------------------------
   TAREA 1 · LA VÍA B Y LA VÍA D, MEDIDAS POR ZONA
@@ -76,32 +69,30 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   las zonas con hitos de vía B adentro, ordenadas por cuántos:
 
    zona    nombre                                    ha  hitos   si  prob   s/v soporte         D
-   R12     Centro / Microcentro segmentado        184.1     22    3     1    15 mixto           1
+   R12     Centro / Microcentro segmentado        184.1     22    5     1    13 mixto           1
    R01     Palermo                                271.3     20    0     0    20 sin_verificar   0
    Z46     Retiro (absorbe R18)                   466.6     11    3     0     5 mixto           1
    R02     Avenida Corrientes                      49.7     10    2     0     8 activo          0
    R06     Recoleta                               140.5     10    0     0    10 sin_verificar   0
-   Z47     Monserrat + Congreso (fusiona Z3       220.0     10    1     1     8 activo          0
+   Z47     Monserrat + Congreso (fusiona Z3       220.0     10    3     1     6 activo          0
+   R09R19_CHACAGIALES Chacagiales · Chacarita, Federic       495.8      9    1     0     8 activo          0
    R08     Villa Crespo                           335.5      8    0     0     8 sin_verificar   0
    S_LABOCA La Boca                                504.0      8    1     0     6 mixto           0
    Z37     Almagro                                405.3      8    4     1     3 activo          1
    R04     Puerto Madero                          314.5      7    0     0     7 sin_verificar   0
-   R19     Federico Lacroze por tramos            303.3      7    1     0     6 activo          0
-   S_BARRACAS Barracas                               795.9      6    1     0     5 activo          0
+   S_BARRACAS Barracas                               795.9      6    1     2     3 activo          0
    Z41     Núñez                                  449.9      6    0     0     6 sin_verificar   0
    Z45     Belgrano R y Barrancas                 806.4      6    2     0     4 activo          1
    Z48     San Cristóbal                          204.5      5    1     0     4 activo          0
    Z33     Mataderos                              740.1      4    0     1     0 probable        0
-   R09     Chacarita                               94.8      3    0     0     3 sin_verificar   0
    R13     Abasto                                 109.0      3    2     0     1 activo          2
    R14     Avenida Boedo                          179.5      3    0     0     2 activo          0
    R15     Devoto                                 478.7      3    0     0     3 sin_verificar   0
    R21     La Paternal                            385.3      3    0     0     3 sin_verificar   0
-   Z35     Balvanera · Once                       434.4      3    0     0     3 sin_verificar   2
-   Z43     Colegiales                             229.1      3    1     0     2 activo          0
+   Z35     Balvanera · Once                       434.4      3    1     0     2 activo          2
    Z27     Villa Santa Rita                       215.5      2    2     0     0 activo          1
    Z28     Monte Castro                           262.9      2    2     0     0 activo          0
-   R03     San Telmo                               25.4      1    0     0     1 sin_verificar   0
+   R03     San Telmo                               25.4      1    1     0     0 activo          0
    R07     Costanera Norte                         38.5      1    0     0     1 sin_verificar   0
    R10     Caballito                              225.4      1    0     0     1 sin_verificar   0
    R11     Boulevard Caseros                       50.0      1    0     0     1 sin_verificar   0
@@ -117,7 +108,7 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
    Z38     Parque Chacabuco                       383.4      0    0     0     0 sin_hitos       1
    Z39b    Baek-ku · Barrio Coreano                34.9      0    0     0     0 sin_hitos       1
 
-   y 12 zonas sin ningún hito de vía B ni enclave: R16, R20, R22, S_LUGANO, S_RIACHUELO, Z26, Z29, Z30, Z31, Z39, Z42, Z49
+   y 13 zonas sin ningún hito de vía B ni enclave: R16, R20, R22, S_LUGANO, S_RIACHUELO, Z23_PERIMETRO, Z26, Z29, Z30, Z31, Z39, Z42, Z49
 
 ----------------------------------------------------------------------------------------------------
   TAREA 4 · LAS DIEZ FILAS EN `requiere_cruce`, RESUELTAS POR CRUCE ESPACIAL
@@ -165,8 +156,8 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
 ----------------------------------------------------------------------------------------------------
   EL MODO DE CADA FILA · propia, heredada o requiere_cruce
 
-      heredada          69 filas
-      propia            20 filas
+      heredada          71 filas
+      propia            18 filas
       requiere_cruce     5 filas
 
   `propia` es la fila cuyo soporte cubre ≥ 95 % de la zona: no hereda nada, ES la zona.
@@ -216,9 +207,9 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
 ----------------------------------------------------------------------------------------------------
   LA VÍA B, ANTES Y DESPUÉS DEL CAMBIO DE ESCALA
 
-                  ronda 4 (capa r3)   por contención (capa r7)   por zona (capa r7)
-   si                             7                         16                   33
-   pendiente                     37                         27                   37
+                  ronda 4 (capa r3)   por contención (capa r8)   por zona (capa r8)
+   si                             7                         19                   39
+   pendiente                     37                         24                   31
    no                            48                         51                   24
 
   Las dos columnas de la derecha se miden con LA MISMA capa de hitos y sobre LAS MISMAS
@@ -230,9 +221,9 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   y pertenecer a la zona. Lo único que se corrigió es a qué objeto se le atribuye.
 
 ----------------------------------------------------------------------------------------------------
-  zonas_via_B_via_D_r7.csv · 52 zonas
-  seis_vias_94_filas_r7.csv · 94 filas, con REFERENCIA a la zona y sin el valor
-  vista_unida_94_filas_r7.csv · la vista unida, derivada y descartable
-  requiere_cruce_resuelto_r7.csv · 10 filas que estaban trabadas
-  reparto_de_las_48_sin_hitos_r7.csv · el reparto de las 51 sin hitos en el fragmento
+  zonas_via_B_via_D_r8.csv · 51 zonas
+  seis_vias_94_filas_r8.csv · 94 filas, con REFERENCIA a la zona y sin el valor
+  vista_unida_94_filas_r8.csv · la vista unida, derivada y descartable
+  requiere_cruce_resuelto_r8.csv · 10 filas que estaban trabadas
+  reparto_de_las_48_sin_hitos_r8.csv · el reparto de las 51 sin hitos en el fragmento
   Google Places: 0 requests.

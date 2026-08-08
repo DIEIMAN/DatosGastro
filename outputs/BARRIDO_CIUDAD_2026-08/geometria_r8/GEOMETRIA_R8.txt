@@ -1,0 +1,115 @@
+RONDA 8 · EL NUDO CHACAGIALES Y LAS DOS CORRECCIONES
+====================================================================================================
+
+  Google Places: 0 requests. Ninguna consulta de red.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · R09 + R19 SE FUSIONAN, CON Z43 COLEGIALES ADENTRO
+
+      R09 Chacarita (publicada)            94.8 ha ·   202 locales · morfología del clustering: «dispersa»
+      R19 Lacroze (ampliada en r7)        303.3 ha ·   532 locales · morfología del clustering: «eje»
+      Z43 Colegiales (barrio)             229.1 ha ·   441 locales
+
+      R09 ∩ R19 antes de fusionar: 60.4 ha = el 64 % de R09
+
+      R09 ∪ R19, sin Colegiales:          337.7 ha ·   581 locales
+      + Z43 Colegiales (el polo)          495.8 ha ·   891 locales
+
+      COLEGIALES ENTRA A ESCALA DE BARRIO, y eso es un techo y no una medición: Z43 no
+      tiene perímetro delimitado —su delimitación textual es «Polo Concepción + corredor
+      Elcano/Jorge Newbery + entorno del Mercado de Pulgas»— y hasta que se construya, el
+      barrio es lo más chico que se puede usar sin inventar. La diferencia entre las dos
+      líneas de arriba, 158.1 ha y 310 locales, es lo que está en juego.
+
+      CONTENCIÓN de R09: superficie que queda afuera del polo fusionado 0.000000 m² → CONSERVA TODO
+          (covers() de GEOS dice NO sobre una diferencia de 0,0 m²: manda la superposición)
+      CONTENCIÓN de R19: superficie que queda afuera del polo fusionado 0.000000 m² → CONSERVA TODO
+          (covers() de GEOS dice NO sobre una diferencia de 0,0 m²: manda la superposición)
+
+      EL POLO FUSIONADO · R09R19_CHACAGIALES
+      Chacagiales · Chacarita, Federico Lacroze y Colegiales
+      morfología: SISTEMA DE SUBPOLOS · 495.8 ha · 891 locales · 1.80 locales/ha
+      subzonas: R09 Chacarita · R19 Federico Lacroze · Z43 Colegiales
+
+      Z44 VILLA ORTÚZAR QUEDA AFUERA. Medido, para que la exclusión no sea una opinión:
+      el 3.6 % de Villa Ortúzar cae dentro del polo fusionado. Es
+      contigüidad de borde, no pertenencia: su núcleo es Plaza 25 de Agosto y La Mezzetta
+      ya está adjudicada ahí.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 4a · Z23 FLORES CASCO HISTÓRICO · EL PERÍMETRO CORREGIDO
+
+  La ronda 7 midió que «Av. Rivadavia entre Boyacá y Carabobo» mide cero cuadras: son la
+  misma avenida, que cambia de nombre al cruzar Rivadavia. La corrección de Diego cambia
+  el corte de destino: de Carabobo/Boyacá a Av. NAZCA.
+
+      «Plaza Flores» en la capa oficial = PLAZA PUEYRREDÓN (Flores), 0.68 ha, a 21 m del eje de Av. Rivadavia.
+      La equivalencia se verifica por posición: da sobre el eje, así que es la
+      plaza que la delimitación llama Plaza Flores. Entra como ensanche.
+      eje Av. Rivadavia entre Carabobo/Boyacá y Av. Nazca: 1,270 m
+      perímetro corregido: 45.2 ha · 154 locales
+
+      EL VEREDICTO NO CAMBIA: Z23 sigue PENDIENTE. Ahora tiene perímetro construible, que
+      es lo que le faltaba para poligonizar, pero los dos motivos de fondo siguen en pie —
+      su único hito vivo cae ocho cuadras afuera y la densidad del eje es textil.
+      medido: La Farmacia queda a 405 m del perímetro corregido (dentro: no).
+
+----------------------------------------------------------------------------------------------------
+  TAREA 4c · LA COLA DE R20, DECLARADA
+
+      R20 completa (lo que se publica):           61.0 ha ·  102 locales
+      la cola, fuera del tramo Cabildo-Balbín:    24.8 ha ·   54 locales
+      = el 41 % de la superficie y el 53 % de los locales
+
+      SE CONSERVA por la regla de contención, y se DECLARA EN LA FICHA como superficie de
+      la versión anterior que la evidencia documental actual no alcanza. No es lo mismo
+      que territorio respaldado: son dos cosas dentro del mismo polígono y la ficha tiene
+      que poder distinguirlas.
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA DE REFERENCIAS DE LA RONDA 8
+
+  referencias r7: 22 · r8: 22 (R09 y R19 salen; entra el polo fusionado y el perímetro de Z23)
+
+     R01                          Palermo                                     271.3 ha ·  1358 locales
+     R02                          Avenida Corrientes                           49.7 ha ·   354 locales
+     R03                          San Telmo                                    25.4 ha ·    71 locales
+     R04                          Puerto Madero                               314.5 ha ·   354 locales
+     R05                          Belgrano                                     39.6 ha ·   343 locales
+     R06                          Recoleta                                    140.5 ha ·   714 locales
+     R07                          Costanera Norte                              38.5 ha ·    67 locales
+     R08                          Villa Crespo                                335.5 ha ·   823 locales
+     R10                          Caballito                                   225.4 ha ·   508 locales
+     R11                          Boulevard Caseros                            50.0 ha ·    60 locales
+     R12                          Centro / Microcentro segmentado             184.1 ha ·  1084 locales
+     R13                          Abasto                                      109.0 ha ·   373 locales
+     R14                          Avenida Boedo                               179.5 ha ·   245 locales
+     R15                          Devoto                                      478.7 ha ·   422 locales
+     R16                          Donado-Holmberg                             119.0 ha ·   121 locales
+     R17                          Villa Urquiza                               446.6 ha ·   528 locales
+     R20                          Garcia del Rio                               61.0 ha ·   102 locales
+     R21                          La Paternal                                 385.3 ha ·   307 locales
+     R22                          Villa Pueyrredon                            305.6 ha ·   198 locales
+     Z46_SUBZONA_CLUSTER_COREANO  Retiro · subzona del clúster coreano-a       51.2 ha ·   330 locales
+   ← R09R19_CHACAGIALES           Chacagiales · Chacarita, Federico Lacr      495.8 ha ·   891 locales
+   ← Z23_PERIMETRO                Flores · casco histórico                     45.2 ha ·   154 locales
+
+  QUÉ PASA CON LOS SEIS SOLAPES QUE LA RONDA 7 DEJÓ ABIERTOS
+
+      R01 ∩ R19:    3.32 ha → R01 ∩ R09R19_CHACAGIALES =    9.90 ha
+      R02 ∩ R12:   21.72 ha → R02 ∩ R12 =   21.72 ha
+      R08 ∩ R19:    7.78 ha → R08 ∩ R09R19_CHACAGIALES =    7.78 ha
+      R08 ∩ R21:   49.68 ha → R08 ∩ R21 =   49.68 ha
+      R09 ∩ R19:   60.37 ha → DESAPARECE. Los dos son ahora el mismo objeto.
+      R09 ∩ R21:    2.25 ha → R09R19_CHACAGIALES ∩ R21 =    7.52 ha
+      R19 ∩ R21:    7.25 ha → R09R19_CHACAGIALES ∩ R21 =    7.52 ha
+
+  quedan 6 solapes abiertos, el mayor de 49.7 ha. La fusión resuelve el más
+  grande —el que valía dos tercios de Chacarita— y no toca los demás: la precedencia
+  sigue siendo editorial.
+
+----------------------------------------------------------------------------------------------------
+  referencias_r8.geojson · 22 geometrías
+  fusion_chacagiales_r8.csv · las tres subzonas con su verificación de contención
+  solapes_r8.csv · 7 parejas
+  cola_de_R20_declarada.csv · la cola de R20, con el texto para la ficha

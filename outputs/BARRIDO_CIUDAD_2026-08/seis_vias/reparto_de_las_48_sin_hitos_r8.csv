@@ -1,0 +1,95 @@
+polo_id,nombre_polo,ha_del_fragmento,zona,modo,via_B_soporte_fragmento,via_B_abierta_fragmento,hitos_en_el_fragmento,via_B_soporte_zona,hitos_en_la_zona,clase
+PG001A_PALERMO_SOHO,Palermo Soho,92.36,R01,heredada,sin_verificar,pendiente,12,sin_verificar,20,el fragmento tiene hitos
+PG001B_PALERMO_HOLLYWOOD,Palermo Hollywood,102.61,R01,heredada,sin_verificar,pendiente,7,sin_verificar,20,el fragmento tiene hitos
+PG001C_LAS_CANITAS,Las Canitas,82.04,R01,heredada,sin_hitos,no,0,sin_verificar,20,"la zona SÍ tiene, el fragmento no"
+PG002_VILLA_CRESPO,Villa Crespo,335.46,R08,propia,sin_verificar,pendiente,8,sin_verificar,8,el fragmento tiene hitos
+PG003_PUERTO_MADERO,Puerto Madero,314.54,R04,propia,sin_verificar,pendiente,7,sin_verificar,7,el fragmento tiene hitos
+PG004_SAN_TELMO,San Telmo,25.37,R03,propia,activo,si,1,activo,1,el fragmento tiene hitos
+PG005_CHACARITA,Chacarita,94.81,R09R19_CHACAGIALES,heredada,sin_verificar,pendiente,3,activo,9,el fragmento tiene hitos
+PG006A_BARRIO_CHINO,Barrio Chino,17.63,R05,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PG006B_BAJO_BELGRANO,Bajo Belgrano,,R05,requiere_cruce,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PG006C_BELGRANO_R,Belgrano R,,Z45,requiere_cruce,sin_hitos,no,0,activo,6,"la zona SÍ tiene, el fragmento no"
+PG007_RECOLETA,Recoleta,140.52,R06,propia,sin_verificar,pendiente,10,sin_verificar,10,el fragmento tiene hitos
+PG008_CABALLITO,Caballito,225.36,R10,propia,sin_verificar,pendiente,1,sin_verificar,1,el fragmento tiene hitos
+PG009_COSTANERA_NORTE,Costanera Norte,38.5,R07,propia,sin_verificar,pendiente,1,sin_verificar,1,el fragmento tiene hitos
+PG010_AVENIDA_CASEROS_BARRACAS,Avenida Caseros / Barracas,50.03,R11,propia,sin_verificar,pendiente,1,sin_verificar,1,el fragmento tiene hitos
+PG011_MICROCENTRO_CENTRO_RENOVADO,Microcentro y Centro,184.12,R12,propia,mixto,si,22,mixto,22,el fragmento tiene hitos
+PG012_AVENIDA_CORRIENTES,Avenida Corrientes,49.67,R02,propia,activo,si,10,activo,10,el fragmento tiene hitos
+PG013_ABASTO,Abasto,109.0,R13,propia,activo,si,3,activo,3,el fragmento tiene hitos
+PG014_AVENIDA_BOEDO,Avenida Boedo,179.46,R14,propia,activo,si,3,activo,3,el fragmento tiene hitos
+PG015_DEVOTO,Devoto,478.74,R15,propia,sin_verificar,pendiente,3,sin_verificar,3,el fragmento tiene hitos
+PG016_CORREDOR_DOHO_DONADO_HOLMBERG,DoHo / Donado-Holmberg,119.0,R16,propia,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PG017_VILLA_URQUIZA,Villa Urquiza,446.62,R17,propia,sin_verificar,pendiente,1,sin_verificar,1,el fragmento tiene hitos
+PG018_NUEVO_BAJO_EN_RETIRO_ESMERALDA_Y_PARAGUAY,Nuevo Bajo en Retiro / Esmeralda y Paraguay,48.39,Z46,heredada,mixto,si,4,mixto,11,el fragmento tiene hitos
+PG019_AVENIDA_FEDERICO_LACROZE_DESDE_LIBERTADOR_,Federico Lacroze / Libertador a Cabildo,89.49,R09R19_CHACAGIALES,heredada,activo,si,1,activo,9,el fragmento tiene hitos
+PG020_PARQUE_SAAVEDRA_AVENIDA_GARCIA_DEL_RIO,Parque Saavedra / Garcia del Rio,28.38,R20,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PG021_CIRCUITO_GASTRONOMICO_DE_PATERNAL,Paternal,321.01,R21,heredada,sin_verificar,pendiente,3,sin_verificar,3,el fragmento tiene hitos
+PG022_VILLA_PUEYRREDON_AVENIDA_SAN_MARTIN,Villa Pueyrredon / Av. San Martin,305.55,R22,propia,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGF2_COLEGIALES,Colegiales,229.08,R09R19_CHACAGIALES,heredada,activo,si,3,activo,9,el fragmento tiene hitos
+PGF2_MONTSERRAT,Monserrat,219.97,Z47,propia,activo,si,10,activo,10,el fragmento tiene hitos
+PGF2_RETIRO,Retiro,451.65,Z46,propia,mixto,si,11,mixto,11,el fragmento tiene hitos
+PGF2_FLORES,Flores,859.45,,requiere_cruce,activo,si,1,,0,el fragmento tiene hitos
+PGF2_FLORESTA,Floresta,232.16,Z25,propia,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGF2_PARQUE_PATRICIOS,Parque Patricios,374.52,Z40,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P021,P021 · Liniers,77.86,Z32,heredada,sin_verificar,pendiente,1,sin_verificar,1,el fragmento tiene hitos
+PGR_P073,P073 · Palermo,39.19,R01,heredada,sin_verificar,pendiente,2,sin_verificar,20,el fragmento tiene hitos
+PGR_P048,P048 · Colegiales,50.84,R09R19_CHACAGIALES,heredada,sin_verificar,pendiente,3,activo,9,el fragmento tiene hitos
+PGR_P076,P076 · Recoleta,29.18,R06,heredada,sin_hitos,no,0,sin_verificar,10,"la zona SÍ tiene, el fragmento no"
+PGR_P037,P037 · Villa Del Parque,40.81,Z29,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P004,P004 · Villa Lugano,144.02,S_LUGANO,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P101+P099,P101+P099 · Balvanera,36.93,Z36,requiere_cruce,activo,si,1,,0,el fragmento tiene hitos
+PGR_P052,P052 · Floresta,36.69,Z25,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P104,P104 · Recoleta,24.85,R06,heredada,sin_hitos,no,0,sin_verificar,10,"la zona SÍ tiene, el fragmento no"
+PGR_P084,P084 · Balvanera,27.12,Z35,heredada,activo,si,1,activo,3,el fragmento tiene hitos
+PGR_P017,P017 · Liniers,69.8,Z32,heredada,sin_hitos,no,0,sin_verificar,1,"la zona SÍ tiene, el fragmento no"
+PGR_P057,P057 · Caballito,26.2,R10,heredada,sin_verificar,pendiente,2,sin_verificar,1,el fragmento tiene hitos
+PGR_P032,P032 · La Boca,20.89,S_LABOCA,heredada,activo,si,1,mixto,8,el fragmento tiene hitos
+PGR_P024,P024 · Nueva Pompeya,50.42,Z40,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P005,P005 · Villa Lugano,100.94,S_LUGANO,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P020,P020 · Villa Luro,25.1,Z31,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P022,P022 · Saavedra,53.59,R20,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P003,P003 · Villa Riachuelo,39.82,S_RIACHUELO,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P012,P012 · Mataderos,32.81,Z33,heredada,sin_verificar,pendiente,2,probable,4,el fragmento tiene hitos
+PGR_P107,P107 · Balvanera,10.79,Z35,heredada,sin_hitos,no,0,activo,3,"la zona SÍ tiene, el fragmento no"
+PGR_P092,P092 · Palermo,11.71,R01,heredada,activo,si,1,sin_verificar,20,el fragmento tiene hitos
+PGR_P088,P088 · Palermo,7.79,R01,heredada,sin_verificar,pendiente,1,sin_verificar,20,el fragmento tiene hitos
+PGR_P002,P002 · Villa Soldati,63.36,Z49,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P026,P026 · Parque Patricios,27.04,Z40,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P066,P066 · Barracas,18.02,S_BARRACAS,heredada,probable,pendiente,1,activo,6,el fragmento tiene hitos
+PGR_P014,P014 · Flores,45.63,,requiere_cruce,sin_hitos,no,0,,0,la fila no tiene zona resuelta
+PGR_P044,P044 · San Cristobal,17.01,Z48,heredada,sin_verificar,pendiente,1,activo,5,el fragmento tiene hitos
+PGR_P042,P042 · Velez Sarsfield,11.15,Z26,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P041,P041 · Floresta,12.73,Z25,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P087,P087 · Palermo,5.8,R01,heredada,sin_hitos,no,0,sin_verificar,20,"la zona SÍ tiene, el fragmento no"
+PGR_P061,P061 · Flores,6.93,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P040,P040 · Villa Santa Rita,10.46,Z27,heredada,sin_hitos,no,0,activo,2,"la zona SÍ tiene, el fragmento no"
+PGR_P086,P086 · Palermo,7.95,R01,heredada,sin_hitos,no,0,sin_verificar,20,"la zona SÍ tiene, el fragmento no"
+PGR_P085,P085 · Balvanera,8.77,Z35,heredada,sin_hitos,no,0,activo,3,"la zona SÍ tiene, el fragmento no"
+PGR_P033,P033 · La Boca,16.68,S_LABOCA,heredada,sin_verificar,pendiente,3,mixto,8,el fragmento tiene hitos
+PGR_P094,P094 · Monserrat,6.37,Z47,heredada,sin_hitos,no,0,activo,10,"la zona SÍ tiene, el fragmento no"
+PGR_P070,P070 · Saavedra,5.66,R20,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P015,P015 · Parque Chacabuco,12.12,Z38,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P009,P009 · Parque Avellaneda,24.65,Z39,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P067,P067 · Nuñez,7.32,Z41,heredada,sin_hitos,no,0,sin_verificar,6,"la zona SÍ tiene, el fragmento no"
+PGR_P008,P008 · Barracas,23.52,S_BARRACAS,heredada,activo,si,1,activo,6,el fragmento tiene hitos
+PGR_P006,P006 · Mataderos,28.18,Z33,heredada,sin_verificar,pendiente,1,probable,4,el fragmento tiene hitos
+PGR_P059,P059 · Flores,6.08,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P083,P083 · Almagro,5.67,Z37,heredada,sin_hitos,no,0,activo,8,"la zona SÍ tiene, el fragmento no"
+PGR_P025-2,P025-2 · Monte Castro,4.89,Z28,heredada,activo,si,1,activo,2,el fragmento tiene hitos
+PGR_P058,P058 · Flores,11.39,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P007,P007 · Belgrano,8.96,R05,heredada,sin_verificar,pendiente,2,sin_hitos,0,el fragmento tiene hitos
+PGR_P064,P064 · Palermo,9.12,R01,heredada,sin_hitos,no,0,sin_verificar,20,"la zona SÍ tiene, el fragmento no"
+PGR_P060,P060 · Flores,5.85,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P010,P010 · Floresta,10.63,Z25,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P031,P031 · Floresta,7.58,Z25,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P025-1,P025-1 · Monte Castro,10.19,Z28,heredada,sin_hitos,no,0,activo,2,"la zona SÍ tiene, el fragmento no"
+PGR_P013,P013 · Mataderos,10.79,Z33,heredada,probable,pendiente,1,probable,4,el fragmento tiene hitos
+PGR_P050,P050 · Caballito,5.07,R10,heredada,sin_hitos,no,0,sin_verificar,1,"la zona SÍ tiene, el fragmento no"
+PGR_P069,P069 · Belgrano,7.59,R05,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P011,P011 · Saavedra,7.08,R20,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
+PGR_P019,P019 · Parque Patricios,20.78,Z40,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P036,P036 · Flores,9.86,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
+PGR_P109,P109 · San Nicolas,3.29,Z47,heredada,activo,si,2,activo,10,el fragmento tiene hitos
+PGR_P055,P055 · Balvanera,8.52,Z35,heredada,sin_hitos,no,0,activo,3,"la zona SÍ tiene, el fragmento no"
+PGR_P034,P034 · Monte Castro,10.66,Z28,heredada,activo,si,1,activo,2,el fragmento tiene hitos
+PGR_P072-3,P072-3 · Belgrano,5.08,Z45,heredada,sin_hitos,no,0,activo,6,"la zona SÍ tiene, el fragmento no"

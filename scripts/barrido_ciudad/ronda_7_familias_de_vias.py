@@ -384,6 +384,38 @@ def construir_perimetro(receta, callejero, verdes, capa_barrios, bitacora: list[
 
 def main() -> int:  # noqa: C901
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    # La corrida acepta otra capa de hitos y otra capa de referencias para poder volver a medir
+    # cuando cambian —la ronda 8 fusiona R09 con R19 y retipa un hito—, sin duplicar el guion ni
+    # perder la reproducibilidad de la ronda 7, que sigue siendo el default.
+    global CAPA_R7, REFERENCIAS_R7, OUT_ZONAS, OUT_FILAS, OUT_VISTA, OUT_CRUCE
+    global OUT_SIN_HITOS, OUT_FIAB, OUT_GEOJSON, INFORME_TXT
+
+    import argparse
+    parser = argparse.ArgumentParser(description="las vías documentales, medidas por zona")
+    parser.add_argument("--capa", default=str(HITOS / "hitos_capa_2026_r7.csv"))
+    parser.add_argument("--referencias",
+                        default=str(GEOMETRIA / "referencias_r7.geojson"))
+    parser.add_argument("--sufijo", default="r7")
+    parser.add_argument("--remapeo", default="",
+                        help="JSON {zona_vieja: zona_nueva} para cuando una ronda fusiona zonas")
+    args = parser.parse_args()
+    remapeo: dict[str, str] = {}
+    if args.remapeo:
+        import json
+        remapeo = json.loads(Path(args.remapeo).read_text(encoding="utf-8"))
+
+    CAPA_R7 = Path(args.capa)
+    REFERENCIAS_R7 = Path(args.referencias)
+    sufijo = args.sufijo
+    OUT_ZONAS = SEIS_VIAS / f"zonas_via_B_via_D_{sufijo}.csv"
+    OUT_FILAS = SEIS_VIAS / f"seis_vias_94_filas_{sufijo}.csv"
+    OUT_VISTA = SEIS_VIAS / f"vista_unida_94_filas_{sufijo}.csv"
+    OUT_CRUCE = SEIS_VIAS / f"requiere_cruce_resuelto_{sufijo}.csv"
+    OUT_SIN_HITOS = SEIS_VIAS / f"reparto_de_las_48_sin_hitos_{sufijo}.csv"
+    OUT_FIAB = SEIS_VIAS / f"via_C_contra_padron_fiab_{sufijo}.csv"
+    OUT_GEOJSON = GEOMETRIA / f"zonas_{sufijo}.geojson"
+    INFORME_TXT = SEIS_VIAS / f"FAMILIAS_DE_VIAS_{sufijo.upper()}.txt"
+
     buffer = io.StringIO()
     p = p_factory(buffer)
 
@@ -424,17 +456,20 @@ def main() -> int:  # noqa: C901
     bitacora: list[str] = []
     zonas: dict[str, dict] = {}
 
+    columna_estado = next((c for c in ("estado_r8", "estado_r7") if c in referencias.columns),
+                          None)
     for rid in referencias.index:
         if rid.startswith("Z46_SUBZONA"):
             continue
+        estado = str(referencias[columna_estado].loc[rid]) if columna_estado else "sin cambios"
         zonas[rid] = {"zona_id": rid, "nombre": referencias.nombre.loc[rid],
                       "clase": "referencia publicada", "geom_zona": referencias.geometry.loc[rid],
                       "geom_delimitada": referencias.geometry.loc[rid],
                       "detalle_geometria": "envolvente editorial del Atlas"
-                                           + (" (ampliada en la ronda 7)"
-                                              if referencias.estado_r7.loc[rid] != "sin cambios"
-                                              else "")}
+                                           + ("" if estado == "sin cambios" else f" · {estado}")}
     for zid, barrios_zona in ZONA_BARRIOS.items():
+        if zid in remapeo:
+            continue
         geom = marco_de(capa_barrios, barrios_zona)
         zonas[zid] = {"zona_id": zid, "nombre": ZONA_NOMBRE[zid], "clase": "zona nueva",
                       "geom_zona": geom, "geom_delimitada": None,
@@ -527,6 +562,42 @@ def main() -> int:  # noqa: C901
         p("      señalado para que Diego decida.")
         p("")
 
+    # ================================================== 2b · la vía C, recontada por fila
+    #
+    # La vía C se venía leyendo de la ronda 2 sin recalcular, y estaba bien: sus insumos no se
+    # movían. Dejaron de no moverse cuando la ronda 8 retipó un hito. Se recuenta y se compara
+    # contra el valor vigente, para que el cambio se vea en vez de aparecer.
+    p("-" * 100)
+    p("  LA VÍA C, RECONTADA CONTRA LA CAPA DE HITOS VIGENTE")
+    p("")
+    movidas = []
+    for fila in matriz.itertuples():
+        soporte = soportes.geometry.get(fila.polo_id)
+        if soporte is None or soporte.is_empty:
+            continue
+        adentro = mercados[mercados.within(soporte)]
+        ahora = "si" if len(adentro) else "no"
+        if ahora != str(fila.via_C_abierta):
+            movidas.append({"polo_id": fila.polo_id, "nombre_polo": fila.nombre_polo,
+                            "via_C_antes": fila.via_C_abierta, "via_C_ahora": ahora,
+                            "via_C_cual_antes": fila.via_C_cual,
+                            "via_C_cual_ahora": "; ".join(adentro.nombre.astype(str))})
+    if not movidas:
+        p("   ninguna fila cambia de vía C.")
+    for cambio in movidas:
+        p(f"   {cambio['polo_id']:<14} {str(cambio['nombre_polo'])[:26]:<28} "
+          f"vía C {cambio['via_C_antes']} → {cambio['via_C_ahora']}"
+          f"  (era: {cambio['via_C_cual_antes']})")
+    if movidas:
+        p("")
+        p("   Es la consecuencia del retipado de la tarea 4: el hito que abría esa vía C no era")
+        p("   un mercado. La fila no pierde el reconocimiento —la Ley 6.533 sigue declarando")
+        p("   patrimonio su carta— pierde la VÍA C, que exige mercado, patio o galería en")
+        p("   actividad. Es exactamente la misma regla que la decisión 1 aplicó a la FIAB.")
+    pd.DataFrame(movidas).to_csv(SEIS_VIAS / f"via_C_movida_{sufijo}.csv", index=False,
+                                 encoding="utf-8")
+    p("")
+
     # ================================================== 3 · vía B y vía D por zona
     p("-" * 100)
     p("  TAREA 1 · LA VÍA B Y LA VÍA D, MEDIDAS POR ZONA")
@@ -600,6 +671,10 @@ def main() -> int:  # noqa: C901
         if zona_e == "R18":
             asignacion[polo_id] = {"zona": "Z46", "modo": "heredada",
                                    "como": "la decisión 5 absorbe R18 en Z46 Retiro"}
+            continue
+        if zona_e in remapeo:
+            asignacion[polo_id] = {"zona": remapeo[zona_e], "modo": "heredada",
+                                   "como": f"la ronda 8 fusiona {zona_e} en {remapeo[zona_e]}"}
             continue
         if zona_e not in ("MULTIPLE", "REVISAR", "nan", ""):
             asignacion[polo_id] = {"zona": zona_e, "modo": "", "como": "asignación de la vía E"}
@@ -830,8 +905,8 @@ def main() -> int:  # noqa: C901
         else:
             abierta_por_zona.append("pendiente")
     despues = pd.Series(abierta_por_zona).value_counts()
-    p(f"   {'':<12} {'ronda 4 (capa r3)':>19} {'por contención (capa r7)':>26} "
-      f"{'por zona (capa r7)':>20}")
+    p(f"   {'':<12} {'ronda 4 (capa r3)':>19} {f'por contención (capa {sufijo})':>26} "
+      f"{f'por zona (capa {sufijo})':>20}")
     for valor in ("si", "pendiente", "no"):
         p(f"   {valor:<12} {int(r4.get(valor, 0)):>19} {int(antes.get(valor, 0)):>26} "
           f"{int(despues.get(valor, 0)):>20}")
