@@ -1,0 +1,12 @@
+hito_id,nombre,campo,valor_antes,valor_despues,motivo,tarea,fecha
+H028,Café Olimpo,vigencia_verificada,estado_operativo_pendiente,si,Verificación humana de Diego (07/08/2026): verificado_abierto. Cierra el único `estado_operativo_pendiente` que había dejado la ronda 5 — el caso que se citaba como justificación por sí solo para correr Places. Se resolvió sin Places.,TAREA_1,2026-08-07
+H028,Café Olimpo,vigencia_nivel,ninguno,v2,,TAREA_1,2026-08-07
+H028,Café Olimpo,vigencia_fuente,,"verificación humana · Diego, 07/08/2026",,TAREA_1,2026-08-07
+H028,Café Olimpo,vigencia_fecha,,2026-08-07,,TAREA_1,2026-08-07
+H028,Café Olimpo,nota_ronda_6,,Verificado abierto por Diego el 07/08/2026 (v2). Nueve años sin una sola mención fechable en fuentes abiertas: tres intentos documentales fallaron y lo resolvió una verificación humana. El barrio del anexo NO se sostiene — ver TAREA 2.,,TAREA_1,2026-08-07
+H045,12 de octubre,vigencia_verificada,sin_verificar,si,"Verificación humana de Diego (07/08/2026): verificado_abierto. Era el eslabón roto de Almagro: ninguna pieza documental caía dentro de ventana (lo más nuevo, check-ins de Untappd del 25/03/2026, a 135 días).",TAREA_1,2026-08-07
+H045,12 de octubre,vigencia_nivel,,v2,,TAREA_1,2026-08-07
+H045,12 de octubre,vigencia_fuente,,"verificación humana · Diego, 07/08/2026",,TAREA_1,2026-08-07
+H045,12 de octubre,vigencia_fecha,,2026-08-07,,TAREA_1,2026-08-07
+H045,12 de octubre,nota_ronda_6,,"Verificado abierto por Diego el 07/08/2026 (v2). Nombre de uso: El Boliche de Roberto; nombre formal del catálogo: '12 de octubre'. La marca de cierre de Yelp «CLOSED - Updated July 2026» queda CONFIRMADA COMO FALSO POSITIVO: es el caso probado de FD-12, no una señal pendiente de resolver.",,TAREA_1,2026-08-07
+H028,Café Olimpo,barrio_declarado,,Monte Castro,"TERCERA INSTANCIA DE FD-02. El anexo de la Res. 1225/26 lo asienta en Villa Luro; el callejero oficial del GCBA reparte Irigoyen por altura y el 1491 impar es Monte Castro (par: Versalles), con Villa Luro terminando en el 1299; USIG /datos_utiles sobre el punto responde Monte Castro. Dos fuentes administrativas contra el campo territorial del catálogo. La comuna del anexo (10) sí es correcta: Villa Luro, Monte Castro y Versalles son las tres Comuna 10, y por eso el error no se veía.",TAREA_2,2026-08-07

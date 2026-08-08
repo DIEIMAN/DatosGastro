@@ -1,0 +1,112 @@
+RONDA 6 · DOS VERIFICADOS, UN FALSO POSITIVO PROBADO, Y DÓNDE CAEN DE VERDAD
+====================================================================================================
+
+  capa de entrada: hitos_capa_2026_r5.csv · 221 hitos
+  Google Places: 0 requests. USIG: sólo /datos_utiles sobre dos puntos ya normalizados.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LAS DOS VERIFICACIONES DE DIEGO
+
+      H028  Café Olimpo                 Irigoyen 1491           → vigencia_verificada = si · nivel v2 · Diego, 07/08/2026
+      H045  12 de octubre               Bulnes 331              → vigencia_verificada = si · nivel v2 · Diego, 07/08/2026
+
+      La de Café Olimpo cierra el último `estado_operativo_pendiente` de la capa. Con eso,
+      el argumento de la ronda 5 —«el caso que por sí solo justifica correr Places»— se
+      queda sin su caso: quedó resuelto por verificación humana, con 0 requests.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · DÓNDE CAEN LOS DOS HITOS · lo que la carga afirma y lo que la geometría dice
+
+  2a · Irigoyen 1491: el anexo dice Villa Luro, y la calle atraviesa cuatro barrios
+
+      altura (impar)    lado impar        lado par        tramos
+      1–499             Villa Luro        Villa Luro        6
+      501–1299          Villa Luro        Versalles        10
+      1301–1799         Monte Castro      Versalles         9  ←  1491 cae acá
+      1801–1899         Villa Real        Versalles         1
+      1901–2599         Villa Real        Villa Real        7
+
+      La calle Irigoyen SÍ pasa por Villa Luro, pero se termina en el 1299. El 1491 está
+      dos cuadras más allá, del lado impar, que es Monte Castro; el lado par de ese mismo
+      tramo es Versalles. La atribución del anexo se apoya en el nombre de la calle, no en
+      la altura.
+
+      Esquina Irigoyen y Arregui, resuelta por intersección de ejes del callejero: a 16 m del punto
+      que USIG le había dado a la ficha. Es la misma esquina — el punto no está en duda.
+            distancia de esa esquina a Villa Luro        262 m
+            distancia de esa esquina a Monte Castro        0 m
+            distancia de esa esquina a Versalles           1 m
+
+      USIG /datos_utiles · Café Olimpo · Irigoyen 1491         barrio=Monte Castro    comuna=Comuna 10
+      USIG /datos_utiles · El Boliche de Roberto · Bulnes 331  barrio=Almagro         comuna=Comuna 5
+
+      → barrio_declarado de H028 = Monte Castro (era: vacío). Tercera instancia de FD-02.
+
+  2b · la vía B se mide por presencia: ¿están adentro de alguna fila?
+
+      H028 Café Olimpo               barrio GCBA del punto: Monte Castro
+            en las 94 filas: 0   ·   en las 22 envolventes: 0
+            PGR_P020 (P020 · Villa Luro, 25.1 ha): AFUERA · 1532 m del polígono
+
+      H045 12 de octubre             barrio GCBA del punto: Almagro
+            en las 94 filas: 0   ·   en las 22 envolventes: 0
+            PGR_P083 (P083 · Almagro, 5.7 ha): AFUERA · 469 m del polígono
+
+      Ninguno de los dos está adentro de ninguna de las 94 filas ni de ninguna de las 22
+      envolventes. La vía B de la matriz se mide por presencia desde la ronda 3, así que
+      **la vía B medida no se mueve con estas dos verificaciones**: P020 y P083 siguen en
+      `sin_hitos`. Lo que la carga salva es la lectura de escala de barrio (Z31 / Z37), que
+      es la unidad que usa la asignación heredada de vía E, no la fila de la matriz.
+
+  2c · «los cinco notables de Almagro»: quiénes son y cómo están en la capa
+
+      El polígono administrativo de Almagro contiene 5 Bares Notables:
+
+      hito    nombre                  dirección                   estado en la capa        a P083
+      H063    La Orquidea             Av. Corrientes 4101         sin_verificar              74 m
+      H045    12 de octubre           Bulnes 331                  si                        469 m
+      H054    EL SIMBOLO              Av. Corrientes 3787         sin_verificar             518 m
+      H071    LAS VIOLETAS            Av. Rivadavia 3899          sin_verificar             666 m
+      H044    El Banderin             Guardia Vieja 3601          sin_verificar             747 m
+
+      Verificados abiertos en la capa: 1 de 5. Los otros 4 tienen veredicto
+      en el material de tanda B / cierre del día, que es insumo producido afuera y NO se
+      aplicó a la capa: esta ronda carga sólo las dos verificaciones pedidas. Mientras no
+      se apliquen, «Almagro recupera los cinco» es cierto en el registro de la tanda y no
+      en la capa.
+
+      Y ninguno de los cinco está adentro de PGR_P083 (5.7 ha): el
+      más cercano queda a 74 m.
+      La fila de la matriz es mucho más chica que el barrio.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · FD-12 · LA MARCA DE CIERRE DE YELP, PROBADA COMO FALSO POSITIVO
+
+      fuentes_defectos_conocidos.csv: 5 defectos (FD-01, FD-02, FD-03, FD-04, FD-12)
+      fuentes_marcas_aplicadas.csv: 24 marcas aplicadas (+2: FD-12 sobre H045, FD-02 sobre H028)
+
+      FD-12 entra a la capa canónica con la evidencia que lo prueba, no con la sospecha:
+      la señal era visible, inauditable Y falsa. La regla no cambia —se registra, nunca se
+      convierte en veredicto— pero deja de ser una precaución y pasa a ser un hecho medido.
+
+      FD-02 suma su tercera instancia (La Academia, Roma del Abasto, Café Olimpo). El
+      pendiente 3 de la ronda 5 —«si se repite en más filas, conviene registrarla como
+      tal»— queda cumplido: el campo territorial del catálogo falla en las tres.
+
+====================================================================================================
+  hitos_capa_2026_r6.csv: 221 filas · 32 columnas
+  cambios_ronda_6.csv: 11 cambios
+  donde_caen_los_dos_hitos_r6.csv · almagro_cinco_notables_r6.csv
+
+  vigencia_verificada en la capa:
+        sin_verificar                        191
+        si                                    20
+        dudosa                                 5
+        no                                     2
+        en_riesgo                              1
+        senalado_no_cerrado                    1
+        cerrado_con_reapertura_anunciada       1
+
+  Google Places: 0 requests.
+====================================================================================================
+

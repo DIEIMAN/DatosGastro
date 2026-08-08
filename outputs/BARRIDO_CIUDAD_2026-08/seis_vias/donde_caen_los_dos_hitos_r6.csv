@@ -1,0 +1,3 @@
+hito_id,nombre,direccion,barrio_gcba_del_punto,filas_94_que_lo_contienen,cuales_94,envolventes_22_que_lo_contienen,cuales_22,fila_que_la_carga_le_atribuye,dentro_de_esa_fila,distancia_a_esa_fila_m,ha_de_esa_fila
+H028,Café Olimpo,Irigoyen 1491,Monte Castro,0,,0,,PGR_P020 · P020 · Villa Luro,False,1531.7,25.1
+H045,12 de octubre,Bulnes 331,Almagro,0,,0,,PGR_P083 · P083 · Almagro,False,468.8,5.7

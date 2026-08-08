@@ -9,10 +9,15 @@ el defecto **es una propiedad del artefacto** y afecta a todo lo que salga de é
 consulta futura. Sin un registro explícito, cada corrección se paga de nuevo cada vez que alguien
 vuelve a citar la misma fuente.
 
-Van cuatro. Cada una tiene tres campos que hacen falta juntos: **cómo se detecta** —una regla que un
+Van cinco. Cada una tiene tres campos que hacen falta juntos: **cómo se detecta** —una regla que un
 script puede evaluar, no una impresión—, **qué prohíbe afirmar** y **qué sigue valiendo**. Una regla
 sin consecuencia declarada se convierte en una etiqueta decorativa; una consecuencia sin regla no se
 puede aplicar sola.
+
+*Actualizada el 7 de agosto de 2026 (ronda 6): entra FD-12 y FD-02 suma su tercera instancia. La
+numeración salta de FD-04 a FD-12 porque FD-05 a FD-15 se identificaron en el material producido
+afuera (`desde_cowork/evidencia_2026/`); acá sólo están las que ya pasaron a la capa canónica con su
+evidencia.*
 
 ---
 
@@ -58,6 +63,20 @@ el catálogo.
 Esto importa porque la matriz asigna hitos a filas por **punto**, y el punto sale de la dirección,
 no del barrio declarado. Una fila que se arme por nombre de barrio hereda el error entero.
 
+**Tercera instancia, y la que muestra el mecanismo (ronda 6).** El anexo asienta el Café Olimpo,
+Irigoyen 1491, en **Villa Luro**. La calle Irigoyen atraviesa cuatro barrios y el catastro reparte
+por altura: del 1 al 1299 el lado impar es Villa Luro, del **1301 al 1799 es Monte Castro** —el lado
+par de ese tramo es Versalles— y del 1901 en adelante, Villa Real. El 1491 cae dos cuadras después
+de que Villa Luro se termina. USIG sobre el punto responde Monte Castro, Comuna 10, y la esquina que
+cita la ficha —Irigoyen y Arregui, resuelta por intersección de ejes del callejero, a 16 m del
+punto— queda sobre el límite Monte Castro/Versalles, a 262 m de Villa Luro.
+
+Lo que hace instructivo el caso es **por qué no se veía**: las tres son Comuna 10, así que la comuna
+del anexo era correcta y el cotejo por comuna lo habría dado por bueno. El defecto es de barrio y
+sólo se ve a escala de barrio. Las tres instancias —La Academia, Roma del Abasto, Café Olimpo—
+comparten la forma: el campo territorial se llenó por nombre de calle o por zona aproximada, no por
+altura.
+
 ---
 
 ## FD-03 · El PDF del catálogo servido bajo la URL de la Res. MCGC 3758/24
@@ -90,6 +109,31 @@ Comedor —Time Out dice Núñez, USIG dice Belgrano—, Vereda Adentro y el ter
 
 ---
 
+## FD-12 · Las marcas de cierre de Yelp, visibles e inauditables
+
+**Se detecta:** el título del resultado de búsqueda expone `CLOSED - Updated <mes> <año>` y el
+dominio bloquea por `robots.txt`, así que la ficha no se puede abrir.
+
+**Qué pasó.** Yelp mostraba «EL BOLICHE DE ROBERTO - CLOSED - Updated July 2026» sobre Bulnes 331.
+No hay manera de abrir la ficha para saber de cuándo es la marca ni de dónde salió. La tanda la
+registró como señal a resolver y **no** la convirtió en veredicto, porque contradecía actividad de
+usuario de fines de marzo de 2026.
+
+**Y acá se probó.** Diego verificó el establecimiento **abierto el 07/08/2026**. La marca era falsa.
+
+**Prohíbe:** leer la marca como evidencia de cierre, y también dejarla como duda que baje el
+veredicto de una ficha.
+**Sigue valiendo:** nada de la ficha — no se puede abrir.
+
+**Por qué es la más incómoda de las cinco.** Las otras cuatro son errores del documento sobre sí
+mismo: una fecha de actualización, un campo de barrio, un número de resolución. Ésta es una
+**afirmación sobre el establecimiento**, del tipo que normalmente sí acreditaría, y encima en el
+sentido que más cuesta ignorar: nadie duda de un «cerrado». La regla se sostiene por la asimetría
+que ordena toda la verificación de vigencia —un abierto resuelve una ficha, un cerrado no cierra
+nada— y ahora tiene detrás un caso medido, no una precaución.
+
+---
+
 ## Cómo se usa esta sección
 
 1. Antes de incorporar un dato, buscar su fuente acá. Si tiene marca, aplicar lo que la marca
@@ -102,8 +146,13 @@ Comedor —Time Out dice Núñez, USIG dice Belgrano—, Vereda Adentro y el ter
 4. Un defecto nuevo entra con los tres campos completos —regla, prohibición, evidencia—. Si no se
    puede escribir la regla, todavía no es un defecto de fuente: es un dato mal cargado.
 
-**Y el criterio general, que es el que ordena todo lo anterior:** una fecha de actualización, un
+**Y el criterio general, que es el que ordena casi todo lo anterior:** una fecha de actualización, un
 campo de barrio o un número de resolución son **metadatos del artefacto**, no observaciones del
-territorio. Ninguno de los cuatro defectos es un error sobre un restaurante: los cuatro son errores
-sobre cómo el documento se describe a sí mismo. Que sean todos del mismo tipo es el hallazgo, no la
-coincidencia.
+territorio. Ninguno de los cuatro primeros defectos es un error sobre un restaurante: los cuatro son
+errores sobre cómo el documento se describe a sí mismo. Que sean todos del mismo tipo fue el
+hallazgo de la ronda 4.
+
+**FD-12 rompe el patrón, y conviene no disimularlo.** Es una afirmación sobre el establecimiento, no
+sobre el documento, y resultó falsa. La lección no reemplaza a la anterior: la amplía. Los metadatos
+no acreditan, y una afirmación de cierre que no se puede auditar tampoco — por más que suene a
+observación del territorio.
