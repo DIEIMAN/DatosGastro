@@ -1,0 +1,43 @@
+tema,archivo,existe,ruta
+criterio de las dos familias de vías,CRITERIO_ESCALA_DE_LAS_VIAS.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\CRITERIO_ESCALA_DE_LAS_VIAS.md
+criterio de escala de la vía E,CRITERIO_ESCALA_DE_LA_VIA_E.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\CRITERIO_ESCALA_DE_LA_VIA_E.md
+"vía E, las 94 filas asignadas",via_E_94_filas.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\via_E_94_filas.csv
+"vía E, las 22 referencias publicadas",via_E_22_referencias.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\via_E_22_referencias.csv
+decisión trayectoria versus actividad,DECISION_TRAYECTORIA_VS_ACTIVIDAD.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\DECISION_TRAYECTORIA_VS_ACTIVIDAD.md
+las 20 decisiones con su consecuencia operativa,DECISIONES_TOMADAS_2026-08-07.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\DECISIONES_TOMADAS_2026-08-07.csv
+escala de vigencia y primeros patrones de falla,ESCALA_DE_VIGENCIA_Y_PATRONES_DE_FALLA.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\ESCALA_DE_VIGENCIA_Y_PATRONES_DE_FALLA.md
+vigencia · rondas y tandas,vigencia_verificada_ronda_1.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\vigencia_verificada_ronda_1.csv
+vigencia · rondas y tandas,_ronda_2.csv,no,
+vigencia · rondas y tandas,vigencia_ronda_2_cerrada.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\vigencia_ronda_2_cerrada.csv
+vigencia · rondas y tandas,vigencia_tanda_A_centro.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\vigencia_tanda_A_centro.csv
+vigencia · rondas y tandas,vigencia_tanda_B_almagro_norte.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\vigencia_tanda_B_almagro_norte.csv
+vigencia · rondas y tandas,vigencia_cierre_del_dia.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\vigencia_cierre_del_dia.csv
+auditoría del catálogo oficial · los tres cerrados,catalogo_notables_auditoria_cierres.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\catalogo_notables_auditoria_cierres.csv
+auditoría del catálogo oficial · los tres cerrados,AUDITORIA_DEL_CATALOGO_OFICIAL.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\AUDITORIA_DEL_CATALOGO_OFICIAL.md
+el catálogo de 90 cruzado contra las zonas,catalogo_90_notables_cruzado.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\catalogo_90_notables_cruzado.csv
+el catálogo de 90 cruzado contra las zonas,CRUCE_DE_LOS_90_NOTABLES.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\CRUCE_DE_LOS_90_NOTABLES.md
+fuentes con defecto FD-01 a FD-15,fuentes_con_defecto_FD05_FD07.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\fuentes_con_defecto_FD05_FD07.csv
+fuentes con defecto FD-01 a FD-15,_FD08_FD12.csv,no,
+fuentes con defecto FD-01 a FD-15,_FD13_FD15.csv,no,
+fuentes con defecto FD-01 a FD-15,EL_DESBLOQUEO_Y_LA_TRAMPA_PEOR.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\EL_DESBLOQUEO_Y_LA_TRAMPA_PEOR.md
+Places · especificación y lista priorizada,PLACES_PARA_VIGENCIA.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\PLACES_PARA_VIGENCIA.md
+Places · especificación y lista priorizada,lista_places_prioridad.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\lista_places_prioridad.csv
+capa de memoria y homónimos,capa_de_memoria.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\capa_de_memoria.csv
+capa de memoria y homónimos,homonimos_vivo_muerto.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\homonimos_vivo_muerto.csv
+capa de memoria y homónimos,LA_CAPA_DE_MEMORIA.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\LA_CAPA_DE_MEMORIA.md
+enclaves comunitarios delimitados,enclaves_comunitarios_delimitados.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\enclaves_comunitarios_delimitados.csv
+enclaves comunitarios delimitados,enclaves_E02_E07_reparados.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\enclaves_E02_E07_reparados.csv
+enclaves comunitarios delimitados,enclaves_establecimientos_E02_E07.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\enclaves_establecimientos_E02_E07.csv
+auditoría de duplicados · los 29 riesgos,auditoria_duplicados.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\auditoria_duplicados.csv
+auditoría de duplicados · los 29 riesgos,AUDITORIA_DE_DUPLICADOS.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\AUDITORIA_DE_DUPLICADOS.md
+"nudo Chacagiales, cola de R20, trampa GEOS",EL_NUDO_CHACAGIALES_Y_CUATRO_CORRECCIONES.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\EL_NUDO_CHACAGIALES_Y_CUATRO_CORRECCIONES.md
+corpus de fichas de polo,fichas_corpus_polos.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\fichas_corpus_polos.csv
+corpus de fichas de polo,FICHAS_CORPUS_LEEME.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\FICHAS_CORPUS_LEEME.md
+lectura previa y resultado de ENTUR × vía E,LECTURA_PREVIA_ENTUR_x_VIA_E.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\LECTURA_PREVIA_ENTUR_x_VIA_E.md
+"correcciones propias, con su mecanismo",CORRECCIONES_MIAS_2026-08.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\CORRECCIONES_MIAS_2026-08.md
+"correcciones propias, con su mecanismo",REPARACION_ENCLAVES_Y_TRES_CORRECCIONES.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\REPARACION_ENCLAVES_Y_TRES_CORRECCIONES.md
+"barrido por zonas · rondas 2, 3 y sur",seis_vias_ronda_2.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\seis_vias_ronda_2.csv
+"barrido por zonas · rondas 2, 3 y sur",seis_vias_ronda_3_norte.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\seis_vias_ronda_3_norte.csv
+"barrido por zonas · rondas 2, 3 y sur",seis_vias_Z47_Z48_Z49.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\seis_vias_Z47_Z48_Z49.csv
+"barrido por zonas · rondas 2, 3 y sur",seis_vias_sur_consolidado.csv,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\seis_vias_sur_consolidado.csv
+material para la presentación,LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md,si,outputs\BARRIDO_CIUDAD_2026-08\desde_cowork\evidencia_2026\LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md

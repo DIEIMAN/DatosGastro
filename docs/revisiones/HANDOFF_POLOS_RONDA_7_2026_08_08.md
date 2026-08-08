@@ -47,11 +47,16 @@ reconciliación está fila por fila en el informe.
 
 | | filas |
 |---|---|
-| **la zona SÍ tiene hitos, el fragmento no** | **27** |
+| **la zona SÍ tiene hitos, el fragmento no** | **28** |
 | la zona tampoco tiene hitos | 23 |
-| la fila no tiene zona resuelta | 1 |
 
-**Ésas 27 y las 23 se contaban igual hasta ayer**, y son dos cosas distintas: una es «acá no hay
+> **CORREGIDO EL 08/08 (ronda 9).** Esta tabla decía 27 + 23 + 1, con una tercera clase «la fila
+> no tiene zona resuelta». Esa tercera clase era un error: `PGR_P014 · Flores` quedaba sin zona
+> por un denominador mal elegido en el clasificador. Corregido, cae en la primera clase y el
+> reparto queda en **28 + 23 = 51**, dos clases. Ver
+> `seis_vias/RECONCILIACION_DEL_REPARTO_R9.md`.
+
+**Ésas 28 y las 23 se contaban igual hasta ayer**, y son dos cosas distintas: una es «acá no hay
 trayectoria» y la otra es «el clustering no acertó a caer encima de un bar». `PGR_P083 · Almagro`
 —5,67 ha, zona con 8 hitos de vía B, soporte `activo`— es el caso que originó el criterio y sigue
 ahí, ahora con nombre y con la distinción escrita.

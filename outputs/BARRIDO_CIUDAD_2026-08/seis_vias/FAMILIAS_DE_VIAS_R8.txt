@@ -118,7 +118,7 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
 
    ✗ PGF2_FLORES    Flores                       859.4 ha  SIN RESOLVER [abarca el barrio entero]  Z24: 3.6 % del fragmento, a 0 m · Z39b: 2.3 % del fragmento, a 0 m
    → PGR_P107       P107 · Balvanera              10.8 ha  Z35    [residuo (no contención)]  Z35: 0.0 % del fragmento, a 46 m · Z47: 0.0 % del fragmento, a 316 m
-   ✗ PGR_P014       P014 · Flores                 45.6 ha  SIN RESOLVER [abarca el barrio entero]  Z39b: 0.0 % del fragmento, a 225 m · Z24: 0.0 % del fragmento, a 1,747 m
+   → PGR_P014       P014 · Flores                 45.6 ha  Z23    [residuo (no contención)]  Z39b: 0.0 % del fragmento, a 225 m · Z24: 0.0 % del fragmento, a 1,747 m
    → PGR_P061       P061 · Flores                  6.9 ha  Z23    [residuo (no contención)]  Z24: 0.0 % del fragmento, a 399 m · Z39b: 0.0 % del fragmento, a 1,199 m
    → PGR_P085       P085 · Balvanera               8.8 ha  Z35    [residuo (no contención)]  Z35: 0.0 % del fragmento, a 526 m · Z47: 0.0 % del fragmento, a 665 m
    → PGR_P059       P059 · Flores                  6.1 ha  Z23    [residuo (no contención)]  Z24: 0.0 % del fragmento, a 30 m · Z39b: 0.0 % del fragmento, a 1,459 m
@@ -127,7 +127,7 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
    → PGR_P036       P036 · Flores                  9.9 ha  Z23    [residuo (no contención)]  Z24: 0.0 % del fragmento, a 239 m · Z39b: 0.0 % del fragmento, a 2,402 m
    → PGR_P055       P055 · Balvanera               8.5 ha  Z35    [residuo (no contención)]  Z35: 0.0 % del fragmento, a 405 m · Z47: 0.0 % del fragmento, a 1,459 m
 
-  8 de 10 resueltas.
+  9 de 10 resueltas.
 
   UN HALLAZGO QUE APARECIÓ AL INTENTAR CONSTRUIR EL PERÍMETRO DE Z23
 
@@ -147,7 +147,6 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   LAS QUE QUEDAN SIN RESOLVER, Y POR QUÉ ES CORRECTO QUE QUEDEN
 
    PGF2_FLORES · 859.45 ha · abarca el barrio entero
-   PGR_P014 · 45.63 ha · abarca el barrio entero
 
    Un soporte que cubre la mitad del barrio no pertenece a una de sus zonas: las
    abarca. Forzarle una sola sería inventar una pertenencia, y encima la más cara de
@@ -156,9 +155,9 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
 ----------------------------------------------------------------------------------------------------
   EL MODO DE CADA FILA · propia, heredada o requiere_cruce
 
-      heredada          71 filas
+      heredada          72 filas
       propia            18 filas
-      requiere_cruce     5 filas
+      requiere_cruce     4 filas
 
   `propia` es la fila cuyo soporte cubre ≥ 95 % de la zona: no hereda nada, ES la zona.
   `heredada` es un fragmento. LA HERENCIA NO VALE HACIA ARRIBA: que Almagro tenga cinco
@@ -183,11 +182,10 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   El cambio de escala se mide contra el 51, que es el número de esta capa. Comparar el 33
   de la vía B por zona contra el 7 de la ronda 4 sería mezclar dos capas de hitos.
 
-      la zona SÍ tiene, el fragmento no       27 filas
+      la zona SÍ tiene, el fragmento no       28 filas
       la zona TAMPOCO tiene hitos             23 filas
-      la fila no tiene zona resuelta           1 filas
 
-  27 de las 51 pertenecen a una zona que SÍ tiene hitos.
+  28 de las 51 pertenecen a una zona que SÍ tiene hitos.
   Hasta ayer esas filas y las que están en una zona vacía se contaban igual, y son dos
   cosas completamente distintas: una es «acá no hay trayectoria» y la otra es «el
   clustering no acertó a caer encima de un bar».
@@ -208,8 +206,8 @@ RONDA 7 · LAS VÍAS DOCUMENTALES PASAN A MEDIRSE POR ZONA
   LA VÍA B, ANTES Y DESPUÉS DEL CAMBIO DE ESCALA
 
                   ronda 4 (capa r3)   por contención (capa r8)   por zona (capa r8)
-   si                             7                         19                   39
-   pendiente                     37                         24                   31
+   si                             7                         19                   40
+   pendiente                     37                         24                   30
    no                            48                         51                   24
 
   Las dos columnas de la derecha se miden con LA MISMA capa de hitos y sobre LAS MISMAS

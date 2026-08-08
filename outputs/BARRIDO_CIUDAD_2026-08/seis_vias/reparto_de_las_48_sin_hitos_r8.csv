@@ -56,7 +56,7 @@ PGR_P088,P088 · Palermo,7.79,R01,heredada,sin_verificar,pendiente,1,sin_verific
 PGR_P002,P002 · Villa Soldati,63.36,Z49,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
 PGR_P026,P026 · Parque Patricios,27.04,Z40,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
 PGR_P066,P066 · Barracas,18.02,S_BARRACAS,heredada,probable,pendiente,1,activo,6,el fragmento tiene hitos
-PGR_P014,P014 · Flores,45.63,,requiere_cruce,sin_hitos,no,0,,0,la fila no tiene zona resuelta
+PGR_P014,P014 · Flores,45.63,Z23,heredada,sin_hitos,no,0,activo,1,"la zona SÍ tiene, el fragmento no"
 PGR_P044,P044 · San Cristobal,17.01,Z48,heredada,sin_verificar,pendiente,1,activo,5,el fragmento tiene hitos
 PGR_P042,P042 · Velez Sarsfield,11.15,Z26,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos
 PGR_P041,P041 · Floresta,12.73,Z25,heredada,sin_hitos,no,0,sin_hitos,0,la zona TAMPOCO tiene hitos

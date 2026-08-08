@@ -703,14 +703,21 @@ def main() -> int:  # noqa: C901
         detalle = " · ".join(f"{z}: {pct:.1f} % del fragmento, a {d:,.0f} m"
                              for z, pct, d in medidas)
         residuo = RESIDUO_POR_BARRIO.get(barrio_fila, "")
-        # una fila que abarca casi todo el barrio no es de ninguna de las tres zonas: las abarca
-        abarca_el_barrio = (soporte.area /
-                            zonas[candidatas[0]]["geom_zona"].area) > 0.5
-        if abarca_el_barrio:
+        # Una fila que abarca casi todo el barrio no es de ninguna de sus zonas: las abarca.
+        #
+        # EL DENOMINADOR ES EL BARRIO, y hay que decirlo porque la primera versión usaba el de la
+        # primera zona candidata. Eso funcionaba mientras todas las zonas se medían sobre el
+        # barrio; dejó de funcionar cuando Z24 y Z39b pasaron a medirse sobre su perímetro —39,5
+        # y 34,9 ha contra las 859 del barrio— y la prueba pasó a preguntar «¿es más grande que
+        # media Z24?». Con ese denominador, PGR_P014 (45,6 ha, el 5 % de Flores) daba «abarca el
+        # barrio entero» y quedaba sin zona.
+        area_barrio = marco_de(capa_barrios, [barrio_fila]).area
+        cobertura_barrio = soporte.area / area_barrio
+        if cobertura_barrio > 0.5:
             asignacion[polo_id] = {
                 "zona": "", "modo": "requiere_cruce",
-                "como": f"el soporte cubre el {soporte.area / zonas[candidatas[0]]['geom_zona'].area * 100:.0f} % "
-                        f"del barrio: abarca las zonas en vez de pertenecer a una"}
+                "como": f"el soporte cubre el {cobertura_barrio * 100:.0f} % del barrio de "
+                        f"{barrio_fila}: abarca las zonas en vez de pertenecer a una"}
             resuelta, zona_final, como = False, "", "abarca el barrio entero"
         elif mejor and mejor[1] > 0:
             asignacion[polo_id] = {"zona": mejor[0], "modo": "heredada",

@@ -1,0 +1,30 @@
+REGISTRO DE LA FASE DOCUMENTAL EN material_metodo
+====================================================================================================
+
+  INDICE.csv tenía 47 entradas.
+   ✓ LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md        [AGREGADO]
+   ✓ EDICION_TECNICA_FASE_DOCUMENTAL.md           [AGREGADO]
+   ✓ ATLAS_V3_SECCIONES_II_V_VI_IX.md             [AGREGADO]
+  INDICE.csv queda en 50 entradas.
+
+----------------------------------------------------------------------------------------------------
+  ANEXO B · TABLA DE CORRESPONDENCIA tema → archivo, VERIFICADA CONTRA DISCO
+
+  el Anexo B nombra 42 archivos en 21 temas.
+  están en disco: 39 · NO están: 3
+
+  LOS QUE NO ESTÁN. No se borran de la tabla: se marcan. Una correspondencia que
+  nombra archivos ausentes promete una trazabilidad que no tiene, y esconderlos es
+  peor que listarlos.
+
+      _ronda_2.csv                                   (vigencia · rondas y tandas)
+      _FD08_FD12.csv                                 (fuentes con defecto FD-01 a FD-15)
+      _FD13_FD15.csv                                 (fuentes con defecto FD-01 a FD-15)
+
+  Los que tienen forma de sufijo —`_ronda_2.csv`— son abreviaturas de la entrada
+  anterior en la tabla original, no archivos: se dejan marcados igual, porque una
+  abreviatura en una tabla de trazabilidad tampoco resuelve.
+
+----------------------------------------------------------------------------------------------------
+  INDICE.csv · 50 entradas
+  correspondencia_fase_documental.csv · 42 filas, con la columna `existe`

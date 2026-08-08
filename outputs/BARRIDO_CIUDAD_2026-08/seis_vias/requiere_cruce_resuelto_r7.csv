@@ -1,7 +1,7 @@
 polo_id,nombre_polo,n_locales,ha_del_fragmento,candidatas,detalle,resuelta,zona_asignada,como_se_resolvio
 PGF2_FLORES,Flores,773.0,859.45,Z24; Z39b,"Z24: 3.6 % del fragmento, a 0 m · Z39b: 2.3 % del fragmento, a 0 m",False,,abarca el barrio entero
 PGR_P107,P107 · Balvanera,84.0,10.79,Z47; Z35,"Z35: 0.0 % del fragmento, a 46 m · Z47: 0.0 % del fragmento, a 316 m",True,Z35,residuo (no contención)
-PGR_P014,P014 · Flores,61.0,45.63,Z24; Z39b,"Z39b: 0.0 % del fragmento, a 225 m · Z24: 0.0 % del fragmento, a 1,747 m",False,,abarca el barrio entero
+PGR_P014,P014 · Flores,61.0,45.63,Z24; Z39b,"Z39b: 0.0 % del fragmento, a 225 m · Z24: 0.0 % del fragmento, a 1,747 m",True,Z23,residuo (no contención)
 PGR_P061,P061 · Flores,44.0,6.93,Z24; Z39b,"Z24: 0.0 % del fragmento, a 399 m · Z39b: 0.0 % del fragmento, a 1,199 m",True,Z23,residuo (no contención)
 PGR_P085,P085 · Balvanera,48.0,8.77,Z47; Z35,"Z35: 0.0 % del fragmento, a 526 m · Z47: 0.0 % del fragmento, a 665 m",True,Z35,residuo (no contención)
 PGR_P059,P059 · Flores,43.0,6.08,Z24; Z39b,"Z24: 0.0 % del fragmento, a 30 m · Z39b: 0.0 % del fragmento, a 1,459 m",True,Z23,residuo (no contención)
