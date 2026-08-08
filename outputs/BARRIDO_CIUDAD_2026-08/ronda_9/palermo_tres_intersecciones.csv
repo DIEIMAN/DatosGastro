@@ -1,0 +1,9 @@
+interseccion,ha,locales,pct_ha_de_R01,pct_locales_de_R01,prediccion
+R01 ∩ (Soho ∪ Hollywood),119.14,960,43.9,70.7,cubre casi todo R01
+R01 ∩ Las Cañitas,43.65,210,16.1,15.5,≈ 0
+R01 − (Soho ∪ Hollywood),152.15,398,56.1,29.3,9 locales sobre un solo borde
+contención de R01 en el padre,0.0,,,,"0,0 m² perdidos"
+contención de Soho en el padre,0.0,,,,"0,0 m² perdidos"
+contención de Hollywood en el padre,0.0,,,,"0,0 m² perdidos"
+contención de Las Cañitas en el padre,0.0,,,,"0,0 m² perdidos"
+padre propuesto (R01 ∪ las tres),385.51,1916,,,

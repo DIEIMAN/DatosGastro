@@ -1,0 +1,311 @@
+====================================================================================================
+  RONDA 9 · la corrección del New Brighton, los dos nudos y las tres devoluciones
+  2026-08-08 · Google Places: 0 requests
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · H084 THE NEW BRIGHTON — de `no` a `en_riesgo`
+
+      vigencia_verificada: «no» → «en_riesgo»
+      alerta_juridica    : quiebra decretada · 18/03/2026 · Juzgado Nac. 1ª Inst. Comercial N° 3
+      el campo nuevo NO toca el veredicto de vigencia: son dos hechos distintos y ahora tienen dos columnas distintas.
+
+      lo que esto le hace al catálogo de auditoría de cierres:
+
+        Plaza Bar        · cerrado 29/04/2017 · reapertura anunciada 2028   SIGUE cerrado
+        La Buena Medida  · cerrada 10/2025, cierre definitivo               SIGUE cerrado
+        The New Brighton · quiebra 18/03/2026, atendiendo                   PASA a en_riesgo
+
+      de TRES cerrados a DOS. Y el catálogo de en_riesgo pasa de uno a dos: H057 y H084.
+
+      la capa entera, después de la corrección:
+        sin_verificar                       176
+        si                                   31
+        dudosa                                8
+        probablemente_abierto                 5
+        en_riesgo                             2
+        no                                    1
+        senalado_no_cerrado                   1
+        cerrado_con_reapertura_anunciada      1
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · LA CAPA DE FUENTES CON DEFECTO, AUDITADA — R9 sobre el propio catálogo
+
+      cargados en `fuentes_defectos_conocidos.csv`: 9
+        FD-01, FD-02, FD-03, FD-04, FD-12, FD-16, FD-17, FD-18, FD-19
+
+      documentados por Diego (FD-01..FD-15) + los cuatro de la ronda 8 = 19
+      FALTAN 10, no seis:
+        FD-05, FD-06, FD-07, FD-08, FD-09, FD-10, FD-11, FD-13, FD-14, FD-15
+
+      de dónde salía el «seis»: el salto 5 → 9 de la ronda 8 no fue FD-05..FD-08. Los
+      cinco que había eran FD-01, FD-02, FD-03, FD-04 y **FD-12**, y los cuatro nuevos
+      fueron FD-16..FD-19. El rango FD-05..FD-11 y FD-13..FD-15 nunca se cargó: son diez.
+
+      cargados ahora desde disco: 10 (FD-05, FD-06, FD-07, FD-08, FD-09, FD-10, FD-11, FD-13, FD-14, FD-15)
+
+      FD-20 cargado con la evidencia que produjo la ronda 8 acá adentro.
+
+      FD-21 y FD-22 NO SE CARGAN. Su texto vive en `fuentes_con_defecto_FD20_FD22.csv`,
+      que no está en el repositorio. Escribirlos de memoria sería fabricar el contenido
+      de una fuente — el defecto que esta capa existe para registrar.
+
+      la capa FD pasa de 9 a 20. Siguen faltando: FD-21, FD-22.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · EL VOLCADO DE LA CAPA DE HITOS
+
+      225 hitos · 21 columnas → capa_de_hitos_volcado.csv
+
+      por tipo:
+        Bar Notable                                    91
+        MICHELIN                                       58
+        Pizzería emblemática                           20
+        Restaurante Icónico                            16
+        Ranking internacional                          16
+        Mercado/patio                                  11
+        Heladería histórica                             5
+        Patrimonio normativo                            3
+        Casa regional con comedor                       3
+        Restaurante/bodegón                             1
+        Café histórico sin registro oficial             1
+
+      por registro_oficial:
+        nan                                            94
+        bar_notable                                    89
+        pizzeria_emblematica                           20
+        restaurante_iconico                            15
+        bar_notable; restaurante_iconico                2
+        sitio_interes_cultural                          2
+        ley_especifica                                  1
+        bar_notable; sitio_interes_cultural             1
+        APH                                             1
+
+      los tres casos que motivaron el pedido, resueltos contra el volcado:
+        Notables en Monserrat      2 en la capa: H015 BAR SEDDON, H094 Bar Iberia
+        El Puentecito              1 en la capa: ICO-004 El Puentecito
+        Los Campeones              1 en la capa: DIR-014 Los Campeones
+
+----------------------------------------------------------------------------------------------------
+  TAREA 4 · LAS CALLES DE LA COLA DE R20
+
+  ANTES DE LAS CALLES, LO QUE APARECIÓ AL IR A BUSCARLAS
+
+      el callejero oficial guarda el corredor bajo DOS nombres distintos:
+        «GARCIA DEL RIO»         1,631 m — cruza Av. Balbín, NO cruza Av. Cabildo (queda a 761 m)
+        «GARCIA DEL RIO AV.»     1,617 m — cruza Av. Cabildo, NO cruza Av. Balbín
+        el corredor entero        3,247 m — se empalman en Pinto
+
+      LA RONDA 8 BUSCÓ SÓLO EL PRIMERO. Le pidió el cruce con Av. Cabildo, que está en la
+      otra mitad, y `tramo_entre` cayó en `nearest_points`: ancló el extremo oeste en un
+      punto que no es una esquina y devolvió 974 m SIN AVISAR. Ese tramo no es
+      «Cabildo–Balbín»: es **Pinto–Balbín**, y le falta el corredor entero al oeste.
+
+      Es la familia de R12 —la delimitación que falla sin tirar error— y es la inversa
+      exacta del caso que le dio origen: allá dos nombres eran una sola avenida (Boyacá y
+      Carabobo); acá una sola avenida lleva dos nombres.
+
+      el tramo Av. Cabildo–Av. Balbín, medido sobre el corredor completo:
+        corte a: «CABILDO AV.» cruza a los 2,456 m del eje
+        corte b: «BALBIN, RICARDO, DR. AV.» cruza a los 974 m del eje
+        largo verificado: 1,483 m ≈ 15 cuadras
+
+      R20 publicada                                 61.0 ha ·  102 locales
+      cola declarada por la ronda 8                24.75 ha ·   54 locales  (41 % / 53 %)
+      cola con el tramo Cabildo–Balbín verificado  28.63 ha ·   31 locales  (47 % / 30 %)
+
+      LA CIFRA QUE DIEGO CITÓ —41 % de la superficie y 53 % de los locales— SALE DEL
+      ANCLAJE MAL PUESTO. Con el corredor completo la cola es otra, y hay que decir cuál.
+
+      22 ejes con 40 m o más adentro de la cola. El reparto de los 31 locales
+      se hace por EJE MÁS CERCANO a menos de 120 m, no por el texto de la dirección: el
+      46,6 % del universo núcleo no tiene `direccion_norm` y agrupar por texto perdía
+      cuatro de cada cinco puntos.
+
+        calle                                     m de eje  locales
+        MANZANARES                                     818        2
+        GARCIA DEL RIO                                 750        4
+        PAROISSIEN                                     629        6
+        MELIAN AV.                                     355        1
+        BALBIN, RICARDO, DR. AV.                       348        4
+        JARAMILLO                                      314        1
+        ESTOMBA                                        300        3
+        NAON, ROMULO                                   300        0
+        WASHINGTON                                     300        1
+        PEREZ, ROQUE                                   290        1
+        SUPERI                                         157        0
+        CONDE                                          150        0
+        TRONADOR                                       126        1
+        FREIRE, RAMON, CAP. GRAL.                       96        2
+        LARRALDE, CRISOLOGO AV.                         85        0
+        MOLDES                                          60        2
+        VIDAL                                           60        2
+        CRAMER                                          60        0
+        AMENABAR                                        59        0
+        CONESA                                          58        0
+        CIUDAD DE LA PAZ                                54        1
+        ZAPIOLA                                         51        0
+
+      asignados: 31 de 31 · sin eje a menos de 120 m: 0
+
+----------------------------------------------------------------------------------------------------
+  TAREA 5 · COLEGIALES · las tres verificaciones, ANTES de trazar
+
+  (a) R13 · ¿las cuatro calles caen en Colegiales y no en Belgrano?
+
+      calle                       m totales  Colegiales  Belgrano  Palermo  Chacarita
+      ZABALA                          2,943       1,288       918        0        737
+      DELGADO                         1,555       1,555         0        0          0
+      AVILES, VIRREY                  1,462       1,118         0        0          0
+      CONDE                           5,349       1,906     1,165        0          0
+
+  (b) R12 · ¿el eje entre Av. Álvarez Thomas y Av. Forest tiene longitud real?
+
+      con el cortador ESTRICTO: si un corte no cruza el eje, no hay tramo y se dice cuál.
+
+      ZABALA             × FOREST AV.   254 m ≈ 3 cuadras  [cruza a los 2,203 m del eje / cruza a los 2,457 m del eje]
+      ZABALA             × ELCANO AV.   SIN TRAMO — «ELCANO AV.» NO llega al eje — queda a 122 m, más que la tolerancia de 40 m
+      DELGADO            × FOREST AV.   SIN TRAMO — «ALVAREZ THOMAS AV.» NO llega al eje — queda a 55 m, más que la tolerancia de 40 m
+      DELGADO            × ELCANO AV.   SIN TRAMO — «ALVAREZ THOMAS AV.» NO llega al eje — queda a 55 m, más que la tolerancia de 40 m
+      AVILES, VIRREY     × FOREST AV.   344 m ≈ 3 cuadras  [empalma en T a los 1,462 m del eje (a 16 m, dentro de tolerancia) / cruza a los 1,118 m del eje]
+      AVILES, VIRREY     × ELCANO AV.   608 m ≈ 6 cuadras  [empalma en T a los 1,462 m del eje (a 16 m, dentro de tolerancia) / cruza a los 854 m del eje]
+      CONDE              × FOREST AV.   SIN TRAMO — «ALVAREZ THOMAS AV.» NO llega al eje — queda a 178 m, más que la tolerancia de 40 m
+      CONDE              × ELCANO AV.   SIN TRAMO — «ALVAREZ THOMAS AV.» NO llega al eje — queda a 178 m, más que la tolerancia de 40 m
+
+      por qué se prueban los dos cortes: la fuente nombra «Av. Forest / Av. Elcano» como
+      un solo borde, y son dos avenidas distintas. R12 obliga a medir cuál cierra el eje.
+
+      Y por qué el cortador viejo no servía acá: `tramo_entre` devolvía «1.555 m ≈ 16
+      cuadras» para Delgado × Forest cuando Delgado NO CRUZA Av. Álvarez Thomas. Lo que
+      devolvía era la calle entera dentro del barrio, no un tramo. El mismo mecanismo que
+      produjo el falso «Cabildo–Balbín» de la tarea 4.
+
+      A CUÁNTO QUEDA CADA CALLE DE CADA AVENIDA — el dato crudo, sin tolerancia:
+
+        calle                a Álvarez Thomas   a Forest   a Elcano
+        ZABALA                          cruza      cruza      122 m
+        DELGADO                          55 m      cruza      cruza
+        AVILES, VIRREY                   16 m      cruza      cruza
+        CONDE                           178 m      348 m      cruza
+
+      EL ANCHO DE LA FRANJA, que es lo que decide si el trazado es posible:
+        Av. Álvarez Thomas y Av. Forest SE ENCUENTRAN: distancia 0 m.
+        No son dos avenidas paralelas con una banda entre medio — confluyen, y la franja
+        que encierran es una CUÑA que se cierra en ese encuentro.
+        Medido sobre las calles que sí la cruzan: Zabala 254 m y Virrey Avilés 344 m.
+        Tres cuadras, no las diez que sugiere leer la lista de calles de corrido.
+
+  (c) ¿Concepción Arenal entre Zapiola y Conesa cae dentro de R01 Palermo?
+
+      nota de lectura: el callejero la escribe «ARENAL, CONCEPCION», con el apellido
+      primero. Buscarla como «CONCEPCION ARENAL» devuelve vacío sin tirar error — es el
+      mismo bicho del orden de los tokens que ya está registrado como R8.
+      el tramo mide 143 m ≈ 1 cuadras
+      su área a 150 m: 11.4 ha
+      dentro de R01 Palermo: 5.3 ha = 47.0 %
+        del eje, 143 m (100 %) caen en Colegiales
+        del eje, 0 m (0 %) caen en Palermo
+        del eje, 0 m (0 %) caen en Chacarita
+      → cae parcialmente en R01 (47 %)
+
+  el control gratis · Fraga entre Dorrego y Lacroze
+      Fraga mide 2,320 m en toda la Ciudad; 1,492 m dentro de Colegiales ∪ Chacarita ≈ 15 cuadras
+      Forbes 20/10/2024 la documenta del 93 al 550 con «casi una docena de propuestas»: las ~diez cuadras coinciden con lo medido.
+      la base tiene 16 locales con la puerta sobre Fraga.
+
+      MIENTRAS TANTO la ficha NO publica 495,8 ha ni 891 locales como cifra del polo:
+      esa medición usa Colegiales A ESCALA DE BARRIO, que es un techo declarado, no la
+      franja de la fuente. Queda como está hasta que las tres verificaciones habiliten
+      el trazado.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 6 · PALERMO · las tres intersecciones que deciden
+
+  la hipótesis, escrita antes de medir (R1): R01 Palermo YA ES Soho ∪ Hollywood, y Las
+  Cañitas nunca estuvo adentro. Predicciones: (a) la unión cubre casi todo R01; (b) la
+  intersección con Cañitas ≈ 0 — si da distinto de cero, la hipótesis SE CAE; (c) los 9
+  locales de residuo caen sobre un solo borde.
+
+      R01 publicado: 271.29 ha · 1358 locales
+
+      Soho          (P091):    92.36 ha ·   772 locales
+      Hollywood     (P078):   102.61 ha ·   595 locales
+      Las Cañitas   (P065):    82.04 ha ·   361 locales
+
+      Soho ∪ Hollywood: 194.97 ha · 1367 locales
+
+  (a) R01 ∩ (Soho ∪ Hollywood)
+      119.14 ha = 43.9 % de R01 · 960 locales = 70.7 % de R01
+
+  (b) R01 ∩ Las Cañitas  ← la que puede tirar la hipótesis
+      43.65 ha = 16.1 % de R01 · 210 locales
+
+  (c) el residuo · R01 menos (Soho ∪ Hollywood)
+      152.15 ha · 398 locales
+      el residuo son 7 piezas de más de 0,1 ha — no un borde.
+
+  LAS TRES PREDICCIONES FALLAN. La hipótesis se cae por su propio criterio:
+      (a) predecía «casi toda» y da 43,9 % de la superficie
+      (b) predecía ≈ 0 y da 43.65 ha con 210 locales — Diego escribió que si daba
+          distinto de cero la hipótesis se caía. Da distinto de cero.
+      (c) predecía 9 locales sobre un borde y da 398 en 7 piezas
+
+  DE DÓNDE SALÍA EL DELTA 9, que es lo que hay que entender para no repetirlo:
+      locales de Soho ∪ Hollywood que caen FUERA de R01:    407
+      locales de R01 que NO están en Soho ∪ Hollywood:      398
+      diferencia:                                             9
+
+      El «delta 9» no era un residuo de nueve locales sobre un borde: es la resta de dos
+      flujos de ~400 locales cada uno que casi se cancelan. 407 salen y 398 entran.
+      La igualdad de los totales no es evidencia de identidad espacial — dos conjuntos
+      pueden sumar el tamaño de un tercero sin partirlo.
+
+      ES LA PREGUNTA CERO, y no es casual que aparezca acá: el delta 9 era una propiedad
+      de la aritmética del conteo, no del territorio. La única forma de distinguirlas era
+      intersecar los polígonos, que es lo que se hizo.
+
+  R12 · la contención se verifica por SUPERFICIE PERDIDA, no por predicado:
+      R01           perdería 0.0000 m² dentro del polo padre propuesto
+      Soho          perdería 0.0000 m² dentro del polo padre propuesto
+      Hollywood     perdería 0.0000 m² dentro del polo padre propuesto
+      Las Cañitas   perdería 0.0000 m² dentro del polo padre propuesto
+      el padre R01 ∪ Soho ∪ Hollywood ∪ Cañitas: 385.51 ha · 1916 locales
+
+----------------------------------------------------------------------------------------------------
+  TAREA 7 · QUÉ SON R08 Y R21, Y DÓNDE QUEDÓ PGR_P004
+
+      R08 · Villa Crespo — Polo · 335.46 ha · 823 locales
+      R21 · La Paternal — Referencia dispersa · 385.34 ha · 307 locales
+
+      NINGUNA de las dos es del entorno de Palermo: Villa Crespo y La Paternal son
+      contiguas entre sí y el solape de 49,7 ha está sobre ese contacto, no sobre R01.
+      medido: R08 Villa Crespo está a 6 m de R01 Palermo (no se tocan).
+      El nudo de Palermo y el solape R08∩R21 son dos problemas separados.
+
+      PGR_P004 · Villa Lugano, después de perder la vía C:
+        vía A · densidad y continuidad  ABIERTA — 132 locales en 144,0 ha; el polo entra
+                                        en los cortes de pertenencia 25 %, 50 % y 75 %
+        vía C · mercados y centralidades  CERRADA — era Yiyo el Zeneize, retipado
+        vía F · corredor                  cerrada — núcleo compacto, elongación 1,26
+        vías B, D, E                      cerradas en S_LUGANO, la zona de la que hereda
+
+      NO ES UNA BAJA: sigue abriendo por la vía A, que es geométrica y se mide sobre el
+      propio polígono. Pero pasa de dos vías a UNA, y queda en la misma situación en la
+      que ya estaba PGR_P005 · Villa Lugano, que nunca tuvo más que la A.
+
+      PENDIENTE DE ARRASTRE: `seis_vias_94_filas_r8.csv` todavía trae
+      via_C_abierta = «si» para PGR_P004. El cambio quedó registrado en
+      `via_C_movida_r8.csv` pero no se propagó a la matriz. Hay que recorrer la r8 con
+      el retipado aplicado antes de que esa tabla se use para nada.
+
+====================================================================================================
+  SALIDAS
+====================================================================================================
+    outputs\BARRIDO_CIUDAD_2026-08\hitos\hitos_capa_2026_r9.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\capa_de_hitos_volcado.csv
+    outputs\BARRIDO_CIUDAD_2026-08\fuentes\fuentes_defectos_conocidos_r9.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\auditoria_capa_FD.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\cola_de_R20_calles.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\colegiales_verificaciones.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\palermo_tres_intersecciones.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_9\RONDA_9.txt

@@ -1,0 +1,23 @@
+defecto_id,estaba_cargado_antes_de_la_r9,cargado_en_la_r9,sigue_faltando,donde_vive_el_texto
+FD-01,True,False,False,capa cargada
+FD-02,True,False,False,capa cargada
+FD-03,True,False,False,capa cargada
+FD-04,True,False,False,capa cargada
+FD-05,False,True,False,fuentes_con_defecto_FD05_FD07.csv
+FD-06,False,True,False,fuentes_con_defecto_FD05_FD07.csv
+FD-07,False,True,False,fuentes_con_defecto_FD05_FD07.csv
+FD-08,False,True,False,fuentes_con_defecto_FD08_FD12.csv
+FD-09,False,True,False,fuentes_con_defecto_FD08_FD12.csv
+FD-10,False,True,False,fuentes_con_defecto_FD08_FD12.csv
+FD-11,False,True,False,fuentes_con_defecto_FD08_FD12.csv
+FD-12,True,False,False,capa cargada
+FD-13,False,True,False,fuentes_con_defecto_FD13_FD15.csv
+FD-14,False,True,False,fuentes_con_defecto_FD13_FD15.csv
+FD-15,False,True,False,fuentes_con_defecto_FD13_FD15.csv
+FD-16,True,False,False,capa cargada
+FD-17,True,False,False,capa cargada
+FD-18,True,False,False,capa cargada
+FD-19,True,False,False,capa cargada
+FD-20,False,True,False,fuentes_con_defecto_FD20_FD22.csv · AUSENTE
+FD-21,False,False,True,fuentes_con_defecto_FD20_FD22.csv · AUSENTE
+FD-22,False,False,True,fuentes_con_defecto_FD20_FD22.csv · AUSENTE

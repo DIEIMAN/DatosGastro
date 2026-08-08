@@ -1,0 +1,113 @@
+RONDA 9 · LA ESCALERA DE CALIBRACIÓN DE PLACES
+====================================================================================================
+
+  LA HIPÓTESIS, ESCRITA ANTES DE CORRER (R1): Places sigue el LUGAR, no el negocio.
+
+      La Perla del Once cerró hace 3.493 días —más que el Plaza Bar, 3.285— y en su local
+      funciona hoy la pizzería La Americana.
+
+      CLOSED_PERMANENTLY  → Places sigue al negocio. v2b se sostiene como está.
+      OPERATIONAL         → Places sigue al lugar. CLOSED_PERMANENTLY deja de acreditar
+                            cierre del ESTABLECIMIENTO y hay que reescribir v2b.
+
+  Los dos desenlaces están escritos antes de preguntar, y los dos tienen consecuencia.
+
+----------------------------------------------------------------------------------------------------
+  LA ESCALERA, con lo que ya sabemos de cada peldaño
+
+      establecimiento                    días  situación del local                   
+      El Palacio de la Papa Frita         159  local a la calle, vacío               
+      Mercado de los Carruajes            480  edificio cerrado                      
+      Confitería del Hotel Castelar      2290  dentro de un hotel cerrado            
+      La Perla del Once                  3493  LOCAL OCUPADO POR OTRO NEGOCIO ← el test decisivo
+
+      con los tres de la ronda 8, la escala queda:
+        143 d  The New Brighton   OPERATIONAL   (quiebra, atendiendo)
+        159 d  Papa Frita         ?
+        280 d  La Buena Medida    OPERATIONAL   ← falla conocida
+        480 d  Carruajes          ?
+      2.290 d  Castelar           ?
+      3.285 d  Plaza Bar          CLOSED_PERM.  ← acierto conocido
+      3.493 d  La Perla del Once  ?             ← decide la hipótesis
+
+      El corte de detección está entre 280 y 3.285 días. Estos cuatro lo acotan, y el
+      último además pregunta OTRA cosa: qué objeto es el que Places está siguiendo.
+
+  CUIDADO YA APLICADO · hay cuatro «Perla» en el Atlas. La ronda 8 consultó «La Perla (de
+  Caminito), Av. Don Pedro de Mendoza 1899», que está abierta. Esta corrida pregunta por
+  DIRECCIÓN, no por nombre.
+
+----------------------------------------------------------------------------------------------------
+  EL COSTO, ANTES DEL PRIMER REQUEST
+
+      Text Search Enterprise · 1.000 gratis por mes · USD 35,00 por 1.000 después.
+      máscara: places.businessStatus, places.formattedAddress, places.regularOpeningHours, places.displayName
+      `regularOpeningHours` es el campo que sube a Enterprise. Lo fijó la decisión 4.
+      tope duro de esta corrida: 4 requests
+      costo máximo si el cupo Enterprise ya estuviera agotado: USD 0.14
+      la ronda 8 gastó 71 de los 1,000 de este mes. Con éstas, 75.
+
+      la caché trae 79 consultas ya pagadas. Las que estén acá no se repiten.
+
+----------------------------------------------------------------------------------------------------
+  LA CORRIDA
+
+      El Palacio de la Papa Frita      OPERATIONAL          devolvió: «El Palacio de la Papa Frita» · identidad: exacta
+      Mercado de los Carruajes         CLOSED_PERMANENTLY   devolvió: «Mercado de los Carruajes» · identidad: OTRA CALLE · consultada «Av. Ramos Mejía 1300, Retiro» · devuelta «Av. Leandro N. Alem 852, C1001AAQ, C1001 Cdad. Autónoma de Buenos Aires»
+      Confitería del Hotel Castelar    OPERATIONAL          devolvió: «EX Hotel Castelar.» · identidad: misma cuadra · 1152 contra 1150 (2 de diferencia)
+      La Perla del Once                OPERATIONAL          devolvió: «La Americana, La Reina de las Empanadas» · identidad: exacta
+
+----------------------------------------------------------------------------------------------------
+  LECTURA
+
+      requests gastados: 0 de 4
+      costo máximo si el cupo estaba agotado: USD 0.00
+
+      EL CONTROL QUE DECIDE NO ES EL ESTADO: ES EL NOMBRE DEVUELTO.
+
+      consultado                      devolvió                                estado              
+      El Palacio de la Papa Frita     El Palacio de la Papa Frita             OPERATIONAL         
+      Mercado de los Carruajes        Mercado de los Carruajes                CLOSED_PERMANENTLY  
+      Confitería del Hotel Castelar   EX Hotel Castelar.                      OPERATIONAL         
+      La Perla del Once               La Americana, La Reina de las Empanadas OPERATIONAL         
+
+      EL TEST DECISIVO · se preguntó por «La Perla del Once» en Av. Rivadavia 2800
+      y Places devolvió «La Americana, La Reina de las Empanadas» con estado OPERATIONAL.
+
+      LA HIPÓTESIS ERA CASI CORRECTA Y EL MECANISMO ES OTRO, PEOR.
+
+      Places no le puso OPERATIONAL a La Perla del Once. Le puso OPERATIONAL a
+      OTRO ESTABLECIMIENTO —el que ocupa hoy el local— y nosotros lo íbamos a
+      leer como si hablara del que preguntamos. El defecto no está en la
+      semántica de businessStatus: está en la ATRIBUCIÓN.
+
+      Text Search resuelve la consulta al lugar que mejor matchea el texto, y
+      la dirección le gana al nombre. Sin `displayName` en la máscara no hay
+      forma de saber de qué establecimiento habla la respuesta.
+
+      CONSECUENCIA SOBRE LA RONDA 8: sus 71 requests salieron SIN displayName.
+      Los 70 OPERATIONAL no sólo no acreditan apertura —eso ya estaba escrito—:
+      además no se sabe a qué establecimiento se refieren. Es R13 sobre la
+      corrida entera, y no se arregla leyendo la tabla: hay que volver a
+      preguntar con el nombre en la máscara.
+
+      LO QUE SÍ SE SOSTIENE: el Mercado de los Carruajes volvió con SU PROPIO
+      nombre y CLOSED_PERMANENTLY. Cuando Places devuelve el establecimiento
+      que se preguntó y lo marca cerrado, eso sigue acreditando.
+
+      Y EL CASO QUE NO ESTABA EN EL DISEÑO · Confitería del Hotel Castelar:
+      Places devolvió «EX Hotel Castelar.» —el nombre declara que es el ex— con
+      estado OPERATIONAL, 2.290 días después del cierre. El estado y el nombre de la
+      misma respuesta se contradicen.
+
+      LA RESPUESTA NO ES ESTABLE. La misma consulta, con dos minutos de diferencia y
+      cambiando sólo la máscara, devolvió dos lugares distintos para Av. Rivadavia
+      2800: primero «Av. Jujuy 36» y después «Av. Rivadavia 2800 · La Americana».
+      Con `maxResultCount: 1` se está tomando el primero de una lista rankeada que
+      cambia entre llamadas. Para una pregunta de identidad, uno solo no alcanza.
+
+  LO QUE ESTA CORRIDA NO CAMBIA
+      Ningún `OPERATIONAL` mueve un veredicto hacia arriba. La asimetría de v2b sigue
+      valiendo mientras el test decisivo no la reescriba.
+
+  salidas: outputs\BARRIDO_CIUDAD_2026-08\ronda_9\places_escalera_de_calibracion.csv · outputs\BARRIDO_CIUDAD_2026-08\ronda_9\PLACES_ESCALERA_R9.txt

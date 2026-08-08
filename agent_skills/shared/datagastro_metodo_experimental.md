@@ -5,13 +5,31 @@ description: Reglas para producir resultados que aguanten. Se aplica cada vez qu
 
 # Método experimental · DataGastro
 
-Estas trece reglas no salieron de un manual. Salieron de errores concretos de este proyecto, y
+Estas catorce reglas no salieron de un manual. Salieron de errores concretos de este proyecto, y
 cada una tiene abajo el caso que la originó. Son duras: si una corrida no las cumple, su
 resultado no se reporta como conclusión.
 
-Las ocho primeras salieron de la fase de medición; **R9 a R13 salieron de la fase documental**, y
-tienen un aire de familia entre sí: las cinco son sobre **cómo se atribuye un dato a un objeto** —
-a una capa, a una fila, a una fecha, a una geometría, a una entidad.
+## La pregunta cero
+
+Va **antes** de las diez, no adentro.
+
+> **Esto que estoy por afirmar, ¿es una propiedad del territorio o una propiedad de mi
+> instrumento?**
+>
+> Si es del instrumento, se escribe como propiedad del instrumento. Aunque sea menos interesante.
+> **Sobre todo si es menos interesante.**
+
+## Las tres familias, y por qué el orden importa
+
+|  | preguntan | fallan produciendo |
+|---|---|---|
+| **R1–R8** | ¿el número es correcto? | un número equivocado |
+| **R9–R13** | ¿a qué objeto pertenece el dato? | un número correcto atribuido al objeto equivocado |
+| **R14 + pregunta cero** | ¿de qué estoy hablando? | una categoría que no existe fuera del instrumento |
+
+**El segundo bloque es peor que el primero**, porque sus productos resisten cualquier
+verificación aritmética: los números cierran. El tercero es peor todavía, porque no hay contra qué
+verificarlo sin salir del propio resultado.
 
 ---
 
@@ -262,6 +280,27 @@ La proximidad —de un párrafo o de un punto— es una hipótesis de atribució
 
 ---
 
+## R14 · Una clase que no estaba en el diseño es sospecha de instrumento
+
+Una clase que aparece en un resultado y **no estaba en el diseño** se trata como sospecha de
+instrumento **hasta que se la pueda producir a propósito**. Si no se puede escribir el caso que la
+genera y reproducirlo, no es una categoría del territorio: es una salida que todavía no se
+entiende.
+
+> **De dónde salió.** La tercera clase del reparto de la vía B, ronda 7 — una categoría que nadie
+> había diseñado y que apareció sola en la tabla.
+
+---
+
+## Corolario de R6 · En una tabla de trazabilidad no se abrevia
+
+Cada fila lleva el **nombre completo del archivo**, y **se verifica contra disco** — no se
+transcribe de memoria ni de otra tabla.
+
+*(No lleva número a propósito: es una consecuencia de R6, no una regla nueva.)*
+
+---
+
 ## Antes de reportar un resultado, diez preguntas
 
 1. ¿Estaba escrita la lectura antes de correr?
@@ -276,6 +315,14 @@ La proximidad —de un párrafo o de un punto— es una hipótesis de atribució
 10. ¿La relación que afirmo entre dos objetos está verificada, o inferida por proximidad?
 
 Si alguna respuesta incomoda, el resultado todavía no es una conclusión.
+
+Y antes de las diez, **la pregunta cero**: ¿esto es del territorio o de mi instrumento?
+
+> **Por qué la pregunta cero no es decorativa.** La hipótesis del nudo de Palermo se apoyaba en
+> que Soho (772) + Hollywood (595) = 1.367 contra R01 = 1.358, un delta de 9 que parecía un
+> residuo de borde. Al intersecar los polígonos, el delta 9 resultó ser la resta de **407 locales
+> que salen y 398 que entran** — dos flujos de cuatrocientos que casi se cancelan. La igualdad de
+> los totales era una propiedad de la aritmética del conteo, no del territorio.
 
 ---
 
