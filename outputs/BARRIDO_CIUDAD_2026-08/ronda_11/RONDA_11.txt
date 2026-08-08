@@ -1,0 +1,121 @@
+====================================================================================================
+  RONDA 11 · las cuatro decisiones, y el barrido de la vía C
+  2026-08-08 · Google Places: 0 requests
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+  TAREA 1 · LAS CUATRO DECISIONES, CRUZADAS CONTRA LAS 20 YA REGISTRADAS
+
+      R9 sobre el catálogo de decisiones: DOS DE LAS CUATRO YA ESTABAN TOMADAS el 07/08.
+
+      (a) YA REGISTRADA como decisión n.º 3:
+           «¿Los check-ins de Untappd cuentan como v3?»
+           → SI, con nivel propio v3b.
+
+      (b) YA REGISTRADA como decisión n.º 2:
+           «¿El reporteo 'a nivel programa' cuenta como v1?»
+           → NO. Se exige reporteo a nivel establecimiento para v1. Lo demas es v4.
+
+      (c) NUEVA — se registra
+
+      (d) NUEVA — se registra
+
+      ¿ESTÁN APLICADAS EN LA CAPA? (no alcanza con que la decisión exista)
+
+        hito                        veredicto               nivel   fuente
+        LA PERLA                    si                      v3b     Untappd, check-ins del 20/05/2026 (Patri
+        Tancat                      si                      v2      Instagram @tancattasca · verificación hu
+        El Imparcial                probablemente_abierto   v4      Info Gastronómica 07/07/2026 (reporteo s
+
+      LAS TRES YA ESTÁN APLICADAS. Y una precisión sobre (b): **Tancat no queda en
+      `probablemente_abierto`**. Bajó a v4 por el reporteo de programa, pero conserva
+      `verificado_abierto` por el v2 de Instagram que verificaste vos el 07/08 — está
+      escrito así en la consecuencia de la decisión n.º 2. El que queda en
+      `probablemente_abierto` es El Imparcial.
+
+      se registran 2 decisiones nuevas: n.º 21, 22
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · EL BARRIDO DE LA VÍA C
+
+      filas de las 94 con vía C abierta: 3 (eran 4 antes del retipado de Yiyo el Zeneize)
+      zonas de las 22 con vía C abierta: 4
+
+      LA CAPA DE HITOS NO TIENE CON QUÉ DECIDIR: `registro_oficial` está vacío en los
+      once `Mercado/patio` y no hay campo de titularidad ni de gestión. El dato existe
+      relevado en el subproyecto Mercados y se lee de ahí — R13, contra la entidad
+      nombrada y no contra mi impresión de cada nombre.
+
+      universo  quién                     abre con                  tipo                        gestión  
+      94 filas  Palermo Hollywood         Mercado Bonpland          mercado_de_productores      mixta    
+      94 filas  Caballito                 Mercado del Progreso      mercado_barrial_alimentari  privada  
+      94 filas  Costanera Norte           Patio Costanera Norte     patio_gastronomico          mixta    
+      22 zonas  Palermo                   Mercado Bonpland          mercado_de_productores      mixta    
+      22 zonas  Belgrano                  Mercado de Belgrano       mercado_historico           mixta    
+      22 zonas  Costanera Norte           Patio Costanera Norte     patio_gastronomico          mixta    
+      22 zonas  Caballito                 Mercado del Progreso      mercado_barrial_alimentari  privada  
+
+      VEREDICTOS
+        MANTIENE la vía C · no es una centralidad planificada
+            94 filas · Palermo Hollywood (Mercado Bonpland)
+            94 filas · Caballito (Mercado del Progreso)
+            22 zonas · Palermo (Mercado Bonpland)
+            22 zonas · Belgrano (Mercado de Belgrano)
+            22 zonas · Caballito (Mercado del Progreso)
+        PARA DECISIÓN DE DIEGO · planificada y de gestión MIXTA
+            94 filas · Costanera Norte (Patio Costanera Norte)
+            22 zonas · Costanera Norte (Patio Costanera Norte)
+
+      NINGUNA fila pierde la vía C automáticamente.
+
+      EL CASO QUE QUEDA ABIERTO, y por qué no lo cierro yo:
+        «Patio Costanera Norte» — patio_gastronomico de gestión mixta
+        abre la vía C en: 94 filas · Costanera Norte, 22 zonas · Costanera Norte
+
+      Tu criterio dice «privada Y planificada». Esto es planificado y NO es privado: es
+      mixto. Por la letra, mantiene la vía C. Por el espíritu —una centralidad comercial
+      construida como desarrollo— sería el caso que quisiste excluir. **Elegir una de las
+      dos lecturas es tomar tu decisión, no aplicarla**, así que queda para vos.
+
+      Y UNA NOTA SOBRE EL MERCADO DEL PROGRESO, que sorprende: el relevamiento lo tipifica
+      como `mercado_barrial_alimentario` de gestión **privada**. Es privado pero NO es
+      planificado —abrió en 1889 y funciona como abasto de barrio—, así que mantiene la
+      vía C sin ambigüedad. Es la prueba de que las dos condiciones hacen falta juntas.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 3 · R22 VILLA PUEYRREDÓN · la ficha con la debilidad declarada
+
+      PG022_VILLA_PUEYRREDON_AVENIDA_SAN_MARTIN · Villa Pueyrredon / Av. San Martin
+      198 locales · 305.55 ha
+
+        vía A · densidad y continuidad       ABIERTA
+        vía C · mercados y centralidades     cerrada
+        vía F · corredor                     cerrada
+        vías B, D y E se heredan de la zona R22
+
+      abre 1 vía geométrica. La decisión (d) la publica igual, con la
+      debilidad declarada en la ficha.
+
+      EL 5,6 % VERIFICADO, Y SU CURVA — la continuidad depende del umbral (R4):
+
+        umbral         20m      40m      60m      80m     120m
+        continua      2.5%     5.6%    11.6%    15.7%    31.3%
+
+        El 5,6 % es el umbral de 40 m, que es el que usa el conjunto. Citarlo solo
+        no es incorrecto, pero la ficha gana con la curva: a 120 m la continuidad es
+        del 31,3 %, y esa diferencia es lo que hace que la fila sea discutible.
+        Densidad: 0.648 locales/ha · vecino medio 36.2 m
+
+      TEXTO PARA LA FICHA:
+        Esta referencia se publica con UNA sola vía abierta —densidad y continuidad— y una
+        continuidad del 5,6 % medida a 40 metros (2,5 % a 20 m; 31,3 % a 120 m). Es la más débil
+        del conjunto y se consigna como tal: su inclusión responde a una decisión editorial de
+        conducción, no a la fuerza de la evidencia. No se compara con referencias que abren tres
+        o más vías.
+
+====================================================================================================
+  SALIDAS
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_11\decisiones_tomadas_2026-08-08.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_11\barrido_via_C_titularidad.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_11\R22_ficha_debilidad_declarada.csv
+    outputs\BARRIDO_CIUDAD_2026-08\ronda_11\RONDA_11.txt

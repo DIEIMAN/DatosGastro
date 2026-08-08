@@ -1,0 +1,8 @@
+universo,id,nombre,abre_la_via_C_con,tipo_primario,gestion,es_planificada,veredicto
+94 filas,PG001B_PALERMO_HOLLYWOOD,Palermo Hollywood,Mercado Bonpland,mercado_de_productores,mixta,no,MANTIENE la vía C · no es una centralidad planificada
+94 filas,PG008_CABALLITO,Caballito,Mercado del Progreso,mercado_barrial_alimentario,privada,no,MANTIENE la vía C · no es una centralidad planificada
+94 filas,PG009_COSTANERA_NORTE,Costanera Norte,Patio Costanera Norte,patio_gastronomico,mixta,sí,PARA DECISIÓN DE DIEGO · planificada y de gestión MIXTA
+22 zonas,R01,Palermo,Mercado Bonpland,mercado_de_productores,mixta,no,MANTIENE la vía C · no es una centralidad planificada
+22 zonas,R05,Belgrano,Mercado de Belgrano,mercado_historico,mixta,no,MANTIENE la vía C · no es una centralidad planificada
+22 zonas,R07,Costanera Norte,Patio Costanera Norte,patio_gastronomico,mixta,sí,PARA DECISIÓN DE DIEGO · planificada y de gestión MIXTA
+22 zonas,R10,Caballito,Mercado del Progreso,mercado_barrial_alimentario,privada,no,MANTIENE la vía C · no es una centralidad planificada
