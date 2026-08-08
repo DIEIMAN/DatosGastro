@@ -1,0 +1,155 @@
+RONDA 7 · LAS CUATRO DECISIONES DE GEOMETRÍA
+====================================================================================================
+
+  referencias de entrada: 22 · base gastronómica: 23,981 puntos
+  convención de buffer: 150 m — la de la ronda 3, una cuadra a cada lado
+  Google Places: 0 requests. Ninguna consulta de red.
+
+----------------------------------------------------------------------------------------------------
+  R19 · FEDERICO LACROZE POR TRAMOS · DECISIÓN 6 · SE AMPLÍA
+
+      FRAGA                         13 segmentos ·   1,492 m dentro del marco (la calle entera: 2,320 m)
+      DORREGO AV.                   30 segmentos ·   2,498 m dentro del marco (la calle entera: 5,682 m)
+      CHARLONE                      14 segmentos ·   1,536 m dentro del marco (la calle entera: 2,600 m)
+      NEWBERY, JORGE                16 segmentos ·   1,309 m dentro del marco (la calle entera: 1,961 m)
+      Parque Los Andes             polígono oficial ·   6.24 ha
+
+      antes:       89.5 ha ·   185 locales ·  2.07 locales/ha
+      después:    303.3 ha ·   532 locales ·  1.75 locales/ha
+      delta:     +213.8 ha ·  +347 locales (+187.6 %)
+
+      CONTENCIÓN · superficie del polígono publicado que queda afuera: 0.000000 m² → CONSERVA TODO
+               (el predicado covers() de GEOS dice NO sobre una geometría cuya diferencia mide 0.0 m²:
+                es una falla de robustez de relate, no una pérdida. Manda la superposición.)
+      CONTIGÜIDAD · la ampliación toca el polígono publicado: SÍ
+
+      sensibilidad al buffer:
+         100 m →    241.2 ha ·   428 locales (+243)
+         150 m →    303.3 ha ·   532 locales (+347)
+         200 m →    356.4 ha ·   594 locales (+409)
+
+----------------------------------------------------------------------------------------------------
+  R21 · LA PATERNAL · DECISIÓN 8 · SE AMPLÍA
+
+      BELAUSTEGUI LUIS DR           10 segmentos ·     890 m dentro del marco (la calle entera: 5,172 m)
+      ESCALADA DE SAN MARTIN R       9 segmentos ·     866 m dentro del marco (la calle entera: 4,961 m)
+      PAZ SOLDAN                     9 segmentos ·     711 m dentro del marco (la calle entera: 712 m)
+      ROJAS                         13 segmentos ·   1,335 m dentro del marco (la calle entera: 2,817 m)
+      AVALOS                        10 segmentos ·     840 m dentro del marco (la calle entera: 2,709 m)
+      ESPINOSA                      19 segmentos ·   1,878 m dentro del marco (la calle entera: 3,744 m)
+      TERRERO                       10 segmentos ·     619 m dentro del marco (la calle entera: 3,989 m)
+
+      antes:      321.0 ha ·   208 locales ·  0.65 locales/ha
+      después:    385.3 ha ·   307 locales ·  0.80 locales/ha
+      delta:      +64.3 ha ·   +99 locales (+47.6 %)
+
+      CONTENCIÓN · superficie del polígono publicado que queda afuera: 0.000000 m² → CONSERVA TODO
+               (el predicado covers() de GEOS dice NO sobre una geometría cuya diferencia mide 0.0 m²:
+                es una falla de robustez de relate, no una pérdida. Manda la superposición.)
+      CONTIGÜIDAD · la ampliación toca el polígono publicado: SÍ
+
+      sensibilidad al buffer:
+         100 m →    360.5 ha ·   267 locales (+59)
+         150 m →    385.3 ha ·   307 locales (+99)
+         200 m →    413.0 ha ·   337 locales (+129)
+
+----------------------------------------------------------------------------------------------------
+  R20 · GARCIA DEL RIO · DECISIÓN 7 · SE REVISA EL CORTE
+
+      García del Río dentro de Saavedra: 1,631 m
+      el tramo Cabildo → Balbín:         974 m (60 % del eje)
+      distancia entre los dos cortes:    946 m
+
+      antes (la envolvente publicada):      28.4 ha ·    61 locales
+      el tramo de la decisión, solo:        36.2 ha ·    48 locales
+      la unión que se adopta:               61.0 ha ·   102 locales
+      delta contra lo publicado:           +32.6 ha ·   +41 locales
+
+      CONTENCIÓN · superficie del polígono publicado que queda afuera: 0.000000 m² → CONSERVA TODO
+      CONTIGÜIDAD · el tramo toca el polígono publicado: SÍ
+
+      LO QUE LA REVISIÓN DEL CORTE DEJA A LA VISTA: 24.7 ha de la envolvente
+      publicada quedan FUERA del tramo que la decisión describe. La regla de contención
+      las conserva, así que el polígono adoptado es la unión y no el tramo. Si en algún
+      momento se decide que la envolvente publicada estaba mal cortada, ése es el número
+      que hay que discutir — y es una decisión sobre lo publicado, no sobre la grilla.
+
+      sensibilidad al buffer:
+         100 m →     49.3 ha ·    89 locales (+28)
+         150 m →     61.0 ha ·   102 locales (+41)
+         200 m →     74.0 ha ·   110 locales (+49)
+
+----------------------------------------------------------------------------------------------------
+  R18 · ESMERALDA-PARAGUAY · DECISIÓN 5 · SE ABSORBE EN Z46 RETIRO
+
+      MAIPU                     3 segmentos ·    408 m (alturas 800-990)
+      ESMERALDA                 3 segmentos ·    412 m (alturas 800-990)
+      PARAGUAY                  3 segmentos ·    408 m (alturas 800-990)
+      ALVEAR MARCELO T DE       3 segmentos ·    412 m (alturas 800-990)
+
+      el clúster coreano-asiático:    40.0 ha ·  271 locales
+      R18 tal como está publicada:     48.4 ha ·  318 locales
+      R18 es 1.2 veces el clúster que dice representar
+
+      del clúster, R18 cubre el 93.1 % de la superficie
+      de R18, el 28.3 % cae FUERA del barrio de Retiro (el derrame a San Nicolás que la decisión anticipa)
+
+      la subzona que queda dentro de Z46 (R18 ∪ clúster): 51.2 ha · 330 locales
+
+      QUÉ SE HIZO Y QUÉ NO. R18 deja de ser referencia independiente: pasa a subzona de
+      Z46 Retiro. NO se dibuja acá el polígono de Z46 —Z46 es una zona nueva y su
+      delimitación no es una de las cuatro decisiones de geometría—: la zona se mide por
+      barrio, como todas las nuevas, en `ronda_7_familias_de_vias.py`.
+
+----------------------------------------------------------------------------------------------------
+  LA CAPA DE REFERENCIAS DESPUÉS DE LAS CUATRO DECISIONES
+
+  referencias antes: 22 · después: 21 + 1 subzona de Z46
+
+     R01                          Palermo                                     271.3 ha ·  1358 locales · sin cambios
+     R02                          Avenida Corrientes                           49.7 ha ·   354 locales · sin cambios
+     R03                          San Telmo                                    25.4 ha ·    71 locales · sin cambios
+     R04                          Puerto Madero                               314.5 ha ·   354 locales · sin cambios
+     R05                          Belgrano                                     39.6 ha ·   343 locales · sin cambios
+     R06                          Recoleta                                    140.5 ha ·   714 locales · sin cambios
+     R07                          Costanera Norte                              38.5 ha ·    67 locales · sin cambios
+     R08                          Villa Crespo                                335.5 ha ·   823 locales · sin cambios
+     R09                          Chacarita                                    94.8 ha ·   202 locales · sin cambios
+     R10                          Caballito                                   225.4 ha ·   508 locales · sin cambios
+     R11                          Boulevard Caseros                            50.0 ha ·    60 locales · sin cambios
+     R12                          Centro / Microcentro segmentado             184.1 ha ·  1084 locales · sin cambios
+     R13                          Abasto                                      109.0 ha ·   373 locales · sin cambios
+     R14                          Avenida Boedo                               179.5 ha ·   245 locales · sin cambios
+     R15                          Devoto                                      478.7 ha ·   422 locales · sin cambios
+     R16                          Donado-Holmberg                             119.0 ha ·   121 locales · sin cambios
+     R17                          Villa Urquiza                               446.6 ha ·   528 locales · sin cambios
+   ← R19                          Federico Lacroze por tramos                 303.3 ha ·   532 locales · ampliada
+   ← R20                          Garcia del Rio                               61.0 ha ·   102 locales · ampliada
+   ← R21                          La Paternal                                 385.3 ha ·   307 locales · ampliada
+     R22                          Villa Pueyrredon                            305.6 ha ·   198 locales · sin cambios
+   ← Z46_SUBZONA_CLUSTER_COREANO  Retiro · subzona del clúster coreano-a       51.2 ha ·   330 locales · absorbida en Z46
+
+  SOLAPES ENTRE REFERENCIAS · ANTES Y DESPUÉS DE LAS AMPLIACIONES
+
+   NUEVO R09 ∩ R19:    0.00 ha →   60.37 ha (+60.37)
+   NUEVO R08 ∩ R21:    0.00 ha →   49.68 ha (+49.68)
+   NUEVO R08 ∩ R19:    0.00 ha →    7.78 ha (+7.78)
+   NUEVO R19 ∩ R21:    0.00 ha →    7.25 ha (+7.25)
+   NUEVO R01 ∩ R19:    0.00 ha →    3.32 ha (+3.32)
+   NUEVO R09 ∩ R21:    0.00 ha →    2.25 ha (+2.25)
+         R02 ∩ R12:   21.72 ha →   21.72 ha (+0.00)
+
+   6 solape(s) que ANTES NO EXISTÍAN. No se resuelven acá: la
+   precedencia por solape es una decisión editorial de las 22, no un ajuste de
+   geometría. Queda medido y a la vista.
+
+  VERIFICACIÓN GLOBAL DE CONTENCIÓN
+
+   ✓ las 21 referencias que siguen vigentes conservan íntegro su polígono publicado:
+     ni un metro cuadrado de lo publicado queda fuera de lo que sale de esta corrida
+   ✓ R18 queda dentro de la subzona de Z46 · superficie perdida: 0.000000 m²
+
+----------------------------------------------------------------------------------------------------
+  geometria_r7\referencias_r7.geojson · 22 geometrías
+  geometria_r7\ampliaciones_r7.csv · 4 decisiones aplicadas
+  Google Places: 0 requests.

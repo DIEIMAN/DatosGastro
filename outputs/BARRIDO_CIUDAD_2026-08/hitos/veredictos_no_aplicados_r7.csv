@@ -1,0 +1,6 @@
+hito_id,nombre,veredicto,nivel,fecha_dato,registro,zona,motivo_no_aplicado
+H009,Bar El Federal,verificado_abierto,v3,2026-07-21,vigencia_tanda_A_centro.csv,R03 San Telmo,no estaba bloqueado por el enum y ninguna decisión lo nombra
+H074,Los 36 Billares,verificado_abierto,v3,2026-07-04,vigencia_tanda_A_centro.csv,Z47 Monserrat,no estaba bloqueado por el enum y ninguna decisión lo nombra
+H035,Café Tortoni,verificado_abierto,v3,2026-05-26,vigencia_tanda_A_centro.csv,Z47 Monserrat,no estaba bloqueado por el enum y ninguna decisión lo nombra
+H024,Café de los Angelitos,verificado_abierto,v3,2026-05-25,vigencia_tanda_A_centro.csv,Z36 → Z47 por la decisión 13,no estaba bloqueado por el enum y ninguna decisión lo nombra
+H085,Varela Varelita,verificado_abierto,v3,2026-06-25,vigencia_tanda_A_centro.csv,R01 Palermo,no estaba bloqueado por el enum y ninguna decisión lo nombra

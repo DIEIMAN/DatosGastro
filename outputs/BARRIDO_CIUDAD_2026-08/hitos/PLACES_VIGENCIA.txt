@@ -1,0 +1,33 @@
+DECISIÓN 4 · LA PASADA DE PLACES SOBRE LOS HITOS
+====================================================================================================
+
+  hitos en la capa con dirección utilizable: 220
+  campos pedidos: places.businessStatus, places.formattedAddress, places.regularOpeningHours
+  nivel que otorga: v2b, y sólo hacia el lado del cierre
+  plan escrito en: places_plan_consulta.csv
+
+  reparto por estado actual de vigencia:
+      sin_verificar                         179
+      si                                     25
+      dudosa                                  8
+      probablemente_abierto                   3
+      no                                      2
+      en_riesgo                               1
+      senalado_no_cerrado                     1
+      cerrado_con_reapertura_anunciada        1
+
+----------------------------------------------------------------------------------------------------
+  CORRIDA EN SECO · 0 requests · 0 gasto
+
+  Falta la condición que puso la decisión 4: el precio confirmado contra
+  la consola. Este proceso NO puede leer la consola de facturación de
+  Diego, y la tarifa que circula en la estimación está anotada como no
+  confirmada en el propio repositorio (`estimar_costo_places.py`, línea 17).
+
+  Para correrla, con el número que diga la consola:
+
+      .venv/Scripts/python.exe scripts/barrido_ciudad/places_vigencia_hitos.py \
+          --precio-confirmado <USD_por_1000> --ejecutar
+
+  Y hace falta la clave en el entorno: GOOGLE_MAPS_API_KEY.
+  No se guarda ninguna credencial en el repositorio.

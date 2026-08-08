@@ -1,0 +1,179 @@
+RONDA 7 · LAS DECISIONES SOBRE LA CAPA DE HITOS, Y MONSERRAT MEDIDO
+====================================================================================================
+
+  capa de entrada: hitos_capa_2026_r6.csv · 221 hitos
+  Google Places: 0 requests. USIG: normalizador y /datos_utiles, cacheados.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 7a · EL ENUM DE VIGENCIA
+
+  `probablemente_abierto` entra como estado propio del enum, y `v3b` como nivel.
+  Es lo que destraba los once veredictos que la ronda 6 dejó sin aplicar: el bloqueo no
+  era de evidencia, era de vocabulario.
+
+  estados admitidos (9): cerrado_con_reapertura_anunciada, dudosa, en_disputa, en_riesgo, no, probablemente_abierto, senalado_no_cerrado, si, sin_verificar
+  niveles admitidos (8): ninguno, v1, v2, v2b, v3, v3b, v4, v5
+
+----------------------------------------------------------------------------------------------------
+  TAREA 2 · LAS DECISIONES DE CRITERIO QUE TOCAN UN HITO
+
+  decisión 2 · El Imparcial (ICO-002) → probablemente_abierto · v4
+  decisión 2 · Tancat (ICO-015) NO baja → si · v2, por Instagram propio
+  decisión 3 · La Perla de Caminito (H069) → si · v3b (nivel nuevo)
+  decisión 4 · Places: autorizado y NO ejecutado en esta corrida. Ver el informe al pie.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 7b · LAS DOS CONTRADICCIONES ENTRE ARCHIVOS
+
+  El Símbolo (H054) · v4 tanda B vs v2 cierre del día → prevalece v2, si
+  El Cedrón (DIR-011) · `si` en la capa vs `dudoso` en la tanda → prevalece dudosa
+
+----------------------------------------------------------------------------------------------------
+  TAREA 7c · LOS CUATRO VEREDICTOS DE ALMAGRO, EN BLOQUE
+
+  H071 · LAS VIOLETAS               → si · v3
+  H044 · El Banderin                → si · v3
+  H054 · EL SIMBOLO                 ya resuelto en TAREA 7b → si · v2
+  H063 · La Orquidea                → probablemente_abierto · v5
+
+----------------------------------------------------------------------------------------------------
+  TAREA 7d · EL RESTO DEL BLOQUE QUE EL ENUM TENÍA FRENADO
+
+  La ronda 6 dejó once veredictos sin aplicar por tres bloqueos, y la tarea 7 resuelve los
+  tres. Se aplican los que venían de los DOS registros que la ronda 6 nombró como
+  bloqueados —`vigencia_cierre_del_dia.csv` y `vigencia_tanda_B_almagro_norte.csv`—.
+
+  H056 · El Viejo Buzon             → si · v2
+  H007 · Bar del Glorias            → probablemente_abierto · v4
+  H001 · 9 de Julio                 → dudosa · ninguno
+
+  LO QUE NO SE APLICÓ, Y POR QUÉ. `vigencia_tanda_A_centro.csv` trae cinco veredictos más
+  —Bar El Federal, Los 36 Billares, Café Tortoni, Café de los Angelitos y Varela
+  Varelita— que NUNCA estuvieron bloqueados por el enum y que ninguna de las veinte
+  decisiones nombra. Quedan sin aplicar y listados en `veredictos_no_aplicados_r7.csv`.
+  Su efecto sobre la vía B se mide igual, más abajo, como sensibilidad.
+
+----------------------------------------------------------------------------------------------------
+  TAREA 6 · LAS DECISIONES DE PUBLICACIÓN
+
+  decisión 18 · `registro_oficial` cargado en 131 de 221 hitos
+      bar_notable                                    89
+      pizzeria_emblematica                           20
+      restaurante_iconico                            15
+      bar_notable; restaurante_iconico                2
+      sitio_interes_cultural                          2
+      ley_especifica                                  1
+      bar_notable; sitio_interes_cultural             1
+      APH                                             1
+
+  decisión 19 · Plaza Bar (H082) · estado previo `cerrado_con_reapertura_anunciada` → cerrado_con_reapertura_anunciada, revisar_hasta 2028
+      el estado ya era ése desde una ronda anterior; la decisión lo confirma y agrega
+      el año. No es un cambio de veredicto.
+
+  decisión 20 · doble numeración: se publica la del anexo, se registra la variante
+      H009 · Bar El Federal       capa «Carlos Calvo 595» = anexo «Carlos Calvo 595» · variante 599
+      H074 · 36 BILLARES          capa «Av. de Mayo 1265» = anexo «Av. de Mayo 1265» · variante 1271
+      H054 · EL SIMBOLO           capa «Av. Corrientes 3787» = anexo «Av. Corrientes 3787» · variante 3797
+      H004 · Bar Boca a Boca      capa «Av. Benito Perez Galdos 201» = anexo «Av. Benito Perez Galdos 201» · variante 207
+
+----------------------------------------------------------------------------------------------------
+  TAREA 5 · MONSERRAT
+
+  5a · LO PRIMERO, PORQUE CONTRADICE AL INSUMO
+
+  `hitos_nuevos_monserrat.csv` marca diez establecimientos y dice de nueve de ellos que NO
+  estaban en nuestra base. Se comprobó uno por uno contra la capa antes de dar de alta:
+
+   ✗ Bar El Colonial                    insumo: NO       capa: YA ESTABA EN LA CAPA (H008)
+   ✗ Bar Seddon                         insumo: NO       capa: YA ESTABA EN LA CAPA (H015)
+   ✗ Cabildo de Buenos Aires            insumo: NO       capa: YA ESTABA EN LA CAPA (H020)
+   ✗ El Querandi                        insumo: NO       capa: YA ESTABA EN LA CAPA (H053)
+   ✗ London City                        insumo: NO       capa: YA ESTABA EN LA CAPA (H073)
+     Gran Cafe Gardel                   insumo: NO       capa: alta nueva
+     Centro Asturiano de Buenos Aires   insumo: NO       capa: alta nueva
+     Centro Laurak Bat (Restaurante Haritz) insumo: NO       capa: alta nueva
+     Miramar                            insumo: a medias capa: YA ESTABA EN LA CAPA (H078)
+     Casal de Catalunya                 insumo: NO       capa: alta nueva
+
+  5 de los diez que el insumo da por ausentes YA ESTABAN en la capa, con punto
+  y con dirección. Entraron con el canon del Boletín y con la Res. 1225/26 de la ronda 5.
+  No se dan de alta: duplicarlos habría inflado exactamente la vía B que esta ronda está
+  tratando de medir bien.
+
+  5b · LAS ALTAS QUE SÍ SON ALTAS
+
+      DIR-026 · Gran Café Gardel                       -34.618158, -58.391700
+      DIR-027 · Centro Asturiano de Buenos Aires       -34.614553, -58.390430
+      DIR-028 · Centro Laurak Bat (Restaurante Haritz) -34.613261, -58.382472
+      DIR-029 · Casal de Catalunya                     -34.618169, -58.375917
+
+  El Globo (H. Yrigoyen 1199) y Plaza Asturias (Av. de Mayo 1199) NO se dan de alta como
+  hitos: no tienen ningún registro oficial —El Globo está explícitamente fuera del anexo y
+  de los 16 Icónicos—. Entran a la medición del núcleo de Salta, que es otra cosa.
+
+  5c · «NUEVE DE LOS NOVENTA BARES NOTABLES», CONTADO CONTRA EL POLÍGONO
+
+  Bares Notables con punto en la capa: 91
+  dentro del polígono administrativo de Monserrat: 9
+
+      H074      36 BILLARES                    Av. de Mayo 1265                 sin_verificar
+      H015      BAR SEDDON                     Defensa 695                      sin_verificar
+      H094      Bar Iberia                     Av. de Mayo 1196                 si
+      H020      Cabildo de Buenos Aires        Peru 86                          sin_verificar
+      H035      Café Tortoni                   Av. de Mayo 825                  sin_verificar
+      H008      EL COLONIAL                    Av. Belgrano 599                 sin_verificar
+      H053      El Querandi                    Peru 302                         sin_verificar
+      H070      LA PUERTO RICO                 Alsina 420                       sin_verificar
+      H073      London City                    Av. de Mayo 599                  sin_verificar
+
+
+  5d · LA DISCREPANCIA DE BARRIO DE BAR SEDDON, RESUELTA CON USIG
+
+      el catálogo lo asigna a Monserrat · la CPPHC a San Telmo
+      USIG /datos_utiles sobre el punto (-34.615917, -58.371763): Monserrat
+      polígono GCBA de Monserrat   dentro=sí · distancia=0 m
+      polígono GCBA de San Telmo   dentro=no · distancia=8 m
+
+  5e · EL NÚCLEO DE SALTA, MEDIDO
+
+                       Bar Iberia  Plaza Asturia       El Globo   El Imparcial
+  Bar Iberia                  0.0           17.2           51.6           61.6
+  Plaza Asturias             17.2            0.0           68.7           76.1
+  El Globo                   51.6           68.7            0.0           30.4
+  El Imparcial               61.6           76.1           30.4            0.0
+
+  la distancia máxima entre dos de los cuatro: 76.1 m (Plaza Asturias ↔ El Imparcial)
+  la mínima: 17.2 m (Bar Iberia ↔ Plaza Asturias)
+  los cuatro caben en una envolvente convexa de 0.110 ha
+
+  5f · SAN CRISTÓBAL · EL CONTEO QUE PIDE LA DECISIÓN 11
+
+      SAN JUAN AV. 1900-2100     4 segmentos ·     357 m de eje ·   32 locales ·   9.0 por 100 m
+      INDEPENDENCIA AV. 2300-2500     3 segmentos ·     319 m de eje ·   22 locales ·   6.9 por 100 m
+
+      los dos juntos: 54 locales en 13.7 ha = 3.95 locales por hectárea
+
+  PARA COMPARAR, Y PARA QUE EL NÚMERO NO SE LEA SOLO: la vía A se abre a 2 locales por
+  hectárea en la grilla vigente. Este conteo es sobre eje con media cuadra a cada lado,
+  que es un recorte más ajustado que un polígono de polo, así que la densidad sale más
+  alta por construcción. NO es un veredicto de vía A: es el insumo que la decisión 11
+  pidió antes de decidir.
+
+----------------------------------------------------------------------------------------------------
+  VALIDACIÓN DE LA CAPA DE SALIDA
+
+  ✓ los tres enums cierran: vigencia_verificada, vigencia_nivel y registro_oficial
+
+      sin_verificar                         183
+      si                                     26
+      dudosa                                  8
+      probablemente_abierto                   3
+      no                                      2
+      en_riesgo                               1
+      senalado_no_cerrado                     1
+      cerrado_con_reapertura_anunciada        1
+
+----------------------------------------------------------------------------------------------------
+  capa de salida: hitos_capa_2026_r7.csv · 225 hitos · 36 columnas
+  cambios: 201
+  Google Places: 0 requests.
