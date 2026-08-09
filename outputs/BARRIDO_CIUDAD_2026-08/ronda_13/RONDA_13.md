@@ -1,0 +1,265 @@
+# Ronda 13 · Registro y control · 2026-08-09
+
+Tanda de registro, no de contenido. Sale de la auditoría de estado del 09/08 hecha desde Cowork.
+**Google Places: 0 requests.** No se tocó el pipeline público, ni las láminas, ni las secciones.
+
+Predicciones escritas antes de correr: `LECTURA_PREVIA_RONDA_13.md`. Dos acertaron y una acertó
+a medias, exactamente como estaba escrito que podía pasar.
+
+---
+
+## 1 · Lo que estaba fuera de git ya está adentro
+
+La auditoría lo tenía bien: **3 modificados y 98 sin rastrear**, con la ronda 12 entera afuera.
+Se agregó todo, salvo lo que el guardrail 7 saca a propósito.
+
+**Los dos archivos que la auditoría mandó mirar no eran el problema.**
+`catalogo_pendientes_para_diego.csv` (52 filas) y `lista_places_prioridad.csv` (71) traen nombre
+comercial y dirección, y nada más: ni teléfono, ni mail, ni CUIT. El repo ya versiona listados
+idénticos —`bares_notables_caba.csv`, `direcciones_pizzerias_heladerias.csv`, la capa de 225
+hitos—. Diego confirmó que van al repo. Van.
+
+**El problema estaba en otros cuatro que la auditoría no revisó.** Barriendo los 117 archivos con
+expresiones regulares de mail, teléfono, CUIT y DNI aparecieron teléfonos y correos de comercios
+en `PARA_CHEQUEAR_DIEGO.csv`, `vigencia_tanda_A_centro.csv`, `vigencia_tanda_B_almagro_norte.csv`
+y `vigencia_verificada_ronda_2.csv` —`+54 11 3647-7287`, `info@capiscibistrot.com`, `4342-4328`—.
+
+El repo ya tenía escrita la regla para este caso exacto, en la entrada del ENTUR del `.gitignore`:
+
+> *«es dato abierto CC-BY y son comercios, no personas, pero el guardrail 7 nombra emails y
+> teléfonos sin esa distinción y no se la hacemos nosotros»* → se versiona la derivada
+> `*_sin_contacto`.
+
+Se hizo lo mismo: `ronda_13/sanitizar_contactos.py` produce las cuatro derivadas, los cuatro
+originales van al `.gitignore` y se quedan en disco. **Se conservan a propósito los handles de
+Instagram y las webs propias**: no son contacto de una persona, son el canal donde vive la
+evidencia fechada, y todo el método de vigencia se apoya en «hay posteo fechado en @cuenta».
+
+---
+
+## 2 · La correspondencia de secciones · y no era un renumerado
+
+`correspondencia_fase_documental.csv` y `INDICE.csv` existen. Los dos los nombraba el handoff
+como si estuvieran.
+
+**Pero la premisa de la auditoría estaba mal, y lo corrigió `DOS_PROYECTOS_DE_FICHA.md` cuatro
+horas después.** La auditoría leyó dos numeraciones y las atribuyó a un renumerado. No lo son:
+son **dos proyectos de documento**, cada uno coherente por dentro.
+
+| | **A · las 124 fichas** (06/08) | **B · las 41 fichas** (08/08) |
+|---|---|---|
+| objeto | las 124 concentraciones detectadas | los 41 polos admitidos por las seis vías |
+| agrupación | por comuna | por origen |
+| el cuerpo es | sección **V** | sección **VII** |
+| «qué no dice» | sección **VII** | sección **IX** |
+
+Por eso la tabla tiene 13 filas y no 9: hay bloques que existen dos veces —«Qué es un polo» y
+«Qué no dice»— y bloques que sólo existen en uno.
+
+**Y aparecieron dos cosas que ni el handoff ni la auditoría tenían:**
+
+**La tabla de numeración ya existía.** Está en la cabecera de `ATLAS_V3_SECCIONES_II_V_VI_IX.md`,
+líneas 22 a 32. La auditoría dijo «ninguna tabla que los relacione» y la tabla estaba en el
+archivo que estaba citando. Lo que faltaba no era la tabla: era la correspondencia contra la
+numeración vieja, que la tabla no da.
+
+**La Nota metodológica no tiene lugar.** Está escrita y completa —en seis pasos, las cuatro
+reglas, y qué se publica junto con el documento— y era la VIII de la numeración vieja. **La tabla
+nueva va de I a IX y no la incluye.** Es la única fila de la correspondencia que no cierra. El
+handoff la daba por faltante; no falta, falta decidir dónde va.
+
+Y la sección VII ya no está vacía: `FICHAS_SECCION_VII_TANDA_1.md` trae **11 de las 41**, escritas
+esta mañana. Faltan 30.
+
+---
+
+## 3 · El archivo de Palermo se llamaba mal, y ahora no
+
+`ronda_10/palermo_los_407_por_zona.csv` → **`ronda_10/palermo_residuo_por_zona.csv`**, con
+`git mv` para que conserve la historia. Devolvía 188 y prometía 407.
+
+Corregido en `HANDOFF_ATLAS_V3_CONTEXTO.md`, que decía *«407 locales de R01 no están en ninguna
+subzona»* y *«perdería 407 locales publicados»*. **El objeto estaba invertido.** Los 407 son los
+de Soho ∪ Hollywood que caen **fuera** de R01. Los de R01 que no están en las subzonas son 398
+contra dos y **188** contra las tres.
+
+> **El veredicto no cambia y conviene decirlo: la opción B se sigue cayendo.** Sólo que pierde
+> 188 locales publicados, no 407.
+
+Las otras tres apariciones —dos en `LA_RONDA_QUE_ME_REFUTO.md`, una en
+`NO_ERA_UN_CONTEO_MAL_ERA_OTRO_UNIVERSO.md`— son narrativas fechadas de su ronda y **no se
+reescriben**: se corrigen por errata, que es la convención del proyecto. ERR-06 y ERR-07.
+
+---
+
+## 4 · La vía C de Almagro · la pregunta estaba mal planteada
+
+`via_C_almagro.csv`, ocho pasos.
+
+La pregunta era «¿mercado o feria itinerante?». **La respuesta es ninguna de las dos: no hay
+objeto.**
+
+Almagro es **la única fila abridora de todo el barrido que no nombra el objeto que le abre la
+vía C.** Bonpland, Belgrano, del Progreso y el Patio Costanera Norte nombran el suyo; Almagro
+dice «abre» y nada más.
+
+**Y no hay mercado, medido:** de los 225 hitos de la capa, 11 son de tipo `Mercado/patio` y 8
+tienen punto. **Cero caen dentro del polígono de Almagro.** El más cercano es el Mercado del
+Progreso, a 1.237 m, que es de Caballito y ya le abre la vía C a R10.
+
+Lo único que el corpus llega a nombrar cerca es **la feria itinerante de Plaza Almagro**, y
+aparece en el campo `puerta_cerrada` —o sea, como fuente que no se pudo consultar: sus permisos
+son internos y nunca se vieron.
+
+**Y para esto no hace falta la decisión 23.** Una feria itinerante también falla su prueba —es
+puesta en su entorno por permiso, días fijos, y se levanta—, pero **la decisión 1, del 07/08, ya
+había resuelto la clase entera**: *«la vía C exige mercado, patio o galería EN ACTIVIDAD. La FIAB
+suma como dato de contexto pero no abre.»*
+
+> ### La vía C de Almagro NO ABRE. La lámina 4 dice **cinco**.
+>
+> Caen sólo la C. Almagro conserva A, B, D, E y F, con sus cinco Bares Notables verificados
+> abiertos. **No pierde nada de lo que lo hace fuerte.**
+
+### Dos cosas más que salieron de acá
+
+**El «única zona que abre las seis vías» ya era falso cuando se escribió.** En el mismo
+`seis_vias_ronda_2.csv`, Z40 Nueva Pompeya – Parque Patricios también marcaba seis, y la ronda 3
+sumó Z43 Colegiales. **Eran tres, no una.** Es un error independiente del anterior. ERR-08.
+
+**Z47 Monserrat sigue diciendo «abre (DÉBIL)».** La decisión 1 ordenó explícitamente pasarla a NO
+ABRE por ser sólo FIAB, y nunca se escribió de vuelta en el archivo. Es el mismo modo de falla
+que la ronda 12 encontró con el IDECBA: **registrar el defecto no lo corrige si no llega al
+archivo que se lee.** ERR-09. No cambia su veredicto: Monserrat entra con cuatro.
+
+Y queda **señalado, no resuelto**: Z40 abre por «Mercado de Pompeya», que tampoco está en la capa
+de 225. Mismo defecto que Almagro pero con objeto nombrado. No estaba en el alcance.
+
+---
+
+## 5 · Palermo · las tres subzonas que nadie midió
+
+`palermo_seis_subzonas.csv` · `palermo_pieza_1_y_filtraciones.csv`
+
+La ficha de R01 nombra **seis** subzonas. Las rondas 9 y 10 midieron contra **tres**. Se midieron
+las otras tres.
+
+```
+R01 ∩ P073 Palermo Botánico     0,00 ha ·   0 locales
+R01 ∩ P087 Palermo Pacífico     0,00 ha ·   0 locales
+R01 ∩ P092 Villa Freud          0,00 ha ·   0 locales
+```
+
+**Cero. Las tres.** Y ninguna toca ninguna de las 8 piezas del residuo.
+
+> **La hipótesis se cae: Palermo no se cierra.** Si la pieza 1 hubiera sido una de las tres, la
+> ficha ya estaba escrita para recibirlo. No lo es. La pieza 1 sigue sin nombre.
+
+**La corrida reprodujo la ronda 10 número por número** —1358, 772, 595, 361, 210, 188, y las ocho
+piezas con sus 134 / 15 / 25 / 1 / 6 / 5 / 2 / 0—, que es lo que la vuelve creíble.
+
+### Y encontró que el universo no estaba declarado en ningún lado
+
+La primera corrida dio **1454** para R01 en vez de 1358, y **207** de residuo en vez de 188. Un
+7 % arriba, parejo. El universo de las rondas 9 y 10 es
+**`anillo == 'nucleo'` Y `apto_geometria == True`** —23.981 de los 27.727 de la base—, y **no
+estaba escrito en ningún archivo**.
+
+> **Lo peligroso es que las áreas coinciden exacto en los dos casos.** Una corrida sin el filtro
+> reproduce la geometría al centímetro y parece validar, mientras cuenta otro universo. Ahora está
+> declarado en el docstring de los dos scripts. ERR-10.
+
+### Y de paso cierra los 728 contra 772 de Soho
+
+`DOS_PROYECTOS_DE_FICHA.md` lo dejó abierto esta mañana: *«`POLOS_NOMBRADOS.csv` dice 728 locales.
+La ronda 9 midió 772 para el mismo P091. No sé cuál es correcto y no lo elijo.»*
+
+**Ninguno de los dos está mal: miden cosas distintas, y la resta cierra sola.**
+
+```
+728   locales asignados al cluster P091      (pertenencia_local_polo_v3.csv)
+ − 8  asignados al cluster pero FUERA del polígono publicado
+ +52  dentro del polígono publicado pero sin cluster asignado
+─────
+772   locales dentro del polígono publicado  (polos_publicables.geojson)
+```
+
+**728 es el clúster. 772 es el polígono.** La diferencia la produjo la poligonización: el polígono
+publicado se suavizó y se hizo cóncavo, y al hacerlo se tragó 52 locales que nunca fueron del
+clúster y dejó afuera 8 que sí.
+
+> Para cualquier cosa cartográfica —y una ficha de subzona lo es— **el número que manda es 772**,
+> porque es el que corresponde al polígono que el Atlas dibuja. 728 sirve para hablar del clúster.
+> Con eso, la ficha de Palermo **sí puede citar el conteo de la subzona**, declarando cuál usa.
+
+### Un nombre para la pieza 1
+
+**40,17 ha · 134 locales · 1.196 m E-O × 1.102 m N-S · 100 % Palermo.** Calles dominantes, sobre
+los 71 locales que traen dirección (el 53 %): **Paraguay 12 · Charcas 7 · Fray Justo Santa María
+de Oro 7 · Soler 6 · Uriarte 5 · Jorge Luis Borges 5 · Guatemala 4 · Thames 4 · Godoy Cruz 4.**
+
+Es **la franja noreste de Palermo Viejo, entre Guatemala/Soler y Av. Santa Fe**.
+
+Y hay un polo del borrador adentro que la ficha de R01 **no nombra**:
+**P090+P089 · «Palermo — eje Av. Santa Fe»**, 18,54 ha, del que **12,70 ha caen en la pieza 1**
+—el 68,5 % del polo, el 31,6 % de la pieza— con **75 de los 134 locales, el 56 %**.
+
+> **El núcleo denso de la pieza 1 ya tiene nombre de trabajo, y explica más de la mitad de sus
+> locales en un tercio de su superficie.** Lo que no explica son 27,47 ha y 59 locales.
+>
+> **Propuesta, para firma:** la pieza 1 se declara subzona con el nombre **«Palermo — eje Av.
+> Santa Fe»** extendido a su envolvente, y el perímetro declarado se escribe sobre las calles
+> medidas. **Con la salvedad al lado:** el 47 % de sus locales no trae dirección, así que el
+> ranking de ejes describe bien la franja pero no la agota.
+
+### Las piezas que se filtran · dos son doble conteo y una es un artefacto
+
+| pieza | ha | loc | barrio | contra la vecina |
+|---|---:|---:|---|---|
+| 3 | 11,07 | 25 | Villa Crespo | **NO solapa R08 · está a 6 m** |
+| 5 | 6,71 | 6 | Colegiales | **SOLAPA Chacagiales · 6,54 ha · 5 locales** |
+| 7 | 3,21 | 2 | Chacarita | **SOLAPA Chacagiales · 1,55 ha · 2 locales** |
+
+**La pieza 3 no es una filtración: es un artefacto de borde.** R08 está a 6 m y no se tocan —lo
+mismo que ya había medido la auditoría—. Seis metros es menos que una vereda. No hay nada que
+repartir: hay un hueco que declarar.
+
+**Las piezas 5 y 7 sí son doble conteo real: 8,09 ha y 7 locales están en R01 y en Chacagiales al
+mismo tiempo.** Es chico y es concreto, y toca el nudo que ya estaba abierto.
+
+---
+
+## 6 · Control de arrastre · la decisión 23 está bien aplicada
+
+Cuatro controles, los cuatro pasan:
+
+| control | esperado | medido |
+|---|---|---|
+| vía C abierta · 94 filas | 2 | **2** · PG001B Palermo Hollywood, PG008 Caballito |
+| vía C abierta · 22 zonas | 3 | **3** · R01 Bonpland, R05 Belgrano, R10 del Progreso |
+| `PGR_P004` | ya no «si» | **`no`** |
+| R07 y PG009 Costanera Norte | fuera | **`no`**, con la nota de la decisión 23 |
+
+Y la cadena completa, que ninguna ronda había mirado de una sola vez:
+
+```
+r8  → 4 filas con vía C   (PG001B, PG008, PG009, PGR_P004)   ← acá vivía el arrastre
+r10 → 3   (sale PGR_P004)
+r12 → 2   (sale PG009 Costanera Norte, por la decisión 23)
+```
+
+**El arrastre de PGR_P004 lo había cerrado la ronda 10, no la 12.** La ronda 9 lo anotó sobre la
+r8 y quedó la impresión de que seguía vivo.
+
+---
+
+## Lo que queda para Diego
+
+1. **La lámina 4 pasa a decir cinco.** Es la única consecuencia de contenido de esta tanda.
+2. **ERR-08 y ERR-09** esperan firma. Ninguna cambia un veredicto de admisión.
+3. **El nombre de la pieza 1 de Palermo** y su perímetro declarado.
+4. **Las 8,09 ha de doble conteo** entre R01 y Chacagiales.
+5. **Dónde va la Nota metodológica**, que está escrita y no tiene número.
+6. **Cuál de los dos proyectos de ficha es el cuerpo** —la pregunta de `DOS_PROYECTOS_DE_FICHA.md`,
+   que es más grande que todo lo de esta tanda junto.
+7. Señalado y no resuelto: **la vía C de Z40 Nueva Pompeya**, mismo defecto que Almagro.

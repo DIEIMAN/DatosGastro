@@ -1,0 +1,32 @@
+bloque,pid,nombre,ha_subzona,locales_subzona,ha_interseccion,pct_de_la_subzona,pct_de_R01,locales_en_la_interseccion,medida_en_ronda_9_10,observacion
+R01 x subzona,P091,Palermo Soho,92.36,772,68.94,74.6,25.4,647,si,
+R01 x subzona,P078,Palermo Hollywood,102.61,595,50.2,48.9,18.5,313,si,
+R01 x subzona,P065,Las Canitas,82.04,361,43.65,53.2,16.1,210,si,
+R01 x subzona,P073,Palermo Botanico,39.19,207,0.0,0.0,0.0,0,no,
+R01 x subzona,P087,Palermo Pacifico,5.8,47,0.0,0.0,0.0,0,no,
+R01 x subzona,P092,Villa Freud,11.71,79,0.0,0.0,0.0,0,no,
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 1 del residuo (40.17 ha, 134 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 1 del residuo (40.17 ha, 134 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 1 del residuo (40.17 ha, 134 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 2 del residuo (31.42 ha, 15 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 2 del residuo (31.42 ha, 15 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 2 del residuo (31.42 ha, 15 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 3 del residuo (11.07 ha, 25 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 3 del residuo (11.07 ha, 25 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 3 del residuo (11.07 ha, 25 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 4 del residuo (10.74 ha, 1 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 4 del residuo (10.74 ha, 1 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 4 del residuo (10.74 ha, 1 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 5 del residuo (6.71 ha, 6 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 5 del residuo (6.71 ha, 6 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 5 del residuo (6.71 ha, 6 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 6 del residuo (4.64 ha, 5 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 6 del residuo (4.64 ha, 5 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 6 del residuo (4.64 ha, 5 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 7 del residuo (3.21 ha, 2 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 7 del residuo (3.21 ha, 2 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 7 del residuo (3.21 ha, 2 locales)"
+pieza x subzona nueva,P073,Palermo Botanico,39.19,207,0.0,0.0,,0,no,"pieza 8 del residuo (0.54 ha, 0 locales)"
+pieza x subzona nueva,P087,Palermo Pacifico,5.8,47,0.0,0.0,,0,no,"pieza 8 del residuo (0.54 ha, 0 locales)"
+pieza x subzona nueva,P092,Villa Freud,11.71,79,0.0,0.0,,0,no,"pieza 8 del residuo (0.54 ha, 0 locales)"
+pieza 1 x polo del borrador,P090+P089,,18.54,108,12.7,68.5,31.6,75,no,cae dentro de la pieza 1 del residuo

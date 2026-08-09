@@ -1,0 +1,27 @@
+bloque,clave,valor,nota
+pieza 1 - calles,nan,63,
+pieza 1 - calles,Paraguay,12,
+pieza 1 - calles,Charcas,7,
+pieza 1 - calles,Fray Justo Santa María De Oro,7,
+pieza 1 - calles,Soler,6,
+pieza 1 - calles,Uriarte,5,
+pieza 1 - calles,Jorge Luis Borges,5,
+pieza 1 - calles,Guatemala,4,
+pieza 1 - calles,Thames,4,
+pieza 1 - calles,Godoy Cruz,4,
+pieza 1 - calles,Gurruchaga,3,
+pieza 1 - calles,Armenia,2,
+pieza 1 - forma,extension_EO_m,1196,
+pieza 1 - forma,extension_NS_m,1102,
+pieza 1 - forma,bbox_wgs84,"-58.43404,-34.59232,-58.42101,-34.58240",
+pieza 1 - nucleo,P090+P089_ha_dentro,12.7,31.6 % de la pieza
+pieza 1 - nucleo,P090+P089_locales_dentro,75,56.0 % de los locales de la pieza
+pieza 3 - filtracion,R08,0,"Villa Crespo - no solapa, a 6 m"
+pieza 3 - filtracion,R09R19_CHACAGIALES,0,"Chacagiales (Chacarita + Lacroze + Colegiales) - no solapa, a 90 m"
+pieza 3 - filtracion,R21,0,"La Paternal - no solapa, a 949 m"
+pieza 5 - filtracion,R08,0,"Villa Crespo - no solapa, a 756 m"
+pieza 5 - filtracion,R09R19_CHACAGIALES,6.54,Chacagiales (Chacarita + Lacroze + Colegiales) - solapa 6.54 ha
+pieza 5 - filtracion,R21,0,"La Paternal - no solapa, a 1949 m"
+pieza 7 - filtracion,R08,0,"Villa Crespo - no solapa, a 173 m"
+pieza 7 - filtracion,R09R19_CHACAGIALES,1.55,Chacagiales (Chacarita + Lacroze + Colegiales) - solapa 1.55 ha
+pieza 7 - filtracion,R21,0,"La Paternal - no solapa, a 1257 m"
