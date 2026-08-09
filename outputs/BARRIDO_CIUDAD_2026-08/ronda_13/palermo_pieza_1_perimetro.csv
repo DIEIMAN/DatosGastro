@@ -1,0 +1,31 @@
+calle,metros_dentro_de_la_pieza,metros_sobre_el_borde,rol
+ARAOZ,413,203,LADO DEL PERIMETRO
+CHARCAS,364,144,cruza la pieza
+SOLER,448,139,cruza la pieza
+HONDURAS,110,128,LADO DEL PERIMETRO
+GUATEMALA,441,104,cruza la pieza
+COSTA RICA,179,99,LADO DEL PERIMETRO
+EL SALVADOR,139,98,LADO DEL PERIMETRO
+SCALABRINI ORTIZ RAUL,38,91,LADO DEL PERIMETRO
+GASCON,85,90,LADO DEL PERIMETRO
+GODOY CRUZ,461,89,cruza la pieza
+FRAY JUSTO SANTAMARIA DE ORO,429,86,cruza la pieza
+PARAGUAY,774,85,cruza la pieza
+URIARTE,464,84,cruza la pieza
+THAMES,405,79,cruza la pieza
+NICARAGUA,248,73,cruza la pieza
+ATACALCO,244,72,cruza la pieza
+MALABIA,126,68,toca
+ARMENIA,230,63,cruza la pieza
+GURRUCHAGA,308,62,cruza la pieza
+BORGES JORGE LUIS,321,60,cruza la pieza
+DARREGUEYRA,302,34,cruza la pieza
+VIRASORO,14,29,toca
+GORRITI,0,21,toca
+FERRARI MARIA TERESA,78,0,cruza la pieza
+ZOLA EMILIO,100,0,cruza la pieza
+[perimetro_total_m],4645,,de la pieza 1
+[m_de_perimetro_sobre_alguna_calle],709,,15 % del total
+[santa_fe_dentro_de_la_pieza_1_m],0,,cero
+[distancia_pieza_1_a_santa_fe_m],251,,no la toca
+[santa_fe_dentro_de_P090_P089_m],191,,el nombre viene de aca

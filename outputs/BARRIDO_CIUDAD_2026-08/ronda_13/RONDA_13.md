@@ -370,6 +370,62 @@ Victoria»*—. Puede ser el mismo local mal citado o dos distintos. **No se fus
 
 ---
 
+## 10 · Lo que volvió del cierre del día · y el nombre de Palermo no se firma
+
+Las decisiones del 09/08 dejaron dos cosas al repositorio. Las dos están hechas.
+
+### ERR-09 escrita en el archivo, no sólo decidida
+
+`seis_vias_Z47_Z48_Z49.csv`, fila Z47: la vía C pasa de `abre (DÉBIL, ver nota de criterio)` a
+**`no abre`**, con la decisión 1 citada. Monserrat **entra igual**, ahora con cuatro vías.
+
+> **Y el campo se reconcilia consigo mismo.** `n_vias` decía **«5 (4 robustas)»**. La débil era
+> justamente la vía C. Al cerrarla, el recuento queda en **4** y coincide con lo que el propio
+> campo venía diciendo hacía dos rondas.
+
+### La medición que Diego pidió antes de firmar · y que dice que no firme
+
+> *«NO se pide la firma hasta que el repositorio mida el perímetro en calles sobre la caja
+> −58,43404 / −34,59232 a −58,42101 / −34,58240. Proponer perímetros sin medir ya falló dos veces.»*
+
+Medido. **La respuesta es que la pieza 1 no tiene perímetro describible en calles**, y que el
+nombre propuesto nombra una avenida que la pieza no toca.
+
+**El perímetro mide 4.645 m. Sólo 709 corren sobre alguna calle: el 15 %.** El resto corta por
+adentro de las manzanas, porque el borde de la pieza no es una calle — es lo que quedó al restarle
+Soho y Hollywood a R01, y esos bordes son envolventes de clúster.
+
+| la calle que más acompaña el borde | 203 m | Araoz — **el 4 % del perímetro** |
+|---|---:|---|
+| las seis que podrían ser lado | 709 m | Araoz · Honduras · Costa Rica · El Salvador · Scalabrini Ortiz · Gascón |
+| las que **cruzan** la pieza | hasta 774 m | Paraguay 774 · Uriarte 464 · Godoy Cruz 461 · Soler 448 · Guatemala 441 |
+
+Las calles largas la **atraviesan**. Las que la bordean lo hacen por cien metros y sueltan.
+
+### Y la prueba directa del nombre
+
+```
+Av. Santa Fe dentro de la pieza 1        0 m
+distancia de la pieza 1 a Av. Santa Fe   251 m
+Av. Santa Fe dentro de P090+P089         191 m
+```
+
+> **«Palermo — eje Av. Santa Fe» nombra una avenida que está a 251 metros de la pieza y no le
+> entra ni un metro.** El nombre es correcto para **P090+P089**, que sí la toca. Pero P090+P089
+> está adentro de la pieza sólo en un 68,5 %, **y la parte que tiene Santa Fe es justamente la que
+> queda afuera.**
+>
+> **Firmar ese nombre habría sido el tercer caso de la serie que Diego nombró**, después del
+> perímetro imposible de Colegiales —Álvarez Thomas y Forest tocándose a 0 m— y del enclave de
+> Liniers 900 números al oeste. **La condición que puso funcionó: la medición lo frenó.**
+
+**Lo que sí se puede decir de la pieza 1, con la medición en la mano:** son 40,17 ha y 134 locales
+en la franja delimitada por Araoz, Honduras, Costa Rica, El Salvador, Scalabrini Ortiz y Gascón
+—entre Guatemala y Soler, sin llegar a Santa Fe—, atravesada por Paraguay, Uriarte, Godoy Cruz y
+Thames. **No es un eje: es un paño.** Y esa es la razón por la que ninguna calle lo nombra.
+
+---
+
 ## Lo que queda para Diego
 
 1. **La lámina 4 pasa a decir cinco.** Es la única consecuencia de contenido de esta tanda.
