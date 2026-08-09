@@ -1,6 +1,11 @@
 # Sección VII · La Ciudad, comuna por comuna
 
-## Primera parte · las 22 referencias publicadas
+## Primera parte · las 21 referencias publicadas
+
+> **Son 21 y no 22, y conviene decir por qué.** El Atlas anterior publicó 22 referencias. Una de
+> ellas —el entorno de Retiro— quedó absorbida en este relevamiento por una zona nueva que la
+> contiene y la mide mejor: su ficha está en la segunda parte. **Ninguna se dio de baja: una
+> cambió de lugar.**
 
 *9 de agosto de 2026 · reemplaza a `FICHAS_SECCION_VII_TANDA_1.md`*
 

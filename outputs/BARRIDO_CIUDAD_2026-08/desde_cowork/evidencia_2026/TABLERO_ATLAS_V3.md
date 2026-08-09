@@ -64,7 +64,7 @@ Era la decisión más grande del proyecto y está tomada. **El cuerpo son las 41
 | **IV** | Cómo se leyó el territorio | escrita |
 | **V** | Los referentes de la Ciudad | escrita |
 | **VI** | Las comunidades y el territorio | escrita |
-| **VII** | La Ciudad, comuna por comuna | **22 de 41 fichas escritas** |
+| **VII** | La Ciudad, comuna por comuna | **COMPLETA · 42 fichas** |
 | **VIII** | Lo que se midió y no alcanzó | escrita completa |
 | **IX** | Qué no dice este atlas | escrita |
 | **Anexo A** | Nota metodológica | **escrita** — deja de estar huérfana |
@@ -97,7 +97,9 @@ presentar la tabla de las 124.
 | `AUDITORIA_DE_ESTADO_2026-08-09.md` | la auditoría que abrió el día |
 | `DOS_PROYECTOS_DE_FICHA.md` | el hallazgo de los dos moldes de ficha |
 | `ERRATA_DEL_MODELO_DE_FICHA.md` | dos cifras del IDECBA refutadas que el modelo arrastraba |
-| `SECCION_VII_REFERENCIAS_PUBLICADAS.md` | **las 22 fichas de referencias publicadas** · reemplaza a la tanda 1 |
+| `SECCION_VII_REFERENCIAS_PUBLICADAS.md` | **las 21 fichas de referencias publicadas** · reemplaza a la tanda 1 |
+| `SECCION_VII_ZONAS_INCORPORADAS.md` | **las 21 fichas de zonas que se incorporan**, Montes de Oca incluida · cierra el cuerpo |
+| `LO_QUE_DECIDISTE_Y_LO_QUE_FALTA.md` y `decisiones_2026-08-09.csv` | el consolidado de decisiones del día |
 | `NIVELES_DE_NOMBRE_41.md` y `.csv` | la asignación de nivel de nombre para las 41, para firma |
 | `LAMINAS_v2.2_2026-08-09.md` | la presentación con Almagro en cinco vías y Monserrat repuesta |
 | `TABLERO_ATLAS_V3.md` | este archivo |
@@ -165,8 +167,21 @@ bloquea la producción. Detalle y explicación en `LO_QUE_DECIDISTE_Y_LO_QUE_FAL
 
 | # | qué | por qué sólo él |
 |---|---|---|
-| **D1** | **¿Av. Montes de Oca entra como referencia número 42, o queda en el anexo?** Necesita antes que el repositorio la mida con las seis vías. Recomendación escrita: que entre | es una decisión de alcance del documento |
-| **D2** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio que acota lo que habría que caminar | mirar la calle |
+| **D1** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio, y la de Las Cañitas está resuelta | mirar la calle |
+
+**Y nada más.** Las otras dos que estaban abiertas se cerraron por delegación explícita de Diego
+—*«hacé lo que creas mejor con esas 2 no bloqueantes»*—:
+
+**Av. Montes de Oca entra como la referencia 42, con ficha escrita.** Sostenía una lámina, una
+verificación de campo y una fila del cruce con el relevamiento oficial de ejes, y existía sólo en la
+capa de las 124. Su ficha se apoya en trayectoria, anclaje normativo y reconocimiento externo, que
+están documentados; **queda pendiente medirla con las seis vías**, y eso está declarado adentro.
+
+**Las Cañitas ya no es una caminata: está resuelta en disco.** La diferencia entre nuestros 361
+locales y los 97 de La Nación **no es un error de nadie: son taxonomías distintas.** Ellos contaron
+dos rubros —46 cafés y 51 restaurantes— dentro de su propio censo de **856 locales comerciales
+activos en 53 manzanas**; nosotros contamos toda la gastronomía en 82 hectáreas. Lo que falta no es
+caminar: es cruzar rubro por rubro sobre el mismo perímetro, y ya está anotado como tal.
 
 **Y una que le vuelve cuando el repositorio termine:** la firma del **nombre de la cuarta subzona
 de Palermo**. La propuesta —«Palermo — eje Av. Santa Fe»— está escrita y medida, pero **no se le
@@ -225,10 +240,12 @@ viene va a describir el polo equivocado.** Es errata nueva: **ERR-11.**
 
 ### Le toca a Cowork
 
-1. **Las 19 fichas de zonas nuevas** — el resto de la sección VII.
-2. **El Anexo B**, cuando exista el mapeo.
-3. **Consolidar la edición técnica con las rondas 8 a 13.**
-4. **El ajuste de cifras de la sección I**, que su propia cabecera anuncia y nadie hizo.
+1. **El ajuste de cifras de la sección I**, que su propia cabecera anuncia y nadie hizo.
+2. **Consolidar la edición técnica con las rondas 8 a 13.**
+3. **El Anexo B**, cuando exista el mapeo entre los 124 y los 42.
+4. **El Anexo C** — correspondencia, glosario, fuentes y licencias.
+
+**La sección VII está terminada.** 42 fichas en dos archivos, agrupadas por comuna.
 
 ---
 
@@ -302,10 +319,11 @@ outputs\BARRIDO_CIUDAD_2026-08\
 | vía E medida | 84 % · 79 de 94, con 10 que son un cruce espacial |
 | vía B medida | 67 % · 63 de 94, y sube sola al recorrerla contra el catálogo |
 | delimitación de polos | ~85 % · Palermo a una firma, Colegiales y el solape Villa Crespo–La Paternal abiertos |
-| **el cuerpo del documento** | **22 de 41 fichas** |
+| **el cuerpo del documento** | **42 de 42 fichas · COMPLETO** |
 | edición técnica | ~90 %, con las rondas 8 a 13 por incorporar |
 | presentación | **v2.2**, con la lámina 5 pendiente de dos verificaciones |
 
-**El cuello de botella ya no es el dato ni la estructura: son las 19 fichas que faltan y siete
-firmas.** Y de las siete, tres —el nombre de la subzona de Palermo, los niveles de nombre y las dos
-erratas— tienen la propuesta escrita y sólo esperan un sí.
+**El cuello de botella ya no es el dato, ni la estructura, ni el cuerpo del documento: es el
+repositorio.** Lo que queda son mediciones —el perímetro de la subzona de Palermo, el mapeo entre
+los 124 y los 42, las dos ampliaciones, los cruces de la vía E— y dos anexos que dependen de ellas.
+**Ninguna es una discusión: todas son una corrida.**
