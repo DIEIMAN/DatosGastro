@@ -933,7 +933,7 @@ muchos Notables y ningún MICHELIN no es peor: es una que las guías internacion
 
 **Comunas 1 y 3 · San Nicolás y Balvanera** — referencia publicada · corredor
 
-**354 locales en 49,67 hectáreas** — la relación más apretada de las 22.
+**354 locales en 49,67 hectáreas** — la relación más apretada de las referencias publicadas.
 
 **Perímetro.** El eje de Av. Corrientes, entre el Obelisco y el entorno de Callao/Pueyrredón. **El
 tramo exacto está por precisar**, y se declara acá y no al pie.
@@ -1003,7 +1003,7 @@ resuelve mirando sus redes, no buscando más prensa.
 
 **Anclaje normativo.** **APH1 San Telmo – Monserrat**, el Área de Protección Histórica.
 
-**Por qué es un polo — y es la referencia más expuesta de las 22.**
+**Por qué es un polo — y es la más expuesta de las referencias publicadas.**
 
 - **Trayectoria e instituciones** — abre, y es lo que la sostiene.
 - **Reconocimiento externo** — abre **por el mínimo**, con dos grupos independientes. La Nación
@@ -1075,7 +1075,7 @@ del Atlas donde la fuente que la acredita registra sus propias bajas.
 ocupación y subió 1,3 puntos**. Y trae el dato que mejor describe la zona: **2,23 locales por
 cuadra, la densidad comercial más baja de los 48 ejes relevados.**
 
-**Límites de lectura.** **Es la referencia con peor relación entre locales y superficie de las 22:
+**Límites de lectura.** **Es la referencia con peor relación entre locales y superficie de las referencias publicadas:
 354 locales en 314 hectáreas.** No es un defecto de la medición sino la forma del barrio —agua,
 diques y grandes parcelas—, pero **ningún ranking por tamaño debería usar esta ficha sin decirlo.**
 Y su reconocimiento externo se apoya en material de hace tres años: lo que la ficha afirma sobre
@@ -1132,7 +1132,7 @@ El eje **Defensa** que releva la Ciudad **termina en el 1499 y esta referencia e
 cuando el eje Florida llega al 999.** No es casualidad: los ejes del Instituto se cortan en
 centenas y los polos no.
 
-**Límites de lectura.** **Es la ficha más dependiente de un solo establecimiento de las 22.** Si El
+**Límites de lectura.** **Es la ficha más dependiente de un solo establecimiento de las referencias publicadas.** Si El
 Británico no estuviera, la referencia quedaría con una vía geométrica —el corredor— y una vía
 documental de hace cinco años. Y con un perímetro de una o dos cuadras, **las 50,03 hectáreas de
 la envolvente describen el entorno, no el polo**: la cifra de superficie de esta ficha no es
@@ -1147,7 +1147,7 @@ holgura.
 
 **Comuna 1 · San Nicolás y Monserrat** — referencia publicada · área segmentada
 
-**1.084 locales en 184,12 hectáreas** — la mayor masa gastronómica de las 22.
+**1.084 locales en 184,12 hectáreas** — la mayor masa gastronómica de las referencias publicadas.
 
 **Perímetro.** Perímetro vigente. **Se pisa con Monserrat**, que en este relevamiento entra por sí
 sola como zona, y el reparto de la superposición está sin decidir.
@@ -2353,7 +2353,7 @@ novedad, tres años sin verificar es mucho tiempo.
   a Villa Devoto y Plaza Arenales como polo gastronómico y como distrito del vino.
 
 > **Es, junto con la franja Chacarita–Colegiales, la referencia con la cobertura externa más fresca
-> y más internacional de las 22.** Time Out la ubicó sexta entre los barrios más *cool* de América
+> y más internacional de las referencias publicadas.** Time Out la ubicó sexta entre los barrios más *cool* de América
 > Latina en 2025 — y eso es cita del ranking, no calificación de este atlas.
 
 **Los referentes.** **Café de García**, Av. Beiro, sin reverificar. **Stylo Café**, Fernández de
@@ -2365,7 +2365,7 @@ tiene **88,1 % de ocupación y perdió 1,8 puntos**, con **16,0 locales por cuad
 oficial lo marca como coincidencia **parcial** con esta referencia: el eje releva dos avenidas y el
 polígono del Atlas se organiza sobre Plaza Arenales.
 
-**Límites de lectura.** **478,74 hectáreas es la superficie más grande de las 22**, y con 422
+**Límites de lectura.** **478,74 hectáreas es la superficie más grande de las referencias publicadas**, y con 422
 locales la densidad resultante describe un barrio entero y no un núcleo. **La concentración real
 está en el entorno de Plaza Arenales y este polígono no la aísla**: cualquier comparación de
 densidad con esta ficha subestima el polo.
@@ -2447,7 +2447,7 @@ públicos**, así que la ficha nombra la figura y no cita su contenido.
 - **Corredor** — abre.
 - **Reconocimiento externo** — **cuatro grupos independientes**: La Nación, Infobae, El Cronista y
   Time Out. **Es la referencia con más grupos de reconocimiento externo empatada en el segundo
-  puesto de las 22.**
+  puesto entre las referencias publicadas.**
 - **Trayectoria e instituciones** — **no abre. Cero hitos.**
 
 > **Es el caso inverso al de San Telmo, y por eso está publicado.** Cuatro grupos de prensa
@@ -2462,7 +2462,7 @@ públicos**, así que la ficha nombra la figura y no cita su contenido.
 
 **Límites de lectura.** **Dos de los cuatro grupos que abren la vía son de 2017 y 2018**, y con
 ellos **el listado de locales queda dudoso en bloque**: esta ficha no afirma que esos cinco sigan
-abiertos. Es la referencia de las 22 que más depende de evidencia envejecida, y hasta reverificarla
+abiertos. Es la referencia publicada que más depende de evidencia envejecida, y hasta reverificarla
 lo que se puede decir es que el corredor fue tratado como polo, no que lo siga siendo.
 
 **Contexto comercial.** **No hay eje relevado que corresponda a esta referencia.**
@@ -2483,7 +2483,7 @@ lo que se puede decir es que el corredor fue tratado como polo, no que lo siga s
 
 - **Densidad y continuidad** — abre.
 - **Trayectoria e instituciones** — abre.
-- **Reconocimiento externo** — **abre, y es el caso más frágil de las 22.** La Nación (2025) trata
+- **Reconocimiento externo** — **abre, y es el caso más frágil de las referencias publicadas.** La Nación (2025) trata
   a Villa Urquiza como barrio *foodie*.
 
 > **Y la fragilidad va acá, no en una nota interna.** De los grupos que abren la vía, **dos
@@ -2533,7 +2533,7 @@ verificado mide **1.483 metros, unas quince cuadras.**
 - **Trayectoria e instituciones** — **no abre. Cero hitos en la capa.**
 
 > **Es el caso que más contradice a la medición, y por eso está acá.** Abre una sola vía geométrica
-> y tiene la cobertura documental más insistente y más fresca de las 22: **tres reporteos de campo
+> y tiene la cobertura documental más insistente y más fresca de las referencias publicadas: **tres reporteos de campo
 > distintos de un mismo diario, en 2021, 2025 y 2026.** Cuando la medición no ve lo que cuatro
 > relevamientos describen, la primera sospecha no es sobre el territorio: es sobre dónde se cortó
 > el corredor.
@@ -2553,7 +2553,7 @@ documental habla.** Y la cifra de 61 locales corresponde al corte anterior: **ca
 ampliación, y hasta entonces no se usa para comparar.**
 
 **Lo que falta.** **Medir la referencia antes y después de la ampliación.** Es la que más puede
-cambiar de las 22.
+cambiar de las referencias publicadas.
 
 ---
 
@@ -2625,7 +2625,7 @@ a esta ficha.
 **Por qué es un polo — y por qué hasta hace poco abría una vía más.**
 
 - **Densidad y continuidad** — abre. Es lo que la sostiene, con cobertura del 100 % de la zona.
-- **Corredor** — abre, con una **elongación de 8,06: la forma más alargada de las 22.**
+- **Corredor** — abre, con una **elongación de 8,06: la forma más alargada de las referencias publicadas.**
 - **Trayectoria e instituciones** — pendiente, con un solo hito sin verificar.
 - **Mercados y centralidades** — **dejó de abrir.** El Patio Costanera Norte es una centralidad
   planificada que fue puesta en su entorno y no lo organiza. **La referencia no se da de baja: se
@@ -2665,7 +2665,7 @@ locales sobre una elongación de 8,06, **la densidad por hectárea de esta refer
 comparable con la de un núcleo**: es una tira, no una mancha.
 
 **Lo que falta.** **Una fecha para el Patio y una evidencia cualquiera para Happening** — una nota
-fechada, un posteo del canal propio, o una llamada. **Es la única de las 42 fichas donde los dos
+fechada, un posteo del canal propio, o una llamada. **Es la única de las 41 fichas donde los dos
 únicos referentes quedaron sin cerrar después de buscarlos**, y por eso está escrito así.
 
 ---
@@ -2686,7 +2686,7 @@ superficie perdida, no con un predicado.
 - **Densidad y continuidad** — abre.
 - **Trayectoria e instituciones** — abre.
 - **Corredor** — abre.
-- **Reconocimiento externo** — **cinco grupos independientes: es la referencia con más de las 22.**
+- **Reconocimiento externo** — **cinco grupos independientes: es la referencia publicada con más.**
   The New York Times (2024) y Time Out (2026) tratan la franja Chacarita–Colegiales como distrito
   gastronómico.
 
@@ -3917,12 +3917,22 @@ está medido y en disco. Lo que faltaba era la regla que dijera qué hacer con e
 
 ### Cómo leer estas páginas
 
-**El cuerpo de este atlas son 42 polos. Este anexo son las 124 concentraciones de las que salieron.**
+**El cuerpo de este atlas son 41 polos admitidos. Este anexo son las 124 concentraciones de las que salieron.**
+
+> **Nota de alcance, y hay que leerla antes que la tabla.** La correspondencia entre las 124
+> concentraciones y los polos **se calculó contra el conjunto de 42 que este atlas tenía antes de
+> aplicar el criterio único**, el 9 de agosto. El conjunto cambió: **entraron cuatro zonas del sur y
+> salieron cinco que pasaron a otra categoría.** Las cifras sobre las 124 —su cantidad, su superficie
+> y sus 12.688 locales— **no dependen del conjunto de polos y siguen siendo exactas.** Las que
+> relacionan las 124 con los polos **están pendientes de recalcularse**, y hasta que eso pase se
+> citan diciendo contra qué conjunto se midieron. **Recalcularlas exige además que se tracen los
+> dieciocho perímetros que hoy se representan con el barrio**: un cruce espacial contra un polígono
+> de barrio no mide el polo, mide el barrio.
 No es un descarte ni un borrador: es el insumo completo, publicado entero, para que cualquiera pueda
 rehacer el camino que va de una a otra.
 
 **Las 124 son disjuntas** —solapamiento medido 0,0 %— y **suman exactamente 12.688 locales en
-3.128,5 hectáreas**, que es la cifra total del atlas. Los 42 polos, en cambio, se pisan entre sí y
+3.128,5 hectáreas**, que es la cifra total del atlas. Los polos, en cambio, se pisan entre sí y
 con las concentraciones: **la tabla de este anexo se puede sumar; la de los polos no.**
 
 Cada fila dice a qué polo pertenece la concentración y **con qué porcentaje de su propia superficie
@@ -3979,7 +3989,7 @@ grandes en superficie: **son los más fragmentados por dentro.**
 ## Los diecinueve que no entraron a ningún polo
 
 **Diecinueve concentraciones, 1.451 locales — el 11,4 % de todo lo que este atlas contabiliza— no
-están adentro de ninguno de los 42 polos.**
+están adentro de ninguno de los polos.**
 
 **Y no fueron descartadas: la mayoría nunca fue evaluada.** Siete zonas se evaluaron y no
 alcanzaron el criterio, y están en la sección VIII con su argumento. Estas diecinueve son otra
@@ -4048,7 +4058,7 @@ sin política pública.
 
 ### Tres · la Comuna 8 tiene tres concentraciones y ningún polo
 
-**Los 42 polos de este atlas cubren catorce comunas. La Comuna 8 no tiene ninguno.**
+**Los polos de este atlas cubren catorce comunas. La Comuna 8 no tiene ninguno.**
 
 Tiene **tres concentraciones detectadas con 259 locales** —Lugano, Villa Riachuelo y Villa
 Soldati—, y la única zona candidata que se evaluó ahí, Villa Soldati, **no abrió ninguna vía.**
@@ -4077,7 +4087,7 @@ Distrito de Diseño en Barracas; y Caballito sobre Honorio Pueyrredón.
 
 ## La que no tiene ninguna concentración adentro
 
-**De los 42 polos, cuarenta y uno contienen al menos una concentración detectada. Uno no: el Barrio
+**De los polos de aquel conjunto, todos menos uno contenían al menos una concentración detectada. El que no: el Barrio
 Coreano de Carabobo.**
 
 > **Y es coherente con cómo entró.** Ese polo abre por comunidad, por corredor y por reconocimiento
@@ -4088,7 +4098,7 @@ Coreano de Carabobo.**
 > cobertura de prensa del atlas y con menos verificabilidad — ni un solo establecimiento con nombre
 > y altura de puerta.** Un polo que ningún instrumento detecta y ninguna dirección confirma se
 > sostiene enteramente sobre cómo lo trata la prensa. **Está publicado y esa fragilidad está
-> declarada en su ficha**, pero es la única de las 42 en esa situación.
+> declarada en su ficha**, pero es la única en esa situación.
 
 ---
 
@@ -4122,15 +4132,15 @@ el camino.**
 Durante su preparación, este atlas tuvo **dos proyectos de documento** con estructuras distintas, y
 por un tiempo convivieron. No fue un renumerado: **cambió el objeto del cuerpo.**
 
-| | **proyecto de las 124** | **proyecto de los 42 · el publicado** |
+| | **proyecto de las 124** | **proyecto de los polos · el publicado** |
 |---|---|---|
-| el cuerpo es | 124 fichas tabulares, una por concentración detectada | 42 fichas en prosa, una por polo admitido |
+| el cuerpo es | 124 fichas tabulares, una por concentración detectada | 41 fichas en prosa, una por polo admitido |
 | agrupación | por comuna | por comuna |
 | ocupa la sección | **V** | **VII** |
 | «qué no dice este atlas» | **VII** | **IX** |
 
 **Se publica el segundo.** Las 124 concentraciones no se descartan: son el insumo del que salen los
-42 y se publican enteras en el **Anexo B**, con nombre y perímetro.
+polos y se publican enteras en el **Anexo B**, con nombre y perímetro.
 
 ### Qué sección contiene qué, y de dónde vino
 
@@ -4142,7 +4152,7 @@ por un tiempo convivieron. No fue un renumerado: **cambió el objeto del cuerpo.
 | **IV** · Cómo se leyó el territorio | sin cambios entre las dos numeraciones | |
 | **V** · Los referentes de la Ciudad | **nueva** | no tiene equivalente en la numeración vieja: la capa de referentes con vigencia fechada no existía como objeto |
 | **VI** · Las comunidades y el territorio | **nueva** | ídem: los quince enclaves delimitados son producto de la fase documental |
-| **VII** · La Ciudad, comuna por comuna | **el cuerpo** | 42 fichas en dos partes: 21 referencias publicadas y 21 zonas incorporadas |
+| **VII** · La Ciudad, comuna por comuna | **el cuerpo** | 41 fichas agrupadas por comuna: 20 referencias publicadas y 21 zonas incorporadas |
 | **VIII** · Lo que se midió y no alcanzó | era la VI de la numeración vieja | escrita completa, seis subsecciones |
 | **IX** · Qué no dice este atlas | era la VII | actualizada |
 | **Anexo A** · Nota metodológica | era la VIII | **estuvo huérfana**: la numeración nueva va de I a IX y no la incluía. Es un resumen que remite a la edición técnica, y un resumen que remite a otro documento es anexo, no sección |
@@ -4164,7 +4174,7 @@ homogéneo ni está acotado administrativamente**, y su delimitación responde a
 y gastronómica, no a límites de barrio.
 
 **Concentración.** Lo que detecta el instrumento: un agrupamiento de puntos que supera el umbral de
-densidad. **Una concentración no es todavía un polo**: hay 124 concentraciones y 42 polos.
+densidad. **Una concentración no es todavía un polo**: hay 124 concentraciones y 41 polos admitidos.
 
 **Las cuatro familias.** Las formas que puede tener un polo. **Núcleo compacto** · **polo con
 subzonas** —donde los vacíos son parte de la figura— · **eje o corredor** —donde la forma es lineal

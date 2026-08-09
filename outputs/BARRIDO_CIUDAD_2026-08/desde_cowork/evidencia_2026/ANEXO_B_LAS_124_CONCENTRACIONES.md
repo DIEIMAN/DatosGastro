@@ -6,12 +6,22 @@
 
 ## Cómo leer estas páginas
 
-**El cuerpo de este atlas son 42 polos. Este anexo son las 124 concentraciones de las que salieron.**
+**El cuerpo de este atlas son 41 polos admitidos. Este anexo son las 124 concentraciones de las que salieron.**
+
+> **Nota de alcance, y hay que leerla antes que la tabla.** La correspondencia entre las 124
+> concentraciones y los polos **se calculó contra el conjunto de 42 que este atlas tenía antes de
+> aplicar el criterio único**, el 9 de agosto. El conjunto cambió: **entraron cuatro zonas del sur y
+> salieron cinco que pasaron a otra categoría.** Las cifras sobre las 124 —su cantidad, su superficie
+> y sus 12.688 locales— **no dependen del conjunto de polos y siguen siendo exactas.** Las que
+> relacionan las 124 con los polos **están pendientes de recalcularse**, y hasta que eso pase se
+> citan diciendo contra qué conjunto se midieron. **Recalcularlas exige además que se tracen los
+> dieciocho perímetros que hoy se representan con el barrio**: un cruce espacial contra un polígono
+> de barrio no mide el polo, mide el barrio.
 No es un descarte ni un borrador: es el insumo completo, publicado entero, para que cualquiera pueda
 rehacer el camino que va de una a otra.
 
 **Las 124 son disjuntas** —solapamiento medido 0,0 %— y **suman exactamente 12.688 locales en
-3.128,5 hectáreas**, que es la cifra total del atlas. Los 42 polos, en cambio, se pisan entre sí y
+3.128,5 hectáreas**, que es la cifra total del atlas. Los polos, en cambio, se pisan entre sí y
 con las concentraciones: **la tabla de este anexo se puede sumar; la de los polos no.**
 
 Cada fila dice a qué polo pertenece la concentración y **con qué porcentaje de su propia superficie
@@ -68,7 +78,7 @@ grandes en superficie: **son los más fragmentados por dentro.**
 # Los diecinueve que no entraron a ningún polo
 
 **Diecinueve concentraciones, 1.451 locales — el 11,4 % de todo lo que este atlas contabiliza— no
-están adentro de ninguno de los 42 polos.**
+están adentro de ninguno de los polos.**
 
 **Y no fueron descartadas: la mayoría nunca fue evaluada.** Siete zonas se evaluaron y no
 alcanzaron el criterio, y están en la sección VIII con su argumento. Estas diecinueve son otra
@@ -137,7 +147,7 @@ sin política pública.
 
 ## Tres · la Comuna 8 tiene tres concentraciones y ningún polo
 
-**Los 42 polos de este atlas cubren catorce comunas. La Comuna 8 no tiene ninguno.**
+**Los polos de este atlas cubren catorce comunas. La Comuna 8 no tiene ninguno.**
 
 Tiene **tres concentraciones detectadas con 259 locales** —Lugano, Villa Riachuelo y Villa
 Soldati—, y la única zona candidata que se evaluó ahí, Villa Soldati, **no abrió ninguna vía.**
@@ -166,7 +176,7 @@ Distrito de Diseño en Barracas; y Caballito sobre Honorio Pueyrredón.
 
 # La que no tiene ninguna concentración adentro
 
-**De los 42 polos, cuarenta y uno contienen al menos una concentración detectada. Uno no: el Barrio
+**De los polos de aquel conjunto, todos menos uno contenían al menos una concentración detectada. El que no: el Barrio
 Coreano de Carabobo.**
 
 > **Y es coherente con cómo entró.** Ese polo abre por comunidad, por corredor y por reconocimiento
@@ -177,7 +187,7 @@ Coreano de Carabobo.**
 > cobertura de prensa del atlas y con menos verificabilidad — ni un solo establecimiento con nombre
 > y altura de puerta.** Un polo que ningún instrumento detecta y ninguna dirección confirma se
 > sostiene enteramente sobre cómo lo trata la prensa. **Está publicado y esa fragilidad está
-> declarada en su ficha**, pero es la única de las 42 en esa situación.
+> declarada en su ficha**, pero es la única en esa situación.
 
 ---
 

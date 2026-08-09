@@ -14,15 +14,15 @@ el camino.**
 Durante su preparación, este atlas tuvo **dos proyectos de documento** con estructuras distintas, y
 por un tiempo convivieron. No fue un renumerado: **cambió el objeto del cuerpo.**
 
-| | **proyecto de las 124** | **proyecto de los 42 · el publicado** |
+| | **proyecto de las 124** | **proyecto de los polos · el publicado** |
 |---|---|---|
-| el cuerpo es | 124 fichas tabulares, una por concentración detectada | 42 fichas en prosa, una por polo admitido |
+| el cuerpo es | 124 fichas tabulares, una por concentración detectada | 41 fichas en prosa, una por polo admitido |
 | agrupación | por comuna | por comuna |
 | ocupa la sección | **V** | **VII** |
 | «qué no dice este atlas» | **VII** | **IX** |
 
 **Se publica el segundo.** Las 124 concentraciones no se descartan: son el insumo del que salen los
-42 y se publican enteras en el **Anexo B**, con nombre y perímetro.
+polos y se publican enteras en el **Anexo B**, con nombre y perímetro.
 
 ## Qué sección contiene qué, y de dónde vino
 
@@ -34,7 +34,7 @@ por un tiempo convivieron. No fue un renumerado: **cambió el objeto del cuerpo.
 | **IV** · Cómo se leyó el territorio | sin cambios entre las dos numeraciones | |
 | **V** · Los referentes de la Ciudad | **nueva** | no tiene equivalente en la numeración vieja: la capa de referentes con vigencia fechada no existía como objeto |
 | **VI** · Las comunidades y el territorio | **nueva** | ídem: los quince enclaves delimitados son producto de la fase documental |
-| **VII** · La Ciudad, comuna por comuna | **el cuerpo** | 42 fichas en dos partes: 21 referencias publicadas y 21 zonas incorporadas |
+| **VII** · La Ciudad, comuna por comuna | **el cuerpo** | 41 fichas agrupadas por comuna: 20 referencias publicadas y 21 zonas incorporadas |
 | **VIII** · Lo que se midió y no alcanzó | era la VI de la numeración vieja | escrita completa, seis subsecciones |
 | **IX** · Qué no dice este atlas | era la VII | actualizada |
 | **Anexo A** · Nota metodológica | era la VIII | **estuvo huérfana**: la numeración nueva va de I a IX y no la incluía. Es un resumen que remite a la edición técnica, y un resumen que remite a otro documento es anexo, no sección |
@@ -56,7 +56,7 @@ homogéneo ni está acotado administrativamente**, y su delimitación responde a
 y gastronómica, no a límites de barrio.
 
 **Concentración.** Lo que detecta el instrumento: un agrupamiento de puntos que supera el umbral de
-densidad. **Una concentración no es todavía un polo**: hay 124 concentraciones y 42 polos.
+densidad. **Una concentración no es todavía un polo**: hay 124 concentraciones y 41 polos admitidos.
 
 **Las cuatro familias.** Las formas que puede tener un polo. **Núcleo compacto** · **polo con
 subzonas** —donde los vacíos son parte de la figura— · **eje o corredor** —donde la forma es lineal
