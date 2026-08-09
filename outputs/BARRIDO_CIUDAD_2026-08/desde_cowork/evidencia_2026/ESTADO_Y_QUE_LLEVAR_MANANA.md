@@ -12,10 +12,10 @@ mostrar algo en progreso.
 
 ## La foto en una línea
 
-**El contenido está terminado. La forma no empezó.**
+**Hay documento.** *Actualizado el 9/8 a la noche.*
 
-Todo lo que había que averiguar, medir, verificar y escribir, está. Lo que falta es convertirlo en
-un objeto que se pueda repartir: maquetado, con mapas, con tapa.
+Un PDF de 103 páginas, con tapa, índice, folios, quince mapas y las 41 fichas. **Ya no es un texto
+sin maquetar que se lee como borrador: es un objeto terminado con lo que falta declarado adentro.**
 
 ## Por frente
 
@@ -25,12 +25,13 @@ un objeto que se pueda repartir: maquetado, con mapas, con tapa.
 | **Cobertura geográfica** | **100 %** | las quince comunas barridas con el mismo umbral |
 | **Catálogo de Bares Notables** | **100 %** | 90 de 90 verificados, 88 operando |
 | **Texto del documento** | **100 %** | secciones I a IX y los tres anexos, escritos |
-| **Verificación de referentes** | **98 %** | 41 de las 42 fichas tienen al menos uno con fecha propia |
+| **Verificación de referentes** | **100 %** | **41 de 41 fichas** tienen al menos uno con fecha propia |
 | **Mediciones de geometría** | **~92 %** | quedan tres decisiones de delimitación |
 | **Presentación** | **100 %** | v2.3, dieciséis láminas, ninguna retenida |
-| **Edición técnica** | **~85 %** | falta incorporarle las rondas 8 a 14 |
-| **Cartografía** | **0 %** | decidido —mapa general y uno por comuna— y no ejecutado |
-| **Maquetación y diseño** | **0 %** | no empezó |
+| **Edición técnica** | **en stand-by** | por decisión tuya, no entra en esta entrega |
+| **Cartografía** | **100 %** de una primera pasada | mapa general y catorce comunales, reproducibles con dos scripts |
+| **Maquetación y diseño** | **100 %** de una primera pasada | PDF A4 de 103 páginas |
+| **Delimitación de polígonos** | **56 %** | 23 polos con perímetro propio · **18 se representan con su barrio** |
 
 ## Qué significa cada porcentaje que no es 100
 
@@ -54,26 +55,33 @@ está más adelante de donde lo pusimos.
 **El corredor de Montes de Oca.** El polígono cubre 761 metros de avenida y el corredor documentado
 mide más del doble. Publicamos el polígono y describimos el corredor, declarando la diferencia.
 
-**Las dos verificaciones que faltan** son Happening, en Costanera Norte, y Celta Bar, en Corrientes.
-**Las dos sólo se resuelven en redes**, que están bloqueadas para cualquier agente automático. Son
-dos minutos tuyos.
+**Las dos verificaciones que faltaban están cerradas** — *actualizado el 9/8 a la noche*. Happening
+está abierto: historia de su canal propio ese mismo día, más el sitio oficial listando la sucursal.
+Y **Celta Bar está abierto, y resultó el caso más interesante de los dos: no tiene redes.** Ninguna
+fuente pública podía resolverlo —su reseña más reciente es de hace 283 días— y se resolvió mirándolo.
+**Eso obligó a agregarle un nivel a la escala de vigencia**, la observación directa del equipo, con
+su fecha, su testigo y su debilidad declarada: no la puede reinspeccionar un tercero.
+
+**Con Happening, las 41 fichas pasan a tener al menos un referente verificado con fecha propia.**
 
 ## Cuán lejos está el final
 
 **Del contenido: estamos.** No hay una sola pieza del documento sin escribir.
 
-**De un documento repartible: entre tres y cinco jornadas**, y la mayor parte no es trabajo de
-análisis:
+**De un documento repartible: ya está, y se puede mejorar.** El PDF existe. Lo que queda es una
+sola cosa, y es de repositorio:
 
-| lo que falta | jornadas |
-|---|---|
-| cartografía —mapa general y quince mapas comunales— | 2 a 3 |
-| maquetación, tapa, índice, folios | 1 a 1,5 |
-| las tres decisiones de delimitación y su medición | 0,5 |
-| consolidar la edición técnica | 0,5 |
+| lo que falta | quién | esfuerzo |
+|---|---|---|
+| **trazar los 18 perímetros** que hoy se representan con el polígono de su barrio | el repositorio | es lo único grande que queda |
+| rehacer los mapas y el PDF con esos perímetros | Cowork | una corrida de dos scripts |
+| los polígonos oficiales de barrios y comunas como base cartográfica | vos, 5 minutos | datos abiertos del GCBA |
+| las cuatro zonas del sur incorporadas al corpus y el reparto de dos de ellas | el repositorio | ERR-17 |
 
-**Es la primera vez en este proyecto que el cuello de botella no es averiguar algo.** Hasta hoy
-cada ronda encontraba trabajo nuevo; hoy lo que queda está enumerado y no tiene sorpresas adentro.
+**El cuello de botella se movió dos veces en un día.** Dejó de ser el dato, después dejó de ser la
+forma, **y hoy son los dieciocho perímetros.** Mientras no estén, dieciocho de los cuarenta y un
+polos no pueden publicar superficie ni cantidad de locales — y eso está declarado en el mapa, en
+cada ficha y en la sección VIII.
 
 ---
 ---
@@ -85,9 +93,13 @@ cada ronda encontraba trabajo nuevo; hoy lo que queda está enumerado y no tiene
 **Dieciséis láminas, versión 2.3, sin ninguna retenida.** Es material terminado y verificado, no un
 borrador. Es lo que mostrás.
 
-**El documento escrito no lo lleves.** Está entero pero sin maquetar, y un texto de cien páginas sin
-diseño no se lee como «terminado y sin editar»: se lee como borrador. **Lo mencionás, no lo
-repartís.**
+**Y ahora sí, el documento.** *Cambió respecto de lo que decía acá esta mañana.* El PDF de 103
+páginas está maquetado, con tapa, índice, folios y los quince mapas. **Se puede repartir.** Lo que
+no está terminado —los dieciocho perímetros— está declarado adentro, en el mapa, en cada ficha y en
+una sección entera.
+
+> **Ésa es la diferencia que conviene señalar si alguien pregunta por qué se entrega en progreso:**
+> no es un borrador con huecos, es un documento terminado que dice dónde no llega.
 
 ## El orden, según cuánto tiempo tengas
 

@@ -714,11 +714,11 @@ tres en contra**, con la misma herramienta.
 ### Cómo se verifica que un establecimiento sigue abierto
 
 Este atlas no afirma «está abierto». Afirma **«hay evidencia fechada de actividad al día tal»**, y
-publica cuál es esa evidencia. La escala tiene cinco niveles y produce cinco veredictos:
+publica cuál es esa evidencia. La escala tiene seis niveles y produce cinco veredictos:
 
 | veredicto | qué lo sostiene |
 |---|---|
-| **verificado abierto** | prensa con reporteo propio, publicación en canal propio del local, o reseña de usuario con fecha visible — todo dentro de una ventana de 60 a 90 días |
+| **verificado abierto** | observación directa del equipo, prensa con reporteo propio, publicación en canal propio del local, o reseña de usuario con fecha visible — todo dentro de una ventana de 60 a 90 días |
 | **probablemente abierto** | listado o guía fechada dentro de 180 días, o un evento concreto nombrado por su organizador |
 | **dudoso** | nada posterior a 180 días |
 | **cerrado** | evidencia positiva de cierre |
@@ -738,6 +738,24 @@ nuestro alcance que sobre él.
 **Una verificación tiene fecha de vencimiento.** Un establecimiento verificado a diecisiete días es
 un hecho sobre julio de 2026. Por eso cada verificación de este atlas lleva su fecha, y por eso la
 publicación declara su fecha de corte.
+
+**Y hay un nivel que se agregó al final del relevamiento, porque un caso lo pidió.** Celta Bar
+—Sarmiento 1701, Bar Notable— **no tiene redes propias localizables**, y la evidencia fechada más
+reciente que un tercero publicó sobre él es una reseña de octubre de 2025: fuera de toda ventana. Y
+sin embargo está abierto, constatado en persona.
+
+> **Observación directa del equipo.** Un integrante del relevamiento constata el estado del
+> establecimiento —en la calle, o sobre una publicación efímera de su canal propio— y se registra
+> **quién observó, qué vio y en qué fecha.** Es la recencia máxima posible: cero días. Y tiene una
+> debilidad que se declara siempre: **no es reinspeccionable por un tercero**, porque una historia
+> expira a las veinticuatro horas y una vereda vista el martes no queda archivada. **Por eso nunca
+> se usa sola: se acompaña del barrido de evidencia en contra**, diciendo qué fuentes se consultaron
+> y qué dijeron.
+
+**Es exactamente el revés de un padrón**, y por eso los dos hacen falta. Un padrón es perfectamente
+reinspeccionable y puede estar nueve años desactualizado —este atlas publica ese caso—. Una
+observación directa es imbatible en recencia y no la puede repetir nadie más. **Ninguna de las dos
+es "la buena": cada una falla donde la otra funciona.**
 
 ### Lo que se perdió, y por qué se perdió
 
@@ -771,6 +789,10 @@ cerró el inmueble y no el establecimiento.
 
 Y eso tiene una consecuencia de política que este atlas puede sostener con nombres y fechas: **un
 polo puede estar sano y perder su ancla igual.** Es lo que ya pasó en más de una zona de este mapa,
+
+
+---
+
 y es la clase de pérdida que una política de patrimonio gastronómico puede anticipar en lugar de
 registrar.
 
@@ -786,9 +808,6 @@ y patrimonial, no de crítica.
 
 > Un polo con muchos bares notables y ninguna estrella no es un polo peor. Es un polo que las guías
 > no visitan.
-
----
-
 
 ---
 
@@ -852,23 +871,6 @@ Es exactamente el tipo de asimetría que este trabajo permite ver, y corregir.
 Y hay un hallazgo negativo que conviene dejar escrito porque cambia cómo se cita la figura: **no
 existe una ley que cree la figura de Centro Comercial a Cielo Abierto.** Hay proyectos legislativos
 registrados y ninguno sancionado. Los CCCA existentes se anclan en **resolución administrativa y
-licitación de obra pública**, no en legislación. Este atlas los cita así.
-
-### Cómo se delimita un enclave sin inflarlo
-
-Una delimitación comunitaria sale de fuentes textuales —notas, estudios, comunicación de las propias
-instituciones— y esas fuentes describen calles, no polígonos. Traducirlas tiene un riesgo concreto y
-este atlas lo cometió antes de corregirlo: **un eje descrito de más abre la vía de comunidades en
-zonas a las que no corresponde.**
-
-Pasó con un enclave cuyo eje quedó extendido más de lo que la fuente sostenía, y el efecto fue que
-tres áreas vecinas aparecieran como si tuvieran presencia comunitaria propia. Al corregir la
-delimitación, **el conteo bajó**.
-
-De ahí sale la regla con la que se cargó el resto: **una delimitación se verifica midiéndola.** Un
-tramo tiene que tener longitud real, y hay que verificar contra qué toca antes de darlo por bueno.
-
----
 
 
 ---
@@ -962,11 +964,19 @@ Av. Corrientes 1799, alta del catálogo de 2026.
 > escribió y cuándo se visitó— **y sólo la segunda dice algo sobre la actividad del local.** Sin esa
 > confusión, las reseñas con visita reciente de La Giralda caen catorce días antes del corte.
 
-**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — **no resuelve, y por ausencia de rastro.** Su
-reseña más reciente es de octubre de 2025, no tiene sitio propio, y la prensa más nueva es de
-noviembre de 2024 sin reporteo. **Tampoco hay evidencia de cierre: se buscó y no hay.** Un local que
-dejó de generar rastro digital puede estar abierto y no tener quien lo escriba, y este método no lo
-distingue.
+**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — **verificado abierto al 09/08/2026, por
+observación directa del equipo**, y es el caso que obligó a agregarle un nivel a la escala de
+vigencia.
+
+> **Ninguna fuente pública podía resolverlo.** Su reseña más reciente es del **31 de octubre de
+> 2025 —a 283 días**, cuando la ventana de una reseña es de noventa—; **no tiene redes propias
+> localizables**; y la prensa más nueva es de noviembre de 2024 sin reporteo. **Tampoco hay
+> evidencia de cierre, y se buscó: tres fuentes independientes mantienen la ficha activa, una de
+> ellas con dirección y horario de 10 a 23, y ninguna marca cierre.**
+>
+> **Un local que dejó de generar rastro digital puede estar abierto y no tener quien lo escriba.**
+> Este bar lo estaba. **La invisibilidad era del instrumento, no del local** — y la única manera de
+> saberlo fue ir a mirar.
 
 **Lo que se mudó, y es la lección de esta ficha.** **La Academia cerró en Callao 368 y reabrió el
 19/06/2025 en Montevideo 341** —el viejo local de Pippo, que había cerrado en agosto de 2020
@@ -988,8 +998,8 @@ comparar tamaños. Y el corredor se pisa con la referencia del Centro sobre buen
 recorrido: los dos conteos no se suman.
 
 **Lo que falta.** **Precisar el tramo del eje**, que destraba todo lo demás incluido el cruce con
-los dos ejes de arriba. Y **resolver Celta Bar**, que es lo único de esta ficha sin rastro: se
-resuelve mirando sus redes, no buscando más prensa.
+los dos ejes de arriba. **Celta Bar ya está resuelto** — y la ficha había anotado que se resolvía
+mirando sus redes: **no tiene redes.** Se resolvió mirándolo.
 
 ---
 
@@ -2644,10 +2654,15 @@ resuelve sin poder citarse y el otro no resuelve.**
 > publica. Y la misma página declara capacidad para 240 personas mientras otras fuentes hablan de
 > 546 m², 150 personas y cinco puestos. **No se reconcilia acá.**
 >
-> **Happening no resuelve.** Su sitio propio lista la sucursal con dirección y lleva copyright
-> 2026, sin fecha de contenido, sin horarios, sin nada fechable. **Un copyright no es evidencia de
-> actividad: se actualiza solo.** Prensa secundaria menciona un aniversario reciente, sin fecha
-> verificable.
+> **Happening resolvió, y con dos caminos. Verificado abierto al 09/08/2026.** El primero es
+> **observación directa del equipo sobre una historia publicada por su canal propio**, vista ese
+> día: recencia de cero días, y **no reinspeccionable** porque una historia expira a las
+> veinticuatro horas. El segundo sí queda archivado: **el sitio oficial lista la sucursal Costanera
+> Norte con marca de modificación del 17 de abril de 2026** —a 114 días, fuera de la ventana de
+> sesenta, pero suficiente para acreditar que la sucursal está listada y activa—.
+>
+> **Lo que antes se leía acá era que un copyright no es evidencia de actividad, y sigue siendo
+> cierto.** Lo que cambió no es la lectura del copyright: es que apareció una observación fechada.
 
 **Lo que se perdió, y es lo más grave de esta ficha.** **Los Años Locos**, **Los Platitos 57**, **A
 Los Amigos** y **Look** figuran cerrados, y **Rodizio fue demolido**. Cinco bajas y una demolición
@@ -2664,9 +2679,10 @@ cierre documentada para cuatro de ellas: la ficha afirma que la zona perdió, no
 locales sobre una elongación de 8,06, **la densidad por hectárea de esta referencia no es
 comparable con la de un núcleo**: es una tira, no una mancha.
 
-**Lo que falta.** **Una fecha para el Patio y una evidencia cualquiera para Happening** — una nota
-fechada, un posteo del canal propio, o una llamada. **Es la única de las 41 fichas donde los dos
-únicos referentes quedaron sin cerrar después de buscarlos**, y por eso está escrito así.
+**Lo que falta.** **Una fecha para el Patio Costanera Norte** — la página oficial lo publica con
+dirección y horarios vigentes y no trae fecha de publicación ni de actualización, así que resuelve
+la fila y no se cita. **Happening quedó cerrado el 09/08/2026** y con él **esta ficha dejó de ser la
+única del atlas sin ningún referente verificado con fecha propia.**
 
 ---
 
@@ -3485,6 +3501,24 @@ propia evidencia.
 ---
 
 
+
+---
+
+licitación de obra pública**, no en legislación. Este atlas los cita así.
+
+### Cómo se delimita un enclave sin inflarlo
+
+Una delimitación comunitaria sale de fuentes textuales —notas, estudios, comunicación de las propias
+instituciones— y esas fuentes describen calles, no polígonos. Traducirlas tiene un riesgo concreto y
+este atlas lo cometió antes de corregirlo: **un eje descrito de más abre la vía de comunidades en
+zonas a las que no corresponde.**
+
+Pasó con un enclave cuyo eje quedó extendido más de lo que la fuente sostenía, y el efecto fue que
+tres áreas vecinas aparecieran como si tuvieran presencia comunitaria propia. Al corregir la
+delimitación, **el conteo bajó**.
+
+De ahí sale la regla con la que se cargó el resto: **una delimitación se verifica midiéndola.** Un
+tramo tiene que tener longitud real, y hay que verificar contra qué toca antes de darlo por bueno.
 
 ---
 

@@ -95,7 +95,7 @@ Era la decisión más grande del proyecto y está tomada. **El cuerpo son las 41
 | **IV** | Cómo se leyó el territorio | escrita |
 | **V** | Los referentes de la Ciudad | escrita |
 | **VI** | Las comunidades y el territorio | escrita |
-| **VII** | La Ciudad, comuna por comuna | **COMPLETA · 42 fichas** |
+| **VII** | La Ciudad, comuna por comuna | **COMPLETA · 41 fichas en catorce comunas** |
 | **VIII** | Lo que se midió y no alcanzó | escrita completa |
 | **IX** | Qué no dice este atlas | escrita |
 | **Anexo A** | Nota metodológica | **escrita** — deja de estar huérfana |
@@ -199,7 +199,7 @@ bloquea la producción. Detalle y explicación en `LO_QUE_DECIDISTE_Y_LO_QUE_FAL
 | # | qué | por qué sólo él |
 |---|---|---|
 | ~~**D1**~~ | ~~¿La Boca se evalúa y entra como la 43?~~ **CERRADA, y no por decisión: La Boca fue evaluada el 07/08 con las seis vías y sus dos zonas entraron.** El resultado quedó en un solo archivo y nunca se trasladó al corpus. No hay nada que decidir: hay que trazarle el perímetro. Ver ERR-17 | ya no espera nada |
-| **D2** | **Happening** y **Celta Bar**, en Instagram o Facebook. Son los dos únicos establecimientos del atlas que no resolvió nadie, y las redes están bloqueadas para todo agente automático | sólo él puede |
+| ~~**D2**~~ | ~~Happening y Celta Bar~~ **CERRADOS el 09/08 por Diego.** Happening: historia del canal propio, más el sitio oficial. **Celta Bar no tiene redes** y se resolvió por observación directa — el caso que obligó a agregarle el nivel v0 a la escala de vigencia | ya no espera nada |
 | **D3** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio, la de Las Cañitas está resuelta y la de Montes de Oca se midió | mirar la calle |
 
 **Y nada más.** Las otras dos que estaban abiertas se cerraron por delegación explícita de Diego
@@ -431,10 +431,11 @@ outputs\BARRIDO_CIUDAD_2026-08\
 | estructura del documento | 100 % |
 | **texto del documento** | **100 %** · secciones I a IX y los tres anexos |
 | el cuerpo | **41 fichas, agrupadas por comuna** |
-| referentes con fecha propia | **40 de las 41 fichas** · la única sin cerrar es Costanera Norte |
+| referentes con fecha propia | **41 de 41 fichas** · cerrado el 09/08 con Happening |
 | **cartografía** | **100 % de una primera pasada** · mapa general y catorce comunales, reproducibles |
 | **maquetación** | **100 % de una primera pasada** · PDF A4 de 103 páginas, con tapa, índice y folios |
 | **verificación interna** | **100 %** · ninguna cifra del documento contradice a otra |
+| **verificación de referentes** | **100 %** · 41 de 41 fichas, y los dos establecimientos individuales pendientes cerrados el 09/08 |
 | delimitación de polígonos | **56 %** · 23 polos con perímetro propio, **18 se representan con su barrio** |
 | vía E medida | 84 % · 79 de 94, con 10 que son un cruce espacial |
 | vía B medida | 67 % · 63 de 94, y sube sola al recorrerla contra el catálogo |

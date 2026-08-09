@@ -310,11 +310,11 @@ tres en contra**, con la misma herramienta.
 ## Cómo se verifica que un establecimiento sigue abierto
 
 Este atlas no afirma «está abierto». Afirma **«hay evidencia fechada de actividad al día tal»**, y
-publica cuál es esa evidencia. La escala tiene cinco niveles y produce cinco veredictos:
+publica cuál es esa evidencia. La escala tiene seis niveles y produce cinco veredictos:
 
 | veredicto | qué lo sostiene |
 |---|---|
-| **verificado abierto** | prensa con reporteo propio, publicación en canal propio del local, o reseña de usuario con fecha visible — todo dentro de una ventana de 60 a 90 días |
+| **verificado abierto** | observación directa del equipo, prensa con reporteo propio, publicación en canal propio del local, o reseña de usuario con fecha visible — todo dentro de una ventana de 60 a 90 días |
 | **probablemente abierto** | listado o guía fechada dentro de 180 días, o un evento concreto nombrado por su organizador |
 | **dudoso** | nada posterior a 180 días |
 | **cerrado** | evidencia positiva de cierre |
@@ -334,6 +334,24 @@ nuestro alcance que sobre él.
 **Una verificación tiene fecha de vencimiento.** Un establecimiento verificado a diecisiete días es
 un hecho sobre julio de 2026. Por eso cada verificación de este atlas lleva su fecha, y por eso la
 publicación declara su fecha de corte.
+
+**Y hay un nivel que se agregó al final del relevamiento, porque un caso lo pidió.** Celta Bar
+—Sarmiento 1701, Bar Notable— **no tiene redes propias localizables**, y la evidencia fechada más
+reciente que un tercero publicó sobre él es una reseña de octubre de 2025: fuera de toda ventana. Y
+sin embargo está abierto, constatado en persona.
+
+> **Observación directa del equipo.** Un integrante del relevamiento constata el estado del
+> establecimiento —en la calle, o sobre una publicación efímera de su canal propio— y se registra
+> **quién observó, qué vio y en qué fecha.** Es la recencia máxima posible: cero días. Y tiene una
+> debilidad que se declara siempre: **no es reinspeccionable por un tercero**, porque una historia
+> expira a las veinticuatro horas y una vereda vista el martes no queda archivada. **Por eso nunca
+> se usa sola: se acompaña del barrido de evidencia en contra**, diciendo qué fuentes se consultaron
+> y qué dijeron.
+
+**Es exactamente el revés de un padrón**, y por eso los dos hacen falta. Un padrón es perfectamente
+reinspeccionable y puede estar nueve años desactualizado —este atlas publica ese caso—. Una
+observación directa es imbatible en recencia y no la puede repetir nadie más. **Ninguna de las dos
+es "la buena": cada una falla donde la otra funciona.**
 
 ## Lo que se perdió, y por qué se perdió
 

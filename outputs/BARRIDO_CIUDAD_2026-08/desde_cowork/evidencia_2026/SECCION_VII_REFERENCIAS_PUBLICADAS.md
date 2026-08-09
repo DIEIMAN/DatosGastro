@@ -99,11 +99,19 @@ Av. Corrientes 1799, alta del catálogo de 2026.
 > escribió y cuándo se visitó— **y sólo la segunda dice algo sobre la actividad del local.** Sin esa
 > confusión, las reseñas con visita reciente de La Giralda caen catorce días antes del corte.
 
-**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — **no resuelve, y por ausencia de rastro.** Su
-reseña más reciente es de octubre de 2025, no tiene sitio propio, y la prensa más nueva es de
-noviembre de 2024 sin reporteo. **Tampoco hay evidencia de cierre: se buscó y no hay.** Un local que
-dejó de generar rastro digital puede estar abierto y no tener quien lo escriba, y este método no lo
-distingue.
+**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — **verificado abierto al 09/08/2026, por
+observación directa del equipo**, y es el caso que obligó a agregarle un nivel a la escala de
+vigencia.
+
+> **Ninguna fuente pública podía resolverlo.** Su reseña más reciente es del **31 de octubre de
+> 2025 —a 283 días**, cuando la ventana de una reseña es de noventa—; **no tiene redes propias
+> localizables**; y la prensa más nueva es de noviembre de 2024 sin reporteo. **Tampoco hay
+> evidencia de cierre, y se buscó: tres fuentes independientes mantienen la ficha activa, una de
+> ellas con dirección y horario de 10 a 23, y ninguna marca cierre.**
+>
+> **Un local que dejó de generar rastro digital puede estar abierto y no tener quien lo escriba.**
+> Este bar lo estaba. **La invisibilidad era del instrumento, no del local** — y la única manera de
+> saberlo fue ir a mirar.
 
 **Lo que se mudó, y es la lección de esta ficha.** **La Academia cerró en Callao 368 y reabrió el
 19/06/2025 en Montevideo 341** —el viejo local de Pippo, que había cerrado en agosto de 2020
@@ -125,8 +133,8 @@ comparar tamaños. Y el corredor se pisa con la referencia del Centro sobre buen
 recorrido: los dos conteos no se suman.
 
 **Lo que falta.** **Precisar el tramo del eje**, que destraba todo lo demás incluido el cruce con
-los dos ejes de arriba. Y **resolver Celta Bar**, que es lo único de esta ficha sin rastro: se
-resuelve mirando sus redes, no buscando más prensa.
+los dos ejes de arriba. **Celta Bar ya está resuelto** — y la ficha había anotado que se resolvía
+mirando sus redes: **no tiene redes.** Se resolvió mirándolo.
 
 ---
 
@@ -862,10 +870,15 @@ resuelve sin poder citarse y el otro no resuelve.**
 > publica. Y la misma página declara capacidad para 240 personas mientras otras fuentes hablan de
 > 546 m², 150 personas y cinco puestos. **No se reconcilia acá.**
 >
-> **Happening no resuelve.** Su sitio propio lista la sucursal con dirección y lleva copyright
-> 2026, sin fecha de contenido, sin horarios, sin nada fechable. **Un copyright no es evidencia de
-> actividad: se actualiza solo.** Prensa secundaria menciona un aniversario reciente, sin fecha
-> verificable.
+> **Happening resolvió, y con dos caminos. Verificado abierto al 09/08/2026.** El primero es
+> **observación directa del equipo sobre una historia publicada por su canal propio**, vista ese
+> día: recencia de cero días, y **no reinspeccionable** porque una historia expira a las
+> veinticuatro horas. El segundo sí queda archivado: **el sitio oficial lista la sucursal Costanera
+> Norte con marca de modificación del 17 de abril de 2026** —a 114 días, fuera de la ventana de
+> sesenta, pero suficiente para acreditar que la sucursal está listada y activa—.
+>
+> **Lo que antes se leía acá era que un copyright no es evidencia de actividad, y sigue siendo
+> cierto.** Lo que cambió no es la lectura del copyright: es que apareció una observación fechada.
 
 **Lo que se perdió, y es lo más grave de esta ficha.** **Los Años Locos**, **Los Platitos 57**, **A
 Los Amigos** y **Look** figuran cerrados, y **Rodizio fue demolido**. Cinco bajas y una demolición
@@ -882,9 +895,10 @@ cierre documentada para cuatro de ellas: la ficha afirma que la zona perdió, no
 locales sobre una elongación de 8,06, **la densidad por hectárea de esta referencia no es
 comparable con la de un núcleo**: es una tira, no una mancha.
 
-**Lo que falta.** **Una fecha para el Patio y una evidencia cualquiera para Happening** — una nota
-fechada, un posteo del canal propio, o una llamada. **Es la única de las 41 fichas donde los dos
-únicos referentes quedaron sin cerrar después de buscarlos**, y por eso está escrito así.
+**Lo que falta.** **Una fecha para el Patio Costanera Norte** — la página oficial lo publica con
+dirección y horarios vigentes y no trae fecha de publicación ni de actualización, así que resuelve
+la fila y no se cita. **Happening quedó cerrado el 09/08/2026** y con él **esta ficha dejó de ser la
+única del atlas sin ningún referente verificado con fecha propia.**
 
 ---
 
@@ -1182,9 +1196,11 @@ tres, y Villa Crespo y Boulevard Caseros cerraron su único referente.** De las 
 > por rutas distintas y se declara la precisión que se sostiene. Por eso una de estas fichas dice el
 > mes y no el día.
 >
-> **Y no todo lo que no aparece está cerrado.** Celta Bar no tiene rastro desde octubre de 2025 y
-> tampoco tiene evidencia de cierre. **La invisibilidad de un local es un dato sobre el instrumento,
-> no sobre el local.**
+> **Y no todo lo que no aparece está cerrado. Ahora está demostrado, no argumentado.** Celta Bar no
+> tenía rastro desde octubre de 2025 ni evidencia de cierre, y **está abierto**: se constató en
+> persona el 09/08/2026. **La invisibilidad de un local es un dato sobre el instrumento, no sobre el
+> local** — y el instrumento se corrigió: la escala de vigencia suma la observación directa del
+> equipo, con su fecha, su testigo y su debilidad declarada.
 
 **Dos · el cruce con el relevamiento de ejes está incompleto de un modo específico.** Trece de las
 21 pudieron citar contexto comercial; **cinco no tienen eje relevado y lo declaran** —Boulevard
