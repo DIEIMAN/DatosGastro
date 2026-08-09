@@ -135,7 +135,9 @@ mirá tal archivo».
 | ¿The New Brighton está cerrado? | **No.** Quiebra decretada y sigue atendiendo. Un acto jurídico no es un hecho operativo | ídem |
 | ¿El Palacio de la Papa Frita cerró? | **No: se mudó** de Av. Corrientes 1612 a Paraná 350 | errata del 08/08 |
 | ¿Sirve la corrida de Places de la ronda 8? | **No.** Se da por perdida entera: sin `displayName`, ninguno de los 71 resultados tiene referente conocido | ronda 9 |
-| ¿Hay que cargar Plaza Asturias y El Globo como hitos? | **No, y es decisión de la ronda 7:** no tienen registro oficial. Lo que falta es su vigencia | ronda 7 |
+| ¿Hay que cargar Plaza Asturias y El Globo como hitos? | **No, y es decisión de la ronda 7:** no tienen registro oficial | ronda 7 |
+| ¿Plaza Asturias y El Globo están abiertos? | **Sí, los dos, verificados el 09/08/2026** por publicación fechada en canal propio — v2. El Globo con historia del 09/08, Plaza Asturias con foto del ≈02/08 | `LO_QUE_DECIDISTE_Y_LO_QUE_FALTA.md` |
+| ¿Por qué la cuarta subzona de Palermo no está adentro de las otras? | Porque las tres conocidas cubren el 60 % del perímetro publicado y están del lado de Juan B. Justo; la pieza está sobre Paraguay, Charcas y Soler, del lado de Santa Fe. **Y Botánico, Pacífico y Villa Freud intersecan en 0,00 ha: están enteramente afuera del perímetro publicado.** Son vecinas, no subzonas | `ronda_13/palermo_seis_subzonas.csv` |
 | ¿Los 76 m y los 1.100 m² de la lámina 5? | **Medidos.** Máxima 76,1 m entre Plaza Asturias y El Imparcial; envolvente 0,110 ha | ronda 7, tarea 5e |
 
 ### Fuentes, láminas y documento
@@ -156,17 +158,31 @@ mirá tal archivo».
 
 ## 5 · ABIERTO
 
-### Espera la firma de Diego · nada avanza sin esto
+### Espera algo de Diego
 
-| # | qué hay que firmar | qué destraba |
+**Cinco de las siete decisiones que estaban abiertas se cerraron el 09/08.** Quedan dos, y ninguna
+bloquea la producción. Detalle y explicación en `LO_QUE_DECIDISTE_Y_LO_QUE_FALTA.md`.
+
+| # | qué | por qué sólo él |
 |---|---|---|
-| **D1** | **El nombre y el perímetro de la cuarta subzona de Palermo.** Propuesta medida: «Palermo — eje Av. Santa Fe», que explica 75 de sus 134 locales en un tercio de su superficie. No explica 27,47 ha y 59 locales | cierra Palermo entero |
-| **D2** | **Las 8,09 ha y 7 locales de doble conteo** entre Palermo y el corredor Chacarita–Colegiales | cierra el nudo de Chacagiales |
-| **D3** | **ERR-08 y ERR-09.** La primera ya está aplicada en la lámina 4; la segunda es pasar la vía C de Monserrat a «no abre», que la decisión 1 ordenó el 07/08 y nunca llegó al archivo. Ninguna cambia un veredicto de admisión | limpieza |
-| **D4** | **Los niveles de nombre de las 41.** Propuesta completa, con la evidencia por fila. Cuatro casos convienen mirarse primero: Federico Lacroze, Liniers, Nueva Pompeya y el nombre de la referencia del Centro | destraba el encabezado de las 41 fichas |
-| **D5** | **¿Av. Montes de Oca entra como referencia número 42, o queda en el anexo?** Ver el hallazgo de abajo | define si son 41 o 42 |
-| **D6** | La vigencia de **Plaza Asturias y El Globo** — es lo único que le falta a la lámina 5 | libera la lámina 5 |
-| **D7** | Las **tres caminatas** — Montes de Oca 280–1702, Av. Rivadavia en Flores, Las Cañitas | verifica lo que sólo se ve en la calle |
+| **D1** | **¿Av. Montes de Oca entra como referencia número 42, o queda en el anexo?** Necesita antes que el repositorio la mida con las seis vías. Recomendación escrita: que entre | es una decisión de alcance del documento |
+| **D2** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio que acota lo que habría que caminar | mirar la calle |
+
+**Y una que le vuelve cuando el repositorio termine:** la firma del **nombre de la cuarta subzona
+de Palermo**. La propuesta —«Palermo — eje Av. Santa Fe»— está escrita y medida, pero **no se le
+puede pedir la firma sin el perímetro en calles**, y ese perímetro hay que medirlo sobre la caja
+`-58,43404 · -34,59232` a `-58,42101 · -34,58240`. Proponer un perímetro sin medirlo ya falló dos
+veces en este proyecto.
+
+### Lo que se cerró el 09/08 y no vuelve a abrirse
+
+| decisión | resolución |
+|---|---|
+| **Los niveles de nombre de las 41** | **ACEPTADOS por Diego.** 0 normativos · 3 oficiales de facto · 27 de uso corriente · 11 de trabajo. Con dos cambios de nombre: «Centro y Microcentro» y «Monserrat y Congreso» |
+| **Plaza Asturias y El Globo** | **VERIFICADOS ABIERTOS.** El Globo, historia en canal propio del 09/08/2026, v2. Plaza Asturias, foto en canal propio del ≈02/08/2026, v2. Verificación humana directa de Diego. **La lámina 5 queda liberada** |
+| **ERR-09 · la vía C de Monserrat** | **Aplicada por Cowork por delegación de Diego.** Pasa a «no abre»: la decisión 1 del 07/08 ya había resuelto que una feria itinerante no abre esa vía, y nunca había llegado al archivo. Monserrat entra igual, con cuatro vías |
+| **ERR-08 · las seis vías de Almagro** | Aplicada en la lámina 4 de la v2.2 |
+| **Las 8,09 ha de doble conteo** entre Palermo y Chacarita–Colegiales | **No es una decisión de criterio: los perímetros publicados no se tocan.** Se declara en las dos fichas y no se suman. Ya está escrito así en las dos |
 
 ### Un hallazgo de hoy que abre D5, y hay que entenderlo antes de firmarlo
 

@@ -10,7 +10,9 @@
 > **La lámina 7, sobre Monserrat, vuelve.** Se destrabó: el conteo estaba bien y el que estaba mal
 > era el filtro con el que se lo buscaba.
 > **La lámina 5 se reescribe entera, y mejora**: su fuerza no era que los cuatro estuvieran
-> reconocidos, sino que dos no lo están.
+> reconocidos, sino que dos no lo están. **Y queda liberada**: los cuatro tienen vigencia con fecha.
+>
+> **Con esto el paquete no tiene ninguna lámina retenida.**
 
 **Advertencia de uso, una sola:** los números de superficie y locales están calculados sobre la
 **unión** de los polígonos, no sobre la suma de filas de la matriz de trabajo. Sumar la matriz
@@ -92,13 +94,15 @@ Siete zonas fueron evaluadas y **descartadas**, con el descarte argumentado una 
 
 **Máxima distancia entre los cuatro: 76,1 metros** —entre Plaza Asturias y El Imparcial—. **Envolvente: 1.100 m².** El Globo está enfrente de El Imparcial.
 
+**Los cuatro están abiertos, verificados con fecha:** Bar Iberia y El Imparcial por relevamiento documental; **El Globo al 09/08/2026** y **Plaza Asturias al 02/08/2026**, los dos por publicación fechada en su propio canal.
+
 > **La distinción patrimonial no distingue entre vecinos de la misma esquina.** Es la lámina 6 —el 44 % en la Comuna 1— hecha tangible en un cruce de calles.
 
 > **Por qué esta versión es más fuerte que la anterior.** La v2.1 decía *«4 establecimientos reconocidos en 1.100 m²»* y **dos de los cuatro no lo son**. La lámina no dependía de que los cuatro estuvieran reconocidos: **depende de que dos no lo estén.**
 >
-> **Lo que falta antes de usarla, y es acotado:** Plaza Asturias y El Globo **no tienen verificación de vigencia con fecha**. Que no estén cargados como hitos no es un pendiente —es una decisión, porque no tienen registro oficial— pero la lámina afirma en presente que los cuatro están ahí, y de dos no hay fecha.
+> **Y que Plaza Asturias y El Globo no estén cargados como hitos no es un pendiente: es una decisión.** No tienen registro oficial de ningún tipo —El Globo está explícitamente fuera del anexo del catálogo y fuera de los dieciséis Icónicos— y cargarlos sería lo incorrecto. **Lo que sí hacía falta era su vigencia, y está.**
 
-*Distancias y envolvente medidas sobre las cuatro direcciones geocodificadas.*
+*Distancias y envolvente medidas sobre las cuatro direcciones geocodificadas. Vigencia de Plaza Asturias y El Globo verificada por Diego (DGDGAS) el 09/08/2026 sobre publicaciones fechadas en canal propio.*
 
 ---
 
@@ -316,11 +320,11 @@ Y las cinco que más suben: **Córdoba Tribunales +4,3 · Alberdi +3,4 · Flores
 **Lo que cambió en la v2.2.**
 La **lámina 4** pasa de seis vías a **cinco** para Almagro, y deja de decir «la única». La **lámina 7** vuelve, con los nueve de Monserrat y su estado. La **lámina 5** se reescribe: su fuerza es que dos de los cuatro **no** están reconocidos. La **lámina 6** deja de advertir que su desglose está en revisión.
 
-**Los números que se pueden citar sin reservas.** Los de las láminas 1, 2, 6, 7, 10, 12, 14 y 15. Están calculados sobre la unión de polígonos, verificados contra fuente oficial, o tomados de la planilla del IDECBA.
+**Los números que se pueden citar sin reservas.** Los de las láminas 1, 2, **5**, 6, 7, 10, 12, 14 y 15. Están calculados sobre la unión de polígonos, verificados contra fuente oficial, o tomados de la planilla del IDECBA.
 
 **Los que llevan salvedad, y la salvedad está en la lámina.** El de la 9 —los 58 locales del viaducto— porque son inaugurados y no totales. Los de la 13, porque tres de los cuatro casos tienen datos de 2021 a 2025. El de la 12, porque el eje del Instituto y el corredor del Atlas no son el mismo tramo.
 
-**Lo que NO conviene citar todavía.** La **lámina 5** hasta tener la vigencia de Plaza Asturias y El Globo. Cualquier ranking de polos por tamaño: hay tres perímetros en ampliación y una subzona de Palermo sin nombre firmado. Y cualquier total obtenido sumando la matriz de trabajo.
+**Lo que NO conviene citar todavía.** Cualquier ranking de polos por tamaño: hay tres perímetros en ampliación y una subzona de Palermo sin perímetro medido. Y cualquier total obtenido sumando la matriz de trabajo.
 
 **Y lo que hay que dejar de decir.** Que *«los polos consagrados son los que más comercio pierden»* —medido, no hay tal brecha—, que *«el IDECBA delimita Soho, Hollywood y Cañitas como tres ejes»* —la serie vigente releva un solo eje de Palermo— y que *«Almagro es la única zona que abre las seis vías»*.
 
