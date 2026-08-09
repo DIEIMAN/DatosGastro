@@ -1,0 +1,42 @@
+polo_id,nombre_en_ficha,nivel_del_nombre,fuente_del_nombre,en_que_se_apoya,marca_ficha,nota
+R01,Palermo,3,uso corriente,"Subzonas en nivel 3 en POLOS_NOMBRADOS.csv (P091 Soho, P078 Hollywood, P073 Botanico).",,
+R02,Avenida Corrientes,3,uso corriente,"P113 «Av. Corrientes · tramo teatral», nivel 3.",,
+R03,San Telmo,3,uso corriente,"P103 «San Telmo», nivel 3. El APH1 San Telmo-Monserrat protege pero no nombra al polo.",,
+R04,Puerto Madero,3,uso corriente,P030 «Puerto Madero · diques 2 y 3» esta en nivel 2 pero nombra una subzona.,,
+R05,Belgrano,3,uso corriente,"Su enclave, el Barrio Chino, es P072-6 en nivel 2.",,
+R06,Recoleta,3,uso corriente,"P098 «Recoleta · Plaza Francia», nivel 3.",,
+R07,Costanera Norte,3,uso corriente,"Uso corriente consolidado, sostenido por senaletica y prensa.",,
+R08,Villa Crespo,3,uso corriente,,,
+R09,Chacarita,2,oficial de facto,P068 se llama literalmente «Polo gastronomico Chacarita» y esta en nivel 2.,,
+R10,Caballito,3,uso corriente,,,
+R11,Boulevard Caseros,3,uso corriente,"P102 «Bulevar Caseros», nivel 3. Turismo BA lo reconoce en su guia de Barracas.",,
+R12,Centro y Microcentro,3,uso corriente,"P116 «Microcentro», nivel 3.",,"CAMBIO DE NOMBRE PROPUESTO: sacar «segmentado», que es la morfologia y no el nombre."
+R13,Abasto,2,oficial de facto,P093 «Abasto» y P082 estan los dos en nivel 2.,,
+R14,Avenida Boedo,3,uso corriente,"P062 «San Juan y Boedo» esta en nivel 2 pero nombra la esquina, no el corredor.",,
+R15,Devoto,3,uso corriente,"P016 «Plaza Arenales (Devoto gastronomico)», nivel 3.",,
+R16,Donado-Holmberg,3,uso corriente,"P045 y P039 son «DoHo (Donado-Holmberg)», los dos en nivel 3.",,
+R17,Villa Urquiza,3,uso corriente,,,
+R19,Federico Lacroze,4,denominacion de trabajo,Es el nombre de la avenida que mide el poligono; los cinco grupos de prensa hablan de Fraga y Dorrego.,°,"PARA MIRAR: si la ampliacion cubre Fraga, cambia el nombre, no el nivel."
+R20,Garcia del Rio,3,uso corriente,"Tres reporteos de La Nacion (2021, 2025, 2026) lo nombran «el boulevard de Garcia del Rio».",,
+R21,La Paternal,3,uso corriente,"P043 es «La Isla (La Paternal)», nivel 3; «La Isla» nombra su nucleo.",,
+R22,Villa Pueyrredon,4,denominacion de trabajo,Cero evidencia externa de cualquier tipo. El nombre es barrio mas avenida.,°,
+Z23,Flores · casco historico,3,uso corriente,,,
+Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,4,denominacion de trabajo,Descriptivo: barrio mas ejes.,°,
+Z25,Floresta,3,uso corriente,Los cuatro P de Floresta estan en nivel 4 porque nombran esquinas.,,
+Z27,Villa Santa Rita,4,denominacion de trabajo,No se encontro denominacion para el polo.,°,
+Z28,Monte Castro,4,denominacion de trabajo,"P025-2 «Monte Castro · Av. Lope de Vega», nivel 4.",°,
+Z31,Villa Luro,4,denominacion de trabajo,No se encontro denominacion para el polo.,°,
+Z32,Liniers · Mercado Andino,2,oficial de facto,El Mercado Andino es denominacion oficial de facto.,,DECISION ABIERTA DE DIEGO: el nombre del enclave de Liniers tiene cinco candidatos y no esta firmado.
+Z33,Mataderos,3,uso corriente,,,"PARA MIRAR: si el polo se nombra por la Feria, P006 «Feria de Mataderos y Casco Historico» esta en nivel 2."
+Z35,Balvanera · Once,3,uso corriente,«Once» es uso corriente fortisimo. Los tres P de Balvanera estan en nivel 4 porque nombran esquinas.,,
+Z37,Almagro,3,uso corriente,Los tres P de Almagro estan en nivel 4.,,
+Z39,Parque Avellaneda,4,denominacion de trabajo,No se encontro denominacion para el polo.,°,
+Z39b,Baek-ku · Barrio Coreano,3,uso corriente,"Uso corriente DENTRO DE LA COMUNIDAD, que es el uso que corresponde para un enclave. Comparable a P072-6 «Barrio Chino», nivel 2.",,
+Z40,Nueva Pompeya y Parque Patricios,4,denominacion de trabajo,Dos barrios unidos por conveniencia.,°,"PARA MIRAR: si el polo se recorta a Parque Patricios, P027 «Distrito Tecnologico» esta en NIVEL 1 por Ley 2972/2008."
+Z41,Nunez,3,uso corriente,"P067 «Bajo Nunez», nivel 3.",,
+Z42,Coghlan,4,denominacion de trabajo,Ningun P de nombre parecido en los 124.,°,
+Z43,Colegiales,3,uso corriente,Los tres P de Colegiales estan en nivel 4 porque nombran esquinas.,,
+Z44,Villa Ortuzar,4,denominacion de trabajo,No se encontro denominacion para el polo.,°,
+Z46,Retiro,3,uso corriente,Los dos P de Retiro estan en nivel 4.,,
+Z47,Monserrat y Congreso,3,uso corriente,"P101+P099 «Congreso», nivel 3.",,"CAMBIO DE NOMBRE PROPUESTO: «y» en vez de «+», que es notacion de trabajo."
+Z48,San Cristobal,4,denominacion de trabajo,Los dos P de San Cristobal estan en nivel 4.,°,
