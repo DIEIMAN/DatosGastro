@@ -1,0 +1,62 @@
+referencia,nombre,eje_idecba,tramo,locales_del_tramo_dentro,locales_del_tramo_total,tasa_ocupacion_pct,var_interanual_pp,decia_esta_en_el_atlas,veredicto
+R02,Avenida Corrientes,Corrientes y Callao,corrientes 1101-1799,7,9,94.0,1.1,NO — candidato a evaluar con las seis vias,PENDIENTE - el tramo de R02 no esta fijado; NO se atribuye a mano
+R02,Avenida Corrientes,Lavalle,corrientes 501-999,3,5,80.3,-3.2,NO — candidato a evaluar con las seis vias,PENDIENTE - el tramo de R02 no esta fijado; NO se atribuye a mano
+R02,Avenida Corrientes,Lavalle,lavalle 501-999,4,19,80.3,-3.2,NO — candidato a evaluar con las seis vias,PENDIENTE - el tramo de R02 no esta fijado; NO se atribuye a mano
+R02,Avenida Corrientes,Libertad,libertad 1-499,3,6,88.2,2.5,NO — candidato a evaluar con las seis vias,PENDIENTE - el tramo de R02 no esta fijado; NO se atribuye a mano
+R02,Avenida Corrientes,Corrientes y Medrano,corrientes 3601-4799,1,9,90.3,-2.7,NO — candidato a evaluar con las seis vias,PENDIENTE - el tramo de R02 no esta fijado; NO se atribuye a mano
+R07,Costanera Norte,,,0,0,,,,SIN EJE RELEVADO - la ficha puede declararlo en vez de omitirlo
+R11,Boulevard Caseros,,,0,0,,,,SIN EJE RELEVADO - la ficha puede declararlo en vez de omitirlo
+(calibracion),,Av. Belgrano,Av. Belgrano 1801-2799,,2,,,NO — candidato a evaluar con las seis vias,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Corrientes y Callao,Av. Corrientes 1101-1799,,9,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Corrientes y Pueyrredón,Av. Corrientes 2101-2899,,7,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Córdoba Facultad,Av. Córdoba 2201-2699,,5,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Córdoba Tribunales,Av. Córdoba 1301-1899,,1,,,NO — candidato a evaluar con las seis vias,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Entre Ríos,Av. Entre Ríos 201-1199,,10,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Florida,Florida 1-999,,34,,,SI — R12 / Plaza Bar,la sonda lo ve
+(calibracion),,Lavalle,Corrientes 501-999 · Lavalle 501-999 · Esmeralda 401-599,,30,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Libertad,Libertad 1-499,,6,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Monserrat,Av. Belgrano 1101-1799,,3,,,SI — Z47,la sonda lo ve
+(calibracion),,Once,Av. Rivadavia 2101-3199 · Pueyrredón 1-599,,11,,,SI — enclave judio y zona,la sonda lo ve
+(calibracion),,Puerto Madero,A. M. De Justo 101-2099,,0,,,SI — referencia publicada,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Santa Fe y Callao,Av. Santa Fe 1101-2499,,15,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Cabildo,Av. Cabildo 1501-3799,,33,,,SI — entorno R20 / Belgrano,la sonda lo ve
+(calibracion),,Chacarita,Lacroze 3501-4199,,0,,,"SI — R09, fusionado en Chacagiales",LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Colegiales,Av. Cabildo 501-899 · Lacroze 2301-2899,,6,,,"SI — Z43, sin perimetro propio",la sonda lo ve
+(calibracion),,Córdoba y Scalabrini Ortiz,Av. Córdoba 4301-4999,,5,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Palermo Soho,El Salvador 4601-4799 · Honduras 4701-4999 · Serrano / Borges 1501-1799 · Gurruchaga 1601-1899 · Armenia 1501-1799 · Malabia 1601-1799,,36,,,SI — subzona,la sonda lo ve
+(calibracion),,Recoleta,Av. Alvear 1801-1999 · Junín 1701-1799 · Ortiz 1801-1899 · Quintana 401-599 · Vicente López 2001-2199,,6,,,SI — referencia publicada,la sonda lo ve
+(calibracion),,Santa Fe y Coronel Díaz,Av. Santa Fe 2501-3299,,4,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Santa Fe y Scalabrini Ortiz,Av. Santa Fe 3301-3699 · Scalabrini Ortiz 2301-2599,,6,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Triunvirato,Av. Triunvirato 3601-4699 · Monroe 4801-5399,,17,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Almagro,Av. Rivadavia 3401-4099,,6,,,"SI — Z37, abre las seis vias",la sonda lo ve
+(calibracion),,Av. San Martín,Av. San Martín 1801-2799,,12,,,parcial — R21,la sonda lo ve
+(calibracion),,Avellaneda,Avellaneda 2701-3799 · Bogotá 2901-3499 · Aranguren 2901-3499,,5,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Caballito,Acoyte 1-199 · Av. Rivadavia 4401-5499 · José Maria Moreno 1-99,,12,,,SI,la sonda lo ve
+(calibracion),,Corrientes y Medrano,Av. Corrientes 3601-4799,,9,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Corrientes y Scalabrini Ortiz,Av. Corrientes 5201-5699 · Scalabrini Ortiz 201-799,,6,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Cuenca,Av. Cuenca 2701-3499,,11,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Devoto,Lope de Vega 2801-3499 · Francisco Beiró 5201-5499,,6,,,parcial,la sonda lo ve
+(calibracion),,Flores,Av. Rivadavia 6201-7399 · Av. Nazca 1-499,,6,,,SI — Z23 casco historico,la sonda lo ve
+(calibracion),,Liniers,Ramón Falcón 6801-7299,,0,,,SI — E07 Mercado Andino,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Monte Castro,Álvarez Jonte 4501-5399,,4,,,parcial — El Fortin,la sonda lo ve
+(calibracion),,Villa Crespo,Aguirre 701-899 · Gurruchaga 701-999 · Loyola 601-799,,4,,,SI,la sonda lo ve
+(calibracion),,Warnes,Dorrego 1-299 · Warnes 701-1599,,2,,,SI — entorno de R21,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Alberdi,Alberdi 3601-4099,,0,,,NO — candidato a evaluar con las seis vias,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Av. Patricios,Av. Reg. de los Patricios 301-999,,0,,,NO — candidato a evaluar con las seis vias,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Boedo,Av. Boedo 701-1099 · Av. San Juan 3501-3699 · Independencia 3501-3699,,3,,,SI,la sonda lo ve
+(calibracion),,Chilavert,Chilavert 6101-6999 · Guaminí 4801-4999,,5,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Constitución,Brasil 1101-1299 · Lima 1601-1799 · Salta 1601-1799,,9,,,parcial,la sonda lo ve
+(calibracion),,Defensa,Defensa 801-1499,,14,,,SI — R03 San Telmo,la sonda lo ve
+(calibracion),,Flores Sur,Varela 1101-1399,,0,,,"SI — Bajo Flores, enclave coreano",LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Mataderos,Av. Alberdi 5501-6299,,0,,,SI,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Montes de Oca,Montes de Oca 501-1199,,2,,,"SI — P008 Barracas, corredor 280-1702",LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Parque Avellaneda,Av. Alberdi 4301-4899,,0,,,parcial,LA SONDA NO LO VE - menos de 3 locales matchean en toda la base
+(calibracion),,Parque Patricios,Av. Caseros 2601-2999 · La Rioja 1901-2199,,7,,,parcial,la sonda lo ve
+(calibracion),,Riestra,Murguiondo 4001-4399 · Riestra 5501-5799,,4,,,NO — candidato a evaluar con las seis vias,la sonda lo ve
+(calibracion),,Sáenz,Sáenz 801-1399,,6,,,"SI — Av. Saenz, capa de memoria (La Blanqueada)",la sonda lo ve
+R11,Boulevard Caseros,Constitución,brasil 1101-1299,,,,,,"misma calle, alturas 379.0-780.0 contra 1101-1299: no solapa"
+R11,Boulevard Caseros,Constitución,brasil av 1101-1299,,,,,,"misma calle, alturas 359.0-359.0 contra 1101-1299: no solapa"
+R11,Boulevard Caseros,Parque Patricios,caseros 2601-2999,,,,,,"misma calle, alturas 430.0-799.0 contra 2601-2999: no solapa"
+R11,Boulevard Caseros,Defensa,defensa 801-1499,,,,,,"misma calle, alturas 1501.0-1757.0 contra 801-1499: no solapa"
+R11,Boulevard Caseros,Montes de Oca,"montes de oca, manuel 501-1199",,,,,,"misma calle, alturas 95.0-101.0 contra 501-1199: no solapa"
+R11,Boulevard Caseros,Constitución,salta 1601-1799,,,,,,"misma calle, alturas 1998.0-1998.0 contra 1601-1799: no solapa"

@@ -253,6 +253,123 @@ r8 y quedó la impresión de que seguía vivo.
 
 ---
 
+## 7 · El IDECBA a nivel polo · y una sonda que casi me engaña
+
+`idecba_x_polo.csv`
+
+**Lo que la tarea pedía, primero.** Costanera Norte y Boulevard Caseros **no tienen eje relevado**,
+y ahora la ficha puede declararlo en vez de omitirlo. Pero el negativo no se apoya en la sonda:
+se verificó por el otro lado, cruzando las **calles** de los locales de cada referencia contra las
+calles de los 80 tramos.
+
+- **R07 Costanera Norte.** Sus 67 locales están sobre Costanera Rafael Obligado, Aeroparque y
+  Sarmiento 4701. **Ninguna de esas calles figura en ningún tramo de los 48.** Negativo sólido.
+- **R11 Boulevard Caseros.** Acá sí hay cuatro calles compartidas, y ninguna solapa:
+
+| calle | el eje relevado | la referencia la tiene en | |
+|---|---|---|---|
+| Defensa | Defensa **801-1499** | **1501**-1757 | **no solapa por 2 números** |
+| Brasil | Constitución 1101-1299 | 359-780 | no solapa |
+| Caseros | Parque Patricios 2601-2999 | 430-799 | no solapa |
+| Montes de Oca | Montes de Oca 501-1199 | 95-101 | no solapa |
+| Salta | Constitución 1601-1799 | 1998 | no solapa |
+
+> **El eje Defensa termina en el 1499 y R11 empieza en el 1501.** Es el mismo patrón que la ronda
+> 12 encontró con Plaza Bar —Florida 1005 contra un eje que termina en el 999, seis números
+> afuera—. **Dos veces no es casualidad: los ejes del IDECBA y las referencias del Atlas se
+> tocan sin superponerse, y conviene decirlo así en el documento.**
+
+**Av. Corrientes queda pendiente a propósito.** Hay cinco ejes con locales dentro de R02 —Corrientes
+y Callao, Lavalle, Libertad, Corrientes y Medrano—, y **no se atribuyen a mano**: el tramo de R02
+no está fijado, y ésa es la condición previa. La fila sale como `PENDIENTE`, ni sí ni no.
+
+### Y lo que casi publico mal
+
+La primera versión de esta corrida reportaba **«21 de 48 desacuerdos entre la columna
+`esta_en_el_atlas` y la medición»**. Sonaba a hallazgo grande. **Era un artefacto de la sonda.**
+
+La sonda necesita que el nombre de calle del tramo normalice igual que el `direccion_norm` de la
+base, y para 12 ejes no pasa: *Ramón Falcón* contra *Ramon L. Falcon*, *Lacroze* contra *Federico
+Lacroze*, *A. M. De Justo* contra *Alicia Moreau De Justo*, *Alberdi* contra *Juan B. Alberdi*.
+**Esos ejes matchean cero locales en toda la base**, antes de tocar geometría. Un negativo de un
+instrumento ciego no es un negativo.
+
+> Así que el CSV ya no reporta un agregado: reporta **la calibración caso por caso**, con los 12
+> ejes que la sonda no puede ver nombrados uno por uno. **Sobre esos 12 esta corrida no dice nada,
+> ni sí ni no.** Lo que lo resuelve es construir los 80 tramos como geometría, que es el pendiente
+> 4 del handoff.
+
+---
+
+## 8 · Las verificaciones · lo prioritario cierra, el resto no
+
+`verificaciones_seis_fichas_r13.csv`
+
+**La ruta de TripAdvisor no me sirvió: devuelve HTTP 403 a cualquier pedido automático.** Lo digo
+antes que nada porque era la ruta propuesta. Se trabajó con lo que el guardrail 6 sí habilita
+—fuentes oficiales del GCBA, sitios propios y prensa fechada— y con la decisión 2 como vara:
+**reporteo a nivel establecimiento o es v4.**
+
+**Las tres fichas que dependían de uno o dos establecimientos:**
+
+| zona | establecimiento | veredicto | fuente |
+|---|---|---|---|
+| **R08** | Café San Bernardo | **verificado_abierto v1** · 62 días | La Nación 08/06/2026, lo ubica en Corrientes 5436 y **cita a su dueña** |
+| **R11** | Bar Británico | **verificado_abierto v1** · 113 días | Canal 26 18/04/2026 |
+| **R07** | Patio Costanera Norte | verificado_abierto **sin fecha** | página oficial del GCBA con horarios vigentes |
+| **R07** | Happening Costanera | **no cierra** | sitio propio con copyright 2026 y nada fechable |
+
+> **R08 se destraba entero y con holgura.** Su único Notable tiene reporteo propio de hace dos
+> meses.
+>
+> **R11 cierra pero no con holgura.** Canal 26 ya fue desplazado como fuente en la ronda 10, y el
+> Británico tiene historial de cierre y reapertura —justo el patrón que exige fecha reciente—.
+> Conviene un segundo respaldo.
+>
+> **R07 no cierra.** El Patio resuelve la fila y no se cita, por la regla de la ronda 12. Y
+> Happening es la fila más débil de las cuatro: **un copyright 2026 no es evidencia de actividad,
+> se actualiza solo.**
+
+**De las 14 restantes: una verificada (La Biela, La Nación 15/10/2025, v1 pero a 298 días), dos
+intentadas sin cerrar (La Giralda y El Gato Negro: aparecen en programación de eventos, que por la
+decisión 2 es v4 y no v1) y once no intentadas.** Están listadas una por una con eso escrito.
+
+---
+
+## 9 · La capa de memoria de Recoleta · y por qué no se carga como está
+
+`capa_de_memoria_R06_recoleta.csv` · seis entradas nuevas, M032 a M037
+
+R06 no tenía ninguna entrada y ahora tiene seis: **Lola** (cerró 2013, el que inicia la serie),
+**Montana**, **San Babila**, **Buller**, **La Munich** (2017) y **Café Victoria**. Todas sobre
+**Pdte. Roberto M. Ortiz al 1800, entre Quintana y Guido**.
+
+**Pero el dato más importante es la fecha de la fuente.** La nota de La Nación que da título a
+esto —*«la calle fantasma que perdió restaurantes icónicos»*— es del **11 de abril de 2017**,
+actualizada en 2020.
+
+> **Y el mismo diario publicó en septiembre de 2021 que la cuadra se está recuperando:** *«La
+> emblemática cuadra de Recoleta que con nuevas aperturas gastronómicas busca recuperar su
+> esplendor»*. Nombra a **La Parolaccia** —décima trattoria de la cadena, donde estaba el Café
+> Victoria— y a **Club de la Birra**, en el local de La Munich, al que le atribuye haber traído
+> público joven.
+>
+> **Cargar «calle fantasma» en presente sería repetir exactamente el error que el proyecto viene
+> corrigiendo:** citar como actual algo que la propia fuente desmintió después. La ficha de R06
+> puede nombrar las pérdidas —para eso está la capa— pero **en pasado y con el año al lado.**
+
+Y hay un cruce que cierra solo: **`Ortiz 1801-1899` es uno de los cinco tramos del eje Recoleta
+del IDECBA**, que hoy releva 95 locales con **89,5 % de ocupación y −3,2 pp interanual**. La cuadra
+de la capa de memoria y el tramo relevado son la misma cuadra.
+
+**Confianza declarada fila por fila, y baja donde corresponde:** Montana y San Babila quedan en
+`baja` porque la nota los nombra en serie y sin año propio, y **Café Victoria también**, porque las
+dos notas se contradicen —la de 2017 describe *«The Embers, que reemplazó a El Ombú y que a su vez
+había suplantado a La Victoria»* y la de 2021 pone a La Parolaccia donde estaba *«el clásico Café
+Victoria»*—. Puede ser el mismo local mal citado o dos distintos. **No se fusionan.**
+
+---
+
 ## Lo que queda para Diego
 
 1. **La lámina 4 pasa a decir cinco.** Es la única consecuencia de contenido de esta tanda.
@@ -262,4 +379,12 @@ r8 y quedó la impresión de que seguía vivo.
 5. **Dónde va la Nota metodológica**, que está escrita y no tiene número.
 6. **Cuál de los dos proyectos de ficha es el cuerpo** —la pregunta de `DOS_PROYECTOS_DE_FICHA.md`,
    que es más grande que todo lo de esta tanda junto.
-7. Señalado y no resuelto: **la vía C de Z40 Nueva Pompeya**, mismo defecto que Almagro.
+7. **Happening Costanera**, que es lo único que le falta a R07 y no cierra por escritorio:
+   necesita un posteo fechado, una nota o una llamada.
+8. **Las 14 verificaciones que quedaron.** La ruta de TripAdvisor no está disponible por acceso
+   automático; la que sí funcionó es prensa fechada con reporteo a nivel establecimiento.
+9. **Cómo se redacta la memoria de Recoleta**, que no puede ir en presente.
+10. **El tramo de R02**, que es la condición previa para atribuirle sus ejes del IDECBA.
+11. Señalado y no resuelto: **la vía C de Z40 Nueva Pompeya**, mismo defecto que Almagro.
+12. Y para el pendiente 4 del handoff: **construir los 80 tramos como geometría** es lo que saca a
+    12 de los 48 ejes del punto ciego en que están hoy.
