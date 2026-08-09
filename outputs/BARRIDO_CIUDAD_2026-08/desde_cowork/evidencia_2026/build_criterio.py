@@ -1,0 +1,100 @@
+# -*- coding: utf-8 -*-
+"""Aplica el criterio unico de admision y permanencia a las 55 unidades evaluadas.
+Fuentes en disco: fichas_corpus_polos.csv, seis_vias_ronda_2.csv, seis_vias_ronda_3_norte.csv,
+seis_vias_sur_consolidado.csv, seis_vias_Z47_Z48_Z49.csv, ronda_13/via_C_almagro.csv."""
+import csv, io
+
+# (id, nombre, comuna, origen, vias_abiertas, veredicto_en_disco, fuente_de_las_vias,
+#  C1, C2, C3, categoria_por_criterio, motivo, perimetro)
+F = {
+ 'corpus':'fichas_corpus_polos.csv',
+ 'r2':'seis_vias_ronda_2.csv',
+ 'r3n':'seis_vias_ronda_3_norte.csv',
+ 'sur':'seis_vias_sur_consolidado.csv',
+ 'z47':'seis_vias_Z47_Z48_Z49.csv',
+}
+R = [
+# --- REFERENCIAS PUBLICADAS (21) ---
+('R01','Palermo','14','referencia publicada','A+B+C+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias de las dos familias. Sistema de seis subzonas declaradas.','cerrado'),
+('R02','Avenida Corrientes','1 y 3','referencia publicada','A+B+E+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. El campo n_vias dice 3: ver ERR-16.','cerrado'),
+('R03','San Telmo','1','referencia publicada','B+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Abre por el minimo. B: Bar El Federal (verificado 21/07/2026). E: dos grupos independientes (La Nacion 2026, Time Out 2025). Origenes distintos.','cerrado'),
+('R04','Puerto Madero','1','referencia publicada','A+B+E+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. El campo n_vias dice 3: ver ERR-16.','cerrado'),
+('R05','Belgrano','13','referencia publicada','A+B+C+D+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias. El campo n_vias dice 4: ver ERR-16.','cerrado'),
+('R06','Recoleta','2','referencia publicada','A+B+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias. Hitos sin verificacion individual: alerta de vigencia, no de admision.','cerrado'),
+('R07','Costanera Norte','13','referencia publicada','A+B+C+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias, tres de ellas geometricas.','cerrado'),
+('R08','Villa Crespo','15','referencia publicada','A+B+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias.','cerrado'),
+('R09','Chacarita','15','referencia publicada','A+B+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias. Nombre oficial de facto (P068 se llama polo gastronomico).','cerrado'),
+('R10','Caballito','6','referencia publicada','A+B+C+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. C: Mercado del Progreso.','cerrado'),
+('R11','Boulevard Caseros','4','referencia publicada','B+E+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias. B depende de un solo hito (el Britanico): fragilidad declarada, no causal de baja.','cerrado'),
+('R12','Centro y Microcentro','1','referencia publicada','A+B','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Abre por el minimo y por las dos familias a la vez: A geometrica, B documental (22 hitos). La via E no abre y eso es el hallazgo, no el problema.','cerrado'),
+('R13','Abasto','3 y 5','referencia publicada','A+B+D+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias.','cerrado'),
+('R14','Avenida Boedo','5','referencia publicada','A+B+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias.','cerrado'),
+('R15','Devoto','11','referencia publicada','A+B+E+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias.','cerrado'),
+('R16','Donado-Holmberg','12','referencia publicada','A+E+F','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias y cero hitos de via B: la mejor prueba de que las vias son alternativas. Cuatro grupos de via E, dos de ellos de 2017-2018.','cerrado'),
+('R17','Villa Urquiza','12','referencia publicada','A+B+E','PUBLICADO',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias. Si la via E cayera por atribucion (R13: parte de sus notas describen Donado-Holmberg) quedaria en A+B y seguiria admitida.','cerrado'),
+('R19','Federico Lacroze','15 y 13','referencia publicada','A+B+E+F','PUBLICADO · se amplia',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. El campo n_vias dice 3: ver ERR-16.','en revision'),
+('R20','Garcia del Rio','12','referencia publicada','E+F','PUBLICADO · se amplia',F['corpus'],'cumple','cumple','cumple','polo admitido','Abre por el minimo, con F geometrica y E documental: origenes independientes por construccion. Cero hitos. Es el caso que mas tensiona la medicion contra la documentacion.','en revision'),
+('R21','La Paternal','15','referencia publicada','A+B+E','PUBLICADO · se amplia',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias.','en revision'),
+('R22','Villa Pueyrredon','12','referencia publicada','A','PUBLICADO',F['corpus'],'NO CUMPLE','no evaluada','cumple','referencia en observacion','Abre una sola via, la A, con 5,6 % de continuidad. No se da de baja: se publica con su evidencia y con la condicion que no cumple, fechada. La ausencia de evidencia externa fue buscada y verificada: es el resultado, no una laguna.','cerrado'),
+# --- ZONAS NUEVAS Z23-Z49 (27) ---
+('Z23','Flores · casco historico','7','zona nueva','B+F','PENDIENTE',F['r2']+' (via C cerrada por decision 1)','cumple','no evaluada','NO CUMPLE','zona en estudio','El unico reconocimiento vigente (La Farmacia, Av. Directorio 2400) cae ocho cuadras al sur del poligono propuesto. La unidad espacial no se sostiene con la delimitacion actual: hay que redelimitar antes de decidir.','por trazar'),
+('Z24','Flores · Avellaneda y Pasaje Ruperto Godoy','7 (borde en 10 y 11)','zona nueva','A+C+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias y seis grupos de via E. Once locales con altura de puerta en dos cuadras.','por trazar'),
+('Z25','Floresta','10','zona nueva','B+D+E','PENDIENTE',F['r2']+' (via C cerrada por decision 1)','cumple','NO CUMPLE','cumple','zona en estudio','Las tres vias convergen en un origen. La propia ficha lo dice: la via E son cuatro notas de apertura en cuatro meses con el mismo angulo, que son UN grupo; la via D se sostiene sobre las mismas direcciones que Z24; y la trayectoria de la via B es del edificio, no del establecimiento (Casa Bogota abrio en 2025).','por trazar'),
+('Z26','Velez Sarsfield','10','zona nueva','ninguna','NO ENTRA',F['r2'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Cero en las seis vias.','no corresponde'),
+('Z27','Villa Santa Rita','11','zona nueva','B+E','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Abre por el minimo. B: tres establecimientos de mas de 50 anos vivos y verificados. E: tres grupos, uno de ellos (Time Out 06/2025, guia de barrio con seis paradas) independiente de El Tokio, que es el ancla de la via B.','por trazar'),
+('Z28','Monte Castro','10','zona nueva','A+B+F','PENDIENTE · MEJORA',F['corpus'],'cumple','cumple','cumple','polo admitido','RECONCILIACION: el disco lo deja pendiente por el conteo de continuidad sobre Alvarez Jonte, que es un dato de perimetro, no de admision. B: El Fortin (doble reconocimiento) mas Cafe Olimpo, que el callejero le devolvio.','por trazar'),
+('Z29','Villa del Parque','11','zona nueva','C','NO ENTRA',F['r2'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Una sola via.','no corresponde'),
+('Z30','Villa Real y Versalles','10','zona nueva','B','NO ENTRA',F['r2'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Una sola via.','no corresponde'),
+('Z31','Villa Luro','10','zona nueva','A+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Tres vias. Perdio su unica via B por dos motivos separados (el hito no esta en el barrio y ademas queda a 1.532 m): es el caso mas expuesto de los que entran, y entra igual porque el criterio no exige la via B.','por trazar'),
+('Z32','Liniers · Mercado Andino','9','zona nueva','A+C+D+E','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. C: el Mercado Andino, objeto nombrado y en actividad.','por trazar'),
+('Z33','Mataderos','9','zona nueva','A+B+C+D+E','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias.','por trazar'),
+('Z34','Parque Chas y Agronomia','15','zona nueva','B','NO ENTRA',F['r2'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Una sola via.','no corresponde'),
+('Z35','Balvanera · Once','3','zona nueva','B+D+F','PENDIENTE',F['r2']+' (el corpus declara 2 sin detallar cual cae)','cumple','cumple','cumple','polo admitido','RECONCILIACION: el disco lo deja pendiente porque las dos vias que lo decidirian (A y C) estan detras de padrones internos. El criterio no exige esas dos: B (Cafe de los Angelitos, Bar Notable verificado abierto a 06/2026) y D (especializacion kosher documentada) abren con origenes independientes y con unidad espacial evidente. DISCREPANCIA ABIERTA: ronda 2 cuenta 3 vias y el corpus 2.','por trazar'),
+('Z37','Almagro','5','zona nueva','A+B+D+E+F','ENTRA',F['corpus']+' + ronda_13/via_C_almagro.csv','cumple','cumple','cumple','polo admitido','CINCO vias, no seis: la via C se cerro por medicion (cero mercados o patios dentro de las 405 ha del barrio; el unico candidato era una feria itinerante). El corpus todavia dice 6: ver ERR-16.','por trazar'),
+('Z38','Parque Chacabuco','7','zona nueva','ninguna','NO ENTRA',F['r2'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Cero en las seis vias. La unica cobertura hallada ordena bodegones por puntaje de Google Maps y los ubica dispersos en cuatro sectores.','no corresponde'),
+('Z39','Parque Avellaneda','9','zona nueva','A+B+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias.','por trazar'),
+('Z39b','Baek-ku · Barrio Coreano','7','zona nueva · subzona de Z39 con ficha propia','A+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias. ES SUBZONA DE Z39: cuenta una vez en superficie y locales, dos veces en el indice de fichas.','por trazar'),
+('Z40','Nueva Pompeya y Parque Patricios','4','zona nueva','A+B+C+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Seis vias. PENDIENTE SENALADO EN RONDA 13: su via C no fue reauditada contra la decision 1 y podria caer a cinco. No cambia su admision.','por trazar'),
+('Z41','Nunez','13','zona nueva','A+B+C+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias y seis grupos de via E.','por trazar'),
+('Z42','Coghlan','12','zona nueva','C+E','ENTRA',F['corpus'],'cumple','NO CUMPLE','cumple','zona en estudio','La propia ficha lo dice: la via C depende de un solo local relevado por LA MISMA FUENTE que sostiene la mitad de la via E. Descontado el origen compartido (Time Out 02/2026), queda la via E con un solo grupo de 2022. Sale de polos y queda en estudio hasta que aparezca un origen independiente.','por trazar'),
+('Z43','Colegiales','13','zona nueva','A+B+C+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Seis vias. Solapamiento fuerte con R19 y R09: el reparto es geometrico, no de admision.','por trazar'),
+('Z44','Villa Ortuzar','15','zona nueva','B+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cuatro vias.','por trazar'),
+('Z45','Belgrano R y Barrancas','13','zona nueva','B','NO ENTRA COMO ZONA AUTONOMA',F['r3n'],'NO CUMPLE','no evaluada','NO CUMPLE','zona evaluada sin admision','Una sola via y solapamiento total: R05 absorbe Barrancas, Barrio Chino, Pasaje Echeverria y Cabildo; R16 absorbe el flanco oeste de Belgrano R. No hay objeto propio que delimitar.','no corresponde'),
+('Z46','Retiro','1','zona nueva · absorbe R18','A+B+D+E+F','ENTRA',F['corpus'],'cumple','cumple','cumple','polo admitido','Cinco vias. Absorbe R18 Esmeralda-Paraguay con sus cuatro Bares Notables.','por trazar'),
+('Z47','Monserrat y Congreso','1 (con derrame a 3)','zona nueva · fusiona Z36','A+B+D+F','ENTRA',F['z47'],'cumple','cumple','cumple','polo admitido','Cuatro vias. La via C se cerro por ERR-09 (solo FIAB). Nueve de los noventa Bares Notables de la Ciudad estan aca.','por trazar'),
+('Z48','San Cristobal','3','zona nueva','B','PENDIENTE',F['z47'],'NO CUMPLE','NO CUMPLE','NO CUMPLE','zona evaluada sin admision','Falla las tres condiciones. Una sola via; su unico grupo documental es una nota replicada por dos medios del mismo grupo editorial con identificador identico; y los dos anclajes estan a seis cuadras entre si sobre ejes distintos: existen las instituciones, no hay concentracion espacial. PUERTA CERRADA DECLARADA: la guia impresa Time Out 2025 podria dar un segundo grupo; el margen es de un solo grupo.','no corresponde'),
+('Z49','Villa Soldati','8','zona nueva','ninguna','NO ENTRA',F['corpus'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Cero en las seis vias, con los ceros de B y C verificados uno por uno contra tres padrones oficiales. La infraestructura alimentaria documentada del barrio es asistencial, no comercial.','no corresponde'),
+# --- ZONAS DEL SUR Z50-Z56 (7) ---
+('Z50','Barracas · Av. Montes de Oca','4','zona nueva · sur','A+B+E+F','ENTRA',F['sur']+' + ronda_14/montes_de_oca_seis_vias.csv','cumple','cumple','cumple','polo admitido','Cuatro vias, confirmadas por la medicion del repositorio (A, B y F sobre el poligono; E documental). Es el polo 42 del atlas y entro por la ronda 14 sin que se lo vinculara con su id del sur.','en revision'),
+('Z51','Barracas · Iriarte, California y Vieytes','4','zona nueva · sur','A+B+E','ENTRA',F['sur'],'cumple','cumple','cumple','polo admitido','ORFANA: cumple el criterio y hoy NO esta en el atlas. Ancla El Puentecito (Vieytes 1895), declarado de Interes Cultural en 2018. Barracas tiene tres Notables, no uno. REPARTO A RESOLVER con R11 y Z50 antes de publicar.','por trazar'),
+('Z52','La Boca · Almirante Brown y Necochea','4','zona nueva · sur','B+F','ENTRA',F['sur'],'cumple','cumple','cumple','polo admitido','ORFANA: cumple el criterio y hoy NO esta en el atlas. Cinco anclas (Banchero, El Portuario, Cafe Roma, El Estano 1880, Boca a Boca) y la delimitacion mas precisa de todo el sur: 340 metros lineales, tomados de obra publica en curso de enero de 2026. Su via A esta cerrada CON EVIDENCIA EN CONTRA, no por falta de busqueda.','por trazar'),
+('Z53','La Boca · Caminito y Vuelta de Rocha','4','zona nueva · sur','B+D','ENTRA',F['sur'],'cumple','cumple','cumple','polo admitido','ORFANA: cumple el criterio y hoy NO esta en el atlas.','por trazar'),
+('Z54','Nueva Pompeya · eje Av. Saenz','4','zona nueva · sur','B+C','ENTRA',F['sur'],'cumple','cumple','cumple','polo admitido','ORFANA: cumple el criterio y hoy NO esta en el atlas. C: el Mercado de Pompeya (Av. Saenz 790), uno de los cuatro mercados municipales que quedan en la Ciudad y el unico de la Comuna 4. REPARTO A RESOLVER con Z40, que ya cubre Nueva Pompeya.','por trazar'),
+('Z55','Villa Soldati · Av. Mariano Acosta','8','zona nueva · sur','ninguna (via C en contradiccion)','CONTRADICCION A RESOLVER',F['sur'],'NO CUMPLE','no evaluada','no evaluada','zona en estudio','DOS RONDAS PROPIAS DAN RESULTADOS OPUESTOS y nunca se cerro. La ronda del sur documento una feria callejera de 840 metros sobre Av. Mariano Acosta con comida al paso; la corrida de las seis vias encontro dos FIAB distintas y ninguna es esa. De esto depende que la Comuna 8 tenga o no tenga un polo.','por trazar'),
+('Z56','Villa Lugano y Villa Riachuelo','8','zona nueva · sur','ninguna','NO ENTRA',F['sur'],'NO CUMPLE','no evaluada','no evaluada','zona evaluada sin admision','Cero en las seis vias, buscado por cinco caminos distintos. Falla exactamente la misma condicion que R22 Villa Pueyrredon: la diferencia entre las dos no es de evidencia, es que una estaba publicada y la otra no. Por eso la regla de permanencia las trata distinto y lo dice.','no corresponde'),
+]
+cols=['polo_id','nombre','comuna','origen','vias_abiertas','veredicto_en_disco','fuente_de_las_vias',
+      'C1_umbral','C2_independencia','C3_unidad_espacial','categoria_por_criterio','motivo','perimetro']
+with io.open('/home/claude/out/criterio_admision_55.csv','w',encoding='utf-8',newline='') as f:
+    w=csv.writer(f); w.writerow(cols); w.writerows(R)
+
+from collections import Counter
+cat=Counter(r[10] for r in R)
+print("FILAS:",len(R))
+for k,v in cat.most_common(): print(f"  {v:>3}  {k}")
+adm=[r for r in R if r[10]=='polo admitido']
+print("\nADMITIDOS:",len(adm))
+com=set()
+for r in adm:
+    for tok in r[2].replace('(','').replace(')','').replace('borde en','').replace('con derrame a','').replace(' y ',',').replace(' ',',').split(','):
+        tok=tok.strip()
+        if tok.isdigit(): com.add(int(tok))
+print("COMUNAS CON POLO:",sorted(com),"→",len(com))
+print("COMUNAS SIN POLO:",sorted(set(range(1,16))-com))
+print("\nDELTAS contra el disco:")
+for r in R:
+    disco=r[5]; cat_=r[10]
+    entra_disco = disco.startswith('ENTRA') or disco.startswith('PUBLICADO')
+    entra_crit  = cat_=='polo admitido'
+    if entra_disco != entra_crit:
+        print(f"  {r[0]:<6}{r[1][:40]:<42}disco={disco[:26]:<28}criterio={cat_}")

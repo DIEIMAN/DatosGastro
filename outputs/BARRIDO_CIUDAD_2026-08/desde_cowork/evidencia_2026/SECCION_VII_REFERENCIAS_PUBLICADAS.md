@@ -85,8 +85,25 @@ tramo exacto está por precisar**, y se declara acá y no al pie.
   como circuito de comida ligado al teatro; El Cronista y Perfil publican rutas de sus pizzerías.
 
 **Los referentes.** **Los Galgos**, Callao 501, Bar Notable — verificado abierto el 02/08/2026.
-**La Ópera**, Av. Corrientes 1799, alta del catálogo de 2026. Y La Giralda, El Gato Negro, Celta
-Bar y Bar Lavalle, ninguno con verificación individual.
+**Bar Lavalle**, Lavalle 1693 — **verificado abierto al 03/08/2026, y con el respaldo más fuerte de
+todo el relevamiento**: dos medios programan un concierto del Gobierno de la Ciudad **en esa
+dirección el 8 de agosto de 2026**, y la evidencia la produce el organizador, con lugar y fecha.
+**El Gato Negro**, Av. Corrientes 1669 — verificado abierto al **29/07/2026**. **La Ópera**,
+Av. Corrientes 1799, alta del catálogo de 2026.
+
+**La Giralda**, Av. Corrientes 1453 — **probablemente abierta**, con un perfil de prensa del
+25/07/2026 que trae sus horarios vigentes pero sin visita ni cita de la casa.
+
+> **Y su caso enseña algo que este atlas no tenía escrito.** Su reseña más nueva **está escrita el
+> 06/06/2026 y relata una visita de julio de 2025.** Las plataformas muestran dos fechas —cuándo se
+> escribió y cuándo se visitó— **y sólo la segunda dice algo sobre la actividad del local.** Sin esa
+> confusión, las reseñas con visita reciente de La Giralda caen catorce días antes del corte.
+
+**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — **no resuelve, y por ausencia de rastro.** Su
+reseña más reciente es de octubre de 2025, no tiene sitio propio, y la prensa más nueva es de
+noviembre de 2024 sin reporteo. **Tampoco hay evidencia de cierre: se buscó y no hay.** Un local que
+dejó de generar rastro digital puede estar abierto y no tener quien lo escriba, y este método no lo
+distingue.
 
 **Lo que se mudó, y es la lección de esta ficha.** **La Academia cerró en Callao 368 y reabrió el
 19/06/2025 en Montevideo 341** —el viejo local de Pippo, que había cerrado en agosto de 2020
@@ -108,7 +125,8 @@ comparar tamaños. Y el corredor se pisa con la referencia del Centro sobre buen
 recorrido: los dos conteos no se suman.
 
 **Lo que falta.** **Precisar el tramo del eje**, que destraba todo lo demás incluido el cruce con
-los dos ejes de arriba. Y verificar los cuatro Notables sin fecha propia.
+los dos ejes de arriba. Y **resolver Celta Bar**, que es lo único de esta ficha sin rastro: se
+resuelve mirando sus redes, no buscando más prensa.
 
 ---
 
@@ -172,8 +190,19 @@ límite.
 - **Reconocimiento externo** — **abre débil**, con dos grupos y sin nada posterior a 2023. Clarín
   Gourmet (2023) y El Cronista (2021) lo tratan como polo gastronómico.
 
-**Los referentes.** Cabaña Las Lilas, La Cabaña, Estilo Campo y El Mercado, del Faena. **Ninguno de
-los cuatro tiene verificación individual**, y es lo primero que hay que corregir en esta ficha.
+**Los referentes — los cuatro verificados abiertos.** **Estilo Campo**, Alicia Moreau de Justo 1840,
+al **07/08/2026** · **El Mercado**, del Faena, Martha Salotti 445, al **05/07/2026** · **Cabaña Las
+Lilas**, Alicia Moreau de Justo 516, al **06/07/2026** · **La Cabaña**, al **06/06/2026**.
+
+> **Con dos salvedades que la ficha declara.** **La Cabaña tiene dos direcciones**: este
+> relevamiento la tenía en Alicia Moreau de Justo 380 y su propio sitio, el portal de turismo de la
+> Ciudad y las fichas de reseñas dicen **580**. No se elige. Y su verificación es la más floja de
+> las cuatro, a 64 días.
+>
+> **Los cuatro cerraron por reseña de usuario fechada, no por prensa.** Es evidencia de primera
+> mano —describen mozos, cocina, disponibilidad de mesa, músicos en vivo—, pero **ninguno de los
+> cuatro tiene una nota de prensa con reporteo propio dentro de ventana.** El más citado de todos
+> tiene su última nota de junio de 2025.
 
 **Lo que se perdió.** **Bahía Madero** y **Sottovoce** figuran cerrados **en la misma nota de
 Clarín Gourmet de 2023 que sostiene el reconocimiento externo de la zona**. Es la única referencia
@@ -189,8 +218,9 @@ diques y grandes parcelas—, pero **ningún ranking por tamaño debería usar e
 Y su reconocimiento externo se apoya en material de hace tres años: lo que la ficha afirma sobre
 cómo se la trata hoy no está verificado.
 
-**Lo que falta.** **Reverificar los cuatro hitos** y buscar evidencia de nivel zona posterior a
-2023.
+**Lo que falta.** **Evidencia de nivel zona posterior a 2023.** Los cuatro hitos ya están
+verificados; lo que sigue viejo es cómo se trata a Puerto Madero como destino. Y **resolver si La
+Cabaña está en el 380 o en el 580.**
 
 ---
 
@@ -217,12 +247,27 @@ llega a Av. Montes de Oca.
   prensa nacional posterior a 2021, buscada por cinco rutas distintas.**
 - **Densidad y continuidad** — **no abre.** 60 locales en 50 hectáreas.
 
-**Los referentes.** **El Británico**, Bar Notable. Es el único hito de la zona y **no tiene
-verificación individual**.
+**Los referentes.** **El Bar Británico**, esquina de Defensa y Brasil. Es el único hito de la zona y
+está **verificado abierto al 18/04/2026**, con reporteo a nivel establecimiento que lo da operando
+y registra su condición de Notable.
 
-**Contexto comercial.** **No hay eje relevado que corresponda a esta referencia.** El eje Defensa
-del IDECBA llega hasta Defensa 1499 y corre perpendicular a Av. Caseros. Sobre el corredor de esta
-ficha, la Ciudad no releva ocupación comercial.
+> **Con dos salvedades que la ficha no esconde.** La verificación tiene **113 días** y su fuente ya
+> fue desplazada una vez en este relevamiento por una nota más nueva: **cierra, pero sin holgura**.
+> Y el Británico tiene historial de cierre y reapertura, que es justamente el patrón que obliga a
+> exigir fecha reciente. **Conviene un segundo respaldo antes de publicar.**
+>
+> **Hubo una dirección que parecía ser de los dos, y se resolvió midiendo.** Una verificación llegó
+> con «Defensa 695» para el Británico, y esa altura ya estaba asignada a Bar Seddon. **El callejero
+> oficial las separa sin ambigüedad:** la cuadra que contiene el 695 es Defensa entre México y
+> Chile, **en Monserrat, a 1.043 metros de Brasil** — ahí está Seddon, a 3 metros. **El Británico
+> está sobre las dos cuadras que sí cruzan Brasil**, a 24 metros, y su punto cae dentro de esta
+> referencia. **Son dos locales distintos y la altura del Británico estaba mal transcripta.**
+
+**Contexto comercial.** **No hay eje relevado que corresponda a esta referencia, y por muy poco.**
+El eje **Defensa** que releva la Ciudad **termina en el 1499 y esta referencia empieza en el
+1501**. Quedan dos números afuera — **el mismo patrón que Plaza Bar, que está en Florida 1005
+cuando el eje Florida llega al 999.** No es casualidad: los ejes del Instituto se cortan en
+centenas y los polos no.
 
 **Límites de lectura.** **Es la ficha más dependiente de un solo establecimiento de las 22.** Si El
 Británico no estuviera, la referencia quedaría con una vía geométrica —el corredor— y una vía
@@ -230,7 +275,8 @@ documental de hace cinco años. Y con un perímetro de una o dos cuadras, **las 
 la envolvente describen el entorno, no el polo**: la cifra de superficie de esta ficha no es
 comparable con las demás.
 
-**Lo que falta.** **Verificar El Británico.**
+**Lo que falta.** **Un segundo respaldo para El Británico**, que hoy cierra con 113 días y sin
+holgura.
 
 ---
 
@@ -316,15 +362,43 @@ Mayo.** Es la única decisión de delimitación que bloquea la ficha.
   movimiento gastronómico y El Cronista entre los polos de la Ciudad; se suman food tours
   comerciales, que por sí solos no abrirían la vía.
 
-**Los referentes.** **La Biela** y el **Bar del Alvear Palace Hotel** —alojado dentro del hotel,
-que funciona como contenedor operativo y está verificado—. **Josephina's Café**, Guido 1532, alta
-del catálogo de 2026. **Casa Veltri** y **Presencia**, distinguidos por MICHELIN, más Aramburu y
-Fervor. **Ninguno tiene verificación individual.**
+**Los referentes.** **Aramburu**, Vicente López 1661, en el Pasaje del Correo — **verificado abierto
+el 31/07/2026** por entrevista firmada con el periodista en el local. **Revalidó dos estrellas
+MICHELIN el 14 de julio de 2026 y es el único biestrellado del país.** **Casa Veltri**, Juncal
+1642, nuevo Recomendado MICHELIN 2026 — verificado abierto al **06/07/2026**. **Presencia**,
+Montevideo 1789 esquina Av. Alvear, también Recomendado 2026 — verificado abierto al **27/07/2026**,
+con un café anexo que opera sobre Av. Alvear 1600. **Fervor**, Posadas 1519 — verificado abierto en
+**julio de 2026**. **La Biela**, Av. Quintana 596 esquina Junín — verificado abierto al
+**15/10/2025**. Y **Josephina's Café**, Guido 1532, alta del catálogo de 2026.
 
-**Lo que se perdió — y acá lo perdido no es un local, es una calle.** La propia La Nación documentó
-un vaciamiento en la zona bajo el título de *«la calle fantasma que perdió restaurantes
-icónicos»*. **La capa de memoria del Atlas no tiene todavía ninguna entrada cargada para Recoleta**,
-y esa nota indica que debería tener varias. Es un hueco conocido, no una ausencia de pérdidas.
+> **Y un referente que este atlas tenía cargado y no existe.** La ficha listaba un «Bar del Alvear»
+> en Av. Alvear 1891. **No hay ningún local con ese nombre.** El hotel nombra seis establecimientos
+> —L'Orangerie, Lobby Bar, Alvear Roof Bar, Alvear Grill, Alvear Café y Alvear Sushi Bar— y ninguno
+> se llama así. **El hotel está operando y verificado por su propio canal**, con una promoción
+> vigente del 1 al 31 de agosto de 2026; lo que no se puede verificar es un local que no se puede
+> identificar. **Se da de baja del listado hasta decidir cuál de los seis era.**
+
+**Lo que se perdió, y es una cuadra entera con su ciclo completo.** Sobre **Presidente Roberto M.
+Ortiz al 1800, entre Quintana y Guido**, la capa de memoria registra **seis cierres**: **Lola**,
+que cerró en 2013 y con el que —según la fuente— empezó el éxodo; **Montana**, **San Babila** y
+**Buller**, que lo siguieron sin año propio documentado; **La Munich**, pegada a La Biela, que no
+abrió en marzo de 2017 y fue **el cierre que le dio título a la nota**; y el **Café Victoria**.
+
+> **Y acá viene la parte que cambia la lectura, y que este atlas estuvo a punto de publicar mal.**
+> La nota que documenta el vaciamiento —*«la calle fantasma que perdió restaurantes icónicos»*— es
+> **de abril de 2017**. **El mismo diario publicó en septiembre de 2021 que la cuadra se
+> recuperó**: donde estaba La Munich funciona una cervecería a la que el propio medio le atribuye
+> haber traído público joven, y donde estaba el Café Victoria abrió una trattoria de cadena.
+>
+> **Escribir «calle fantasma» en presente sería convertir una frase de fuente en estado actual, con
+> nueve años de diferencia.** Lo que esta ficha afirma es otra cosa y es más interesante: **una
+> cuadra perdió cinco establecimientos entre 2013 y 2017, y cuatro años después estaba ocupada de
+> nuevo con otros rubros.** El ciclo completo, documentado por la misma fuente.
+
+**Con una discrepancia que se declara y no se resuelve:** la nota de 2017 describe en esa cuadra
+«The Embers, que reemplazó a El Ombú y que a su vez había suplantado a La Victoria», y la de 2021
+dice que la trattoria ocupa el lugar del «Café Victoria». **Puede ser el mismo local con el nombre
+mal citado o dos locales distintos. No se fusionan.**
 
 **Contexto comercial.** El eje **Recoleta** —Av. Alvear, Junín, Ortiz, Quintana y Vicente López—
 tiene **89,5 % de ocupación y perdió 3,2 puntos**, el doble que el conjunto. Y con **5,94 locales
@@ -333,12 +407,13 @@ eje de comercio de lujo y baja frecuencia, no de oferta continua.
 
 **Límites de lectura.** **El eje que releva la Ciudad son cinco calles del corazón de Recoleta y el
 polígono del Atlas es todo el barrio**, así que el 89,5 % describe el núcleo caro y no la
-referencia entera. Y con la capa de memoria vacía, **esta ficha puede afirmar que hubo pérdidas y
-no puede nombrarlas**: lo que dice sobre el vaciamiento se apoya en una nota de prensa, no en la
-capa propia.
+referencia entera. Y **de los seis cierres de la cuadra, cuatro están cargados con confianza baja o
+media y tres no tienen año**: la ficha puede decir que la cuadra se vació y no puede decir cuándo
+cerró cada uno.
 
-**Lo que falta.** **Verificar los hitos**, que son seis y ninguno tiene fecha propia. Y **cargar la
-capa de memoria de la zona.**
+**Lo que falta.** **Decidir cuál de los seis locales del Alvear era el que el atlas quería cargar.**
+Los otros cinco referentes están verificados; el de La Biela tiene 298 días y conviene refrescarlo
+antes de publicar.
 
 ---
 ---
@@ -776,8 +851,21 @@ a esta ficha.
 - **Reconocimiento externo** — **no abre, y por un solo grupo.** La Nación publicó dos notas en
   2025, pero las dos son del mismo medio y eso cuenta como un grupo.
 
-**Los referentes.** **Happening** y el **Patio Costanera Norte**. Son los dos únicos y **ninguno
-tiene verificación individual.**
+**Los referentes.** **Happening** (Av. Rafael Obligado 7030) y el **Patio Costanera Norte**
+(Av. Costanera Rafael Obligado 7010). Son los dos únicos de la zona, y **después de buscarlos, uno
+resuelve sin poder citarse y el otro no resuelve.**
+
+> **El Patio está publicado por el sitio oficial del GCBA con dirección y horarios vigentes** —
+> miércoles de 12 a 19, jueves a sábado de 12 a 0, domingo de 12 a 21—. Es fuente oficial y es
+> documentación. **Pero la página no trae fecha de publicación ni de actualización**, así que
+> resuelve la fila y **no se cita en el documento**: una afirmación de estado sin fecha no se
+> publica. Y la misma página declara capacidad para 240 personas mientras otras fuentes hablan de
+> 546 m², 150 personas y cinco puestos. **No se reconcilia acá.**
+>
+> **Happening no resuelve.** Su sitio propio lista la sucursal con dirección y lleva copyright
+> 2026, sin fecha de contenido, sin horarios, sin nada fechable. **Un copyright no es evidencia de
+> actividad: se actualiza solo.** Prensa secundaria menciona un aniversario reciente, sin fecha
+> verificable.
 
 **Lo que se perdió, y es lo más grave de esta ficha.** **Los Años Locos**, **Los Platitos 57**, **A
 Los Amigos** y **Look** figuran cerrados, y **Rodizio fue demolido**. Cinco bajas y una demolición
@@ -794,8 +882,9 @@ cierre documentada para cuatro de ellas: la ficha afirma que la zona perdió, no
 locales sobre una elongación de 8,06, **la densidad por hectárea de esta referencia no es
 comparable con la de un núcleo**: es una tira, no una mancha.
 
-**Lo que falta.** **Reverificar el Patio Costanera Norte y Happening.** Si los dos cayeran, la
-referencia seguiría abriendo por densidad y por forma, y no tendría un solo hito.
+**Lo que falta.** **Una fecha para el Patio y una evidencia cualquiera para Happening** — una nota
+fechada, un posteo del canal propio, o una llamada. **Es la única de las 42 fichas donde los dos
+únicos referentes quedaron sin cerrar después de buscarlos**, y por eso está escrito así.
 
 ---
 
@@ -860,7 +949,7 @@ El sistema mide **385,51 hectáreas y 1.916 locales**. Adentro:
 - **Soho** — 92,36 ha · 772 locales
 - **Hollywood** — 102,61 ha · 595 locales
 - **Las Cañitas** — 82,04 ha · 361 locales
-- **una cuarta subzona, la franja noreste**, sin nombre firmado — 40,17 ha · 134 locales
+- **un paño sin subzona identificada** — 40,17 ha · 134 locales
 
 > **Estas cifras no se suman.** Las subzonas y el perímetro publicado se pisan entre sí: 210 de los
 > 361 locales de Las Cañitas están adentro del perímetro publicado, y 960 de sus 1.358 están
@@ -892,40 +981,52 @@ abierto el 25/06/2026. **Café Cortázar**, J. A. Cabrera 3797, alta del catálo
 distinguidos por MICHELIN: Don Julio, Crizia, CoChinChina, A Fuego Fuerte y Mengano, **ninguno con
 verificación individual.**
 
-**La cuarta subzona, y cómo se llegó a ella.** Al restar las tres subzonas conocidas, el perímetro
-publicado conserva **108,5 hectáreas y 188 locales en ocho piezas**, y **una sola pieza lleva 40,17
-ha y 134 locales** —el 71 % de esos locales en el 37 % de esa superficie—. Es un área coherente y
-no un remiendo.
+**El paño sin nombre, y por qué sigue sin nombre.** Al restar las tres subzonas conocidas, el
+perímetro publicado conserva **108,5 hectáreas y 188 locales en ocho piezas**, y **una sola pieza
+lleva 40,17 ha y 134 locales** —el 71 % de esos locales en el 37 % de esa superficie—. Mide 1.196
+metros de este a oeste por 1.102 de norte a sur.
 
-> **Se probó que fuera una de las subzonas ya nombradas y no lo es.** La ficha de esta referencia
-> nombra tres subzonas más —Botánico, Pacífico y Villa Freud— que ninguna medición había incluido.
-> Se midieron: **las tres intersecan el perímetro publicado en 0,00 hectáreas y 0 locales**, y
-> ninguna toca ninguna de las ocho piezas. La hipótesis se corrió y se cayó.
+> **Se probaron dos hipótesis para nombrarla y las dos se cayeron midiendo.**
+>
+> **La primera: que fuera una de las subzonas que esta ficha ya nombra.** Botánico, Pacífico y
+> Villa Freud **intersecan el perímetro publicado en 0,00 hectáreas y 0 locales las tres**, y
+> ninguna toca ninguna de las ocho piezas. No son subzonas de Palermo: están enteramente afuera.
+>
+> **La segunda: que fuera el eje de Av. Santa Fe.** Adentro del paño cae un polo del borrador que
+> lleva ese nombre —18,54 ha, con 12,70 dentro y 75 de los 134 locales—, y parecía la respuesta.
+> **Medido, Av. Santa Fe tiene 0 metros dentro del paño y está a 251 metros de él.** Los 191 metros
+> de Santa Fe que ese polo sí contiene están **en la parte que queda afuera.** El nombre describía
+> justamente lo que no está adentro.
 
-Lo que sí hay adentro es un polo del borrador que esta referencia no nombraba: **el eje de Av.
-Santa Fe**, 18,54 ha, del que **12,70 caen en la pieza** —el 68,5 % de ese polo, el 31,6 % de la
-pieza— **con 75 de sus 134 locales.** La franja se extiende entre Guatemala/Soler y Av. Santa Fe, y
-mide 1.196 metros de este a oeste por 1.102 de norte a sur.
+**Y hay un hallazgo de forma que explica por qué ningún nombre le cierra.** El paño mide **4.645
+metros de perímetro y sólo 709 —el 15 %— corren sobre alguna calle.** Sus calles largas —Paraguay
+con 774 metros adentro, Uriarte con 464, Godoy Cruz con 461, Soler con 448— **lo atraviesan, no lo
+bordean.** Los únicos lados de verdad son tramos cortos: Aráoz 203 metros, Charcas 144, Soler 139,
+Honduras 128.
 
-**Propuesta, para firma:** la pieza se publica como subzona con el nombre **«Palermo — eje Av.
-Santa Fe»**, extendido a su envolvente, y el perímetro declarado sobre las calles medidas.
+> **Una figura cuyo borde no corre sobre calles no es una zona: es un residuo.** Y eso cambia la
+> conclusión. **Este paño se publica como lo que es —el resto del perímetro publicado, sin subzona
+> identificada— y no se le pone nombre.** Que concentre el 71 % de los locales sobrantes en una
+> sola pieza lo hacía parecer una zona; medir su borde muestra que es lo que queda cuando se restan
+> tres formas que sí tienen borde.
 
 **Contexto comercial.** La Ciudad releva **un solo eje de Palermo**: **Palermo Soho** —El Salvador,
 Honduras, Serrano/Borges, Gurruchaga, Armenia y Malabia— con **87,3 % de ocupación y 1,4 puntos
 menos** que un año atrás. Es el eje de una subzona, no del sistema. **Palermo Hollywood y Las
 Cañitas no están entre los 48 ejes vigentes**, así que del resto del sistema no hay dato oficial.
 
-**Límites de lectura.** **El nombre propuesto para la cuarta subzona explica 75 de sus 134 locales
-en un tercio de su superficie: no explica 27,47 hectáreas y 59 locales.** Y el **47 % de los
-locales de esa pieza no trae dirección**, así que el ranking de calles que la describe —Paraguay,
-Charcas, Fray Justo Santa María de Oro, Soler, Uriarte, Borges, Guatemala, Thames, Godoy Cruz—
-describe bien la franja pero no la agota. Por último: **de las ocho piezas del residuo, dos caen
-sobre el nudo de Chacarita–Colegiales**, con 8,09 hectáreas y 7 locales contados dos veces, y una
-tercera queda a 6 metros de Villa Crespo sin tocarla — **seis metros es menos que una vereda, y lo
-que hay ahí es un hueco que declarar, no una superposición que repartir.**
+**Límites de lectura.** **El paño de 40,17 hectáreas no tiene perímetro describible en calles y por
+eso esta ficha no lo delimita.** Y el **47 % de sus locales no trae dirección**, así que el ranking
+de calles que lo describe —Paraguay, Uriarte, Godoy Cruz, Soler, Guatemala, Fray Justo Santa María
+de Oro, Aráoz, Thames— dice bien por dónde pasa y no dice dónde termina. Por último: **de las ocho
+piezas del residuo, dos caen sobre el nudo de Chacarita–Colegiales**, con 8,09 hectáreas y 7
+locales contados dos veces, y una tercera queda a 6 metros de Villa Crespo sin tocarla — **seis
+metros es menos que una vereda, y lo que hay ahí es un hueco que declarar, no una superposición
+que repartir.**
 
-**Lo que falta.** **La firma del nombre y del perímetro de la cuarta subzona.** Y **verificar los
-cinco MICHELIN**, que no tienen fecha propia.
+**Lo que falta.** **Verificar los cinco MICHELIN**, que no tienen fecha propia. **El paño ya no
+espera una firma: espera evidencia de que sea algo.** Si aparece una fuente que lo trate como zona
+—con nombre o con calles—, se reabre; si no, se publica como resto y se termina.
 
 ---
 ---
@@ -949,9 +1050,10 @@ cinco MICHELIN**, que no tienen fecha propia.
 - **Reconocimiento externo** — dos grupos. La Nación (2025) y El Cronista (2025) la tratan como
   polo gastronómico consolidado —es cita de esas notas— y los dos nombran las mismas tres calles.
 
-**Los referentes.** **San Bernardo**, Bar Notable, que es el único de la zona. **Alcanfor** (Aguirre
-949) y **Horta** (Aguirre 1080), recomendados por MICHELIN, más Julia, Trescha, Fico y Han.
-**Ninguno con verificación individual.**
+**Los referentes.** **Café San Bernardo**, Av. Corrientes 5436, Bar Notable y el único de la zona —
+**verificado abierto el 08/06/2026**, con reporteo a nivel establecimiento que lo describe operando
+y cita a su dueña. **Alcanfor** (Aguirre 949) y **Horta** (Aguirre 1080), recomendados por MICHELIN,
+más Julia, Trescha, Fico y Han, **sin verificación individual**.
 
 > **Una precisión que vale para todo el atlas:** los recomendados MICHELIN cuentan como trayectoria
 > e instituciones, no como reconocimiento externo. **MICHELIN distingue restaurantes, no barrios.**
@@ -973,8 +1075,8 @@ que el −9,1 describe el corazón del polo y no su superficie completa. Y **la 
 49,7 hectáreas con La Paternal** sobre el contacto entre los dos barrios: los conteos no se suman.
 Está medido que **no toca Palermo: está a 6 metros y no se superponen.**
 
-**Lo que falta.** **Verificar San Bernardo**, que es el único Notable de la zona. Y resolver el
-solape con La Paternal.
+**Lo que falta.** **Resolver el solape con La Paternal.** El único Notable de la zona ya está
+verificado con fecha propia.
 
 ---
 
@@ -1061,20 +1163,41 @@ Inés.
 ---
 ---
 
-# Lo que sale de escribir las veintidós
+# Lo que sale de escribir las veintiuna
 
-**Uno · la verificación individual es el cuello de botella, y ahora tiene número.** De las 22
-referencias, **catorce declaran que alguno o todos sus hitos no tienen fecha propia**, y en cinco
-de ellas —Costanera Norte, Boulevard Caseros, Villa Urquiza, La Paternal y Devoto— **la ficha
-entera depende de uno o dos establecimientos sin verificar.** No faltan datos: falta verificar uno
-por uno, que es barato y el proyecto ya sabe hacerlo.
+**Uno · la verificación individual dejó de ser el cuello de botella.** De las 21 referencias
+publicadas, **Puerto Madero pasó de cero verificaciones a cuatro, Recoleta a cinco, Av. Corrientes a
+tres, y Villa Crespo y Boulevard Caseros cerraron su único referente.** De las 42 fichas del atlas
+**queda una sola donde los referentes no cerraron después de buscarlos: Costanera Norte.**
+
+> **Y buscándolos aparecieron los límites del método, que valen más que el resultado.**
+>
+> **Instagram y Facebook están bloqueados para cualquier agente automático.** Ninguno de los
+> establecimientos pudo verificarse por su canal propio, y los trece tienen cuentas activas a la
+> vista. Ese frente es humano y no se puede automatizar.
+>
+> **La lectura de reseñas no es determinista.** Sobre la misma dirección, pasadas sucesivas
+> devolvieron resultados distintos, y una omitió por completo una reseña que habría cambiado un
+> veredicto. **Una verificación apoyada en una sola lectura no está verificada:** se lee dos veces
+> por rutas distintas y se declara la precisión que se sostiene. Por eso una de estas fichas dice el
+> mes y no el día.
+>
+> **Y no todo lo que no aparece está cerrado.** Celta Bar no tiene rastro desde octubre de 2025 y
+> tampoco tiene evidencia de cierre. **La invisibilidad de un local es un dato sobre el instrumento,
+> no sobre el local.**
 
 **Dos · el cruce con el relevamiento de ejes está incompleto de un modo específico.** Trece de las
-22 pudieron citar contexto comercial; **cinco no tienen eje relevado y lo declaran** —Boulevard
+21 pudieron citar contexto comercial; **cinco no tienen eje relevado y lo declaran** —Boulevard
 Caseros, Donado–Holmberg, Costanera Norte, Villa Pueyrredón y García del Río sobre su propio
 boulevard—; y **cuatro tienen el dato disponible y sin atribuir**. El caso más claro es Villa
 Urquiza: la Ciudad releva el eje Triunvirato–Monroe, que es casi exactamente su perímetro
 declarado, y el cruce oficial lo marca como que no está en el atlas.
+
+> **Y hay un patrón de borde que conviene mirar junto.** Boulevard Caseros empieza en Defensa 1501
+> y su eje termina en el 1499. Plaza Bar está en Florida 1005 y el eje Florida llega al 999. **Los
+> ejes del Instituto se cortan en centenas y los polos no**, así que la diferencia entre «adentro» y
+> «afuera» del relevamiento oficial puede ser de dos números. Cuando se cite un eje, hay que mirar
+> su tramo.
 
 **Tres · hay tres referencias cuya evidencia describe otra zona.** Villa Urquiza se apoya en notas
 sobre Donado–Holmberg; Federico Lacroze mide Av. Lacroze y sus cinco grupos hablan de Fraga y

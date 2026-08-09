@@ -26,9 +26,40 @@ estaba hecho**, y las cinco por la misma causa —nadie miró el archivo que ya 
 | los 76,1 m y los 1.100 m² de la lámina 5 | ronda 7, tarea 5e. Se pidieron como «que falta verificar» |
 | la tabla de numeración de secciones | la cabecera del propio archivo que la auditoría estaba citando |
 | el modelo de ficha | había dos moldes, no uno, y se produjo con el más nuevo sin mirar el otro |
+| **«La Boca no fue evaluada»** | **ronda del sur, 07/08.** Se midió con las seis vías, entró con dos zonas, y el resultado quedó en un archivo que nadie volvió a abrir. **Sexta vez.** ERR-17 |
 
 **Y una regla de frontera que costó cinco errores:** nadie afirma el contenido de un archivo que no
 leyó. Cowork tiene lectura directa del repositorio por el puente. **Se lee, no se recuerda.**
+
+---
+
+## 0 bis · El criterio, que también es uno solo
+
+**Escrito el 09/08 a pedido de Diego.** Documento completo en
+`CRITERIO_DE_ADMISION_Y_PERMANENCIA.md`, tabla en `criterio_admision_55.csv`, reproducible con
+`build_criterio.py`.
+
+> **Haber sido publicado no da derecho de admisión. Da derecho de permanencia.**
+
+**Admisión · tres condiciones, las tres necesarias.**
+**C1** abre al menos **dos** de las seis vías · **C2** las vías que abren se apoyan en **al menos dos
+orígenes independientes** · **C3** la evidencia cae dentro de **un objeto delimitable**.
+
+**Cuatro reglas de aplicación.** Una vía abre o no abre —«parcial» es no abre—. Una puerta cerrada
+ni bloquea ni otorga. La herencia no vale hacia arriba. **El perímetro no es condición de admisión:
+es un atributo de producción.**
+
+**Permanencia · nada se da de baja, cambia de categoría, con motivo y fecha.**
+`polo admitido` · `referencia en observación` · `zona en estudio` · `zona evaluada sin admisión`.
+
+**El umbral está calibrado, no elegido:** con ≥1 entran Villa Real y Parque Chas por un solo bar;
+con ≥3 **se cae el Microcentro, se cae San Telmo y se caen las dos zonas de La Boca**. Con ≥2 el
+conjunto queda en 41.
+
+**Resultado sobre las 55 unidades evaluadas:** 41 polos admitidos · 1 referencia en observación
+(R22 Villa Pueyrredón) · 4 zonas en estudio · 9 zonas evaluadas sin admisión. **Coincide con el
+disco en 44 de 48 filas y difiere en cuatro** —R22, Z42 Coghlan salen; Z28 Monte Castro y Z35
+Balvanera·Once entran—. **Catorce comunas con polo; la 8 sigue sin ninguno.**
 
 ---
 
@@ -58,7 +89,7 @@ Era la decisión más grande del proyecto y está tomada. **El cuerpo son las 41
 
 | | sección | estado |
 |---|---|---|
-| **I** | Presentación | escrita · pendiente el ajuste de cifras |
+| **I** | Presentación | **reescrita el 09/08** · `SECCION_I_PRESENTACION.md` |
 | **II** | Qué es un polo gastronómico | escrita, reescrita |
 | **III** | De dónde salen los datos | escrita |
 | **IV** | Cómo se leyó el territorio | escrita |
@@ -68,8 +99,8 @@ Era la decisión más grande del proyecto y está tomada. **El cuerpo son las 41
 | **VIII** | Lo que se midió y no alcanzó | escrita completa |
 | **IX** | Qué no dice este atlas | escrita |
 | **Anexo A** | Nota metodológica | **escrita** — deja de estar huérfana |
-| **Anexo B** | Las 124 concentraciones detectadas | falta armar; los nombres y polígonos están |
-| **Anexo C** | Correspondencia, glosario, fuentes y licencias | falta armar |
+| **Anexo B** | Las 124 concentraciones detectadas | **escrito** · `ANEXO_B_LAS_124_CONCENTRACIONES.md` y `anexo_B_124_concentraciones.csv` |
+| **Anexo C** | Correspondencia, glosario, fuentes y erratas | **escrito** · `ANEXO_C_CORRESPONDENCIA_GLOSARIO_FUENTES.md` |
 
 **Tres resoluciones que van con eso, y por qué.**
 
@@ -167,7 +198,9 @@ bloquea la producción. Detalle y explicación en `LO_QUE_DECIDISTE_Y_LO_QUE_FAL
 
 | # | qué | por qué sólo él |
 |---|---|---|
-| **D1** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio, y la de Las Cañitas está resuelta | mirar la calle |
+| ~~**D1**~~ | ~~¿La Boca se evalúa y entra como la 43?~~ **CERRADA, y no por decisión: La Boca fue evaluada el 07/08 con las seis vías y sus dos zonas entraron.** El resultado quedó en un solo archivo y nunca se trasladó al corpus. No hay nada que decidir: hay que trazarle el perímetro. Ver ERR-17 | ya no espera nada |
+| **D2** | **Happening** y **Celta Bar**, en Instagram o Facebook. Son los dos únicos establecimientos del atlas que no resolvió nadie, y las redes están bloqueadas para todo agente automático | sólo él puede |
+| **D3** | Las **tres caminatas**, cuando pueda. **Ya no bloquean:** las tres tienen reemplazo de escritorio, la de Las Cañitas está resuelta y la de Montes de Oca se midió | mirar la calle |
 
 **Y nada más.** Las otras dos que estaban abiertas se cerraron por delegación explícita de Diego
 —*«hacé lo que creas mejor con esas 2 no bloqueantes»*—:
@@ -188,6 +221,17 @@ de Palermo**. La propuesta —«Palermo — eje Av. Santa Fe»— está escrita 
 puede pedir la firma sin el perímetro en calles**, y ese perímetro hay que medirlo sobre la caja
 `-58,43404 · -34,59232` a `-58,42101 · -34,58240`. Proponer un perímetro sin medirlo ya falló dos
 veces en este proyecto.
+
+### Cerrado en la ronda 13 · segunda vuelta
+
+| pregunta | respuesta |
+|---|---|
+| ¿La cuarta pieza de Palermo se llama «eje Av. Santa Fe»? | **No, y la medición lo refutó.** Av. Santa Fe tiene **0 metros dentro del paño y está a 251 metros**. Los 191 m de Santa Fe del polo que lo sugería están en la parte que queda **afuera** |
+| ¿Se le puede poner perímetro en calles? | **No.** De sus 4.645 m de borde, sólo **709 —el 15 %—** corren sobre alguna calle; las largas lo atraviesan. **Una figura cuyo borde no corre sobre calles no es una zona: es un residuo**, y se publica como resto sin nombre |
+| ¿Sirve TripAdvisor para verificar vigencia? | **No: responde 403 a pedidos automáticos.** La ruta que sí cierra es prensa fechada con reporteo a nivel establecimiento |
+| San Bernardo, Británico, La Biela | **Los tres verificados abiertos** — 08/06/2026, 18/04/2026 y 15/10/2025 |
+| ¿Costanera Norte cierra? | **No.** El Patio resuelve por página oficial **sin fecha** —resuelve la fila y no se cita— y Happening **no resuelve**: un copyright 2026 no es evidencia de actividad |
+| ¿Recoleta es «la calle fantasma»? | **No en presente.** La nota es de 2017 y **el mismo diario publicó en 2021 que la cuadra se recuperó.** Seis cierres cargados entre 2013 y 2017, y la cuadra reocupada con otros rubros |
 
 ### Lo que se cerró el 09/08 y no vuelve a abrirse
 
@@ -221,6 +265,9 @@ viene va a describir el polo equivocado.** Es errata nueva: **ERR-11.**
    P-ids y ni una mención de los R. **Sin él no se puede armar el Anexo B ni cerrar ERR-11.** Es lo
    que más destraba.
 2. **ERR-11 · la colisión de P008**, que sale del punto anterior.
+2b. **ERR-12 · Defensa 695 está asignada a dos establecimientos.** El catálogo la da a Bar Seddon,
+   en Monserrat, y la verificación del Bar Británico llegó con la misma altura. **Dos
+   establecimientos no comparten una puerta.**
 3. **El bug del normalizador de calles**, vivo en **9 de los 124** polos de `POLOS_NOMBRADOS.csv`
    —la misma calle repetida en su propio top de ejes—. `callejero_canonico.py` arregla esa familia
    y el arreglo nunca se propagó a ese archivo. **El campo se publica.**
@@ -237,15 +284,67 @@ viene va a describir el polo equivocado.** Es errata nueva: **ERR-11.**
    Ciudad es casi exactamente el perímetro declarado de esa referencia, y el cruce la marca como
    que no está en el atlas.
 10. **Las 5 zonas pendientes de límites.**
+11. **ERR-17 · las cuatro zonas del sur que cumplen el criterio y están afuera** — Z51 Iriarte, Z52
+   La Boca Necochea, Z53 La Boca Caminito, Z54 Pompeya Sáenz. **Y medir el reparto de dos de
+   ellas**: Z51 contra Z50 y R11, Z54 contra Z40. Se mide, no se decide.
+12. **ERR-18 · recalcular `n_vias` desde las columnas de vía** en `fichas_corpus_polos.csv`. Cinco
+   filas se contradicen a sí mismas —R02, R04, R05, R19, Z37—. Ninguna cambia de categoría.
+13. **ERR-19 · la fila R03 de `via_E_22_referencias.csv`** tiene un campo con comas sin entrecomillar
+   que desborda `via_E_rutas_n` y `fecha_relevamiento`.
+14. **Z55 · ¿la feria de 840 m sobre Av. Mariano Acosta es una FIAB?** Dos rondas propias en
+   contradicción, nunca cerrada. **De esto depende que la Comuna 8 tenga o no tenga un polo.**
 
 ### Le toca a Cowork
 
-1. **El ajuste de cifras de la sección I**, que su propia cabecera anuncia y nadie hizo.
-2. **Consolidar la edición técnica con las rondas 8 a 13.**
-3. **El Anexo B**, cuando exista el mapeo entre los 124 y los 42.
-4. **El Anexo C** — correspondencia, glosario, fuentes y licencias.
+1. **Consolidar la edición técnica con las rondas 8 a 14.** Es lo único que queda de este lado.
+2. **Reescribir la Sección I con el criterio y las cuatro categorías**, y **escribir el anexo de las
+   14 zonas no admitidas**, vía por vía. Es lo que convierte los ceros en hallazgo.
+3. **Cuatro fichas nuevas del sur**, con el material que ya existe en el informe del 07/08.
 
-**La sección VII está terminada.** 42 fichas en dos archivos, agrupadas por comuna.
+**EL DOCUMENTO ESTÁ COMPLETO** en el sentido de que ninguna sección quedó sin escribir. Lo que abrió
+el criterio del 09/08 es reescritura, no investigación.
+
+### Lo que trajo la ronda 14 de Codex, y verificado contra sus archivos
+
+**El mapeo entre los 124 y los 42 existe:** 171 pares, 105 concentraciones adentro de algún polo,
+**19 afuera con 1.451 locales — el 11,4 % de todo lo que el atlas contabiliza.** Y las 124 suman
+exactamente 12.688 locales, que es la cifra publicada: **el control cierra solo.**
+
+| hallazgo | qué es |
+|---|---|
+| ~~La Boca no fue evaluada~~ **REFUTADO EL 09/08 · ERR-17** | **Sí fue evaluada, el 07/08, con las seis vías, y sus dos zonas entraron.** Lo que nunca pasó fue que el resultado se trasladara al corpus: los ids Z50–Z56 existen en un solo archivo del repositorio y ninguna ronda posterior los tomó. Dos concentraciones con 157 locales, seis Bares Notables con cinco abiertos, y la delimitación más precisa de todo el sur —340 metros lineales, de obra pública de enero de 2026— |
+| **Palermo tiene 584 locales afuera de su sistema** | Seis concentraciones —Botánico, Pacífico, Villa Freud, Gascón y Honduras, Plaza Italia, Alto Palermo— que el sistema de 1.916 no toca. **La pregunta abierta no es cómo se llama la pieza que sobra adentro: es hasta dónde llega Palermo** |
+| **Los polos cubren catorce comunas** | La **Comuna 8** tiene tres concentraciones con 259 locales y **ningún polo admitido**. Es un resultado, no un hueco: se barrió con el mismo umbral y ninguna alcanzó el criterio. **Y desde el 09/08 la respuesta es simétrica:** Villa Lugano falla exactamente lo mismo que falla Villa Pueyrredón, que sí está publicada; la diferencia no es de evidencia sino de antigüedad, y ahora está declarada. **Queda un cabo suelto que decide el asunto: Z55, la feria de 840 m sobre Av. Mariano Acosta, con dos rondas propias en contradicción** |
+| **Montes de Oca no es continuo puerta a puerta** | 8,9 % a 40 metros · **71,3 % a 120**, la proporción más alta de todas las zonas medidas. La lámina 12 cambió la frase: **«continuo a escala de cuadra»** |
+| **El Barrio Coreano es el único de los 42 sin ninguna concentración adentro** | Coherente con cómo entró —comunidad, corredor, reconocimiento— pero es el único polo que ningún instrumento detecta y ninguna dirección confirma |
+
+### Lo que Cowork verificó el 09/08 · trece establecimientos
+
+**Diez verificados abiertos, uno probablemente abierto, dos que no cierran.** Detalle en
+`RONDA_DE_VIGENCIA_COWORK.md` y `verificaciones_cowork_2026-08-09.csv`.
+
+**Puerto Madero pasó de cero verificaciones a cuatro; Recoleta a cinco; Av. Corrientes a tres.** De
+las 42 fichas **queda una sola donde los referentes no cerraron después de buscarlos: Costanera
+Norte.**
+
+**Y tres hallazgos que valen más que el conteo:**
+
+**«Bar del Alvear» no existe.** El atlas lo tenía cargado como referente de Recoleta y **el hotel
+nombra seis locales, ninguno con ese nombre.** El hotel está operando y verificado; lo que no se
+puede verificar es un local que no se puede identificar. Falta decidir cuál de los seis era.
+
+**Celta Bar no tiene rastro desde octubre de 2025, y tampoco tiene evidencia de cierre.** Es
+ausencia de rastro, no prueba de cierre, y **es el caso donde más rinde una mirada a redes.**
+
+**Un patrón de defecto nuevo, que sale de La Giralda:** su reseña más nueva está **escrita dentro de
+ventana y relata una visita de julio de 2025.** Las plataformas muestran dos fechas y **sólo la de
+la visita dice algo sobre la actividad del local.** Regla que sale de ahí: en una reseña vale la
+fecha de la visita, no la de publicación.
+
+**Y dos límites del método, confirmados:** Instagram y Facebook están bloqueados para cualquier
+agente automático —ese frente es de Diego—, y **la lectura de reseñas no es determinista**: pasadas
+sucesivas sobre la misma dirección dieron resultados distintos, y una omitió una reseña que habría
+cambiado un veredicto. **Se lee dos veces por rutas distintas o no está verificado.**
 
 ---
 
@@ -319,7 +418,9 @@ outputs\BARRIDO_CIUDAD_2026-08\
 | vía E medida | 84 % · 79 de 94, con 10 que son un cruce espacial |
 | vía B medida | 67 % · 63 de 94, y sube sola al recorrerla contra el catálogo |
 | delimitación de polos | ~85 % · Palermo a una firma, Colegiales y el solape Villa Crespo–La Paternal abiertos |
-| **el cuerpo del documento** | **42 de 42 fichas · COMPLETO** |
+| **el documento entero** | **COMPLETO** · secciones I a IX y los tres anexos |
+| el cuerpo | 42 fichas, agrupadas por comuna |
+| referentes con fecha propia | **41 de las 42 fichas** · la única sin cerrar es Costanera Norte |
 | edición técnica | ~90 %, con las rondas 8 a 13 por incorporar |
 | presentación | **v2.2**, con la lámina 5 pendiente de dos verificaciones |
 

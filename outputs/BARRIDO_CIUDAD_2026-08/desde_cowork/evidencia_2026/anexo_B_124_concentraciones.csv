@@ -1,0 +1,125 @@
+polo_id,nombre_en_ficha,nivel_del_nombre,marca,n_locales,barrios,comunas,polo_del_atlas,pct_del_P_dentro,otros_polos_que_toca
+P026,Av. Caseros · tramo Parque Patricios°,4,°,67,Parque Patricios (31); Constitucion (20); Barracas (15); San Cristobal (1),1; 3; 4,Z40 Nueva Pompeya y Parque Patricios,49.9,Z48 (0.3 %)
+P030,Puerto Madero · diques 2 y 3,2,,117,Puerto Madero (117),1,R04 Puerto Madero,98.1,-
+P051,Constitución°,4,°,123,Constitucion (123),1,R11 Boulevard Caseros,6.0,-
+P085,Balvanera · Av. Entre Ríos e Independencia°,4,°,53,Balvanera (21); Monserrat (15); Constitucion (10); San Cristobal (7),1; 3,Z35 Balvanera · Once,43.0,Z47 (23.0 %); Z48 (16.5 %)
+P094,Monserrat · Lima y México°,4,°,51,Monserrat (51),1,Z47 Monserrat + Congreso,100.0,-
+P100,Avenida de Mayo · tramo Congreso,3,,116,Monserrat (92); San Nicolas (24),1,R12 Centro / Microcentro segmentado,95.8,Z47 (74.4 %)
+P101+P099,Congreso,3,,130,Balvanera (100); Monserrat (30),1; 3,Z35 Balvanera · Once,84.4,Z47 (15.6 %)
+P102,Bulevar Caseros,3,,42,San Telmo (35); Barracas (7),1; 4,R11 Boulevard Caseros,21.3,R03 (0.0 %)
+P103,San Telmo,3,,342,San Telmo (278); Monserrat (62); Constitucion (2),1,Z47 Monserrat + Congreso,20.5,R03 (13.8 %); R04 (0.7 %)
+P108,Monserrat · Av. Belgrano y Perú°,4,°,129,Monserrat (129),1,Z47 Monserrat + Congreso,100.0,R12 (27.0 %)
+P109,Av. Callao entre Córdoba y Paraguay°,4,°,41,San Nicolas (14); Recoleta (14); Balvanera (13),1; 2; 3,Z35 Balvanera · Once,23.6,-
+P111,Avenida de Mayo · tramo Plaza de Mayo,3,,170,Monserrat (154); San Nicolas (16),1,Z47 Monserrat + Congreso,83.5,R12 (37.0 %)
+P112,San Nicolás · Uruguay y Paraná°,4,°,66,San Nicolas (53); Recoleta (8); Retiro (5),1; 2,R12 Centro / Microcentro segmentado,73.3,R02 (6.0 %); Z46 (4.5 %)
+P113,Av. Corrientes · tramo teatral,3,,200,San Nicolas (164); Balvanera (36),1; 3,R02 Avenida Corrientes,73.9,Z35 (22.2 %); R12 (6.8 %)
+P114,Tribunales,3,,64,San Nicolas (64),1,R02 Avenida Corrientes,100.0,R12 (100.0 %)
+P115,Retiro · Reconquista y San Martín°,4,°,65,Retiro (65),1,Z46 Retiro,100.0,R12 (50.9 %)
+P116,Microcentro,3,,187,San Nicolas (187),1,R12 Centro / Microcentro segmentado,61.5,R02 (21.2 %); Z46 (7.3 %)
+P117,Microcentro · Florida y Galerías Pacífico,3,,131,San Nicolas (131),1,R12 Centro / Microcentro segmentado,89.7,Z46 (32.7 %)
+P118,Retiro · Esmeralda y Paraguay°,4,°,136,Retiro (114); San Nicolas (22),1,Z46 Retiro,100.0,R12 (67.2 %)
+P076,Palermo · Bustamante y Mario Bravo°,4,°,156,Recoleta (81); Palermo (72); Almagro (3),2; 5; 14,Z37 Almagro,1.6,-
+P095,Recoleta · Av. Las Heras y Av. Callao°,4,°,52,Recoleta (52),2,R06 Recoleta,70.5,-
+P096,La Isla (Recoleta),3,,41,Recoleta (41),2,R06 Recoleta,100.0,-
+P097,Recoleta · Av. Pueyrredón y Junín°,4,°,53,Recoleta (53),2,R06 Recoleta,67.8,-
+P098,Recoleta · Plaza Francia,3,,115,Recoleta (115),2,R06 Recoleta,92.7,-
+P104,Alto Palermo,3,,121,Recoleta (93); Palermo (28),2; 14,SIN POLO ADMITIDO,,-
+P105,Barrio Norte · Agüero y Laprida°,4,°,48,Recoleta (48),2,R06 Recoleta,21.1,-
+P106,Barrio Norte · Av. Pueyrredón y Av. Santa Fe,3,,198,Recoleta (145); Balvanera (53),2; 3,R06 Recoleta,30.2,Z35 (22.3 %); R13 (0.7 %)
+P107,Balvanera · Junín y Pasteur°,4,°,86,Balvanera (67); Recoleta (19),2; 3,Z35 Balvanera · Once,82.5,-
+P110,Barrio Norte · Av. Santa Fe y Av. Callao,3,,112,Recoleta (112),2,R06 Recoleta,86.2,-
+P019,San Cristóbal · Av. Jujuy y Av. Brasil°,4,°,41,Parque Patricios (26); San Cristobal (15),3; 4,Z40 Nueva Pompeya y Parque Patricios,80.4,Z48 (19.6 %)
+P044,San Cristóbal · Av. San Juan°,4,°,62,San Cristobal (62),3,Z48 San Cristobal,100.0,-
+P055,Balvanera · Av. La Rioja e Independencia°,4,°,40,Balvanera (40),3,Z35 Balvanera · Once,100.0,-
+P062,San Juan y Boedo,2,,129,Boedo (77); Almagro (47); Balvanera (5),3; 5,R14 Avenida Boedo,67.9,Z37 (50.3 %); Z35 (4.0 %)
+P084,Almagro · Av. Rivadavia y Medrano°,4,°,119,Balvanera (64); Almagro (55),3; 5,Z37 Almagro,54.4,Z35 (45.6 %)
+P093,Abasto,2,,169,Balvanera (169),3,Z35 Balvanera · Once,100.0,R13 (85.1 %)
+P008,Distrito de Diseño (Barracas),1,,49,Barracas (49),4,SIN POLO ADMITIDO,,-
+P024,Av. Sáenz (Nueva Pompeya),3,,103,Nueva Pompeya (103),4,Z40 Nueva Pompeya y Parque Patricios,100.0,-
+P027,Distrito Tecnológico (Parque Patricios),1,,189,Parque Patricios (130); Nueva Pompeya (37); Boedo (22),4; 5,Z40 Nueva Pompeya y Parque Patricios,86.7,R14 (25.7 %)
+P032,Caminito y Vuelta de Rocha,2,,105,La Boca (105),4,SIN POLO ADMITIDO,,-
+P033,La Boca · Av. Almirante Brown y Necochea°,4,°,52,La Boca (52),4,SIN POLO ADMITIDO,,-
+P066,Av. Montes de Oca,3,,65,Barracas (65),4,MDO280_1702 Av. Montes de Oca 280-1702,69.0,-
+P029,Boedo · Av. Boedo y Pavón°,4,°,45,Boedo (45),5,R14 Avenida Boedo,99.8,-
+P053,Av. La Plata y Av. Pedro Goyena°,4,°,196,Caballito (119); Boedo (58); Parque Chacabuco (17); Almagro (2),5; 6; 7,R10 Caballito,73.6,Z37 (0.1 %)
+P057,Caballito · Av. La Plata y Av. Rivadavia°,4,°,105,Caballito (77); Almagro (28),5; 6,Z37 Almagro,21.2,-
+P079,Villa Crespo · Estado de Israel y Ángel Gallardo°,4,°,66,Villa Crespo (43); Almagro (14); Caballito (9),5; 6; 15,Z37 Almagro,20.1,R08 (12.6 %)
+P082,Abasto · Humahuaca y Guardia Vieja,2,,160,Almagro (160),5,Z37 Almagro,100.0,R13 (87.1 %)
+P083,Almagro · Perón y Gascón°,4,°,47,Almagro (47),5,Z37 Almagro,100.0,-
+P086,Eje Av. Córdoba · Almagro y Palermo°,4,°,54,Palermo (30); Almagro (13); Villa Crespo (11),5; 14; 15,Z37 Almagro,19.9,-
+P043,La Isla (La Paternal),3,,161,Villa Gral. Mitre (61); Villa Crespo (47); Paternal (37); Caballito (16),6; 11; 15,R21 La Paternal,62.3,R08 (17.0 %)
+P047,Caballito · Av. Avellaneda y Neuquén°,4,°,53,Caballito (53),6,R10 Caballito,26.3,-
+P049,Caballito · entorno Hospital Italiano°,4,°,40,Caballito (40),6,R10 Caballito,29.6,-
+P050,Caballito · Honorio Pueyrredón y Felipe Vallese°,4,°,42,Caballito (42),6,SIN POLO ADMITIDO,,-
+P054,Caballito · Av. Rivadavia y Curapaligüe°,4,°,45,Caballito (27); Flores (18),6; 7,Z23 Flores · casco historico,44.2,R10 (20.5 %)
+P056,Caballito · Av. Rivadavia y Acoyte°,4,°,210,Caballito (210),6,R10 Caballito,54.1,-
+P063,Av. Gaona y Ángel Gallardo (Caballito y Villa Crespo)°,4,°,182,Caballito (123); Villa Crespo (59),6; 15,R08 Villa Crespo,71.9,R21 (26.1 %)
+P014,Bajo Flores · Av. Eva Perón y Varela,3,,64,Flores (49); Parque Avellaneda (15),7; 9,Z23 Flores · casco historico,80.6,Z39 (19.4 %)
+P015,Parque Chacabuco · Av. Asamblea°,4,°,50,Parque Chacabuco (50),7,SIN POLO ADMITIDO,,-
+P036,Av. Gaona y Boyacá°,4,°,41,Flores (28); Villa Gral. Mitre (12); Villa Santa Rita (1),7; 11,Z23 Flores · casco historico,65.3,Z27 (1.6 %)
+P041,Floresta · Av. Rivadavia y Venancio Flores°,4,°,60,Floresta (53); Flores (7),7; 10,Z25 Floresta,90.8,Z23 (9.2 %)
+P052,Villa Santa Rita · Av. Cuenca y Morón°,4,°,124,Floresta (61); Flores (56); Villa Santa Rita (7),7; 10; 11,Z24 Flores · Avellaneda y Pasaje Ruperto Godoy,47.2,Z25 (42.4 %); Z27 (12.1 %); Z23 (10.4 %)
+P058,Flores · Av. Carabobo y Av. Directorio°,4,°,46,Flores (43); Parque Chacabuco (3),7,Z23 Flores · casco historico,98.2,-
+P059,Flores · Av. Nazca y Av. Rivadavia°,4,°,48,Flores (48),7,Z23 Flores · casco historico,100.0,-
+P060,Casco Histórico de Flores,1,,43,Flores (43),7,Z23 Flores · casco historico,100.0,-
+P061,Flores · Av. Rivadavia y Varela°,4,°,54,Flores (54),7,Z23 Flores · casco historico,100.0,-
+P002,Villa Soldati · Av. Fernández de la Cruz y Mariano Acosta°,4,°,68,Villa Soldati (68),8,SIN POLO ADMITIDO,,-
+P003,Villa Riachuelo · Av. Gral. Paz y Chilavert°,4,°,91,Villa Riachuelo (87); Villa Lugano (4),8,SIN POLO ADMITIDO,,-
+P004,Av. Eva Perón entre Escalada y Castañares°,4,°,141,Villa Lugano (64); Parque Avellaneda (58); Mataderos (19),8; 9,Z39 Parque Avellaneda,36.9,Z33 (9.3 %)
+P005,Av. Larrazábal y Av. Riestra (Villa Lugano),3,,100,Villa Lugano (100),8,SIN POLO ADMITIDO,,-
+P006,Feria de Mataderos y Casco Histórico,2,,48,Mataderos (48),9,Z33 Mataderos,100.0,-
+P009,Parque Avellaneda · Av. Directorio y Lacarra°,4,°,50,Parque Avellaneda (26); Velez Sarsfield (14); Floresta (10),9; 10,Z39 Parque Avellaneda,64.2,Z25 (14.1 %)
+P012,Mataderos · Av. Juan B. Alberdi°,4,°,90,Mataderos (90),9,Z33 Mataderos,100.0,-
+P013,Mataderos · Av. Alberdi y Saladillo°,4,°,42,Mataderos (42),9,Z33 Mataderos,100.0,-
+P017,Av. Emilio Castro (Liniers y Mataderos)°,4,°,108,Liniers (74); Mataderos (34),9,Z32 Liniers,80.0,Z33 (20.0 %)
+P020,Polo gastronómico de Villa Luro,3,,94,Villa Luro (93); Liniers (1),9; 10,Z31 Villa Luro,99.5,Z32 (0.5 %)
+P021,Liniers · centro comercial y microcentro boliviano,3,,262,Liniers (257); Versalles (5),9; 10,Z32 Liniers,98.4,-
+P010,Vélez Sársfield · Segurola y César Díaz°,4,°,43,Floresta (26); Velez Sarsfield (17),10,Z25 Floresta,59.4,-
+P018-2,Villa Real · Av. Francisco Beiró y Lope de Vega°,4,°,73,Villa Real (50); Villa Devoto (23),10; 11,R15 Devoto,53.5,-
+P025-1,Monte Castro · Álvarez Jonte y Segurola°,4,°,42,Monte Castro (42),10,Z28 Monte Castro,100.0,-
+P025-2,Monte Castro · Av. Lope de Vega°,4,°,47,Monte Castro (40); Villa Luro (7),10,Z28 Monte Castro,92.8,Z31 (7.2 %)
+P031,Floresta · Av. Gaona y Segurola°,4,°,42,Floresta (32); Velez Sarsfield (10),10,Z25 Floresta,91.6,-
+P034,Monte Castro · Av. Álvarez Jonte°,4,°,40,Monte Castro (14); Villa Del Parque (14); Villa Santa Rita (12),10; 11,Z28 Monte Castro,42.9,Z27 (16.5 %)
+P042,Floresta · Av. Rivadavia y Segurola°,4,°,61,Velez Sarsfield (53); Floresta (8),10,Z25 Floresta,6.7,-
+P016,Plaza Arenales (Devoto gastronómico),3,,105,Villa Devoto (105),11,R15 Devoto,97.4,-
+P018-1,Villa Devoto · Av. Francisco Beiró°,4,°,62,Villa Devoto (62),11,R15 Devoto,100.0,-
+P035,Villa Devoto · Av. Gral. Mosconi y Av. San Martín°,4,°,42,Villa Devoto (37); Villa Pueyrredon (5),11; 12,R15 Devoto,51.0,R22 (9.6 %)
+P037,Centro comercial de Av. Cuenca (Villa del Parque),3,,142,Villa Del Parque (142),11,SIN POLO ADMITIDO,,-
+P038,Av. San Martín (Villa del Parque y Devoto)°,4,°,96,Villa Devoto (40); Agronomia (22); Villa Del Parque (19); Villa Pueyrredon (15),11; 12; 15,R22 Villa Pueyrredon,4.2,-
+P040,Villa Santa Rita · Av. Nazca y Álvarez Jonte°,4,°,54,Villa Santa Rita (36); Villa Del Parque (18),11,Z27 Villa Santa Rita,68.9,-
+P011,Saavedra · entorno Dot Baires°,4,°,41,Saavedra (41),12,SIN POLO ADMITIDO,,-
+P022,Saavedra · Av. Ricardo Balbín°,4,°,93,Saavedra (83); Coghlan (10),12,R20 Garcia del Rio,29.2,Z42 (4.7 %)
+P023,Villa Pueyrredón · Av. Artigas°,4,°,42,Villa Pueyrredon (42),12,R22 Villa Pueyrredon,100.0,-
+P028,Villa Pueyrredón · Av. Mosconi y Av. Nazca°,4,°,60,Villa Pueyrredon (60),12,R22 Villa Pueyrredon,100.0,-
+P039,DoHo (Donado-Holmberg) · tramo norte,3,,41,Villa Urquiza (41),12,R16 Donado-Holmberg,100.0,-
+P045,DoHo (Donado-Holmberg) · tramo sur,3,,147,Villa Ortuzar (78); Parque Chas (39); Villa Urquiza (30),12; 15,Z44 Villa Ortuzar,63.8,R17 (24.3 %); R16 (15.4 %)
+P046,Villa Urquiza · Bulevar Mendoza y Av. Triunvirato,3,,291,Villa Urquiza (286); Parque Chas (3); Villa Ortuzar (2),12; 15,R17 Villa Urquiza,99.8,Z44 (0.1 %); R16 (0.0 %)
+P070,Saavedra · Av. Cabildo y Ramallo°,4,°,50,Saavedra (28); Nuñez (22),12; 13,Z41 Nunez,40.2,-
+P072-1,Núñez · Av. Cabildo y Crisólogo Larralde°,4,°,43,Nuñez (39); Saavedra (4),12; 13,Z41 Nunez,94.7,R20 (5.4 %)
+P007,Bajo Belgrano,3,,45,Belgrano (45),13,SIN POLO ADMITIDO,,-
+P048,Colegiales · Av. Álvarez Thomas y Elcano°,4,°,171,Colegiales (134); Villa Ortuzar (28); Chacarita (9),13; 15,Z43 Colegiales,82.5,Z44 (16.2 %)
+P065,Las Cañitas,3,,361,Palermo (350); Belgrano (11),13; 14,R01 Palermo,53.2,R19 (17.7 %)
+P067,Bajo Núñez,3,,49,Nuñez (49),13,Z41 Nunez,100.0,-
+P068,Polo gastronómico Chacarita,2,,156,Chacarita (136); Colegiales (20),13; 15,R19 Federico Lacroze,85.6,R09 (68.5 %); Z43 (4.9 %)
+P069,Belgrano · Echeverría y Conde°,4,°,42,Belgrano (42),13,SIN POLO ADMITIDO,,-
+P071,Colegiales · Federico Lacroze y Zapiola°,4,°,44,Colegiales (44),13,R19 Federico Lacroze,100.0,Z43 (100.0 %)
+P072-2,Colegiales · Av. Cabildo y Federico Lacroze°,4,°,63,Colegiales (38); Palermo (25),13; 14,Z43 Colegiales,57.2,R19 (14.4 %)
+P072-3,Belgrano R,3,,40,Belgrano (40),13,SIN POLO ADMITIDO,,-
+P072-4,Belgrano C,3,,212,Belgrano (212),13,R05 Belgrano,40.5,-
+P072-5,Belgrano · Av. Cabildo y Virrey del Pino°,4,°,48,Colegiales (24); Belgrano (17); Palermo (7),13; 14,Z43 Colegiales,50.5,R05 (20.2 %)
+P072-6,Barrio Chino,2,,146,Belgrano (146),13,R05 Belgrano,61.7,-
+P072-7,Barrancas de Belgrano,3,,68,Belgrano (68),13,R05 Belgrano,100.0,-
+P078,Palermo Hollywood,3,,585,Palermo (564); Chacarita (17); Colegiales (4),13; 14; 15,R01 Palermo,48.9,R19 (6.6 %); R09 (4.2 %); R08 (1.9 %); Z43 (1.3 %)
+P001,Costanera Norte,3,,44,Palermo (44),14,R07 Costanera Norte,51.3,-
+P064,Palermo · Plaza Italia y Av. del Libertador°,4,°,45,Palermo (45),14,SIN POLO ADMITIDO,,-
+P073,Palermo Botánico,3,,207,Palermo (207),14,SIN POLO ADMITIDO,,-
+P087,Palermo Pacífico,3,,56,Palermo (56),14,SIN POLO ADMITIDO,,-
+P088,Palermo · Gascón y Honduras°,4,°,76,Palermo (76),14,SIN POLO ADMITIDO,,-
+P090+P089,Palermo · eje Av. Santa Fe°,4,°,104,Palermo (104),14,R01 Palermo,68.5,-
+P091,Palermo Soho,3,,728,Palermo (719); Villa Crespo (9),14; 15,R01 Palermo,74.6,R08 (11.5 %)
+P092,Villa Freud,3,,79,Palermo (79),14,SIN POLO ADMITIDO,,-
+P074,Villa Crespo · eje Av. Corrientes°,4,°,58,Villa Crespo (58),15,R08 Villa Crespo,100.0,-
+P075,Chacarita · Av. Dorrego y Bonpland°,4,°,61,Chacarita (59); Villa Crespo (2),15,R19 Federico Lacroze,96.8,R09 (67.0 %)
+P077,Polo gastronómico Villa Crespo,2,,60,Villa Crespo (60),15,R08 Villa Crespo,99.0,-
+P080,Villa Crespo · Av. Corrientes y Scalabrini Ortiz°,4,°,44,Villa Crespo (44),15,R08 Villa Crespo,100.0,-
+P081,Villa Crespo · Aguirre y Scalabrini Ortiz°,4,°,74,Villa Crespo (74),15,R08 Villa Crespo,100.0,-

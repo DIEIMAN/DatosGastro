@@ -233,9 +233,21 @@ juntos o separados.
 
 **Comuna 4 · Barracas** — **incorporada en esta edición** · corredor
 
-**Perímetro.** **Av. Montes de Oca, con oferta documentada entre el 280 y el 1702.** Adentro del
-tramo funciona el **Centro Comercial a Cielo Abierto**, entre Benito Quinquela Martín y Av. Martín
-García.
+**Perímetro — y acá hay dos objetos que la primera versión de esta ficha confundía, medidos ahora
+por separado.**
+
+**El corredor documentado** va de Av. Montes de Oca **280 a 1702**, y sale de direcciones sueltas en
+fuentes de prensa y turismo. Adentro funciona el **Centro Comercial a Cielo Abierto**, entre Benito
+Quinquela Martín y Av. Martín García.
+
+**El polígono medido** es otra cosa y es más chico: **18,02 hectáreas y 62 locales**, sobre el tramo
+**301 a 999** — 761 metros de avenida. **El extremo 280 queda 63 metros afuera y el 1702, a 771
+metros.**
+
+> **Esta ficha publica el polígono y describe el corredor, y no los mezcla.** Cuando se cite una
+> cifra de escala, es la del polígono; cuando se hable del rango 280-1702, es lo que las fuentes
+> documentan y el polígono todavía no cubre. **Decidir si el polígono se amplía al corredor entero
+> es una decisión de delimitación que no está tomada.**
 
 **Anclaje normativo.** El CCCA se creó por **Resolución 65/SSADMIN/2017**, con licitación pública,
 presupuesto y plazo de obra, dentro del programa de transformación de barrios.
@@ -245,29 +257,44 @@ presupuesto y plazo de obra, dentro del programa de transformación de barrios.
 > se ancla en resolución administrativa y licitación de obra pública, no en legislación, y así hay
 > que citarlo.
 
-**Por qué es un polo.**
+**Por qué es un polo — abre tres de las cinco vías que el instrumento mide.**
 
-- **Corredor** — es el rango continuo más largo documentado del relevamiento, sobre una sola
-  avenida.
-- **Trayectoria e instituciones** — dos establecimientos con distinción formal.
-- **Reconocimiento externo** — prensa nacional y el sitio oficial de turismo lo tratan como
-  circuito.
+- **Corredor** — abre. Elongación 2,45 sobre un corte declarado de 2,0, con el 85,5 % de sus locales
+  en una banda de 150 metros.
+- **Trayectoria e instituciones** — abre, **con un solo hito adentro del polígono**: Los Campeones.
+- **Densidad y continuidad** — abre, **y la ficha declara por qué esa apertura vale poco**: el
+  soporte del polígono es una concentración detectada que contiene el 100 % de sus propios locales,
+  así que la vía se abre por construcción. Es una tautología del instrumento y se dice.
+- **Reconocimiento externo** — abre por vía documental: prensa nacional y el sitio oficial de
+  turismo lo tratan como circuito.
+- **Mercados y centralidades** — **no abre.** El mercado más cercano está a 1.515 metros.
+- **Comunidades y especialización** — **no abre.** Ninguno de los cuatro enclaves delimitados de la
+  Ciudad está a menos de seis kilómetros.
 
-**Los referentes.** **El Puentecito**, Vieytes 1895 esquina Pedro de Luján, **de Interés Cultural
-por la Legislatura porteña desde 2018** — probablemente abierto al 07/07/2026. El sitio oficial de
-turismo lo describe como el restaurante más antiguo de Buenos Aires en funcionamiento en su
-emplazamiento original.
+**Los referentes.** **Los Campeones**, Av. Montes de Oca 856 — **el único de los seis hitos del
+barrio que cae adentro del polígono**. Es **pizzería**, no bar ni bodegón: Pizzería Emblemática por
+APyCE y el Ministerio de Desarrollo Económico, camada de fines de mayo de 2026. Fundada en 1954 por
+cuatro amigos, con el nombre elegido para no ofender a ninguna hinchada. Probablemente abierta al
+29/05/2026.
+
+**Y cinco anclas del barrio que están afuera del polígono, medidas.** **El Puentecito** a 1.761
+metros, **El Progreso** —Bar Notable, Av. Montes de Oca 1700— a 760, **La Flor de Barracas** a 523,
+**Los Laureles** a 1.179 y un distinguido MICHELIN sobre Av. Caseros a 707.
+
+> **Eso no debilita a Barracas: debilita a este polígono.** El barrio tiene seis hitos y el polígono
+> alcanza a uno. **Es la mejor evidencia de que el corredor documentado y el polígono medido no son
+> el mismo objeto**, y de que la decisión de delimitación pendiente no es cosmética.
+
+**El Puentecito**, de Interés Cultural por la Legislatura porteña desde 2018, sigue siendo el ancla
+del barrio y el sitio oficial de turismo lo describe como el restaurante más antiguo de Buenos Aires
+en funcionamiento en su emplazamiento original. **Con una discrepancia de dirección que se declara:**
+este atlas lo tenía en Vieytes 1895 esquina Pedro de Luján y la capa lo asienta en Luján 2101.
 
 > **Con una tensión documental que la ficha registra y no resuelve:** el GCBA data su origen en
 > **1750** y ninguna fuente periodística lo respalda; la prensa habla de unos 150 años, o sea un
 > origen alrededor de **1876**. Y un mismo diario publica dos notas que se contradicen sobre su
 > edad. **El atlas consigna 1750 como sitio** —pulpería y posta de carretas— **y alrededor de 1876
 > como establecimiento gastronómico**, atribuyendo cada cifra a su fuente.
-
-**Los Campeones**, Av. Montes de Oca 856 — **pizzería**, no bar ni bodegón. Pizzería Emblemática
-por APyCE y el Ministerio de Desarrollo Económico de la Ciudad, camada anunciada a fines de mayo de
-2026. Fundada en 1954 por cuatro amigos, con el nombre elegido para no ofender a ninguna hinchada.
-Probablemente abierta al 29/05/2026.
 
 **Lo que se perdió.** **Los Laureles**, Av. Iriarte 2290, perdió su gestión de larga data por
 vencimiento del contrato y el inmueble quedó en venta; reabrió con nuevos dueños bajo un alquiler
@@ -276,19 +303,26 @@ puente. **El hito es frágil aunque esté abierto**, y la ficha lo dice.
 **Contexto comercial.** El eje **Montes de Oca** —del 501 al 1199— tiene **89,7 % de ocupación y
 perdió 1,9 puntos** en el año, contra los 1,6 del conjunto de los 48 ejes.
 
-**Límites de lectura.** **El eje que releva la Ciudad va del 501 al 1199 y el corredor que publica
-este atlas va del 280 al 1702: no son el mismo objeto**, y el dato de ocupación se cita como
-contexto del tramo central. **Y la continuidad del corredor no está medida:** el rango salió de
-direcciones sueltas en fuentes documentales, no de un relevamiento de continuidad. **Es la
-afirmación más expuesta de esta ficha y de la presentación.**
+**Límites de lectura — y son tres objetos distintos sobre la misma avenida.** El eje que releva la
+Ciudad va del **501 al 1199**; el polígono medido, del **301 al 999**; y el corredor documentado, del
+**280 al 1702**. **Ninguno coincide con otro**, y cada cifra se cita diciendo de cuál viene.
 
-> **Por qué esta zona se incorpora, y es una decisión de esta edición.** Este corredor sostenía tres
-> piezas del atlas —una lámina, una verificación de campo y una fila del cruce con el relevamiento
-> oficial de ejes— **y no estaba en la lista de referencias.** Existía sólo en la capa de
-> concentraciones detectadas. Que sostenga la única lámina del paquete que habla del sur y no tenga
-> ficha era una inconsistencia visible. **Se incorpora, y queda pendiente medirla con las seis vías
-> como a cualquier otra zona**: lo que está escrito acá se apoya en trayectoria, anclaje normativo y
-> reconocimiento externo, que están documentados, no en un conteo propio.
+**La continuidad del corredor sí se midió, y matiza la palabra.** Del 280 al 1702, la proporción de
+locales que forma una sola cadena es **3,0 % a 20 metros · 8,9 % a 40 · 17,8 % a 60 · 39,6 % a 80 ·
+71,3 % a 120.** **No es continuo puerta a puerta y sí lo es a escala de cuadra** — y a 120 metros es
+**la continuidad más alta de todas las zonas medidas de este atlas.** La palabra «continuo» se usa
+con esa escala pegada, o no se usa.
+
+> **Por qué esta zona se incorpora, y qué dio al medirla.** Este corredor sostenía tres piezas del
+> atlas —una lámina, una verificación de campo y una fila del cruce con el relevamiento oficial de
+> ejes— **y no estaba en la lista de referencias.** Existía sólo en la capa de concentraciones
+> detectadas. Que sostenga la única lámina del paquete que habla del sur y no tuviera ficha era una
+> inconsistencia visible.
+>
+> **Se incorporó y se midió con las seis vías: abre tres de las cinco medibles**, y una de esas tres
+> —la de densidad— **abre por construcción y así está declarado.** Entra con eso, y con la decisión
+> de delimitación abierta: **el polígono cubre 761 metros de una avenida cuyo corredor documentado
+> mide más del doble.**
 
 ---
 
