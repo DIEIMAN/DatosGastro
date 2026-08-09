@@ -1,109 +1,117 @@
 archivo,tipo,kb,filas,columnas,titulo_o_columnas,modificado,bajo_git
-ATLAS_V3_SECCIONES_II_V_VI_IX.md,md,30.9,,,Atlas de Referencias Gastronómicas de la Ciudad de Buenos Aires · V3,2026-08-08 13:09,SIN RASTREAR
-AUDITORIA_DE_DUPLICADOS.md,md,6.9,,,"Auditoría de duplicados · 29 riesgos, tres de ellos altos",2026-08-08 11:47,SIN RASTREAR
-AUDITORIA_DE_ESTADO_2026-08-09.md,md,20.5,,,Auditoría de estado · Atlas V3,2026-08-09 03:29,SIN RASTREAR
+ATLAS_V3_SECCIONES_II_V_VI_IX.md,md,30.9,,,Atlas de Referencias Gastronómicas de la Ciudad de Buenos Aires · V3,2026-08-08 13:09,rastreado
+AUDITORIA_DE_DUPLICADOS.md,md,6.9,,,"Auditoría de duplicados · 29 riesgos, tres de ellos altos",2026-08-08 11:47,rastreado
+AUDITORIA_DE_ESTADO_2026-08-09.md,md,20.5,,,Auditoría de estado · Atlas V3,2026-08-09 03:29,rastreado
 AUDITORIA_DEL_CATALOGO_OFICIAL.md,md,9.8,,,El catálogo que estamos usando no es el vigente — y el vigente tiene tres fichas muertas,2026-08-07 17:07,rastreado
-auditoria_duplicados.csv,csv,9.7,29,6,id; tipo_de_riesgo; objeto; donde_aparece_repetido; estado; que_hacer,2026-08-08 11:47,SIN RASTREAR
-bares_notables_altas_2026-08-03.csv,csv,1.5,12,8,orden; establecimiento; direccion; barrio; comuna; referencia_o_zona_que_toca,2026-08-07 12:56,SIN RASTREAR
-barracas_resuelto.csv,csv,4.3,3,12,objeto; tipo; direccion_o_tramo; barrio; veredicto; nivel,2026-08-08 12:33,SIN RASTREAR
-barrio_chino_conteos_de_fuente.csv,csv,1.3,5,6,conteo; valor; fecha; fuente; alcance_declarado; se_puede_usar_como,2026-08-07 16:11,SIN RASTREAR
-caminatas_de_verificacion.csv,csv,2.2,3,6,prioridad; corredor; tramo; por_que_importa; que_anotar; cuanto,2026-08-08 21:46,SIN RASTREAR
-canitas_censo_2026.csv,csv,2.4,12,4,campo; valor; fuente; uso,2026-08-08 18:41,SIN RASTREAR
-capa_de_memoria.csv,csv,10.5,31,15,id; establecimiento; direccion; barrio; zona_del_atlas; estado,2026-08-08 12:13,SIN RASTREAR
+auditoria_duplicados.csv,csv,9.7,29,6,id; tipo_de_riesgo; objeto; donde_aparece_repetido; estado; que_hacer,2026-08-08 11:47,rastreado
+bares_notables_altas_2026-08-03.csv,csv,1.5,12,8,orden; establecimiento; direccion; barrio; comuna; referencia_o_zona_que_toca,2026-08-07 12:56,rastreado
+barracas_resuelto.csv,csv,4.3,3,12,objeto; tipo; direccion_o_tramo; barrio; veredicto; nivel,2026-08-08 12:33,rastreado
+barrio_chino_conteos_de_fuente.csv,csv,1.3,5,6,conteo; valor; fecha; fuente; alcance_declarado; se_puede_usar_como,2026-08-07 16:11,rastreado
+caminatas_de_verificacion.csv,csv,2.2,3,6,prioridad; corredor; tramo; por_que_importa; que_anotar; cuanto,2026-08-08 21:46,rastreado
+canitas_censo_2026.csv,csv,2.4,12,4,campo; valor; fuente; uso,2026-08-08 18:41,rastreado
+capa_de_memoria.csv,csv,10.5,31,15,id; establecimiento; direccion; barrio; zona_del_atlas; estado,2026-08-08 12:13,rastreado
 catalogo_1225_26_diff.csv,csv,3.3,14,6,tipo_de_cambio; establecimiento; direccion; orden_1225_26; contra_lo_cargado; nota,2026-08-07 17:37,rastreado
-catalogo_90_estado_final.csv,csv,11.9,90,7,orden; establecimiento; direccion; barrio; estado; verificado_por,2026-08-08 21:22,SIN RASTREAR
-catalogo_90_notables_cruzado.csv,csv,11.2,90,10,orden; establecimiento; direccion; barrio_catalogo; comuna_catalogo; comuna_correcta_del_barrio,2026-08-08 11:58,SIN RASTREAR
+catalogo_90_estado_final.csv,csv,11.9,90,7,orden; establecimiento; direccion; barrio; estado; verificado_por,2026-08-08 21:22,rastreado
+catalogo_90_notables_cruzado.csv,csv,11.2,90,10,orden; establecimiento; direccion; barrio_catalogo; comuna_catalogo; comuna_correcta_del_barrio,2026-08-08 11:58,rastreado
 catalogo_notables_auditoria_cierres.csv,csv,5.9,11,11,establecimiento; direccion; barrio; estado; fecha_del_cierre; sigue_en_el_catalogo,2026-08-07 17:07,rastreado
-catalogo_pendientes_para_diego.csv,csv,18.9,52,11,prioridad; orden; establecimiento; direccion; barrio; eje_idecba,2026-08-08 21:22,SIN RASTREAR
-colegiales_delimitacion_propuesta.csv,csv,3.3,3,9,id; nombre; papel_propuesto; ejes; borde_documentado; hitos,2026-08-08 18:40,SIN RASTREAR
-COLEGIALES_NO_ES_UNA_COSA.md,md,7.3,,,"Colegiales no es una cosa, y por eso no puede entrar entero a Chacagiales",2026-08-08 18:40,SIN RASTREAR
-CORRECCIONES_MIAS_2026-08.md,md,3.8,,,Correcciones a material que ya cargué,2026-08-07 12:33,SIN RASTREAR
-correspondencia_fase_documental.csv,csv,3.3,13,8,bloque; titulo; archivo; numero_viejo; numero_nuevo; proyecto,2026-08-09 10:51,SIN RASTREAR
-CRITERIO_ESCALA_DE_LA_VIA_E.md,md,9.5,,,La vía E no se mide por fila,2026-08-07 15:38,SIN RASTREAR
-CRITERIO_ESCALA_DE_LAS_VIAS.md,md,6.8,,,Tres vías se miden sobre la zona y tres sobre la geometría,2026-08-08 11:20,SIN RASTREAR
-CRUCE_DE_LOS_90_NOTABLES.md,md,6.2,,,"Los 90 Bares Notables, cruzados contra las 36 zonas",2026-08-08 11:58,SIN RASTREAR
-DECISION_TRAYECTORIA_VS_ACTIVIDAD.md,md,7.6,,,"Cuando el hito cierra, ¿se cierra la vía B?",2026-08-07 12:56,SIN RASTREAR
-DECISIONES_TOMADAS_2026-08-07.csv,csv,6.4,20,7,n; bloque; decision; resolucion; tomada_por; fecha,2026-08-08 11:20,SIN RASTREAR
+catalogo_pendientes_para_diego.csv,csv,18.9,52,11,prioridad; orden; establecimiento; direccion; barrio; eje_idecba,2026-08-08 21:22,rastreado
+colegiales_delimitacion_propuesta.csv,csv,3.3,3,9,id; nombre; papel_propuesto; ejes; borde_documentado; hitos,2026-08-08 18:40,rastreado
+COLEGIALES_NO_ES_UNA_COSA.md,md,7.3,,,"Colegiales no es una cosa, y por eso no puede entrar entero a Chacagiales",2026-08-08 18:40,rastreado
+CORRECCIONES_MIAS_2026-08.md,md,3.8,,,Correcciones a material que ya cargué,2026-08-07 12:33,rastreado
+correspondencia_fase_documental.csv,csv,3.3,13,8,bloque; titulo; archivo; numero_viejo; numero_nuevo; proyecto,2026-08-09 10:51,rastreado
+CRITERIO_ESCALA_DE_LA_VIA_E.md,md,9.5,,,La vía E no se mide por fila,2026-08-07 15:38,rastreado
+CRITERIO_ESCALA_DE_LAS_VIAS.md,md,6.8,,,Tres vías se miden sobre la zona y tres sobre la geometría,2026-08-08 11:20,rastreado
+CRUCE_DE_LOS_90_NOTABLES.md,md,6.2,,,"Los 90 Bares Notables, cruzados contra las 36 zonas",2026-08-08 11:58,rastreado
+DECISION_TRAYECTORIA_VS_ACTIVIDAD.md,md,7.6,,,"Cuando el hito cierra, ¿se cierra la vía B?",2026-08-07 12:56,rastreado
+decisiones_2026-08-09.csv,csv,3.1,10,7,fecha; asunto; estado; quien; que_dice; consecuencia_operativa,2026-08-09 14:45,SIN RASTREAR
+DECISIONES_TOMADAS_2026-08-07.csv,csv,6.4,20,7,n; bloque; decision; resolucion; tomada_por; fecha,2026-08-08 11:20,rastreado
 direcciones_pizzerias_heladerias.csv,csv,5.5,25,11,nombre; direccion; barrio; comuna; tipo; distincion,2026-08-07 11:57,rastreado
-DOS_PROYECTOS_DE_FICHA.md,md,7.2,,,"Hay dos proyectos de ficha, y no son el mismo",2026-08-09 10:42,SIN RASTREAR
-EDICION_TECNICA_FASE_DOCUMENTAL.md,md,52.2,,,Edición técnica · Parte segunda · la fase documental,2026-08-08 13:06,SIN RASTREAR
-EL_CATALOGO_CERRADO.md,md,7.1,,,El catálogo está cerrado: 90 de 90 — y dice lo contrario de lo que fuimos a buscar,2026-08-08 21:41,SIN RASTREAR
-EL_DESBLOQUEO_Y_LA_TRAMPA_PEOR.md,md,8.5,,,"Tanda A · centro: ocho de ocho, un desbloqueo de método y la trampa más peligrosa hasta ahora",2026-08-07 17:27,SIN RASTREAR
-EL_ERROR_QUE_SE_REPITE.md,md,8.5,,,El error que se repite,2026-08-08 18:40,SIN RASTREAR
-EL_NUDO_CHACAGIALES_Y_CUATRO_CORRECCIONES.md,md,9.1,,,"El nudo Chacagiales, y cuatro correcciones — dos de ellas mías",2026-08-08 12:33,SIN RASTREAR
-EL_NUDO_DE_PALERMO.md,md,8.5,,,El nudo de Palermo se desata con una resta,2026-08-08 18:40,SIN RASTREAR
-EL_SUR_CONSOLIDADO.md,md,6.8,,,"El sur, consolidado — y La Boca pasa de dos hitos a cinco",2026-08-08 12:04,SIN RASTREAR
-enclaves_comunitarios_delimitados.csv,csv,16.4,15,16,enclave_id; colectividad; barrios; comuna; delimitacion_textual; nivel_precision,2026-08-07 12:56,SIN RASTREAR
+DOS_PROYECTOS_DE_FICHA.md,md,7.2,,,"Hay dos proyectos de ficha, y no son el mismo",2026-08-09 10:42,rastreado
+EDICION_TECNICA_FASE_DOCUMENTAL.md,md,52.2,,,Edición técnica · Parte segunda · la fase documental,2026-08-08 13:06,rastreado
+EL_CATALOGO_CERRADO.md,md,7.1,,,El catálogo está cerrado: 90 de 90 — y dice lo contrario de lo que fuimos a buscar,2026-08-08 21:41,rastreado
+EL_DESBLOQUEO_Y_LA_TRAMPA_PEOR.md,md,8.5,,,"Tanda A · centro: ocho de ocho, un desbloqueo de método y la trampa más peligrosa hasta ahora",2026-08-07 17:27,rastreado
+EL_ERROR_QUE_SE_REPITE.md,md,8.5,,,El error que se repite,2026-08-08 18:40,rastreado
+EL_NUDO_CHACAGIALES_Y_CUATRO_CORRECCIONES.md,md,9.1,,,"El nudo Chacagiales, y cuatro correcciones — dos de ellas mías",2026-08-08 12:33,rastreado
+EL_NUDO_DE_PALERMO.md,md,8.5,,,El nudo de Palermo se desata con una resta,2026-08-08 18:40,rastreado
+EL_SUR_CONSOLIDADO.md,md,6.8,,,"El sur, consolidado — y La Boca pasa de dos hitos a cinco",2026-08-08 12:04,rastreado
+enclaves_comunitarios_delimitados.csv,csv,16.4,15,16,enclave_id; colectividad; barrios; comuna; delimitacion_textual; nivel_precision,2026-08-07 12:56,rastreado
 enclaves_E02_E07_reparados.csv,csv,5.0,2,12,enclave_id; colectividad; delimitacion_textual_CORREGIDA; nivel_precision; desde; eje_dominante,2026-08-07 17:27,rastreado
-enclaves_establecimientos_E02_E07.csv,csv,8.1,57,10,enclave_id; establecimiento; calle; altura; rubro; origen_cocina,2026-08-07 16:11,SIN RASTREAR
-errata_2026-08-08.csv,csv,5.3,10,7,prioridad; documento; ubicacion; dice_hoy; debe_decir; por_que,2026-08-08 18:40,SIN RASTREAR
-errata_2026-08-08_ronda_10.csv,csv,2.9,5,6,id; donde; dice; debe_decir; por_que; accion,2026-08-08 21:22,SIN RASTREAR
-ERRATA_DEL_MODELO_DE_FICHA.md,md,4.8,,,Errata del modelo de ficha,2026-08-09 10:35,SIN RASTREAR
-ESCALA_DE_VIGENCIA_Y_PATRONES_DE_FALLA.md,md,10.6,,,Cómo se verifica que un bar sigue abierto,2026-08-07 16:27,SIN RASTREAR
-FICHAS_CORPUS_LEEME.md,md,5.9,,,"El corpus de fichas · 48 zonas, listo para ensamblar",2026-08-08 11:31,SIN RASTREAR
-fichas_corpus_polos.csv,csv,49.5,48,25,polo_id; nombre_ficha; origen; comunas; barrios; estado,2026-08-08 11:31,SIN RASTREAR
-FICHAS_SECCION_VII_TANDA_1.md,md,25.2,,,"Sección VII · Las referencias, una por una",2026-08-09 10:35,SIN RASTREAR
-fuentes_con_defecto_FD05_FD07.csv,csv,2.6,3,6,id; fuente_o_patron; que_hace; como_se_detecta; que_prohibe; que_sigue_valiendo,2026-08-07 17:27,SIN RASTREAR
-fuentes_con_defecto_FD08_FD12.csv,csv,2.3,5,5,id; fuente_o_patron; que_hace; como_se_detecta; regla,2026-08-07 17:45,SIN RASTREAR
-fuentes_con_defecto_FD13_FD15.csv,csv,1.5,3,5,id; fuente; que_hace; como_se_detecta; regla,2026-08-07 17:59,SIN RASTREAR
-fuentes_con_defecto_FD20_FD22.csv,csv,2.9,3,6,id; fuente_o_patron; que_hace; como_se_detecta; regla; caso,2026-08-08 18:40,SIN RASTREAR
-fuentes_con_defecto_FD23_y_R16.csv,csv,1.7,2,6,id; fuente_o_patron; que_hace; como_se_detecta; regla; caso,2026-08-08 21:53,SIN RASTREAR
-HANDOFF_ATLAS_V3_CONTEXTO.md,md,25.5,,,Atlas de Referencias Gastronómicas de la Ciudad de Buenos Aires · V3,2026-08-09 10:48,SIN RASTREAR
-hitos_nuevos_monserrat.csv,csv,1.8,10,6,establecimiento; direccion; barrio; registro; estaba_en_nuestra_base; nota,2026-08-08 11:11,SIN RASTREAR
-homonimos_vivo_muerto.csv,csv,3.4,7,6,nombre_compartido; el_que_esta_VIVO; el_que_esta_MUERTO; como_distinguirlos; riesgo; estado,2026-08-08 12:13,SIN RASTREAR
-idecba_ejes_comerciales.csv,csv,4.2,48,4,zona_idecba; eje; tramos; esta_en_el_atlas,2026-08-08 21:36,SIN RASTREAR
-idecba_ocupacion_por_eje.csv,csv,2.5,48,5,zona; eje; tasa_ocupacion_pct; var_interanual_pp; que_es_en_el_atlas,2026-08-08 21:36,SIN RASTREAR
+enclaves_establecimientos_E02_E07.csv,csv,8.1,57,10,enclave_id; establecimiento; calle; altura; rubro; origen_cocina,2026-08-07 16:11,rastreado
+errata_2026-08-08.csv,csv,5.3,10,7,prioridad; documento; ubicacion; dice_hoy; debe_decir; por_que,2026-08-08 18:40,rastreado
+errata_2026-08-08_ronda_10.csv,csv,2.9,5,6,id; donde; dice; debe_decir; por_que; accion,2026-08-08 21:22,rastreado
+ERRATA_DEL_MODELO_DE_FICHA.md,md,4.8,,,Errata del modelo de ficha,2026-08-09 10:35,rastreado
+ESCALA_DE_VIGENCIA_Y_PATRONES_DE_FALLA.md,md,10.6,,,Cómo se verifica que un bar sigue abierto,2026-08-07 16:27,rastreado
+FICHAS_CORPUS_LEEME.md,md,5.9,,,"El corpus de fichas · 48 zonas, listo para ensamblar",2026-08-08 11:31,rastreado
+fichas_corpus_polos.csv,csv,49.5,48,25,polo_id; nombre_ficha; origen; comunas; barrios; estado,2026-08-08 11:31,rastreado
+FICHAS_SECCION_VII_TANDA_1.md,md,25.2,,,"Sección VII · Las referencias, una por una",2026-08-09 10:35,rastreado
+fuentes_con_defecto_FD05_FD07.csv,csv,2.6,3,6,id; fuente_o_patron; que_hace; como_se_detecta; que_prohibe; que_sigue_valiendo,2026-08-07 17:27,rastreado
+fuentes_con_defecto_FD08_FD12.csv,csv,2.3,5,5,id; fuente_o_patron; que_hace; como_se_detecta; regla,2026-08-07 17:45,rastreado
+fuentes_con_defecto_FD13_FD15.csv,csv,1.5,3,5,id; fuente; que_hace; como_se_detecta; regla,2026-08-07 17:59,rastreado
+fuentes_con_defecto_FD20_FD22.csv,csv,2.9,3,6,id; fuente_o_patron; que_hace; como_se_detecta; regla; caso,2026-08-08 18:40,rastreado
+fuentes_con_defecto_FD23_y_R16.csv,csv,1.7,2,6,id; fuente_o_patron; que_hace; como_se_detecta; regla; caso,2026-08-08 21:53,rastreado
+HANDOFF_ATLAS_V3_CONTEXTO.md,md,25.5,,,Atlas de Referencias Gastronómicas de la Ciudad de Buenos Aires · V3,2026-08-09 10:48,rastreado
+hitos_nuevos_monserrat.csv,csv,1.8,10,6,establecimiento; direccion; barrio; registro; estaba_en_nuestra_base; nota,2026-08-08 11:11,rastreado
+homonimos_vivo_muerto.csv,csv,3.4,7,6,nombre_compartido; el_que_esta_VIVO; el_que_esta_MUERTO; como_distinguirlos; riesgo; estado,2026-08-08 12:13,rastreado
+idecba_ejes_comerciales.csv,csv,4.2,48,4,zona_idecba; eje; tramos; esta_en_el_atlas,2026-08-08 21:36,rastreado
+idecba_ocupacion_por_eje.csv,csv,2.5,48,5,zona; eje; tasa_ocupacion_pct; var_interanual_pp; que_es_en_el_atlas,2026-08-08 21:36,rastreado
 INDICE_DE_VERSIONES.md,md,5.3,,,Índice de versiones · evidencia 2026,2026-08-08 21:44,rastreado
-la_boca_estado_2026.csv,csv,3.5,5,10,establecimiento; direccion; registro; veredicto; nivel; fecha_dato,2026-08-08 18:41,SIN RASTREAR
-LA_BOCA_SE_MUEVE.md,md,7.6,,,"La Boca se mueve, y yo la había dado por quieta",2026-08-08 18:41,SIN RASTREAR
-LA_CAPA_DE_MEMORIA.md,md,7.7,,,La capa de memoria — y la trampa de los homónimos,2026-08-08 12:13,SIN RASTREAR
-LA_CORRECCION_DEL_NEW_BRIGHTON.md,md,11.0,,,The New Brighton no está cerrado — y el test de calibración era inválido,2026-08-08 18:40,SIN RASTREAR
-LA_FUENTE_QUE_NOS_FALTABA.md,md,12.1,,,"El Relevamiento de Ejes Comerciales del IDECBA — la fuente que nos faltaba, y es del propio Gobierno",2026-08-08 21:38,SIN RASTREAR
-LA_RONDA_QUE_ME_REFUTO.md,md,12.2,,,La ronda que me refutó,2026-08-08 18:43,SIN RASTREAR
-lamina_5_reescrita.csv,csv,1.2,8,2,campo; texto,2026-08-08 21:53,SIN RASTREAR
-LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md,md,9.5,,,Polos gastronómicos y clusters · material para la presentación,2026-08-08 12:58,SIN RASTREAR
-LAMINAS_v2_2026-08-08.md,md,20.3,,,Polos gastronómicos y clusters · material para la presentación · **v2.1**,2026-08-08 21:40,SIN RASTREAR
-LAS_CANITAS_NO_DECAYO.md,md,8.7,,,Las Cañitas no decayó: se reconvirtió — y trae el mejor censo de zona del Atlas,2026-08-08 18:40,SIN RASTREAR
-LAS_CUATRO_DIRECCIONES.md,md,8.3,,,Las cuatro direcciones: el test de Places pasa de dos ramas a cuatro celdas,2026-08-08 18:40,SIN RASTREAR
-LECTURA_PREVIA_ENTUR_x_VIA_E.md,md,9.2,,,Lectura previa · la razón ENTUR/base contra la vía E,2026-08-07 12:56,SIN RASTREAR
-lista_places_prioridad.csv,csv,15.4,71,11,prioridad; establecimiento; direccion; barrio; registro; zona_que_lo_reclama,2026-08-08 11:40,SIN RASTREAR
-LOS_POLOS_CONSAGRADOS_SON_LOS_QUE_CAEN.md,md,9.2,,,~~Los polos consagrados son los que caen~~ · **REFUTADO EN LA RONDA 12**,2026-08-08 21:44,SIN RASTREAR
+la_boca_estado_2026.csv,csv,3.5,5,10,establecimiento; direccion; registro; veredicto; nivel; fecha_dato,2026-08-08 18:41,rastreado
+LA_BOCA_SE_MUEVE.md,md,7.6,,,"La Boca se mueve, y yo la había dado por quieta",2026-08-08 18:41,rastreado
+LA_CAPA_DE_MEMORIA.md,md,7.7,,,La capa de memoria — y la trampa de los homónimos,2026-08-08 12:13,rastreado
+LA_CORRECCION_DEL_NEW_BRIGHTON.md,md,11.0,,,The New Brighton no está cerrado — y el test de calibración era inválido,2026-08-08 18:40,rastreado
+LA_FUENTE_QUE_NOS_FALTABA.md,md,12.1,,,"El Relevamiento de Ejes Comerciales del IDECBA — la fuente que nos faltaba, y es del propio Gobierno",2026-08-08 21:38,rastreado
+LA_RONDA_QUE_ME_REFUTO.md,md,12.2,,,La ronda que me refutó,2026-08-08 18:43,rastreado
+lamina_5_reescrita.csv,csv,1.2,8,2,campo; texto,2026-08-08 21:53,rastreado
+LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md,md,9.5,,,Polos gastronómicos y clusters · material para la presentación,2026-08-08 12:58,rastreado
+LAMINAS_v2.2_2026-08-09.md,md,21.6,,,Polos gastronómicos y clusters · material para la presentación · **v2.2**,2026-08-09 14:45,rastreado
+LAMINAS_v2_2026-08-08.md,md,20.3,,,Polos gastronómicos y clusters · material para la presentación · **v2.1**,2026-08-08 21:40,rastreado
+LAS_CANITAS_NO_DECAYO.md,md,8.7,,,Las Cañitas no decayó: se reconvirtió — y trae el mejor censo de zona del Atlas,2026-08-08 18:40,rastreado
+LAS_CUATRO_DIRECCIONES.md,md,8.3,,,Las cuatro direcciones: el test de Places pasa de dos ramas a cuatro celdas,2026-08-08 18:40,rastreado
+LECTURA_PREVIA_ENTUR_x_VIA_E.md,md,9.2,,,Lectura previa · la razón ENTUR/base contra la vía E,2026-08-07 12:56,rastreado
+lista_places_prioridad.csv,csv,15.4,71,11,prioridad; establecimiento; direccion; barrio; registro; zona_que_lo_reclama,2026-08-08 11:40,rastreado
+LO_QUE_DECIDISTE_Y_LO_QUE_FALTA.md,md,11.8,,,"Lo que decidiste el 9 de agosto, y lo que queda",2026-08-09 14:45,SIN RASTREAR
+LOS_POLOS_CONSAGRADOS_SON_LOS_QUE_CAEN.md,md,9.2,,,~~Los polos consagrados son los que caen~~ · **REFUTADO EN LA RONDA 12**,2026-08-08 21:44,rastreado
 matriz_evidencia_2026.csv,csv,13.0,12,25,polo_id; nombre_polo; estado_validacion_2025; decision_2025; cantidad_fuentes_total; cantidad_fuentes_alta,2026-08-06 18:34,rastreado
-MODELO_DE_FICHA_Y_TRES_EJEMPLOS.md,md,10.4,,,"El modelo de ficha, y tres escritas para validarlo",2026-08-08 21:46,SIN RASTREAR
-NO_ERA_UN_CONTEO_MAL_ERA_OTRO_UNIVERSO.md,md,7.7,,,No era un conteo mal: era otro universo,2026-08-08 21:53,SIN RASTREAR
-palermo_delimitacion_propuesta.csv,csv,2.4,4,7,subzona; locales_en_base; delimitacion_documentada; fuente; relacion_con_R01; papel_propuesto,2026-08-08 18:40,SIN RASTREAR
+MODELO_DE_FICHA_Y_TRES_EJEMPLOS.md,md,10.4,,,"El modelo de ficha, y tres escritas para validarlo",2026-08-08 21:46,rastreado
+niveles_de_nombre_41.csv,csv,4.5,41,7,polo_id; nombre_en_ficha; nivel_del_nombre; fuente_del_nombre; en_que_se_apoya; marca_ficha,2026-08-09 14:30,rastreado
+NIVELES_DE_NOMBRE_41.md,md,9.1,,,El nivel del nombre de las 41 · propuesta para firma,2026-08-09 14:30,rastreado
+NO_ERA_UN_CONTEO_MAL_ERA_OTRO_UNIVERSO.md,md,7.7,,,No era un conteo mal: era otro universo,2026-08-08 21:53,rastreado
+palermo_delimitacion_propuesta.csv,csv,2.4,4,7,subzona; locales_en_base; delimitacion_documentada; fuente; relacion_con_R01; papel_propuesto,2026-08-08 18:40,rastreado
 PARA_CHEQUEAR_DIEGO.csv,csv,3.3,10,7,prioridad; establecimiento; direccion; que_mirar; donde_mirar; que_responde,2026-08-07 16:46,ignorado a proposito
-PARA_CHEQUEAR_DIEGO_sin_contacto.csv,csv,3.4,10,7,prioridad; establecimiento; direccion; que_mirar; donde_mirar; que_responde,2026-08-09 10:38,SIN RASTREAR
+PARA_CHEQUEAR_DIEGO_sin_contacto.csv,csv,3.4,10,7,prioridad; establecimiento; direccion; que_mirar; donde_mirar; que_responde,2026-08-09 10:38,rastreado
 patrimonio_normativo.csv,csv,2.4,10,10,nombre; direccion; barrio; comuna; declaratoria; norma,2026-08-07 11:57,rastreado
-places_calibracion_releida.csv,csv,1.3,5,8,establecimiento; direccion; estado_real; fecha_cierre; dias_al_2026_08_08; places,2026-08-08 18:40,SIN RASTREAR
-places_cuatro_celdas.csv,csv,2.6,6,9,direccion; establecimiento; dias; ocupacion_hoy; pred_si_sigue_el_lugar; pred_si_sigue_el_negocio,2026-08-08 18:41,SIN RASTREAR
-places_escalera_de_calibracion.csv,csv,1.2,4,7,orden; establecimiento; direccion; cerrado_desde; dias; que_prueba,2026-08-08 18:40,SIN RASTREAR
+places_calibracion_releida.csv,csv,1.3,5,8,establecimiento; direccion; estado_real; fecha_cierre; dias_al_2026_08_08; places,2026-08-08 18:40,rastreado
+places_cuatro_celdas.csv,csv,2.6,6,9,direccion; establecimiento; dias; ocupacion_hoy; pred_si_sigue_el_lugar; pred_si_sigue_el_negocio,2026-08-08 18:41,rastreado
+places_escalera_de_calibracion.csv,csv,1.2,4,7,orden; establecimiento; direccion; cerrado_desde; dias; que_prueba,2026-08-08 18:40,rastreado
 PLACES_PARA_VIGENCIA.md,md,10.5,,,Places no se descartó: dejó de ser la herramienta del problema,2026-08-07 17:39,rastreado
-RECONCILIACION_Y_LISTA_PLACES.md,md,5.9,,,Más de la mitad de los Bares Notables de la Ciudad queda fuera de las 22,2026-08-08 11:40,SIN RASTREAR
+RECONCILIACION_Y_LISTA_PLACES.md,md,5.9,,,Más de la mitad de los Bares Notables de la Ciudad queda fuera de las 22,2026-08-08 11:40,rastreado
 REPARACION_ENCLAVES_Y_TRES_CORRECCIONES.md,md,13.4,,,"Los dos enclaves reparados, y tres cosas que acepto del informe",2026-08-07 17:26,rastreado
 RONDA_2026_LOS_12_PENDIENTES.md,md,11.4,,,Ronda documental 2026 · los 12 candidatos que habían quedado pendientes,2026-08-06 22:55,rastreado
-RONDA_2_OESTE_Y_CENTRO_SUR.md,md,22.3,,,El oeste y el centro-sur por las seis vías,2026-08-07 12:33,SIN RASTREAR
-RONDA_3_NORTE_Y_ENCLAVES.md,md,14.0,,,"El norte, el noreste y la capa de enclaves",2026-08-07 12:56,SIN RASTREAR
-seis_vias_ronda_2.csv,csv,22.0,18,22,zona_id; zona; barrios; comuna; morfologia_probable; via_A,2026-08-07 12:33,SIN RASTREAR
-seis_vias_ronda_3_norte.csv,csv,6.6,6,22,zona_id; zona; barrios; comuna; morfologia_probable; via_A,2026-08-07 12:56,SIN RASTREAR
-seis_vias_sur_consolidado.csv,csv,8.6,7,21,zona_id; zona; comuna; barrios; via_A; via_B,2026-08-08 12:04,SIN RASTREAR
-seis_vias_Z47_Z48_Z49.csv,csv,4.8,3,18,zona_id; zona; comuna; via_A; via_B; via_C,2026-08-08 11:11,SIN RASTREAR
+RONDA_2_OESTE_Y_CENTRO_SUR.md,md,22.3,,,El oeste y el centro-sur por las seis vías,2026-08-07 12:33,rastreado
+RONDA_3_NORTE_Y_ENCLAVES.md,md,14.0,,,"El norte, el noreste y la capa de enclaves",2026-08-07 12:56,rastreado
+SECCION_VII_REFERENCIAS_PUBLICADAS.md,md,53.8,,,"Sección VII · La Ciudad, comuna por comuna",2026-08-09 14:30,rastreado
+seis_vias_ronda_2.csv,csv,22.0,18,22,zona_id; zona; barrios; comuna; morfologia_probable; via_A,2026-08-07 12:33,rastreado
+seis_vias_ronda_3_norte.csv,csv,6.6,6,22,zona_id; zona; barrios; comuna; morfologia_probable; via_A,2026-08-07 12:56,rastreado
+seis_vias_sur_consolidado.csv,csv,8.6,7,21,zona_id; zona; comuna; barrios; via_A; via_B,2026-08-08 12:04,rastreado
+seis_vias_Z47_Z48_Z49.csv,csv,4.8,3,18,zona_id; zona; comuna; via_A; via_B; via_C,2026-08-08 11:11,rastreado
 sur_oeste_seis_vias.csv,csv,3.1,4,16,zona; barrio; comuna; via_A; via_B; via_C,2026-08-07 11:57,rastreado
 SUR_SEIS_VIAS_RONDA_1.md,md,11.4,,,"El sur, leído por las seis vías · primera ronda",2026-08-07 11:57,rastreado
-tanda_1_y_2_para_diego.csv,csv,2.2,20,9,tanda; establecimiento; direccion; barrio; por_que_este; VEREDICTO,2026-08-08 21:22,SIN RASTREAR
-tanda_3_y_4_para_diego.csv,csv,4.4,34,9,tanda; orden; establecimiento; direccion; barrio; por_que,2026-08-08 20:29,SIN RASTREAR
-verificaciones_diego_2026-08-08.csv,csv,7.8,20,11,establecimiento; direccion; barrio; veredicto; nivel; verificado_por,2026-08-08 20:29,SIN RASTREAR
+TABLERO_ATLAS_V3.md,md,20.2,,,Tablero · Atlas V3,2026-08-09 14:45,rastreado
+TABLERO_DE_ESTADO.md,md,14.8,,,Tablero de estado · Atlas V3,2026-08-09 10:57,rastreado
+tanda_1_y_2_para_diego.csv,csv,2.2,20,9,tanda; establecimiento; direccion; barrio; por_que_este; VEREDICTO,2026-08-08 21:22,rastreado
+tanda_3_y_4_para_diego.csv,csv,4.4,34,9,tanda; orden; establecimiento; direccion; barrio; por_que,2026-08-08 20:29,rastreado
+verificaciones_diego_2026-08-08.csv,csv,7.8,20,11,establecimiento; direccion; barrio; veredicto; nivel; verificado_por,2026-08-08 20:29,rastreado
 via_E_22_referencias.csv,csv,13.3,22,10,referencia_id; nombre; via_E_abierta; via_E_nivel_max; via_E_n_grupos; via_E_reconocimiento,2026-08-07 17:27,rastreado
-VIA_E_22_REFERENCIAS.md,md,11.3,,,La vía E de las 22 referencias,2026-08-07 12:33,SIN RASTREAR
+VIA_E_22_REFERENCIAS.md,md,11.3,,,La vía E de las 22 referencias,2026-08-07 12:33,rastreado
 via_E_94_filas.csv,csv,23.2,94,11,polo_id; nombre_polo; soporte_clase; n_locales; zona_via_E; modo,2026-08-07 17:28,rastreado
-via_E_zonas_faltantes.csv,csv,7.3,3,16,zona_id; zona; barrios; comuna; via_E_abierta; via_E_nivel_max,2026-08-07 15:38,SIN RASTREAR
-vigencia_cierre_del_dia.csv,csv,5.8,13,10,establecimiento; direccion; barrio; registro; veredicto; nivel,2026-08-07 17:59,SIN RASTREAR
+via_E_zonas_faltantes.csv,csv,7.3,3,16,zona_id; zona; barrios; comuna; via_E_abierta; via_E_nivel_max,2026-08-07 15:38,rastreado
+vigencia_cierre_del_dia.csv,csv,5.8,13,10,establecimiento; direccion; barrio; registro; veredicto; nivel,2026-08-07 17:59,rastreado
 vigencia_ronda_2_cerrada.csv,csv,4.5,10,8,establecimiento; direccion; veredicto_final; nivel; verificado_por; evidencia_que_cierra,2026-08-07 17:07,rastreado
 vigencia_tanda_A_centro.csv,csv,6.2,8,13,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-07 17:27,ignorado a proposito
-vigencia_tanda_A_centro_sin_contacto.csv,csv,6.2,8,13,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-09 10:38,SIN RASTREAR
+vigencia_tanda_A_centro_sin_contacto.csv,csv,6.2,8,13,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-09 10:38,rastreado
 vigencia_tanda_B_almagro_norte.csv,csv,6.9,7,15,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-07 17:45,ignorado a proposito
-vigencia_tanda_B_almagro_norte_sin_contacto.csv,csv,6.9,7,15,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-09 10:38,SIN RASTREAR
-vigencia_verificada_ronda_1.csv,csv,7.2,6,14,establecimiento; direccion; barrio; tipo_de_hito; veredicto; nivel_evidencia,2026-08-07 16:27,SIN RASTREAR
+vigencia_tanda_B_almagro_norte_sin_contacto.csv,csv,6.9,7,15,establecimiento; direccion_verificada; barrio; registro_oficial; veredicto; nivel,2026-08-09 10:38,rastreado
+vigencia_verificada_ronda_1.csv,csv,7.2,6,14,establecimiento; direccion; barrio; tipo_de_hito; veredicto; nivel_evidencia,2026-08-07 16:27,rastreado
 vigencia_verificada_ronda_2.csv,csv,8.8,9,15,establecimiento; direccion; barrio_segun_catalogo; veredicto; nivel_evidencia; fecha_dato_mas_reciente,2026-08-07 16:46,ignorado a proposito
-vigencia_verificada_ronda_2_sin_contacto.csv,csv,8.9,9,15,establecimiento; direccion; barrio_segun_catalogo; veredicto; nivel_evidencia; fecha_dato_mas_reciente,2026-08-09 10:38,SIN RASTREAR
-vigencia_y_altas_2026-08.csv,csv,6.9,21,8,establecimiento; direccion; barrio; tipo_de_hito; vigencia_verificada; vigencia_fecha,2026-08-07 12:33,SIN RASTREAR
+vigencia_verificada_ronda_2_sin_contacto.csv,csv,8.9,9,15,establecimiento; direccion; barrio_segun_catalogo; veredicto; nivel_evidencia; fecha_dato_mas_reciente,2026-08-09 10:38,rastreado
+vigencia_y_altas_2026-08.csv,csv,6.9,21,8,establecimiento; direccion; barrio; tipo_de_hito; vigencia_verificada; vigencia_fecha,2026-08-07 12:33,rastreado
