@@ -296,10 +296,25 @@ viene va a describir el polo equivocado.** Es errata nueva: **ERR-11.**
 
 ### Le toca a Cowork
 
-1. **Consolidar la edición técnica con las rondas 8 a 14.** Es lo único que queda de este lado.
-2. **Reescribir la Sección I con el criterio y las cuatro categorías**, y **escribir el anexo de las
-   14 zonas no admitidas**, vía por vía. Es lo que convierte los ceros en hallazgo.
-3. **Cuatro fichas nuevas del sur**, con el material que ya existe en el informe del 07/08.
+**Hecho el 09/08 a la noche, después del criterio:**
+
+- ~~Reescribir la Sección I con el criterio y las cuatro categorías~~ · hecho
+- ~~Escribir la Sección VIII con las 14 zonas no admitidas, vía por vía~~ · hecho, y las cinco que
+  salieron de la VII se mudaron enteras
+- ~~Cuatro fichas nuevas del sur~~ · hechas, dos de ellas de La Boca
+- ~~Cartografía~~ · **hecha**: mapa general y catorce comunales, en `cartografia/`, reproducibles
+- ~~Ensamblar el documento~~ · **hecho**: `documento/ATLAS_V3_DOCUMENTO.md`
+- ~~Maquetar~~ · **hecho**: `documento/Atlas_V3_agosto_2026.pdf`, 103 páginas
+- ~~Verificación interna~~ · **hecha**: ninguna cifra contradice a otra
+
+**Pendiente de este lado:**
+
+1. **Consolidar la edición técnica con las rondas 8 a 14** — **en stand-by por decisión de Diego.**
+   No entra en esta entrega.
+2. **Segunda pasada de cartografía**, si aparecen los polígonos oficiales de barrios y comunas: hoy
+   el mapa se orienta con los 27 polígonos administrativos que ya estaban en `zonas_r8`.
+3. **Rehacer los mapas** de las zonas cuyo perímetro se trace, y con ellos el PDF. Es una corrida de
+   dos scripts.
 
 **EL DOCUMENTO ESTÁ COMPLETO** en el sentido de que ninguna sección quedó sin escribir. Lo que abrió
 el criterio del 09/08 es reescritura, no investigación.
@@ -410,21 +425,28 @@ outputs\BARRIDO_CIUDAD_2026-08\
 
 | frente | estado |
 |---|---|
-| criterio de admisión | 100 % |
-| cobertura geográfica | 100 % · 15 comunas |
+| criterio de admisión | **100 % · uno solo, escrito, calibrado y aplicado a las 55** |
+| cobertura geográfica | 100 % · 15 comunas barridas, 14 con polo |
 | vigencia del catálogo de Notables | 100 % · 90 de 90 |
-| estructura del documento | **100 % · resuelta hoy** |
-| niveles de nombre | **propuesta completa, esperando firma** |
+| estructura del documento | 100 % |
+| **texto del documento** | **100 %** · secciones I a IX y los tres anexos |
+| el cuerpo | **41 fichas, agrupadas por comuna** |
+| referentes con fecha propia | **40 de las 41 fichas** · la única sin cerrar es Costanera Norte |
+| **cartografía** | **100 % de una primera pasada** · mapa general y catorce comunales, reproducibles |
+| **maquetación** | **100 % de una primera pasada** · PDF A4 de 103 páginas, con tapa, índice y folios |
+| **verificación interna** | **100 %** · ninguna cifra del documento contradice a otra |
+| delimitación de polígonos | **56 %** · 23 polos con perímetro propio, **18 se representan con su barrio** |
 | vía E medida | 84 % · 79 de 94, con 10 que son un cruce espacial |
 | vía B medida | 67 % · 63 de 94, y sube sola al recorrerla contra el catálogo |
-| delimitación de polos | ~85 % · Palermo a una firma, Colegiales y el solape Villa Crespo–La Paternal abiertos |
-| **el documento entero** | **COMPLETO** · secciones I a IX y los tres anexos |
-| el cuerpo | 42 fichas, agrupadas por comuna |
-| referentes con fecha propia | **41 de las 42 fichas** · la única sin cerrar es Costanera Norte |
-| edición técnica | ~90 %, con las rondas 8 a 13 por incorporar |
-| presentación | **v2.2**, con la lámina 5 pendiente de dos verificaciones |
+| edición técnica | **en stand-by por decisión de Diego** · no entra en esta entrega |
+| presentación | **v2.3**, ninguna lámina retenida |
 
-**El cuello de botella ya no es el dato, ni la estructura, ni el cuerpo del documento: es el
-repositorio.** Lo que queda son mediciones —el perímetro de la subzona de Palermo, el mapeo entre
-los 124 y los 42, las dos ampliaciones, los cruces de la vía E— y dos anexos que dependen de ellas.
-**Ninguna es una discusión: todas son una corrida.**
+**El cuello de botella cambió de lugar dos veces en un día.** Dejó de ser el dato, después dejó de
+ser la forma —hay documento armado, con mapas y maqueta—, **y hoy es uno solo: los dieciocho
+perímetros que faltan trazar.** Mientras no estén, dieciocho de los cuarenta y un polos se dibujan
+con el polígono de su barrio y **no pueden publicar superficie ni cantidad de locales**. Eso está
+declarado en el mapa, en cada ficha y en la sección VIII — pero es lo único que separa a este atlas
+de estar terminado.
+
+**Y es trabajo de repositorio, no de análisis.** El material textual de los dieciocho perímetros ya
+está escrito en las fichas: calles y alturas. Lo que falta es poligonizarlo.
