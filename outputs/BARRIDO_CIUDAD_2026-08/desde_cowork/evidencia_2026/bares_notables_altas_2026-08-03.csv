@@ -1,0 +1,13 @@
+orden,establecimiento,direccion,barrio,comuna,referencia_o_zona_que_toca,en_el_pdf_servido_hoy,nota
+1,Bar Portuario,Pinzon 102,La Boca,4,sur ronda 1,no verificado,
+2,Boca a Boca,Av. Benito Perez Galdos 207,La Boca,4,sur ronda 1,SI,
+3,Cafe Rivas,Estados Unidos 302,San Telmo,1,R03 San Telmo,SI,
+4,Bar Via 71,Viamonte 1771,San Nicolas,1,R12 Centro,SI,
+5,La Opera,Av. Corrientes 1799,San Nicolas,1,R02 Av. Corrientes / R12,SI,
+6,Josephina's Cafe,Guido 1532,Recoleta,2,R06 Recoleta,no verificado,
+7,Cafe Cortazar,Jose Antonio Cabrera 3797,Palermo,14,R01 Palermo,SI,
+8,La Orquidea,Av. Corrientes 4101,Almagro,5,Z37 Almagro,SI,CONFLICTO: uno de los frentes la conto entre los CINCO notables ya existentes de Almagro; el otro la reporta como alta del 03/08/2026. Es sintoma de la reedicion del PDF.
+9,Confiteria El Greco,Av. Rivadavia 5353,Caballito,6,R10 Caballito,NO,
+10,Plaza Cafe,Av. Rivadavia 4732,Caballito,6,R10 Caballito,NO,
+11,Bar Conde,Av. Federico Lacroze 3193,Colegiales,13,R19 Federico Lacroze / Z43 Colegiales,SI,"En funcionamiento desde 1902. Primer notable de la Comuna 13. Verificado abierto al 29/07/2026, cinco dias antes de la declaracion."
+12,La Escuela,Manuela Pedraza 2803,Nunez,13,Z41 Nunez,SI,"CONFLICTO DE BARRIO Y COMUNA: el catalogo dice Nunez, Comuna 13; La Nacion la titula 'un clasico de Saavedra'; La Comuna 12 la ubica a metros de Saavedra y Coghlan. El domicilio es Manuela Pedraza y Vidal, al oeste de Cabildo, sobre el borde. Dado el precedente de La Academia consignada en Comuna 5, el campo comuna del catalogo no es confiable aqui."

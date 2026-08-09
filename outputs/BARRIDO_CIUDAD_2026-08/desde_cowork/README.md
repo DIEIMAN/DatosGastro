@@ -21,6 +21,15 @@ corriendo código sobre los datos.
 | `APORTES_A_LA_PRESENTACION_PLAN_2026.md` | **Lámina por lámina del Plan Gastronomía 2026: qué número va en cada una**, con su advertencia. Es el destino real de todo esto | completo |
 | `RECONCILIACION_HITOS.md` | Qué de la capa de hitos está duplicado con `REFERENTES_2026/` y qué sirve | completo |
 | `POLOS_NOMBRADOS.csv` + `_LEEME.md` | **Los 124 polos nombrados**, con nivel, fuente y la leyenda exacta que va en la ficha | completo · 14 esperan verificación normativa |
+| `ESCALA_Y_VOCABULARIO.md` | **LEER PRIMERO.** Por qué 124 polos es la escala equivocada, cuál es la escala calibrada contra lo publicado, la arquitectura de dos capas y qué llamamos polo | completo |
+| `mapas/mapa_prueba_escala.png` | Cómo se ve el mapa a la escala propuesta: 29 polos + 14 áreas menores | prueba |
+| `LAMINAS_PARA_LA_PRESENTACION.md` | **Lámina por lámina, con el texto y los números listos para pegar** en el Plan Gastronomía 2026 | completo |
+| `mapas/mapa_general_124.png` | **El mapa de las 124.** Es el de la lámina 11 | completo |
+| `mapas/mapa_124_por_tamano.png` | El mismo mapa coloreado por cantidad de locales | completo |
+| `PERIMETROS_NORMATIVOS.md` | Los perímetros de las 6 leyes y los 2 APH, listos para poligonizar. **Desbloquea las 14 verificaciones** | completo |
+| `FICHAS_DE_MUESTRA.md` | Cuatro fichas escritas a mano para fijar el molde + **un bug del normalizador de calles que afecta el campo publicado** | completo |
+| `docx/EDICION_TECNICA_METODO.docx` | La edición técnica en Word, 24 páginas con índice | completo |
+| `docx/ATLAS_V3_BORRADOR.docx` | El Atlas en Word, 14 páginas, secciones I a VIII sin las fichas | completo |
 | `DECISIONES_EDITORIALES_V3.md` | Las decisiones editoriales tomadas por Diego, con sus motivos | cerrado |
 | `DECISION_P078_Y_SALIENTE.md` | El razonamiento de por qué la excepción de P078 no se firmaba | cerrado — el repo lo resolvió por estabilidad |
 
@@ -111,7 +120,8 @@ salvo que el clustering lo haya partido.
 
 ## Qué falta de este lado
 
-- **Las 124 fichas** → esperan la unión de la capa de hitos a los polígonos. Todo lo demás está.
-- Cartografía: mapa general + 15 por comuna
-- La edición técnica a `.docx` con formato
+- **Las 124 fichas** → esperan la unión de la capa de hitos a los polígonos, y el arreglo del
+  normalizador de calles (ver `FICHAS_DE_MUESTRA.md`). Todo lo demás está.
+- Los 15 mapas por comuna (el general ya está)
+- Las secciones V a VIII se rearman en el `.docx` cuando existan las fichas
 - La edición técnica a `.docx` con formato de la Dirección

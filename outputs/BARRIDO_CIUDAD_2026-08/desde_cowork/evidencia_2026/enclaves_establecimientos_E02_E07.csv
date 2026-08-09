@@ -1,0 +1,58 @@
+enclave_id,establecimiento,calle,altura,rubro,origen_cocina,vigencia,vigencia_fecha,fuente,nota
+E07,Salteneria El Conejo,Jose Leon Suarez,216,salteneria,boliviana,dudoso,2023-08-04,GCBA Turismo (s/f) + Vinomanos 04/08/2023,"CORRECCION DE RUBRO: no es 'Salchicheria'. El GCBA lo consigna como SALTENERIA. Pick Up The Fork escribio 'Salcheria'. La altura se sostiene en tres fuentes. Tiene sucursales en Mataderos, Flores Sur y Villa Celina."
+E07,Pollo Broaster,Ibarrola,7239,pollo broaster,boliviana,dudoso,,GCBA Turismo (sin fecha visible),"HALLAZGO NUEVO de esta pasada. La pagina del GCBA no tiene fecha: un sitio sin fecha no es mas confiable que uno con fecha vieja, es menos auditable."
+E07,Restaurante Miriam,Ibarrola,7184,restaurante,boliviana,dudoso,2022-06-09,Pick Up The Fork 17/08/2016; Sin Reservas 09/06/2022 lo llama 'uno de los mas clasicos' pero sin altura,Reconfirmado en 2022 sin altura.
+E07,Pollo Copacabana,Ibarrola,7276 y 7291,pollo,boliviana,dudoso,2016-08-17,Pick Up The Fork 17/08/2016,Diez anos sin reverificar.
+E07,Rico Pollo,Ibarrola,7193,pollo,boliviana,dudoso,2016-08-17,Pick Up The Fork 17/08/2016,Diez anos sin reverificar. La ficha de broccolino.com.ar devolvio 403.
+E07,JAMUY,Jose Leon Suarez,al 100,restaurante,boliviana,dudoso,2012,"Lamas, Buenos Aires Historia (trabajo de campo ~2012)",Probablemente vencido.
+E02,Hakka,Arribenos,2382,restaurante,chino-taiwanesa + parrilla argentina,verificado_abierto,2026-02-17,La Nacion 17/02/2026,"A ~89 m al norte de Olazabal: TERCERA cuadra, fuera del tramo peatonal."
+E02,Ultramarinos,Pasaje Arribenos,1980,pescados y mariscos,argentina,verificado_abierto,2026-02-17,La Nacion 12/06/2024 (apertura 11/06/2024) y 17/02/2026,"TIENE FICHA EN LA GUIA MICHELIN: esta en la seleccion, nivel de distincion NO verificado (el sitio devolvio vacio o 403 en cinco variantes de pais/idioma). ES VIA B, NO VIA E. OJO CON LA DIRECCION: es PASAJE Arribenos 1980; USIG no reconoce la altura 1980 sobre la calle Arribenos. El Cronista la publica sin el 'Pasaje'."
+E02,Ma La Tang,Mendoza,1583,hot pot por peso,china,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Liang Liang,Montaneses,2221,brochettes y hot pot,china,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Cochino,Blanco Encalada,1800,street food de cerdo,asiatica,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Sura,Blanco Encalada,1800,BBQ,coreana,verificado_abierto,2026-02-17,La Nacion 17/02/2026,Apertura reciente.
+E02,Dokdo,Blanco Encalada,1820,street food,coreana,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Feng Wei,Av. Juramento,1698,xiaolongbao,china,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Tyta Patisserie,11 de Septiembre de 1888,2451,pasteleria,francesa,verificado_abierto,2026-02-17,La Nacion 17/02/2026,
+E02,Shanghai Express,Av. del Libertador,6023,chino-americano,china (Shanghai),verificado_abierto,2026-02-17,La Nacion 17/02/2026,FUERA DEL POLIGONO. Apertura reciente.
+E02,Dumpling Pong,Mendoza,1730,baos,china,verificado_abierto,2025-04-14,Ohlala 26/06/2024; Perfil 29/11/2024; Buenos Aires Portal 14/04/2025,Complejo Via Viva.
+E02,Cafe 2D,Mendoza,1730,cafe,impronta coreana,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,Archi,Mendoza,1730,vegetariano y vegano,,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,Pescadito,Mendoza,1730,pescados,,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,Brochette City,Mendoza,1730,brochettes / yakitori,japonesa,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,Cruz Omakase,Mendoza,1730,omakase,japonesa,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,Peko Peko,Mendoza,1730,restaurante,japonesa,verificado_abierto,2025-04-14,idem,Complejo Via Viva.
+E02,5 Onzas,Mendoza,1730,bazar,,verificado_abierto,2025-04-14,idem,Complejo Via Viva. No gastronomico.
+E02,Cafe Registrado,Mendoza,1750,cafe de especialidad,,verificado_abierto,2024-06-26,Ohlala 26/06/2024,
+E02,Miyaki Gyozas & Baos,Olazabal,1780,gyozas y baos,asiatica,verificado_abierto,2025-04-14,Buenos Aires Portal 14/04/2025,
+E02,Orei,Echeverria,1677 local 8,ramen,japonesa,verificado_abierto,2024-06-26,Ohlala 26/06/2024,Pasaje Echeverria.
+E02,Vina,Echeverria,1677 local 14,vinos y empanadas,argentina,verificado_abierto,2024-06-26,Ohlala 26/06/2024,Pasaje Echeverria.
+E02,Gokana Omakase,Monroe,1625,omakase,japonesa,verificado_abierto,2025-04-14,Buenos Aires Portal 14/04/2025,
+E02,Sachi | The Handroll House,F. D. Roosevelt,1702,handrolls,japonesa,verificado_abierto,2025-04-14,Buenos Aires Portal 14/04/2025,FUERA DEL POLIGONO.
+E02,Asoc. Civil de los Taiwaneses en Argentina,Arribenos,2275,institucion,taiwanesa,verificado_abierto,2024-09-07,Forbes Argentina 07/09/2024,No gastronomico. Ancla institucional del componente taiwanes.
+E02,Templo Chong Kuan,Montaneses,s/altura,templo budista,china,verificado_abierto,,GCBA Turismo,Inaugurado en 1988.
+E02,Todos Contentos,Arribenos,2177,dim sum,china,dudoso_probablemente_abierto,2025-08,iProfesional 04/07/2020 (cierre); Forbes 07/09/2024 (operativo); ficha de resenas act. ago-2025,"CERRO EN JULIO DE 2020 tras mas de 35 anos, con 14 empleados. Vuelve a aparecer como operativo en 2024. Es el segundo caso El Tokio: cierre y reapertura sin que ningun listado lo registre."
+E02,Palitos,Arribenos,2245 o 2241,restaurante,taiwanesa,dudoso,2017-02-16,La Nacion 16/02/2017 da 2245; comuna13caba da 2241,"DISCREPANCIA DE ALTURA SIN RESOLVER. Se registran las dos, no se elige."
+E02,Resto Apu,Arribenos,2243,restaurante,taiwanesa,dudoso,2017-02-16,La Nacion 16/02/2017,
+E02,Lotus Neo Thai,Arribenos,2265,restaurante,tailandesa,dudoso,2017-02-16,La Nacion 16/02/2017; MalevaMag 28/03/2014,UNICO TAILANDES CON ALTURA en todo el poligono.
+E02,Lai Lai,Arribenos,2168,restaurante,china,dudoso,2017-02-16,La Nacion 16/02/2017; comuna13caba,
+E02,Restaurante Su,Arribenos,2123,restaurante,china,dudoso,,comuna13caba.com.ar,
+E02,Siempre Verde,Arribenos,2127,restaurante,china,dudoso,,comuna13caba.com.ar,
+E02,Dashi,Arribenos,2302,restaurante,japonesa,dudoso,2017-02-16,La Nacion 16/02/2017,
+E02,Buddha Ba,Arribenos,2288 esq. Mendoza,fusion asiatica,,dudoso,2017-02-16,La Nacion 2017; MalevaMag 2014,
+E02,Break n' Cake,Arribenos,2299,cafe,,dudoso,2017-02-16,La Nacion 2017; MalevaMag 2014,
+E02,Casa China 2,Arribenos,2163,supermercado,china,dudoso,2022-09-05,El Holandes Picante,No gastronomico.
+E02,Ichiban,Arribenos,2233,supermercado,,dudoso,,El Holandes Picante,No gastronomico.
+E02,Casa China,Arribenos,2263,supermercado,china,dudoso,,El Holandes Picante,No gastronomico.
+E02,Fujisan,Mendoza,1650,restaurante,japonesa / nikkei,dudoso,2021-08-26,El Cronista 26/08/2021,"Declarado 'Sitio de Interes Cultural de la Ciudad' por el GCBA: dato factual, NO computa como reconocimiento externo. VER ALERTA EL CRONISTA 24/09/2025."
+E02,Asia Oriental,Mendoza,1650,supermercado,,dudoso,,El Holandes Picante,No gastronomico.
+E02,China Rose,Mendoza,1689,restaurante,china,dudoso,2021-08-26,La Nacion 2017; El Cronista 26/08/2021,VER ALERTA EL CRONISTA 24/09/2025.
+E02,Tina & Co (Bio Market),Mendoza,1678,dietetica,,dudoso,2014-03-28,MalevaMag 28/03/2014,No gastronomico.
+E02,Iglesia Presbiteriana Sin Heng,Mendoza,1660,culto,,dudoso,,buenosaires123,No gastronomico.
+E02,Hua Fu Chen,Olazabal,1673,supermercado,china,dudoso,,El Holandes Picante,No gastronomico.
+E02,Lucumma,Olazabal,1679,restaurante,peruana,dudoso,2017-02-16,La Nacion 2017; comuna13caba,No asiatico DENTRO del poligono.
+E02,Dogg,Blanco Encalada,1661,hamburguesas,americana,dudoso,2021-08-26,El Cronista 26/08/2021,VER ALERTA EL CRONISTA 24/09/2025.
+E02,Las Carnitas,Monroe,1785,parrilla,argentina,dudoso,2021-08-26,El Cronista 26/08/2021,No asiatico DENTRO del poligono. VER ALERTA EL CRONISTA 24/09/2025.
+E02,Garbis,Monroe,1799,restaurante,arabe-armenia,dudoso,2021-08-26,El Cronista 26/08/2021,No asiatico DENTRO del poligono. VER ALERTA EL CRONISTA 24/09/2025.
+E02,Hong Kong Style,Montaneses,2149,restaurante,china (cantonesa),cerrado,2020-05,iProfesional 04/07/2020,Cerro en mayo de 2020 tras 20 anos. SIN ninguna evidencia de reapertura posterior.
+E02,Dragon Porteno,Arribenos,2137,restaurante,china,cerrado,2020-07-04,iProfesional 04/07/2020,Cerro con 8 despidos. SIN evidencia de reapertura.

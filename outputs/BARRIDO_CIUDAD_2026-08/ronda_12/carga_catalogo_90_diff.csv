@@ -1,0 +1,91 @@
+orden,hito_id,nombre_capa,nombre_catalogo,direccion,vigencia_antes,vigencia_despues,nivel_antes,nivel_despues,cambia,verificado_por,citable_en_documento,detalle
+1,H011,Bar Lavalle,ALMACEN Y BAR LAVALLE,Lavalle 1693,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+2,H002,Barbaro,BARBARO BAR,Tres Sargentos 415,dudosa,si,v4,v4,True,relevamiento documental,False,probablemente_abierto v4 12/04/2026 · CONTRADICCION DE HORARIO
+3,H003,Bar Bidou,BAR BIDOU,Av. Roque Saenz Pena 858,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+4,H019,Britanico,BAR BRITANICO,Brasil 399,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+5,H010,Bar Conde,BAR CONDE,Av. Federico Lacroze 3193,si,si,,,False,relevamiento documental,True,verificado abierto 29/07/2026 · desde 1902
+6,H005,Bar de Cao,BAR DE CAO,Av. Independencia 2400,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+7,H006,BAR DEL ALVEAR PALACE HOTEL,BAR DEL ALVEAR PALACE HOTEL,Av. Alvear 1891,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+8,H008,EL COLONIAL,BAR EL COLONIAL,Av. Belgrano 599,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+9,H007,Bar del Glorias,BAR DEL GLORIAS,Andalgala 1982,probablemente_abierto,si,v4,v4,True,relevamiento documental,True,probablemente_abierto v4 06/04/2026
+10,H094,Bar Iberia,BAR IBERIA,Av. de Mayo 1196,si,si,v2,v2,False,relevamiento documental,True,probablemente_abierto v4 · reabrio junio 2024
+11,H001,9 de Julio,BAR 9 DE JULIO,Larrazabal 1276,dudosa,si,ninguno,ninguno,True,relevamiento documental,True,DUDOSO · ya cerro una vez en 2019 y reabrio en 2021
+12,H028,Café Olimpo,BAR OLIMPO,Irigoyen 1491,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+13,H012,BAR OVIEDO,BAR OVIEDO,Av. Lisandro de la Torre 2407,dudosa,si,,,True,relevamiento documental,True,probablemente_abierto v5 22/04/2026
+14,H088,El Portuario,BAR PORTUARIO,Pinzon 102,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+15,H013,BAR PLAZA DORREGO,BAR PLAZA DORREGO,Defensa 1098,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+16,H014,BAR QUINTINO,BAR QUINTINO,Carlos Calvo 4002,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+17,H015,BAR SEDDON,BAR SEDDON,Defensa 695,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+18,H016,BAR SUR,BAR SUR,Estados Unidos 299,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+19,H017,Bar Via 71,BAR VIA 71,Viamonte 1771,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+20,H004,Bar Boca a Boca,BOCA A BOCA BAR,Av. Benito Perez Galdos 207,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+21,H018,BOSTON CITY,BOSTON CITY,Florida 165 local 3,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+22,H020,Cabildo de Buenos Aires,CABILDO DE BUENOS AIRES,Peru 86,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+23,H021,Cafe Cortazar,CAFE CORTAZAR,Jose Antonio Cabrera 3797,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+24,H022,Café de García,CAFE DE GARCIA,Sanabria 3302,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+25,H023,Cafe de la U,CAFE DE LA U,Av. Triunvirato 4801,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+26,H024,CAFE DE LOS ANGELITOS,CAFE DE LOS ANGELITOS,Av. Rivadavia 2100,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 25/05/2026
+27,H086,Café Margot,CAFE MARGOT,Av. Boedo 857,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+28,H087,Cafe Rivas,CAFE RIVAS,Estados Unidos 302,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+29,H031,Café Roma,CAFE ROMA,Olavarria 409,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+30,H033,SAN BERNARDO,CAFE SAN BERNARDO,Av. Corrientes 5436,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+31,H036,CAFETABAC,CAFE TABAC,Av. del Libertador 2300,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+32,H034,CAFE THIBON,CAFE THIBON,Montevideo 723,si,si,v2,v2,False,relevamiento documental,False,reabierto en 2024 con nueva gestion
+33,H035,Café Tortoni,CAFE TORTONI,Av. de Mayo 825,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 26/05/2026
+34,H038,Celta Bar,CELTA BAR,Sarmiento 1702,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+35,H039,Claridge's,CLARIDGE'S BAR,Tucuman 535,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+36,H040,Clásica y moderna,CLASICA Y MODERNA,Av. Callao 892,si,si,v2,v2,False,relevamiento documental,False,reabierto en diciembre de 2023 tras cuatro anos cerrada
+37,H042,Confitería Ideal,CONFITERIA LA IDEAL,Suipacha 384,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+38,H090,Confiteria El Greco,CONFITERIA EL GRECO,Av. Rivadavia 5353,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+39,H043,Confiteria Saint Moritz,CONFITERIA SAINT MORITZ,Esmeralda 894,dudosa,si,v4,v4,True,relevamiento documental,False,probablemente_abierto v4 04/02/2026
+40,H025,DON JUAN,DON JUAN BAR,Camarones 2702,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+41,H044,El Banderin,EL BANDERIN,Guardia Vieja 3601,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 16/06/2026
+42,H045,12 de octubre,EL BOLICHE DE ROBERTO,Bulnes 331,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+43,H046,El Buzón,EL BUZON,Esqui 1393,si,si,,,False,relevamiento documental,True,verificado_abierto v2 07/08/2026 · EN RETRACCION (lun-vie 7 a 16)
+44,H047,EL COLECCIONISTA,EL COLECCIONISTA,Av. Rivadavia 4929,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+45,H048,El Estano 1880,EL ESTANO 1880,Aristobulo del Valle 1100,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+46,H049,EL FARO,EL FARO,Av. de los Constituyentes 4099,dudosa,si,,,True,relevamiento documental,True,probablemente_abierto v5 17/06/2026
+47,H009,Bar El Federal,EL FEDERAL,Carlos Calvo 595,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 21/07/2026
+48,H050,El Gato Negro,EL GATO NEGRO,Av. Corrientes 1669,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+49,H051,HIPOPOTAMO,EL HIPOPOTAMO,Brasil 401,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+50,H052,El Progreso,EL PROGRESO,Av. Montes de Oca 1700,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+51,H053,El Querandi,EL QUERANDI,Peru 302,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+52,H054,EL SIMBOLO,EL SIMBOLO,Av. Corrientes 3787,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+53,H055,El Tokio,EL TOKIO,Alvarez Jonte 3550,si,si,,,False,relevamiento documental,True,verificado_abierto v2 05/08/2026
+54,H056,El Viejo Buzon,EL VIEJO BUZON,Neuquen 1100 esq. Espinosa,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+55,H057,Esquina Homero Manzi,ESQUINA HOMERO MANZI,Av. San Juan 3601,en_riesgo,en_riesgo,v2,v2,False,auditoria del catalogo,True,Sin cierre consumado al 08/08/2026. Condena laboral de 220 millones.
+56,H058,FLORIDA GARDEN,FLORIDA GARDEN,Florida 899,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+57,H059,Bar Imperio,HOTEL SAVOY / BAR IMPERIO,Callao 181,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+58,H089,Josephina's Cafe,JOSEPHINA'S CAFE,Guido 1532,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+59,H060,La Academia,LA ACADEMIA,Montevideo 341,si,si,v2,v2,False,relevamiento documental,True,reabierto en Montevideo 341 el 19/06/2025 (se mudo de Callao 368)
+60,H061,LA BIELA,LA BIELA,Av. Quintana 600,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+61,H062,La Buena Medida,LA BUENA MEDIDA,Suarez 101,no,no,v2,v2,False,auditoria del catalogo,True,octubre de 2025. Alquiler no renovado. Verificado 08/08/2026: nada posterior a junio de 2025.
+62,H041,La Escuela,LA ESCUELA,Manuela Pedraza 2803,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+63,H065,LA FARMACIA,LA FARMACIA,Av. Directorio 2400,si,si,v2,v2,False,relevamiento documental,True,verificado_abierto v2 07/08/2026
+64,H066,La Flor de Barracas,LA FLOR DE BARRACAS,Suarez 2095,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+65,H067,LA GIRALDA,LA GIRALDA,Av. Corrientes 1453,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+66,H068,La Opera,LA OPERA,Av. Corrientes 1799,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+67,H063,La Orquidea,LA ORQUIDEA,Av. Corrientes 4101,probablemente_abierto,si,v5,v5,True,relevamiento documental,True,probablemente_abierto v5 07/08/2026
+68,H069,LA PERLA,LA PERLA,Av. Don Pedro de Mendoza 1899,si,si,v3b,v3b,False,relevamiento documental,True,verificado_abierto v3b 20/05/2026
+69,H026,LA POESIA,LA POESIA,Chile 502,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+70,H070,LA PUERTO RICO,LA PUERTO RICO,Alsina 420,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+71,H071,LAS VIOLETAS,LAS VIOLETAS,Av. Rivadavia 3899,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 07/07/2026
+72,H072,Le Caravelle,LE CARAVELLE,Lavalle 726,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+73,H073,London City,LONDON CITY,Av. de Mayo 599,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+74,H074,36 BILLARES,LOS 36 BILLARES,Av. de Mayo 1265/71,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 04/07/2026
+75,H075,LOS GALGOS,LOS GALGOS,Av. Callao 501,si,si,,v2/v3 sin fecha individual,False,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+76,H076,Los Laureles,LOS LAURELES,Av. Iriarte 2290,si,si,v2,v2,False,relevamiento documental,True,"verificado_abierto v2 07/08/2026 · reabrio con nuevos duenos, inmueble EN VENTA"
+77,H077,Mar Azul,MAR AZUL,Tucuman 1700,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+78,H078,Miramar,MIRAMAR,Sarandi 1190,sin_verificar,si,,,True,relevamiento documental,False,verificado abierto 07/07/2026 · DOBLE REGISTRO: Bar Notable Y Restaurante Iconico
+79,H027,Café Montecarlo,MONTECARLO BAR Y DESPENSA,Paraguay 5491,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+80,H029,CAFE PALACIO,MUSEO FOTOGRAFICO SIMIK,Av. Federico Lacroze 3901,sin_verificar,si,,,True,relevamiento documental,False,"ex Cafe Palacio, renombrado en el consolidado"
+81,H079,8 ESQUINAS,OCHO ESQUINAS,Av. Forest 1186,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+82,H080,Paulin,PAULIN,Sarmiento 635,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+83,H081,Petit Colón,PETIT COLON,Libertad 505,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+84,H082,PLAZA BAR,PLAZA BAR,Florida 1005,cerrado_con_reapertura_anunciada,no,v2,v2,True,auditoria del catalogo,True,abril de 2017 — nueve anos. Edificio cerrado y en obra; reapertura anunciada para 2028.
+85,H030,Plaza Café,PLAZA CAFE,Av. Rivadavia 4732,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+86,H032,Roma del Abasto,ROMA DEL ABASTO,Anchorena 806,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+87,H083,STYLO CAFE,STYLO CAFE,Fernandez de Enciso 3934,sin_verificar,si,,v2/v3 sin fecha individual,True,"Diego (DGDGAS), 08/08/2026",False,Verificacion humana directa: redes sociales y Google Maps.
+88,H084,The New Brighton,THE NEW BRIGHTON,Sarmiento 645,en_riesgo,si,v2,v2,True,auditoria del catalogo,True,"Quiebra decretada 18/03/2026, Juzgado Nac. Comercial N 3. SIGUE ATENDIENDO: resena de mayo de 2026 posterior a la quiebra."
+89,H085,Varela Varelita,VARELA VARELITA,Av. Scalabrini Ortiz 2102,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 25/06/2026
+90,H037,CASA WATSON,WATSON'S,Vuelta de Obligado 2072,si,si,v3,v3,False,relevamiento documental,True,verificado_abierto v3 05/07/2026

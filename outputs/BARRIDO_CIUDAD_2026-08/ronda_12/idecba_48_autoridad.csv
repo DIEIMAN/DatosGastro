@@ -1,0 +1,49 @@
+eje,zona,zona_origen,tramos,locales_relevados,locales_ocupados,cuadras,densidad_comercial_por_cuadra,tasa_ocupacion_pct,var_interrelevamiento_pp,var_interanual_pp,esta_en_el_atlas,que_es_en_el_atlas
+Av. Belgrano,Centro,heredada del PDF,Av. Belgrano 1801-2799,211,191,20.0,10.55,90.5,-2.3,-3.2,NO — candidato a evaluar con las seis vias,
+Corrientes y Callao,Centro,heredada del PDF,Av. Corrientes 1101-1799,168,158,14.0,12.0,94.0,4.0,1.1,NO — candidato a evaluar con las seis vias,
+Corrientes y Pueyrredón,Centro,heredada del PDF,Av. Corrientes 2101-2899,299,290,16.0,18.69,97.0,2.0,0.6,NO — candidato a evaluar con las seis vias,
+Córdoba Facultad,Centro,heredada del PDF,Av. Córdoba 2201-2699,98,84,10.0,9.8,85.7,-5.9,-8.0,NO — candidato a evaluar con las seis vias,
+Córdoba Tribunales,Centro,heredada del PDF,Av. Córdoba 1301-1899,136,122,12.0,11.33,89.7,0.8,4.3,NO — candidato a evaluar con las seis vias,
+Entre Ríos,Centro,heredada del PDF,Av. Entre Ríos 201-1199,311,281,20.0,15.55,90.4,-0.6,-0.6,NO — candidato a evaluar con las seis vias,
+Florida,Centro,heredada del PDF,Florida 1-999,310,269,20.0,15.5,86.8,-2.6,-3.2,SI — R12 / Plaza Bar,"R12 Centro — Florida 1-999. OJO: Plaza Bar esta en Florida 1005, seis numeros afuera del eje."
+Lavalle,Centro,asignada por localizacion (el XLSX no trae zona),Corrientes 501-999 · Lavalle 501-999 · Esmeralda 401-599,340,273,24.0,14.17,80.3,-5.5,-3.2,NO — candidato a evaluar con las seis vias,R12 Centro — Corrientes 501-999 · Lavalle 501-999 · Esmeralda 401-599. Es el eje del microcentro peatonal en la serie vigente.
+Libertad,Centro,heredada del PDF,Libertad 1-499,228,201,10.0,22.8,88.2,-1.0,2.5,NO — candidato a evaluar con las seis vias,~5 locales vacios por cuadra
+Monserrat,Centro,heredada del PDF,Av. Belgrano 1101-1799,139,123,14.0,9.93,88.5,1.3,-1.4,SI — Z47,Z47 · 9 Notables segun el catalogo
+Once,Centro,heredada del PDF,Av. Rivadavia 2101-3199 · Pueyrredón 1-599,511,471,34.0,15.03,92.2,-2.7,-1.6,SI — enclave judio y zona,enclave judio · la mas alta del Centro
+Puerto Madero,Centro,heredada del PDF,A. M. De Justo 101-2099,89,78,40.0,2.23,87.6,-2.4,1.3,SI — referencia publicada,referencia publicada · sube
+Santa Fe y Callao,Centro,heredada del PDF,Av. Santa Fe 1101-2499,416,369,28.0,14.86,88.7,-2.9,-6.8,NO — candidato a evaluar con las seis vias,
+Cabildo,Norte,heredada del PDF,Av. Cabildo 1501-3799,679,623,46.0,14.76,91.8,-1.8,-3.8,SI — entorno R20 / Belgrano,entorno de R20
+Chacarita,Norte,heredada del PDF,Lacroze 3501-4199,134,123,14.0,9.57,91.8,-0.1,-1.6,"SI — R09, fusionado en Chacagiales",R09 · fusionado en Chacagiales
+Colegiales,Norte,heredada del PDF,Av. Cabildo 501-899 · Lacroze 2301-2899,239,218,20.0,11.95,91.2,0.0,-0.4,"SI — Z43, sin perimetro propio",Z43
+Córdoba y Scalabrini Ortiz,Norte,heredada del PDF,Av. Córdoba 4301-4999,192,158,14.0,13.71,82.3,-2.5,-4.6,NO — candidato a evaluar con las seis vias,
+Palermo Soho,Norte,heredada del PDF,El Salvador 4601-4799 · Honduras 4701-4999 · Serrano / Borges 1501-1799 · Gurruchaga 1601-1899 · Armenia 1501-1799 · Malabia 1601-1799,331,289,32.0,10.34,87.3,-0.6,-1.4,SI — subzona,subzona de Palermo
+Recoleta,Norte,heredada del PDF,Av. Alvear 1801-1999 · Junín 1701-1799 · Ortiz 1801-1899 · Quintana 401-599 · Vicente López 2001-2199,95,85,16.0,5.94,89.5,1.1,-3.2,SI — referencia publicada,referencia publicada
+Santa Fe y Coronel Díaz,Norte,heredada del PDF,Av. Santa Fe 2501-3299,291,272,16.0,18.19,93.5,-1.4,-1.4,NO — candidato a evaluar con las seis vias,
+Santa Fe y Scalabrini Ortiz,Norte,heredada del PDF,Av. Santa Fe 3301-3699 · Scalabrini Ortiz 2301-2599,154,138,14.0,11.0,89.6,-3.2,-3.8,NO — candidato a evaluar con las seis vias,
+Triunvirato,Norte,heredada del PDF,Av. Triunvirato 3601-4699 · Monroe 4801-5399,559,515,34.0,16.44,92.1,-0.0,-1.3,NO — candidato a evaluar con las seis vias,
+Almagro,Oeste,heredada del PDF,Av. Rivadavia 3401-4099,199,188,14.0,14.21,94.5,1.0,-1.0,"SI — Z37, abre las seis vias",Z37 · la unica que abre las seis vias
+Av. San Martín,Oeste,heredada del PDF,Av. San Martín 1801-2799,225,200,20.0,11.25,88.9,2.3,3.2,parcial — R21,entorno de R21 La Paternal
+Avellaneda,Oeste,heredada del PDF,Avellaneda 2701-3799 · Bogotá 2901-3499 · Aranguren 2901-3499,1073,1015,46.0,23.33,94.6,-1.8,-0.2,NO — candidato a evaluar con las seis vias,la mayor densidad comercial de los 48
+Caballito,Oeste,heredada del PDF,Acoyte 1-199 · Av. Rivadavia 4401-5499 · José Maria Moreno 1-99,366,354,28.0,13.07,96.7,-0.3,-0.3,SI,
+Corrientes y Medrano,Oeste,heredada del PDF,Av. Corrientes 3601-4799,339,306,24.0,14.12,90.3,-3.9,-2.7,NO — candidato a evaluar con las seis vias,
+Corrientes y Scalabrini Ortiz,Oeste,heredada del PDF,Av. Corrientes 5201-5699 · Scalabrini Ortiz 201-799,338,296,22.0,15.36,87.6,-1.4,-2.2,NO — candidato a evaluar con las seis vias,
+Cuenca,Oeste,heredada del PDF,Av. Cuenca 2701-3499,274,258,16.0,17.12,94.2,1.1,0.7,NO — candidato a evaluar con las seis vias,
+Devoto,Oeste,heredada del PDF,Lope de Vega 2801-3499 · Francisco Beiró 5201-5499,320,282,20.0,16.0,88.1,0.0,-1.8,parcial,
+Flores,Oeste,heredada del PDF,Av. Rivadavia 6201-7399 · Av. Nazca 1-499,518,469,34.0,15.24,90.5,-3.3,-2.4,SI — Z23 casco historico,Z23 casco historico
+Liniers,Oeste,heredada del PDF,Ramón Falcón 6801-7299,182,169,10.0,18.2,92.9,1.1,0.0,SI — E07 Mercado Andino,"E07 Mercado Andino — SIN CAIDA en la serie vigente (0,0 pp)"
+Monte Castro,Oeste,heredada del PDF,Álvarez Jonte 4501-5399,335,291,18.0,18.61,86.9,-2.7,-5.1,parcial — El Fortin,El Fortin
+Villa Crespo,Oeste,heredada del PDF,Aguirre 701-899 · Gurruchaga 701-999 · Loyola 601-799,163,130,14.0,11.64,79.8,-10.9,-9.1,SI,"R08 — LA MAYOR CAIDA INTERANUAL DE LOS 48 (-9,1 pp)"
+Warnes,Oeste,heredada del PDF,Dorrego 1-299 · Warnes 701-1599,252,208,24.0,10.5,82.5,-6.2,-6.8,SI — entorno de R21,entorno de R21
+Alberdi,Sur,heredada del PDF,Alberdi 3601-4099,117,112,10.0,11.7,95.7,2.6,3.4,NO — candidato a evaluar con las seis vias,NO ESTA EN NUESTRA MATRIZ · sube
+Av. Patricios,Sur,heredada del PDF,Av. Reg. de los Patricios 301-999,144,127,14.0,10.29,88.2,1.1,1.1,NO — candidato a evaluar con las seis vias,
+Boedo,Sur,heredada del PDF,Av. Boedo 701-1099 · Av. San Juan 3501-3699 · Independencia 3501-3699,227,207,16.0,14.19,91.2,-2.7,-1.8,SI,
+Chilavert,Sur,heredada del PDF,Chilavert 6101-6999 · Guaminí 4801-4999,306,271,22.0,13.91,88.6,-1.7,-2.4,NO — candidato a evaluar con las seis vias,NO ESTA EN NUESTRA MATRIZ
+Constitución,Sur,heredada del PDF,Brasil 1101-1299 · Lima 1601-1799 · Salta 1601-1799,139,125,12.0,11.58,89.9,-0.8,1.5,parcial,
+Defensa,Sur,heredada del PDF,Defensa 801-1499,191,162,14.0,13.64,84.8,3.1,2.7,SI — R03 San Telmo,"R03 San Telmo — SUBE 2,7 pp en la serie vigente; su via E ya estaba en dos grupos"
+Flores Sur,Sur,heredada del PDF,Varela 1101-1399,121,112,6.0,20.17,92.6,0.0,3.3,"SI — Bajo Flores, enclave coreano",Bajo Flores · enclave coreano
+Mataderos,Sur,heredada del PDF,Av. Alberdi 5501-6299,221,204,16.0,13.81,92.3,0.0,-1.4,SI,
+Montes de Oca,Sur,heredada del PDF,Montes de Oca 501-1199,146,131,14.0,10.43,89.7,-1.1,-1.9,"SI — P008 Barracas, corredor 280-1702",P008 Barracas · corredor 280-1702 y CCCA
+Parque Avellaneda,Sur,heredada del PDF,Av. Alberdi 4301-4899,153,119,12.0,12.75,77.8,-0.3,2.5,parcial,"LA PEOR OCUPACION DE LOS 48 (77,8 %), pero sube 2,5 pp"
+Parque Patricios,Sur,heredada del PDF,Av. Caseros 2601-2999 · La Rioja 1901-2199,204,182,14.0,14.57,89.2,-1.0,1.4,parcial,
+Riestra,Sur,heredada del PDF,Murguiondo 4001-4399 · Riestra 5501-5799,201,171,14.0,14.36,85.1,-0.5,-0.6,NO — candidato a evaluar con las seis vias,NO ESTA EN NUESTRA MATRIZ
+Sáenz,Sur,heredada del PDF,Sáenz 801-1399,212,185,12.0,17.67,87.3,-0.9,-1.5,"SI — Av. Saenz, capa de memoria (La Blanqueada)","Av. Saenz · La Blanqueada (1802-2017) · ~4,9 locales vacios por cuadra"

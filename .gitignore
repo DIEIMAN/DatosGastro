@@ -183,3 +183,14 @@ notebooks/06_informe_presentacion.ipynb
 # nombra emails y telefonos sin esa distincion y no se la hacemos nosotros. Lo que se versiona es
 # la derivada `*_sin_contacto` y el perfil; el crudo se rehace corriendo el script.
 outputs/BARRIDO_CIUDAD_2026-08/entur/crudos/
+
+# === Barrido de la Ciudad 2026-08: los cuatro CSV de vigencia con contacto ===
+# Traen telefono y mail de cada establecimiento, igual que el crudo del ENTUR de mas
+# arriba, y valen la misma regla: son comercios y no personas, pero el guardrail 7
+# nombra emails y telefonos sin esa distincion y no se la hacemos nosotros. Lo que se
+# versiona son las derivadas `*_sin_contacto.csv`, que produce y reproduce
+# ronda_13/sanitizar_contactos.py. Los originales se quedan en disco.
+outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/PARA_CHEQUEAR_DIEGO.csv
+outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_A_centro.csv
+outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_B_almagro_norte.csv
+outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_verificada_ronda_2.csv

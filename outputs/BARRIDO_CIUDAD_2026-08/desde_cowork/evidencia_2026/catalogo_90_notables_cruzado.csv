@@ -1,0 +1,91 @@
+orden,establecimiento,direccion,barrio_catalogo,comuna_catalogo,comuna_correcta_del_barrio,error_del_catalogo,zona_del_atlas_que_lo_reclama,vigencia_conocida,nota
+1,ALMACEN Y BAR LAVALLE,Lavalle 1693,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+2,BARBARO BAR,Tres Sargentos 415,Retiro,1,1,,Z46 Retiro (absorbe R18),probablemente_abierto v4 12/04/2026 · CONTRADICCION DE HORARIO,
+3,BAR BIDOU,Av. Roque Saenz Pena 858,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+4,BAR BRITANICO,Brasil 399,San Telmo,1,1,,R03 San Telmo,sin verificar,"Brasil 399, SAN TELMO — no Barracas. Y EL HIPOPOTAMO esta en Brasil 401: DOS NOTABLES EN LA MISMA ESQUINA, frente al Parque Lezama."
+5,BAR CONDE,Av. Federico Lacroze 3193,Colegiales,13,13,,Z43 Colegiales,verificado abierto 29/07/2026 · desde 1902,
+6,BAR DE CAO,Av. Independencia 2400,San Cristobal,3,3,,Z48 San Cristobal (PENDIENTE),verificado_abierto v2 07/08/2026,
+7,BAR DEL ALVEAR PALACE HOTEL,Av. Alvear 1891,Recoleta,2,2,,R06 Recoleta,sin verificar,
+8,BAR EL COLONIAL,Av. Belgrano 599,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+9,BAR DEL GLORIAS,Andalgala 1982,Mataderos,9,9,,Z33 Mataderos,probablemente_abierto v4 06/04/2026,
+10,BAR IBERIA,Av. de Mayo 1196,Monserrat,1,1,,Z47 Monserrat + Congreso,probablemente_abierto v4 · reabrio junio 2024,
+11,BAR 9 DE JULIO,Larrazabal 1276,Mataderos,9,9,,Z33 Mataderos,DUDOSO · ya cerro una vez en 2019 y reabrio en 2021,
+12,BAR OLIMPO,Irigoyen 1491,Villa Luro,10,10,"BARRIO INCORRECTO: es Monte Castro, no Villa Luro (comuna correcta)",Z28 MONTE CASTRO (el catalogo dice Villa Luro y esta MAL),verificado_abierto v2 07/08/2026,EL CATALOGO SE EQUIVOCA DE BARRIO: el callejero reparte Irigoyen por altura y el 1301-1799 impar es MONTE CASTRO. La comuna si es correcta. Verificado por el repo con USIG.
+13,BAR OVIEDO,Av. Lisandro de la Torre 2407,Mataderos,9,9,,Z33 Mataderos,probablemente_abierto v5 22/04/2026,
+14,BAR PORTUARIO,Pinzon 102,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,alta 03/08/2026,
+15,BAR PLAZA DORREGO,Defensa 1098,San Telmo,1,1,,R03 San Telmo,sin verificar,
+16,BAR QUINTINO,Carlos Calvo 4002,Boedo,5,5,,R14 Av. Boedo,sin verificar,
+17,BAR SEDDON,Defensa 695,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+18,BAR SUR,Estados Unidos 299,San Telmo,1,1,,R03 San Telmo,sin verificar,
+19,BAR VIA 71,Viamonte 1771,San Nicolas,1,1,,R12 Centro / Microcentro,alta 03/08/2026,
+20,BOCA A BOCA BAR,Av. Benito Perez Galdos 207,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,alta 03/08/2026 · direccion 201 vs 207,
+21,BOSTON CITY,Florida 165 local 3,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+22,CABILDO DE BUENOS AIRES,Peru 86,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+23,CAFE CORTAZAR,Jose Antonio Cabrera 3797,Palermo,14,14,,R01 Palermo,alta 03/08/2026,
+24,CAFE DE GARCIA,Sanabria 3302,Villa Devoto,11,11,,R15 Devoto,sin verificar,CORRECCION DE DIRECCION: yo lo tenia en 'Av. Beiro'. Es Sanabria 3302.
+25,CAFE DE LA U,Av. Triunvirato 4801,Villa Urquiza,12,12,,R17 Villa Urquiza,sin verificar,"ESTA SOBRE AV. TRIUNVIRATO, que es exactamente el eje por el que R17 esta definida. Refuerza la delimitacion nominal de la decision 9."
+26,CAFE DE LOS ANGELITOS,Av. Rivadavia 2100,Balvanera,3,3,,Z35/R13 · a depurar,verificado_abierto v3 25/05/2026,
+27,CAFE MARGOT,Av. Boedo 857,Boedo,5,5,,R14 Av. Boedo,sin verificar,
+28,CAFE RIVAS,Estados Unidos 302,San Telmo,1,1,,R03 San Telmo,alta 03/08/2026,
+29,CAFE ROMA,Olavarria 409,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,sin verificar,
+30,CAFE SAN BERNARDO,Av. Corrientes 5436,Villa Crespo,15,15,,R08 Villa Crespo,sin verificar,Av. Corrientes 5436. Es el UNICO Bar Notable de Villa Crespo y sostiene solo la via B de R08.
+31,CAFE TABAC,Av. del Libertador 2300,Recoleta,2,2,,R06 Recoleta,sin verificar,
+32,CAFE THIBON,Montevideo 723,San Nicolas,1,1,,R12 Centro / Microcentro,reabierto en 2024 con nueva gestion,
+33,CAFE TORTONI,Av. de Mayo 825,Monserrat,1,1,,Z47 Monserrat + Congreso,verificado_abierto v3 26/05/2026,
+34,CELTA BAR,Sarmiento 1702,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+35,CLARIDGE'S BAR,Tucuman 535,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+36,CLASICA Y MODERNA,Av. Callao 892,San Nicolas,1,1,"BARRIO INCORRECTO: Av. Callao 892 es Recoleta, no San Nicolas",R12 Centro / Microcentro,reabierto en diciembre de 2023 tras cuatro anos cerrada,"ERROR DEL CATALOGO: Av. Callao 892 es RECOLETA, no San Nicolas."
+37,CONFITERIA LA IDEAL,Suipacha 384,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+38,CONFITERIA EL GRECO,Av. Rivadavia 5353,Caballito,6,6,,R10 Caballito,alta 03/08/2026,
+39,CONFITERIA SAINT MORITZ,Esmeralda 894,Retiro,1,1,,Z46 Retiro (absorbe R18),probablemente_abierto v4 04/02/2026,
+40,DON JUAN BAR,Camarones 2702,Villa Santa Rita,11,11,,Z27 Villa Santa Rita,verificado_abierto v2 07/08/2026,
+41,EL BANDERIN,Guardia Vieja 3601,Almagro,5,5,,Z37 Almagro,verificado_abierto v3 16/06/2026,
+42,EL BOLICHE DE ROBERTO,Bulnes 331,Almagro,5,5,,Z37 Almagro,verificado_abierto v2 07/08/2026,
+43,EL BUZON,Esqui 1393,Nueva Pompeya,4,4,,Z40 Nueva Pompeya y Parque Patricios,verificado_abierto v2 07/08/2026 · EN RETRACCION (lun-vie 7 a 16),
+44,EL COLECCIONISTA,Av. Rivadavia 4929,Caballito,6,6,,R10 Caballito,sin verificar,"CORRECCION MIA: yo lo tenia como un bar EXTINGUIDO del casco historico de Flores. Es un Bar Notable VIVO de Caballito, Av. Rivadavia 4929. Debe haber dos locales con el mismo nombre."
+45,EL ESTANO 1880,Aristobulo del Valle 1100,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,sin verificar,
+46,EL FARO,Av. de los Constituyentes 4099,Parque Chas,15,15,,Z34 Parque Chas (NO ENTRA),probablemente_abierto v5 17/06/2026,
+47,EL FEDERAL,Carlos Calvo 595,San Telmo,1,1,,R03 San Telmo,verificado_abierto v3 21/07/2026,
+48,EL GATO NEGRO,Av. Corrientes 1669,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+49,EL HIPOPOTAMO,Brasil 401,San Telmo,1,1,,R03 San Telmo,sin verificar,"Brasil 401, pegado al Britanico (399). Dos Notables en la misma esquina."
+50,EL PROGRESO,Av. Montes de Oca 1700,Barracas,4,4,,P008 Barracas / R11 Bulevar Caseros,sin verificar,"Av. Montes de Oca 1700. BARRACAS TIENE TRES NOTABLES, no uno: con La Flor de Barracas y Los Laureles."
+51,EL QUERANDI,Peru 302,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+52,EL SIMBOLO,Av. Corrientes 3787,Almagro,5,5,,Z37 Almagro,verificado_abierto v2 07/08/2026,
+53,EL TOKIO,Alvarez Jonte 3550,Villa Santa Rita,11,11,,Z27 Villa Santa Rita,verificado_abierto v2 05/08/2026,
+54,EL VIEJO BUZON,Neuquen 1100 esq. Espinosa,Caballito,6,6,,R10 Caballito,verificado_abierto v2 07/08/2026,"ES OTRO BAR, no El Buzon de Nueva Pompeya. Estan en comunas distintas: este es Caballito, el otro Comuna 4. Es ademas una de las diez sedes reales del Tango BA 2026."
+55,ESQUINA HOMERO MANZI,Av. San Juan 3601,Almagro,5,5,,Z37 Almagro,EN RIESGO · condena laboral de $220 millones (05/2026),"EL CATALOGO DICE ALMAGRO. Av. San Juan 3601 esq. Av. Boedo esta al sur de Av. Independencia, que es el limite Almagro/Boedo: deberia ser BOEDO. VERIFICAR CON USIG — si es Boedo, Almagro baja a cinco Notables y Boedo sube a tres."
+56,FLORIDA GARDEN,Florida 899,Retiro,1,1,,Z46 Retiro (absorbe R18),verificado_abierto v2 07/08/2026,
+57,HOTEL SAVOY / BAR IMPERIO,Callao 181,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+58,JOSEPHINA'S CAFE,Guido 1532,Recoleta,1,2,"COMUNA INCONSISTENTE: dice 1, Recoleta es Comuna 2",R06 Recoleta,alta 03/08/2026,"ERROR DEL CATALOGO: Recoleta es Comuna 2, no Comuna 1."
+59,LA ACADEMIA,Montevideo 341,San Nicolas,5,1,"COMUNA INCONSISTENTE: dice 5, San Nicolas es Comuna 1",R12 Centro / Microcentro,reabierto en Montevideo 341 el 19/06/2025 (se mudo de Callao 368),"ERROR DEL CATALOGO: San Nicolas es Comuna 1, no Comuna 5. Y la direccion es la NUEVA: se mudo de Callao 368 a Montevideo 341 en junio de 2025."
+60,LA BIELA,Av. Quintana 600,Recoleta,2,2,,R06 Recoleta,sin verificar,
+61,LA BUENA MEDIDA,Suarez 101,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,CERRADO desde octubre de 2025,
+62,LA ESCUELA,Manuela Pedraza 2803,Nunez,13,13,,Z41 Nunez,alta 03/08/2026,
+63,LA FARMACIA,Av. Directorio 2400,Flores,7,7,,Z23 Flores casco historico,verificado_abierto v2 07/08/2026,
+64,LA FLOR DE BARRACAS,Suarez 2095,Barracas,4,4,,P008 Barracas / R11 Bulevar Caseros,sin verificar,Suarez 2095. Tercer Notable de Barracas.
+65,LA GIRALDA,Av. Corrientes 1453,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+66,LA OPERA,Av. Corrientes 1799,San Nicolas,1,1,,R12 Centro / Microcentro,alta 03/08/2026,
+67,LA ORQUIDEA,Av. Corrientes 4101,Almagro,5,5,,Z37 Almagro,probablemente_abierto v5 07/08/2026,
+68,LA PERLA,Av. Don Pedro de Mendoza 1899,La Boca,4,4,,S_LABOCA · SIN ZONA CONSOLIDADA,verificado_abierto v3b 20/05/2026,
+69,LA POESIA,Chile 502,San Telmo,1,1,,R03 San Telmo,sin verificar,
+70,LA PUERTO RICO,Alsina 420,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+71,LAS VIOLETAS,Av. Rivadavia 3899,Almagro,5,5,,Z37 Almagro,verificado_abierto v3 07/07/2026,
+72,LE CARAVELLE,Lavalle 726,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+73,LONDON CITY,Av. de Mayo 599,Monserrat,1,1,,Z47 Monserrat + Congreso,sin verificar,
+74,LOS 36 BILLARES,Av. de Mayo 1265/71,Monserrat,1,1,,Z47 Monserrat + Congreso,verificado_abierto v3 04/07/2026,
+75,LOS GALGOS,Av. Callao 501,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+76,LOS LAURELES,Av. Iriarte 2290,Barracas,4,4,,P008 Barracas / R11 Bulevar Caseros,"verificado_abierto v2 07/08/2026 · reabrio con nuevos duenos, inmueble EN VENTA",
+77,MAR AZUL,Tucuman 1700,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+78,MIRAMAR,Sarandi 1190,San Cristobal,3,3,,Z48 San Cristobal (PENDIENTE),verificado abierto 07/07/2026 · DOBLE REGISTRO: Bar Notable Y Restaurante Iconico,"UN HITO CON DOS REGISTROS, no dos hitos."
+79,MONTECARLO BAR Y DESPENSA,Paraguay 5491,Palermo,14,14,,R01 Palermo,sin verificar,HALLAZGO: TERCER Bar Notable de Palermo que no teniamos. Paraguay 5491.
+80,MUSEO FOTOGRAFICO SIMIK,Av. Federico Lacroze 3901,Chacarita,15,15,,R09 Chacarita,"ex Cafe Palacio, renombrado en el consolidado",
+81,OCHO ESQUINAS,Av. Forest 1186,Chacarita,15,15,,R09 Chacarita,sin verificar,"Av. Forest 1186, EN EL CORREDOR CHACAGIALES. Refuerza el solapamiento R09/Z43."
+82,PAULIN,Sarmiento 635,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+83,PETIT COLON,Libertad 505,San Nicolas,1,1,,R12 Centro / Microcentro,sin verificar,
+84,PLAZA BAR,Florida 1005,Retiro,1,1,,Z46 Retiro (absorbe R18),CERRADO desde el 29/04/2017 · reapertura anunciada 2028,
+85,PLAZA CAFE,Av. Rivadavia 4732,Caballito,6,6,,R10 Caballito,alta 03/08/2026,
+86,ROMA DEL ABASTO,Anchorena 806,Balvanera,5,3,"COMUNA INCONSISTENTE: dice 5, Balvanera es Comuna 3",Z35/R13 · a depurar,sin verificar,"ERROR DEL CATALOGO: Balvanera es Comuna 3, no Comuna 5. El repo lo encontro fusionado con Cafe Roma y con una direccion inventada ('San Luis 3101') que era MIA."
+87,STYLO CAFE,Fernandez de Enciso 3934,Villa Devoto,11,11,,R15 Devoto,sin verificar,
+88,THE NEW BRIGHTON,Sarmiento 645,San Nicolas,1,1,,R12 Centro / Microcentro,CERRADO · quiebra 18/03/2026,
+89,VARELA VARELITA,Av. Scalabrini Ortiz 2102,Palermo,14,14,,R01 Palermo,verificado_abierto v3 25/06/2026,
+90,WATSON'S,Vuelta de Obligado 2072,Belgrano,13,13,,R05 Belgrano,verificado_abierto v3 05/07/2026,

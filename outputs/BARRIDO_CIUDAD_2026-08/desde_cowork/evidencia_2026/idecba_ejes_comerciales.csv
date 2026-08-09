@@ -1,0 +1,49 @@
+zona_idecba,eje,tramos,esta_en_el_atlas
+Centro,Av. Belgrano,Av. Belgrano 1801-2799,NO — candidato a evaluar con las seis vias
+Centro,Corrientes y Callao,Av. Corrientes 1101-1799,NO — candidato a evaluar con las seis vias
+Centro,Corrientes y Pueyrredón,Av. Corrientes 2101-2899,NO — candidato a evaluar con las seis vias
+Centro,Córdoba Facultad,Av. Córdoba 2201-2699,NO — candidato a evaluar con las seis vias
+Centro,Córdoba Tribunales,Av. Córdoba 1301-1899,NO — candidato a evaluar con las seis vias
+Centro,Entre Ríos,Av. Entre Ríos 201-1199,NO — candidato a evaluar con las seis vias
+Centro,Florida,Florida 1-999,SI — R12 / Plaza Bar
+Centro,Lavalle,Corrientes 501-999 · Lavalle 501-999 · Esmeralda 401-599,NO — candidato a evaluar con las seis vias
+Centro,Libertad,Libertad 1-499,NO — candidato a evaluar con las seis vias
+Centro,Monserrat,Av. Belgrano 1101-1799,SI — Z47
+Centro,Once,Av. Rivadavia 2101-3199 · Pueyrredón 1-599,SI — enclave judio y zona
+Centro,Puerto Madero,A. M. De Justo 101-2099,SI — referencia publicada
+Centro,Santa Fe y Callao,Av. Santa Fe 1101-2499,NO — candidato a evaluar con las seis vias
+Norte,Cabildo,Av. Cabildo 1501-3799,SI — entorno R20 / Belgrano
+Norte,Chacarita,Lacroze 3501-4199,"SI — R09, fusionado en Chacagiales"
+Norte,Colegiales,Av. Cabildo 501-899 · Lacroze 2301-2899,"SI — Z43, sin perimetro propio"
+Norte,Córdoba y Scalabrini Ortiz,Av. Córdoba 4301-4999,NO — candidato a evaluar con las seis vias
+Norte,Palermo Soho,El Salvador 4601-4799 · Honduras 4701-4999 · Serrano / Borges 1501-1799 · Gurruchaga 1601-1899 · Armenia 1501-1799 · Malabia 1601-1799,SI — subzona
+Norte,Recoleta,Av. Alvear 1801-1999 · Junín 1701-1799 · Ortiz 1801-1899 · Quintana 401-599 · Vicente López 2001-2199,SI — referencia publicada
+Norte,Santa Fe y Coronel Díaz,Av. Santa Fe 2501-3299,NO — candidato a evaluar con las seis vias
+Norte,Santa Fe y Scalabrini Ortiz,Av. Santa Fe 3301-3699 · Scalabrini Ortiz 2301-2599,NO — candidato a evaluar con las seis vias
+Norte,Triunvirato,Av. Triunvirato 3601-4699 · Monroe 4801-5399,NO — candidato a evaluar con las seis vias
+Oeste,Almagro,Av. Rivadavia 3401-4099,"SI — Z37, abre las seis vias"
+Oeste,Av. San Martín,Av. San Martín 1801-2799,parcial — R21
+Oeste,Avellaneda,Avellaneda 2701-3799 · Bogotá 2901-3499 · Aranguren 2901-3499,NO — candidato a evaluar con las seis vias
+Oeste,Caballito,Acoyte 1-199 · Av. Rivadavia 4401-5499 · José Maria Moreno 1-99,SI
+Oeste,Corrientes y Medrano,Av. Corrientes 3601-4799,NO — candidato a evaluar con las seis vias
+Oeste,Corrientes y Scalabrini Ortiz,Av. Corrientes 5201-5699 · Scalabrini Ortiz 201-799,NO — candidato a evaluar con las seis vias
+Oeste,Cuenca,Av. Cuenca 2701-3499,NO — candidato a evaluar con las seis vias
+Oeste,Devoto,Lope de Vega 2801-3499 · Francisco Beiró 5201-5499,parcial
+Oeste,Flores,Av. Rivadavia 6201-7399 · Av. Nazca 1-499,SI — Z23 casco historico
+Oeste,Liniers,Ramón Falcón 6801-7299,SI — E07 Mercado Andino
+Oeste,Monte Castro,Álvarez Jonte 4501-5399,parcial — El Fortin
+Oeste,Villa Crespo,Aguirre 701-899 · Gurruchaga 701-999 · Loyola 601-799,SI
+Oeste,Warnes,Dorrego 1-299 · Warnes 701-1599,SI — entorno de R21
+Sur,Alberdi,Alberdi 3601-4099,NO — candidato a evaluar con las seis vias
+Sur,Av. Patricios,Av. Reg. de los Patricios 301-999,NO — candidato a evaluar con las seis vias
+Sur,Boedo,Av. Boedo 701-1099 · Av. San Juan 3501-3699 · Independencia 3501-3699,SI
+Sur,Chilavert,Chilavert 6101-6999 · Guaminí 4801-4999,NO — candidato a evaluar con las seis vias
+Sur,Constitución,Brasil 1101-1299 · Lima 1601-1799 · Salta 1601-1799,parcial
+Sur,Defensa,Defensa 801-1499,SI — R03 San Telmo
+Sur,Flores Sur,Varela 1101-1399,"SI — Bajo Flores, enclave coreano"
+Sur,Mataderos,Av. Alberdi 5501-6299,SI
+Sur,Montes de Oca,Montes de Oca 501-1199,"SI — P008 Barracas, corredor 280-1702"
+Sur,Parque Avellaneda,Av. Alberdi 4301-4899,parcial
+Sur,Parque Patricios,Av. Caseros 2601-2999 · La Rioja 1901-2199,parcial
+Sur,Riestra,Murguiondo 4001-4399 · Riestra 5501-5799,NO — candidato a evaluar con las seis vias
+Sur,Sáenz,Sáenz 801-1399,"SI — Av. Saenz, capa de memoria (La Blanqueada)"

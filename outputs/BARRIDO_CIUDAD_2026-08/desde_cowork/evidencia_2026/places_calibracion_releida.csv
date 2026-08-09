@@ -1,0 +1,6 @@
+establecimiento,direccion,estado_real,fecha_cierre,dias_al_2026_08_08,places,lectura,nota
+Plaza Bar,Florida 1005,cerrado,2017-04,3285,CLOSED_PERMANENTLY,acierta,Edificio cerrado y en obra. Direccion vacante. Reapertura anunciada para 2028. Unico CLOSED del set.
+La Buena Medida,"Suarez 101, La Boca",cerrado,2025-10 (difundido 02-03/12/2025),280,OPERATIONAL,FALLA,"VERIFICADO POR MI EL 08/08/2026: resena mas reciente de Tripadvisor 23/06/2025, nada posterior al cierre, ficha sin horarios. El cierre se sostiene. Places falla a 280 dias."
+The New Brighton,Sarmiento 645,ABIERTO EN QUIEBRA — CORREGIDO,"NO CERRO. Quiebra decretada 18/03/2026, Juzgado Nac. 1a Inst. Comercial N 3",—,OPERATIONAL,acierta (el error era nuestro),"Resena de Tripadvisor de mayo de 2026 POSTERIOR a la quiebra que describe servicio real con piano en vivo. Segunda resena 06/06/2026 (63 dias). Ficha .com y .com.ar sin marca de cierre, horarios lu-vi 8 a 24. NINGUNA de las siete coberturas de la quiebra afirma que dejo de atender. PASA A en_riesgo."
+El Tokio,—,"abierto (cerro 2023, reabrio 2025)",—,—,OPERATIONAL,acierta,Test de reapertura: Places NO arrastra cierres viejos.
+Los Laureles,Av. Iriarte 2290,abierto (cerro y reabrio 2026),—,—,OPERATIONAL,acierta,Test de reapertura. Cambio de manos con alquiler puente; el inmueble sigue en venta.

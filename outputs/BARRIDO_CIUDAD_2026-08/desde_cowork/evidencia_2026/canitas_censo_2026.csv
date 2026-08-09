@@ -1,0 +1,13 @@
+campo,valor,fuente,uso
+perimetro_nucleo,"20 manzanas · Av. Dorrego, Av. Luis Maria Campos y Av. del Libertador. Rectangulo de mayor concentracion: Arce, Arevalo, Ortega y Gasset y Baez.","Info Gastronomica, 20/02/2022",PERIMETRO DEL POLO
+perimetro_envolvente,"53 manzanas · Av. del Libertador, Av. Luis Maria Campos, Av. Dorrego y Virrey Loreto","La Nacion, 10/02/2026 (mod. 11/03/2026), Candela Contreras",ENVOLVENTE COMERCIAL DECLARADA — el nucleo cae adentro
+espacios_comerciales,mas de 950,La Nacion 10/02/2026,censo de zona
+locales_activos_con_rubro,856,La Nacion 10/02/2026,censo de zona
+vacancia,7 % · 65 locales,La Nacion 10/02/2026,ESTADO DE LA ZONA — baja para un eje comercial porteno
+cafes,46 · +15 % interanual · seis aperturas nuevas,La Nacion 10/02/2026,LA ZONA CRECE EN EL RUBRO NUEVO
+restaurantes,51,La Nacion 10/02/2026,censo de zona
+permanencia,192 negocios en el mismo local desde al menos 2009 — el 22 % de los activos,La Nacion 10/02/2026,"MEDIDA DE ARRAIGO A ESCALA DE ZONA — el Atlas no tiene ninguna. Mide arraigo, no distincion, y por eso alcanza barrios sin bares notables."
+distribucion_por_calle,"Soldado de la Independencia 14 % · Luis Maria Campos 13 % · Migueletes 9 % · Arce, Matienzo y Baez 7 % cada una",La Nacion 10/02/2026,BAEZ YA NO ES LA CALLE PRINCIPAL: esta cuarta y empatada. Explica por que una nota de 2022 que miraba Baez veia una zona vaciandose.
+aperturas_recientes,Muro Sushi (Av. del Libertador 4524) · Ninina (Av. Luis Maria Campos 901) · Candy Moon (Tte. B. Matienzo 1698) · Spring (Baez 260) · Joaquin Vasco (Av. F. Lacroze 1835) · Nicky Cheese Bake House (Migueletes 688) · Mon Poulet (Av. F. Lacroze 1724) · Runfla (Baez 315) · San Guchero (Arevalo 2915) · Surrey Hills (Arevalo 2877),"La Nacion, 13/04/2026",ONCE ALTAS CON DIRECCION. Dos sobre Baez: 260 y 315. CRUZAR CONTRA LA CAPA ANTES DE CARGAR (R9).
+ALERTA_conteo,"Nuestra base: 361 locales. La Nacion sobre un area MAYOR: 97 gastronomicos (46 cafes + 51 restaurantes). Razon ~3,7.",cruce,"PRIMER CONTEO DE TERCERO CON PERIMETRO Y FECHA SOBRE UNA ZONA QUE MEDIMOS. Probablemente taxonomias distintas: La Nacion separa panaderias, heladerias, rotiserias; nosotros unimos. HAY QUE CRUZARLO RUBRO POR RUBRO SOBRE EL MISMO PERIMETRO."
+zona_contigua,"La Imprenta, tratada como zona vecina sobre Av. del Libertador","La Nacion, 13/04/2026",NO ESTA EN NUESTRA MATRIZ. Otra frontera que la evidencia trata junta y nosotros no.

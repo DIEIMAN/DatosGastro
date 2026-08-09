@@ -1,0 +1,91 @@
+orden,establecimiento,direccion,barrio,estado,verificado_por,detalle
+1,ALMACEN Y BAR LAVALLE,Lavalle 1693,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+2,BARBARO BAR,Tres Sargentos 415,Retiro,ABIERTO,relevamiento documental,probablemente_abierto v4 12/04/2026 · CONTRADICCION DE HORARIO
+3,BAR BIDOU,Av. Roque Saenz Pena 858,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+4,BAR BRITANICO,Brasil 399,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+5,BAR CONDE,Av. Federico Lacroze 3193,Colegiales,ABIERTO,relevamiento documental,verificado abierto 29/07/2026 · desde 1902
+6,BAR DE CAO,Av. Independencia 2400,San Cristobal,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+7,BAR DEL ALVEAR PALACE HOTEL,Av. Alvear 1891,Recoleta,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+8,BAR EL COLONIAL,Av. Belgrano 599,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+9,BAR DEL GLORIAS,Andalgala 1982,Mataderos,ABIERTO,relevamiento documental,probablemente_abierto v4 06/04/2026
+10,BAR IBERIA,Av. de Mayo 1196,Monserrat,ABIERTO,relevamiento documental,probablemente_abierto v4 · reabrio junio 2024
+11,BAR 9 DE JULIO,Larrazabal 1276,Mataderos,ABIERTO,relevamiento documental,DUDOSO · ya cerro una vez en 2019 y reabrio en 2021
+12,BAR OLIMPO,Irigoyen 1491,Villa Luro,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+13,BAR OVIEDO,Av. Lisandro de la Torre 2407,Mataderos,ABIERTO,relevamiento documental,probablemente_abierto v5 22/04/2026
+14,BAR PORTUARIO,Pinzon 102,La Boca,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+15,BAR PLAZA DORREGO,Defensa 1098,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+16,BAR QUINTINO,Carlos Calvo 4002,Boedo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+17,BAR SEDDON,Defensa 695,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+18,BAR SUR,Estados Unidos 299,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+19,BAR VIA 71,Viamonte 1771,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+20,BOCA A BOCA BAR,Av. Benito Perez Galdos 207,La Boca,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+21,BOSTON CITY,Florida 165 local 3,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+22,CABILDO DE BUENOS AIRES,Peru 86,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+23,CAFE CORTAZAR,Jose Antonio Cabrera 3797,Palermo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+24,CAFE DE GARCIA,Sanabria 3302,Villa Devoto,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+25,CAFE DE LA U,Av. Triunvirato 4801,Villa Urquiza,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+26,CAFE DE LOS ANGELITOS,Av. Rivadavia 2100,Balvanera,ABIERTO,relevamiento documental,verificado_abierto v3 25/05/2026
+27,CAFE MARGOT,Av. Boedo 857,Boedo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+28,CAFE RIVAS,Estados Unidos 302,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+29,CAFE ROMA,Olavarria 409,La Boca,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+30,CAFE SAN BERNARDO,Av. Corrientes 5436,Villa Crespo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+31,CAFE TABAC,Av. del Libertador 2300,Recoleta,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+32,CAFE THIBON,Montevideo 723,San Nicolas,ABIERTO,relevamiento documental,reabierto en 2024 con nueva gestion
+33,CAFE TORTONI,Av. de Mayo 825,Monserrat,ABIERTO,relevamiento documental,verificado_abierto v3 26/05/2026
+34,CELTA BAR,Sarmiento 1702,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+35,CLARIDGE'S BAR,Tucuman 535,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+36,CLASICA Y MODERNA,Av. Callao 892,San Nicolas,ABIERTO,relevamiento documental,reabierto en diciembre de 2023 tras cuatro anos cerrada
+37,CONFITERIA LA IDEAL,Suipacha 384,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+38,CONFITERIA EL GRECO,Av. Rivadavia 5353,Caballito,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+39,CONFITERIA SAINT MORITZ,Esmeralda 894,Retiro,ABIERTO,relevamiento documental,probablemente_abierto v4 04/02/2026
+40,DON JUAN BAR,Camarones 2702,Villa Santa Rita,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+41,EL BANDERIN,Guardia Vieja 3601,Almagro,ABIERTO,relevamiento documental,verificado_abierto v3 16/06/2026
+42,EL BOLICHE DE ROBERTO,Bulnes 331,Almagro,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+43,EL BUZON,Esqui 1393,Nueva Pompeya,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026 · EN RETRACCION (lun-vie 7 a 16)
+44,EL COLECCIONISTA,Av. Rivadavia 4929,Caballito,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+45,EL ESTANO 1880,Aristobulo del Valle 1100,La Boca,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+46,EL FARO,Av. de los Constituyentes 4099,Parque Chas,ABIERTO,relevamiento documental,probablemente_abierto v5 17/06/2026
+47,EL FEDERAL,Carlos Calvo 595,San Telmo,ABIERTO,relevamiento documental,verificado_abierto v3 21/07/2026
+48,EL GATO NEGRO,Av. Corrientes 1669,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+49,EL HIPOPOTAMO,Brasil 401,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+50,EL PROGRESO,Av. Montes de Oca 1700,Barracas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+51,EL QUERANDI,Peru 302,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+52,EL SIMBOLO,Av. Corrientes 3787,Almagro,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+53,EL TOKIO,Alvarez Jonte 3550,Villa Santa Rita,ABIERTO,relevamiento documental,verificado_abierto v2 05/08/2026
+54,EL VIEJO BUZON,Neuquen 1100 esq. Espinosa,Caballito,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+55,ESQUINA HOMERO MANZI,Av. San Juan 3601,Almagro,EN RIESGO,auditoria del catalogo,Sin cierre consumado al 08/08/2026. Condena laboral de 220 millones.
+56,FLORIDA GARDEN,Florida 899,Retiro,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+57,HOTEL SAVOY / BAR IMPERIO,Callao 181,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+58,JOSEPHINA'S CAFE,Guido 1532,Recoleta,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+59,LA ACADEMIA,Montevideo 341,San Nicolas,ABIERTO,relevamiento documental,reabierto en Montevideo 341 el 19/06/2025 (se mudo de Callao 368)
+60,LA BIELA,Av. Quintana 600,Recoleta,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+61,LA BUENA MEDIDA,Suarez 101,La Boca,CERRADO,auditoria del catalogo,octubre de 2025. Alquiler no renovado. Verificado 08/08/2026: nada posterior a junio de 2025.
+62,LA ESCUELA,Manuela Pedraza 2803,Nunez,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+63,LA FARMACIA,Av. Directorio 2400,Flores,ABIERTO,relevamiento documental,verificado_abierto v2 07/08/2026
+64,LA FLOR DE BARRACAS,Suarez 2095,Barracas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+65,LA GIRALDA,Av. Corrientes 1453,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+66,LA OPERA,Av. Corrientes 1799,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+67,LA ORQUIDEA,Av. Corrientes 4101,Almagro,ABIERTO,relevamiento documental,probablemente_abierto v5 07/08/2026
+68,LA PERLA,Av. Don Pedro de Mendoza 1899,La Boca,ABIERTO,relevamiento documental,verificado_abierto v3b 20/05/2026
+69,LA POESIA,Chile 502,San Telmo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+70,LA PUERTO RICO,Alsina 420,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+71,LAS VIOLETAS,Av. Rivadavia 3899,Almagro,ABIERTO,relevamiento documental,verificado_abierto v3 07/07/2026
+72,LE CARAVELLE,Lavalle 726,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+73,LONDON CITY,Av. de Mayo 599,Monserrat,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+74,LOS 36 BILLARES,Av. de Mayo 1265/71,Monserrat,ABIERTO,relevamiento documental,verificado_abierto v3 04/07/2026
+75,LOS GALGOS,Av. Callao 501,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+76,LOS LAURELES,Av. Iriarte 2290,Barracas,ABIERTO,relevamiento documental,"verificado_abierto v2 07/08/2026 · reabrio con nuevos duenos, inmueble EN VENTA"
+77,MAR AZUL,Tucuman 1700,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+78,MIRAMAR,Sarandi 1190,San Cristobal,ABIERTO,relevamiento documental,verificado abierto 07/07/2026 · DOBLE REGISTRO: Bar Notable Y Restaurante Iconico
+79,MONTECARLO BAR Y DESPENSA,Paraguay 5491,Palermo,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+80,MUSEO FOTOGRAFICO SIMIK,Av. Federico Lacroze 3901,Chacarita,ABIERTO,relevamiento documental,"ex Cafe Palacio, renombrado en el consolidado"
+81,OCHO ESQUINAS,Av. Forest 1186,Chacarita,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+82,PAULIN,Sarmiento 635,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+83,PETIT COLON,Libertad 505,San Nicolas,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+84,PLAZA BAR,Florida 1005,Retiro,CERRADO,auditoria del catalogo,abril de 2017 — nueve anos. Edificio cerrado y en obra; reapertura anunciada para 2028.
+85,PLAZA CAFE,Av. Rivadavia 4732,Caballito,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+86,ROMA DEL ABASTO,Anchorena 806,Balvanera,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+87,STYLO CAFE,Fernandez de Enciso 3934,Villa Devoto,ABIERTO,"Diego (DGDGAS), 08/08/2026",Verificacion humana directa: redes sociales y Google Maps.
+88,THE NEW BRIGHTON,Sarmiento 645,San Nicolas,ABIERTO EN QUIEBRA,auditoria del catalogo,"Quiebra decretada 18/03/2026, Juzgado Nac. Comercial N 3. SIGUE ATENDIENDO: resena de mayo de 2026 posterior a la quiebra."
+89,VARELA VARELITA,Av. Scalabrini Ortiz 2102,Palermo,ABIERTO,relevamiento documental,verificado_abierto v3 25/06/2026
+90,WATSON'S,Vuelta de Obligado 2072,Belgrano,ABIERTO,relevamiento documental,verificado_abierto v3 05/07/2026
