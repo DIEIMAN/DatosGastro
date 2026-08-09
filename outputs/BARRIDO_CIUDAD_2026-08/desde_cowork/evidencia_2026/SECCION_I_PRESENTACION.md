@@ -19,8 +19,9 @@ colectivo o una feria.
 | | |
 |---|---|
 | **23.981 locales** relevados en toda la Ciudad | por siete fuentes unidas y depuradas |
-| **42 polos gastronómicos** | en catorce de las quince comunas |
-| **124 concentraciones detectadas** | de las que salen los 42, y que se publican enteras en el Anexo B |
+| **41 polos gastronómicos admitidos** | en catorce de las quince comunas, **bajo un único criterio** |
+| **55 zonas evaluadas** | las 41 admitidas más 14 que se midieron y no alcanzaron el criterio, publicadas con su motivo |
+| **124 concentraciones detectadas** | de las que salen los polos, y que se publican enteras en el Anexo B |
 | **12.688 locales en 3.128 hectáreas** | el **53 %** de la gastronomía relevada en el **15 %** de la superficie de la Ciudad |
 | **90 de 90 bares notables verificados** | 88 operando, con fecha y fuente uno por uno |
 | **15 enclaves comunitarios delimitados** | con calles, alturas y año de instalación |
@@ -28,6 +29,40 @@ colectivo o una feria.
 **Los 12.688 locales están calculados sobre la unión de los polígonos, no sobre la suma de filas de
 ninguna tabla.** Es la única cifra total que este atlas publica, y la única que se puede citar como
 tal.
+
+## El criterio, que es uno solo
+
+Un atlas que admite zonas por criterios distintos no es un atlas: es una lista de preferencias. Este
+usa **una sola regla, y la aplica igual a las zonas que ya estaban publicadas en la versión anterior
+y a las que aparecieron en el barrido de 2026.**
+
+> **Una zona entra si abre al menos dos de las seis vías de acceso, si esas vías se apoyan en al
+> menos dos orígenes independientes, y si su evidencia cae dentro de un objeto delimitable.**
+
+Las seis vías —densidad, trayectoria, centralidades, comunidades, reconocimiento externo y
+corredor— se explican una por una en la sección II. Lo que importa acá es que **son alternativas, no
+requisitos**: una zona puede entrar sin un solo bar histórico si tiene densidad y forma, y puede
+entrar sin densidad si tiene trayectoria y reconocimiento.
+
+**El umbral está calibrado y no elegido.** Con una sola vía entrarían zonas sostenidas por un único
+bar. Con tres, quedarían fuera el Microcentro y San Telmo, que son las dos zonas gastronómicas más
+evidentes de la Ciudad. **Un umbral que expulsa al Microcentro está midiendo el instrumento y no el
+territorio**, y ése es el error que este trabajo se propuso no cometer.
+
+**Haber estado publicado antes no da derecho de admisión: da derecho de permanencia.** Ninguna zona
+se da de baja. La que no alcanza el criterio **cambia de categoría dentro de este mismo documento,
+con su motivo y su fecha**:
+
+| categoría | qué significa |
+|---|---|
+| **polo admitido** | cumple las tres condiciones · 41 zonas |
+| **referencia en observación** | estaba en la versión anterior de este atlas y hoy no cumple. Se publica igual, con lo que sí tiene y con lo que le falta · 1 zona |
+| **zona en estudio** | fue medida y no cumple por una razón que evidencia nueva puede revertir · 4 zonas |
+| **zona evaluada sin admisión** | fue barrida, medida y no cumple · 9 zonas |
+
+**Aplicado sin excepciones, el criterio movió cuatro zonas de su lugar anterior** — dos que estaban
+adentro salieron, dos que estaban pendientes entraron. Un criterio que no mueve nada es un criterio
+que no se aplicó.
 
 ## Tres cosas que muestra el mapa
 
@@ -41,6 +76,12 @@ marginales: varias superan los cien.
 > ninguna tiene trayectoria reconocida, reconocimiento externo ni una centralidad que la organice.
 > **Eso mismo es el dato de política más accionable de este atlas** — hay dónde apoyarse y todavía
 > nada que lo respalde.
+>
+> **Y la prueba de que el criterio no está hecho a medida es que hace caer también a los propios.**
+> Villa Lugano no entra porque abre cero vías. Villa Pueyrredón, que sí estaba publicada en la
+> versión anterior de este atlas, abre una sola: **por el criterio, tampoco entra**, y por eso figura
+> como referencia en observación. **La diferencia entre las dos no es de evidencia: es que una ya
+> estaba publicada.** Este documento lo dice en lugar de dejarlo implícito.
 
 **Dos · casi la mitad de la gastronomía porteña no está en ninguna concentración.** El **47 %** está
 distribuido: una esquina acá, tres cuadras allá, un local por cuadra sobre una avenida. **Un atlas
@@ -87,8 +128,8 @@ atlas que no se puede auditar es una opinión con mapas.
 | **IV** | cómo se pasó de puntos en un mapa a zonas con borde |
 | **V** | los referentes de la Ciudad, y cómo se verifica que sigan abiertos |
 | **VI** | las comunidades y el territorio: quince enclaves delimitados |
-| **VII** | **el cuerpo: los 42 polos, uno por uno, ordenados por comuna** |
-| **VIII** | lo que se midió y no alcanzó el criterio |
+| **VII** | **el cuerpo: los 41 polos admitidos, uno por uno, ordenados por comuna**, y las referencias en observación |
+| **VIII** | las 14 zonas que se midieron y no alcanzaron el criterio, vía por vía |
 | **IX** | qué cosas este atlas no puede decir |
 | **Anexo A** | nota metodológica, con remisión a la edición técnica |
 | **Anexo B** | las 124 concentraciones detectadas, con nombre y perímetro |
@@ -111,7 +152,7 @@ tiene otro lector.
 
 **Qué cambió y por qué.** La versión anterior de esta sección describía el documento como **124
 fichas ordenadas por comuna en la sección V**. Ese era el proyecto del 6 de agosto. **El documento
-que se publica tiene otro cuerpo: 42 polos en la sección VII**, y las 124 concentraciones pasan al
+que se publica tiene otro cuerpo: los polos admitidos en la sección VII**, y las 124 concentraciones pasan al
 Anexo B. La tabla de «cómo leer» de la versión anterior remitía a secciones que ya no contienen lo
 que anunciaba.
 
