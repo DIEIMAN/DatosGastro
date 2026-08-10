@@ -1,0 +1,19 @@
+polo_id,nombre,contenedor,contenedor_nombre,ha_del_contenedor,n_concentraciones,concentraciones,locales_en_concentraciones,ha_en_concentraciones,pct_del_barrio_concentrado,criterio
+Z47,Monserrat y Congreso,Z47,Monserrat + Congreso (fusiona Z36),219.97,4,P094 P100 P108 P111,466,52.03,23.7,concentración con más del 50 % de su superficie dentro del contenedor
+Z37,Almagro,Z37,Almagro,405.26,4,P062 P082 P083 P084,455,118.04,29.1,concentración con más del 50 % de su superficie dentro del contenedor
+Z35,Balvanera · Once,Z35,Balvanera · Once,434.43,4,P055 P093 P101+P099 P107,425,83.51,19.2,concentración con más del 50 % de su superficie dentro del contenedor
+Z32,Liniers · Mercado Andino,Z32,Liniers,437.61,2,P017 P021,370,147.66,33.7,concentración con más del 50 % de su superficie dentro del contenedor
+Z40,Nueva Pompeya y Parque Patricios,Z40,Nueva Pompeya y Parque Patricios,870.07,3,P019 P024 P027,333,172.04,19.8,concentración con más del 50 % de su superficie dentro del contenedor
+Z54,Nueva Pompeya · eje Av. Saenz,Z40,Nueva Pompeya y Parque Patricios,870.07,3,P019 P024 P027,333,172.04,19.8,concentración con más del 50 % de su superficie dentro del contenedor
+Z46,Retiro,Z46,Retiro (absorbe R18),466.6,2,P115 P118,201,18.21,3.9,concentración con más del 50 % de su superficie dentro del contenedor
+Z33,Mataderos,Z33,Mataderos,740.11,3,P006 P012 P013,180,71.77,9.7,concentración con más del 50 % de su superficie dentro del contenedor
+Z52,La Boca · Almirante Brown y Necochea,S_LABOCA,La Boca,504.0,2,P032 P033,157,37.56,7.5,concentración con más del 50 % de su superficie dentro del contenedor
+Z53,La Boca · Caminito y Vuelta de Rocha,S_LABOCA,La Boca,504.0,2,P032 P033,157,37.56,7.5,concentración con más del 50 % de su superficie dentro del contenedor
+Z44,Villa Ortuzar,Z44,Villa Ortúzar,185.46,1,P045,147,63.36,34.2,concentración con más del 50 % de su superficie dentro del contenedor
+Z50,Barracas · Av. Montes de Oca,S_BARRACAS,Barracas,795.89,2,P008 P066,114,41.54,5.2,concentración con más del 50 % de su superficie dentro del contenedor
+Z51,"Barracas · Iriarte, California y Vieytes",S_BARRACAS,Barracas,795.89,2,P008 P066,114,41.54,5.2,concentración con más del 50 % de su superficie dentro del contenedor
+Z31,Villa Luro,Z31,Villa Luro,256.8,1,P020,94,25.1,9.8,concentración con más del 50 % de su superficie dentro del contenedor
+Z41,Nunez,Z41,Núñez,449.86,2,P067 P072-1,92,12.43,2.8,concentración con más del 50 % de su superficie dentro del contenedor
+Z28,Monte Castro,Z28,Monte Castro,262.85,2,P025-1 P025-2,89,15.08,5.7,concentración con más del 50 % de su superficie dentro del contenedor
+Z27,Villa Santa Rita,Z27,Villa Santa Rita,215.46,1,P040,54,10.46,4.9,concentración con más del 50 % de su superficie dentro del contenedor
+Z39,Parque Avellaneda,Z39,Parque Avellaneda,473.47,1,P009,50,24.65,5.2,concentración con más del 50 % de su superficie dentro del contenedor

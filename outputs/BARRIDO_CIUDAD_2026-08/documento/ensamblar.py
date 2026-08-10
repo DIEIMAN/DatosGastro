@@ -66,10 +66,19 @@ por_comuna={}
 for com,tit,cue in fichas: por_comuna.setdefault(numcom(com),[]).append((tit,cue))
 
 MAPAS='cartografia'
+MAG = io.open(f'{O}/MAGNITUD_DE_LOS_18.md',encoding='utf-8').read()
+MAG = MAG.split('## Lo que sí se puede medir sin inventar un perímetro',1)[1]
+MAG = MAG.split('## Qué destraba esto',1)[0].strip()
 vii=['# VII · La Ciudad, comuna por comuna','', COMO_LEER, '',
      '> **Cada comuna abre con su mapa.** El relleno sólido marca los polos con perímetro propio; '
      'el rayado, los que todavía no lo tienen y se representan con el barrio que los contiene. '
-     '**Las áreas rayadas no se pueden usar para medir superficie ni comparar tamaños.**','']
+     '**Las áreas rayadas no se pueden usar para medir superficie ni comparar tamaños.**','',
+     '## Los dieciocho que todavía no tienen perímetro, y cuánto hay adentro','',
+     'Dieciocho de los cuarenta y un polos **no tienen perímetro trazado**, y por eso sus fichas no '
+     'publican superficie ni cantidad de locales. Lo que sí se puede medir sin inventar un borde es '
+     '**la masa gastronómica concentrada dentro del barrio que los contiene** — las concentraciones '
+     'detectadas por densidad cuya superficie cae en más de la mitad adentro de ese barrio.','',
+     MAG,'']
 for c in sorted(por_comuna):
     vii.append(f'\n---\n\n## Comuna {c}\n')
     m=f'{MAPAS}/comuna_{c:02d}.png'
