@@ -11,7 +11,11 @@ def lineas(p,a,b=None):
 
 A=f'{EV}/ATLAS_V3_SECCIONES_II_V_VI_IX.md'; B=f'{DC}/ATLAS_V3_SECCIONES_I_IV_VII.md'
 S={}
+import re as _re
 S['I']  = rd(f'{H}/SECCION_I_PRESENTACION.md')
+# la nota interna de reescritura no va al documento publicado
+S['I']  = _re.sub(r'\*Reescrita el 9 de agosto de 2026\..*?\*\n', '', S['I'], flags=_re.S, count=1)
+S['I']  = _re.sub(r'\n## Nota de esta reescritura, para quien compare versiones.*$', '', S['I'], flags=_re.S)
 S['II'] = lineas(A,36,248)
 S['III']= lineas(B,179,285)
 S['IV'] = lineas(B,286,382)
@@ -170,7 +174,8 @@ Ministerio de Desarrollo Económico · Gobierno de la Ciudad de Buenos Aires
 
 ---
 """
-partes=[tapa]
+RESUMEN = rd(f'{O}/RESUMEN_EJECUTIVO.md')
+partes=[tapa, '\n\n---\n\n'+RESUMEN]
 for k in ['I','II','III','IV','V','VI','VII','VIII','IX']:
     partes.append('\n\n---\n\n'+normalizar(k,S[k]))
 for t,txt in [('Anexo A · El criterio de admisión y permanencia',ANEXO_A),

@@ -2,8 +2,8 @@
 import io, os, re, base64, markdown
 BUILD='/home/claude/out/build'
 md=io.open(f'{BUILD}/ATLAS_V3_DOCUMENTO.md',encoding='utf-8').read()
-cuerpo = md.split('# I · Presentación',1)[1]
-cuerpo = '# I · Presentación'+cuerpo
+MARCA='# Resumen ejecutivo'
+cuerpo = MARCA + md.split(MARCA,1)[1]
 
 lines=cuerpo.split('\n'); out=[]; first=True
 for ln in lines:
@@ -58,6 +58,7 @@ TAPA=f"""
 <section class="indice">
   <h2 class="pt-h">Índice</h2>
   <table class="idx">
+   <tr><td class="r">—</td><td><strong>Resumen ejecutivo</strong></td></tr>
    <tr><td class="r">I</td><td>Presentación</td></tr>
    <tr><td class="r">II</td><td>Qué es un polo gastronómico, y con qué criterio entra</td></tr>
    <tr><td class="r">III</td><td>De dónde salen los datos</td></tr>

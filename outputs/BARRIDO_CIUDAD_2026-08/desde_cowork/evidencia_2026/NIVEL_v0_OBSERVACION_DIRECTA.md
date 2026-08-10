@@ -73,9 +73,10 @@ reinspeccionable.**
 de evidencia de cierre en tres grupos independientes. **Un solo camino, y no reinspeccionable: la
 ficha lo dice.**
 
-> **Y queda anotada la tarea barata que lo cerraría del todo:** una foto fechada de la fachada, o
-> cualquier artefacto que quede archivado. **Convierte v0 en algo que otro puede mirar**, que es lo
-> único que hoy le falta.
+> **Se evaluó pedir un artefacto archivable —una foto fechada de la fachada— y Diego decidió que no
+> hace falta: se da por abierto con la observación directa.** Queda registrado que la decisión se
+> tomó, quién la tomó y qué se sabía al tomarla. **Eso es lo que hace auditable a un veredicto que
+> no es reinspeccionable: no el artefacto, sino la trazabilidad de la decisión.**
 
 ---
 

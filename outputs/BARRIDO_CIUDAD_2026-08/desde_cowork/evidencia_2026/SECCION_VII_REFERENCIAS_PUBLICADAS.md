@@ -134,7 +134,7 @@ recorrido: los dos conteos no se suman.
 
 **Lo que falta.** **Precisar el tramo del eje**, que destraba todo lo demás incluido el cruce con
 los dos ejes de arriba. **Celta Bar ya está resuelto** — y la ficha había anotado que se resolvía
-mirando sus redes: **no tiene redes.** Se resolvió mirándolo.
+mirando sus redes: **no tiene redes.** Se resolvió mirándolo, y así se publica.
 
 ---
 
