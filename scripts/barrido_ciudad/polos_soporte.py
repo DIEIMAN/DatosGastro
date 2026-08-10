@@ -55,7 +55,14 @@ BASE = BARRIDO / "base" / "local.csv"
 POLOS_V3 = BARRIDO / "borrador_polos" / "borrador_polos_v3.geojson"
 PERTENENCIA = BARRIDO / "borrador_polos" / "pertenencia_local_polo_v3.csv"
 ENVOLVENTES = ROOT / "outputs" / "polos_gastro" / "ATLAS_V2" / "capas" / "envolventes_editoriales_v2.geojson"
-BARRIOS = ROOT / "data" / "raw" / "geo_barrios.geojson"
+# La capa de barrios canónica del proyecto, adoptada el 10/08/2026. Tiene procedencia, commit y
+# sha256 verificables en `insumos/PROCEDENCIA_capas_administrativas.json`; la anterior no tenía
+# ninguno de los tres. El costo está medido y publicado en `ronda_17/impacto_capa_barrios.csv`:
+# **siete locales de 23.981 cambian de barrio y doce barrios mueven su conteo, con un neto de +1**.
+# La diferencia geométrica es la línea de ribera del Río de la Plata y no lleva locales.
+BARRIOS = BARRIDO / "insumos" / "caba_barrios.geojson"
+# La anterior queda alcanzable para reproducir cualquier número que ya haya circulado.
+BARRIOS_ANTERIOR = ROOT / "data" / "raw" / "geo_barrios.geojson"
 CALLEJERO = (ROOT / "outputs" / "polos_gastro" / "FASE5-29" / "fase15_mapas_callejeros_v3" /
              "assets" / "callejero_gcba_2026_06_02.geojson")
 MATRIZ = ROOT / "outputs" / "polos_gastro" / "matriz_validacion_polos_gastro.csv"
@@ -166,10 +173,51 @@ def polos_borrador() -> gpd.GeoDataFrame:
     return gpd.read_file(POLOS_V3).to_crs(CRS_METRICO)
 
 
-def barrios() -> gpd.GeoDataFrame:
-    capa = gpd.read_file(BARRIOS)[["nombre", "geometry"]].to_crs(CRS_METRICO)
-    capa["clave"] = capa.nombre.map(sin_tildes)
-    return capa
+def barrios(anterior: bool = False) -> gpd.GeoDataFrame:
+    """Los 48 barrios, con la geometría de la capa oficial y los nombres de siempre.
+
+    LA GEOMETRÍA CAMBIA Y EL NOMBRE NO, Y ESO ES DELIBERADO
+    --------------------------------------------------------
+    La capa oficial escribe **«BOCA»** donde este proyecto escribe **«La Boca»**, y **«NUÑEZ»**
+    donde escribe «Nuñez». Los llamadores de esta función buscan por `clave`, que es
+    `sin_tildes(nombre)`: con los nombres de la capa oficial, `sin_tildes("La Boca")` daría
+    «LA BOCA» y no encontraría nada. **Y no fallaría**: `capa_barrios[capa_barrios.clave == ...]`
+    devuelve un DataFrame vacío y `geometry.get(clave)` devuelve None. Un barrio entero
+    desaparecería de una medición sin que nada avisara.
+
+    Por eso `nombre` y `clave` conservan la grafía histórica del proyecto y la geometría es la
+    oficial. Quien necesite el nombre tal como lo escribe la fuente lo tiene en `nombre_oficial`.
+
+    El emparejamiento no es una lista escrita a mano: son los 48 pares que
+    `ronda_17/nombres_de_barrio.py` resuelve por clave normalizada, verificados en
+    `ronda_17/test_capa_de_barrios.py`. El único par que la normalización simple no salva es
+    «La Boca» / «BOCA», y lo resuelve la regla del artículo inicial.
+
+    `anterior=True` devuelve la capa que se usaba antes, para reproducir un número ya publicado.
+    """
+    if anterior:
+        capa = gpd.read_file(BARRIOS_ANTERIOR)[["nombre", "geometry"]].to_crs(CRS_METRICO)
+        capa["clave"] = capa.nombre.map(sin_tildes)
+        capa["nombre_oficial"] = capa.nombre
+        return capa
+
+    sys.path.insert(0, str(BARRIDO / "ronda_17"))
+    from nombres_de_barrio import clave as _clave_barrio
+
+    oficial = gpd.read_file(BARRIOS).rename(columns={"BARRIO": "nombre_oficial"})
+    oficial = oficial[["nombre_oficial", "geometry"]].to_crs(CRS_METRICO)
+    historica = gpd.read_file(BARRIOS_ANTERIOR)[["nombre"]]
+    por_clave = {_clave_barrio(n): n for n in historica.nombre}
+
+    faltan = [n for n in oficial.nombre_oficial if _clave_barrio(n) not in por_clave]
+    if faltan:
+        raise SystemExit(
+            f"la capa oficial trae barrios que la grafía histórica no tiene: {faltan}. "
+            f"No se sigue con un nombre inventado ni con un barrio de menos.")
+
+    oficial["nombre"] = oficial.nombre_oficial.map(lambda n: por_clave[_clave_barrio(n)])
+    oficial["clave"] = oficial.nombre.map(sin_tildes)
+    return oficial[["nombre", "clave", "nombre_oficial", "geometry"]]
 
 
 # --------------------------------------------------------------------------- enclaves

@@ -1,0 +1,259 @@
+{
+  "generado": "2026-08-10",
+  "que_es": "La única fuente de cada cifra del atlas. Si un documento dice otra cosa, manda esto. Se regenera con cifras_canonicas.py y se controla con verificar_cifras.py.",
+  "universo": "anillo == 'nucleo' AND apto_geometria == True: 23,981 de 27,727 registros de la base",
+  "crs_de_medicion": "EPSG:5347",
+  "cifras": {
+    "locales_relevados": {
+      "valor": 23981,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/base/local.csv",
+      "como_se_calcula": "filas de local.csv con anillo == 'nucleo' y apto_geometria == True; el universo con el que se construyeron las concentraciones",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) locales gastronómicos relevados",
+        "(?P<valor>[\\d.]+) locales\\*\\* relevados en toda la Ciudad",
+        "\\*\\*(?P<valor>[\\d.]+)\\*\\* \\| locales gastronómicos relevados",
+        "(?P<valor>[\\d.]+) registros de los [\\d.]+"
+      ],
+      "nota": "sobre 27,727 filas totales de la base"
+    },
+    "polos": {
+      "valor": 41,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "filas con categoria_por_criterio == 'polo admitido'",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\*\\*(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos admitidos",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos admitidos en (?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?) comunas",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos gastronómicos admitidos"
+      ],
+      "nota": ""
+    },
+    "fichas": {
+      "valor": 41,
+      "unidad": "fichas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_16_codex/geometria/soportes_41.geojson",
+      "como_se_calcula": "una ficha por polo admitido; coincide con la cantidad de soportes geométricos",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>\\d+) fichas en prosa",
+        "(?P<valor>\\d+) fichas agrupadas",
+        "[Dd]os de las (?P<valor>\\d+) fichas"
+      ],
+      "nota": ""
+    },
+    "objetos_disjuntos": {
+      "valor": 40,
+      "unidad": "objetos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_17/total_recalculado.json",
+      "como_se_calcula": "fichas cuya geometría NO queda contenida en la de otra, medido por superficie perdida contra la unión de todas las demás",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "objetos territoriales disjuntos[^.]{0,40}?son \\*\\*(?P<valor>\\d+)\\*\\*"
+      ],
+      "nota": "el documento dice 39 porque cuenta a Baek-ku como subzona de Parque Avellaneda; medido, Baek-ku queda 100 % fuera de los otros cuarenta y el más cercano está a 1.274 m. La única ficha realmente contenida en otra es el eje Sáenz dentro de Nueva Pompeya"
+    },
+    "zonas_evaluadas": {
+      "valor": 55,
+      "unidad": "zonas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "filas del archivo de criterio: todo lo que se midió, entrara o no",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "[Ss]e evaluaron \\*\\*(?P<valor>\\d+) zonas",
+        "sobre las (?P<valor>\\d+) unidades evaluadas"
+      ],
+      "nota": ""
+    },
+    "agrupamientos_detectados": {
+      "valor": 124,
+      "unidad": "concentraciones",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "polígonos de la capa de concentraciones detectadas por densidad",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) concentraciones detectadas",
+        "[Ll]as (?P<valor>[\\d.]+) concentraciones de las que salieron",
+        "[Ll]as (?P<valor>[\\d.]+) son disjuntas",
+        "hay (?P<valor>[\\d.]+) concentraciones y \\d+ polos admitidos"
+      ],
+      "nota": ""
+    },
+    "locales_en_polos": {
+      "valor": 12688,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v3.csv",
+      "como_se_calcula": "locales con polo_final asignado por el agrupamiento. NO es un conteo de punto dentro de polígono",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "su unión da \\*\\*(?P<valor>[\\d.]+) locales en",
+        "suman exactamente \\*\\*(?P<valor>[\\d.]+) locales en",
+        "calculada sobre la unión: \\*\\*(?P<valor>[\\d.]+) locales en",
+        "\\*\\*(?P<valor>[\\d.]+)\\*\\* \\| locales en los polos",
+        "de su superficie\\*\\* — (?P<valor>[\\d.]+)\\s*\\n?locales en",
+        "\\| \\*\\*(?P<valor>[\\d.]+) locales en [\\d.,]+ hectáreas\\*\\* \\| el \\*\\*\\d+ ?%"
+      ],
+      "nota": "contando por punto dentro de la unión de los polígonos da 12.520, o sea 168 menos. La diferencia es real y no es un error: un local puede pertenecer al agrupamiento y caer fuera de la envolvente simplificada. Las dos cifras miden cosas distintas y el texto tiene que decir cuál usa"
+    },
+    "locales_en_polos_por_geometria": {
+      "valor": 12520,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "locales del universo que caen dentro de la unión de las concentraciones",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) locales por geometría",
+        "contando por punto[^.]{0,60}?da (?P<valor>[\\d.]+)"
+      ],
+      "nota": ""
+    },
+    "ha_en_polos": {
+      "valor": 3143.53,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "área de la unión de las concentraciones, medida en EPSG:5347. Las 124 son disjuntas, así que la unión y la suma coinciden",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "su unión da \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hect",
+        "suman exactamente \\*\\*[\\d.]+ locales en\\s*\\n?(?P<valor>[\\d.,]+) hect",
+        "calculada sobre la unión: \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hect",
+        "de su superficie\\*\\* — [\\d.]+\\s*\\n?locales en (?P<valor>[\\d.,]+) hect",
+        "\\| \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hectáreas\\*\\* \\| el \\*\\*\\d+ ?%",
+        "área de la \\*\\*unión\\*\\* \\| \\*\\*(?P<valor>[\\d.,]+) ha\\*\\*",
+        "suma de las áreas individuales \\| \\*\\*(?P<valor>[\\d.,]+) ha\\*\\*"
+      ],
+      "nota": "el documento publica 3.128,5 ha, medidas el 07/08/2026 sobre una versión anterior de la capa. La capa de hoy da 3.143,53: son 15,03 ha más"
+    },
+    "pct_locales_en_polos": {
+      "valor": 53,
+      "unidad": "por ciento",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "derivada",
+      "como_se_calcula": "locales_en_polos / locales_relevados, redondeado al entero",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "[Ee]l \\*\\*(?P<valor>\\d+) ?%\\*\\* de la gastronomía relevada"
+      ],
+      "nota": ""
+    },
+    "pct_superficie": {
+      "valor": 15,
+      "unidad": "por ciento",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "derivada",
+      "como_se_calcula": "ha_en_polos / superficie de la Ciudad según la capa oficial de 48 barrios (20,375 ha), redondeado al entero",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "en el \\*\\*(?P<valor>\\d+) ?%\\*\\* de su superficie",
+        "en el \\*\\*(?P<valor>\\d+) ?%\\*\\* de la superficie de la Ciudad"
+      ],
+      "nota": ""
+    },
+    "bares_notables": {
+      "valor": 90,
+      "unidad": "bares",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv",
+      "como_se_calcula": "entradas del catálogo consolidado firmado el 03/08/2026",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\d+ de (?P<valor>\\d+) bares notables",
+        "(?P<valor>\\d+) de \\d+ bares notables"
+      ],
+      "nota": ""
+    },
+    "bares_notables_abiertos": {
+      "valor": 88,
+      "unidad": "bares",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv",
+      "como_se_calcula": "entradas cuyo estado no es CERRADO: incluye 1 en riesgo y 1 abierto en quiebra",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>\\d+) operando"
+      ],
+      "nota": "el desglose es ABIERTO 86 · CERRADO 2 · EN RIESGO 1 · ABIERTO EN QUIEBRA 1"
+    },
+    "enclaves_comunitarios": {
+      "valor": 15,
+      "unidad": "enclaves",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/enclaves_comunitarios_delimitados.csv",
+      "como_se_calcula": "enclaves con delimitación escrita en calles y alturas",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves comunitarios delimitados",
+        "\\*\\*(?P<valor>\\d+)\\*\\* \\| enclaves comunitarios",
+        "los (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves delimitados son",
+        "territorio: (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves delimitados",
+        "delimita \\*\\*(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves comunitarios"
+      ],
+      "nota": ""
+    },
+    "polos_sin_borde": {
+      "valor": 4,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_17/perimetros_cierre.csv",
+      "como_se_calcula": "polos cuya geometría sigue siendo el polígono administrativo de un barrio, después del cierre geométrico",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de los cuarenta y un polos",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de los 41 polos[^.]{0,30}?perímetro",
+        "[Ll]os (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) sin perímetro trazado"
+      ],
+      "nota": "eran 18 antes de esta corrida; siguen sin borde propio Z27, Z33, Z41, Z46"
+    },
+    "locales_en_barrios_sin_borde": {
+      "valor": 527,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "como_se_calcula": "locales en concentraciones dentro de los barrios que contienen a los polos que siguen sin borde, deduplicando los barrios que contienen dos polos",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "el conjunto son \\*\\*(?P<valor>[\\d.]+) locales en",
+        "— (?P<valor>[\\d.]+)\\s*\\n?locales en [\\d.,]+ hectáreas para el conjunto"
+      ],
+      "nota": "con los 18 de antes eran 3,227 locales"
+    },
+    "ha_en_barrios_sin_borde": {
+      "valor": 112.9,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "como_se_calcula": "superficie concentrada en esos mismos barrios, deduplicada",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "el conjunto son \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hect",
+        "locales en (?P<valor>[\\d.,]+) hectáreas para el conjunto"
+      ],
+      "nota": "con los 18 de antes eran 893.4 ha; el documento publica 893,5 y la suma da 893,4 -diferencia de redondeo-"
+    },
+    "comunas_con_polo": {
+      "valor": 14,
+      "unidad": "comunas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "comunas distintas entre las comunas principales de los polos admitidos",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "admitidos en (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) comunas",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) comunas tienen al menos un polo",
+        "en (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de las quince comunas"
+      ],
+      "nota": "son las comunas [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]; la 8 sigue sin ninguno"
+    }
+  }
+}

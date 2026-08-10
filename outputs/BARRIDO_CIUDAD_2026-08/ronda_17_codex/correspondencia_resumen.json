@@ -1,0 +1,18 @@
+{
+  "concentraciones": 124,
+  "polos": 41,
+  "cruces_materiales": 143,
+  "cruces_publicables": 95,
+  "cruces_esperando_borde": 48,
+  "concentraciones_sin_cruce_material": 29,
+  "umbral_interseccion_m2": 0.01,
+  "contactos_excluidos_por_umbral": 0,
+  "detalle_exclusiones": "contactos_excluidos_umbral.csv",
+  "tope_de_filas": null,
+  "geometria_soportes": "C:\\proyectos\\Gastronomia\\DataGastro\\outputs\\BARRIDO_CIUDAD_2026-08\\ronda_16_codex\\geometria\\soportes_41.geojson",
+  "sha256_insumos": {
+    "C:\\proyectos\\Gastronomia\\DataGastro\\outputs\\BARRIDO_CIUDAD_2026-08\\borrador_polos\\polos_publicables.geojson": "4724aea487b36ef2c823d81f875b52f7666e4b84cd978f96e0720e6f0a3d2416",
+    "C:\\proyectos\\Gastronomia\\DataGastro\\outputs\\BARRIDO_CIUDAD_2026-08\\desde_cowork\\POLOS_NOMBRADOS.csv": "8cd5aaeedc8919966fd81df0e2228152f42290958f65ce0400f50153aafbafe7",
+    "C:\\proyectos\\Gastronomia\\DataGastro\\outputs\\BARRIDO_CIUDAD_2026-08\\ronda_16_codex\\geometria\\soportes_41.geojson": "5de6584ac9b7e2a2a3f50a7584b9090222d145c854ab42a7e391a4d97bc7615a"
+  }
+}

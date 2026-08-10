@@ -1,0 +1,42 @@
+﻿polo_id,polo_nombre,soporte_id,soporte_es_real,estado_soporte,fuente_geometria,superficie_soporte_m2,locales_ERR10_en_soporte,estado_publicacion
+R01,Palermo,R01+P091+P078+P065,True,REAL_SISTEMA_PUBLICADO,"geometria_r7/zonas_r7.geojson#R01 + borrador_polos/polos_publicables.geojson#P091,P078,P065",3855092.0341,1916,PUBLICABLE
+R02,Avenida Corrientes,R02,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R02,496728.0407,354,PUBLICABLE
+R03,San Telmo,R03,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R03,253683.1163,71,PUBLICABLE
+R04,Puerto Madero,R04,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R04,3145411.6199,354,PUBLICABLE
+R05,Belgrano,R05,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R05,396472.641,343,PUBLICABLE
+R06,Recoleta,R06,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R06,1405170.9038,714,PUBLICABLE
+R07,Costanera Norte,R07,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R07,385048.0512,67,PUBLICABLE
+R08,Villa Crespo,R08,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R08,3354577.7039,823,PUBLICABLE
+R09,Chacarita,R09,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R09,948108.532,202,PUBLICABLE
+R10,Caballito,R10,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R10,2253614.9559,508,PUBLICABLE
+R11,Boulevard Caseros,R11,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R11,500285.8016,60,PUBLICABLE
+R12,Centro y Microcentro,R12,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R12,1841166.0714,1084,PUBLICABLE
+R13,Abasto,R13,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R13,1090027.4886,373,PUBLICABLE
+R14,Avenida Boedo,R14,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R14,1794603.7926,245,PUBLICABLE
+R15,Devoto,R15,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R15,4787401.8397,422,PUBLICABLE
+R16,Donado-Holmberg,R16,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R16,1189977.7103,121,PUBLICABLE
+R17,Villa Urquiza,R17,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R17,4466238.0978,528,PUBLICABLE
+R19,Federico Lacroze,R19,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R19,3032830.6752,532,PUBLICABLE
+R20,Garcia del Rio,R20,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R20,610027.9937,102,PUBLICABLE
+R21,La Paternal,R21,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#R21,3853388.4058,307,PUBLICABLE
+Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,Z24,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#Z24,395122.3802,107,PUBLICABLE
+Z27,Villa Santa Rita,Z27,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#Z27,2154579.1388,182,PENDIENTE_DE_PERIMETRO
+Z28,Monte Castro,Z28,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z28,287297.4688,69,PUBLICABLE
+Z31,Villa Luro,Z31,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z31,137000.0722,41,PUBLICABLE
+Z32,Liniers · Mercado Andino,Z32,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z32,69983.3644,63,PUBLICABLE
+Z33,Mataderos,Z33,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#Z33,7401138.1314,375,PENDIENTE_DE_PERIMETRO
+Z35,Balvanera · Once,Z35,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#Z35,4344292.8134,1253,PENDIENTE_DE_PERIMETRO
+Z37,Almagro,Z37,False,PROVISORIO_R15_PARCIAL,geometria_r7/zonas_r7.geojson#Z37,4052581.4325,868,PENDIENTE_DE_PERIMETRO
+Z39,Parque Avellaneda,Z39,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#Z39,4734677.9636,173,PENDIENTE_DE_PERIMETRO
+Z39b,Baek-ku · Barrio Coreano,Z39b,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#Z39b,348613.4114,38,PUBLICABLE
+Z40,Nueva Pompeya y Parque Patricios,Z40,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#Z40,8700695.4444,546,PENDIENTE_DE_PERIMETRO
+Z41,Nunez,Z41,False,PROVISORIO_R15_PARCIAL,geometria_r7/zonas_r7.geojson#Z41,4498573.1913,494,PENDIENTE_DE_PERIMETRO
+Z43,Colegiales,Z43,True,REAL_PREVIO_NO_INCLUIDO_EN_R15,geometria_r7/zonas_r7.geojson#Z43,2290766.469,441,PUBLICABLE
+Z44,Villa Ortuzar,Z44,False,PROVISORIO_R15_PARCIAL,geometria_r7/zonas_r7.geojson#Z44,1854585.591,201,PENDIENTE_DE_PERIMETRO
+Z46,Retiro,Z46,False,PROVISORIO_R15_PARCIAL,geometria_r7/zonas_r7.geojson#Z46,4666034.0744,715,PENDIENTE_DE_PERIMETRO
+Z47,Monserrat y Congreso,Z47,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z47,137744.2373,133,PUBLICABLE
+Z50,Barracas · Av. Montes de Oca,Z50,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z50,506179.4217,84,PUBLICABLE
+Z51,"Barracas · Iriarte, California y Vieytes",Z51,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z51,58289.4095,12,PUBLICABLE
+Z52,La Boca · Almirante Brown y Necochea,Z52,True,REAL_R15_CERRADO,ronda_15/geometria/perimetros_18.geojson#Z52,61375.7276,3,PUBLICABLE
+Z53,La Boca · Caminito y Vuelta de Rocha,S_LABOCA,False,PROVISORIO_R15_NO,geometria_r7/zonas_r7.geojson#S_LABOCA,5039963.2303,295,PENDIENTE_DE_PERIMETRO
+Z54,Nueva Pompeya · eje Av. Saenz,P024,True,REAL_CONCENTRACION_MEDIDA,borrador_polos/polos_publicables.geojson#P024,504234.5331,95,PUBLICABLE

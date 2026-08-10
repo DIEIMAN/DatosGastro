@@ -1,0 +1,137 @@
+==================================================================================================
+ESTABLECIMIENTOS CON RECONOCIMIENTO FUERA DE TODO BORDE · con la geometría de ahora
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+capa de reconocimiento: 215 establecimientos con punto
+geometría vigente: 41 bordes
+
+puntos repetidos en la capa: 20 filas comparten coordenada con otra
+    H031       Café Roma                    Olavarria 409                  = H032
+    H032       Café Roma                    San Luis 3101                  = H031
+    H149       Don Julio                    Guatemala 4699                 = MIC-023, H160
+    H150       Nino Gordo                   Thames 1810                    = MIC-034
+    H151       El Preferido de Palermo      Jorge Luis Borges 2108         = MIC-038
+    H153       Aramburu                     Vicente Lopez 1661             = MIC-045, MIC-049
+    H154       Trescha                      Murillo 725                    = MIC-002
+    H156       Julia                        Loyola 807                     = MIC-016
+    H157       Ness                         Grecia 3691                    = MIC-040
+    H158       Mishiguene                   Lafinur 3368                   = MIC-037
+    H160       Don Julio                    Guatemala 4699                 = MIC-023, H149
+    MIC-002    Trescha                      Murillo 725                    = H154
+    MIC-016    Julia                        Loyola 807                     = H156
+    MIC-023    Don Julio                    Guatemala 4699                 = H149, H160
+    MIC-034    Niño Gordo                   Thames 1810                    = H150
+    MIC-037    Mishiguene                   Lafinur 3368                   = H158
+    MIC-038    El Preferido de Palermo      Jorge Luis Borges 2108         = H151
+    MIC-040    Ness                         Grecia 3691                    = H157
+    MIC-045    Aramburu                     Vicente López 1661             = MIC-049, H153
+    MIC-049    Bis Bistró                   Vicente López 1661 Local 12    = MIC-045, H153
+
+fuera de todo borde (más de 3 m de los 41): 80
+en contacto de borde (entre 0 y 3 m): 2
+
+==================================================================================================
+LOS QUE QUEDAN A 250 M O MENOS DE UN BORDE · 45, por distancia
+==================================================================================================
+  establecimiento                  tipo                   polo más cercano                m  qué haría falta
+  Hipopotamo                       Bar Notable            Boulevard Caseros             7.2  haría falta una calle que el perímetro escrito no nombra
+  José El Carnicero                MICHELIN               Palermo                       7.2  haría falta una calle que el perímetro escrito no nombra
+  8 Esquinas                       Bar Notable            Villa Ortuzar                 8.4  haría falta una calle que el perímetro escrito no nombra
+  La Estancia, Asador Criollo      Restaurante Icónico    Avenida Corrientes            9.3  haría falta una calle que el perímetro escrito no nombra
+  Restó SCA                        MICHELIN               Recoleta                      9.8  haría falta una calle que el perímetro escrito no nombra
+  Casa Burgio                      Pizzería emblemática   Belgrano                     12.9  haría falta una calle que el perímetro escrito no nombra
+  Bar Plaza Dorrego                Bar Notable            San Telmo                    27.2  extender sobre una calle que el perímetro escrito ya nombr
+  El Tropezón                      Restaurante Icónico    Avenida Corrientes           36.4  extender sobre una calle que el perímetro escrito ya nombr
+  Café Montecarlo                  Bar Notable            Palermo                      41.6  haría falta una calle que el perímetro escrito no nombra
+  El Mirasol de Boedo              Restaurante Icónico    Almagro                      48.7  haría falta una calle que el perímetro escrito no nombra
+  Caseros                          MICHELIN               Boulevard Caseros            54.1  extender sobre una calle que el perímetro escrito ya nombr
+  Banchero                         Pizzería emblemática   La Boca · Almirante Brow     54.1  extender sobre una calle que el perímetro escrito ya nombr
+  Casa Watson                      Bar Notable            Belgrano                     58.6  haría falta una calle que el perímetro escrito no nombra
+  12 de octubre                    Bar Notable            Abasto                       58.6  haría falta una calle que el perímetro escrito no nombra
+  Duhau Restaurante & Vinoteca     MICHELIN               Retiro                       61.8  extender sobre una calle que el perímetro escrito ya nombr
+  Mar Azul                         Bar Notable            Avenida Corrientes           62.0  haría falta una calle que el perímetro escrito no nombra, 
+  La Esquina de Anibal Troilo      Bar Notable            Recoleta                     62.8  haría falta una calle que el perímetro escrito no nombra, 
+  Mercado de San Telmo             Mercado/patio          San Telmo                    64.2  extender sobre una calle que el perímetro escrito ya nombr
+  Gioia Cocina Botánica            MICHELIN               Retiro                       66.2  haría falta una calle que el perímetro escrito no nombra
+  El Colonial                      Bar Notable            Centro y Microcentro         71.3  haría falta una calle que el perímetro escrito no nombra, 
+  Sottovoce                        MICHELIN               Recoleta                     71.8  haría falta una calle que el perímetro escrito no nombra, 
+  Varela Varelita                  Bar Notable            Palermo                      82.4  haría falta una calle que el perímetro escrito no nombra
+  República del Fuego              MICHELIN               Recoleta                     85.1  haría falta una calle que el perímetro escrito no nombra
+  Chuí                             MICHELIN               Villa Crespo                 92.4  extender sobre una calle que el perímetro escrito ya nombr
+  Boston City                      Bar Notable            Centro y Microcentro         94.9  haría falta una calle que el perímetro escrito no nombra
+  4ta Pared                        MICHELIN               Devoto                       97.7  haría falta una calle que el perímetro escrito no nombra
+  La Brigada                       Restaurante Icónico    San Telmo                    99.8  haría falta una calle que el perímetro escrito no nombra, 
+  La Buena Medida                  Bar Notable            La Boca · Almirante Brow    106.5  extender sobre una calle que el perímetro escrito ya nombr
+  Bar Quintino                     Bar Notable            Avenida Boedo               110.0  haría falta una calle que el perímetro escrito no nombra
+  Café Roma                        Bar Notable            La Boca · Almirante Brow    110.9  extender sobre una calle que el perímetro escrito ya nombr
+  Café Roma                        Bar Notable            La Boca · Almirante Brow    110.9  haría falta una calle que el perímetro escrito no nombra, 
+  Cafe Rivas                       Bar Notable            Puerto Madero               122.4  haría falta una calle que el perímetro escrito no nombra
+  Bar Imperio                      Bar Notable            Avenida Corrientes          124.8  extender sobre una calle que el perímetro escrito ya nombr
+  El Ciervo                        Heladería histórica    Liniers · Mercado Andino    128.9  haría falta una calle que el perímetro escrito no nombra, 
+  Bar Sur                          Bar Notable            Puerto Madero               129.2  haría falta una calle que el perímetro escrito no nombra
+  Cafe Thibon                      Bar Notable            Centro y Microcentro        136.5  haría falta una calle que el perímetro escrito no nombra
+  El Trebol 1969                   Pizzería emblemática   Villa Crespo                175.2  haría falta una calle que el perímetro escrito no nombra
+  La Americana                     Pizzería emblemática   Centro y Microcentro        186.6  haría falta una calle que el perímetro escrito no nombra, 
+  El Coleccionista                 Bar Notable            Caballito                   192.4  haría falta una calle que el perímetro escrito no nombra
+  Clásica y moderna                Bar Notable            Recoleta                    193.4  haría falta una calle que el perímetro escrito no nombra
+  Bar Via 71                       Bar Notable            Avenida Corrientes          204.7  haría falta una calle que el perímetro escrito no nombra, 
+  Pirilo                           Pizzería emblemática   San Telmo                   223.4  extender sobre una calle que el perímetro escrito ya nombr
+  El Portuario                     Bar Notable            La Boca · Almirante Brow    225.2  haría falta una calle que el perímetro escrito no nombra, 
+  Corte Comedor                    MICHELIN               Belgrano                    233.8  extender sobre una calle que el perímetro escrito ya nombr
+  Bar Seddon                       Bar Notable            Puerto Madero               238.0  haría falta una calle que el perímetro escrito no nombra, 
+
+  de los 45:
+    la calle de su puerta ya está en el perímetro escrito y toca el borde :  12
+    el perímetro la nombra pero la calle no llega al borde                :   0
+    haría falta una calle que el perímetro escrito no nombra              :  33
+    la dirección no resuelve contra el callejero                          :   0
+
+  los que se resolverían sobre una calle que el texto ya nombra:
+      Bar Plaza Dorrego                Defensa 1098                   R03 a  27.2 m · 25.37 -> 29.40 ha · 71 -> 90 locales (1 pieza/s)
+      El Tropezón                      Av. Callao 248                 R02 a  36.4 m · 49.67 -> 52.32 ha · 354 -> 369 locales (1 pieza/s)
+      Caseros                          Avenida Caseros 486            R11 a  54.1 m · 50.03 -> 53.70 ha · 60 -> 82 locales (2 pieza/s)
+      Banchero                         Suarez 396                     Z52 a  54.1 m · 6.14 -> 8.34 ha · 3 -> 9 locales (1 pieza/s)
+      Duhau Restaurante & Vinoteca     Avenida Alvear 1661            Z46 a  61.8 m · 467.14 -> 470.67 ha · 715 -> 723 locales (1 pieza/s)
+      Mercado de San Telmo             Defensa 961                    R03 a  64.2 m · 25.37 -> 32.81 ha · 71 -> 140 locales (1 pieza/s)
+      Chuí                             Loyola 1250                    R08 a  92.4 m · 335.46 -> 344.07 ha · 823 -> 837 locales (3 pieza/s)
+      La Buena Medida                  Suarez 101                     Z52 a 106.5 m · 6.14 -> 10.17 ha · 3 -> 10 locales (1 pieza/s)
+      Café Roma                        Olavarria 409                  Z52 a 110.9 m · 6.14 -> 10.73 ha · 3 -> 13 locales (1 pieza/s)
+      Bar Imperio                      Av. Callao 181                 R02 a 124.8 m · 49.67 -> 55.72 ha · 354 -> 389 locales (1 pieza/s)
+      Pirilo                           Defensa 821                    R03 a 223.4 m · 25.37 -> 36.89 ha · 71 -> 171 locales (1 pieza/s)
+      Corte Comedor                    Avenida Olazábal 1391          R05 a 233.8 m · 39.65 -> 48.72 ha · 343 -> 369 locales (6 pieza/s)
+
+  sensibilidad al corte (el corte es una convención, no un hallazgo):
+      a 100 m:  27 a revisar ·  53 esperables de 80
+      a 250 m:  45 a revisar ·  35 esperables de 80
+      a 500 m:  58 a revisar ·  22 esperables de 80
+
+  contra la medición anterior, que se hizo con los bordes de antes:
+      antes: 60 fuera de todo polo, 41 a 250 m o menos
+      ahora: 80 fuera de todo borde, 45 a 250 m o menos
+      dejaron de estar afuera (los recoge un borde nuevo): 0
+      pasaron a estar afuera: 20
+          los contenía el soporte Z53 (La Boca · Caminito y Vuelta de Rocha), que ahora publica su borde de «última tanda de bordes»: 9
+          los contenía el soporte Z33 (Mataderos), que ahora publica su borde de «última tanda de bordes»: 3
+          los contenía el soporte Z37 (Almagro), que ahora publica su borde de «cierre geométrico»: 3
+          los contenía el soporte Z35 (Balvanera · Once), que ahora publica su borde de «última tanda de bordes»: 2
+          los contenía el soporte Z40 (Nueva Pompeya y Parque Patricios), que ahora publica su borde de «cierre geométrico»: 2
+          los contenía el soporte Z39 (Parque Avellaneda), que ahora publica su borde de «cierre geométrico»: 1
+      cambiaron de distancia: 14
+          H079 8 Esquinas                        23.9 m ->     8.4 m
+          H059 Bar Imperio                        9.0 m ->   124.8 m
+          DIR-001 La Americana                       8.9 m ->   186.6 m
+          H040 Clásica y moderna                 71.6 m ->   193.4 m
+          H017 Bar Via 71                        39.1 m ->   204.7 m
+          H021 Cafe Cortazar                    145.5 m ->   349.3 m
+          H030 Plaza Café                       219.4 m ->   453.2 m
+          DIR-022 Tino                              23.7 m ->   569.9 m
+          DIR-015 San Carlos                         8.2 m ->   645.3 m
+          DIR-024 Saverio Helados                  533.3 m ->   665.4 m
+          DIR-025 Napoli                           455.3 m -> 1,076.0 m
+          ICO-012 Miramar                          500.4 m -> 1,153.9 m
+
+Escrito: hitos_cerca_del_borde.csv (80 filas) · hitos_contacto_de_borde.csv (2 filas) · hitos_cerca_resumen.json

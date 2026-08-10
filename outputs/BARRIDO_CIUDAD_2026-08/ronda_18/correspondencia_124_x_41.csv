@@ -1,0 +1,125 @@
+concentracion_id,concentracion_nombre,ha,n_locales_medidos,n_locales_de_la_capa,polo,polo_nombre,estado,pct_de_la_concentracion_dentro_del_polo,ha_de_la_concentracion_fuera_del_polo,polos_que_toca,n_polos_que_toca,polo_es_tentativo
+P001,Costanera Norte,12.11,40,44,R07,Costanera Norte,mayormente dentro,51.3,5.9,R07,1,no
+P002,Villa Soldati · Av. Fernández de la Cruz y Mariano Acosta°,63.36,59,68,,,fuera de todo polo,0.0,63.36,,0,no
+P003,Villa Riachuelo · Av. Gral. Paz y Chilavert°,39.82,83,91,,,fuera de todo polo,0.0,39.82,,0,no
+P004,Av. Eva Perón entre Escalada y Castañares°,144.02,132,141,,,fuera de todo polo,0.0,144.02,,0,no
+P005,Av. Larrazábal y Av. Riestra (Villa Lugano),100.94,92,100,,,fuera de todo polo,0.0,100.94,,0,no
+P006,Feria de Mataderos y Casco Histórico,28.18,41,48,Z33,Mataderos,toca el borde,11.0,25.07,Z33,1,si
+P007,Bajo Belgrano,8.96,40,45,,,fuera de todo polo,0.0,8.96,,0,no
+P008,Distrito de Diseño (Barracas),23.52,38,49,Z51,"Barracas · Iriarte, California y Vieytes",toca el borde,23.8,17.92,Z51,1,no
+P009,Parque Avellaneda · Av. Directorio y Lacarra°,24.65,43,50,Z39,Parque Avellaneda,toca el borde,1.2,24.35,Z39,1,no
+P010,Vélez Sársfield · Segurola y César Díaz°,10.63,37,43,,,fuera de todo polo,0.0,10.63,,0,no
+P011,Saavedra · entorno Dot Baires°,7.08,30,41,,,fuera de todo polo,0.0,7.08,,0,no
+P012,Mataderos · Av. Juan B. Alberdi°,32.81,82,90,,,fuera de todo polo,0.0,32.81,,0,no
+P013,Mataderos · Av. Alberdi y Saladillo°,10.79,34,42,,,fuera de todo polo,0.0,10.79,,0,no
+P014,Bajo Flores · Av. Eva Perón y Varela,45.63,61,64,,,fuera de todo polo,0.0,45.63,,0,no
+P015,Parque Chacabuco · Av. Asamblea°,12.12,40,50,,,fuera de todo polo,0.0,12.12,,0,no
+P016,Plaza Arenales (Devoto gastronómico),26.72,96,105,R15,Devoto,mayormente dentro,97.4,0.69,R15,1,no
+P017,Av. Emilio Castro (Liniers y Mataderos)°,69.8,105,108,,,fuera de todo polo,0.0,69.8,,0,no
+P018-1,Villa Devoto · Av. Francisco Beiró°,14.38,55,62,R15,Devoto,contenida,100.0,0.0,R15,1,no
+P018-2,Villa Real · Av. Francisco Beiró y Lope de Vega°,11.04,63,73,R15,Devoto,mayormente dentro,53.5,5.13,R15,1,no
+P019,San Cristóbal · Av. Jujuy y Av. Brasil°,20.78,32,41,,,fuera de todo polo,0.0,20.78,,0,no
+P020,Polo gastronómico de Villa Luro,25.1,87,94,Z31,Villa Luro,toca el borde,36.5,15.95,Z31,1,no
+P021,Liniers · centro comercial y microcentro boliviano,77.86,262,262,Z32,Liniers · Mercado Andino,toca el borde,8.7,71.05,Z32,1,no
+P022,Saavedra · Av. Ricardo Balbín°,53.59,79,93,R20,Garcia del Rio,toca el borde,29.2,37.92,R20,1,no
+P023,Villa Pueyrredón · Av. Artigas°,14.49,36,42,,,fuera de todo polo,0.0,14.49,,0,no
+P024,Av. Sáenz (Nueva Pompeya),50.42,95,103,Z40,Nueva Pompeya y Parque Patricios,toca el borde,46.5,26.97,Z40 Z54,2,no
+P025-1,Monte Castro · Álvarez Jonte y Segurola°,10.19,37,42,Z28,Monte Castro,mayormente dentro,61.1,3.97,Z28,1,no
+P025-2,Monte Castro · Av. Lope de Vega°,4.89,38,47,Z28,Monte Castro,mayormente dentro,74.9,1.23,Z28,1,no
+P026,Av. Caseros · tramo Parque Patricios°,27.04,62,67,,,fuera de todo polo,0.0,27.04,,0,no
+P027,Distrito Tecnológico (Parque Patricios),100.84,181,189,Z40,Nueva Pompeya y Parque Patricios,toca el borde,28.8,71.77,Z40 R14,2,no
+P028,Villa Pueyrredón · Av. Mosconi y Av. Nazca°,12.05,52,60,,,fuera de todo polo,0.0,12.05,,0,no
+P029,Boedo · Av. Boedo y Pavón°,13.35,37,45,R14,Avenida Boedo,contenida,99.8,0.03,R14,1,no
+P030,Puerto Madero · diques 2 y 3,29.47,110,117,R04,Puerto Madero,mayormente dentro,98.1,0.55,R04,1,no
+P031,Floresta · Av. Gaona y Segurola°,7.58,33,42,,,fuera de todo polo,0.0,7.58,,0,no
+P032,Caminito y Vuelta de Rocha,20.89,98,105,Z53,La Boca · Caminito y Vuelta de Rocha,toca el borde,18.1,17.1,Z53,1,no
+P033,La Boca · Av. Almirante Brown y Necochea°,16.68,44,52,Z52,La Boca · Almirante Brown y Necochea,toca el borde,0.5,16.59,Z52,1,no
+P034,Monte Castro · Av. Álvarez Jonte°,10.66,36,40,Z27,Villa Santa Rita,toca el borde,16.5,8.9,Z27,1,no
+P035,Villa Devoto · Av. Gral. Mosconi y Av. San Martín°,9.39,34,42,R15,Devoto,mayormente dentro,51.0,4.6,R15,1,no
+P036,Av. Gaona y Boyacá°,9.86,33,41,Z27,Villa Santa Rita,toca el borde,1.6,9.7,Z27,1,no
+P037,Centro comercial de Av. Cuenca (Villa del Parque),40.81,135,142,,,fuera de todo polo,0.0,40.81,,0,no
+P038,Av. San Martín (Villa del Parque y Devoto)°,22.0,89,96,,,fuera de todo polo,0.0,22.0,,0,no
+P039,DoHo (Donado-Holmberg) · tramo norte,7.93,34,41,R16,Donado-Holmberg,contenida,100.0,0.0,R16,1,no
+P040,Villa Santa Rita · Av. Nazca y Álvarez Jonte°,10.46,45,54,Z27,Villa Santa Rita,mayormente dentro,68.9,3.25,Z27,1,no
+P041,Floresta · Av. Rivadavia y Venancio Flores°,12.73,52,60,,,fuera de todo polo,0.0,12.73,,0,no
+P042,Floresta · Av. Rivadavia y Segurola°,11.15,53,61,,,fuera de todo polo,0.0,11.15,,0,no
+P043,La Isla (La Paternal),91.57,173,161,R21,La Paternal,mayormente dentro,62.3,34.53,R21 R08,2,no
+P044,San Cristóbal · Av. San Juan°,17.01,53,62,,,fuera de todo polo,0.0,17.01,,0,no
+P045,DoHo (Donado-Holmberg) · tramo sur,63.36,158,147,R17,Villa Urquiza,toca el borde,24.3,47.98,R17 R16 Z44,3,no
+P046,Villa Urquiza · Bulevar Mendoza y Av. Triunvirato,114.66,305,291,R17,Villa Urquiza,contenida,99.8,0.18,R17 R16,2,no
+P047,Caballito · Av. Avellaneda y Neuquén°,20.49,49,53,R10,Caballito,toca el borde,26.3,15.1,R10,1,no
+P048,Colegiales · Av. Álvarez Thomas y Elcano°,50.84,172,171,Z43,Colegiales,mayormente dentro,82.5,8.92,Z43 Z44,2,no
+P049,Caballito · entorno Hospital Italiano°,7.63,34,40,R10,Caballito,toca el borde,29.6,5.37,R10,1,no
+P050,Caballito · Honorio Pueyrredón y Felipe Vallese°,5.07,34,42,,,fuera de todo polo,0.0,5.07,,0,no
+P051,Constitución°,31.7,118,123,R11,Boulevard Caseros,toca el borde,6.0,29.78,R11,1,no
+P052,Villa Santa Rita · Av. Cuenca y Morón°,36.69,134,124,Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,toca el borde,47.2,19.36,Z24 Z27,2,no
+P053,Av. La Plata y Av. Pedro Goyena°,61.31,202,196,R10,Caballito,mayormente dentro,73.6,16.21,R10,1,no
+P054,Caballito · Av. Rivadavia y Curapaligüe°,4.44,38,45,R10,Caballito,toca el borde,20.5,3.53,R10,1,no
+P055,Balvanera · Av. La Rioja e Independencia°,8.52,36,40,,,fuera de todo polo,0.0,8.52,,0,no
+P056,Caballito · Av. Rivadavia y Acoyte°,74.34,250,210,R10,Caballito,mayormente dentro,54.1,34.09,R10,1,no
+P057,Caballito · Av. La Plata y Av. Rivadavia°,26.2,97,105,,,fuera de todo polo,0.0,26.2,,0,no
+P058,Flores · Av. Carabobo y Av. Directorio°,11.39,53,46,,,fuera de todo polo,0.0,11.39,,0,no
+P059,Flores · Av. Nazca y Av. Rivadavia°,6.08,43,48,,,fuera de todo polo,0.0,6.08,,0,no
+P060,Casco Histórico de Flores,5.85,36,43,,,fuera de todo polo,0.0,5.85,,0,no
+P061,Flores · Av. Rivadavia y Varela°,6.93,44,54,,,fuera de todo polo,0.0,6.93,,0,no
+P062,San Juan y Boedo,42.85,131,129,R14,Avenida Boedo,mayormente dentro,67.9,13.77,R14,1,no
+P063,Av. Gaona y Ángel Gallardo (Caballito y Villa Crespo)°,67.54,187,182,R08,Villa Crespo,mayormente dentro,71.9,19.01,R08 R21,2,no
+P064,Palermo · Plaza Italia y Av. del Libertador°,9.12,39,45,,,fuera de todo polo,0.0,9.12,,0,no
+P065,Las Cañitas,82.04,361,361,R01,Palermo,contenida,100.0,0.0,R01 R19,2,no
+P066,Av. Montes de Oca,18.02,62,65,Z50,Barracas · Av. Montes de Oca,mayormente dentro,61.0,7.02,Z50,1,no
+P067,Bajo Núñez,7.32,41,49,Z41,Nunez,contenida,100.0,0.0,Z41,1,no
+P068,Polo gastronómico Chacarita,40.14,169,156,R19,Federico Lacroze,mayormente dentro,85.6,5.76,R19 R09 Z43 Z44,4,no
+P069,Belgrano · Echeverría y Conde°,7.59,39,42,,,fuera de todo polo,0.0,7.59,,0,no
+P070,Saavedra · Av. Cabildo y Ramallo°,5.66,44,50,Z41,Nunez,toca el borde,39.8,3.41,Z41,1,no
+P071,Colegiales · Federico Lacroze y Zapiola°,5.82,37,44,R19,Federico Lacroze,contenida,100.0,0.0,R19 Z43,2,no
+P072-1,Núñez · Av. Cabildo y Crisólogo Larralde°,5.11,38,43,Z41,Nunez,mayormente dentro,94.6,0.27,Z41 R20,2,no
+P072-2,Colegiales · Av. Cabildo y Federico Lacroze°,7.11,55,63,Z43,Colegiales,mayormente dentro,57.2,3.04,Z43 R19,2,no
+P072-3,Belgrano R,5.08,38,40,,,fuera de todo polo,0.0,5.08,,0,no
+P072-4,Belgrano C,39.05,242,212,R05,Belgrano,toca el borde,40.5,23.25,R05,1,no
+P072-5,Belgrano · Av. Cabildo y Virrey del Pino°,5.87,48,48,Z43,Colegiales,mayormente dentro,50.5,2.9,Z43 R05,2,no
+P072-6,Barrio Chino,7.74,143,146,R05,Belgrano,mayormente dentro,61.7,2.96,R05,1,no
+P072-7,Barrancas de Belgrano,3.14,59,68,R05,Belgrano,contenida,100.0,0.0,R05,1,no
+P073,Palermo Botánico,39.19,207,207,,,fuera de todo polo,0.0,39.19,,0,no
+P074,Villa Crespo · eje Av. Corrientes°,7.84,51,58,R08,Villa Crespo,contenida,100.0,0.0,R08,1,no
+P075,Chacarita · Av. Dorrego y Bonpland°,11.2,59,61,R19,Federico Lacroze,mayormente dentro,96.8,0.36,R19 R09,2,no
+P076,Palermo · Bustamante y Mario Bravo°,29.18,154,156,,,fuera de todo polo,0.0,29.18,,0,no
+P077,Polo gastronómico Villa Crespo,8.6,53,60,R08,Villa Crespo,contenida,99.0,0.08,R08,1,no
+P078,Palermo Hollywood,102.61,595,585,R01,Palermo,contenida,100.0,0.0,R01 R19 R09 R08 Z43,5,no
+P079,Villa Crespo · Estado de Israel y Ángel Gallardo°,5.69,58,66,R08,Villa Crespo,toca el borde,12.6,4.97,R08,1,no
+P080,Villa Crespo · Av. Corrientes y Scalabrini Ortiz°,3.53,34,44,R08,Villa Crespo,contenida,100.0,0.0,R08,1,no
+P081,Villa Crespo · Aguirre y Scalabrini Ortiz°,11.23,68,74,R08,Villa Crespo,contenida,100.0,0.0,R08,1,no
+P082,Abasto · Humahuaca y Guardia Vieja,42.4,171,160,R13,Abasto,mayormente dentro,87.1,5.47,R13 Z37,2,no
+P083,Almagro · Perón y Gascón°,5.67,40,47,Z37,Almagro,toca el borde,22.3,4.4,Z37,1,no
+P084,Almagro · Av. Rivadavia y Medrano°,27.12,127,119,Z37,Almagro,mayormente dentro,51.2,13.22,Z37,1,no
+P085,Balvanera · Av. Entre Ríos e Independencia°,8.77,48,53,,,fuera de todo polo,0.0,8.77,,0,no
+P086,Eje Av. Córdoba · Almagro y Palermo°,7.95,53,54,,,fuera de todo polo,0.0,7.95,,0,no
+P087,Palermo Pacífico,5.8,47,56,,,fuera de todo polo,0.0,5.8,,0,no
+P088,Palermo · Gascón y Honduras°,7.79,69,76,,,fuera de todo polo,0.0,7.79,,0,no
+P090+P089,Palermo · eje Av. Santa Fe°,18.54,108,104,R01,Palermo,mayormente dentro,68.5,5.84,R01,1,no
+P091,Palermo Soho,92.36,772,728,R01,Palermo,contenida,100.0,0.0,R01 R08,2,no
+P092,Villa Freud,11.71,79,79,,,fuera de todo polo,0.0,11.71,,0,no
+P093,Abasto,27.27,171,169,R13,Abasto,mayormente dentro,85.1,4.05,R13,1,no
+P094,Monserrat · Lima y México°,6.37,44,51,,,fuera de todo polo,0.0,6.37,,0,no
+P095,Recoleta · Av. Las Heras y Av. Callao°,8.54,55,52,R06,Recoleta,mayormente dentro,70.5,2.52,R06,1,no
+P096,La Isla (Recoleta),3.86,35,41,R06,Recoleta,contenida,100.0,0.0,R06,1,no
+P097,Recoleta · Av. Pueyrredón y Junín°,7.56,55,53,R06,Recoleta,mayormente dentro,67.8,2.44,R06,1,no
+P098,Recoleta · Plaza Francia,12.54,111,115,R06,Recoleta,mayormente dentro,92.7,0.92,R06,1,no
+P100,Avenida de Mayo · tramo Congreso,12.21,109,116,R12,Centro y Microcentro,mayormente dentro,95.8,0.51,R12 Z47,2,no
+P101+P099,Congreso,36.93,175,130,,,fuera de todo polo,0.0,36.93,,0,no
+P102,Bulevar Caseros,3.94,33,42,R11,Boulevard Caseros,toca el borde,21.3,3.1,R11 R03,2,no
+P103,San Telmo,47.46,351,342,R03,San Telmo,toca el borde,13.8,40.92,R03 R04,2,no
+P104,Alto Palermo,24.85,141,121,,,fuera de todo polo,0.0,24.85,,0,no
+P105,Barrio Norte · Agüero y Laprida°,5.28,39,48,R06,Recoleta,toca el borde,21.1,4.17,R06,1,no
+P106,Barrio Norte · Av. Pueyrredón y Av. Santa Fe,34.21,225,198,R06,Recoleta,toca el borde,30.2,23.87,R06 Z35 R13,3,no
+P107,Balvanera · Junín y Pasteur°,10.79,84,86,Z35,Balvanera · Once,toca el borde,0.7,10.72,Z35,1,no
+P108,Monserrat · Av. Belgrano y Perú°,18.56,134,129,R12,Centro y Microcentro,toca el borde,27.0,13.54,R12,1,no
+P109,Av. Callao entre Córdoba y Paraguay°,3.29,34,41,,,fuera de todo polo,0.0,3.29,,0,no
+P110,Barrio Norte · Av. Santa Fe y Av. Callao,16.3,132,112,R06,Recoleta,mayormente dentro,86.2,2.24,R06,1,no
+P111,Avenida de Mayo · tramo Plaza de Mayo,14.89,173,170,Z47,Monserrat y Congreso,mayormente dentro,56.3,6.5,Z47 R12,2,no
+P112,San Nicolás · Uruguay y Paraná°,5.63,60,66,R12,Centro y Microcentro,mayormente dentro,73.3,1.5,R12 R02 Z46,3,no
+P113,Av. Corrientes · tramo teatral,28.01,226,200,R02,Avenida Corrientes,mayormente dentro,73.9,7.32,R02 R12,2,no
+P114,Tribunales,5.22,59,64,R02,Avenida Corrientes,contenida,100.0,0.0,R02 R12,2,no
+P115,Retiro · Reconquista y San Martín°,4.27,56,65,Z46,Retiro,contenida,100.0,0.0,Z46 R12,2,no
+P116,Microcentro,19.27,199,187,R12,Centro y Microcentro,mayormente dentro,61.5,7.41,R12 R02 Z46,3,no
+P117,Microcentro · Florida y Galerías Pacífico,15.13,152,131,R12,Centro y Microcentro,mayormente dentro,89.7,1.55,R12 Z46,2,no
+P118,Retiro · Esmeralda y Paraguay°,13.94,147,136,Z46,Retiro,contenida,100.0,0.0,Z46 R12,2,no

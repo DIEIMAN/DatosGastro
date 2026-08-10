@@ -1,0 +1,99 @@
+============================================================================================
+RONDA 16 · la capa administrativa oficial y los tres poligonos «mas grandes»
+============================================================================================
+
+procedencia: https://github.com/OpenDataCordoba/barrios · commit cfb3f504496e · obtenido 2026-08-10
+  caba_barrios.geojson     sha256 VERIFICA
+  caba_comunas.geojson     sha256 VERIFICA
+
+barrios: vieja 48 · nueva 48
+  ATENCION - nombres que no cruzan: vieja ['LA BOCA'] · nueva ['BOCA']
+  Un cruce por clave los habria perdido en silencio. Se emparejan a mano abajo.
+
+============================================================================================
+LAS TRES SOSPECHOSAS · contra la capa vieja Y contra la oficial
+============================================================================================
+
+Z41 · NUNEZ   detalle_geometria: «polígono administrativo de Nunez»
+   zona menos capa VIEJA :            0 m2   ·  capa VIEJA menos zona:            0 m2
+   zona menos capa NUEVA :       74,837 m2
+   capa VIEJA menos NUEVA:       74,837 m2
+   -> EL ATLAS NO SUMO NADA: la zona es IDENTICA a la capa vieja (diferencia simetrica 0 m2). Toda la diferencia contra la oficial es entre CAPAS.
+      ese sobrante lleva 0 locales
+
+Z45 · BELGRANO   detalle_geometria: «polígono administrativo de Belgrano»
+   zona menos capa VIEJA :            0 m2   ·  capa VIEJA menos zona:            0 m2
+   zona menos capa NUEVA :       65,152 m2
+   capa VIEJA menos NUEVA:       65,152 m2
+   -> EL ATLAS NO SUMO NADA: la zona es IDENTICA a la capa vieja (diferencia simetrica 0 m2). Toda la diferencia contra la oficial es entre CAPAS.
+      ese sobrante lleva 1 locales
+
+Z46 · RETIRO   detalle_geometria: «polígono administrativo de Retiro + la subzona del clúster corea»
+   zona menos capa VIEJA :      149,485 m2   ·  capa VIEJA menos zona:            0 m2
+   zona menos capa NUEVA :      156,196 m2
+   capa VIEJA menos NUEVA:        6,710 m2
+   -> EL ATLAS SI SUMO ALGO: 1 pieza(s), la mayor de 149,485 m2 con 117 locales, en SAN NICOLAS 100 %
+
+============================================================================================
+LAS DOS CAPAS DE BARRIOS, SOBRE LOS 48 · donde difieren y si mueven locales
+============================================================================================
+
+la Ciudad entera:  vieja 20,408.31 ha  ·  oficial 20,375.17 ha
+  vieja menos oficial: 366,931 m2 con 0 locales
+  oficial menos vieja: 35,519 m2 con 1 locales
+
+barrio                   vieja ha  oficial ha   dif sim m2       %  loc v  loc o
+RECOLETA                   643.64      632.06      126,771   1.97%   1550   1550
+PALERMO                  1,592.98    1,585.41       86,452   0.54%   3320   3322
+NUNEZ                      449.86      442.64       77,472   1.72%    494    494
+BELGRANO                   806.35      800.32       70,026   0.87%   1352   1351
+PUERTO MADERO              504.57      504.38       19,220   0.38%    267    267
+LA BOCA                    504.00      503.90       12,897   0.26%    295    295
+RETIRO                     451.65      451.52       12,047   0.27%    598    597
+VILLA RIACHUELO            424.16      423.47        9,651   0.23%    111    111
+... los otros 40                             todos por debajo de 9,404 m2
+
+barrios con diferencia mayor al 0,5 %: 4 -> ['RECOLETA', 'PALERMO', 'NUNEZ', 'BELGRANO']
+barrios donde CAMBIA el conteo de locales: 12, todos por 1 o 2
+   PALERMO 3320->3322 · BELGRANO 1352->1351 · RETIRO 598->597 · VILLA URQUIZA 645->644 · CABALLITO 1203->1202 · PARQUE CHACABUCO 281->282 · SAN NICOLAS 1292->1293 · VILLA PUEYRREDON 229->230 · VELEZ SARSFIELD 177->178 · FLORESTA 282->281 · VILLA GRAL MITRE 206->207 · PATERNAL 126->125
+   neto sobre la Ciudad: +1 locales
+
+Escrito: capa_administrativa.csv (51 filas)
+============================================================================================
+RONDA 16 · que dato le falta a cada pieza que no cerro
+============================================================================================
+
+Z39 · el anillo del parque
+    la cara del parque mide 44.21 ha con 0 locales; frente sobre Av. Lacarra 911 m y sobre Av. Directorio 614 m; sobre Av. Olivera 0 m -> Av. Olivera la toca en un punto y NO la bordea
+
+Z53 · el entorno de Caminito y la Vuelta de Rocha
+    Caminito SI esta en el callejero (141 m) y toca Av. Don Pedro de Mendoza a 0 m; la avenida (7,082 m) con el limite oficial del barrio cierra 3 cara(s): el objeto del sur existe, falta la extension
+
+Z35 · la zona entera
+    TUCUMAN 2379-2755: eje 573 m -> 10 manzanas -> 15.31 ha, 51 locales | PASO 700-799: eje 243 m -> 4 manzanas -> 3.88 ha, 23 locales | union de las dos: 19.18 ha, 74 locales
+
+Z40 · Av. Caseros y el Distrito Tecnologico
+    CASEROS AV. 2601-3199: eje 952 m -> 13 manzanas -> 29.67 ha, 60 locales
+
+Z40 · Av. Saenz y el Mercado de Pompeya
+    SAENZ AV. 790-1399: eje 2,030 m -> 28 manzanas -> 39.39 ha, 52 locales
+
+Z40 · Barrio Charrua
+    Av. Bonorino y Av. Fernandez de la Cruz SE CRUZAN (0 m); con el borde del barrio la cara mayor es 493.69 ha, o sea Nueva Pompeya entera (495.41 ha). No cierra el enclave.
+
+Z41 · corredor bajo el viaducto Mitre
+    existe nunez_corredor_viaducto.geojson: «corredor bajo el viaducto Mitre (aprox. recta entre cabeceras)», buffer 150 m, 48.96 ha. El borde lo pone el buffer, no la evidencia: no cuenta como perimetro
+
+Z46 · nucleo institucional de Plaza San Martin y Florida
+    FLORIDA 800-1005: eje 330 m -> 6 manzanas -> 13.97 ha, 52 locales
+
+Z37 · nucleo de Guardia Vieja y Bulnes
+    GUARDIA VIEJA 3500-3800: eje 357 m -> 6 manzanas -> 7.60 ha, 35 locales
+
+Z44 · nucleo secundario de Plaza 25 de Agosto
+    las cuatro calles cierran 0 caras; el par mas separado es CHARLONE y BAUNESS a 784 m
+
+============================================================================================
+Escrito: que_falta_por_zona.csv · 16 piezas (10 de zonas sin trazar, 6 de zonas parciales)
+  zonas distintas: 11
+  piezas a las que les falta SOLO un tramo o rango de alturas: 9

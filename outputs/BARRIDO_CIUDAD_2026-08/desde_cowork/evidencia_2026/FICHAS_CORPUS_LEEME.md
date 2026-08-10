@@ -1,4 +1,11 @@
-# El corpus de fichas · 48 zonas, listo para ensamblar
+# El corpus de fichas · 53 zonas
+
+**Actualización ERR-17 · ronda 15 Codex.** Se incorporaron Z50–Z54 con sus identificadores,
+seis vías e hitos. Z50 quedó vinculada con P066 y con
+`ronda_14/montes_de_oca_seis_vias.csv`. El reparto de Z51 y Z54 es evidencia técnica pendiente
+de decisión de Diego; no modifica por sí solo el conteo vigente de 41 polos admitidos.
+
+La tabla histórica que sigue describe el estado del 7 de agosto, antes de ERR-17.
 
 *7 de agosto de 2026 · con las 20 decisiones aplicadas*
 

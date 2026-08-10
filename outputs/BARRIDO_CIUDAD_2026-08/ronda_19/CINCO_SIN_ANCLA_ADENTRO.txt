@@ -1,0 +1,107 @@
+==================================================================================================
+LAS CINCO PÁGINAS SIN NINGÚN ESTABLECIMIENTO CON HISTORIA ADENTRO
+qué costaría extender el borde lo mínimo necesario para contenerlos
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+las cinco páginas: 5
+    Z32 · Liniers · Mercado Andino
+    Z35 · Balvanera · Once
+    Z40 · Nueva Pompeya y Parque Patricios
+    Z52 · La Boca · Almirante Brown y Necochea
+    Z54 · Nueva Pompeya · eje Av. Saenz
+
+==================================================================================================
+Z32 · Liniers · Mercado Andino
+==================================================================================================
+  el borde de ahora: 7.00 ha · 63 locales · 1 pieza(s) (soporte previo)
+  el perímetro escrito nombra: SUAREZ, JOSE LEON, FALCON, RAMON L.,CNEL., IBARROLA, BOSCH, VENTURA
+      de donde sale: «EJE: José León Suárez entre Ramón Falcón y Ventura Bosch… Transversales: Ramón Falcón, Ibarrola y Ventura Bosch»
+  establecimientos con historia que hoy quedan afuera: 1
+
+    El Ciervo                        CARHUE                           calle nueva    a    129 m · tramo    47 m ->    8.07 ha ( +1.07) ·   70 locales (  +7)   [la calle no toca el borde: 124 m]
+
+  A · el borde de ahora                                      7.00 ha ·   63 locales · contiene 0 de 1
+  B · extendido hasta contenerlos a todos                    8.07 ha ·   70 locales · contiene 1 de 1   (1.2× la superficie)
+  C · extendido sólo por las calles que el texto nombra   no existe: ninguno de los que quedan afuera está sobre una calle que el perímetro escrito nombre
+
+==================================================================================================
+Z35 · Balvanera · Once
+==================================================================================================
+  el borde de ahora: 19.18 ha · 74 locales · 1 pieza(s) (última tanda de bordes)
+  el perímetro escrito nombra: TUCUMAN, PASO
+      de donde sale: la página no escribe perímetro —dice «en revisión»—; las calles son las de las cinco puertas del enclave que la propia página lista, que es de donde salió el borde
+  establecimientos con historia que hoy quedan afuera: 3
+
+    CAFE DE LOS ANGELITOS            RIVADAVIA AV.                    calle nueva    a    759 m · tramo   390 m ->   29.32 ha (+10.14) ·  118 locales ( +44)   [la calle no toca el borde: 706 m]
+    El Tropezón                      CALLAO AV.                       calle nueva    a    742 m · tramo   667 m ->   36.01 ha (+16.82) ·  173 locales ( +99)   [la calle no toca el borde: 646 m]
+    Roma del Abasto                  ANCHORENA, TOMAS MANUEL DE, DR   calle nueva    a    323 m · tramo   168 m ->   24.34 ha ( +5.15) ·   88 locales ( +14)   [la calle no toca el borde: 310 m]
+
+  A · el borde de ahora                                     19.18 ha ·   74 locales · contiene 0 de 3
+  B · extendido hasta contenerlos a todos                   51.30 ha ·  231 locales · contiene 3 de 3   (2.7× la superficie)
+  C · extendido sólo por las calles que el texto nombra   no existe: ninguno de los que quedan afuera está sobre una calle que el perímetro escrito nombre
+
+==================================================================================================
+Z40 · Nueva Pompeya y Parque Patricios
+==================================================================================================
+  el borde de ahora: 69.06 ha · 112 locales · 5 pieza(s) (cierre geométrico)
+  el perímetro escrito nombra: CASEROS AV., SAENZ AV.
+      de donde sale: «Av. Caseros / Distrito Tecnológico + Av. Sáenz / Mercado de Pompeya + Barrio Charrúa»
+  establecimientos con historia que hoy quedan afuera: 1
+
+    El Buzón                         ESQUIU                           calle nueva    a    256 m · tramo   557 m ->   82.79 ha (+13.73) ·  117 locales (  +5)
+
+  A · el borde de ahora                                     69.06 ha ·  112 locales · contiene 0 de 1
+  B · extendido hasta contenerlos a todos                   82.79 ha ·  117 locales · contiene 1 de 1   (1.2× la superficie)
+  C · extendido sólo por las calles que el texto nombra   no existe: ninguno de los que quedan afuera está sobre una calle que el perímetro escrito nombre
+
+==================================================================================================
+Z52 · La Boca · Almirante Brown y Necochea
+==================================================================================================
+  el borde de ahora: 6.14 ha · 3 locales · 1 pieza(s) (soporte previo)
+  el perímetro escrito nombra: NECOCHEA, SUAREZ, OLAVARRIA, BROWN, ALTE. AV.
+      de donde sale: «el tramo de la calle Necochea y sus intersecciones con la avenida Suárez y la calle Olavarría… desde la avenida Suárez y la calle Olavarría, extendiéndose hasta la avenida Almirante Brown»
+  establecimientos con historia que hoy quedan afuera: 8
+
+    El Estano 1880                   VALLE, ARISTOBULO DEL            calle nueva    a    926 m · tramo   789 m ->   20.76 ha (+14.62) ·   36 locales ( +33)   [la calle no toca el borde: 306 m]
+    Bar Boca a Boca                  PEREZ GALDOS, BENITO AV.         calle nueva    a    529 m · tramo   509 m ->   11.86 ha ( +5.72) ·   11 locales (  +8)   [la calle no toca el borde: 418 m]
+    LA PERLA                         DON PEDRO DE MENDOZA AV.         calle nueva    a    508 m · tramo   880 m ->   13.36 ha ( +7.22) ·   26 locales ( +23)   [ya está en Z53]
+    Il Matterello                    RODRIGUEZ, MARTIN                calle nueva    a    449 m · tramo   610 m ->   24.26 ha (+18.13) ·   33 locales ( +30)   [la calle no toca el borde: 223 m]
+    El Portuario                     PINZON                           calle nueva    a    225 m · tramo   341 m ->   13.67 ha ( +7.53) ·    6 locales (  +3)   [la calle no toca el borde: 204 m]
+    Café Roma                        OLAVARRIA                        YA LA NOMBRA  a    111 m · tramo   284 m ->   10.73 ha ( +4.59) ·   13 locales ( +10)
+    La Buena Medida                  SUAREZ                           YA LA NOMBRA  a    106 m · tramo   269 m ->   10.17 ha ( +4.03) ·   10 locales (  +7)
+    Banchero                         SUAREZ                           YA LA NOMBRA  a     54 m · tramo   137 m ->    8.34 ha ( +2.20) ·    9 locales (  +6)
+
+  A · el borde de ahora                                      6.14 ha ·    3 locales · contiene 0 de 8
+  B · extendido hasta contenerlos a todos                   58.81 ha ·  100 locales · contiene 8 de 8   (9.6× la superficie)
+  C · extendido sólo por las calles que el texto nombra      16.17 ha ·   21 locales · contiene 3 de 8
+  D · como B, sin ir a buscar los que ya están en otro polo    51.59 ha ·   77 locales
+
+==================================================================================================
+Z54 · Nueva Pompeya · eje Av. Saenz
+==================================================================================================
+  el borde de ahora: 39.39 ha · 52 locales · 4 pieza(s) (cierre geométrico)
+  el perímetro escrito nombra: SAENZ AV.
+      de donde sale: «Eje Av. Sáenz, con núcleo en el Mercado de Pompeya (Av. Sáenz 790)»
+  establecimientos con historia que hoy quedan afuera: 1
+
+    El Buzón                         ESQUIU                           calle nueva    a    256 m · tramo   557 m ->   53.12 ha (+13.73) ·   57 locales (  +5)
+
+  A · el borde de ahora                                     39.39 ha ·   52 locales · contiene 0 de 1
+  B · extendido hasta contenerlos a todos                   53.12 ha ·   57 locales · contiene 1 de 1   (1.3× la superficie)
+  C · extendido sólo por las calles que el texto nombra   no existe: ninguno de los que quedan afuera está sobre una calle que el perímetro escrito nombre
+
+==================================================================================================
+EL CUADRO, LAS CINCO JUNTAS
+==================================================================================================
+  página                                      ahora ha   loc   extendido ha   loc   ×sup   calles ya nombradas
+  Z32 · Liniers · Mercado Andino                  7.00    63         8.07    70   1.15     0 de 1
+  Z35 · Balvanera · Once                         19.18    74        51.30   231   2.67     0 de 3
+  Z40 · Nueva Pompeya y Parque Patricios         69.06   112        82.79   117    1.2     0 de 1
+  Z52 · La Boca · Almirante Brown y Necoch        6.14     3        58.81   100   9.58     3 de 8
+  Z54 · Nueva Pompeya · eje Av. Saenz            39.39    52        53.12    57   1.35     0 de 1
+
+Escrito: cinco_sin_ancla_adentro.csv (5 filas) · cinco_sin_ancla_detalle.csv (14 filas) · geometria/cinco_sin_ancla_versiones.geojson · cinco_sin_ancla_resumen.json

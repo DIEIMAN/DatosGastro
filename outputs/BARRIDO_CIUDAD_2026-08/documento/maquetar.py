@@ -2,7 +2,7 @@
 import io, os, re, base64, markdown
 BUILD='/home/claude/out/build'
 md=io.open(f'{BUILD}/ATLAS_V3_DOCUMENTO.md',encoding='utf-8').read()
-MARCA='# Resumen ejecutivo'
+MARCA='# Resumen'
 cuerpo = MARCA + md.split(MARCA,1)[1]
 
 lines=cuerpo.split('\n'); out=[]; first=True
@@ -40,14 +40,14 @@ TAPA=f"""
 </section>
 <div class="pb"></div>
 <section class="portadilla">
-  <h2 class="pt-h">El atlas, en seis cifras</h2>
+  <h2 class="pt-h">El atlas en seis cifras</h2>
   <table class="cifras">
    <tr><td class="n">23.981</td><td>locales gastronómicos relevados en toda la Ciudad</td></tr>
-   <tr><td class="n">41</td><td>polos admitidos, en catorce de las quince comunas</td></tr>
-   <tr><td class="n">55</td><td>zonas evaluadas con el mismo criterio, sin excepción para las ya publicadas</td></tr>
-   <tr><td class="n">12.688</td><td>locales en los polos · el 53 % de la gastronomía relevada en el 15 % de la superficie</td></tr>
-   <tr><td class="n">90 de 90</td><td>bares notables verificados uno por uno, con fecha y fuente</td></tr>
-   <tr><td class="n">15</td><td>enclaves comunitarios delimitados con calles y alturas</td></tr>
+   <tr><td class="n">41</td><td>polos gastronómicos, en catorce de las quince comunas</td></tr>
+   <tr><td class="n">55</td><td>lugares estudiados con la misma regla, sin excepción para los que ya estaban</td></tr>
+   <tr><td class="n">12.688</td><td>locales en las 124 concentraciones medidas · el 53 % de la gastronomía de la Ciudad en el 15 % de su superficie</td></tr>
+   <tr><td class="n">90</td><td>bares notables de la Ciudad, y 88 abiertos</td></tr>
+   <tr><td class="n">15</td><td>lugares donde cocina una colectividad, con sus calles</td></tr>
   </table>
 </section>
 <div class="pb"></div>
@@ -65,9 +65,9 @@ TAPA=f"""
    <tr><td class="r">IV</td><td>Cómo se leyó el territorio</td></tr>
    <tr><td class="r">V</td><td>Los referentes de la Ciudad</td></tr>
    <tr><td class="r">VI</td><td>Las comunidades y el territorio</td></tr>
-   <tr><td class="r">VII</td><td><strong>La Ciudad, comuna por comuna</strong> — los 41 polos admitidos</td></tr>
-   <tr><td class="r">VIII</td><td>Lo que se midió y no entró</td></tr>
-   <tr><td class="r">IX</td><td>Qué no dice este atlas</td></tr>
+   <tr><td class="r">VII</td><td><strong>La Ciudad, comuna por comuna</strong> — los 41 polos</td></tr>
+   <tr><td class="r">VIII</td><td>Las zonas que se midieron y quedaron fuera del criterio</td></tr>
+   <tr><td class="r">IX</td><td>El alcance de este atlas</td></tr>
    <tr><td class="r">A</td><td>Anexo · El criterio de admisión y permanencia, completo</td></tr>
    <tr><td class="r">B</td><td>Anexo · Las 124 concentraciones detectadas</td></tr>
    <tr><td class="r">C</td><td>Anexo · Correspondencia, glosario, fuentes y licencias</td></tr>

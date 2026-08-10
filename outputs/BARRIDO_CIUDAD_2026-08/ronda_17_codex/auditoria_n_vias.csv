@@ -1,0 +1,6 @@
+﻿polo_id,n_vias_anterior_documentado,n_vias_recalculado,columnas_que_abren,categoria_antes,categoria_despues,cambio_categoria
+R02,3,4,A+B+E+F,polo admitido,polo admitido,NO
+R04,3,4,A+B+E+F,polo admitido,polo admitido,NO
+R05,4,5,A+B+C+D+E,polo admitido,polo admitido,NO
+R19,3,4,A+B+E+F,polo admitido,polo admitido,NO
+Z37,6,5,A+B+D+E+F,polo admitido,polo admitido,NO

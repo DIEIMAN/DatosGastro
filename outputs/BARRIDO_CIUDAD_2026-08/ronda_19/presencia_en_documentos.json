@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-08-10",
+  "documentos": 87,
+  "presencia": {
+    "la_boca_caminito_ha": [
+      "CIERRE_GEOMETRICO_RONDA_17.md:208",
+      "CIERRE_GEOMETRICO_RONDA_17.md:356"
+    ],
+    "la_boca_caminito_locales": [
+      "CIERRE_GEOMETRICO_RONDA_17.md:208",
+      "CIERRE_GEOMETRICO_RONDA_17.md:357"
+    ],
+    "mataderos_tentativo_ha": [],
+    "mataderos_tentativo_locales": [
+      "ATLAS_V3_DOCUMENTO.md:2252",
+      "ATLAS_V3_DOCUMENTO.md:4574",
+      "ANEXO_C_CORRESPONDENCIA_GLOSARIO_FUENTES.md:223",
+      "CAPA_DE_BARRIOS_Y_COMUNAS.md:57"
+    ],
+    "mataderos_eje_alberdi_ha": [
+      "CIERRE_GEOMETRICO_RONDA_17.md:137"
+    ],
+    "balvanera_lectura_enclave_ha": [
+      "CIERRE_GEOMETRICO_RONDA_17.md:88"
+    ],
+    "balvanera_lectura_extendida_ha": [],
+    "villa_ortuzar_ha": [
+      "ATLAS_V3_DOCUMENTO.md:3246",
+      "CIERRE_GEOMETRICO_RONDA_17.md:93",
+      "CIERRE_GEOMETRICO_RONDA_17.md:241",
+      "SECCION_VII_ZONAS_INCORPORADAS.md:1078"
+    ],
+    "villa_ortuzar_solape_ha": [
+      "ATLAS_V3_DOCUMENTO.md:3246",
+      "SECCION_VII_ZONAS_INCORPORADAS.md:1078"
+    ],
+    "anclas_con_historia_fuera_de_su_borde": [],
+    "union_de_los_41_ha": [],
+    "union_de_los_41_locales": [],
+    "locales_en_dos_o_mas_polos": [],
+    "hitos_a_250_m_o_menos_del_borde": []
+  }
+}

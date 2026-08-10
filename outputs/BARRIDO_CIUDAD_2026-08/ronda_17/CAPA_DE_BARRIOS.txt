@@ -1,0 +1,55 @@
+==================================================================================================
+LA CAPA DE 48 BARRIOS · qué mueve adoptarla, medido barrio por barrio
+==================================================================================================
+
+capa oficial: 48 barrios · capa vieja: 48 barrios · universo: 23,981 locales
+
+--------------------------------------------------------------------------------------------------
+1 · los nombres, emparejados por clave normalizada y no por igualdad
+--------------------------------------------------------------------------------------------------
+  48 pares · 0 sólo en la vieja · 0 sólo en la oficial
+
+  cuánto pierde cada forma de cruzar, sobre los mismos 48 barrios:
+    con `a == b`                          pierde 48 barrios
+    con mayúsculas y sin tildes           pierde 1 barrios
+    con `nombres_de_barrio.clave`         pierde 0
+
+  los que ni las mayúsculas ni las tildes salvan, que son los que muerden:
+      «La Boca»  ->  «BOCA»      (clave BOCA)
+
+--------------------------------------------------------------------------------------------------
+2 · la geometría de las dos capas
+--------------------------------------------------------------------------------------------------
+  la Ciudad entera: vieja 20,408.31 ha · oficial 20,375.17 ha
+    vieja menos oficial:      366,931 m² con 0 locales
+    oficial menos vieja:       35,519 m² con 1 locales
+
+--------------------------------------------------------------------------------------------------
+3 · el impacto: qué locales se mueven y a dónde
+--------------------------------------------------------------------------------------------------
+  locales que cambian de barrio: 7 de 23,981
+
+  12 barrios cambian su conteo, con un neto de +1 sobre el conjunto de los 48.
+  El neto no es cero porque **un local que hoy cae fuera de toda la capa vieja entra en la oficial**: la fila «(fuera de toda la capa)» baja de 3 a 2. Sumando esa fila el neto de la Ciudad es +0, como tiene que ser.
+
+  barrio                     vieja  oficial  neto  entran  salen  detalle
+  PALERMO                    3,320    3,322    +2       2      0  entran de (fuera de toda la capa) 1 · BELGRANO 1
+  (fuera de toda la capa)        3        2    -1       0      1  salen a PALERMO 1
+  BELGRANO                   1,352    1,351    -1       0      1  salen a PALERMO 1
+  CABALLITO                  1,203    1,202    -1       0      1  salen a PARQUE CHACABUCO 1
+  FLORESTA                     282      281    -1       0      1  salen a VELEZ SARSFIELD 1
+  PARQUE CHACABUCO             281      282    +1       1      0  entran de CABALLITO 1
+  PATERNAL                     126      125    -1       0      1  salen a VILLA GRAL. MITRE 1
+  RETIRO                       598      597    -1       0      1  salen a SAN NICOLAS 1
+  SAN NICOLAS                1,292    1,293    +1       1      0  entran de RETIRO 1
+  VELEZ SARSFIELD              177      178    +1       1      0  entran de FLORESTA 1
+  VILLA GRAL. MITRE            206      207    +1       1      0  entran de PATERNAL 1
+  VILLA PUEYRREDON             229      230    +1       1      0  entran de VILLA URQUIZA 1
+  VILLA URQUIZA                645      644    -1       0      1  salen a VILLA PUEYRREDON 1
+
+--------------------------------------------------------------------------------------------------
+4 · control: ningún barrio con locales puede quedar en cero por el cruce de nombres
+--------------------------------------------------------------------------------------------------
+  OK: los 48 barrios cruzan por nombre y por geometría con el mismo resultado
+
+Escrito: impacto_capa_barrios.csv (13 filas) · locales_que_cambian_de_barrio.csv (7 filas) · capa_de_barrios.json

@@ -1,0 +1,29 @@
+==================================================================================================
+CIFRAS CANÓNICAS · una sola fuente por número
+==================================================================================================
+
+universo: 23,981 locales · polos admitidos: 41 · concentraciones: 124
+comunas con polo: 14 -> [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
+siguen sin borde propio: ['Z27', 'Z33', 'Z41', 'Z46']
+
+cifra                                        valor  origen     archivo
+locales_relevados                            23981  medido     outputs/BARRIDO_CIUDAD_2026-08/base/local.csv
+polos                                           41  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv
+fichas                                          41  medido     outputs/BARRIDO_CIUDAD_2026-08/ronda_16_codex/geometria/soportes_41.geojson
+objetos_disjuntos                               40  medido     outputs/BARRIDO_CIUDAD_2026-08/ronda_17/total_recalculado.json
+zonas_evaluadas                                 55  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv
+agrupamientos_detectados                       124  medido     outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson
+locales_en_polos                             12688  medido     outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v3.csv
+locales_en_polos_por_geometria               12520  medido     outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson
+ha_en_polos                                3143.53  medido     outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson
+pct_locales_en_polos                            53  medido     derivada
+pct_superficie                                  15  medido     derivada
+bares_notables                                  90  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv
+bares_notables_abiertos                         88  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv
+enclaves_comunitarios                           15  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/enclaves_comunitarios_delimitados.csv
+polos_sin_borde                                  4  medido     outputs/BARRIDO_CIUDAD_2026-08/ronda_17/perimetros_cierre.csv
+locales_en_barrios_sin_borde                   527  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv
+ha_en_barrios_sin_borde                      112.9  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv
+comunas_con_polo                                14  medido     outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv
+
+Escrito: cifras_canonicas.json (18 cifras)

@@ -1,0 +1,21 @@
+objeto,tipo,distancia_a_alvarez_thomas_m,distancia_a_forest_m,ha,locales,nota
+ZABALA,calle de la lista,0,0,,,cierra la cara; empalmes agregados: 0 m a Alvarez Thomas y 0 m a Forest
+"AVILES, VIRREY",calle de la lista,16,0,,,cierra la cara; empalmes agregados: 16 m a Alvarez Thomas y 0 m a Forest
+DELGADO,calle de la lista,55,0,,,no llega a una de las dos avenidas dentro de la tolerancia de 40 m: no puede ser lado de la cuña
+CONDE,calle de la lista,178,348,,,no llega a una de las dos avenidas dentro de la tolerancia de 40 m: no puede ser lado de la cuña
+cuña cerrada por ZABALA,poligono,,,3.66,5,"perimetro 878 m, todo sobre calles por construccion; el corte mide 253 m; 0 % del poligono cae en el barrio de Colegiales"
+"cuña cerrada por AVILES, VIRREY",poligono,,,3.34,12,"perimetro 980 m, todo sobre calles por construccion; el corte mide 363 m; 0 % del poligono cae en el barrio de Colegiales"
+la franja completa (las dos caras),poligono,,,6.99,17,las dos caras estan en sectores opuestos del cruce de las dos avenidas: se tocan en el apice y no forman una banda continua
+ZABALA dentro de Colegiales,lectura B,0,194,42.37,79,"1,288 m de eje dentro del barrio, buffer 150 m recortado al barrio"
+"AVILES, VIRREY dentro de Colegiales",lectura B,160,0,36.06,115,"1,118 m de eje dentro del barrio, buffer 150 m recortado al barrio"
+DELGADO dentro de Colegiales,lectura B,55,0,42.39,87,"1,555 m de eje dentro del barrio, buffer 150 m recortado al barrio"
+CONDE dentro de Colegiales,lectura B,178,348,57.37,115,"1,906 m de eje dentro del barrio, buffer 150 m recortado al barrio"
+lectura B · la banda de las cuatro calles en Colegiales,poligono,,,137.78,287,"60 % del barrio; la fuente no nombra el borde de adentro, asi que la profundidad de la banda la pone el buffer y no la evidencia"
+Chacagiales publicado (R09 + R19 + Z43 a escala de barrio),comparacion,,,495.82,891,
+R09 Chacarita,comparacion,,,94.81,202,
+"R19 Federico Lacroze (ampliada, ronda 7)",comparacion,,,303.28,532,
+la cuña de Colegiales,comparacion,,,6.99,17,
+Chacagiales con la cuña en lugar del barrio,comparacion,,,343.53,598,
+Gral. E. Martinez 50 (cuadra del callejero),anclaje del Mercado de Pulgas,125,915,,,"a 1,219 m de la franja medida; dentro de Chacagiales publicado"
+Dorrego x Alvarez Thomas (esquina),anclaje del Mercado de Pulgas,0,833,,,"a 1,268 m de la franja medida; dentro de Chacagiales publicado"
+distancia entre los dos anclajes de la propuesta,control,,,,,144 m: la propuesta ubica el mismo hito en dos lugares distintos del mismo renglon

@@ -1,0 +1,26 @@
+{
+  "obtenido": "2026-08-10",
+  "origen_inmediato": "https://github.com/OpenDataCordoba/barrios",
+  "commit": "cfb3f504496eab3f668656c101a79fa8bafa3946",
+  "metodo": "git clone --depth 1 del repositorio publico",
+  "fuente_original_declarada_por_el_repositorio": [
+    "https://data.buenosaires.gob.ar/dataset/barrios/resource/1c3d185b-fdc9-474b-b41b-9bd960a3806e",
+    "https://data.buenosaires.gob.ar/dataset/comunas/resource/b0b627ac-5b47-4574-89ac-6999b63598ee"
+  ],
+  "nota": "Espejo de la capa oficial del GCBA. Los recursos originales devolvian error 503 al 10/08/2026.",
+  "control": "24 de 27 poligonos coinciden dentro del 0,09 %. De los tres restantes, Z41 Nunez y Z45 Belgrano son IDENTICOS a la capa que el atlas venia usando -diferencia simetrica 0 m2-: la discrepancia es entre las dos versiones de la capa oficial, sobre la linea de ribera, y no lleva locales. Solo Z46 Retiro suma superficie, y su campo ya lo declara. Documentado en CAPA_DE_BARRIOS_Y_COMUNAS.md",
+  "uso": "base cartografica unicamente; no se usa para delimitar polos",
+  "archivos": [
+    {
+      "archivo": "caba_barrios.geojson",
+      "bytes": 663361,
+      "sha256": "56bf0f53fcb425eb290335c193c02088b785e628c8633c8d8dc295180441d2d5"
+    },
+    {
+      "archivo": "caba_comunas.geojson",
+      "bytes": 1141556,
+      "sha256": "065200a847b1e022e060263a2a2cc44839f98064e931a4c3171d9dcbecc2bb3d"
+    }
+  ],
+  "aviso": "La capa vieja escribe \"La Boca\" y la oficial \"Boca\": un cruce por nombre pierde el barrio en silencio."
+}

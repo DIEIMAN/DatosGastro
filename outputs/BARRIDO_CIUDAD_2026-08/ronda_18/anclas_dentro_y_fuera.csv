@@ -1,0 +1,293 @@
+polo,establecimiento,direccion,tipo,reconocimiento,dentro_del_borde,distancia_m,sostiene_condicion_historia,zona_id,origen_del_dato,ubicacion_metodo,estado_vigencia,borde_tentativo,borde_es_propio
+R01 · Palermo,Cafe Cortazar,Jose Antonio Cabrera 3797,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,639.6,no,R01,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R01 · Palermo,Varela Varelita,Av. Scalabrini Ortiz 2102,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,82.4,no,R01,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R01 · Palermo,A Fuego Fuerte,Bonpland 1670,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Angelin,Av. Cordoba 5270,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,CoChinChina,Armenia 1540,Ranking internacional,The World's 50 Best Bars 2025,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Crizia,Fitz Roy 1819,MICHELIN,Una Estrella,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Don Julio,Guatemala 4699,MICHELIN,Una Estrella,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,El Preferido de Palermo,Jorge Luis Borges 2108,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Fogón Asado,Uriarte 1423,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Gran Dabbang,Av. Raul Scalabrini Ortiz 1543,Ranking internacional,Latin America's 50 Best 2025 (51-100),si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Mengano,José Antonio Cabrera 5172,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Mercado Bonpland,Bonpland 1660,Mercado/patio,Mercado o patio documentado,si,0.0,no,R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Mercado de Liniers,Gorriti 6012,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Niño Gordo,Thames 1810,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Raggio Osteria,Gurruchaga 2121,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Reliquia,Ángel Justiniano Carranza 1601,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Tres Monos,Guatemala 4899,Ranking internacional,The World's 50 Best Bars 2025,si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R01 · Palermo,Victor Audio Bar,Soler 5130,Ranking internacional,The World's 50 Best Bars 2025 (51-100),si,0.0,"si (distinción contemporánea, no trayectoria)",R01,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R02 · Avenida Corrientes,Bar Lavalle,Lavalle 1693,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,Celta Bar,Sarmiento 1702,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,El Gato Negro,Av. Corrientes 1669,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,Guerrin,Av. Corrientes 1368,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,R02,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R02 · Avenida Corrientes,LA GIRALDA,Av. Corrientes 1453,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,LOS GALGOS,Av. Callao 501,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,La Academia,Montevideo 341,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,La Opera,Av. Corrientes 1799,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,Petit Colón,Libertad 505,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R02,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R02 · Avenida Corrientes,Zum Edelweiss,LIBERTAD 431,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R02,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R03 · San Telmo,HIPOPOTAMO,Brasil 401,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,212.7,no,R03,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R03 · San Telmo,Cafe Rivas,Estados Unidos 302,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,208.2,no,R03,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R03 · San Telmo,Mercado de San Telmo,Defensa 961,Mercado/patio,Mercado o patio documentado,no,64.2,no,R03,la página,punto de la capa de reconocimiento,sin_verificar,no,si
+R03 · San Telmo,BAR PLAZA DORREGO,Defensa 1098,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,27.2,no,R03,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R03 · San Telmo,Bar El Federal,Carlos Calvo 595,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R03,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R04 · Puerto Madero,Cabaña Las Lilas,Avenida Alicia Moreau de Justo 516,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R04,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R04 · Puerto Madero,El Mercado (Faena),Martha Salotti 445,Ranking internacional,Latin America's 50 Best Restaurants 2025,si,0.0,"si (distinción contemporánea, no trayectoria)",R04,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R04 · Puerto Madero,Estilo Campo,"MOREAU DE JUSTO, ALICIA AV. 1840",Restaurante Icónico,Restaurante Icónico,si,0.0,si,R04,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R04 · Puerto Madero,Marcelo Restaurante,"MOREAU DE JUSTO, ALICIA AV. 1140",Restaurante Icónico,Restaurante Icónico,si,0.0,si,R04,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R04 · Puerto Madero,Michel Rolland Grill & Wine,Juana Manso 1760,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R04,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R04 · Puerto Madero,Sorrento,"MOREAU DE JUSTO, ALICIA AV. 420",Restaurante Icónico,Restaurante Icónico,si,0.0,si,R04,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R05 · Belgrano,CASA WATSON,Vuelta de Obligado 2072,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,58.6,no,R05,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R05 · Belgrano,Casa Burgio,Av. Cabildo 2477,Pizzería emblemática,APYCE + GCBA (2025),no,12.9,no,R05,la página,punto de la capa de reconocimiento,si,no,si
+R05 · Belgrano,Mercado de Belgrano,Av. Juramento 2527,Mercado/patio,Mercado o patio documentado,si,0.0,no,R05,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R05 · Belgrano,Sucre,,,,sin ubicar,,no,R05,la página,sin ubicar,,no,si
+R06 · Recoleta,Presencia,Montevideo 1789,MICHELIN,Recomendado/seleccionado,no,224.2,no,R06,la página,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,Josephina's Cafe,Guido 1532,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,82.8,no,R06,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R06 · Recoleta,Aramburu,Vicente López 1661,MICHELIN,Dos Estrellas,si,0.0,"si (distinción contemporánea, no trayectoria)",R06,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,BAR DEL ALVEAR PALACE HOTEL,Av. Alvear 1891,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R06,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R06 · Recoleta,Bis Bistró,Vicente López 1661 Local 12,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R06,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,Casa Veltri,Juncal 1642,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R06,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,Fervor,Posadas 1519,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R06,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,LA BIELA,Av. Quintana 600,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R06,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R06 · Recoleta,Los Maestros,Parana 1249,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,R06,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,Restaurante Oviedo,BERUTI 2602,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R06,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R06 · Recoleta,Roux,Peña 2300,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R06,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R07 · Costanera Norte,Happening,"OBLIGADO RAFAEL, AV.COSTANERA 7030",Restaurante Icónico,Restaurante Icónico,si,0.0,si,R07,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R07 · Costanera Norte,Patio Costanera Norte,Avenida Costanera Rafael Obligado 7010,Mercado/patio,Mercado o patio documentado,si,0.0,no,R07,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,Horta,Aguirre 1080,MICHELIN,Recomendado/seleccionado,no,0.2,no,R08,la página,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,Alcanfor,Aguirre 949,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,Fico,Muñecas 775,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,Han,Vera 966,MICHELIN,Una Estrella,si,0.0,"si (distinción contemporánea, no trayectoria)",R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,Julia,Loyola 807,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R08 · Villa Crespo,SAN BERNARDO,Av. Corrientes 5436,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R08 · Villa Crespo,Trescha,Murillo 725,MICHELIN,Una Estrella,si,0.0,"si (distinción contemporánea, no trayectoria)",R08,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,ANAFE,Virrey Avilés 3216,MICHELIN,Bib Gourmand,no,872.4,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Ácido,Charlone 999,MICHELIN,Bib Gourmand,no,431.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Osaka Concepción,Concepción Arenal 2913,MICHELIN,Recomendado/seleccionado,no,420.6,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Bar Conde,Federico Lacroze 3193,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,159.7,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R09 · Chacarita,Ajo Negro - Mar de Tapas,Avenida Córdoba 6237,MICHELIN,Bib Gourmand,no,62.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Picarón,Avenida Dorrego 866,MICHELIN,Recomendado/seleccionado,no,8.6,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Albamonte Ristorante,CORRIENTES AV. 6735,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R09R19_CHACAGIALES,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,Anchoíta,Juan Ramírez de Velasco 1520,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R09 · Chacarita,CAFE PALACIO,Av. Federico Lacroze 3901,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R10 · Caballito,Plaza Café,Av. Rivadavia 4732,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,453.2,no,R10,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R10 · Caballito,Confiteria El Greco,Av. Rivadavia 5353,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R10,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R10 · Caballito,Mercado del Progreso,Av. Rivadavia 5430,Mercado/patio,Mercado o patio documentado,si,0.0,no,R10,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R11 · Boulevard Caseros,Britanico,Brasil 399,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R11,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,36 BILLARES,Av. de Mayo 1265,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Bar Bidou,Av. Roque Saenz Pena 858,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Bar Iberia,Av. de Mayo 1196,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Café Tortoni,Av. de Mayo 825,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Claridge's,Tucuman 535,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Confiteria Saint Moritz,Esmeralda 894,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Confitería Ideal,Suipacha 384,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,El Imparcial,"YRIGOYEN, HIPOLITO 1201",Restaurante Icónico,Restaurante Icónico,si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+R12 · Centro y Microcentro,El Palacio de la Pizza,Av. Corrientes 751,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R12 · Centro y Microcentro,El Querandi,Peru 302,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,FLORIDA GARDEN,Florida 899,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Guerrin,Av. Corrientes 1368,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R12 · Centro y Microcentro,LA GIRALDA,Av. Corrientes 1453,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,LA PUERTO RICO,Alsina 420,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Las Cuartetas,Av. Corrientes 838,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R12 · Centro y Microcentro,Le Caravelle,Lavalle 726,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,PLAZA BAR,Florida 1005,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,CERRADO,no,si
+R12 · Centro y Microcentro,Paulin,Sarmiento 635,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Petit Colón,Libertad 505,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R12 · Centro y Microcentro,Tancat,PARAGUAY 645,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,si,no,si
+R12 · Centro y Microcentro,The New Brighton,Sarmiento 645,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO EN QUIEBRA,no,si
+R12 · Centro y Microcentro,Zum Edelweiss,LIBERTAD 431,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R12,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R13 · Abasto,Roma del Abasto,Anchorena 806,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,184.5,no,R13,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+R13 · Abasto,EL SIMBOLO,Av. Corrientes 3787,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R13,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R13 · Abasto,El Banderin,Guardia Vieja 3601,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R13,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R13 · Abasto,Pin Pun,Av. Corrientes 3954,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,R13,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R14 · Avenida Boedo,Café Margot,Av. Boedo 857,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R14,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R14 · Avenida Boedo,Esquina Homero Manzi,Av. San Juan 3601,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R14,la capa de reconocimiento,punto de la capa de reconocimiento,EN RIESGO,no,si
+R14 · Avenida Boedo,San Antonio,Av. Juan de Garay 3602,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,R14,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R15 · Devoto,Café de García,Sanabria 3302,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R15,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R15 · Devoto,Gran Pizzeria Jose,Av. San Martin 6915,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,R15,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R15 · Devoto,STYLO CAFE,Fernandez de Enciso 3934,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R15,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R17 · Villa Urquiza,Cafe de la U,Av. Triunvirato 4801,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R17,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R19 · Federico Lacroze,ANAFE,Virrey Avilés 3216,MICHELIN,Bib Gourmand,no,612.3,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Osaka Concepción,Concepción Arenal 2913,MICHELIN,Recomendado/seleccionado,no,228.3,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Ajo Negro - Mar de Tapas,Avenida Córdoba 6237,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Albamonte Ristorante,CORRIENTES AV. 6735,Restaurante Icónico,Restaurante Icónico,si,0.0,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Anchoíta,Juan Ramírez de Velasco 1520,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Bar Conde,Federico Lacroze 3193,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R09R19_CHACAGIALES,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R19 · Federico Lacroze,CAFE PALACIO,Av. Federico Lacroze 3901,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+R19 · Federico Lacroze,Picarón,Avenida Dorrego 866,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R19 · Federico Lacroze,Ácido,Charlone 999,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R21 · La Paternal,MN Santa Inés,Ávalos 360,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R21,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R21 · La Paternal,Santolin,Av. San Martin 3185,Heladería histórica,AFADHYA notables (2025-11),si,0.0,si,R21,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+R21 · La Paternal,Torino Norte,Av. Juan B. Justo 3995,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,R21,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Kosher City,Paez 2395,,,no,603.6,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Matok,Paez 2433,,,no,503.8,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Soultani,Cuenca 515,,,no,27.9,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Barthale,Ruperto Godoy 712,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Behar,Campana 349,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Bulmat,Ruperto Godoy 731,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Dashimaki,Ruperto Godoy 770,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Hamra,Aranguren 3192,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Karaoke W,Ruperto Godoy 761,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Makarios,Felipe Vallese 3130,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Maum,Felipe Vallese 3135,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Nacca,Argerich 843,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Pan Moa,Ruperto Godoy 763,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Pulperia Norte,Felipe Vallese 3123,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Shabu Shabu 153,Paez 3154,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy,Yugane,Paez 3063,,,si,0.0,no,Z24,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z27 · Villa Santa Rita,Argot,Alvarez Jonte 2744,,,no,0.6,no,Z27,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z27 · Villa Santa Rita,A Raja Cincha,Cuenca 1299,,,si,0.0,no,Z27,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z27 · Villa Santa Rita,DON JUAN,Camarones 2702,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z27,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z27 · Villa Santa Rita,El Sol de Galicia,LUIS VIALE 2867,,,si,0.0,no,Z27,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z27 · Villa Santa Rita,El Tokio,Alvarez Jonte 3550,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z27,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z27 · Villa Santa Rita,Heladeria Agust,Magarinos Cervantes 3400,,,si,0.0,no,Z27,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z28 · Monte Castro,Café Olimpo,Irigoyen 1491,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,638.3,si,Z28,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z28 · Monte Castro,Ay Miranda,,,,sin ubicar,,no,Z28,la página,sin ubicar,,no,si
+Z28 · Monte Castro,Casa Madrilia,Av. Alvarez Jonte 4702,,,si,0.0,no,Z28,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z28 · Monte Castro,El Fortin,Av. Alvarez Jonte 5299,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,Z28,la página y la capa de reconocimiento,punto de la capa de reconocimiento,si,no,si
+Z28 · Monte Castro,La Media Costilla,,,,sin ubicar,,no,Z28,la página,sin ubicar,,no,si
+Z28 · Monte Castro,La Renaciente,,,,sin ubicar,,no,Z28,la página,sin ubicar,,no,si
+Z32 · Liniers · Mercado Andino,El Ciervo,Carhue 124,Heladería histórica,AFADHYA notables (2025-11),no,128.9,si,Z32,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z32 · Liniers · Mercado Andino,JAMUY,Jose Leon Suarez 100,,,no,61.8,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z32 · Liniers · Mercado Andino,Pollo Broaster,Ibarrola 7239,,,si,0.0,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z32 · Liniers · Mercado Andino,Pollo Copacabana,Ibarrola 7276,,,si,0.0,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z32 · Liniers · Mercado Andino,Restaurante Miriam,Ibarrola 7184,,,si,0.0,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z32 · Liniers · Mercado Andino,Rico Pollo,Ibarrola 7193,,,si,0.0,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z32 · Liniers · Mercado Andino,Salteneria El Conejo,Jose Leon Suarez 216,,,si,0.0,no,Z32,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z33 · Mataderos,9 de Julio,Larrazabal 1276,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,887.6,si,Z33,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,si,no
+Z33 · Mataderos,El Cedron,Av. Juan B. Alberdi 6101,Pizzería emblemática,APYCE + GCBA (2026),no,691.2,si,Z33,la página y la capa de reconocimiento,punto de la capa de reconocimiento,dudosa,si,no
+Z33 · Mataderos,Bar del Glorias,Andalgala 1982,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,666.8,si,Z33,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,si,no
+Z33 · Mataderos,BAR OVIEDO,Av. Lisandro de la Torre 2407,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z33,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,si,no
+Z33 · Mataderos,Bar Catedral Tango,Timoteo Gordillo 2498,Patrimonio normativo,Sitio de Interes Cultural,si,0.0,no,Z33,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,si,no
+Z33 · Mataderos,Edificios Administrativos del Antiguo Matadero,Av. Lisandro de la Torre y Av. de los Corrales,Patrimonio normativo,Monumento Historico Nacional + APH 21,si,0.0,no,Z33,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,si,no
+Z35 · Balvanera · Once,CAFE DE LOS ANGELITOS,Av. Rivadavia 2100,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,759.3,si,Z35,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z35 · Balvanera · Once,El Tropezón,CALLAO AV. 248,Restaurante Icónico,Restaurante Icónico,no,741.8,si,Z35,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z35 · Balvanera · Once,Roma del Abasto,Anchorena 806,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,323.3,si,Z35,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z35 · Balvanera · Once,Al Galope,TUCUMAN 2633,,,si,0.0,no,Z35,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z35 · Balvanera · Once,El Jaial,TUCUMAN 2620,,,si,0.0,no,Z35,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z35 · Balvanera · Once,Lalo Helueni,TUCUMAN 2755,,,si,0.0,no,Z35,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z35 · Balvanera · Once,Sucat David,TUCUMAN 2379,,,si,0.0,no,Z35,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z35 · Balvanera · Once,Yaffo Kosher,PASO 747,,,si,0.0,no,Z35,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z37 · Almagro,El Trebol 1969,Av. Angel Gallardo 3,Pizzería emblemática,APYCE + GCBA (2026),no,766.9,si,Z37,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z37 · Almagro,El Boliche de Roberto,Bulnes 331,,,no,237.5,no,Z37,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z37 · Almagro,12 de octubre,Bulnes 331,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,236.9,si,Z37,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z37 · Almagro,El Mirasol de Boedo,BOEDO 136,Restaurante Icónico,Restaurante Icónico,no,48.7,si,Z37,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z37 · Almagro,EL SIMBOLO,Av. Corrientes 3787,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z37,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z37 · Almagro,El Banderin,Guardia Vieja 3601,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z37,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z37 · Almagro,LAS VIOLETAS,Av. Rivadavia 3899,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z37,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z37 · Almagro,La Orquidea,Av. Corrientes 4101,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z37,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z37 · Almagro,Pin Pun,Av. Corrientes 3954,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,Z37,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z39 · Parque Avellaneda,Viejo Mercado,Av. Olivera 1557,,,no,951.9,no,Z39,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z39 · Parque Avellaneda,Yiyo el Zeneize,Av. Eva Peron 4402,Restaurante/bodegón,Patrimonio historico y cultural inmaterial (Ley CABA 6.533) — la declaratoria recae sobre la carta gastronómica,no,515.0,no,Z39,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z39 · Parque Avellaneda,De Flores Cafe,Lacarra 1500,,,no,0.0,no,Z39,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z39 · Parque Avellaneda,La Barra del Parque,Lacarra 836,,,si,0.0,no,Z39,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z40 · Nueva Pompeya y Parque Patricios,Pena Los Amigos / Bar El Chino,Beazley 3566,Patrimonio normativo,Sitio de Interes Cultural,no,423.9,no,Z40,la capa de reconocimiento,punto de la capa de reconocimiento,dudosa,no,si
+Z40 · Nueva Pompeya y Parque Patricios,El Buzón,Esquiu 1393,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,255.7,si,Z40,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z40 · Nueva Pompeya y Parque Patricios,El Globito,Av. Caseros 3159,,,si,0.0,no,Z40,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z40 · Nueva Pompeya y Parque Patricios,Mercado de Pompeya,SAENZ AV. 790,,,si,0.0,no,Z40,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z41 · Nunez,Baja America,O'Higgins 3424,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,Citio,Av. Cdoro. Martin Rivadavia 1719,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,Evelia,Campos Salles 1712,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",Z41,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z41 · Nunez,Garabato Bistro,O'Higgins 3424,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",Z41,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z41 · Nunez,Hola Chola,Paroissien 1871,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,Kalis Pizza,O'Higgins 3578,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,L'Apero,Ibera 1800,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,La Escuela,Manuela Pedraza 2803,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z41,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z41 · Nunez,La Pescaderia,Crisologo Larralde 1716,,,si,0.0,no,Z41,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z41 · Nunez,Ness,Grecia 3691,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",Z41,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z41 · Nunez,Piedra Pasillo Al Fondo,Campos Salles 2145,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",Z41,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z41 · Nunez,Vereda Adentro,,,,sin ubicar,,no,Z41,la página,sin ubicar,,no,no
+Z43 · Colegiales,Picarón,Avenida Dorrego 866,MICHELIN,Recomendado/seleccionado,no,913.5,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,Albamonte Ristorante,CORRIENTES AV. 6735,Restaurante Icónico,Restaurante Icónico,no,803.8,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,Anchoíta,Juan Ramírez de Velasco 1520,MICHELIN,Recomendado/seleccionado,no,701.7,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,CAFE PALACIO,Av. Federico Lacroze 3901,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,490.2,si,R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z43 · Colegiales,Ácido,Charlone 999,MICHELIN,Bib Gourmand,no,246.7,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,Ajo Negro - Mar de Tapas,Avenida Córdoba 6237,MICHELIN,Bib Gourmand,no,136.1,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,ANAFE,Virrey Avilés 3216,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z43 · Colegiales,Antiche Tentazioni,,,,sin ubicar,,no,R09R19_CHACAGIALES,la página,sin ubicar,,no,si
+Z43 · Colegiales,Bar Conde,Federico Lacroze 3193,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,R09R19_CHACAGIALES,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z43 · Colegiales,La Bici,,,,sin ubicar,,no,R09R19_CHACAGIALES,la página,sin ubicar,,no,si
+Z43 · Colegiales,La Fabrica del Taco,,,,sin ubicar,,no,R09R19_CHACAGIALES,la página,sin ubicar,,no,si
+Z43 · Colegiales,Mercado de Pulgas,Gral. Enrique Martinez 50,,,si,0.0,no,R09R19_CHACAGIALES,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z43 · Colegiales,Niniveh,,,,sin ubicar,,no,R09R19_CHACAGIALES,la página,sin ubicar,,no,si
+Z43 · Colegiales,Osaka Concepción,Concepción Arenal 2913,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",R09R19_CHACAGIALES,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z44 · Villa Ortuzar,Tia Meche,Bauness 1302,,,no,1299.2,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Suculentas,Heredia 499,,,no,861.4,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Gallo Negro,Donado 1851,,,no,716.4,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Curva,Caldas 1596,,,no,674.2,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Cerveceria Charlone,Freire 745,,,no,349.9,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,F4 Esquina,Cnel. Manuel Roseti 1596,,,no,242.7,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Cantina y Teatro Tai,Charlone 1752,,,no,131.8,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Cullen Henderson,Av. Alvarez Thomas 1106,,,si,0.0,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,Kopem,Av. Alvarez Thomas 1700,,,si,0.0,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z44 · Villa Ortuzar,La Mezzetta,Av. Alvarez Thomas 1321,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,Z44,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z44 · Villa Ortuzar,Simona,Av. Alvarez Thomas 661,,,si,0.0,no,Z44,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z46 · Retiro,Kimchi Garden,San Martin 687,,,no,106.9,no,Z46,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z46 · Retiro,Barbaro,Tres Sargentos 415,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z46 · Retiro,Centro Cultural Coreano,Maipu 972,,,si,0.0,no,Z46,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z46 · Retiro,Chuchú,Avenida del Libertador 405,MICHELIN,Bib Gourmand,si,0.0,"si (distinción contemporánea, no trayectoria)",Z46,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z46 · Retiro,Confiteria Saint Moritz,Esmeralda 894,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z46 · Retiro,El Cuartito,Talcahuano 937,Pizzería emblemática,APYCE + GCBA (2025),si,0.0,si,Z46,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z46 · Retiro,Elena,Posadas 1086/88,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",Z46,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z46 · Retiro,FLORIDA GARDEN,Florida 899,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z46 · Retiro,Fa Song Song,,,,sin ubicar,,no,Z46,la página,sin ubicar,,no,no
+Z46 · Retiro,Floreria Atlantico,Arroyo 872,Ranking internacional,The World's 50 Best Bars 2025 (51-100),si,0.0,"si (distinción contemporánea, no trayectoria)",Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,si,no,no
+Z46 · Retiro,Josephina's Cafe,Guido 1532,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z46,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,no
+Z46 · Retiro,Kuro Neko,Paraguay 831,,,si,0.0,no,Z46,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z46 · Retiro,PLAZA BAR,Florida 1005,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,CERRADO,no,no
+Z46 · Retiro,Presencia,Montevideo 1789,MICHELIN,Recomendado/seleccionado,si,0.0,"si (distinción contemporánea, no trayectoria)",Z46,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,no
+Z46 · Retiro,Saigon Noodle Bar,M.T. de Alvear 818,,,si,0.0,no,Z46,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,no
+Z46 · Retiro,Tancat,PARAGUAY 645,Restaurante Icónico,Restaurante Icónico,si,0.0,si,Z46,la página y la capa de reconocimiento,punto de la capa de reconocimiento,si,no,no
+Z47 · Monserrat y Congreso,Gran Café Gardel,ochava Av. Entre Ríos e Independencia,Café histórico sin registro oficial,trayectoria documentada sin registro oficial,no,1116.3,no,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,si,no,si
+Z47 · Monserrat y Congreso,BAR SEDDON,Defensa 695,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,774.2,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Centro Asturiano de Buenos Aires,Solis 475,Casa regional con comedor,casa regional con comedor en funciones,no,732.0,no,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,dudosa,no,si
+Z47 · Monserrat y Congreso,El Tropezón,CALLAO AV. 248,Restaurante Icónico,Restaurante Icónico,no,730.9,no,Z47,la página,punto de la capa de reconocimiento,sin_verificar,no,si
+Z47 · Monserrat y Congreso,La Academia,Montevideo 341,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,584.5,no,Z47,la página,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Centro Laurak Bat (Restaurante Haritz),Av. Belgrano 1144,Casa regional con comedor,casa regional con comedor en funciones,no,393.3,no,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z47 · Monserrat y Congreso,EL COLONIAL,Av. Belgrano 599,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,374.5,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,El Querandi,Peru 302,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,272.6,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,LA PUERTO RICO,Alsina 420,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,160.3,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,36 BILLARES,Av. de Mayo 1265,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z47,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Bar Iberia,Av. de Mayo 1196,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Cabildo de Buenos Aires,Peru 86,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Café Tortoni,Av. de Mayo 825,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,El Globo,H. Yrigoyen 1199,,,si,0.0,no,Z47,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z47 · Monserrat y Congreso,El Imparcial,"YRIGOYEN, HIPOLITO 1201",Restaurante Icónico,Restaurante Icónico,si,0.0,si,Z47,la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+Z47 · Monserrat y Congreso,London City,Av. de Mayo 599,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,Z47,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z47 · Monserrat y Congreso,Plaza Asturias,Av. de Mayo 1199,,,si,0.0,no,Z47,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z50 · Barracas · Av. Montes de Oca,El Puentecito,LUJAN 2101,Restaurante Icónico,Restaurante Icónico,no,813.2,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+Z50 · Barracas · Av. Montes de Oca,Los Laureles,Av. Iriarte 2290,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,526.1,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z50 · Barracas · Av. Montes de Oca,Caseros,Avenida Caseros 486,MICHELIN,Bib Gourmand,no,443.7,"si (distinción contemporánea, no trayectoria)",S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z50 · Barracas · Av. Montes de Oca,La Flor de Barracas,Suarez 2095,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,358.9,si,S_BARRACAS,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z50 · Barracas · Av. Montes de Oca,El Progreso,Av. Montes de Oca 1700,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,S_BARRACAS,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z50 · Barracas · Av. Montes de Oca,Los Campeones,Av. Montes de Oca 856,Pizzería emblemática,APYCE + GCBA (2026),si,0.0,si,S_BARRACAS,la página y la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",Caseros,Avenida Caseros 486,MICHELIN,Bib Gourmand,no,2394.2,"si (distinción contemporánea, no trayectoria)",S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",Los Campeones,Av. Montes de Oca 856,Pizzería emblemática,APYCE + GCBA (2026),no,1119.9,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",La Flor de Barracas,Suarez 2095,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,691.7,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",El Puentecito,LUJAN 2101,Restaurante Icónico,Restaurante Icónico,no,622.8,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,probablemente_abierto,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",El Progreso,Av. Montes de Oca 1700,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,450.2,si,S_BARRACAS,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+"Z51 · Barracas · Iriarte, California y Vieytes",Los Laureles,Av. Iriarte 2290,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,S_BARRACAS,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,Patio Gastronomico Rodrigo Bueno,Av. Espana 2230,Mercado/patio,Mercado o patio documentado,no,1264.8,no,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z52 · La Boca · Almirante Brown y Necochea,El Estano 1880,Aristobulo del Valle 1100,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,926.5,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,Bar Boca a Boca,Av. Benito Perez Galdos 201,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,529.2,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,LA PERLA,Av. Don Pedro de Mendoza 1899,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,508.5,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,Il Matterello,"RODRIGUEZ, MARTIN 517",Restaurante Icónico,Restaurante Icónico,no,449.2,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z52 · La Boca · Almirante Brown y Necochea,El Portuario,Pinzon 102,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,225.2,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,Café Roma,Olavarria 409,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,110.9,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,La Buena Medida,Suarez 101,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,106.5,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,CERRADO,no,si
+Z52 · La Boca · Almirante Brown y Necochea,Banchero,Suarez 396,Pizzería emblemática,APYCE + GCBA (2025),no,54.1,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Patio Gastronomico Rodrigo Bueno,Av. Espana 2230,Mercado/patio,Mercado o patio documentado,no,1802.0,no,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,El Obrero,Caffarena 64,,,no,1025.7,no,S_LABOCA,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Bar Boca a Boca,Av. Benito Perez Galdos 201,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,884.9,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,El Portuario,Pinzon 102,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,792.4,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,La Buena Medida,Suarez 101,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,716.7,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,CERRADO,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,El Estano 1880,Aristobulo del Valle 1100,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,599.8,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Il Matterello,"RODRIGUEZ, MARTIN 517",Restaurante Icónico,Restaurante Icónico,no,597.3,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Banchero,Suarez 396,Pizzería emblemática,APYCE + GCBA (2025),no,375.1,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,sin_verificar,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Genoves,Brandsen 923,,,no,342.6,no,S_LABOCA,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,Café Roma,Olavarria 409,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,280.8,si,S_LABOCA,la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z53 · La Boca · Caminito y Vuelta de Rocha,LA PERLA,Av. Don Pedro de Mendoza 1899,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),si,0.0,si,S_LABOCA,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z54 · Nueva Pompeya · eje Av. Saenz,Pena Los Amigos / Bar El Chino,Beazley 3566,Patrimonio normativo,Sitio de Interes Cultural,no,423.9,no,Z40,la página y la capa de reconocimiento,punto de la capa de reconocimiento,dudosa,no,si
+Z54 · Nueva Pompeya · eje Av. Saenz,El Buzón,Esquiu 1393,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),no,255.7,si,Z40,la página y la capa de reconocimiento,punto de la capa de reconocimiento,ABIERTO,no,si
+Z54 · Nueva Pompeya · eje Av. Saenz,Mercado de Pompeya,Av. Saenz 790,,,si,0.0,no,Z40,la página,"altura de puerta contra el callejero (centro de cuadra, ±½ cuadra)",,no,si

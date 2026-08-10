@@ -1,0 +1,7 @@
+﻿objeto,decision,motivo,destino
+"Contactos geométricos con área menor o igual a 0,01 m²",excluir de la correspondencia material,umbral predefinido,se enumeran por separado en contactos_excluidos_umbral.csv
+Cruces con soportes provisorios de barrio,no usar para atribución,miden el barrio y no el polo,se conservan como ESPERA_BORDE en la correspondencia
+Habilitaciones por parcela no públicas,puerta cerrada,fuente no pública,los diez cruces se resolvieron con capas y domicilios públicos
+Estados abiertos de agregadores,no usar como verificación,ausencia de reporte de cierre no acredita servicio,sólo se admite información agregada; ningún punto ni identificador se exportó
+Contactos de comercios,no exportar,guardrail de privacidad,"todas las salidas carecen de teléfonos, correos e identificadores"
+Evidencia pública en vivo,no disponible,el conector de investigación web no estuvo disponible,se usó únicamente evidencia pública ya archivada y se mantuvieron salvedades

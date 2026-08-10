@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-08-10",
+  "Z35": {
+    "lectura_1_ha": 19.18,
+    "lectura_1_locales": 74,
+    "lectura_2_ha": 44.75,
+    "lectura_2_locales": 154,
+    "angelitos_afuera_de_1_m": 768.0,
+    "eje_nuevo_m": 1083
+  },
+  "Z53": {
+    "ha": 4.15,
+    "n_locales": 37
+  },
+  "Z33": {
+    "ha": 43.99,
+    "n_locales": 17,
+    "tentativo": true,
+    "extendido_ha": 92.18,
+    "eje_alberdi_ha": 24.27,
+    "eje_alberdi_locales": 55
+  },
+  "Z44": {
+    "ha": 34.39,
+    "n_locales": 69
+  }
+}

@@ -1,0 +1,12 @@
+zona_id,nombre,solape_con,ha_de_solape,locales_de_solape,ha_propia_fuera_del_otro,el_otro_es_provisorio
+Z40,Nueva Pompeya y Parque Patricios,Z54,39.39,52,29.67,False
+Z54,Nueva Pompeya · eje Av. Sáenz,Z40,39.39,52,0.0,False
+Z35,Balvanera · Once,R13,3.91,15,15.27,False
+Z41,Núñez,R05,0.06,0,442.58,False
+Z41,Núñez,R20,2.33,6,440.31,False
+Z46,Retiro,R04,23.17,4,443.97,False
+Z46,Retiro,R12,52.16,301,414.98,False
+Z37,Almagro,R13,25.33,101,35.56,False
+Z44,Villa Ortúzar,R09,1.86,9,32.53,False
+Z44,Villa Ortúzar,R19,3.46,2,30.93,False
+Z44,Villa Ortúzar,Z43,12.07,23,22.32,False

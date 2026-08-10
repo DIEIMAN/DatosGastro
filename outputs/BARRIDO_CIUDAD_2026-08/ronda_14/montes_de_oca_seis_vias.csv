@@ -1,0 +1,46 @@
+via,escala,medida,valor,abre,nota
+—,poligono,hectareas,18.02,,"P066, no P008 (ver ERR-11)"
+—,poligono,locales,62,,
+—,zona,hectareas del barrio,795.89,,
+—,zona,locales del barrio,410,,
+A,poligono,componente mayor a 20 m,4.8 %,,curva declarada en LECTURA_PREVIA; NO es la continuidad del corredor
+A,poligono,componente mayor a 40 m,14.5 %,,curva declarada en LECTURA_PREVIA; NO es la continuidad del corredor
+A,poligono,componente mayor a 60 m,24.2 %,,curva declarada en LECTURA_PREVIA; NO es la continuidad del corredor
+A,poligono,componente mayor a 80 m,58.1 %,,curva declarada en LECTURA_PREVIA; NO es la continuidad del corredor
+A,poligono,componente mayor a 120 m,100.0 %,,curva declarada en LECTURA_PREVIA; NO es la continuidad del corredor
+A,poligono,polos con >= 25% de pertenencia,1,,
+A,poligono,polos con >= 50% de pertenencia,1,,
+A,poligono,polos con >= 75% de pertenencia,1,,
+A,poligono,polos con >= 100% de pertenencia,0,,
+A,poligono,veredicto,ABRE,ABRE,tautologico: el soporte es un polo del borrador y contiene el 100 % de sus locales
+B,zona,hito · Caseros,MICHELIN,no,a 707 m del poligono; direccion: Avenida Caseros 486
+B,zona,hito · El Puentecito,Restaurante Icónico,no,"a 1,761 m del poligono; direccion: LUJAN 2101"
+B,zona,hito · El Progreso,Bar Notable,no,a 760 m del poligono; direccion: Av. Montes de Oca 1700
+B,zona,hito · La Flor de Barracas,Bar Notable,no,a 523 m del poligono; direccion: Suarez 2095
+B,zona,hito · Los Laureles,Bar Notable,no,"a 1,179 m del poligono; direccion: Av. Iriarte 2290"
+B,zona,hito · Los Campeones,Pizzería emblemática,SI,a 0 m del poligono; direccion: Av. Montes de Oca 856
+B,zona,veredicto,ABRE,ABRE,"6 hitos en el barrio, 1 dentro del poligono"
+C,poligono,mercado mas cercano · Mercado de San Telmo,"1,515 m",,Defensa 961
+C,poligono,mercado mas cercano · Patio Gastronomico Rodrigo Bueno,"2,221 m",,Av. Espana 2230
+C,poligono,mercado mas cercano · Mercado del Progreso,"6,138 m",,Av. Rivadavia 5430
+C,poligono,veredicto,no abre,no abre,"la decision 1 del 07/08 exige mercado, patio o galeria EN ACTIVIDAD y nombrado"
+D,poligono,enclave · Barrio Chino,no toca,,"a 10,556 m"
+D,poligono,enclave · Barrio Coreano Baek-ku,no toca,,"a 6,253 m"
+D,poligono,enclave · Pasaje Ruperto Godoy,no toca,,"a 9,081 m"
+D,poligono,enclave · Microcentro boliviano de Liniers,no toca,,"a 12,117 m"
+D,poligono,veredicto,no abre,no abre,"los cuatro enclaves de la ronda 3, buffer 150 m"
+E,zona,veredicto,declarada ABRE en la ficha,ABRE (documental),prensa nacional + sitio oficial de turismo; el repositorio no mide esta via
+F,poligono,fraccion en banda de 50 m,40.3%,,
+F,poligono,fraccion en banda de 75 m,56.5%,,
+F,poligono,fraccion en banda de 100 m,67.7%,,
+F,poligono,fraccion en banda de 150 m,85.5%,,
+F,poligono,fraccion en banda de 200 m,93.5%,,
+F,poligono,elongacion de los puntos,2.45,,
+F,poligono,elongacion del rectangulo,1.94,,
+F,poligono,largo p5-p95 (m),702,,
+F,poligono,ancho p80 (m),119,,
+F,poligono,veredicto,ABRE,ABRE,"corte declarado 2.0, no se mueve"
+—,poligono,tramo de Av. Montes de Oca cubierto,301-999,,761 m de avenida dentro del poligono; la ficha anuncia 280-1702
+—,poligono,extremo declarado por la ficha · altura 280,63 m,,fuera del poligono publicado
+—,poligono,extremo declarado por la ficha · altura 1702,771 m,,fuera del poligono publicado
+—,resumen,vias medibles abiertas,3 de 5,"A, B, F",la via E es documental y no la mide el repositorio

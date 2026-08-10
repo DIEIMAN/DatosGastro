@@ -1,0 +1,316 @@
+================================================================================================
+RONDA 15 - los dieciocho perimetros, trazados sobre lo que las fichas ya tienen escrito
+================================================================================================
+
+hitos: 220 filas con punto -> 212 tras deduplicar por nombre y punto (8 filas repetidas en hitos_capa_2026_r11.csv)
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas), mediana 1.05 ha, total 19,414 ha
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+
+================================================================================================
+Z41 - Nunez   (2.8 % del barrio concentrado; provisorio = Z41, 449.86 ha, 494 locales)
+================================================================================================
+  perimetro escrito: Tres piezas: el corredor de Crisologo Larralde entre Av. del Libertador y Av. Cabildo, el corredor bajo el viaducto Mitre, y un nucleo disperso de bistros en Campos Salles, O'Higgins y Grecia.
+
+  [CIERRA]  corredor Crisologo Larralde
+            eje 1,188 m -> 22 manzanas frentistas -> 23.81 ha, 61 locales
+  [NO CIERRA] corredor bajo el viaducto Mitre: el texto no nombra ninguna calle ni los dos extremos del tramo, y la propia ficha deja abierto el reparto: el extremo sur toca R19 Federico Lacroze y el tramo entre Blanco Encalada y Monroe cae en Belgrano
+  [NO CIERRA] nucleo de bistros en Campos Salles, O'Higgins y Grecia: tres calles sin extension, y el texto las llama dispersas
+
+  el poligono trazado: 23.81 ha - 61 locales
+  contra el provisorio (Z41): -426.04 ha - -433 locales (5.3 % de la superficie del barrio, 12.3 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 1 de los 5 del provisorio caen dentro del trazado
+      adentro: Ness
+      afuera, con la distancia al borde: Garabato Bistro 6 m · Piedra Pasillo Al Fondo 155 m · Evelia 303 m · La Escuela 488 m
+
+  VEREDICTO: cerrado = PARCIAL  (1 de 3 piezas)
+             la ficha NO publica cifra de zona: lo trazado es una pieza, no el polo
+
+================================================================================================
+Z46 - Retiro   (3.9 % del barrio concentrado; provisorio = Z46, 466.60 ha, 715 locales)
+================================================================================================
+  perimetro escrito: Tres piezas: el nucleo institucional de Plaza San Martin y Florida; el corredor Arroyo, de Juncal y Esmeralda a Plaza Carlos Pellegrini; y un cluster coreano y asiatico sobre Maipu, Esmeralda, Paraguay y M. T. de Alvear, alturas 800 a 990, entre Plaza San Martin y Av. Cordoba.
+
+  [CIERRA]  cluster coreano y asiatico
+            eje 1,113 m -> 10 manzanas frentistas -> 18.96 ha, 163 locales
+  [CIERRA]  corredor Arroyo
+            eje 383 m -> 5 manzanas frentistas -> 11.90 ha, 32 locales
+  [NO CIERRA] nucleo institucional de Plaza San Martin y Florida: una plaza y una calle sin rango de alturas ni calles de corte: Florida entera mide mas de un kilometro y el texto no dice que tramo
+
+  el poligono trazado: 30.87 ha - 195 locales
+  contra el provisorio (Z46): -435.74 ha - -520 locales (6.6 % de la superficie del barrio, 27.3 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 3 de los 11 del provisorio caen dentro del trazado
+      adentro: Confiteria Saint Moritz, Floreria Atlantico, Tancat
+      afuera, con la distancia al borde: FLORIDA GARDEN 5 m · Chuchú 13 m · PLAZA BAR 59 m · Elena 78 m · Barbaro 202 m · El Cuartito 383 m · Presencia 423 m · Josephina's Cafe 492 m
+  contra Z46_SUBZONA_CLUSTER_COREANO: comparten 18.96 ha (61.4 % del trazado, 37.1 % de Z46_SUBZONA_CLUSTER_COREANO) y 163 locales
+
+  VEREDICTO: cerrado = PARCIAL  (2 de 3 piezas)
+             la ficha NO publica cifra de zona: lo trazado es una pieza, no el polo
+
+================================================================================================
+Z27 - Villa Santa Rita   (4.9 % del barrio concentrado; provisorio = Z27, 215.46 ha, 182 locales)
+================================================================================================
+  perimetro escrito: Puntos dispersos con anclaje en Av. Alvarez Jonte, que es el limite sur y oeste del barrio y no su columna interior.
+
+  [NO CIERRA] el conjunto: el texto dice 'puntos dispersos' y no da extension sobre Av. Alvarez Jonte; la propia ficha declara que la via de densidad no abre porque son seis locales dispersos en diez cuadras. Falta el tramo de Av. Alvarez Jonte, en alturas o entre calles de corte
+
+  VEREDICTO: cerrado = NO  (0 de 1 piezas)
+
+================================================================================================
+Z50 - Barracas - Av. Montes de Oca   (5.2 % del barrio concentrado; provisorio = S_BARRACAS, 795.89 ha, 410 locales)
+================================================================================================
+  perimetro escrito: El corredor documentado va de Av. Montes de Oca 280 a 1702. El poligono medido es otra cosa y es mas chico: 18,02 hectareas y 62 locales, sobre el tramo 301 a 999.
+
+  [CIERRA]  corredor documentado 280-1702
+            eje 2,217 m -> 29 manzanas frentistas -> 50.62 ha, 84 locales
+
+  el poligono trazado: 50.62 ha - 84 locales
+  contra el provisorio (S_BARRACAS): -745.27 ha - -326 locales (6.4 % de la superficie del barrio, 20.5 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 2 de los 6 del provisorio caen dentro del trazado
+      adentro: El Progreso, Los Campeones
+      afuera, con la distancia al borde: La Flor de Barracas 359 m · Caseros 444 m · Los Laureles 526 m · El Puentecito 813 m
+  lectura declarada, NO adoptada - el poligono medido, tramo 301-999: 23.56 ha, 57 locales
+  lectura declarada, NO adoptada - el eje que releva la Ciudad, 501-1199: 27.28 ha, 60 locales
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z51 - Barracas - Iriarte, California y Vieytes   (5.2 % del barrio concentrado; provisorio = S_BARRACAS, 795.89 ha, 410 locales)
+================================================================================================
+  perimetro escrito: Racimo documentado sobre Av. Iriarte 2100-2300, con extension a Vieytes y California.
+
+  [CIERRA]  racimo Av. Iriarte 2100-2300
+            eje 441 m -> 7 manzanas frentistas -> 5.83 ha, 12 locales
+  control - VIEYTES (la transversal que el texto nombra): a 0 m del tramo trazado -> cruza
+  control - CALIFORNIA (la otra transversal que el texto nombra): a 104 m del tramo trazado -> NO cruza
+
+  el poligono trazado: 5.83 ha - 12 locales
+  contra el provisorio (S_BARRACAS): -790.06 ha - -398 locales (0.7 % de la superficie del barrio, 2.9 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 1 de los 6 del provisorio caen dentro del trazado
+      adentro: Los Laureles
+      afuera, con la distancia al borde: El Progreso 450 m · El Puentecito 623 m · La Flor de Barracas 692 m · Los Campeones 1,120 m · Caseros 2,394 m
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z39 - Parque Avellaneda   (5.2 % del barrio concentrado; provisorio = Z39, 473.47 ha, 173 locales)
+================================================================================================
+  perimetro escrito: El anillo del Parque Avellaneda, sobre Av. Olivera y Av. Lacarra.
+
+  [NO CIERRA] el anillo del parque: un anillo necesita cerrar y el texto nombra dos avenidas que se CRUZAN -distancia 0 m-, o sea dos lados de una esquina, no cuatro de un anillo. Faltan las otras dos calles del anillo, o el poligono del parque
+  lectura declarada, NO adoptada - lectura B - por las alturas de los tres referentes: 59.97 ha, 6 locales
+  lectura declarada, NO adoptada - lectura B - Av. Olivera al 1557: 1.99 ha, 9 locales
+
+  VEREDICTO: cerrado = NO  (0 de 1 piezas)
+
+================================================================================================
+Z28 - Monte Castro   (5.7 % del barrio concentrado; provisorio = Z28, 262.85 ha, 202 locales)
+================================================================================================
+  perimetro escrito: Av. Alvarez Jonte, aproximadamente entre el 4400 y el 5299, con nodo en el cruce con Av. Lope de Vega.
+
+  [CIERRA]  corredor Av. Alvarez Jonte 4400-5299
+            eje 1,210 m -> 26 manzanas frentistas -> 28.73 ha, 69 locales
+  control - LOPE DE VEGA AV. (el nodo que el texto nombra): a 0 m del tramo trazado -> cruza
+
+  el poligono trazado: 28.73 ha - 69 locales
+  contra el provisorio (Z28): -234.12 ha - -133 locales (10.9 % de la superficie del barrio, 34.2 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 1 de los 2 del provisorio caen dentro del trazado
+      adentro: El Fortin
+      afuera, con la distancia al borde: Café Olimpo 638 m
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z52 - La Boca - Almirante Brown y Necochea   (7.5 % del barrio concentrado; provisorio = S_LABOCA, 504.00 ha, 295 locales)
+================================================================================================
+  perimetro escrito: El tramo de la calle Necochea y sus intersecciones con la avenida Suarez y la calle Olavarria, aproximadamente 340 metros lineales, desde la avenida Suarez y la calle Olavarria, extendiendose hasta la avenida Almirante Brown.
+
+  [CIERRA]  tramo Necochea, de Suarez a Alte. Brown
+            eje 319 m -> 6 manzanas frentistas -> 6.14 ha, 3 locales
+
+  R12 - largo declarado por la fuente 340 m contra el medido 319 m: -21 m (6.0 %)
+
+  el poligono trazado: 6.14 ha - 3 locales
+  contra el provisorio (S_LABOCA): -497.86 ha - -292 locales (1.2 % de la superficie del barrio, 1.0 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 0 de los 9 del provisorio caen dentro del trazado
+      afuera, con la distancia al borde: Banchero 54 m · La Buena Medida 106 m · Café Roma 111 m · El Portuario 225 m · Il Matterello 449 m · LA PERLA 509 m · Bar Boca a Boca 529 m · El Estano 1880 927 m
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z53 - La Boca - Caminito y Vuelta de Rocha   (7.5 % del barrio concentrado; provisorio = S_LABOCA, 504.00 ha, 295 locales)
+================================================================================================
+  perimetro escrito: Entorno de Caminito y la Vuelta de Rocha, sobre Av. Don Pedro de Mendoza.
+
+  [NO CIERRA] el entorno de Caminito y la Vuelta de Rocha: 'entorno' no es una extension, y **la Vuelta de Rocha no esta en el callejero**: es un recodo del Riachuelo, no una calle. Falta el tramo de Av. Don Pedro de Mendoza, en alturas o entre calles de corte
+
+  VEREDICTO: cerrado = NO  (0 de 1 piezas)
+
+================================================================================================
+Z33 - Mataderos   (9.7 % del barrio concentrado; provisorio = Z33, 740.11 ha, 375 locales)
+================================================================================================
+  perimetro escrito: Dos piezas separadas por mas de un kilometro: la Feria y el Mercado de Hacienda, en Av. Lisandro de la Torre y Av. de los Corrales, y un conjunto de referentes dispersos. El eje comercial que releva la Ciudad es Av. Alberdi 5501-6299.
+
+  [NO CIERRA] la Feria y el Mercado de Hacienda: el texto da una esquina -el cruce de dos avenidas- y ninguna extension
+  [NO CIERRA] el conjunto de referentes dispersos: el texto los llama dispersos y estan a mas de un kilometro de la Feria
+  lectura declarada, NO adoptada - lectura B - el eje comercial que releva la Ciudad, Alberdi 5501-6299: 24.27 ha, 55 locales
+
+  VEREDICTO: cerrado = NO  (0 de 2 piezas)
+
+================================================================================================
+Z31 - Villa Luro   (9.8 % del barrio concentrado; provisorio = Z31, 256.80 ha, 206 locales)
+================================================================================================
+  perimetro escrito: Bulevar Ramon L. Falcon 5400-5800, entre Albariños y Escalada, mas Av. Rivadavia 10100-10400.
+
+  [CIERRA]  Bulevar Ramon L. Falcon 5400-5800
+            eje 1,028 m -> 12 manzanas frentistas -> 8.05 ha, 30 locales
+  [CIERRA]  Av. Rivadavia 10100-10400
+            eje 386 m -> 6 manzanas frentistas -> 8.25 ha, 18 locales
+
+  R12 - la misma pieza escrita dos veces. Por alturas: 1,028 m. Por calles de corte (Falcon entre Albarino y Escalada): 1,284 m. Diferencia +256 m
+
+  el poligono trazado: 13.70 ha - 41 locales
+  contra el provisorio (Z31): -243.10 ha - -165 locales (5.3 % de la superficie del barrio, 19.9 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 0 de los 0 del provisorio caen dentro del trazado
+
+  VEREDICTO: cerrado = SI  (2 de 2 piezas)
+
+================================================================================================
+Z35 - Balvanera - Once   (19.2 % del barrio concentrado; provisorio = Z35, 434.43 ha, 1253 locales)
+================================================================================================
+  perimetro escrito: En revision. La ficha no escribe ningun perimetro.
+
+  [NO CIERRA] la zona entera: la ficha declara el perimetro 'en revision' y **no escribe ninguna calle**. No hay nada que poligonizar. Lo que falta es el perimetro, y la propia ficha dice cual es el insumo: documentar la densidad actual
+
+  VEREDICTO: cerrado = NO  (0 de 1 piezas)
+
+================================================================================================
+Z40 - Nueva Pompeya y Parque Patricios   (19.8 % del barrio concentrado; provisorio = Z40, 870.07 ha, 546 locales)
+================================================================================================
+  perimetro escrito: Tres piezas: Av. Caseros y el Distrito Tecnologico, Av. Saenz y el Mercado de Pompeya, y el Barrio Charrua.
+
+  [NO CIERRA] Av. Caseros y el Distrito Tecnologico: eje sin extremos ni alturas
+  [NO CIERRA] Av. Saenz y el Mercado de Pompeya: eje sin extremos ni alturas
+  [NO CIERRA] Barrio Charrua: la nota de delimitacion le da tres bordes -Av. Bonorino, Av. Fernandez de la Cruz y las vias del Belgrano Sur- pero **las vias del Belgrano Sur no son una linea del callejero**: solo hay segmentos de calle marcados con cruce ferroviario. Con dos bordes de tres no cierra una cara
+
+  VEREDICTO: cerrado = NO  (0 de 3 piezas)
+
+================================================================================================
+Z54 - Nueva Pompeya - eje Av. Saenz   (19.8 % del barrio concentrado; provisorio = Z40, 870.07 ha, 546 locales)
+================================================================================================
+  perimetro escrito: Eje Av. Saenz, con nucleo en el Mercado de Pompeya, Av. Saenz 790.
+
+  [NO CIERRA] el eje Av. Saenz: una sola altura -el 790, que es el mercado- no es una extension. Falta el tramo, y ademas el reparto con Z40, que la ficha declara pendiente
+
+  VEREDICTO: cerrado = NO  (0 de 1 piezas)
+
+================================================================================================
+Z47 - Monserrat y Congreso   (23.7 % del barrio concentrado; provisorio = Z47, 219.97 ha, 913 locales)
+================================================================================================
+  perimetro escrito: El eje Av. de Mayo-Callao: Av. de Mayo de Peru/Bolivar a Lima/Salta, alturas 500 a 1300, ambas aceras, con frentes sobre H. Yrigoyen 1199-1201. Remates en Alsina 420, Peru 86 y 302, Av. Belgrano 599 y 1144, Defensa 695, Solis 475, la ochava de Entre Rios e Independencia, y Av. Callao 248 y 368.
+
+  [CIERRA]  eje Av. de Mayo 500-1300, ambas aceras
+            eje 1,044 m -> 20 manzanas frentistas -> 13.77 ha, 133 locales
+
+  los remates que nombra la ficha: 2 adentro del poligono, 9 afuera
+      CALLAO AV. 368               a 788 m
+      CALLAO AV. 248               a 723 m
+      DEFENSA 695                  a 718 m
+      SOLIS 475                    a 707 m
+      BELGRANO AV. 1144            a 384 m
+
+  el poligono trazado: 13.77 ha - 133 locales
+  contra el provisorio (Z47): -206.19 ha - -780 locales (6.3 % de la superficie del barrio, 14.6 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.08 ha (0.5 %) -> NO contenido: se sale del barrio
+       se reparte entre: Monserrat 99 %
+  hitos con punto: 6 de los 13 del provisorio caen dentro del trazado
+      adentro: 36 BILLARES, Bar Iberia, Cabildo de Buenos Aires, Café Tortoni, El Imparcial, London City
+      afuera, con la distancia al borde: LA PUERTO RICO 160 m · El Querandi 273 m · EL COLONIAL 375 m · Centro Laurak Bat (Restaurante Haritz) 393 m · Centro Asturiano de Buenos Aires 732 m · BAR SEDDON 774 m · Gran Café Gardel 1,116 m
+  contra R12: comparten 8.68 ha (63.0 % del trazado, 4.7 % de R12) y 76 locales
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z37 - Almagro   (29.1 % del barrio concentrado; provisorio = Z37, 405.26 ha, 868 locales)
+================================================================================================
+  perimetro escrito: Tres piezas: el nucleo de Guardia Vieja y Bulnes, el corredor de Av. Corrientes entre el 3500 y el 4200, y el nodo de Rivadavia y Medrano.
+
+  [CIERRA]  corredor Av. Corrientes 3500-4200
+            eje 890 m -> 14 manzanas frentistas -> 25.79 ha, 89 locales
+  [NO CIERRA] nucleo de Guardia Vieja y Bulnes: el texto dice 'cuatro locales en tres cuadras' y nombra dos alturas -3601 y 3602-, pero no dice cuales son las tres cuadras: falta el rango
+  [NO CIERRA] nodo de Rivadavia y Medrano: una esquina sin extension
+
+  el poligono trazado: 25.79 ha - 89 locales
+  contra el provisorio (Z37): -379.47 ha - -779 locales (6.4 % de la superficie del barrio, 10.3 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 3 de los 8 del provisorio caen dentro del trazado
+      adentro: EL SIMBOLO, La Orquidea, Pin Pun
+      afuera, con la distancia al borde: El Banderin 107 m · 12 de octubre 237 m · LAS VIOLETAS 697 m · El Trebol 1969 767 m · El Mirasol de Boedo 887 m
+  contra R13: comparten 18.09 ha (70.2 % del trazado, 16.6 % de R13) y 65 locales
+
+  VEREDICTO: cerrado = PARCIAL  (1 de 3 piezas)
+             la ficha NO publica cifra de zona: lo trazado es una pieza, no el polo
+
+================================================================================================
+Z32 - Liniers - Mercado Andino   (33.7 % del barrio concentrado; provisorio = Z32, 437.61 ha, 447 locales)
+================================================================================================
+  perimetro escrito: El eje de Jose Leon Suarez entre Ramon Falcon y Ventura Bosch, 285 metros medidos, con transversales sobre Ramon Falcon, Ibarrola y Ventura Bosch. No es un cuadrante: es un eje con transversales.
+
+  [CIERRA]  eje Jose Leon Suarez, de Ramon Falcon a Ventura Bosch
+            eje 284 m -> 4 manzanas frentistas -> 7.00 ha, 63 locales
+
+  R12 - largo declarado por la fuente 285 m contra el medido 284 m: -1 m (0.4 %)
+  control - IBARROLA (la transversal donde esta la gastronomia): a 0 m del tramo trazado -> cruza
+
+  el poligono trazado: 7.00 ha - 63 locales
+  contra el provisorio (Z32): -430.61 ha - -384 locales (1.6 % de la superficie del barrio, 14.1 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %) -> contenido
+  hitos con punto: 0 de los 1 del provisorio caen dentro del trazado
+      afuera, con la distancia al borde: El Ciervo 129 m
+
+  VEREDICTO: cerrado = SI  (1 de 1 piezas)
+
+================================================================================================
+Z44 - Villa Ortuzar   (34.2 % del barrio concentrado; provisorio = Z44, 185.46 ha, 201 locales)
+================================================================================================
+  perimetro escrito: Av. Alvarez Thomas, tramo 600-1700, con nucleo secundario en Plaza 25 de Agosto -Giribone, 14 de Julio, Charlone y Bauness.
+
+  [CIERRA]  corredor Av. Alvarez Thomas 600-1700
+            eje 1,362 m -> 23 manzanas frentistas -> 34.39 ha, 69 locales
+  [NO CIERRA] nucleo secundario de Plaza 25 de Agosto: las cuatro calles NO encierran ninguna cara: Bauness queda a 184 m de Giribone y a 249 m de 14 de Julio, y con las otras tres tampoco cierra. Falta decir por donde va el cuarto lado
+
+  el poligono trazado: 34.39 ha - 69 locales
+  contra el provisorio (Z44): -151.07 ha - -132 locales (18.5 % de la superficie del barrio, 34.3 % de sus locales)
+  R12 - superficie del trazado que queda FUERA del provisorio: 23.70 ha (68.9 %) -> NO contenido: se sale del barrio
+       se reparte entre: Colegiales 35 % · Chacarita 34 % · Villa Ortuzar 31 %
+  hitos con punto: 1 de los 1 del provisorio caen dentro del trazado
+      adentro: La Mezzetta
+  contra R09R19_CHACAGIALES: comparten 15.93 ha (46.3 % del trazado, 3.2 % de R09R19_CHACAGIALES) y 25 locales
+
+  VEREDICTO: cerrado = PARCIAL  (1 de 2 piezas)
+             la ficha NO publica cifra de zona: lo trazado es una pieza, no el polo
+
+================================================================================================
+SENSIBILIDAD AL FRENTE MINIMO - el unico parametro que este metodo tiene
+================================================================================================
+zona              10 m          20 m          40 m
+Z41           23.81 ha      23.81 ha      23.81 ha
+Z46           30.87 ha      30.87 ha      30.87 ha
+Z50           50.62 ha      50.62 ha      50.62 ha
+Z51            5.83 ha       5.83 ha       5.78 ha
+Z28           28.73 ha      28.73 ha      27.58 ha
+Z52            6.14 ha       6.14 ha       6.14 ha
+Z31           13.70 ha      13.70 ha      13.70 ha
+Z47           13.77 ha      13.77 ha      12.76 ha
+Z37           25.79 ha      25.79 ha      25.79 ha
+Z32            7.00 ha       7.00 ha       7.00 ha
+Z44           34.39 ha      34.39 ha      33.25 ha
+
+Escrito: perimetros_18.csv (18 filas) y geometria/perimetros_18.geojson (13 piezas, EPSG:4326)
+  cerradas: 7  ·  parciales: 4  ·  sin trazar: 7

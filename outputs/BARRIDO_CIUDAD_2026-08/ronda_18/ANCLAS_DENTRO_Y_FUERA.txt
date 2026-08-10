@@ -1,0 +1,218 @@
+==================================================================================================
+ANCLAS DENTRO Y FUERA · los establecimientos de cada página contra su borde
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+geometría vigente: 41 polos
+  de soporte previo (ronda 16)  31: R01, R02, R03, R04, R05, R06, R07, R08, R09, R10, R11, R12, R13, R14, R15, R16, R17, R19, R20, R21, Z24, Z27, Z28, Z31, Z32, Z39b, Z43, Z47, Z50, Z51, Z52
+  de ronda 17                    6: Z37, Z39, Z40, Z41, Z46, Z54
+  de ronda 18                    4: Z33, Z35, Z44, Z53
+
+la zona de la que se recorta cada polo (la vía B se mide acá, no en el recorte):
+  R01    -> R01                  misma id en la capa de zonas
+  R02    -> R02                  misma id en la capa de zonas
+  R03    -> R03                  misma id en la capa de zonas
+  R04    -> R04                  misma id en la capa de zonas
+  R05    -> R05                  misma id en la capa de zonas
+  R06    -> R06                  misma id en la capa de zonas
+  R07    -> R07                  misma id en la capa de zonas
+  R08    -> R08                  misma id en la capa de zonas
+  R09    -> R09R19_CHACAGIALES   mayor solape con el borde (100 % del borde)
+  R10    -> R10                  misma id en la capa de zonas
+  R11    -> R11                  misma id en la capa de zonas
+  R12    -> R12                  misma id en la capa de zonas
+  R13    -> R13                  misma id en la capa de zonas
+  R14    -> R14                  misma id en la capa de zonas
+  R15    -> R15                  misma id en la capa de zonas
+  R16    -> R16                  misma id en la capa de zonas
+  R17    -> R17                  misma id en la capa de zonas
+  R19    -> R09R19_CHACAGIALES   mayor solape con el borde (100 % del borde)
+  R20    -> R20                  misma id en la capa de zonas
+  R21    -> R21                  misma id en la capa de zonas
+  Z24    -> Z24                  misma id en la capa de zonas
+  Z27    -> Z27                  declarada en magnitudes_sin_perimetro.csv
+  Z28    -> Z28                  declarada en magnitudes_sin_perimetro.csv
+  Z31    -> Z31                  declarada en magnitudes_sin_perimetro.csv
+  Z32    -> Z32                  declarada en magnitudes_sin_perimetro.csv
+  Z33    -> Z33                  declarada en magnitudes_sin_perimetro.csv
+  Z35    -> Z35                  declarada en magnitudes_sin_perimetro.csv
+  Z37    -> Z37                  declarada en magnitudes_sin_perimetro.csv
+  Z39    -> Z39                  declarada en magnitudes_sin_perimetro.csv
+  Z39b   -> Z39b                 misma id en la capa de zonas
+  Z40    -> Z40                  declarada en magnitudes_sin_perimetro.csv
+  Z41    -> Z41                  declarada en magnitudes_sin_perimetro.csv
+  Z43    -> R09R19_CHACAGIALES   mayor solape con el borde (100 % del borde)
+  Z44    -> Z44                  declarada en magnitudes_sin_perimetro.csv
+  Z46    -> Z46                  declarada en magnitudes_sin_perimetro.csv
+  Z47    -> Z47                  declarada en magnitudes_sin_perimetro.csv
+  Z50    -> S_BARRACAS           declarada en magnitudes_sin_perimetro.csv
+  Z51    -> S_BARRACAS           declarada en magnitudes_sin_perimetro.csv
+  Z52    -> S_LABOCA             declarada en magnitudes_sin_perimetro.csv
+  Z53    -> S_LABOCA             declarada en magnitudes_sin_perimetro.csv
+  Z54    -> Z40                  declarada en magnitudes_sin_perimetro.csv
+
+capa de reconocimiento: 225 establecimientos, 220 con punto, 5 sin punto (no se los ubica en el centroide de nada)
+vía B por zona: 33 zonas con al menos un establecimiento de vía B adentro
+
+==================================================================================================
+EL RESULTADO · qué páginas dejan afuera el establecimiento que las sostiene
+==================================================================================================
+
+anclas medidas: 292 en 37 polos
+  adentro del borde        : 186
+  afuera del borde         : 96
+  sin ubicar               : 10
+  sostienen la vía B       : 189   (de trayectoria 133, de distinción contemporánea 56)
+
+  LA CIFRA DEL CONTROL: 42 establecimientos con historia —Bar Notable,
+  restaurante icónico, pizzería emblemática, heladería histórica— sostienen la
+  condición de su zona y quedan FUERA del borde de su polo, en 14 de 37 páginas.
+  Son 32 establecimientos distintos: diez aparecen
+  en dos páginas cada uno porque dos polos se recortan de la misma zona -La Boca,
+  Barracas y Pompeya tienen dos polos cada una-, y la evidencia de la zona la
+  invocan las dos páginas.
+  Contando también las distinciones contemporáneas -MICHELIN y rankings-, son 55
+  filas en 15 páginas.
+
+  R09 · Chacarita
+      con historia: 1 afuera, 2 adentro
+        Bar Conde                                Bar Notable              a     160 m
+  Z28 · Monte Castro
+      con historia: 1 afuera, 1 adentro
+        Café Olimpo                              Bar Notable              a     638 m
+  Z32 · Liniers · Mercado Andino
+      con historia: 1 afuera, 0 adentro   ← el borde no contiene NINGUNO
+        El Ciervo                                Heladería histórica      a     129 m
+  Z33 · Mataderos
+      con historia: 3 afuera, 1 adentro
+        9 de Julio                               Bar Notable              a     888 m
+        El Cedron                                Pizzería emblemática     a     691 m
+        Bar del Glorias                          Bar Notable              a     667 m
+  Z35 · Balvanera · Once
+      con historia: 3 afuera, 0 adentro   ← el borde no contiene NINGUNO
+        CAFE DE LOS ANGELITOS                    Bar Notable              a     759 m
+        El Tropezón                              Restaurante Icónico      a     742 m
+        Roma del Abasto                          Bar Notable              a     323 m
+  Z37 · Almagro
+      con historia: 3 afuera, 5 adentro
+        El Trebol 1969                           Pizzería emblemática     a     767 m
+        12 de octubre                            Bar Notable              a     237 m
+        El Mirasol de Boedo                      Restaurante Icónico      a      49 m
+  Z40 · Nueva Pompeya y Parque Patricios
+      con historia: 1 afuera, 0 adentro   ← el borde no contiene NINGUNO
+        El Buzón                                 Bar Notable              a     256 m
+  Z43 · Colegiales
+      con historia: 2 afuera, 1 adentro
+        Albamonte Ristorante                     Restaurante Icónico      a     804 m
+        CAFE PALACIO                             Bar Notable              a     490 m
+  Z47 · Monserrat y Congreso
+      con historia: 4 afuera, 6 adentro
+        BAR SEDDON                               Bar Notable              a     774 m
+        EL COLONIAL                              Bar Notable              a     374 m
+        El Querandi                              Bar Notable              a     273 m
+        LA PUERTO RICO                           Bar Notable              a     160 m
+  Z50 · Barracas · Av. Montes de Oca
+      con historia: 3 afuera, 2 adentro
+        El Puentecito                            Restaurante Icónico      a     813 m
+        Los Laureles                             Bar Notable              a     526 m
+        La Flor de Barracas                      Bar Notable              a     359 m
+  Z51 · Barracas · Iriarte, California y Vieytes
+      con historia: 4 afuera, 1 adentro
+        Los Campeones                            Pizzería emblemática     a   1,120 m
+        La Flor de Barracas                      Bar Notable              a     692 m
+        El Puentecito                            Restaurante Icónico      a     623 m
+        El Progreso                              Bar Notable              a     450 m
+  Z52 · La Boca · Almirante Brown y Necochea
+      con historia: 8 afuera, 0 adentro   ← el borde no contiene NINGUNO
+        El Estano 1880                           Bar Notable              a     926 m
+        Bar Boca a Boca                          Bar Notable              a     529 m
+        LA PERLA                                 Bar Notable              a     508 m
+        Il Matterello                            Restaurante Icónico      a     449 m
+        El Portuario                             Bar Notable              a     225 m
+        Café Roma                                Bar Notable              a     111 m
+        La Buena Medida                          Bar Notable              a     106 m
+        Banchero                                 Pizzería emblemática     a      54 m
+  Z53 · La Boca · Caminito y Vuelta de Rocha
+      con historia: 7 afuera, 1 adentro
+        Bar Boca a Boca                          Bar Notable              a     885 m
+        El Portuario                             Bar Notable              a     792 m
+        La Buena Medida                          Bar Notable              a     717 m
+        El Estano 1880                           Bar Notable              a     600 m
+        Il Matterello                            Restaurante Icónico      a     597 m
+        Banchero                                 Pizzería emblemática     a     375 m
+        Café Roma                                Bar Notable              a     281 m
+  Z54 · Nueva Pompeya · eje Av. Saenz
+      con historia: 1 afuera, 0 adentro   ← el borde no contiene NINGUNO
+        El Buzón                                 Bar Notable              a     256 m
+
+  EL CASO GRAVE —el borde no contiene NI UNO de los establecimientos con historia
+  sobre los que su zona se apoya—: 5 páginas
+      Z32 · Liniers · Mercado Andino  (1 afuera)
+      Z35 · Balvanera · Once  (3 afuera)
+      Z40 · Nueva Pompeya y Parque Patricios  (1 afuera)
+      Z52 · La Boca · Almirante Brown y Necochea  (8 afuera)
+      Z54 · Nueva Pompeya · eje Av. Saenz  (1 afuera)
+
+--------------------------------------------------------------------------------------------------
+LOS 41, UNO POR UNO
+--------------------------------------------------------------------------------------------------
+  polo                                           anclas dentro  fuera  s/ub  historia dentro/fuera
+  R01 · Palermo                                      18     16      2     0          1 / 0       
+  R02 · Avenida Corrientes                           10     10      0     0         10 / 0       
+  R03 · San Telmo                                     5      1      4     0          1 / 0       
+  R04 · Puerto Madero                                 6      6      0     0          3 / 0       
+  R05 · Belgrano                                      4      1      2     1          0 / 0       
+  R06 · Recoleta                                     11      9      2     0          4 / 0       
+  R07 · Costanera Norte                               2      2      0     0          1 / 0       
+  R08 · Villa Crespo                                  7      6      1     0          1 / 0       
+  R09 · Chacarita                                     9      3      6     0          2 / 1       
+  R10 · Caballito                                     3      2      1     0          1 / 0       
+  R11 · Boulevard Caseros                             1      1      0     0          1 / 0       
+  R12 · Centro y Microcentro                         22     22      0     0         22 / 0       
+  R13 · Abasto                                        4      3      1     0          3 / 0       
+  R14 · Avenida Boedo                                 3      3      0     0          3 / 0       
+  R15 · Devoto                                        3      3      0     0          3 / 0       
+  R17 · Villa Urquiza                                 1      1      0     0          1 / 0       
+  R19 · Federico Lacroze                              9      7      2     0          3 / 0       
+  R21 · La Paternal                                   3      3      0     0          2 / 0       
+  Z24 · Flores · Avellaneda y Pasaje Ruperto G       16     13      3     0          0 / 0       
+  Z27 · Villa Santa Rita                              6      5      1     0          2 / 0       
+  Z28 · Monte Castro                                  6      2      1     3          1 / 1       
+  Z32 · Liniers · Mercado Andino                      7      5      2     0          0 / 1         ←
+  Z33 · Mataderos                                     6      3      3     0          1 / 3       
+  Z35 · Balvanera · Once                              8      5      3     0          0 / 3         ←
+  Z37 · Almagro                                       9      5      4     0          5 / 3       
+  Z39 · Parque Avellaneda                             4      1      3     0          0 / 0       
+  Z40 · Nueva Pompeya y Parque Patricios              4      2      2     0          0 / 1         ←
+  Z41 · Nunez                                        12     11      0     1          1 / 0       
+  Z43 · Colegiales                                   14      4      6     4          1 / 2       
+  Z44 · Villa Ortuzar                                11      4      7     0          1 / 0       
+  Z46 · Retiro                                       16     14      1     1          7 / 0       
+  Z47 · Monserrat y Congreso                         17      8      9     0          6 / 4       
+  Z50 · Barracas · Av. Montes de Oca                  6      2      4     0          2 / 3       
+  Z51 · Barracas · Iriarte, California y Vieyt        6      1      5     0          1 / 4       
+  Z52 · La Boca · Almirante Brown y Necochea          9      0      9     0          0 / 8         ←
+  Z53 · La Boca · Caminito y Vuelta de Rocha         11      1     10     0          1 / 7       
+  Z54 · Nueva Pompeya · eje Av. Saenz                 3      1      2     0          0 / 1         ←
+
+  sin ninguna ancla en ninguna de las dos fuentes: R16, R20, Z31, Z39b
+
+--------------------------------------------------------------------------------------------------
+LO QUE LA PÁGINA NOMBRA Y EL REPOSITORIO NO SABE DÓNDE ESTÁ
+--------------------------------------------------------------------------------------------------
+  10 anclas. No se las ubica en el centroide de nada y no se las descarta:
+      R05 · Belgrano                             Sucre                              sin ubicar
+      Z28 · Monte Castro                         Ay Miranda                         sin ubicar
+      Z28 · Monte Castro                         La Media Costilla                  sin ubicar
+      Z28 · Monte Castro                         La Renaciente                      sin ubicar
+      Z41 · Nunez                                Vereda Adentro                     sin ubicar
+      Z43 · Colegiales                           Antiche Tentazioni                 sin ubicar
+      Z43 · Colegiales                           La Bici                            sin ubicar
+      Z43 · Colegiales                           La Fabrica del Taco                sin ubicar
+      Z43 · Colegiales                           Niniveh                            sin ubicar
+      Z46 · Retiro                               Fa Song Song                       sin ubicar
+
+Escrito: anclas_dentro_y_fuera.csv (292 filas) · anclas_resumen.json

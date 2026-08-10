@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-08-10",
+  "capa_adoptada": "outputs/BARRIDO_CIUDAD_2026-08/insumos/caba_barrios.geojson",
+  "capa_reemplazada": "data/raw/geo_barrios.geojson",
+  "sha256": "56bf0f53fcb425eb290335c193c02088b785e628c8633c8d8dc295180441d2d5",
+  "barrios": 48,
+  "pares_de_nombre": 48,
+  "pares_que_se_escriben_distinto": [
+    [
+      "La Boca",
+      "BOCA"
+    ]
+  ],
+  "locales_que_cambian_de_barrio": 7,
+  "barrios_afectados": 12,
+  "neto_sobre_los_48_barrios": 1,
+  "neto_de_la_ciudad_incluyendo_lo_que_cae_fuera": 0,
+  "ha_capa_vieja": 20408.31,
+  "ha_capa_oficial": 20375.17,
+  "locales_en_vieja_no_oficial": 0,
+  "locales_en_oficial_no_vieja": 1
+}

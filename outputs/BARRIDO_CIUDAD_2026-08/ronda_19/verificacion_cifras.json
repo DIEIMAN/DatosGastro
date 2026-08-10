@@ -1,0 +1,370 @@
+{
+  "fecha_de_la_verificacion": "2026-08-10",
+  "documentos": [
+    "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/APORTES_A_LA_PRESENTACION_PLAN_2026.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/ATLAS_V3_SECCIONES_I_IV_VII.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/ATLAS_V3_SECCIONES_V_VI.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/DECISION_P078_Y_SALIENTE.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/DECISIONES_EDITORIALES_V3.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/EDICION_TECNICA_METODO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/ESCALA_Y_VOCABULARIO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/FICHA_Y_ESTRUCTURA_V3.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/FICHAS_DE_MUESTRA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/HITOS_DOCUMENTALES_LEEME.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/LAMINAS_PARA_LA_PRESENTACION.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/NOMBRAR_LOS_POLOS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/PERIMETROS_NORMATIVOS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/POLOS_NOMBRADOS_LEEME.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/QUE_ES_UN_POLO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/README.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/RECONCILIACION_HITOS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_B_LAS_124_CONCENTRACIONES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_C_CORRESPONDENCIA_GLOSARIO_FUENTES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ATLAS_V3_SECCIONES_II_V_VI_IX.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DE_DUPLICADOS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DE_ESTADO_2026-08-09.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DEL_CATALOGO_OFICIAL.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CAPA_DE_BARRIOS_Y_COMUNAS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CIERRE_GEOMETRICO_RONDA_17.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/COLEGIALES_NO_ES_UNA_COSA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CORRECCIONES_MIAS_2026-08.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CRITERIO_DE_ADMISION_Y_PERMANENCIA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CRITERIO_ESCALA_DE_LA_VIA_E.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CRITERIO_ESCALA_DE_LAS_VIAS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CRUCE_DE_LOS_90_NOTABLES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/DECISION_TRAYECTORIA_VS_ACTIVIDAD.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/DOS_PROYECTOS_DE_FICHA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EDICION_TECNICA_FASE_DOCUMENTAL.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_CATALOGO_CERRADO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_DESBLOQUEO_Y_LA_TRAMPA_PEOR.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_ERROR_QUE_SE_REPITE.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_NUDO_CHACAGIALES_Y_CUATRO_CORRECCIONES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_NUDO_DE_PALERMO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EL_SUR_CONSOLIDADO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ERRATA_DEL_MODELO_DE_FICHA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ESCALA_DE_VIGENCIA_Y_PATRONES_DE_FALLA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ESTADO_Y_QUE_LLEVAR_MANANA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/FICHAS_CORPUS_LEEME.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/FICHAS_SECCION_VII_TANDA_1.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/FICHAS_SUR_NUEVAS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/HANDOFF_ATLAS_V3_CONTEXTO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/INDICE_DE_VERSIONES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LA_BOCA_SE_MUEVE.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LA_CAPA_DE_MEMORIA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LA_CORRECCION_DEL_NEW_BRIGHTON.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LA_FUENTE_QUE_NOS_FALTABA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LA_RONDA_QUE_ME_REFUTO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAMINAS_PLAN_2026_POLOS_Y_CLUSTERS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAMINAS_v2.2_2026-08-09.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAMINAS_v2.3_2026-08-09.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAMINAS_v2_2026-08-08.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAS_CANITAS_NO_DECAYO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LAS_CUATRO_DIRECCIONES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LECTURA_PREVIA_ENTUR_x_VIA_E.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LO_QUE_DECIDISTE_Y_LO_QUE_FALTA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LO_QUE_OBSERVO_PATRICIA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/LOS_POLOS_CONSAGRADOS_SON_LOS_QUE_CAEN.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/MAGNITUD_DE_LOS_18.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/MODELO_DE_FICHA_Y_TRES_EJEMPLOS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/NIVEL_v0_OBSERVACION_DIRECTA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/NIVELES_DE_NOMBRE_41.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/NO_ERA_UN_CONTEO_MAL_ERA_OTRO_UNIVERSO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/PLACES_PARA_VIGENCIA.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RECONCILIACION_Y_LISTA_PLACES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/REPARACION_ENCLAVES_Y_TRES_CORRECCIONES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RESUMEN_EJECUTIVO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RONDA_2026_LOS_12_PENDIENTES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RONDA_2_OESTE_Y_CENTRO_SUR.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RONDA_3_NORTE_Y_ENCLAVES.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RONDA_DE_VIGENCIA_COWORK.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SECCION_I_PRESENTACION.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SECCION_VII_REFERENCIAS_PUBLICADAS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SECCION_VII_ZONAS_INCORPORADAS.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SECCION_VIII_LO_QUE_NO_ENTRO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SUR_SEIS_VIAS_RONDA_1.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/TABLERO_ATLAS_V3.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/TABLERO_DE_ESTADO.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/V2_comentarios_con_anclaje.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/VERIFICACION_RONDA_15_CODEX.md",
+    "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/VIA_E_22_REFERENCIAS.md"
+  ],
+  "no_coinciden": {
+    "objetos_disjuntos": {
+      "canonico": 40,
+      "unidad": "objetos",
+      "fuente": "outputs/BARRIDO_CIUDAD_2026-08/ronda_17/total_recalculado.json",
+      "menciones_mal": [
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 3968,
+          "encontrado": "39",
+          "valor": 39.0,
+          "ok": false,
+          "contexto": "objetos territoriales disjuntos, entonces, son **39**"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/CRITERIO_DE_ADMISION_Y_PERMANENCIA.md",
+          "linea": 148,
+          "encontrado": "39",
+          "valor": 39.0,
+          "ok": false,
+          "contexto": "objetos territoriales disjuntos, entonces, son **39**"
+        }
+      ],
+      "menciones_bien": 0
+    },
+    "ha_en_polos": {
+      "canonico": 3143.53,
+      "unidad": "hectáreas",
+      "fuente": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "menciones_mal": [
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 4500,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "su unión da **12.688 locales en 3.128,5 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 3785,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "calculada sobre la unión: **12.688 locales en 3.128 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 68,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "de su superficie** — 12.688 locales en 3.128 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 159,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "| **12.688 locales en 3.128 hectáreas** | el **53 %"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_C_CORRESPONDENCIA_GLOSARIO_FUENTES.md",
+          "linea": 149,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "su unión da **12.688 locales en 3.128,5 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ATLAS_V3_SECCIONES_II_V_VI_IX.md",
+          "linea": 556,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "calculada sobre la unión: **12.688 locales en 3.128 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DE_DUPLICADOS.md",
+          "linea": 18,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "área de la **unión** | **3.128,5 ha**"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DE_DUPLICADOS.md",
+          "linea": 17,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "suma de las áreas individuales | **3.128,5 ha**"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EDICION_TECNICA_FASE_DOCUMENTAL.md",
+          "linea": 722,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "área de la **unión** | **3.128,5 ha**"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EDICION_TECNICA_FASE_DOCUMENTAL.md",
+          "linea": 721,
+          "encontrado": "3.128,5",
+          "valor": 3128.5,
+          "ok": false,
+          "contexto": "suma de las áreas individuales | **3.128,5 ha**"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RESUMEN_EJECUTIVO.md",
+          "linea": 15,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "de su superficie** — 12.688 locales en 3.128 hect"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/SECCION_I_PRESENTACION.md",
+          "linea": 25,
+          "encontrado": "3.128",
+          "valor": 3128.0,
+          "ok": false,
+          "contexto": "| **12.688 locales en 3.128 hectáreas** | el **53 %"
+        }
+      ],
+      "menciones_bien": 0
+    },
+    "polos_sin_borde": {
+      "canonico": 3,
+      "unidad": "polos",
+      "fuente": "outputs/BARRIDO_CIUDAD_2026-08/ronda_19/geometria/bordes_vigentes_41.geojson",
+      "menciones_mal": [
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 111,
+          "encontrado": "Dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "Dieciocho de los cuarenta y un polos"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 991,
+          "encontrado": "Dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "Dieciocho de los cuarenta y un polos"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 989,
+          "encontrado": "dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "Los dieciocho sin perímetro trazado"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/MAGNITUD_DE_LOS_18.md",
+          "linea": 9,
+          "encontrado": "Dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "Dieciocho de los cuarenta y un polos"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RESUMEN_EJECUTIVO.md",
+          "linea": 58,
+          "encontrado": "Dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "Dieciocho de los cuarenta y un polos"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/TABLERO_ATLAS_V3.md",
+          "linea": 447,
+          "encontrado": "dieciocho",
+          "valor": 18,
+          "ok": false,
+          "contexto": "dieciocho de los cuarenta y un polos"
+        }
+      ],
+      "menciones_bien": 0
+    },
+    "locales_en_barrios_sin_borde": {
+      "canonico": 527,
+      "unidad": "locales",
+      "fuente": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "menciones_mal": [
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 115,
+          "encontrado": "3.227",
+          "valor": 3227.0,
+          "ok": false,
+          "contexto": "— 3.227 locales en 893,5 hectáreas para el conjunto"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RESUMEN_EJECUTIVO.md",
+          "linea": 62,
+          "encontrado": "3.227",
+          "valor": 3227.0,
+          "ok": false,
+          "contexto": "— 3.227 locales en 893,5 hectáreas para el conjunto"
+        }
+      ],
+      "menciones_bien": 0
+    },
+    "ha_en_barrios_sin_borde": {
+      "canonico": 112.9,
+      "unidad": "hectáreas",
+      "fuente": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "menciones_mal": [
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md",
+          "linea": 116,
+          "encontrado": "893,5",
+          "valor": 893.5,
+          "ok": false,
+          "contexto": "locales en 893,5 hectáreas para el conjunto"
+        },
+        {
+          "archivo": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/RESUMEN_EJECUTIVO.md",
+          "linea": 63,
+          "encontrado": "893,5",
+          "valor": 893.5,
+          "ok": false,
+          "contexto": "locales en 893,5 hectáreas para el conjunto"
+        }
+      ],
+      "menciones_bien": 0
+    }
+  },
+  "coinciden": {
+    "locales_relevados": 23981,
+    "polos": 41,
+    "fichas": 41,
+    "zonas_evaluadas": 55,
+    "agrupamientos_detectados": 124,
+    "locales_en_polos": 12688,
+    "pct_locales_en_polos": 53,
+    "pct_superficie": 15,
+    "bares_notables": 90,
+    "bares_notables_abiertos": 88,
+    "enclaves_comunitarios": 15,
+    "comunas_con_polo": 14
+  },
+  "sin_mencion": [
+    "locales_en_polos_por_geometria",
+    "la_boca_caminito_ha",
+    "la_boca_caminito_locales",
+    "mataderos_tentativo_ha",
+    "mataderos_tentativo_locales",
+    "mataderos_eje_alberdi_ha",
+    "mataderos_eje_alberdi_locales",
+    "balvanera_lectura_enclave_ha",
+    "balvanera_lectura_extendida_ha",
+    "balvanera_lectura_extendida_locales",
+    "villa_ortuzar_ha",
+    "villa_ortuzar_locales",
+    "villa_ortuzar_solape_ha",
+    "villa_ortuzar_solape_locales",
+    "pares_de_polos_con_solape",
+    "locales_en_dos_o_mas_polos",
+    "concentraciones_dentro_de_un_polo",
+    "concentraciones_fuera_de_todo_polo",
+    "anclas_con_historia_fuera_de_su_borde",
+    "paginas_con_el_ancla_afuera",
+    "polos_con_borde_transitorio",
+    "union_de_los_41_ha",
+    "union_de_los_41_locales",
+    "locales_contados_dos_veces",
+    "paginas_sin_ningun_ancla_adentro",
+    "hitos_fuera_de_todo_borde",
+    "hitos_a_250_m_o_menos_del_borde",
+    "hitos_cerca_sobre_calle_ya_nombrada"
+  ]
+}

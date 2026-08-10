@@ -1,0 +1,18 @@
+{
+  "fecha": "2026-08-10",
+  "las_124_suma_de_areas_ha": 3143.53,
+  "las_124_union_ha": 3143.53,
+  "las_124_locales_medidos": 12520,
+  "las_124_locales_por_pertenencia": 12688,
+  "union_41_polos_antes_ha": 8574.16,
+  "union_41_polos_antes_locales": 13582,
+  "union_41_polos_despues_ha": 6127.36,
+  "union_41_polos_despues_locales": 11138,
+  "union_41_con_villa_ortuzar_una_acera_ha": 6119.44,
+  "union_41_con_villa_ortuzar_una_acera_locales": 11128,
+  "objetos_disjuntos": 40,
+  "fichas": 41,
+  "contenidos": [
+    "Z54"
+  ]
+}

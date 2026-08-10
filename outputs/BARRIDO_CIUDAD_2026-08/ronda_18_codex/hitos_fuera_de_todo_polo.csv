@@ -1,0 +1,61 @@
+﻿hito_id,nombre,tipo,direccion,barrio,polo_mas_cercano_id,polo_mas_cercano,distancia_m,lectura,criterio_lectura
+DIR-001,La Americana,Pizzería emblemática,Av. Callao 83,San Nicolas,Z35,Balvanera · Once,8.9,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-007,Casa Burgio,Pizzería emblemática,Av. Cabildo 2477,Belgrano,R05,Belgrano,12.9,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-013,Pirilo,Pizzería emblemática,Defensa 821,San Telmo,R03,San Telmo,223.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-015,San Carlos,Pizzería emblemática,Av. Rivadavia 4548,Caballito,Z37,Almagro,8.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-022,Tino,Heladería histórica,Av. Diaz Velez 4520,Caballito,Z37,Almagro,23.7,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-023,El Ciervo,Heladería histórica,Carhue 124,Liniers,Z32,Liniers · Mercado Andino,128.9,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+DIR-024,Saverio Helados,Heladería histórica,Av. San Juan 2809,San Cristobal,Z35,Balvanera · Once,533.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+DIR-025,Napoli,Heladería histórica,Av. Entre Rios 1167,San Cristobal,Z35,Balvanera · Once,455.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H005,Bar de Cao,Bar Notable,Av. Independencia 2400,San Cristobal,Z35,Balvanera · Once,8.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H008,El Colonial,Bar Notable,Av. Belgrano 599,Monserrat,R12,Centro y Microcentro,71.3,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H013,Bar Plaza Dorrego,Bar Notable,Defensa 1098,San Telmo,R03,San Telmo,27.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H014,Bar Quintino,Bar Notable,Carlos Calvo 4002,Boedo,R14,Avenida Boedo,110.0,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H015,Bar Seddon,Bar Notable,Defensa 695,Monserrat,R04,Puerto Madero,238.0,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H016,Bar Sur,Bar Notable,Estados Unidos 299,San Telmo,R04,Puerto Madero,129.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H017,Bar Via 71,Bar Notable,Viamonte 1771,San Nicolas,Z35,Balvanera · Once,39.1,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H018,Boston City,Bar Notable,Florida 165 local 3,San Nicolas,R12,Centro y Microcentro,94.9,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H021,Cafe Cortazar,Bar Notable,Jose Antonio Cabrera 3797,Palermo,Z37,Almagro,145.5,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H026,La Poesia,Bar Notable,Chile 502,San Telmo,R03,San Telmo,357.9,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H027,Café Montecarlo,Bar Notable,Paraguay 5491,Palermo,R01,Palermo,41.6,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H028,Café Olimpo,Bar Notable,Irigoyen 1491,Monte Castro,Z28,Monte Castro,638.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H030,Plaza Café,Bar Notable,Av. Rivadavia 4732,Caballito,Z37,Almagro,219.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H034,Cafe Thibon,Bar Notable,Montevideo 723,San Nicolas,R12,Centro y Microcentro,136.5,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H036,Cafetabac,Bar Notable,Av. del Libertador 2300,Palermo,R06,Recoleta,654.9,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H037,Casa Watson,Bar Notable,Vuelta de Obligado 2072,Belgrano,R05,Belgrano,58.6,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H040,Clásica y moderna,Bar Notable,Av. Callao 892,Recoleta,Z35,Balvanera · Once,71.6,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H047,El Coleccionista,Bar Notable,Av. Rivadavia 4929,Caballito,R10,Caballito,192.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H051,Hipopotamo,Bar Notable,Brasil 401,San Telmo,R11,Boulevard Caseros,7.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H056,El Viejo Buzon,Bar Notable,Neuquen 1100,Caballito,R10,Caballito,386.1,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H059,Bar Imperio,Bar Notable,Av. Callao 181,San Nicolas,Z35,Balvanera · Once,9.0,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H064,La Esquina de Anibal Troilo,Bar Notable,Paraguay 1500,Recoleta,R06,Recoleta,62.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H065,La Farmacia,Bar Notable,Av. Directorio 2400,Flores,R10,Caballito,792.4,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H066,La Flor de Barracas,Bar Notable,Suarez 2095,Barracas,Z50,Barracas · Av. Montes de Oca,358.9,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H077,Mar Azul,Bar Notable,Tucuman 1700,San Nicolas,R02,Avenida Corrientes,62.0,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H078,Miramar,Bar Notable,Sarandi 1190,San Cristobal,Z35,Balvanera · Once,486.7,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+H079,8 Esquinas,Bar Notable,Av. Forest 1186,Chacarita,Z43,Colegiales,23.9,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H085,Varela Varelita,Bar Notable,Av. Scalabrini Ortiz 2102,Palermo,R01,Palermo,82.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H087,Cafe Rivas,Bar Notable,Estados Unidos 302,San Telmo,R04,Puerto Madero,122.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+H158,Mishiguene,Ranking internacional,Lafinur 3368,Palermo,R01,Palermo,1193.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+ICO-004,El Puentecito,Restaurante Icónico,Luján 2101,Barracas,Z51,"Barracas · Iriarte, California y Vieytes",622.8,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+ICO-009,La Brigada,Restaurante Icónico,Estados Unidos 465,San Telmo,R03,San Telmo,99.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+ICO-010,"La Estancia, Asador Criollo",Restaurante Icónico,Lavalle 941,San Nicolas,R02,Avenida Corrientes,9.3,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+ICO-012,Miramar,Restaurante Icónico,Av. San Juan 1999,San Cristobal,Z35,Balvanera · Once,500.4,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MG-0001,Mercado de San Telmo,Mercado/patio,Defensa 961,San Telmo,R03,San Telmo,64.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MG-0006,Patio de los Lecheros,Mercado/patio,Av. Tte. Gral. Donato Alvarez 175,Caballito,R10,Caballito,278.6,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-001,4ta Pared,MICHELIN,Habana 3499,Villa Devoto,R15,Devoto,97.7,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-008,Chuí,MICHELIN,Loyola 1250,Villa Crespo,R08,Villa Crespo,92.4,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-014,La Alacena Trattoria,MICHELIN,Gascón 1401,Palermo,R01,Palermo,272.9,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-025,Caseros,MICHELIN,Avenida Caseros 486,Barracas,R11,Boulevard Caseros,54.1,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-027,Restó SCA,MICHELIN,Montevideo 938,Recoleta,R06,Recoleta,9.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-031,República del Fuego,MICHELIN,Juncal 2682,Recoleta,R06,Recoleta,85.1,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-036,José El Carnicero,MICHELIN,Thames 2316,Palermo,R01,Palermo,7.2,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-037,Mishiguene,MICHELIN,Lafinur 3368,Palermo,R01,Palermo,1193.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-043,Corte Comedor,MICHELIN,Avenida Olazábal 1391,Belgrano,R05,Belgrano,233.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-046,Duhau Restaurante & Vinoteca,MICHELIN,Avenida Alvear 1661,Recoleta,Z46,Retiro,61.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-047,Gioia Cocina Botánica,MICHELIN,Posadas 1350,Recoleta,Z46,Retiro,66.3,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-052,Casa Palanti,MICHELIN,Ortiz de Ocampo 2901,Palermo,R06,Recoleta,903.9,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-054,Kōnā,MICHELIN,Castañeda 1899,Belgrano,R07,Costanera Norte,652.5,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-055,Sottovoce,MICHELIN,Avenida del Libertador 1098,Recoleta,R06,Recoleta,71.8,posible_borde_incompleto,distancia al borde menor o igual a 250 m
+MIC-056,Narda Comedor,MICHELIN,Mariscal Antonio José de Sucre 664,Belgrano,R07,Costanera Norte,607.3,esperable_zona_sin_polo,distancia al borde mayor a 250 m
+MIC-058,Casa Cavia,MICHELIN,Cavia 2985,Palermo,R07,Costanera Norte,1094.5,esperable_zona_sin_polo,distancia al borde mayor a 250 m

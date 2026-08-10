@@ -1,0 +1,115 @@
+==================================================================================================
+BORDES · dos decisiones firmadas, un borde tentativo y una lectura que queda abierta
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+==================================================================================================
+Z35 · Balvanera · Once   ·   LAS DOS LECTURAS, LAS DOS MEDIDAS
+==================================================================================================
+  El Café de los Angelitos, Av. Rivadavia 2100, Bar Notable verificado abierto a junio de
+  2026, es la evidencia con la que la vía B admitió esta zona. El borde adoptado en la
+  ronda anterior lo deja afuera. Se miden las dos lecturas y se entregan las dos.
+
+  LECTURA 1 · el enclave, como está
+      TUCUMAN 2379-2755                              eje    573 m ->  15.31 ha,  51 locales
+      PASO 700-799                                   eje    243 m ->   3.88 ha,  23 locales
+    total: 19.18 ha · 74 locales · Polygon
+    Café de los Angelitos: AFUERA, a 768 m
+
+  LECTURA 2 · extendida hasta contener el Café de los Angelitos
+    por dónde se extiende: por Pasteur, que es la transversal que corta el eje de Tucumán
+    en el extremo sur del enclave -Tucumán 2301-2400, el bloque que contiene el 2379- y la
+    única de las cinco que llegan a Av. Rivadavia que lo hace más cerca del Café: su cruce
+    con Rivadavia cae a 325 m del Café, contra 451 m por Azcuénaga, 572 por Larrea, 713
+    por Paso y 956 por Av. Pueyrredón. Al sur de Rivadavia, Pasteur se llama Pichincha.
+      TUCUMAN 2379-2755                              eje    573 m ->  15.31 ha,  51 locales
+      PASO 700-799                                   eje    243 m ->   3.88 ha,  23 locales
+      PASTEUR entre TUCUMAN y RIVADAVIA AV.          eje    832 m ->  20.58 ha,  50 locales
+      RIVADAVIA AV. 2001-2200                        eje    251 m ->   6.50 ha,  31 locales
+    total: 44.75 ha · 154 locales · Polygon
+    Café de los Angelitos: ADENTRO, a 0 m
+    cuánto se extendió: 1,083 m de eje nuevo (832 m sobre Pasteur y 251 m sobre Av. Rivadavia), +25.56 ha y +80 locales
+    es el mínimo: con Av. Rivadavia 2001-2100 -una sola cuadra- el Café queda adentro
+    pero la figura se parte en dos piezas sueltas; con 2001-2200 vuelve a ser una sola.
+
+  qué establecimientos con reconocimiento contiene la lectura 1 · enclave:
+      ninguno de la capa de reconocimiento
+
+  qué establecimientos con reconocimiento contiene la lectura 2 · extendida:
+      CAFE DE LOS ANGELITOS              Bar Notable
+
+==================================================================================================
+Z53 · La Boca · Caminito y Vuelta de Rocha   ·   DECISIÓN FIRMADA: SE EXTIENDE
+==================================================================================================
+  Criterio que va escrito en la página: el polo se extiende sobre Av. Don Pedro de
+  Mendoza lo mínimo necesario para contener La Perla de Caminito, que es el
+  establecimiento sobre el que la zona se apoya.
+
+    CAMINITO entera                                eje    141 m ->   1.27 ha,  16 locales
+    DON PEDRO DE MENDOZA AV. 1871-1939             eje     92 m ->   2.88 ha,  21 locales
+    el polígono adoptado: 4.15 ha · 37 locales · Polygon
+    contra el borde anterior (sólo Caminito, 1.27 ha): +2.88 ha · +21 locales
+
+  los tres establecimientos que la página nombra:
+      La Perla de Caminito     ADENTRO  a     0 m del borde nuevo (era    26 m del anterior)
+      Genovés                  afuera   a   343 m del borde nuevo (era   343 m del anterior)
+      El Obrero                afuera   a 1,026 m del borde nuevo (era 1,136 m del anterior)
+
+==================================================================================================
+Z33 · Mataderos   ·   BORDE TENTATIVO, DECLARADO TENTATIVO
+==================================================================================================
+  regla 1 · las manzanas frentistas del cruce de Av. Lisandro de la Torre y Av. de los
+  Corrales, con el entorno mínimo que cierra una figura sobre el callejero:
+      7 manzanas · eje 671 m -> 43.99 ha, 17 locales · Polygon
+      la figura la domina una sola manzana de 40.70 ha -el predio cerrado del
+      cruce-; las otras 6 suman 3.29 ha. Es la razón por
+      la que esta zona mide mucha superficie con pocos locales, y hay que decirlo antes
+      de que alguien divida una cosa por la otra.
+
+  regla 2 · ¿deja afuera a alguno de los cuatro que la página nombra?
+      Bar Oviedo         ADENTRO
+      9 de Julio         afuera, a 909 m  (LARRAZABAL 1276)
+      Bar del Glorias    afuera, a 713 m  (ANDALGALA 1982)
+      El Cedrón          afuera, a 677 m  (ALBERDI, JUAN BAUTISTA AV. 6101)
+
+  la regla 2 dice «extendé sobre la avenida que corresponda». Medido: ninguno de los tres
+  que quedan afuera está sobre las dos avenidas del perímetro escrito. Larrazábal y
+  Andalgalá no son las avenidas que la ficha nombra, y Andalgalá no es una avenida. La
+  avenida que los tres tienen cerca es otra —Av. Juan B. Alberdi, a 72 m del 9 de Julio,
+  83 m del Bar del Glorias y 0 m de El Cedrón—, y llegar hasta ella exige un brazo de un
+  kilómetro por Av. Lisandro de la Torre. Esa es la regla que no se puede aplicar, así
+  que se mide lo que costaría y se declara, en vez de adoptarla en silencio.
+
+  lectura medida y NO adoptada · el borde extendido hasta Av. Alberdi:
+      brazo DE LA TORRE, LISANDRO AV. entre DE LOS CORRALES AV. y ALBERDI, JUAN BAUTISTA AV.
+          eje 1,032 m -> 64.66 ha, 30 locales
+      ALBERDI, JUAN BAUTISTA AV. 5501-6499: eje 1,422 m -> 28.52 ha, 67 locales
+      total: 92.18 ha, 91 locales (+48.19 ha, +74 locales sobre el tentativo)
+      y aun así deja afuera a Bar del Glorias (a 309 m)
+      por qué no se adopta: duplica la superficie del borde tentativo para alcanzar dos
+      referentes de cuatro, el brazo aporta 30 locales en 65 hectáreas, y el tramo de
+      Alberdi que agrega es el eje del IDECBA, que se publica aparte y por separado.
+
+  lectura medida y publicada aparte · el eje comercial que releva la Ciudad, Av. Alberdi 5501-6299:
+      24.27 ha, 55 locales
+      relación con el borde tentativo: son dos objetos separados. Lo más cerca que pasan
+      es 529 m y no comparten ni una hectárea (intersección 0.00 ha).
+      el borde tentativo contiene 1 de los cuatro que la página nombra (Bar Oviedo); el eje comercial contiene 2 (9 de Julio, El Cedrón). Entre los dos, tres de cuatro. El cuarto, el Bar del Glorias,
+      no está en ninguno.
+      el eje comercial es de otra fuente y mide otro objeto: adoptarlo como perímetro le
+      atribuiría al polo el recorte del IDECBA.
+
+==================================================================================================
+Z44 · Villa Ortúzar   ·   OPCIÓN B ADOPTADA · la geometría ya estaba, no se rehace
+==================================================================================================
+  las dos aceras de Av. Álvarez Thomas entre el 600 y el 1700: 34.39 ha · 69 locales
+  reparto por barrio: COLEGIALES 34.9 % · CHACARITA 34.0 % · VILLA ORTUZAR 31.1 %
+  que el corredor cruce tres barrios no es un problema: es una de las cosas que este
+  atlas quiere mostrar. El control que sí hace falta es el del solape, y va aparte.
+
+==================================================================================================
+Escrito: perimetros_ronda_18.csv (4 filas) · geometria/perimetros_ronda_18.geojson (6 piezas, EPSG:4326) · bordes_ronda_18.json
+==================================================================================================

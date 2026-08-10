@@ -1,0 +1,2 @@
+﻿establecimiento,direccion,barrio_resultado,comuna_resultado,regla,resultado_test
+Café Olimpo,Irigoyen 1491,Monte Castro,10,resolver calle y altura antes de atribuir barrio; no heredar el barrio de otro tramo,OK

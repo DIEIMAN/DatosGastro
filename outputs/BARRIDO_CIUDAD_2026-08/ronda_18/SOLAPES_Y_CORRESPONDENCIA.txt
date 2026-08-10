@@ -1,0 +1,113 @@
+==================================================================================================
+SOLAPES ENTRE POLOS · y la correspondencia con las 124 concentraciones
+==================================================================================================
+
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+
+==================================================================================================
+TODOS LOS PARES DE POLOS QUE SE TOCAN
+==================================================================================================
+25 pares de polos comparten superficie.
+
+  par                    ha  locales    % de A  % de B  aviso
+  R12+Z46            52.16      301   28.3 %   11.2 %  uno publica el polígono de su barrio
+  R09+R19            60.37      153   63.7 %   19.9 %  
+  R02+R12            21.72      133   43.7 %   11.8 %  
+  R19+Z43            67.02      115   22.1 %   29.3 %  
+  R13+Z37            25.33      101   23.2 %   41.6 %  
+  R01+R19            22.86       98    5.9 %    7.5 %  
+  R08+R21            49.68       91   14.8 %   12.9 %  
+  R01+R08            12.55       77    3.3 %    3.7 %  
+  R12+Z47             8.68       76    4.7 %   63.0 %  
+  Z40+Z54            39.39       52   57.0 %  100.0 %  
+  Z43+Z44            12.07       23    5.3 %   35.1 %  
+  R09+Z43             6.91       21    7.3 %    3.0 %  
+  R13+Z35             3.91       15    3.6 %   20.4 %  
+  R01+R09             4.30        9    1.1 %    4.5 %  
+  R09+Z44             1.86        9    2.0 %    5.4 %  
+  R01+Z43             7.85        8    2.0 %    3.4 %  
+  R20+Z41             2.33        6    3.8 %    0.5 %  uno publica el polígono de su barrio
+  R19+R21             7.25        5    2.4 %    1.9 %  
+  R04+Z46            23.17        4    7.4 %    5.0 %  uno publica el polígono de su barrio
+  R09+R21             2.25        4    2.4 %    0.6 %  
+  R11+Z50             1.55        3    3.1 %    3.1 %  
+  R19+Z44             3.46        2    1.1 %   10.1 %  
+  Z24+Z27             0.53        2    1.4 %    0.2 %  uno publica el polígono de su barrio
+  R08+R19             7.78        1    2.3 %    2.6 %  
+  R05+Z41             0.06        0    0.1 %    0.0 %  uno publica el polígono de su barrio
+
+  la suma de los 41 por separado da   : 12,087 locales
+  la unión de los 41 mide             : 10,801 locales
+  o sea que se cuentan de más         : 1,286 locales
+  locales distintos que están en 2 o más polos: 1,263
+  (la suma de la columna locales_de_solape da 1,309, y es mayor porque un
+   local que está en tres polos aparece en los tres pares)
+  superficie de la unión: 5,434.11 ha · suma de las 41 por separado: 5,866.77 ha
+
+  el caso que la decisión pedía verificar · Villa Ortúzar contra Chacarita,
+  Colegiales y Federico Lacroze:
+      contra R09 (Chacarita):   1.86 ha ·   9 locales
+      contra R19 (Federico Lacroze):   3.46 ha ·   2 locales
+      contra Z43 (Colegiales):  12.07 ha ·  23 locales
+      contra los tres juntos, sin contar dos veces lo que se pisa entre ellos:
+          15.93 ha · 25 locales
+      la cifra que la decisión trae es 15,93 ha y 25 locales: coincide
+
+==================================================================================================
+LAS 124 CONCENTRACIONES CONTRA LOS BORDES NUEVOS
+==================================================================================================
+
+  de las 124 concentraciones:
+    contenidas o mayormente dentro de un polo :  53  ·   6,800 locales  ·   1,355.42 ha
+    tocan un borde sin quedar mayormente dentro:  28  ·   2,818 locales  ·     782.87 ha
+    fuera de todo polo                        :  43  ·   2,902 locales  ·   1,005.26 ha
+
+  la cifra publicable: 53 de las 124 concentraciones caen dentro de
+  algún polo y 71 no. Las que no suman 5,720 locales.
+
+  las 43 que quedan fuera de todo polo, por tamaño:
+      P073   Palermo Botánico                          207 locales ·   39.19 ha
+      P101+P099 Congreso                                  175 locales ·   36.93 ha
+      P076   Palermo · Bustamante y Mario Bravo°       154 locales ·   29.18 ha
+      P104   Alto Palermo                              141 locales ·   24.85 ha
+      P037   Centro comercial de Av. Cuenca (Villa     135 locales ·   40.81 ha
+      P004   Av. Eva Perón entre Escalada y Castaña    132 locales ·  144.02 ha
+      P017   Av. Emilio Castro (Liniers y Mataderos    105 locales ·   69.80 ha
+      P057   Caballito · Av. La Plata y Av. Rivadav     97 locales ·   26.20 ha
+      P005   Av. Larrazábal y Av. Riestra (Villa Lu     92 locales ·  100.94 ha
+      P038   Av. San Martín (Villa del Parque y Dev     89 locales ·   22.00 ha
+      P003   Villa Riachuelo · Av. Gral. Paz y Chil     83 locales ·   39.82 ha
+      P012   Mataderos · Av. Juan B. Alberdi°           82 locales ·   32.81 ha
+      P092   Villa Freud                                79 locales ·   11.71 ha
+      P088   Palermo · Gascón y Honduras°               69 locales ·    7.79 ha
+      P026   Av. Caseros · tramo Parque Patricios°      62 locales ·   27.04 ha
+      P014   Bajo Flores · Av. Eva Perón y Varela       61 locales ·   45.63 ha
+      P002   Villa Soldati · Av. Fernández de la Cr     59 locales ·   63.36 ha
+      P042   Floresta · Av. Rivadavia y Segurola°       53 locales ·   11.15 ha
+      P086   Eje Av. Córdoba · Almagro y Palermo°       53 locales ·    7.95 ha
+      P058   Flores · Av. Carabobo y Av. Directorio     53 locales ·   11.39 ha
+      P044   San Cristóbal · Av. San Juan°              53 locales ·   17.01 ha
+      P028   Villa Pueyrredón · Av. Mosconi y Av. N     52 locales ·   12.05 ha
+      P041   Floresta · Av. Rivadavia y Venancio Fl     52 locales ·   12.73 ha
+      P085   Balvanera · Av. Entre Ríos e Independe     48 locales ·    8.77 ha
+      P087   Palermo Pacífico                           47 locales ·    5.80 ha
+      P094   Monserrat · Lima y México°                 44 locales ·    6.37 ha
+      P061   Flores · Av. Rivadavia y Varela°           44 locales ·    6.93 ha
+      P059   Flores · Av. Nazca y Av. Rivadavia°        43 locales ·    6.08 ha
+      P007   Bajo Belgrano                              40 locales ·    8.96 ha
+      P015   Parque Chacabuco · Av. Asamblea°           40 locales ·   12.12 ha
+      P069   Belgrano · Echeverría y Conde°             39 locales ·    7.59 ha
+      P064   Palermo · Plaza Italia y Av. del Liber     39 locales ·    9.12 ha
+      P072-3 Belgrano R                                 38 locales ·    5.08 ha
+      P010   Vélez Sársfield · Segurola y César Día     37 locales ·   10.63 ha
+      P023   Villa Pueyrredón · Av. Artigas°            36 locales ·   14.49 ha
+      P060   Casco Histórico de Flores                  36 locales ·    5.85 ha
+      P055   Balvanera · Av. La Rioja e Independenc     36 locales ·    8.52 ha
+      P050   Caballito · Honorio Pueyrredón y Felip     34 locales ·    5.07 ha
+      P013   Mataderos · Av. Alberdi y Saladillo°       34 locales ·   10.79 ha
+      P109   Av. Callao entre Córdoba y Paraguay°       34 locales ·    3.29 ha
+      P031   Floresta · Av. Gaona y Segurola°           33 locales ·    7.58 ha
+      P019   San Cristóbal · Av. Jujuy y Av. Brasil     32 locales ·   20.78 ha
+      P011   Saavedra · entorno Dot Baires°             30 locales ·    7.08 ha
+
+Escrito: solapes_declarados.csv (25 pares) · solapes_locales_detalle.csv (1309 filas) · correspondencia_124_x_41.csv (124 filas) · solapes_resumen.json

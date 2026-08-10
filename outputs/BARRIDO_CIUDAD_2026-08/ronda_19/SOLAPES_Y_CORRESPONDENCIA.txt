@@ -1,0 +1,83 @@
+==================================================================================================
+SOLAPES · CORRESPONDENCIA · UNIÓN DE LOS 41   ·   contra la geometría vigente
+==================================================================================================
+
+geometría vigente: 41 polos
+  de soporte previo           31: R01, R02, R03, R04, R05, R06, R07, R08, R09, R10, R11, R12, R13, R14, R15, R16, R17, R19, R20, R21, Z24, Z27, Z28, Z31, Z32, Z39b, Z43, Z47, Z50, Z51, Z52
+  de cierre geométrico         6: Z37, Z39, Z40, Z41, Z46, Z54
+  de última tanda de bordes    4: Z33, Z35, Z44, Z53
+  borde transitorio        : Z33
+  sin borde propio         : Z27, Z41, Z46
+
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+
+==================================================================================================
+1 · TODOS LOS PARES DE POLOS QUE COMPARTEN SUPERFICIE
+==================================================================================================
+
+25 pares de polos comparten superficie.
+
+  par                      ha  locales    % de A  % de B  aviso
+  R12+Z46              52.16      301   28.3 %   11.2 %  uno publica el polígono de su barrio
+  R09+R19              60.37      153   63.7 %   19.9 %  
+  R02+R12              21.72      133   43.7 %   11.8 %  
+  R19+Z43              67.02      115   22.1 %   29.3 %  
+  R13+Z37              25.33      101   23.2 %   41.6 %  
+  R01+R19              22.86       98    5.9 %    7.5 %  
+  R08+R21              49.68       91   14.8 %   12.9 %  
+  R01+R08              12.55       77    3.3 %    3.7 %  
+  R12+Z47               8.68       76    4.7 %   63.0 %  
+  Z40+Z54              39.39       52   57.0 %  100.0 %  
+  Z43+Z44              12.07       23    5.3 %   35.1 %  
+  R09+Z43               6.91       21    7.3 %    3.0 %  
+  R13+Z35               3.91       15    3.6 %   20.4 %  
+  R01+R09               4.30        9    1.1 %    4.5 %  
+  R09+Z44               1.86        9    2.0 %    5.4 %  
+  R01+Z43               7.85        8    2.0 %    3.4 %  
+  R20+Z41               2.33        6    3.8 %    0.5 %  uno publica el polígono de su barrio
+  R19+R21               7.25        5    2.4 %    1.9 %  
+  R04+Z46              23.17        4    7.4 %    5.0 %  uno publica el polígono de su barrio
+  R09+R21               2.25        4    2.4 %    0.6 %  
+  R11+Z50               1.55        3    3.1 %    3.1 %  
+  R19+Z44               3.46        2    1.1 %   10.1 %  
+  Z24+Z27               0.53        2    1.4 %    0.2 %  
+  R08+R19               7.78        1    2.3 %    2.6 %  
+  R05+Z41               0.06        0    0.1 %    0.0 %  uno publica el polígono de su barrio
+
+  el caso conocido · Villa Ortúzar contra Chacarita, Colegiales y Federico Lacroze:
+      contra R09 (Chacarita):   1.86 ha ·   9 locales
+      contra R19 (Federico Lacroze):   3.46 ha ·   2 locales
+      contra Z43 (Colegiales):  12.07 ha ·  23 locales
+      contra los tres juntos, sin contar dos veces lo que se pisan entre ellos:
+          15.93 ha · 25 locales
+      la cifra adoptada es 15,93 ha y 25 locales: COINCIDE
+
+==================================================================================================
+2 · LA UNIÓN DE LOS 41 · el solape descontado una sola vez
+==================================================================================================
+  la suma de los 41 por separado :   5,866.77 ha · 12,087 locales
+  la unión de los 41             :   5,434.11 ha · 10,801 locales
+  o sea que se cuentan de más    :     432.65 ha ·  1,286 locales
+  locales distintos que están en dos o más polos: 1,263
+  (la suma de la columna locales_compartidos da 1,309, y es mayor porque un local que
+   está en tres polos aparece en los tres pares)
+
+==================================================================================================
+3 · LAS 124 CONCENTRACIONES CONTRA LOS BORDES DE AHORA
+==================================================================================================
+
+  de las 124 concentraciones:
+    contenidas o mayormente dentro de un polo :  53  ·   6,800 locales  ·   1,355.42 ha
+    tocan un borde sin quedar mayormente dentro:  28  ·   2,818 locales  ·     782.87 ha
+    fuera de todo polo                        :  43  ·   2,902 locales  ·   1,005.26 ha
+
+  la cifra publicable: 53 de las 124 concentraciones caen dentro de
+  algún polo y 71 no. Las que no suman 5,720 locales.
+
+  las más grandes de las 43 que quedan fuera de todo polo:
+      P073   Palermo Botánico                          207 locales ·   39.19 ha
+      P101+P099 Congreso                                  175 locales ·   36.93 ha
+      P076   Palermo · Bustamante y Mario Bravo°       154 locales ·   29.18 ha
+      P104   Alto Palermo                              141 locales ·   24.85 ha
+      P037   Centro comercial de Av. Cuenca (Villa     135 locales ·   40.81 ha
+      P004   Av. Eva Perón entre Escalada y Castaña    132 locales ·  144.

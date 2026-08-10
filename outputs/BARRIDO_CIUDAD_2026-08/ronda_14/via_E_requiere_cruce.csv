@@ -1,0 +1,11 @@
+polo_id,nombre,barrio,zona_asignada,fraccion,via_E_heredada,modo_nuevo,detalle
+PGF2_FLORES,Flores,Flores,,,,sigue requiere_cruce,"Z23 94.0% · Z24 3.6% · Z39b 2.3% · el soporte contiene a Z24, Z39b: heredar seria atribuirle al todo lo de una parte"
+PGR_P107,P107 · Balvanera,Balvanera,,82.5%,,sigue requiere_cruce,"Z35 82.5% · el poligono de Z35 es el barrio entero: la contencion no distingue Z35 de la otra zona del barrio, que no tiene poligono"
+PGR_P014,P014 · Flores,Flores,Z23,80.6%,no abre,heredada_de_residuo,Z23 80.6% · Z39 19.4%
+PGR_P061,P061 · Flores,Flores,Z23,100.0%,no abre,heredada_de_residuo,Z23 100.0%
+PGR_P085,P085 · Balvanera,Balvanera,,,,sigue requiere_cruce,Z35 43.0% · Z47 23.0%
+PGR_P059,P059 · Flores,Flores,Z23,100.0%,no abre,heredada_de_residuo,Z23 100.0%
+PGR_P058,P058 · Flores,Flores,Z23,98.2%,no abre,heredada_de_residuo,Z23 98.2%
+PGR_P060,P060 · Flores,Flores,Z23,100.0%,no abre,heredada_de_residuo,Z23 100.0%
+PGR_P036,P036 · Flores,Flores,Z23,65.3%,no abre,heredada_de_residuo,Z23 65.3%
+PGR_P055,P055 · Balvanera,Balvanera,,100.0%,,sigue requiere_cruce,"Z35 100.0% · el poligono de Z35 es el barrio entero: la contencion no distingue Z35 de la otra zona del barrio, que no tiene poligono"

@@ -1,0 +1,363 @@
+==================================================================================================
+CIERRE GEOMÉTRICO · los siete que faltaban y los cuatro que estaban a medias
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+==================================================================================================
+Z40 · Nueva Pompeya y Parque Patricios   [tarea 1]   provisorio Z40: 870.07 ha, 546 locales
+==================================================================================================
+  perímetro adoptado: Tres piezas: Av. Caseros y el Distrito Tecnológico, Av. Sáenz y el Mercado de Pompeya, y el Barrio Charrúa. Las dos extensiones salen de la misma ficha: el párrafo de contexto comercial da «Av. Caseros 2601-2999» y «Av. Sáenz del 801 al 1399», y los referentes dan El Globito en Av. Caseros 3159 y el Mercado de Pompeya en Av. Sáenz 790.
+
+  [CIERRA]  Av. Caseros y el Distrito Tecnológico
+            CASEROS AV. 2601-3199  ·  eje 952 m  ->  29.67 ha, 60 locales
+            de dónde sale la extensión: eje relevado 2601-2999 de la ficha, extendido a El Globito (3159)
+  [CIERRA]  Av. Sáenz y el Mercado de Pompeya
+            SAENZ AV. 790-1399  ·  eje 2,030 m  ->  39.39 ha, 52 locales
+            de dónde sale la extensión: Mercado de Pompeya (790) y eje relevado 801-1399 de la ficha
+  [NO CIERRA] Barrio Charrúa: medido y no cierra: las vías del Belgrano Sur no son una línea del callejero y Av. Bonorino y Av. Fernández de la Cruz se cruzan; con el borde del barrio como tercer lado la cara que sale es Nueva Pompeya entera. Y la propia ficha declara que ahí no hay oferta comercial documentada -«comunidad medida, sin enclave comercial»-, así que sumarlo agregaría superficie sin locales
+
+  los referentes que nombra la ficha: 2 adentro, 1 afuera, de 3 que resuelven
+      adentro: El Globito, Mercado de Pompeya
+      afuera:  El Buzón (ESQUIU 1393)                         a 252 m
+
+  el polígono adoptado: 69.06 ha · 112 locales
+  contra el provisorio (Z40): -801.01 ha · -434 locales (7.9 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %)
+
+  lectura medida y NO adoptada · La Rioja 1901-2199, la otra mitad del eje relevado de Parque Patricios: 12.75 ha, 42 locales
+      por qué no se adopta: el perímetro escrito nombra Av. Caseros, no La Rioja
+
+  por qué este veredicto: cierran las dos piezas que tienen oferta. La tercera está medida y no cierra, y la propia ficha declara que no tiene establecimientos: sumarla agregaría superficie con cero locales. No es una pieza que falta, es una pieza que se excluye con motivo escrito
+
+  VEREDICTO: SI_CON_EXCLUSION_DECLARADA  (2 de 3 piezas)
+
+==================================================================================================
+Z54 · Nueva Pompeya · eje Av. Sáenz   [tarea 1]   provisorio Z40: 870.07 ha, 546 locales
+==================================================================================================
+  perímetro adoptado: Eje Av. Sáenz, con núcleo en el Mercado de Pompeya, Av. Sáenz 790. Es la misma pieza que el perímetro de Nueva Pompeya y Parque Patricios ya lista como su segunda: mismo eje, mismo objeto, misma dirección.
+
+  [CIERRA]  eje Av. Sáenz
+            SAENZ AV. 790-1399  ·  eje 2,030 m  ->  39.39 ha, 52 locales
+            de dónde sale la extensión: Mercado de Pompeya (790) y eje relevado 801-1399 de la ficha
+
+  los referentes que nombra la ficha: 1 adentro, 1 afuera, de 2 que resuelven
+      adentro: Mercado de Pompeya
+      afuera:  Peña Los Amigos / El Chino (BEAZLEY 3566)      a 439 m
+
+  el polígono adoptado: 39.39 ha · 52 locales
+  contra el provisorio (Z40): -830.68 ha · -494 locales (4.5 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %)
+
+  VEREDICTO: SI  (1 de 1 piezas)
+
+==================================================================================================
+Z35 · Balvanera · Once   [tarea 1]   provisorio Z35: 434.43 ha, 1253 locales
+==================================================================================================
+  perímetro adoptado: Eje Tucumán entre el 2379 y el 2755, ambas aceras, con transversal sobre Paso al 700. La frase del perímetro dice «en revisión» y no escribe ninguna calle; la extensión sale de las cinco puertas del enclave que la propia ficha lista, todas del padrón oficial de 2015: Sucat David (Tucumán 2379), El Jaial (2620), Al Galope (2633), Lalo Helueni (2755) y Yaffo Kosher (Paso 747).
+
+  [CIERRA]  eje Tucumán 2379-2755
+            TUCUMAN 2379-2755  ·  eje 573 m  ->  15.31 ha, 51 locales
+            de dónde sale la extensión: las cuatro puertas de Tucumán de la ficha
+  [CIERRA]  transversal Paso al 700
+            PASO 700-799  ·  eje 243 m  ->  3.88 ha, 23 locales
+            de dónde sale la extensión: Yaffo Kosher, Paso 747
+
+  los referentes que nombra la ficha: 5 adentro, 1 afuera, de 6 que resuelven
+      adentro: Sucat David, El Jaial, Al Galope, Lalo Helueni, Yaffo Kosher
+      afuera:  Café de los Angelitos (RIVADAVIA AV. 2100)     a 768 m
+
+  el polígono adoptado: 19.18 ha · 74 locales
+  contra el provisorio (Z35): -415.25 ha · -1179 locales (4.4 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.01 ha (0.0 %)
+
+  VEREDICTO: SI  (2 de 2 piezas)
+
+==================================================================================================
+Z33 · Mataderos   [tarea 1]   provisorio Z33: 740.11 ha, 375 locales
+==================================================================================================
+  perímetro adoptado: Dos piezas separadas por más de un kilómetro: la Feria y el Mercado de Hacienda, en Av. Lisandro de la Torre y Av. de los Corrales, y un conjunto de referentes dispersos.
+
+  [NO CIERRA] la Feria y el Mercado de Hacienda: el texto da el cruce de dos avenidas y ninguna extensión. El perímetro de ocupación de la Feria es un dato administrativo que existe fuera del atlas y el repositorio no lo tiene
+  [NO CIERRA] el conjunto de referentes dispersos: el texto los llama dispersos y la propia ficha dice que «una densidad promedio sobre el conjunto no describe ninguna de las dos» piezas
+
+  los referentes que nombra la ficha: 4 de 4 resuelven en el callejero, y no hay polígono contra el cual probarlos
+
+  lectura medida y NO adoptada · el eje comercial que releva la Ciudad, Av. Alberdi 5501-6299: 24.27 ha, 55 locales
+      por qué no se adopta: es el eje del IDECBA, no el perímetro del polo, y adoptarlo sería atribuirle al polo el objeto de otra fuente. Contiene un solo referente de los cuatro -El Cedrón, Alberdi 6101- y deja afuera la pieza de la Feria, que es la primera del perímetro
+
+  VEREDICTO: NO  (0 de 2 piezas)
+
+==================================================================================================
+Z39 · Parque Avellaneda   [tarea 1]   provisorio Z39: 473.47 ha, 173 locales
+==================================================================================================
+  perímetro adoptado: El anillo del Parque Avellaneda. El anillo son las manzanas con frente sobre el perímetro del parque, que es una cara cerrada del callejero y no necesita rango de alturas. La ficha nombra Av. Olivera y Av. Lacarra; medido, Olivera tiene 0 m de frente sobre el parque.
+
+  [CIERRA]  el anillo del parque, con el parque adentro
+            anillo de 17 manzanas frentistas del parque  ·  eje 2,844 m  ->  75.26 ha, 11 locales
+            de dónde sale la extensión: la cara cerrada del Parque Avellaneda en el callejero
+
+  los referentes que nombra la ficha: 1 adentro, 2 afuera, de 3 que resuelven
+      adentro: La Barra del Parque
+      afuera:  Viejo Mercado (OLIVERA AV. 1557)               a 952 m
+      afuera:  De Flores Café (LACARRA AV. 1500)              a 0 m
+
+  el polígono adoptado: 75.26 ha · 11 locales
+  contra el provisorio (Z39): -398.21 ha · -162 locales (15.9 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %)
+
+  lectura medida y NO adoptada · corredor en L por las alturas de los tres referentes: 59.97 ha, 6 locales
+      por qué no se adopta: delimitar por dónde están los referentes no es delimitar por el perímetro, y los tres referentes están dudosos
+
+  VEREDICTO: SI  (1 de 1 piezas)
+
+==================================================================================================
+Z27 · Villa Santa Rita   [tarea 1]   provisorio Z27: 215.46 ha, 182 locales
+==================================================================================================
+  perímetro adoptado: Puntos dispersos con anclaje en Av. Álvarez Jonte, que es el límite sur y oeste del barrio y no su columna interior.
+
+  [NO CIERRA] el conjunto: no hay rango de alturas ni calles de corte, y el hueco no es de redacción: la propia ficha declara que la vía de densidad no abre -«seis locales dispersos en diez cuadras es un conjunto, no una densidad»-, así que todavía no hay una concentración que delimitar. Los tres referentes están en tres calles distintas -Av. Álvarez Jonte 3550, Camarones 2702 y Luis Viale 2867- y ninguna trae extensión
+
+  los referentes que nombra la ficha: 3 de 3 resuelven en el callejero, y no hay polígono contra el cual probarlos
+
+  VEREDICTO: NO  (0 de 1 piezas)
+
+==================================================================================================
+Z53 · La Boca · Caminito y Vuelta de Rocha   [tarea 1]   provisorio S_LABOCA: 504.00 ha, 295 locales
+==================================================================================================
+  perímetro adoptado: Entorno de Caminito y la Vuelta de Rocha, sobre Av. Don Pedro de Mendoza. De las dos cosas que el texto nombra, Caminito sí está en el callejero -140,6 m- y toca la avenida a 0 m: sus manzanas frentistas cierran. La Vuelta de Rocha no está, y el texto no da tramo sobre la avenida.
+
+  [CIERRA]  entorno de Caminito
+            CAMINITO entera  ·  eje 141 m  ->  1.27 ha, 16 locales
+            de dónde sale la extensión: Caminito entero, 140,6 m, es una calle del callejero
+  [NO CIERRA] la Vuelta de Rocha: no está en el callejero porque es un recodo del Riachuelo, no una calle, y el texto no da tramo sobre Av. Don Pedro de Mendoza
+
+  los referentes que nombra la ficha: 0 adentro, 3 afuera, de 3 que resuelven
+      afuera:  El Obrero (CAFFARENA, AGUSTIN R. 64)           a 1,136 m
+      afuera:  Genovés (BRANDSEN 923)                         a 343 m
+      afuera:  La Perla de Caminito (DON PEDRO DE MENDOZA AV. 1899) a 26 m
+
+  el polígono adoptado: 1.27 ha · 16 locales
+  contra el provisorio (S_LABOCA): -502.73 ha · -279 locales (0.3 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.00 ha (0.0 %)
+
+  lectura medida y NO adoptada · la cara de ribera contigua, cerrada por la avenida y el límite oficial del barrio: 3.30 ha, 0 locales
+      por qué no se adopta: cierra con objetos auditables -la avenida y el límite oficial del barrio, con procedencia y sha256-, pero mide 3,30 ha con 0 locales: agregaría superficie sin oferta, que es el mismo motivo por el que el Barrio Charrúa queda afuera de Pompeya
+
+  lectura medida y NO adoptada · Caminito más las dos cuadras de Av. Don Pedro de Mendoza que toca, 1871-1939: 4.15 ha, 37 locales
+      por qué no se adopta: es el candidato más barato de todo el conjunto y mide 4,15 ha con 37 locales, y sí contiene La Perla de Caminito. NO se adopta porque las dos cuadras las elige esta corrida y no la ficha: es una línea de redacción, y quien escribe la ficha la firma o la cambia
+
+  por qué este veredicto: cierra Caminito y no cierra la avenida, así que queda PARCIAL, y la medición es la que lo decide: el polígono de Caminito solo **no contiene ninguno de los tres referentes de su ficha**, y La Perla de Caminito -Av. Don Pedro de Mendoza 1899, el ancla de la zona- queda a 26 m afuera. Un polígono que deja afuera al establecimiento sobre el que su ficha se apoya no es el polígono de esa ficha. Lo que falta es una línea: el tramo de la avenida
+
+  VEREDICTO: PARCIAL  (1 de 2 piezas)
+
+==================================================================================================
+Z41 · Núñez   [tarea 2]   provisorio Z41: 449.86 ha, 494 locales
+==================================================================================================
+  perímetro adoptado: El polígono administrativo del barrio de Núñez, de la capa oficial de 48 barrios. La zona que el atlas publica es idéntica a la capa de barrios que venía usando -diferencia simétrica 0 m²-: el atlas no sumó superficie. Toda la diferencia contra la capa oficial está sobre la línea de ribera del Río de la Plata y no lleva locales.
+
+  [CIERRA]  corredor de Crisólogo Larralde, entre Av. del Libertador y Av. Cabildo
+            LARRALDE, CRISOLOGO AV. entre DEL LIBERTADOR AV. y CABILDO AV.  ·  eje 1,188 m  ->  23.81 ha, 61 locales
+            de dónde sale la extensión: la primera pieza del perímetro escrito
+  [NO CIERRA] corredor bajo el viaducto Mitre: sigue sin extensión y sin reparto con las otras dos zonas que lo comparten; el único dibujo que existe es un buffer de 150 m sobre una recta entre cabeceras, y ese borde es una propiedad del instrumento
+  [NO CIERRA] núcleo de bistrós en Campos Salles, O'Higgins y Grecia: tres calles sin extensión, y el texto las llama dispersas
+
+  cierre por capa administrativa · barrio Nunez
+    la zona publicada menos la capa VIEJA:               0 m²  ·  0 locales
+    la zona publicada menos la capa OFICIAL:        74,837 m²  ·  0 locales
+    la capa OFICIAL menos la zona publicada:         2,636 m²  ·  0 locales
+    geometría que se adopta: 442.64 ha, 494 locales
+
+  los referentes que nombra la ficha: 3 adentro, 0 afuera, de 3 que resuelven
+      adentro: La Escuela, Ness, Evelia
+
+  el polígono adoptado: 442.64 ha · 494 locales
+  contra el provisorio (Z41): -7.22 ha · +0 locales (98.4 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.26 ha (0.1 %)
+       reparto por barrio: NUÑEZ 100 %
+
+  por qué este veredicto: la geometría que la zona publica es el polígono del barrio y la medición dice que está bien: el atlas no le sumó nada. Las dos piezas del perímetro escrito que no cierran siguen sin cerrar, y eso se declara: la cifra publicada es la del barrio, no la del polo
+
+  VEREDICTO: SI_POR_CAPA_ADMINISTRATIVA  (1 de 3 piezas)
+
+==================================================================================================
+Z46 · Retiro   [tarea 2]   provisorio Z46: 466.60 ha, 715 locales
+==================================================================================================
+  perímetro adoptado: El polígono administrativo del barrio de Retiro, de la capa oficial de 48 barrios, más la subzona del cluster coreano y asiático, que la ficha ya declara y que cae íntegramente en San Nicolás.
+
+  [CIERRA]  cluster coreano y asiático
+            MAIPU, ESMERALDA, PARAGUAY, ALVEAR, MARCELO T. DE 800-990  ·  eje 1,113 m  ->  18.96 ha, 163 locales
+            de dónde sale la extensión: la tercera pieza del perímetro escrito
+  [CIERRA]  corredor Arroyo
+            ARROYO entre JUNCAL y PELLEGRINI, CARLOS  ·  eje 383 m  ->  11.90 ha, 32 locales
+            de dónde sale la extensión: la segunda pieza del perímetro escrito
+  [NO CIERRA] núcleo institucional de Plaza San Martín y Florida: el texto no da el tramo de Florida, que entera mide más de un kilómetro
+
+  cierre por capa administrativa · barrio Retiro
+    la zona publicada menos la capa VIEJA:         149,485 m²  ·  117 locales
+    la zona publicada menos la capa OFICIAL:       156,196 m²  ·  118 locales
+    la capa OFICIAL menos la zona publicada:         5,336 m²  ·  0 locales
+    lo que la ZONA suma sobre el barrio (contra la capa vieja): 149,485 m², 117 locales · el cluster coreano y asiático, que la propia ficha declara: cae 100 % en San Nicolás, fuera del barrio de Retiro
+      reparto por barrio: San Nicolas 100 %
+    lo que suma la diferencia ENTRE LAS DOS CAPAS de barrios: 6,710 m² · no es del polo
+    geometría que se adopta: 467.14 ha, 715 locales
+
+  los referentes que nombra la ficha: 7 adentro, 0 afuera, de 7 que resuelven
+      adentro: Florida Garden, Plaza Bar, Bárbaro, Confitería Saint Moritz, Tancat, Florería Atlántico, Centro Cultural Coreano
+
+  el polígono adoptado: 467.14 ha · 715 locales
+  contra el provisorio (Z46): +0.53 ha · +0 locales (100.1 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.53 ha (0.1 %)
+       reparto por barrio: RETIRO 97 % · SAN NICOLAS 3 %
+
+  lectura medida y NO adoptada · Florida 800-1005, acotada por sus dos Notables: 13.97 ha, 52 locales
+      por qué no se adopta: las alturas salen de Florida Garden (899) y Plaza Bar (1005), que son referentes y no bordes
+
+  por qué este veredicto: la zona sí suma superficie sobre el barrio, y lo que suma es exactamente el cluster coreano que su ficha ya declara. La pieza del núcleo institucional sigue sin tramo escrito
+
+  VEREDICTO: SI_POR_CAPA_ADMINISTRATIVA  (2 de 3 piezas)
+
+==================================================================================================
+Z37 · Almagro   [tarea 2]   provisorio Z37: 405.26 ha, 868 locales
+==================================================================================================
+  perímetro adoptado: Tres ejes: Guardia Vieja 3600-3900, Av. Corrientes 3500-4200 y Av. Rivadavia 3401-4099. Las tres cuadras de Guardia Vieja son las que contienen las dos alturas que la ficha nombra -el 3601 y el 3602- y llegan al cruce con Bulnes, que es lo que da nombre a la pieza; medido, Bulnes cruza Guardia Vieja al 3800, no al 3601. La extensión sobre Rivadavia es el eje que la ficha releva -Av. Rivadavia 3401-4099-, que contiene Las Violetas en el 3899.
+
+  [CIERRA]  núcleo de Guardia Vieja y Bulnes
+            GUARDIA VIEJA 3600-3900  ·  eje 372 m  ->  8.70 ha, 43 locales
+            de dónde sale la extensión: las alturas 3601 y 3602 de la ficha y el cruce con Bulnes
+  [CIERRA]  corredor de Av. Corrientes 3500-4200
+            CORRIENTES AV. 3500-4200  ·  eje 890 m  ->  25.79 ha, 89 locales
+            de dónde sale la extensión: la segunda pieza del perímetro escrito
+  [CIERRA]  nodo de Rivadavia y Medrano
+            RIVADAVIA AV. 3401-4099  ·  eje 875 m  ->  26.41 ha, 75 locales
+            de dónde sale la extensión: el eje Almagro que releva la Ciudad, con Las Violetas en el 3899
+
+  los referentes que nombra la ficha: 4 adentro, 1 afuera, de 5 que resuelven
+      adentro: El Banderín, El Símbolo, La Orquídea, Las Violetas
+      afuera:  El Boliche de Roberto (BULNES 331)             a 238 m
+
+  el polígono adoptado: 60.90 ha · 207 locales
+  contra el provisorio (Z37): -344.36 ha · -661 locales (15.0 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 0.01 ha (0.0 %)
+
+  lectura medida y NO adoptada · Guardia Vieja 3500-3800, la lectura de la ronda anterior: 7.60 ha, 35 locales
+      por qué no se adopta: es el único tramo de tres cuadras que contiene el 3601 y NO llega al cruce con Bulnes que da nombre a la pieza
+
+  VEREDICTO: SI  (3 de 3 piezas)
+
+==================================================================================================
+Z44 · Villa Ortúzar   [tarea 2]   provisorio Z44: 185.46 ha, 201 locales
+==================================================================================================
+  perímetro adoptado: Av. Álvarez Thomas, tramo 600-1700. La avenida es el límite del barrio en la mayor parte del tramo, así que hay dos lecturas posibles y las dos están medidas: una sola acera -las manzanas cuyo barrio dominante es Villa Ortúzar- o las dos aceras con el reparto declarado.
+
+  [CIERRA]  corredor Av. Álvarez Thomas 600-1700
+            ALVAREZ THOMAS AV. 600-1700  ·  eje 1,362 m  ->  34.39 ha, 69 locales
+            de dónde sale la extensión: la primera pieza del perímetro escrito
+  [NO CIERRA] núcleo secundario de Plaza 25 de Agosto: medido y no cierra: las cuatro calles no encierran ninguna cara; el par más separado, Charlone y Bauness, queda a 784 m
+
+  las dos opciones de borde, medidas · NINGUNA se elige acá
+    A · una sola acera, la de Villa Ortúzar: 8 manzanas -> 10.71 ha, 34 locales
+    B · las dos aceras, con reparto declarado: 23 manzanas -> 34.39 ha, 69 locales
+        reparto de B: COLEGIALES 34.9 % · CHACARITA 34.0 % · VILLA ORTUZAR 31.1 %
+
+  los referentes que nombra la ficha: 4 adentro, 7 afuera, de 11 que resuelven
+      adentro: La Mezzetta, Simona, Cullen Henderson, Kopem
+      afuera:  Tía Meche (BAUNESS 1302)                       a 1,299 m
+      afuera:  Suculentas (HEREDIA 499)                       a 861 m
+      afuera:  Gallo Negro (DONADO 1851)                      a 716 m
+      afuera:  Curva (CALDAS 1596)                            a 674 m
+      afuera:  Cervecería Charlone (FREIRE, RAMON, CAP. GRAL. 745) a 350 m
+      afuera:  F4 Esquina (ROSETI 1596)                       a 243 m
+
+  el polígono adoptado: 34.39 ha · 69 locales
+  contra el provisorio (Z44): -151.07 ha · -132 locales (18.5 % de su superficie)
+  R12 · superficie del trazado que queda FUERA del provisorio: 23.70 ha (68.9 %)
+       reparto por barrio: COLEGIALES 35 % · CHACARITA 34 % · VILLA ORTUZAR 31 %
+
+  por qué este veredicto: la decisión de borde es editorial y no se toma acá: las dos lecturas están medidas y la ficha elige
+
+  VEREDICTO: DOS_OPCIONES_MEDIDAS  (1 de 2 piezas)
+
+==================================================================================================
+SOLAPE DE CADA PERÍMETRO NUEVO CONTRA TODO POLO VECINO
+superficie perdida -B.difference(A).area-, nunca covers()
+==================================================================================================
+
+Z40 · Nueva Pompeya y Parque Patricios  (69.06 ha)
+    Z54                    lo propio que queda FUERA del otro:    29.67 ha  ->  comparten  39.39 ha y   52 locales
+
+Z54 · Nueva Pompeya · eje Av. Sáenz  (39.39 ha)
+    Z40                    lo propio que queda FUERA del otro:     0.00 ha  ->  comparten  39.39 ha y   52 locales
+
+Z35 · Balvanera · Once  (19.18 ha)
+    R13                    lo propio que queda FUERA del otro:    15.27 ha  ->  comparten   3.91 ha y   15 locales
+
+Z39 · Parque Avellaneda  (75.26 ha)
+    ninguno: el polígono no toca ningún otro polo
+
+Z53 · La Boca · Caminito y Vuelta de Rocha  (1.27 ha)
+    ninguno: el polígono no toca ningún otro polo
+
+Z41 · Núñez  (442.64 ha)
+    R05                    lo propio que queda FUERA del otro:   442.58 ha  ->  comparten   0.06 ha y    0 locales
+    R20                    lo propio que queda FUERA del otro:   440.31 ha  ->  comparten   2.33 ha y    6 locales
+
+Z46 · Retiro  (467.14 ha)
+    R04                    lo propio que queda FUERA del otro:   443.97 ha  ->  comparten  23.17 ha y    4 locales
+    R12                    lo propio que queda FUERA del otro:   414.98 ha  ->  comparten  52.16 ha y  301 locales
+
+Z37 · Almagro  (60.90 ha)
+    R13                    lo propio que queda FUERA del otro:    35.56 ha  ->  comparten  25.33 ha y  101 locales
+
+Z44 · Villa Ortúzar  (34.39 ha)
+    R09                    lo propio que queda FUERA del otro:    32.53 ha  ->  comparten   1.86 ha y    9 locales
+    R19                    lo propio que queda FUERA del otro:    30.93 ha  ->  comparten   3.46 ha y    2 locales
+    Z43                    lo propio que queda FUERA del otro:    22.32 ha  ->  comparten  12.07 ha y   23 locales
+
+==================================================================================================
+SENSIBILIDAD AL FRENTE MÍNIMO · el único parámetro que este método tiene
+==================================================================================================
+zona                10 m            20 m            40 m
+Z40             69.06 ha        69.06 ha        68.53 ha
+Z54             39.39 ha        39.39 ha        39.39 ha
+Z35             19.18 ha        19.18 ha        19.18 ha
+Z53              1.27 ha         1.27 ha         1.27 ha
+Z41             23.81 ha        23.81 ha        23.81 ha
+Z46             30.87 ha        30.87 ha        30.87 ha
+Z37             60.90 ha        60.90 ha        60.90 ha
+Z44             34.39 ha        34.39 ha        33.25 ha
+
+==================================================================================================
+TAREA 5 · el total, recalculado sobre la unión
+==================================================================================================
+
+Las 124 concentraciones, que son el objeto del que sale la cifra publicada:
+  suma de áreas individuales :     3,143.53 ha
+  área de la unión           :     3,143.53 ha   -> solape 0.00 ha, siguen disjuntas
+  locales medidos dentro     :       12,520
+  suma de la columna n_locales de la capa: 12,688   (pertenencia al agrupamiento, no punto dentro del polígono)
+  la cifra publicada es 12.688 locales en 3.128,5 ha
+
+La unión de los 41 polos -que NO es de dónde sale la cifra publicada-:
+  antes de esta corrida :     8,574.16 ha · 13,582 locales
+  después               :     6,127.36 ha · 11,138 locales
+  cambio                :    -2,446.80 ha · -2,444 locales
+
+  el total depende de la decisión de borde de Villa Ortúzar, y por eso va con las dos:
+    con las dos aceras (opción B, la de arriba):   6,127.36 ha · 11,138 locales
+    con una sola acera (opción A)              :   6,119.44 ha · 11,128 locales
+    la decisión mueve                          :      -7.92 ha · -10 locales
+
+Objetos territoriales: 41 fichas, 40 disjuntos
+  Z54 queda dentro de otro: le sobran 0 m² de 393,855 (0.00 %)
+
+Escrito: perimetros_cierre.csv (11 filas) · geometria/perimetros_cierre.geojson (23 piezas, EPSG:4326) · solapes_cierre.csv (11 filas) · total_recalculado.json
+  dos_opciones_medidas             1
+  no                               2
+  parcial                          1
+  si                               4
+  si_con_exclusion_declarada       1
+  si_por_capa_administrativa       2
+  con perímetro medido             9 de 11

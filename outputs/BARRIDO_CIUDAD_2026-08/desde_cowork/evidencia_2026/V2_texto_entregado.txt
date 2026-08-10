@@ -1,0 +1,671 @@
+** DGDGAS**
+Dirección General de Desarrollo Gastronómico
+# **Atlas de referencias gastronómicas de la Ciudad de Buenos Aires**
+## 22 zonas gastronómicas de la Ciudad, descriptas y mapeadas una por una
+Dónde hay oferta gastronómica en la Ciudad y cómo es cada lugar, según el trabajo de la Dirección General de Desarrollo Gastronómico.
+**Qué es este Atlas**
+Son veintidós zonas distintas entre sí, reunidas en un mismo documento. Ni sus categorías ni sus cifras forman un ranking, y no son veintidós polos equivalentes.
+**Los datos**
+Fuente: relevamiento de la Dirección General de Desarrollo Gastronómico, con la información disponible para cada zona. Los datos corresponden a julio de 2026.
+# **Índice**
+Cada zona aparece en la página donde empieza su ficha; su mapa viene inmediatamente después.
+**Resumen ejecutivo 3**
+**Cómo se construyeron las zonas 4**
+**Cómo leer el Atlas 5**
+**Las cinco familias territoriales 6**
+**Las 22 zonas en la Ciudad 7**
+**Las 22 zonas, una por una 8**
+R01 · Palermo 8
+R02 · Avenida Corrientes 13
+R03 · San Telmo 16
+R04 · Puerto Madero 18
+R05 · Belgrano 20
+R06 · Recoleta 22
+R07 · Costanera Norte 24
+R08 · Villa Crespo 26
+R09 · Chacarita 29
+R10 · Caballito 31
+R11 · Boulevard Caseros 33
+R12 · Centro/Microcentro segmentado 35
+R13 · Abasto 38
+R14 · Avenida Boedo 40
+R15 · Devoto 42
+R16 · Donado–Holmberg 45
+R17 · Villa Urquiza 47
+R18 · Esmeralda–Paraguay 49
+R19 · Federico Lacroze por tramos 51
+R20 · García del Río 54
+R21 · La Paternal 57
+R22 · Villa Pueyrredón 59
+**Las 22 zonas de un vistazo 61**
+**Cómo se hizo este Atlas y qué no dice 62**
+# **Resumen ejecutivo**
+Un atlas es un conjunto<comment_start id=kix.e6s8io9bkr85> ordenado de mapas y fichas sobre un mismo tema<comment_end id=kix.e6s8io9bkr85>. El objetivo de este es dar a la Dirección y a sus áreas una referencia común sobre la gastronomía de la Ciudad: dónde se concentra la oferta, cómo es cada lugar y con qué información se cuenta sobre cada uno. 
+Este Atlas reúne las 22 zonas gastronómicas que la Dirección identificó en la Ciudad: dónde está cada una, cuánta oferta se relevó en ella y cómo es ese lugar. 
+## **Lo que muestra este Atlas**
+La Dirección identificó y caracterizó 22 zonas gastronómicas de la Ciudad, presentes en 11 de las 15 comunas (comunas 1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15). Se agrupan en <comment_start id=kix.dd6nvmf33f7w>cinco familias territoriales, que describen la forma<comment_end id=kix.dd6nvmf33f7w> en que la oferta se ordena en el terreno: eje o corredor, 6; polo, 6; polo con subzonas o partes, 5; referencia dispersa, 4; área segmentada, 1. No se identificaron zonas en el extremo sur de la Ciudad.
+## **Dónde se concentra la oferta relevada**
+<comment_start id=kix.sj63u2c9khh8>Las zonas no se relevaron todas igual: en unas la Dirección hizo su propio relevamiento, en otras se partió de un directorio comercial en línea, en otras el relevamiento llegó a su tope y el número quedó como un mínimo, y en otras alcanzó para describir el lugar pero no para contarlo. Los cuatro grupos que siguen ordenan las zonas según cuál de esas formas se usó. Por eso<comment_end id=kix.sj63u2c9khh8> un número más alto no significa más oferta que en otra zona, y los números no se suman entre sí.
+### **Zonas con relevamiento propio**
+Caballito 907 locales · Villa Crespo 646 · Chacarita 327 · Boulevard Caseros 66
+Se contó una sola vez a los locales repetidos. No son locales abiertos hoy.
+### **Zonas relevadas sobre un <comment_start id=kix.mlhjhhddvhue>directorio<comment_end id=kix.mlhjhhddvhue> comercial en línea**
+Villa Urquiza 189 locales · Devoto 119 · Avenida Boedo 79 · Donado–Holmberg 40
+Un directorio comercial en línea es una base pública de comercios con nombre, rubro y dirección: el conteo se hizo sobre esa base y no recorriendo la calle. Mismo criterio que el grupo anterior, sobre una fuente distinta.
+### **Zonas con un mínimo relevado (se leen con «al menos»)**
+Centro y Microcentro 797 locales · Abasto 314 · La Paternal 254 · Esmeralda–Paraguay 216 · Federico Lacroze 211 · Villa Pueyrredón 158 · García del Río 40
+Puede haber más locales, nunca menos. No son conteos completos.
+### **Zonas sin conteo propio**
+Palermo · Avenida Corrientes · San Telmo · Puerto Madero · Recoleta
+Están descriptas y ubicadas, sin un número propio. Belgrano y Costanera Norte tampoco tienen conteo propio: solo hay datos de un relevamiento anterior (Belgrano, 697 locales; Costanera Norte, 72).
+## **Cómo usar este Atlas**
+El mapa general, unas páginas más adelante, ubica las 22 zonas en la Ciudad. Cada zona tiene después una ficha y un mapa propios. <comment_start id=kix.hus778h3eemm>Las áreas dibujadas envuelven los locales que se relevaron<comment_end id=kix.hus778h3eemm> en cada zona: muestran dónde se encontró la oferta y cómo está repartida. Son una lectura de trabajo, no un límite oficial, un padrón de locales ni una recomendación comercial.
+Fuente: relevamiento de la Dirección General de Desarrollo Gastronómico, con la información disponible para cada zona. Los datos corresponden a julio de 2026.
+# **Cómo se construyeron las zonas**
+<comment_start id=kix.d5v4x3i7h3gk>La lista de las 22 zonas la definió la Dirección a partir del territorio que ya venía siguiendo; no la produjo un cálculo automático sobre toda la Ciudad. Sobre esa lista se trabajó zona por zona, en tres pasos: <comment_end id=kix.d5v4x3i7h3gk>
+## **Primero, ubicar la oferta.**
+Se relevaron los locales gastronómicos de cada zona <comment_start id=kix.bho3chxd62e>con la fuente disponible para ese lugar<comment_end id=kix.bho3chxd62e> (el relevamiento propio de la Dirección o un directorio comercial en línea) y se contó una sola vez a los que aparecían repetidos. No todas las zonas se pudieron relevar de la misma manera, y por eso el Atlas distingue cuatro situaciones:
+  - Zonas con relevamiento propio de la Dirección.
+  - Zonas relevadas sobre un directorio comercial en línea.
+  - Zonas donde el relevamiento llegó a su tope y el número quedó como un mínimo: se escriben con «al menos».
+  - Zonas que se pudieron describir y ubicar, pero sin un conteo propio.
+Esa diferencia es la razón por la que los números de una zona no se comparan con los de otra ni se suman entre sí. Un número más alto no significa más oferta: significa que se contó de otra manera.
+## **Segundo, dibujar el área.**
+El contorno de cada zona se construyó a partir de dónde están los locales relevados, no a partir de un límite administrativo. Por eso una zona puede no coincidir con el barrio que lleva su nombre. Donde dos zonas vecinas quedaban superpuestas, el área se repartió entre ambas para que ninguna quede contenida dentro de la otra, respetando las separaciones que la Dirección definió.
+El tamaño del área no indica cantidad de oferta: depende de cuán repartidos estén los locales. Una zona con pocos locales muy dispersos puede dibujarse más grande que una con muchos locales juntos.
+## **Tercero, escribir la lectura.**
+Cada zona tiene una ficha que explica qué es ese lugar, cuánta oferta se relevó, de qué partes se compone y qué hay que tener en cuenta al leerla. Las partes internas —como Palermo Soho o el Barrio Chino— son componentes de su zona, no zonas nuevas.
+## **Qué no dicen estos números**
+Los números cuentan locales relevados, no locales abiertos hoy. No son un padrón, no miden facturación, empleo ni superficie, y no ordenan las zonas de mejor a peor. Los contornos muestran dónde se encontró la oferta; ninguno fue adoptado como límite oficial.
+# **Cómo leer el Atlas**
+## **Qué es una zona de este Atlas**
+Cada una de las 22 zonas es un lugar de la Ciudad donde la Dirección identificó oferta gastronómica con carácter propio. Algunas son barrios, otras una avenida o un tramo de calle, y otras un conjunto de partes separadas. No forman un ranking ni son 22 polos equivalentes.
+## **Por qué los números de distintas zonas no se comparan entre sí**
+Cada zona se relevó con un método propio, sobre una fuente propia y con su propia fecha. Un número más alto no significa más oferta que en otra zona: significa que se contó de otra manera. Tampoco se suman entre sí. Cuando el número viene con «al menos», es un mínimo: puede haber más locales, nunca menos.
+## **Qué son las áreas de los mapas**
+<comment_start id=kix.il51t58cl9zm>El área de cada mapa envuelve los locales que se relevaron en esa zona: muestra hasta dónde llegó la oferta encontrada y cómo está repartida. Su forma sigue a los locales y no al límite del barrio, y su tamaño depende de cuán separados estén entre sí: un área grande puede corresponder a pocos locales muy dispersos. Es una lectura de trabajo, no un límite oficial.<comment_end id=kix.il51t58cl9zm>
+## **En una línea**
+Este Atlas dice dónde hay oferta gastronómica en la Ciudad y cómo es cada lugar. 
+<comment_start id=kix.32u4r4hv8z3x>Cada zona se lee por separado, con lo que explica su propia ficha.<comment_end id=kix.32u4r4hv8z3x>
+# **Las cinco familias territoriales**
+Cinco formas de estar en el territorio. El color de cada familia es el que usa el mapa de la página siguiente. Cada zona lleva además un código, de R01 a R22, para poder nombrarla y encontrarla: es una referencia, no un orden de importancia.
+## **Polo (6)**
+Una concentración de oferta reconocible, con identidad propia.
+  - **R03 · **San Telmo
+  - **R05 · **Belgrano
+  - **R06 · **Recoleta
+  - **R08 · **Villa Crespo
+  - **R13 · **Abasto
+  - **R15 · **Devoto
+## **Polo con subzonas o partes (5)**
+Un polo formado por partes separadas, que el Atlas muestra separadas porque así están en el territorio.
+  - **R01 · **Palermo
+  - **R04 · **Puerto Madero
+  - **R07 · **Costanera Norte
+  - **R10 · **Caballito
+  - **R17 · **Villa Urquiza
+## **Eje o corredor (6)**
+La oferta se organiza a lo largo de una calle o avenida, no en una mancha.
+  - **R02 · **Avenida Corrientes
+  - **R11 · **Boulevard Caseros
+  - **R14 · **Avenida Boedo
+  - **R16 · **Donado–Holmberg
+  - **R19 · **Federico Lacroze por tramos
+  - **R20 · **García del Río
+## **Área segmentada (1)**
+No funciona como un solo lugar: son varias áreas vecinas que conviene mirar por separado.
+  - **R12 · **Centro/Microcentro segmentado
+## **Referencia dispersa (4)**
+Hay oferta comprobada, pero repartida: no se encontró un centro que la organice.
+  - **R09 · **Chacarita
+  - **R18 · **Esmeralda–Paraguay
+  - **R21 · **La Paternal
+  - **R22 · **Villa Pueyrredón
+## **Sobre esta clasificación**
+La familia describe la forma de estar en el territorio, no la importancia ni el tamaño. Ninguna familia agrupa cifras: los números de cada zona siguen sin sumarse entre sí.
+# **Las 22 zonas en la Ciudad**
+Cada forma es una zona; el color indica su familia.
+\[image\]
+**Familias  Polo**   ·   **Polo con subzonas o partes**   ·   **Eje o corredor**   ·   **Área segmentada**   ·   **Referencia dispersa**
+El tamaño del área no indica la cantidad de oferta: depende de cuán repartidos estén los locales.
+Números grises sobre el fondo: las 15 comunas. Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+Las áreas envuelven los locales relevados en cada zona: son una lectura de trabajo, no límites oficiales.
+# **Las 22 zonas, una por una**
+## **R01 · Palermo**
+Polo con subzonas o partes
+**Qué es esta zona**
+Palermo concentra oferta gastronómica de manera amplia y variada, <comment_start id=kix.h44fdvpleq7l>distribuida en tres áreas con personalidad propia<comment_end id=kix.h44fdvpleq7l>: Palermo Soho, Palermo Hollywood y Las Cañitas. Entre una y otra hay tramos sin oferta, y esos espacios forman parte de cómo funciona la zona.
+**Cuánta oferta hay**
+**Descripta y ubicada, sin conteo de locales**
+El Atlas describe y ubica Palermo, pero no publica un número de locales para el conjunto.
+**De qué se compone**
+  - Palermo Soho, Palermo Hollywood y Las Cañitas.
+  - <comment_start id=kix.crhxxhyp2k7u>Son partes del barrio de Palermo<comment_end id=kix.crhxxhyp2k7u>: nombres de uso corriente, sin límite administrativo propio. No son zonas nuevas ni polos separados.
+  - Cada una tiene su mapa ampliado; ninguna de las tres representa por sí sola a todo Palermo.
+**Qué hay que tener en cuenta**
+  - No hay un contorno oficial de Palermo: el área dibujada es una lectura, no un límite.
+  - Los espacios sin oferta entre las tres partes se muestran a propósito y no se rellenan.
+  - Villa Crespo y Chacarita son zonas aparte y no quedan incluidas en Palermo.
+### **R01 · Palermo · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Palermo, con sus tres partes: Palermo Soho, Palermo Hollywood y Las Cañitas.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona: el Atlas la describe y la ubica.
+**Qué no es  **Los espacios sin oferta entre las tres partes se muestran a propósito y no se cierran en un contorno único.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+### **R01 · Palermo Soho · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Palermo Soho ampliado, una de las tres partes de Palermo. Alrededor, las avenidas del entorno; en gris, las otras partes de Palermo que alcanzan a verse.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **Palermo Soho no representa por sí solo a todo Palermo.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+### **R01 · Palermo Hollywood · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Palermo Hollywood ampliado, una de las tres partes de Palermo. Alrededor, las avenidas del entorno; en gris, las otras partes de Palermo que alcanzan a verse.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **Palermo Hollywood no representa por sí solo a todo Palermo.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+### **R01 · Las Cañitas · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Las Cañitas ampliada, una de las tres partes de Palermo. Alrededor, las avenidas del entorno; en gris, las otras partes de Palermo que alcanzan a verse.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **Las Cañitas no representa por sí sola a todo Palermo.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R02 · Avenida Corrientes**
+Eje o corredor
+**Qué es esta zona**
+La avenida Corrientes es una calle de teatros, librerías y pizzerías donde la gastronomía se ordena a lo largo de la avenida y no alrededor de un centro. El tramo más reconocible va, aproximadamente, entre 9 de Julio y Callao.
+**Cuánta oferta hay**
+**Descripta y ubicada, sin conteo de locales**
+No se hizo un conteo propio de esta zona.
+**De qué se compone**
+  - Se lee como un corredor a lo largo de la avenida, sin partes internas propias.
+  - El tramo de referencia va aproximadamente entre 9 de Julio y Callao.
+**Qué hay que tener en cuenta**
+  - Ese tramo es una referencia descriptiva, no una delimitación oficial.
+  - Abasto se relaciona con Corrientes, pero es una zona distinta: no se cuentan ni se dibujan como una sola.
+### **R02 · Avenida Corrientes · Mapa**
+\[image\]
+**Qué muestra este mapa  **El tramo de la avenida Corrientes donde se concentran los teatros y la oferta gastronómica, aproximadamente entre 9 de Julio y Callao.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **Abasto se relaciona con Corrientes, pero es una zona distinta: no se dibujan como una sola.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+### **R02 · Corrientes y Abasto · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **La avenida Corrientes y el polo de Abasto en un mismo mapa, para ver cómo se ubican uno respecto del otro.
+**Qué mide la cifra  **Ninguna de las dos zonas tiene un conteo propio.
+**Qué no es  **Estar cerca no las convierte en una sola zona.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R03 · San Telmo**
+Polo
+**Qué es esta zona**
+San Telmo es un polo gastronómico apoyado en el casco histórico. El Mercado de San Telmo funciona como punto de encuentro y la calle Defensa ordena el recorrido.
+**Cuánta oferta hay**
+**Descripta y ubicada, sin conteo de locales**
+No se hizo un conteo propio de esta zona.
+**De qué se compone**
+  - El núcleo del casco histórico, el tejido de calles antiguas y el eje de la calle Defensa.
+  - El Mercado de San Telmo es el hito de referencia de la zona.
+**Qué hay que tener en cuenta**
+  - Esta zona no abarca todo el sur de la Ciudad.
+  - Boulevard Caseros y el entorno de Parque Lezama están asociados a San Telmo, pero son zonas distintas.
+### **R03 · San Telmo · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de San Telmo, sobre el casco histórico, con el Mercado de San Telmo como hito y la calle Defensa como recorrido.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **Boulevard Caseros está asociado a San Telmo, pero es una zona distinta.
+**Leyenda  **área de la zona · calle de referencia
+## **R04 · Puerto Madero**
+Polo con subzonas o partes
+**Qué es esta zona**
+Puerto Madero ordena su oferta gastronómica a lo largo de los diques, sobre las dos orillas enfrentadas, con hitos repartidos en el borde. Es una banda larga y no una mancha alrededor de un centro.
+**Cuánta oferta hay**
+**Descripta y ubicada, sin conteo de locales**
+No se hizo un conteo propio de esta zona.
+**De qué se compone**
+  - La sucesión de diques a lo largo del agua y el frente costero, con dos partes que el mapa rotula: los Docks y la Dársena Sur.
+  - No tiene un centro único: la oferta se distribuye sobre los dos frentes.
+**Qué hay que tener en cuenta**
+  - El área dibujada excluye el espejo de agua de los cuatro diques.
+  - La zona no sigue más allá del frente relevado y no se une con el Centro.
+### **R04 · Puerto Madero · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Puerto Madero, sobre la banda de diques y el frente al río, con sus dos partes: los Docks y la Dársena Sur.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **El área deja afuera el agua de los cuatro diques, descontada con cartografía pública verificada contra el mapa oficial de cuerpos de agua de la Ciudad.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R05 · Belgrano**
+Polo
+**Qué es esta zona**
+Belgrano es un polo de escala grande, con tres centros gastronómicos distintos: el Barrio Chino, el Bajo Belgrano y Belgrano R. Los tres funcionan dentro de una misma zona, y no todos con la misma importancia.
+**Cuánta oferta hay**
+**697 locales según un relevamiento anterior**
+Es el dato de un relevamiento anterior: sirve para describir la zona, no es su número de hoy.
+**De qué se compone**
+  - Barrio Chino (en el mapa, Barrio Chino–Belgrano C), Bajo Belgrano (Cabildo–Juramento) y Belgrano R.
+  - Son tres centros dentro de Belgrano, no tres zonas separadas.
+  - Belgrano R ocupa un lugar secundario, sin dejar de pertenecer a la zona.
+**Qué hay que tener en cuenta**
+  - Los 697 no equivalen a locales abiertos hoy.
+  - Los tres centros no se cuentan por separado ni se suman entre sí.
+  - Villa Urquiza y Donado–Holmberg quedan fuera de Belgrano.
+### **R05 · Belgrano · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Belgrano, con sus tres centros: Barrio Chino–Belgrano C, Cabildo–Juramento y Belgrano R.
+**Qué mide la cifra  **697 locales según un relevamiento anterior. Describe la zona; no es su número de hoy.
+**Qué no es  **Los 697 no equivalen a locales abiertos hoy, y no sirven para decir si Belgrano tiene más oferta que otra zona.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R06 · Recoleta**
+Polo
+**Qué es esta zona**
+Recoleta se presenta como una sola zona continua, con oferta diversa en su interior. El Atlas la trata como una unidad y no la parte en pedazos.
+**Cuánta oferta hay**
+**Descripta y ubicada, sin conteo de locales**
+Un relevamiento anterior dejó datos sobre Recoleta, pero no un número que pueda publicarse para toda la zona.
+**De qué se compone**
+  - Se lee como una sola unidad continua.
+  - El detalle interno del relevamiento anterior no se publica como una lista de partes.
+**Qué hay que tener en cuenta**
+  - El área dibujada es una lectura de la zona, no un límite oficial.
+  - Esmeralda–Paraguay es una zona distinta, aunque esté cerca.
+### **R06 · Recoleta · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Recoleta, presentada como una sola unidad continua.
+**Qué mide la cifra  **No se hizo un conteo propio de esta zona.
+**Qué no es  **El detalle interno de la zona no se publica como una lista de partes.
+**Leyenda  **área de la zona · calle de referencia
+## **R07 · Costanera Norte**
+Polo con subzonas o partes
+**Qué es esta zona**
+La Costanera Norte tiene su oferta gastronómica repartida en cuatro tramos separados a lo largo del frente al río. Entre un tramo y otro hay espacios sin oferta que forman parte de cómo es la zona.
+**Cuánta oferta hay**
+**72 locales según un relevamiento anterior**
+Es el dato de un relevamiento anterior: describe la zona, no mide su situación de hoy.
+**De qué se compone**
+  - Cuatro tramos separados sobre el frente costero.
+  - Los cuatro se leen juntos como una sola zona, sin unirlos con una línea que no existe.
+**Qué hay que tener en cuenta**
+  - Los espacios vacíos entre tramos son reales y se muestran.
+  - Los cuatro tramos no son cuatro zonas nuevas.
+  - Los 72 no equivalen a locales abiertos hoy.
+### **R07 · Costanera Norte · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de la Costanera Norte, con sus cuatro tramos separados a lo largo del frente al río.
+**Qué mide la cifra  **72 locales según un relevamiento anterior.
+**Qué no es  **Los espacios vacíos entre tramos son reales: no se unen con una línea que no existe.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R08 · Villa Crespo**
+Polo
+**Qué es esta zona**
+Villa Crespo tiene identidad gastronómica propia, apoyada sobre Thames, Gurruchaga y Velazco. Es una zona reconocible, aunque su borde exacto todavía no esté fijado.
+**Cuánta oferta hay**
+**646 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - Se organiza sobre los ejes de Thames, Gurruchaga y Velazco.
+  - No tiene un contorno cerrado: la definición fina de los bordes quedó para más adelante.
+**Qué hay que tener en cuenta**
+  - El número cuenta locales relevados, no locales abiertos hoy.
+  - En tres puntos el relevamiento llegó a su tope y no pudo seguir contando: ahí puede haber más locales.
+  - Villa Crespo es una zona distinta de Palermo y de Chacarita.
+### **R08 · Villa Crespo · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Villa Crespo, sobre los ejes de Thames y Gurruchaga.
+**Qué mide la cifra  **646 locales relevados, contando una sola vez los que aparecían repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **Villa Crespo tiene identidad propia frente a Palermo y Chacarita, y no queda incluida en ellas.
+**Leyenda  **área de la zona · calle de referencia
+### **R08 · Dónde se cortó el relevamiento · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Los tres puntos de Villa Crespo donde el relevamiento llegó a su tope y no pudo seguir contando.
+**Qué mide la cifra  **646 locales relevados en Villa Crespo; en esos tres puntos el conteo quedó incompleto.
+**Qué no es  **Los tres círculos marcan un límite del relevamiento, no una concentración de oferta.
+**Leyenda  **área de la zona · calle de referencia
+## **R09 · Chacarita**
+Referencia dispersa
+**Qué es esta zona**
+En Chacarita la gastronomía se agrupa en dos focos separados: Jorge Newbery y Dorrego. No forman una sola mancha continua, y el Atlas los muestra separados.
+**Cuánta oferta hay**
+**327 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos. El mapa dibuja los dos focos; parte de los locales relevados queda fuera de ellos.
+**De qué se compone**
+  - El foco de Jorge Newbery y el foco de Dorrego, independientes entre sí.
+  - Federico Lacroze aparece solo para ubicar la zona: no es el eje de Chacarita.
+**Qué hay que tener en cuenta**
+  - El número cuenta locales relevados, no locales abiertos hoy.
+  - Los dos focos no se juntan en un polo único.
+  - Chacarita no se mezcla con Palermo, Villa Crespo ni Federico Lacroze.
+### **R09 · Chacarita · Mapa**
+\[image\]
+**Qué muestra este mapa  **Los dos focos gastronómicos de Chacarita: Jorge Newbery y Dorrego.
+**Qué mide la cifra  **327 locales relevados en Chacarita, contando una sola vez los repetidos. El mapa dibuja los dos focos; parte de esos locales queda fuera de ellos. No equivale a locales abiertos hoy.
+**Qué no es  **Los focos no forman un contorno común ni un polo único, y no se mezclan con Palermo, Villa Crespo ni Federico Lacroze.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R10 · Caballito**
+Polo con subzonas o partes
+**Qué es esta zona**
+Caballito tiene dos núcleos gastronómicos separados: Pedro Goyena y Primera Junta–Mercado del Progreso. Cada uno funciona por su cuenta y el Atlas no los une.
+**Cuánta oferta hay**
+**907 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos. El mapa dibuja los dos núcleos; parte de los locales relevados queda fuera de ellos.
+**De qué se compone**
+  - El núcleo de Pedro Goyena y el de Primera Junta–Mercado del Progreso.
+  - El Patio de los Lecheros se revisó y quedó fuera de la zona.
+  - Parque Rivadavia se descartó y ya no forma parte de esta zona.
+**Qué hay que tener en cuenta**
+  - El número cuenta locales relevados, no locales abiertos hoy.
+  - Los dos núcleos no forman una sola área continua.
+### **R10 · Caballito · Mapa**
+\[image\]
+**Qué muestra este mapa  **Los dos núcleos gastronómicos de Caballito: Pedro Goyena y Primera Junta–Mercado del Progreso.
+**Qué mide la cifra  **907 locales relevados en Caballito, contando una sola vez los repetidos. El mapa dibuja los dos núcleos; parte de esos locales queda fuera de ellos. No equivale a locales abiertos hoy.
+**Qué no es  **Los núcleos son independientes y no forman una sola área; Parque Rivadavia quedó fuera de la zona.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+## **R11 · Boulevard Caseros**
+Eje o corredor
+**Qué es esta zona**
+Boulevard Caseros es una concentración chica y localizada, vinculada al entorno de Parque Lezama y San Telmo. Es un tramo corto, no una avenida gastronómica de punta a punta.
+**Cuánta oferta hay**
+**66 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - Un tramo corto del boulevard, sin partes internas propias.
+  - 47 de esos locales están a menos de 250 metros del boulevard: es una descripción, no la prueba de que la oferta sea continua.
+**Qué hay que tener en cuenta**
+  - La evidencia no alcanza para hablar de una avenida gastronómica continua.
+  - La zona no llega a Parque Patricios ni al resto de Barracas.
+  - Está asociada a San Telmo y a Lezama, pero es una zona distinta.
+### **R11 · Boulevard Caseros · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Boulevard Caseros, un tramo corto vinculado al entorno de Parque Lezama y San Telmo.
+**Qué mide la cifra  **66 locales relevados, contando una sola vez los repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **La evidencia no alcanza para una avenida gastronómica continua, y la zona no llega a Parque Patricios ni a Barracas.
+**Leyenda  **área de la zona · calle de referencia
+## **R12 · Centro/Microcentro segmentado**
+Área segmentada
+**Qué es esta zona**
+El Centro y el Microcentro no funcionan como un polo único, sino como varias áreas gastronómicas vecinas que conviene leer por separado. Cada una tiene su propio entorno y su propia escala.
+**Cuánta oferta hay**
+**Al menos 797 locales**
+Es un mínimo: puede haber más, no menos.
+**De qué se compone**
+  - Microcentro financiero, Plaza de Mayo–Monserrat, Avenida de Mayo, Retiro central y Tribunales.
+  - 143 locales están dentro de dos de esas áreas a la vez: por eso los números de las áreas no se suman.
+  - Tribunales se mira aparte y con menos información que las demás.
+**Qué hay que tener en cuenta**
+  - No es un polo único del Centro.
+  - El número cuenta locales relevados, no locales abiertos hoy.
+### **R12 · Centro/Microcentro segmentado · Mapa**
+\[image\]
+**Qué muestra este mapa  **Las áreas gastronómicas del Centro y el Microcentro, cada una con su propio entorno.
+**Qué mide la cifra  **Al menos 797 locales distintos. Es un mínimo: puede haber más, no menos. No equivale a locales abiertos hoy.
+**Qué no es  **No es un polo único del Centro: los números de las áreas no se suman porque comparten locales.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+### **R12 · Las áreas del Centro · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Las áreas del Centro y el Microcentro ampliadas, cada una con su nombre.
+**Qué mide la cifra  **Al menos 797 locales distintos en el conjunto; 143 de ellos están dentro de dos áreas a la vez.
+**Qué no es  **Los números de las áreas no se suman ni se ordenan de mayor a menor, porque comparten locales.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R13 · Abasto**
+Polo
+**Qué es esta zona**
+Abasto es un polo gastronómico reconocible sobre el tramo de la avenida Corrientes con el que se lo asocia. Su delimitación todavía es provisoria.
+**Cuánta oferta hay**
+**Al menos 314 locales**
+Es un mínimo: puede haber más, no menos.
+**De qué se compone**
+  - Se lee como una sola pieza sobre el tramo de Corrientes.
+  - Para relevarlo se lo dividió en tres tramos —al menos 91, 115 y 108 locales—, sin que ninguno se destaque sobre los otros.
+**Qué hay que tener en cuenta**
+  - Abasto es una zona distinta de la avenida Corrientes, aunque estén asociadas.
+  - La delimitación es provisoria y la zona no abarca todo Balvanera ni todo Almagro.
+### **R13 · Abasto · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Abasto, sobre el tramo de la avenida Corrientes con el que se lo asocia.
+**Qué mide la cifra  **Al menos 314 locales. Es un mínimo: puede haber más, no menos. No equivale a locales abiertos hoy.
+**Qué no es  **Abasto es una zona distinta de la avenida Corrientes y su delimitación todavía es provisoria.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R14 · Avenida Boedo**
+Eje o corredor
+**Qué es esta zona**
+Boedo tiene una identidad cultural fuerte y una oferta gastronómica que aparece a lo largo de la avenida, en tramos, con interrupciones entre ellos.
+**Cuánta oferta hay**
+**79 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - Tramos sueltos a lo largo de la avenida Boedo, sin partes internas propias.
+**Qué hay que tener en cuenta**
+  - La identidad cultural de la avenida no equivale a una oferta gastronómica continua.
+  - El número cuenta locales relevados, no locales abiertos hoy.
+  - La franja de 150 metros usada para relevar es una herramienta de trabajo, no un límite.
+### **R14 · Avenida Boedo · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada del eje de la avenida Boedo, con oferta que aparece en tramos.
+**Qué mide la cifra  **79 locales relevados, contando una sola vez los repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **La identidad cultural de la avenida no equivale a una oferta gastronómica continua.
+**Leyenda  **área de la zona · calle de referencia
+## **R15 · Devoto**
+Polo
+**Qué es esta zona**
+Devoto tiene un núcleo gastronómico estable alrededor de Plaza Arenales, con una periferia más difusa a su alrededor.
+**Cuánta oferta hay**
+**119 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - El núcleo alrededor de Plaza Arenales, en Villa Devoto.
+  - La periferia que lo rodea no está definida con precisión.
+**Qué hay que tener en cuenta**
+  - El núcleo no autoriza a extender la zona a todo el barrio.
+  - Villa Pueyrredón y Villa del Parque quedan fuera.
+  - El número cuenta locales relevados, no locales abiertos hoy.
+### **R15 · Devoto · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Devoto, con su núcleo alrededor de Plaza Arenales.
+**Qué mide la cifra  **119 locales relevados, contando una sola vez los repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **La periferia del polo no está definida con precisión y la zona no llega a Villa Pueyrredón ni a Villa del Parque.
+**Leyenda  **área de la zona · calle de referencia
+### **R15 · El núcleo de Devoto · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Devoto ampliado. Su núcleo se organiza alrededor de Plaza Arenales.
+**Qué mide la cifra  **119 locales relevados, contando una sola vez los repetidos.
+**Qué no es  **No hay un trazado propio del núcleo, así que el mapa muestra el polo completo.
+**Leyenda  **área de la zona · calle de referencia
+## **R16 · Donado–Holmberg**
+Eje o corredor
+**Qué es esta zona**
+Donado y Holmberg forman un doble eje gastronómico: la oferta se ubica sobre las dos calles, en tramos, y no en una mancha continua.
+**Cuánta oferta hay**
+**40 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - Las calles Donado y Holmberg, con tramos separados entre sí.
+**Qué hay que tener en cuenta**
+  - Es una zona distinta de Villa Urquiza y no queda incluida en ella.
+  - El nombre institucional es Donado–Holmberg; «DoHo» es un apodo y no se usa como nombre.
+  - El número cuenta locales relevados, no locales abiertos hoy.
+### **R16 · Donado–Holmberg · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada del doble eje de Donado y Holmberg, con la oferta repartida en tramos.
+**Qué mide la cifra  **40 locales relevados, contando una sola vez los repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **No forma un área única ni queda incluida en Villa Urquiza.
+**Leyenda  **área de la zona · calle de referencia
+## **R17 · Villa Urquiza**
+Polo con subzonas o partes
+**Qué es esta zona**
+Villa Urquiza es un polo gastronómico organizado sobre tres calles: Triunvirato, Monroe y Congreso.
+**Cuánta oferta hay**
+**189 locales relevados**
+Se contó una sola vez a los locales que aparecían repetidos.
+**De qué se compone**
+  - Los ejes de Triunvirato, Monroe y Congreso.
+  - El mapa dibuja el de Triunvirato, el único del que se tiene el recorrido completo; Monroe y Congreso aparecen sólo como calles de referencia.
+**Qué hay que tener en cuenta**
+  - Donado–Holmberg es una zona aparte y no queda incluida en Villa Urquiza.
+  - La zona no abarca todo el barrio administrativo.
+  - El número cuenta locales relevados, no locales abiertos hoy.
+### **R17 · Villa Urquiza · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de Villa Urquiza. De sus tres calles —Triunvirato, Monroe y Congreso— el mapa dibuja la de Triunvirato, la única de la que se tiene el recorrido completo.
+**Qué mide la cifra  **189 locales relevados, contando una sola vez los repetidos. No equivale a locales abiertos hoy.
+**Qué no es  **Villa Urquiza no incluye a Donado–Holmberg, que es una zona aparte.
+**Leyenda  **área de la zona · calle de referencia
+## **R18 · Esmeralda–Paraguay**
+Referencia dispersa
+**Qué es esta zona**
+En el cruce de Esmeralda y Paraguay hay oferta gastronómica documentada, sin un centro claro alrededor del cual se ordene.
+**Cuánta oferta hay**
+**Al menos 216 locales**
+Es un mínimo: puede haber más, no menos.
+**De qué se compone**
+  - Se lee como una sola pieza, sin partes internas propias.
+  - La mayor cantidad de locales no está junto al cruce, sino entre 100 y 300 metros de distancia.
+**Qué hay que tener en cuenta**
+  - El círculo de 400 metros marca hasta dónde se buscó alrededor del cruce; no significa que la zona tenga ahí su centro.
+  - «Nuevo Bajo» no es el nombre de esta zona y no se usa para ampliarla.
+### **R18 · Esmeralda–Paraguay · Mapa**
+\[image\]
+**Qué muestra este mapa  **El círculo de 400 metros dentro del cual se buscó, alrededor del cruce de Esmeralda y Paraguay.
+**Qué mide la cifra  **Al menos 216 locales. Es un mínimo: puede haber más, no menos. No equivale a locales abiertos hoy.
+**Qué no es  **El círculo marca hasta dónde se buscó alrededor del cruce; no significa que la zona tenga ahí su centro.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R19 · Federico Lacroze por tramos**
+Eje o corredor
+**Qué es esta zona**
+Sobre Federico Lacroze hay oferta gastronómica documentada en dos tramos separados: entre Libertador y Cabildo, y entre Cabildo y Álvarez Thomas.
+**Cuánta oferta hay**
+**Al menos 211 locales**
+De los locales relevados, 204 estaban abiertos y 7 cerrados de forma temporaria al momento del relevamiento.
+**De qué se compone**
+  - El tramo entre Libertador y Cabildo, con al menos 112 locales, y el tramo entre Cabildo y Álvarez Thomas, con al menos 138.
+  - Los dos se relevaron por separado y sus números no se suman.
+  - Cerca de Cabildo los dos tramos se tocan y comparten 39 locales.
+**Qué hay que tener en cuenta**
+  - Es un mínimo: puede haber más, no menos.
+  - Que los tramos se toquen no prueba que la oferta sea continua a lo largo de toda la avenida.
+  - La zona no llega hasta Dorrego ni se mezcla con Chacarita.
+### **R19 · Federico Lacroze por tramos · Mapa**
+\[image\]
+**Qué muestra este mapa  **Los dos tramos de Federico Lacroze: entre Libertador y Cabildo, y entre Cabildo y Álvarez Thomas.
+**Qué mide la cifra  **Al menos 211 locales. De los relevados, 204 estaban abiertos y 7 cerrados de forma temporaria al momento del relevamiento.
+**Qué no es  **Los dos tramos se relevaron por separado y sus números no se suman; la zona no se mezcla con Chacarita.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+### **R19 · Los dos tramos de Lacroze · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **Los dos tramos de Federico Lacroze de cerca, con la zona donde se tocan, junto a Cabildo.
+**Qué mide la cifra  **Al menos 211 locales en el conjunto; cada tramo se relevó por separado y sus números no se suman.
+**Qué no es  **Que los tramos se toquen no prueba que la oferta sea continua entre ellos.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R20 · García del Río**
+Eje o corredor
+**Qué es esta zona**
+Sobre García del Río, entre Cabildo y Parque Saavedra, hay una oferta gastronómica continua y de escala modesta, algo más concentrada del lado de Cabildo y más rala hacia el parque.
+**Cuánta oferta hay**
+**Al menos 40 locales**
+De los locales relevados, 39 estaban abiertos y 1 cerrado de forma temporaria al momento del relevamiento.
+**De qué se compone**
+  - Un solo tramo, entre Cabildo y Parque Saavedra.
+  - Parque Saavedra se usó para verificar que la oferta no siguiera dentro del parque: no aporta locales.
+**Qué hay que tener en cuenta**
+  - Es un mínimo: puede haber más, no menos.
+  - No alcanza para hablar de un corredor, un eje ni un polo consolidados: la familia describe cómo se ordena la oferta, no su tamaño ni su importancia.
+  - Villa Pueyrredón es una zona separada de esta.
+### **R20 · García del Río · Mapa**
+\[image\]
+**Qué muestra este mapa  **El tramo de García del Río, entre Cabildo y Parque Saavedra, con oferta continua y de escala modesta.
+**Qué mide la cifra  **Al menos 40 locales. Es un mínimo: puede haber más, no menos. No equivale a locales abiertos hoy.
+**Qué no es  **El tramo no sigue antes de Cabildo ni dentro del parque, y no alcanza para hablar de un corredor.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+### **R20 · García del Río y Parque Saavedra · Más de cerca**
+\[image\]
+**Qué muestra este mapa  **El extremo de García del Río junto a Parque Saavedra, con el parque señalado.
+**Qué mide la cifra  **Al menos 40 locales en el tramo. El parque no aporta locales: se usó para verificar que el tramo no siguiera dentro de él.
+**Qué no es  **El parque no integra la zona.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R21 · La Paternal**
+Referencia dispersa
+**Qué es esta zona**
+En La Paternal la oferta gastronómica está repartida en un área extensa, sin un centro que la organice. Es una zona documentada, no una concentración.
+**Cuánta oferta hay**
+**Al menos 254 locales**
+De los locales relevados, 242 estaban abiertos y 12 cerrados de forma temporaria al momento del relevamiento.
+**De qué se compone**
+  - El sector oeste de La Paternal, con al menos 237 locales.
+  - El borde de Rojas y Honorio Pueyrredón, con 19 locales, mirado aparte como límite con Villa Crespo.
+  - Los dos se relevaron con criterios distintos y sus números no se suman.
+**Qué hay que tener en cuenta**
+  - Es un mínimo: puede haber más, no menos.
+  - No se encontró un centro, un corredor ni un conjunto de puntos vinculados entre sí.
+  - El borde con Villa Crespo sigue siendo parte de La Paternal.
+### **R21 · La Paternal · Mapa**
+\[image\]
+**Qué muestra este mapa  **El área aproximada de La Paternal, extensa y con la oferta repartida.
+**Qué mide la cifra  **Al menos 254 locales. De los relevados, 242 estaban abiertos y 12 cerrados de forma temporaria al momento del relevamiento.
+**Qué no es  **No tiene un centro demostrado ni un contorno definido, y el borde con Villa Crespo sigue siendo parte de La Paternal.
+**Leyenda  **área de la zona · parte interna · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+## **R22 · Villa Pueyrredón**
+Referencia dispersa
+**Qué es esta zona**
+En Villa Pueyrredón la oferta gastronómica está repartida por todo el barrio, con algo más de densidad en el centro y el centro este. No hay un núcleo dominante ni una avenida que la ordene.
+**Cuánta oferta hay**
+**Al menos 158 locales**
+De los locales relevados, 152 estaban abiertos y 6 cerrados de forma temporaria al momento del relevamiento.
+**De qué se compone**
+  - El centro y el centro este concentran algo más de oferta: es una descripción, no una zona nueva.
+  - La avenida San Martín no se toma como eje de la zona.
+**Qué hay que tener en cuenta**
+  - Es un mínimo: puede haber más, no menos.
+  - El contorno del mapa es el recuadro dentro del cual se buscó en el barrio, no un área gastronómica.
+  - García del Río es una zona separada: entre las dos no hay locales en común.
+### **R22 · Villa Pueyrredón · Mapa**
+\[image\]
+**Qué muestra este mapa  **El recuadro dentro del cual se buscó en Villa Pueyrredón, con la oferta repartida por todo el barrio.
+**Qué mide la cifra  **Al menos 158 locales. Es un mínimo: puede haber más, no menos. No equivale a locales abiertos hoy.
+**Qué no es  **Es el recuadro dentro del cual se buscó en el barrio, no un área gastronómica: la mayor densidad del centro y centro este es una descripción, no un núcleo adoptado.
+**Leyenda  **área de la zona · calle de referencia
+Trazo punteado: marca el área dentro de la cual se buscó, no la forma de la oferta encontrada.
+# **Las 22 zonas de un vistazo**
+Tabla de consulta rápida.
+|  |  |  |  |
+| :- | :- | :- | :- |
+| **Código** | **Zona** | **Qué tipo de zona es** | **Cuánta oferta hay** |
+| R01 | Palermo | Polo con subzonas o partes | Descripta y ubicada, sin conteo de locales |
+| R02 | Avenida Corrientes | Eje o corredor | Descripta y ubicada, sin conteo de locales |
+| R03 | San Telmo | Polo | Descripta y ubicada, sin conteo de locales |
+| R04 | Puerto Madero | Polo con subzonas o partes | Descripta y ubicada, sin conteo de locales |
+| R05 | Belgrano | Polo | 697 locales según un relevamiento anterior |
+| R06 | Recoleta | Polo | Descripta y ubicada, sin conteo de locales |
+| R07 | Costanera Norte | Polo con subzonas o partes | 72 locales según un relevamiento anterior |
+| R08 | Villa Crespo | Polo | 646 locales relevados |
+| R09 | Chacarita | Referencia dispersa | 327 locales relevados |
+| R10 | Caballito | Polo con subzonas o partes | 907 locales relevados |
+| R11 | Boulevard Caseros | Eje o corredor | 66 locales relevados |
+| R12 | Centro/Microcentro segmentado | Área segmentada | Al menos 797 locales |
+| R13 | Abasto | Polo | Al menos 314 locales |
+| R14 | Avenida Boedo | Eje o corredor | 79 locales relevados |
+| R15 | Devoto | Polo | 119 locales relevados |
+| R16 | Donado–Holmberg | Eje o corredor | 40 locales relevados |
+| R17 | Villa Urquiza | Polo con subzonas o partes | 189 locales relevados |
+| R18 | Esmeralda–Paraguay | Referencia dispersa | Al menos 216 locales |
+| R19 | Federico Lacroze por tramos | Eje o corredor | Al menos 211 locales |
+| R20 | García del Río | Eje o corredor | Al menos 40 locales |
+| R21 | La Paternal | Referencia dispersa | Al menos 254 locales |
+| R22 | Villa Pueyrredón | Referencia dispersa | Al menos 158 locales |
+
+Los números de distintas zonas no se comparan entre sí ni se suman: cada uno se obtuvo de otra manera. La ficha de cada zona explica qué cuenta su número y qué hay que tener en cuenta.
+# **Cómo se hizo este Atlas y qué no dice**
+El Atlas reúne 22 zonas de la Ciudad donde la Dirección identificó oferta gastronómica con carácter propio. Cada zona se estudió por separado y con la información disponible para ella: en algunas se hizo un relevamiento propio, en otras se usó un directorio comercial en línea, y en otras alcanzó para describir el lugar pero no para dar un número.
+Los números cuentan locales relevados en julio de 2026. No son un padrón, no dicen cuántos locales están abiertos hoy y no se pueden sumar entre zonas.
+Cuando un número viene con «al menos», el relevamiento llegó a su tope y quedó incompleto: hay por lo menos esa cantidad y puede haber más. Nunca se estimó lo que faltaba.
+Los contornos de los mapas envuelven los locales relevados en cada zona. Ninguno es un límite oficial ni fue adoptado como tal, y el tamaño del área no mide cantidad de oferta.
+El Atlas no ordena las zonas de mejor a peor, no indica dónde conviene invertir y no reemplaza a ningún registro oficial.
+El detalle completo del método, con todas las salvedades del trabajo, está en la edición técnica de este mismo Atlas.

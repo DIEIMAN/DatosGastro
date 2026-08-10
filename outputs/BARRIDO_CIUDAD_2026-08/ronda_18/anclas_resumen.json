@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-08-10",
+  "anclas": 292,
+  "polos": 37,
+  "adentro": 186,
+  "afuera": 96,
+  "sin_ubicar": 10,
+  "sostienen_via_B": 189,
+  "sostienen_con_historia": 133,
+  "con_historia_y_quedan_afuera": 42,
+  "con_historia_afuera_establecimientos_distintos": 32,
+  "sostienen_via_B_y_quedan_afuera": 55,
+  "paginas_con_el_problema": 14,
+  "paginas_sin_ninguno_adentro": [
+    "Z32 · Liniers · Mercado Andino",
+    "Z35 · Balvanera · Once",
+    "Z40 · Nueva Pompeya y Parque Patricios",
+    "Z52 · La Boca · Almirante Brown y Necochea",
+    "Z54 · Nueva Pompeya · eje Av. Saenz"
+  ],
+  "polos_con_el_problema": [
+    "R09 · Chacarita",
+    "Z28 · Monte Castro",
+    "Z32 · Liniers · Mercado Andino",
+    "Z33 · Mataderos",
+    "Z35 · Balvanera · Once",
+    "Z37 · Almagro",
+    "Z40 · Nueva Pompeya y Parque Patricios",
+    "Z43 · Colegiales",
+    "Z47 · Monserrat y Congreso",
+    "Z50 · Barracas · Av. Montes de Oca",
+    "Z51 · Barracas · Iriarte, California y Vieytes",
+    "Z52 · La Boca · Almirante Brown y Necochea",
+    "Z53 · La Boca · Caminito y Vuelta de Rocha",
+    "Z54 · Nueva Pompeya · eje Av. Saenz"
+  ]
+}

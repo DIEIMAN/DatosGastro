@@ -1,0 +1,27 @@
+objeto,barrio,esquinas,distancia_a_brasil_m,contiene_695,cruza_brasil
+Defensa 0-0,San Telmo,BETHLEM / HUMBERTO 1,522,False,False
+Defensa 101-199,Monserrat,YRIGOYEN HIPOLITO / ALSINA ADOLFO,1691,False,False
+Defensa 201-299,Monserrat,ALSINA ADOLFO / MORENO,1563,False,False
+Defensa 301-399,Monserrat,MORENO / BELGRANO,1433,False,False
+Defensa 401-499,Monserrat,BELGRANO / REPUBLICA BOLIVARIANA DE VENEZUELA,1305,False,False
+Defensa 501-599,Monserrat,REPUBLICA BOLIVARIANA DE VENEZUELA / MEXICO,1173,False,False
+Defensa 601-695,Monserrat,MEXICO / CHILE,1043,True,False
+Defensa 697-703,San Telmo,CHILE / CHILE,1038,False,False
+Defensa 705-751,San Telmo,CHILE / SAN LORENZO,968,False,False
+Defensa 753-799,San Telmo,SAN LORENZO / INDEPENDENCIA,907,False,False
+Defensa 801-849,San Telmo,INDEPENDENCIA / GIUFFRA JOSE M DR,835,False,False
+Defensa 851-899,San Telmo,GIUFFRA JOSE M DR / ESTADOS UNIDOS,765,False,False
+Defensa 901-999,San Telmo,ESTADOS UNIDOS / CALVO CARLOS,651,False,False
+Defensa 1001-1099,San Telmo,CALVO CARLOS / BETHLEM,567,False,False
+Defensa 1101-1199,San Telmo,HUMBERTO 1 / SAN JUAN,393,False,False
+Defensa 1201-1299,San Telmo,SAN JUAN / COCHABAMBA,258,False,False
+Defensa 1301-1399,San Telmo,COCHABAMBA / GARAY JUAN DE,126,False,False
+Defensa 1401-1499,San Telmo,GARAY JUAN DE / BRASIL,0,False,True
+Defensa 1501-1599,San Telmo,BRASIL / CASEROS,0,False,True
+Defensa 1601-1699,nan,CASEROS / FINOCHIETTO ENRIQUE DR,142,False,False
+Defensa 1701-1799,nan,FINOCHIETTO ENRIQUE DR / GARCIA MARTIN + USPALLATA,306,False,False
+Defensa 1801-1851,nan,GARCIA MARTIN + USPALLATA / GARCIA MARTIN + REGIMIENTO DE PATRICIOS,425,False,False
+[cuadra mas cercana] Britanico,,Defensa 1401-1499: 24 m · Defensa 1501-1599: 25 m · Defensa 1301-1399: 123 m,5,,
+[cuadra mas cercana] Seddon,,Defensa 601-695: 3 m · Defensa 697-703: 8 m · Defensa 705-751: 13 m,1050,,
+[punto USIG] Britanico,,referencias ['R11'] · zonas ['R11'],0,,distancia a R11 en la columna de metros
+[punto USIG] Seddon,,referencias ninguna · zonas ['Z47'],902,,distancia a R11 en la columna de metros

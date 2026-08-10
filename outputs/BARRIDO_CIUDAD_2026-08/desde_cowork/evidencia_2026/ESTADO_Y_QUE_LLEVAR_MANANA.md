@@ -227,6 +227,6 @@ tenés: hay dónde apoyarse y todavía nada que lo respalde.
 
 **Y el número de polos, si te lo piden: cuarenta y uno**, no cuarenta y dos. El criterio único que se
 escribió el 9 a la noche movió cuatro zonas de categoría e incorporó cuatro del sur que estaban
-medidas y sin incorporar. **Puede cerrar en treinta y nueve** si la medición de reparto fusiona dos
+medidas y sin incorporar. **Medido el 10/8: cierra en cuarenta y uno, o cuarenta** si se firma la única fusión que quedó en pie
 de las del sur con un polo vecino. Si querés una sola frase segura: **«cuarenta y un polos admitidos
 en catorce comunas, bajo un criterio único, y dos de ellos pendientes de una medición de reparto.»**

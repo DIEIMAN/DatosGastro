@@ -1,0 +1,4 @@
+﻿fuente_publica,archivo_verificado,url_publica,fecha_descarga,universo_fuente,coincidencias_Villa_Soldati,coincidencias_Mariano_Acosta_Janer,resultado
+F03_FERIAS,data/raw/f03_ferias.csv,https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1121-resource/download,2026-06-12,30 ferias especializadas/no FIAB,0,0,No se encontró la feria alegada en el recurso público almacenado.
+F03_FIAB_GEOJSON,data/raw/f03_fiab.geojson,https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/89d4e504-2fa8-4703-9c05-2471fa47cdfa/download,2026-06-12,184 ubicaciones FIAB,2,0,Dos FIAB en Villa Soldati (Lacarra/Roca y Predio Villa Olímpica); ninguna sobre Mariano Acosta.
+F03_MERCADOS,data/raw/f03_mercados.csv,https://data.buenosaires.gob.ar/dataset/ferias-mercados/resource/juqdkmgo-1126-resource/download,2026-06-12,6 mercados,0,0,No se encontró la feria alegada en el recurso público almacenado.
