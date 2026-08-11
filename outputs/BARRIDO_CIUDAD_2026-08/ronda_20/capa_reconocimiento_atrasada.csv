@@ -1,0 +1,14 @@
+hito_id,nombre,tipo,direccion,que_pasa,dentro_de_algun_borde,polo
+DIR-026,Gran Café Gardel,Café histórico sin registro oficial,ochava Av. Entre Ríos e Independencia,falta entero en la capa que leen las páginas,no,
+DIR-027,Centro Asturiano de Buenos Aires,Casa regional con comedor,Solis 475,falta entero en la capa que leen las páginas,no,
+DIR-028,Centro Laurak Bat (Restaurante Haritz),Casa regional con comedor,Av. Belgrano 1144,falta entero en la capa que leen las páginas,no,
+DIR-029,Casal de Catalunya,Casa regional con comedor,Chacabuco 863,falta entero en la capa que leen las páginas,no,
+H094,Bar Iberia,Bar Notable,Av. de Mayo 1196,falta entero en la capa que leen las páginas,si,R12
+MG-0004,Mercat Villa Crespo,Mercado/patio,nan,falta entero en la capa que leen las páginas,sin punto,
+MG-0010,Smart Plaza Parque Patricios,Mercado/patio,nan,falta entero en la capa que leen las páginas,sin punto,
+MG-0013,Mercado San Nicolas,Mercado/patio,nan,falta entero en la capa que leen las páginas,sin punto,
+MG-0017,Gourmand Food Hall,Mercado/patio,nan,falta entero en la capa que leen las páginas,sin punto,
+MIC-028,Ultramarinos,MICHELIN,Pasaje Arribeños 1980,falta entero en la capa que leen las páginas,sin punto,
+H032,Roma del Abasto,,Anchorena 806,"la foto dice «Café Roma, San Luis 3101»",no,
+H060,La Academia,,Montevideo 341,"la foto dice «La Academia, Av. Callao 368»",si,R02
+DIR-002,El Fortin,,nan,"la foto dice «El Fortin, Av. Álvarez Jonte 5299 esquina Av. Lope de Vega»",si,Z28

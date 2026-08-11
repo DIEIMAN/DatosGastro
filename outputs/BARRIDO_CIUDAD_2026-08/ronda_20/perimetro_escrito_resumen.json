@@ -1,0 +1,110 @@
+{
+  "fecha": "2026-08-10",
+  "paginas": 41,
+  "por_categoria": {
+    "da calles y alturas": [
+      "Z24",
+      "Z28",
+      "Z31",
+      "Z35",
+      "Z37",
+      "Z44",
+      "Z46",
+      "Z47",
+      "Z50",
+      "Z51",
+      "Z54"
+    ],
+    "da calles sin alturas": [
+      "R02",
+      "R03",
+      "R08",
+      "R09",
+      "R10",
+      "R11",
+      "R14",
+      "R16",
+      "R17",
+      "R19",
+      "R20",
+      "R21",
+      "Z27",
+      "Z32",
+      "Z39",
+      "Z39b",
+      "Z40",
+      "Z41",
+      "Z43",
+      "Z52",
+      "Z53"
+    ],
+    "da un cruce de avenidas sin extensión": [
+      "Z33"
+    ],
+    "da un barrio o una referencia sin calles": [
+      "R01",
+      "R04",
+      "R05",
+      "R12",
+      "R13",
+      "R15"
+    ],
+    "no escribe perímetro": [
+      "R06",
+      "R07"
+    ]
+  },
+  "reconstruible": {
+    "si": [
+      "R11",
+      "R16",
+      "R20",
+      "Z24",
+      "Z28",
+      "Z31",
+      "Z39b",
+      "Z44",
+      "Z47",
+      "Z50",
+      "Z54"
+    ],
+    "en parte": [
+      "Z32",
+      "Z35",
+      "Z37",
+      "Z41",
+      "Z46",
+      "Z51",
+      "Z52"
+    ],
+    "no": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R17",
+      "R19",
+      "R21",
+      "Z27",
+      "Z33",
+      "Z39",
+      "Z40",
+      "Z43",
+      "Z53"
+    ]
+  },
+  "con_alturas": 12,
+  "sin_ninguna_calle": 8,
+  "calles_nombradas": 121,
+  "calles_que_tocan_su_borde": 107
+}

@@ -2,8 +2,7 @@
 
 **Comuna 4 · Barracas** — nuevo en esta edición · núcleo compacto
 
-**Dónde está.** Sobre **Av. Iriarte 2100–2300**, con extensión a Vieytes y California. **Sin borde
-dibujado todavía**: la superficie y la cantidad de locales se publican cuando se cierre.
+**Dónde está.** Sobre **Av. Iriarte 2100–2300**, con extensión a Vieytes y California. **Contorno medido: 5,83 hectáreas y 12 locales.** Es un racimo de puertas, no una zona: no se puede comparar en tamaño con ninguna otra página.
 
 **Reconocimiento oficial.** **El Puentecito**, declarado de **Interés Cultural por la Legislatura porteña
 en 2018**.
@@ -15,7 +14,7 @@ en 2018**.
 
 **Por qué es un polo.** — cumple tres condiciones.
 
-- **Cantidad de locales** — sí.
+- **Cantidad de locales** — sí, **y por continuidad y no por volumen**: son doce locales, pero la mitad forma una sola cadena ya a veinte metros y a los ciento veinte están los doce. A esta escala la pregunta es si las puertas se encadenan, y se encadenan.
 - **Establecimientos con historia** — sí, y es la condición fuerte de la zona.
 - **Prensa y guías** — sí.
 - **Avenida gastronómica** — parcial, y por criterio parcial no se cumple. Se declara y no se cuenta.
@@ -49,7 +48,7 @@ doce locales, y **no se pueden comparar en tamaño con las de ninguna otra pági
 mide decenas o cientos de hectáreas. Lo que este contorno describe es un grupo de puertas, no una zona.
 
 
-**Lo que falta.** Cerrar el borde, que hoy no está dibujado, y seguir de cerca a Los Laureles: reabrió con nuevos dueños y el inmueble está en venta.
+**Lo que falta.** Seguir de cerca a Los Laureles: reabrió con nuevos dueños y el inmueble está en venta.
 # La Boca · Almirante Brown y Necochea
 
 **Comuna 4 · La Boca** — nuevo en esta edición · corredor sobre una avenida
@@ -85,7 +84,7 @@ emblemáticas distinguidas por APyCE y el Ministerio de Desarrollo Económico.
 
 **Los establecimientos.** — la zona pasó de dos a cinco al cruzarla con el registro oficial. **Banchero**, Almirante
 Brown y Suárez, 1932. **El Portuario**, Pinzón 102, 1915, Bar Notable incorporado al catálogo el 03/08/2026.
-**Café Roma**, Olavarría 409, Bar Notable. **El Estaño 1880**, Aristóbulo del Valle 1100, Bar Notable.
+**Café Roma**, Olavarría 409, Bar Notable. **El Estaño 1880**, Aristóbulo del Valle 1100, Bar Notable — descripto en actividad por una guía oficial de **marzo de 2025**.
 **Boca a Boca**, Av. Benito Pérez Galdós 207, Bar Notable, alta de 2026.
 
 Los dos últimos son el aporte del registro oficial.

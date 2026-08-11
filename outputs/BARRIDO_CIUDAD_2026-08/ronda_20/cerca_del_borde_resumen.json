@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-08-10",
+  "fuera_de_todo_borde": 81,
+  "a_250_m_o_menos": 43,
+  "a_100_m_o_menos": 27,
+  "a_500_m_o_menos": 58,
+  "sobre_calle_ya_nombrada": 7,
+  "exigen_una_calle_que_el_texto_no_nombra": 36,
+  "en_contacto_de_borde": 2,
+  "dejaron_de_estar_afuera": [
+    "DIR-010",
+    "H031",
+    "H062"
+  ],
+  "empezaron_a_estar_afuera": [
+    "DIR-026",
+    "DIR-027",
+    "DIR-028",
+    "DIR-029"
+  ],
+  "cambiaron_de_veredicto": [
+    "DIR-011",
+    "H028",
+    "H032",
+    "ICO-008",
+    "MIC-043",
+    "MIC-046"
+  ]
+}

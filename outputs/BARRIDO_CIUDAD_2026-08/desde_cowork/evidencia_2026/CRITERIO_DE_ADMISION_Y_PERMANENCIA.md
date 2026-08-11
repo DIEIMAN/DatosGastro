@@ -62,7 +62,7 @@ La vara no se eligió por gusto: se probó contra el conjunto real, con los tres
 
 | se pide | polos | qué pasa |
 |---|---:|---|
-| al menos una | 47 | Entran Villa Real y Versalles, Parque Chas y Villa del Parque por un solo establecimiento o una sola feria. Villa Pueyrredón entra con 5,6 % de continuidad y ningún establecimiento con historia. |
+| al menos una | 45 | Entran Villa Real y Versalles, Parque Chas y Villa del Parque por un solo establecimiento o una sola feria. Villa Pueyrredón entra con 5,6 % de continuidad y ningún establecimiento con historia. |
 | **al menos dos** | **41** | Sobrevive todo lo que la evidencia sostiene por dos caminos distintos. Caen los casos que el propio análisis ya había marcado como frágiles. |
 | al menos tres | 34 | Se cae el Microcentro. Se cae San Telmo. Se caen las dos zonas de La Boca. |
 
@@ -74,8 +74,7 @@ Pedir una admite una zona porque un bar sigue abierto. Eso no es un polo: es un 
 
 Dos condiciones, apoyadas en cosas distintas y dentro de un lugar dibujable, es el único de los tres
 valores que a la vez conserva lo obvio y rechaza lo delgado. Y hay una prueba de que lee el
-territorio y no el método: aplicada a ciegas, la regla reprodujo por su cuenta las reservas que ya
-estaban escritas a mano en las páginas de Coghlan y de Floresta, meses de trabajo antes.
+territorio y no el método: aplicada a ciegas, la regla reprodujo por su cuenta las reservas que ya estaban escritas a mano en las páginas de Coghlan y de Floresta.
 
 ## Qué pasa con lo que no llega
 
@@ -148,10 +147,7 @@ cosas distintas y la unidad del lugar no está en discusión.
 
 ## Lo que la regla hizo aparecer
 
-En agosto se habían medido con las seis condiciones siete zonas del sur —Barracas, La Boca, Nueva
-Pompeya, Villa Soldati y Villa Lugano— y el informe terminaba diciendo que el conjunto pasaba de 36
-a 41 polos. Ninguna etapa posterior tomó ese resultado: no estaban en las páginas escritas, ni en la
-tabla de condiciones, ni en los nombres. Se midieron, se concluyó, y ahí quedaron.
+Las siete zonas del sur —Barracas, La Boca, Nueva Pompeya, Villa Soldati y Villa Lugano— se midieron con las seis condiciones y el resultado llevaba el conjunto de 36 a 41 polos. Ese resultado tardó en llegar a las páginas: por un tiempo estuvo medido y concluido, y no escrito. Está escrito en esta edición.
 
 Cinco de las siete entran por la regla, y son las cuatro páginas nuevas del sur más la de Montes de
 Oca, que había vuelto a entrar por otro camino sin que nadie notara que era la misma.
@@ -169,7 +165,7 @@ zonas que quedaron fuera.
 
 ## La Comuna 8, ahora con una respuesta simétrica
 
-La Comuna 8 tiene tres concentraciones medidas y 259 locales, y ninguno llega a cumplir dos
+La Comuna 8 tiene cuatro concentraciones medidas y 400 locales, y ninguna llega a cumplir dos
 condiciones: no hay allí establecimientos con historia reconocida, ni prensa que la trate como
 destino, ni un mercado que organice el movimiento alrededor.
 

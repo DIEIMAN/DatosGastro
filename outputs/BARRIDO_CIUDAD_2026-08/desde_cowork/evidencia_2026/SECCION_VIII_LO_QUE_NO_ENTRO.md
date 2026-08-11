@@ -33,8 +33,7 @@ publica acá, con lo que sí tiene y con lo que le falta.
 | prensa y guías | no se cumple — **ninguna fuente** |
 | avenida gastronómica | no se cumple |
 
-**No llega a las dos condiciones: cumple una sola condición.** Y la que cumple lo hace con la continuidad más baja de todas las
-polos que ya estaban publicados: de cada cien locales, menos de seis tienen otro a menos de veinte metros.
+**No llega a las dos condiciones: cumple una sola condición.** Y la que cumple lo hace con la continuidad más baja de todos los polos que ya estaban publicados: a cuarenta metros, la cadena más larga junta a menos de seis de cada cien locales.
 Eso describe una avenida con comercios, no un polo.
 
 Un punto importante sobre su condición de prensa y guías, porque es lo que la distingue de un simple hueco de
@@ -108,8 +107,7 @@ no se pudieron acreditar los cincuenta años.
 | **Villa Lugano y Villa Riachuelo** | 8 | cero en las seis, **buscado por cinco caminos distintos** |
 
 Sobre Villa Soldati hay un dato cualitativo que vale más que el cero: la infraestructura
-alimentaria documentada del barrio **es asistencial, no comercial** — el lugar histórico localizado es un
-comedor. Y el proyecto ferial del ex Parque de la Ciudad, con locales gastronómicos previstos sobre
+alimentaria documentada del barrio **es asistencial, no comercial** — el único establecimiento alimentario localizado es un comedor. Y el proyecto ferial del ex Parque de la Ciudad, con locales gastronómicos previstos sobre
 75 hectáreas, es proyecto no construido, pendiente de tratamiento legislativo. Es el mismo patrón
 que el «distrito especializado en comida de inmigración» anunciado sobre Necochea en 2017, del que
 no hay rastro nueve años después: **anuncio sin obra**.
@@ -128,9 +126,7 @@ permanencia sí, y lo dice.
 
 ### Villa Soldati · eje Av. Mariano Acosta · Comuna 8
 
-Durante buena parte de este trabajo fue el único caso donde dos revisiones propias dieron resultados
-opuestos. Se cerró el 10 de agosto, y conviene contar cómo, porque el cierre tiene dos capas y sólo
-la segunda es concluyente.
+Es el único caso del atlas donde dos mediciones sobre la misma zona dieron resultados opuestos. Conviene contar cómo se cerró, porque el cierre tiene dos capas y sólo la segunda es concluyente.
 
 Una revisión documentó una feria callejera de 840 metros sobre Av. Mariano Acosta, entre Ana María
 Janer y Fernández de la Cruz, martes y jueves de 8 a 16, **con comida al paso**. Otra encontró **dos
@@ -153,9 +149,9 @@ Segunda capa, y ésta sí cierra el asunto. Aunque mañana apareciera la fuente 
 Villa Soldati pasaría de cero a una condición — y hacen falta dos. La contradicción, por sí
 sola, no podía crear un polo en la Comuna 8.
 
-> Durante semanas esta pregunta figuró como la única abierta cuya respuesta cambiaba el mapa.
-> Resuelta, la respuesta es que no lo cambiaba. Vale dejarlo escrito: una pregunta puede ser
-> importante de contestar y a la vez no ser decisiva, y confundir las dos cosas hace perder tiempo.
+> Era la única pregunta abierta de la que se esperaba que cambiara el mapa. Resuelta, la respuesta
+> es que no lo cambiaba. Vale dejarlo escrito: una pregunta puede ser importante de contestar y a
+> la vez no ser decisiva, y confundir las dos cosas hace perder tiempo.
 
 ### Las dos donde además falla la unidad espacial
 
@@ -193,9 +189,7 @@ registros oficiales, no inferido.
 Permite decir que el criterio no está hecho a la medida del resultado, porque hace caer también
 a un polo propio y deja en estudio a dos zonas que este documento había dado por adentro.
 
-No permite decir que en estas catorce zonas no hay gastronomía. Hay, y en algunas hay mucha: el
-corredor de Av. Rivadavia en Flores es denso, y Once tiene una de las masas comerciales más grandes
-de la Ciudad. Lo que no hay es un polo en el sentido que este atlas define, que es una cosa más
+No permite decir que en estas catorce zonas no hay gastronomía. Hay, y en algunas hay mucha: el corredor de Av. Rivadavia en Flores es denso, y Villa del Parque tiene una tira comercial larga sobre Av. Cuenca. Lo que no hay es un polo en el sentido que este atlas define, que es una cosa más
 específica y más exigente que «hay locales».
 
 **Y no permite ordenarlas.** Ninguna de las catorce tiene perímetro cerrado, así que cualquier

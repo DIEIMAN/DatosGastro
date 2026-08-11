@@ -1,0 +1,5 @@
+polo,polo_id,ya_estaba_declarado,ha_del_contorno_publicado,locales_del_contorno_publicado,ha_del_recorte_de_adentro,locales_del_recorte_de_adentro,veces_mas_chico_en_superficie,pct_de_los_locales_que_conserva,ha_del_barrio_administrativo,m2_del_contorno_fuera_del_barrio,m2_del_barrio_fuera_del_contorno,pct_de_coincidencia_con_el_barrio,concentraciones_usadas,locales_de_la_concentracion,locales_que_publica_la_capa_de_concentraciones,locales_de_la_concentracion_dentro_del_recorte,piezas_del_recorte,frente_mas_chico_medido_m,manzanas_que_perderia_exigiendo_40m
+Z41 · Núñez,Z41,si,442.64,494,35.66,107,12.4,21.7,442.64,0.0,0.0,100.0,P067 P072-1,76,92,76,2,54.6,0
+Z46 · Retiro,Z46,si,467.14,715,37.16,297,12.6,41.5,451.52,156195.7,0.0,98.3,P115 P118,203,201,203,1,59.5,0
+Z27 · Villa Santa Rita,Z27,si,215.46,182,16.56,40,13.0,22.0,215.47,1158.2,1297.9,99.94,P040,30,54,30,1,63.4,0
+Z43 · Colegiales,Z43,"no, se declara en esta tanda",229.08,441,98.03,298,2.3,67.6,229.09,1529.3,1677.8,99.93,P048 P071 P072-2 P072-5,236,326,236,3,42.9,0

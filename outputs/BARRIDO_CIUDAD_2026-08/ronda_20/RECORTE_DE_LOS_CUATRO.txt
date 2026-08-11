@@ -1,0 +1,67 @@
+==================================================================================================
+EL RECORTE DE ADENTRO DE LOS CUATRO QUE PUBLICAN EL POLÍGONO DE SU BARRIO
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+--------------------------------------------------------------------------------------------------
+Z41 · Núñez
+--------------------------------------------------------------------------------------------------
+    el contorno publicado         442.64 ha ·   494 locales
+    el barrio administrativo      442.64 ha
+        del contorno, fuera del barrio:          0.0 m²   del barrio, fuera del contorno:          0.0 m²   (100.00 % de coincidencia)
+    la concentración adentro   2 pieza(s) (P067, P072-1) · 76 locales medidos en el universo del atlas
+        la capa de concentraciones publica 92 para esas mismas piezas: es otro universo y otro recorte, y por eso no coinciden
+    el recorte de adentro          35.66 ha ·   107 locales · 2 pieza(s)
+        contiene 76 de los 76 locales de la concentración
+        el polo sería 12.4 veces más chico que el barrio en superficie, y se quedaría con el 21.7 % de sus locales
+        el frente más chico de una manzana sobre una cuadra es de 55 m, así que el umbral de 20 m no muerde: 0 manzanas quedarían fuera aun exigiendo 40 m
+--------------------------------------------------------------------------------------------------
+Z46 · Retiro
+--------------------------------------------------------------------------------------------------
+    el contorno publicado         467.14 ha ·   715 locales
+    el barrio administrativo      451.52 ha
+        del contorno, fuera del barrio:    156,195.7 m²   del barrio, fuera del contorno:          0.0 m²   (98.30 % de coincidencia)
+    la concentración adentro   2 pieza(s) (P115, P118) · 203 locales medidos en el universo del atlas
+        la capa de concentraciones publica 201 para esas mismas piezas: es otro universo y otro recorte, y por eso no coinciden
+    el recorte de adentro          37.16 ha ·   297 locales · 1 pieza(s)
+        contiene 203 de los 203 locales de la concentración
+        el polo sería 12.6 veces más chico que el barrio en superficie, y se quedaría con el 41.5 % de sus locales
+        el frente más chico de una manzana sobre una cuadra es de 60 m, así que el umbral de 20 m no muerde: 0 manzanas quedarían fuera aun exigiendo 40 m
+--------------------------------------------------------------------------------------------------
+Z27 · Villa Santa Rita
+--------------------------------------------------------------------------------------------------
+    el contorno publicado         215.46 ha ·   182 locales
+    el barrio administrativo      215.47 ha
+        del contorno, fuera del barrio:      1,158.2 m²   del barrio, fuera del contorno:      1,297.9 m²   (99.94 % de coincidencia)
+    la concentración adentro   1 pieza(s) (P040) · 30 locales medidos en el universo del atlas
+        la capa de concentraciones publica 54 para esas mismas piezas: es otro universo y otro recorte, y por eso no coinciden
+    el recorte de adentro          16.56 ha ·    40 locales · 1 pieza(s)
+        contiene 30 de los 30 locales de la concentración
+        el polo sería 13.0 veces más chico que el barrio en superficie, y se quedaría con el 22.0 % de sus locales
+        el frente más chico de una manzana sobre una cuadra es de 63 m, así que el umbral de 20 m no muerde: 0 manzanas quedarían fuera aun exigiendo 40 m
+--------------------------------------------------------------------------------------------------
+Z43 · Colegiales   (se declara en esta tanda)
+--------------------------------------------------------------------------------------------------
+    el contorno publicado         229.08 ha ·   441 locales
+    el barrio administrativo      229.09 ha
+        del contorno, fuera del barrio:      1,529.3 m²   del barrio, fuera del contorno:      1,677.8 m²   (99.93 % de coincidencia)
+    la concentración adentro   4 pieza(s) (P048, P071, P072-2, P072-5) · 236 locales medidos en el universo del atlas
+        la capa de concentraciones publica 326 para esas mismas piezas: es otro universo y otro recorte, y por eso no coinciden
+    el recorte de adentro          98.03 ha ·   298 locales · 3 pieza(s)
+        contiene 236 de los 236 locales de la concentración
+        el polo sería 2.3 veces más chico que el barrio en superficie, y se quedaría con el 67.6 % de sus locales
+        el frente más chico de una manzana sobre una cuadra es de 43 m, así que el umbral de 20 m no muerde: 0 manzanas quedarían fuera aun exigiendo 40 m
+
+==================================================================================================
+EL CUADRO
+==================================================================================================
+  polo                       contorno ha   loc    recorte ha   loc      ×   % loc  piezas
+  Z41 · Núñez                     442.64   494         35.66   107   12.4   21.7 %       2
+  Z46 · Retiro                    467.14   715         37.16   297   12.6   41.5 %       1
+  Z27 · Villa Santa Rita          215.46   182         16.56    40   13.0   22.0 %       1
+  Z43 · Colegiales                229.08   441         98.03   298    2.3   67.6 %       3
+
+Escrito: recorte_de_los_cuatro.csv (4 filas) · geometria/recorte_de_los_cuatro.geojson · recorte_resumen.json

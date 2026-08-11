@@ -1,0 +1,277 @@
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+==================================================================================================
+EL PERÍMETRO ESCRITO DE LAS 41 PÁGINAS
+==================================================================================================
+
+--------------------------------------------------------------------------------------------------
+R01 · Palermo
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias Soho; Hollywood; Las Cañitas; «el perímetro publicado de Palermo»
+    reconstruible: NO — el bloque no describe un perímetro: explica cómo se publica un sistema de subzonas y da las cifras de cada una. Ninguna calle
+--------------------------------------------------------------------------------------------------
+R02 · Avenida Corrientes
+    categoría   da calles sin alturas
+    calles      Av. Corrientes; Callao; Pueyrredón   ·  2 de 3 tocan el borde dibujado
+    referencias el Obelisco
+    reconstruible: NO — da el eje y los dos extremos, pero la página declara que «el tramo exacto está por precisar» y el extremo norte es «el entorno de Callao/Pueyrredón»
+--------------------------------------------------------------------------------------------------
+R03 · San Telmo
+    categoría   da calles sin alturas
+    calles      Defensa   ·  1 de 1 tocan el borde dibujado
+    referencias Plaza Dorrego
+    reconstruible: NO — la delimitación es «perímetro vigente»: la calle y la plaza describen el núcleo, no el borde
+--------------------------------------------------------------------------------------------------
+R04 · Puerto Madero
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias los diques
+    reconstruible: NO — «perímetro vigente, organizado sobre los diques». Ninguna calle, ninguna extensión
+--------------------------------------------------------------------------------------------------
+R05 · Belgrano
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias el enclave del Barrio Chino
+    reconstruible: NO — «perímetro vigente» más el enclave que contiene. Ninguna calle
+--------------------------------------------------------------------------------------------------
+R06 · Recoleta
+    categoría   no escribe perímetro
+    calles      (ninguna)
+    reconstruible: NO — el bloque entero dice «Perímetro vigente.»
+--------------------------------------------------------------------------------------------------
+R07 · Costanera Norte
+    categoría   no escribe perímetro
+    calles      (ninguna)
+    reconstruible: NO — el bloque entero dice «Perímetro vigente.»
+--------------------------------------------------------------------------------------------------
+R08 · Villa Crespo
+    categoría   da calles sin alturas
+    calles      Loyola; Thames; Aguirre   ·  3 de 3 tocan el borde dibujado
+    reconstruible: NO — tres ejes sin extensión, sobre un «perímetro vigente» de 335 ha: los ejes no la producen
+--------------------------------------------------------------------------------------------------
+R09 · Chacarita
+    categoría   da calles sin alturas
+    calles      Elcano; Álvarez Thomas; Forest; Jorge Newbery   ·  3 de 4 tocan el borde dibujado
+    reconstruible: NO — las cuatro calles describen el corredor que comparte con Colegiales, no el borde propio, y la página dice que «el trazado conjunto está en revisión»
+--------------------------------------------------------------------------------------------------
+R10 · Caballito
+    categoría   da calles sin alturas
+    calles      Av. Pedro Goyena   ·  1 de 1 tocan el borde dibujado
+    reconstruible: NO — «perímetro vigente» más una subzona sobre una avenida, sin extensión
+--------------------------------------------------------------------------------------------------
+R11 · Boulevard Caseros
+    categoría   da calles sin alturas
+    calles      Av. Caseros; Defensa; Bolívar; Perú; Av. Montes de Oca   ·  5 de 5 tocan el borde dibujado
+    reconstruible: SI — eje, los dos extremos y el tope máximo escritos: «Av. Caseros entre Defensa y Bolívar, una cuadra, como máximo hasta Perú», y dice hasta dónde NO llega
+--------------------------------------------------------------------------------------------------
+R12 · Centro y Microcentro
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias Monserrat
+    reconstruible: NO — «perímetro vigente» y el aviso de que se pisa con Monserrat. Ninguna calle
+--------------------------------------------------------------------------------------------------
+R13 · Abasto
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias el enclave Corredor Peruano
+    reconstruible: NO — «perímetro vigente» más el enclave que contiene. Ninguna calle
+--------------------------------------------------------------------------------------------------
+R14 · Avenida Boedo
+    categoría   da calles sin alturas
+    calles      Av. Boedo   ·  1 de 1 tocan el borde dibujado
+    reconstruible: NO — «el eje de Av. Boedo, con el contorno vigente»: el eje sin extensión y el contorno remitido
+--------------------------------------------------------------------------------------------------
+R15 · Devoto
+    categoría   da un barrio o una referencia sin calles
+    calles      (ninguna)
+    referencias Plaza Arenales
+    reconstruible: NO — «perímetro vigente» más el núcleo en una plaza. Ninguna calle
+--------------------------------------------------------------------------------------------------
+R16 · Donado-Holmberg
+    categoría   da calles sin alturas
+    calles      Donado; Holmberg; Echeverría; La Pampa   ·  4 de 4 tocan el borde dibujado
+    reconstruible: SI — dos ejes paralelos con los dos extremos escritos: «Donado y Holmberg entre Echeverría y La Pampa»
+--------------------------------------------------------------------------------------------------
+R17 · Villa Urquiza
+    categoría   da calles sin alturas
+    calles      Av. Triunvirato; Av. Monroe   ·  2 de 2 tocan el borde dibujado
+    referencias Plaza Echeverría
+    reconstruible: NO — dos avenidas y una plaza enumeradas, sin ninguna extensión, para un borde de 446 ha
+--------------------------------------------------------------------------------------------------
+R19 · Federico Lacroze
+    categoría   da calles sin alturas
+    calles      Fraga; Dorrego; Charlone; Jorge Newbery   ·  4 de 4 tocan el borde dibujado
+    referencias Plaza Los Andes
+    reconstruible: NO — «se amplía al entorno de» cuatro calles y una plaza: «entorno» no es una extensión
+--------------------------------------------------------------------------------------------------
+R20 · Garcia del Rio
+    categoría   da calles sin alturas
+    calles      Av. García del Río; Av. Cabildo; Av. Balbín; Pinto   ·  4 de 4 tocan el borde dibujado
+    reconstruible: SI — eje, los dos extremos y el largo verificado: «de Av. Cabildo a Av. Balbín, 1.483 metros, unas quince cuadras»
+--------------------------------------------------------------------------------------------------
+R21 · La Paternal
+    categoría   da calles sin alturas
+    calles      Belaustegui; Remedios de Escalada de San Martín; Paz Soldán; Rojas; Ávalos; Espinosa; Terrero   ·  7 de 7 tocan el borde dibujado
+    referencias el límite con Villa Crespo
+    reconstruible: NO — «se amplía hacia» siete calles: es una dirección de crecimiento, no un contorno, y el único límite escrito es el del barrio vecino
+--------------------------------------------------------------------------------------------------
+Z24 · Flores · Avellaneda y Pasaje Ruperto Godoy
+    categoría   da calles y alturas
+    calles      Av. Avellaneda; Nazca; Cuenca; Bahía Blanca; Pasaje Ruperto Godoy; Felipe Vallese   ·  5 de 6 tocan el borde dibujado
+    alturas     Pasaje Ruperto Godoy 700-800; Felipe Vallese 3100
+    reconstruible: SI — las tres piezas con su extensión: el corredor entre dos cortes, el pasaje por altura y el racimo por altura
+--------------------------------------------------------------------------------------------------
+Z27 · Villa Santa Rita
+    categoría   da calles sin alturas
+    calles      Av. Álvarez Jonte   ·  1 de 1 tocan el borde dibujado
+    reconstruible: NO — «puntos dispersos con anclaje» en una avenida que la propia página dice que es el límite del barrio y no su columna interior. No hay trazado: publica el barrio
+--------------------------------------------------------------------------------------------------
+Z28 · Monte Castro
+    categoría   da calles y alturas
+    calles      Av. Álvarez Jonte; Av. Lope de Vega   ·  2 de 2 tocan el borde dibujado
+    alturas     Av. Álvarez Jonte 4400-5299
+    reconstruible: SI — eje con rango de alturas y el nodo del cruce. La página escribe «aproximadamente», y esa es toda la holgura
+--------------------------------------------------------------------------------------------------
+Z31 · Villa Luro
+    categoría   da calles y alturas
+    calles      Bulevar Ramón L. Falcón; Av. Rivadavia; Albariños; Escalada   ·  4 de 4 tocan el borde dibujado
+    alturas     Ramón L. Falcón 5400-5800; Av. Rivadavia 10100-10400
+    reconstruible: SI — las dos piezas por altura, y además la página documenta que el perímetro estaba escrito dos veces —por alturas y por calles de corte—, que las dos lecturas diferían en 256 m y cuál adoptó. Es el bloque mejor escrito de las 41
+--------------------------------------------------------------------------------------------------
+Z32 · Liniers · Mercado Andino
+    categoría   da calles sin alturas
+    calles      José León Suárez; Ramón Falcón; Ventura Bosch; Ibarrola   ·  4 de 4 tocan el borde dibujado
+    reconstruible: EN PARTE — el eje tiene los dos extremos y el largo medido —285 m—; las tres transversales están nombradas y no dice hasta dónde llegan
+--------------------------------------------------------------------------------------------------
+Z33 · Mataderos
+    categoría   da un cruce de avenidas sin extensión
+    calles      Av. Lisandro de la Torre; Av. de los Corrales; Av. Alberdi   ·  2 de 3 tocan el borde dibujado
+    alturas     Av. Alberdi 5501-6299
+    referencias la Feria y el Mercado de Hacienda
+    reconstruible: NO — para el polo da un cruce de dos avenidas y no dice hasta dónde llega —la propia página lo declara y por eso su borde es transitorio—. El único rango de alturas que escribe es el del eje comercial, que la página dice que es otro objeto
+--------------------------------------------------------------------------------------------------
+Z35 · Balvanera · Once
+    categoría   da calles y alturas
+    calles      Tucumán; Paso; Av. Rivadavia; Pasteur   ·  3 de 4 tocan el borde dibujado
+    alturas     Tucumán 2379-2755; Paso 700; Av. Rivadavia 2001-2200
+    reconstruible: EN PARTE — el enclave y la transversal están por altura; el tramo de Av. Rivadavia también, y es el que el borde dibujado no tiene: el texto escribe más perímetro del que la geometría publica
+--------------------------------------------------------------------------------------------------
+Z37 · Almagro
+    categoría   da calles y alturas
+    calles      Guardia Vieja; Bulnes; Av. Corrientes; Rivadavia; Medrano   ·  5 de 5 tocan el borde dibujado
+    alturas     Av. Corrientes 3500-4200; Guardia Vieja 3601 y 3602
+    reconstruible: EN PARTE — el corredor de Av. Corrientes tiene rango de alturas; «el núcleo de Guardia Vieja y Bulnes» y «el nodo de Rivadavia y Medrano» son dos cruces sin extensión
+--------------------------------------------------------------------------------------------------
+Z39 · Parque Avellaneda
+    categoría   da calles sin alturas
+    calles      Av. Olivera; Av. Lacarra   ·  2 de 2 tocan el borde dibujado
+    referencias el anillo del Parque Avellaneda
+    reconstruible: NO — el anillo de un parque se podría reconstruir por las caras del parque, pero está medido que Av. Olivera tiene 0 m de frente sobre la cara del parque: una de las dos avenidas que lo nombran no lo toca
+--------------------------------------------------------------------------------------------------
+Z39b · Baek-ku · Barrio Coreano
+    categoría   da calles sin alturas
+    calles      Av. Carabobo; Av. Castañares; Av. Eva Perón   ·  3 de 3 tocan el borde dibujado
+    referencias Flores; el límite con Parque Chacabuco
+    reconstruible: SI — eje con los dos extremos y el largo en cuadras: «Av. Carabobo entre Av. Castañares y Av. Eva Perón: siete cuadras»
+--------------------------------------------------------------------------------------------------
+Z40 · Nueva Pompeya y Parque Patricios
+    categoría   da calles sin alturas
+    calles      Av. Caseros; Av. Sáenz   ·  2 de 2 tocan el borde dibujado
+    referencias el Distrito Tecnológico; el Mercado de Pompeya; el Barrio Charrúa
+    reconstruible: NO — tres piezas y ninguna con extensión; la tercera no tiene ni siquiera una calle, y está medido que no cierra sobre el callejero
+--------------------------------------------------------------------------------------------------
+Z41 · Nunez
+    categoría   da calles sin alturas
+    calles      Crisólogo Larralde; Av. del Libertador; Av. Cabildo; Campos Salles; O'Higgins; Grecia; Av. Congreso   ·  7 de 7 tocan el borde dibujado
+    referencias el viaducto Mitre
+    reconstruible: EN PARTE — la primera pieza tiene eje y los dos extremos; el corredor del viaducto y el núcleo disperso de tres calles no tienen extensión. La página publica el polígono del barrio, no esto
+--------------------------------------------------------------------------------------------------
+Z43 · Colegiales
+    categoría   da calles sin alturas
+    calles      Concepción Arenal; Zapiola   ·  2 de 2 tocan el borde dibujado
+    referencias el Polo Concepción; el Mercado de Pulgas
+    reconstruible: NO — la página abre diciendo «En revisión» y lo que escribe es una propuesta. Medido, su borde es el polígono del barrio
+--------------------------------------------------------------------------------------------------
+Z44 · Villa Ortuzar
+    categoría   da calles y alturas
+    calles      Av. Álvarez Thomas; Giribone; 14 de Julio; Charlone; Bauness   ·  3 de 5 tocan el borde dibujado
+    alturas     Av. Álvarez Thomas 600-1700
+    referencias Plaza 25 de Agosto
+    reconstruible: SI — eje por altura y, además, la página declara la regla con la que se trazó: «las dos aceras de la avenida — veintitrés manzanas»
+--------------------------------------------------------------------------------------------------
+Z46 · Retiro
+    categoría   da calles y alturas
+    calles      Florida; Juncal; Esmeralda; Maipú; Paraguay; M. T. de Alvear; Av. Córdoba   ·  7 de 7 tocan el borde dibujado
+    alturas     Maipú, Esmeralda, Paraguay y M. T. de Alvear 800-990
+    referencias Plaza San Martín; el corredor Arroyo; Plaza Carlos Pellegrini
+    reconstruible: EN PARTE — la tercera pieza tiene calles, alturas y los dos extremos; el núcleo institucional y el corredor Arroyo van por plazas y no tienen extensión. La página publica el polígono del barrio, no esto
+--------------------------------------------------------------------------------------------------
+Z47 · Monserrat y Congreso
+    categoría   da calles y alturas
+    calles      Av. de Mayo; Callao; Perú; Bolívar; Lima; Salta; H. Yrigoyen; Alsina; Av. Belgrano; Defensa; Solís; Entre Ríos; Independencia   ·  6 de 13 tocan el borde dibujado
+    alturas     Av. de Mayo 500-1300; H. Yrigoyen 1199-1201; Alsina 420; Perú 86 y 302; Av. Belgrano 599 y 1144; Defensa 695; Solís 475; Av. Callao 248 y 368
+    reconstruible: SI — eje con los dos cortes, rango de alturas, «ambas aceras» y los remates uno por uno con su puerta. Es el perímetro escrito más preciso de las 41
+--------------------------------------------------------------------------------------------------
+Z50 · Barracas · Av. Montes de Oca
+    categoría   da calles y alturas
+    calles      Av. Montes de Oca; Benito Quinquela Martín; Av. Martín García   ·  3 de 3 tocan el borde dibujado
+    alturas     Av. Montes de Oca 280-1702 (el corredor documentado); 301-999 (el contorno)
+    referencias el Centro Comercial a Cielo Abierto
+    reconstruible: SI — separa el corredor documentado del contorno medido y da la altura de los dos. La cifra que le pone al contorno no es la del borde publicado, y eso va aparte
+--------------------------------------------------------------------------------------------------
+Z51 · Barracas · Iriarte, California y Vieytes
+    categoría   da calles y alturas
+    calles      Av. Iriarte; Vieytes; California   ·  3 de 3 tocan el borde dibujado
+    alturas     Av. Iriarte 2100-2300
+    reconstruible: EN PARTE — el tramo de Av. Iriarte va por altura; «con extensión a Vieytes y California» no dice hasta dónde. Y el bloque declara que no hay borde dibujado cuando sí lo hay
+--------------------------------------------------------------------------------------------------
+Z52 · La Boca · Almirante Brown y Necochea
+    categoría   da calles sin alturas
+    calles      Necochea; Av. Suárez; Olavarría; Av. Almirante Brown   ·  4 de 4 tocan el borde dibujado
+    reconstruible: EN PARTE — la cita de la obra pública da el eje, los dos extremos y el largo —340 m—, y con eso se reconstruye el tramo. No el borde adoptado en esta edición, que se extiende sobre Av. Suárez y Olavarría: el bloque nombra las dos calles y no dice hasta dónde va sobre ellas
+--------------------------------------------------------------------------------------------------
+Z53 · La Boca · Caminito y Vuelta de Rocha
+    categoría   da calles sin alturas
+    calles      Av. Don Pedro de Mendoza   ·  1 de 1 tocan el borde dibujado
+    referencias Caminito; la Vuelta de Rocha
+    reconstruible: NO — «entorno de» dos referencias, sobre una avenida sin extensión
+--------------------------------------------------------------------------------------------------
+Z54 · Nueva Pompeya · eje Av. Saenz
+    categoría   da calles y alturas
+    calles      Av. Sáenz   ·  1 de 1 tocan el borde dibujado
+    alturas     Av. Sáenz 790; 790-1399
+    referencias el Mercado de Pompeya
+    reconstruible: SI — eje por altura, con el núcleo en una puerta concreta: «Av. Sáenz entre el 790 y el 1399»
+
+==================================================================================================
+EL CUADRO
+==================================================================================================
+
+  por categoría:
+    da calles y alturas                         11 de 41   Z24, Z28, Z31, Z35, Z37, Z44, Z46, Z47, Z50, Z51, Z54
+    da calles sin alturas                       21 de 41   R02, R03, R08, R09, R10, R11, R14, R16, R17, R19, R20, R21, Z27, Z32, Z39, Z39b, Z40, Z41, Z43, Z52, Z53
+    da un cruce de avenidas sin extensión        1 de 41   Z33
+    da un barrio o una referencia sin calles     6 de 41   R01, R04, R05, R12, R13, R15
+    no escribe perímetro                         2 de 41   R06, R07
+
+  ¿se reconstruye el borde desde el texto?
+    si          11 de 41   R11, R16, R20, Z24, Z28, Z31, Z39b, Z44, Z47, Z50, Z54
+    en parte     7 de 41   Z32, Z35, Z37, Z41, Z46, Z51, Z52
+    no          23 de 41   R01, R02, R03, R04, R05, R06, R07, R08, R09, R10, R12, R13, R14, R15, R17, R19, R21, Z27, Z33, Z39, Z40, Z43, Z53
+
+  páginas con alturas: 12 de 41
+  páginas sin ninguna calle escrita: 8 de 41   R01, R04, R05, R06, R07, R12, R13, R15
+  calles nombradas en total: 121, de las que 107 tocan el borde de su página
+  páginas con alguna calle nombrada que NO toca su borde: 7
+      R02    2 de 3
+      R09    3 de 4
+      Z24    5 de 6
+      Z33    2 de 3
+      Z35    3 de 4
+      Z44    3 de 5
+      Z47    6 de 13
+
+Escrito: perimetro_escrito_41.csv (41 filas) · perimetro_escrito_resumen.json

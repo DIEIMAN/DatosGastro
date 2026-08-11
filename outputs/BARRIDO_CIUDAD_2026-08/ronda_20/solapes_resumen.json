@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-08-10",
+  "pares_con_solape": 25,
+  "locales_en_dos_o_mas_polos": 1263,
+  "suma_de_los_41_locales": 12105,
+  "union_de_los_41_locales": 10819,
+  "se_cuentan_de_mas_locales": 1286,
+  "suma_de_los_41_ha": 5876.8,
+  "union_de_los_41_ha": 5444.15,
+  "se_cuentan_de_mas_ha": 432.65,
+  "concentraciones": 124,
+  "concentraciones_dentro_de_un_polo": 53,
+  "concentraciones_fuera": 71,
+  "locales_de_las_que_estan_dentro": 6800,
+  "locales_de_las_que_no": 5720,
+  "concentraciones_fuera_de_todo_polo": 43,
+  "villa_ortuzar_solape_ha": 15.93,
+  "villa_ortuzar_solape_locales": 25,
+  "villa_ortuzar_coincide_con_lo_adoptado": true
+}

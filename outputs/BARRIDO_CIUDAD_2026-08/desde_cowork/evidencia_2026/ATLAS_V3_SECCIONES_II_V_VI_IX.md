@@ -40,8 +40,7 @@ eso: **es una manera de mirar**.
 
 Cuando decimos que Palermo Hollywood es un polo, no estamos señalando un objeto que exista en el
 territorio con bordes propios. Estamos diciendo que en esa zona hay tantos locales tan cerca unos
-de otros que conviene pensarlos juntos. Dónde termina exactamente es una decisión esta, no un
-hecho del mundo.
+de otros que conviene pensarlos juntos. Dónde termina exactamente es una decisión nuestra, no un hecho del mundo.
 
 Esto no es una debilidad del atlas: es la naturaleza del problema, y decirlo de entrada evita
 discusiones falsas. Nadie puede tener razón sobre dónde termina Palermo Hollywood. Lo que sí se
@@ -346,7 +345,7 @@ este atlas, y en las páginas aparecen con sus dos distinciones y una sola vez.
 
 ## Un catálogo acredita reconocimiento; la apertura se verifica aparte
 
-Ésta es la constatación que dio origen a toda el control de vigencia, y es incómoda:
+Ésta es la constatación que dio origen a todo el control de vigencia, y es incómoda:
 
 Dos bares del catálogo oficial vigente están cerrados, y uno de los dos hace nueve años.
 
@@ -402,7 +401,7 @@ un hecho sobre julio de 2026. Por eso cada verificación de este atlas lleva su 
 publicación declara su fecha de corte.
 
 Y hay un nivel que se agregó al final del relevamiento, porque un caso lo pidió. Celta Bar
-—Sarmiento 1701, Bar Notable— no tiene redes propias localizables, y la evidencia fechada más
+—Sarmiento 1702, Bar Notable— no tiene redes propias localizables, y la evidencia fechada más
 reciente que un tercero publicó sobre él es una reseña de octubre de 2025: fuera de toda ventana. Y
 sin embargo está abierto, constatado en persona.
 
@@ -483,7 +482,7 @@ y patrimonial, no de crítica.
 
 ## Quince enclaves, con calles y alturas
 
-Las colectividades son una de las seis condiciones de entrada, y son la que peor tolera las
+Las colectividades son una de las seis condiciones de entrada, y es la que peor tolera las
 generalidades. Decir «hay comunidad peruana en Abasto» no sirve para planificar nada. Este atlas
 delimita quince enclaves comunitarios con calles, alturas y año de instalación documentado.
 
@@ -532,7 +531,7 @@ Cielo Abierto sobre Av. Montes de Oca, creado por resolución en 2017, con licit
 plazo— sobre el rango de oferta continua más largo documentado en este atlas.
 
 La Boca tiene circuitos cultural y deportivo, y no tiene circuito gastronómico — y concentra
-**seis bares notables**, el cuarto registro oficial de la Ciudad.
+**seis bares notables**, la cuarta concentración de Bares Notables de la Ciudad.
 
 Es exactamente el tipo de asimetría que este trabajo permite ver, y corregir.
 
@@ -544,8 +543,7 @@ licitación de obra pública**, no en legislación. Este atlas los cita así.
 ## Cómo se delimita un enclave a su tamaño real
 
 Una delimitación comunitaria sale de fuentes textuales —notas, estudios, comunicación de las propias
-instituciones— y esas fuentes describen calles, no contornos. Traducirlas tiene un riesgo concreto y
-este atlas lo cometió antes de corregirlo: un eje descrito de más cumple la condición de cocina de colectividad en
+instituciones— y esas fuentes describen calles, no contornos. Traducirlas tiene un riesgo concreto y este atlas incurrió en él antes de corregirlo: un eje descrito de más cumple la condición de cocina de colectividad en
 zonas a las que no corresponde.
 
 Pasó con un enclave cuyo eje quedó extendido más de lo que la fuente sostenía, y el efecto fue que

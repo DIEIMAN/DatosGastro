@@ -1,0 +1,3 @@
+﻿"direccion","codigo_calle","smp","pdamatriz","x","y","fuente_tipo","consulta","fecha_consulta","resultado"
+"Av. San Juan 2809","20040","30-083-040A","186130","105414.133363","100588.295872","USIG municipal · normalizador y catastro por puerta","https://ws.usig.buenosaires.gob.ar/geocoder/2.2/smp?cod_calle=20040&altura=2809","2026-08-10","parcela_distinta"
+"Av. San Juan 2816","20040","30-082-004A","182937","105450.145098","100575.130453","USIG municipal · normalizador y catastro por puerta","https://ws.usig.buenosaires.gob.ar/geocoder/2.2/smp?cod_calle=20040&altura=2816","2026-08-10","parcela_distinta"

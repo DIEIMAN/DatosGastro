@@ -1,0 +1,82 @@
+==================================================================================================
+EL CAFÉ ROMA CARGADO DOS VECES · cuál es el establecimiento y qué es la otra fila
+==================================================================================================
+
+--------------------------------------------------------------------------------------------------
+1 · LAS DOS FILAS, COMO ESTÁN EN LA CAPA QUE LEEN LAS PÁGINAS
+--------------------------------------------------------------------------------------------------
+    H032  Café Roma    San Luis 3101    barrio declarado: nan          punto (5,650,493, 6,166,502)
+    H031  Café Roma    Olavarria 409    barrio declarado: nan          punto (5,650,493, 6,166,502)
+
+    las dos filas comparten el punto: distancia entre ellas 0.0 m
+
+--------------------------------------------------------------------------------------------------
+2 · QUÉ DICE EL CATÁLOGO OFICIAL · Res. MCGC 1225/26, los 90 Bares Notables
+--------------------------------------------------------------------------------------------------
+    orden  29/90   CAFE ROMA          Olavarria 409    La Boca      ABIERTO
+    orden  86/90   ROMA DEL ABASTO    Anchorena 806    Balvanera    ABIERTO
+
+    El catálogo los tiene por separado, con dos órdenes distintos: no son dos
+    direcciones de un establecimiento, son dos establecimientos.
+
+--------------------------------------------------------------------------------------------------
+3 · DE DÓNDE SALE «SAN LUIS 3101», QUE NO ES UNA DIRECCIÓN INVENTADA
+--------------------------------------------------------------------------------------------------
+    Q56826608    Café Roma    Olavarria 409    barrio La Boca      (-34.636242, -58.358759)
+    Q56826620    Café Roma    San Luis 3101    barrio Balvanera    (-34.599450, -58.408850)
+
+    Wikidata tiene DOS entradas llamadas «Café Roma», con dos identificadores, dos
+    barrios y dos puntos. El emparejamiento por nombre las fusionó en una sola fila.
+
+    «San Luis 3101» (punto de Wikidata) contra «Anchorena 806» (punto USIG de
+    Roma del Abasto, que es el orden 86/90):   12.8 m
+    «San Luis 3101» contra «Olavarría 409», que es el orden 29/90:   6,147 m
+
+    San Luis y Anchorena se cruzan: el 3101 de una y el 806 de la otra son la misma
+    esquina, y por eso los dos puntos caen a 13 metros. La fila de «San Luis
+    3101» es Roma del Abasto, en Balvanera, a 6.1 km de La Boca.
+
+--------------------------------------------------------------------------------------------------
+4 · LA CORRECCIÓN YA ESTÁ HECHA EN LA CAPA CANÓNICA, Y NO LLEGÓ A LA QUE LEEN LAS PÁGINAS
+--------------------------------------------------------------------------------------------------
+    2026-08-07  H032.nombre             «Café Roma               » -> «Roma del Abasto»
+    2026-08-07  H032.direccion          «San Luis 3101           » -> «Anchorena 806»
+    2026-08-07  H032.barrio_declarado   «nan                     » -> «Balvanera»
+
+    canónica  (hitos_capa_2026_r11.csv):  H032 = Roma del Abasto, Anchorena 806, Balvanera
+    la que leen las páginas (hitos_capa_2026.geojson):  H032 = Café Roma, San Luis 3101
+
+--------------------------------------------------------------------------------------------------
+5 · QUÉ CUENTA DE MÁS LA PÁGINA DE LA BOCA, MEDIDO CONTRA EL BORDE NUEVO
+--------------------------------------------------------------------------------------------------
+    con la capa que leen las páginas : 4 · Café Roma (San Luis 3101), Café Roma (Olavarria 409), La Buena Medida (Suarez 101), Banchero (Suarez 396)
+    con la capa canónica             : 3 · Café Roma (Olavarria 409), La Buena Medida (Suarez 101), Banchero (Suarez 396)
+
+    La página publica «4 lugares con reconocimiento: 3 Bares Notables y 1 pizzería».
+    Medido contra la capa canónica son 3: 2 Bares Notables y 1 pizzería emblemática.
+
+==================================================================================================
+6 · CUÁNTO MÁS TRAE DE ATRASO ESA FOTO DE LA CAPA
+==================================================================================================
+    la que leen las páginas: 215 filas · la canónica: 225 filas
+    establecimientos que la canónica tiene y la foto no: 10
+      DIR-026   Gran Café Gardel                     Café histórico sin reg   dentro de un borde: no 
+      DIR-027   Centro Asturiano de Buenos Aires     Casa regional con come   dentro de un borde: no 
+      DIR-028   Centro Laurak Bat (Restaurante Har   Casa regional con come   dentro de un borde: no 
+      DIR-029   Casal de Catalunya                   Casa regional con come   dentro de un borde: no 
+      H094      Bar Iberia                           Bar Notable              dentro de un borde: si R12
+      MG-0004   Mercat Villa Crespo                  Mercado/patio            dentro de un borde: sin punto 
+      MG-0010   Smart Plaza Parque Patricios         Mercado/patio            dentro de un borde: sin punto 
+      MG-0013   Mercado San Nicolas                  Mercado/patio            dentro de un borde: sin punto 
+      MG-0017   Gourmand Food Hall                   Mercado/patio            dentro de un borde: sin punto 
+      MIC-028   Ultramarinos                         MICHELIN                 dentro de un borde: sin punto 
+
+    filas que difieren de verdad —otro nombre u otra puerta—: 3 (de 13 que difieren en algo, el resto es formato)
+      H032      foto: «Café Roma, San Luis 3101»  en Z52
+                canónica: «Roma del Abasto, Anchorena 806»  en ningún borde
+      H060      foto: «La Academia, Av. Callao 368»  en R02
+                canónica: «La Academia, Montevideo 341»  en R02
+      DIR-002   foto: «El Fortin, Av. Álvarez Jonte 5299 esquina Av. Lope de Vega»  en Z28
+                canónica: «El Fortin, nan»  en Z28
+
+Escrito: cafe_roma_resolucion.csv (2 filas) · capa_reconocimiento_atrasada.csv (13 filas) · cafe_roma_resumen.json

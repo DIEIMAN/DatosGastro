@@ -1,0 +1,637 @@
+{
+  "generado": "2026-08-10",
+  "cifras": {
+    "locales_relevados": {
+      "valor": 23981,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/base/local.csv",
+      "como_se_calcula": "filas de local.csv con anillo == 'nucleo' y apto_geometria == True; el universo con el que se construyeron las concentraciones",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) locales gastronómicos relevados",
+        "(?P<valor>[\\d.]+) locales\\*\\* relevados en toda la Ciudad",
+        "\\*\\*(?P<valor>[\\d.]+)\\*\\* \\| locales gastronómicos relevados",
+        "(?P<valor>[\\d.]+) registros de los [\\d.]+"
+      ],
+      "nota": "sobre 27,727 filas totales de la base"
+    },
+    "polos": {
+      "valor": 41,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "filas con categoria_por_criterio == 'polo admitido'",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\*\\*(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos admitidos",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos admitidos en (?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?) comunas",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) polos gastronómicos admitidos"
+      ],
+      "nota": ""
+    },
+    "fichas": {
+      "valor": 41,
+      "unidad": "fichas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_16_codex/geometria/soportes_41.geojson",
+      "como_se_calcula": "una ficha por polo admitido; coincide con la cantidad de soportes geométricos",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>\\d+) fichas en prosa",
+        "(?P<valor>\\d+) fichas agrupadas",
+        "[Dd]os de las (?P<valor>\\d+) fichas"
+      ],
+      "nota": ""
+    },
+    "objetos_disjuntos": {
+      "valor": 40,
+      "unidad": "objetos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_17/total_recalculado.json",
+      "como_se_calcula": "fichas cuya geometría NO queda contenida en la de otra, medido por superficie perdida contra la unión de todas las demás",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "objetos territoriales disjuntos[^.]{0,40}?son \\*\\*(?P<valor>\\d+)\\*\\*",
+        "(?:son|hay)\\s+\\*{0,2}(?P<valor>\\d{1,3}|cuarenta|treinta y nueve)\\*{0,2}\\s+lugares separados"
+      ],
+      "nota": "vale 40 y el texto dice 39. El documento cuenta a Baek-ku como subzona de Parque Avellaneda y medido queda 100 % fuera de los otros cuarenta"
+    },
+    "zonas_evaluadas": {
+      "valor": 55,
+      "unidad": "zonas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "filas del archivo de criterio: todo lo que se midió, entrara o no",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "[Ss]e evaluaron \\*\\*(?P<valor>\\d+) zonas",
+        "sobre las (?P<valor>\\d+) unidades evaluadas"
+      ],
+      "nota": ""
+    },
+    "agrupamientos_detectados": {
+      "valor": 124,
+      "unidad": "concentraciones",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "polígonos de la capa de concentraciones detectadas por densidad",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) concentraciones detectadas",
+        "[Ll]as (?P<valor>[\\d.]+) concentraciones de las que salieron",
+        "[Ll]as (?P<valor>[\\d.]+) son disjuntas",
+        "hay (?P<valor>[\\d.]+) concentraciones y \\d+ polos admitidos"
+      ],
+      "nota": ""
+    },
+    "locales_en_polos": {
+      "valor": 12688,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v3.csv",
+      "como_se_calcula": "locales con polo_final asignado por el agrupamiento. NO es un conteo de punto dentro de polígono",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "su unión da \\*\\*(?P<valor>[\\d.]+) locales en",
+        "suman exactamente \\*\\*(?P<valor>[\\d.]+) locales en",
+        "calculada sobre la unión: \\*\\*(?P<valor>[\\d.]+) locales en",
+        "\\*\\*(?P<valor>[\\d.]+)\\*\\* \\| locales en los polos",
+        "de su superficie\\*\\* — (?P<valor>[\\d.]+)\\s*\\n?locales en",
+        "\\| \\*\\*(?P<valor>[\\d.]+) locales en [\\d.,]+ hectáreas\\*\\* \\| el \\*\\*\\d+ ?%"
+      ],
+      "nota": "contando por punto dentro de la unión de los polígonos da 12.520, o sea 168 menos. La diferencia es real y no es un error: un local puede pertenecer al agrupamiento y caer fuera de la envolvente simplificada. Las dos cifras miden cosas distintas y el texto tiene que decir cuál usa"
+    },
+    "locales_en_polos_por_geometria": {
+      "valor": 12520,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "locales del universo que caen dentro de la unión de las concentraciones",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>[\\d.]+) locales por geometría",
+        "contando por punto[^.]{0,60}?da (?P<valor>[\\d.]+)"
+      ],
+      "nota": ""
+    },
+    "ha_en_polos": {
+      "valor": 3143.53,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson",
+      "como_se_calcula": "área de la unión de las concentraciones, medida en EPSG:5347. Las 124 son disjuntas, así que la unión y la suma coinciden",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "su unión da \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hect",
+        "suman exactamente \\*\\*[\\d.]+ locales en\\s*\\n?(?P<valor>[\\d.,]+) hect",
+        "calculada sobre la unión: \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hect",
+        "de su superficie\\*\\* — [\\d.]+\\s*\\n?locales en (?P<valor>[\\d.,]+) hect",
+        "\\| \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hectáreas\\*\\* \\| el \\*\\*\\d+ ?%",
+        "área de la \\*\\*unión\\*\\* \\| \\*\\*(?P<valor>[\\d.,]+) ha\\*\\*",
+        "suma de las áreas individuales \\| \\*\\*(?P<valor>[\\d.,]+) ha\\*\\*"
+      ],
+      "nota": "el documento publica 3.128,5 ha, medidas el 07/08/2026 sobre una versión anterior de la capa. La capa de hoy da 3.143,53: son 15,03 ha más"
+    },
+    "pct_locales_en_polos": {
+      "valor": 53,
+      "unidad": "por ciento",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "derivada",
+      "como_se_calcula": "locales_en_polos / locales_relevados, redondeado al entero",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "[Ee]l \\*\\*(?P<valor>\\d+) ?%\\*\\* de la gastronomía relevada"
+      ],
+      "nota": ""
+    },
+    "pct_superficie": {
+      "valor": 15,
+      "unidad": "por ciento",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "derivada",
+      "como_se_calcula": "ha_en_polos / superficie de la Ciudad según la capa oficial de 48 barrios (20,375 ha), redondeado al entero",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "en el \\*\\*(?P<valor>\\d+) ?%\\*\\* de su superficie",
+        "en el \\*\\*(?P<valor>\\d+) ?%\\*\\* de la superficie de la Ciudad"
+      ],
+      "nota": ""
+    },
+    "bares_notables": {
+      "valor": 90,
+      "unidad": "bares",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv",
+      "como_se_calcula": "entradas del catálogo consolidado firmado el 03/08/2026",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\d+ de (?P<valor>\\d+) bares notables",
+        "(?P<valor>\\d+) de \\d+ bares notables"
+      ],
+      "nota": ""
+    },
+    "bares_notables_abiertos": {
+      "valor": 88,
+      "unidad": "bares",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/catalogo_90_estado_final.csv",
+      "como_se_calcula": "entradas cuyo estado no es CERRADO: incluye 1 en riesgo y 1 abierto en quiebra",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>\\d+) operando"
+      ],
+      "nota": "el desglose es ABIERTO 86 · CERRADO 2 · EN RIESGO 1 · ABIERTO EN QUIEBRA 1"
+    },
+    "enclaves_comunitarios": {
+      "valor": 15,
+      "unidad": "enclaves",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/enclaves_comunitarios_delimitados.csv",
+      "como_se_calcula": "enclaves con delimitación escrita en calles y alturas",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves comunitarios delimitados",
+        "\\*\\*(?P<valor>\\d+)\\*\\* \\| enclaves comunitarios",
+        "los (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves delimitados son",
+        "territorio: (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves delimitados",
+        "delimita \\*\\*(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) enclaves comunitarios"
+      ],
+      "nota": ""
+    },
+    "polos_sin_borde": {
+      "valor": 3,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_19/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "polos cuya geometría sigue siendo el polígono administrativo de un barrio, después del cierre geométrico",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de los cuarenta y un polos",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de los 41 polos[^.]{0,30}?perímetro",
+        "[Ll]os (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) sin perímetro trazado"
+      ],
+      "nota": "vale 3 y el texto dice «dieciocho»: la prosa es la que está vieja. Los tres son Villa Santa Rita, que no tiene ningún trazado, y Núñez y Retiro, que publican el polígono de su barrio. Mataderos sale de la lista porque ya tiene un borde, transitorio, y eso se cuenta aparte: la cifra de al lado es polos_con_borde_transitorio = 1"
+    },
+    "locales_en_barrios_sin_borde": {
+      "valor": 347,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "como_se_calcula": "locales en concentraciones dentro del barrio que contiene a cada uno de los TRES polos que se miden sobre su barrio: Núñez, Retiro y Villa Santa Rita",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Los tres suman \\*\\*(?P<valor>[\\d.]+) locales en"
+      ],
+      "nota": "valía 527 con cuatro polos. Mataderos sale de la lista porque tiene borde transitorio, y esa es toda la diferencia"
+    },
+    "ha_en_barrios_sin_borde": {
+      "valor": 41.1,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/magnitudes_sin_perimetro.csv",
+      "como_se_calcula": "superficie concentrada en esos mismos tres barrios",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Los tres suman \\*\\*[\\d.]+ locales en (?P<valor>[\\d.,]+) hectáreas concentradas"
+      ],
+      "nota": "valía 112,9 con cuatro polos"
+    },
+    "comunas_con_polo": {
+      "valor": 14,
+      "unidad": "comunas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/criterio_admision_55.csv",
+      "como_se_calcula": "comunas distintas entre las comunas principales de los polos admitidos",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "admitidos en (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) comunas",
+        "(?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) comunas tienen al menos un polo",
+        "en (?P<valor>(?:\\d+|[\\wáéíóúñ]+(?: y [\\wáéíóúñ]+)?)) de las quince comunas"
+      ],
+      "nota": "son las comunas [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]; la 8 sigue sin ninguno"
+    },
+    "la_boca_caminito_ha": {
+      "valor": 4.15,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "Caminito entero más Av. Don Pedro de Mendoza 1871-1939, manzanas frentistas",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Borde cerrado en esta edición: (?P<valor>[\\d.,]+) hectáreas y [\\d.]+ locales\\.\\*\\* Es Caminito"
+      ],
+      "nota": "el borde anterior medía 1,27 ha; se extiende para contener La Perla de Caminito, que estaba 26 m afuera"
+    },
+    "la_boca_caminito_locales": {
+      "valor": 37,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "locales del universo anillo=nucleo & apto_geometria dentro del polígono",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Borde cerrado en esta edición: [\\d.,]+ hectáreas y (?P<valor>[\\d.]+) locales\\.\\*\\* Es Caminito"
+      ],
+      "nota": "el borde anterior tenía 16"
+    },
+    "mataderos_tentativo_ha": {
+      "valor": 43.99,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "manzanas frentistas del cruce de Av. Lisandro de la Torre y Av. de los Corrales",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "primera aproximación: (?P<valor>[\\d.,]+) hectáreas y [\\d.]+ locales"
+      ],
+      "nota": "BORDE TENTATIVO, no cerrado. 40,70 de las 43,99 ha son una sola manzana: la densidad por hectárea de esta zona no es comparable con la de las demás"
+    },
+    "mataderos_tentativo_locales": {
+      "valor": 17,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "locales dentro del borde tentativo",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "primera aproximación: [\\d.,]+ hectáreas y (?P<valor>[\\d.]+) locales"
+      ],
+      "nota": "BORDE TENTATIVO, no cerrado"
+    },
+    "mataderos_eje_alberdi_ha": {
+      "valor": 24.27,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "Av. Juan B. Alberdi 5501-6299, el eje comercial que releva la Ciudad",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "lectura medida y publicada aparte: es el eje del IDECBA, no el perímetro del polo. No comparte superficie con el borde tentativo"
+    },
+    "mataderos_eje_alberdi_locales": {
+      "valor": 55,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "locales dentro del eje comercial de Av. Alberdi",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "balvanera_lectura_enclave_ha": {
+      "valor": 19.18,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "eje Tucumán 2379-2755 y transversal Paso 700-799",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "el enclave solo\\*\\*: \\*\\*(?P<valor>[\\d.,]+) hect"
+      ],
+      "nota": "deja el Café de los Angelitos afuera; la decisión entre las dos lecturas está abierta"
+    },
+    "balvanera_lectura_extendida_ha": {
+      "valor": 44.75,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "lo anterior más Pasteur entre Tucumán y Av. Rivadavia, y Av. Rivadavia 2001-2200",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "contiene el Café de los Angelitos"
+    },
+    "balvanera_lectura_extendida_locales": {
+      "valor": 154,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "locales dentro de la lectura extendida",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "villa_ortuzar_ha": {
+      "valor": 34.39,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "las dos aceras de Av. Álvarez Thomas entre el 600 y el 1700",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Borde cerrado en esta edición: (?P<valor>[\\d.,]+) hectáreas y [\\d.]+ locales\\*\\*, leyendo"
+      ],
+      "nota": ""
+    },
+    "villa_ortuzar_locales": {
+      "valor": 69,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/perimetros_ronda_18.csv",
+      "como_se_calcula": "locales dentro del corredor de dos aceras",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Borde cerrado en esta edición: [\\d.,]+ hectáreas y (?P<valor>[\\d.]+) locales\\*\\*, leyendo"
+      ],
+      "nota": ""
+    },
+    "villa_ortuzar_solape_ha": {
+      "valor": 15.93,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_19/solapes_declarados.csv",
+      "como_se_calcula": "intersección del corredor con la unión de Chacarita, Colegiales y Federico Lacroze",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "verificado contra la geometría vigente: coincide con la cifra adoptada"
+    },
+    "villa_ortuzar_solape_locales": {
+      "valor": 25,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_19/solapes_declarados.csv",
+      "como_se_calcula": "locales dentro de esa intersección",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "pares_de_polos_con_solape": {
+      "valor": 25,
+      "unidad": "pares",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv",
+      "como_se_calcula": "todo par de polos cuya intersección supera 1 m²",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\*\\*(?P<valor>[A-Za-zÁÉÍÓÚáéíóúñ]+) pares de polos comparten superficie"
+      ],
+      "nota": ""
+    },
+    "locales_en_dos_o_mas_polos": {
+      "valor": 1263,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_locales_detalle.csv",
+      "como_se_calcula": "locales distintos que caen dentro de más de un polo",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "La diferencia son \\*\\*(?P<valor>[\\d.]+) locales que"
+      ],
+      "nota": "el número es correcto y la palabra con la que el documento lo presenta no: lo llama «la diferencia» entre la suma y la unión, y esa diferencia son 1.286. Son dos cosas distintas: 1.263 locales distintos están en dos o más polos, y como algunos están en tres, la resta da 1.286"
+    },
+    "concentraciones_dentro_de_un_polo": {
+      "valor": 53,
+      "unidad": "concentraciones",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/correspondencia_124_x_41.csv",
+      "como_se_calcula": "concentraciones contenidas o con más de la mitad de su superficie dentro de un polo",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "\\*\\*(?P<valor>\\d+) de las 124 concentraciones están adentro"
+      ],
+      "nota": "medido por superficie perdida contra la geometría vigente, no con covers()"
+    },
+    "concentraciones_fuera_de_todo_polo": {
+      "valor": 71,
+      "unidad": "concentraciones",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/correspondencia_124_x_41.csv",
+      "como_se_calcula": "las 124 menos las que caen dentro de algún polo",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "de las 124 concentraciones están adentro de un polo y (?P<valor>\\d+) no"
+      ],
+      "nota": "suman 5720 locales. De ellas, 43 no tocan ningún borde"
+    },
+    "anclas_con_historia_fuera_de_su_borde": {
+      "valor": 39,
+      "unidad": "establecimientos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "establecimientos de trayectoria que sostienen la vía B de su zona y no caen dentro del borde de su polo",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "recontado con la geometría de ahora: eran 42 y la adopción de La Boca mete a tres adentro. Son 32 establecimientos distintos"
+    },
+    "paginas_con_el_ancla_afuera": {
+      "valor": 14,
+      "unidad": "páginas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_18/anclas_dentro_y_fuera.csv",
+      "como_se_calcula": "polos con al menos un establecimiento de trayectoria fuera de su borde",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "polos_con_borde_transitorio": {
+      "valor": 1,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_19/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "polos con un borde publicado y declarado transitorio",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "es Mataderos. Un borde transitorio se publica y no se toma por una delimitación cerrada"
+    },
+    "union_de_los_41_ha": {
+      "valor": 5444.15,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv",
+      "como_se_calcula": "superficie de la unión de los 41 bordes vigentes, con el solape descontado una sola vez",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "la unión real es de \\*\\*[\\d.]+ locales en (?P<valor>[\\d.]+) hect"
+      ],
+      "nota": "vuelta a medir con La Boca ya adoptada: sube 10,04 ha. El documento la escribe redondeada a hectáreas enteras y el comparador de este control tiene una tolerancia fija de 0,1, así que para que coincida hay que escribirla con decimales"
+    },
+    "union_de_los_41_locales": {
+      "valor": 10819,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv",
+      "como_se_calcula": "locales del universo anillo=nucleo & apto_geometria dentro de la unión de los 41",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "la unión real es de \\*\\*(?P<valor>[\\d.]+) locales en"
+      ],
+      "nota": "vuelta a medir con La Boca ya adoptada: sube 18 locales"
+    },
+    "locales_contados_dos_veces": {
+      "valor": 1286,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv",
+      "como_se_calcula": "la suma de los 41 por separado menos la unión de los 41",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "paginas_sin_ningun_ancla_adentro": {
+      "valor": 4,
+      "unidad": "páginas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "páginas cuyo borde no contiene ninguno de los establecimientos con trayectoria sobre los que su zona se apoya",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "eran cinco; La Boca sale de la lista al adoptar su borde. Quedan Z32, Z35, Z40, Z54"
+    },
+    "hitos_fuera_de_todo_borde": {
+      "valor": 81,
+      "unidad": "establecimientos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/cerca_del_borde_20.csv",
+      "como_se_calcula": "establecimientos de la capa de reconocimiento a más de 3 m de los 41 bordes",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "eran 80 contra la geometría anterior y contra una foto vieja de la capa. Salen los tres que La Boca ahora contiene y entran cuatro que la foto no tenía"
+    },
+    "hitos_a_250_m_o_menos_del_borde": {
+      "valor": 43,
+      "unidad": "establecimientos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/cerca_del_borde_20.csv",
+      "como_se_calcula": "de los que quedan fuera, los que están a 250 m o menos del borde más cercano",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "43 filas y 43 establecimientos: leída la capa canónica, el Café Roma ya no está cargado dos veces"
+    },
+    "hitos_cerca_sobre_calle_ya_nombrada": {
+      "valor": 7,
+      "unidad": "establecimientos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/cerca_del_borde_20.csv",
+      "como_se_calcula": "de los que quedan a 250 m o menos, aquellos cuya calle de puerta está nombrada en el perímetro escrito de la página y además toca el borde",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "eran 12. Bajan a 7 porque la prueba se corre contra el bloque «Dónde está» de la página publicada y no contra la ficha de trabajo: la de la ficha daba positivo para Av. Alvear en Retiro, y lo que la página nombra es M. T. de Alvear, que es otra calle"
+    },
+    "la_boca_almirante_brown_ha": {
+      "valor": 16.17,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "el borde adoptado en esta tanda: el tramo de la obra pública extendido sobre Av. Suárez y Olavarría con las manzanas frentistas",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "ya nombraba— pasa a (?P<valor>[\\d.,]+) hect"
+      ],
+      "nota": "es la lectura C que la tanda anterior midió y no adoptó. Contiene a Banchero, La Buena Medida y el Café Roma; los otros cinco siguen afuera"
+    },
+    "la_boca_almirante_brown_locales": {
+      "valor": 21,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/geometria/bordes_vigentes_41.geojson",
+      "como_se_calcula": "locales del universo anillo=nucleo & apto_geometria dentro de ese borde",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "ya nombraba— pasa a [\\d.,]+ hectáreas y (?P<valor>[\\d.]+) locales"
+      ],
+      "nota": ""
+    },
+    "suma_de_los_41_locales": {
+      "valor": 12105,
+      "unidad": "locales",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv",
+      "como_se_calcula": "la suma de los 41 bordes por separado, contando dos veces lo que se pisa",
+      "origen": "medido",
+      "patrones_en_el_texto": [
+        "Sumar los 41 por separado da \\*\\*(?P<valor>[\\d.]+) locales"
+      ],
+      "nota": "sube 18 contra la tanda anterior por la adopción de La Boca. No es una cifra publicable por sí sola: existe para poder restarla"
+    },
+    "paginas_con_perimetro_reconstruible": {
+      "valor": 11,
+      "unidad": "páginas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/perimetro_escrito_41.csv",
+      "como_se_calcula": "páginas cuyo bloque «Dónde está» da las piezas y su extensión, de modo que el borde publicado sale de aplicarle la regla de las manzanas frentistas y nada más",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "otras 7 lo dan en parte y 23 no lo dan"
+    },
+    "paginas_con_calles_y_alturas": {
+      "valor": 11,
+      "unidad": "páginas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/perimetro_escrito_41.csv",
+      "como_se_calcula": "páginas cuyo perímetro escrito nombra calles y da números de puerta",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": ""
+    },
+    "paginas_sin_ninguna_calle_escrita": {
+      "valor": 8,
+      "unidad": "páginas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/perimetro_escrito_41.csv",
+      "como_se_calcula": "páginas cuyo bloque «Dónde está» no nombra ninguna calle",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "dos de ellas no escriben perímetro de ninguna clase: el bloque entero dice «Perímetro vigente.»"
+    },
+    "polos_que_publican_el_poligono_de_su_barrio": {
+      "valor": 4,
+      "unidad": "polos",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/recorte_de_los_cuatro.csv",
+      "como_se_calcula": "polos cuyo contorno publicado coincide con el polígono administrativo de su barrio, medido por superficie perdida en los dos sentidos",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "son cuatro y no tres: Núñez coincide exacto —0 m² por los dos lados—, Villa Santa Rita y Colegiales al 99,9 %, y Retiro es el barrio más las 15,62 ha del núcleo coreano, que caen en San Nicolás. Colegiales se declara en esta tanda: la capa lo trae como borde propio"
+    },
+    "colegiales_recorte_de_adentro_ha": {
+      "valor": 98.03,
+      "unidad": "hectáreas",
+      "fecha_de_calculo": "2026-08-10",
+      "archivo_del_que_sale": "outputs/BARRIDO_CIUDAD_2026-08/ronda_20/recorte_de_los_cuatro.csv",
+      "como_se_calcula": "el recorte más chico de adentro que contiene las concentraciones del barrio, por manzanas frentistas de las cuadras donde están sus locales",
+      "origen": "medido",
+      "patrones_en_el_texto": [],
+      "nota": "medido y no adoptado. Su página ya declara que «todavía no está dibujado el recorte más chico de adentro»"
+    }
+  }
+}

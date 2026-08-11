@@ -1,0 +1,218 @@
+==================================================================================================
+1 · LAS DOS QUE QUEDARON VIEJAS · verificadas contra la capa, no copiadas del pedido
+==================================================================================================
+    Z41    Nunez                   92 locales ·   12.43 ha concentradas · barrio   449.86 ha
+    Z46    Retiro                 201 locales ·   18.21 ha concentradas · barrio   466.60 ha
+    Z27    Villa Santa Rita        54 locales ·   10.46 ha concentradas · barrio   215.46 ha
+           suma de los tres       347 locales ·   41.10 ha
+
+    el documento publica «347 locales en 41,1 hectáreas»: COINCIDE
+    antes valían 527 locales y 112,9 ha, con cuatro polos: Mataderos sale porque tiene borde transitorio
+
+==================================================================================================
+2 · LO QUE MOVIÓ LA ADOPCIÓN DE LA BOCA · cifras de conjunto vueltas a medir
+==================================================================================================
+    unión de los 41              5,434.11 ha ->   5,444.15 ha
+    unión de los 41                10,801 locales ->     10,819 locales
+    con historia fuera de su borde     42 ->    39   (32 establecimientos distintos)
+    páginas sin ningún ancla adentro    5 ->     4   (Z32, Z35, Z40, Z54)
+    fuera de todo borde                80 ->         81
+    a 250 m o menos                    45 ->         43
+    sobre calle ya nombrada            12 ->          7
+
+==================================================================================================
+3 · CIFRAS CANÓNICAS AL DÍA · 53 cifras (8 nuevas)
+==================================================================================================
+    la_boca_almirante_brown_ha                         16.17 hectáreas
+    la_boca_almirante_brown_locales                       21 locales
+    suma_de_los_41_locales                             12105 locales
+    paginas_con_perimetro_reconstruible                   11 páginas
+    paginas_con_calles_y_alturas                          11 páginas
+    paginas_sin_ninguna_calle_escrita                      8 páginas
+    polos_que_publican_el_poligono_de_su_barrio            4 polos
+    colegiales_recorte_de_adentro_ha                   98.03 hectáreas
+
+Escrito: cifras_canonicas.json
+
+==================================================================================================
+VERIFICACIÓN DE CIFRAS · el texto contra la fuente
+==================================================================================================
+canónicas de 2026-08-10 · 53 cifras · 88 documentos
+
+--------------------------------------------------------------------------------------------------
+NO COINCIDEN · 5 cifras
+--------------------------------------------------------------------------------------------------
+
+  ha_en_polos   canónico: 3143.53 hectáreas   (0 menciones bien, 4 mal)
+      fuente: outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/polos_publicables.geojson
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/AUDITORIA_DE_DUPLICADOS.md:18  dice «3.128,5»  y la fuente dice «3143.53»
+          …área de la **unión** | **3.128,5 ha**…
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/EDICION_TECNICA_FASE_DOCUMENTAL.md:722  dice «3.128,5»  y la fuente dice «3143.53»
+          …área de la **unión** | **3.128,5 ha**…
+      nota: el documento publica 3.128,5 ha, medidas el 07/08/2026 sobre una versión anterior de la capa. La capa de hoy da 3.143,53: son 15,03 ha más
+
+  polos_sin_borde   canónico: 3 polos   (1 menciones bien, 1 mal)
+      fuente: outputs/BARRIDO_CIUDAD_2026-08/ronda_19/geometria/bordes_vigentes_41.geojson
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/TABLERO_ATLAS_V3.md:447  dice «dieciocho»  y la fuente dice «3»
+          …dieciocho de los cuarenta y un polos…
+      nota: vale 3 y el texto dice «dieciocho»: la prosa es la que está vieja. Los tres son Villa Santa Rita, que no tiene ningún trazado, y Núñez y Retiro, que publican el polígono de su barrio. Mataderos sale de la lista porque ya tiene un borde, transitorio, y eso se cuenta aparte: la cifra de al lado es polos_con_borde_transitorio = 1
+
+  union_de_los_41_ha   canónico: 5444.15 hectáreas   (0 menciones bien, 2 mal)
+      fuente: outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv
+      outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md:4553  dice «5.434»  y la fuente dice «5444.15»
+          …la unión real es de **10.801 locales en 5.434 hect…
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_B_LAS_124_CONCENTRACIONES.md:46  dice «5.434»  y la fuente dice «5444.15»
+          …la unión real es de **10.801 locales en 5.434 hect…
+      nota: vuelta a medir con La Boca ya adoptada: sube 10,04 ha. El documento la escribe redondeada a hectáreas enteras y el comparador de este control tiene una tolerancia fija de 0,1, así que para que coincida hay que escribirla con decimales
+
+  union_de_los_41_locales   canónico: 10819 locales   (0 menciones bien, 2 mal)
+      fuente: outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv
+      outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md:4553  dice «10.801»  y la fuente dice «10819»
+          …la unión real es de **10.801 locales en…
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_B_LAS_124_CONCENTRACIONES.md:46  dice «10.801»  y la fuente dice «10819»
+          …la unión real es de **10.801 locales en…
+      nota: vuelta a medir con La Boca ya adoptada: sube 18 locales
+
+  suma_de_los_41_locales   canónico: 12105 locales   (0 menciones bien, 2 mal)
+      fuente: outputs/BARRIDO_CIUDAD_2026-08/ronda_20/solapes_declarados.csv
+      outputs/BARRIDO_CIUDAD_2026-08/documento/ATLAS_V3_DOCUMENTO.md:4552  dice «12.087»  y la fuente dice «12105»
+          …Sumar los 41 por separado da **12.087 locales…
+      outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/ANEXO_B_LAS_124_CONCENTRACIONES.md:45  dice «12.087»  y la fuente dice «12105»
+          …Sumar los 41 por separado da **12.087 locales…
+      nota: sube 18 contra la tanda anterior por la adopción de La Boca. No es una cifra publicable por sí sola: existe para poder restarla
+
+--------------------------------------------------------------------------------------------------
+COINCIDEN · 23 cifras
+--------------------------------------------------------------------------------------------------
+  locales_relevados                        23981 locales      9 menciones en 6 documentos
+  polos                                       41 polos        1 menciones en 1 documentos
+  fichas                                      41 fichas       2 menciones en 1 documentos
+  zonas_evaluadas                             55 zonas        3 menciones en 3 documentos
+  agrupamientos_detectados                   124 concentraciones 12 menciones en 6 documentos
+  bares_notables                              90 bares        8 menciones en 4 documentos
+  bares_notables_abiertos                     88 bares        6 menciones en 5 documentos
+  enclaves_comunitarios                       15 enclaves     9 menciones en 5 documentos
+  locales_en_barrios_sin_borde               347 locales      2 menciones en 2 documentos
+  ha_en_barrios_sin_borde                   41.1 hectáreas    2 menciones en 2 documentos
+  comunas_con_polo                            14 comunas      7 menciones en 4 documentos
+  la_boca_caminito_ha                       4.15 hectáreas    2 menciones en 2 documentos
+  la_boca_caminito_locales                    37 locales      2 menciones en 2 documentos
+  mataderos_tentativo_ha                   43.99 hectáreas    2 menciones en 2 documentos
+  mataderos_tentativo_locales                 17 locales      2 menciones en 2 documentos
+  villa_ortuzar_ha                         34.39 hectáreas    2 menciones en 2 documentos
+  villa_ortuzar_locales                       69 locales      2 menciones en 2 documentos
+  pares_de_polos_con_solape                   25 pares        2 menciones en 2 documentos
+  locales_en_dos_o_mas_polos                1263 locales      2 menciones en 2 documentos
+  concentraciones_dentro_de_un_polo           53 concentraciones 2 menciones en 2 documentos
+  concentraciones_fuera_de_todo_polo          71 concentraciones 2 menciones en 2 documentos
+  la_boca_almirante_brown_ha               16.17 hectáreas    2 menciones en 2 documentos
+  la_boca_almirante_brown_locales             21 locales      2 menciones en 2 documentos
+
+--------------------------------------------------------------------------------------------------
+SIN MENCIÓN EN NINGÚN DOCUMENTO · 25 cifras
+--------------------------------------------------------------------------------------------------
+  No es un error: la cifra existe y el texto todavía no la usa.
+      objetos_disjuntos                           40 objetos
+      locales_en_polos                         12688 locales
+      locales_en_polos_por_geometria           12520 locales
+      pct_locales_en_polos                        53 por ciento
+      pct_superficie                              15 por ciento
+      mataderos_eje_alberdi_ha                 24.27 hectáreas
+      mataderos_eje_alberdi_locales               55 locales
+      balvanera_lectura_enclave_ha             19.18 hectáreas
+      balvanera_lectura_extendida_ha           44.75 hectáreas
+      balvanera_lectura_extendida_locales         154 locales
+      villa_ortuzar_solape_ha                  15.93 hectáreas
+      villa_ortuzar_solape_locales                25 locales
+      anclas_con_historia_fuera_de_su_borde          39 establecimientos
+      paginas_con_el_ancla_afuera                 14 páginas
+      polos_con_borde_transitorio                  1 polos
+      locales_contados_dos_veces                1286 locales
+      paginas_sin_ningun_ancla_adentro             4 páginas
+      hitos_fuera_de_todo_borde                   81 establecimientos
+      hitos_a_250_m_o_menos_del_borde             43 establecimientos
+      hitos_cerca_sobre_calle_ya_nombrada           7 establecimientos
+      paginas_con_perimetro_reconstruible          11 páginas
+      paginas_con_calles_y_alturas                11 páginas
+      paginas_sin_ninguna_calle_escrita            8 páginas
+      polos_que_publican_el_poligono_de_su_barrio           4 polos
+      colegiales_recorte_de_adentro_ha         98.03 hectáreas
+
+--------------------------------------------------------------------------------------------------
+PATRONES QUE ENGANCHARON ALGO QUE NO ES UN NÚMERO · 2
+--------------------------------------------------------------------------------------------------
+  Hay que apretar el patrón en cifras_canonicas.py; no son discrepancias.
+      polos                             ATLAS_V3_DOCUMENTO.md                       «Los»
+      polos                             ESTADO_Y_QUE_LLEVAR_MANANA.md               «los»
+
+==================================================================================================
+RESULTADO: 5 cifras del texto no coinciden con su fuente, 23 sí, 25 sin mención
+==================================================================================================
+
+Escrito: verificacion_cifras.json
+
+==================================================================================================
+QUÉ CAMBIÓ CONTRA LA VERIFICACIÓN ANTERIOR
+==================================================================================================
+  Con una salvedad que hay que leer antes: la anterior se corrió contra un documento
+  que no tenía lo de la tanda previa. La comparación dice qué cambió entre las dos
+  corridas, y buena parte de lo que cambió es que ahora hay texto donde no había.
+
+  antes: 5 no coinciden · 12 sí · 28 sin mención
+  ahora: 5 no coinciden · 23 sí · 25 sin mención
+
+  empezaron a aparecer en el texto: 12
+      concentraciones_dentro_de_un_polo                canónico 53
+      concentraciones_fuera_de_todo_polo               canónico 71
+      la_boca_caminito_ha                              canónico 4.15
+      la_boca_caminito_locales                         canónico 37
+      locales_en_dos_o_mas_polos                       canónico 1263
+      mataderos_tentativo_ha                           canónico 43.99
+      mataderos_tentativo_locales                      canónico 17
+      pares_de_polos_con_solape                        canónico 25
+      union_de_los_41_ha                               canónico 5444.15
+      union_de_los_41_locales                          canónico 10819
+      villa_ortuzar_ha                                 canónico 34.39
+      villa_ortuzar_locales                            canónico 69
+
+  empezaron a coincidir: 14
+      concentraciones_dentro_de_un_polo                canónico 53
+      concentraciones_fuera_de_todo_polo               canónico 71
+      ha_en_barrios_sin_borde                          canónico 41.1
+      la_boca_almirante_brown_ha                       canónico 16.17
+      la_boca_almirante_brown_locales                  canónico 21
+      la_boca_caminito_ha                              canónico 4.15
+      la_boca_caminito_locales                         canónico 37
+      locales_en_barrios_sin_borde                     canónico 347
+      locales_en_dos_o_mas_polos                       canónico 1263
+      mataderos_tentativo_ha                           canónico 43.99
+      mataderos_tentativo_locales                      canónico 17
+      pares_de_polos_con_solape                        canónico 25
+      villa_ortuzar_ha                                 canónico 34.39
+      villa_ortuzar_locales                            canónico 69
+
+  dejaron de coincidir: 3
+      suma_de_los_41_locales                           canónico 12105
+      union_de_los_41_ha                               canónico 5444.15
+      union_de_los_41_locales                          canónico 10819
+
+--------------------------------------------------------------------------------------------------
+LAS QUE NO COINCIDEN HOY · 5
+--------------------------------------------------------------------------------------------------
+  ha_en_polos
+      el texto dice 3.128,5   ·   la fuente dice 3143.53 hectáreas
+      en AUDITORIA_DE_DUPLICADOS.md:17, AUDITORIA_DE_DUPLICADOS.md:18, EDICION_TECNICA_FASE_DOCUMENTAL.md:721
+  polos_sin_borde
+      el texto dice dieciocho   ·   la fuente dice 3 polos
+      en TABLERO_ATLAS_V3.md:447
+  suma_de_los_41_locales
+      el texto dice 12.087   ·   la fuente dice 12105 locales
+      en ANEXO_B_LAS_124_CONCENTRACIONES.md:45, ATLAS_V3_DOCUMENTO.md:4552
+  union_de_los_41_ha
+      el texto dice 5.434   ·   la fuente dice 5444.15 hectáreas
+      en ANEXO_B_LAS_124_CONCENTRACIONES.md:46, ATLAS_V3_DOCUMENTO.md:4553
+  union_de_los_41_locales
+      el texto dice 10.801   ·   la fuente dice 10819 locales
+      en ANEXO_B_LAS_124_CONCENTRACIONES.md:46, ATLAS_V3_DOCUMENTO.md:4553
+
+Escrito: verificacion_cifras.json · verificacion_resumen.json

@@ -1,0 +1,101 @@
+==================================================================================================
+FUERA DE TODO BORDE · geometría de ahora, capa canónica, perímetro de la página
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+capa canónica: 225 establecimientos, 220 con punto (5 sin geocodificar, y se dice)
+puntos repetidos en la capa: 18 filas comparten coordenada con otra
+    H149       Don Julio                    Guatemala 4699               = MIC-023, H160
+    H150       Nino Gordo                   Thames 1810                  = MIC-034
+    H151       El Preferido de Palermo      Jorge Luis Borges 2108       = MIC-038
+    H153       Aramburu                     Vicente Lopez 1661           = MIC-045, MIC-049
+    H154       Trescha                      Murillo 725                  = MIC-002
+    H156       Julia                        Loyola 807                   = MIC-016
+    H157       Ness                         Grecia 3691                  = MIC-040
+    H158       Mishiguene                   Lafinur 3368                 = MIC-037
+    H160       Don Julio                    Guatemala 4699               = MIC-023, H149
+    MIC-002    Trescha                      Murillo 725                  = H154
+    MIC-016    Julia                        Loyola 807                   = H156
+    MIC-023    Don Julio                    Guatemala 4699               = H149, H160
+    MIC-034    Niño Gordo                   Thames 1810                  = H150
+    MIC-037    Mishiguene                   Lafinur 3368                 = H158
+    MIC-038    El Preferido de Palermo      Jorge Luis Borges 2108       = H151
+    MIC-040    Ness                         Grecia 3691                  = H157
+    MIC-045    Aramburu                     Vicente López 1661           = MIC-049, H153
+    MIC-049    Bis Bistró                   Vicente López 1661 Local 1   = MIC-045, H153
+
+adentro de algún borde                 : 137
+en contacto de borde (0 a 3 m)        : 2
+fuera de todo borde (más de 3 m)      : 81
+
+==================================================================================================
+EL CUADRO
+==================================================================================================
+  fuera de todo borde                        : 81
+  de ésos, a 100 m o menos                   : 27
+  de ésos, a 250 m o menos                   : 43
+  de ésos, a 500 m o menos                   : 58
+
+  de los 43 que están a 250 m o menos:
+        7  extender sobre una calle que el perímetro escrito ya nombra
+       26  haría falta una calle que el perímetro escrito no nombra
+       10  haría falta una calle que el perímetro escrito no nombra, y que además no toca el borde
+
+  los que se resolverían sin inventar una línea: 7
+  establecimiento                dirección                  polo                               m  el borde pasaría a
+  BAR PLAZA DORREGO              Defensa 1098               San Telmo                       27.2     29.40 ha ·   90 locales
+  El Tropezón                    CALLAO AV. 248             Avenida Corrientes              36.4     52.32 ha ·  369 locales
+  Caseros                        Avenida Caseros 486        Boulevard Caseros               54.1     53.70 ha ·   82 locales
+  Mercado de San Telmo           Defensa 961                San Telmo                       64.2     32.81 ha ·  140 locales
+  Chuí                           Loyola 1250                Villa Crespo                    92.4    344.07 ha ·  837 locales
+  Bar Imperio                    Av. Callao 181             Avenida Corrientes             124.8     55.72 ha ·  389 locales
+  Pirilo                         Defensa 821                San Telmo                      223.4     36.89 ha ·  171 locales
+
+  por categoría del perímetro escrito de la página más cercana:
+      da calles sin alturas                       18 cerca · 7 sobre calle ya nombrada
+      da calles y alturas                          4 cerca · 0 sobre calle ya nombrada
+      da un barrio o una referencia sin calles    16 cerca · 0 sobre calle ya nombrada
+      no escribe perímetro                         5 cerca · 0 sobre calle ya nombrada
+
+==================================================================================================
+QUÉ CAMBIÓ CONTRA LA MEDICIÓN ANTERIOR
+==================================================================================================
+                                                 antes   ahora
+  fuera de todo borde                               80      81
+  a 250 m o menos                                   45      43
+  sobre calle que el perímetro ya nombra            12       7
+
+  dejaron de estar afuera: 3
+      DIR-010   Banchero                         estaba a   54.1 m de La Boca · Almirante Brown y Necochea
+      H031      Café Roma                        estaba a  110.9 m de La Boca · Almirante Brown y Necochea
+      H062      La Buena Medida                  estaba a  106.5 m de La Boca · Almirante Brown y Necochea
+  empezaron a estar afuera: 4
+      DIR-026   Gran Café Gardel                 a   902.7 m de Centro y Microcentro
+      DIR-027   Centro Asturiano de Buenos Air   a   487.9 m de Centro y Microcentro
+      DIR-028   Centro Laurak Bat (Restaurante   a   311.3 m de Centro y Microcentro
+      DIR-029   Casal de Catalunya               a   140.1 m de San Telmo
+
+  cambiaron de veredicto sin moverse: 6   (la prueba se corre contra otro texto)
+      DIR-011   El Cedron                      Mataderos               
+                antes: haría falta una calle que el perímetro escrito no nombra, y que además no toca el borde
+                ahora: el perímetro nombra la calle pero la calle no llega al borde: la extensión quedaría suelta
+      H028      Café Olimpo                    Monte Castro            
+                antes: el perímetro nombra la calle pero la calle no llega al borde: la extensión quedaría suelta
+                ahora: haría falta una calle que el perímetro escrito no nombra, y que además no toca el borde
+      H032      Roma del Abasto                Abasto                  
+                antes: haría falta una calle que el perímetro escrito no nombra, y que además no toca el borde
+                ahora: haría falta una calle que el perímetro escrito no nombra
+      ICO-008   Il Matterello                  La Boca · Almirante Br  
+                antes: haría falta una calle que el perímetro escrito no nombra, y que además no toca el borde
+                ahora: haría falta una calle que el perímetro escrito no nombra
+      MIC-043   Corte Comedor                  Belgrano                
+                antes: extender sobre una calle que el perímetro escrito ya nombra
+                ahora: haría falta una calle que el perímetro escrito no nombra
+      MIC-046   Duhau Restaurante & Vinoteca   Retiro                  
+                antes: extender sobre una calle que el perímetro escrito ya nombra
+                ahora: haría falta una calle que el perímetro escrito no nombra
+
+Escrito: cerca_del_borde_20.csv (81 filas) · contacto_de_borde_20.csv (2 filas) · cerca_del_borde_resumen.json

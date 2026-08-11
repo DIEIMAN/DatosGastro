@@ -20,7 +20,7 @@ esperaría:
 
 | | concentraciones | locales |
 |---|---:|---:|
-| **caen dentro de algún polo** | **53** | 6.800 |
+| **caen dentro de algún polo** | **53** | 6.968 |
 | tocan el borde de un polo sin quedar mayormente adentro | 28 | 2.818 |
 | quedan fuera de todo polo | 43 | 2.902 |
 
@@ -42,9 +42,7 @@ superficie cae adentro**, porque una concentración puede quedar repartida entre
 
 ## Y los polos, a diferencia de las concentraciones, sí se pisan
 
-**Veinticinco pares de polos comparten superficie.** Sumar los 41 por separado da **12.087 locales**;
-la unión real es de **10.801 locales en 5.434 hectáreas**. La diferencia son **1.263 locales que
-están adentro de dos polos o de tres**, y que sumados de a uno se contarían dos o tres veces.
+**Veinticinco pares de polos comparten superficie.** Sumar los 41 por separado da **12.105 locales**; la unión real es de **10.819 locales en 5.444,15 hectáreas**. La suma de a uno cuenta **1.286 veces de más**, y esas repeticiones caen sobre **1.263 locales distintos**: la mayoría está adentro de dos polos y unos pocos, de tres.
 
 El solape más grande en locales es el de Retiro con el Microcentro —52,16 hectáreas y 301 locales—,
 seguido por Chacarita con Federico Lacroze —60,37 hectáreas y 153—. Los dos son casos donde un polo
@@ -72,9 +70,9 @@ marca.
 Todos los conteos son lo que ven las fuentes relevadas, no un censo, sobre el conjunto con el que se cuenta de
 23.981 registros. La sección III explica el alcance y la IX, los límites.
 
-# Cómo se reparten
+# Cuántas toca algún polo
 
-105 de las 124 concentraciones caen adentro de algún polo del atlas. Diecinueve no.
+Medido de otra manera —si la concentración toca un polo, no si cae mayormente adentro—, **105 de las 124 tocan alguno y diecinueve no tocan ninguno.** Las dos cuentas responden preguntas distintas y las dos se publican: la de arriba dice cuántas concentraciones *son* un polo o están adentro de uno; ésta, cuántas ni siquiera lo rozan.
 
 | las 124 | |
 |---|---:|
@@ -90,8 +88,7 @@ territorio. Una concentración detectada no tiene por qué respetar el borde de 
 zona aceptada por trayectoria o por prensa y guías. Lo que sí sería un defecto es sumarlas
 como si no se pisaran, y por eso este anexo publica el porcentaje.
 
-Los polos que más concentraciones contienen son Flores casco histórico, Almagro y Recoleta con
-siete cada uno, Balvanera-Once con seis y Villa Crespo con cinco. Ninguno de los cinco es de los más
+Los polos que más concentraciones contienen son Flores · Avellaneda, Almagro y Recoleta con siete cada uno, Balvanera-Once con seis y Villa Crespo con cinco. Ninguno de los cinco es de los más
 grandes en superficie: son los más fragmentados por dentro.
 
 # Los diecinueve que no entraron a ningún polo
@@ -99,9 +96,7 @@ grandes en superficie: son los más fragmentados por dentro.
 Diecinueve concentraciones, 1.451 locales — el 11,4 % de todo lo que este atlas contabiliza— no
 están adentro de ninguno de los polos.
 
-Y no fueron descartadas: la mayoría nunca fue evaluada. Siete zonas se evaluaron y no
-alcanzaron el criterio, y están en la sección VIII con su argumento. Estas diecinueve son otra
-cosa: concentraciones que el método detectó y que ninguna zona candidata cubrió.
+Y casi ninguna fue descartada: la mayoría nunca fue evaluada. Siete zonas se evaluaron y no alcanzaron el criterio, y están en la sección VIII con su argumento. Estas diecinueve son concentraciones que el método detectó y que ningún borde dibujado contiene. Dos de ellas, las de La Boca, sí corresponden a polos publicados: quedan en la lista porque el borde que se les dibujó encierra menos superficie que la mancha detectada.
 
 | concentración | locales | comuna |
 |---|---:|---|
@@ -151,12 +146,10 @@ con 52— están en La Boca, y las dos corresponden a polos de esta edición.
 Que estén acá es el final de una historia que conviene contar, porque explica cómo se controla un
 trabajo así. Durante buena parte de la edición, este anexo afirmaba que La Boca no había sido
 evaluada, que estaba ausente y no descartada, y que había que decidir si entraba. **Las tres cosas
-eran falsas.** La Boca se había medido el 7 de agosto con las seis condiciones y sus dos zonas habían
-entrado; ese resultado quedó guardado en un solo archivo del relevamiento y ninguna etapa posterior
-lo tomó.
+eran falsas.** La Boca ya se había medido con las seis condiciones y sus dos zonas habían entrado. El resultado existía y todavía no había llegado a las páginas.
 
 Lo que este atlas dice sobre La Boca, entonces, ahora tiene página detrás. Tiene seis Bares
-Notables —el cuarto registro oficial de la Ciudad—, cinco de ellos abiertos: Bar Portuario, Boca a Boca,
+Notables —la cuarta concentración de Bares Notables de la Ciudad—, cinco de ellos abiertos: Bar Portuario, Boca a Boca,
 Café Roma, El Estaño 1880 y La Perla, más La Buena Medida, cerrada en octubre de 2025. Su capa de
 memoria registra el fin de las cantinas de Necochea, el núcleo identitario del barrio. Y el Estado
 hizo el circuito gastronómico de Barracas y todavía no el de La Boca, mientras la sociedad civil lo
@@ -168,16 +161,15 @@ sostiene sin política pública.
 > declara en cada cifra de dónde viene**: la trazabilidad no es una formalidad, es lo que permitió
 > encontrar esto.
 
-## Tres · la Comuna 8 tiene tres concentraciones y ningún polo
+## Tres · la Comuna 8 tiene cuatro concentraciones y ningún polo
 
 Los polos de este atlas cubren catorce comunas. La Comuna 8 no tiene ninguno.
 
-Tiene tres concentraciones detectadas con 259 locales —Lugano, Villa Riachuelo y Villa
-Soldati—, y la única zona candidata que se evaluó ahí, Villa Soldati, **no cumplió ninguna condición.**
+Tiene cuatro concentraciones detectadas con 400 locales —dos en Villa Lugano, una en Villa Riachuelo y una en Villa Soldati—, y la única zona candidata que se evaluó ahí, Villa Soldati, **no cumplió ninguna condición.**
 
 > Esto hay que decirlo así y no de otra manera. El relevamiento cubrió las quince comunas con el
 > mismo umbral: la ausencia de polos en la Comuna 8 es un resultado, no un hueco de cobertura.
-> Hay concentración gastronómica medida —259 locales en tres lugares— y ninguna de las tres alcanzó
+> Hay concentración gastronómica medida —400 locales en cuatro lugares— y ninguna de las cuatro alcanzó
 > la regla de admisión, que exige algo más que densidad.
 >
 > **Y eso mismo es un dato de política**, probablemente el más accionable del anexo: las tres
@@ -215,9 +207,7 @@ Coreano de Carabobo.
 Ordenadas por cantidad de locales. Cada una está identificada por el barrio donde cae la mayor parte
 de su superficie; varias comparten barrio, y algunas cruzan el límite de dos.
 
-**La correspondencia con los polos no está en esta tabla, y es a propósito.** Dieciocho polos
-todavía no tienen su borde dibujado, y hasta que lo tengan, decir qué concentración cae adentro de
-cuál sería medir contra el barrio y no contra el polo. Se publica cuando los bordes estén cerrados.
+**La correspondencia con los polos no está en esta tabla, y es a propósito.** Tres polos todavía no tienen su borde propio, y un cuarto sólo tiene uno transitorio: para ésos, decir qué concentración cae adentro sería medir contra el barrio y no contra el polo. La correspondencia completa se publica más arriba, en el apartado que la mide.
 
 | # | barrio | comuna | locales | hectáreas |
 |---|---|---:|---:|---:|

@@ -62,7 +62,58 @@ vigencia lleva su fecha pegada al texto. Y una advertencia que vale para todas l
 sola vez: la densidad de lugares históricos no mide calidad gastronómica, mide dónde miran las guías.
 MICHELIN distingue 58 restaurantes en la Ciudad y ninguno en las comunas 4, 8 y 9; los Bares
 Notables sí llegan a Mataderos, La Boca, Barracas, Nueva Pompeya y Parque Chas. Un polo con
-muchos Notables y ningún MICHELIN no es peor: es una que las guías internacionales no visitan.
+muchos Notables y ningún MICHELIN no es peor: es una zona que las guías internacionales no visitan.
+
+### Sobre la condición de cantidad de locales
+
+Es la única de las seis que **no se resuelve con un número**, y conviene decirlo antes de que la
+comparación entre páginas lo sugiera. La condición pregunta si la oferta forma una tira a la escala
+del objeto que la página describe, y las escalas son muy distintas: hay contornos de cinco
+hectáreas y contornos de cuatrocientas. En un núcleo compacto la pregunta es si sus locales se
+encadenan; en un contorno del tamaño de un barrio, si hay masa de oferta. **La misma densidad
+resuelve distinto según sobre qué se mide**, y por eso San Telmo no cumple con 2,80 locales por
+hectárea y otras zonas cumplen con menos.
+
+De ahí se sigue lo que esta sección repite de otra forma: **las cifras de densidad y de continuidad
+no son un ranking**, y el veredicto de una página no se puede leer contra el de otra sin mirar
+primero qué contorno midió cada una. Las páginas sin borde propio lo declaran arriba de sus
+números.
+
+### Sobre el reconocimiento oficial
+
+Cada página abre declarando qué norma nombra a la zona, y en la mayoría la respuesta es que
+**ninguna**. Vale la aclaración una vez y no en cada página: cuando una página dice que no hay
+norma pero sí hay un Bar Notable adentro de su borde, **la protección es del establecimiento y no
+del lugar**. Un polo entero puede no tener ningún respaldo normativo y contener establecimientos
+declarados uno por uno en el Boletín Oficial. Son dos cosas distintas y el atlas no las suma.
+
+### Sobre los que cerraron
+
+Cada página tiene un bloque de lo que se perdió, y en treinta de las cuarenta y una dice lo mismo:
+**sin cierres documentados en esta zona.** Conviene leer esa frase por lo que es. El registro de
+cierres de este atlas tiene **treinta y una entradas para toda la Ciudad** y su cobertura es
+despareja: que una zona no figure no quiere decir que no haya cerrado nada, quiere decir que no se
+documentó ningún cierre con nombre, dirección y fecha. **Ausencia de registro no es ausencia de
+cierres**, y en ninguna página se lee al revés.
+
+### Sobre las fuentes de prensa
+
+Es la condición más discutible del método y por eso se cuenta de una sola manera en todo el atlas.
+Se cuentan **grupos independientes**, no notas: tres notas del mismo diario son un grupo, y una
+réplica que reproduce a otro medio no suma. Quedan afuera la comunicación del propio Gobierno de la
+Ciudad, los medios barriales del área tratada y la oferta comercial —food tours, agencias, guías de
+reserva—, porque son parte interesada y no una mirada externa. **Hacen falta dos grupos para que la
+condición se cumpla.**
+
+**Las guías de restaurantes no cuentan acá.** Una recomendación de MICHELIN, una estrella o un
+puesto en una lista de los mejores del mundo distingue a un establecimiento, no a un barrio: entra
+en el bloque de establecimientos y no en esta condición. La distinción vale para todo el atlas y no
+tiene excepciones.
+
+Donde la página nombra los medios, ésos son los que se contaron. Donde declara un número y nombra
+menos, es porque el registro de esta edición guardó el recuento y no la lista nominal: se dice así,
+en vez de completar la lista a ojo. Y donde la evidencia de un polo habla en realidad de su vecino,
+la página lo declara al lado del número.
 
 # Comuna 1
 
@@ -84,9 +135,8 @@ tramo exacto está por precisar**, y se declara acá y no al pie.
 - **Prensa y guías** — tres fuentes independientes. La Nación (agosto de 2026) trata el eje
   como circuito de comida ligado al teatro; El Cronista y Perfil publican rutas de sus pizzerías.
 
-**Los establecimientos.** **Los Galgos**, Callao 501, Bar Notable — verificado abierto el 02/08/2026.
-**Bar Lavalle**, Lavalle 1693 — verificado abierto al 03/08/2026, y con el respaldo más fuerte de
-todo el relevamiento: dos medios programan un concierto del Gobierno de la Ciudad **en esa
+**Los establecimientos.** **Los Galgos**, Av. Callao 501, Bar Notable — verificado abierto el 02/08/2026.
+**Bar Lavalle**, Lavalle 1693 — verificado abierto al 03/08/2026, y con un respaldo documental fuerte: dos medios programan un concierto del Gobierno de la Ciudad **en esa
 dirección el 8 de agosto de 2026**, y la evidencia la produce el organizador, con lugar y fecha.
 **El Gato Negro**, Av. Corrientes 1669 — verificado abierto al **29/07/2026**. **La Ópera**,
 Av. Corrientes 1799, alta del catálogo de 2026.
@@ -99,7 +149,7 @@ Av. Corrientes 1799, alta del catálogo de 2026.
 > escribió y cuándo se visitó— y sólo la segunda dice algo sobre la actividad del local. Sin esa
 > confusión, las reseñas con visita reciente de La Giralda caen catorce días antes del corte.
 
-**Celta Bar**, Sarmiento 1701 esquina Rodríguez Peña — verificado abierto al 09/08/2026, por
+**Celta Bar**, Sarmiento 1702 esquina Rodríguez Peña — verificado abierto al 09/08/2026, por
 constatación en el lugar, y es el caso que obligó a agregarle un nivel a la escala de
 vigencia.
 
@@ -165,13 +215,11 @@ Notable, **verificado abierto el 21/07/2026**. **Café Rivas**, Estados Unidos 3
 catálogo de 2026. Bar Plaza Dorrego y El Hipopótamo, sin verificación individual.
 
 **Cómo le va al comercio alrededor.** El eje **Defensa**, entre el 801 y el 1499, tiene **84,8 % de ocupación y
-subió 2,7 puntos** en el año, cuando el conjunto de los 48 ejes perdió 1,6. Es de las pocas
-polos del Atlas sobre un eje que sube.
+subió 2,7 puntos** en el año, cuando el conjunto de los 48 ejes perdió 1,6. Es de los pocos polos del atlas sobre un eje que sube.
 
 **Qué no se puede concluir de esta página.** Con 71 locales, cualquier variación de una decena mueve la densidad de
 este polo. No se la compare con zonas de cientos de locales: el número es chico y su
-error relativo es grande. Y su admisión depende de dos fuentes de prensa independientes: si una se cae, la
-el polo se sostiene sólo por su historia.
+error relativo es grande. Y su admisión depende de dos fuentes de prensa independientes: si una se cae, el polo se sostiene sólo por su historia.
 
 **Lo que falta.** Decidir si el Mercado de San Telmo entra por ampliación: está a **64 metros**
 del contorno —o sea afuera por poco— y es el equipamiento más reconocible del barrio. Si entra,
@@ -194,7 +242,7 @@ límite.
 - **Prensa y guías** — **cumple, pero apenas**, con dos fuentes independientes y sin nada posterior a 2023. Clarín
   Gourmet (2023) y El Cronista (2021) lo tratan como polo gastronómico.
 
-**Los establecimientos.** — los cuatro verificados abiertos. **Estilo Campo**, Alicia Moreau de Justo 1840,
+**Los establecimientos.** — los cuatro verificados abiertos. **Estilo Campo**, Av. Alicia Moreau de Justo 1840,
 al **07/08/2026** · **El Mercado**, del Faena, Martha Salotti 445, al **05/07/2026** · **Cabaña Las
 Lilas**, Alicia Moreau de Justo 516, al **06/07/2026** · **La Cabaña**, al **06/06/2026**.
 
@@ -203,7 +251,7 @@ Lilas**, Alicia Moreau de Justo 516, al **06/07/2026** · **La Cabaña**, al **0
 > Ciudad y las páginas de reseñas dicen **580**. No se elige. Y su verificación es la más floja de
 > las cuatro, a 64 días.
 >
-> Los cuatro cerraron por reseña de usuario fechada, no por prensa. Es evidencia de primera
+> Los cuatro se sostienen en una reseña de usuario fechada, no en una nota de prensa. Es evidencia de primera
 > mano —describen mozos, cocina, disponibilidad de mesa, músicos en vivo—, pero ninguno de los
 > cuatro tiene una nota de prensa con reporteo propio dentro de ventana. El más citado de todos
 > tiene su última nota de junio de 2025.
@@ -273,8 +321,7 @@ centenas y los polos no.
 
 **Qué no se puede concluir de esta página.** Es la página más dependiente de un solo establecimiento de los polos que ya estaban publicados. Si El
 Británico no estuviera, el polo quedaría con una condición geométrica —el corredor— y una condición
-documental de hace cinco años. Y con un perímetro de una o dos cuadras, las 50,03 hectáreas de
-el contorno describen el entorno, no el polo: la cifra de superficie de esta página no es
+documental de hace cinco años. Y con un perímetro de una o dos cuadras, las 50,03 hectáreas del contorno describen el entorno, no el polo: la cifra de superficie de esta página no es
 comparable con las demás.
 
 **Lo que falta.** Un segundo respaldo para El Británico, que hoy cierra con 113 días y sin
@@ -293,19 +340,18 @@ sola como zona, y el reparto de la superposición está sin decidir.
 
 **Por qué es un polo.**
 
-- **Cantidad de locales** — sí, y con el margen más holgado del atlas.
+- **Cantidad de locales** — sí, y con uno de los márgenes más holgados del atlas.
 - **Establecimientos con historia** — sí.
 - **Prensa y guías** — no. Una sola fuente, y de guía turística comercial.
 
-> Es la zona con más masa gastronómica de la Ciudad y sin prensa y guías, y eso no es una
+> Es la segunda zona del atlas por cantidad de locales y no tiene prensa ni guías, y eso no es una
 > laguna del relevamiento: es el resultado. Buscada por las mismas rutas que las demás, la
 > cobertura de prensa de 2025 y 2026 sobre el Centro no lo trata como destino gastronómico: lo
 > trata como zona de vacancia, quiebras y reconversión. Mil ochenta y cuatro locales que nadie
 > recomienda visitar es un dato de política, no un vacío de datos.
 
 **Los establecimientos.** **Los 36 Billares**, Av. de Mayo 1265/71 — verificado abierto el 04/07/2026.
-**Café Tortoni**, Av. de Mayo 825 — verificado abierto el 26/05/2026. Confitería Saint Moritz, Bar
-Bidou, Claridge's y La Ideal (Suipacha 384), sin verificación individual.
+**Café Tortoni**, Av. de Mayo 825 — verificado abierto el 26/05/2026. **Bar Bidou**, Av. Roque Sáenz Peña 858 — individualizado por una nota de **noviembre de 2025**. Confitería Saint Moritz, Claridge's y La Ideal (Suipacha 384), sin verificación individual.
 
 Y el caso que obligó a separar dos cosas que parecían una. **The New Brighton**, Sarmiento 645,
 tiene quiebra decretada desde el 18/03/2026 y sigue atendiendo. Figura como orden 88 del
@@ -363,7 +409,7 @@ MICHELIN el 14 de julio de 2026 y es el único biestrellado del país. **Casa Ve
 1642, nuevo Recomendado MICHELIN 2026 — verificado abierto al **06/07/2026**. **Presencia**,
 Montevideo 1789 esquina Av. Alvear, también Recomendado 2026 — verificado abierto al **27/07/2026**,
 con un café anexo que opera sobre Av. Alvear 1600. **Fervor**, Posadas 1519 — verificado abierto en
-**julio de 2026**. **La Biela**, Av. Quintana 596 esquina Junín — verificado abierto al
+**julio de 2026**. **La Biela**, Av. Quintana 600 esquina Junín — verificado abierto al
 **15/10/2025**. Y **Josephina's Café**, Guido 1532, alta del catálogo de 2026.
 
 > Y un establecimiento que no existe. Circula como «Bar del Alvear», en Av. Alvear 1891, y no hay
@@ -455,7 +501,7 @@ Kunti, Lupo, Los Trujillanitos y Roma del Abasto caen en zona de borde, así que
 dos zonas no se suman. Y el enclave se delimitó sobre una oferta que está mutando: su perímetro
 es una fotografía de 2026, no una figura estable.
 
-**Lo que falta.** **Depurar el solape con Almagro**, que son cuatro establecimientos concretos.
+**Lo que falta.** **Depurar el solape con Almagro**, que son 18,09 hectáreas y 65 locales.
 
 # Comuna 5
 
@@ -474,7 +520,7 @@ es una fotografía de 2026, no una figura estable.
 - **Avenida gastronómica** — sí.
 - **Prensa y guías** — no. Ninguna fuente.
 
-**Los establecimientos.** **Café Margot**, Boedo 857, y **San Antonio**, Av. Juan de Garay 3602 esquina
+**Los establecimientos.** **Café Margot**, Av. Boedo 857, y **San Antonio**, Av. Juan de Garay 3602 esquina
 Av. Boedo — los dos sin verificación individual.
 
 Y un lugar histórico en riesgo, con su fecha. **La Esquina Homero Manzi**, Av. San Juan 3601, tiene
@@ -588,8 +634,7 @@ públicos**, así que la página nombra la figura y no cita su contenido.
 - **Cantidad de locales** — sí.
 - **Avenida gastronómica** — sí.
 - **Prensa y guías** — **cuatro fuentes independientes**: La Nación, Infobae, El Cronista y
-  Time Out. Es el polo con más fuentes independientes de prensa y guías empatado en el segundo
-  puesto entre los polos que ya estaban publicados.
+  Time Out. Entre los polos que ya estaban publicados, queda segundo en cantidad de fuentes independientes de prensa y guías.
 - **Establecimientos con historia** — **no se cumple. Cero lugares históricos.**
 
 > Es el caso inverso al de San Telmo, y por eso está publicado. Cuatro fuentes de prensa independientes
@@ -608,7 +653,7 @@ publican ahora con lo que se pudo comprobar de cada uno:
 - **Chicama** (Donado 1995) queda en conflicto: una fuente de 2024 informa una mudanza desde esa
   dirección y una publicación de julio de 2026 la conserva.
 
-**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a este polo.
+**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a esta zona.
 
 **Qué no se puede concluir de esta página.** Dos de las cuatro fuentes independientes que sostienen
 al corredor son de 2017 y 2018. Los locales, en cambio, dejaron de depender de esas notas: cuatro de
@@ -658,7 +703,7 @@ cruce espacial y no una investigación. Y verificar el Café de la U.
 
 **Comuna 12 · Saavedra** — ya estaba en la versión anterior · corredor sobre una avenida
 
-**61 locales en 28,38 hectáreas**, con el corte del corredor **en revisión**.
+**102 locales en 61,00 hectáreas**, sobre el corredor ya corregido de Av. Cabildo a Av. Balbín. El corte anterior daba 61 locales en 28,38 hectáreas y le faltaba el corredor entero al oeste.
 
 **Dónde está.** El boulevard de Av. García del Río, de Av. Cabildo a Av. Balbín. El tramo
 verificado mide **1.483 metros, unas quince cuadras.**
@@ -686,45 +731,38 @@ verificado mide **1.483 metros, unas quince cuadras.**
 **Los establecimientos.** **Ninguno en el registro oficial.** Marte, que dos fuentes ubicaban en
 direcciones distintas, quedó resuelto en **Crisólogo Larralde 2772** por una nota de mayo de 2026.
 
-**Cómo le va al comercio alrededor.** El eje **Cabildo** —Av. Cabildo 1501-3799— tiene **91,8 % de ocupación y
-perdió 3,8 puntos**, más del doble que el conjunto. Es el eje del entorno de este polo, no
-del boulevard.
+**Cómo le va al comercio alrededor.** **La Ciudad no releva ningún eje comercial que corresponda a esta zona.** El más cercano que sí releva es el eje **Cabildo** —Av. Cabildo 1501-3799, que es el tramo de Belgrano y no llega hasta acá—: tiene **91,8 % de ocupación y perdió 3,8 puntos**, más del doble que el conjunto. Se cita como contexto del corredor de Cabildo, no de este boulevard.
 
-**Qué no se puede concluir de esta página.** El 47 % de la superficie y el 30 % de los locales de este polo
-quedan fuera del tramo que la evidencia documenta. La cola se conserva porque los polos
-publicadas sólo se amplían, y se declara: de las 28,63 hectáreas de cola, ninguna fuente
-documental habla. Y la cifra de 61 locales corresponde al corte anterior: cambiará con la
-ampliación, y hasta entonces no se usa para comparar.
+**Qué no se puede concluir de esta página.** El 47 % de la superficie y el 30 % de los locales de este polo quedan fuera del tramo que la evidencia documenta. La cola se conserva porque los polos publicados sólo se amplían, y se declara: de las **28,63 hectáreas de cola, ninguna fuente documental habla**. Las cifras de esta página son del contorno entero, cola incluida, y por eso su densidad queda por debajo de lo que describe la prensa.
 
-**Lo que falta.** Medir el polo antes y después de la ampliación. Es la que más puede
-cambiar de los polos que ya estaban publicados.
+**Lo que falta.** Medir el polo antes y después de la ampliación. Es el que más puede cambiar de los polos que ya estaban publicados.
 
 # R22 · Villa Pueyrredón
 
-**Comuna 12 · Villa Pueyrredón** — ya estaba en la versión anterior · varias piezas
+**Comuna 12 · Villa Pueyrredón** — estaba publicada y hoy no llega · varias piezas
 
 198 locales en 305,55 hectáreas.
 
 **Dónde está.** Perímetro vigente, sobre **Av. San Martín**.
 
-**Qué cumple y qué no.** — y es el polo más débil del conjunto.
+**Qué cumple y qué no.** — y era el polo más débil del conjunto.
 
-- **Cantidad de locales** — sí, **Es la única condición que cumple.**
+- **Cantidad de locales** — sí. Es la única condición que cumple.
 - establecimientos con historia, cocina de colectividad, mercados y galerías, prensa y guías y avenida gastronómica — **ninguna cumple.**
 
-> Este polo se publica con una sola condición cumplida y una continuidad del 5,6 % medida a 40
-> metros, y se consigna como tal. La continuidad cambia según a qué distancia se la mida, así que va la curva
-> completa: 2,5 % a 20 metros · 5,6 % a 40 · 11,6 % a 60 · 15,7 % a 80 · 31,3 % a 120. El 5,6 %
-> es la distancia con la que se comparan todas las zonas. Densidad: 0,648 locales por hectárea, con un vecino medio a
-> 36,2 metros.
+> Esta zona quedaba con una sola condición cumplida y una continuidad del 5,6 % medida a cuarenta
+> metros. La continuidad cambia mucho según a qué distancia se la mida, así que va la curva completa:
+> 2,5 % a veinte metros · 5,6 % a cuarenta · 11,6 % a sesenta · 15,7 % a ochenta · 31,3 % a ciento
+> veinte. Los cuarenta metros son la distancia con la que se comparan todas las zonas. Densidad:
+> 0,648 locales por hectárea, con un vecino medio a 36,2 metros.
 >
-> Su inclusión responde a una decisión editorial de conducción, no a la fuerza de la evidencia,
-> y no se la compara con polos que cumplen tres o más condiciones.
+> Su permanencia en la edición anterior no se apoyaba en la fuerza de la evidencia, y es exactamente
+> lo que la regla corrigió: hoy es un lugar en observación y no un polo.
 
 **Los establecimientos.** **Ninguno.** La zona no tiene establecimientos con registro oficial de ningún
 tipo.
 
-**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a este polo. La Ciudad releva
+**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a esta zona. La Ciudad releva
 Av. San Martín entre el 1801 y el 2799, que es el tramo de La Paternal y Villa Crespo, no el de
 Villa Pueyrredón.
 
@@ -804,7 +842,7 @@ a esta página.
 - **Prensa y guías** — no. La Nación publicó dos notas en 2025, pero las dos son del mismo medio y
   eso cuenta como una sola fuente.
 
-**Los establecimientos.** **Happening** (Av. Rafael Obligado 7030), que
+**Los establecimientos.** **Happening** (Av. Costanera Rafael Obligado 7030), que
 está **abierto y verificado al 09/08/2026**, y el **Patio Costanera Norte** (Av. Costanera Rafael
 Obligado 7010), que el sitio oficial de la Ciudad publica con dirección y horarios vigentes pero sin
 fecha de publicación: por eso este atlas no lo da por verificado. Son los dos únicos de la zona.
@@ -817,7 +855,7 @@ contra dos lugares históricos vivos sin verificar.
 > adentro porque su densidad y su forma se miden sobre el contorno y no dependen de sus
 > establecimientos históricos — pero una página que no dijera esto sería falsa por omisión.
 
-**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a este polo.
+**Cómo le va al comercio alrededor.** La Ciudad no releva ningún eje comercial que corresponda a esta zona.
 
 **Qué no se puede concluir de esta página.** Las cinco bajas están registradas con confianza media, sin fecha de
 cierre documentada para cuatro de ellas: la página afirma que la zona perdió, no cuándo. Y con 67
@@ -832,7 +870,7 @@ verificado.
 Comunas 13 y 15 · Colegiales y Chacarita — ya estaba en la versión anterior · corredor sobre una avenida
 **Se amplía.**
 
-**185 locales en 89,49 hectáreas** — cifra del perímetro anterior a la ampliación.
+**532 locales en 303,28 hectáreas** — el borde vigente, que ya alcanza el entorno de Fraga y Dorrego. El corte anterior, sobre la avenida sola, daba 185 locales en 89,49 hectáreas.
 
 **Dónde está.** Se amplía al entorno de Fraga, Dorrego, Charlone, Jorge Newbery y Plaza Los
 Andes. El perímetro nuevo tiene que contener al viejo, y esa contención se verifica midiendo
@@ -843,9 +881,7 @@ superficie perdida, no con un predicado.
 - **Cantidad de locales** — sí.
 - **Establecimientos con historia** — sí.
 - **Avenida gastronómica** — sí.
-- **Prensa y guías** — cinco fuentes independientes: es el polo publicado con más.
-  The New York Times (2024) y Time Out (2026) tratan la franja Chacarita–Colegiales como distrito
-  gastronómico.
+- **Prensa y guías** — cinco fuentes independientes, la cifra más alta entre los polos que ya estaban publicados, y van nombradas: **The New York Times** (mayo de 2024), **Time Out** (junio de 2026), **La Nación** (abril de 2023 y junio de 2024), **Infobae** (agosto de 2023) y **Forbes Argentina**. Las dos primeras tratan la franja Chacarita–Colegiales como distrito gastronómico.
 
 > Y con el desajuste de eje más claro del conjunto, que es justamente lo que motiva la
 > ampliación: las cinco fuentes independientes hablan de **Fraga y Dorrego**, y el contorno mide **Av. Federico
@@ -860,10 +896,7 @@ superficie perdida, no con un predicado.
 puntos menos—. El cruce oficial los atribuye a otras
 dos zonas y no a este polo, aunque los dos corren sobre su eje.
 
-**Qué no se puede concluir de esta página.** Los 185 locales y las 89,49 hectáreas son del perímetro viejo. La
-ampliación está decidida y no medida, así que **esta cifra queda superada y no se usa para
-comparar.** Y el polo se pisa con Chacarita y con Colegiales sobre el mismo corredor: los
-tres conteos no se suman.
+**Qué no se puede concluir de esta página.** Las dos cifras miden objetos distintos y ninguna es un error: **303,28 hectáreas** es el borde vigente y **89,49** era el corte sobre la avenida sola. Lo que falta no es la medición sino la delimitación escrita: **el borde vigente todavía no está descripto en calles**, y hasta que lo esté no se lo compara con otros polos. Y el polo se pisa con Chacarita y con Colegiales sobre el mismo corredor: los tres conteos no se suman.
 
 **Lo que falta.** Medir el polo antes y después de la ampliación, y verificar que el
 contorno nuevo contenga al viejo sin perder superficie.
@@ -1001,8 +1034,7 @@ verificado con fecha propia.
 
 - **Cantidad de locales** — sí.
 - **Establecimientos con historia** — sí.
-- **Prensa y guías** — tres fuentes distintas, y es el polo con mejor evidencia de esta condición en
-  todo el atlas. **The New York Times** le dedicó una nota al barrio como destino en 2024; La
+- **Prensa y guías** — tres fuentes distintas, y es una de las mejores evidencias de esta condición en el atlas. **The New York Times** le dedicó una nota al barrio como destino en 2024; La
   Nación publicó reporteo propio el mismo año; y el ranking de Time Out de 2026 nombra el eje
   Chacarita–Colegiales.
 
@@ -1033,7 +1065,7 @@ justo en el borde— y repartir esas 8,09 hectáreas.
 **Comuna 15 · La Paternal** — ya estaba en la versión anterior · varias piezas
 **Se amplía.**
 
-**208 locales en 321,01 hectáreas** — cifra del perímetro anterior a la ampliación.
+**307 locales en 385,34 hectáreas** — el borde vigente, ya extendido hacia Belaustegui y Terrero. El corte anterior daba 208 locales en 321,01 hectáreas.
 
 **Dónde está.** Se amplía hacia Belaustegui, Remedios de Escalada de San Martín, Paz Soldán,
 Rojas, Ávalos, Espinosa y Terrero, hasta el límite con Villa Crespo.
@@ -1058,10 +1090,7 @@ más**, que es de las mayores subas. Los
 dos ejes que la tabla usa para definir la zona se mueven en direcciones opuestas, y ninguno de
 los dos es donde la prensa ubica el circuito.
 
-**Qué no se puede concluir de esta página.** Los 208 locales y las 321,01 hectáreas son del perímetro viejo y quedan
-superados por la ampliación decidida y no medida. El polo **se solapa 49,7 hectáreas con
-Villa Crespo**. Y su forma es de sucesión de centralidades: una densidad promedio sobre 321
-hectáreas no describe ninguno de sus núcleos.
+**Qué no se puede concluir de esta página.** Las dos cifras miden objetos distintos: **385,34 hectáreas** es el borde vigente y **321,01** era el corte anterior. Lo que falta no es la medición sino la delimitación escrita en calles del borde vigente. El polo **se solapa 49,7 hectáreas con Villa Crespo**. Y su forma es de sucesión de centralidades: una densidad promedio sobre 385 hectáreas no describe ninguno de sus núcleos.
 
 **Lo que falta.** Medir el polo antes y después de la ampliación, y verificar MN Santa
 Inés.
