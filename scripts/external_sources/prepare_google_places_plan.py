@@ -6,14 +6,14 @@ permitidos, controles de TOS y presupuesto. No ejecuta requests, no requiere ni 
 
 Ver docs/skills_claude/06_fuentes_externas_privadas.md.
 
-Salida: outputs/fuentes_externas/google_places_plan.md
+Salida: data/fuentes_externas/google_places_plan.md
 """
 from __future__ import annotations
 
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "outputs" / "fuentes_externas" / "google_places_plan.md"
+OUT = ROOT / "data" / "fuentes_externas" / "google_places_plan.md"
 
 COMUNAS_PILOTO = ["San Nicolás (Comuna 1)", "Palermo (Comuna 14)"]
 CAMPOS_MINIMOS_PERMITIDOS = [

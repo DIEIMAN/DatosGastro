@@ -60,7 +60,7 @@ territorio de manera desigual entre barrios.
 FUENTES
 -------
   Relevamiento de Usos del Suelo 2022-2024 · GCBA · CC-BY-2.5-AR
-      outputs/fuentes_externas/usos_suelo/rus_2022_2024.csv   (ver perfilar_usos_suelo.py)
+      data/fuentes_externas/usos_suelo/rus_2022_2024.csv   (ver perfilar_usos_suelo.py)
   Censo Nacional de Población, Hogares y Viviendas 2022 · INDEC · CC BY 4.0
       radios censales 2022 con POB_TOT_P, y la tabla de personas por radio como control cruzado
       (ver bajar_censo_2022.py)
@@ -84,8 +84,8 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 BASE_LOCAL = ROOT / "outputs" / "BARRIDO_CIUDAD_2026-08" / "base" / "local.csv"
-RUS_CSV = ROOT / "outputs" / "fuentes_externas" / "usos_suelo" / "rus_2022_2024.csv"
-CENSO_DIR = ROOT / "outputs" / "fuentes_externas" / "censo"
+RUS_CSV = ROOT / "data" / "fuentes_externas" / "usos_suelo" / "rus_2022_2024.csv"
+CENSO_DIR = ROOT / "data" / "fuentes_externas" / "censo"
 RADIOS_ZIP = CENSO_DIR / "radios-censales-2022.zip"
 PERSONAS_ZIP = CENSO_DIR / "02-caba-2022.zip"
 BARRIOS = ROOT / "data" / "raw" / "geo_barrios.geojson"

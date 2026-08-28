@@ -29,7 +29,7 @@ no tenía: la **reorganización por subproyecto**.
 
 | Carpeta | Peso | Qué es |
 |---|---|---|
-| `outputs/fuentes_externas/` | 3,6 GB | Fuentes descargadas (ATP 2,8 GB + RUS + censo + OSM + Overture). **No es un output: es insumo.** |
+| `data/fuentes_externas/` | 3,6 GB | Fuentes descargadas (ATP 2,8 GB + RUS + censo + OSM + Overture). **No es un output: es insumo.** |
 | `outputs/ATLAS_INFORMATIVO_39_2026-08-13/` | 1,5 GB | Línea Atlas vigente (39 polos) |
 | `outputs/polos_gastro/` | 1,5 GB | Todo el ciclo histórico de Polos (fases 5–29, INFORMEFINAL, ATLAS_V2, experimentos) |
 | `outputs/BARRIDO_CIUDAD_2026-08/` | 422 MB | Barrido Places de la Ciudad |
@@ -51,7 +51,7 @@ En la raíz conviven:
 
 ### 2.2 `outputs/` mezcla tres cosas de naturaleza distinta
 
-1. **Insumos** disfrazados de outputs: `outputs/fuentes_externas/` (3,6 GB de fuentes descargadas). Debería vivir bajo `data/`.
+1. **Insumos** disfrazados de outputs: `data/fuentes_externas/` (3,6 GB de fuentes descargadas). Debería vivir bajo `data/`.
 2. **Outputs por subproyecto** (lo correcto): `outputs/cafecito/`, `outputs/panaderias/`, `outputs/mercados_caba/`…
 3. **Outputs por evento/fecha en la raíz de outputs**: 15 carpetas MAYÚSCULAS con fecha (`ATLAS_GASTRONOMICO_*_2026-08-12` ×4, `AUDITORIA_INDEPENDIENTE_*` ×3, `CORRECCION*` ×2, `ENTREGA_REUNION_2026-08-18`, `HALLAZGOS_*`, `DECISIONES_EDITORIALES_*`, `UNIFICACION_*`, `FICHAS_REFERENTES_*`, `PAQUETE_CONTEXTO_2026-08`). **Todas son del ciclo Atlas/Polos** pero viven sueltas al lado de los subproyectos, y son la principal causa de que "no se entienda nada".
 
@@ -88,7 +88,7 @@ DataGastro/
 ├── CLAUDE.md, AGENTS.md, README.md, requirements.txt
 ├── src/                      # pipeline F01–F05 — INTACTO (guardrail 2)
 ├── data/                     # fuentes: raw, processed, analytics, geo, seeds — INTACTO
-│   └── fuentes_externas/     # ← outputs/fuentes_externas (ATP, RUS, censo, OSM, Overture)
+│   └── fuentes_externas/     # ← data/fuentes_externas (ATP, RUS, censo, OSM, Overture)
 ├── dashboard/  notebooks/  sql/  schemas/  tests/   # INTACTOS
 ├── config/                   # ← fusiona configs/ (encuestas) dentro de config/
 ├── scripts/
@@ -149,7 +149,7 @@ Notas de diseño:
 4. **Ejecución por fases con commit por fase**, para poder revertir cualquier paso:
    - **F0** — borrado de basura técnica (§4 filas 1–7).
    - **F1** — raíz: fusionar config/configs, mover cache, archivar `_docs_reorganizacion`, `Algunas Cosas de Drive`, prompt suelto.
-   - **F2** — `outputs/fuentes_externas` → `data/fuentes_externas` + parcheo de rutas (la más delicada: 5+ scripts del barrido leen el RUS en vivo).
+   - **F2** — `data/fuentes_externas` → `data/fuentes_externas` + parcheo de rutas (la más delicada: 5+ scripts del barrido leen el RUS en vivo).
    - **F3** — consolidación Polos/Atlas (VIGENTE vs historico + las 15 carpetas fechadas).
    - **F4** — consolidación por rubro (casas_pastas ×6, mercados ×4, entregas).
    - **F5** — docs: general/, fusiones, archive de infraestructura v1/v1.1/hotfix.

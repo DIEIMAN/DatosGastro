@@ -124,35 +124,35 @@ outputs/polos_gastro/ATLAS_V2/**/*.docx
 # Se versionan los scripts y las tablas derivadas, no las descargas. El Relevamiento de Usos
 # del Suelo pesa 39,5 MB y se rebaja con la URL del docstring de perfilar_usos_suelo.py; las
 # tablas del MOC se rebajan del portal de datos abiertos.
-outputs/fuentes_externas/usos_suelo/rus_2022_2024.*
-outputs/fuentes_externas/usos_suelo/rus_2017.*
-outputs/fuentes_externas/usos_suelo/_control_*.txt
-outputs/fuentes_externas/moc/*.csv
-outputs/fuentes_externas/moc/*.geojson
-outputs/fuentes_externas/moc/_perfil_moc*.txt
-outputs/fuentes_externas/usos_suelo/rus_2022_2024_shp.zip
-outputs/fuentes_externas/usos_suelo/shp/
+data/fuentes_externas/usos_suelo/rus_2022_2024.*
+data/fuentes_externas/usos_suelo/rus_2017.*
+data/fuentes_externas/usos_suelo/_control_*.txt
+data/fuentes_externas/moc/*.csv
+data/fuentes_externas/moc/*.geojson
+data/fuentes_externas/moc/_perfil_moc*.txt
+data/fuentes_externas/usos_suelo/rus_2022_2024_shp.zip
+data/fuentes_externas/usos_suelo/shp/
 
 # === Fuentes abiertas de POI, agosto 2026 ===
 # Se versionan los scripts y las tablas derivadas por barrio, no las descargas. Overpass, el
 # GeoParquet de Overture y el ZIP de All The Places se rebajan con los propios bajadores.
-outputs/fuentes_externas/osm/_por_tag/
-outputs/fuentes_externas/osm/osm_gastro_caba.json
-outputs/fuentes_externas/osm/osm_gastro_poi.csv
-outputs/fuentes_externas/overture/*.parquet
-outputs/fuentes_externas/overture/overture_gastro_poi.csv
-outputs/fuentes_externas/all_the_places/*.zip
-outputs/fuentes_externas/all_the_places/atp_caba.csv
-outputs/fuentes_externas/badata_catalogo/*.json
-outputs/fuentes_externas/gcba_nuevas/*.xlsx
-outputs/fuentes_externas/gcba_nuevas/*.geojson
-outputs/fuentes_externas/gcba_nuevas/*.csv
+data/fuentes_externas/osm/_por_tag/
+data/fuentes_externas/osm/osm_gastro_caba.json
+data/fuentes_externas/osm/osm_gastro_poi.csv
+data/fuentes_externas/overture/*.parquet
+data/fuentes_externas/overture/overture_gastro_poi.csv
+data/fuentes_externas/all_the_places/*.zip
+data/fuentes_externas/all_the_places/atp_caba.csv
+data/fuentes_externas/badata_catalogo/*.json
+data/fuentes_externas/gcba_nuevas/*.xlsx
+data/fuentes_externas/gcba_nuevas/*.geojson
+data/fuentes_externas/gcba_nuevas/*.csv
 
 # Censo Nacional 2022 (INDEC, CC BY 4.0): 66 MB entre los radios censales del pais y las tablas
 # por radio de CABA. No son microdatos —son conteos ya agregados por radio— y aun asi no se
 # versionan: se rebajan con bajar_censo_2022.py. Lo versionable son las tablas por barrio y por
 # comuna que produce parejidad_cobertura.py.
-outputs/fuentes_externas/censo/*.zip
+data/fuentes_externas/censo/*.zip
 
 # La base gastronomica: `local` y `local_fuente` llevan nombre y direccion de comercios. Son
 # redistribuibles por licencia, pero pesan y se regeneran con build_base_gastronomica.py; lo que
@@ -194,3 +194,6 @@ outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/PARA_CHEQUEAR_DIEGO.c
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_A_centro.csv
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_B_almagro_norte.csv
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_verificada_ronda_2.csv
+
+.venv-tools/
+.agent-tools/

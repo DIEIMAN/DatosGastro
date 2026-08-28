@@ -4,7 +4,7 @@ Fuente E05 (OSM/Overpass): abierta, ODbL, sin scraping de plataformas privadas.
 
 Por defecto NO hace red: imprime la consulta Overpass y dónde se guardaría. Con `--run`
 ejecuta la consulta contra un endpoint Overpass público (respetando límites de uso) y guarda
-el GeoJSON/JSON crudo en outputs/fuentes_externas/osm_explore/ (fuera del pipeline).
+el GeoJSON/JSON crudo en data/fuentes_externas/osm_explore/ (fuera del pipeline).
 
 Reglas: no es padrón oficial; OSM es contraste/validación externa. No reemplaza F01/F02.
 Ver docs/skills_claude/05_geodatos_y_territorio.md y 06_fuentes_externas_privadas.md.
@@ -21,7 +21,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = ROOT / "outputs" / "fuentes_externas" / "osm_explore"
+OUT_DIR = ROOT / "data" / "fuentes_externas" / "osm_explore"
 ENDPOINT = "https://overpass-api.de/api/interpreter"
 USER_AGENT = "DataGastro/exploratorio (uso institucional CABA; contacto via repo)"
 

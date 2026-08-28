@@ -1,0 +1,110 @@
+# Contenido editable — Informe político integrado V2 (fase27)
+# Capa editable nueva; NO modifica el YAML de la Fase 25 política experimental.
+# Decisiones aplicadas (cerradas, no reabrir): 7 zonas seleccionadas; Belgrano un polo /
+# tres centralidades / Belgrano R sector secundario; Recoleta unidad pública única;
+# Costanera Norte polo multiparte de cuatro componentes con vacíos preservados.
+# Estructura restringida (2 niveles + listas de cadenas) para el parser de respaldo.
+
+meta:
+  titulo: "Polos gastronómicos de la Ciudad de Buenos Aires"
+  subtitulo: "Lectura territorial de la actividad gastronómica"
+  institucion: "DGDGAS — Dirección General de Desarrollo Gastronómico"
+  gobierno: "Gobierno de la Ciudad de Buenos Aires"
+  fecha: "Julio 2026"
+  pdf_subject: "Lectura territorial de polos gastronómicos — edición integrada para revisión interna."
+
+sintesis:
+  titulo: "Síntesis ejecutiva"
+  bajada: "Dónde se concentra la actividad gastronómica de la Ciudad y qué zonas se consolidan."
+  parrafos:
+    - "La actividad gastronómica de la Ciudad se concentra en un conjunto de polos y ejes reconocibles. El arco norte —de Palermo a Belgrano— reúne las mayores concentraciones, con perfiles propios en cada zona."
+    - "Los ejes históricos del centro y del sur mantienen plena vigencia: la Avenida Corrientes funciona como un corredor gastronómico y cultural continuo, y San Telmo consolida un núcleo compacto en torno a su mercado y su casco histórico. Puerto Madero se consolida como un frente gastronómico sobre ambos márgenes de los diques."
+    - "La lectura territorial incorpora además tres polos consolidados por el análisis reciente: Belgrano, un único polo organizado en tres centralidades territoriales; Recoleta, una unidad territorial continua con una de las ofertas más densas y diversas de la Ciudad; y la Costanera Norte, un polo multiparte compuesto por cuatro tramos ribereños discontinuos."
+    - "Otras zonas de la Ciudad permanecen en observación y se irán incorporando a la lectura de detalle en próximas actualizaciones."
+  encuadre: "Este informe ordena 22 zonas de referencia y presenta siete zonas seleccionadas para una lectura territorial en detalle."
+  como_leer_titulo: "Cómo leer esta pieza"
+  como_leer: "Cada zona se describe por su forma en el territorio —núcleo, corredor, frente, unidad general o polo multiparte— y, por separado, por el estado de su lectura: consolidada, consolidada con seguimiento o con delimitación adoptada recientemente. Una cosa es la forma de una zona; otra, cuánto sabemos hoy sobre ella. El distintivo junto al título de cada página indica ese estado."
+  alcance_pie: "Referencias de lectura territorial elaboradas por la DGDGAS. Alcance completo en la nota metodológica final."
+
+mapa_general:
+  titulo: "Mapa general de polos y ejes gastronómicos"
+  bajada: "Lectura de conjunto de la Ciudad: siete zonas seleccionadas."
+  asset: "mapa_general_integrado_v2.png"
+  lectura_titulo: "Lectura"
+  lectura: "La actividad gastronómica se concentra en el arco norte (Palermo–Belgrano), con ejes históricos plenamente vigentes en el centro y el sur, un frente consolidado sobre los diques de Puerto Madero, una unidad territorial continua en Recoleta y un polo multiparte identificado sobre la Costanera Norte, compuesto por tramos discontinuos."
+  nota_pie: "Las delimitaciones se construyeron a partir de la concentración, continuidad y estructura territorial de la oferta registrada y visible. No representan límites administrativos oficiales."
+
+palermo:
+  titulo: "Palermo y los principales núcleos"
+  bajada: "La mayor concentración gastronómica de la Ciudad."
+  asset: "palermo_integrado_v2.png"
+  lectura_titulo: "Lectura territorial"
+  lectura: "Palermo reúne la mayor concentración gastronómica de la Ciudad. Dentro de la zona conviven sectores con identidad propia —Palermo Soho, Palermo Hollywood y Las Cañitas—, conectados por avenidas que funcionan como articuladores del circuito. La zona combina propuestas consolidadas con renovación permanente de la oferta, y su lectura en detalle continúa profundizándose."
+  estado_lectura: "lectura consolidada"
+
+corrientes:
+  titulo: "Corrientes"
+  bajada: "Un corredor gastronómico y cultural continuo, con el Abasto como área asociada."
+  asset: "corrientes_integrado_v2.png"
+  lectura_titulo: "Lectura territorial"
+  lectura: "La Avenida Corrientes funciona como un corredor gastronómico continuo, asociado a la actividad teatral y cultural del centro. La intensidad varía a lo largo del recorrido —con tramos de mayor concentración cerca de los teatros y del Obelisco—, pero el corredor se lee como una única estructura, sin cortes."
+  abasto_titulo: "Abasto — área asociada"
+  abasto: "El entorno del Abasto se presenta como área asociada al polo Corrientes: un sector con identidad propia, vinculado al corredor pero fuera de su traza. Su lectura se mantiene diferenciada de la del eje."
+  estado_lectura: "lectura consolidada"
+
+san_telmo_puerto_madero:
+  titulo: "San Telmo y Puerto Madero"
+  bajada: "Un núcleo histórico compacto y un frente gastronómico sobre los diques."
+  asset_san_telmo: "san_telmo_integrado_v2.png"
+  asset_puerto: "puerto_madero_integrado_v2.png"
+  san_telmo_titulo: "San Telmo — núcleo gastronómico"
+  san_telmo: "San Telmo consolida un núcleo gastronómico compacto en torno al mercado y al casco histórico. La calle Defensa acompaña esa lectura como eje de contexto, articulando el recorrido peatonal entre la Plaza de Mayo y el sur del barrio."
+  puerto_titulo: "Puerto Madero — frente de los diques"
+  puerto: "Puerto Madero se lee como un frente gastronómico sobre ambos márgenes de los diques. La oferta se ordena a lo largo del agua e integra el paseo costero, con presencia en los dos bordes del corredor de diques."
+  estado_lectura: "lectura consolidada, con seguimiento"
+
+belgrano:
+  titulo: "Polo Gastronómico Belgrano"
+  bajada: "Un único polo organizado en centralidades territoriales."
+  asset: "belgrano_integrado_v2.png"
+  lectura_titulo: "Lectura territorial"
+  lectura: "Belgrano se consolida como un único polo gastronómico. Su estructura interna se organiza en tres centralidades territoriales: la centralidad principal del entorno Barrio Chino–Belgrano C —que integra las Barrancas, el Pasaje Echeverría y el Bajo Belgrano—, el eje interno Cabildo–Juramento y Belgrano R como sector secundario. La actividad se presenta fuertemente concentrada: el polo se define por la densidad de sus centralidades, no por la extensión del barrio."
+  observacion_titulo: "Zonas en observación"
+  observacion: "La Dirección mantiene en observación otras zonas de la Ciudad, entre ellas el área central y el eje Caseros–Barracas, que se irán incorporando a la lectura de detalle en próximas actualizaciones."
+  estado_lectura: "lectura consolidada, con seguimiento"
+
+recoleta:
+  titulo: "Polo Gastronómico Recoleta"
+  bajada: "Una unidad territorial consolidada, continua y diversa."
+  asset: "recoleta_integrado_v2.png"
+  lectura_titulo: "Lectura territorial"
+  lectura: "Recoleta se consolida como un único polo gastronómico: una unidad territorial continua que concentra una de las ofertas más densas y diversas de la Ciudad. La actividad se distribuye de manera sostenida dentro de la unidad, con huecos internos que corresponden a piezas urbanas sin oferta —parques, equipamientos, grandes parcelas— y no a cortes de la lectura."
+  diversidad_titulo: "Diversidad interna"
+  diversidad: "Dentro de la unidad conviven centralidades de perfil diverso: entornos patrimoniales y de museos, corredores comerciales y frentes hoteleros y de paseo. Esa diversidad se lee como riqueza interna del polo: ninguna centralidad fragmenta la unidad de conjunto."
+  estado_lectura: "lectura consolidada"
+
+costanera:
+  titulo: "Polo Gastronómico Costanera Norte"
+  bajada: "Un polo multiparte de cuatro componentes sobre el frente ribereño."
+  asset: "costanera_norte_integrado_v2.png"
+  lectura: "El Polo Gastronómico Costanera Norte es un polo multiparte: una estructura ribereña discontinua de cuatro componentes que reúnen la actividad gastronómica del frente costero, del corredor de concesiones ribereñas a los predios de eventos y usos mixtos de Costa Salguero–Punta Carrasco."
+  adoptada_titulo: "Una delimitación adoptada"
+  adoptada: "La delimitación del polo es una definición territorial adoptada por el estudio: identifica los tramos donde la actividad del frente ribereño se concentra de manera reconocible. Es una lectura estable y actualizable: la incorporación de nueva evidencia puede refinar sus componentes, sin reabrir la existencia del polo."
+  territorio_titulo: "Las condiciones del territorio"
+  territorio: "La discontinuidad del frente ribereño es un rasgo físico real: el aeroparque, los parques costeros y la infraestructura separan los tramos con actividad gastronómica. Los vacíos entre componentes son parte de la lógica territorial del polo: la representación los preserva en lugar de disimularlos, sin conectores artificiales."
+  estado_lectura: "delimitación adoptada"
+
+cierre:
+  titulo: "Próximos pasos y nota metodológica"
+  bajada: "Cómo continúa esta lectura territorial y cómo se construyó."
+  items:
+    - "Profundizar la lectura de detalle de las zonas que permanecen en observación, entre ellas el área central y el eje Caseros–Barracas."
+    - "Actualizar periódicamente las delimitaciones adoptadas y la base de evidencia territorial que las respalda, con controles de calidad y revisión territorial."
+    - "Integrar los avances de detalle a la lectura territorial general de la Ciudad a medida que se consolidan, complementándola sin reemplazarla."
+  cierre: "La Dirección prevé actualizaciones periódicas de esta lectura territorial a medida que avancen las etapas de profundización."
+  fuentes_titulo: "Cómo se construyó esta lectura"
+  fuentes: "Se integraron fuentes públicas y una fuente externa auxiliar de localización, sometidas a controles de calidad, depuración y revisión territorial. En el frente ribereño de la Costanera Norte la lectura se apoya de manera predominante en la fuente externa auxiliar (92,96 % de los registros considerados), una composición consistente con las características del área —concesiones, puestos y oferta móvil, con posible subregistro en las fuentes administrativas— y que no habilita afirmaciones sobre la formalidad de la actividad."
+  representacion_titulo: "Qué representa cada elemento"
+  representacion: "Cada zona se describe por su forma en el territorio —núcleo, corredor, frente, unidad general o polo multiparte— y, por separado, por el estado de su lectura. Las franjas que acompañan a los ejes y frentes son convenciones de representación cartográfica, de carácter orientativo. Las estructuras representadas reúnen la parte más concentrada de la oferta relevada en cada zona; la oferta restante se considera contexto territorial y no se interpreta como ausencia de actividad."
+  alcance_titulo: "Alcance"
+  alcance: "Las áreas, ejes y componentes representados son referencias de lectura territorial elaboradas por la DGDGAS a partir de la oferta registrada y visible; no constituyen un registro de establecimientos ni delimitaciones administrativas. Las referencias a centralidades internas son lecturas editoriales de apoyo, no jerarquías validadas."

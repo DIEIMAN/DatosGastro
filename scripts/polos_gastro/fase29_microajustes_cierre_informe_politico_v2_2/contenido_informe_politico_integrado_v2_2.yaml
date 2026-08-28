@@ -1,0 +1,24 @@
+# Capa editable de microajustes V2.2.
+# Se aplica sobre el contenido V2.1 de solo lectura; solo enumera campos modificados.
+
+sintesis:
+  parrafos:
+    - "La actividad gastronómica de la Ciudad se concentra en un conjunto de polos y ejes reconocibles. El arco norte —de Palermo a Belgrano— reúne las mayores concentraciones, con perfiles propios en cada zona."
+    - "Los ejes históricos del centro y del sur mantienen plena vigencia: la Avenida Corrientes funciona como un corredor gastronómico y cultural continuo, y San Telmo consolida un núcleo compacto en torno a su mercado y su casco histórico. Puerto Madero se consolida como un frente gastronómico sobre ambos márgenes de los diques."
+    - "La lectura territorial incorpora además tres definiciones recientes: Belgrano, un único polo organizado en tres ámbitos territoriales internos; Recoleta, una unidad territorial continua con una oferta densa y diversa; y Costanera Norte, un polo multiparte compuesto por cuatro tramos ribereños discontinuos."
+    - "El universo de referencia continuará ampliándose en futuras actualizaciones, a medida que se profundice el análisis de otras zonas de la Ciudad."
+  encuadre: "Este informe parte de un universo de 22 zonas de referencia y presenta siete zonas seleccionadas para una lectura territorial en detalle."
+
+corrientes:
+  abasto: "El entorno del Abasto se presenta como área asociada al corredor de la Avenida Corrientes: un sector con identidad propia, vinculado al eje pero fuera de su traza. Su lectura se mantiene diferenciada de la del corredor."
+
+belgrano:
+  bajada: "Un único polo organizado en tres ámbitos territoriales internos."
+  lectura: "Belgrano se consolida como un único polo gastronómico. Su estructura interna reúne tres ámbitos diferenciados: la centralidad principal de Barrio Chino–Belgrano C —que integra Barrancas, Pasaje Echeverría y Bajo Belgrano—, el eje interno Cabildo–Juramento y Belgrano R como sector secundario. La actividad se presenta fuertemente concentrada: el polo se define por la densidad de estos ámbitos, no por la extensión del barrio."
+  organizacion: "Barrio Chino–Belgrano C concentra la estructura principal e integra Barrancas, Pasaje Echeverría y Bajo Belgrano. Cabildo–Juramento funciona como eje interno y Belgrano R como sector secundario. La delimitación reúne estos ámbitos bajo una única identidad territorial sin convertirlos en polos independientes."
+
+costanera:
+  asset: "costanera_norte_recorte_presentacion_v2_2.png"
+
+cierre:
+  alcance: "Las áreas, ejes y componentes representados son referencias de lectura territorial elaboradas por la DGDGAS a partir de la oferta registrada y visible; no constituyen un registro de establecimientos. Las centralidades internas reflejan estructuras territoriales identificadas por el análisis. Sus denominaciones se incorporan luego del análisis para facilitar la lectura y no equivalen a categorías administrativas."

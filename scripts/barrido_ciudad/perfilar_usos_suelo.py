@@ -16,7 +16,7 @@ Dos advertencias del archivo que este script resuelve:
     que se cuenta `SMP` distinto, no filas.
 
 Descarga previa (este script no baja nada):
-  curl -L -o outputs/fuentes_externas/usos_suelo/rus_2022_2024.csv \\
+  curl -L -o data/fuentes_externas/usos_suelo/rus_2022_2024.csv \\
     https://data.buenosaires.gob.ar/dataset/relevamiento-usos-suelo/resource/3c7e5f10-577a-44ea-b614-82cc05f842aa/download
 
 Uso:
@@ -32,8 +32,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-FUENTE = ROOT / "outputs" / "fuentes_externas" / "usos_suelo" / "rus_2022_2024.csv"
-OUT_DIR = ROOT / "outputs" / "fuentes_externas" / "usos_suelo"
+FUENTE = ROOT / "data" / "fuentes_externas" / "usos_suelo" / "rus_2022_2024.csv"
+OUT_DIR = ROOT / "data" / "fuentes_externas" / "usos_suelo"
 CAPA_HABILITACIONES = ROOT / "outputs" / "BARRIDO_CIUDAD_2026-08" / "capa_homogenea_48_barrios.csv"
 
 # Equivalencia entre el vocabulario TIPO2 del Relevamiento y los dos anillos de rubro del

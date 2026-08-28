@@ -1,0 +1,35 @@
+{
+  "version": "3.0",
+  "fecha_corte": "2026-07-11",
+  "seed": 260711,
+  "crs_metrico": "EPSG:5347",
+  "crs_geojson": "EPSG:4326",
+  "estado": "EXPERIMENTAL_NO_OFICIAL",
+  "nota": "Oferta registrada/visible; geometria de trabajo adoptada por el estudio; no es limite administrativo oficial.",
+  "belgrano": {
+    "umbral_continuidad_m": 160,
+    "umbral_union_total_m": 250,
+    "cierre_presentacion_m": 35,
+    "shortlist": ["BEL_RV2_N02", "BEL_RV2_N03", "BEL_RV2_N05", "BEL_RV2_N06"]
+  },
+  "recoleta": {
+    "cierre_presentacion_m": 35,
+    "max_subzonas_publicas": 2,
+    "robustez_baseline": 0.626,
+    "sensibilidad_contenedor": 0.511
+  },
+  "costanera_norte": {
+    "min_cluster_size": 8,
+    "min_samples": 5,
+    "cluster_selection_method": "eom",
+    "concave_hull_ratio": 0.55,
+    "buffer_analitico_m": 55,
+    "bootstrap_bloques": 0.77,
+    "componentes_obligatorios": ["CN_C01", "CN_C02", "CN_C03", "CN_C04"]
+  },
+  "mapas": {
+    "dpi": 220,
+    "formatos": ["png", "svg"],
+    "simplificacion_presentacion_m": 12
+  }
+}

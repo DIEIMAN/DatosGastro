@@ -11,7 +11,6 @@ Salidas en outputs/casas_pastas/ (ver INFORME_CASAS_PASTAS.md).
 from __future__ import annotations
 
 import csv
-import glob
 import json
 import re
 import sys
@@ -21,7 +20,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(ROOT))
 from pastas_patterns import classify, norm  # noqa: E402
+from scripts.shared.fuentes_locales import iter_f01, iter_f02  # noqa: E402
+from scripts.shared.fuentes_locales.geo import cargar_cache  # noqa: E402
 
 RAW = ROOT / "data" / "raw"
 PROC = ROOT / "data" / "processed"
@@ -29,7 +31,6 @@ OUT = ROOT / "outputs" / "casas_pastas"
 FIG = OUT / "figuras"
 
 F01 = RAW / "f01_oferta_establecimientos_gastronomicos.csv"
-F02_GLOB = str(RAW / "f02_habilitaciones_aprobadas_*.csv")
 GEO_COMUNAS = RAW / "geo_comunas.geojson"
 GEO_BARRIOS = RAW / "geo_barrios.geojson"
 GEO_CACHE = PROC / "geo_cache.csv"
@@ -53,11 +54,6 @@ def write_csv(path: Path, rows: list[dict], cols: list[str]) -> None:
         w.writerows(rows)
 
 
-def anio_from_filename(path: str) -> str:
-    m = re.search(r"aprobadas_(\d{4}(?:_\d{4})?)", path)
-    return m.group(1).replace("_", "-") if m else ""
-
-
 def to_float(value: str):
     try:
         v = float(str(value).replace(",", "."))
@@ -67,81 +63,75 @@ def to_float(value: str):
 
 
 # --------------------------------------------------------------------------------------
-# Parte 2 — candidatos F02
+# Parte 2 y 3 — candidatos F02 y F01
+#
+# La lectura de los archivos crudos vive en scripts/shared/fuentes_locales. El lector
+# anterior abría los ocho archivos F02 con delimitador coma y utf-8: los siete archivos
+# 2015-2024 usan ";" y caían como una sola columna, de modo que este estudio venía
+# midiendo únicamente el archivo 2025. El módulo compartido detecta delimitador,
+# codificación y nombres de columna por archivo, y no expone titulares, cuits ni
+# teléfonos (guardrail 7): las filas legacy vienen sin nombre de establecimiento.
 # --------------------------------------------------------------------------------------
 def extract_f02() -> list[dict]:
     cands = []
-    for fp in sorted(glob.glob(F02_GLOB)):
-        anio = anio_from_filename(fp)
-        fname = Path(fp).name
-        with open(fp, encoding="utf-8-sig", errors="replace", newline="") as fh:
-            for row in csv.DictReader(fh):
-                rubro = row.get("rubro", "")
-                razon = row.get("razon_social", "")
-                coment = row.get("comentarios", "")
-                c = classify(rubro, razon, coment)
-                if c["nivel"] == "C" and c["patron_detectado"] == "":
-                    continue  # sin ninguna señal de pasta: no es candidato
-                # año de habilitación desde la disposición (formato DI-YYYY-...)
-                disp = row.get("disposicion", "")
-                m_anio = re.search(r"DI-(20\d\d)", disp) or re.search(r"\b(20[0-2]\d)\b", disp)
-                anio_disp = m_anio.group(1) if m_anio else ""
-                cands.append({
-                    "fuente": "F02",
-                    "archivo_origen": fname,
-                    "id_registro_original": row.get("nropartidamatriz", "").strip(),
-                    "nombre_original": razon.strip(),
-                    "rubro_original": rubro.strip(),
-                    "descripcion_original": coment.strip()[:200],
-                    "patron_detectado": c["patron_detectado"],
-                    "categoria_pastas": c["categoria_pastas"],
-                    "confianza_categoria": c["confianza_categoria"],
-                    "motivo_categoria": c["motivo_categoria"],
-                    "direccion_original": row.get("domicilio", "").strip(),
-                    "comuna_original": row.get("comuna", "").strip(),
-                    "barrio_original": "",
-                    "lat": "", "lon": "", "calidad_geo": "",
-                    "fecha_habilitacion": anio_disp,
-                    "observaciones": f"archivo={anio}; disposicion={disp.strip()[:24]}",
-                    "_nivel": c["nivel"], "_anio": anio_disp,
-                })
+    for reg in iter_f02():
+        c = classify(reg.rubro_completo, reg.nombre, reg.descripcion)
+        if c["nivel"] == "C" and c["patron_detectado"] == "":
+            continue  # sin ninguna señal de pasta: no es candidato
+        if reg.esquema == "moderno":
+            obs = f"esquema=moderno; archivo={reg.periodo}; disposicion={reg.disposicion.strip()[:24]}"
+        else:
+            obs = (f"esquema=legacy; archivo={reg.periodo}; "
+                   "sin nombre: titulares no se leen (dato personal)")
+        cands.append({
+            "fuente": "F02",
+            "archivo_origen": reg.archivo_origen,
+            "id_registro_original": reg.id_registro,
+            "nombre_original": reg.nombre,
+            "rubro_original": reg.rubro_completo,
+            "descripcion_original": reg.descripcion[:200],
+            "patron_detectado": c["patron_detectado"],
+            "categoria_pastas": c["categoria_pastas"],
+            "confianza_categoria": c["confianza_categoria"],
+            "motivo_categoria": c["motivo_categoria"],
+            "direccion_original": reg.domicilio,
+            "comuna_original": reg.comuna,
+            "barrio_original": "",
+            "lat": "", "lon": "", "calidad_geo": "",
+            "fecha_habilitacion": reg.anio_habilitacion,
+            "observaciones": obs,
+            "_nivel": c["nivel"], "_anio": reg.anio_habilitacion, "_esquema": reg.esquema,
+        })
     return cands
 
 
-# --------------------------------------------------------------------------------------
-# Parte 3 — candidatos F01
-# --------------------------------------------------------------------------------------
 def extract_f01() -> list[dict]:
     cands = []
-    with open(F01, encoding="latin-1", newline="") as fh:
-        for row in csv.DictReader(fh, delimiter=";"):
-            nombre = row.get("nombre", "")
-            categoria = row.get("categoria", "")
-            cocina = row.get("cocina", "")
-            c = classify(nombre, categoria, cocina)
-            if c["nivel"] == "C" and c["patron_detectado"] == "":
-                continue
-            cands.append({
-                "fuente": "F01",
-                "archivo_origen": F01.name,
-                "id_registro_original": row.get("id", "").strip(),
-                "nombre_original": nombre.strip(),
-                "rubro_original": (categoria + " / " + cocina).strip(" /"),
-                "descripcion_original": row.get("ambientacion", "").strip()[:200],
-                "patron_detectado": c["patron_detectado"],
-                "categoria_pastas": c["categoria_pastas"],
-                "confianza_categoria": c["confianza_categoria"],
-                "motivo_categoria": c["motivo_categoria"],
-                "direccion_original": row.get("direccion_completa", "").strip(),
-                "comuna_original": row.get("comuna", "").strip(),
-                "barrio_original": row.get("barrio", "").strip(),
-                "lat": to_float(row.get("lat", "")) or "",
-                "lon": to_float(row.get("long", "")) or "",
-                "calidad_geo": "f01_fuente" if to_float(row.get("lat", "")) else "sin_geo",
-                "fecha_habilitacion": "",
-                "observaciones": "",
-                "_nivel": c["nivel"], "_anio": "",
-            })
+    for reg in iter_f01():
+        c = classify(reg.nombre, reg.categoria, reg.cocina)
+        if c["nivel"] == "C" and c["patron_detectado"] == "":
+            continue
+        cands.append({
+            "fuente": "F01",
+            "archivo_origen": reg.archivo_origen,
+            "id_registro_original": reg.id_registro,
+            "nombre_original": reg.nombre,
+            "rubro_original": reg.rubro_completo,
+            "descripcion_original": reg.ambientacion[:200],
+            "patron_detectado": c["patron_detectado"],
+            "categoria_pastas": c["categoria_pastas"],
+            "confianza_categoria": c["confianza_categoria"],
+            "motivo_categoria": c["motivo_categoria"],
+            "direccion_original": reg.direccion,
+            "comuna_original": reg.comuna,
+            "barrio_original": reg.barrio,
+            "lat": reg.lat or "",
+            "lon": reg.lon or "",
+            "calidad_geo": "f01_fuente" if reg.lat else "sin_geo",
+            "fecha_habilitacion": "",
+            "observaciones": "",
+            "_nivel": c["nivel"], "_anio": "",
+        })
     return cands
 
 
@@ -149,20 +139,12 @@ def extract_f01() -> list[dict]:
 # Parte 5 — geocodificación desde cache local (sin servicios externos)
 # --------------------------------------------------------------------------------------
 def load_geocache() -> dict:
-    lookup = {}
-    for path, dircol, latcol, loncol, qcol in [
-        (GEO_CACHE, "direccion_original", "latitud", "longitud", "calidad_geo"),
-        (DIM_UBIC, "direccion_original", "latitud", "longitud", "calidad_geo"),
-    ]:
-        if not path.exists():
-            continue
-        with open(path, encoding="utf-8-sig", errors="replace", newline="") as fh:
-            for row in csv.DictReader(fh):
-                key = norm(row.get(dircol, ""))
-                lat, lon = to_float(row.get(latcol, "")), to_float(row.get(loncol, ""))
-                if key and lat and lon and key not in lookup:
-                    lookup[key] = (lat, lon, row.get(qcol, "") or "usig_cache")
-    return lookup
+    """Cache del pipeline (solo lectura) mas la cache compartida de los estudios de rubro.
+
+    La segunda se llena con `python -m scripts.shared.fuentes_locales.geo` y vive fuera de
+    data/processed, que es superficie protegida.
+    """
+    return cargar_cache()
 
 
 def geocode_f02(cands: list[dict], lookup: dict) -> None:
@@ -179,16 +161,28 @@ def geocode_f02(cands: list[dict], lookup: dict) -> None:
 # --------------------------------------------------------------------------------------
 # Parte 4 — dedup -> maestro
 # --------------------------------------------------------------------------------------
-def street_base(direccion: str) -> str:
-    """Calle sin altura: 'Larrazabal 3543' -> 'larrazabal'. Une variantes de altura/esquina."""
-    n = norm(direccion)
-    n = re.sub(r"\b\d+\b", " ", n)  # quita numeros de altura
-    return re.sub(r"\s+", " ", n).strip()
-
-
 def establecimiento_key(c: dict) -> str:
-    """Clave de establecimiento: nombre normalizado + calle (sin altura)."""
-    return norm(c["nombre_original"]) + "|" + street_base(c["direccion_original"])
+    """Clave conservadora segun la naturaleza de la fuente.
+
+    F02 es una serie de habilitaciones: la copia mal rotulada como 2025 reedita parte de
+    2015-2020 y agrega razon social. Para no contarla como otro establecimiento, F02 se
+    agrupa por partida + domicilio exacto y el nombre queda como enriquecimiento. F01 se
+    agrupa por nombre + domicilio. En ningun caso se quita la altura: puertas cercanas o
+    alternativas quedan para revision, no se fusionan automaticamente.
+    """
+    nombre = norm(c["nombre_original"])
+    domicilio = norm(c["direccion_original"])
+    identificador = norm(c.get("id_registro_original", ""))
+    if c.get("fuente") == "F02" and domicilio:
+        return "f02|" + identificador + "|" + domicilio
+    if domicilio:
+        return c.get("fuente", "") + "|" + nombre + "|" + domicilio
+    # Sin domicilio, solo se agrupan repeticiones del mismo registro fuente. Si tampoco
+    # hay identificador, se conserva el rubro para no colapsar filas no contrastables.
+    return "sin_domicilio|" + "|".join([
+        c.get("fuente", ""), identificador, nombre,
+        norm(c.get("rubro_original", "")),
+    ])
 
 
 def dedup(cands_ab: list[dict]) -> list[dict]:
@@ -198,9 +192,20 @@ def dedup(cands_ab: list[dict]) -> list[dict]:
 
     maestro = []
     for gid, (key, items) in enumerate(groups.items(), 1):
-        # elegir representante: preferir nivel A, luego con geo, luego mayor confianza
-        items.sort(key=lambda c: (c["_nivel"] != "A", not bool(c["lat"]), -float(c["confianza_categoria"] or 0)))
+        # Preferir nivel A, luego el registro que aporta nombre, geo y mayor confianza.
+        items.sort(key=lambda c: (c["_nivel"] != "A", not bool(c["nombre_original"]),
+                                  not bool(c["lat"]), -float(c["confianza_categoria"] or 0)))
         rep = dict(items[0])
+        # La reedicion historica puede aportar nombre donde el legacy aporta geometria.
+        # Se completa cada campo sin sumar una fuente independiente ni una fila.
+        if not rep["nombre_original"]:
+            rep["nombre_original"] = next((c["nombre_original"] for c in items
+                                             if c["nombre_original"]), "")
+        if not rep["lat"]:
+            geo = next((c for c in items if c["lat"] and c["lon"]), None)
+            if geo:
+                rep["lat"], rep["lon"], rep["calidad_geo"] = (
+                    geo["lat"], geo["lon"], geo["calidad_geo"])
         fuentes = sorted({c["fuente"] for c in items})
         rep["fuentes_que_lo_detectan"] = ",".join(fuentes)
         rep["cantidad_fuentes"] = len(fuentes)
@@ -378,13 +383,13 @@ def inventario(f02_n, f01_n):
             return []
     rows = [
         {"fuente": "F02 habilitaciones AGC (raw, todos los años)", "path": "data/raw/f02_habilitaciones_aprobadas_*.csv",
-         "existe": "si", "columnas_relevantes": "razon_social, rubro, domicilio, comuna, nropartidamatriz, comentarios",
+         "existe": "si", "columnas_relevantes": "descripcion_rubro/DescripcionRubro (+SubRubro), calles, partida_matriz, fecha_habilitacion (legacy 2015-2024); razon_social, rubro, domicilio, comuna, nropartidamatriz, comentarios (moderno 2025)",
          "cantidad_filas": f02_n, "utilidad": "alta (fuente principal de casas/fabricas de pastas)",
-         "observaciones": "son habilitaciones/registros administrativos, no locales activos"},
+         "observaciones": "8 archivos con dialectos distintos, leidos por scripts/shared/fuentes_locales; son habilitaciones/registros administrativos, no locales activos; titulares y cuits no se leen"},
         {"fuente": "F01 oferta gastronomica (raw)", "path": "data/raw/f01_oferta_establecimientos_gastronomicos.csv",
          "existe": "si", "columnas_relevantes": "nombre, categoria, cocina, lat, long, barrio, comuna",
          "cantidad_filas": f01_n, "utilidad": "baja (orientada a restaurantes; casi sin casas de pastas)",
-         "observaciones": "latin-1, delimitado por ;"},
+         "observaciones": "cp1252, delimitado por ;"},
         {"fuente": "geo_comunas", "path": "data/raw/geo_comunas.geojson", "existe": "si" if GEO_COMUNAS.exists() else "no",
          "columnas_relevantes": "comuna, area (m2), geometry", "cantidad_filas": 15,
          "utilidad": "alta (asignacion y densidad por comuna)", "observaciones": "oficial GCBA"},
@@ -507,5 +512,22 @@ def main():
     print("TOP comuna (dens):", [(r["comuna"], r["densidad_por_km2"]) for r in resumen["top_comuna_densidad"]])
 
 
+def _cli_out(argv=None):
+    """--out DIR redirige TODA la salida a otra carpeta.
+
+    Sirve para correr el build sin pisar entregables ya publicados: se produce en una
+    carpeta aparte y se comparan los numeros antes de decidir si se regenera lo oficial.
+    """
+    import argparse
+    global OUT, FIG
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--out", default=None, help="carpeta de salida (por defecto, la del proyecto)")
+    args = ap.parse_args(argv)
+    if args.out:
+        OUT = Path(args.out).resolve()
+        FIG = OUT / "figuras"
+
+
 if __name__ == "__main__":
+    _cli_out()
     main()

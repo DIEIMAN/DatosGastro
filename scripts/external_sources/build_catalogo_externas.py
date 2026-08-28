@@ -4,9 +4,9 @@ Lee:  config/fuentes_externas/matriz_fuentes_externas.csv
 Escribe:
   config/fuentes_externas/catalogo_fuentes_externas.csv
   config/fuentes_externas/catalogo_fuentes_externas.json
-  outputs/fuentes_externas/fuentes_prioridad_alta.csv
-  outputs/fuentes_externas/fuentes_prioridad_media.csv
-  outputs/fuentes_externas/fuentes_prioridad_baja.csv
+  data/fuentes_externas/fuentes_prioridad_alta.csv
+  data/fuentes_externas/fuentes_prioridad_media.csv
+  data/fuentes_externas/fuentes_prioridad_baja.csv
 
 No llama APIs ni hace scraping. Solo transforma documentación local.
 Ver docs/skills_claude/06_fuentes_externas_privadas.md y 02_metodologia_fuentes.md.
@@ -23,7 +23,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "config" / "fuentes_externas" / "matriz_fuentes_externas.csv"
 CONFIG_DIR = ROOT / "config" / "fuentes_externas"
-OUT_DIR = ROOT / "outputs" / "fuentes_externas"
+OUT_DIR = ROOT / "data" / "fuentes_externas"
 
 
 def norm(value: object) -> str:

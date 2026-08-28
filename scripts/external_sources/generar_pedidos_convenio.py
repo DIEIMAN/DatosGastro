@@ -10,7 +10,7 @@ datos personales, tarjetas, repartidores, domicilios ni CUIT nominal.
 Ver docs/fuentes_externas/plantilla_pedido_convenio_datos.md y
 docs/skills_claude/06_fuentes_externas_privadas.md.
 
-Salida: outputs/fuentes_externas/pedidos_convenio/E<id>_<slug>.md
+Salida: data/fuentes_externas/pedidos_convenio/E<id>_<slug>.md
 """
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 CAT = ROOT / "config" / "fuentes_externas" / "catalogo_fuentes_externas.csv"
-OUT_DIR = ROOT / "outputs" / "fuentes_externas" / "pedidos_convenio"
+OUT_DIR = ROOT / "data" / "fuentes_externas" / "pedidos_convenio"
 
 CAMPOS_AGREGADOS = [
     "mes", "comuna o barrio", "rubro/categoría gastronómica",

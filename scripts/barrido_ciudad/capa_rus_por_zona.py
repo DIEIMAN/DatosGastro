@@ -20,7 +20,7 @@ Decisiones de método, explícitas:
     el número, y se contrasta contra el crosswalk de superficie que dejó Diego.
 
 Insumo previo (no lo baja este script): el SHP del Relevamiento, descomprimido en
-`outputs/fuentes_externas/usos_suelo/shp/`. URL en el docstring de `perfilar_usos_suelo.py`
+`data/fuentes_externas/usos_suelo/shp/`. URL en el docstring de `perfilar_usos_suelo.py`
 (recurso SHP). El SHP viene en UTF-8 correcto: el doble encoding es un defecto del CSV, no de
 esta fuente.
 
@@ -51,7 +51,7 @@ from perfilar_usos_suelo import anillos  # noqa: E402
 
 BARRIDO = ROOT / "outputs" / "BARRIDO_CIUDAD_2026-08"
 OUT_DIR = BARRIDO / "generado"
-SHP_DIR = ROOT / "outputs" / "fuentes_externas" / "usos_suelo" / "shp"
+SHP_DIR = ROOT / "data" / "fuentes_externas" / "usos_suelo" / "shp"
 CROSSWALK = BARRIDO / "crosswalk_zona_barrio.csv"
 BARRIOS = ROOT / "data" / "raw" / "geo_barrios.geojson"
 

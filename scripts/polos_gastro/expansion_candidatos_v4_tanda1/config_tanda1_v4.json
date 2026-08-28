@@ -1,0 +1,28 @@
+{
+  "estado": "EXPERIMENTAL_NO_OFICIAL",
+  "fecha_corte": "2026-07-12",
+  "zonas": ["Z01", "Z02", "Z03", "Z04"],
+  "categorias": ["restaurant", "cafe", "bar", "bakery", "meal_takeaway"],
+  "estados_autorizados": ["REUTILIZAR_EXISTENTE", "CONSULTAR_SOLO_BRECHA"],
+  "conteos_esperados": {
+    "REUTILIZAR_EXISTENTE": 645,
+    "CONSULTAR_SOLO_BRECHA": 330,
+    "PENDIENTE_DECISION": 45
+  },
+  "por_zona": {
+    "Z01": {"REUTILIZAR_EXISTENTE": 95, "CONSULTAR_SOLO_BRECHA": 105, "PENDIENTE_DECISION": 0},
+    "Z02": {"REUTILIZAR_EXISTENTE": 340, "CONSULTAR_SOLO_BRECHA": 45, "PENDIENTE_DECISION": 0},
+    "Z03": {"REUTILIZAR_EXISTENTE": 170, "CONSULTAR_SOLO_BRECHA": 175, "PENDIENTE_DECISION": 45},
+    "Z04": {"REUTILIZAR_EXISTENTE": 40, "CONSULTAR_SOLO_BRECHA": 5, "PENDIENTE_DECISION": 0}
+  },
+  "radio_m": 200,
+  "crs_metrico": "EPSG:5347",
+  "plan": "outputs/polos_gastro/expansion_candidatos_v4_preflight/PLAN_CONSULTAS_PLACES_EXPANSION_V4.csv",
+  "areas": "outputs/polos_gastro/expansion_candidatos_v4_preflight/AREAS_CONSULTA_CANDIDATOS_V4.geojson",
+  "universo": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
+  "planes_cache": [
+    "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
+    "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
+    "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv"
+  ]
+}

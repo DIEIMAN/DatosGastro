@@ -1,0 +1,1868 @@
+{
+  "version": "expansion_candidatos_v4_preflight_final",
+  "fecha_preflight": "2026-07-12",
+  "rol": "cartografo_territorial",
+  "modalidad": "PREFLIGHT_DE_EXPANSION — solo preparacion, sin corrida externa",
+  "parametros": {
+    "crs_geografico": "EPSG:4326",
+    "crs_metrico": "EPSG:5347",
+    "celda_m": 250,
+    "borde_m": 150,
+    "umbral_no_consulta_pct": 70,
+    "umbral_parcial_pct": 25,
+    "buffer_default_eje_m": 250,
+    "buffer_default_banda_m": 350
+  },
+  "capas_base": {
+    "barrios": "data/raw/geo_barrios.geojson",
+    "comunas": "data/raw/geo_comunas.geojson",
+    "callejero": "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson",
+    "universo_completo": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
+    "f01_raw": "data/raw/f01_oferta_establecimientos_gastronomicos.csv",
+    "f02_fact": "data/processed/fact_habilitacion_gastronomica.csv",
+    "dim_ubicacion": "data/processed/dim_ubicacion.csv"
+  },
+  "polos_adoptados": {
+    "palermo": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
+    "corrientes": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
+    "san_telmo": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
+    "puerto_madero": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
+    "belgrano": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
+    "recoleta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
+    "costanera_norte": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson"
+  },
+  "insumos": [
+    {
+      "insumo_id": "INS-F01",
+      "ruta": "data/raw/f01_oferta_establecimientos_gastronomicos.csv",
+      "tipo": "fuente_publica_F01",
+      "proposito": "Oferta gastronomica registrada GCBA con lat/lon; base administrativa citywide",
+      "cobertura_temporal": "corte unico (dataset GCBA, carga 2026)",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Oferta registrada, no locales activos; separador ';'; sin fecha por registro",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-F02-FACT",
+      "ruta": "data/processed/fact_habilitacion_gastronomica.csv",
+      "tipo": "fuente_publica_F02_procesada",
+      "proposito": "Habilitaciones aprobadas 2015-2025 clasificadas es_gastronomico; geo via dim_ubicacion",
+      "cobertura_temporal": "2015-2025",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Habilitaciones aprobadas, no locales activos; requiere join con dim_ubicacion; NO regenerar (pipeline protegido)",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-DIM-UBIC",
+      "ruta": "data/processed/dim_ubicacion.csv",
+      "tipo": "dimension_geocodificacion",
+      "proposito": "Geocodificacion normalizada (barrio, comuna, lat/lon, calidad_geo) para F01/F02",
+      "cobertura_temporal": "acumulada",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "calidad_geo variable; centroides posibles; NO regenerar",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-FACT-ESTAB",
+      "ruta": "data/processed/fact_establecimiento.csv",
+      "tipo": "fuente_publica_F01_procesada",
+      "proposito": "F01 procesado con categoria gastronomica inferida",
+      "cobertura_temporal": "corte unico",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Contiene nombres comerciales: usar solo agregados; NO copiar filas al paquete",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-GEO-BARRIOS",
+      "ruta": "data/raw/geo_barrios.geojson",
+      "tipo": "capa_oficial",
+      "proposito": "Limites oficiales de los 48 barrios de CABA; base de areas barriales",
+      "cobertura_temporal": "vigente",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Limite administrativo, no funcional",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-GEO-COMUNAS",
+      "ruta": "data/raw/geo_comunas.geojson",
+      "tipo": "capa_oficial",
+      "proposito": "Limites oficiales de comunas; control de agregacion",
+      "cobertura_temporal": "vigente",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Grano grueso para polos",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-CALLEJERO",
+      "ruta": "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson",
+      "tipo": "capa_oficial",
+      "proposito": "Callejero GCBA (31.961 tramos, nomoficial, alturas, barrio, jerarquia); base de ejes y nodos reproducibles",
+      "cobertura_temporal": "descarga 2026-06-02",
+      "cobertura_espacial": "CABA completa",
+      "reutilizable": "SI",
+      "limitaciones": "Encoding de acentos degradado en algunos campos; usar normalizacion ASCII",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-UNIV-COMPLETO",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
+      "tipo": "universo_sanitizado",
+      "proposito": "Universo combinado F01+F02+Places deduplicado (6.461 pts) de la corrida completa V1; insumo canonico de cobertura",
+      "cobertura_temporal": "F01/F02 hasta 2025; Places 2026-07-08/09",
+      "cobertura_espacial": "11 macrozonas (Palermo, Corrientes/Microcentro, Belgrano, San Telmo, Recoleta, Caballito, Villa Crespo, Chacarita, Puerto Madero, Costanera, Caseros/Barracas)",
+      "reutilizable": "SI",
+      "limitaciones": "No cubre CABA completa; incluye nombre_normalizado (no copiar filas al paquete)",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLACES-NUEVOS",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/places_nuevos_completo_sanitizado.csv",
+      "tipo": "places_sanitizado",
+      "proposito": "Solo puntos Places nuevos (no matcheados con F01/F02) de la corrida completa V1",
+      "cobertura_temporal": "2026-07-08/09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI",
+      "limitaciones": "Subconjunto del universo completo; contiene nombre_normalizado",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLACES-PILOTO",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/places_sanitizado.csv",
+      "tipo": "places_sanitizado",
+      "proposito": "Resultados sanitizados del piloto de microzonas (4 zonas)",
+      "cobertura_temporal": "2026-07-08",
+      "cobertura_espacial": "Palermo, Belgrano, Corrientes/Microcentro, San Telmo",
+      "reutilizable": "SI",
+      "limitaciones": "Ya integrado en INS-UNIV-COMPLETO; usar solo para trazabilidad",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLACES-A",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_a_criticas.csv",
+      "tipo": "places_sanitizado",
+      "proposito": "Tanda A (celdas criticas) de la ampliacion V1",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "macrozonas criticas",
+      "reutilizable": "SI",
+      "limitaciones": "Ya integrado en INS-UNIV-COMPLETO",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLACES-B",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_b_consolidacion.csv",
+      "tipo": "places_sanitizado",
+      "proposito": "Tanda B (consolidacion) de la ampliacion V1",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "macrozonas de consolidacion",
+      "reutilizable": "SI",
+      "limitaciones": "Ya integrado en INS-UNIV-COMPLETO",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLACES-REFINO",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/refinamientos/places_sanitizado_refino_chacarita_saturadas_3x3.csv",
+      "tipo": "places_sanitizado",
+      "proposito": "Refino 3x3 de celdas saturadas en Chacarita",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "Chacarita",
+      "reutilizable": "SI",
+      "limitaciones": "Ya integrado en INS-UNIV-COMPLETO",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-PLAN-PILOTO",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
+      "tipo": "plan_consultas",
+      "proposito": "Grilla de celdas/radios usada en el piloto; modelo de costo por celda",
+      "cobertura_temporal": "2026-07-08",
+      "cobertura_espacial": "4 zonas piloto",
+      "reutilizable": "SI",
+      "limitaciones": "Solo celdas ejecutadas del piloto",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-PLAN-A",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
+      "tipo": "plan_consultas",
+      "proposito": "Plan de celdas tanda A ampliacion",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "macrozonas criticas",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-PLAN-B",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv",
+      "tipo": "plan_consultas",
+      "proposito": "Plan de celdas tanda B ampliacion",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "macrozonas de consolidacion",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-CACHE-PILOTO",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/interno/places_resultados_interno.csv",
+      "tipo": "cache_interno_places",
+      "proposito": "Respuestas crudas del piloto (cache reproducible, con place_id y nombres)",
+      "cobertura_temporal": "2026-07-08",
+      "cobertura_espacial": "4 zonas piloto",
+      "reutilizable": "SI (solo lectura interna)",
+      "limitaciones": "INTERNO: contiene place_id y nombres comerciales; NUNCA al paquete ni a Git publico",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-CACHE-COMPLETA",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/places_consolidados_interno.csv",
+      "tipo": "cache_interno_places",
+      "proposito": "Consolidado interno de todas las respuestas Places (piloto + A + B + refino); base de incrementalidad",
+      "cobertura_temporal": "2026-07-08/09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI (solo lectura interna)",
+      "limitaciones": "INTERNO: place_id y nombres; NUNCA al paquete",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-DEDUP-INTERNA",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/tabla_deduplicacion_interna.csv",
+      "tipo": "tabla_dedup",
+      "proposito": "Trazabilidad fila a fila de la deduplicacion Places vs F01/F02",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI (solo lectura interna)",
+      "limitaciones": "INTERNO: nombres comerciales",
+      "sensible": true
+    },
+    {
+      "insumo_id": "INS-DEDUP-RESUMEN",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/tabla_deduplicacion_resumen.csv",
+      "tipo": "tabla_dedup",
+      "proposito": "Resumen agregado de deduplicacion (tasas por zona); reutilizable para calibrar reglas",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-QA-INTEGRACION",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/qa_integracion_completa_v1.json",
+      "tipo": "qa",
+      "proposito": "QA de la integracion completa V1 (conteos, tasas de match)",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-MICROZONAS-V1",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/POLIGONOS_MICROZONAS_COMPLETA_V1.geojson",
+      "tipo": "output_clustering",
+      "proposito": "78 poligonos de microzonas de la corrida completa V1; referencia de estructura fina existente",
+      "cobertura_temporal": "2026-07-09",
+      "cobertura_espacial": "11 macrozonas",
+      "reutilizable": "SI (lectura)",
+      "limitaciones": "Experimental, no adoptado; no modificar",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-MACROZONAS-V41",
+      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1/poligonos_v4_1_mapa_principal_dibujo.geojson",
+      "tipo": "capa_editorial_cerrada",
+      "proposito": "Capa editorial v4.1 (baseline cerrada) para estudiar transiciones; solo lectura",
+      "cobertura_temporal": "2026-07",
+      "cobertura_espacial": "macrozonas editoriales",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida POLOS-EXP-CARTO-V4X",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-BELGRANO",
+      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Geometria vigente V3.1 del polo Belgrano; control de solapamiento",
+      "cobertura_temporal": "2026-07-11",
+      "cobertura_espacial": "Belgrano",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "No modificar; linea V3.1 cerrada",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-RECOLETA",
+      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Geometria vigente V3.1 del polo Recoleta; control de solapamiento",
+      "cobertura_temporal": "2026-07-11",
+      "cobertura_espacial": "Recoleta",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "No modificar",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-COSTANERA",
+      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Geometria vigente V3.1 del polo Costanera Norte; control de solapamiento",
+      "cobertura_temporal": "2026-07-11",
+      "cobertura_espacial": "Costanera Norte",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "No modificar",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-PALERMO",
+      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Geometria de presentacion V2.1 del polo Palermo; control de solapamiento",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "Palermo",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida POLOS-HIBRIDO-INT-V21-OUT",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-CORRIENTES",
+      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Corredor Corrientes V2.1 (incluye subzona Abasto); control clave para Z06",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "Av. Corrientes",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-SANTELMO",
+      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Nucleo San Telmo V2.1; control de solapamiento",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "San Telmo",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-POLO-PMADERO",
+      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
+      "tipo": "polo_adoptado",
+      "proposito": "Puerto Madero V2.1; control de solapamiento",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "Puerto Madero",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-CASEROS-V21",
+      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/caseros_barracas_corredor_presentacion_v21.geojson",
+      "tipo": "analisis_previo_candidato",
+      "proposito": "Corredor Caseros/Barracas ya analizado en V2.1 (no adoptado); punto de partida para Z04",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "Av. Caseros",
+      "reutilizable": "SI (solo lectura)",
+      "limitaciones": "Superficie protegida; no adoptado",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-CONSULTA",
+      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_piloto/preparar_consultas_places_piloto.py",
+      "tipo": "script_consulta_places",
+      "proposito": "Generador de grillas de consulta Places por celda (patron reutilizable)",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "Zonas hardcodeadas del piloto; adaptar a config V4",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-AMPLIACION",
+      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py",
+      "tipo": "script_consulta_places",
+      "proposito": "Version ampliada del generador de consultas con tandas A/B",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "Adaptar a zonas V4",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-REFINO",
+      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/refinar_celdas_saturadas_places.py",
+      "tipo": "script_consulta_places",
+      "proposito": "Refino 3x3 de celdas saturadas (>= tope de resultados); patron anti-saturacion",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-UNIVERSO",
+      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/construir_integracion_completa_v1.py",
+      "tipo": "script_integracion_dedup",
+      "proposito": "Integracion F01/F02 + Places con deduplicacion (reglas vigentes de match)",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "Adaptar contrato de columnas V4",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-CLUSTERING",
+      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/detectar_microzonas_completa_v1.py",
+      "tipo": "script_clustering",
+      "proposito": "Clustering de microzonas (HDBSCAN-like por grilla) usado en la corrida completa V1",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "Parametros calibrados para macrozonas ya consultadas",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-SCRIPT-HIBRIDO",
+      "ruta": "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py",
+      "tipo": "script_clustering",
+      "proposito": "Pipeline hibrido por tipo territorial (nucleo/corredor/multiparte) con metodos de control",
+      "cobertura_temporal": "-",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI (como plantilla)",
+      "limitaciones": "Superficie protegida (copiar, no modificar)",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-DOC-PLAN-PILOTO",
+      "ruta": "docs/polos_gastro/experimentos/google_places_microzonas_piloto/PLAN_API_GOOGLE_PLACES_PILOTO.md",
+      "tipo": "doc_costos_trazabilidad",
+      "proposito": "Plan del piloto: costos por consulta, limites, autorizacion, trazabilidad",
+      "cobertura_temporal": "2026-07",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-DOC-PLAN-AMPLIACION",
+      "ruta": "docs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/PLAN_AMPLIACION_GOOGLE_PLACES_V1.md",
+      "tipo": "doc_costos_trazabilidad",
+      "proposito": "Plan de la ampliacion V1: presupuesto de consultas por tanda y criterios de corte",
+      "cobertura_temporal": "2026-07",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-DOC-CONSULTAS-FUTURAS",
+      "ruta": "docs/polos_gastro/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1/PLAN_CONSULTAS_QUIRURGICAS_PLACES_FUTURAS.md",
+      "tipo": "doc_costos_trazabilidad",
+      "proposito": "Politica vigente de consultas quirurgicas futuras (0 consultas sin autorizacion)",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-DOC-EVAL-PLACES",
+      "ruta": "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/EVALUACION_PLACES_POST_ESCALADO_V21.md",
+      "tipo": "doc_metodologico",
+      "proposito": "Evaluacion del aporte de Places post escalado; calibra tolerancia a dependencia de Places",
+      "cobertura_temporal": "2026-07-10",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    },
+    {
+      "insumo_id": "INS-PROTECTED",
+      "ruta": "docs/polos_gastro/PROTECTED_SURFACES.yaml",
+      "tipo": "gobernanza",
+      "proposito": "Registro de superficies protegidas del subproyecto",
+      "cobertura_temporal": "2026-07-11",
+      "cobertura_espacial": "-",
+      "reutilizable": "SI",
+      "limitaciones": "-",
+      "sensible": false
+    }
+  ],
+  "zonas": [
+    {
+      "zona_id": "Z01",
+      "slug": "villa_crespo",
+      "nombre": "Villa Crespo",
+      "tanda": 1,
+      "hipotesis_principal": "MULTIPARTE",
+      "hipotesis_alternativa": "RED_DE_NODOS",
+      "metodo_principal": "HDBSCAN + comunidades de grafo sobre universo combinado",
+      "metodos_control": "KDE; continuidad por vecinos; concave hull restringido; ablacion por fuente; bootstrap por bloques",
+      "riesgo_sesgo": "Arrastre gravitacional de Palermo; sobrerrepresentacion del borde Cordoba/Scalabrini",
+      "zonas_vecinas": "Z02;Z03;polo_palermo",
+      "polo_adoptado_cercano": "palermo",
+      "pregunta_territorial": "Villa Crespo es unidad independiente, red de nodos propia o continuacion funcional de Palermo?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Villa Crespo"
+          ],
+          "buffer_m": 0
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "THAMES"
+            ],
+            "barrios": [
+              "Villa Crespo"
+            ],
+            "buffer_m": 0,
+            "obs": "Eje oficial Turismo BA; riesgo absorcion Palermo"
+          },
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "GURRUCHAGA"
+            ],
+            "barrios": [
+              "Villa Crespo"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "VELAZCO"
+            ],
+            "barrios": [
+              "Villa Crespo"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "Villa Crespo",
+            "barrio_b": "Palermo",
+            "buffer_m": 350
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "Villa Crespo",
+            "barrio_b": "Chacarita",
+            "buffer_m": 350
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "palermo"
+          }
+        ]
+      },
+      "nombre_tecnico": "Villa Crespo",
+      "alias_dudosos": [
+        "Chacacrespo"
+      ]
+    },
+    {
+      "zona_id": "Z02",
+      "slug": "chacarita",
+      "nombre": "Chacarita",
+      "tanda": 1,
+      "hipotesis_principal": "MULTIPARTE",
+      "hipotesis_alternativa": "CORREDOR_LINEAL",
+      "metodo_principal": "HDBSCAN + comunidades de grafo; nucleo vs periferia",
+      "metodos_control": "KDE; concave hull restringido; multiparte; ablacion por fuente; bootstrap por bloques",
+      "riesgo_sesgo": "Cementerio y playones ferroviarios generan vacios estructurales que fragmentan clusters",
+      "zonas_vecinas": "Z01;Z12;polo_palermo",
+      "polo_adoptado_cercano": "palermo",
+      "pregunta_territorial": "Hay corredor Newbery y/o nucleo Dorrego? Independiente de Palermo y de Lacroze completa?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Chacarita"
+          ],
+          "buffer_m": 0
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "NEWBERY, JORGE AV.",
+              "NEWBERY, JORGE"
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 0,
+            "obs": "Corredor documentado prensa+oficial (Dorrego-Newbery)"
+          },
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "DORREGO AV.",
+              "DORREGO"
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 0,
+            "obs": "Posible segundo nucleo (Condarco/Dorrego)"
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "Chacarita",
+            "barrio_b": "Villa Crespo",
+            "buffer_m": 350
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "Chacarita",
+            "barrio_b": "Palermo",
+            "buffer_m": 350,
+            "obs": "No crear unidad Chacalermo"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "LACROZE, FEDERICO AV."
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 200,
+            "obs": "Control: no usar Lacroze completa como proxy de Chacarita"
+          }
+        ],
+        "subunidades": [
+          {
+            "subunidad_id": "Z02-S1",
+            "nombre": "Corredor Newbery",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "NEWBERY, JORGE AV.",
+              "NEWBERY, JORGE"
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 250
+          },
+          {
+            "subunidad_id": "Z02-S2",
+            "nombre": "Nucleo Dorrego",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "DORREGO AV.",
+              "DORREGO"
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 250
+          }
+        ]
+      },
+      "nombre_tecnico": "Chacarita",
+      "alias_dudosos": [
+        "Chacalermo",
+        "Chacacrespo"
+      ]
+    },
+    {
+      "zona_id": "Z03",
+      "slug": "caballito",
+      "nombre": "Caballito",
+      "tanda": 1,
+      "hipotesis_principal": "MULTIPARTE",
+      "hipotesis_alternativa": "UNIDAD_BARRIAL",
+      "metodo_principal": "HDBSCAN + comunidades de grafo; evaluar multiparte (Rivadavia vs Pedro Goyena vs Parque Centenario)",
+      "metodos_control": "KDE; continuidad por vecinos; multiparte; ablacion por fuente; bootstrap por bloques",
+      "riesgo_sesgo": "Barrio grande: promedio barrial diluye nucleos; efecto avenida sobre Rivadavia",
+      "zonas_vecinas": "Z01;Z07",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "Caballito funciona como una unidad o como varias piezas separadas (Rivadavia, Goyena, Centenario)?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Caballito"
+          ],
+          "buffer_m": 0
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "GOYENA, PEDRO AV."
+            ],
+            "barrios": [
+              "Caballito"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "RIVADAVIA AV."
+            ],
+            "barrios": [
+              "Caballito"
+            ],
+            "buffer_m": 0
+          }
+        ],
+        "subunidades": [
+          {
+            "subunidad_id": "Z03-S1",
+            "nombre": "Pedro Goyena",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "GOYENA, PEDRO AV."
+            ],
+            "barrios": [
+              "Caballito"
+            ],
+            "buffer_m": 250
+          },
+          {
+            "subunidad_id": "Z03-S2",
+            "nombre": "Primera Junta-Mercado del Progreso",
+            "tipo": "nodo_aproximado",
+            "calle_a": "RIVADAVIA AV.",
+            "calle_b": "ROJAS",
+            "radio_m": 400,
+            "barrios": [
+              "Caballito"
+            ],
+            "obs": "Nodo Primera Junta / Mercado del Progreso"
+          },
+          {
+            "subunidad_id": "Z03-S3",
+            "nombre": "Patio de los Lecheros",
+            "tipo": "nodo_aproximado",
+            "calle_a": "DONATO ALVAREZ AV.",
+            "calle_b": "BACACAY",
+            "radio_m": 350,
+            "barrios": [
+              "Caballito"
+            ],
+            "obs": "Hito patio; no proxy del barrio"
+          },
+          {
+            "subunidad_id": "Z03-S4",
+            "nombre": "Parque Rivadavia",
+            "tipo": "nodo_aproximado",
+            "calle_a": "RIVADAVIA AV.",
+            "calle_b": "SUBIRANA",
+            "radio_m": 400,
+            "barrios": [
+              "Caballito"
+            ]
+          }
+        ]
+      },
+      "nombre_tecnico": "Caballito (multinodo)"
+    },
+    {
+      "zona_id": "Z04",
+      "slug": "av_caseros",
+      "nombre": "Boulevard Caseros (tramo)",
+      "tanda": 1,
+      "hipotesis_principal": "CORREDOR_LINEAL",
+      "hipotesis_alternativa": "MICROCENTRALIDAD",
+      "metodo_principal": "Densidad longitudinal + continuidad por tramos sobre el eje",
+      "metodos_control": "Distancia al eje; buffers variables; subtramos; comparacion contra clustering compacto",
+      "riesgo_sesgo": "Corredor corto: pocos puntos pueden inflar o desinflar continuidad; borde con Parque Lezama/San Telmo",
+      "zonas_vecinas": "polo_san_telmo",
+      "polo_adoptado_cercano": "san_telmo",
+      "pregunta_territorial": "El tramo gastronomico de Caseros es corredor autonomo o microcentralidad asociada a San Telmo/Parque Lezama?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje_en_barrios",
+          "calles": [
+            "CASEROS AV."
+          ],
+          "barrios": [
+            "Barracas",
+            "San Telmo",
+            "Constitucion"
+          ],
+          "buffer_m": 200,
+          "obs": "Hipotesis principal: tramo documentado Defensa-Bolivar; no extender a Patricios"
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "CASEROS AV."
+            ],
+            "barrios": [
+              "Barracas",
+              "San Telmo"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "san_telmo"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "barrios",
+            "barrios": [
+              "Parque Patricios"
+            ],
+            "buffer_m": 0,
+            "obs": "Control: patio Patricios es otro objeto"
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "CASEROS AV."
+            ],
+            "barrios": [
+              "Barracas",
+              "San Telmo",
+              "Constitucion"
+            ],
+            "buffer_m": 400
+          }
+        ]
+      },
+      "nombre_tecnico": "Boulevard Caseros (Parque Lezama)",
+      "alias_dudosos": [
+        "Polo Caseros",
+        "Caseros=Barracas completa",
+        "Caseros=Patricios"
+      ]
+    },
+    {
+      "zona_id": "Z05",
+      "slug": "microcentro_centro",
+      "nombre": "Microcentro y Centro",
+      "tanda": 4,
+      "hipotesis_principal": "MULTIPARTE",
+      "hipotesis_alternativa": "RED_DE_NODOS",
+      "metodo_principal": "Analisis por subunidades (SC01-SC08) con grafo, corredores, nodos y frentes; nunca un unico poligono",
+      "metodos_control": "Comparacion entre subunidades; transiciones; ablacion por fuente; control dia/noche si la evidencia lo permite",
+      "riesgo_sesgo": "Gran area central indiferenciada; sesgo de oficinas (oferta diurna) y turismo; alta densidad de duplicados",
+      "zonas_vecinas": "Z06;Z11;polo_corrientes;polo_san_telmo;polo_puerto_madero",
+      "polo_adoptado_cercano": "corrientes",
+      "pregunta_territorial": "Que subunidades del Centro constituyen piezas gastronomicas con entidad propia y como se relacionan entre si y con los polos adoptados?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "San Nicolas",
+            "Monserrat"
+          ],
+          "buffer_m": 0,
+          "obs": "Envelope de trabajo; NO es unidad de adopcion ni consulta unica"
+        },
+        "extras": [
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "San Nicolas",
+            "barrio_b": "Retiro",
+            "buffer_m": 300,
+            "obs": "Ventana hacia Retiro/Nuevo Bajo"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "corrientes"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "san_telmo"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "puerto_madero"
+          }
+        ]
+      },
+      "nombre_tecnico": "Familia Centro (subunidades)",
+      "alias_dudosos": [
+        "Centro unitario",
+        "Microcentro=todo el Centro"
+      ]
+    },
+    {
+      "zona_id": "Z06",
+      "slug": "abasto",
+      "nombre": "Abasto",
+      "tanda": 4,
+      "hipotesis_principal": "MICROCENTRALIDAD",
+      "hipotesis_alternativa": "POSIBLE_SUBPOLO",
+      "metodo_principal": "Clustering compacto de radio pequeno con control de minimo de puntos y estabilidad",
+      "metodos_control": "Relacion con corredor Corrientes adoptado; comparacion nucleo propio vs continuidad; bootstrap",
+      "riesgo_sesgo": "Shopping Abasto concentra puntos en un edificio multiproposito; el corredor Corrientes adoptado ya cubre parte del area",
+      "zonas_vecinas": "polo_corrientes;Z05",
+      "polo_adoptado_cercano": "corrientes",
+      "pregunta_territorial": "Abasto tiene nucleo propio o es area asociada/subpolo del corredor Corrientes adoptado? (Abasto = subzona de Corrientes segun alcance vigente)",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje_tramo_alturas",
+          "calles": [
+            "CORRIENTES AV."
+          ],
+          "altura_min": 3000,
+          "altura_max": 3800,
+          "buffer_m": 350,
+          "obs": "Nucleo Abasto; excluir pizzerias centro (Güerrin/Cuartetas) como prueba"
+        },
+        "extras": [
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "corrientes"
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "eje_tramo_alturas",
+            "calles": [
+              "CORRIENTES AV."
+            ],
+            "altura_min": 2800,
+            "altura_max": 4000,
+            "buffer_m": 500
+          }
+        ]
+      },
+      "nombre_tecnico": "Abasto (nucleo cultural-comercial)",
+      "alias_dudosos": [
+        "Abasto=Corrientes centro",
+        "Güerrin como ancla Abasto"
+      ]
+    },
+    {
+      "zona_id": "Z07",
+      "slug": "av_boedo",
+      "nombre": "Avenida Boedo",
+      "tanda": 2,
+      "hipotesis_principal": "CORREDOR_LINEAL",
+      "hipotesis_alternativa": "NUCLEO_COMPACTO",
+      "metodo_principal": "Densidad longitudinal + continuidad por tramos",
+      "metodos_control": "Distancia al eje; vacios; subtramos; comparacion contra clustering compacto (nucleo San Juan/Boedo)",
+      "riesgo_sesgo": "Efecto avenida: el buffer puede fabricar un corredor donde hay un nucleo en la interseccion San Juan/Boedo",
+      "zonas_vecinas": "Z03",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "La oferta de Boedo es un corredor continuo o un nucleo alrededor de San Juan y Boedo con extensiones?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje_en_barrios",
+          "calles": [
+            "BOEDO AV."
+          ],
+          "barrios": [
+            "Boedo"
+          ],
+          "buffer_m": 250
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "BOEDO AV."
+            ],
+            "barrios": [
+              "Boedo"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "barrios",
+            "barrios": [
+              "Boedo"
+            ],
+            "buffer_m": 0,
+            "obs": "Barrio completo como control de que el corredor no recorte oferta lateral"
+          }
+        ]
+      }
+    },
+    {
+      "zona_id": "Z08",
+      "slug": "devoto",
+      "nombre": "Devoto",
+      "tanda": 2,
+      "hipotesis_principal": "UNIDAD_BARRIAL",
+      "hipotesis_alternativa": "MICROCENTRALIDAD",
+      "metodo_principal": "HDBSCAN + KDE; nucleo esperado en entorno plaza Arenales/Mercado de Devoto",
+      "metodos_control": "Continuidad por vecinos; concave hull restringido; ablacion por fuente; bootstrap",
+      "riesgo_sesgo": "Barrio residencial grande con nucleo chico: riesgo de dilucion o de promocion forzada",
+      "zonas_vecinas": "Z15",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "El circuito de Devoto alcanza masa y continuidad para unidad propia o es una microcentralidad?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Villa Devoto"
+          ],
+          "buffer_m": 0
+        },
+        "extras": []
+      }
+    },
+    {
+      "zona_id": "Z09",
+      "slug": "donado_holmberg",
+      "nombre": "Corredor Donado-Holmberg",
+      "tanda": 2,
+      "hipotesis_principal": "CORREDOR_LINEAL",
+      "hipotesis_alternativa": "BANDA_TERRITORIAL",
+      "metodo_principal": "Densidad longitudinal sobre par Donado/Holmberg + continuidad por tramos",
+      "metodos_control": "Buffers variables; lineas o bandas; comparacion contra clustering compacto; control contra oferta general de Villa Urquiza",
+      "riesgo_sesgo": "Corredor nuevo y en consolidacion: pocos puntos administrativos, alta dependencia de Places",
+      "zonas_vecinas": "Z10;Z13",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "DoHo es corredor separable de la oferta general de Villa Urquiza y del eje Garcia del Rio, o hay continuidad entre los tres?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje_en_barrios",
+          "calles": [
+            "DONADO",
+            "HOLMBERG"
+          ],
+          "barrios": [
+            "Villa Urquiza",
+            "Coghlan"
+          ],
+          "buffer_m": 200
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "DONADO",
+              "HOLMBERG"
+            ],
+            "barrios": [
+              "Villa Urquiza",
+              "Coghlan",
+              "Villa Ortuzar",
+              "Parque Chas"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "DONADO",
+              "HOLMBERG"
+            ],
+            "barrios": [
+              "Villa Urquiza",
+              "Coghlan",
+              "Villa Ortuzar",
+              "Parque Chas"
+            ],
+            "buffer_m": 450,
+            "obs": "Banda amplia para separar DoHo de Villa Urquiza general"
+          }
+        ]
+      },
+      "nombre_tecnico": "Donado-Holmberg",
+      "alias_dudosos": [
+        "DoHo",
+        "DoHo=Villa Urquiza"
+      ]
+    },
+    {
+      "zona_id": "Z10",
+      "slug": "villa_urquiza",
+      "nombre": "Villa Urquiza",
+      "tanda": 2,
+      "hipotesis_principal": "UNIDAD_BARRIAL",
+      "hipotesis_alternativa": "RED_DE_NODOS",
+      "metodo_principal": "HDBSCAN + comunidades de grafo, separando explicitamente el aporte de DoHo",
+      "metodos_control": "KDE; multiparte; ablacion por fuente (con y sin banda DoHo); bootstrap",
+      "riesgo_sesgo": "DoHo puede dominar el cluster barrial y hacer pasar un corredor por unidad barrial",
+      "zonas_vecinas": "Z09;Z13",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "Existe unidad gastronomica de Villa Urquiza mas alla de DoHo (nucleo Triunvirato/Monroe)?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Villa Urquiza"
+          ],
+          "buffer_m": 0
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "TRIUNVIRATO AV."
+            ],
+            "barrios": [
+              "Villa Urquiza"
+            ],
+            "buffer_m": 0
+          }
+        ]
+      }
+    },
+    {
+      "zona_id": "Z11",
+      "slug": "nuevo_bajo_retiro",
+      "nombre": "Esmeralda-Paraguay (Retiro)",
+      "tanda": 4,
+      "hipotesis_principal": "MICROCENTRALIDAD",
+      "hipotesis_alternativa": "POSIBLE_TRANSICION",
+      "metodo_principal": "Clustering compacto de radio pequeno centrado en Esmeralda-Paraguay con control de estabilidad",
+      "metodos_control": "Ventanas de transicion hacia Microcentro, Retiro y Recoleta; minimo de puntos; bootstrap",
+      "riesgo_sesgo": "Zona de oficinas y hoteles: oferta diurna/turistica; riesgo de fundirse en un continuo central indiferenciado",
+      "zonas_vecinas": "Z05;polo_recoleta",
+      "polo_adoptado_cercano": "recoleta",
+      "pregunta_territorial": "La microcentralidad Esmeralda-Paraguay es distinguible del Microcentro y de Retiro, y como se vincula con Recoleta?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "nodo",
+          "calle_a": "ESMERALDA",
+          "calle_b": "PARAGUAY",
+          "radio_m": 400
+        },
+        "extras": [
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "nodo",
+            "calle_a": "ESMERALDA",
+            "calle_b": "PARAGUAY",
+            "radio_m": 750,
+            "obs": "Ventana amplia hacia Microcentro/Retiro/Recoleta"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "recoleta"
+          }
+        ]
+      },
+      "nombre_tecnico": "Retiro - Esmeralda-Paraguay",
+      "alias_dudosos": [
+        "Nuevo Bajo (toponimo no oficial)",
+        "Bajo porteno"
+      ]
+    },
+    {
+      "zona_id": "Z12",
+      "slug": "av_federico_lacroze",
+      "nombre": "Av. Federico Lacroze (Libertador a Cabildo)",
+      "tanda": 3,
+      "hipotesis_principal": "POSIBLE_TRANSICION",
+      "hipotesis_alternativa": "CORREDOR_LINEAL",
+      "metodo_principal": "Densidad longitudinal por tramos entre Libertador y Cabildo",
+      "metodos_control": "Distancia al eje; vacios; buffers variables; control contra nucleo Chacarita y transicion Colegiales/Palermo",
+      "riesgo_sesgo": "El tramo pedido cruza Palermo/Colegiales/Belgrano: riesgo de solapamiento con polos adoptados en ambos extremos",
+      "zonas_vecinas": "Z02;polo_palermo;polo_belgrano",
+      "polo_adoptado_cercano": "belgrano",
+      "pregunta_territorial": "El tramo Libertador-Cabildo de Lacroze es corredor propio o transicion entre Belgrano/Las Canitas y Chacarita?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje_entre_cruces",
+          "calles": [
+            "LACROZE, FEDERICO AV."
+          ],
+          "cruce_a": "DEL LIBERTADOR AV.",
+          "cruce_b": "CABILDO AV.",
+          "buffer_m": 250
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje_entre_cruces",
+            "calles": [
+              "LACROZE, FEDERICO AV."
+            ],
+            "cruce_a": "DEL LIBERTADOR AV.",
+            "cruce_b": "CABILDO AV.",
+            "buffer_m": 0
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "belgrano"
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "polo_adoptado",
+            "polo": "palermo"
+          }
+        ],
+        "subunidades": [
+          {
+            "subunidad_id": "Z12-T1",
+            "nombre": "Lacroze tramo Chacarita-estacion",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "LACROZE, FEDERICO AV."
+            ],
+            "barrios": [
+              "Chacarita"
+            ],
+            "buffer_m": 200
+          },
+          {
+            "subunidad_id": "Z12-T2",
+            "nombre": "Lacroze tramo Colegiales",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "LACROZE, FEDERICO AV."
+            ],
+            "barrios": [
+              "Colegiales"
+            ],
+            "buffer_m": 200
+          },
+          {
+            "subunidad_id": "Z12-T3",
+            "nombre": "Lacroze tramo Belgrano (Cabildo)",
+            "tipo": "eje_en_barrios",
+            "calles": [
+              "LACROZE, FEDERICO AV."
+            ],
+            "barrios": [
+              "Belgrano"
+            ],
+            "buffer_m": 200
+          }
+        ]
+      },
+      "nombre_tecnico": "Federico Lacroze (por tramos)"
+    },
+    {
+      "zona_id": "Z13",
+      "slug": "garcia_del_rio",
+      "nombre": "Garcia del Rio (Saavedra)",
+      "tanda": 3,
+      "hipotesis_principal": "CORREDOR_LINEAL",
+      "hipotesis_alternativa": "MICROCENTRALIDAD",
+      "metodo_principal": "Densidad longitudinal sobre Garcia del Rio + frente Parque Saavedra",
+      "metodos_control": "Subtramos; buffers variables; comparacion contra clustering compacto; control de continuidad con DoHo",
+      "riesgo_sesgo": "Frente de parque: oferta concentrada de un solo lado del eje; pocos puntos administrativos",
+      "zonas_vecinas": "Z09;Z10",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "Garcia del Rio es corredor propio, extension de DoHo o frente gastronomico del parque?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "eje",
+          "calles": [
+            "GARCIA DEL RIO AV.",
+            "GARCIA DEL RIO"
+          ],
+          "buffer_m": 250
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje",
+            "calles": [
+              "GARCIA DEL RIO AV.",
+              "GARCIA DEL RIO"
+            ],
+            "buffer_m": 0
+          },
+          {
+            "rol": "CONTROL_VECINO",
+            "tipo": "barrios",
+            "barrios": [
+              "Saavedra"
+            ],
+            "buffer_m": 0,
+            "obs": "Parque Saavedra como control espacial, no como sinonimo del corredor"
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "eje",
+            "calles": [
+              "GARCIA DEL RIO AV.",
+              "GARCIA DEL RIO"
+            ],
+            "buffer_m": 450
+          }
+        ]
+      },
+      "nombre_tecnico": "Garcia del Rio (corredor)",
+      "alias_dudosos": [
+        "Parque Saavedra = polo"
+      ]
+    },
+    {
+      "zona_id": "Z14",
+      "slug": "paternal",
+      "nombre": "Circuito gastronomico de Paternal",
+      "tanda": 3,
+      "hipotesis_principal": "MICROCENTRALIDAD",
+      "hipotesis_alternativa": "RED_DE_NODOS",
+      "metodo_principal": "Clustering compacto de radio pequeno con minimo de puntos; deteccion de nodos emergentes",
+      "metodos_control": "Estabilidad; relacion con Villa Crespo/Chacarita; riesgo de promocion excesiva",
+      "riesgo_sesgo": "Circuito emergente mediatizado: alta dependencia de Places y de visibilidad digital",
+      "zonas_vecinas": "Z01;Z02",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "El circuito de Paternal tiene masa critica real o es una narrativa mediatica sobre pocos puntos?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Paternal"
+          ],
+          "buffer_m": 0
+        },
+        "extras": [
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "banda_limite",
+            "barrio_a": "Paternal",
+            "barrio_b": "Villa Crespo",
+            "buffer_m": 350,
+            "obs": "Triple frontera Honorio Pueyrredon"
+          }
+        ]
+      },
+      "nombre_tecnico": "La Paternal",
+      "alias_dudosos": [
+        "Distrito del Vino = Paternal"
+      ]
+    },
+    {
+      "zona_id": "Z15",
+      "slug": "villa_pueyrredon_san_martin",
+      "nombre": "Villa Pueyrredon - Av. San Martin",
+      "tanda": 3,
+      "hipotesis_principal": "CORREDOR_LINEAL",
+      "hipotesis_alternativa": "UNIDAD_BARRIAL",
+      "metodo_principal": "Densidad longitudinal sobre Av. San Martin en Villa Pueyrredon",
+      "metodos_control": "Distancia al eje; subtramos; comparacion contra barrio completo; vacios",
+      "riesgo_sesgo": "Avenida comercial general: mezcla de rubros no gastronomicos; corredor largo con densidad baja",
+      "zonas_vecinas": "Z08",
+      "polo_adoptado_cercano": "ninguno",
+      "pregunta_territorial": "Existe tramo gastronomico continuo de Av. San Martin en Villa Pueyrredon o solo comercio general con puntos dispersos?",
+      "geometria": {
+        "area_principal": {
+          "tipo": "barrios",
+          "barrios": [
+            "Villa Pueyrredon"
+          ],
+          "buffer_m": 0,
+          "obs": "Callejero: SAN MARTIN AV. no cruza el poligono barrial; prior barrial exploratorio"
+        },
+        "extras": [
+          {
+            "rol": "EJE_REFERENCIA",
+            "tipo": "eje",
+            "calles": [
+              "SAN MARTIN AV."
+            ],
+            "buffer_m": 0,
+            "obs": "Eje regional de contexto; no equivale a corredor de Villa Pueyrredon"
+          },
+          {
+            "rol": "AREA_TRANSICION",
+            "tipo": "eje",
+            "calles": [
+              "SAN MARTIN AV."
+            ],
+            "buffer_m": 300,
+            "obs": "Banda de Av. San Martin para medir oferta limítrofe (Devoto/Paternal)"
+          }
+        ]
+      },
+      "nombre_tecnico": "Villa Pueyrredon (exploratorio)",
+      "alias_dudosos": [
+        "Av. San Martin completa multi-barrio"
+      ]
+    }
+  ],
+  "subunidades_centro": [
+    {
+      "sub_id": "C-S01",
+      "nombre": "Microcentro financiero",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "RED_DE_NODOS",
+      "construccion": {
+        "tipo": "nodo",
+        "calle_a": "FLORIDA",
+        "calle_b": "CORRIENTES AV.",
+        "radio_m": 450
+      },
+      "fuente": "callejero + itinerarios oficiales",
+      "calles": "Florida; Reconquista; Lavalle; San Martin",
+      "nodos": "area financiera/peatonal",
+      "relacion": "adyacente C-S04/C-S08",
+      "riesgo": "confundir con todo Centro",
+      "metodo_recomendado": "Grafo + nodos",
+      "estado": "ACTIVA"
+    },
+    {
+      "sub_id": "C-S02",
+      "nombre": "Bajo porteno (referencia ambigua)",
+      "places_independiente": false,
+      "prioridad": "NO_CONSULTAR",
+      "tipo_esperado": "INDETERMINADO",
+      "construccion": {
+        "tipo": "eje_en_barrios",
+        "calles": [
+          "ALEM, LEANDRO N. AV."
+        ],
+        "barrios": [
+          "San Nicolas",
+          "Retiro",
+          "Monserrat"
+        ],
+        "buffer_m": 200
+      },
+      "fuente": "toponimo historico ambiguo",
+      "calles": "L.N. Alem (referencia)",
+      "nodos": "—",
+      "relacion": "confundible con C-S07",
+      "riesgo": "ALTO",
+      "metodo_recomendado": "NO consultar hasta definicion",
+      "estado": "REFERENCIA_NO_CONSULTA"
+    },
+    {
+      "sub_id": "C-S03",
+      "nombre": "Plaza de Mayo - Monserrat",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "NUCLEO_COMPACTO",
+      "construccion": {
+        "tipo": "nodo",
+        "calle_a": "BOLIVAR",
+        "calle_b": "DE MAYO AV.",
+        "radio_m": 400
+      },
+      "fuente": "Turismo BA circuito tradicional",
+      "calles": "Bolivar; Yrigoyen; Balcarce",
+      "nodos": "Plaza de Mayo",
+      "relacion": "C-S04; San Telmo",
+      "riesgo": "mezcla con casco turistico",
+      "metodo_recomendado": "Nucleo compacto",
+      "estado": "ACTIVA"
+    },
+    {
+      "sub_id": "C-S04",
+      "nombre": "Avenida de Mayo",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "CORREDOR_LINEAL",
+      "construccion": {
+        "tipo": "eje",
+        "calles": [
+          "DE MAYO AV."
+        ],
+        "buffer_m": 150
+      },
+      "fuente": "Turismo BA",
+      "calles": "Av. de Mayo",
+      "nodos": "Tortoni; Congreso extremo",
+      "relacion": "C-S03",
+      "riesgo": "bajo",
+      "metodo_recomendado": "Corredor por tramos",
+      "estado": "ACTIVA"
+    },
+    {
+      "sub_id": "C-S05",
+      "nombre": "Tribunales",
+      "places_independiente": true,
+      "prioridad": "SECUNDARIA",
+      "tipo_esperado": "MICROCENTRALIDAD",
+      "construccion": {
+        "tipo": "nodo",
+        "calle_a": "TALCAHUANO",
+        "calle_b": "LAVALLE",
+        "radio_m": 350
+      },
+      "fuente": "itinerario oficial Obelisco/Tribunales",
+      "calles": "Talcahuano; Lavalle; Uruguay",
+      "nodos": "Plaza Lavalle; Colon",
+      "relacion": "C-S08 Corrientes",
+      "riesgo": "solape Corrientes",
+      "metodo_recomendado": "Microcentralidad opcional",
+      "estado": "SECUNDARIA"
+    },
+    {
+      "sub_id": "C-S06",
+      "nombre": "Retiro central",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "NUCLEO_COMPACTO",
+      "construccion": {
+        "tipo": "nodo",
+        "calle_a": "MAIPU",
+        "calle_b": "SANTA FE AV.",
+        "radio_m": 400
+      },
+      "fuente": "Turismo en Barrios Retiro",
+      "calles": "Florida norte; Santa Fe; Esmeralda norte",
+      "nodos": "Plaza San Martin",
+      "relacion": "C-S07; Recoleta",
+      "riesgo": "fusion con Esmeralda-Paraguay",
+      "metodo_recomendado": "Nucleo + transicion",
+      "estado": "ACTIVA"
+    },
+    {
+      "sub_id": "C-S07",
+      "nombre": "Esmeralda-Paraguay",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "MICROCENTRALIDAD",
+      "construccion": {
+        "tipo": "nodo",
+        "calle_a": "ESMERALDA",
+        "calle_b": "PARAGUAY",
+        "radio_m": 350
+      },
+      "fuente": "prensa 2020 + listados Retiro; no toponimo oficial Nuevo Bajo",
+      "calles": "Esmeralda; Paraguay",
+      "nodos": "esquina Esmeralda y Paraguay",
+      "relacion": "Z11; C-S06; C-S01",
+      "riesgo": "nombre Nuevo Bajo",
+      "metodo_recomendado": "Radio pequeno; revalidar 2026",
+      "estado": "ACTIVA"
+    },
+    {
+      "sub_id": "C-S08",
+      "nombre": "Corrientes centro (pizza-teatro)",
+      "places_independiente": true,
+      "prioridad": "ALTA",
+      "tipo_esperado": "CORREDOR_LINEAL",
+      "construccion": {
+        "tipo": "eje_tramo_alturas",
+        "calles": [
+          "CORRIENTES AV."
+        ],
+        "altura_min": 800,
+        "altura_max": 2000,
+        "buffer_m": 200
+      },
+      "fuente": "Turismo BA + academia polos 2015 Calle Corrientes",
+      "calles": "Av. Corrientes tramo centro",
+      "nodos": "Guerrin; Las Cuartetas; teatros",
+      "relacion": "NO es Abasto; control polo Corrientes adoptado",
+      "riesgo": "fusion con Z06",
+      "metodo_recomendado": "Corredor; separar de Abasto",
+      "estado": "ACTIVA"
+    }
+  ],
+  "tandas": [
+    {
+      "tanda": 1,
+      "zonas": [
+        "Z01",
+        "Z02",
+        "Z03",
+        "Z04"
+      ],
+      "justificacion": "Cobertura Places 2026-07-09 amplia/parcial + fuerte valor de decision temprana; multi-eje documentado",
+      "dependencias": "Universo completo V1; evidencia documental Grok",
+      "riesgos": "Palermo-Crespo; multinodo Caballito; Caseros extension indebida",
+      "duracion_relativa": "corta",
+      "decisiones_posibles": "Independencia Crespo; multiparte Chacarita; nodos Caballito; tramo Caseros"
+    },
+    {
+      "tanda": 2,
+      "zonas": [
+        "Z07",
+        "Z08",
+        "Z09",
+        "Z10"
+      ],
+      "justificacion": "Norte-oeste y Boedo: DoHo/Urquiza separables; Devoto y Boedo exploratorios",
+      "dependencias": "Calibracion tanda 1; autorizacion Places brechas",
+      "riesgos": "Marca DoHo; dilucion barrial",
+      "duracion_relativa": "media",
+      "decisiones_posibles": "Separabilidad Donado-Holmberg; unidad Devoto; Boedo corredor o no"
+    },
+    {
+      "tanda": 3,
+      "zonas": [
+        "Z13",
+        "Z12",
+        "Z14",
+        "Z15"
+      ],
+      "justificacion": "Periferia y corredores debiles/medios; Lacroze solo tramos; Pueyrredon exploratorio",
+      "dependencias": "Tanda 2 metodos corredor",
+      "riesgos": "Promocion forzada; avenida multi-barrio",
+      "duracion_relativa": "media",
+      "decisiones_posibles": "Garcia del Rio; tramos Lacroze; archipielago Paternal; vacio Pueyrredon"
+    },
+    {
+      "tanda": 4,
+      "zonas": [
+        "Z06",
+        "Z11",
+        "Z05"
+      ],
+      "justificacion": "Centro segmentado + Abasto + Esmeralda-Paraguay; maxima complejidad de solape con adoptados",
+      "dependencias": "Tandas 1-3; decision humana Abasto-Corrientes",
+      "riesgos": "Unidad falsa Centro; solape Corrientes",
+      "duracion_relativa": "larga",
+      "decisiones_posibles": "Subunidades Centro; Abasto asociada/subpolo; nucleo Esmeralda-Paraguay"
+    }
+  ],
+  "riesgos": [
+    {
+      "riesgo_id": "R01",
+      "riesgo": "Sesgo hacia locales visibles digitalmente (Places)",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z09 DoHo; Z14 Paternal; Z11 Nuevo Bajo",
+      "control": "Ablacion por fuente: clusters deben sobrevivir sin Places o declararse dependientes",
+      "metrica": "% puntos del cluster con fuente unica Places",
+      "criterio_detencion": "Cluster con >70% Places-only no se adopta sin validacion adicional"
+    },
+    {
+      "riesgo_id": "R02",
+      "riesgo": "Subregistro administrativo (F01/F02 desactualizados)",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z09; Z13; Z14 (oferta nueva)",
+      "control": "Comparar fecha de habilitacion vs presencia Places; no leer ausencia administrativa como ausencia real",
+      "metrica": "Ratio Places nuevos / registros administrativos por celda",
+      "criterio_detencion": "Nunca descartar zona solo por vacio administrativo"
+    },
+    {
+      "riesgo_id": "R03",
+      "riesgo": "Concentracion de cadenas",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z05 Centro; Z03 Caballito (Rivadavia)",
+      "control": "Marcar multi-sucursal en dedup; medir diversidad de operadores por cluster",
+      "metrica": "% puntos de cadenas por cluster",
+      "criterio_detencion": "Cluster dominado por cadenas se reporta con nota, no se promociona como polo identitario"
+    },
+    {
+      "riesgo_id": "R04",
+      "riesgo": "Centros comerciales y patios gastronomicos como multipunto",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z06 Abasto (shopping); Z05 (galerias); SC08 Florida",
+      "control": "Colapsar puntos en un mismo edificio multiproposito a un representante con peso",
+      "metrica": "Puntos por parcela/edificio",
+      "criterio_detencion": ">15 puntos en un edificio => colapsar antes de clusterizar"
+    },
+    {
+      "riesgo_id": "R05",
+      "riesgo": "Mercados y ferias contados como N locales",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z02 Chacarita; Z08 Devoto (mercados barriales)",
+      "control": "Cruce con F03 (ferias/mercados); tratar mercado como unidad con atributo de puestos",
+      "metrica": "Puntos dentro de poligonos F03",
+      "criterio_detencion": "Mercado no genera cluster por si solo"
+    },
+    {
+      "riesgo_id": "R06",
+      "riesgo": "Duplicados residuales F01/F02/Places",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Todas; mas en Z05 (densidad alta)",
+      "control": "Reglas de dedup del contrato (place_id, distancia+nombre, F01xF02)",
+      "metrica": "Tasa de dedup por zona vs tasa historica (resumen dedup V1)",
+      "criterio_detencion": "Tasa anomala (>2x historica) frena la corrida de esa zona"
+    },
+    {
+      "riesgo_id": "R07",
+      "riesgo": "Locales cerrados aun listados",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z05; Z06 (rotacion alta)",
+      "control": "Usar business_status de Places; F02 como habilitacion (no actividad); lenguaje 'oferta registrada/visible'",
+      "metrica": "% CLOSED_TEMPORARILY/PERMANENTLY",
+      "criterio_detencion": "No publicar conteos como 'locales activos' (guardrail 5)"
+    },
+    {
+      "riesgo_id": "R08",
+      "riesgo": "Zonas limitrofes: puntos asignados al barrio equivocado",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z01/Z02 borde; Z09/Z10; Z12",
+      "control": "Bandas de transicion superpuestas por diseno; asignacion por geometria, no por campo barrio",
+      "metrica": "% puntos a <150m del borde del area",
+      "criterio_detencion": "Zona con >40% puntos de borde exige analisis conjunto con la vecina"
+    },
+    {
+      "riesgo_id": "R09",
+      "riesgo": "Barrios grandes diluyen nucleos (promedio barrial)",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z03 Caballito; Z08 Devoto; Z10 Villa Urquiza",
+      "control": "Clustering sub-barrial obligatorio; nunca reportar solo densidad barrial",
+      "metrica": "Ratio densidad nucleo / densidad barrio",
+      "criterio_detencion": "Sin nucleo con ratio >=3x, la unidad barrial no se adopta como polo"
+    },
+    {
+      "riesgo_id": "R10",
+      "riesgo": "Corredores largos con continuidad ficticia",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z15 San Martin; Z07 Boedo; Z12 Lacroze",
+      "control": "Continuidad por tramos con tolerancia de vacio explicita (ej. 200m); no corredor por buffer solo",
+      "metrica": "Maximo vacio longitudinal; densidad por subtramo",
+      "criterio_detencion": "Vacio >300m corta el corredor en piezas"
+    },
+    {
+      "riesgo_id": "R11",
+      "riesgo": "Puntos en edificios multiproposito (shopping, estaciones)",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z06 (Abasto); SC06 (Retiro); Z05",
+      "control": "Colapso por edificio + peso; ver R04",
+      "metrica": "Puntos por edificio",
+      "criterio_detencion": "Igual a R04"
+    },
+    {
+      "riesgo_id": "R12",
+      "riesgo": "Sesgo turistico (resenas y visibilidad infladas)",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z05; Z11; SC03",
+      "control": "No usar rating/reviews como peso de cluster; solo presencia",
+      "metrica": "user_ratings_total medio por zona (solo diagnostico)",
+      "criterio_detencion": "Ninguna metrica de popularidad define adopcion"
+    },
+    {
+      "riesgo_id": "R13",
+      "riesgo": "Temporalidad: foto unica de Places (2026-07)",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Todas las de tanda 1 (reutilizan datos 2026-07-09)",
+      "control": "Registrar fecha_consulta por punto; declarar corte temporal en todo output",
+      "metrica": "Antiguedad maxima de la consulta al momento de la corrida",
+      "criterio_detencion": "Places >6 meses => evaluar refresco antes de adoptar"
+    },
+    {
+      "riesgo_id": "R14",
+      "riesgo": "Dependencia excesiva de Places en la decision",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z09; Z13; Z14",
+      "control": "Tolerancia por tipo (criterios de adopcion); composicion de fuentes obligatoria en ficha",
+      "metrica": "% Places-only por candidato",
+      "criterio_detencion": "Ver umbrales por tipo en CRITERIOS_ADOPCION"
+    },
+    {
+      "riesgo_id": "R15",
+      "riesgo": "Densidad residencial confundida con centralidad gastronomica",
+      "impacto": "MEDIO",
+      "zonas_mas_afectadas": "Z03; Z08; Z10",
+      "control": "Comparar contra densidad de fondo del barrio (KDE relativo)",
+      "metrica": "Lift de densidad vs fondo barrial",
+      "criterio_detencion": "Lift <2x no sostiene nucleo"
+    },
+    {
+      "riesgo_id": "R16",
+      "riesgo": "Efecto avenida: buffers fabrican corredores",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z04; Z07; Z13; Z15",
+      "control": "Corredor requiere densidad longitudinal y continuidad, no solo pertenencia al buffer; comparar contra clusters compactos",
+      "metrica": "Densidad por 100m de eje; % oferta fuera del buffer",
+      "criterio_detencion": "Si el cluster compacto explica mejor la evidencia, se descarta la forma corredor"
+    },
+    {
+      "riesgo_id": "R17",
+      "riesgo": "Promocion forzada de candidatos (sesgo de expectativa)",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z14 Paternal; Z11 Nuevo Bajo; Z09 DoHo",
+      "control": "Resultado EVIDENCIA_INSUFICIENTE y OFERTA_DISPERSA son salidas legitimas; decision humana documentada",
+      "metrica": "Cumplimiento de minimos del tipo (criterios de adopcion)",
+      "criterio_detencion": "Ningun candidato se adopta por estar en la lista; la lista no es un compromiso"
+    },
+    {
+      "riesgo_id": "R18",
+      "riesgo": "Solapamiento no gestionado con polos adoptados",
+      "impacto": "ALTO",
+      "zonas_mas_afectadas": "Z06 (Corrientes); Z12 (Belgrano/Palermo); Z11 (Recoleta); Z01 (Palermo)",
+      "control": "No recortar automaticamente; registrar solape y decidir relacion (independiente/asociada/subpolo/transicion) con evidencia",
+      "metrica": "% area del candidato solapada con polo adoptado",
+      "criterio_detencion": "Solape >50% obliga a tratar el caso como subpolo/area asociada salvo evidencia en contra"
+    }
+  ],
+  "integracion_documental": {
+    "paquete": "evidencia_documental_expansion_v4",
+    "ruta_docs": "docs/polos_gastro/evidencia_documental_expansion_v4/",
+    "ruta_outputs": "outputs/polos_gastro/evidencia_documental_expansion_v4/",
+    "reglas": [
+      "Solo ABIERTA_Y_LEIDA define ejes/nodos de área",
+      "Snippet = hipótesis/contexto",
+      "SIN_URL no decide",
+      "No nombres comerciales como ID técnico",
+      "No locales semilla como puntos"
+    ]
+  },
+  "correcciones_sobre_claude": [
+    {
+      "campo": "Z02 ejes",
+      "antes": "Lacroze como eje principal",
+      "despues": "Newbery+Dorrego; Lacroze control",
+      "motivo": "Evidencia oficial y Clarín Newbery"
+    },
+    {
+      "campo": "Z03",
+      "antes": "barrio unico + Rivadavia",
+      "despues": "multinodo Goyena/Primera Junta/Lecheros/Rivadavia",
+      "motivo": "Handoff documental multinodo"
+    },
+    {
+      "campo": "Z04",
+      "antes": "Caseros en Barracas/Patricios/Constitucion",
+      "despues": "tramo San Telmo-Barracas; control Patricios",
+      "motivo": "Boulevard Caseros documentado Defensa-Bolivar"
+    },
+    {
+      "campo": "Z09 nombre",
+      "antes": "DoHo",
+      "despues": "Donado-Holmberg (DoHo alias)",
+      "motivo": "Nombre comercial"
+    },
+    {
+      "campo": "Z11 nombre",
+      "antes": "Nuevo Bajo",
+      "despues": "Esmeralda-Paraguay",
+      "motivo": "Toponimo no oficial"
+    },
+    {
+      "campo": "SC08",
+      "antes": "Florida peatonal",
+      "despues": "Corrientes centro (pizza-teatro)",
+      "motivo": "Alineacion C-S08 Grok"
+    },
+    {
+      "campo": "SC02",
+      "antes": "consulta posible",
+      "despues": "NO_CONSULTAR",
+      "motivo": "Ambiguedad Bajo porteno"
+    },
+    {
+      "campo": "tandas",
+      "antes": "documental pura",
+      "despues": "T1 mantiene cobertura Places; orden user Part12",
+      "motivo": "Reconciliacion cobertura+documental"
+    }
+  ]
+}

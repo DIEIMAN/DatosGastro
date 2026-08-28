@@ -1,0 +1,30 @@
+{
+  "fase": "fase29_microajustes_cierre_informe_politico_v2_2",
+  "base_v2_1": {
+    "docs": "docs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
+    "outputs": "outputs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
+    "scripts": "scripts/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
+    "pdf": "outputs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/INFORME_POLOS_GASTRO_POLITICO_INTEGRADO_V2_1.pdf",
+    "zip": "outputs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/REVISION_INFORME_POLITICO_INTEGRADO_V2_1.zip",
+    "yaml": "scripts/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/contenido_informe_politico_integrado_v2_1.yaml",
+    "config": "scripts/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/config_integracion_v2_1.json",
+    "generador": "scripts/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/generar_informe_politico_integrado_v2_1.py"
+  },
+  "costanera_recorte": {
+    "svg_origen": "outputs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1/assets/costanera_norte_media_pagina_v3_2.svg",
+    "viewbox_origen": [0, 0, 828, 388.8],
+    "viewbox_derivado": [150, 55, 560, 290],
+    "salida_width_pt": 828,
+    "salida_height_pt": 428.7857,
+    "dpi_png": 220,
+    "criterio": "recorte de presentacion; conserva componentes, piezas, escala, norte, numeracion y leyenda"
+  },
+  "composicion": {
+    "pagina_2_caja_y": 225,
+    "pagina_2_caja_h": 84,
+    "pagina_2_nota_y": 184,
+    "pagina_9_separacion_panel_mapa": 8,
+    "pagina_9_mapa_y": 68
+  },
+  "estado": "PENDIENTE_REVISION_DIEGO"
+}
