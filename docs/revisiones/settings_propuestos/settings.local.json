@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe *)",
+      "Bash(.venv/Scripts/python.exe -)",
+      "Bash(.venv-tools/Scripts/python.exe *)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git branch*)",
+      "Bash(git check-ignore *)",
+      "Bash(git ls-files*)",
+      "Bash(ls *)",
+      "Bash(cd /c/proyectos/Gastronomia/DataGastro *)",
+      "Bash(graphify *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(.\\.venv\\Scripts\\python.exe *)",
+      "PowerShell(graphify *)",
+      "WebFetch(domain:github.com)"
+    ],
+    "additionalDirectories": [
+      "C:\proyectos\Gastronomia\DataGastro\scripts\cafecito"
+    ]
+  }
+}

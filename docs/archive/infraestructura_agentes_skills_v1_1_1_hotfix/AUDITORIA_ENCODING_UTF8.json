@@ -1,0 +1,391 @@
+{
+  "total": 77,
+  "fallas": [],
+  "items": [
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/ESQUEMA_MANIFEST_V1_1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/EVALUACION_AGENTES_SKILLS_V1_1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/QA_FINAL_INFRAESTRUCTURA_AGENTES_SKILLS_V1_1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/REPORTE_PARIDAD_SKILLS.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/RUN_PLAN_MULTIAGENT.yaml",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/casos_e2e/RESUMEN_E2E.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/diffs/AGENTS.md.before_pointer.txt",
+      "ok_utf8": true,
+      "detalle": "utf-8-sig (BOM presente)"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/diffs/AGENTS.md.current_pre_edit.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/diffs/CLAUDE.md.current_pre_edit.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/diffs/PUNTEROS_APLICADOS.diff",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/registros/PROTECTED_SURFACES_TEMPLATE.yaml",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/claude_propuestos/auditor_qa.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/claude_propuestos/cartografo_territorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/claude_propuestos/integrador_tecnico_editorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/claude_propuestos/investigador_documental.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/claude_propuestos/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/auditor_qa.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/cartografo_territorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/integrador_tecnico_editorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/investigador_documental.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/HANDOFF_CARTOGRAFICO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/HANDOFF_DOCUMENTAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/HANDOFF_EDITORIAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/HANDOFF_INTEGRACION.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/HANDOFF_METODOLOGICO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1/plantillas/plantillas/INFORME_QA.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1_1_hotfix/ENCODING_DIFF_PUNTEROS.json",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1_1_1_hotfix/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "scripts/infraestructura_agentes_skills_v1_1/check_skills_parity.py",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "scripts/infraestructura_agentes_skills_v1_1/empaquetar_revision_v1_1.py",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "scripts/infraestructura_agentes_skills_v1_1/run_casos_e2e_v1_1.py",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "scripts/infraestructura_agentes_skills_v1_1_1_hotfix/empaquetar_y_validar_hotfix.py",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/ARQUITECTURA_AGENTES_SKILLS_V1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/AUDITORIA_INFRAESTRUCTURA_ACTUAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/CATALOGO_REGLAS_REPETIDAS.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/EVALUACION_AGENTES_SKILLS_V1.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/GUIA_USO_AGENTES_SKILLS_DATAGASTRO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/MATRIZ_REGLAS_REUTILIZABLES.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/POLITICA_OPERATIVA_DATAGASTRO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/PROPUESTA_ACTUALIZACION_AGENTS_MD.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/PROPUESTA_ACTUALIZACION_CLAUDE_MD.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/PROPUESTA_CONFIGURACION_CLAUDE_AGENTS.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/auditor_metodologico.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/auditor_qa.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/cartografo_territorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/coordinador.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/editor_institucional.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/integrador_tecnico_editorial.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/agents/investigador_documental.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/casos_prueba/CASO_A_EVIDENCIA_DOCUMENTAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/casos_prueba/CASO_B_PDF_POLITICO_EXPERIMENTAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/casos_prueba/CASO_C_INTEGRACION_V21.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/casos_prueba/CASO_D_CARTOGRAFIA.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_CARTOGRAFICO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_DOCUMENTAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_EDITORIAL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_INTEGRACION.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/HANDOFF_METODOLOGICO.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/plantillas/INFORME_QA.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/auditar_entregable_experimental/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/auditar_evidencia_documental/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/auditar_git_y_archivos_protegidos/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/crear_manifest_hashes_metadata/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/crear_paquete_revision_sanitizado/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/gestionar_decisiones_humanas/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/integrar_handoffs/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/qa_pdf_pagina_por_pagina/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/transformar_cartografia_a_presentacion/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "docs/infraestructura_agentes_skills_v1/skills/validar_metricas_y_kpis/SKILL.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "AGENTS.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "CLAUDE.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    },
+    {
+      "ruta": "agent_skills/codex/README.md",
+      "ok_utf8": true,
+      "detalle": "utf-8"
+    }
+  ]
+}

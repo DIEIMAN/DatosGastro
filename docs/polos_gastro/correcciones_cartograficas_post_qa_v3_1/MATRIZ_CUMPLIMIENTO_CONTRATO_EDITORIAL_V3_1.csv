@@ -1,0 +1,17 @@
+﻿entregable,requisito,archivo,estado,observaciones
+Mapa general,PNG y SVG; siete polos/capas vigentes,mapas/mapa_general_institucional_v3_1.*,CUMPLE,Página 3
+Belgrano,Un polo; 3 centralidades; 7 piezas; Belgrano R secundario,mapas/belgrano_institucional_v3_1.*,CUMPLE,Sin hull común
+Recoleta,Una unidad; huecos; sin subdivisiones,mapas/recoleta_institucional_v3_1.*,CUMPLE,Etiqueta externa
+Costanera Norte,4 componentes; 5 piezas; sin conectores,mapas/costanera_norte_institucional_v3_1.*,CUMPLE,Incluye media página
+Bounding box,BBox de cada render,metadatos/BOUNDING_BOXES_RENDER_V3_1.csv,CUMPLE,CRS84
+Fondo,Fuente y condición de uso,metadatos/DECLARACION_FONDO_CARTOGRAFICO_V3_1.md,CUMPLE,Solo local
+Dimensiones,PNG >=200 dpi al lienzo,metadatos/QA_VISUAL_ASSETS_V3_1.csv,CUMPLE,220 dpi
+Estilos,Tabla categoría a estilo,metadatos/TABLA_ESTILOS_CARTOGRAFICOS_V3_1.csv,CUMPLE,Leyendas coherentes
+Formatos,PNG y SVG,mapas/,CUMPLE,Cinco pares
+CRS,GeoJSON EPSG:4326,capas/*.geojson,CUMPLE,CRS84 declarado
+Nombres públicos,Sin códigos técnicos visibles,mapas/ y capas/,CUMPLE,Denominaciones adoptadas/descriptivas
+Privacidad,"Sin puntos, comercios ni identificadores individuales",metadatos/QA_PRIVACIDAD_V3_1.json,CUMPLE,Puntos excluidos
+Manifest,"Rutas, bytes y SHA-256",MANIFEST_CONTENIDO.csv,CUMPLE,Sin autorreferencia
+Hashes,"Inputs, outputs y ZIP",CHECKSUMS_SHA256.txt,CUMPLE,Orden V1.1.1
+QA,Una fila por asset,metadatos/QA_VISUAL_ASSETS_V3_1.csv,CUMPLE,Sin NO_APTO
+Handoff,Inventario e integración,docs/HANDOFF_CARTOGRAFICO_INTEGRADOR_V3_1.md,CUMPLE,Contrato existente y aplicado

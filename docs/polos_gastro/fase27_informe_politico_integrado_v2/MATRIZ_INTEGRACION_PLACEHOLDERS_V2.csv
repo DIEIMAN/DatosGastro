@@ -1,0 +1,12 @@
+id,elemento,pagina_v1,pagina_v2,estado,resolucion
+PH-01,Mapa general,3,3,RESUELTO,Asset mapa_general_institucional_v3_1 (copia recortada reproducible); leyenda nueva de 5 categorias incluida en el asset; caja Lectura reescrita segun TO-03
+PH-02,Mapa Palermo,4,4,RESUELTO,Render institucional nuevo desde la delimitacion vigente (identica a la usada por el mapa general V3.1); deja de ser placeholder; PEN-04 (escalado Soho) sigue fuera de alcance y no se reabre
+PH-03,Mapa Corrientes,5,5,RESUELTO,Render institucional desde corrientes_corredor_presentacion_v21.geojson (corredor continuo); Abasto permanece fuera de traza y se trata en caja de texto como area asociada
+PH-04,Mapa San Telmo,6,6,RESUELTO,Render institucional desde san_telmo_nucleo_presentacion_v21.geojson + san_telmo_defensa_contextual_v21.geojson (nucleo pleno + eje contextual discontinuo)
+PH-05,Mapa Puerto Madero,6,6,RESUELTO,Render institucional desde puerto_madero_opciones_presentacion_v21.geojson opcion PM_PRES_C (frente doble); frase "en elaboracion" retirada (TO-13)
+PH-06,Mapa Belgrano,7,7,RESUELTO,Asset belgrano_institucional_v3_1 (copia recortada): centralidad principal + eje interno + sector secundario hachurado; sin codigos tecnicos
+PH-07,Composicion Costanera,8,9,RESUELTO,Asset costanera_norte_media_pagina_v3_1 en la mitad inferior (antes vacia); paneles reescritos con lenguaje DEC-10; chip "delimitacion adoptada"
+PH-08,Seccion/pagina Recoleta,(inexistente),8,RESUELTO,Pagina nueva "Polo Gastronomico Recoleta" con recoleta_institucional_v3_1; unidad publica unica; sin enumeracion de nucleos tecnicos
+PH-09,Chips de estado de lectura,4-8,4-9,RESUELTO,Chips actualizados; "lectura exploratoria" eliminada; categoria nueva "delimitacion adoptada" para Costanera (TO-09)
+PH-10,Cifras editoriales 22/5,2,2,RESUELTO,22 zonas de referencia conservado; zonas seleccionadas actualizada 5 -> 7 (decision editorial cerrada)
+PH-11,Metadatos de trazabilidad de capas,global,global,RESUELTO,ASSETS_TRAZABILIDAD_V2.csv (origen; transformacion; SHA-256 origen e insertado) + MANIFEST_CONTENIDO.csv + CHECKSUMS_SHA256.txt de la linea fase27

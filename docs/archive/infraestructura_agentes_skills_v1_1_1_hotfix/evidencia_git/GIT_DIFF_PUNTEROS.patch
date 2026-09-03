@@ -1,0 +1,66 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 541ad31..03ace7a 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -17,6 +17,20 @@ Para informes DataGastro, consultar antes de trabajar:
+ Si la tarea toca guardrails, privacidad, fuentes, pipeline, geodatos, fuentes externas o limpieza,
+ consultar también la skill importada correspondiente en `agent_skills/claude_imported/`.
+ 
++## Infraestructura agentes y skills (V1.1, controlada)
++
++Para trabajo multiagente, experimentos o packs de revisión (sin reemplazar las reglas de arriba):
++
++1. Política: `docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md`
++2. Catálogo: `docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json`
++3. Guía y evaluación: `docs/infraestructura_agentes_skills_v1_1/` (ver `README.md`)
++4. Superficies protegidas por subproyecto: p. ej. `docs/polos_gastro/PROTECTED_SURFACES.yaml`
++5. Adaptadores Codex delgados: `docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/`
++6. Definiciones de skills (procedimientos): `docs/infraestructura_agentes_skills_v1/skills/`
++
++La V1 histórica permanece en `docs/infraestructura_agentes_skills_v1/` (no sobrescribir).
++No asumir carga automática de `.codex/`. No inventar datos ni vulnerar privacidad aunque haya autorización para commit/API.
++
+ ## Reglas obligatorias
+ 
+ - No inventar datos, métricas, fuentes, URLs ni conclusiones.
+diff --git a/CLAUDE.md b/CLAUDE.md
+index f5ba62e..836ad7a 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -40,6 +40,19 @@ carga en cada sesión. **Ante conflicto, ganan los guardrails.**
+ - `docs/skills_claude/07_informes_ejecutivos.md` — redacción para jefatura.
+ - `docs/skills_claude/08_limpieza_archivos_locales.md` — borrado seguro local.
+ 
++## Infraestructura agentes y skills (V1.1, controlada)
++
++Paquete documental (no sustituye `.claude/skills/` productivas hasta promoción explícita):
++
++- Política: `docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md`
++- Catálogo: `docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json`
++- Guía / evaluación / adaptadores propuestos: `docs/infraestructura_agentes_skills_v1_1/`
++- Skills de procedimiento (V1, reutilizadas): `docs/infraestructura_agentes_skills_v1/skills/`
++- Superficies protegidas: `docs/<subproyecto>/PROTECTED_SURFACES.yaml` (ej. Polos)
++
++Ante conflicto: guardrails (01) > autorización humana de excepciones permitidas > política V1.1 > agente > skill > tarea.
++No crear `.claude/agents/` ni tocar `.claude/settings.json` sin pedido. Coordinador, editor y auditor metodológico no se activan como nativos en V1.1.
++
+ ## Entorno
+ 
+ - Windows. Shell primaria PowerShell; Bash disponible para POSIX.
+diff --git a/agent_skills/codex/README.md b/agent_skills/codex/README.md
+index 641f32f..31dcf93 100644
+--- a/agent_skills/codex/README.md
++++ b/agent_skills/codex/README.md
+@@ -10,4 +10,11 @@ Por ahora, Codex debe usar como base:
+ - `agent_skills/shared/datagastro_proyectos_cortos.md`
+ - `agent_skills/claude_imported/` como referencia importada desde Claude.
+ 
+-No duplicar reglas si pueden vivir en `agent_skills/shared/`.
++## Infraestructura multiagente (V1.1)
++
++- Política: `docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md`
++- Adaptadores delgados: `docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/`
++- Catálogo: `docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json`
++
++No se asume carga automática de `.codex/`. No duplicar reglas si pueden vivir en
++`agent_skills/shared/` o en la política V1.1.

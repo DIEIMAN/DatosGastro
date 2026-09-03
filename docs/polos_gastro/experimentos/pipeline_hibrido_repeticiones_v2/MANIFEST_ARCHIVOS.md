@@ -1,0 +1,39 @@
+# Manifest de archivos
+
+| ruta | bytes | sha256 |
+|---|---|---|
+| 01_DIAGNOSTICOS/DIAGNOSTICO_BELGRANO_V2.md | 1090 | 45c8b4c3f483bd1e21b2e4542cb95e25adcf6655ab5ae68b6c565946f2a80e1c |
+| 01_DIAGNOSTICOS/DIAGNOSTICO_CORRIENTES_V2.md | 699 | 2574cc9a70f79e65ba9c18bdd8aa2096bf0de0c12a3ef9c54b26c48e726db36a |
+| 01_DIAGNOSTICOS/DIAGNOSTICO_COSTANERA_V2.md | 908 | fdab9994af62b4c631965f6acbd865a2e88939dbb73d3ff6e94a3dfd387f1a33 |
+| 01_DIAGNOSTICOS/DIAGNOSTICO_PUERTO_MADERO_V2.md | 938 | d399fce1cf329032b215faa462429c864f5534260f311d680e9ba193fef6685c |
+| 01_DIAGNOSTICOS/DIAGNOSTICO_SAN_TELMO_V2.md | 918 | 0d458eb8e51c06e0e0d3e50d6e335a5654099db95ceb181b0e00f9724d356efe |
+| 02_TABLAS/belgrano_estabilidad_nucleos_v2.csv | 3242 | 0bf3c8aba7e1415f031a06158c561f4ca35acf774b08116835cc771a68340f96 |
+| 02_TABLAS/belgrano_resultados_pruebas_v2.csv | 8481 | 3fea4da50fc0c2cb3e2d07a10e982b0495fe2c83af5e4d99ccf08cd53014dada |
+| 02_TABLAS/corrientes_puntos_externos_v2.csv | 43221 | 177a3481fc42077a6f145873d368dd9a6a97ca7a6edae8318094a073d1481f2d |
+| 02_TABLAS/corrientes_subtramos_narrativos_v2.csv | 342 | b40c3a2341e8350b93fce61017164955d3502a31f9bddf15a41cd31be0a82b61 |
+| 02_TABLAS/costanera_componentes_v2.csv | 375 | 39ef7f8fc7cfaa85b2d5bb26c6e6224942946e81980ccd34068cbded8eda77c6 |
+| 02_TABLAS/puerto_madero_estabilidad_asignacion_v2.csv | 572 | 801a888fb35cb3894e8fee7909d62b4651a79410dad06f8e0928bfdff896a284 |
+| 02_TABLAS/puerto_madero_inventario_soportes_v2.csv | 7788 | 58455fe35198776a6eaa51388868adae0b6dd86d568e8a94a3f168f91a4712cf |
+| 02_TABLAS/puerto_madero_puntos_no_asignados_v2.csv | 9004 | 3cd2754f6bcc67c5d98f53d62f46119fe123d36a115166b23532ca1ff5999604 |
+| 02_TABLAS/puerto_madero_resultados_pruebas_v2.csv | 1553 | 26918e44c3a9082ab39631abae9f7f6afad3ce5fbe63de691cf008b159064d38 |
+| 02_TABLAS/tabla_comparacion_repeticiones_v2.csv | 1596 | bad984381b273a25569a35957fadc89174a6a62cd2eace4eef9302d85a062abf |
+| 02_TABLAS/tabla_comparacion_san_telmo_v2.csv | 691 | 8ed21ce62bd68c5f167b882145cc703fa2dd8ac39e7b53746251d5f86ea581af |
+| 03_MAPAS/mapa_belgrano_contenedores_v2.png | 827613 | cebd6ff96b396b1f635a049605b004c2582bc7d2994fc3294dd35c43115da481 |
+| 03_MAPAS/mapa_belgrano_nucleos_estables_v2.png | 614794 | b6e2fb34ae0ccf4eeab40915760b06de3f5089a06fa52344198d7d8b372d0070 |
+| 03_MAPAS/mapa_corrientes_corredor_continuo_v2.png | 396076 | 31c685ecaee035c3bda5053fb61f1accc5e82e984d1ba29511f56cb46980dd5c |
+| 03_MAPAS/mapa_costanera_multiparte_v2.png | 225598 | d14ce1932a16608c96202b78d042b5c6ae8f5fa7229283bb777db8b71e2abf4c |
+| 03_MAPAS/mapa_puerto_madero_opciones_v2.png | 766368 | 9a1d7eb3097d27d7c5b6aecd19730c393aacfb13d3cdfc873fac8d2537c30dd4 |
+| 03_MAPAS/mapa_san_telmo_opciones_v2.png | 296695 | 7fc7d2de27972742565c9b4e037136b6e5d746a420e3f37070bb064c297e022a |
+| 04_GEOJSON/belgrano_nucleos_candidatos_v2.geojson | 68502 | de29bce2bb38e7be9fff0f6309a52671e83b4755558b6c759db31f3f044251ca |
+| 04_GEOJSON/corrientes_corredor_continuo_v2.geojson | 1835 | 799ed2fe1d6be3446cdadc5d5826994db8f08ae8f0052800870f9a9e677fd832 |
+| 04_GEOJSON/costanera_concentracion_contextual_v2.geojson | 4035 | 4577bb13ddd439a83ca23e42d79b17336624941b36987b2ef53a96fc76aad856 |
+| 04_GEOJSON/costanera_unidad_multiparte_v2.geojson | 21643 | e0a77c9329140d45dd39237595ad04486aefb8b2d13eaf4c21a55feb66c5f890 |
+| 04_GEOJSON/puerto_madero_frentes_candidatos_v2.geojson | 62988 | 20418b1fa9b00d48171b1e61874764e174868f2a9618a449c95920559866daaa |
+| 04_GEOJSON/san_telmo_eje_defensa.geojson | 2121 | dd63e5823170cb9ab9d0c2972d6be6969cb7e9c7d3619b4db74aec5e5aec017a |
+| 04_GEOJSON/san_telmo_nucleo_compacto.geojson | 10894 | b324d62f5a14d33d9261e3b524a292283765be304d8771bd68cf8c6808301dbc |
+| 05_DECISIONES_Y_QA/COMPARACION_REPETICIONES_HIBRIDAS_V2.md | 2037 | 343dd61d567c15f7599e8d3e7f452e8a86f52da5679371029421c25e4e05db86 |
+| 05_DECISIONES_Y_QA/MATRIZ_DECISIONES_POST_REPETICIONES_V2.md | 1081 | b6543a263bc5e8e20fbe8ad3def4b0e81fde77a845bc2f8853421547e7c88300 |
+| 05_DECISIONES_Y_QA/metadata_pipeline_hibrido_repeticiones_v2.json | 1705 | 7d2b510d647a298a3dca44923418f6fb63fc37df1988ab22f8c7eb0fe22709da |
+| 05_DECISIONES_Y_QA/QA_FINAL_REPETICIONES_HIBRIDAS_V2.md | 940 | 535142f2356806d4ec6ac56277f3b145c8a6446ca6d8d919995e05d85f96b622 |
+| NOTA_PARA_CHATGPT_CLAUDE.md | 449 | 990a1dbeee1cf2701c81c613fad5464941d9eed9fff484cd710752d098ccc3df |
+| README.md | 650 | 913e1ccd5cc1ff70be70fc8863a7933630035750052f33b8e925c6a33655f4e2 |

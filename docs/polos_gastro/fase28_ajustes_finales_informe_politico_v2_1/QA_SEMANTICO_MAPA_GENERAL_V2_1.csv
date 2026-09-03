@@ -1,0 +1,8 @@
+﻿entidad,forma_territorial,color,símbolo,entrada_leyenda,coincidencia,observaciones
+Palermo,Núcleo / área,#2C7FB8,polígono,Núcleo / área,SI,Correspondencia inequívoca
+San Telmo,Núcleo / área,#2C7FB8,polígono,Núcleo / área,SI,Correspondencia inequívoca
+Corrientes,Corredor,#C0762B,línea,Corredor,SI,Correspondencia inequívoca
+Puerto Madero,Frente,#2F7D78,línea,Frente,SI,Correspondencia inequívoca
+Belgrano,Unidad multiparte,#64748B,polígono,Unidad multiparte,SI,Correspondencia inequívoca
+Costanera Norte,Unidad multiparte,#64748B,polígono,Unidad multiparte,SI,Correspondencia inequívoca
+Recoleta,Unidad general,#9B3A4A,polígono,Unidad general,SI,Correspondencia inequívoca

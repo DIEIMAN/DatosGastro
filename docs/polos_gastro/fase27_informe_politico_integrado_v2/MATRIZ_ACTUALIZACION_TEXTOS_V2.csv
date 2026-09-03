@@ -1,0 +1,16 @@
+id,pagina_v2,estado,texto_aplicado_resumen
+TO-01,2,APLICADO,Parrafo 3 nuevo: Belgrano / Recoleta / Costanera Norte presentados como polos consolidados por el analisis reciente (ya no "senales en seguimiento"); el seguimiento queda para otras zonas (parrafo 4)
+TO-02,2,APLICADO,Encuadre actualizado: "presenta siete zonas seleccionadas para una lectura territorial en detalle" (cifra cerrada por decision editorial)
+TO-03,3,APLICADO,Caja Lectura: "una unidad territorial continua en Recoleta y un polo multiparte identificado sobre la Costanera Norte compuesto por tramos discontinuos" (sin "frente ribereno en observacion")
+TO-04,7,APLICADO,Titulo de pagina: "Polo Gastronomico Belgrano" (las zonas en observacion restantes permanecen en caja secundaria)
+TO-05,7,APLICADO,Lectura de polo unico: centralidad principal Barrio Chino-Belgrano C (integra Barrancas / Pasaje Echeverria / Bajo Belgrano) + eje interno Cabildo-Juramento + Belgrano R sector secundario; concentracion presentada como criterio (no como debilidad)
+TO-06,7,APLICADO,Recoleta retirada de la caja "Zonas en observacion" (quedan area central y eje Caseros-Barracas); Recoleta pasa a pagina 8 propia
+TO-07,9,APLICADO,"tres sectores principales" eliminado; texto nuevo: estructura ribereña discontinua de cuatro componentes (polo multiparte)
+TO-08,9,APLICADO,Panel "Que significa lectura exploratoria" (con "no constituye un polo delimitado" y "sin proponer todavia una delimitacion") eliminado; panel nuevo "Una delimitacion adoptada" (definicion territorial del estudio; actualizable con nueva evidencia)
+TO-09,9,APLICADO,Chip "lectura exploratoria" reemplazado por "delimitacion adoptada" (categoria nueva del sistema tipo/madurez)
+TO-10,9,APLICADO,Texto de seguimiento degradante eliminado; la actualizacion de evidencia refina componentes sin reabrir la existencia del polo (panel "Una delimitacion adoptada")
+TO-11,10,APLICADO,Bullet nuevo con pendientes reales post-integracion: zonas en observacion (area central; eje Caseros-Barracas); Belgrano y Recoleta ya integrados no se prometen de nuevo
+TO-12,10,APLICADO,Bullet nuevo: actualizacion periodica de las delimitaciones adoptadas y de la base de evidencia con controles de calidad (sin degradar el estatus de Costanera)
+TO-13,6,APLICADO,Frase "La representacion cartografica de detalle de este frente se encuentra en elaboracion" eliminada al integrarse el asset PM_PRES_C
+TO-14,10,APLICADO,Parrafo unico de dependencia de fuente externa de Costanera en la nota metodologica: 92.96 % (KPI lock V3); hipotesis admitidas (concesiones; puestos; oferta movil; posible subregistro administrativo); sin afirmar informalidad; sin nombrar la plataforma
+TO-15,1,APLICADO,pdf_subject reescrito institucional ("edicion integrada para revision interna"); sin referencias a matrices de assets ni a lineas internas; trazabilidad completa en metadatos y manifest de la fase27

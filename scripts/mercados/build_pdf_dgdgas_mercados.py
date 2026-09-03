@@ -12,7 +12,7 @@ Buenos Aires). NO usa "DataGastro" como marca pública. No incluye etiquetas de 
 No toca los scripts productivos de mercados_caba ni los entregables previos.
 
 Salida (nueva, NO sobrescribe entregables previos):
-  outputs/mercados/INFORME_MERCADOS_DGDGAS.pdf
+  outputs/mercados_caba/revision_dgdgas_2026-07/INFORME_MERCADOS_DGDGAS.pdf
 """
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ from matplotlib.patches import Rectangle  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SAN = ROOT / "outputs" / "mercados_caba" / "sanitized"
-OUT = ROOT / "outputs" / "mercados"
+OUT = ROOT / "outputs" / "mercados_caba" / "revision_dgdgas_2026-07"
 PDF = OUT / "INFORME_MERCADOS_DGDGAS.pdf"
 
 INSTITUCION = "DGDGAS — Dirección General de Desarrollo Gastronómico"

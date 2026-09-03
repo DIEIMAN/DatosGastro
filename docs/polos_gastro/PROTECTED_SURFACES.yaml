@@ -1,0 +1,438 @@
+# Superficies protegidas — subproyecto Polos Gastro
+# Política: POLITICA_OPERATIVA_DATAGASTRO v1.1 §2
+# Este registro es el lugar para nombres de paquetes/fases; la política genérica no los hardcodea.
+
+version: 1
+subproyecto: polos_gastro
+actualizado: "2026-07-14"
+responsable_default: "Diego"
+
+superficies:
+  - id: POLOS-SRC-SEMILLA
+    ruta_o_patron: "PolosGastro/**"
+    tipo: fuente_semilla
+    motivo: "Insumos semilla del subproyecto; no alterar sin autorización"
+    nivel_proteccion: fuente
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-BASE-OFICINA-CERRADA
+    ruta_o_patron: "docs/polos_gastro/fase25_microajustes_finales_oficina/**"
+    tipo: baseline_cerrada
+    motivo: "Entregable de oficina cerrado; no editar in-place"
+    nivel_proteccion: baseline_cerrada
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-OUT-OFICINA-CERRADA
+    ruta_o_patron: "outputs/polos_gastro/FASE5-29/fase25_microajustes_finales_oficina/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Outputs de oficina cerrados"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-SCRIPT-OFICINA
+    ruta_o_patron: "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py"
+    tipo: generador_cerrado
+    motivo: "Generador asociado a baseline cerrada"
+    nivel_proteccion: baseline_cerrada
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-EXP-CARTO-CERRADA
+    ruta_o_patron: "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/**"
+    tipo: experimental_cerrado
+    motivo: "Comparativa cartográfica cerrada como baseline de lectura"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-EXP-COMPLETA-V1
+    ruta_o_patron: "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/**"
+    tipo: experimental_cerrado
+    motivo: "Resultado experimental cerrado"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-EXP-CARTO-V4X
+    ruta_o_patron: "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_*/**"
+    tipo: experimental_cerrado
+    motivo: "Capas cartográficas editoriales cerradas (v2–v4.x)"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-V1
+    ruta_o_patron: "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**"
+    tipo: experimental_cerrado
+    motivo: "Docs pipeline híbrido v1 cerrados"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-V1-OUT
+    ruta_o_patron: "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**"
+    tipo: experimental_cerrado
+    motivo: "Outputs híbrido v1 cerrados"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-REP-V2
+    ruta_o_patron: "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**"
+    tipo: experimental_cerrado
+    motivo: "Repeticiones v2 cerradas"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-REP-V2-OUT
+    ruta_o_patron: "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**"
+    tipo: experimental_cerrado
+    motivo: "Outputs repeticiones v2 cerrados"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-INT-V21-DOCS
+    ruta_o_patron: "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**"
+    tipo: experimental_cerrado
+    motivo: "Integración técnica cerrada como baseline de lectura"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-HIBRIDO-INT-V21-OUT
+    ruta_o_patron: "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**"
+    tipo: experimental_cerrado
+    motivo: "Outputs integración técnica cerrados; derivar en línea paralela"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-EVIDENCIA-PACK
+    ruta_o_patron: "outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/**"
+    tipo: pack_revision_cerrado
+    motivo: "Pack de evidencia cerrado; nuevas auditorías en carpeta de prueba"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-PIPE-GENERAL
+    ruta_o_patron: "src/build_*.py"
+    tipo: pipeline
+    motivo: "Pipeline DataGastro general"
+    nivel_proteccion: pipeline
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  # Cierres INFORMEFINAL registrados 2026-07-14 (fuente: ESTADO_GENERAL_INFORMEFINAL.md y
+  # DECISIONES_CERRADAS_Y_PENDIENTES.md; marcadores C-T1-V44-INTEG y
+  # TANDA2_CLOSED_FROZEN_AND_GLOBALS_UPDATED). Registro de cierres ya decididos; no decide nada nuevo.
+
+  - id: POLOS-IF-TANDA1-CERRADA
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/*/*tanda1*/**"
+    tipo: experimental_cerrado
+    motivo: "Paquetes Tanda 1 con integración final completada (C-T1-V44-INTEG); correcciones pre-atlas van en línea nueva"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-TANDA2-CONGELADA
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/*/*tanda2*/**"
+    tipo: experimental_cerrado
+    motivo: "Tanda 2 cerrada y congelada (TANDA2_CLOSED_FROZEN_AND_GLOBALS_UPDATED, C-T2-CLOSED)"
+    nivel_proteccion: experimental_cerrado
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  # Corpus institucional R01-R22 y cierres editoriales registrados 2026-07-20.
+  # Las rutas vigentes e históricas se protegen de forma explícita; no se usa INFORMEFINAL/**.
+
+  - id: POLOS-IF-FICHAS22-VIGENTE
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/fichas_22_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "22 fichas editoriales vigentes (C-FICHAS-22-VIGENTE); fuente de las fichas del Atlas"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-CARTO22-VIGENTE
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/cartografia_22_correccion_visual_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Cartografía R01-R22 vigente congelada (C-CARTO-22-VIGENTE, 22+7 mapas)"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-CARTO22-HIST
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/cartografia_22_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Cartografía original; histórica, supersedida solo en plano visual (C-CARTO-22-HIST)"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-ATLAS22-V1
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/atlas_22_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Atlas V1 completo; respaldo institucional auditable, no invalidado por V2 (C-ATLAS-22-VIGENTE)"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-ATLAS22-V2-HIST
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/atlas_22_v2_compacta_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "V2 Compacta precorrección; histórica, supersedida localmente por B01-B04"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-ATLAS22-V2-VIGENTE
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/atlas_22_v2_compacta_correccion_local_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Fuente institucional pública vigente (ATLAS_22_V2_COMPACTA_CLOSED_FROZEN_AND_GLOBALS_UPDATED)"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-CIERRE-ATLAS22-V2
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/codex/cierre_atlas_22_v2_compacta_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Acta y metadatos de cierre del Atlas V2 Compacta"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-INTEG22-V11
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/grok/integracion_global_22_v1_1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Integración editorial global 22 v1.1; contrato editorial D-E01..D-E08 aprobado"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-CIERRE-FICHAS22
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/grok/cierre_fichas_22_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Cierre P-FICHAS-22 (FICHAS_22_CLOSED_FROZEN_AND_CARTOGRAPHY_ENABLED)"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-CIERRE-CARTO22
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/grok/cierre_cartografia_22_v1/**"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Cierre cartografía R01-R22 + habilitación P-ATLAS"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  # Archivos globales vigentes: granularidad literal para no congelar subcarpetas nuevas.
+
+  - id: POLOS-IF-GLOBAL-ESTADO
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/ESTADO_GENERAL_INFORMEFINAL.md"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Fuente vigente del estado general de INFORMEFINAL"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-DECISIONES
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/DECISIONES_CERRADAS_Y_PENDIENTES.md"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Registro vigente de decisiones cerradas y pendientes"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-README
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/README_INFORMEFINAL.md"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Guía vigente de lectura y organización de INFORMEFINAL"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-REGLAS
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/REGLAS_ORGANIZACION_INFORMEFINAL.md"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Reglas vigentes de organización de INFORMEFINAL"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-MATRIZ-MAESTRA
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/MATRIZ_MAESTRA_22_ZONAS.csv"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Matriz maestra vigente de las 22 referencias"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-INDICE
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/INDICE_MAESTRO_ARTEFACTOS.csv"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Índice maestro vigente de artefactos"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-MANIFEST
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/MANIFEST_INFORMEFINAL.csv"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Manifest global vigente de INFORMEFINAL"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"
+
+  - id: POLOS-IF-GLOBAL-CHECKSUMS
+    ruta_o_patron: "outputs/polos_gastro/INFORMEFINAL/CHECKSUMS_SHA256.txt"
+    tipo: entregable_oficial_o_cerrado
+    motivo: "Checksums globales vigentes de INFORMEFINAL"
+    nivel_proteccion: entregable_oficial
+    puede_leer: true
+    puede_copiar: true
+    puede_modificar: false
+    requiere_autorizacion: true
+    hash_opcional: null
+    responsable: "Diego"

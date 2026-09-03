@@ -444,5 +444,5 @@ Decisiones B del 08-07 que siguen sin respuesta: dump ATP, `DataMercados.zip`, e
 
 ---
 
-**Estado: DIAGNÓSTICO ENTREGADO.** Nada ejecutado. El Bloque A no requiere decisiones y
-elimina los dos riesgos de pérdida (canónico sin trackear, F3 sin commit).
+**Estado: BLOQUES A Y B EJECUTADOS el 2026-09-03** (ver `HANDOFF_AUDITORIA_FLUJO_2026_09_03.md`
+para el detalle y lo que quedó bloqueado). El Bloque C espera decisiones de Diego.

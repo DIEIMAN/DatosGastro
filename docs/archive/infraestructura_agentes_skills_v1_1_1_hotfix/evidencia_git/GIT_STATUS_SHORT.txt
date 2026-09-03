@@ -1,0 +1,51 @@
+ M .claude/settings.json
+ M .gitignore
+ M AGENTS.md
+ M CLAUDE.md
+ M agent_skills/codex/README.md
+?? "PolosGastro/Polos gastron\303\263micos.pdf"
+?? configs/
+?? docs/cafecito/HANDOFF_CAFECITO_BELGRANO_TANDA2_2026_07_07.md
+?? docs/cafecito/HANDOFF_CAFECITO_BELGRANO_TANDA3_2026_07_07.md
+?? docs/cafecito/HANDOFF_CAFECITO_BELGRANO_TANDA4_2026_07_07.md
+?? docs/cafecito/HANDOFF_CAFECITO_BELGRANO_TANDA5_2026_07_07.md
+?? docs/cafecito/contenido_editable_informe_cafecito_belgrano_tanda1.yaml
+?? docs/cafecito/contenido_editable_informe_cafecito_belgrano_tanda2.yaml
+?? docs/cafecito/contenido_editable_informe_cafecito_belgrano_tanda3.yaml
+?? docs/cafecito/contenido_editable_informe_cafecito_belgrano_tanda4.yaml
+?? docs/cafecito/contenido_editable_informe_cafecito_belgrano_tanda5.yaml
+?? docs/cafecito/geolocalizacion_cafeterias/perplexity_sedes_cafeterias.md
+?? docs/encuestas/
+?? docs/infraestructura_agentes_skills_v1/
+?? docs/infraestructura_agentes_skills_v1_1/
+?? docs/infraestructura_agentes_skills_v1_1_1_hotfix/
+?? docs/polos_gastro/PROTECTED_SURFACES.yaml
+?? docs/polos_gastro/evidencia_documental/
+?? docs/polos_gastro/experimentos/
+?? docs/polos_gastro/experimentos_clustering/
+?? docs/polos_gastro/experimentos_clustering_v2/
+?? docs/polos_gastro/fase11_google_places_piloto/QA_TANDA_1_GOOGLE_PLACES.md
+?? docs/polos_gastro/fase18_claude_design_mapas/inputs/
+?? docs/revisiones/HANDOFF_CAFECITO_BELGRANO_TANDA1_2026_07_07.md
+?? docs/revisiones/HANDOFF_CONSOLIDACION_EDITORIAL_POLOS_2026_07_11.md
+?? notebooks/06_informe_presentacion.ipynb
+?? outputs/cafecito/
+?? outputs/datagastro_design_system/
+?? outputs/encuestas/
+?? outputs/infraestructura_agentes_skills_v1/
+?? outputs/infraestructura_agentes_skills_v1_1/
+?? outputs/polos_gastro/
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda1.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda2.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda3.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda4.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda5.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda6.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda7.py
+?? scripts/cafecito/generar_informe_cafecito_belgrano_tanda8.py
+?? scripts/encuestas/
+?? scripts/infraestructura_agentes_skills_v1/
+?? scripts/infraestructura_agentes_skills_v1_1/
+?? scripts/infraestructura_agentes_skills_v1_1_1_hotfix/
+?? scripts/polos_gastro/experimentos/
+?? tmp/

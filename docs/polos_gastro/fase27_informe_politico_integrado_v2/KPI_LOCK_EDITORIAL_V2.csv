@@ -1,0 +1,18 @@
+kpi,valor,fuente,uso_en_informe,estado
+zonas_referencia_informe,22,kpis_lock_preliminar.json (confirmado editorial),pagina 2 encuadre,CONSERVADO
+zonas_seleccionadas_detalle,7,decision editorial cerrada (tarea 2026-07-12; preintegracion TO-02),pagina 2 encuadre + mapa general con 7 zonas,ACTUALIZADO
+paginas_informe,10,PDF integrado V2 (pdfinfo),estructura,CONSERVADO
+belgrano_centralidades,3,KPI_LOCK_CARTOGRAFICO_V3.csv (componentes=3) + decision Belgrano 1.1,paginas 2 y 7 (texto),ACTUALIZADO
+belgrano_piezas_topologicas,7,KPI_LOCK_CARTOGRAFICO_V3.csv,solo trazabilidad interna; no se comunica como polos,REGISTRADO_NO_PUBLICADO
+belgrano_cobertura_pct,35.58,KPI_LOCK_CARTOGRAFICO_V3.csv,NO publicado (decision: no es KPI publico principal; no se presenta como debilidad),RESERVADO_METODOLOGIA
+belgrano_estabilidad,0.765,KPI_LOCK_CARTOGRAFICO_V3.csv,NO publicado,RESERVADO_METODOLOGIA
+recoleta_unidad_publica,1,KPI_LOCK_CARTOGRAFICO_V3.csv (componentes=1),paginas 2; 3 y 8 (unidad territorial continua),ACTUALIZADO
+recoleta_nucleos_analiticos,9,corrida V3 (REC-A; analitico),NO publicado (solo analitico; vetado enumerarlos),REGISTRADO_NO_PUBLICADO
+recoleta_estabilidad,0.626,KPI_LOCK_CARTOGRAFICO_V3.csv,NO publicado (termino vetado en contenido publico),RESERVADO_METODOLOGIA
+recoleta_cifra_oferta_publicable,sin cifra,DECISIONES_Y_USOS_DOCUMENTALES sec.1.4 (REC-R02 rechazada),sin cifra de oferta en el cuerpo,CONSERVADO
+costanera_componentes,4,KPI_LOCK_CARTOGRAFICO_V3.csv + DEC-10,paginas 2; 9 (texto y mapa con numeracion 1-4),ACTUALIZADO
+costanera_piezas_topologicas,5,KPI_LOCK_CARTOGRAFICO_V3.csv,solo trazabilidad interna (un componente es multiparte),REGISTRADO_NO_PUBLICADO
+costanera_universo_conciliado,72,KPI_LOCK_CARTOGRAFICO_V3.csv (universo) + handoff V3.1 vigente,solo trazabilidad interna; sin conteos en el cuerpo,REGISTRADO_NO_PUBLICADO
+costanera_puntos_incluidos,71,KPI_LOCK_CARTOGRAFICO_V3.csv,solo trazabilidad interna,REGISTRADO_NO_PUBLICADO
+costanera_dependencia_fuente_externa_pct,92.96,KPI_LOCK_CARTOGRAFICO_V3.csv,pagina 10 nota metodologica; UNA sola vez (DEC-10); sin nombrar la plataforma,PUBLICADO_EN_METODOLOGIA
+mapa_general_zonas,7,asset mapa_general_institucional_v3_1 (siete lecturas vigentes),pagina 3,ACTUALIZADO

@@ -1,0 +1,17 @@
+termino,pdf_texto,yaml,assets_insertados,svg_fuente_v31,clasificacion,detalle
+DataGastro,0,0,0,0,SIN_APARICIONES,Marca interna ausente de todo el contenido publico; marca visible correcta "DGDGAS - Direccion General de Desarrollo Gastronomico"
+EXPERIMENTAL,0,1,0,0,VALIDA_DOC_TECNICA_INTERNA,Unica aparicion en comentario del YAML que nombra la linea previa "Fase 25 politica experimental"; los comentarios no se renderizan en el PDF
+NO OFICIAL,0,0,0,0,SIN_APARICIONES,
+BEL-A,0,0,0,0,SIN_APARICIONES,Codigo de modelo confinado a documentacion tecnica de la corrida V3 (no escaneada aqui por ser interna)
+REC-A,0,0,0,0,SIN_APARICIONES,Idem BEL-A
+CN-DEC10,0,0,0,0,SIN_APARICIONES,Idem BEL-A
+CN_C0,0,0,0,0,SIN_APARICIONES,Los componentes se comunican como "Componente 1..4" con denominaciones descriptivas
+Places,0,0,0,0,SIN_APARICIONES,La dependencia de fuente se comunica como "fuente externa auxiliar de localizacion" (una vez; en metodologia)
+placeholder,0,0,0,0,SIN_APARICIONES,No quedan mapas placeholder en la pieza
+exploratoria,0,0,0,0,CORREGIDA,Panel y chip "lectura exploratoria" de V1 eliminados (DEC-10); reemplazo "delimitacion adoptada"
+candidata,0,0,0,0,SIN_APARICIONES,
+preliminar,0,0,0,0,SIN_APARICIONES,
+borrador,0,0,0,0,SIN_APARICIONES,
+prueba,0,0,0,0,SIN_APARICIONES,Busqueda con limites de palabra (excluye "aprueba/comprueba"); sin apariciones igualmente
+containers,0,0,1,2,VALIDA_DENOMINACION_DOCUMENTADA,El texto propio del informe usa "contenedores"/evita el termino; la unica aparicion visible esta en la leyenda del asset institucional V3.1 de Costanera ("Patio gastronomico de puestos en containers"); es la denominacion descriptiva documentada del paquete cartografico V3.1 (COSTANERA_NORTE_COMPONENTE_PIEZAS_V3_1.csv) que el integrador no puede editar sin modificar la linea V3.1 (prohibido). Registrado para el auditor final; si Diego lo pide; la correccion corresponde a una regeneracion V3.2 del cartografo
+Direccion General de Gastronomia,0,0,0,0,SIN_APARICIONES,Denominacion erronea ausente; la correcta aparece en portada; pies de pagina y nota de alcance

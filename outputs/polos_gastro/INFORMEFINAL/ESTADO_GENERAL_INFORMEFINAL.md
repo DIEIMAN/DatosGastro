@@ -1,5 +1,13 @@
 # Estado general — INFORMEFINAL
 
+> **Nota del 2026-09-03 (reorganizacion F3).** `outputs/polos_gastro/` quedo con cinco entradas:
+> `ATLAS_INFORMATIVO_39_2026-08-13` (linea Atlas vigente, 39 polos), `ATLAS_V2`, `INFORMEFINAL`,
+> `REFERENTES_2026` y `historico/`. Todo lo cerrado antes del 2026-08-13 (FASE5-29, REVISION_*,
+> evidencias documentales v1-v4, experimentos, las cuatro iteraciones del Atlas del 2026-08-12)
+> vive en `historico/`, movido como contenedor y sin abrir paquetes sellados. Este documento sigue
+> siendo la fuente de estatus institucional; lo que dice abajo describe el estado al 2026-08-04 y
+> la linea Atlas 39 posterior esta resumida en `docs/polos_gastro/ESTADO.md`.
+
 **Actualizado:** 2026-08-04
 **Último cierre Atlas:** V2 Compacta corregida cerrada, congelada e integrada documentalmente (2026-07-20)
 **Línea posterior en curso:** ATLAS_V2 — tres ediciones entregadas el 2026-08-03/04 (ver sección al final)

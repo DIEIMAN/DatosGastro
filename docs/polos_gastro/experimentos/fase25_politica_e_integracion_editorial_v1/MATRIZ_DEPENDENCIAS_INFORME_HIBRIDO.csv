@@ -1,0 +1,13 @@
+componente,variante_politica,variante_interna,estado_actual,dependencia,archivo_esperado,decision,accion_futura,bloquea_cierre
+mapa_general,si,si,placeholder,capa general tipo/madurez,asset mapa general v2.1,DEC-13/DEC-14,reemplazar placeholder y validar leyenda,si
+san_telmo,si,si,placeholder,nucleo y eje contextual,capa presentacion San Telmo v2.1,DEC-10,integrar con eje secundario,si
+corrientes,si,si,placeholder,corredor continuo y Abasto separado,capa presentacion Corrientes v2.1,DEC-01/DEC-20,integrar y validar continuidad,si
+puerto_madero,si,si,placeholder,frente doble simplificado,capa presentacion Puerto Madero v2.1,DEC-11,reemplazar mapa heredado,si
+belgrano,si,si,parcial,shortlist y decision de nombres,shortlist estricta Belgrano v2.1,DEC-12,revision humana antes de dibujar,si
+costanera,si,si,sin_mapa,tres componentes y contexto secundario,capa Costanera v2.1,DEC-13,incorporar sin conectores,si
+palermo,condicional,si,lectura_editorial,resultado de escalado,resultado escalado Palermo v2.1,PEN-04,decidir si entra como estructura,no
+zonas_observacion,si,si,completo,ninguna adicional,lista editorial vigente,DEC-07/DEC-19,mantener sin ranking,no
+kpis,no,si,preliminar,validacion contra archivos,kpis_lock actualizado,PEN-05,validar fuente campo y fecha,si
+metadatos,nota,anexo,pendiente,hashes y versiones,metadata capas v2.1,PEN-05,registrar trazabilidad,si
+qa_privacidad,si,si,pendiente,paquete final,checklist QA privacidad,DEC-15,escanear texto y revisar visualmente,si
+

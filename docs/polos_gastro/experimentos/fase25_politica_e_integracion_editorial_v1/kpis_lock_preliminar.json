@@ -1,0 +1,113 @@
+{
+  "estado": "EXPERIMENTAL_NO_OFICIAL",
+  "fecha_lock": "2026-07-11",
+  "alcance": "Lock preliminar editorial. No reemplaza validacion contra el handoff v2.1.",
+  "confirmado": [
+    {
+      "kpi": "zonas_referencia_informe",
+      "valor": 22,
+      "unidad": "zonas",
+      "fuente": "contenido editorial vigente",
+      "archivo": "docs/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/contenido_fase25_politica_experimental_v1.yaml",
+      "campo": "sintesis.encuadre",
+      "fecha": "2026-07-11",
+      "estado": "confirmado_editorial",
+      "advertencia": "Cantidad de zonas de referencia del informe; no equivale a delimitaciones oficiales."
+    },
+    {
+      "kpi": "zonas_seleccionadas_detalle",
+      "valor": 5,
+      "unidad": "zonas seleccionadas",
+      "fuente": "decision editorial DEC-19",
+      "archivo": "docs/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/REGISTRO_DECISIONES_EDITORIALES_V2.md",
+      "campo": "DEC-19",
+      "fecha": "2026-07-11",
+      "estado": "confirmado_editorial",
+      "advertencia": "Seleccion no implica ranking ni mayor relevancia."
+    }
+  ],
+  "historico": [
+    {
+      "kpi": "paginas_fase25_oficial",
+      "valor": 11,
+      "unidad": "paginas",
+      "fuente": "PDF oficial Fase 25",
+      "archivo": "outputs/polos_gastro/fase25_microajustes_finales_oficina/INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA_FASE25.pdf",
+      "campo": "pdf.pages",
+      "fecha": "2026-07-11",
+      "estado": "historico",
+      "advertencia": "Describe la pieza oficial previa; no la version politica experimental de 10 paginas."
+    }
+  ],
+  "pendiente_de_codex": [
+    {
+      "kpi": "version_capas_presentacion_v21",
+      "valor": null,
+      "unidad": "version",
+      "fuente": "handoff tecnico v2.1",
+      "archivo": null,
+      "campo": null,
+      "fecha": null,
+      "estado": "pendiente_de_codex",
+      "advertencia": "No completar hasta recibir e inventariar el handoff."
+    },
+    {
+      "kpi": "hashes_capas_presentacion_v21",
+      "valor": null,
+      "unidad": "sha256",
+      "fuente": "metadata del handoff v2.1",
+      "archivo": null,
+      "campo": null,
+      "fecha": null,
+      "estado": "pendiente_de_codex",
+      "advertencia": "Bloquea la trazabilidad final."
+    }
+  ],
+  "no_publicable_sin_contexto": [
+    {
+      "kpi": "cobertura_corrientes",
+      "valor": 40.08,
+      "unidad": "porcentaje tecnico",
+      "fuente": "repeticiones hibridas v2",
+      "archivo": "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/REVISION_REPETICIONES_HIBRIDAS_V2/02_TABLAS/tabla_comparacion_repeticiones_v2.csv",
+      "campo": "cobertura_pct",
+      "fecha": "2026-07-11",
+      "estado": "no_publicable_sin_contexto",
+      "advertencia": "Cobertura de una representacion experimental; no mide actividad total."
+    },
+    {
+      "kpi": "cobertura_san_telmo",
+      "valor": 65.0,
+      "unidad": "porcentaje tecnico",
+      "fuente": "repeticiones hibridas v2",
+      "archivo": "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/REVISION_REPETICIONES_HIBRIDAS_V2/02_TABLAS/tabla_comparacion_repeticiones_v2.csv",
+      "campo": "cobertura_pct",
+      "fecha": "2026-07-11",
+      "estado": "no_publicable_sin_contexto",
+      "advertencia": "Corresponde a nucleo mas eje contextual; robustez media."
+    },
+    {
+      "kpi": "cobertura_puerto_madero",
+      "valor": 79.93,
+      "unidad": "porcentaje tecnico",
+      "fuente": "repeticiones hibridas v2",
+      "archivo": "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/REVISION_REPETICIONES_HIBRIDAS_V2/02_TABLAS/tabla_comparacion_repeticiones_v2.csv",
+      "campo": "cobertura_pct",
+      "fecha": "2026-07-11",
+      "estado": "no_publicable_sin_contexto",
+      "advertencia": "Resultado analitico del frente doble; no usar como limite ni en cuerpo politico."
+    },
+    {
+      "kpi": "dependencia_fuente_externa_costanera",
+      "valor": 93.1,
+      "unidad": "porcentaje",
+      "fuente": "repeticiones hibridas v2",
+      "archivo": "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/REVISION_REPETICIONES_HIBRIDAS_V2/02_TABLAS/tabla_comparacion_repeticiones_v2.csv",
+      "campo": "dependencia_fuente_externa_pct",
+      "fecha": "2026-07-11",
+      "estado": "no_publicable_sin_contexto",
+      "advertencia": "Dependencia alta; sostiene el caracter exploratorio y requiere contexto metodologico."
+    }
+  ]
+}
+

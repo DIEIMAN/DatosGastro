@@ -1,0 +1,53 @@
+# Manifest de archivos
+
+Archivos compartibles y técnicos: 47
+
+| Ruta | Bytes | SHA-256 |
+| --- | ---: | --- |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/COMPARACION_PROTOTIPOS_HIBRIDOS_V1.md` | 944 | `f22e96eb46ba9863cd8f41a26eee669c8be9f7f71c8bae6045f6cc663bd423d5` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/DIAGNOSTICO_BELGRANO.md` | 599 | `0b456561a1d417cc8bed6f0896dcdb9c26fc3baa1cabb6d6f95f05dbf6b06470` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/DIAGNOSTICO_CORRIENTES.md` | 636 | `2313a33c326155f1ed7538dc47075169d3a1c004bf6273575f6d36118eb3ae12` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/DIAGNOSTICO_COSTANERA.md` | 453 | `5f6b7968b723cd062fa27bceb0aeda39272c06a2002a2826b0ddcdf82b904796` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/DIAGNOSTICO_PUERTO_MADERO.md` | 682 | `4366d6d9d925c52b60ba991ab5812382cc90542e3cd276fe2802eec0e6a83f73` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/DIAGNOSTICO_SAN_TELMO.md` | 692 | `5fb59142696b3d5fcd5d387bd19a65dd0b0f2721c5b98002bae762ec3dfb49a5` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/FE_DE_ERRATAS_AUDITORIA_GPT56.md` | 1228 | `df0bf355930dad69da68e96bc6ce417c28a67e93c099e7c8658335981382b965` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/GUIA_REVISION_DEDUPLICACION.md` | 681 | `c2deebd8f12820b57d15bac316e3ea6af22605bb3bad277747fe0a0594d6bec6` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/MANIFEST_ARCHIVOS.md` | 8697 | `ce6bfb89584d9c16146c2e72362c317b414f8f52ab7d033ffc7c31a2e4ec5228` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/MATRIZ_DECISIONES_POST_PROTOTIPO.md` | 805 | `8bcc5f4f0620868602825d494fa5d1bfeedeb84986235a0d312c591934a0ff5d` |
+| `docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/PLAN_ESCALADO_PIPELINE_HIBRIDO.md` | 1418 | `45a1835e596d75f7694366998c9230c093d23b675be582ec5b665019934a970e` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/.gitignore` | 32 | `63e351fcca489d9eb023e5df0896f644bf41bee3f23af40535d77b8395815d53` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_comparacion_comunidades.csv` | 298 | `6bf6a599bf47972bb279ff7a114d72b5a0cfffc8a16eeaff14dc565e49d17a8d` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_nucleos_candidatos.geojson` | 33015 | `154bdc946aef452ae599466b992df2d3d2a6fe6e021137e3cfe70dd8f0a633a7` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/comparacion_hashes_insumos_criticos.csv` | 7072 | `984f4ade54e2a768c86ad423b171e43684ad91a1ca0877101a7ca07f3ef333ae` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_buffer_candidato.geojson` | 9808 | `63a2d67eedc88610f6c55c81a515da7cb1937ccea8712d4ceae13ef844bc41b7` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_eje_candidato.geojson` | 2981 | `bda48365bcb4b8f2a7fa7565bed12744e193eb3399fe2db3725ecbbbb9afa6c7` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_perfil_longitudinal.csv` | 995 | `a79f4534b43342e782d673822af1d2a971bbc4fbfd739ce73a09a9fae570baa5` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/costanera_concentraciones_exploratorias.geojson` | 1530 | `c7e238b4a52a864419e8665bd46a6d1192f23681538c5a7b6dc92253914c2d1e` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/diagnostico_places_por_zona_corregido.csv` | 2688 | `e6677c19be7243ad5fe7c2d3c32c7d6f18d315706318eba6782956d6dde6db1d` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/hashes_insumos_criticos_antes.csv` | 4826 | `44494c873fb4cbfaf51460f510832d6edc1efc07901ff99634caa3eadf1a9709` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/hashes_insumos_criticos_despues.csv` | 4826 | `44494c873fb4cbfaf51460f510832d6edc1efc07901ff99634caa3eadf1a9709` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/inventario_capas_urbanas_locales.csv` | 1461 | `70e6e534eaa1ccdb59eb3ca3efebfaec78a688c6cce786440840dc738efbe35d` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/comparativa_belgrano_actual_vs_hibrido.png` | 855142 | `324b7998e9a407dedf14c16e31fe35fd0eca60e5becb5ab2323a141474d36166` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/comparativa_corrientes_actual_vs_hibrido.png` | 475460 | `d39557679f230ec211c99cad79d6500b1899a1b454ff319f44209cbcfc1b159a` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/comparativa_costanera_actual_vs_hibrido.png` | 357812 | `0c131964b8139c78bf8872e201af5ce1829d08ed74af04ffc9353a17470c8217` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/comparativa_puerto_madero_actual_vs_hibrido.png` | 381236 | `099c68ed0584010682947c5b801a8c4c8479bd9d199b9d948ce6657c4b4e0373` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/comparativa_san_telmo_actual_vs_hibrido.png` | 234263 | `127b28b3a04c2f06a3a96be743c0814805c407768a5013c885e573c8e7c17d50` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_belgrano_prototipo_multinuclear.png` | 502694 | `19f9e0ad48c245fe49bd296eafa3b7e42a5abbb74b28720cba25834d95ef18f5` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_corrientes_prototipo_corredor.png` | 265232 | `b161a242645a039edc0a46b6db50faddc2229f7e8de727443617de5857e077c3` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_costanera_senal_exploratoria.png` | 210420 | `da07df422a01566e866971320a10ef90c50ff076c851ba463dc258f5c1d0ca56` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_puerto_madero_prototipo_frente.png` | 220151 | `6130753ed76e64306be323f5e6ef4cf7f0187422a9511d984d512c04927aa072` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_resumen_cinco_prototipos.png` | 783169 | `bd2d5a73537c48bbac6c1702d0da525a5bd320411b5680d0f8f9500edf680c64` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/mapa_san_telmo_prototipo_hibrido.png` | 147240 | `b5d838c216d263e00d4842bb79d3662ddbcf2906597de2bc7adc6acb3aa28609` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/metadata_pipeline_hibrido_v1.json` | 1573 | `6771db4f28c518f1a363a7de5f1d1c47528b2f2f775eb2a9629c937b39e6024f` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/metricas_estabilidad_desagregadas_v1.csv` | 5629 | `3806da2b123294864e4bcaf4822f6301c394e91d61f8ffb2b6dec36fb38e6a4f` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mezcla_fuentes_representaciones_v1.csv` | 1307 | `874563680216226f9d975b2bc50d6e2738af694fd77a688202caacf4f2686f35` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_frentes_candidatos.geojson` | 4655 | `4f1d2cffacc288d0bceb0a0175aeda87247a25c3e57e6bd538fbe789e66586fe` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_perfil_frente.csv` | 648 | `bfd0b022b81bb83efe586179f91fbdde081a04a3d47f8c52be0cf13e0851e29c` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_ablacion_fuentes_v1.csv` | 1613 | `b0a9534b9123e6cc6e77be6706661b0d2ae5326b831f3e9ca7b834db48ccda4c` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bootstrap_bloques_v1.csv` | 890 | `01974cb0ab5a594b90a3cab26d8601bb48892a3bc2dfe236c0eece5b6703fcc3` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bordes_v1.csv` | 799 | `9b8c4fc3c8afd1f0fdf57cec32b150a5622e5911a7fef8eb889d2071b4a2c785` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_comparacion_metodos.csv` | 1153 | `1cc69de1756eaa26374196e27b53e62ce75040b557f34c762951e89178544cd6` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_nucleo_candidato.geojson` | 3683 | `da3a8aeeccfcb7f1d01d2bab34a4dde97c0800a6412e3d02631b8adaf84582e8` |
+| `outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/tabla_comparacion_prototipos_hibridos_v1.csv` | 1491 | `34f7978b94c84c13d852bd372237b41ad9e88984f5e94e7ae55400ab0178c33e` |
+| `scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/__pycache__/construir_pipeline_hibrido_v1.cpython-312.pyc` | 109405 | `b26e4d5e7c0c86c03f7d87aa276658d094a59c2cd3dc51c0bb5bbc96656e3594` |
+| `scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py` | 66815 | `23e8362e09ecd87b266459924ed722b1ee16ab71830d03055bb73d911d310e5b` |

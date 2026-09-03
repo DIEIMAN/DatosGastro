@@ -1,0 +1,11 @@
+﻿pagina,archivo_png,estado,observaciones
+1,pagina_01.png,APTO,Sin cambios visuales; sin defectos bloqueantes
+2,pagina_02.png,APTO,"Vacío reducido; caja, nota y pie sin colisión"
+3,pagina_03.png,APTO,Sin cambios visuales; sin defectos bloqueantes
+4,pagina_04.png,APTO,Sin cambios visuales; sin defectos bloqueantes
+5,pagina_05.png,APTO,Nuevo texto sin cortes; cajas equilibradas
+6,pagina_06.png,APTO,Sin cambios visuales; sin defectos bloqueantes
+7,pagina_07.png,APTO,"Centralidad, eje y sector diferenciados; leyenda coherente"
+8,pagina_08.png,APTO,Sin cambios visuales; sin defectos bloqueantes
+9,pagina_09.png,APTO,Mapa ampliado; leyenda y cuatro componentes visibles
+10,pagina_10.png,APTO,Reflujo correcto; texto completo

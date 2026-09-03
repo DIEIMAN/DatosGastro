@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git add*)",
+      "PowerShell(git commit*)",
+      "PowerShell(git push*)",
+      "PowerShell(git add*)"
+    ],
+    "allow": [
+      "Bash(git log *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.venv/Scripts/python.exe \"$CLAUDE_PROJECT_DIR\"/scripts/qa/estado_repo.py --sesion 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.venv/Scripts/python.exe \"$CLAUDE_PROJECT_DIR\"/scripts/hooks/guardrails_pretooluse.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.venv/Scripts/python.exe \"$CLAUDE_PROJECT_DIR\"/scripts/hooks/stop_pdf_qa.py 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": false,
+    "atomic-agents@claude-plugins-official": false
+  }
+}
