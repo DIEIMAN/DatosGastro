@@ -7,12 +7,14 @@ Agregar una arquitectura preparada para nuevas fuentes externas, pero implementa
 
 Alcance inmediato:
 1. Crear fuente F07_OSM usando OpenStreetMap/Overpass para CABA.
-2. Crear contratos/stubs para F08_GOOGLE_PLACES y F09_CONVENIOS_PRIVADOS, pero sin ejecutar APIs pagas ni scraping.
+2. Crear contratos/stubs para F08_GOOGLE_PLACES y F09_CONVENIOS_PRIVADOS; permitir muestras web
+   controladas en una carpeta interna separada, sin ejecutar APIs pagas sin presupuesto.
 3. Preparar tablas normalizadas para integrar futuras fuentes privadas de delivery/pagos/POS de forma agregada y con trazabilidad.
 
 Reglas:
 - No inventar datos.
-- No scrapear Google Maps, Rappi, PedidosYa ni Mercado Pago.
+- Si se releva Google Maps, Rappi, PedidosYa u otra plataforma, fijar host, campos, tope y fecha;
+  no eludir controles y dejar todo como `EVIDENCIA_EXTERNA_NO_CANONICA`.
 - No simular métricas privadas.
 - Todo campo privado debe quedar como contrato/schema, no como dato falso.
 - Mantener `--strict-real`.

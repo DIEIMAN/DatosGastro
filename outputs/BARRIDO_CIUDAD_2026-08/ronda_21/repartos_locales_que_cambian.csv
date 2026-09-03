@@ -1,0 +1,703 @@
+reparto,local_id,nombre,direccion,barrio,comuna,deja_de_contarlo,lo_sigue_contando,lado
+A1,LOC009749,Altitud,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005888,BAYONA,TUCUMAN 839,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003038,Gaspar Café,ESMERALDA 624,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004570,In & Out Sushi,ESMERALDA 612,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024155,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009782,Delirante,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006520,LA ISLA,TUCUMAN 732,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003473,BALDOMERO,TUCUMAN 681,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024142,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024099,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024160,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003817,NO TODAVIA,MAIPU 608,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024101,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024159,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024057,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016139,Pepi&Co cafeteria,Florida 681,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005202,LA DORADO,MAIPU 646,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016118,Parribayres,Maipú 616,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024108,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016119,Pekin,Esmeralda 669,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024124,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024106,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024145,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002193,nan,MAIPU 683,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024144,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005564,nan,MAIPU 694,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016140,Ti-Ga CafÉ Bar,junin 698 esquina viamonte,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007806,Medialinadas,Viamonte,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008178,Otra Pasta,Viamonte,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005795,ARCANGEL,VIAMONTE 702,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005327,nan,VIAMONTE 757,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010186,HGT Express,Viamonte,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000081,Ricas Empanadas,VIAMONTE 715,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007044,ST. GEORGE,VIAMONTE 662,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005625,CHAPLIN,VIAMONTE 673,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000035,nan,VIAMONTE 651,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024079,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024077,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024078,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002241,FUSSION,MAIPU 720,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024062,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002460,nan,COCHABAMBA 3897;COCHABAMBA 3899,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001675,nan,VIAMONTE 636,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024149,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024033,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016134,Mallorca,Viamonte 591,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004580,CAFE DE LAS GALERIAS,FLORIDA 727;FLORIDA 729;FLORIDA 735;FLORIDA 753;FLORIDA 755;FLORIDA 765;FLORIDA 771;FLORIDA 777;FLORIDA 783;FLORIDA 785;CORDOBA AV. 532;CORDOBA AV. 550;CORDOBA AV. 552;CORDOBA AV. 570;SAN MARTIN 712;SAN MARTIN 702;SAN MARTIN 712;SAN MARTIN 714;SAN MARTIN 718;SAN MARTIN 728;SAN MARTIN 732;SAN MARTIN 736;SAN MARTIN 746;SAN MARTIN 748;SAN MARTIN 752;SAN MARTIN 760;VIAMONTE 501;VIAMONTE 509;VIAMONTE 515;VIAMONTE 521;VIAMONTE 525;VIAMONTE 529;VIAMONTE 541;VIAMONTE 545;VIAMONTE 547;VIAMONTE 549,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016166,Verde Verde Comida Vegetariana,Viamonte 669,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024061,nan,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016131,The Cosmopolitan Bar,nan,San Nicolas,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000134,CASTELAR,CORDOBA AV. 787,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024809,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016211,Pacifico,Av. Córdoba 502/526,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004632,Moksha Coffee and Deli,MAIPU 819,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024790,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024789,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005008,La Sonada,MAIPU 841,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016206,Fresh Foods,Florida 844 local 1,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001688,La Fantástica Fábrica del Dulce de Leche,FLORIDA 846,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024791,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009254,Barrio Cafetero,Florida 833,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007974,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002859,Bocabajo,MAIPU 864;MAIPU 866,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016219,Brunch Time,Maipú 893,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024808,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024806,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024807,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010179,Empanairo,Esmeralda,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016222,Delivery gourmet,Esmeralda 950,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024810,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009462,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004360,nan,SUIPACHA 878,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024811,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024817,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024816,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024815,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016223,La Feria Food,Granadero fco gonzalez 2036,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024874,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016220,Los Panchitos del Sol,Florida 860,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009428,Classic BA,Florida 895,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001969,Quinoto,SAN MARTIN 875,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024875,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008949,Florida Garden,Paraguay,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007774,Alimentari,Paraguay,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005703,La Motofeca,PARAGUAY 627,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006372,HOTEL ASPEN TOWERS,PARAGUAY 557,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024855,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009222,Pousser,Paraguay,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002454,Un Toque Perfecto rotisería vegetariana,PARAGUAY 762,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006357,HABITUE,PARAGUAY 700,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007122,VIA CANDOTTI,PARAGUAY 665,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004383,TANCAT,PARAGUAY 639,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024792,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024804,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024803,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024801,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016216,Boca de Toro,Paraguay 685,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005666,MaicFood,PARAGUAY 854,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000490,Mr. Ho,PARAGUAY 887,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005611,Bagels & Bagels,PARAGUAY 831,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009273,Datri,Paraguay 901,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024737,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009300,Starbucks,Esmeralda 902,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016232,"Puerto Madero, Buenos Aires",nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024831,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024832,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024736,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016214,Visit Sky Bar,Maipú 907,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024788,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024802,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024787,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024805,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024793,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016255,Mc donals,Corrientes,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024800,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009761,Rediscover Cafe,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016256,Florida Plaza,Florida 960,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016826,Bellini,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009972,Kentucky,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007210,El Establo,Paraguay,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024786,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000044,nan,FLORIDA 914,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024857,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016250,Bar Do Poetas Culinarios,Marcelo T. de Alvear 628,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016251,Berrinche,San Martín 925,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005485,MC DONALD'S,FLORIDA 944,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006090,DADA,SAN MARTIN 941,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024858,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000867,Parrilla Cero 5,SUIPACHA 930,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009609,Moliere,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007358,Pekin,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004463,nan,SUIPACHA 945,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024731,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002678,Los Remolinos,SUIPACHA 957,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016241,Havanna,Marcelo T. de Alvear 1000,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024735,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003120,Esmeralda,ESMERALDA 957;ESMERALDA 959,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024828,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009760,Trippin,Maipú 944,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024794,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024782,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016262,Barista Restó Bar,Florida 122,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002357,SHOUT Café & Espresso Bar,MAIPU 989,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024783,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024795,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024796,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024797,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009573,Toki,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024827,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009038,Cayena,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010462,Seven Days,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024826,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016261,Master Wich,Esmeralda 981,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002823,The Temple Bar,"ALVEAR, MARCELO T. De 944",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003962,Valentino Bar,"ALVEAR, MARCELO T. De 930",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024732,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024733,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024734,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024785,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024784,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007883,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016258,Miaokou taiwanése Street foods,Florida 15,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010037,Wasabi's,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006311,FILO,SAN MARTIN 975,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024856,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024859,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024860,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016308,Chabrés Bar,Marcelo T. de Alvear 554,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005299,1810,"ALVEAR, MARCELO T. De 868",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008703,On Tap Craft Beer,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000802,Fa Song Song,ESMERALDA 999,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009450,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016275,Cevicheria Manaba AR,CABA ,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000271,On Tap,"ALVEAR, MARCELO T. De 818",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024835,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007352,Restaurante Natacha,Marcelo T. de Alvear,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024834,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024730,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024799,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007753,Casanova,Marcelo T. de Alvear,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016309,ReuniÓN GastronomÍA,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001931,nan,"ALVEAR, MARCELO T. De 666",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024780,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016302,Brozziano,Esmeralda 532,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016303,El Clásico de Quilmes,Esmeralda 574,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016301,Marcelo T,Suipacha,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008088,Croque Madame,Avenida Santa Fe 750,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024777,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008145,La Parrilla,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005054,nan,ESMERALDA 1037,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024729,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002120,Huacho,ESMERALDA 1050,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016293,Restaurant Contraluz,Suipacha 1036,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016292,Helados TINO'S,"Suipacha 1060, Villa Bosch",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008297,Magno,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024833,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024840,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004571,nan,ESMERALDA 1086,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000516,Café Martínez,SANTA FE AV. 920,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009035,Tostado,Avenida Santa Fe 909,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024886,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024885,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006113,DESIDERIO,SANTA FE AV. 801,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024727,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024728,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016343,Poké & Roll,Suipacha 1127,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016348,Los  amigos  casa de comida,sargento cabral 422,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016339,Antares San Miguel,Sargento Cabral 1069,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005974,CAFE PLAZA,SANTA FE AV. 999,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005979,CAFE VINCENT,"PELLEGRINI, CARLOS 1123",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024883,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024758,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024759,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024829,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008859,Bar Flux,Marcelo T. de Alvear,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003158,Pizzería El Correntino,"ALVEAR, MARCELO T. De 1000",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001373,Gamas,"ALVEAR, MARCELO T. De 975",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010463,El Bar de Mon,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024837,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007766,Taragüi II,Marcelo T. de Alvear,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008489,Piacere,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024836,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016276,El Faro,Carlos Pellegrini 1061,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006308,FENICIA,"PELLEGRINI, CARLOS 1061",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024838,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008085,Luxushi,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024839,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016351,La Cava de Vittorio Vinoteca,Arenales 964,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024862,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024861,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016306,Restaurante Pekin,Reconquista 945,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016304,Bread Real Food,Marcelo T. de Alvear 433,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024851,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024852,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024850,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016307,Me Tiento,Marcelo T. de Alvear 472,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003416,nan,"ALVEAR, MARCELO T. De 456",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004781,Niza,"ALVEAR, MARCELO T. De 499",Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009443,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016300,Periplo,Marcelo t. de alvear 554,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024853,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016297,Marriott Plaza Bar,Florida 1005,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016298,Cora,Florida 1045,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016312,Rotiseria El Mendo,San Martín 1083,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009527,Travel Studio,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024849,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC000280,DRUID IN,RECONQUISTA 1028,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024848,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003868,El Cantinazo,RECONQUISTA 1056,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005906,BIG MAMMA,RECONQUISTA 1080,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016310,Pizza Nika,Ricardo Rojas 451,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024847,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006594,LAS NAZARENAS,RECONQUISTA 1132,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016347,Doble Q,Marcelo T. de Alvear 446,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024724,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008069,Fenicia,Suipacha 1183,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024725,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024726,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024884,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC006531,LA MONTANA,ARENALES 820,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC005746,ABRIL,ARENALES 900,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002344,Maria de Bambi,ARENALES 916,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002099,BENGAL,ARENALES 837,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009036,Divine Budin,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024781,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024778,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024779,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016311,Rapa Nui,Av. Santa Fe 760,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC001135,Torcuato & Regina,SANTA FE AV. 772,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016350,Catedral Buenos Aires,Calle Arenales,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009113,Torcuato & Regina,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024715,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016373,Calabaza Express,Esmeralda 1281,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016372,Big Apple,Juncal 615,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024854,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024911,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009022,Havanna,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016349,Las Medialunas del Abuelo,San Martín 1141,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024846,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008960,Starbucks,Avenida Maipú 1270,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024907,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002719,La Torre de Retiro,DEL LIBERTADOR AV. 118,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016368,Suipacha Restaurant,Suipacha 1235,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003510,nan,ESMERALDA 1249,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024721,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024722,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC003368,Deli Wok,ESMERALDA 1290,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC004835,LIGURE,JUNCAL 846,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008941,El Socorro,Juncal 895,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC007767,Da Mingo,Juncal,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024898,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024897,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024906,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC008646,BASA,Basavilbaso 1328,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009091,Grand Café,Basavilbaso 1340,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC010080,Subway,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024905,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC009096,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC002201,PLAZA ITALIA,DEL LIBERTADOR AV. 186,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC024902,nan,nan,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A1,LOC016398,kissaten.tostador,Arroyo 826,Retiro,1.0,Z46 · Retiro,R12 · Centro y Microcentro,
+A2,LOC015919,Bar los Amigos,Libertad 282,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024551,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024401,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004796,CHAVAL,URUGUAY 286,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008012,Club del Progreso,Sarmiento 1334,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC001114,Café Martínez,SARMIENTO 1406,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC005853,BAR GUANABARA,SARMIENTO 1232,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC002797,TIEMPO LIBRE,SARMIENTO 1301;SARMIENTO 1305,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015927,Sarmiento Resto Bar,Sarmiento 1038,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC006337,GARIK,SARMIENTO 1249,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC010691,Cheap and good Empanadas!,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024350,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024323,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015947,Caesar park,Cerrito 336,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015957,Por amor al café,Uruguay 363,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024512,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015961,Restaurante ZT,Montevideo 500,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC003548,PIPPO 3,PARANA 356,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024532,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024380,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015955,Cafe Bar 360,Libertad 360,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024362,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC007484,Cafetería & Resto Bar,Cerrito 382,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC001094,Revire,CORRIENTES AV. 1124,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008968,Bonafide,Avenida Corrientes,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009543,Freddo,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004503,Caro Nipote,CORRIENTES AV. 1522,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009196,Havanna,Avenida Corrientes,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015939,Petit Sarmiento,Sarmiento 1175,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024211,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008060,nan,Avenida Corrientes,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC000664,HAVANNA,CORRIENTES AV. 902,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024379,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024419,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024352,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024414,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024398,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024336,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC007825,Edelwisse,Libertad,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC001631,ArcorCenter,CORRIENTES AV. 1318,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004615,IL GATO TRATTORIAS,CORRIENTES AV. 1265,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC007888,Catedral de pisco,Avenida Corrientes 3126,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC011057,Persicco,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024412,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024319,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024428,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015990,Jorge´s Pizza,"Av Corrientes 4214, Piso 2, Dpto 9",San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC010879,brodway teatre,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC015993,Subte Pellegrini,"Estación Subte Pellegrini, línea B local 2. Av Corrientes Y Carlos Pellegrini",San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC001642,LA CHURRASQUITA,CORRIENTES AV. 1221,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009949,McDonald's,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008123,Puny,1269,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024307,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008923,La Molienda,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024356,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004767,La Parrillita de Talcahuano 414,TALCAHUANO 419,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024378,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024314,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024312,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC010237,Subway,Avenida Presidente Roque Sáenz Peña 1118,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024366,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024420,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024424,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024367,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016009,pool broadway,Maipú 492,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016010,Zum Edelweiss,Libertad 431,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024364,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024359,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024333,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024357,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024384,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024360,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016004,Suo Cafe,Uruguay 449,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024328,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008952,Café Martínez,Uruguay 463,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC005279,rawa Buenos Aires,TALCAHUANO 447,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024329,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024432,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC011152,Paradis,Paraná 441 Piso PB,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC002262,nan,PARANA 471,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024425,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024363,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016019,Cumbres Andinas Espumantes,Esmeralda 155,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016017,Bar el Obelisco,Carlos Pellegrini 465,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016032,Bar Plaza Centro,Paseo De La Galería,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024355,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016021,Parrilla San Remo Restaurante,Uruguay 380,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024402,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC001859,Cucina de Santo,TALCAHUANO 462,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024324,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024327,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004858,nan,URUGUAY AV. 485,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008951,Starbucks,Lavalle 1394,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024369,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016040,Bonafide,Lavalle 1300,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024188,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024322,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008756,El Bar de Julio,Avenida Presidente Roque Sáenz Peña 1129,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016031,Puerto Madero Este,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008967,Café Martínez,Avenida Presidente Roque Sáenz Peña 1141,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024321,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC006676,MADRID CAFE,CERRITO 470,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016033,Costa Club Café,Avenida Presidente Roque Sáenz Peña 1181,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024409,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016039,Nakanori,Cerrito 488,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024418,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024399,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC008292,Obelisco City,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC000152,ALIMENTARI,LAVALLE 1134,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024342,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009978,Subway,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC006541,LA NUEVA REAL,LAVALLE 1530,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016030,Teabet,Paraná 451 (oficina solo para retiro),San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC003742,BAY BEN BAR NUEVO CAFE,LAVALLE 1561;LAVALLE 1565,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016036,Tribunales,Lavalle N°1394 esq. Uruguay,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC003412,Mainisel Catering,LAVALLE 1465,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024338,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024308,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016047,Coquito's,Paraná 537,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024417,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024340,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024377,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009021,Petit Colón,Libertad 505,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024392,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC016045,Frankfurt El Pancho,Cerrito 506,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC009107,Café Metro Bar,Cerrito 528,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024304,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC004293,ULPIANO,LAVALLE 1284;LAVALLE 1284,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC000682,BACARO,LAVALLE 1368,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC000832,nan,LAVALLE 1326,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC007102,TRIBUNALES,LAVALLE 1202,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC005118,nan,URUGUAY AV. 524,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A2,LOC024400,nan,nan,San Nicolas,1.0,R12 · Centro y Microcentro,R02 · Avenida Corrientes,
+A3,LOC015733,Previous BA,Hipólito Yrigoyen 851,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022195,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022198,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022194,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022197,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022201,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC001281,Antonio’s,TACUARI 84,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022057,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC006206,EL GLOBO,"YRIGOYEN, HIPOLITO 1199",Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022156,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007410,Bernardo,Bernardo de Irigoyen,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022159,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022160,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007115,VALENTINO,"IRIGOYEN, BERNARDO de 82",Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008715,La Embajada,Hipólito Yrigoyen 01299,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015736,Happy Hour,2025 Av. de Mayo,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022157,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022161,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022158,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008051,Teatro Tercer Acto,Avenida de Mayo 1158,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008224,Campaso,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015742,Beer House 82,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC011098,Via Giovanni,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC002235,Deli Wok Express,DE MAYO AV. 1124,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC010444,Mostaza,Av. de Mayo 998,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC005763,ALAMEDA,DE MAYO AV. 1203,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007592,"El Cortijo, Parrilla, Comida española",nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007283,Los 36 Billares,Avenida de Mayo 1265,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022062,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022060,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007927,Plaza Asturias,Avenida de Mayo 1185,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022167,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022059,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015758,Resto tango,Bernardo de Irigoyen 24,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007291,La Gayola,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022162,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC001952,Costumbres Argentinas,LIMA 31,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015761,El Noble,Estación Avenida de Mayo [Línea C],Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022164,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022166,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC005149,The Clover,PIEDRAS 84,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022200,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022199,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008962,Import,Avenida de Mayo 970,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC011097,Grido,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC009013,Café Dalí,Avenida de Mayo 948,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008619,Dark Bar,Avenida de Mayo 912,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC000523,LA ARGENTINA,DE MAYO AV. 843,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC003931,Mr. Pollo,DE MAYO AV. 937,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC005978,CAFE TORTONI,DE MAYO AV. 825,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC009501,Goya,Avenida de Mayo 901,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022171,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022173,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC010396,El Lago,Tacuari 36,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022170,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022174,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015777,Club,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022168,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022172,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC005366,nan,TACUARI 21,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC009845,Rush,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC000439,nan,RIVADAVIA 930,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC007782,Bar the Bar,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC004184,Cocoliche,RIVADAVIA 896,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC001011,Red Bell Saloon,RIVADAVIA 846,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022061,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022063,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC001609,SANTA CRUZ,RIVADAVIA 1294;RIVADAVIA 1300;SANTIAGO DEL ESTERO 20;SANTIAGO DEL ESTERO 8;DE MAYO AV. 1297;SANTIAGO DEL ESTERO 40,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC010407,Ugi's,Lima,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC015760,El Palacio de la Cerveza,Av de Mayo 1900,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022165,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022169,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC022163,nan,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC008081,Hispano,Salta 20,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC010107,Panchu,nan,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A3,LOC005994,CANTARES,RIVADAVIA AV. 1180,Monserrat,1.0,R12 · Centro y Microcentro,Z47 · Monserrat y Congreso,
+A4,LOC005536,nan,MEDRANO AV. 572,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC005680,Panadería Lorenzo,MEDRANO AV. 592,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC004516,nan,CORRIENTES AV. 4011,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC014488,Rotiseria Los Tioz,Avenida Medrano 632,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC025760,nan,nan,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC025761,nan,nan,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC014490,Puerta Medrano,Avenida Medrano 688,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC025770,nan,nan,Almagro,5.0,R13 · Abasto,Z37 · Almagro,oeste
+A4,LOC002706,Huma Restobar,HUMAHUACA 3853,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC010705,The Flour Store,Humahuaca,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025803,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025725,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025801,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC004279,La Cresta,BULNES 829,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014458,Analgama Dibujos,Guardia Vieja 3723,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC007968,Parrilla Nico,Guardia Vieja 3749,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025722,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC000787,Aport,BULNES 891;BULNES 893;BULNES 891;BULNES 893,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025799,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC004944,Daniel,"SALGUERO, JERONIMO 705;HUMAHUACA 3899",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC003036,Kaizen Almagro,"GOMEZ, VALENTIN 3519;GOMEZ, VALENTIN 3521;GOMEZ, VALENTIN 3523;GOMEZ, VALENTIN 3519;GOMEZ, VALENTIN 3521;GOMEZ, VALENTIN 3523;GOMEZ, VALENTIN 3519;GOMEZ, VALENTIN 3521;GOMEZ, VALENTIN 3523",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014475,Heladería Venezia Roma,Sánchez de Bustamante 450,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014476,MTG Pirulo,Sánchez de Bustamante 466,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025688,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025731,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025687,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014473,Pizza Bum,"Abasto Shopping, Avenida Corrientes 3247",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC001156,Fabrica de Pizzas Abasto,CORRIENTES AV. 3512,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025689,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014472,Cuzco Hatuchay,Avenida Corrientes 3528,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014471,Los Trujillanitos,"Avenida Corrientes, 3564",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014470,La Casa del Queso,Avenida Corrientes 3587,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC001109,Vanshelato,CORRIENTES AV. 3601,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025708,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025683,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025667,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025710,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC003626,Ruskaasushi,MEDRANO AV. 501,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025723,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014477,Inka Restaurant Peruano,M Bravo 456,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014478,Manger Bakery,Bulnes 658,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025721,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC002118,La Cocina de Juance,"SALGUERO, JERONIMO 530",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014479,Granitas,Valentín Gómez 3869,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC001784,En ayunas café,"SALGUERO, JERONIMO 572",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025812,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025837,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025841,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025840,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC009944,Morita,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC004937,nan,CORRIENTES AV. 3828,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC009376,Roses,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC000854,Los Sabios Restaurante Vegetariano,CORRIENTES AV. 3733,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC009946,La Continental - Almagro,Avenida Corrientes 3701,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025682,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025727,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC001831,Café Martínez,CORRIENTES AV. 3799,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025693,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025732,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025814,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC008141,Imperio Cocina Porteña,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014485,Pizzeria Imperio,Avenida Corrientes 4000,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014486,EpaChamo.ar,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014487,Pan de Queso Brasil,Avenida Corrientes 3891,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC004997,PIN-PUN,CORRIENTES AV. 3961;CORRIENTES AV. 3963,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC002482,nan,"SALGUERO, JERONIMO 614",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC010420,Sabores Express,Avenida Corrientes 3981,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC005265,nan,BULNES 738,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014467,Cantina la Maroma,Mario Bravo 584,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025715,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC001956,nan,"DEL LIBERTADOR AV. 2300;DIAZ, CNEL. AV. 2765",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC004424,Pizzeria C y G,"BRAVO, MARIO 610",Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025726,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC002725,Doña Cocina Tipo Casa,HUMAHUACA 3800,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC007976,Doña,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014466,Deniro Hamburguesería,Humahuaca 3841,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025802,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025852,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025792,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025851,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC003498,Los 3 Hermanos,MEDRANO AV. 655;MEDRANO AV. 657,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025850,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC007902,La Reina Kunti,Humahuaca 3461,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC009306,El Banderín,Guardia Vieja 3601,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025662,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025645,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014463,La Fresca,Billinghurst 784,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025650,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025862,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025730,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014459,Doña Empaná,Guardia Vieja 3700,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC002618,nan,GUARDIA VIEJA 3796,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC014460,La Vieja Guarida,Guardia Vieja 3777,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025724,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025728,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025729,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC007301,El Rincon Organico,Bulnes 910,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025842,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC003141,Pierino,LAVALLE 3502,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025648,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A4,LOC025711,nan,nan,Almagro,5.0,Z37 · Almagro,R13 · Abasto,este
+A5,LOC007077,THE COUSINS,"PUEYRREDON, HONORIO, DR. AV. 1295",Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018488,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018430,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC008871,Sobek Bowling & Drinks,General Martín de Gainza 1067,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC026723,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC009918,Full,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC026689,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014621,Vinoteca Dionisos,Avenida Gaona 1272,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC010281,La 10,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC003797,nan,GAONA AV. 1120,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC027085,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014615,Pizzeria Darle,Av San Martín 602,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014616,Buenos Aires,Av. S. Martín 780,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014617,Parrilla la 10,General Martín de Gainza 1091,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014618,pizza up,Avenida Gaona 1235,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC027087,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014619,La Parrillita De Adrogué,Avenida San Martín 1204,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014614,Cosmos Bar Oficial,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018493,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC026902,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC026895,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014581,Lin Yunjian,AV.SAN MARTIN 2221 P/D: ,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC005513,Bon Appétit,GAONA AV. 1303,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC027088,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014620,Asociacion Circulo Italo Argentino,Teniente Gral. Manuel A. Rodríguez 1191,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014622,Robyno Café de Especialidad,Avenida San Martín 1326,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014623,Pizzeria Pinocho,Avenida San Martín 1345,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014624,Bonafide,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014625,La Europea Pizzas,Avenida San Martín 1425,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018562,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC002905,FRANKFURT,"PUEYRREDON, HONORIO, DR. AV. 1123",Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018431,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC011008,Helados Chungo,Antezana 570,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018576,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC008918,El Desembarco,Avenida Doctor Honorio Pueyrredón 1151,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018447,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC010957,Vickens,Rojas 1259,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018526,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC007956,Crack,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014626,Pizzeria El Golpe,Avenida San Martín 1401,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014627,Llamasté,Coronel Apolinario D. Figueroa 695,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC001245,nan,"FIGUEROA, D. APOLINARIO, CORONEL 675",Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018595,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014628,Rumia Nuevos Apetitos,Luis Viale 701,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018529,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018530,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018551,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC000710,CAFE DE GARCIA,SAN MARTIN AV. 1828,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC026883,nan,nan,Caballito,6.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014635,Arlequín Café,Avenida San Martín 1929,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014587,Modo Muzza,Doctor Luis Beláustegui 929,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018601,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC000343,Bilbo Café,"BELAUSTEGUI, LUIS, Dr. 802;BELAUSTEGUI, LUIS, Dr. 804",Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018528,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC009422,La blonde,Avenida Doctor Honorio Pueyrredón 1443,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014593,Love in Roll,Avenida Honorio Pueyrredón 1483,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018425,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC009483,Darién,Avenida Doctor Honorio Pueyrredón 1534,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014594,Ipa,Avenida Honorio Pueyrredón 1546,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018429,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014570,Cantina del Pari,Batalla de Pari 700,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC006088,CUTTER'S CAFE,"PUEYRREDON, HONORIO, DR. AV. y JUSTO, JUAN B. AV.",Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018459,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC014567,El Pasaje Restaurant,Rojas 2050,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018577,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC004296,Pana Miluar,CASAFOUST 699,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018557,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018556,nan,nan,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC009199,Iberia,Avenida Doctor Honorio Pueyrredón,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC007710,La Esquina,Espinosa,Villa Crespo,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018035,nan,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018034,nan,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018053,nan,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018032,nan,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC000173,nan,FRAGATA Pres. SARMIENTO 1943,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC018036,nan,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC010530,Big Pizza,nan,Paternal,15.0,R08 · Villa Crespo,R21 · La Paternal,sudsudoeste
+A5,LOC002111,nan,WARNES AV. 745,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC018552,nan,nan,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC018534,nan,nan,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC018550,nan,nan,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC018539,nan,nan,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC007139,WALF II FAST FOOD,THAMES 99,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC014564,Lula Bar,Avenida Sir Alexander Fleming 994,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC014563,Barnes,Avenida Warnes 913,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC018537,nan,nan,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC002720,Restaurante Toto,WARNES AV. 1007,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC003223,nan,THAMES 32;MARTINEZ ROSAS 1001,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC014566,Los Pilares Pizzería Delivery,Av J B Justo 3124,Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC006312,FITO'S BAR,"JUSTO, JUAN B. AV. 3177",Villa Crespo,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste
+A5,LOC001134,nan,MONTENEGRO 102,Chacarita,15.0,R21 · La Paternal,R08 · Villa Crespo,nornoreste

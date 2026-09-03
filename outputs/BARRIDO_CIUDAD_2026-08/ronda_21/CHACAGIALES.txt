@@ -1,0 +1,142 @@
+==================================================================================================
+CHACAGIALES · la fusión de Chacarita, Federico Lacroze y Colegiales, medida
+==================================================================================================
+
+geometría: 41 polos, después de los cinco repartos
+
+--------------------------------------------------------------------------------------------------
+1 · EL SISTEMA Y SUS TRES SUBZONAS
+--------------------------------------------------------------------------------------------------
+                                      ha   locales    loc/ha
+    Chacagiales (la unión)        495.82       891      1.80
+      · Chacarita (R09)            94.81       202      2.13
+      · Federico Lacroze (R19)    303.28       532      1.75
+      · Colegiales (Z43)          229.08       441      1.93
+
+    sumar las tres filas da       627.17 ha y   1,175 locales
+    la unión real es de           495.82 ha y     891 locales
+    o sea que sumarlas cuenta     131.36 ha y     284 locales de más,
+    sobre 279 locales distintos que están en dos subzonas o en las tres.
+
+--------------------------------------------------------------------------------------------------
+2 · LAS CINCO PRUEBAS
+--------------------------------------------------------------------------------------------------
+    1 · contención · cada subzona pierde, dentro del sistema: R09 0.0 m² · R19 0.0 m² · Z43 0.0 m²
+        PASA   (medido por superficie perdida, no con covers())
+
+    2 · menos pedazos · por separado los tres vienen en 9 piezas (Chacarita 6 · Federico Lacroze 2 · Colegiales 1)
+        la unión sale en 3, y la mayor se lleva el 90.2 % de la superficie (447.28 de 495.82 ha)
+        queda suelta:  43.98 ha de Federico Lacroze, a 65.5 m del cuerpo principal
+        queda suelta:   4.55 ha de Chacarita, a 17.3 m del cuerpo principal
+        PASA   (la fusión pega 6 piezas y no parte ninguna)
+
+    3 · continuidad de la oferta · % de locales en la cadena más larga
+                                        20 m      40 m      60 m      80 m     120 m
+        Chacagiales                   1.2 %    3.0 %    5.5 %   12.6 %   82.2 %
+          · Chacarita                 5.4 %    6.4 %   15.3 %   29.2 %   51.5 %
+          · Federico Lacroze          2.1 %    4.9 %    8.1 %   11.8 %   55.5 %
+          · Colegiales                1.8 %    6.1 %   10.2 %   25.4 %   92.3 %
+        las tres últimas filas NO se comparan con la primera: el porcentaje es sobre el total de puntos de cada figura
+
+        la prueba de la fusión · ¿la cadena más larga toca las tres subzonas?
+          20 m:  558 cadenas · la mayor junta   11 locales (  1.2 %) · Chacarita  11 Federico Lac  11 Colegiales   0
+          40 m:  298 cadenas · la mayor junta   27 locales (  3.0 %) · Chacarita   0 Federico Lac   0 Colegiales  27
+          60 m:  160 cadenas · la mayor junta   49 locales (  5.5 %) · Chacarita   7 Federico Lac  43 Colegiales   4   <-- las tres
+          80 m:  102 cadenas · la mayor junta  112 locales ( 12.6 %) · Chacarita   0 Federico Lac   0 Colegiales 112
+         120 m:   31 cadenas · la mayor junta  732 locales ( 82.2 %) · Chacarita 182 Federico Lac 407 Colegiales 411   <-- las tres
+        PASA   (hace falta que en algún umbral de la grilla la cadena mayor toque las tres y junte a la mitad o más)
+        los conteos por subzona suman más que la cadena porque un local que está en dos subzonas cuenta en las dos
+
+    4 · los solapes del nudo se cierran, y los que quedan se declaran
+        se cierra: Chacarita ↔ Federico Lacroze  ·   60.37 ha · 153 locales
+        se cierra: Chacarita ↔ Colegiales  ·    6.91 ha ·  21 locales
+        se cierra: Federico Lacroze ↔ Colegiales  ·   67.02 ha · 115 locales
+
+        quedan 4 solapes de Chacagiales con otras páginas:
+            contra R01 · Palermo                 33.15 ha · 111 locales
+            contra R08 · Villa Crespo             6.36 ha ·   1 locales
+            contra R21 · La Paternal              4.81 ha ·   4 locales
+            contra Z44 · Villa Ortuzar           15.93 ha ·  25 locales
+
+    5 · los establecimientos con reconocimiento, sin duplicar
+        capa canónica: 225 filas · 220 con punto
+        adentro de la unión hay 9 establecimientos distintos (por hito_id, no por nombre)
+        sumando los de cada subzona darían 13: 4 de más
+        4 de ellos caen en dos subzonas o en las tres:
+            MIC-018   Anchoíta                             MICHELIN                 R09 R19
+            ICO-001   Albamonte Ristorante                 Restaurante Icónico      R09 R19
+            H029      CAFE PALACIO                         Bar Notable              R09 R19
+            H010      Bar Conde                            Bar Notable              R19 Z43
+
+        los 9 del sistema:
+            MIC-013   ANAFE                                MICHELIN                 Virrey Avilés 3216             Z43
+            MIC-012   Ajo Negro - Mar de Tapas             MICHELIN                 Avenida Córdoba 6237           R19
+            ICO-001   Albamonte Ristorante                 Restaurante Icónico      CORRIENTES AV. 6735            R09 R19
+            MIC-018   Anchoíta                             MICHELIN                 Juan Ramírez de Velasco 1520   R09 R19
+            H010      Bar Conde                            Bar Notable              Federico Lacroze 3193          R19 Z43
+            H029      CAFE PALACIO                         Bar Notable              Av. Federico Lacroze 3901      R09 R19
+            MIC-042   Osaka Concepción                     MICHELIN                 Concepción Arenal 2913         Z43
+            MIC-017   Picarón                              MICHELIN                 Avenida Dorrego 866            R19
+            MIC-011   Ácido                                MICHELIN                 Charlone 999                   R19
+
+--------------------------------------------------------------------------------------------------
+3 · CUÁNTOS POLOS QUEDAN, Y CUÁLES
+--------------------------------------------------------------------------------------------------
+    41 − 3 + 1 = 39 polos
+
+      #  id           nombre                                        ha  locales
+      1  R09+R19+Z43  Chacagiales                               495.82      891
+      2  R15          Devoto                                    478.74      422
+      3  R17          Villa Urquiza                             446.62      528
+      4  Z41          Nunez                                     442.64      494
+      5  Z46          Retiro                                    414.98      414
+      6  R01          Palermo                                   385.51    1,916
+      7  R21          La Paternal                               377.29      293
+      8  R04          Puerto Madero                             314.54      354
+      9  R08          Villa Crespo                              293.83      746
+     10  R10          Caballito                                 225.36      508
+     11  Z27          Villa Santa Rita                          215.46      182
+     12  R14          Avenida Boedo                             179.46      245
+     13  R12          Centro y Microcentro                      153.72      875
+     14  R06          Recoleta                                  140.52      714
+     15  R16          Donado-Holmberg                           119.00      121
+     16  R13          Abasto                                    107.14      365
+     17  Z39          Parque Avellaneda                          75.26       11
+     18  Z40          Nueva Pompeya y Parque Patricios           69.06      112
+     19  R20          Garcia del Rio                             61.00      102
+     20  Z50          Barracas · Av. Montes de Oca               50.62       84
+     21  R11          Boulevard Caseros                          50.03       60
+     22  R02          Avenida Corrientes                         49.67      354
+     23  Z33          Mataderos                                  43.99       17
+     24  R05          Belgrano                                   39.65      343
+     25  Z24          Flores · Avellaneda y Pasaje Ruperto       39.51      107
+     26  Z54          Nueva Pompeya · eje Av. Saenz              39.39       52
+     27  R07          Costanera Norte                            38.50       67
+     28  Z37          Almagro                                    37.42      114
+     29  Z39b         Baek-ku · Barrio Coreano                   34.86       38
+     30  Z44          Villa Ortuzar                              34.39       69
+     31  Z28          Monte Castro                               28.73       69
+     32  R03          San Telmo                                  25.37       71
+     33  Z35          Balvanera · Once                           19.18       74
+     34  Z52          La Boca · Almirante Brown y Necochea       16.17       21
+     35  Z47          Monserrat y Congreso                       13.77      133
+     36  Z31          Villa Luro                                 13.70       41
+     37  Z32          Liniers · Mercado Andino                    7.00       63
+     38  Z51          Barracas · Iriarte, California y Vie        5.83       12
+     39  Z53          La Boca · Caminito y Vuelta de Rocha        4.15       37
+
+    la suma de los 39 por separado :   5,587.87 ha · 11,119 locales
+    la unión de los 39             :   5,444.15 ha · 10,819 locales
+    se cuentan de más                 :     143.72 ha ·    300 veces sobre 300 locales distintos
+    pares de polos que comparten superficie: 12
+
+==================================================================================================
+VEREDICTO · la fusión VERIFICA contra el mapa
+==================================================================================================
+    PASA     contencion
+    PASA     menos_pedazos
+    PASA     cadena_que_abarca_las_tres
+    PASA     solapes_del_nudo_cerrados
+    PASA     reconocimiento_sin_duplicar
+
+Escrito: chacagiales_cifras.csv · chacagiales_reconocimiento.csv (9) · chacagiales_solapes_que_quedan.csv (4) · atlas_39_polos.csv (39) · chacagiales_resumen.json · geometria/chacagiales.geojson · geometria/bordes_39.geojson

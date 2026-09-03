@@ -1,0 +1,118 @@
+==================================================================================================
+LOS CUATRO SIN BORDE PROPIO · el borde que sale de las calles que su página nombra
+==================================================================================================
+
+callejero: 31,961 segmentos -> 15,032 caras cerradas (manzanas)
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+barrios: capa oficial 48 · capa vieja 48
+
+==================================================================================================
+Z46 · Retiro   ·   publica hoy 467.14 ha y 715 locales
+==================================================================================================
+    lo que escribe: «Tres piezas: el **núcleo institucional** de Plaza San Martín y Florida; el **corredor Arroyo**, de Juncal y Esmeralda a Plaza Carlos Pellegrini; y un **núcleo coreano y asiático** sobre Maipú, Esmeralda, Paraguay y M. T. de Alvear, alturas 800 a 990, entre Plaza San Martín y Av. Córdoba. > Por qué absorbe al polo anterior en vez de convivir con ella. El núcleo coreano cae > exactamente sobre el pu…»
+
+    nombra 8 calles y 2 cosas que no son calles
+        calle  «Florida» → FLORIDA · 1,528 m en el callejero
+        calle  «Juncal» → JUNCAL · 4,309 m en el callejero
+        calle  «Esmeralda» → ESMERALDA · 1,857 m en el callejero
+        calle  «Maipú» → MAIPU · 1,376 m en el callejero
+        calle  «Paraguay» → PARAGUAY · 6,855 m en el callejero
+        calle  «M. T. de Alvear» → ALVEAR MARCELO T DE · 2,841 m en el callejero
+        calle  «Av. Córdoba» → CORDOBA AV · 8,162 m en el callejero
+        calle  «Arroyo» → ARROYO · 632 m en el callejero
+        NO es calle  «Plaza San Martín»
+        NO es calle  «Plaza Carlos Pellegrini»
+
+    CIERRA · el núcleo coreano y asiático
+             1.96 ha · 21 locales · 1 cara(s) con frente sobre las 4 calles a la vez
+             de dónde sale: «sobre Maipú, Esmeralda, Paraguay y M. T. de Alvear, alturas 800 a 990». Las cuatro se cruzan de a pares y encierran una cara: es la única pieza de las cuatro páginas que cierra sin agregar nada
+             control de alturas 800–990: la cara cae sobre ese tramo en 4 de las 4 calles
+
+    CIERRA · el corredor Arroyo
+             9.57 ha · 23 locales · tramo de 323 m · 4 manzanas frentistas · frente más chico 131 m
+             de dónde sale: «el corredor Arroyo, de Juncal y Esmeralda a Plaza Carlos Pellegrini». El extremo norte se resuelve con la CALLE Carlos Pellegrini, que la página no nombra: nombra la plaza. Es la única libertad que se toma en toda la corrida y va declarada acá
+             se declara: la página escribe «Plaza Carlos Pellegrini» y el borde usa la calle Carlos Pellegrini, que Arroyo sí cruza
+
+    NO CIERRA · el núcleo institucional de Plaza San Martín y Florida
+                por qué: la página nombra una sola calle —Florida— y una plaza. Una calle sola no encierra nada, y con la regla de manzanas frentistas tampoco alcanza: falta hasta dónde
+                falta nombrar: las dos transversales que acotan el tramo de Florida (la página tendría que escribir «Florida entre X e Y»)
+
+    lo que la página cierra hoy, junto: 11.53 ha · 44 locales
+    contra las 467.14 ha que publica: es 40.5 veces más chico y conserva el 6.2 % de los locales
+    y cae dentro del contorno publicado: 0 m² quedan fuera (medido por superficie perdida, no con covers())
+
+==================================================================================================
+Z41 · Núñez   ·   publica hoy 442.64 ha y 494 locales
+==================================================================================================
+    lo que escribe: «Tres piezas: el corredor de Crisólogo Larralde entre Av. del Libertador y Av. Cabildo, el **corredor bajo el viaducto Mitre**, y un **núcleo disperso de bistrós** en Campos Salles, O'Higgins y Grecia. Núñez propiamente dicho empieza al norte de Av. Congreso.»
+
+    nombra 7 calles y 1 cosas que no son calles
+        calle  «Crisólogo Larralde» → LARRALDE CRISOLOGO AV · 5,587 m en el callejero
+        calle  «Av. del Libertador» → DEL LIBERTADOR AV · 14,483 m en el callejero
+        calle  «Av. Cabildo» → CABILDO AV · 6,302 m en el callejero
+        calle  «Campos Salles» → CAMPOS SALLES · 1,822 m en el callejero
+        calle  «O'Higgins» → O HIGGINS · 3,890 m en el callejero
+        calle  «Grecia» → GRECIA · 1,702 m en el callejero
+        calle  «Av. Congreso» → CONGRESO AV · 6,125 m en el callejero
+        NO es calle  «viaducto Mitre»
+
+    CIERRA · el corredor de Crisólogo Larralde
+             23.81 ha · 61 locales · tramo de 1,188 m · 22 manzanas frentistas · frente más chico 38 m
+             de dónde sale: «el corredor de Crisólogo Larralde entre Av. del Libertador y Av. Cabildo». Los dos extremos son calles nombradas y Larralde cruza a las dos: cierra
+
+    NO CIERRA · el corredor bajo el viaducto Mitre
+                por qué: la página no nombra ninguna calle para esta pieza: nombra el viaducto, que es una traza ferroviaria y no una línea del callejero
+                falta nombrar: las dos calles que flanquean el viaducto en el tramo que la página quiere decir
+
+    NO CIERRA · el núcleo disperso de bistrós en Campos Salles, O'Higgins y Grecia
+                por qué: O'Higgins y Grecia son paralelas —corren a 34 m y no se cruzan— y Campos Salles las cruza a las dos: las tres forman una U abierta, no una figura cerrada
+                falta nombrar: la transversal que cierra el paño del otro lado de Campos Salles
+
+    lo que la página cierra hoy, junto: 23.81 ha · 61 locales
+    contra las 442.64 ha que publica: es 18.6 veces más chico y conserva el 12.3 % de los locales
+    y cae dentro del contorno publicado: 5 m² quedan fuera (medido por superficie perdida, no con covers())
+
+==================================================================================================
+Z27 · Villa Santa Rita   ·   publica hoy 215.46 ha y 182 locales
+==================================================================================================
+    lo que escribe: «Puntos dispersos con anclaje en **Av. Álvarez Jonte**, que es el límite sur y oeste del barrio **y no su columna interior**. La página lo dice porque la diferencia importa: el polo se apoya en un borde.»
+
+    nombra 1 calles y 0 cosas que no son calles
+        calle  «Av. Álvarez Jonte» → ALVAREZ JONTE AV · 6,630 m en el callejero
+
+    NO CIERRA · los puntos dispersos con anclaje en Av. Álvarez Jonte
+                por qué: la página nombra una sola calle en todo el bloque, y además dice que es el límite sur y oeste del barrio y no su columna interior. Una calle sola no encierra nada, y ésta encima está en el borde: aunque se le aplicaran las manzanas frentistas, la mitad de ellas caería fuera del barrio
+                falta nombrar: al menos dos transversales que acoten el tramo, y una calle interior paralela que le dé fondo a la figura
+
+    la página no cierra ninguna pieza. No hay borde que proponer, y lo que falta está escrito arriba.
+
+==================================================================================================
+Z43 · Colegiales   ·   publica hoy 229.08 ha y 441 locales
+==================================================================================================
+    lo que escribe: «**En revisión.** Lo que se propone es el eje Concepción Arenal–Zapiola, el Polo Concepción y el Mercado de Pulgas — o sea, **lo que queda propio y afuera** de los dos polos vecinos que comparten el corredor.»
+
+    nombra 2 calles y 2 cosas que no son calles
+        calle  «Concepción Arenal» → ARENAL CONCEPCION · 3,253 m en el callejero
+        calle  «Zapiola» → ZAPIOLA · 5,697 m en el callejero
+        NO es calle  «Polo Concepción»
+        NO es calle  «Mercado de Pulgas»
+
+    NO CIERRA · el eje Concepción Arenal–Zapiola
+                por qué: las dos calles se cruzan, así que lo que la página da es una esquina y no una figura, y el bloque no escribe hasta dónde llega el eje por ninguna de las dos
+                falta nombrar: las dos transversales que acotan el eje (o las alturas entre las que corre)
+
+    NO CIERRA · el Polo Concepción y el Mercado de Pulgas
+                por qué: son dos enclaves nombrados por su nombre propio, no por calles. El Mercado de Pulgas tiene dirección conocida —Gral. E. Martínez 50— pero esa calle no está escrita en el bloque
+                falta nombrar: las calles que delimitan cada enclave; para el Mercado de Pulgas alcanzaría con escribir la dirección que ya se conoce
+
+    la página no cierra ninguna pieza. No hay borde que proponer, y lo que falta está escrito arriba.
+
+==================================================================================================
+RESUMEN · cierran 3 piezas de las 9 que las cuatro páginas describen
+==================================================================================================
+    Retiro               2 de 3 piezas
+    Núñez                1 de 3 piezas
+    Villa Santa Rita     0 de 1 piezas
+    Colegiales           0 de 2 piezas
+
+Escrito: bordes_de_los_cuatro.csv (9) · bordes_de_los_cuatro_calles.csv (23) · bordes_de_los_cuatro_resumen.json · geometria/bordes_de_los_cuatro.geojson

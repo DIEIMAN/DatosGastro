@@ -1,0 +1,15 @@
+﻿polo_a_id,polo_a,polo_b_id,polo_b,solape_ha,locales_doble_conteo,pct_area_a,pct_area_b,clase,regla_total_global,regla_fichas
+R01,Palermo,R08,Villa Crespo,12.549172,77,3.25522,4.270915,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R01,Palermo,R09+R19+Z43,Chacagiales,33.15053,111,8.599154,6.686066,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R04,Puerto Madero,Z46,Retiro,23.16541,4,7.364826,5.582346,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R05,Belgrano,Z41,Nunez,0.058019,0,0.146339,0.013108,SLIVER,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R08,Villa Crespo,R09+R19+Z43,Chacagiales,6.356782,1,2.163432,1.282087,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R09+R19+Z43,Chacagiales,R21,La Paternal,4.807454,4,0.969606,1.27422,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R09+R19+Z43,Chacagiales,Z44,Villa Ortuzar,15.928442,25,3.212577,46.312511,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R11,Boulevard Caseros,Z50,Barracas · Av. Montes de Oca,1.548684,3,3.095598,3.059555,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R12,Centro y Microcentro,Z47,Monserrat y Congreso,0.0,0,0.0,0.0,SLIVER,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R13,Abasto,Z35,Balvanera · Once,3.908406,15,3.647827,20.374766,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R13,Abasto,Z37,Almagro,0.0,0,0.0,0.0,SLIVER,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+R20,Garcia del Rio,Z41,Nunez,2.328601,6,3.817204,0.526075,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,Z27,Villa Santa Rita,0.534667,2,1.353168,0.248154,SOLAPE_TERRITORIAL_REAL,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real
+Z40,Nueva Pompeya y Parque Patricios,Z54,Nueva Pompeya · eje Av. Saenz,39.385541,52,57.033955,100.0,PIEZA_ANIDADA,cada local cuenta una vez,puede aparecer en ambas si la pertenencia territorial es real

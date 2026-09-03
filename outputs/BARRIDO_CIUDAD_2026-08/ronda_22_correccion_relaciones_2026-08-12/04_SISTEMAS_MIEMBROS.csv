@@ -1,0 +1,6 @@
+﻿sistema_uid,sistema_nombre,miembro_uid,miembro_legacy_id,miembro_nombre,rol,tipo_relacion,se_suma_total_global,tiene_ficha_propia,fuente,umbral_continuidad_m,componente_principal_sin_unidad,componente_principal_con_unidad,locales_unidad_incluidos,no_implica_fusion,estado
+SYS-CHACAGIALES,Chacagiales,SUBZONA-R09,R09,Chacarita,subzona,MIEMBRO_DE_SISTEMA,NO,SI,ronda_21/geometria/bordes_39.geojson + conciliación pre-correcciones,,,,,,CANDIDATO
+SYS-CHACAGIALES,Chacagiales,SUBZONA-R19,R19,Federico Lacroze,subzona,MIEMBRO_DE_SISTEMA,NO,SI,ronda_21/geometria/bordes_39.geojson + conciliación pre-correcciones,,,,,,CANDIDATO
+SYS-CHACAGIALES,Chacagiales,SUBZONA-Z43,Z43,Colegiales,subzona,MIEMBRO_DE_SISTEMA,NO,SI,ronda_21/geometria/bordes_39.geojson + conciliación pre-correcciones,,,,,,CANDIDATO
+POLO-Z40,Nueva Pompeya y Parque Patricios,PIEZA-Z54,Z54,Nueva Pompeya · eje Av. Sáenz,pieza_anidada,CONTENIDA_100_PCT,NO,SI,ronda_21/geometria/bordes_39.geojson + conciliación pre-correcciones,,,,,,CANDIDATO
+SYS-CHACAGIALES,Chacagiales,POLO-Z44,Z44,Villa Ortúzar,unidad_independiente_relacionada,FUERTE_CONTINUIDAD_SIN_FUSION,SI_COMO_UNIDAD_INDEPENDIENTE,SI,ronda_21/geometria/bordes_39.geojson + conciliación pre-correcciones,120,732,795,69/69,SI,CANDIDATO

@@ -78,7 +78,7 @@ OUT_SOLAPES = GEOMETRIA_R8 / "solapes_r8.csv"
 OUT_FICHA_R20 = GEOMETRIA_R8 / "cola_de_R20_declarada.csv"
 INFORME = GEOMETRIA_R8 / "GEOMETRIA_R8.txt"
 
-ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "INVESTIGACION_DESBLOQUEOS_V21" /
+ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "historico" / "INVESTIGACION_DESBLOQUEOS_V21" /
                    "paquete" / "r15_plaza_arenales" / "fuentes" /
                    "espacios_verdes_publicos_gcba.geojson")
 

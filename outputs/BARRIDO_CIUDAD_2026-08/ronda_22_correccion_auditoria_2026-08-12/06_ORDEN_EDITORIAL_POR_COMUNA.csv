@@ -1,0 +1,40 @@
+﻿orden_propuesto,comuna_numero,comuna_principal,polo_uid,legacy_id,polo_nombre,criterio,estado
+1,1,Comuna 1,POLO-R02,R02,Avenida Corrientes,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+2,1,Comuna 1,POLO-R12,R12,Centro y Microcentro,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+3,1,Comuna 1,POLO-Z47,Z47,Monserrat y Congreso,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+4,1,Comuna 1,POLO-R04,R04,Puerto Madero,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+5,1,Comuna 1,POLO-Z46,Z46,Retiro,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+6,1,Comuna 1,POLO-R03,R03,San Telmo,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+7,2,Comuna 2,POLO-R06,R06,Recoleta,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+8,3,Comuna 3,POLO-R13,R13,Abasto,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+9,3,Comuna 3,POLO-Z35,Z35,Balvanera · Once,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+10,4,Comuna 4,POLO-Z50,Z50,Barracas · Av. Montes de Oca,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+11,4,Comuna 4,POLO-Z51,Z51,"Barracas · Iriarte, California y Vieytes","comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+12,4,Comuna 4,POLO-R11,R11,Boulevard Caseros,"decisión editorial explícita por mayoría de superficie: C4 51,311853 % / C1 48,688147 %",PROPUESTA_NO_INSTITUCIONAL
+13,4,Comuna 4,POLO-Z52,Z52,La Boca · Almirante Brown y Necochea,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+14,4,Comuna 4,POLO-Z53,Z53,La Boca · Caminito y Vuelta de Rocha,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+15,4,Comuna 4,PIEZA-Z54,Z54,Nueva Pompeya · eje Av. Saenz,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+16,4,Comuna 4,POLO-Z40,Z40,Nueva Pompeya y Parque Patricios,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+17,5,Comuna 5,POLO-Z37,Z37,Almagro,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+18,5,Comuna 5,POLO-R14,R14,Avenida Boedo,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+19,6,Comuna 6,POLO-R10,R10,Caballito,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+20,7,Comuna 7,POLO-Z39B,Z39b,Baek-ku · Barrio Coreano,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+21,7,Comuna 7,POLO-Z24,Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+22,9,Comuna 9,POLO-Z32,Z32,Liniers · Mercado Andino,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+23,9,Comuna 9,POLO-Z33,Z33,Mataderos,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+24,9,Comuna 9,POLO-Z39,Z39,Parque Avellaneda,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+25,10,Comuna 10,POLO-Z28,Z28,Monte Castro,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+26,10,Comuna 10,POLO-Z31,Z31,Villa Luro,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+27,11,Comuna 11,POLO-R15,R15,Devoto,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+28,11,Comuna 11,POLO-Z27,Z27,Villa Santa Rita,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+29,12,Comuna 12,POLO-R16,R16,Donado-Holmberg,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+30,12,Comuna 12,POLO-R20,R20,Garcia del Rio,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+31,12,Comuna 12,POLO-R17,R17,Villa Urquiza,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+32,13,Comuna 13,POLO-R05,R05,Belgrano,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+33,13,Comuna 13,SYS-CHACAGIALES,R09+R19+Z43,Chacagiales,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+34,13,Comuna 13,POLO-Z41,Z41,Nunez,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+35,14,Comuna 14,POLO-R07,R07,Costanera Norte,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+36,14,Comuna 14,POLO-R01,R01,Palermo,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+37,15,Comuna 15,POLO-R21,R21,La Paternal,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+38,15,Comuna 15,POLO-R08,R08,Villa Crespo,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL
+39,15,Comuna 15,POLO-Z44,Z44,Villa Ortuzar,"comuna principal por locales; dentro de comuna, nombre alfabético",PROPUESTA_NO_INSTITUCIONAL

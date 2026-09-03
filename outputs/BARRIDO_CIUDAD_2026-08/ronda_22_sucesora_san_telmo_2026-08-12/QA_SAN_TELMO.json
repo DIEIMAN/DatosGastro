@@ -1,0 +1,14 @@
+{
+  "estado": "REVISION",
+  "geometria_valida": true,
+  "motivo_invalidez": "Valid Geometry",
+  "mercado_interior": true,
+  "area_ha_antes": 25.36831163409244,
+  "area_ha_despues": 26.60543386299251,
+  "locales_antes": 71,
+  "locales_despues": 87,
+  "relaciones_interiores": 139,
+  "relaciones_exteriores": 51,
+  "iconos_congelados": 66,
+  "solapes_materiales_nuevos": 0
+}

@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[2]
 VENV_PY = ROOT / ".venv" / "Scripts" / "python.exe"
 OUT = ROOT / "outputs" / "infraestructura_agentes_skills_v1_1" / "casos_e2e"
 DOC_CASOS = ROOT / "docs" / "infraestructura_agentes_skills_v1_1" / "casos_e2e"
-EVID = ROOT / "outputs" / "polos_gastro" / "REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1"
-V21 = ROOT / "outputs" / "polos_gastro" / "experimentos" / "pipeline_hibrido_integracion_v21"
+EVID = ROOT / "outputs" / "polos_gastro" / "historico" / "REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1"
+V21 = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_hibrido_integracion_v21"
 VALIDATE_KPIS = ROOT / "scripts" / "qa" / "validate_kpis.py"
 
 
@@ -117,10 +117,10 @@ def caso1() -> dict:
 
 ## Archivos leídos (relativos al repo)
 
-- `outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/03_TABLAS/matriz_evidencia_documental_polos.csv`
-- `outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/01_INFORMES/recoleta_investigacion_documental.md`
-- `outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/05_AUDITORIA/AUDITORIA_FUENTES_Y_URLS.md`
-- `outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/05_AUDITORIA/FUENTES_DESCARTADAS_O_NO_VERIFICADAS.csv`
+- `outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/03_TABLAS/matriz_evidencia_documental_polos.csv`
+- `outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/01_INFORMES/recoleta_investigacion_documental.md`
+- `outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/05_AUDITORIA/AUDITORIA_FUENTES_Y_URLS.md`
+- `outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/05_AUDITORIA/FUENTES_DESCARTADAS_O_NO_VERIFICADAS.csv`
 
 ## REC-R02 (150 restaurantes)
 
@@ -253,7 +253,7 @@ def caso2() -> dict:
 
 ## Analítica (intacta)
 
-- ruta: `outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_capa_analitica_v21.geojson`
+- ruta: `outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_capa_analitica_v21.geojson`
 - sha256 pre: `{h_before}`
 - sha256 post: `{h_after}`
 - intacta: **{'SI' if intact else 'NO'}**

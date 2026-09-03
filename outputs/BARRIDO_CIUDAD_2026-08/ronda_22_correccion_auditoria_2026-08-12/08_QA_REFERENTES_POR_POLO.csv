@@ -1,0 +1,40 @@
+﻿polo_uid,legacy_id,polo_nombre,n_referentes,n_con_coordenadas,n_vigencia_verificada,n_sin_verificar,n_fuera_geometria,n_cerca_borde_50m,n_cerrados,n_reabiertos,categorias_representadas,estado_qa,n_iconos_principales_propuestos,n_dentro,n_borde_hasta_50m,n_entorno_51_250m,n_contextuales_mas_250m,categorias_visuales,estado_iconos
+POLO-R01,R01,Palermo,26,26,2,24,2,1,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;mercado/patio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,24,0,1,1,Bar Notable;Distinción MICHELIN;Mercado o patio gastronómico;Pizzería Emblemática;Ranking internacional,PROPUESTA_NO_INSTITUCIONAL
+POLO-R02,R02,Avenida Corrientes,10,10,8,2,0,3,0,0,Bar Notable;Restaurante Icónico;pizzería histórica,CON_REFERENCIAS,3,10,0,0,0,Bar Notable;Pizzería Emblemática;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R03,R03,San Telmo,5,5,4,1,4,2,0,0,Bar Notable;mercado/patio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,2,1,1,3,0,Bar Notable;Mercado o patio gastronómico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R04,R04,Puerto Madero,7,7,0,7,0,2,0,0,Latin America’s 50 Best;MICHELIN;Restaurante Icónico,REFERENCIAS_DEBILES_SIN_VIGENCIA,3,7,0,0,0,Distinción MICHELIN;Ranking internacional;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R05,R05,Belgrano,3,3,2,1,2,1,0,0,Bar Notable;mercado/patio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,2,1,1,1,0,Bar Notable;Mercado o patio gastronómico;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-R06,R06,Recoleta,12,12,3,9,2,2,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,10,0,2,0,Bar Notable;Distinción MICHELIN;Pizzería Emblemática;Ranking internacional;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R07,R07,Costanera Norte,2,2,0,2,0,2,0,0,Restaurante Icónico;mercado/patio,REFERENCIAS_DEBILES_SIN_VIGENCIA,2,2,0,0,0,Mercado o patio gastronómico;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R08,R08,Villa Crespo,9,9,1,8,1,1,0,0,Bar Notable;Latin America’s 50 Best;MICHELIN,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,8,1,0,0,Bar Notable;Distinción MICHELIN;Ranking internacional,PROPUESTA_NO_INSTITUCIONAL
+SYS-CHACAGIALES,R09+R19+Z43,Chacagiales,9,9,2,7,0,1,0,0,Bar Notable;Bib Gourmand;MICHELIN;Restaurante Icónico,CON_REFERENCIAS,3,9,0,0,0,Bar Notable;Distinción MICHELIN;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R10,R10,Caballito,3,3,2,1,1,0,0,0,Bar Notable;mercado/patio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,2,2,0,0,1,Bar Notable;Mercado o patio gastronómico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R11,R11,Boulevard Caseros,1,1,1,0,0,1,0,0,Bar Notable,CON_REFERENCIAS,1,1,0,0,0,Bar Notable,PROPUESTA_NO_INSTITUCIONAL
+POLO-R12,R12,Centro y Microcentro,24,24,19,5,10,5,1,0,Bar Notable;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,14,2,6,2,Bar Notable;Pizzería Emblemática;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-R13,R13,Abasto,4,4,3,1,1,0,0,0,Bar Notable;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,3,0,1,0,Bar Notable;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-R14,R14,Avenida Boedo,3,3,1,2,0,0,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS,3,3,0,0,0,Bar Notable;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-R15,R15,Devoto,3,3,2,1,0,0,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS,3,3,0,0,0,Bar Notable;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-R16,R16,Donado-Holmberg,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL
+POLO-R17,R17,Villa Urquiza,1,1,1,0,0,0,0,0,Bar Notable,CON_REFERENCIAS,1,1,0,0,0,Bar Notable,PROPUESTA_NO_INSTITUCIONAL
+POLO-R20,R20,Garcia del Rio,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL
+POLO-R21,R21,La Paternal,3,3,0,3,0,1,0,0,Bib Gourmand;otro documentado;pizzería histórica,REFERENCIAS_DEBILES_SIN_VIGENCIA,3,3,0,0,0,Distinción MICHELIN;Pizzería Emblemática;Referente documentado,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z24,Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z27,Z27,Villa Santa Rita,3,3,3,0,0,2,0,0,Bar Notable;referente barrial,CON_REFERENCIAS,3,3,0,0,0,Bar Notable;Referente documentado,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z28,Z28,Monte Castro,1,1,1,0,0,1,0,0,pizzería histórica,CON_REFERENCIAS,1,1,0,0,0,Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z31,Z31,Villa Luro,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z32,Z32,Liniers · Mercado Andino,1,1,0,1,1,0,0,0,otro documentado,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,0,0,0,1,0,Referente documentado,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z33,Z33,Mataderos,6,6,3,3,3,1,0,0,Bar Notable;patrimonio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,3,0,0,3,Bar Notable;Patrimonio normativo;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z35,Z35,Balvanera · Once,3,3,2,1,3,0,0,0,Bar Notable;Restaurante Icónico,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,0,0,0,0,3,Bar Notable;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z37,Z37,Almagro,8,8,5,3,6,1,0,0,Bar Notable;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,2,1,2,3,Bar Notable;Pizzería Emblemática;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z39,Z39,Parque Avellaneda,1,1,0,1,1,0,0,0,bodegón,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,0,0,0,0,1,Referente documentado,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z39B,Z39b,Baek-ku · Barrio Coreano,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z40,Z40,Nueva Pompeya y Parque Patricios,2,2,1,1,2,0,0,0,Bar Notable;patrimonio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,0,0,0,0,2,Bar Notable;Patrimonio normativo,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z41,Z41,Nunez,6,6,1,5,0,0,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN,CON_REFERENCIAS,3,6,0,0,0,Bar Notable;Distinción MICHELIN;Ranking internacional,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z44,Z44,Villa Ortuzar,1,1,0,1,0,1,0,0,pizzería histórica,REFERENCIAS_DEBILES_SIN_VIGENCIA,1,1,0,0,0,Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z46,Z46,Retiro,11,11,7,4,4,1,1,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,7,0,4,0,Bar Notable;Distinción MICHELIN;Pizzería Emblemática;Ranking internacional;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z47,Z47,Monserrat y Congreso,15,15,11,4,9,2,0,0,Bar Notable;Restaurante Icónico;cafetería histórica;institución/comunidad gastronómica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA,3,6,0,1,8,Bar Notable;Referente documentado;Restaurante icónico,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z50,Z50,Barracas · Av. Montes de Oca,2,2,1,1,0,1,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS,2,2,0,0,0,Bar Notable;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z51,Z51,"Barracas · Iriarte, California y Vieytes",1,1,1,0,0,1,0,1,Bar Notable,CON_REFERENCIAS,1,1,0,0,0,Bar Notable,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z52,Z52,La Boca · Almirante Brown y Necochea,3,3,2,1,0,2,1,0,Bar Notable;pizzería histórica,CON_REFERENCIAS,2,3,0,0,0,Bar Notable;Pizzería Emblemática,PROPUESTA_NO_INSTITUCIONAL
+POLO-Z53,Z53,La Boca · Caminito y Vuelta de Rocha,1,1,1,0,0,1,0,0,Bar Notable,CON_REFERENCIAS,1,1,0,0,0,Bar Notable,PROPUESTA_NO_INSTITUCIONAL
+PIEZA-Z54,Z54,Nueva Pompeya · eje Av. Saenz,0,0,0,0,0,0,0,0,,SIN_REFERENTES,0,0,0,0,0,,PROPUESTA_NO_INSTITUCIONAL

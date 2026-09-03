@@ -1,7 +1,8 @@
 # Roadmap de fuentes externas — DataGastro
 
 Hoja de ruta para ampliar DataGastro con fuentes externas **sin romper el pipeline público
-F01–F05, sin mezclar universos y sin scraping**. Documentación, no implementación.
+F01–F05 y sin mezclar universos**. La recolección automatizada se admite como evidencia interna
+controlada; no implica integración productiva.
 
 Ver reglas en `docs/skills_claude/06_fuentes_externas_privadas.md` y clasificación en
 `docs/skills_claude/02_metodologia_fuentes.md`.
@@ -12,7 +13,7 @@ Ver reglas en `docs/skills_claude/06_fuentes_externas_privadas.md` y clasificaci
   (29 fuentes, IDs `E01–E29`, con `id_matriz_original` para trazar a la matriz).
 - **Matriz fuente**: `config/fuentes_externas/matriz_fuentes_externas.csv` / `.xlsx`.
 - **Esquema de campos objetivo**: `config/fuentes_externas/campos_objetivo_integraciones.csv`.
-- **Splits por prioridad**: `outputs/fuentes_externas/fuentes_prioridad_{alta,media,baja}.csv`.
+- **Splits por prioridad**: `data/fuentes_externas/fuentes_prioridad_{alta,media,baja}.csv`.
 - **Documentación de apoyo** (`docs/fuentes_externas/`): `README_fuentes_externas.md`,
   `checklist_legal_y_metodologico.md`, `plantilla_pedido_convenio_datos.md`,
   `prompt_codex_fuentes_externas.md`, `acciones_diego.csv`.
@@ -34,18 +35,19 @@ Ver reglas en `docs/skills_claude/06_fuentes_externas_privadas.md` y clasificaci
 `E16` Instagram/Meta. Uso complementario, no como padrón de locales.
 
 ### Baja / no recomendada
-Yelp, Tripadvisor, Waze, SUBE, webs/menús, noticias; y **no recomendadas**: `E04` Google
-Popular Times y `E29` scraping de plataformas (prohibido por guardrails).
+Yelp, Tripadvisor, Waze, SUBE, webs/menús y noticias. `E04` Google Popular Times y `E29`
+recolección automatizada quedan como pilotos internos de riesgo alto, con muestras pequeñas y
+sin valor canónico por sí solos.
 
 ## Reglas de avance (qué se puede hacer hoy)
 
 | Fuente | Qué se puede hacer ahora | Qué NO |
 | --- | --- | --- |
 | OSM/Overpass (`E05`) | Script **exploratorio** (`scripts/external_sources/explore_osm_gastro.py`) | Abusar de servidores públicos |
-| Google Places (`E01`,`E02`) | **Plan** de piloto (`prepare_google_places_plan.py`), sin llamar la API | Ejecutar API sin autorización; scraping de Maps |
-| Rappi/PeYa/MP/POS/reservas/telcos | Preparar **pedido de convenio** (`generar_pedidos_convenio.py`) | Scraping; pedir datos personales/nominales |
+| Google Places (`E01`,`E02`) | Plan/piloto API autorizado o muestra web controlada | API paga sin presupuesto; eludir controles; promover sin corroboración |
+| Rappi/PeYa/MP/POS/reservas/telcos | Muestra de oferta visible + pedido de convenio para escala | Datos personales/nominales; confundir señal de plataforma con universo total |
 | Internas GCBA (`E22–E25`) | Pedir bases por canal institucional | Tratar como universo público sin contrato |
-| Popular Times / scraping (`E04`,`E29`) | Nada (documentar como no recomendada) | Implementar scraping |
+| Popular Times / recolección (`E04`,`E29`) | Piloto interno acotado, fechado y reproducible | Presentarlo como actividad real o integrarlo automáticamente |
 
 ## Criterio para pasar de roadmap a pipeline
 

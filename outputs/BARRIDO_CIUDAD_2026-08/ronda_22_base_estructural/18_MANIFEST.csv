@@ -1,0 +1,25 @@
+﻿ruta,descripcion,incluido_en_zip
+00_RESUMEN.md,resultado ejecutivo y alcance,SI
+01_CAMBIOS.md,cambios aplicados y superficies preservadas,SI
+02_BASE_CANDIDATA.csv,establecimientos/referentes candidatos,SI
+03_POLOS_CANDIDATOS.geojson,39 geometrías candidatas con ontología explícita,SI
+04_SISTEMAS_MIEMBROS.csv,relaciones sistema/miembro y padre/pieza,SI
+05_POLOS_COMUNAS_BARRIOS.csv,superficie y locales por comuna/barrio,SI
+06_ORDEN_EDITORIAL_POR_COMUNA.csv,propuesta no institucional de orden,SI
+07_REFERENTES_ICONOS_POR_POLO.csv,relaciones referente–polo,SI
+08_QA_REFERENTES_POR_POLO.csv,QA agregado de referentes,SI
+09_VIAS_RECONCILIADAS.csv,nueve divergencias de vía A,SI
+10_CONTEOS_GLOBALES.csv,métricas únicas y ocurrencias,SI
+11_CAMBIOS_DOCUMENTO_CAPA.csv,log trazable de cambios,SI
+12_QA_GEOMETRIAS.md,validez y solapes,SI
+13_QA_MAKE_VALID_R08_R12.md,antes/después de reparación,SI
+14_MAP_INPUT_POLOS.geojson,campos mínimos para cartografía de polos,SI
+15_MAP_INPUT_REFERENTES.geojson,campos mínimos para cartografía de referentes,SI
+16_QA_GENERAL.md,validaciones automáticas y privacidad,SI
+17_PENDIENTES.md,pendientes reales,SI
+19_HASHES_SHA256.csv,hashes de contenido; omite autorreferencia,SI
+ESQUEMA_CORRESPONDENCIAS.md,mapeo del pedido al modelo R22,SI
+FUENTES_INSUMOS.csv,procedencia y hash de inputs,SI
+QA_VALIDACIONES.csv,resultado machine-readable de controles,SI
+SOLAPES_CLASIFICADOS.csv,clasificación reproducible de pares solapados,SI
+scripts/build_r22.py,generador offline reproducible,SI

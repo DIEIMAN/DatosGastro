@@ -38,4 +38,7 @@ Antes de integrar una fuente nueva, responder:
 - ¿Hay contrato de fuente en `source_contracts.py`?
 - ¿Funciona con `--strict-real`?
 
-Regla final: si una fuente requiere scraping de plataforma privada o contiene datos sensibles sin convenio, no entra al pipeline institucional.
+Regla final: una extracción de plataforma externa puede quedar como evidencia interna si cumple
+alcance, trazabilidad, minimización y revisión. Solo entra al pipeline institucional con contrato
+de fuente, condiciones de uso compatibles, controles, corroboración y aprobación explícita; los
+datos sensibles sin base legal o consentimiento no entran.

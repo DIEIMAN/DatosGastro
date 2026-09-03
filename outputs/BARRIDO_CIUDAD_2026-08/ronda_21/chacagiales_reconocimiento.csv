@@ -1,0 +1,10 @@
+hito_id,nombre,tipo,reconocimiento,direccion,barrio_declarado,vigencia_verificada,vigencia_fecha,citable_en_documento,en_subzonas,n_subzonas
+MIC-011,Ácido,MICHELIN,Bib Gourmand,Charlone 999,Chacarita,sin_verificar,,,R19,1
+MIC-012,Ajo Negro - Mar de Tapas,MICHELIN,Bib Gourmand,Avenida Córdoba 6237,Chacarita,sin_verificar,,,R19,1
+MIC-013,ANAFE,MICHELIN,Bib Gourmand,Virrey Avilés 3216,Colegiales,sin_verificar,,,Z43,1
+MIC-018,Anchoíta,MICHELIN,Recomendado/seleccionado,Juan Ramírez de Velasco 1520,Chacarita,sin_verificar,,,R09 R19,2
+MIC-042,Osaka Concepción,MICHELIN,Recomendado/seleccionado,Concepción Arenal 2913,Colegiales,sin_verificar,,,Z43,1
+MIC-017,Picarón,MICHELIN,Recomendado/seleccionado,Avenida Dorrego 866,Chacarita,sin_verificar,,,R19,1
+ICO-001,Albamonte Ristorante,Restaurante Icónico,Restaurante Icónico,CORRIENTES AV. 6735,Chacarita,sin_verificar,,,R09 R19,2
+H029,CAFE PALACIO,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),Av. Federico Lacroze 3901,,si,,False,R09 R19,2
+H010,Bar Conde,Bar Notable,Bar Notable (Boletín Oficial · declaratoria),Federico Lacroze 3193,,si,2026-07-29,True,R19 Z43,2

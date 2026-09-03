@@ -1,0 +1,5 @@
+reparto,eje,rumbo_grados,rumbo,polo,polo_nombre,lado,ha,locales,barrios_de_esa_mitad,nomenclador_separa_barrios,nomenclador_par,nomenclador_impar,borde_compartido_de_los_dos_barrios_m,de_ese_borde_sobre_el_eje_m
+A4,MEDRANO AV.,7.0,N–S,R13,Abasto,este,23.48,93,ALMAGRO 100%,no,Almagro,Almagro,,
+A4,MEDRANO AV.,7.0,N–S,Z37,Almagro,oeste,1.86,8,ALMAGRO 100%,no,Almagro,Almagro,,
+A5,WARNES AV.,112.5,ESE–ONO,R08,Villa Crespo,nornoreste,8.05,14,VILLA CRESPO 72%; CHACARITA 28%,si,Paternal; Villa Crespo,Chacarita; Villa Crespo,127.9,5.0
+A5,WARNES AV.,112.5,ESE–ONO,R21,La Paternal,sudsudoeste,41.63,77,VILLA CRESPO 69%; CABALLITO 17%; PATERNAL 14%,si,Paternal; Villa Crespo,Chacarita; Villa Crespo,127.9,5.0

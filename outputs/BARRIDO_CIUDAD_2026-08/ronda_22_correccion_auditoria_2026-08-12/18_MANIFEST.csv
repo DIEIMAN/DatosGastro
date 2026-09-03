@@ -1,0 +1,29 @@
+﻿ruta,descripcion,incluido_en_entrega
+00_RESUMEN.md,resultado ejecutivo y alcance de la corrección,SI
+02_BASE_CANDIDATA.csv,base candidata corregida; R22 preservada,SI
+03_POLOS_CANDIDATOS.geojson,39 geometrías copiadas sin cambios de R22,SI
+04_SISTEMAS_MIEMBROS.csv,relaciones sistema/miembro preservadas,SI
+05_POLOS_COMUNAS_BARRIOS.csv,dimensiones territoriales con decisión Caseros,SI
+06_ORDEN_EDITORIAL_POR_COMUNA.csv,orden por comuna con Caseros en posición 12,SI
+07_REFERENTES_ICONOS_POR_POLO.csv,"190 relaciones con categoría visual, IDs y relación espacial",SI
+08_QA_REFERENTES_POR_POLO.csv,QA agregado con ambos IDs,SI
+09_VIAS_RECONCILIADAS.csv,nueve divergencias preservadas,SI
+10_CONTEOS_GLOBALES.csv,conteos globales preservados,SI
+11_CAMBIOS_DOCUMENTO_CAPA.csv,log trazable ampliado,SI
+12_QA_GEOMETRIAS.md,QA geométrico preservado,SI
+13_QA_MAKE_VALID_R08_R12.md,QA make_valid preservado,SI
+14_MAP_INPUT_POLOS.geojson,input cartográfico de polos preservado,SI
+15_MAP_INPUT_REFERENTES.geojson,input cartográfico enriquecido,SI
+16_QA_GENERAL.md,QA general con cobertura de vigencia,SI
+17_PENDIENTES.md,pendientes institucionales y documentales reales,SI
+AUDITORIA_45_VERIFICACIONES_AUTOMATICAS.csv,inventario de señales automáticas,SI
+DECISION_CASEROS.md,decisión explícita sobre comuna y orden,SI
+DICTAMEN_CORRECCION.md,estado de la sucesora,SI
+ICONOS_PRINCIPALES_PROPUESTOS.csv,lista propuesta no institucional,SI
+QA_VALIDACIONES.csv,controles machine-readable,SI
+REGLA_ICONOS_PRINCIPALES.md,regla auditable de propuesta,SI
+REGLA_RELACION_ESPACIAL.md,regla aplicada a las 190 relaciones,SI
+SENSIBILIDAD_UMBRAL_RELACIONES.csv,curva de sensibilidad de umbrales,SI
+SOLAPES_CLASIFICADOS.csv,tipología de solapes preservada,SI
+VOCABULARIO_CATEGORIAS_REFERENTES.md,vocabulario visual cerrado,SI
+scripts/build_correccion.py,generador offline reproducible,SI

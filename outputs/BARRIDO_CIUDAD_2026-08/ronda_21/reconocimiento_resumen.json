@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-08-10",
+  "capa_vieja": 215,
+  "capa_nueva": 220,
+  "entran": [
+    "DIR-026",
+    "DIR-027",
+    "DIR-028",
+    "DIR-029",
+    "H094"
+  ],
+  "salen": [],
+  "cambian_de_punto": [
+    "H032",
+    "H060"
+  ],
+  "paginas_que_cambian_de_cuenta": 3,
+  "total_dentro_de_algun_borde_antes": 137,
+  "total_dentro_de_algun_borde_ahora": 137
+}

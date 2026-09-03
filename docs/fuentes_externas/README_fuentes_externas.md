@@ -8,7 +8,9 @@ La idea de sumar Google, Rappi, PedidosYa y Mercado Pago es buena, pero no convi
 
 1. **APIs oficiales utilizables rápido**: Google Places/Places Aggregate, OpenStreetMap, Foursquare/Yelp/Tripadvisor según cobertura.
 2. **Datos privados de altísimo valor, pero sólo por convenio**: Rappi, PedidosYa, Mercado Pago, adquirentes, bancos, POS y reservas.
-3. **Fuentes no recomendadas para pipeline institucional**: scraping de Google Maps, Popular Times, Rappi o PedidosYa sin permiso.
+3. **Señales externas para investigación interna**: muestras controladas de Google Maps,
+   Popular Times, Rappi, PedidosYa, reservas y redes. Requieren trazabilidad y corroboración; no
+   entran automáticamente al pipeline institucional.
 
 La estrategia correcta es:  
 **primero fortalecer el padrón oficial vivo + permisos de área gastronómica; después agregar Google/OSM como validación externa; y en paralelo abrir convenios de delivery/pagos para demanda real.**

@@ -1,0 +1,3 @@
+﻿momento,locales_unicos,ocurrencias_fichas,duplicaciones,fecha,universo,geometria,fuente
+R21_BASELINE_CONCILIADO,10819,11119,300,2026-08-12,base/local.csv; anillo=nucleo; apto_geometria=true,ronda_21/geometria/bordes_39.geojson,conciliación pre-correcciones
+R22_CANDIDATA_RECALCULADA,10819,11119,300,2026-08-12,base/local.csv; anillo=nucleo; apto_geometria=true,03_POLOS_CANDIDATOS.geojson,scripts/build_r22.py

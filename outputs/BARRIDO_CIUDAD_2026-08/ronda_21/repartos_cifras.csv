@@ -1,0 +1,11 @@
+reparto,polo,polo_nombre,rol,ha_publicada_hoy,locales_publicados_hoy,ha_antes_de_este_reparto,ha_despues_de_este_reparto,ha_delta_de_este_reparto,locales_antes_de_este_reparto,locales_despues_de_este_reparto,locales_delta_de_este_reparto,solape_ha,solape_locales,motivo
+A1,Z46,Retiro,pierde el solape,467.14,715,467.14,414.98,-52.16,715,414,-301,52.16,301,Retiro no tiene borde propio —publica el polígono de su barrio— y el solape entero es del Microcentro hasta que Retiro tenga borde dibujado
+A1,R12,Centro y Microcentro,gana el solape,184.12,1084,184.12,184.12,0.0,1084,1084,0,52.16,301,Retiro no tiene borde propio —publica el polígono de su barrio— y el solape entero es del Microcentro hasta que Retiro tenga borde dibujado
+A2,R02,Avenida Corrientes,gana el solape,49.67,354,49.67,49.67,0.0,354,354,0,21.72,133,"corredor contra núcleo: la franja sobre Av. Corrientes es del corredor, que existe por esa avenida; el núcleo la contiene de paso"
+A2,R12,Centro y Microcentro,pierde el solape,184.12,1084,184.12,162.39,-21.72,1084,951,-133,21.72,133,"corredor contra núcleo: la franja sobre Av. Corrientes es del corredor, que existe por esa avenida; el núcleo la contiene de paso"
+A3,Z47,Monserrat y Congreso,gana el solape,13.77,133,13.77,13.77,0.0,133,133,0,8.68,76,"el eje de Av. de Mayo con sus nueve Bares Notables es de Monserrat: es el 63 % de Monserrat y el 4,7 % del Microcentro"
+A3,R12,Centro y Microcentro,pierde el solape,184.12,1084,162.39,153.72,-8.68,951,875,-76,8.68,76,"el eje de Av. de Mayo con sus nueve Bares Notables es de Monserrat: es el 63 % de Monserrat y el 4,7 % del Microcentro"
+A4,R13,Abasto,se parte el solape,109.0,373,109.0,107.14,-1.86,373,365,-8,25.33,101,"se corta en Av. Medrano, que la página de Almagro nombra en su perímetro escrito"
+A4,Z37,Almagro,se parte el solape,60.9,207,60.9,37.42,-23.48,207,114,-93,25.33,101,"se corta en Av. Medrano, que la página de Almagro nombra en su perímetro escrito"
+A5,R08,Villa Crespo,se parte el solape,335.46,823,335.46,293.83,-41.63,823,746,-77,49.68,91,"se corta por Av. Warnes, con la que la matriz define a La Paternal"
+A5,R21,La Paternal,se parte el solape,385.34,307,385.34,377.29,-8.05,307,293,-14,49.68,91,"se corta por Av. Warnes, con la que la matriz define a La Paternal"

@@ -1,0 +1,40 @@
+﻿polo_uid,polo_nombre,n_referentes,n_con_coordenadas,n_vigencia_verificada,n_sin_verificar,n_fuera_geometria,n_cerca_borde_50m,n_cerrados,n_reabiertos,categorias_representadas,estado_qa
+POLO-R14,Avenida Boedo,3,3,1,2,0,0,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS
+POLO-R02,Avenida Corrientes,10,10,8,2,0,3,0,0,Bar Notable;Restaurante Icónico;pizzería histórica,CON_REFERENCIAS
+POLO-Z50,Barracas · Av. Montes de Oca,2,2,1,1,0,1,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS
+POLO-Z51,"Barracas · Iriarte, California y Vieytes",1,1,1,0,0,1,0,1,Bar Notable,CON_REFERENCIAS
+POLO-R11,Boulevard Caseros,1,1,1,0,0,1,0,0,Bar Notable,CON_REFERENCIAS
+SYS-CHACAGIALES,Chacagiales,9,9,2,7,0,1,0,0,Bar Notable;Bib Gourmand;MICHELIN;Restaurante Icónico,CON_REFERENCIAS
+POLO-R15,Devoto,3,3,2,1,0,0,0,0,Bar Notable;pizzería histórica,CON_REFERENCIAS
+POLO-Z52,La Boca · Almirante Brown y Necochea,3,3,2,1,0,2,1,0,Bar Notable;pizzería histórica,CON_REFERENCIAS
+POLO-Z53,La Boca · Caminito y Vuelta de Rocha,1,1,1,0,0,1,0,0,Bar Notable,CON_REFERENCIAS
+POLO-Z28,Monte Castro,1,1,1,0,0,1,0,0,pizzería histórica,CON_REFERENCIAS
+POLO-Z41,Nunez,6,6,1,5,0,0,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN,CON_REFERENCIAS
+POLO-Z27,Villa Santa Rita,3,3,3,0,0,2,0,0,Bar Notable;referente barrial,CON_REFERENCIAS
+POLO-R17,Villa Urquiza,1,1,1,0,0,0,0,0,Bar Notable,CON_REFERENCIAS
+POLO-R07,Costanera Norte,2,2,0,2,0,2,0,0,Restaurante Icónico;mercado/patio,REFERENCIAS_DEBILES_SIN_VIGENCIA
+POLO-R21,La Paternal,3,3,0,3,0,1,0,0,Bib Gourmand;otro documentado;pizzería histórica,REFERENCIAS_DEBILES_SIN_VIGENCIA
+POLO-R04,Puerto Madero,7,7,0,7,0,2,0,0,Latin America’s 50 Best;MICHELIN;Restaurante Icónico,REFERENCIAS_DEBILES_SIN_VIGENCIA
+POLO-Z44,Villa Ortuzar,1,1,0,1,0,1,0,0,pizzería histórica,REFERENCIAS_DEBILES_SIN_VIGENCIA
+POLO-R13,Abasto,4,4,3,1,1,0,0,0,Bar Notable;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z37,Almagro,8,8,5,3,6,1,0,0,Bar Notable;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z35,Balvanera · Once,3,3,2,1,3,0,0,0,Bar Notable;Restaurante Icónico,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R05,Belgrano,3,3,2,1,2,1,0,0,Bar Notable;mercado/patio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R10,Caballito,3,3,2,1,1,0,0,0,Bar Notable;mercado/patio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R12,Centro y Microcentro,24,24,19,5,10,5,1,0,Bar Notable;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z32,Liniers · Mercado Andino,1,1,0,1,1,0,0,0,otro documentado,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z33,Mataderos,6,6,3,3,3,1,0,0,Bar Notable;patrimonio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z47,Monserrat y Congreso,15,15,11,4,9,2,0,0,Bar Notable;Restaurante Icónico;cafetería histórica;institución/comunidad gastronómica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z40,Nueva Pompeya y Parque Patricios,2,2,1,1,2,0,0,0,Bar Notable;patrimonio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R01,Palermo,26,26,2,24,2,1,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;mercado/patio;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z39,Parque Avellaneda,1,1,0,1,1,0,0,0,bodegón,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R06,Recoleta,12,12,3,9,2,2,0,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z46,Retiro,11,11,7,4,4,1,1,0,Bar Notable;Bib Gourmand;Latin America’s 50 Best;MICHELIN;Restaurante Icónico;pizzería histórica,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R03,San Telmo,5,5,4,1,4,2,0,0,Bar Notable;mercado/patio,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-R08,Villa Crespo,9,9,1,8,1,1,0,0,Bar Notable;Latin America’s 50 Best;MICHELIN,REVISAR_ASIGNACIONES_FUERA_GEOMETRIA
+POLO-Z39B,Baek-ku · Barrio Coreano,0,0,0,0,0,0,0,0,,SIN_REFERENTES
+POLO-R16,Donado-Holmberg,0,0,0,0,0,0,0,0,,SIN_REFERENTES
+POLO-Z24,Flores · Avellaneda y Pasaje Ruperto Godoy,0,0,0,0,0,0,0,0,,SIN_REFERENTES
+POLO-R20,Garcia del Rio,0,0,0,0,0,0,0,0,,SIN_REFERENTES
+PIEZA-Z54,Nueva Pompeya · eje Av. Saenz,0,0,0,0,0,0,0,0,,SIN_REFERENTES
+POLO-Z31,Villa Luro,0,0,0,0,0,0,0,0,,SIN_REFERENTES

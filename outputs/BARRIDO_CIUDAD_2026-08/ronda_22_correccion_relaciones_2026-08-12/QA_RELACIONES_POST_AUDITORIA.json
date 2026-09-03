@@ -1,0 +1,12 @@
+{
+  "relations": 190,
+  "unique_pairs": 190,
+  "matches_r22": 190,
+  "interior": 138,
+  "outside_or_boundary": 52,
+  "panel_territorial": 138,
+  "doubtful": 17,
+  "incorrect": 0,
+  "alerts_integrated": 24,
+  "primary_icons": 66
+}

@@ -1,5 +1,11 @@
 # Pedidos externos para mejorar PolosGastro
 
+> **Actualización del 27 de agosto de 2026.** Para los pedidos institucionales a AGC e IDECBA
+> usar el paquete vigente en
+> `docs/polos_gastro/pedidos_institucionales_padron_2026-08-27/`. Allí se distingue lo ya
+> publicado de la información que todavía requiere intercambio entre áreas. La lista que sigue
+> conserva su valor como hoja de ruta histórica para búsquedas y tareas complementarias.
+
 Fecha: 2026-06-29.
 
 Lista concreta de qué buscar/pedir con cada herramienta antes y durante el informe. Nada de

@@ -1,0 +1,157 @@
+{
+  "fecha": "2026-08-10",
+  "union_ha": 495.82,
+  "union_locales": 891,
+  "subzonas": {
+    "R09": {
+      "ha": 94.81,
+      "locales": 202,
+      "nombre": "Chacarita"
+    },
+    "R19": {
+      "ha": 303.28,
+      "locales": 532,
+      "nombre": "Federico Lacroze"
+    },
+    "Z43": {
+      "ha": 229.08,
+      "locales": 441,
+      "nombre": "Colegiales"
+    }
+  },
+  "suma_de_las_tres_ha": 627.17,
+  "suma_de_las_tres_locales": 1175,
+  "se_contaria_de_mas_ha": 131.36,
+  "se_contaria_de_mas_locales": 284,
+  "locales_en_dos_o_mas_subzonas": 279,
+  "curvas_de_continuidad": {
+    "Chacagiales": {
+      "20": 1.2,
+      "40": 3.0,
+      "60": 5.5,
+      "80": 12.6,
+      "120": 82.2
+    },
+    "Chacarita": {
+      "20": 5.4,
+      "40": 6.4,
+      "60": 15.3,
+      "80": 29.2,
+      "120": 51.5
+    },
+    "Federico Lacroze": {
+      "20": 2.1,
+      "40": 4.9,
+      "60": 8.1,
+      "80": 11.8,
+      "120": 55.5
+    },
+    "Colegiales": {
+      "20": 1.8,
+      "40": 6.1,
+      "60": 10.2,
+      "80": 25.4,
+      "120": 92.3
+    }
+  },
+  "cadena_mayor_por_umbral": [
+    {
+      "umbral_m": 20,
+      "componentes": 558,
+      "cadena_mayor": 11,
+      "pct": 1.2,
+      "Chacarita": 11,
+      "Federico Lacroze": 11,
+      "Colegiales": 0,
+      "abarca_las_tres": "no"
+    },
+    {
+      "umbral_m": 40,
+      "componentes": 298,
+      "cadena_mayor": 27,
+      "pct": 3.0,
+      "Chacarita": 0,
+      "Federico Lacroze": 0,
+      "Colegiales": 27,
+      "abarca_las_tres": "no"
+    },
+    {
+      "umbral_m": 60,
+      "componentes": 160,
+      "cadena_mayor": 49,
+      "pct": 5.5,
+      "Chacarita": 7,
+      "Federico Lacroze": 43,
+      "Colegiales": 4,
+      "abarca_las_tres": "si"
+    },
+    {
+      "umbral_m": 80,
+      "componentes": 102,
+      "cadena_mayor": 112,
+      "pct": 12.6,
+      "Chacarita": 0,
+      "Federico Lacroze": 0,
+      "Colegiales": 112,
+      "abarca_las_tres": "no"
+    },
+    {
+      "umbral_m": 120,
+      "componentes": 31,
+      "cadena_mayor": 732,
+      "pct": 82.2,
+      "Chacarita": 182,
+      "Federico Lacroze": 407,
+      "Colegiales": 411,
+      "abarca_las_tres": "si"
+    }
+  ],
+  "piezas_por_separado": 9,
+  "piezas_de_la_union": 3,
+  "pct_en_la_pieza_mayor": 90.2,
+  "reconocimiento_en_la_union": 9,
+  "reconocimiento_sumando_subzonas": 13,
+  "reconocimiento_en_dos_subzonas": 4,
+  "polos_despues": 39,
+  "pruebas": {
+    "contencion": true,
+    "menos_pedazos": true,
+    "cadena_que_abarca_las_tres": true,
+    "solapes_del_nudo_cerrados": true,
+    "reconocimiento_sin_duplicar": true
+  },
+  "verifica": true,
+  "solapes_que_quedan": [
+    {
+      "contra": "R01",
+      "contra_nombre": "Palermo",
+      "ha": 33.15,
+      "locales": 111
+    },
+    {
+      "contra": "R08",
+      "contra_nombre": "Villa Crespo",
+      "ha": 6.36,
+      "locales": 1
+    },
+    {
+      "contra": "R21",
+      "contra_nombre": "La Paternal",
+      "ha": 4.81,
+      "locales": 4
+    },
+    {
+      "contra": "Z44",
+      "contra_nombre": "Villa Ortuzar",
+      "ha": 15.93,
+      "locales": 25
+    }
+  ],
+  "atlas_39_suma_ha": 5587.87,
+  "atlas_39_union_ha": 5444.15,
+  "atlas_39_suma_locales": 11119,
+  "atlas_39_union_locales": 10819,
+  "atlas_39_se_cuentan_de_mas": 300,
+  "atlas_39_locales_en_dos_o_mas": 300,
+  "atlas_39_pares": 12
+}

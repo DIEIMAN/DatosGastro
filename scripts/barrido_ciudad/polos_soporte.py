@@ -63,7 +63,7 @@ ENVOLVENTES = ROOT / "outputs" / "polos_gastro" / "ATLAS_V2" / "capas" / "envolv
 BARRIOS = BARRIDO / "insumos" / "caba_barrios.geojson"
 # La anterior queda alcanzable para reproducir cualquier número que ya haya circulado.
 BARRIOS_ANTERIOR = ROOT / "data" / "raw" / "geo_barrios.geojson"
-CALLEJERO = (ROOT / "outputs" / "polos_gastro" / "FASE5-29" / "fase15_mapas_callejeros_v3" /
+CALLEJERO = (ROOT / "outputs" / "polos_gastro" / "historico" / "FASE5-29" / "fase15_mapas_callejeros_v3" /
              "assets" / "callejero_gcba_2026_06_02.geojson")
 MATRIZ = ROOT / "outputs" / "polos_gastro" / "matriz_validacion_polos_gastro.csv"
 CONTROL = BARRIDO / "borrador_polos" / "control_matriz_v2.csv"

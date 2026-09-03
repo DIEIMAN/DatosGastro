@@ -32,7 +32,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BARRIDO = ROOT / "outputs" / "BARRIDO_CIUDAD_2026-08"
 GEN = BARRIDO / "generado"
 POLOS = BARRIDO / "borrador_polos"
-V3 = ROOT / "outputs" / "polos_gastro" / "corrida_territorial_v3"
+V3 = ROOT / "outputs" / "polos_gastro" / "historico" / "corrida_territorial_v3"
 TESTS = ROOT / "tests"
 # Salida interna de la sonda de Places, ignorada por Git. De acá sale SÓLO el agregado por barrio
 # —conteos, sin un solo punto ni identidad—, que es el nivel `agregado` de la tabla de licencias de

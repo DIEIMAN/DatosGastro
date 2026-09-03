@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-08-10",
+  "paso_m": 4.0,
+  "tolerancia_m": 15.0,
+  "tramo_minimo_m": 30.0,
+  "paginas": 23,
+  "tramos": 2279,
+  "menos_de_la_mitad_por_calles": [
+    "R02"
+  ]
+}

@@ -5,7 +5,7 @@ Generado para confirmación de Diego (guardrails #4 y skill 08).
 > **RESUELTO (2026-06-19):** por decisión de Diego, el pack original NO se borró: se **movió** a
 > `data/archive/_a_revisar/datagastro_fuentes_externas_pack/` (cuarentena, reversible). El `data/`
 > raíz quedó limpio. Las ubicaciones canónicas son `docs/fuentes_externas/`,
-> `config/fuentes_externas/` y `outputs/fuentes_externas/`.
+> `config/fuentes_externas/` y `data/fuentes_externas/`.
 
 ## Situación
 
@@ -29,7 +29,7 @@ Ya se **copió** (no movido) cada archivo a su ubicación correcta y se verific�
 
 Derivados generados a partir de la matriz (no estaban en el ZIP):
 `config/fuentes_externas/catalogo_fuentes_externas.csv` / `.json` y
-`outputs/fuentes_externas/fuentes_prioridad_{alta,media,baja}.csv`.
+`data/fuentes_externas/fuentes_prioridad_{alta,media,baja}.csv`.
 
 ## Clasificación de limpieza
 
@@ -37,7 +37,7 @@ Derivados generados a partir de la matriz (no estaban en el ZIP):
 | --- | --- | --- |
 | **Seguro borrar** (tras confirmar) | Carpeta completa `data/datagastro_fuentes_externas_pack/` | Borrar: ya está copiada íntegra y verificada por hash en `docs/` y `config/`. Es un duplicado. |
 | **Revisar** | — | (nada) |
-| **No borrar** | Las copias nuevas en `docs/fuentes_externas/`, `config/fuentes_externas/`, `outputs/fuentes_externas/` | Quedan como ubicación canónica |
+| **No borrar** | Las copias nuevas en `docs/fuentes_externas/`, `config/fuentes_externas/`, `data/fuentes_externas/` | Quedan como ubicación canónica |
 
 ## Confirmación pendiente
 

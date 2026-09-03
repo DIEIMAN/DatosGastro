@@ -1,0 +1,4 @@
+﻿momento,locales_unicos,ocurrencias_fichas,duplicaciones,fecha,universo,geometria,fuente
+R21_BASELINE_CONCILIADO,10819,11119,300,2026-08-12,base/local.csv; anillo=nucleo; apto_geometria=true,ronda_21/geometria/bordes_39.geojson,conciliación pre-correcciones
+R22_CANDIDATA_RECALCULADA,10819,11119,300,2026-08-12,base/local.csv; anillo=nucleo; apto_geometria=true,03_POLOS_CANDIDATOS.geojson,scripts/build_r22.py
+R22_SUCESORA_SAN_TELMO,10835,11135,300,2026-08-12,base/local.csv; anillo=nucleo; apto_geometria=true,sucesora R22; San Telmo incorpora manzana GCBA 7783 con tolerancia instrumental de 1 m,R22 corregida + decisión territorial Diego 2026-08-12

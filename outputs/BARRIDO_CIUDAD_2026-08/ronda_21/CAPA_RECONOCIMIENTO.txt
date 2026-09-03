@@ -1,0 +1,55 @@
+==================================================================================================
+LA CAPA DE RECONOCIMIENTO · regenerada desde la canónica, y las cuentas de nuevo
+==================================================================================================
+
+    (el respaldo ya existe: esta corrida ya se hizo. «La vieja» se lee de hitos_capa_2026_ANTES_DE_LA_RONDA_21.geojson y el respaldo no se pisa)
+    la que leen las páginas : 215 filas · hitos_capa_2026.geojson
+    la canónica             : 225 filas · hitos_capa_2026_r11.csv
+    de la canónica tienen punto: 220 · las otras 5 no entran en ninguna cuenta geométrica
+
+--------------------------------------------------------------------------------------------------
+1 · LA CAPA NUEVA
+--------------------------------------------------------------------------------------------------
+    220 filas · 5 marcadas «no_auditado_en_r18»
+    escrita hitos_capa_2026.geojson: 215 → 220 filas (+5)
+
+    entran 5 establecimientos que la capa vieja no tenía:
+        DIR-026   Gran Café Gardel                     Café histórico sin regis   ochava Av. Entre Ríos e Indepe
+        DIR-027   Centro Asturiano de Buenos Aires     Casa regional con comedo   Solis 475
+        DIR-028   Centro Laurak Bat (Restaurante Har   Casa regional con comedo   Av. Belgrano 1144
+        DIR-029   Casal de Catalunya                   Casa regional con comedo   Chacabuco 863
+        H094      Bar Iberia                           Bar Notable                Av. de Mayo 1196
+    salen 0 · ninguno
+    cambian de punto 2:
+        H032      «Café Roma» San Luis 3101  →  «Roma del Abasto» Anchorena 806   (6,142.2 m)
+        H060      «La Academia» Av. Callao 368  →  «La Academia» Montevideo 341   (278.4 m)
+
+--------------------------------------------------------------------------------------------------
+2 · LOS LUGARES CON RECONOCIMIENTO ADENTRO DEL BORDE DE CADA PÁGINA
+--------------------------------------------------------------------------------------------------
+
+    contra LOS BORDES PUBLICADOS HOY:
+
+    polo   página                                    vieja  nueva  qué cambia
+    R12    Centro y Microcentro                         21     22  +H094 Bar Iberia
+    Z47    Monserrat y Congreso                          5      6  +H094 Bar Iberia
+    Z52    La Boca · Almirante Brown y Necochea          4      3  −H032 Café Roma
+
+    3 páginas de 41 cambian de cuenta. Las otras 38 quedan igual.
+    total de lugares con reconocimiento adentro de algún borde: 137 → 137
+
+    las dos correcciones hechas a mano:
+        La Boca · Almirante Brown y Necochea         4 → 3 · medido 4 → 3 · CONFIRMA
+        Centro y Microcentro                         21 → 22 · medido 21 → 22 · CONFIRMA
+
+    contra LA GEOMETRÍA DE DESPUÉS · los cinco repartos y la fusión aplicados:
+
+    polo         página                                     hoy  después  qué se mueve
+    R12          Centro y Microcentro                        22       14  −DIR-003; −H035; −H067; −H074; −H081; −H094; −ICO-002; −ICO-016
+    Z46          Retiro                                      11        7  −H043; −H058; −H082; −ICO-015
+    Z37          Almagro                                      5        2  −DIR-006; −H044; −H054
+
+    3 páginas cambian de cuenta al aplicar las decisiones, sobre la misma capa de reconocimiento.
+    OJO · Centro y Microcentro: hoy cuenta 22 y después de los repartos cuenta 14. La corrección a mano vale para el borde de hoy.
+
+Escrito: hitos_capa_2026.geojson (regenerada) · geometria/hitos_capa_2026_ANTES_DE_LA_RONDA_21.geojson (la anterior) · reconocimiento_cuentas.csv · reconocimiento_diff_de_la_capa.csv · reconocimiento_resumen.json

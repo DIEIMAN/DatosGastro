@@ -87,7 +87,7 @@ MATRIZ_R4 = SEIS_VIAS / "seis_vias_94_filas_r4.csv"
 ZONAS_R4 = SEIS_VIAS / "seis_vias_22_zonas_r4.csv"
 VIA_E_94 = COWORK / "via_E_94_filas.csv"
 FIAB = ROOT / "data" / "raw" / "f03_fiab.geojson"
-ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "INVESTIGACION_DESBLOQUEOS_V21" /
+ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "historico" / "INVESTIGACION_DESBLOQUEOS_V21" /
                    "paquete" / "r15_plaza_arenales" / "fuentes" /
                    "espacios_verdes_publicos_gcba.geojson")
 

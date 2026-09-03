@@ -1,0 +1,21 @@
+{
+  "fecha": "2026-08-10",
+  "antes": {
+    "suma_ha": 5876.799582104163,
+    "suma_locales": 12105,
+    "union_ha": 5444.1457608295395,
+    "union_locales": 10819,
+    "pares": 25,
+    "en_dos_o_mas": 1263
+  },
+  "ahora": {
+    "suma_ha": 5719.222876942488,
+    "suma_locales": 11403,
+    "union_ha": 5444.145760829492,
+    "union_locales": 10819,
+    "pares": 20,
+    "en_dos_o_mas": 562
+  },
+  "locales_que_cambian_de_pagina": 702,
+  "par_es_acera_izquierda": true
+}

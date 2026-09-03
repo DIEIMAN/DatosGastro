@@ -68,7 +68,7 @@ OUT_CSV = GEOMETRIA / "ampliaciones_r7.csv"
 OUT_SENSIBILIDAD = GEOMETRIA / "ampliaciones_sensibilidad_buffer_r7.csv"
 INFORME_TXT = GEOMETRIA / "AMPLIACIONES_R7.txt"
 
-ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "INVESTIGACION_DESBLOQUEOS_V21" /
+ESPACIOS_VERDES = (ROOT / "outputs" / "polos_gastro" / "historico" / "INVESTIGACION_DESBLOQUEOS_V21" /
                    "paquete" / "r15_plaza_arenales" / "fuentes" /
                    "espacios_verdes_publicos_gcba.geojson")
 

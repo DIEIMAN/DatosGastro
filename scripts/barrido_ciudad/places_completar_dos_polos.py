@@ -95,7 +95,7 @@ BASE = (ROOT / "outputs/BARRIDO_CIUDAD_2026-08/desde_cowork"
 # Las 130 referencias interiores publicables, con su `estado_vigencia`. Se leen por dos
 # motivos: son nombres que la ficha YA imprime —adoptarlos sería duplicarlos— y traen las
 # que están CERRADAS, que es lo único que puede desmentir a un `OPERATIONAL` de Places.
-REFERENCIAS = (ROOT / "outputs/ATLAS_INFORMATIVO_39_2026-08-13/codex/atlas_informativo_v1"
+REFERENCIAS = (ROOT / "outputs/polos_gastro/ATLAS_INFORMATIVO_39_2026-08-13/codex/atlas_informativo_v1"
                / "preparacion/REFERENCIAS_INTERIORES_PUBLICABLES.csv")
 POLO_LA_BOCA = "POLO-Z52"
 INTERNO = ROOT / "outputs/analisis_interno/places_dos_polos_2026-08-21"

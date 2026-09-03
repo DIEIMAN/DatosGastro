@@ -1,0 +1,145 @@
+==================================================================================================
+LOS CINCO REPARTOS CONTENIDOS · qué queda de cada página después de repartir el solape
+==================================================================================================
+
+geometría vigente: 41 polos · callejero: 31,961 segmentos
+
+base: 23,981 locales del universo anillo=nucleo & apto_geometria
+
+--------------------------------------------------------------------------------------------------
+0 · LA CONVENCIÓN DEL NOMENCLADOR, VERIFICADA Y NO HEREDADA
+--------------------------------------------------------------------------------------------------
+    segmento testigo: CABILDO AV. · par=Saavedra · impar=Nuñez
+    a 25 m a la izquierda del sentido de digitalización cae en SAAVEDRA
+    a 25 m a la derecha                                   cae en NUÑEZ
+    → «par» es la acera IZQUIERDA del sentido de digitalización. Verificado, no supuesto.
+
+==================================================================================================
+A1 · Retiro (Z46)  y  Centro y Microcentro (R12)
+==================================================================================================
+    el solape mide 52.16 ha y tiene 301 locales
+    motivo: Retiro no tiene borde propio —publica el polígono de su barrio— y el solape entero es del Microcentro hasta que Retiro tenga borde dibujado
+
+
+    Z46 · Retiro                          467.14 ha →    414.98 ha   (-52.16)       715 →   414 locales (-301)
+    R12 · Centro y Microcentro            184.12 ha →    184.12 ha   (+0.00)      1084 →  1084 locales (+0)
+
+==================================================================================================
+A2 · Avenida Corrientes (R02)  y  Centro y Microcentro (R12)
+==================================================================================================
+    el solape mide 21.72 ha y tiene 133 locales
+    motivo: corredor contra núcleo: la franja sobre Av. Corrientes es del corredor, que existe por esa avenida; el núcleo la contiene de paso
+
+
+    R02 · Avenida Corrientes               49.67 ha →     49.67 ha   (+0.00)       354 →   354 locales (+0)
+    R12 · Centro y Microcentro            184.12 ha →    162.39 ha   (-21.72)      1084 →   951 locales (-133)
+
+==================================================================================================
+A3 · Monserrat y Congreso (Z47)  y  Centro y Microcentro (R12)
+==================================================================================================
+    el solape mide 8.68 ha y tiene 76 locales
+    motivo: el eje de Av. de Mayo con sus nueve Bares Notables es de Monserrat: es el 63 % de Monserrat y el 4,7 % del Microcentro
+
+
+    Z47 · Monserrat y Congreso             13.77 ha →     13.77 ha   (+0.00)       133 →   133 locales (+0)
+    R12 · Centro y Microcentro            162.39 ha →    153.72 ha   (-8.68)       951 →   875 locales (-76)   [publica 184.12 ha · 1084 locales; llega a este reparto ya repartido]
+
+==================================================================================================
+A4 · Abasto (R13)  y  Almagro (Z37)
+==================================================================================================
+    el solape mide 25.33 ha y tiene 101 locales
+    motivo: se corta en Av. Medrano, que la página de Almagro nombra en su perímetro escrito
+
+    1 · el eje de MEDRANO AV. cruza el solape a lo largo de 333 m
+        rumbo del tramo que cruza: 7.0° · o sea N–S
+    2 · el nomenclador, en los 4 segmentos que tocan el solape:
+        acera par «Almagro» · acera impar «Almagro»   (4 segmentos)
+        → el nomenclador NO pone dos barrios distintos a los lados de este eje en este tramo
+        el borde compartido no se puede medir: R13 (Abasto) no es un barrio de la capa oficial
+    3 · masa propia de cada polo a cada lado del eje, por radio alrededor del solape:
+           radio     R13 lado A / lado B      Z37 lado A / lado B    queda lado A / lado B
+           200 m     0.15 /   25.76      6.78 /    1.46        Z37 / R13   
+           400 m     0.15 /   42.00      7.69 /    1.46        Z37 / R13   
+           800 m     0.15 /   70.36     10.82 /   18.54        Z37 / R13   
+         1,600 m     0.15 /   83.52     14.81 /   20.76        Z37 / R13   
+        sin recorte     0.15 /   83.52     14.81 /   20.76        Z37 / R13   
+        → el mismo reparto a los cinco radios. No depende de cuánto se mire
+
+        → al este del eje: 23.48 ha · 93 locales  →  R13 · Abasto
+          esa mitad cae en: ALMAGRO 100 %
+        → al oeste del eje: 1.86 ha · 8 locales  →  Z37 · Almagro
+          esa mitad cae en: ALMAGRO 100 %
+
+        la variante espejo, medida y NO adoptada:
+          si R13 · Abasto                 se quedara el otro flanco: 85.53 ha · 280 locales
+          si Z37 · Almagro                se quedara el otro flanco: 59.04 ha · 199 locales
+
+
+    R13 · Abasto                          109.00 ha →    107.14 ha   (-1.86)       373 →   365 locales (-8)
+    Z37 · Almagro                          60.90 ha →     37.42 ha   (-23.48)       207 →   114 locales (-93)
+
+==================================================================================================
+A5 · Villa Crespo (R08)  y  La Paternal (R21)
+==================================================================================================
+    el solape mide 49.68 ha y tiene 91 locales
+    motivo: se corta por Av. Warnes, con la que la matriz define a La Paternal
+
+    1 · el eje de WARNES AV. cruza el solape a lo largo de 669 m
+        rumbo del tramo que cruza: 112.5° · o sea ESE–ONO
+    2 · el nomenclador, en los 15 segmentos que tocan el solape:
+        acera par «Paternal» · acera impar «Chacarita»   (3 segmentos)
+        acera par «Villa Crespo» · acera impar «Chacarita»   (2 segmentos)
+        acera par «Villa Crespo» · acera impar «Villa Crespo»   (10 segmentos)
+        → el nomenclador SÍ pone dos barrios distintos a los lados de este eje en este tramo
+        el borde compartido entre VILLA CRESPO y PATERNAL mide 127.9 m, y 5.0 m de ese borde (3.9 %) corren sobre este eje
+        → ATENCIÓN: este eje NO es el límite entre los dos barrios. El corte se puede hacer igual, pero la frase «es el límite» es falsa
+    3 · masa propia de cada polo a cada lado del eje, por radio alrededor del solape:
+           radio     R08 lado A / lado B      R21 lado A / lado B    queda lado A / lado B
+           200 m    41.15 /   20.87     49.00 /    1.02        R21 / R08   
+           400 m    57.17 /   44.11     62.24 /    1.02        R21 / R08   
+           800 m    76.38 /   95.06     96.15 /   10.82        R21 / R08   
+         1,600 m    77.87 /  199.90    174.55 /   81.59        R21 / R08   
+        sin recorte    77.87 /  207.90    197.72 /  137.94        R21 / R08   
+        → el mismo reparto a los cinco radios. No depende de cuánto se mire
+
+        → al nornoreste del eje: 8.05 ha · 14 locales  →  R08 · Villa Crespo
+          esa mitad cae en: VILLA CRESPO 72 % · CHACARITA 28 %
+        → al sudsudoeste del eje: 41.63 ha · 77 locales  →  R21 · La Paternal
+          esa mitad cae en: VILLA CRESPO 69 % · CABALLITO 17 % · PATERNAL 14 %
+
+        la variante espejo, medida y NO adoptada:
+          si R08 · Villa Crespo           se quedara el otro flanco: 327.40 ha · 809 locales
+          si R21 · La Paternal            se quedara el otro flanco: 343.71 ha · 230 locales
+
+
+    R08 · Villa Crespo                    335.46 ha →    293.83 ha   (-41.63)       823 →   746 locales (-77)
+    R21 · La Paternal                     385.34 ha →    377.29 ha   (-8.05)       307 →   293 locales (-14)
+
+==================================================================================================
+LAS CIFRAS FINALES DE LAS OCHO PÁGINAS QUE TOCAN LOS CINCO REPARTOS
+==================================================================================================
+    polo   página                                   publica hoy       después de repartir
+    R02    Avenida Corrientes                  49.67 ha    354 loc        49.67 ha    354 loc   (+0.00 ha · +0 loc)
+    R08    Villa Crespo                       335.46 ha    823 loc       293.83 ha    746 loc   (-41.63 ha · -77 loc)
+    R12    Centro y Microcentro               184.12 ha  1,084 loc       153.72 ha    875 loc   (-30.40 ha · -209 loc)
+    R13    Abasto                             109.00 ha    373 loc       107.14 ha    365 loc   (-1.86 ha · -8 loc)
+    R21    La Paternal                        385.34 ha    307 loc       377.29 ha    293 loc   (-8.05 ha · -14 loc)
+    Z37    Almagro                             60.90 ha    207 loc        37.42 ha    114 loc   (-23.48 ha · -93 loc)
+    Z46    Retiro                             467.14 ha    715 loc       414.98 ha    414 loc   (-52.16 ha · -301 loc)
+    Z47    Monserrat y Congreso                13.77 ha    133 loc        13.77 ha    133 loc   (+0.00 ha · +0 loc)
+
+==================================================================================================
+LA UNIÓN DE LOS 41, DESPUÉS DE LOS CINCO REPARTOS
+==================================================================================================
+  cifra                                                antes         ahora
+  suma de los 41 por separado, ha                   5,876.80      5,719.22   <-- cambia
+  unión de los 41, ha                               5,444.15      5,444.15
+  suma de los 41 por separado, locales                12,105        11,403   <-- cambia
+  unión de los 41, locales                            10,819        10,819
+  se cuentan de más, veces                             1,286           584   <-- cambia
+  locales distintos en dos o más polos                 1,263           562   <-- cambia
+  pares de polos que comparten superficie                 25            20   <-- cambia
+
+  se cuentan de más 584 veces sobre 562 locales distintos.
+
+Escrito: repartos_cifras.csv (10 filas) · repartos_locales_que_cambian.csv (702) · repartos_orientacion_de_los_cortes.csv (4) · repartos_resumen.json · geometria/bordes_repartidos_41.geojson
