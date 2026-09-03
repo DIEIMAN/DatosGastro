@@ -48,13 +48,21 @@
   registrada, permisos, eventos o registros parciales. Usar el término que corresponde a lo que
   la fuente realmente mide (ver skill 02 y 05).
 
-## 6. No scrapear plataformas privadas
+## 6. Recolección externa controlada
 
-- Prohibido scraping de Google Maps, Rappi, PedidosYa, Mercado Libre, Mercado Pago, TripAdvisor,
-  TheFork, Instagram, TikTok ni cualquier plataforma privada.
-- Para esas plataformas, solo: **APIs oficiales, datos agregados, convenios o documentación de
-  solicitud** (ver skill 06).
-- No ejecutar llamadas pagas a APIs sin autorización presupuestaria explícita.
+- Se permite relevar información comercial públicamente visible en Google Maps, Rappi,
+  PedidosYa, Mercado Libre, TripAdvisor, TheFork, Instagram, TikTok y otras plataformas cuando
+  Diego autorice la tarea y se aplique la skill 06.
+- La recolección debe ser acotada, trazable, con ritmo prudente, caché y salida interna. No se
+  eluden login, CAPTCHA, paywall, robots ni otros controles de acceso; no se guardan contraseñas,
+  tokens, cookies o perfiles personales.
+- Solo se capturan campos necesarios para el objetivo. Se excluyen datos de consumidores,
+  repartidores y personas; teléfonos, emails y contactos no se publican.
+- Lo recolectado es **evidencia externa no canónica**. No entra automáticamente al Atlas ni al
+  pipeline y no demuestra por sí solo que un local esté abierto, sea el mismo establecimiento o
+  pertenezca a una categoría. Requiere corroboración y revisión humana.
+- APIs oficiales y convenios siguen siendo preferibles para escala o uso institucional. No
+  ejecutar llamadas pagas sin autorización presupuestaria explícita.
 
 ## 7. No commitear datos internos ni sensibles
 
@@ -79,6 +87,7 @@
 3. ¿Mezcla universos de fuentes o llama "activo" a algo que no lo es? → **Corregir.**
 4. ¿Expone datos personales o sensibles, o los commitea? → **Bloquear / anonimizar / ignorar.**
 5. ¿Borra o mueve archivos locales? → **Plan de limpieza + confirmación.**
-6. ¿Implica scraping o API paga de plataforma privada? → **No hacer; usar skill 06.**
+6. ¿Implica recolección o API de plataforma externa? → **Usar skill 06, acotar, trazar y dejar
+   el resultado fuera del pipeline hasta revisión.**
 
 Si alguna respuesta dispara un freno, **se para y se consulta**. Es preferible preguntar de más.

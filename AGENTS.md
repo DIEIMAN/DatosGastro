@@ -41,8 +41,12 @@ No asumir carga automática de `.codex/`. No inventar datos ni vulnerar privacid
 ## Reglas obligatorias
 
 - No inventar datos, métricas, fuentes, URLs ni conclusiones.
-- No exponer datos personales ni sensibles.
-- No publicar correos, teléfonos, nombres, CUIT, DNI, IDs técnicos, links privados ni API keys.
+- Se permite tratar datos personales o sensibles internamente cuando sean necesarios para un
+  cruce, una validación o una tarea autorizada. Usarlos con minimización de campos, finalidad
+  explícita, trazabilidad y almacenamiento local restringido/ignorado por Git.
+- No exponer en entregables públicos correos, teléfonos, nombres de personas, CUIT, DNI, IDs
+  técnicos, links privados ni API keys. Los identificadores usados para enlazar fuentes deben
+  eliminarse, anonimizarse o agregarse antes de publicar.
 - No modificar fuentes originales salvo pedido explícito.
 - No tocar `.env`, credenciales, datos internos ni crudos.
 - No modificar pipelines de DataGastro general sin pedido explícito.
@@ -59,7 +63,9 @@ explícita.
 
 ## Privacidad y QA
 
-Antes de cerrar, verificar que los outputs no contienen emails, teléfonos, nombres de personas,
+Antes de cerrar, distinguir salidas internas de entregables públicos. Los cruces internos pueden
+usar los identificadores mínimos necesarios, siempre en ubicaciones restringidas e ignoradas por
+Git. Verificar que los entregables públicos no contienen emails, teléfonos, nombres de personas,
 CUIT, DNI, links privados ni API keys. Reportar qué archivos se crearon o modificaron y confirmar
 si se tocaron o no datos fuente.
 

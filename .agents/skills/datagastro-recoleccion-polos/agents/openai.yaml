@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recoleccion de Polos"
+  short_description: "Recolectar y analizar evidencia territorial con guardrails"
+  default_prompt: "Use $datagastro-recoleccion-polos para preparar una corrida experimental y trazable sobre fuentes autorizadas."

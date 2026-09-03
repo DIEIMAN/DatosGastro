@@ -1,6 +1,6 @@
 ---
 name: datagastro-fuentes-externas
-description: Reglas por plataforma externa/privada en DataGastro (Google Places, Rappi, PedidosYa, Mercado Pago, Mercado Libre, POS, TheFork, TripAdvisor, redes). Usar al evaluar o preparar integraciones de terceros. NO scraping.
+description: Reglas de recolección controlada e integración de fuentes externas/privadas en DataGastro (Google Maps/Places, Rappi, PedidosYa, Mercado Pago, Mercado Libre, POS, TheFork, TripAdvisor y redes). Usar al investigar, extraer, contrastar o preparar integraciones de terceros.
 ---
 
 # datagastro-fuentes-externas — réplica puntero

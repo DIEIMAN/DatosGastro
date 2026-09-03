@@ -1,7 +1,9 @@
 # Skill 06 — Fuentes externas y privadas
 
-Regla central: **no scraping.** Solo **APIs oficiales, convenios, datos agregados o planes de
-consulta/documentación**. No ejecutar llamadas pagas sin autorización. No guardar credenciales.
+Regla central: **separar recolección, evidencia e integración.** Se permite relevar información
+comercial públicamente visible mediante navegador o extracción automatizada cuando haya
+autorización explícita, alcance acotado, trazabilidad, ritmo prudente y salida interna. No
+ejecutar llamadas pagas sin autorización. No guardar credenciales, cookies ni tokens.
 
 El detalle accionable (matriz priorizada, plantillas, roadmap) vive en `docs/fuentes_externas/`
 y `config/fuentes_externas/`. Esta skill fija las **reglas de uso por plataforma**.
@@ -10,18 +12,18 @@ y `config/fuentes_externas/`. Esta skill fija las **reglas de uso por plataforma
 
 | Fuente | Acceso permitido | Acción permitida hoy | Prohibido |
 | --- | --- | --- | --- |
-| **Google Places / Places Aggregate** | API oficial paga | Solo **plan** y diseño de piloto; revisar TOS | Llamar la API sin autorización presupuestaria; scraping de Google Maps |
+| **Google Maps / Places Aggregate** | Web pública visible / API oficial paga | Relevamiento controlado interno o piloto API autorizado | Eludir controles; afirmar vigencia solo por la plataforma; API paga sin presupuesto |
 | **Google Business Profile** | API con consentimiento del dueño | Diseñar piloto opt-in | Acceder a perfiles sin permiso |
-| **Google Popular Times** | Sin API oficial estable | Mencionar como deseable | Scraping / librerías no oficiales |
+| **Google Popular Times** | Sin API oficial estable | Muestra controlada como señal contextual | Publicarlo como medición representativa o actividad real |
 | **OpenStreetMap / Overpass** | Abierto (ODbL) | **Script exploratorio permitido** con atribución y límites de uso | Abusar de servidores públicos |
-| **Rappi** | Solo convenio | Preparar pedido de convenio / one-pager | Scraping de app/web |
-| **PedidosYa / Delivery Hero** | Solo convenio | Preparar pedido de convenio | Scraping |
+| **Rappi** | Web/app visible; convenio para escala | Relevamiento acotado de oferta publicada; preparar convenio | Capturar usuarios/repartidores; confundir disponibilidad con universo total |
+| **PedidosYa / Delivery Hero** | Web/app visible; convenio para escala | Relevamiento acotado de oferta publicada; preparar convenio | Capturar usuarios/repartidores; confundir disponibilidad con universo total |
 | **Mercado Pago / adquirentes / bancos** | Convenio (datos agregados) | Documentar pedido agregado con umbrales | Datos nominales, CUIT visible, scraping |
 | **Mercado Libre** | API marketplace | Solo si surge línea de costos/insumos | Mezclar con universo de locales; scraping |
 | **POS (Fudo, Maxirest, etc.)** | Convenio / opt-in | Diseñar piloto voluntario agregado | Facturación individual pública |
-| **Reservas (TheFork, OpenTable, Meitre...)** | Convenio / opt-in | Identificar plataformas y pedir reunión | Scraping |
-| **TripAdvisor / Terra** | API/comercial | Pedir demo si se mide turismo | Scraping de reviews |
-| **Instagram / Meta** | API restringida / opt-in | Campañas y hashtags oficiales | Scraping de perfiles |
+| **Reservas (TheFork, OpenTable, Meitre...)** | Web visible; convenio / opt-in | Señales de presencia/disponibilidad y pedido de reunión | Afirmar ocupación real desde una consulta aislada |
+| **TripAdvisor / Terra** | Web visible; API/comercial | Presencia turística y muestra de reseñas con fecha | Reproducir textos extensos o tratar ratings como censo |
+| **Instagram / Meta** | Contenido público; API restringida / opt-in | Señales fechadas de actividad y campañas | Perfiles privados, mensajes, datos personales o inferencias sobre personas |
 | **TikTok Research API** | API con elegibilidad | Tendencias por keywords oficiales | Usarlo como padrón de locales |
 | **Google Trends** | Interfaz pública | Indicador de demanda en informes | Scraping automático masivo |
 | **Operadoras móviles / Waze / SUBE** | Convenio | Consultar si ya hay convenio GCBA | Pedir datos granulares de individuos |
@@ -51,8 +53,9 @@ tarjetas, repartidores, domicilios ni CUIT nominal salvo base legal clara (ver s
 ## 4. Antes de tocar cualquier fuente externa
 
 Responder el `checklist_legal_y_metodologico.md` (acceso, privacidad, universo, calidad,
-integración). Si la fuente requiere scraping de plataforma privada o trae datos sensibles sin
-convenio: **no entra al pipeline institucional.**
+integración). La extracción puede alimentar una carpeta de evidencia interna; para entrar al
+pipeline institucional necesita contrato de fuente, condiciones de uso compatibles, controles,
+corroboración y aprobación explícita.
 
 ## 5. Credenciales y costos
 

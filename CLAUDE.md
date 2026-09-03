@@ -17,9 +17,12 @@ carga en cada sesión. **Ante conflicto, ganan los guardrails.**
    reales.
 5. **No convertir habilitaciones en "locales activos".** No decir "locales activos" si la fuente
    mide habilitaciones, oferta registrada, permisos, eventos o registros parciales.
-6. **No scraping** de Google Maps, Rappi, PedidosYa, Mercado Libre, Mercado Pago, TripAdvisor,
-   TheFork, Instagram, TikTok ni plataformas privadas. Solo APIs oficiales, datos agregados,
-   convenios o documentación. No ejecutar llamadas pagas. No guardar credenciales.
+6. **Recolección externa controlada.** Se permite relevar información comercial visible en
+   Google Maps, Rappi, PedidosYa, TripAdvisor, TheFork, Instagram y otras plataformas como
+   evidencia externa no canónica. Exigir autorización explícita por tarea, alcance acotado,
+   trazabilidad, ritmo prudente y salida interna. No eludir login, CAPTCHA, paywall ni controles
+   de acceso; no guardar credenciales/cookies; no ejecutar llamadas pagas sin presupuesto. Nada
+   entra automáticamente al Atlas o al pipeline: requiere corroboración y revisión humana.
 7. **No exponer datos personales:** CUIT, DNI, emails, teléfonos, contactos, montos o
    transacciones individuales. Trabajar con agregados, perfiles de columnas, conteos y
    diagnósticos; **no exportar filas individuales sensibles**.
@@ -89,12 +92,40 @@ No crear `.claude/agents/` ni tocar `.claude/settings.json` sin pedido. Coordina
 ## Alcance por subproyecto (no re-litigar)
 
 - **Casas de Pastas:** solo casas/fábricas de pastas; NO restaurantes ni restaurantes italianos.
+- **Panaderías:** núcleo (elaboración o despacho de pan) + punto de cocción; NO confitería,
+  NO despacho de masas sin elaboración, NO pizzerías. Detalle en
+  `docs/panaderias/ALCANCE_Y_DEFINICION.md`; el rubro manda sobre el nombre.
 - **Mercados:** mercados gastronómicos específicamente; NO mercados generales/minoristas.
 - **PolosGastro:** el objetivo NO es franquicias ni solo cadenas grandes. Abasto = subzona del
   polo Corrientes, no zona propia.
 - **Marca pública:** DGDGAS (Dirección General de Desarrollo Gastronómico); DataGastro solo en docs internos.
 - No tocar los otros subproyectos (Cafecito / Mercados / CasasDePastas / PolosGastro / V2) salvo
   pedido explícito.
+
+## Estudios de rubro (panaderias, casas de pastas, y los que sigan)
+
+- **Las fuentes locales se leen SIEMPRE por `scripts/shared/fuentes_locales`**
+  (`iter_f02`, `iter_f01`). No copiar el lector de un estudio a otro: F02 son ocho
+  archivos con delimitador, codificacion y nombres de columna distintos, y un lector
+  escrito contra uno solo devuelve cero para los demas sin fallar. Si falta algo, se
+  agrega al modulo compartido y se corre `tests/test_fuentes_locales.py`.
+- Antes de empezar un rubro: `python -m scripts.shared.fuentes_locales.f02` (perfil por
+  archivo; sale con codigo 1 si alguno queda en cero filas o sin rubro).
+- Receta completa: `docs/estudios_de_rubro/COMO_ABRIR_UN_RUBRO_NUEVO.md`.
+  Detalle del lector: `docs/estudios_de_rubro/LECTOR_FUENTES_LOCALES.md`.
+- **Agrupar por `reg.clave_habilitacion`, NO por `reg.id_registro`.** La partida matriz es
+  el inmueble: el 51 % de los inmuebles del universo de panaderias aloja mas de una
+  habilitacion, y agrupar por partida fusiona locales distintos del mismo edificio. La
+  clave de habilitacion es `solicitud` (+ unidad funcional) en los archivos viejos y
+  `disposicion` en el de 2025.
+- El padron 2025 **republica tramites viejos con otro identificador**: el mismo local puede
+  entrar dos veces, una por `solicitud` y otra por `disposicion`. En panaderias eran 59
+  casos y se unen por partida + domicilio + anio; ver `build_panaderias.py`.
+- Los builders aceptan `--out DIR` para correr sin pisar entregables publicados, y
+  `diagnostico_panaderias.py` acepta `--maestro RUTA`.
+- El archivo F02 llamado `2025` NO trae habilitaciones de 2025 (padron con disposiciones
+  2015-2018) y el `2023` esta subrepresentado en origen: decirlo al publicar cualquier
+  serie por anio.
 
 ## graphify
 

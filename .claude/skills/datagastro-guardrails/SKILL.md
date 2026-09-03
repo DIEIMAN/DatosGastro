@@ -18,6 +18,7 @@ Antes de actuar, verificar:
 4. ¿Expone datos personales (CUIT, DNI, email, teléfono, montos individuales) o los commitea? →
    Bloquear, anonimizar o ignorar por Git.
 5. ¿Borra o mueve archivos locales? → Plan de limpieza (seguro/revisar/no borrar) + confirmación.
-6. ¿Scraping o API paga de plataforma privada? → No hacer; usar la skill de fuentes externas.
+6. ¿Recolección o API de plataforma externa? → Aplicar la skill de fuentes externas; exigir
+   alcance autorizado, salida interna, trazabilidad y revisión antes de integrar.
 
 Ante la duda: frenar y preguntar. Leer el documento completo para el detalle.
