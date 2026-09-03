@@ -1,0 +1,130 @@
+{
+  "project_slug": "cafecito_belgrano_template_test",
+  "title": "Cafecito BA en tu barrio - Edicion Belgrano",
+  "subtitle": "Prueba aislada del motor reusable de informes de encuestas",
+  "event_name": "Cafecito BA en tu barrio",
+  "event_edition": "Edicion Belgrano",
+  "source_label": "CSV sintetico de prueba, sin datos personales reales",
+  "cutoff_date": "2026-06-29",
+  "source_path": "configs/encuestas/cafecito_belgrano_template_test_respuestas.csv",
+  "output_dir": "outputs/encuestas/cafecito_belgrano_template_test",
+  "scope_note": "Esta prueba usa respuestas sinteticas para validar el template. No reemplaza el informe real de Cafecito Belgrano Tanda 5 ni permite inferencias sobre el evento.",
+  "chart_questions": [
+    "rango_edad",
+    "genero",
+    "residencia_macro",
+    "primera_vez",
+    "canal_llegada",
+    "con_quien",
+    "motivo_asistencia",
+    "intereses_futuros"
+  ],
+  "questions": [
+    {
+      "key": "marca_temporal",
+      "column": "marca_temporal",
+      "label": "Marca temporal",
+      "type": "sensitive",
+      "public": false,
+      "objective": "Control operativo interno, no publicable."
+    },
+    {
+      "key": "correo",
+      "column": "correo",
+      "label": "Correo electronico",
+      "type": "sensitive",
+      "public": false,
+      "objective": "Dato personal excluido de outputs publicos."
+    },
+    {
+      "key": "acepta_contacto",
+      "column": "acepta_contacto",
+      "label": "Acepta recibir informacion",
+      "type": "single",
+      "public": false,
+      "objective": "Consentimiento de contacto; solo uso interno."
+    },
+    {
+      "key": "rango_edad",
+      "column": "rango_edad",
+      "label": "Rango de edad",
+      "type": "single",
+      "public": true,
+      "objective": "Describir perfil etario de la muestra.",
+      "order": ["18 a 24", "25 a 34", "35 a 44", "45 a 54", "55 a 64", "65 o mas"]
+    },
+    {
+      "key": "genero",
+      "column": "genero",
+      "label": "Genero declarado",
+      "type": "single",
+      "public": true,
+      "objective": "Describir composicion declarada de la muestra."
+    },
+    {
+      "key": "residencia_macro",
+      "column": "residencia_macro",
+      "label": "Residencia declarada a nivel macro",
+      "type": "single",
+      "public": true,
+      "objective": "Leer procedencia general sin publicar barrios o localidades finas."
+    },
+    {
+      "key": "barrio_localidad",
+      "column": "barrio_localidad",
+      "label": "Barrio o localidad",
+      "type": "open",
+      "public": false,
+      "objective": "Texto libre potencialmente identificable; excluido de salidas publicas."
+    },
+    {
+      "key": "primera_vez",
+      "column": "primera_vez",
+      "label": "Primera vez en un evento gastronomico de la Ciudad",
+      "type": "single",
+      "public": true,
+      "objective": "Distinguir publico nuevo y recurrente."
+    },
+    {
+      "key": "con_quien",
+      "column": "con_quien",
+      "label": "Con quien asistio",
+      "type": "single",
+      "public": true,
+      "objective": "Caracterizar modalidad de asistencia."
+    },
+    {
+      "key": "canal_llegada",
+      "column": "canal_llegada",
+      "label": "Como se entero del evento",
+      "type": "multi",
+      "public": true,
+      "objective": "Identificar canales de difusion mencionados.",
+      "canonical_options_with_commas": ["Por amigos, familia o conocidos"]
+    },
+    {
+      "key": "motivo_asistencia",
+      "column": "motivo_asistencia",
+      "label": "Que le intereso del evento",
+      "type": "single",
+      "public": true,
+      "objective": "Identificar motivacion principal declarada."
+    },
+    {
+      "key": "intereses_futuros",
+      "column": "intereses_futuros",
+      "label": "Intereses para proximas actividades",
+      "type": "multi",
+      "public": true,
+      "objective": "Explorar senales de programacion futura."
+    },
+    {
+      "key": "comentarios",
+      "column": "comentarios",
+      "label": "Comentarios abiertos",
+      "type": "open",
+      "public": false,
+      "objective": "No se publican textos individuales; solo conteo."
+    }
+  ]
+}

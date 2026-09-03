@@ -1,0 +1,235 @@
+# ---------------------------------------------------------------------------
+# CONTENIDO EDITABLE — Informe Cafecito BA en tu barrio · Edición Belgrano
+# REVISIÓN TANDA 5 (DGDGAS) — versión PÚBLICA
+# ---------------------------------------------------------------------------
+# Quinta tanda de microajuste final sobre la tanda 4. Este archivo alimenta el
+# PDF público generado por generar_informe_cafecito_belgrano_tanda5.py.
+#
+# Cambios de la tanda 5:
+#   - Se eliminan del PDF público las cajas tituladas "Síntesis" en 5.1 y 5.2.
+#   - 5.1 y 5.2 quedan en una sola página, con 5.1 arriba y 5.2 abajo.
+#   - No se rediseña el resto del informe validado en Tanda 4.
+#
+# Qué SÍ se puede editar: cualquier texto entre comillas y los ítems de listas.
+# Qué NO tocar: claves, indentación y marcadores {clave} (números calculados).
+# Negritas: encerrar el tramo interpretativo entre ** **.
+#
+# Regenerar (NO pisa versiones anteriores):
+#   .venv/Scripts/python.exe scripts/cafecito/generar_informe_cafecito_belgrano_tanda5.py
+# ---------------------------------------------------------------------------
+
+marca: "DGDGAS"
+fecha_documento: "29 de junio de 2026"
+
+institucion:
+  sigla: "DGDGAS"
+  nombre: "Dirección General de Desarrollo Gastronómico"
+  marco: "Gobierno de la Ciudad de Buenos Aires · BA Capital Gastronómica"
+
+evento:
+  nombre: "Cafecito BA en tu barrio"
+  edicion: "Edición Belgrano"
+  lugar: "La Glorieta de Barrancas de Belgrano"
+  direccion: "11 de Septiembre y Echeverría, CABA"
+  fechas: "sábado 27 y domingo 28 de junio de 2026"
+
+encabezado:
+  izquierda: "DGDGAS · Cafecito BA en tu barrio · Edición Belgrano"
+  derecha: "Resultados de encuestas · 29 de junio de 2026"
+
+encabezado_interno:
+  izquierda: "DGDGAS · Cafecito BA en tu barrio"
+  derecha: "Documento interno · 29 de junio de 2026"
+
+paginas:
+
+  # ------------------------------------------------------------ Portada
+  portada:
+    kicker_marca: "DGDGAS – Dirección General de Desarrollo Gastronómico"
+    kicker_tipo: "Resultados del relevamiento"
+    titulo: "Cafecito BA\nen tu barrio"
+    edicion: "Edición Belgrano"
+    subtitulo: "Resultados de encuestas"
+    datos_titulo: "Datos generales del evento"
+    dato_evento: "Cafecito BA en tu barrio, edición Belgrano"
+    dato_fechas: "sábado 27 y domingo 28 de junio de 2026"
+    dato_direccion: "La Glorieta de Barrancas de Belgrano, 11 de Septiembre y Echeverría, CABA"
+    dato_modalidad: "Relevamiento presencial durante el evento"
+    dato_respuestas: "{n}"
+    cafeterias_titulo: "Cafeterías adheridas presentes en el evento"
+    parrafo: "El informe reúne los resultados de las encuestas realizadas al público durante Cafecito BA en tu barrio, edición Belgrano."
+
+  # ------------------------------------------------------------ Índice
+  indice:
+    titulo: "Índice"
+    entradas:
+      - num: "1"
+        texto: "Metodología del relevamiento"
+        pagina: "3"
+      - num: "2"
+        texto: "Resumen ejecutivo"
+        pagina: "4"
+      - num: "3"
+        texto: "Perfil de las personas encuestadas"
+        pagina: "5"
+      - num: "4"
+        texto: "Lugar de residencia"
+        pagina: "6"
+      - num: "4.1"
+        texto: "Residencia"
+        pagina: "6"
+        sub: "si"
+      - num: "4.2"
+        texto: "Barrios y localidades más mencionados"
+        pagina: "6"
+        sub: "si"
+      - num: "5"
+        texto: "Vínculo previo y canales de difusión"
+        pagina: "7"
+      - num: "5.1"
+        texto: "Vínculo previo con eventos de la Ciudad"
+        pagina: "7"
+        sub: "si"
+      - num: "5.2"
+        texto: "Canales de difusión del evento"
+        pagina: "7"
+        sub: "si"
+      - num: "6"
+        texto: "Acompañamiento y motivos de asistencia"
+        pagina: "8"
+      - num: "7"
+        texto: "Intereses para próximas ediciones"
+        pagina: "9"
+
+  # ------------------------------------- 1. Metodología del relevamiento
+  metodologia:
+    titulo: "1. Metodología del relevamiento"
+    parrafo: "Las preguntas fueron realizadas por personal de la {sigla} durante Cafecito BA en tu barrio — edición Belgrano, que se desarrolló el sábado 27 y el domingo 28 de junio de 2026 en La Glorieta de Barrancas de Belgrano. El relevamiento se hizo de forma presencial durante el evento: el equipo contaba con el formulario digital en sus celulares y completaba las respuestas a partir de lo informado por las personas encuestadas. En total se obtuvieron {n} respuestas."
+    distribucion_titulo: "Distribución de las respuestas por día y franja horaria"
+    distribucion_nota: "Porcentajes sobre el total de {n} respuestas. El sábado concentró el {sabado_pct} de las respuestas y el domingo el {domingo_pct}."
+
+  # ------------------------------------------------ 2. Resumen ejecutivo
+  resumen:
+    titulo: "2. Resumen ejecutivo"
+    intro: "Sobre un total de {n} respuestas obtenidas durante el evento, los principales resultados son los siguientes:"
+    puntos:
+      - "Perfil: el grupo de 25 a 34 años fue el más mencionado ({edad_top_pct}) y las personas de 18 a 44 años reúnen el {p1844_pct} de las respuestas, con mayor presencia de mujeres ({mujer_pct}). **Predominó un público joven-adulto, mayormente femenino.**"
+      - "Residencia: el {caba_pct} declaró residir en CABA y Belgrano fue el barrio más mencionado. **El evento convocó sobre todo público de cercanía.**"
+      - "Vínculo con eventos de la Ciudad: el {recurrente_pct} ya había participado de otros eventos gastronómicos y el {primera_pct} asistía por primera vez. **La edición combinó público habitual con asistentes nuevos.**"
+      - "Canales de información: Instagram concentró el {instagram_m_pct} de las menciones, seguido por la recomendación de amigos, familia o conocidos ({amigos_m_pct}) y el paso por la zona ({paso_m_pct}). **Instagram fue el canal dominante; los locales y cafeterías adheridas casi no aparecen como vía de información.**"
+      - "Asistencia: en pareja ({pareja_pct}), con amigos ({amigos_acomp_pct}) o con familia ({familia_pct}). **El evento funcionó, sobre todo, como una salida compartida.**"
+      - "Motivos: probar café o cafeterías ({cafe_pct}) y pasear o hacer una salida ({paseo_pct}) encabezan las respuestas."
+      - "Intereses a futuro: vino ({vino_m_pct} de las menciones) y pastelería ({pasteleria_m_pct}) lideran, seguidas por food trucks ({food_trucks_m_pct}), café ({cafe_futuro_m_pct}) y ferias y mercados ({ferias_m_pct}). **Las personas encuestadas declararon interés en ampliar la programación gastronómica hacia propuestas como vino y pastelería.**"
+    nota_titulo: "Aclaraciones del informe"
+    nota: "Los resultados corresponden a 79 respuestas obtenidas durante el evento. Describen a quienes completaron el formulario y no permiten inferir resultados sobre el total de asistentes."
+
+  # ------------------------------- 3. Perfil de las personas encuestadas
+  perfil:
+    titulo: "3. Perfil de las personas encuestadas"
+    pregunta_edad: "¿Cuál es tu rango de edad?"
+    tipo_edad: "Tipo: selección única"
+    pregunta_genero: "¿Con qué género te identificás?"
+    tipo_genero: "Tipo: selección única"
+    lectura: "El grupo de 25 a 34 años concentró el {edad_top_pct} de las respuestas; entre los 18 y los 44 años se reúne el {p1844_pct}. Las mujeres representaron el {mujer_pct}. **Predominó un público joven-adulto, con mayor presencia de mujeres.**"
+
+  # ----------------------------------------- 4. Lugar de residencia
+  residencia:
+    titulo: "4. Lugar de residencia"
+    sub_a_titulo: "4.1 Residencia"
+    pregunta_a: "¿Dónde vivís actualmente?"
+    tipo_a: "Tipo: selección única"
+    sub_b_titulo: "4.2 Barrios y localidades más mencionados"
+    pregunta_b: "Indicanos tu barrio o localidad"
+    tipo_b: "Tipo: pregunta abierta"
+    barrios_nota: "Respuestas agrupadas para lectura agregada."
+    lectura: "El {caba_pct} de las personas encuestadas declaró residir en CABA y el {pba_pct} en la provincia de Buenos Aires. Belgrano fue el barrio más mencionado, seguido a distancia por Caballito, Núñez, Saavedra y Palermo. **El público fue principalmente local, con fuerte peso del propio barrio.**"
+
+  # ------------------------- 5. Vínculo previo con eventos de la Ciudad
+  vinculo:
+    titulo: "5.1 Vínculo previo con eventos de la Ciudad"
+    pregunta: "¿Es la primera vez que venís a un evento gastronómico de la Ciudad?"
+    tipo: "Tipo: selección única"
+    lectura: "El {recurrente_pct} de las respuestas corresponde a personas que ya habían participado de otros eventos gastronómicos de la Ciudad; el {primera_pct} asistía por primera vez. **La edición combinó público habitual con asistentes nuevos.**"
+
+  # ----------------------------------------- 5.2 Canales de difusión
+  canales:
+    titulo: "5.2 Canales de difusión del evento"
+    pregunta: "¿Cómo te enteraste del evento?"
+    tipo: "Tipo: selección múltiple"
+    nota_grafico: "Porcentajes calculados sobre el total de menciones registradas; una persona podía mencionar más de una opción."
+    lectura: "Instagram concentró el {instagram_m_pct} de las menciones, seguido por la recomendación de amigos, familia o conocidos ({amigos_m_pct}) y el paso por la zona ({paso_m_pct}). La opción Locales o cafeterías adheridas se muestra con 0%. **Los locales y cafeterías adheridas casi no aparecen como vía de información: la difusión en el punto de venta tiene margen para crecer.**"
+
+  # ----------------------------- 7. Acompañamiento en el evento
+  acompanamiento:
+    titulo: "6.1 Acompañamiento en el evento"
+    pregunta: "¿Con quién viniste al evento?"
+    tipo: "Tipo: selección única"
+    lectura: "La asistencia en pareja reunió el {pareja_pct} de las respuestas; con amigos, el {amigos_acomp_pct}; con familia, el {familia_pct}. **El evento funcionó, sobre todo, como una salida compartida.**"
+
+  # ----------------------------- 8. Motivos de asistencia
+  motivos:
+    titulo: "6.2 Motivos de asistencia"
+    pregunta: "¿Qué fue lo que más te interesó del evento?"
+    tipo: "Tipo: selección única"
+    lectura: "Probar café o cafeterías fue el principal motivo ({cafe_pct}), seguido por pasear o hacer una salida ({paseo_pct})."
+
+  # ----------------------- 9. Intereses para próximas ediciones
+  intereses:
+    titulo: "7. Intereses para próximas ediciones"
+    pregunta: "¿Qué tipo de eventos gastronómicos te interesa que se realicen próximamente?"
+    tipo: "Tipo: selección múltiple"
+    nota_grafico: "Porcentajes calculados sobre el total de menciones registradas; una persona podía mencionar más de una opción."
+    lectura: "Vino ({vino_m_pct} de las menciones) y pastelería ({pasteleria_m_pct}) lideran, seguidas por food trucks ({food_trucks_m_pct}), café ({cafe_futuro_m_pct}) y ferias y mercados ({ferias_m_pct}). **Las personas encuestadas declararon interés en ampliar la programación gastronómica hacia propuestas como vino y pastelería.**"
+
+# ------------------------------------------------------------- PDF INTERNO
+interno:
+
+  portada_interna:
+    kicker_marca: "DGDGAS – Dirección General de Desarrollo Gastronómico"
+    kicker_tipo: "Documento interno · 29 de junio de 2026"
+    titulo: "Cafecito BA\nen tu barrio"
+    edicion: "Edición Belgrano"
+    subtitulo: "Anexos internos y notas metodológicas del informe de resultados."
+    aviso_titulo: "Material de uso interno"
+    aviso: "Este documento complementa la versión pública del informe de resultados y reúne los anexos y notas metodológicas que no forman parte de la versión para circulación. Uso interno de la DGDGAS."
+    datos_titulo: "Datos generales del evento"
+    dato_evento: "Cafecito BA en tu barrio — edición Belgrano"
+    dato_fechas: "sábado 27 y domingo 28 de junio de 2026"
+    dato_modalidad: "Relevamiento presencial durante el evento"
+    dato_respuestas: "{n}"
+
+  aspectos:
+    titulo: "A. Aspectos a considerar para próximas ediciones"
+    intro: "A modo de hipótesis para próximas ediciones, podrían considerarse los siguientes aspectos:"
+    puntos:
+      - "Podría sostenerse la difusión por Instagram, que concentró la mayor parte de las menciones de llegada."
+      - "Podría evaluarse reforzar la difusión física en locales o cafeterías adheridas, especialmente si se busca complementar el alcance de Instagram."
+      - "Podría ampliarse la cantidad de respuestas en futuras ediciones, definiendo puntos y horarios de relevamiento, para obtener una base más amplia."
+      - "Los intereses declarados (vino, pastelería, food trucks, café, ferias) podrían tomarse como insumo tentativo para pensar la programación futura."
+    nota: "Estas son consideraciones tentativas a partir de una muestra acotada; no constituyen conclusiones definitivas."
+
+  anexo_red:
+    titulo: "B. Anexo: red de cafeterías vinculadas"
+    intro: "Como complemento de los resultados de la encuesta, se incluye una lectura territorial de las cafeterías vinculadas al evento. Esta sección es complementaria y no forma parte de los resultados del formulario."
+    mapa_sedes_titulo: "Sedes de cafeterías vinculadas en CABA"
+    mapa_combinado_titulo: "Sedes de cafeterías y respuestas por comuna"
+    en_numeros_titulo: "La red en números"
+    en_numeros:
+      - "14 marcas relevadas."
+      - "39 sedes mapeables en CABA."
+      - "2 marcas quedaron fuera del mapa por falta de información pública suficiente."
+    nota_prudente: "Sedes públicas conocidas en CABA de marcas/cafeterías vinculadas al evento. No implica que todas esas sedes hayan participado físicamente en la edición relevada."
+
+  notas_internas:
+    titulo: "C. Notas metodológicas y variables no usadas"
+    intro: "Registro interno de decisiones metodológicas de la revisión tanda 4. Todas se derivan del diccionario de preguntas del formulario y de los outputs ya existentes; no agregan datos nuevos."
+    puntos:
+      - "Consentimiento de contacto (columna C del formulario): se excluyó por completo de la versión pública de esta tanda, incluido su gráfico y toda mención en lecturas y resumen. Hay dudas sobre el orden y la consistencia de ese dato; no se analiza hasta que se revise."
+      - "Correo electrónico (columna B): dato personal; excluido de todo output, se usó solo como control de completitud."
+      - "Marca temporal (columna A): dato sensible; se publica únicamente agregado por día y franja horaria, en porcentajes."
+      - "Barrio o localidad (columna G): texto libre sensible; se publica solo agregado, con umbral de frecuencia mínima de 2 menciones, sin listar respuestas individuales."
+      - "Multi-respuesta (columnas J y L): en la versión pública tanda 2 los porcentajes se normalizaron sobre el total de menciones registradas, de modo que suman 100%. En versiones anteriores se calculaban sobre el total de respondentes (y podían superar 100%)."
+      - "Canales con cero menciones: el PDF del formulario no documenta el listado cerrado de opciones y el XLSX no contiene validaciones. En la Tanda 4 se incorpora 'Locales o cafeterías adheridas' como categoría esperada/no observada con 0 menciones, sin alterar los datos fuente."
+      - "Residencia: Gran Buenos Aires y Provincia de Buenos Aires (fuera del GBA) se unifican como 'Provincia de Buenos Aires' solo en la presentación; no se reasignan respuestas."
+      - "Etiqueta 'Con amigos/as' (columna I, literal del formulario): en el PDF público se muestra 'Con amigos'; es un cambio de display, la categoría original se conserva en los datos."
+      - "Limitación general: 79 respuestas obtenidas durante el evento; describen a quienes completaron el formulario y no constituyen una muestra representativa del total de asistentes."

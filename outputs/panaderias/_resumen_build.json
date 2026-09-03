@@ -1,0 +1,345 @@
+{
+  "alcance": "nucleo (A) + punto de coccion (B); confiteria/masas sin elaboracion/pizza fuera",
+  "universo_A": 1219,
+  "universo_B": 513,
+  "maestro_total_AB": 1732,
+  "geolocalizados_A": 1203,
+  "sin_geo_A": 16,
+  "geolocalizados_AB": 1706,
+  "requieren_revision_manual": 559,
+  "candidatos_f02_A": 2373,
+  "candidatos_f02_B": 2234,
+  "candidatos_f02_C": 13943,
+  "candidatos_f01_A": 0,
+  "candidatos_f01_B": 1,
+  "candidatos_f01_C": 114,
+  "figuras_generadas": true,
+  "top_comuna_cantidad": [
+    {
+      "comuna": 1,
+      "cantidad": 122,
+      "cantidad_geolocalizada": 122,
+      "area_km2": 17.801,
+      "densidad_por_km2": 6.8535,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 15,
+      "cantidad": 93,
+      "cantidad_geolocalizada": 93,
+      "area_km2": 14.323,
+      "densidad_por_km2": 6.4931,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 10,
+      "cantidad": 92,
+      "cantidad_geolocalizada": 92,
+      "area_km2": 12.657,
+      "densidad_por_km2": 7.269,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 7,
+      "cantidad": 90,
+      "cantidad_geolocalizada": 90,
+      "area_km2": 12.423,
+      "densidad_por_km2": 7.2447,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 14,
+      "cantidad": 90,
+      "cantidad_geolocalizada": 90,
+      "area_km2": 15.923,
+      "densidad_por_km2": 5.6524,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 5,
+      "cantidad": 88,
+      "cantidad_geolocalizada": 88,
+      "area_km2": 6.661,
+      "densidad_por_km2": 13.212,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 11,
+      "cantidad": 86,
+      "cantidad_geolocalizada": 86,
+      "area_km2": 14.12,
+      "densidad_por_km2": 6.0906,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 13,
+      "cantidad": 83,
+      "cantidad_geolocalizada": 83,
+      "area_km2": 14.846,
+      "densidad_por_km2": 5.5907,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 12,
+      "cantidad": 81,
+      "cantidad_geolocalizada": 81,
+      "area_km2": 15.571,
+      "densidad_por_km2": 5.202,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 4,
+      "cantidad": 73,
+      "cantidad_geolocalizada": 73,
+      "area_km2": 21.691,
+      "densidad_por_km2": 3.3655,
+      "panaderias_por_10000_hab": ""
+    }
+  ],
+  "top_barrio_cantidad": [
+    {
+      "barrio": "Palermo",
+      "comuna": 14,
+      "cantidad": 90,
+      "area_km2": 15.923,
+      "densidad_por_km2": 5.6523,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Caballito",
+      "comuna": 6,
+      "cantidad": 68,
+      "area_km2": 6.851,
+      "densidad_por_km2": 9.9255,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Flores",
+      "comuna": 7,
+      "cantidad": 62,
+      "area_km2": 8.591,
+      "densidad_por_km2": 7.217,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Almagro",
+      "comuna": 5,
+      "cantidad": 59,
+      "area_km2": 4.051,
+      "densidad_por_km2": 14.5652,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Balvanera",
+      "comuna": 3,
+      "cantidad": 59,
+      "area_km2": 4.342,
+      "densidad_por_km2": 13.5873,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Recoleta",
+      "comuna": 2,
+      "cantidad": 58,
+      "area_km2": 6.433,
+      "densidad_por_km2": 9.0154,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Belgrano",
+      "comuna": 13,
+      "cantidad": 55,
+      "area_km2": 8.06,
+      "densidad_por_km2": 6.8238,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Villa Urquiza",
+      "comuna": 12,
+      "cantidad": 44,
+      "area_km2": 5.449,
+      "densidad_por_km2": 8.0748,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Monserrat",
+      "comuna": 1,
+      "cantidad": 43,
+      "area_km2": 2.199,
+      "densidad_por_km2": 19.5577,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Villa Crespo",
+      "comuna": 15,
+      "cantidad": 42,
+      "area_km2": 3.616,
+      "densidad_por_km2": 11.6151,
+      "panaderias_por_10000_hab": ""
+    }
+  ],
+  "top_comuna_densidad": [
+    {
+      "comuna": 5,
+      "cantidad": 88,
+      "cantidad_geolocalizada": 88,
+      "area_km2": 6.661,
+      "densidad_por_km2": 13.212,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 3,
+      "cantidad": 72,
+      "cantidad_geolocalizada": 72,
+      "area_km2": 6.386,
+      "densidad_por_km2": 11.2747,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 6,
+      "cantidad": 68,
+      "cantidad_geolocalizada": 68,
+      "area_km2": 6.851,
+      "densidad_por_km2": 9.9255,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 2,
+      "cantidad": 58,
+      "cantidad_geolocalizada": 58,
+      "area_km2": 6.433,
+      "densidad_por_km2": 9.0155,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 10,
+      "cantidad": 92,
+      "cantidad_geolocalizada": 92,
+      "area_km2": 12.657,
+      "densidad_por_km2": 7.269,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 7,
+      "cantidad": 90,
+      "cantidad_geolocalizada": 90,
+      "area_km2": 12.423,
+      "densidad_por_km2": 7.2447,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 1,
+      "cantidad": 122,
+      "cantidad_geolocalizada": 122,
+      "area_km2": 17.801,
+      "densidad_por_km2": 6.8535,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 15,
+      "cantidad": 93,
+      "cantidad_geolocalizada": 93,
+      "area_km2": 14.323,
+      "densidad_por_km2": 6.4931,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 11,
+      "cantidad": 86,
+      "cantidad_geolocalizada": 86,
+      "area_km2": 14.12,
+      "densidad_por_km2": 6.0906,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "comuna": 14,
+      "cantidad": 90,
+      "cantidad_geolocalizada": 90,
+      "area_km2": 15.923,
+      "densidad_por_km2": 5.6524,
+      "panaderias_por_10000_hab": ""
+    }
+  ],
+  "top_barrio_densidad": [
+    {
+      "barrio": "Monserrat",
+      "comuna": 1,
+      "cantidad": 43,
+      "area_km2": 2.199,
+      "densidad_por_km2": 19.5577,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Almagro",
+      "comuna": 5,
+      "cantidad": 59,
+      "area_km2": 4.051,
+      "densidad_por_km2": 14.5652,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "San Nicolas",
+      "comuna": 1,
+      "cantidad": 32,
+      "area_km2": 2.289,
+      "densidad_por_km2": 13.9799,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Balvanera",
+      "comuna": 3,
+      "cantidad": 59,
+      "area_km2": 4.342,
+      "densidad_por_km2": 13.5873,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Villa Crespo",
+      "comuna": 15,
+      "cantidad": 42,
+      "area_km2": 3.616,
+      "densidad_por_km2": 11.6151,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Boedo",
+      "comuna": 5,
+      "cantidad": 29,
+      "area_km2": 2.61,
+      "densidad_por_km2": 11.1117,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Velez Sarsfield",
+      "comuna": 10,
+      "cantidad": 25,
+      "area_km2": 2.401,
+      "densidad_por_km2": 10.4144,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Caballito",
+      "comuna": 6,
+      "cantidad": 68,
+      "area_km2": 6.851,
+      "densidad_por_km2": 9.9255,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "Recoleta",
+      "comuna": 2,
+      "cantidad": 58,
+      "area_km2": 6.433,
+      "densidad_por_km2": 9.0154,
+      "panaderias_por_10000_hab": ""
+    },
+    {
+      "barrio": "San Telmo",
+      "comuna": 1,
+      "cantidad": 11,
+      "area_km2": 1.232,
+      "densidad_por_km2": 8.9266,
+      "panaderias_por_10000_hab": ""
+    }
+  ]
+}

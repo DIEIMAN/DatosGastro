@@ -1,0 +1,22 @@
+﻿direccion,registros,direccionable,nivel,patron
+PRIMERA JUNTA 1982,1,si,A,elaboracion_panaderia_venta_directa
+RIVADAVIA AV. 8299,1,si,A,elaboracion_panaderia_venta_directa
+ROOSEVELT FRANKLIN D. AV. 5439,1,si,B,coccion_masa_ya_elaborada
+GAONA AV. 4822,1,si,A,elaboracion_panaderia_venta_directa
+PASO 795,1,si,B,coccion_masa_ya_elaborada
+MORON 4615,1,si,B,coccion_masa_ya_elaborada
+HUMBOLDT 535,1,si,B,coccion_masa_ya_elaborada
+"ALBERDI, JUAN BAUTISTA AV. 6450",1,si,B,coccion_masa_ya_elaborada
+239,1,si,A,elaboracion_panaderia_venta_directa
+CNEL. 6885,1,si,A,elaboracion_panaderia_venta_directa
+ARANGUREN,1,no,B,coccion_masa_ya_elaborada
+RIVERA,1,no,B,coccion_masa_ya_elaborada
+28,1,si,B,coccion_masa_ya_elaborada
+031A,1,no,B,coccion_masa_ya_elaborada
+TTE. GENERAL 4139,1,si,A,elaboracion_panaderia_venta_directa
+7,1,si,A,elaboracion_panaderia_ncp
+1750523,1,no,A,elaboracion_industrial_panaderia
+PRES. 24,1,si,B,coccion_masa_ya_elaborada
+23,1,si,A,elaboracion_panaderia_venta_directa
+REPUBLICA DOMINICANA 3502,1,si,A,elaboracion_panaderia_venta_directa
+RIGLOS 506,1,si,A,elaboracion_panaderia_venta_directa

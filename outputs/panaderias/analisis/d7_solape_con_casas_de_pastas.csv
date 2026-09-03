@@ -1,0 +1,30 @@
+﻿direccion,partida,panaderia_patron,panaderia_nivel,pastas_patron,pastas_nivel
+"BILBAO, FRANCISCO 1437",139794,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+BUCARELLI 941,245667,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+CALIFORNIA 2662,116066,elaboracion_industrial_panaderia,A,elaboracion_pastas_frescas,A
+CORTINA 444,307118,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+DORREGO AV. 676,303419,elaboracion_industrial_panaderia,A,elaboracion_pastas_frescas,A
+ESTADOS UNIDOS 3501,186154,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+"FIGUEROA, D. APOLINARIO, CORONEL 275",228359,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+FITZ ROY 337,226525,coccion_masa_ya_elaborada,B,elaboracion_pastas_secas,A
+GARCIA,304619,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+LARRAZABAL 3543,88595,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+LINNEO 1935,243088,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+LLAVALLOL 5145,272496,elaboracion_industrial_panaderia,A,elaboracion_pastas_frescas,A
+LOPE DE VEGA AV. 889,305845,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+MEDRANO AV. 332,170999,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+MILTON 462,6591,elaboracion_industrial_panaderia,A,elaboracion_pastas_frescas,A
+MONTE 5938,32908,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+MURGUIONDO 1630,97466,elaboracion_industrial_panaderia,A,elaboracion_pastas_frescas,A
+NICARAGUA 4849,427968,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+PASO 729,207129,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+PIZARRO 5965,11940,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+PUEYRREDON AV. 1561,447298,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+RIO CUARTO 3945,108487,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+ROJAS 756,177342,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+SALGUERO,170640,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+SAN MARTIN AV. 2339,232659,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A
+SANTO TOME 5387,288060,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+"VEGA, NICETO, Cnel. 4977",422775,coccion_masa_ya_elaborada,B,elaboracion_pastas_frescas,A
+ZAÑARTU 1227,94020,elaboracion_panaderia_ncp,A,elaboracion_pastas_frescas,A
+ZAPIOLA 2474,326787,elaboracion_panaderia_venta_directa,A,elaboracion_pastas_frescas,A

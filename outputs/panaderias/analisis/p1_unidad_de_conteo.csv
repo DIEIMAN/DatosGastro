@@ -1,0 +1,4 @@
+﻿unidad_de_conteo,establecimientos,nota
+partida matriz (actual),1112,identifica el inmueble; fusiona locales distintos del mismo edificio
+solicitud,1214,una habilitacion = un local; disponible solo en los 7 archivos legacy
+solicitud + unidad funcional,1217,maxima desagregacion disponible

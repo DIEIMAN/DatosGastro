@@ -1,0 +1,72 @@
+# Fin de línea, declarado en vez de adivinado.
+#
+# El repositorio se trabaja en Windows con core.autocrlf=true y sin .gitattributes: cada vez que
+# una herramienta reescribe un archivo con el otro fin de línea, Git lo ve modificado aunque no
+# haya cambiado ni un carácter. Esto lo fija: en el repositorio todo el texto se guarda con LF,
+# y en el disco cada uno lo ve como su sistema lo escriba.
+#
+# Después de agregar este archivo, una sola vez:
+#     git add --renormalize .
+#
+# Lo binario va marcado a mano y no por detección: un .docx o un .xlsx que Git tratara como texto
+# se corrompe al normalizarlo, y el daño no se ve hasta que alguien abre el archivo.
+
+* text=auto
+
+# --- texto del proyecto ---------------------------------------------------------------------
+*.md      text
+*.txt     text
+*.csv     text
+*.tsv     text
+*.py      text diff=python
+*.json    text
+*.geojson text
+*.yaml    text
+*.yml     text
+*.xsd     text
+*.sql     text
+*.tex     text
+*.html    text
+*.ipynb   text
+*.gs      text
+*.log     text
+*.sha256  text
+*.example text
+
+# Scripts de Windows: PowerShell y batch se quedan con CRLF en el disco siempre.
+*.ps1     text eol=crlf
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+
+# Scripts POSIX: LF siempre, aunque se editen en Windows.
+*.sh      text eol=lf
+
+# --- binario · nunca se normaliza -------------------------------------------------------------
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.webp    binary
+*.ico     binary
+*.pdf     binary
+*.docx    binary
+*.doc     binary
+*.xlsx    binary
+*.xls     binary
+*.pptx    binary
+*.zip     binary
+*.gz      binary
+*.7z      binary
+*.parquet binary
+*.gpkg    binary
+*.shp     binary
+*.shx     binary
+*.dbf     binary
+*.prj     binary
+*.sbn     binary
+*.sbx     binary
+*.cpg     binary
+*.ttf     binary
+*.otf     binary
+*.woff    binary
+*.woff2   binary

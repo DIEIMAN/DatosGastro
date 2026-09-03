@@ -1,0 +1,13 @@
+{
+  "spiders_totales": 4898,
+  "spiders_con_puntos": 78,
+  "lineas_totales": 44670780,
+  "lineas_candidatas": 6682,
+  "fuente_original": {
+    "archivo": "output_2026-08-01-13-32-15.zip",
+    "descripcion": "Dump global de All The Places (alltheplaces.xyz), corrida del 2026-08-01",
+    "origen": "https://www.alltheplaces.xyz/ (descargas semanales publicas: https://data.alltheplaces.xyz/)",
+    "peso_mb": 2814,
+    "estado": "borrado localmente el 2026-08-28 con autorizacion de Diego; el recorte CABA (atp_caba.csv) es el insumo vigente y el dump es re-descargable del origen"
+  }
+}

@@ -1,0 +1,3 @@
+﻿direccion,comuna_declarada,comuna_geocodificada,calidad_geo,nota
+SAN MARTIN AV. 4162,11,10,cache_usig_exacta_sin_control_comuna,revisar: puede ser calle homonima o limite de comuna
+"MARTINEZ, ENRIQUE, GRAL. 683",13,9,cache_usig_exacta_sin_control_comuna,revisar: puede ser calle homonima o limite de comuna

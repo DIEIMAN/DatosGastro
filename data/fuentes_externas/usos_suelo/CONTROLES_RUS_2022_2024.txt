@@ -1,0 +1,83 @@
+Relevamiento de Usos del Suelo 2022-2024 · controles previos
+archivo: rus_2022_2024.csv (39.5 MB)
+==============================================================================
+
+CONTROL 1 · vocabulario de TIPO2
+  valores distintos: 471 | registros sin TIPO2: 15,637
+  registros totales: 417,764 | parcelas (SMP) distintas: 318,607
+  valores con doble codificación reparados y verificados: 10
+
+  correspondencia con nuestros anillos, por simetría con el padrón (parcelas activas):
+    núcleo · Restaurante      2684  (RESTAURANTE 2666, SUSHI 18)
+    núcleo · Bar              1127  (BAR 883, CERVECERIA 244)
+    núcleo · Cafe             1803  (CAFÉ 1715, CAFÉ (VTA AL PASO) 88)
+    núcleo · Pizzeria          988  (PIZZERIA 988)
+    núcleo · Parrilla          333  (PARRILLA 333)
+    núcleo · Comida al paso   2384  (COMIDAS PARA LLEVAR 1142, COMIDA RAPIDA 462, EMPANADAS 388, ROTISERIA 304, SANDWICHERIA 88)
+    núcleo · Heladeria         779  (HELADERIA 779)
+    ampliado · Panaderia      1691  (PANADERIA 1691)
+    ampliado · Pasteleria      379  (CONFITERIA 379)
+  sin equivalente en el Relevamiento: Catering (no ocupa local a la calle)
+
+  descartados aunque el nombre sugiera gastronomía:
+    BARBERIA                                   661
+    ALIMENTOS PARA MASCOTAS                    505
+    VINOS (VENTA)                              328
+    BEBIDAS ALCOHOLICAS                        287
+    FABRICA DE PASTAS                          372
+    EQUIP. GASTRONOMICO                         26
+    VENTA DE CAFÉ (PRODUCTOS)                   25
+    REPARACION DE HELADERAS                     20
+    HELADERAS Y BALANZAS COMERCIALES (VTA)      10
+    RESTAURACIONES                              12
+    INSTITUTO DE GASTRONOMIA                     2
+    VENTA POR MAYOR DE ALIMENTOS Y BEBIDAS      81
+    GALERÍA BARRIAL                            202
+
+  estado de los registros gastronómicos: {'ACTIVO': 12168, 'INACTIVO': 201}
+  todos caen bajo TIPO1: ['UNICOMERCIAL']
+
+CONTROL 2 · cobertura y completitud
+  barrios presentes: 48 de 48 | ninguno vacío: True
+  parcelas relevadas: 318,607 | registros: 417,764
+  barrios con más de un año de relevamiento: 0
+
+  el relevamiento es rotativo: cada barrio tiene un año, no hay foto simultánea
+    2022: 11 barrios | 65,696 parcelas
+      AGRONOMIA, MONTE CASTRO, PARQUE CHAS, VELEZ SARSFIELD, VERSALLES, VILLA DEL PARQUE, VILLA DEVOTO, VILLA GRAL. MITRE, VILLA LURO, VILLA REAL, VILLA SANTA RITA
+    2023: 19 barrios | 143,086 parcelas
+      ALMAGRO, BELGRANO, BOEDO, CABALLITO, CHACARITA, COGHLAN, COLEGIALES, FLORESTA, LINIERS, MATADEROS, NUÑEZ, PARQUE AVELLANEDA, PARQUE PATRICIOS, PATERNAL, SAAVEDRA, VILLA CRESPO, VILLA ORTUZAR, VILLA PUEYRREDON, VILLA URQUIZA
+    2024: 18 barrios | 109,825 parcelas
+      BALVANERA, BARRACAS, CONSTITUCION, FLORES, LA BOCA, MONSERRAT, NUEVA POMPEYA, PALERMO, PARQUE CHACABUCO, PUERTO MADERO, RECOLETA, RETIRO, SAN CRISTOBAL, SAN NICOLAS, SAN TELMO, VILLA LUGANO, VILLA RIACHUELO, VILLA SOLDATI
+
+CAPA POR BARRIO · Relevamiento contra habilitaciones (anillo núcleo)
+  CABA: Relevamiento 9,108 parcelas activas | habilitaciones 6,861 direcciones | razón 1.33
+  parcelas gastronómicas INACTIVAS al momento del relevamiento: 200
+
+  la base de comparación es la suma de los 48 barrios sin anómalas: 6,861 direcciones núcleo. El titular de CABA es más alto porque
+    incluye las anómalas; ver la conciliación en build_capa_homogenea.py.
+
+  donde el Relevamiento encuentra más que el padrón (razón más alta):
+                  dir_nucleo  rus_nucleo  rus_ampliado  anio_relevamiento  rus_sobre_habilitaciones
+VILLA SOLDATI             11          32            55               2024                      2.91
+LA BOCA                   55         117           143               2024                      2.13
+VILLA RIACHUELO           25          51            64               2024                      2.04
+NUEVA POMPEYA             52         104           133               2024                      2.00
+VILLA LURO                42          83           107               2022                      1.98
+VILLA LUGANO              51          93           120               2024                      1.82
+PARQUE CHAS               24          43            52               2022                      1.79
+PATERNAL                  31          53            67               2023                      1.71
+SAN CRISTOBAL             60         101           134               2024                      1.68
+CHACARITA                 83         133           153               2023                      1.60
+MATADEROS                 92         143           193               2023                      1.55
+PARQUE CHACABUCO          72         111           143               2024                      1.54
+
+  donde encuentra menos o casi lo mismo:
+                 dir_nucleo  rus_nucleo  rus_ampliado  anio_relevamiento  rus_sobre_habilitaciones
+VILLA REAL               38          42            54               2022                      1.11
+SAN NICOLAS             433         480           524               2024                      1.11
+VELEZ SARSFIELD          60          62            89               2022                      1.03
+BALVANERA               468         474           548               2024                      1.01
+VERSALLES                19          19            25               2022                      1.00
+PUERTO MADERO            39          38            38               2024                      0.97
+

@@ -1,0 +1,9 @@
+﻿dimension,valor,total,geolocalizados,cobertura_geo
+rubro,elaboracion_panaderia_venta_directa,676,667,98.7 %
+rubro,despacho_de_pan,448,448,100.0 %
+rubro,elaboracion_panaderia_ncp,59,58,98.3 %
+rubro,elaboracion_industrial_panaderia,36,30,83.3 %
+esquema,legacy,1215,1199,98.7 %
+esquema,moderno,4,4,100.0 %
+mezcla,geolocalizados,1203,755,62.8 %
+mezcla,sin_geo,16,16,100.0 %

@@ -1,0 +1,2 @@
+﻿fuente,archivo_origen,id_registro_original,clave_habilitacion,nombre_original,rubro_original,descripcion_original,patron_detectado,categoria_panaderia,confianza_categoria,motivo_categoria,direccion_original,comuna_original,barrio_original,lat,lon,calidad_geo,fecha_habilitacion,observaciones
+F01,f01_oferta_establecimientos_gastronomicos.csv,576,,BAKERY HOUSE,RESTAURANTE / SANDWICHERIA,MODERNO,pan_en_texto,probable_nombre_panaderia,0.5,Texto menciona panaderia sin rubro concluyente,CABILDO AV. 428,13,Colegiales,-34.57197814,-58.4412134,f01_fuente,,

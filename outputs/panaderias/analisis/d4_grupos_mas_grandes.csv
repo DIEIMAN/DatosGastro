@@ -1,0 +1,21 @@
+﻿registros_agrupados,nombre,direccion,partida,patron,nivel,tipo_clave
+362,Salore S.R.L.,CABILDO AV. 1690,410681,elaboracion_panaderia_venta_directa,A,habilitacion
+180,Farmacia Orien S.A.,SAN BLAS 1754,306470,pan+contexto_produccion,B,habilitacion
+162,Confiteria Eden S.R.L.,CUENCA 2679,255074,elaboracion_panaderia_venta_directa,A,habilitacion
+103,Fesira S.R.L.,ENTRE RIOS AV. 648,218460,elaboracion_panaderia_venta_directa,A,habilitacion
+102,Panificadora Maipu 608 Srl,MAIPU 608,220958,elaboracion_panaderia_venta_directa,A,habilitacion
+75,Panificadora Boedo S.R.L.,BOEDO AV. 1834,104419,elaboracion_panaderia_venta_directa,A,habilitacion
+74,Friends Food S.A.,LARRAZABAL 3543,88595,elaboracion_panaderia_ncp,A,habilitacion
+64,Avenida Santa Fe 4502 S.R.L,SANTA FE AV. 4502,429067,elaboracion_panaderia_venta_directa,A,habilitacion
+48,Dia Argentina S.A.,BOLIVAR 1472,110459,despacho_de_pan,A,habilitacion
+39,Dia Argentina S.A.,MEDINA 713,25478,despacho_de_pan,A,habilitacion
+34,Cabau Srl,GUAMINI 4936,69484,elaboracion_panaderia_venta_directa,A,habilitacion
+33,Dia Argentina S.A.,RIESTRA AV. 5398,61810,despacho_de_pan,A,habilitacion
+30,Bamo S.R.L,DEFENSA 1444,110016,elaboracion_panaderia_venta_directa,A,habilitacion
+30,Poltrec S.A.,CABILDO AV. 4220,333264,pan+contexto_produccion,B,habilitacion
+29,Bizia S.A,CUCHA CUCHA 1995,231156,elaboracion_industrial_panaderia,A,habilitacion
+28,"Maddonni Jesica, Maddonni Nicolas Y Maddonni Lionel S.H",TRIUNVIRATO AV. 3916,312172,coccion_masa_ya_elaborada,B,habilitacion
+26,Panificadora Maipu 608 Srl,"URIBURU JOSE E., Pres. 1092",440743,elaboracion_panaderia_venta_directa,A,habilitacion
+26,Cabau Srl.,MURGUIONDO 4076,66389,elaboracion_panaderia_venta_directa,A,habilitacion
+26,Cuenca Subterraneo S.R.L.,ALVAREZ JONTE AV. 4873,279450,coccion_masa_ya_elaborada,B,habilitacion
+24,"""K.V.N. S.R.L.""",MAURE 1835,413063,pan_en_texto,B,habilitacion

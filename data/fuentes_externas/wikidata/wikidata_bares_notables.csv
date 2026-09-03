@@ -1,0 +1,96 @@
+item,nombre,clase_wikidata,fundacion,direccion,sitio_web,comuna_o_barrio,geocodificar_con
+Q1025674,Café Tortoni,cafetería,1858-01-01,Avenida de Mayo 825. Ciudad Autónoma de Buenos Aires. Argentina,https://cafetortoni.com.ar,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q16535985,Bar Británico,bar · cafetería,,Brasil 399,,San Telmo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q16540035,Café San Bernardo,edificio,,Corrientes 5436,,Villa Crespo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q16540045,Café de los Angelitos,edificio,,Av. Rivadavia 2064,,Balvanera,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q17631101,Esquina Homero Manzi,edificio,,San Juan y Boedo,,Boedo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q18643936,Café El Estaño 1880,edificio,,Aristóbulo del Valle 1100,,La Boca,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5017245,La Biela,cafetería,,Quintana 600,,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826220,American Bar,edificio,,Diagonal Norte 632,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826280,Café Margot,edificio,,Boedo 857,http://www.losnotables.com.ar,Boedo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826290,Bar de Cao,edificio,,Independencia 2400,http://www.losnotables.com.ar,San Cristóbal,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826297,Celta Bar,edificio,,Sarmiento 1701,http://www.losnotables.com.ar,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826305,Café La Poesía,edificio,,Chile 502,http://www.losnotables.com.ar,San Telmo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826310,9 de julio,edificio,,Larrazabal 1276,,Mataderos,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826315,12 de octubre,edificio,,Bulnes 331,,Almagro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826321,Barbaro,edificio,,Tres Sargentos 415,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826324,Bar Bidou,edificio,,Diagonal Norte 858,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826332,Bar Carlitos,edificio,,Carlos Calvo 2607,,San Cristóbal,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826349,Bar del Alvear Palace Hotel,edificio,,Av. Alvear 1891,,Recoleta,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826438,Bar del Glorias,edificio,,Andalgala 1982,,Mataderos,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826453,Bar El Colonial,edificio,,Av. Belgrano 599,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826471,Bar iberia,edificio,,Av. De Mayo 1196,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826482,Bar Lavalle,edificio,,Lavalle 1693,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826501,Bar Oviedo,edificio,,Lisandro de la Torre 2407,,Mataderos,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826508,Bar Plaza Dorrego,edificio,,Defensa 1098,,San Telmo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826515,Bar Quintino,edificio,,Carlos Calvo 4002,,Boedo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826523,Bar Seddon,edificio,,Defensa 695,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826536,Bar Sur,edificio,,Estados Unidos 299,https://bar-sur.com.ar,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826560,Bar Boston City,edificio,,Florida 165,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826565,Café de la Esquina,edificio,,Av. Del Libertador 6196,,Belgrano,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826568,Café de la U,edificio,,Triunvirato 4801,,Villa Urquiza,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826576,Café de los Incas,edificio,,Av. De los Incas 3909,,Villa Ortúzar,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826578,Café Don Juan,edificio,,Camarones 2702,,Villa Santa Rita,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826581,Café Los Andes,edificio,,Scalabrini Ortiz 1312,,Palermo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826585,Café Montecarlo,edificio,,Paraguay 5491,,Palermo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826592,Café Monserrat,edificio,,San Jose 524,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826599,Café Nostalgia,edificio,,Soler 3599,,Recoleta,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826603,Café Olimpo,edificio,,Irigoyen 1491,,Monte Castro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826607,Café Palacio,edificio,,Av. F. Lacroze 3901,,Chacarita,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826608,Café Roma,edificio,,Olavarria 409,,La Boca,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826620,Café Roma,edificio,,San Luis 3101,,Balvanera,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826622,Café Thibon,edificio,,Montevideo 723,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826626,Caffe Tabac,edificio,,Av. Del Libertador 2300,,Palermo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826629,Casa Watson,edificio,,Vuelta De Obligado 2072,,Belgrano,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826633,Claridge's,edificio,,Tucuman 535,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826634,Clásica y moderna,librería,,Av. Callao 892,,Recoleta,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826635,Confitería del Hotel Castelar,cafetería,,Av. de Mayo 1148/50/52,http://www.castelarhotel.com.ar,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826639,Confitería Queen Bess,edificio,,Av. Santa Fe 868,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826641,Confitería Saint Moritz,edificio,,Esmeralda 894,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826659,El Banderín,edificio,,Guardia Vieja 3601,,Almagro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826662,El Buzón,edificio,,Esquiu 1393,,Nueva Pompeya,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826665,El Coleccionista,edificio,,Rivadavia 4929,,Caballito,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826668,El Faro,edificio,,Av. de los Constituyentes 4099,,Parque Chas,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826669,El Hipopotamo,edificio,,Brasil 401,,San Telmo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826677,El Progreso,edificio,,Av. Montes de Oca 1702,http://www.barelprogreso.com.ar,Barracas,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826685,El Querandi,edificio,1920-01-01,Peru 302,,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826687,El Símbolo,edificio,,Av. Corrientes 3787,,Almagro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826712,El Tokio,edificio,,Av. Alvarez Jonte 3550,,Villa Santa Rita,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826717,El Viejo Buzón,edificio,,Neuquen 1100,,Caballito,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826722,Florida Garden,edificio,,Florida 899,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826729,Bar Imperio,edificio,,Av. Callao 181,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826757,La Academia,edificio,,Av. Callao 368,,Balvanera,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826830,La Buena Medida,edificio,,Suarez 101,,La Boca,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826833,La Embajada,edificio,,Santiago del Estero 88,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826839,La Esquina de Aníbal Troilo,edificio,,Paraguay 1500,,Recoleta,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826842,La Farmacia,edificio,,Av. Directorio 2400,,Flores,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826883,La Flor de Barracas,edificio,,Av. Suárez 2095,http://laflordebarracas.com.ar/,Barracas,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826886,La Nueva Andaluza,edificio,,Camarones 1412,,Villa General Mitre,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826888,La Perla,edificio,,Don Pedro de Mendoza 1899,,La Boca,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826891,Le Caravelle,edificio,,Lavalle 726,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826892,Café London City,cafetería · grandes almacenes,1890-01-01,Av. De Mayo 599,,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826893,Los Galgos,edificio,1930-01-01,Av. Callao 501,,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826895,Los Laureles,edificio,,Iriarte 2290,,Barracas,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826897,Mar Azul,edificio,,Tucumán 1700,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826898,Miramar,edificio,,Sarandí 1190,,San Cristóbal,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826903,Ocho Esquinas,edificio,,Av. Forest 1186,,Chacarita,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826923,Paulín,edificio,,Sarmiento 643,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826926,Plaza Bar,edificio,,Florida 1005,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826928,Plaza Café,edificio,,Av. Rivadavia 4732,,Caballito,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826945,Stylo Café,edificio,,Fernandez De Enciso 3934,,Villa Devoto,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826948,The New Brighton,edificio,,Sarmiento 645,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826949,Varela Varelita,edificio,,Av. Scalabrini Ortiz 2102,,Palermo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q56826950,Victoria,edificio,,Bolívar 104,,Monserrat,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5719207,Bar El Federal,edificio,,Carlos Calvo 599,http://www.losnotables.com.ar/,San Telmo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5739055,La Giralda,cafetería,,Av. Corrientes 1453,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5739192,Café de García,cafetería,,Sanabria 3302,,Villa Devoto,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5782924,Confitería Ideal,cafetería,,Suipacha 384,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5782926,Confitería Richmond,edificio,1917-01-01,,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5822000,El Gato Negro,edificio,,,https://www.donvictoriano.com.ar/,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5822943,El Preferido de Palermo,edificio,,Jorge L. Borges 2108,,Palermo,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5964968,La Puerto Rico,cafetería,1887-01-01,Alsina 420,,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q5979239,Los 36 Billares,bar · cafetería,1894-01-01,Avenida de Mayo 1262,http://www.los36billares.com.ar/,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q6073527,Petit Colón,edificio,,Libertad 505,,San Nicolás,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q60813858,Café Retiro,cafetería · restaurante,,,,Retiro,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q63439797,Confitería London City,edificio comercial · negocio · restaurante,1954-01-01,Avenida de Mayo 599 Ciudad Autónoma de Buenos Aires Argentina,http://www.londoncity.com.ar/,Buenos Aires,USIG desde `direccion`; NO usar coordenada de Wikidata
+Q6553463,Las Violetas,cafetería,,Av. Rivadavia 3899,http://www.lasvioletas.com/,Almagro,USIG desde `direccion`; NO usar coordenada de Wikidata
