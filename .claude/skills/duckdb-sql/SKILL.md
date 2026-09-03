@@ -10,7 +10,8 @@ description: >
 
 # DuckDB — SQL analítico local
 
-Instalado en `.venv-tools`. Ejecutar con `.venv-tools\Scripts\python.exe`.
+Instalado en los dos venvs (`.venv` 1.5.5 y `.venv-tools`): usar `.venv\Scripts\python.exe`,
+no hace falta cambiar de interprete. Tambien existe el MCP `duckdb` para consultas ad hoc.
 
 ## Uso básico
 
@@ -29,11 +30,10 @@ r = con.sql("""
 
 También lee Parquet y JSON con la misma sintaxis (`FROM 'ruta/*.parquet'`).
 
-## Reglas DataGastro
+## Reglas propias de la herramienta
 
-1. Solo lectura sobre `data/processed/` y `data/analytics/`: nunca escribir ahí
-   (guardrail 2). Los `.duckdb` persistentes van a `outputs/` o al scratchpad.
-2. No mezclar universos de fuentes (F/I/E) en una misma tabla sin columna de
-   origen explícita (guardrail 3).
-3. Archivos con datos internos/privados: los `.duckdb` derivados heredan la
-   sensibilidad — van a carpeta ignorada por Git (guardrail 8).
+1. Los `.duckdb` persistentes van a `outputs/` o al scratchpad, nunca a `data/processed` ni
+   `data/analytics`; heredan la sensibilidad de lo que contienen.
+2. Toda tabla que junte fuentes lleva columna de origen (F/I/E).
+
+Los guardrails generales ya estan cargados desde `CLAUDE.md`; no se repiten aca.

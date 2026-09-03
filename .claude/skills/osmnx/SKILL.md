@@ -29,7 +29,7 @@ barrio = ox.geocode_to_gdf("San Telmo, Buenos Aires, Argentina")
 G = ox.graph_from_place("Boedo, Buenos Aires, Argentina", network_type="walk")
 ```
 
-## Reglas DataGastro
+## Reglas propias de la herramienta
 
 1. OSM es dato abierto (ODbL): citable y publicable, con atribución
    "© OpenStreetMap contributors" en mapas e informes.

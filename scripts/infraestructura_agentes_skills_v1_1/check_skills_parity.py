@@ -14,7 +14,6 @@ DOC_DIR = ROOT / "docs" / "infraestructura_agentes_skills_v1_1"
 LAYERS = {
     "claude_productivo": ROOT / ".claude" / "skills",
     "agents_espejo": ROOT / ".agents" / "skills",
-    "agent_skills_imported": ROOT / "agent_skills" / "claude_imported",
     "v1_docs": ROOT / "docs" / "infraestructura_agentes_skills_v1" / "skills",
     "v1_1_docs": ROOT / "docs" / "infraestructura_agentes_skills_v1_1" / "skills",
 }
@@ -146,12 +145,12 @@ def main() -> int:
     ]
     for k, v in summary["capas"].items():
         lines.append(f"- **{k}**: `{v}`")
-    lines += ["", "## Matriz vs Claude productivo", "", "| skill | agents_espejo | agent_skills_imported |", "| --- | --- | --- |"]
+    lines += ["", "## Matriz vs Claude productivo", "", "| skill | agents_espejo |", "| --- | --- |"]
     for r in rows:
         if r["capas"]["claude_productivo"]["estado"] != "presente" and r["capas"]["v1_1_docs"]["estado"] != "presente":
             continue
         lines.append(
-            f"| `{r['skill']}` | {r['vs_claude']['agents_espejo']} | {r['vs_claude']['agent_skills_imported']} |"
+            f"| `{r['skill']}` | {r['vs_claude']['agents_espejo']} |"
         )
     lines += ["", "## Hallazgos", ""]
     if summary["hallazgos"]:

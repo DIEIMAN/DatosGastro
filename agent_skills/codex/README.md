@@ -8,7 +8,7 @@ Por ahora, Codex debe usar como base:
 - `agent_skills/README.md`
 - `agent_skills/shared/datagastro_modelo_informes.md`
 - `agent_skills/shared/datagastro_proyectos_cortos.md`
-- `agent_skills/claude_imported/` como referencia importada desde Claude.
+- `.agents/skills/` como referencia importada desde Claude.
 
 ## Infraestructura multiagente (V1.1)
 

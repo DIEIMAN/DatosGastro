@@ -9,7 +9,8 @@ description: >
 
 # Folium — mapas interactivos HTML
 
-Instalado en `.venv-tools`. Ejecutar con `.venv-tools\Scripts\python.exe`.
+Instalado en los dos venvs (`.venv` 0.20.0 y `.venv-tools`): usar `.venv\Scripts\python.exe`,
+que es el mismo de geopandas y matplotlib del pipeline.
 
 ## Uso básico
 
@@ -32,7 +33,7 @@ m.save("outputs/.../mapa_polos.html")
 Ojo con el orden de coordenadas: Folium usa **[lat, lon]**; los GeoDataFrame
 traen (lon, lat). Reproyectar a EPSG:4326 antes de mapear.
 
-## Reglas DataGastro
+## Reglas propias de la herramienta
 
 1. Atribución "© OpenStreetMap contributors" queda embebida en las teselas: no
    quitarla.

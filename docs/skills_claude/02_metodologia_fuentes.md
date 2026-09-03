@@ -63,5 +63,5 @@ Si falta cualquiera de estos puntos: queda en **roadmap** documentado, no en có
 - Cada fila debe poder rastrearse a su fuente (URL, archivo, fecha de consulta).
 - Las páginas portal se documentan, pero la descarga automática requiere enlace directo a
   archivo. No se inventan URLs.
-- Ver `docs/fuentes_y_trazabilidad.md` y `docs/contratos_fuentes.md` para el detalle del pipeline
+- Ver `docs/general/fuentes_y_trazabilidad.md` y `docs/general/contratos_fuentes.md` para el detalle del pipeline
   vigente.

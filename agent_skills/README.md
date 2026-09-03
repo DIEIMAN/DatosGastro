@@ -13,14 +13,14 @@ mismos criterios de seguridad, privacidad y estilo.
 | `.agents/skills/` | Carpeta de skills | Espejo puntero de las nueve skills canónicas de `.claude/skills/` (paridad verificada 2026-07-14) | General | Alta: es el punto de entrada para agentes que no son Claude Code |
 | `.codex/` | Carpeta | Carpeta reservada para Codex; sin contenido útil detectado | Codex | Baja por ahora |
 | `docs/skills_claude/` | Documentación operativa | Fuente canónica de reglas DataGastro para Claude y otros asistentes | General, nacida para Claude | Muy alta: guardrails, metodología, privacidad, informes ejecutivos |
-| `docs/prompts_codex.md` | Prompts | Prompts de trabajo para Codex sobre dashboard, notebook e informe | Codex | Media/alta: útil como referencia, pero son tareas puntuales |
+| `docs/archive/v3_2026-06/prompts_codex.md` | Prompts | Prompts de trabajo para Codex sobre dashboard, notebook e informe | Codex | Media/alta: útil como referencia, pero son tareas puntuales |
 | `docs/fuentes_externas/prompt_codex_fuentes_externas.md` | Prompt | Trabajo sobre fuentes externas | Codex/general | Media: útil para fuentes privadas/externas |
 | `docs/mercados_caba/*prompt*.md` | Prompts/procedimiento | Prompts específicos del proyecto Mercados CABA | Proyecto específico | Media: útil como antecedente, no estándar general |
 | `data/archive/_a_revisar/.../prompt_codex_fuentes_externas.md` | Prompt archivado | Copia histórica de prompt de fuentes externas | Archivo histórico | Baja: no usar como fuente vigente sin validar |
 
 ## Skills importadas desde Claude
 
-Desde 2026-07-14, `agent_skills/claude_imported/` (y su espejo `.agents/skills/`) contiene
+Desde 2026-07-14, `.agents/skills/` contiene
 **réplicas puntero**: cada `SKILL.md` conserva nombre y descripción y remite a la copia canónica
 en `.claude/skills/<skill>/SKILL.md`, que es la única fuente del procedimiento:
 
@@ -31,7 +31,6 @@ en `.claude/skills/<skill>/SKILL.md`, que es la única fuente del procedimiento:
 - `datagastro-geodatos`
 - `datagastro-fuentes-externas`
 - `datagastro-informes`
-- `datagastro-limpieza`
 - `datagastro-qa-pdf`
 
 Los originales siguen en `.claude/skills/`. Ante diferencia, gana la canónica
@@ -63,7 +62,7 @@ Antes de trabajar en un informe DataGastro, Codex debería leer:
    respuestas, PDF/DOCX de preguntas o gráficos exportados del formulario.
 6. `agent_skills/shared/datagastro_qa_privacidad.md` antes de cerrar outputs públicos,
    informes, packs, DOCX o PDF.
-7. La skill importada que corresponda en `agent_skills/claude_imported/` cuando el trabajo toque
+7. La skill importada que corresponda en `.agents/skills/` cuando el trabajo toque
    privacidad, fuentes, pipeline, geodatos o limpieza.
 
 ## Archivos que no se deben tocar sin pedido explícito

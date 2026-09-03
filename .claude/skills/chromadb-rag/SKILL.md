@@ -9,7 +9,8 @@ description: >
 
 # ChromaDB — búsqueda vectorial local
 
-Instalado en `.venv-tools`. Ejecutar con `.venv-tools\Scripts\python.exe`.
+Instalado en un venv propio (sus dependencias chocan con las de `.venv-tools`):
+`.agent-tools\chromadb\.venv\Scripts\python.exe` (chromadb 1.5.9). No esta en `.venv` ni en `.venv-tools`.
 
 ## Uso básico
 
@@ -28,12 +29,12 @@ col.add(
 res = col.query(query_texts=["casas de pastas"], n_results=5)
 ```
 
-## Reglas DataGastro
+## Reglas propias de la herramienta
 
 1. Metadatos obligatorios por documento: `fuente` (código F/I/E) y `fecha` de
-   captura. No mezclar universos en una colección sin ese campo (guardrail 3).
-2. Corpus con datos internos/sensibles → persistir SOLO bajo
-   `outputs/analisis_interno/` o carpeta ignorada por Git (guardrail 8).
-3. No indexar datos personales (teléfonos, emails, CUIT) — guardrail 7.
-4. Un resultado de similitud es una hipótesis, no un match confirmado: para
+   captura; sin ese campo la colección mezcla universos.
+2. La base persistente hereda la sensibilidad del corpus: va a `outputs/analisis_interno/`.
+3. Un resultado de similitud es una hipótesis, no un match confirmado: para
    vinculación de registros usar la skill `dedupe-registros`.
+
+Los guardrails generales (3, 7, 8) ya estan cargados desde `CLAUDE.md`; no se repiten aca.

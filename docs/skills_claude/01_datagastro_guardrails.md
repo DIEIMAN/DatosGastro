@@ -21,7 +21,7 @@
   - `src/build_model.py`, `src/build_analytics.py`
   - `data/processed/`, `data/analytics/`
   - `dashboard/`, `notebooks/`
-  - outputs finales del informe (p. ej. `docs/informe_ejecutivo.*`).
+  - outputs finales del informe (p. ej. `docs/archive/v3_2026-06/informe_ejecutivo.*`).
 - El **pipeline público F01–F05 queda intacto** hasta que Diego apruebe una integración.
 - Cualquier integración nueva primero se **documenta** (skill 02 y 04) y recién después,
   con permiso, se convierte en código.

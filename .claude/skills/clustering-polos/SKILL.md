@@ -10,7 +10,8 @@ description: >
 
 # HDBSCAN / scikit-learn — clustering de densidad
 
-Instalado en `.venv-tools`. Ejecutar con `.venv-tools\Scripts\python.exe`.
+scikit-learn 1.9 esta en los dos venvs; `hdbscan` clasico solo en `.venv-tools`. Con
+`sklearn.cluster.HDBSCAN` alcanza `.venv\Scripts\python.exe`.
 
 ## Uso básico
 

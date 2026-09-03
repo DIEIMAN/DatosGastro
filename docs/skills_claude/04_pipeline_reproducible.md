@@ -12,7 +12,7 @@ Cómo trabajar sin romper lo que ya funciona.
 | Analítica derivada | `data/analytics/` | **No modificar sin permiso.** |
 | Tablero | `dashboard/` | **No modificar sin permiso.** |
 | Notebooks | `notebooks/` | **No modificar sin permiso.** |
-| Informe final | `docs/informe_ejecutivo.*` | **No modificar sin permiso.** |
+| Informe final | `docs/archive/v3_2026-06/informe_ejecutivo.*` | **No modificar sin permiso.** |
 
 Resto de `src/` (contratos, normalización, geocoding, validación) se puede leer libremente; para
 modificar, seguir el flujo de la sección 4.

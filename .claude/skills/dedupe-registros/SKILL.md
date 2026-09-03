@@ -42,5 +42,4 @@ df_pares = pares.as_pandas_dataframe()
    de los pares límite (método experimental del proyecto).
 2. Emparejar por dirección además de nombre — lección registrada del catálogo
    de Notables: el nombre solo produce falsos negativos.
-3. No mezclar universos F/I/E sin columna de origen (guardrail 3); resultados
-   sobre datos internos van a carpeta ignorada por Git (guardrail 8).
+3. Los pares salen con columna de origen por lado (F/I/E) y van a `outputs/analisis_interno/`.

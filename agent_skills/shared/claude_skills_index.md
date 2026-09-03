@@ -1,6 +1,6 @@
 # Índice compartido de skills Claude importadas
 
-Desde 2026-07-14, `agent_skills/claude_imported/` y `.agents/skills/` contienen **réplicas
+Desde 2026-07-14, `.agents/skills/` contienen **réplicas
 puntero** (wrappers): conservan nombre y descripción, y remiten a la copia canónica en
 `.claude/skills/<skill>/SKILL.md`. Leer siempre la canónica; las réplicas no duplican el
 procedimiento (así se eliminan divergencias entre agentes). La documentación larga sigue en
@@ -8,15 +8,14 @@ procedimiento (así se eliminan divergencias entre agentes). La documentación l
 
 | Skill | Ruta importada | Cuándo usarla |
 | --- | --- | --- |
-| `datagastro-guardrails` | `agent_skills/claude_imported/datagastro-guardrails/SKILL.md` | Siempre antes de borrar, mover, tocar pipeline, exponer datos o evaluar fuentes sensibles |
-| `datagastro-metodologia-fuentes` | `agent_skills/claude_imported/datagastro-metodologia-fuentes/SKILL.md` | Al describir, clasificar o sumar fuentes F/I/E |
-| `datagastro-privacidad` | `agent_skills/claude_imported/datagastro-privacidad/SKILL.md` | Al perfilar, analizar o exportar datos con riesgo personal o sensible |
-| `datagastro-pipeline` | `agent_skills/claude_imported/datagastro-pipeline/SKILL.md` | Antes de tocar `src/`, `data/processed`, `data/analytics`, validaciones o tests |
-| `datagastro-geodatos` | `agent_skills/claude_imported/datagastro-geodatos/SKILL.md` | Para direcciones, comunas, barrios, lat/lon, USIG, OSM, densidad o sesgos territoriales |
-| `datagastro-fuentes-externas` | `agent_skills/claude_imported/datagastro-fuentes-externas/SKILL.md` | Al evaluar Google Places, delivery, pagos, redes, POS u otras plataformas externas |
-| `datagastro-informes` | `agent_skills/claude_imported/datagastro-informes/SKILL.md` | Al redactar informes ejecutivos, resúmenes o entregables institucionales |
-| `datagastro-limpieza` | `agent_skills/claude_imported/datagastro-limpieza/SKILL.md` | Antes de proponer borrado, movimiento o limpieza local |
-| `datagastro-qa-pdf` | `agent_skills/claude_imported/datagastro-qa-pdf/SKILL.md` | SIEMPRE después de generar o regenerar un PDF y antes de reportarlo terminado (render + inspección visual) |
+| `datagastro-guardrails` | `.agents/skills/datagastro-guardrails/SKILL.md` | Siempre antes de borrar, mover, tocar pipeline, exponer datos o evaluar fuentes sensibles |
+| `datagastro-metodologia-fuentes` | `.agents/skills/datagastro-metodologia-fuentes/SKILL.md` | Al describir, clasificar o sumar fuentes F/I/E |
+| `datagastro-privacidad` | `.agents/skills/datagastro-privacidad/SKILL.md` | Al perfilar, analizar o exportar datos con riesgo personal o sensible |
+| `datagastro-pipeline` | `.agents/skills/datagastro-pipeline/SKILL.md` | Antes de tocar `src/`, `data/processed`, `data/analytics`, validaciones o tests |
+| `datagastro-geodatos` | `.agents/skills/datagastro-geodatos/SKILL.md` | Para direcciones, comunas, barrios, lat/lon, USIG, OSM, densidad o sesgos territoriales |
+| `datagastro-fuentes-externas` | `.agents/skills/datagastro-fuentes-externas/SKILL.md` | Al evaluar Google Places, delivery, pagos, redes, POS u otras plataformas externas |
+| `datagastro-informes` | `.agents/skills/datagastro-informes/SKILL.md` | Al redactar informes ejecutivos, resúmenes o entregables institucionales |
+| `datagastro-qa-pdf` | `.agents/skills/datagastro-qa-pdf/SKILL.md` | SIEMPRE después de generar o regenerar un PDF y antes de reportarlo terminado (render + inspección visual) |
 
 ## Regla de uso
 

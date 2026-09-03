@@ -19,13 +19,13 @@ Todo plan de limpieza clasifica cada ítem en:
 
 | Categoría | Qué incluye | Acción |
 | --- | --- | --- |
-| **Seguro borrar** | Caches (`__pycache__`, `.pytest_cache`), temporales (`outputs/tmp/`), `.pyc`, HTML/PDF regenerables, copias duplicadas idénticas (mismo hash) que ya están versionadas o en Drive | Borrar tras confirmación |
+| **Seguro borrar** | Caches (`__pycache__`, `.pytest_cache`), temporales (`tmp/`), `.pyc`, HTML/PDF regenerables, copias duplicadas idénticas (mismo hash) que ya están versionadas o en Drive | Borrar tras confirmación |
 | **Revisar** | Outputs internos pesados, copias extraídas de Drive, diagnósticos viejos, artefactos de los que no se está seguro si se regeneran | Listar, mostrar tamaño/origen, decidir con Diego |
 | **No borrar** | Outputs finales del informe, scripts (`src/`, `scripts/`), datos fuente públicos (`data/raw`, `data/seeds`), `data/processed`, `data/analytics`, documentación, configuración | Intocable sin permiso explícito |
 
 ## 3. Qué NUNCA se borra sin permiso explícito
 
-- Outputs finales del informe (`docs/informe_ejecutivo.*`, entregables aprobados).
+- Outputs finales del informe (`docs/archive/v3_2026-06/informe_ejecutivo.*`, entregables aprobados).
 - Scripts del pipeline y utilitarios (`src/`, `scripts/`, `tests/`, `dashboard/`).
 - Datos fuente públicos (`data/raw/`, `data/seeds/`).
 - Salidas productivas (`data/processed/`, `data/analytics/`).
