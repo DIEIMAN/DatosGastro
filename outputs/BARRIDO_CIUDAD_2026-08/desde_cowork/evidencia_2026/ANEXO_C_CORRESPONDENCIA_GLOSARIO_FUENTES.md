@@ -18,7 +18,7 @@ homogéneo ni está acotado administrativamente, y su delimitación responde a e
 y gastronómica, no a límites de barrio.
 
 **Concentración.** Lo que detecta el método: una concentración de puntos que supera el umbral de
-densidad. Una concentración no es todavía un polo: hay 124 concentraciones y 41 polos.
+densidad. Una concentración no es todavía un polo: hay 124 concentraciones y 39 polos.
 
 **Las cuatro familias.** Las formas que puede tener un polo. **Núcleo compacto** · **polo con
 subzonas —donde los vacíos son parte de la figura— · eje o corredor** —donde la forma es lineal
@@ -96,7 +96,7 @@ Toda verificación vence, y lleva su fecha pegada al texto. No en una columna ap
 | **3 · uso corriente** | la Ciudad lo llama así, con o sin respaldo |
 | **4 · de trabajo** | no se encontró denominación; el nombre es descriptivo. Se marca con **°** |
 
-Que un nombre de barrio esté fijado por norma no hace normativo al nombre del polo. De los 41,
+Que un nombre de barrio esté fijado por norma no hace normativo al nombre del polo. De los 39,
 **ninguno tiene nombre normativo**: las figuras con perímetro de la Ciudad nombran distritos
 productivos, culturales o audiovisuales, no polos gastronómicos.
 

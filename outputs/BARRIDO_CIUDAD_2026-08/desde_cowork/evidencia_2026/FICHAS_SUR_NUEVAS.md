@@ -48,7 +48,7 @@ doce locales, y **no se pueden comparar en tamaño con las de ninguna otra pági
 mide decenas o cientos de hectáreas. Lo que este contorno describe es un grupo de puertas, no una zona.
 
 
-**Lo que falta.** Seguir de cerca a Los Laureles: reabrió con nuevos dueños y el inmueble está en venta.
+**Próxima edición.** Seguir de cerca a Los Laureles: reabrió con nuevos dueños y el inmueble está en venta.
 # La Boca · Almirante Brown y Necochea
 
 **Comuna 4 · La Boca** — nuevo en esta edición · corredor sobre una avenida
@@ -123,7 +123,7 @@ contiene tres de los ocho. Lo que sigue sin poder afirmarse es que el borde est�
 establecimientos quedan afuera y llegar hasta ellos exigiría inventar líneas que ninguna fuente escribe.
 
 
-**Lo que falta.** Decidir el borde: o el polo es más grande que el tramo de la obra pública, o los cinco establecimientos son del entorno y no de él. Y verificar la reapertura de Gennarino, anunciada y sin confirmación posterior a septiembre de 2025.
+**Próxima edición.** Decidir el borde: o el polo es más grande que el tramo de la obra pública, o los cinco establecimientos son del entorno y no de él. Y verificar la reapertura de Gennarino, anunciada y sin confirmación posterior a septiembre de 2025.
 # La Boca · Caminito y Vuelta de Rocha
 
 **Comuna 4 · La Boca** — nuevo en esta edición · núcleo compacto
@@ -175,7 +175,7 @@ metros afuera. La lectura anterior se descartó y se dice cuál se adoptó y por
 sigue sin poder afirmar es que exista una concentración de locales: ninguna fuente la describe.
 
 
-**Lo que falta.** Verificar Genovés, abierto en 2024 y sin verificación individual.
+**Próxima edición.** Verificar Genovés, abierto en 2024 y sin verificación individual.
 # Nueva Pompeya · eje Av. Sáenz
 
 **Comuna 4 · Nueva Pompeya** — nuevo en esta edición · núcleo compacto
@@ -224,4 +224,4 @@ heladería, carnicería y pescadería.
 Parque Patricios: **sus 39,39 hectáreas y sus 52 locales no se suman** a los de aquel polo.
 
 
-**Lo que falta.** Registrar el Mercado de Pompeya con su dirección y su horario, y resolver la discrepancia de El Buzón, que aparece con tres direcciones en tres registros oficiales distintos.
+**Próxima edición.** Registrar el Mercado de Pompeya con su dirección y su horario, y resolver la discrepancia de El Buzón, que aparece con tres direcciones en tres registros oficiales distintos.

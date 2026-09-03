@@ -78,22 +78,57 @@ Donado-Holmberg.
 
 # Parte II · La base
 
-## 3 · Las siete fuentes, y los cinco grupos de independencia
+## 3 · Las siete fuentes, y los seis grupos de independencia
+
+> **Corrección del 11/08/2026.** Este parágrafo decía «cinco grupos» y listaba cinco. La base
+> tiene **seis**: faltaba `GCBA_TURISMO`. El error pasó desapercibido porque las dos cuentas dan
+> siete fuentes — la lista vieja contaba a Foursquare como fuente propia, cuando Foursquare llega
+> adentro de Overture y no se descargó aparte. **Ninguna cifra del atlas depende de esta tabla**:
+> el campo `grupos_independencia` de `local.csv` siempre trajo los seis, y todo conteo de
+> corroboración se hizo sobre él. Lo que estaba mal era la tabla, no el conteo. El §13 sí queda
+> alcanzado y se declara ahí.
 
 La base reúne siete fuentes. Pero **no son siete testimonios independientes**, y contar fuentes
 en vez de grupos es el error más caro que se puede cometer acá: Overture redistribuye a
 Foursquare y a All The Places, así que un local «corroborado por tres fuentes» puede estar
 corroborado por un solo relevamiento contado tres veces.
 
-Se definieron **cinco grupos de independencia** y todo conteo de corroboración se hace por grupo:
+Las siete fuentes, tal como entran. «registros» es lo que entregó la fuente; «locales» es a
+cuántos locales distintos de los 27.727 de la base llegó:
 
-| grupo | qué contiene | licencia | qué aporta |
-|---|---|---|---|
-| `GCBA_URBANISMO` | Relevamiento de Usos del Suelo | CC-BY-2.5-AR | el piso territorial: cobertura pareja por diseño |
-| `GCBA_AGC` | padrón de habilitaciones y trámites | CC-BY-2.5-AR | estado administrativo, con la corrección del §5 |
-| `GCBA_ESPACIO_PUBLICO` | permisos de uso del espacio público | CC-BY-2.5-AR | terrazas y superficies exteriores |
-| `OSM` | OpenStreetMap | ODbL (share-alike) | actualidad y detalle de nombre |
-| `OVERTURE_FSQ_ATP` | Overture + Foursquare + All The Places | CDLA-P / Apache 2.0 / CC0 | volumen; **es un solo grupo, no tres** |
+| código | fuente | corte | registros | locales |
+|---|---|---|---:|---:|
+| `RUS` | Relevamiento de Usos del Suelo · GCBA — parcela y punto, **sin nombre ni dirección** | 2022–2024 | 10.890 | 10.890 |
+| `OVERTURE` | Overture Maps — con los datos abiertos de Foursquare adentro | 22/07/2026 | 13.243 | 9.752 |
+| `OSM` | OpenStreetMap | 2009 – 05/08/2026 | 7.270 | 6.507 |
+| `F02` | padrón de trámites de habilitación · GCBA — **no registra bajas** | 2015 – 2024 | 7.502 | 5.736 |
+| `F01` | padrón de oferta gastronómica · Ente de Turismo, GCBA | 2026 | 2.823 | 2.331 |
+| `PERMISOS` | permisos de uso del espacio público · GCBA | 2025 – 2026 | 332 | 314 |
+| `ATP` | All The Places | 01/08/2026 | 282 | 240 |
+
+Se definieron **seis grupos de independencia** y todo conteo de corroboración se hace por grupo.
+Las dos últimas columnas cuentan sobre el universo publicado (23.981):
+
+| grupo | qué contiene | licencia | qué aporta | lo ve | **exclusivo** |
+|---|---|---|---|---:|---:|
+| `GCBA_URBANISMO` | Relevamiento de Usos del Suelo (`RUS`) | CC-BY-2.5-AR | el piso territorial: cobertura pareja por diseño | 9.001 | 9.001 |
+| `OVERTURE_FSQ_ATP` | Overture + Foursquare + All The Places (`OVERTURE`, `ATP`) | CDLA-P / Apache 2.0 / CC0 | volumen; **es un solo grupo, no tres** | 8.785 | 4.411 |
+| `OSM` | OpenStreetMap (`OSM`) | ODbL (share-alike) | actualidad y detalle de nombre | 5.646 | 2.935 |
+| `GCBA_AGC` | padrón de habilitaciones y trámites (`F02`) | CC-BY-2.5-AR | estado administrativo, con la corrección del §5 | 5.144 | 2.243 |
+| `GCBA_TURISMO` | padrón de oferta gastronómica del Ente de Turismo (`F01`) | CC-BY-2.5-AR | la oferta publicada para el visitante | 2.164 | 650 |
+| `GCBA_ATENCION` | permisos de uso del espacio público (`PERMISOS`) | CC-BY-2.5-AR | terrazas y superficies exteriores | 279 | 0 |
+
+**4.741 de los 23.981 locales están vistos por más de un grupo.** Ésos son los corroborados; el
+resto está declarado por uno solo y se publica así.
+
+**Un límite del cruce que hay que decir acá y no en el §9.** El `RUS` **no aparea con ninguna otra
+fuente**: sus 10.890 registros son, los 10.890, el único registro de su local. No es un hallazgo
+sobre el territorio — es que el `RUS` no trae nombre ni dirección, sólo parcela y punto, así que
+**no hay campo por el cual aparearlo**. Consecuencia medible: el 23,2 % de los puntos del `RUS`
+cae a menos de 10 m de un local de otra fuente, y el 43,1 % a menos de 15 m. A esa escala, en una
+cuadra comercial, dos puertas contiguas también están a 10 m: **esas cifras acotan por arriba un
+posible doble conteo, no lo demuestran.** El piso de cobertura y el límite del cruce son la misma
+propiedad de la misma fuente.
 
 A esto se suma **Google Places** como fuente de descubrimiento, con un tratamiento aparte
 descrito en el §10, porque su naturaleza es distinta: no es una base que se pueda enumerar.

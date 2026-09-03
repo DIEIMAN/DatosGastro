@@ -4,7 +4,7 @@
 
 ## Cómo leer estas páginas
 
-El cuerpo de este atlas son 41 polos. Este anexo son las 124 concentraciones de las que salieron.
+El cuerpo de este atlas son 39 polos. Este anexo son las 124 concentraciones de las que salieron.
 
 No es un descarte ni un borrador: es el insumo completo, publicado entero, para que cualquiera pueda
 rehacer el camino que va de una a otra.
@@ -29,8 +29,8 @@ reúnen 5.720 locales.** No es un error. Una concentración es una mancha de loc
 encontró sola; un polo necesita además cumplir dos de las seis condiciones. Las 71 que quedan afuera
 son, en su mayoría, densidad sin nada que la acompañe. Las más grandes, para que se vea de qué
 estamos hablando: Palermo Botánico (207 locales), el entorno del Congreso (175), Palermo entre
-Bustamante y Mario Bravo (154), Alto Palermo (141), el centro comercial de Av. Cuenca en Villa
-Devoto (135), Av. Eva Perón entre Escalada y Castañares (132) y Av. Emilio Castro entre Liniers y
+Bustamante y Mario Bravo (154), Alto Palermo (121), el centro comercial de Av. Cuenca en Villa
+del Parque (142), Av. Eva Perón entre Escalada y Castañares (132) y Av. Emilio Castro entre Liniers y
 Mataderos (105).
 
 Cuatro de esas siete están en Palermo o en el centro, donde el atlas ya tiene polos y estas manchas
@@ -42,10 +42,9 @@ superficie cae adentro**, porque una concentración puede quedar repartida entre
 
 ## Y los polos, a diferencia de las concentraciones, sí se pisan
 
-**Veinticinco pares de polos comparten superficie.** Sumar los 41 por separado da **12.105 locales**; la unión real es de **10.819 locales en 5.444,15 hectáreas**. La suma de a uno cuenta **1.286 veces de más**, y esas repeticiones caen sobre **1.263 locales distintos**: la mayoría está adentro de dos polos y unos pocos, de tres.
+**Doce pares de polos comparten superficie**, y eran veinticinco antes de repartir. Sumar los 39 por separado da **11.131 locales**; la unión real es de **10.831 locales en 5.459,75 hectáreas**. La suma de a uno cuenta **300 veces de más**, sobre **300 locales distintos**: después del reparto **no queda ningún local contado en tres páginas a la vez.**
 
-El solape más grande en locales es el de Retiro con el Microcentro —52,16 hectáreas y 301 locales—,
-seguido por Chacarita con Federico Lacroze —60,37 hectáreas y 153—. Los dos son casos donde un polo
+El solape más grande en locales es el de **Palermo con Chacagiales** —33,15 hectáreas y 111 locales—, seguido por **Palermo con Villa Crespo** —12,55 y 77— y por las dos piezas de Nueva Pompeya, que comparten 39,39 hectáreas y 52 locales porque una está contenida en la otra. Los dos son casos donde un polo
 publica todavía el polígono de su barrio o donde dos páginas describen tramos contiguos de una misma
 avenida. **Ninguna suma de polos de este atlas es válida sin descontar esa tabla.**
 
@@ -299,7 +298,7 @@ de su superficie; varias comparten barrio, y algunas cruzan el límite de dos.
 | 86 | Parque Chacabuco | 7 | 50 | 12,1 |
 | 87 | Saavedra | 12 | 50 | 5,7 |
 | 88 | Barracas | 4 | 49 | 23,5 |
-| 89 | Nuñez | 13 | 49 | 7,3 |
+| 89 | Núñez | 13 | 49 | 7,3 |
 | 90 | Mataderos | 9 | 48 | 28,2 |
 | 91 | Flores | 7 | 48 | 6,1 |
 | 92 | Colegiales | 13 | 48 | 5,9 |
@@ -316,7 +315,7 @@ de su superficie; varias comparten barrio, y algunas cruzan el límite de dos.
 | 103 | Villa Crespo | 15 | 44 | 3,5 |
 | 104 | Floresta | 10 | 43 | 10,6 |
 | 105 | Flores | 7 | 43 | 5,9 |
-| 106 | Nuñez | 13 | 43 | 5,1 |
+| 106 | Núñez | 13 | 43 | 5,1 |
 | 107 | Mataderos | 9 | 42 | 10,8 |
 | 108 | Villa Pueyrredon | 12 | 42 | 14,5 |
 | 109 | Monte Castro | 10 | 42 | 10,2 |

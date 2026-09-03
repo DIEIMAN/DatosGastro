@@ -85,8 +85,7 @@ eso: **es una manera de mirar**.
 
 Cuando decimos que Palermo Hollywood es un polo, no estamos señalando un objeto que exista en el
 territorio con bordes propios. Estamos diciendo que en esa zona hay tantos locales tan cerca unos
-de otros que conviene pensarlos juntos. Dónde termina exactamente es una decisión esta, no un
-hecho del mundo.
+de otros que conviene pensarlos juntos. Dónde termina exactamente es una decisión nuestra, no un hecho del mundo.
 
 Esto no es una debilidad del atlas: es la naturaleza del problema, y decirlo de entrada evita
 discusiones falsas. Nadie puede tener razón sobre dónde termina Palermo Hollywood. Lo que sí
@@ -172,33 +171,42 @@ reemplaza por otro no es un control: es un trámite.
 
 # III · De dónde salen los datos
 
-## Siete fuentes, cinco testimonios
+## Siete fuentes, seis testimonios
 
 Este atlas reúne siete fuentes de datos. Pero no son siete testimonios independientes, y esa
 distinción es más importante de lo que parece.
 
 Algunas de estas bases se redistribuyen entre sí: una de ellas incorpora los datos de otras dos.
 Un local que aparece «corroborado por tres fuentes» puede estar corroborado por un solo
-relevamiento contado tres veces. Por eso, en todo este trabajo, las fuentes se agrupan en **cinco
+relevamiento contado tres veces. Por eso, en todo este trabajo, las fuentes se agrupan en **seis
 fuentes independientes** y toda corroboración se cuenta por origen, no por medio.
 
-| familia de fuentes | qué aporta |
-|---|---|
-| **Relevamiento de Usos del Suelo** (GCBA) | el piso: cobertura pareja por diseño, en toda la Ciudad |
-| **Padrón de trámites** (GCBA) | el estado administrativo, con la corrección que se explica abajo |
-| **Permisos de uso del espacio público** (GCBA) | terrazas y superficies exteriores |
-| **OpenStreetMap** | actualidad y detalle de nombre |
-| **Directorios comerciales en línea** | volumen — es **una sola**, aunque sean tres bases |
+| familia de fuentes | qué aporta | locales que ve |
+|---|---|---:|
+| **Relevamiento de Usos del Suelo** (GCBA) | el piso: cobertura pareja por diseño, en toda la Ciudad | 9.001 |
+| **Directorios comerciales en línea** | volumen — es **una sola familia**, aunque sean tres bases | 8.785 |
+| **OpenStreetMap** | actualidad y detalle de nombre | 5.646 |
+| **Padrón de trámites** (GCBA) | el estado administrativo, con la corrección que se explica abajo | 5.144 |
+| **Padrón de oferta gastronómica** (Ente de Turismo, GCBA) | los locales que la Ciudad publica como oferta para el visitante | 2.164 |
+| **Permisos de uso del espacio público** (GCBA) | terrazas y superficies exteriores | 279 |
 
-A esto se suma **Google Places**, con un tratamiento aparte que se explica más adelante.
+> **La columna no se suma**, y ésa es toda la gracia: da 31.019 sobre 23.981 locales porque
+> **4.741 locales los ve más de una familia**. Un local visto por dos familias está corroborado;
+> uno visto por una sola, declarado.
+
+**Qué son los directorios comerciales en línea.** Son bases abiertas de puntos de interés —
+**Overture Maps** y **All The Places**, con los datos abiertos de **Foursquare** adentro de la
+primera—, publicadas con licencia que permite redistribuirlas. **No son Google Places**, que acá
+cumple otra función y tiene su propio apartado más abajo.
 
 ## El piso, y por qué importa
 
-De las cinco fuentes independientes, el **Relevamiento de Usos del Suelo** es el que sostiene todo lo demás. Es
+De las seis fuentes independientes, el **Relevamiento de Usos del Suelo** es el que sostiene todo lo demás. Es
 el único relevado con cobertura pareja por diseño en toda la Ciudad: no depende de que alguien
 cargue un local, ni de que un local sea popular, ni de que tenga habilitación al día.
 
-Se midió cuánto depende el mapa de cada familia, quitando una por vez. Y para que la medición
+Se midió cuánto depende el mapa de cada familia, quitando una por vez —**cinco de las seis**: el
+padrón de oferta gastronómica quedó fuera de esa prueba y se declara así—. Y para que la medición
 significara algo, cada vez que se quitó una familia se quitó también **la misma cantidad de locales
 al azar**, cinco veces, como control. Sin ese control, tres de las cinco mediciones se leían al
 revés: quitar una familia grande derrumba el mapa aunque esa familia no aporte nada propio, simplemente

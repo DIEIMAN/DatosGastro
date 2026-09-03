@@ -28,6 +28,10 @@ página dice qué falta.
 
 ### Sobre los números
 
+**Una hectárea es, más o menos, una manzana porteña.** Vale tenerlo a mano: todas las superficies
+de este atlas están en hectáreas, así que un polo de cincuenta hectáreas ocupa alrededor de cincuenta
+manzanas, y «dos locales por hectárea» quiere decir dos locales por manzana.
+
 Los conteos de locales son lo que ven las fuentes relevadas, no un censo. Salen de un
 subconjunto de la base —23.981 registros de los 27.727 totales— y se miden sobre el contorno
 publicado de cada polo.
@@ -89,7 +93,7 @@ declarados uno por uno en el Boletín Oficial. Son dos cosas distintas y el atla
 
 ### Sobre los que cerraron
 
-Cada página tiene un bloque de lo que se perdió, y en treinta de las cuarenta y una dice lo mismo:
+Casi todas las páginas tienen un bloque de lo que se perdió, y en veintisiete de las treinta y nueve dice lo mismo:
 **sin cierres documentados en esta zona.** Conviene leer esa frase por lo que es. El registro de
 cierres de este atlas tiene **treinta y una entradas para toda la Ciudad** y su cobertura es
 despareja: que una zona no figure no quiere decir que no haya cerrado nada, quiere decir que no se
@@ -182,7 +186,7 @@ locales corresponde al contorno vigente y cambiará con el tramo definitivo. No 
 comparar tamaños. Y el corredor se pisa con el polo del Centro sobre buena parte de su
 recorrido: los dos conteos no se suman.
 
-**Lo que falta.** **Precisar el tramo del eje**, que destraba todo lo demás, incluido el cruce con
+**Próxima edición.** **Precisar el tramo del eje**, y conviene decir por qué no alcanza con listar calles: sólo el 40 % de este contorno corre sobre calles, y son treinta tramos de entre 32 y 48 metros sobre transversales distintas. **Esa es la firma de un corredor**: no se delimita enumerando esquinas, se delimita nombrando el eje y sus dos extremos. Precisar el tramo destraba todo lo demás, incluido el cruce con
 los dos ejes de arriba. El Celta Bar ya está resuelto: no tiene redes sociales, así que se verificó
 yendo a verlo, y así se publica.
 
@@ -221,7 +225,7 @@ subió 2,7 puntos** en el año, cuando el conjunto de los 48 ejes perdió 1,6. E
 este polo. No se la compare con zonas de cientos de locales: el número es chico y su
 error relativo es grande. Y su admisión depende de dos fuentes de prensa independientes: si una se cae, el polo se sostiene sólo por su historia.
 
-**Lo que falta.** Decidir si el Mercado de San Telmo entra por ampliación: está a **64 metros**
+**Próxima edición.** Decidir si el Mercado de San Telmo entra por ampliación: está a **64 metros**
 del contorno —o sea afuera por poco— y es el equipamiento más reconocible del barrio. Si entra,
 cumple además la condición de mercados y galerías, y el polo deja de depender de dos condiciones al
 límite.
@@ -270,7 +274,7 @@ diques y grandes parcelas—, pero ningún ranking por tamaño debería usar est
 Y su prensa y guías se apoya en material de hace tres años: lo que la página afirma sobre
 cómo se la trata hoy no está verificado.
 
-**Lo que falta.** Evidencia de nivel zona posterior a 2023. Los cuatro lugares históricos ya están
+**Próxima edición.** Evidencia de nivel zona posterior a 2023. Los cuatro lugares históricos ya están
 verificados; lo que sigue viejo es cómo se trata a Puerto Madero como destino. Y **resolver si La
 Cabaña está en el 380 o en el 580.**
 
@@ -324,17 +328,16 @@ Británico no estuviera, el polo quedaría con una condición geométrica —el 
 documental de hace cinco años. Y con un perímetro de una o dos cuadras, las 50,03 hectáreas del contorno describen el entorno, no el polo: la cifra de superficie de esta página no es
 comparable con las demás.
 
-**Lo que falta.** Un segundo respaldo para El Británico, que hoy cierra con 113 días y sin
+**Próxima edición.** Un segundo respaldo para El Británico, que hoy cierra con 113 días y sin
 holgura.
 
 # R12 · Centro / Microcentro
 
 **Comuna 1 · San Nicolás y Monserrat** — ya estaba en la versión anterior · varias piezas
 
-**1.084 locales en 184,12 hectáreas** — el segundo polo del atlas por cantidad de locales, después de Palermo, y el más apretado de los dos: 5,89 locales por hectárea contra 4,97.
+**875 locales en 153,72 hectáreas** — el tercer polo del atlas por cantidad de locales, después de Palermo y Chacagiales, y el más denso de los tres: 5,69 locales por hectárea contra 4,97 de Palermo y 1,80 de Chacagiales. Antes de repartir sus dos ejes con los polos vecinos publicaba 1.084 locales en 184,12 hectáreas.
 
-**Dónde está.** Perímetro vigente. **Se pisa con Monserrat**, que en este relevamiento entra por sí
-sola como zona, y el reparto de la superposición está sin decidir.
+**Dónde está.** Perímetro vigente, **ya repartido con sus dos vecinos**. El eje de Av. de Mayo con sus Bares Notables quedó para Monserrat —8,68 hectáreas y 76 locales— y la franja de Av. Corrientes para el corredor que lleva su nombre —21,72 y 133—. Los dos son ejes que existen por sí mismos y esta página los describía de paso. **Lo que le queda es la mancha del Centro, que es lo suyo.**
 
 **Reconocimiento oficial.** APH1 en parte.
 
@@ -344,11 +347,10 @@ sola como zona, y el reparto de la superposición está sin decidir.
 - **Establecimientos con historia** — sí.
 - **Prensa y guías** — no. Una sola fuente, y de guía turística comercial.
 
-> Es la segunda zona del atlas por cantidad de locales y no tiene prensa ni guías, y eso no es una
+> Es la tercera zona del atlas por cantidad de locales y no tiene prensa ni guías, y eso no es una
 > laguna del relevamiento: es el resultado. Buscada por las mismas rutas que las demás, la
 > cobertura de prensa de 2025 y 2026 sobre el Centro no lo trata como destino gastronómico: lo
-> trata como zona de vacancia, quiebras y reconversión. Mil ochenta y cuatro locales que nadie
-> recomienda visitar es un dato de política, no un vacío de datos.
+> trata como zona de vacancia, quiebras y reconversión. Ochocientos setenta y cinco locales sin una sola recomendación de prensa es un dato de política y no un vacío de datos: es la brecha más grande del mapa entre oferta instalada y reconocimiento externo.
 
 **Los establecimientos.** **Los 36 Billares**, Av. de Mayo 1265/71 — verificado abierto el 04/07/2026.
 **Café Tortoni**, Av. de Mayo 825 — verificado abierto el 26/05/2026. **Bar Bidou**, Av. Roque Sáenz Peña 858 — individualizado por una nota de **noviembre de 2025**. Confitería Saint Moritz, Claridge's y La Ideal (Suipacha 384), sin verificación individual.
@@ -376,14 +378,12 @@ puntos**. Y el eje **Lavalle** —Corrientes, Lavalle y Esmeralda entre el 400 y
 > no están sobre ningún eje comercial relevado. Los tres casos son del centro y ninguno se puede meter
 > adentro de un eje: eso sería atribución nominal, no territorial.
 
-**Qué no se puede concluir de esta página.** La superposición con Monserrat está sin repartir, así que los 1.084
-locales de este polo y los de Monserrat no se suman. Y el «Microcentro» que usa la
+**Qué no se puede concluir de esta página.** La superposición con Monserrat ya está repartida: los 875 locales de esta página no incluyen el eje de Av. de Mayo, que se cuenta una sola vez y del lado de Monserrat. Y el «Microcentro» que usa la
 conversación corriente no existe entre los 48 ejes de la serie vigente del IDECBA: cualquier
 cifra de ocupación atribuida al Microcentro como tal viene de una edición anterior del
 relevamiento y no se cita.
 
-**Lo que falta.** Decidir cómo se reparten este polo y Monserrat los Notables de Av. de
-Mayo. Es la única decisión de delimitación que bloquea la página.
+**Próxima edición.** Verificación de sus establecimientos. La delimitación ya está cerrada: el reparto quedó hecho, y es la decisión de delimitación que bloquea la página.
 
 # Comuna 2
 
@@ -412,12 +412,18 @@ con un café anexo que opera sobre Av. Alvear 1600. **Fervor**, Posadas 1519 —
 **julio de 2026**. **La Biela**, Av. Quintana 600 esquina Junín — verificado abierto al
 **15/10/2025**. Y **Josephina's Café**, Guido 1532, alta del catálogo de 2026.
 
-> Y un establecimiento que no existe. Circula como «Bar del Alvear», en Av. Alvear 1891, y no hay
-> ningún local con ese nombre. El hotel nombra seis establecimientos
-> —L'Orangerie, Lobby Bar, Alvear Roof Bar, Alvear Grill, Alvear Café y Alvear Sushi Bar— y ninguno
-> se llama así. El hotel está operando y verificado por su propio canal, con una promoción
-> vigente del 1 al 31 de agosto de 2026; lo que no se puede verificar es un local que no se puede
-> identificar. Se da de baja del listado hasta decidir cuál de los seis era.
+> Y un establecimiento declarado que no se puede señalar. El **Bar del Alvear Palace Hotel, Av.
+> Alvear 1891**, está incorporado con ese nombre y esa dirección al catálogo oficial vigente, y el
+> antecedente de 2019 lo dice igual: **el acto normativo no aclara cuál de los seis espacios del
+> hotel es.** El hotel nombra L'Orangerie, Lobby Bar, Alvear Roof Bar, Alvear Grill, Alvear Café y
+> Alvear Sushi Bar, y ninguno se llama así.
+>
+> El propio sitio del hotel le atribuye al **Lobby Bar** la condición de Bar Notable, y es una
+> correspondencia fuerte — pero es una atribución del interesado y no lo que dice la norma, así que
+> el atlas la registra como probable y no la publica como resuelta. El hotel está operando y
+> verificado por su propio canal. **Lo que no se puede acreditar es la actividad de un
+> establecimiento que la norma no distingue de los otros cinco**, y por eso queda declarado y sin
+> verificar, en vez de dado de baja.
 
 **Lo que se perdió.** Y es una cuadra entera con su ciclo completo. Sobre Presidente Roberto M.
 Ortiz al 1800, entre Quintana y Guido, el registro de los que cerraron registra **seis cierres**: **Lola**,
@@ -452,7 +458,7 @@ zona entera. Y de los seis cierres de la cuadra, cuatro están cargados con conf
 media y tres no tienen año: la página puede decir que la cuadra se vació y no puede decir cuándo
 cerró cada uno.
 
-**Lo que falta.** Decidir cuál de los seis locales del Alvear era el que el atlas quería cargar.
+**Próxima edición.** Que la norma diga cuál de los seis espacios del Alvear declaró, o una pieza fechada que acredite la actividad del que sea.
 Los otros cinco lugares históricos están verificados; el de La Biela tiene 298 días y conviene refrescarlo
 antes de publicar.
 
@@ -462,7 +468,7 @@ antes de publicar.
 
 Comunas 3 y 5 · Balvanera y Almagro — ya estaba en la versión anterior · núcleo compacto
 
-373 locales en 109,0 hectáreas.
+**365 locales en 107,14 hectáreas**, ya con el corredor de Av. Corrientes repartido con Almagro por Av. Medrano: lo que queda al este es del Abasto, lo que queda al oeste es de Almagro. Antes del reparto publicaba 373 en 109,0.
 
 **Dónde está.** Perímetro vigente. Contiene el enclave **Corredor Peruano**.
 
@@ -496,12 +502,12 @@ Corrientes donde está El Símbolo —3601 a 4799— lo releva la Ciudad como ej
 Medrano», con **90,3 % y 2,7 puntos menos**, pero ese eje no está atribuido a este polo
 en el cruce oficial del Atlas.
 
-**Qué no se puede concluir de esta página.** El perímetro se pisa con Almagro y el solape está sin depurar: La Reina
+**Qué no se puede concluir de esta página.** El perímetro se pisaba con Almagro y el solape ya está repartido: La Reina
 Kunti, Lupo, Los Trujillanitos y Roma del Abasto caen en zona de borde, así que los conteos de las
 dos zonas no se suman. Y el enclave se delimitó sobre una oferta que está mutando: su perímetro
 es una fotografía de 2026, no una figura estable.
 
-**Lo que falta.** **Depurar el solape con Almagro**, que son 18,09 hectáreas y 65 locales.
+**Próxima edición.** Nada de delimitación: **el solape con Almagro quedó repartido por Av. Medrano**, y de las dos páginas la que más se movió fue Almagro, que cedió 93 de sus 207 locales.
 
 # Comuna 5
 
@@ -538,8 +544,7 @@ hectárea de esta página no se compara con la de un núcleo compacto. Y el polo
 prensa y guías: lo que se afirma acá se apoya en densidad, trayectoria y forma, no en
 cómo la trata la prensa.
 
-**Lo que falta.** Verificar Café Margot y San Antonio, y revisar la Homero Manzi a los 90 días
-de mayo de 2026.
+**Próxima edición.** **Verificar Café Margot**, que es el que queda sin fecha propia, y revisar la Homero Manzi a los 90 días de mayo de 2026. **San Antonio quedó verificado el 27/05/2026**, cuando una selección de pizzerías emblemáticas lo nombró con su dirección.
 
 # Comuna 6
 
@@ -575,8 +580,7 @@ la resolución anterior, así que esta página no afirma en qué acto fueron dec
 frase que este polo repetía y que la página da de baja: que la zona no tiene vacancia de
 locales es de 2021, anterior a la caída del consumo, y hoy no se sostiene sin verificación.
 
-**Lo que falta.** Resolver la discrepancia de procedencia de El Greco y **verificar el Mercado
-del Progreso**, que sostiene una condición entera.
+**Próxima edición.** Resolver la discrepancia de procedencia de El Greco. **El Mercado del Progreso quedó verificado el 15/06/2026** por su propio canal, que fecha una actividad realizada adentro y publica la altura: la condición que sostiene ya no cuelga de un dato viejo.
 
 # Comuna 11
 
@@ -609,12 +613,12 @@ tiene 88,1 % de ocupación y perdió 1,8 puntos, con **16,0 locales por frente d
 oficial lo marca como coincidencia **parcial** con este polo: el eje releva dos avenidas y el
 contorno del Atlas se organiza sobre Plaza Arenales.
 
-**Qué no se puede concluir de esta página.** 478,74 hectáreas es la superficie más grande de los polos que ya estaban publicados, y con 422
+**Qué no se puede concluir de esta página.** 478,74 hectáreas lo ponen entre los dos polos más extensos del atlas, y con 422
 locales la densidad resultante describe un barrio entero y no un núcleo. La concentración real
 está en el entorno de Plaza Arenales y este contorno no la aísla: cualquier comparación de
 densidad con esta página subestima el polo.
 
-**Lo que falta.** **Verificar Café de García.**
+**Próxima edición.** **Verificar Café de García.**
 
 # Comuna 12
 
@@ -660,7 +664,7 @@ al corredor son de 2017 y 2018. Los locales, en cambio, dejaron de depender de e
 los cinco tienen ahora una pieza posterior y dos llegan hasta 2026. Lo que la página todavía no
 puede afirmar es que la lista esté completa — nadie recorrió el corredor entero.
 
-**Lo que falta.** Resolver el conflicto de dirección de Chicama y buscar una pieza reciente de
+**Próxima edición.** Resolver el conflicto de dirección de Chicama y buscar una pieza reciente de
 Cimino R.
 
 # R17 · Villa Urquiza
@@ -696,7 +700,7 @@ marca como «no está en el Atlas». Es una atribución faltante, no un dato fal
 que lo admite recae sobre un corredor que está afuera. Es la página del conjunto donde más
 conviene no citar la condición de prensa y guías sin la salvedad al lado.
 
-**Lo que falta.** Atribuir el eje Triunvirato a este polo en el cruce oficial, que es un
+**Próxima edición.** Atribuir el eje Triunvirato a este polo en el cruce oficial, que es un
 cruce espacial y no una investigación. Y verificar el Café de la U.
 
 # R20 · García del Río
@@ -735,7 +739,7 @@ direcciones distintas, quedó resuelto en **Crisólogo Larralde 2772** por una n
 
 **Qué no se puede concluir de esta página.** El 47 % de la superficie y el 30 % de los locales de este polo quedan fuera del tramo que la evidencia documenta. La cola se conserva porque los polos publicados sólo se amplían, y se declara: de las **28,63 hectáreas de cola, ninguna fuente documental habla**. Las cifras de esta página son del contorno entero, cola incluida, y por eso su densidad queda por debajo de lo que describe la prensa.
 
-**Lo que falta.** Medir el polo antes y después de la ampliación. Es el que más puede cambiar de los polos que ya estaban publicados.
+**Próxima edición.** Medir el polo antes y después de la ampliación. Es el que más puede cambiar de los polos que ya estaban publicados.
 
 # R22 · Villa Pueyrredón
 
@@ -771,7 +775,7 @@ eso esta página no declara puerta cerrada en esa condición: se buscó por las 
 zonas y no hay. Y con una continuidad que va de 2,5 % a 31,3 % según la distancia con que se mida,
 cualquier afirmación sobre la continuidad de este polo tiene que decir a qué distancia.
 
-**Lo que falta.** Nada medible. Lo que hay es una decisión tomada y declarada.
+**Próxima edición.** Nada medible. Lo que hay es una decisión tomada y declarada.
 
 # Comuna 13
 
@@ -819,7 +823,7 @@ núcleo de Arribeños**, que la Ciudad no releva.
 Av. Cabildo y el enclave está sobre Arribeños. Y el inventario de 51 establecimientos es del
 enclave, no del polo: no se sume con los 343 ni se lea como el total de la zona.
 
-**Lo que falta.** **Sumar Pampa Café** (La Pampa 1117) **y Sucre** (Sucre 676) al inventario: son
+**Próxima edición.** **Sumar Pampa Café** (La Pampa 1117) **y Sucre** (Sucre 676) al inventario: son
 el residuo de Belgrano R, que se evaluó y no entra como zona autónoma, y su oferta le corresponde
 a esta página.
 
@@ -834,7 +838,7 @@ a esta página.
 **Por qué es un polo.** — y por qué hasta hace poco cumplía una condición más.
 
 - **Cantidad de locales** — sí. Es lo que la sostiene, con cobertura del 100 % de la zona.
-- **Avenida gastronómica** — sí: es ocho veces más larga que ancha, la forma más alargada de todo el atlas.
+- **Avenida gastronómica** — sí: es de las formas más alargadas del atlas: casi siete veces más larga que ancha.
 - **Establecimientos con historia** — pendiente, con un solo lugar histórico sin verificar.
 - **Mercados y galerías** — **dejó de cumplirse.** El Patio Costanera Norte es una centralidad
   planificada que fue puesta en su entorno y no lo organiza. El polo no se da de baja: se
@@ -859,47 +863,11 @@ contra dos lugares históricos vivos sin verificar.
 
 **Qué no se puede concluir de esta página.** Las cinco bajas están registradas con confianza media, sin fecha de
 cierre documentada para cuatro de ellas: la página afirma que la zona perdió, no cuándo. Y con 67
-locales repartidos sobre una figura ocho veces más larga que ancha, la densidad por hectárea de esta
+locales repartidos sobre una figura casi siete veces más larga que ancha, la densidad por hectárea de esta
 zona no es comparable con la de un núcleo: es una tira, no una mancha.
 
-**Lo que falta.** Una fecha para el Patio Costanera Norte, que hoy es lo único que impide darlo por
+**Próxima edición.** Una fecha para el Patio Costanera Norte, que hoy es lo único que impide darlo por
 verificado.
-
-# R19 · Federico Lacroze
-
-Comunas 13 y 15 · Colegiales y Chacarita — ya estaba en la versión anterior · corredor sobre una avenida
-**Se amplía.**
-
-**532 locales en 303,28 hectáreas** — el borde vigente, que ya alcanza el entorno de Fraga y Dorrego. El corte anterior, sobre la avenida sola, daba 185 locales en 89,49 hectáreas.
-
-**Dónde está.** Se amplía al entorno de Fraga, Dorrego, Charlone, Jorge Newbery y Plaza Los
-Andes. El perímetro nuevo tiene que contener al viejo, y esa contención se verifica midiendo
-superficie perdida, no con un predicado.
-
-**Por qué es un polo.**
-
-- **Cantidad de locales** — sí.
-- **Establecimientos con historia** — sí.
-- **Avenida gastronómica** — sí.
-- **Prensa y guías** — cinco fuentes independientes, la cifra más alta entre los polos que ya estaban publicados, y van nombradas: **The New York Times** (mayo de 2024), **Time Out** (junio de 2026), **La Nación** (abril de 2023 y junio de 2024), **Infobae** (agosto de 2023) y **Forbes Argentina**. Las dos primeras tratan la franja Chacarita–Colegiales como distrito gastronómico.
-
-> Y con el desajuste de eje más claro del conjunto, que es justamente lo que motiva la
-> ampliación: las cinco fuentes independientes hablan de **Fraga y Dorrego**, y el contorno mide **Av. Federico
-> Lacroze**. La evidencia y la geometría están describiendo calles distintas.
-
-**Los establecimientos.** **Bar Conde**, Av. Federico Lacroze 3193, **en funcionamiento desde 1902** y
-**primer Bar Notable de la Comuna 13**, alta del catálogo de 2026 — verificado abierto el
-29/07/2026, cinco días antes de su declaración.
-
-**Cómo le va al comercio alrededor.** La Ciudad releva dos ejes sobre Lacroze: **Chacarita** —Lacroze 3501-4199,
-91,8 % y 1,6 puntos menos— y **Colegiales** —Av. Cabildo 501-899 y Lacroze 2301-2899, 91,2 % y 0,4
-puntos menos—. El cruce oficial los atribuye a otras
-dos zonas y no a este polo, aunque los dos corren sobre su eje.
-
-**Qué no se puede concluir de esta página.** Las dos cifras miden objetos distintos y ninguna es un error: **303,28 hectáreas** es el borde vigente y **89,49** era el corte sobre la avenida sola. Lo que falta no es la medición sino la delimitación escrita: **el borde vigente todavía no está descripto en calles**, y hasta que lo esté no se lo compara con otros polos. Y el polo se pisa con Chacarita y con Colegiales sobre el mismo corredor: los tres conteos no se suman.
-
-**Lo que falta.** Medir el polo antes y después de la ampliación, y verificar que el
-contorno nuevo contenga al viejo sin perder superficie.
 
 # Comuna 14
 
@@ -972,17 +940,107 @@ locales contados dos veces, y una tercera queda a 6 metros de Villa Crespo sin t
 metros es menos que una vereda, y lo que hay ahí es un hueco que declarar, no una superposición
 que repartir.
 
-**Lo que falta.** **Verificar los cinco MICHELIN**, que no tienen fecha propia. El paño ya no
+**Próxima edición.** **Verificar los cinco MICHELIN**, que no tienen fecha propia. El paño ya no
 espera una firma: espera evidencia de que sea algo. Si aparece una fuente que lo trate como zona
 —con nombre o con calles—, se reabre; si no, se publica como resto y se termina.
 
 # Comuna 15
 
+# Chacagiales
+
+Comunas 13 y 15 · Chacarita, Colegiales y el eje de Federico Lacroze — ya estaba en la versión anterior · varias piezas
+*Reúne tres polos que esta edición publicaba por separado.*
+
+**891 locales en 495,82 hectáreas**, y es un solo objeto con **tres subzonas**.
+
+**Dónde está.** La franja continua que va de Chacarita a Colegiales sobre el eje de Av. Federico
+Lacroze, con el entorno de Fraga, Dorrego, Charlone y Jorge Newbery, y el corredor de Elcano,
+Álvarez Thomas y Forest. Sus tres subzonas:
+
+| subzona | ha | locales |
+|---|---:|---:|
+| **Federico Lacroze** | 303,28 | 532 |
+| **Colegiales** | 229,08 | 441 |
+| **Chacarita** | 94,81 | 202 |
+| **el sistema, que es lo único que se suma** | **495,82** | **891** |
+
+> **Las tres filas de arriba no se suman: sumarlas cuenta 284 locales de más.** Es el mismo problema
+> que Palermo y se resuelve igual — el total es la unión, las subzonas se publican por separado y
+> cada una dice cuánto mide. Las repeticiones caen sobre 279 locales distintos, cada uno adentro de al menos dos de las tres.
+
+**Por qué se publican juntas y no separadas.** Hasta esta edición eran tres páginas, y las tres se
+pisaban entre sí: Chacarita tenía el **63,7 % de su superficie adentro de Federico Lacroze**. Eso no
+es un solape entre vecinos: es una página casi entera adentro de otra. Y hay tres cosas medidas que
+lo cierran.
+
+- **La prensa las trata como una.** «Chacagiales» es la palabra que usan, y aparece en el ranking
+  gastronómico de 2026. Cinco fuentes independientes hablan de esta franja, no de tres barrios.
+- **La geometría también.** A ciento veinte metros, la cadena más larga de locales cercanos junta
+  **732 locales y toca las tres subzonas**. No hay tres manchas: hay una.
+- **Y la fusión no perdió nada.** La contención se verificó por superficie: **cero metros
+  cuadrados** afuera de la unión de las partes.
+
+**Por qué es un polo.**
+
+- **Cantidad de locales** y **establecimientos con historia** — se cumplen.
+- **Avenida gastronómica** — sí, y es la forma que define al conjunto.
+- **Mercados y galerías** — el **Mercado de Pulgas**, Sitio de Interés Cultural, en actividad.
+- **Cocina de colectividad** — por la rama de rubro especializado y no por una colectividad: sus
+  cervecerías y sus cafés de especialidad.
+- **Prensa y guías** — **cinco fuentes independientes**, y son las únicas del atlas nombradas una por una: **The New York Times** (mayo de 2024), **Time Out** (junio de 2026), **La Nación**
+  (abril de 2023 y junio de 2024), **Infobae** (agosto de 2023) y **Forbes Argentina**.
+
+> Con una advertencia de conteo que la página registra, porque es el mejor ejemplo de por qué este
+> atlas cuenta fuentes independientes y no notas: la nota del *Times* fue replicada por cinco medios
+> locales. **Es una sola fuente, no seis.**
+
+> Y con el desajuste de eje que motivó la ampliación, que la fusión resuelve por su cuenta: las
+> cinco fuentes hablan de **Fraga y Dorrego** y el contorno viejo medía **Av. Federico Lacroze**. La
+> evidencia y la geometría describían calles distintas. Unidas, describen la misma.
+
+**Reconocimiento oficial.** El **Mercado de Pulgas**, Sitio de Interés Cultural por la Legislatura.
+
+**Los establecimientos.** **Bar Conde**, Av. Federico Lacroze 3193, **en funcionamiento desde 1902**
+y **primer Bar Notable de la Comuna 13** — alta del catálogo de 2026, verificado abierto el
+29/07/2026, cinco días antes de su propia declaración. **Anchoíta** y **Albamonte Ristorante**. Y el
+**Mercado de Pulgas**, Gral. Enrique Martínez 50: de martes a domingo de 11 a 19, 160 puestos
+interiores y 7 locales a la calle, con bar propio.
+
+Y **Café Palacio**, Av. Federico Lacroze 3901, que hoy figura en el catálogo oficial como Museo
+Fotográfico Simik: cambió de denominación en la misma dirección, y el consolidado de 2026 lo
+registra con el nombre nuevo.
+
+> Es el caso que muestra por qué el registro de establecimientos con historia guarda dirección
+> además de nombre. Buscado por nombre, Café Palacio hoy no existe. Buscado por dirección, está.
+
+**Cómo le va al comercio alrededor.** La Ciudad releva dos ejes adentro de este polo y los dos son
+suyos: **Chacarita** —Lacroze 3501-4199, 91,8 % de ocupación y 1,6 puntos menos, exactamente lo que
+perdió el conjunto— y **Colegiales** —Av. Cabildo 501-899 y Lacroze 2301-2899, 91,2 % y sólo 0,4
+puntos menos—. De los veintiún ejes que este atlas reconoce como suyos, sólo Caballito cayó menos.
+
+> El cruce oficial atribuía esos dos ejes a dos zonas distintas, y los dos corren sobre el mismo
+> corredor. Fundidas las tres páginas, el cruce deja de estar mal: los dos ejes son de este polo.
+
+**Qué no se puede concluir de esta página.** El borde no está descripto en calles, y hasta que lo
+esté las cifras no se comparan con las de otros polos. La subzona de Colegiales usa el polígono
+administrativo del barrio —hectárea más hectárea menos— así que es un techo y no la medida de esa
+pieza. Y quedan cuatro solapes con vecinos, todos declarados: **Palermo** —33,15 hectáreas y 111
+locales—, **Villa Ortúzar** —15,93 y 25—, **Villa Crespo** —5,07 hectáreas, sin locales adentro— y **La Paternal** —6,10 hectáreas y 5 locales—.
+
+Y el relevamiento de cervecerías que sostiene una de sus condiciones es de 2017: nueve años, y
+ninguno de los seis locales está confirmado.
+
+**Próxima edición.** **El perímetro escrito**, que es lo único que le queda. Y hay una medición que ya
+lo acota por el lado de Colegiales: de las cuatro calles candidatas para cerrarlo, sólo dos tienen
+tramo verificable entre las avenidas propuestas como borde —Zabala con 254 metros y Virrey Avilés
+con 344—, porque las dos avenidas se encuentran: la franja que encierran es una cuña que se cierra,
+no una banda. Son tres cuadras, no las diez que sugiere leer la lista de calles de corrido.
+
 # R08 · Villa Crespo
 
 **Comuna 15 · Villa Crespo** — ya estaba en la versión anterior · núcleo compacto
 
-823 locales en 335,46 hectáreas.
+**809 locales en 327,40 hectáreas**, ya repartido con La Paternal. Antes publicaba 823 en 335,46.
 
 **Dónde está.** Perímetro vigente, sobre los ejes de **Loyola, Thames y Aguirre**.
 
@@ -996,7 +1054,7 @@ espera una firma: espera evidencia de que sea algo. Si aparece una fuente que lo
 **Los establecimientos.** **Café San Bernardo**, Av. Corrientes 5436, Bar Notable y el único de la zona —
 **verificado abierto el 08/06/2026**, con reporteo a nivel establecimiento que lo describe operando
 y cita a su dueña. **Alcanfor** (Aguirre 949) y **Horta** (Aguirre 1080), recomendados por MICHELIN,
-más Julia, Trescha, Fico y Han, **sin verificación individual**.
+más **Julia** —verificada en actividad en junio de 2026—, **Trescha** —marzo de 2026, en su tercer aniversario—, **Fico** —marzo de 2026— y **Han** —enero de 2026—. **Los cinco recomendados MICHELIN de esta zona tienen ahora fecha propia**, que es lo que la página pedía.
 
 > Una precisión que vale para todo el atlas: los recomendados MICHELIN cuentan como trayectoria
 > e instituciones, no como prensa y guías. MICHELIN distingue restaurantes, no barrios.
@@ -1016,56 +1074,16 @@ los 48 ejes relevados**, cuando el conjunto perdió 1,6.
 **Qué no se puede concluir de esta página.** El eje que releva la Ciudad son tres calles y el contorno es el barrio entero, así
 que el −9,1 describe el corazón del polo y no su superficie completa. Y **el polo se solapa
 49,7 hectáreas con La Paternal** sobre el contacto entre los dos barrios: los conteos no se suman.
-Está medido que no toca Palermo: está a 6 metros y no se superponen.
+**Se superpone con Palermo en 12,55 hectáreas y 77 locales**, que es el segundo solape del atlas en cantidad de locales: los dos conteos no se suman.
 
-**Lo que falta.** Resolver el solape con La Paternal. El único Notable de la zona ya está
-verificado con fecha propia.
-
-# R09 · Chacarita
-
-**Comuna 15 · Chacarita** — ya estaba en la versión anterior · varias piezas
-
-202 locales en 94,81 hectáreas.
-
-**Dónde está.** Perímetro vigente. **Se pisa con Colegiales** a través del corredor de Elcano,
-Álvarez Thomas, Forest y Jorge Newbery, y el trazado conjunto está en revisión.
-
-**Por qué es un polo.**
-
-- **Cantidad de locales** — sí.
-- **Establecimientos con historia** — sí.
-- **Prensa y guías** — tres fuentes distintas, y es una de las mejores evidencias de esta condición en el atlas. **The New York Times** le dedicó una nota al barrio como destino en 2024; La
-  Nación publicó reporteo propio el mismo año; y el ranking de Time Out de 2026 nombra el eje
-  Chacarita–Colegiales.
-
-> Con una advertencia de conteo que la página registra: la nota del Times fue replicada por
-> Infobae, La Nación sociedad, Perfil, Diario Con Vos y Cucinare. **Es una sola fuente, no cinco.** Las
-> réplicas no multiplican la evidencia, y este atlas cuenta fuentes independientes.
-
-**Los establecimientos.** **Anchoíta** y **Albamonte Ristorante**. Y **Café Palacio**, Av. Federico
-Lacroze 3901, que hoy figura en el catálogo oficial como Museo Fotográfico Simik: cambió de
-denominación en la misma dirección, y el consolidado de 2026 lo registra con el nombre nuevo.
-
-> Es el caso que muestra por qué el registro de establecimientos con historia guarda dirección además de nombre. Buscado
-> por nombre, Café Palacio hoy no existe. Buscado por dirección, está.
-
-**Cómo le va al comercio alrededor.** El eje **Chacarita** —Lacroze 3501-4199— tiene **91,8 % de ocupación y
-perdió 1,6 puntos**, exactamente lo que perdió el conjunto.
-
-**Qué no se puede concluir de esta página.** El corredor conjunto con Colegiales está medido a escala de barrio, que
-es un techo declarado y no un perímetro, y por eso esta página no publica cifra del sistema
-Chacarita–Colegiales. Y hay 8,09 hectáreas y 7 locales que están simultáneamente en este corredor
-y en el sistema de Palermo: es doble conteo real, es chico y está declarado.
-
-**Lo que falta.** Resolver el solapamiento con Colegiales y con Villa Ortúzar —La Mezzetta está
-justo en el borde— y repartir esas 8,09 hectáreas.
+**Próxima edición.** Resolver el solape con La Paternal. Los establecimientos ya están todos verificados con fecha propia: es de las zonas mejor cubiertas del atlas.
 
 # R21 · La Paternal
 
 **Comuna 15 · La Paternal** — ya estaba en la versión anterior · varias piezas
 **Se amplía.**
 
-**307 locales en 385,34 hectáreas** — el borde vigente, ya extendido hacia Belaustegui y Terrero. El corte anterior daba 208 locales en 321,01 hectáreas.
+**230 locales en 343,71 hectáreas**, ya repartido con Villa Crespo. El borde vigente llega hasta Belaustegui y Terrero; antes del reparto publicaba 307 locales en 385,34 hectáreas, y el corte anterior a la ampliación daba 208 en 321,01.
 
 **Dónde está.** Se amplía hacia Belaustegui, Remedios de Escalada de San Martín, Paz Soldán,
 Rojas, Ávalos, Espinosa y Terrero, hasta el límite con Villa Crespo.
@@ -1081,7 +1099,7 @@ Rojas, Ávalos, Espinosa y Terrero, hasta el límite con Villa Crespo.
 > por **Av. San Martín y Av. Warnes**, y ni La Nación ni Time Out mencionan esas avenidas. La
 > evidencia recae sobre el interior del barrio.
 
-**Los establecimientos.** **MN Santa Inés**, sin verificación individual.
+**Los establecimientos.** **MN Santa Inés**, Ávalos 360 — **verificada en actividad el 28/04/2026** por una reseña fechada que la nombra con su altura exacta.
 
 **Cómo le va al comercio alrededor.** La Ciudad releva dos ejes del entorno: **Warnes** —Dorrego 1-299 y Warnes
 701-1599— con 82,5 % de ocupación y 6,8 puntos menos, la tercera mayor caída de los 48 —sin empate:
@@ -1090,16 +1108,19 @@ más**, que es de las mayores subas. Los
 dos ejes que la tabla usa para definir la zona se mueven en direcciones opuestas, y ninguno de
 los dos es donde la prensa ubica el circuito.
 
-**Qué no se puede concluir de esta página.** Las dos cifras miden objetos distintos: **385,34 hectáreas** es el borde vigente y **321,01** era el corte anterior. Lo que falta no es la medición sino la delimitación escrita en calles del borde vigente. El polo **se solapa 49,7 hectáreas con Villa Crespo**. Y su forma es de sucesión de centralidades: una densidad promedio sobre 385 hectáreas no describe ninguno de sus núcleos.
+**Qué no se puede concluir de esta página.** Las cifras de esta página son del borde ya repartido —**343,71 hectáreas**—; antes del reparto medía 385,34 y el corte anterior a la ampliación, 321,01. Lo que falta no es la medición sino la delimitación escrita en calles. **Ya no se solapa con Villa Crespo**: el reparto por el eje de Warnes dejó cada flanco de un solo lado, y las dos páginas cuentan cosas distintas. Y su forma es de sucesión de centralidades: una densidad promedio sobre trescientas cuarenta hectáreas no describe ninguno de sus núcleos.
 
-**Lo que falta.** Medir el polo antes y después de la ampliación, y verificar MN Santa
-Inés.
+**Próxima edición.** Medir el polo antes y después de la ampliación. Su único establecimiento con reconocimiento ya está verificado con fecha propia, y el solape con Villa Crespo quedó repartido.
 
-# Lo que sale de escribir las veintiuna
+> **Y el reparto con Villa Crespo se resolvió al revés de como se había pensado, con un motivo medido.** La primera lectura decía cortar por Av. Warnes y darle a esta página lo que quedara de su lado. Warnes no sirve para eso: **no separa Villa Crespo de La Paternal** —los dos barrios comparten 127,9 metros de borde y sólo 5 corren sobre esa avenida— y lo que Warnes sí separa es La Paternal de Chacarita.
+>
+> Medido el solape flanco por flanco, la franja grande —41,63 hectáreas y 77 locales— quedaba de este lado, y **el 69 % de esa franja está adentro del barrio Villa Crespo.** Una página llamada La Paternal que cuenta manzanas de Villa Crespo describe mal lo que dice su título, así que la franja se le atribuyó a Villa Crespo y esta página se quedó con la chica. **El contorno no se movió: lo que cambió es quién cuenta qué**, y por eso acá bajan los locales sin que cierre un solo local.
+
+# Lo que sale de escribir las veinte
 
 Uno · la verificación individual dejó de ser el cuello de botella. De los 21 polos
 publicadas, Puerto Madero pasó de cero verificaciones a cuatro, Recoleta a cinco, Av. Corrientes a
-tres, y Villa Crespo y Boulevard Caseros cerraron su único lugar histórico. De las 41 páginas del atlas
+tres, y Villa Crespo y Boulevard Caseros cerraron su único lugar histórico. De las 39 páginas del atlas
 queda una sola donde los lugares históricos no cerraron después de buscarlos: Costanera Norte.
 
 > Y buscándolos aparecieron los límites del método, que valen más que el resultado.

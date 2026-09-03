@@ -25,14 +25,14 @@ a cambiar. Lo que sí tienen todas es lo que las hace entrar, y eso está verifi
 Comuna 1 · Retiro, con derrame a San Nicolás — nuevo en esta edición · varias piezas
 *Absorbe el polo publicado del entorno de Retiro.*
 
-**318 locales en 48,39 hectáreas** — cifra heredada del polo absorbido, que es el único contorno dibujado que tiene esta zona. Las cifras del barrio entero van más abajo y se declaran como tales.
+**318 locales en 48,39 hectáreas** — cifra heredada del polo absorbido, que es el único contorno dibujado que tiene esta zona. Las del barrio van más abajo, ya descontado lo que cuenta la página del Centro y Microcentro, y se declaran como tales.
 
 **Dónde está.** Tres piezas: el **núcleo institucional** de Plaza San Martín y Florida; el
 **corredor Arroyo**, de Juncal y Esmeralda a Plaza Carlos Pellegrini; y un **núcleo coreano y
 asiático** sobre Maipú, Esmeralda, Paraguay y M. T. de Alvear, alturas 800 a 990, entre Plaza San
 Martín y Av. Córdoba.
 
-> Por qué absorbe al polo anterior en vez de convivir con ella. El núcleo coreano cae
+> Por qué absorbe al polo anterior en vez de convivir con él. El núcleo coreano cae
 > exactamente sobre el punto que el polo anterior marcaba —Esmeralda y Paraguay— y ese
 > contorno era cuatro veces más grande que el núcleo. Delimitar por el núcleo describe
 > el objeto; delimitar por el polo anterior describía un cuadrante.
@@ -47,7 +47,7 @@ Martín y Av. Córdoba.
   **cerró en abril de 2025**.
 
 **Los establecimientos.** Cuatro Bares Notables en seis cuadras: Bárbaro (Tres Sargentos 415) y
-Confitería Saint Moritz (Esmeralda 894), los dos probablemente abiertos · **Florida Garden**
+Confitería Saint Moritz (Esmeralda 894) — **Bárbaro verificado abierto el 25/05/2026**, la Saint Moritz todavía probablemente abierta · **Florida Garden**
 (Florida 899), **verificado abierto el 07/08/2026** · y **Plaza Bar** (Florida 1005), **cerrado
 desde el 29/04/2017**. Más **Tancat (Paraguay 645), Restaurante Icónico, verificado abierto el
 07/08/2026**, Florería Atlántico (Arroyo 872), el Centro Cultural Coreano (Maipú 972) y seis
@@ -64,11 +64,11 @@ actualizada a septiembre de 2025 seguía recomendando dos restaurantes adentro.
 **Cómo le va al comercio alrededor.** El eje **Florida**, del 1 al 999, tiene **86,8 % de ocupación y perdió 3,2
 puntos**. Plaza Bar está en Florida 1005: queda seis números afuera del eje comercial relevado.
 
-**Qué no se puede concluir de esta página.** Esta página publica dos pares de cifras y ninguno es el de la zona: **318 locales en 48,39 hectáreas** son del polo absorbido, y **597 en 451,52** son del barrio de Retiro entero. La zona nueva es más chica que el barrio y de otra forma que el polo viejo, y hasta que se dibuje su borde no tiene cifra propia. Y Bárbaro tiene una contradicción de horario que es en sí una señal:
+**Qué no se puede concluir de esta página.** Esta página publica dos pares de cifras y ninguno es el de la zona: **318 locales en 48,39 hectáreas** son del polo absorbido, y **346 en 404,79** son del barrio de Retiro **menos las 52,16 hectáreas y los 301 locales que se le atribuyeron al Centro y Microcentro**, porque esta zona no tiene borde con el cual reclamarlos. La zona nueva es más chica que el barrio y de otra forma que el polo viejo, y hasta que se dibuje su borde no tiene cifra propia. Y Bárbaro tiene una contradicción de horario que es en sí una señal:
 una fuente le da lunes a sábado y su página estructurada un horario mucho más reducido — es el mismo
 patrón de retracción previa al cierre que se ve en otra zona de este atlas.
 
-**Lo que falta.** **Verificar Bárbaro y la Confitería Saint Moritz**, los dos que quedan como probablemente abiertos, que es donde más rinde: cada uno sostiene tres
+**Próxima edición.** **El borde.** De las tres piezas, dos ya se pueden cerrar con las calles que esta página nombra: el **recorte cerrable** del núcleo coreano y asiático —el que se dibuja usando sólo las calles que esta página escribe— mide **1,96 hectáreas y 21 locales** y cierra sin agregar ninguna y el **corredor Arroyo**, **9,57 hectáreas y 23 locales**, con una libertad declarada: la página termina en Plaza Carlos Pellegrini y el cierre usa la calle. El núcleo institucional todavía no cierra. Y **verificar la Confitería Saint Moritz**, que es la que queda como probablemente abierta. **Bárbaro quedó verificado el 25/05/2026**, en una nota sobre los pasajes de la Ciudad que lo nombra en el Tres Sargentos. Cada uno sostiene tres
 filas del relevamiento.
 
 # Monserrat y Congreso
@@ -120,13 +120,13 @@ a 2026 se visita con guía. **No se carga como oferta.**
 **Cómo le va al comercio alrededor.** El eje **Monserrat** —Av. Belgrano 1101-1799— tiene **88,5 % de ocupación y
 perdió 1,4 puntos**, con **9,93 locales por frente de manzana**: es de los ejes menos densos del Centro.
 
-**Qué no se puede concluir de esta página.** El perímetro se pisa con el polo del Centro y el reparto está sin
+**Qué no se puede concluir de esta página.** El perímetro se pisaba con el polo del Centro y el reparto ya está
 decidir: los Notables de Av. de Mayo están contados en las dos y no se suman. Y hay una
 discrepancia de atribución sin resolver: el catálogo asigna Bar Seddon a Monserrat y el organismo
 de patrimonio a San Telmo. Medido contra el mapa oficial de barrios, el punto cae en Monserrat, a
 0 metros, y a 8 de San Telmo — pero la fuente sigue diciendo lo otro.
 
-**Lo que falta.** Repartir el solapamiento con el polo del Centro. Es lo único que la
+**Próxima edición.** Nada de delimitación: **el eje de Av. de Mayo quedó atribuido a esta página** —8,68 hectáreas y 76 locales que el polo del Centro también contaba—, y con él sus Bares Notables. Es el reparto más asimétrico del atlas: son dos tercios de Monserrat y menos del 5 % del Centro. Lo único que la
 bloquea.
 
 # Comuna 3
@@ -187,7 +187,7 @@ Y el contorno que declara la entidad comunitaria es notablemente más grande que
 puertas. El enclave se delimita por dónde están los establecimientos, no por dónde dice la
 institución que llega el barrio.
 
-**Lo que falta.** **Documentar la densidad actual**, que es lo que define el perímetro. Y resolver
+**Próxima edición.** **Documentar la densidad actual**, que es lo que define el perímetro. Y resolver
 el Mercado Spinetto, que quedó **pendiente y no descartado**: dos intentos de consulta fallaron.
 
 # San Cristóbal
@@ -214,7 +214,7 @@ Av. Independencia 2400, de 1915, **verificado abierto**.
 
 El dato que decide, y ya está medido. Sobre los dos ejes candidatos: Av. San Juan 1900-2100 tiene
 32 locales en 357 metros —9,0 cada 100 metros— y Av. Independencia 2300-2500 tiene 22 en 319 metros
-—6,9 cada 100—. Juntos son 54 locales en 13,7 hectáreas, o sea 3,95 por hectárea, con la oferta
+—6,9 cada 100—. Juntos son 54 locales en 13,7 hectáreas, o sea 3,94 por hectárea, con la oferta
 apoyada sobre las dos avenidas y no repartida: la continuidad la sostiene.
 
 **Cómo le va al comercio alrededor.** Los dos ejes candidatos caen sobre tramos que la Ciudad releva por separado, así que el dato se publica cuando se decida cuál es el borde.
@@ -224,7 +224,7 @@ alcanza; no dice que los dos ejes sean un solo objeto, que es justamente lo que 
 polo con dos núcleos a seis cuadras puede ser una sucesión de centralidades o pueden ser dos
 cosas, y eso lo decide el trazado, no el conteo.
 
-**Lo que falta.** Contar los locales de cada uno de los dos tramos, para decidir si se publican
+**Próxima edición.** Contar los locales de cada uno de los dos tramos, para decidir si se publican
 juntos o separados.
 
 # Comuna 4
@@ -265,7 +265,7 @@ presupuesto y plazo de obra, dentro del programa de transformación de barrios.
 - **Prensa y guías** — sí, por documentación: prensa nacional y el sitio oficial de
   turismo lo tratan como circuito.
 - **Mercados y galerías** — no. El mercado más cercano está a 1.515 metros.
-- **Cocina de colectividad** — no. Ninguno de los quince territorios de colectividad delimitados en este atlas está a menos de seis kilómetros.
+- **Cocina de colectividad** — no. Ninguno de los quince territorios de colectividad que este atlas delimita cae adentro de este contorno ni sobre la avenida que lo define.
 
 **Los establecimientos.** **Los Campeones**, Av. Montes de Oca 856, y **El Progreso**, Av. Montes de Oca 1700, Bar Notable — los dos lugares históricos del barrio que caen adentro del contorno. Es **pizzería**, no bar ni bodegón: Pizzería Emblemática por
 APyCE y el Ministerio de Desarrollo Económico, incorporada al catálogo a fines de mayo de 2026. Fundada en 1954 por
@@ -312,7 +312,7 @@ La continuidad del corredor sí se midió, y matiza la palabra. Del 280 al 1702,
 > y no el recorte de 761 metros con que se lo midió la primera vez.
 
 
-**Lo que falta.** Verificar El Puentecito con una constatación en el lugar, y resolver la discrepancia de dirección de El Puentecito entre Vieytes 1895 y Luján 2101.
+**Próxima edición.** Verificar El Puentecito con una constatación en el lugar, y resolver la discrepancia de dirección de El Puentecito entre Vieytes 1895 y Luján 2101.
 # Nueva Pompeya y Parque Patricios
 
 Comuna 4 · Nueva Pompeya y Parque Patricios — nuevo en esta edición · varias piezas
@@ -363,7 +363,7 @@ el listado de lugares históricos, así que la página lo nombra y no lo tiene c
 el mismo defecto que hizo caer la condición de mercados y galerías de otra zona de este atlas, con una diferencia:
 acá el objeto **sí está nombrado**. Hasta que se cargue, esa condición se sostiene sobre una mención.
 
-**Lo que falta.** Registrar el Mercado de Pompeya con dirección, y **capturar el horario
+**Próxima edición.** Registrar el Mercado de Pompeya con dirección, y **capturar el horario
 actual de El Buzón**, que es lo que convierte una señal en un dato.
 
 # Comuna 5
@@ -376,7 +376,11 @@ Comuna 5 · Almagro, excluido el sector del Abasto — nuevo en esta edición ·
 entre el 3500 y el 4200**, y el **nodo de Rivadavia y Medrano**. En Guardia Vieja hay cuatro
 locales en tres cuadras, dos de ellos enfrentados en la misma esquina — el 3601 y el 3602.
 
-**Borde cerrado en esta edición: 60,90 hectáreas y 207 locales.** Cierran las tres piezas: Guardia Vieja 3600-3900, Av. Corrientes 3500-4200 y Av. Rivadavia 3401-4099. Se pisa con el Abasto en 18,09 hectáreas y 65 locales, y eso no se suma dos veces.
+**Borde cerrado en esta edición: 37,42 hectáreas y 114 locales**, ya repartido con el Abasto. Cierran las tres piezas: Guardia Vieja 3600-3900, Av. Corrientes 3500-4200 y Av. Rivadavia 3401-4099.
+
+> **Es la página que más se movió con el reparto, y conviene decirlo con el número.** El corredor de Av. Corrientes que las dos páginas se disputaban se cortó en **Av. Medrano**: lo que queda al este es del Abasto y lo que queda al oeste es de Almagro. Almagro cedió **93 de sus 207 locales** y se quedó con 114. No es que tenga menos gastronomía que ayer: es que noventa y tres de esos locales ya los contaba el Abasto, y ahora se cuentan una sola vez.
+>
+> Y una precisión de callejero, porque es fácil suponer lo contrario: **Medrano no separa un barrio de otro.** En el tramo que cruza este corredor, el nomenclador pone Almagro sobre las dos aceras. Se usa como línea de corte porque es la transversal que mejor parte el corredor, no porque sea un límite administrativo.
 
 **Por qué es un polo.** — cumple cinco de las seis condiciones.
 
@@ -399,7 +403,7 @@ locales en tres cuadras, dos de ellos enfrentados en la misma esquina — el 360
 **Los establecimientos.** Los cinco Notables, los cinco verificados abiertos esta semana: **El Banderín**
 (Guardia Vieja 3601, de 1923 — 16/06/2026) · **El Boliche de Roberto** (Bulnes 331, origen 1893 —
 07/08/2026) · **El Símbolo** (Av. Corrientes 3787, de 1954 — 07/08/2026) · **La Orquídea**
-(Av. Corrientes 4101, alta del catálogo de 2026) · **Las Violetas** (Av. Rivadavia 3899 —
+(Av. Corrientes 4101, alta del catálogo de 2026 — **verificada en actividad el 13/02/2026** por una actividad oficial fechada) · **Las Violetas** (Av. Rivadavia 3899 —
 07/07/2026).
 
 **Cómo le va al comercio alrededor.** El eje **Almagro** —Av. Rivadavia 3401-4099— tiene **94,5 % de ocupación y
@@ -413,8 +417,7 @@ un bar notable?» no mide la trayectoria de Almagro, mide si el trazado automát
 bar.
 
 > Y el solape con el Abasto es grande, y hay que decirlo con números. El corredor de Av. Corrientes
-> 3500–4200 que esta página nombra mide 25,79 hectáreas y 89 locales, y comparte con el Abasto
-> 18,09 hectáreas y 65 locales: el 70,2 % de su superficie y el 73 % de sus locales.
+> 3500–4200 que esta página nombra mide 25,79 hectáreas y 89 locales, y compartía con el Abasto 18,09 hectáreas y 65 locales antes del reparto: el 70,1 % de su superficie y el 73 % de sus locales.
 >
 > La contradicción está adentro de la página. Declara la zona como «Almagro, excluido el sector
 > del Abasto» y a la vez le da como corredor un tramo de Corrientes que está siete décimos adentro
@@ -422,12 +425,9 @@ bar.
 > eran los establecimientos, era el tramo.
 >
 > Publicar 25,79 hectáreas y 89 locales como cifra de ese tramo contaría dos veces la mayor parte.
-> Por eso **ese tramo no se publica por separado** —las cifras de arriba son las del polo entero— y el
-> reparto Almagro / Abasto queda como decisión de delimitación abierta.
+> Por eso **ese tramo no se publica por separado** —las cifras de arriba son las del polo entero— y el reparto Almagro / Abasto quedó resuelto en Av. Medrano.
 
-**Lo que falta.** **Resolver el reparto con el Abasto** —hasta dónde llega el corredor de Corrientes
-que es de Almagro— y verificar los establecimientos nuevos, sin verificación posterior a diciembre
-de 2025.
+**Próxima edición.** Verificar los establecimientos nuevos, sin verificación posterior a diciembre de 2025. **El reparto con el Abasto quedó resuelto en Av. Medrano.**
 
 # Comuna 7
 
@@ -469,7 +469,7 @@ proporción lo es. Cruzar los locales gastronómicos de la base contra el total 
 la Ciudad sobre el mismo tramo da la respuesta sin salir a la calle, y es lo que hay que hacer antes
 de publicar cualquier afirmación sobre este corredor.
 
-**Lo que falta.** **Redelimitar**, empezando por decidir si La Farmacia entra o si el contorno se
+**Próxima edición.** **Redelimitar**, empezando por decidir si La Farmacia entra o si el contorno se
 corre ocho cuadras al sur.
 
 # Flores · Avellaneda y Pasaje Ruperto Godoy
@@ -538,7 +538,7 @@ Flores, Cuenca 954 es Villa Santa Rita, Campana 685 es Floresta—. Se delimita 
 concentración, no por el límite administrativo, y va a la edición como caso de prueba de
 la definición.
 
-**Lo que falta.** **Verificar la vigencia de los once.** Es la zona donde más rinde.
+**Próxima edición.** **Verificar la vigencia de los once.** Es la zona donde más rinde.
 
 # Baek-ku · Barrio Coreano
 
@@ -578,7 +578,7 @@ prensa nacional y extranjera tratándolo como destino, y ni un solo establecimie
 se pueda verificar individualmente. Todo lo que esta página afirma es de nivel zona; nada es de
 nivel establecimiento.
 
-**Lo que falta.** Conseguir establecimientos con número de calle. Sin eso, la zona está
+**Próxima edición.** Conseguir establecimientos con número de calle. Sin eso, la zona está
 descripta y no está relevada.
 
 # Comuna 9
@@ -628,7 +628,7 @@ siguen siendo de 2016. La zona está bien delimitada y su capa de establecimient
 hay un hecho que nadie midió y que la página declara: el Plan de Puesta en Valor de 2018 desalojó
 vendedores ambulantes, y su saldo sobre la oferta del enclave no está medido por ninguna fuente.
 
-**Lo que falta.** Relevar la oferta a nivel establecimiento con la profundidad del Barrio Chino,
+**Próxima edición.** Relevar la oferta a nivel establecimiento con la profundidad del Barrio Chino,
 donde hay 51 locales con dirección. Acá hay seis, y es casi seguro que la zona tiene más.
 
 # Mataderos
@@ -664,13 +664,12 @@ para que nadie lo tome por definitivo.
 
 **Los establecimientos.** **Bar Oviedo** (Av. Lisandro de la Torre 2407), Bar Notable, probablemente
 abierto al 22/04/2026 · **Bar del Glorias** (Andalgalá 1982), probablemente abierto al 06/04/2026 ·
-**9 de Julio** (Larrazábal 1276), **dudoso** · **El Cedrón** (Av. Juan B. Alberdi 6101, de 1935),
-**dudoso**.
+**9 de Julio** (Larrazábal 1276), **dudoso** · **El Cedrón** (Av. Juan B. Alberdi 6101, de 1935) — **verificado en actividad el 28/05/2026**, cuando una selección de pizzerías de barrio lo nombró con su dirección.
 
-> Tres de los cuatro sin resolver, y los motivos son distintos. El 9 de Julio **ya cerró una vez**
+> Dos de los cuatro siguen sin resolver, y por motivos distintos. El 9 de Julio **ya cerró una vez**
 > —el 06/08/2019, por tarifas y alquiler— y reabrió en 2021 con nuevos dueños: su historia obliga a
-> verificar antes de afirmar. El Cedrón tiene la página desactualizada y su propia reseña lo dice:
-> el teléfono no corresponde a la pizzería.
+> verificar antes de afirmar, y la búsqueda documental de esta edición no encontró nada nuevo. Los
+> dos bares quedaron con la fecha de abril de 2026 y sin pieza posterior.
 
 Hay una verificación de actividad reciente y de fuente nacional: la **Feria cumplió 40
 años en 2026** y la prensa nacional lo cubrió el 12/06/2026.
@@ -686,7 +685,7 @@ la primera pieza y no las dos, y por eso se publica aparte, como objeto distinto
 de **Av. Alberdi 5501-6299 —24,27 hectáreas y 55 locales—**, que es lo que la Ciudad releva y no es
 el polo de la Feria. Los dos objetos no comparten ni una hectárea, y el eje contiene uno de los cuatro establecimientos que la página nombra.
 
-**Lo que falta.** **Resolver los tres lugares históricos.** Hay caminos cortos: dos de ellos tienen cuenta propia
+**Próxima edición.** **Resolver los tres lugares históricos.** Hay caminos cortos: dos de ellos tienen cuenta propia
 verificable.
 
 # Parque Avellaneda
@@ -700,7 +699,7 @@ verificable.
 **Por qué es un polo.** — cumple cinco condiciones. Cantidad de locales · establecimientos con historia ·
 cocina de colectividad · corredor sobre una avenida · y **prensa y guías** con dos fuentes independientes: **Time Out** le dedica una guía de barrio por sus bodegones históricos sobre Olivera y Lacarra, y la segunda es la cobertura sostenida del enclave coreano de Carabobo.
 
-> Y esa segunda conviene decirla con la salvedad al lado, porque el enclave coreano tiene página propia > en este atlas. Contada acá y contada allá es la misma cobertura, no dos. Si se le exige a esta página > que su prensa hable de Parque Avellaneda y no de Carabobo, queda una sola fuente y la condición no se > cumple. Se publica con las dos y con la salvedad escrita.
+> Y esa segunda conviene decirla con la salvedad al lado, porque el enclave coreano tiene página propia en este atlas. Contada acá y contada allá es la misma cobertura, no dos. Si se le exige a esta página que su prensa hable de Parque Avellaneda y no de Carabobo, queda una sola fuente y la condición no se cumple. Se publica con las dos y con la salvedad escrita.
 
 **Los establecimientos.** Tres, y ninguno figura en un catálogo patrimonial. Los tres aparecen
 nombrados con dirección en una guía de barrio de 2025: **De Flores Café** (Lacarra 1500) y **Viejo
@@ -721,7 +720,7 @@ en tres bodegones que ningún catálogo patrimonial registra: su antigüedad la 
 un registro. Y la forma —un anillo alrededor de un parque— hace que la densidad por hectárea sea
 engañosa: buena parte de la superficie encerrada es el parque, donde no hay locales.
 
-**Lo que falta.** **Resolver el conflicto de La Barra del Parque.** Con la ocupación comercial más
+**Próxima edición.** **Resolver el conflicto de La Barra del Parque.** Con la ocupación comercial más
 baja de la Ciudad alrededor, es la zona donde el riesgo de publicar un local cerrado es más alto.
 
 # Comuna 10
@@ -754,7 +753,7 @@ Barboni, **declarada patrimonio histórico**, verificada abierta. Y **Sinko**, A
 no la mide. Lo que se puede afirmar es que hay dos establecimientos con anclaje y que la zona
 apareció en el relevamiento; no cuánta oferta tiene.
 
-**Lo que falta.** **Delimitar**, y con eso decidir si entra por derecho propio o queda como borde de
+**Próxima edición.** **Delimitar**, y con eso decidir si entra por derecho propio o queda como borde de
 la zona vecina.
 
 # Monte Castro
@@ -780,7 +779,7 @@ organismo de patrimonio, más **Pizzería Emblemática** por APyCE desde el 26/0
 desde 1950 — **verificado abierto el 07/08/2026**. **Casa Madrilia**, Av. Álvarez Jonte 4702,
 verificado abierto.
 
-> Y acá hay una corrección de atribución que le da a esta zona su segundo Notable. El catálogo
+> Y acá hay una corrección de atribución que le saca a esta zona el Bar Notable que se le atribuía. El catálogo
 > oficial asienta el Café Olimpo en Villa Luro. **El callejero reparte la calle Irigoyen por
 > altura**: Villa Luro termina en el 1299 y el tramo 1301-1799 impar es Monte Castro. Consultado el
 > servicio oficial de geolocalización sobre el punto exacto: **Monte Castro, Comuna 10.** **La
@@ -801,7 +800,7 @@ zona está mejorando su posición y no cerrándola. Y hay un dato con problemas,
 figura con dos direcciones, Bahía Blanca 2300 en 2016 y Arregui 4000 hoy. O se mudó, o una está
 mal**, y no se carga hasta saberlo.
 
-**Lo que falta.** Verificar la continuidad sobre el tramo. Con eso pasa a entrar sin dificultad.
+**Próxima edición.** Verificar la continuidad sobre el tramo. Con eso pasa a entrar sin dificultad.
 
 # Villa Luro
 
@@ -849,7 +848,7 @@ confirmar es mucho tiempo. Lo que sí quedó resuelto es una duda que esta pági
 Fuego figuraba en 2023 como «próximo a abrir» y no había confirmación de que hubiera abierto —
 ahora la hay.
 
-**Lo que falta.** **Reverificar los tres que quedaron en 2023.** Es la zona donde la evidencia
+**Próxima edición.** **Reverificar los tres que quedaron en 2023.** Es la zona donde la evidencia
 envejece más rápido.
 
 # Comuna 11
@@ -877,10 +876,9 @@ Jonte 3550 esquina Pasaje Tokio, **abierto el 23/04/1930**, Bar Notable y Sitio 
 verificado abierto el 07/08/2026. **El Sol de Galicia**, Luis Viale 2867, **desde 1957** —
 verificado abierto el 07/08/2026. Más la Heladería Agust, Argot y A Raja Cincha.
 
-> Es el conjunto de trayectoria más denso del oeste de la Ciudad, y **dos de las tres no están en
-> ningún registro oficial**: Bar Don Juan y El Sol de Galicia se sostienen sólo en la verificación
-> con fecha de esta semana. El Tokio sí está —Bar Notable y Sitio de Interés Cultural— y también
-> está verificado.
+> Es el conjunto de trayectoria más denso del oeste de la Ciudad, y **El Sol de Galicia no está en ningún registro oficial** y se sostiene sólo en la verificación
+> con fecha de esta semana. Los otros dos sí están —**El Tokio** es Bar Notable y Sitio de Interés
+> Cultural, **Bar Don Juan** es Bar Notable— y los tres están verificados con fecha.
 
 Y El Tokio trae la lección que atraviesa todo el atlas. **Cerró en 2023 y reabrió en 2025.** Es
 el caso inverso al de un local que el registro oficial da por vivo y está cerrado: acá el registro oficial lo tenía y
@@ -898,7 +896,7 @@ churrería y pastelería, y se cuenta como lo que es.
 no cumplen la condición de cantidad de locales, y el polo se sostiene en tres trayectorias largas y en cómo lo trata la
 prensa. Cualquier comparación de tamaño con otra zona de este atlas es inválida.
 
-**Lo que falta.** Nada urgente: es de las zonas mejor verificadas del conjunto.
+**Próxima edición.** **El borde escrito.** Esta página nombra una sola calle —Av. Álvarez Jonte— y con una no se cierra una figura. Las cuatro que faltan salieron medidas del propio contorno dibujado: **Condarco, Av. Gaona, Joaquín V. González y Miranda.** Escribirlas es todo lo que separa a esta zona de tener perímetro propio. De verificación no le falta nada: es de las mejor cubiertas del conjunto.
 
 # Comuna 12
 
@@ -934,7 +932,7 @@ admiten a esta zona se acercan peligrosamente a un único origen documental, y e
 exactamente lo que la regla de contar fuentes independientes existe para evitar. Su densidad medida
 —**0,84 locales por hectárea**— es de las más bajas del norte.
 
-**Lo que falta.** Contar los locales de la zona. Si ese conteo no confirma la densidad, hay que
+**Próxima edición.** Contar los locales de la zona. Si ese conteo no confirma la densidad, hay que
 revisar si esta zona entra: está escrito acá, y no aparte, porque es la conclusión honesta de su
 propia evidencia.
 
@@ -970,49 +968,9 @@ del atlas cuenta todo lo que hay: son dos universos distintos y la cifra no entr
 columna. Se cita como lo que es —un dato del operador del paseo— y no se compara con los conteos
 de otras zonas. Además el conteo es de enero de 2025, sin actualización posterior.
 
-**Lo que falta.** **Resolver el solapamiento:** el extremo sur del viaducto toca el polo de
+**Próxima edición.** **El borde**, del que ya cierra una pieza: el corredor de **Crisólogo Larralde** mide **23,81 hectáreas y 61 locales** con las calles que esta página escribe. Las otras dos no cierran, y en una la razón es geométrica y vale decirla: **O'Higgins y Grecia son paralelas** —a 34 metros— así que con Campos Salles forman una U abierta y falta la calle que la cierre. Y **resolver el solapamiento:** el extremo sur del viaducto toca el polo de
 Federico Lacroze y el tramo entre Blanco Encalada y Monroe cae en Belgrano. Tres zonas comparten
 ese corredor y los conteos no se suman.
-
-# Colegiales
-
-**Comuna 13 · Colegiales** — nuevo en esta edición · varias piezas · **perímetro en revisión**
-
-**Dónde está.** **En revisión.** Lo que se propone es el eje Concepción Arenal–Zapiola, el Polo
-Concepción y el Mercado de Pulgas — o sea, **lo que queda propio y afuera** de los dos polos vecinos que comparten el corredor.
-
-**Reconocimiento oficial.** El Mercado de Pulgas: Sitio de Interés Cultural por la Legislatura.
-
-**Por qué es un polo.** — cumple seis condiciones. Cantidad de locales · establecimientos con historia ·
-mercados y galerías, por el Mercado de Pulgas en actividad · cocina de colectividad **por la rama de rubro especializado y no por una colectividad**, con sus cervecerías y sus cafés de especialidad · corredor sobre una avenida · y **prensa y guías** con cuatro fuentes independientes. Dos van nombradas: la prensa nacional lo trata como corredor gastronómico desde 2023, por el eje de Zapiola y Concepción Arenal, y en 2026 una guía local lo integra al corredor de Elcano y Jorge Newbery junto con Chacarita. De las otras dos el registro guardó el recuento y no la lista nominal.
-
-**Los establecimientos.** **Bar Conde**, Av. Federico Lacroze 3193, **en funcionamiento desde 1902** y
-**primer Bar Notable de la Comuna 13** — alta del catálogo de 2026, verificado abierto el
-29/07/2026, cinco días antes de su propia declaración. Y el **Mercado de Pulgas**, Gral. Enrique
-Martínez 50: de martes a domingo de 11 a 19, 160 puestos interiores y 7 locales a la calle, con
-bar propio.
-
-**Cómo le va al comercio alrededor.** El eje **Colegiales** —Av. Cabildo 501-899 y Lacroze 2301-2899— tiene **91,2 %
-de ocupación y perdió sólo 0,4 puntos**, cuando el conjunto de los 48 perdió 1,6. De los
-veintiún ejes que este atlas reconoce como suyos, sólo Caballito cayó menos —0,3— y cinco
-subieron, contando a Liniers, que subió 0,04. El otro eje del mismo corredor, el de Chacarita, perdió 1,6.
-
-**Qué no se puede concluir de esta página.** Y son dos. El solapamiento con los dos polos vecinos es fuerte — el
-Bar Conde está sobre el eje mismo que mide una de ellas — y hasta que se trace el perímetro, la
-medición disponible de este corredor usa Colegiales a escala de barrio. Las cifras que esta página
-publica son las de ese barrio entero —el contorno coincide con el polígono administrativo, hectárea
-más hectárea menos— y por eso son un techo y no la medida del polo: el polo va a ser más chico, y
-cuánto más se sabrá cuando se trace su perímetro.
-
-Y el relevamiento de cervecerías que sostiene una de sus condiciones es de 2017: nueve años, y ninguno de
-los seis locales está confirmado. Uno de sus establecimientos más citados fue anunciado en febrero
-de 2023 sin que se verificara nunca su apertura efectiva.
-
-**Lo que falta.** **El perímetro.** Y hay una medición que ya lo acota: de las cuatro calles
-candidatas para cerrarlo, sólo dos tienen tramo verificable entre las avenidas que se propusieron
-como borde —Zabala con 254 metros y Virrey Avilés con 344—, porque las dos avenidas se
-encuentran: la franja que encierran es una cuña que se cierra, no una banda. Son tres cuadras, no
-las diez que sugiere leer la lista de calles de corrido.
 
 # Comuna 15
 
@@ -1038,7 +996,7 @@ avenida — veintitrés manzanas.
 - **Mercados y galerías** — no: cumplía sólo por una feria itinerante.
 
 **Los establecimientos.** **La Mezzetta**, Av. Álvarez Thomas 1321 · Cervecería Charlone (Freire 745) ·
-Gallo Negro (Donado 1851) · Simona (Av. Álvarez Thomas 661) · Cullen Henderson (1106) · Kopem (1700)
+Gallo Negro (Donado 1851) · **Simona** (Av. Álvarez Thomas 661), **verificada en actividad en mayo de 2026** · Cullen Henderson (1106) · Kopem (1700)
 · F4 Esquina (Cnel. Manuel Roseti 1596) · Tía Meche (Bauness 1302) · Cantina y Teatro Tai (Charlone
 1752) · Suculentas (Heredia 499) · Curva (Caldas 1596). **Cero Bares Notables, verificado contra el
 catálogo.**
@@ -1063,9 +1021,9 @@ y los cuatro locales que nombra la prensa son de 2021.
 > **15,93 hectáreas y 25 locales** con el polo de Chacarita · Colegiales · Federico Lacroze. Las dos
 > cifras no se suman.
 
-**Lo que falta.** Reverificar las cervecerías de 2017 y los cuatro locales de 2021: es de las zonas del norte con la evidencia más envejecida.
+**Próxima edición.** Reverificar las cervecerías de 2017 y los cuatro locales de 2021: es de las zonas del norte con la evidencia más envejecida.
 
-# Lo que sale de escribir las veintiuna
+# Lo que sale de escribir las veinte
 
 Uno · la condición de mercados y galerías es la que más se cae al mirarla de cerca, y siempre por
 lo mismo. Cuatro zonas la perdieron en esta edición y las cuatro por una feria itinerante; una

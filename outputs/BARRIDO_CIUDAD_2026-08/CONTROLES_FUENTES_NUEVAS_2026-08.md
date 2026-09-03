@@ -343,10 +343,10 @@ Floresta; esos cinco concentran el 66 % de la base del oeste.
 | `outputs/BARRIDO_CIUDAD_2026-08/generado/` | las tres tablas regeneradas |
 | `outputs/BARRIDO_CIUDAD_2026-08/generado/_r18_anomalas.txt` | las 12 direcciones de R18 y las 10 mayores de la Ciudad |
 | `outputs/BARRIDO_CIUDAD_2026-08/generado/_firmas_repetidas.txt` | grupos de direcciones con firma de permisos idéntica |
-| `outputs/fuentes_externas/usos_suelo/CONTROLES_RUS_2022_2024.txt` | salida completa de los dos controles |
-| `outputs/fuentes_externas/usos_suelo/rus_gastro_48_barrios.csv` | parcelas gastronómicas por barrio contra habilitaciones |
-| `outputs/fuentes_externas/usos_suelo/rus_vocabulario_tipo2.csv` | los 471 valores de `TIPO2` con frecuencia |
-| `outputs/fuentes_externas/moc/` | las cinco tablas del MOC y el perfil |
+| `data/fuentes_externas/usos_suelo/CONTROLES_RUS_2022_2024.txt` | salida completa de los dos controles |
+| `data/fuentes_externas/usos_suelo/rus_gastro_48_barrios.csv` | parcelas gastronómicas por barrio contra habilitaciones |
+| `data/fuentes_externas/usos_suelo/rus_vocabulario_tipo2.csv` | los 471 valores de `TIPO2` con frecuencia |
+| `data/fuentes_externas/moc/` | las cinco tablas del MOC y el perfil |
 
 Las descargas crudas —el CSV de 39,5 MB del Relevamiento y las tablas del MOC— quedaron
 excluidas de Git; las URL de rebaja están en el encabezado de `perfilar_usos_suelo.py` y en

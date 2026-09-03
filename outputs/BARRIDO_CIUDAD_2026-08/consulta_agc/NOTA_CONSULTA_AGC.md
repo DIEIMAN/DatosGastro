@@ -111,3 +111,19 @@ identificar trámites concretos, la partida matriz permite ubicarlos en el siste
 
 **Fuente:** habilitaciones aprobadas, publicadas en BA Data (cohortes 2015-2018, 2019 a 2024 y
 2025). Universo de análisis: rubros gastronómicos.
+
+---
+
+## Addenda de estado · 2026-08-27
+
+La decisión del 6 de agosto de no realizar pedidos fuera de la Dirección fue **superada por una
+nueva decisión de Diego**. La consulta técnica vuelve a estar habilitada, pero no debe enviarse de
+forma aislada ni con la redacción histórica como único pedido.
+
+El pedido vigente parte de la revisión de los recursos públicos de AGC, incluido el recurso 2026,
+y solicita una reunión sobre el estado actual de las autorizaciones, los identificadores de enlace
+y la historia administrativa. Esta nota se conserva como **anexo técnico específico** sobre la
+unidad de registro y las múltiples puertas por partida.
+
+Borrador vigente:
+`docs/polos_gastro/pedidos_institucionales_padron_2026-08-27/BORRADOR_PEDIDO_AGC.md`.

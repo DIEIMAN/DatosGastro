@@ -100,8 +100,7 @@ repartidas por todo un barrio.
 
 Un ejemplo de este mismo atlas lo muestra: Villa Pueyrredón tiene 198 locales, que suenan a muchos,
 repartidos en 305 hectáreas. Medida su continuidad, la cadena más grande que se forma uniendo
-locales a menos de veinte metros contiene **2,5 de cada cien**; a cuarenta metros, 5,6; y hay que
-llegar a ciento veinte metros para que la cadena junte a un tercio. Eso describe una avenida con
+locales a menos de veinte metros contiene **2,5 de cada cien**; a cuarenta metros, 5,6; y hay que llegar a ciento veinte metros para que la cadena junte a menos de un tercio. Eso describe una avenida con
 comercios, no una zona gastronómica. Un lugar con la mitad de locales y la mitad de superficie,
 todos sobre cuatro cuadras, cumple esta condición y Villa Pueyrredón no.
 
@@ -180,9 +179,7 @@ dentro de alguno de los polos, y se midió uno por uno si cae adentro del borde 
 | afuera del borde | **96** |
 | sin ubicación precisa, ni adentro ni afuera | **10** |
 
-Y de los que quedan afuera, lo que importa: **38 veces un establecimiento con historia —bar notable,
-restaurante icónico, pizzería emblemática, heladería histórica— sostiene la condición de su zona y
-está fuera del borde de su polo. Ocurre en 14 de las páginas.** Son 31 establecimientos distintos,
+Y de los que quedan afuera, lo que importa: ****35 veces un establecimiento con historia —bar notable, restaurante icónico, pizzería emblemática, heladería histórica— sostiene la condición de su zona y está fuera del borde de su polo. Ocurre en 12 de las páginas.**** Son 28 establecimientos distintos,
 porque en La Boca, en Barracas y en Nueva Pompeya hay dos polos recortados de una misma zona y las
 dos páginas invocan la misma evidencia.
 
@@ -201,9 +198,7 @@ separaban a La Perla de Caminito antes de que el borde se extendiera para conten
 típica no es un kilómetro: son dos cuadras.
 
 Lo que cambia es que ahora **cada una de esas catorce páginas lo dice**, con los nombres y las
-distancias. Antes no lo decía ninguna. Y en tres casos el borde se corrigió por esto: Caminito se
-extendió sobre la avenida para contener a La Perla, Balvanera · Once hasta Av. Rivadavia para
-contener al Café de los Angelitos, y La Boca sobre Almirante Brown sobre Av. Suárez y Olavarría.
+distancias. Antes no lo decía ninguna. Y en tres casos el borde se corrigió por esto: Caminito se extendió sobre la avenida para contener a La Perla, Balvanera · Once hasta Av. Rivadavia para contener al Café de los Angelitos, y La Boca sobre Almirante Brown sobre Av. Suárez y Olavarría.
 
 **La regla que salió de esas tres correcciones se puede decir en un renglón**, y es la que decidió
 también los cuatro casos donde no se extendió: *se extiende cuando el establecimiento está sobre una
@@ -268,9 +263,7 @@ Y después, las seis condiciones deciden qué es un polo. Una concentración pub
 polo, y una zona sin concentración detectada puede serlo. Los dos casos existen y están en este
 atlas.
 
-El resultado: ciento veinticuatro concentraciones detectadas, y cuarenta y un polos en catorce de
-las quince comunas — veinte que ya estaban publicadas, tres de ellas ampliadas con evidencia nueva, y
-veintiuna incorporadas en este relevamiento. Catorce lugares se midieron y no llegaron, con el
+El resultado: ciento veinticuatro concentraciones detectadas, y **treinta y nueve polos** en catorce de las quince comunas — diecinueve que ya estaban publicados, tres de ellos ampliados con evidencia nueva, y veinte incorporados en este relevamiento. Dos de los publicados se fundieron en uno solo junto con una zona nueva, porque la medición mostró que eran el mismo objeto. Catorce lugares se midieron y no llegaron, con el
 descarte argumentado uno por uno en la sección VIII.
 
 ## Una regla de continuidad que este atlas se impuso
@@ -278,9 +271,7 @@ descarte argumentado uno por uno en la sección VIII.
 Los polos ya publicados no se redefinen. Sólo se amplían.
 
 Cuando la evidencia nueva mostró que el reconocimiento de una zona recae sobre calles que quedaban
-afuera de su perímetro publicado, el perímetro creció para incluirlas — **y nunca se recortó**. La
-verificación de que la ampliación contiene íntegramente a lo publicado se hizo midiendo la
-superficie perdida, y dio cero en los cuatro casos.
+afuera de su perímetro publicado, el perímetro creció para incluirlas — **y nunca se recortó**. La verificación de que la ampliación contiene íntegramente a lo publicado se hizo midiendo la superficie perdida, y dio cero en los tres casos.
 
 Tiene un costo y conviene declararlo, porque aparece en una página: en uno de los polos, la
 evidencia documental actual **no alcanza a cubrir 24,7 hectáreas** de lo que ya estaba publicado.

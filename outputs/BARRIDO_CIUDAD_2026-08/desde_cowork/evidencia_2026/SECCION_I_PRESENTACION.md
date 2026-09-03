@@ -12,8 +12,8 @@ una vereda, una parada de colectivo o una feria.
 | | |
 |---|---|
 | **23.981 locales** relevados en toda la Ciudad | reuniendo y depurando siete fuentes distintas |
-| **41 polos gastronómicos** | en catorce de las quince comunas. Son 41 páginas y 40 lugares separados: una está adentro de otra |
-| **55 zonas estudiadas** | los 41 polos más catorce lugares que se midieron y no llegaron a serlo, cada uno con su motivo |
+| **39 polos gastronómicos** | en catorce de las quince comunas. Uno de ellos, Chacagiales, reúne tres que la edición anterior publicaba por separado |
+| **53 zonas estudiadas** | los 39 polos más catorce lugares que se midieron y no llegaron a serlo, cada uno con su motivo |
 | **124 concentraciones detectadas** | de ahí salen los polos, y están todas publicadas en el Anexo B |
 | **12.688 locales en 3.143 hectáreas** | el 53 % de la gastronomía de la Ciudad, concentrada en el 15 % de su superficie |
 | **90 bares notables**, y 88 abiertos | se fue a ver cuáles siguen funcionando, uno por uno |
@@ -59,7 +59,7 @@ fecha:
 
 | | |
 |---|---|
-| polo | cumple las condiciones · 41 |
+| polo | cumple las condiciones · 39 |
 | lugar en observación | estaba en la versión anterior y hoy no llega. Se publica igual, con lo que sí tiene y con lo que le falta · 1 |
 | lugar en estudio | se midió y no llega por algo que puede cambiar · 3 |
 | lugar sin admisión | se midió y no llega · 10 |
@@ -70,11 +70,9 @@ estaban pendientes entraron. Una regla que no mueve nada es una regla que no se 
 ## Tres cosas que muestra el mapa
 
 Hay gastronomía concentrada en las quince comunas, y polos en catorce. Doce concentraciones tocan
-las comunas 8 y 9, en el extremo sur, y suman 1.158 locales. No son marginales: varios superan los
-cien.
+las comunas 8 y 9, en el extremo sur, y suman 1.158 locales. No son marginales: varias superan los cien.
 
-La diferencia entre quince y catorce es un resultado y no un hueco: la Comuna 8 tiene tres
-concentraciones medidas, con 259 locales, y ninguna llegó a cumplir dos condiciones. Su página lo
+La diferencia entre quince y catorce es un resultado y no un hueco: la Comuna 8 tiene cuatro concentraciones medidas, con 400 locales, y ninguna llegó a cumplir dos condiciones. Su página lo
 explica.
 
 Y que la regla no está hecha a medida se ve en que también hace caer lo propio. Villa Lugano no
@@ -125,7 +123,7 @@ revisar es una opinión con mapas.
 | **IV** | cómo se pasó de puntos en un mapa a zonas con borde |
 | **V** | los establecimientos con historia, y cómo se comprobó que sigan abiertos |
 | **VI** | las colectividades y sus calles |
-| **VII** | el cuerpo del atlas: los 41 polos, uno por uno, ordenados por comuna |
+| **VII** | el cuerpo del atlas: primero los diecinueve polos que ya estaban publicados, después los veinte que suma esta edición, y al final los quince mapas comunales |
 | **VIII** | los catorce lugares que se midieron y no llegaron |
 | **IX** | hasta dónde llega lo que este atlas puede afirmar |
 | **Anexo A** | la regla completa, y por qué se calibró así |

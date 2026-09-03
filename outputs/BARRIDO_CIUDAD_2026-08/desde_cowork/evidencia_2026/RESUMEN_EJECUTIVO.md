@@ -7,7 +7,7 @@ son los mejores restaurantes ni los barrios de moda. Dónde está, y cómo es ca
 
 Se reunieron y depuraron los datos de siete fuentes distintas, y quedaron **23.981 locales
 gastronómicos** en las quince comunas. Sobre ese mapa de puntos se buscaron los lugares donde los
-locales se juntan, y aparecieron 124 concentraciones. De ésos, **cuarenta y uno son polos
+locales se juntan, y aparecieron 124 concentraciones. De ésos, **treinta y nueve son polos
 gastronómicos** en el sentido que este atlas define, y están en catorce de las quince comunas.
 
 Esas 124 concentraciones reúnen **12.688 locales en 3.143 hectáreas**: poco más de la mitad de la
@@ -50,8 +50,7 @@ La diferencia entre el norte y el sur va al revés de lo que se supone. De los e
 que releva la Ciudad, los del norte pierden ocupación y el sur es la única zona con promedio
 positivo.
 
-En la Comuna 8 hay gastronomía y no hay ningún polo. Son 259 locales repartidos en tres
-concentraciones, y ninguna llegó a cumplir dos de las seis condiciones. No es que no se haya mirado:
+En la Comuna 8 hay gastronomía y no hay ningún polo. Son 400 locales repartidos en cuatro concentraciones, y ninguna llegó a cumplir dos de las seis condiciones. No es que no se haya mirado:
 se miró con la misma vara que en el resto de la Ciudad. Probablemente sea el dato más útil de todo
 el documento, porque señala dónde hay algo sobre lo que apoyarse y todavía nada que lo acompañe.
 

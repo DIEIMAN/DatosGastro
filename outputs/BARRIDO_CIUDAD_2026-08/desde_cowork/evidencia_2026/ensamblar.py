@@ -103,9 +103,7 @@ except FileNotFoundError:
     pass
 # las que no llevan su nombre exacto en la capa
 ALIAS={'centro microcentro':'microcentro','av montes de oca':'barracas av montes de oca',
-       'chacarita':'chacarita colegiales federico lacroze',
-       'colegiales':'chacarita colegiales federico lacroze',
-       'federico lacroze':'chacarita colegiales federico lacroze'}
+       'chacagiales':'chacarita colegiales federico lacroze'}
 DESTACADOS={}
 try:
     for r in csv.DictReader(io.open(f'{O}/destacados.csv',encoding='utf-8')):
@@ -184,9 +182,9 @@ MAG = MAG.split('## Qué destraba esto',1)[0].strip()
 
 # ---------- los veinte que ya estaban publicados ----------
 PRIMEROS = ['Palermo','Avenida Corrientes','San Telmo','Puerto Madero','Belgrano','Recoleta',
-            'Costanera Norte','Villa Crespo','Chacarita','Caballito','Boulevard Caseros','Microcentro',
+            'Costanera Norte','Villa Crespo','Chacagiales','Caballito','Boulevard Caseros','Microcentro',
             'Centro / Microcentro','Abasto','Avenida Boedo','Devoto','Donado–Holmberg','Villa Urquiza',
-            'Federico Lacroze','García del Río','La Paternal']
+            'García del Río','La Paternal']
 PRIM = {_nk(x) for x in PRIMEROS}
 def ya_estaba(t): return _nk(t) in PRIM
 
@@ -238,8 +236,8 @@ APERTURA_1 = """Este atlas se construyó sobre una lista que la Dirección ya ve
 gastronómicos**, publicados en la edición anterior. Esta primera parte es esa lista, medida de nuevo
 con el método que explica la sección II y dibujada con los bordes de esta edición.
 
-**Veinte de los veintidós siguen siendo polos.** Los otros dos no desaparecieron: se movieron, y las
-dos historias dicen algo sobre cómo funciona la regla.
+**Veinte de los veintidós siguen siendo polos, y esos veinte se publican en diecinueve páginas.**
+Tres cosas se movieron, y las tres dicen algo sobre cómo funciona la regla.
 
 - **Esmeralda y Paraguay** dejó de ser un polo aparte y quedó adentro de Retiro. La medición mostró
   que el núcleo coreano y asiático que ese polo marcaba está sobre las mismas cuadras que Retiro
@@ -247,25 +245,33 @@ dos historias dicen algo sobre cómo funciona la regla.
 - **Villa Pueyrredón** no llegó al mínimo de dos condiciones: cumple una sola y su continuidad es la
   más baja de todas las zonas medidas. Pasó a *lugar en observación*, y su página entera está en la
   sección VIII.
+- **Chacarita y Federico Lacroze se publican ahora en una sola página**, junto con Colegiales, que
+  esta edición sumaba por separado. Se llama **Chacagiales**, que es la palabra que usa la prensa, y
+  la razón es medida: Chacarita tenía el 63,7 % de su superficie adentro de Federico Lacroze, y a
+  ciento veinte metros la cadena de locales cercanos junta 732 y toca las tres. No eran tres polos
+  vecinos: eran uno contado tres veces.
 
 Ninguno de los veinte se achicó por la revisión. Tres se ampliaron con evidencia nueva, y la
 verificación de que la ampliación contiene entero lo que ya estaba publicado dio cero superficie
 perdida en los tres casos."""
 
-APERTURA_2 = """La segunda parte son los **veintiún polos que este relevamiento sumó**: zonas que la Ciudad tiene y
+APERTURA_2 = """La segunda parte son los **veinte polos que este relevamiento sumó**: zonas que la Ciudad tiene y
 que la edición anterior no había medido. Diez de ellas están en el sur y en el oeste, que es donde el
-mapa anterior tenía sus huecos más grandes.
+mapa anterior tenía sus huecos más grandes. Un vigesimoprimero, Colegiales, también es nuevo, y su
+página no está acá: quedó como subzona de Chacagiales, en la primera parte, porque comparte objeto
+con dos polos que ya estaban publicados.
 
-Se midieron con exactamente la misma vara que las veinte de la primera parte, y por eso se publican
-juntas: **el mapa completo son cuarenta y un polos**, y la diferencia entre una parte y la otra es de
+Se midieron con exactamente la misma vara que los de la primera parte, y por eso se publican juntos:
+**el mapa completo son treinta y nueve polos**, y la diferencia entre una parte y la otra es de
 historia editorial, no de método ni de exigencia."""
 
-vii=['# VII · Los polos, uno por uno','', COMO_LEER, '',
+IDX_BARRIOS = rd(f'{O}/INDICE_DE_BARRIOS.md').strip()
+vii=['# VII · Los polos, uno por uno','', COMO_LEER, '', '---', '', IDX_BARRIOS, '',
      '> **Cada página abre con su mapa.** El color dice de qué tipo es cada polo: núcleo compacto, '
      'corredor sobre una avenida, varias piezas bajo un mismo nombre u oferta repartida. Los polos '
      'vecinos van en gris, para que se vea qué hay alrededor.','',
      '---','',
-     '# Primera parte · Los veinte que ya estaban','',
+     '# Primera parte · Los diecinueve que ya estaban','',
      f'![Los veinte polos que ya estaban publicados]({MAPAS}/mapa_22.png)','',
      APERTURA_1,'']
 for c in sorted(por_comuna):
@@ -274,11 +280,11 @@ for c in sorted(por_comuna):
     vii.append(f'\n## Comuna {c}\n')
     for tit,cue in fichas_c: vii.append(ficha(tit,cue)); vii.append('')
 
-vii += ['','---','','# Segunda parte · Los veintiuno que se suman','',
-        f'![Los 41 polos gastronómicos de la Ciudad]({MAPAS}/mapa_general.png)','',
+vii += ['','---','','# Segunda parte · Los veinte que se suman','',
+        f'![Los 39 polos gastronómicos de la Ciudad]({MAPAS}/mapa_general.png)','',
         APERTURA_2,'',
         '## Los que todavía no tienen borde dibujado','',
-        'Tres de los cuarenta y un polos no tienen todavía su borde dibujado —y un cuarto, Mataderos, '
+        'Tres de los treinta y nueve polos no tienen todavía su borde dibujado —y un cuarto, Mataderos, '
         'sólo tiene uno transitorio—, y los cuatro están en esta segunda parte. Lo que sí se puede '
         'medir sin inventar un borde es **cuánta gastronomía hay concentrada dentro del barrio que los '
         'contiene** — las concentraciones detectadas por densidad cuya superficie cae en más de la '
@@ -366,8 +372,8 @@ Ministerio de Desarrollo Económico · Gobierno de la Ciudad de Buenos Aires
 |  |  |
 |---|---|
 | **23.981** | locales gastronómicos relevados en toda la Ciudad |
-| **41** | polos gastronómicos, en catorce de las quince comunas |
-| **55** | lugares estudiados con la misma regla |
+| **39** | polos gastronómicos, en catorce de las quince comunas |
+| **53** | lugares estudiados con la misma regla |
 | **12.688** | locales en las 124 concentraciones medidas · el 53 % de la gastronomía de la Ciudad en el 15 % de su superficie |
 | **90** | bares notables de la Ciudad, y 88 abiertos |
 | **15** | lugares donde cocina una colectividad, con sus calles |
@@ -388,7 +394,7 @@ Ministerio de Desarrollo Económico · Gobierno de la Ciudad de Buenos Aires
 | **IV** | Cómo se leyó el territorio |
 | **V** | Los establecimientos con historia de la Ciudad |
 | **VI** | Las colectividades y sus calles |
-| **VII** | **La Ciudad, comuna por comuna** — los 41 polos |
+| **VII** | **La Ciudad, comuna por comuna** — los 39 polos |
 | **VIII** | Los lugares que se midieron y no llegaron |
 | **IX** | El alcance de este atlas |
 | **Anexo A** | La regla completa, y por qué se calibró así |
@@ -399,7 +405,8 @@ Ministerio de Desarrollo Económico · Gobierno de la Ciudad de Buenos Aires
 """
 RESUMEN = rd(f'{O}/RESUMEN_EJECUTIVO.md')
 tapa=re.sub(r'\n---\s*$','',tapa.rstrip())+'\n'
-partes=[tapa, '\n\n---\n\n'+RESUMEN]
+QUE_SIGUE = rd(f'{O}/QUE_SIGUE.md').strip()
+partes=[tapa, '\n\n---\n\n'+RESUMEN, '\n\n---\n\n'+QUE_SIGUE]
 for k in ['I','II','III','IV','V','VI','VII','VIII','IX']:
     partes.append('\n\n---\n\n'+normalizar(k,S[k]))
 for t,txt in [('Anexo A · La regla completa',ANEXO_A),

@@ -6,7 +6,7 @@ Esta sección es tan parte del atlas como la anterior. Un mapa que sólo muestra
 permite decidir nada: para eso hace falta saber también dónde se buscó y no se encontró, y con qué
 vara se buscó.
 
-Se evaluaron **55 zonas**. Cuarenta y una entraron. Las catorce que siguen son las que no, cada
+Se evaluaron **53 zonas**. Treinta y nueve entraron. Las catorce que siguen son las que no, cada
 una con las condiciones que cumple, las que no, y la parte de la regla que no cumple.
 
 Ninguna está descartada para siempre. El criterio se aplica con fecha, y una edición posterior
@@ -33,7 +33,7 @@ publica acá, con lo que sí tiene y con lo que le falta.
 | prensa y guías | no se cumple — **ninguna fuente** |
 | avenida gastronómica | no se cumple |
 
-**No llega a las dos condiciones: cumple una sola condición.** Y la que cumple lo hace con la continuidad más baja de todos los polos que ya estaban publicados: a cuarenta metros, la cadena más larga junta a menos de seis de cada cien locales.
+**No llega a las dos condiciones: cumple una sola condición.** Y la que cumple lo hace con una continuidad de las más bajas del conjunto: a cuarenta metros, la cadena más larga junta a menos de seis de cada cien locales.
 Eso describe una avenida con comercios, no un polo.
 
 Un punto importante sobre su condición de prensa y guías, porque es lo que la distingue de un simple hueco de

@@ -56,6 +56,33 @@ mercados y la forma de avenida, sobre el contorno dibujado.
 Tener el borde dibujado no es condición para entrar. Un polo puede estar aceptado y tener el
 perímetro por trazar: eso es trabajo de producción, no de criterio.
 
+### Cuando un polo publicado alcanza a un establecimiento que quedó afuera
+
+Es la situación más frecuente del atlas y hasta esta edición se resolvía caso por caso. **Treinta y
+ocho veces un establecimiento con historia sostiene la condición de su zona y está fuera del borde
+de su polo**, y la distancia típica no es un kilómetro: son dos cuadras.
+
+La regla que gobierna esos casos, y que va escrita:
+
+> **Un polo publicado se extiende para contener a ese establecimiento cuando está sobre una calle
+> que el perímetro escrito del polo ya nombra. No se extiende cuando llegar hasta él exige inventar
+> una línea que el texto nunca escribió.**
+
+La prueba es sobre el texto, no sobre la distancia. Un establecimiento a ochocientos metros sobre una
+avenida que la página ya nombra entra; uno a ciento veinte metros por una calle que la página nunca
+mencionó, no. **La distancia mide comodidad; la calle nombrada mide si la delimitación lo preveía.**
+
+En esta edición se evaluaron cinco casos con esa vara y **se extendió uno solo**. La Boca sobre
+Almirante Brown pasó de 6,14 hectáreas y 3 locales a **16,17 y 21**, sobre Av. Suárez y Olavarría,
+que son calles que su propia delimitación de obra pública ya nombraba: entraron Banchero, La Buena
+Medida y el Café Roma. Los otros cuatro —Liniers, Balvanera y las dos de Nueva Pompeya— **no se
+extendieron**, porque en ninguno la calle estaba escrita.
+
+Y una consecuencia que la regla acepta de frente: **un polo puede quedarse sin contener a ningún
+establecimiento con historia y cumplir igual la condición.** Pasa en tres páginas. La historia se
+mide sobre la zona y no sobre el recorte, así que el borde puede no alcanzarla — pero entonces la
+página lo dice, con el nombre del establecimiento y su distancia. Las doce páginas donde ocurre lo declaran.
+
 ## Por qué dos, y no una ni tres
 
 La vara no se eligió por gusto: se probó contra el conjunto real, con los tres valores posibles.
@@ -63,7 +90,7 @@ La vara no se eligió por gusto: se probó contra el conjunto real, con los tres
 | se pide | polos | qué pasa |
 |---|---:|---|
 | al menos una | 45 | Entran Villa Real y Versalles, Parque Chas y Villa del Parque por un solo establecimiento o una sola feria. Villa Pueyrredón entra con 5,6 % de continuidad y ningún establecimiento con historia. |
-| **al menos dos** | **41** | Sobrevive todo lo que la evidencia sostiene por dos caminos distintos. Caen los casos que el propio análisis ya había marcado como frágiles. |
+| **al menos dos** | **41**, hoy 39 tras la fusión de Chacagiales | Sobrevive todo lo que la evidencia sostiene por dos caminos distintos. Caen los casos que el propio análisis ya había marcado como frágiles. |
 | al menos tres | 34 | Se cae el Microcentro. Se cae San Telmo. Se caen las dos zonas de La Boca. |
 
 Pedir tres deja afuera del atlas gastronómico de Buenos Aires a la zona con más locales de la Ciudad
@@ -101,7 +128,7 @@ relevamiento nuevo y las 7 del sur.
 
 | categoría | cuántas |
 |---|---:|
-| **polos** | **41** |
+| **polos** | **39** |
 | lugar en observación | 1 |
 | lugares en estudio | 3 |
 | lugares sin admisión | 10 |
@@ -110,7 +137,7 @@ relevamiento nuevo y las 7 del sur.
 Catorce comunas tienen al menos un polo. La única sin ninguno es la 8, y ahora por una razón que se
 puede escribir.
 
-Una aclaración sobre el 41, para que nadie lo cite mal. Una de las 41 páginas describe una zona que
+Una aclaración sobre el 39, para que nadie lo cite mal. Una de las 39 páginas describe una zona que
 está adentro de otra y tiene página propia: el eje de Av. Sáenz, dentro de Nueva Pompeya. Cuenta una
 sola vez en superficie y en locales, y dos veces en el índice. **Los lugares separados, entonces,
 son 40.** El Barrio Coreano, que hasta esta edición se contaba como subzona de Parque Avellaneda, se
@@ -147,7 +174,7 @@ cosas distintas y la unidad del lugar no está en discusión.
 
 ## Lo que la regla hizo aparecer
 
-Las siete zonas del sur —Barracas, La Boca, Nueva Pompeya, Villa Soldati y Villa Lugano— se midieron con las seis condiciones y el resultado llevaba el conjunto de 36 a 41 polos. Ese resultado tardó en llegar a las páginas: por un tiempo estuvo medido y concluido, y no escrito. Está escrito en esta edición.
+Las siete zonas del sur —Barracas, La Boca, Nueva Pompeya, Villa Soldati y Villa Lugano— se midieron con las seis condiciones y el resultado llevaba el conjunto de 36 a 41 polos, que son los 39 de hoy tras fundir Chacagiales. Ese resultado tardó en llegar a las páginas: por un tiempo estuvo medido y concluido, y no escrito. Está escrito en esta edición.
 
 Cinco de las siete entran por la regla, y son las cuatro páginas nuevas del sur más la de Montes de
 Oca, que había vuelto a entrar por otro camino sin que nadie notara que era la misma.
