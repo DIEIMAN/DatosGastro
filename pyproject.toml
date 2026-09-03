@@ -1,0 +1,30 @@
+# Configuracion de herramientas del repo. No define un paquete instalable: el pipeline se corre
+# con .venv/Scripts/python.exe sobre el arbol de trabajo, como siempre. Solo fija ruff y la ruta
+# de importacion de los tests para dejar de usar sys.path.insert a mano.
+
+[project]
+name = "datagastro"
+version = "0.0.0"
+description = "Datos del ecosistema gastronomico de CABA para la DGDGAS (uso interno)"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = [
+    ".venv", ".venv-tools", ".agent-tools", "node_modules", "_delete_candidates",
+    "_archive_historico", "outputs", "data", "notebooks",
+    "scripts/polos_gastro/historico", "scripts/cafecito/archive",
+]
+
+[tool.ruff.lint]
+# E: errores de estilo, F: pyflakes (imports sin usar, nombres indefinidos), I: orden de imports.
+select = ["E", "F", "I"]
+ignore = ["E501"]  # las lineas largas se miran a mano; el repo tiene tablas y rutas largas
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]

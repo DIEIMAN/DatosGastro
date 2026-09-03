@@ -1,199 +1,130 @@
+# .gitignore de DataGastro. Reescrito el 2026-09-03 (auditoria de flujo): mismas reglas de fondo,
+# sin las once redundantes ni las que apuntaban a carpetas que ya no existen. Politica: se
+# versionan fuentes (scripts, docs, tablas derivadas livianas, checksums); no se versionan crudos
+# de terceros, datos con nombre o contacto individual, renders de QA, binarios pesados ni venvs.
+
+# --- entorno y ruido tecnico -------------------------------------------------------------------
 __pycache__/
-.venv/
 *.pyc
 .DS_Store
-outputs/tmp/
-outputs/*.html
-outputs/*.pdf
-data/internal_raw/
-data/internal_processed/
-outputs/inventario_drive/
-outputs/analisis_interno/
-Algunas Cosas de Drive/
-# Casas/fábricas de pastas: salidas crudas con razón social, nombres de personas,
-# direcciones e IDs individuales (datos sensibles). La versión sanitizada para informe
-# va en outputs/casas_pastas_reporte/ (agregados, sin datos personales).
-outputs/casas_pastas/
-# Piloto Google Places: resultados crudos con nombres comerciales, direcciones
-# e IDs individuales (datos de terceros). No se commitean.
-outputs/casas_pastas_google_places/
-# Padrón integrado AGC+OSM+Google: contiene nombres/razón social y direcciones
-# individuales (datos de terceros / AGC). Los agregados van al informe sanitizado.
-outputs/casas_pastas_integrado/
-outputs/**/*.pdf
-outputs/**/*.html
-outputs/casas_pastas_google_places/
-# Exports / paquetes compartibles o privados generados localmente (incluye ZIPs y pack privado)
-exports/
-*.zip
-# Secretos / variables de entorno
+.venv/
+.venv-tools/
+.agent-tools/
+node_modules/
+.graphify/
+.playwright-mcp/
+tmp/
+cache/
+
+# --- secretos ----------------------------------------------------------------------------------
 .env
 *.env
-# Anexos internos de casas de pastas: listados con nombres individuales para revisión manual
-outputs/casas_pastas_reporte/anexos_internos/
-# Auditoría de recall / faltantes: crudos de terceros, indicios y resultados a validar
-outputs/casas_pastas_recall/
 
-# === DataGastro V2 (Etapa 1) ===
-# Datos crudos y procesados con filas individuales sensibles (nombre comercial,
-# dirección, place_id/osm_id). No se commitean. Solo se publican agregados sanitizados.
-data/v2/raw/
-data/v2/processed/
-outputs/v2/internal/
-outputs/v2/google_places_raw/
-outputs/v2/osm_raw/
-outputs/v2/documental_raw/
-outputs/v2/**/*.zip
-outputs/v2/**/*.pdf
-# Versionables (agregados / configuración / esquemas / docs / código), se mantienen fuera
-# del ignore por ser no sensibles: data/v2/analytics/, outputs/v2/sanitized/, config/v2/,
-# schemas/v2/, docs/datagastro_v2/, src/v2/
-
-# === Informe Mercados CABA ===
-# Material interno y crudo: no se versiona. Solo se publican agregados sanitizados en
-# outputs/mercados_caba/sanitized/ y la documentación en docs/mercados_caba/.
-outputs/mercados_caba/internal/
-outputs/mercados_caba/internal/google_places_raw/
-outputs/mercados_caba/raw/
-outputs/mercados_caba/**/*.pdf
-outputs/mercados_caba/**/*.zip
-# Fuentes internas crudas de mercados (planillas/PDFs/etc.): nunca se versionan.
-fuentes_internas_mercados_caba/
-.env
-PROYECTOSGASTROAPARTENOREVISAR/
-
-# === Reorganización 2026-06-29 (carpetas nuevas) ===
-# Cuarentena previa al borrado: copias de outputs/PDF/zip/QA viejos. No versionar.
+# --- cuarentena, archivo y espejos de la raiz (copias de entregables; los originales viven en outputs/)
 _delete_candidates/
-# Archivo histórico (KEEP_AS_ARCHIVE): docs/informes/packs de versiones superadas. No versionar.
 _archive_historico/
-# Carpetas espejo de subproyectos con copias de entregables (PDF/MD) e insumos.
-# Los originales viven en outputs/ (ya ignorado). Estas copias tampoco se versionan.
 MercadosGastro/final/
 MercadosGastro/archive_review/
 CasasDePastas/final/
 CasasDePastas/archive_review/
-graphify-out/
-node_modules/
-tmp_pdf_preview/
-
-# === Ajustes 2026-07-04 ===
-# Cache del grafo de graphify (regenerable con `graphify update .`)
-.graphify/
-# Carpeta espejo de Cafecito: copias de entregables + respuestas crudas de encuesta
-# (datos personales, guardrail 7/8). Igual criterio que MercadosGastro/ y CasasDePastas/.
 Cafesito/
-# Outputs mal ubicados dentro de scripts/
-scripts/outputs/
-# Renders de página para QA visual: regenerables con scripts/qa/pdf_check.py.
-# Los contact_sheet_*.png viven fuera de estas carpetas y NO quedan ocultos.
+PolosGastro/
+
+# --- binarios y productos regenerables en outputs/ --------------------------------------------
+# PDF, HTML, ZIP, DOCX y PPTX salen de generadores versionados; se guardan con .sha256 al lado
+# cuando hace falta sellarlos. Los renders de QA se rehacen con scripts/qa/pdf_check.py.
+*.zip
+outputs/**/*.pdf
+outputs/**/*.html
+outputs/**/*.docx
+outputs/**/*.pptx
 outputs/**/qa_*_png/
 outputs/**/qa_png_*/
 outputs/**/raster_pages/
+outputs/**/lo_profile_*/
+outputs/analisis_interno/
+outputs/inventario_drive/
+scripts/outputs/
 
-# === Piloto Google Places microzonas (2026-07-09) ===
-# Resultados internos de Places con place_id, dirección exacta y campos técnicos
-# (datos de terceros; guardrail 8). Solo se conserva localmente; nunca se versiona.
+# --- datos internos / crudos con filas individuales (guardrails 7 y 8) -------------------------
+data/internal_raw/
+data/internal_processed/
+data/v2/raw/
+data/v2/processed/
+fuentes_internas_mercados_caba/
+PROYECTOSGASTROAPARTENOREVISAR/
+
+# Casas de pastas: la build canonica (outputs/casas_pastas/) trae razon social, nombres y
+# direcciones individuales; se versionan solo los agregados sanitizados del reporte.
+outputs/casas_pastas/
+outputs/casas_pastas_google_places/
+outputs/casas_pastas_integrado/
+outputs/casas_pastas_recall/
+outputs/casas_pastas_reporte/anexos_internos/
+
+# DataGastro V2: crudos de Places, OSM y documental. Versionables: analytics, sanitized, config, schemas.
+outputs/v2/internal/
+outputs/v2/google_places_raw/
+outputs/v2/osm_raw/
+outputs/v2/documental_raw/
+
+# Mercados CABA: material interno y crudo; se publican agregados en outputs/mercados_caba/sanitized/.
+outputs/mercados_caba/internal/
+outputs/mercados_caba/raw/
+
+# Polos: Places con place_id y direccion exacta de terceros, estados temporales, metadatos internos.
 outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/interno/
 outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/interno/
-
-# Estado temporal de Places de Grupo B; contenido local no versionable.
+outputs/polos_gastro/historico/experimentos/experimentos_google_places/
+outputs/polos_gastro/historico/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
+outputs/polos_gastro/historico/FASE5-29/fase28_ajustes_finales_informe_politico_v2_1/metadatos/interno/
 outputs/polos_gastro/INFORMEFINAL/codex/grupo_b_ejecucion_v1/estado_temporal/
 outputs/polos_gastro/INFORMEFINAL/codex/grupo_c_ejecucion_v1/estado_temporal/
 
-# Metadatos técnicos internos de fase28 (KPI reservado + incidente de cache); no publicable.
-outputs/polos_gastro/historico/FASE5-29/fase28_ajustes_finales_informe_politico_v2_1/metadatos/interno/
-
-# === Linea ATLAS_V2 (2026-08-05) ===
-# Se versionan las FUENTES, no los productos: scripts/, contenido/, capas/, matrices/,
-# los CSV y MD de qa/, los checksums, los manifiestos, los README y CAMBIOS_CONDUCCION.md.
-# Los PDF, el .docx y los ZIP ya quedan afuera por las reglas outputs/**/*.pdf y outputs/*.zip
-# de mas arriba; estas dos lineas cubren lo que no: los mapas rasterizados de la editable y
-# las hojas de contacto del QA visual, que son productos regenerables y pesan ~50 MB.
+# Linea ATLAS_V2: se versionan las fuentes (scripts, contenido, capas, matrices, checksums, README);
+# no los mapas rasterizados de la editable ni las hojas de contacto del QA.
 outputs/polos_gastro/ATLAS_V2/assets_docx/
 outputs/polos_gastro/ATLAS_V2/qa/contact_sheets*/
 outputs/polos_gastro/ATLAS_V2/qa/render_*/
 outputs/polos_gastro/ATLAS_V2/qa/_miniaturas/
 outputs/polos_gastro/ATLAS_V2/qa/_paletas/
 outputs/polos_gastro/ATLAS_V2/qa/*.png
-outputs/polos_gastro/ATLAS_V2/scripts/__pycache__/
-outputs/polos_gastro/ATLAS_V2/**/*.zip
-outputs/polos_gastro/ATLAS_V2/**/*.docx
 
-# === Barrido de la Ciudad 2026-08: capturas crudas de fuentes externas ===
-# Se versionan los scripts y las tablas derivadas, no las descargas. El Relevamiento de Usos
-# del Suelo pesa 39,5 MB y se rebaja con la URL del docstring de perfilar_usos_suelo.py; las
-# tablas del MOC se rebajan del portal de datos abiertos.
+# Notebook con salidas embebidas.
+notebooks/06_informe_presentacion.ipynb
+
+# --- fuentes externas descargadas (data/fuentes_externas): se versionan bajadores y derivadas ---
+# RUS 2022-2024 (39,5 MB, URL en el docstring de perfilar_usos_suelo.py), MOC, Overpass, Overture,
+# All The Places, catalogo BA Data, GCBA nuevas y Censo 2022 (INDEC, CC BY 4.0, 66 MB).
 data/fuentes_externas/usos_suelo/rus_2022_2024.*
 data/fuentes_externas/usos_suelo/rus_2017.*
 data/fuentes_externas/usos_suelo/_control_*.txt
+data/fuentes_externas/usos_suelo/shp/
 data/fuentes_externas/moc/*.csv
 data/fuentes_externas/moc/*.geojson
 data/fuentes_externas/moc/_perfil_moc*.txt
-data/fuentes_externas/usos_suelo/rus_2022_2024_shp.zip
-data/fuentes_externas/usos_suelo/shp/
-
-# === Fuentes abiertas de POI, agosto 2026 ===
-# Se versionan los scripts y las tablas derivadas por barrio, no las descargas. Overpass, el
-# GeoParquet de Overture y el ZIP de All The Places se rebajan con los propios bajadores.
 data/fuentes_externas/osm/_por_tag/
 data/fuentes_externas/osm/osm_gastro_caba.json
 data/fuentes_externas/osm/osm_gastro_poi.csv
 data/fuentes_externas/overture/*.parquet
 data/fuentes_externas/overture/overture_gastro_poi.csv
-data/fuentes_externas/all_the_places/*.zip
 data/fuentes_externas/all_the_places/atp_caba.csv
 data/fuentes_externas/badata_catalogo/*.json
 data/fuentes_externas/gcba_nuevas/*.xlsx
 data/fuentes_externas/gcba_nuevas/*.geojson
 data/fuentes_externas/gcba_nuevas/*.csv
 
-# Censo Nacional 2022 (INDEC, CC BY 4.0): 66 MB entre los radios censales del pais y las tablas
-# por radio de CABA. No son microdatos —son conteos ya agregados por radio— y aun asi no se
-# versionan: se rebajan con bajar_censo_2022.py. Lo versionable son las tablas por barrio y por
-# comuna que produce parejidad_cobertura.py.
-data/fuentes_externas/censo/*.zip
-
-# La base gastronomica: `local` y `local_fuente` llevan nombre y direccion de comercios. Son
-# redistribuibles por licencia, pero pesan y se regeneran con build_base_gastronomica.py; lo que
-# se versiona es el generador, el informe y los agregados.
+# --- Barrido de la Ciudad 2026-08 ------------------------------------------------------------
+# La base (`local`, `local_fuente`) trae nombre y direccion de comercios: se regenera con
+# build_base_gastronomica.py. Los crudos del ENTUR y los cuatro CSV de vigencia traen telefono y
+# mail por establecimiento: se versionan las derivadas *_sin_contacto. Cache USIG: espejo local.
 outputs/BARRIDO_CIUDAD_2026-08/base/
-
-# Intermedios regenerables del borrador de polos (2026-08-06). Se versiona `..._v3`, que es la
-# pertenencia vigente y la lee todo script; las dos anteriores son estados superados de la misma
-# tabla y las regenera `polos_p065_union_y_clases.py`.
 outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo.csv
 outputs/BARRIDO_CIUDAD_2026-08/borrador_polos/pertenencia_local_polo_v2.csv
-
-# Cache de respuestas del normalizador de direcciones de USIG: es un espejo local de un servicio
-# de terceros, se rehace solo y no es una fuente.
 outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig.json
 outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig_datos_utiles.json
-
-# === Tablas internas del piloto de Places de fase11 (2026-07) ===
-# Llevan place_id real, nombre y direccion exacta de terceros. Nunca se versionan (guardrail 8).
-# Estaban sueltas -sin regla y sin rastrear- y un `git add -A` las levanto. La regla existe para
-# que el descuido no alcance: lo que protege un archivo es el .gitignore, no la prolijidad.
-outputs/polos_gastro/historico/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
-outputs/polos_gastro/historico/experimentos/experimentos_google_places/
-notebooks/06_informe_presentacion.ipynb
-
-# Crudos del dataset del Ente de Turismo (2026-08-07). El archivo trae `telefono` y `mail` de
-# cada establecimiento: es dato abierto CC-BY y son comercios, no personas, pero el guardrail 7
-# nombra emails y telefonos sin esa distincion y no se la hacemos nosotros. Lo que se versiona es
-# la derivada `*_sin_contacto` y el perfil; el crudo se rehace corriendo el script.
 outputs/BARRIDO_CIUDAD_2026-08/entur/crudos/
-
-# === Barrido de la Ciudad 2026-08: los cuatro CSV de vigencia con contacto ===
-# Traen telefono y mail de cada establecimiento, igual que el crudo del ENTUR de mas
-# arriba, y valen la misma regla: son comercios y no personas, pero el guardrail 7
-# nombra emails y telefonos sin esa distincion y no se la hacemos nosotros. Lo que se
-# versiona son las derivadas `*_sin_contacto.csv`, que produce y reproduce
-# ronda_13/sanitizar_contactos.py. Los originales se quedan en disco.
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/PARA_CHEQUEAR_DIEGO.csv
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_A_centro.csv
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_tanda_B_almagro_norte.csv
 outputs/BARRIDO_CIUDAD_2026-08/desde_cowork/evidencia_2026/vigencia_verificada_ronda_2.csv
-
-.venv-tools/
-.agent-tools/

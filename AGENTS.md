@@ -1,83 +1,61 @@
 # AGENTS.md - DataGastro
 
-Instrucciones para agentes que trabajen en este repositorio. Estas reglas aplican a Codex y a
-cualquier asistente automatizado.
+Instrucciones para agentes que no son Claude Code (Codex y cualquier asistente automatizado).
+**Las reglas del proyecto viven en `CLAUDE.md`**: guardrails, entorno, alcance por subproyecto y
+mapa del repo. Leerlo primero; este archivo agrega solo lo que cambia para esos agentes.
 
-## DataGastro reporting standard
+## Skills
 
-Para informes DataGastro, consultar antes de trabajar:
+Las skills canónicas están en `.claude/skills/<skill>/SKILL.md`. Para agentes que no las cargan
+solos, `.agents/skills/` tiene réplicas puntero con el mismo nombre y descripción. Ante diferencia
+gana la canónica; validador: `scripts/infraestructura_agentes_skills_v1_1/check_skills_parity.py`.
 
-- `agent_skills/README.md`
-- `agent_skills/shared/datagastro_modelo_informes.md`
-- `agent_skills/shared/datagastro_proyectos_cortos.md`
-- `agent_skills/shared/datagastro_reporte_formulario.md` para formularios, encuestas y planillas
-  de respuestas.
-- `agent_skills/shared/datagastro_qa_privacidad.md` antes de cerrar entregables públicos.
-- `agent_skills/shared/datagastro_metodo_experimental.md` **siempre que una corrida vaya a
-  producir un número que después se lea como conclusión** (bandas antes de correr, control
-  aleatorio, umbrales que no se mueven, curvas de sensibilidad, presupuesto de API, procedencia
-  y licencia, y no confundir «no encontramos» con «no existe»).
+## Estándar de informes DataGastro
 
-Si la tarea toca guardrails, privacidad, fuentes, pipeline, geodatos, fuentes externas o limpieza,
-consultar también la skill importada correspondiente en `agent_skills/claude_imported/`.
+Antes de producir un informe, consultar en este orden:
 
-## Infraestructura agentes y skills (V1.1, controlada)
+1. `agent_skills/README.md`
+2. `agent_skills/shared/datagastro_modelo_informes.md`
+3. `agent_skills/shared/datagastro_proyectos_cortos.md` (relevamientos cortos, tipo Cafecito)
+4. `agent_skills/shared/datagastro_reporte_formulario.md` (formularios, encuestas, planillas)
+5. `agent_skills/shared/datagastro_qa_privacidad.md` antes de cerrar entregables públicos
+6. `agent_skills/shared/datagastro_metodo_experimental.md` **siempre que una corrida vaya a
+   producir un número que después se lea como conclusión**
 
-Para trabajo multiagente, experimentos o packs de revisión (sin reemplazar las reglas de arriba):
+La skill `datagastro-informes` trae la plantilla DGDGAS (portada sin fecha ni versión, índice,
+secciones numeradas, anexo metodológico, lenguaje prudente: "identificados", no "confirmados").
 
-1. Política: `docs/infraestructura_agentes_skills_v1_1/POLITICA_OPERATIVA_DATAGASTRO_V1_1.md`
-2. Ciclo y roles: `docs/infraestructura_agentes_skills_v1_1/CICLO_OPERATIVO_UNA_PASADA.md`
-   (una producción → una auditoría independiente → una corrección → decisión → cierre; estados
-   canónicos; fuente vigente única por etapa).
-3. Catálogo: `docs/infraestructura_agentes_skills_v1_1/CATALOGO_AGENTES_SKILLS.json`
-4. Guía y evaluación: `docs/infraestructura_agentes_skills_v1_1/` (ver `README.md`)
-5. Superficies protegidas por subproyecto: p. ej. `docs/polos_gastro/PROTECTED_SURFACES.yaml`
-6. Adaptadores Codex delgados: `docs/infraestructura_agentes_skills_v1_1/adaptadores/codex/`
-7. Definiciones de skills (procedimientos): `docs/infraestructura_agentes_skills_v1/skills/`
+## Infraestructura agentes y skills (V1.1)
 
-La V1 histórica permanece en `docs/infraestructura_agentes_skills_v1/` (no sobrescribir).
-No asumir carga automática de `.codex/`. No inventar datos ni vulnerar privacidad aunque haya autorización para commit/API.
+Para trabajo multiagente o packs de revisión: política, ciclo de una pasada (producción →
+auditoría independiente → corrección → decisión → cierre), catálogo y adaptadores en
+`docs/infraestructura_agentes_skills_v1_1/`. Superficies protegidas por subproyecto en
+`docs/<subproyecto>/PROTECTED_SURFACES.yaml`. La V1 histórica queda en
+`docs/infraestructura_agentes_skills_v1/`. No asumir carga automática de `.codex/`.
 
-## Reglas obligatorias
+## Reglas que Codex tiende a saltear
 
-- No inventar datos, métricas, fuentes, URLs ni conclusiones.
-- Se permite tratar datos personales o sensibles internamente cuando sean necesarios para un
-  cruce, una validación o una tarea autorizada. Usarlos con minimización de campos, finalidad
-  explícita, trazabilidad y almacenamiento local restringido/ignorado por Git.
-- No exponer en entregables públicos correos, teléfonos, nombres de personas, CUIT, DNI, IDs
-  técnicos, links privados ni API keys. Los identificadores usados para enlazar fuentes deben
-  eliminarse, anonimizarse o agregarse antes de publicar.
-- No modificar fuentes originales salvo pedido explícito.
-- No tocar `.env`, credenciales, datos internos ni crudos.
-- No modificar pipelines de DataGastro general sin pedido explícito.
-- No hacer commit ni push sin pedido explícito.
-- No usar `git add .`.
-- Mantener estilo institucional, claro, sobrio y prudente.
+- No hacer commit ni push sin pedido explícito. **No usar `git add .`** ni `git add -A`.
+- Python: `.venv/Scripts/python.exe`, nunca `python` a secas.
+- Datos personales o sensibles: se pueden usar internamente para un cruce autorizado, con
+  minimización de campos, finalidad explícita, trazabilidad y almacenamiento en carpeta ignorada
+  por Git. **Nunca** en entregables públicos: ni correos, teléfonos, nombres de personas, CUIT,
+  DNI, IDs técnicos, links privados ni API keys. Los identificadores que enlazan fuentes se
+  eliminan, anonimizan o agregan antes de publicar.
+- No modificar fuentes originales, `.env`, credenciales ni crudos.
+- Ante pedidos de informes, trabajar en `docs/`, `scripts/` y `outputs/` del subproyecto pedido.
+  No reescribir informes existentes ni tocar `data/`, `src/`, `dashboard/`, `notebooks/` ni otros
+  subproyectos salvo pedido explícito.
+- Antes de cerrar: separar salidas internas de entregables públicos, reportar qué archivos se
+  crearon o modificaron y confirmar si se tocaron datos fuente.
 
-## Alcance por defecto
+## Contexto
 
-Ante pedidos de informes o estándares, trabajar en documentación, scripts y outputs del proyecto
-pedido. No reescribir informes existentes ni tocar `MercadosGastro/`, `CasasDePastas/`,
-`Cafesito/`, `data/`, `src/`, `dashboard/` o `notebooks/` salvo que el usuario lo pida de forma
-explícita.
-
-## Privacidad y QA
-
-Antes de cerrar, distinguir salidas internas de entregables públicos. Los cruces internos pueden
-usar los identificadores mínimos necesarios, siempre en ubicaciones restringidas e ignoradas por
-Git. Verificar que los entregables públicos no contienen emails, teléfonos, nombres de personas,
-CUIT, DNI, links privados ni API keys. Reportar qué archivos se crearon o modificaron y confirmar
-si se tocaron o no datos fuente.
-
-## Contexto del proyecto (resumen vigente)
-
-Proyecto de datos del ecosistema gastronómico de CABA para DGDGAS (Dirección General de
+Proyecto de datos del ecosistema gastronómico de CABA para la DGDGAS (Dirección General de
 Desarrollo Gastronómico; "DataGastro" solo en docs internos). Rol esperado: analista senior de
 datos y políticas públicas, español argentino, tono institucional sobrio. Fuentes públicas GCBA
 primero; separar dato confirmado / inferido / pendiente / no encontrado; trazabilidad
 fuente-fecha-universo en toda cifra.
 
-Las instrucciones Cowork originales (arranque desde ZIP, estructura y prioridades iniciales)
-están **supersedidas** y archivadas en
-`docs/legacy/AGENTS_cowork_importado_SUPERSEDIDO_2026-07-14.md`. No usarlas como instrucciones
-operativas.
+Las instrucciones Cowork originales están supersedidas y archivadas en
+`docs/legacy/AGENTS_cowork_importado_SUPERSEDIDO_2026-07-14.md`.
