@@ -9,8 +9,8 @@ from scipy.spatial import cKDTree
 from shapely.geometry import LineString
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-AREAS = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_preflight/AREAS_CONSULTA_CANDIDATOS_V4.geojson"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+AREAS = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/AREAS_CONSULTA_CANDIDATOS_V4.geojson"
 ZONES = {"Z01": "Villa Crespo", "Z02": "Chacarita", "Z03": "Caballito multinodo", "Z04": "Boulevard Caseros — Parque Lezama"}
 
 

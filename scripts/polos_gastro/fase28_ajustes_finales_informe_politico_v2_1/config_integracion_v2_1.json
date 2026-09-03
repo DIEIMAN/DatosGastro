@@ -7,9 +7,9 @@
     "zip": "outputs/polos_gastro/fase27_informe_politico_integrado_v2/REVISION_INFORME_POLITICO_INTEGRADO_V2.zip"
   },
   "cartografia_v3_1": {
-    "mapas": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas",
-    "capas": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas",
-    "script": "scripts/polos_gastro/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py"
+    "mapas": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas",
+    "capas": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas",
+    "script": "scripts/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py"
   },
   "mapa_general": {
     "san_telmo_color": "#2C7FB8",

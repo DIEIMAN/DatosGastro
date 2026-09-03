@@ -11,7 +11,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1"
+BASE = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1"
 SOURCE = BASE / "cartografia_editorial_v2"
 PACKAGE_NAME = "REVISION_CARTOGRAFIA_EDITORIAL_V2"
 DEST = BASE / PACKAGE_NAME

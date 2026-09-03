@@ -9,7 +9,7 @@ No modifica el informe vigente, ni Fase 25, ni PDFs finales, ni datos fuente.
 Solo lee inputs existentes del repo y escribe en la carpeta experimental.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/generar_poligonos_clustering.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/generar_poligonos_clustering.py
     [--input CSV] [--outdir DIR] [--eps METROS] [--min-samples N]
 
 Si no se fuerzan --eps/--min-samples, prueba una grilla y elige una configuracion
@@ -43,7 +43,7 @@ except ImportError:
 REPO = Path(__file__).resolve().parents[3]
 
 INPUT_DEFAULT = REPO / "outputs/polos_gastro/fase13_mapas/tablas/locales_para_mapa_revision.csv"
-OUTDIR_DEFAULT = REPO / "outputs/polos_gastro/experimentos_clustering"
+OUTDIR_DEFAULT = REPO / "outputs/polos_gastro/historico/experimentos_clustering"
 BARRIOS_GEOJSON = REPO / "PolosGastro/cartografia/barrios_caba.geojson"
 COMUNAS_GEOJSON = REPO / "PolosGastro/cartografia/comunas_caba.geojson"
 SUBZONAS_EDITORIALES = (

@@ -8,7 +8,7 @@ entidades duplicadas (en mas de una macrozona), entidades fuera de contenedor (q
 estaban dentro y la correccion dejo afuera).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/qa_correcciones_bloqueantes.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/qa_correcciones_bloqueantes.py
 """
 
 from __future__ import annotations
@@ -20,9 +20,9 @@ import pandas as pd
 from shapely.validation import explain_validity
 
 REPO = Path(__file__).resolve().parents[4]
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 CORRECCIONES_DIR = SALIDA / "correcciones_bloqueantes"
-PROTOTIPO = REPO / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
+PROTOTIPO = REPO / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
 
 CRS_METRICO = "EPSG:5347"
 IDS_MODIFICADOS = ["MZ_MICROCENTRO_Y_CENTRO", "MZ_BELGRANO", "MZ_COSTANERA_NORTE", "MZ_CHACARITA"]

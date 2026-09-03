@@ -14,7 +14,7 @@ superpuestas para que una persona que conoce la zona pueda juzgar el resultado:
   -> solo entidades en F01), para no sobrecargar el mapa
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s06_validacion_visual.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s06_validacion_visual.py
 """
 
 from __future__ import annotations

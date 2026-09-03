@@ -13,9 +13,9 @@ import geopandas as gpd
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-DOC = ROOT / "docs/polos_gastro/expansion_candidatos_v4_tanda1"
-SCRIPTS = ROOT / "scripts/polos_gastro/expansion_candidatos_v4_tanda1"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+DOC = ROOT / "docs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+SCRIPTS = ROOT / "scripts/polos_gastro/historico/expansion_candidatos_v4_tanda1"
 PACK = OUT / "REVISION_EXPANSION_CANDIDATOS_V4_TANDA1"
 ZIP = OUT / "REVISION_EXPANSION_CANDIDATOS_V4_TANDA1.zip"
 
@@ -83,9 +83,9 @@ def main() -> int:
     check("mapas_png", len(pngs) == 28 and all(p.stat().st_size > 10_000 for p in pngs), f"cantidad={len(pngs)}")
     check("mapas_svg", len(svgs) == 28 and all(p.stat().st_size > 1_000 for p in svgs), f"cantidad={len(svgs)}")
     checksums = [
-        ROOT / "outputs/polos_gastro/expansion_candidatos_v4_preflight/checksums.sha256",
-        ROOT / "outputs/polos_gastro/evidencia_documental_expansion_v4/checksums.sha256",
-        ROOT / "outputs/polos_gastro/preparacion_integrada_expansion_v4/checksums.sha256",
+        ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/checksums.sha256",
+        ROOT / "outputs/polos_gastro/historico/evidencia_documental_expansion_v4/checksums.sha256",
+        ROOT / "outputs/polos_gastro/historico/preparacion_integrada_expansion_v4/checksums.sha256",
     ]
     for p in checksums:
         ok, total = verify_checksum_file(p)

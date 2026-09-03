@@ -7,7 +7,7 @@ EXPERIMENTAL. Dados dos GeoJSON (`macrozonas_editorial_vN...` y su sucesor), rep
 CHANGELOG.md escrito a mano coincide con lo que realmente cambio (Etapa Infra-5).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/comparar_versiones_editorial.py v1.geojson v2.geojson
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/comparar_versiones_editorial.py v1.geojson v2.geojson
 """
 
 from __future__ import annotations

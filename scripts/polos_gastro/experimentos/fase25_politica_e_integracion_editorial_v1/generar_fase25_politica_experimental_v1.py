@@ -14,7 +14,7 @@ paralelo a la Fase 25 oficial (que permanece intacta). Reglas:
 - La marca "experimental" va en los metadatos del PDF y en la documentación,
   no como sello visual en las páginas (decisión editorial de la tanda 2026-07-11).
 
-Uso:  .venv/Scripts/python.exe scripts/polos_gastro/experimentos/\
+Uso:  .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/\
 fase25_politica_e_integracion_editorial_v1/generar_fase25_politica_experimental_v1.py
 """
 from __future__ import annotations
@@ -31,8 +31,8 @@ from reportlab.pdfgen import canvas
 
 ROOT = Path(__file__).resolve().parents[4]
 EXP = "fase25_politica_e_integracion_editorial_v1"
-DOCS = ROOT / "docs" / "polos_gastro" / "experimentos" / EXP
-OUT = ROOT / "outputs" / "polos_gastro" / "experimentos" / EXP
+DOCS = ROOT / "docs" / "polos_gastro" / "historico" / "experimentos" / EXP
+OUT = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / EXP
 ASSETS = OUT / "assets"
 CONTENT = DOCS / "contenido_fase25_politica_experimental_v1.yaml"
 PDF_OUT = OUT / "INFORME_POLOS_GASTRO_FASE25_POLITICA_EXPERIMENTAL_V1.pdf"

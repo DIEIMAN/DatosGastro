@@ -15,8 +15,8 @@ from shapely.geometry import Point
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 CFG = json.loads((HERE / "config_tanda1_v4.json").read_text(encoding="utf-8"))
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-DOC = ROOT / "docs/polos_gastro/expansion_candidatos_v4_tanda1"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+DOC = ROOT / "docs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
 
 
 def rel(path: str) -> Path:

@@ -34,7 +34,7 @@ from shapely.geometry import MultiPolygon
 from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+BASE = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 V4 = BASE / "cartografia_redibujo_editorial_v4"
 V41 = BASE / "cartografia_redibujo_editorial_v4_1"
 OUT = BASE / "cartografia_design_v4_2"

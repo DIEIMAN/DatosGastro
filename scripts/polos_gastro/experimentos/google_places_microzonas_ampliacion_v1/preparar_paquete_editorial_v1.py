@@ -18,7 +18,7 @@ import pandas as pd
 from matplotlib.patches import Patch
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+BASE = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
         / "google_places_microzonas_ampliacion_v1" / "completa_v1")
 OUT = BASE / "paquete_editorial_v1"
 MAPAS = OUT / "mapas_revision"
@@ -27,7 +27,7 @@ POLIGONOS = BASE / "POLIGONOS_MICROZONAS_COMPLETA_V1.geojson"
 PUNTOS = BASE / "MICROCLUSTERS_COMPLETA_V1.geojson"
 UNIVERSO = BASE / "UNIVERSO_COMPLETO_SANITIZADO.csv"
 REVISION = BASE / "revision_editorial_v1" / "tabla_revision_editorial_poligonos_completa_v1.csv"
-HANDOFF_PREVIO = (ROOT / "docs" / "polos_gastro" / "experimentos"
+HANDOFF_PREVIO = (ROOT / "docs" / "polos_gastro" / "historico" / "experimentos"
                   / "google_places_microzonas_ampliacion_v1"
                   / "HANDOFF_REVISION_POLIGONOS_COMPLETA_V1.md")
 

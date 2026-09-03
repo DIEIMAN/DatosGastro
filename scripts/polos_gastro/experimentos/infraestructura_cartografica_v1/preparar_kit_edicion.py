@@ -18,12 +18,12 @@ Para cada macrozona pedida exporta a una carpeta propia:
 - semilla_fase13.geojson         : puntos semilla (Fase 13) de esa macrozona, con nombre
 - LEEME.md                       : que es cada archivo y sugerencia de orden de carga
 
-No modifica ninguna fuente. Solo lee `outputs/polos_gastro/experimentos/
+No modifica ninguna fuente. Solo lee `outputs/polos_gastro/historico/experimentos/
 pipeline_microzonas_v1/` (prototipo V1 ya corrido) y capas base del repo.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/preparar_kit_edicion.py "Palermo"
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/preparar_kit_edicion.py --todas
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/preparar_kit_edicion.py "Palermo"
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/preparar_kit_edicion.py --todas
 """
 
 from __future__ import annotations
@@ -36,8 +36,8 @@ import geopandas as gpd
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[4]
-PROTOTIPO = REPO / "outputs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
-SALIDA = REPO / "outputs" / "polos_gastro" / "experimentos" / "infraestructura_cartografica_v1" / "kits_edicion"
+PROTOTIPO = REPO / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
+SALIDA = REPO / "outputs" / "polos_gastro" / "historico" / "experimentos" / "infraestructura_cartografica_v1" / "kits_edicion"
 
 CALLEJERO = REPO / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 SUBZONAS_FASE16 = REPO / "outputs/polos_gastro/fase16_mapas_editoriales_v4/tablas/subzonas_editoriales_geometrias.geojson"

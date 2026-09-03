@@ -15,9 +15,9 @@ import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+BASE = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
         / "google_places_microzonas_ampliacion_v1" / "completa_v1")
-DOCS = (ROOT / "docs" / "polos_gastro" / "experimentos"
+DOCS = (ROOT / "docs" / "polos_gastro" / "historico" / "experimentos"
         / "google_places_microzonas_ampliacion_v1")
 OUT = BASE / "revision_editorial_v1"
 

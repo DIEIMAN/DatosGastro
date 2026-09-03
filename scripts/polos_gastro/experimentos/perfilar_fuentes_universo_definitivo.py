@@ -3,7 +3,7 @@
 
 Linea experimental de diseno del pipeline de microzonas (PolosGastro).
 Objetivo: respaldar con numeros reales los documentos metodologicos de
-`docs/polos_gastro/experimentos/diseno_pipeline_definitivo/`.
+`docs/polos_gastro/historico/experimentos/diseno_pipeline_definitivo/`.
 
 Que hace:
 - Perfila F01 (oferta registrada) y F02 (habilitaciones gastronomicas) desde
@@ -16,11 +16,11 @@ Que hace:
 - Perfila el universo semilla de PolosGastro (106 locales, Fase 13) como referencia.
 
 Salidas (experimentales, no institucionales):
-- outputs/polos_gastro/experimentos/diseno_pipeline_definitivo/perfil_fuentes_universo.md
-- outputs/polos_gastro/experimentos/diseno_pipeline_definitivo/cobertura_por_comuna.csv
+- outputs/polos_gastro/historico/experimentos/diseno_pipeline_definitivo/perfil_fuentes_universo.md
+- outputs/polos_gastro/historico/experimentos/diseno_pipeline_definitivo/cobertura_por_comuna.csv
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/perfilar_fuentes_universo_definitivo.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/perfilar_fuentes_universo_definitivo.py
 """
 
 from __future__ import annotations

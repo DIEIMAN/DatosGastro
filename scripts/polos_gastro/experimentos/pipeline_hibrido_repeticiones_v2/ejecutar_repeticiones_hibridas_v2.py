@@ -34,8 +34,8 @@ from sklearn.metrics import adjusted_mutual_info_score, adjusted_rand_score
 from sklearn.neighbors import KernelDensity, NearestNeighbors
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2"
-DOC = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2"
 PACK = OUT / "REVISION_REPETICIONES_HIBRIDAS_V2"
 MAPS = OUT
 CRS_M = "EPSG:5347"
@@ -48,7 +48,7 @@ NOTE = (
 )
 
 V1_SCRIPT = ROOT / (
-    "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/"
+    "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/"
     "construir_pipeline_hibrido_v1.py"
 )
 
@@ -56,18 +56,18 @@ PROTECTED = [
     ROOT / "docs/polos_gastro/fase25_microajustes_finales_oficina",
     ROOT / "outputs/polos_gastro/fase25_microajustes_finales_oficina",
     ROOT / "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-    ROOT / "docs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
-    ROOT / "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1",
-    ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-    ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-    ROOT / "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "docs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
+    ROOT / "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1",
+    ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
 ]
 
 COLORS = {
@@ -278,7 +278,7 @@ def san_telmo(data: dict) -> dict:
     # Línea de base compacta ya producida por el protocolo v1, leída sin modificar.
     # Permite que la prueba v2 mida el aporte incremental del eje Defensa contra el
     # núcleo estable anterior, en vez de sustituirlo por un único cluster local.
-    prior_core_path = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_nucleo_candidato.geojson"
+    prior_core_path = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_nucleo_candidato.geojson"
     prior_core = gpd.read_file(prior_core_path).to_crs(CRS_M)
     core_one = unary_union(prior_core.geometry.tolist()).intersection(macro)
     two_sets = [np.flatnonzero(leaf == cid) for cid in leaf_ids[:2]]

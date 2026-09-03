@@ -55,13 +55,13 @@ PROTECTED_ROOTS = [
     "docs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
     "outputs/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
     "scripts/polos_gastro/fase28_ajustes_finales_informe_politico_v2_1",
-    "docs/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "scripts/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "outputs/polos_gastro/corrida_territorial_v3",
-    "scripts/polos_gastro/corrida_territorial_v3",
-    "docs/polos_gastro/preintegracion_editorial_v3",
-    "docs/polos_gastro/evidencia_documental_integrada_v1_1",
+    "docs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "scripts/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "outputs/polos_gastro/historico/corrida_territorial_v3",
+    "scripts/polos_gastro/historico/corrida_territorial_v3",
+    "docs/polos_gastro/historico/preintegracion_editorial_v3",
+    "docs/polos_gastro/historico/evidencia_documental_integrada_v1_1",
 ]
 
 FORBIDDEN_PUBLIC = [

@@ -22,7 +22,7 @@ Ademas:
 Salidas en outputs/.../pipeline_microzonas_v1/metricas/.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s05_metricas.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s05_metricas.py
 """
 
 from __future__ import annotations

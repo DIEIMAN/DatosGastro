@@ -7,8 +7,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-PLAN = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_preflight/PLAN_CONSULTAS_PLACES_EXPANSION_V4.csv"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+PLAN = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/PLAN_CONSULTAS_PLACES_EXPANSION_V4.csv"
 
 
 def main() -> int:

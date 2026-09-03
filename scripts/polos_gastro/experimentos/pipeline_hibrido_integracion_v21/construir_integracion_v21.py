@@ -37,13 +37,13 @@ from sklearn.neighbors import KernelDensity
 
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21"
-DOC = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21"
-SCRIPT_DIR = ROOT / "scripts/polos_gastro/experimentos/pipeline_hibrido_integracion_v21"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21"
+SCRIPT_DIR = ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21"
 HANDOFF = OUT / "HANDOFF_FABLE"
-V2 = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2"
-V2_DOC = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2"
-V1_SCRIPT = ROOT / "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py"
+V2 = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2"
+V2_DOC = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2"
+V1_SCRIPT = ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py"
 CRS_M = "EPSG:5347"
 CRS_GEO = "EPSG:4326"
 SEED = 260711
@@ -61,20 +61,20 @@ PROTECTED = [
     ROOT / "docs/polos_gastro/fase25_microajustes_finales_oficina",
     ROOT / "outputs/polos_gastro/fase25_microajustes_finales_oficina",
     ROOT / "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-    ROOT / "docs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
-    ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
-    ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-    ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-    ROOT / "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-    ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2",
-    ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2",
-    ROOT / "scripts/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2",
+    ROOT / "docs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
+    ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+    ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2",
+    ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2",
+    ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2",
 ]
 
 

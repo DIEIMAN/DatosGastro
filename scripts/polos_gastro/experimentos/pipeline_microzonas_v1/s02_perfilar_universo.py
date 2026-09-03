@@ -16,7 +16,7 @@ Salidas:
 - outputs/.../pipeline_microzonas_v1/universo/perfil_por_barrio.csv
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s02_perfilar_universo.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s02_perfilar_universo.py
 """
 
 from __future__ import annotations

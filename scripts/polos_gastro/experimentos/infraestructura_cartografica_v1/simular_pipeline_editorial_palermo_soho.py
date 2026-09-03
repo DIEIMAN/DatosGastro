@@ -19,7 +19,7 @@ Pregunta que responde: ¿el contorno real elimina los problemas de la validacion
 (clusters sobredimensionados, mezcla de sub-nucleos, dependencia del ruido de semilla)?
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/simular_pipeline_editorial_palermo_soho.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/simular_pipeline_editorial_palermo_soho.py
 """
 
 from __future__ import annotations
@@ -41,8 +41,8 @@ from shapely.geometry import MultiPoint
 from sklearn.cluster import HDBSCAN
 
 REPO = Path(__file__).resolve().parents[4]
-PROTOTIPO = REPO / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+PROTOTIPO = REPO / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 
 CRS_GEO = "EPSG:4326"
 CRS_METRICO = "EPSG:5347"

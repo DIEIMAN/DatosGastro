@@ -26,7 +26,7 @@ BANDERAS (no bloquean, quedan para revision humana):
      alimentar un informe institucional todavia)
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/qa_capa_editorial.py <capa.geojson>
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/qa_capa_editorial.py <capa.geojson>
 """
 
 from __future__ import annotations

@@ -25,11 +25,11 @@ from shapely.geometry import MultiPoint
 from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+BASE = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
         / "google_places_microzonas_ampliacion_v1")
 OUT = BASE / "completa_v1"
 UNIVERSO = OUT / "UNIVERSO_COMPLETO_SANITIZADO.csv"
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
 OUT_PUNTOS = OUT / "MICROCLUSTERS_COMPLETA_V1.geojson"
 OUT_POLIGONOS = OUT / "POLIGONOS_MICROZONAS_COMPLETA_V1.geojson"

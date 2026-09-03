@@ -25,7 +25,7 @@ Salida: `outputs/.../infraestructura_cartografica_v1/poligono_real_palermo_soho.
 (comparacion, no pedido explicitamente pero gratis con el mismo metodo).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/construir_poligono_real_palermo_soho.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/construir_poligono_real_palermo_soho.py
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ from shapely.ops import split, unary_union
 REPO = Path(__file__).resolve().parents[4]
 CALLEJERO = REPO / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 COMUNAS = REPO / "PolosGastro/cartografia/comunas_caba.geojson"
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 
 CRS_GEO = "EPSG:4326"
 CRS_METRICO = "EPSG:5347"

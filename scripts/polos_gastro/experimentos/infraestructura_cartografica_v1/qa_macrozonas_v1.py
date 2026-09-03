@@ -15,7 +15,7 @@ atributos, jerarquia) y agrega los controles pedidos especificamente para esta c
     de solape, para facilitar la revision)
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/qa_macrozonas_v1.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/qa_macrozonas_v1.py
 """
 
 from __future__ import annotations
@@ -31,8 +31,8 @@ from qa_capa_editorial import banderas as banderas_genericas  # noqa: E402
 from qa_capa_editorial import gates_duros  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[4]
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
-PROTOTIPO = REPO / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
+PROTOTIPO = REPO / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
 
 CRS_METRICO = "EPSG:5347"
 AREA_MAX_HA = 600.0

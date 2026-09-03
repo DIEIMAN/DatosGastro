@@ -6,8 +6,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-UNIVERSE = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+UNIVERSE = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
 
 
 def main() -> int:

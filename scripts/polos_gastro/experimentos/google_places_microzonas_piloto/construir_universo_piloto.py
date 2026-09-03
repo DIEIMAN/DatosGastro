@@ -12,7 +12,7 @@ EXPERIMENTO CONTROLADO. Solo lectura de insumos ya construidos; no toca datos fu
 - Output: UNIVERSO_PILOTO_SANITIZADO.csv (sin place_id, sin dirección exacta).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/google_places_microzonas_piloto/construir_universo_piloto.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/construir_universo_piloto.py
 """
 from __future__ import annotations
 
@@ -24,11 +24,11 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
 
-UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
+UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
                / "universo" / "universo_entidades_v1.csv")
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_piloto"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_piloto"
 PLACES_SANITIZADO = SALIDA / "places" / "places_sanitizado.csv"
 OUT_CSV = SALIDA / "UNIVERSO_PILOTO_SANITIZADO.csv"
 OUT_QA = SALIDA / "qa_universo_piloto.json"

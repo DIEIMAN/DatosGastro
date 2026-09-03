@@ -8,8 +8,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
-DOC = ROOT / "docs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
 PACK = OUT / "REVISION_AUDITORIA_GPT56"
 ZIP = OUT / "REVISION_AUDITORIA_GPT56.zip"
 

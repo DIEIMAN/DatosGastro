@@ -38,7 +38,7 @@ from preparar_consultas_places_ampliacion import (  # noqa: E402
 )
 
 RADIO_REFINO_M = 70.0
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 DIR_REFINO = SALIDA / "places" / "refinamientos"
 DIR_REFINO_INTERNO = DIR_INTERNO / "refinamientos"
 

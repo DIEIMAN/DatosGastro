@@ -14,7 +14,7 @@ limites oficiales y requieren revision territorial. No modifica el experimento
 v1 ni el informe vigente; escribe solo en carpetas *_v2.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/generar_poligonos_clustering_v2.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/generar_poligonos_clustering_v2.py
     [--input CSV] [--outdir DIR] [--solo-grilla]
 """
 
@@ -43,7 +43,7 @@ except ImportError:
 REPO = Path(__file__).resolve().parents[3]
 
 INPUT_DEFAULT = REPO / "outputs/polos_gastro/fase13_mapas/tablas/locales_para_mapa_revision.csv"
-OUTDIR_DEFAULT = REPO / "outputs/polos_gastro/experimentos_clustering_v2"
+OUTDIR_DEFAULT = REPO / "outputs/polos_gastro/historico/experimentos_clustering_v2"
 BARRIOS_GEOJSON = REPO / "PolosGastro/cartografia/barrios_caba.geojson"
 COMUNAS_GEOJSON = REPO / "PolosGastro/cartografia/comunas_caba.geojson"
 

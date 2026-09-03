@@ -21,13 +21,13 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
 
-UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
+UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
                / "universo" / "universo_entidades_v1.csv")
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
-BASE_AMPLIACION = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+BASE_AMPLIACION = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
                    / "google_places_microzonas_ampliacion_v1")
-PILOTO = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_piloto"
+PILOTO = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_piloto"
 OUT = BASE_AMPLIACION / "completa_v1"
 OUT_INTERNO = BASE_AMPLIACION / "interno" / "completa_v1"
 

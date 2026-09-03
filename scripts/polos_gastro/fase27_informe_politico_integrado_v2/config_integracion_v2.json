@@ -1,7 +1,7 @@
 {
   "descripcion": "Configuración de integración fase27 — informe político integrado V2. Los recortes eliminan únicamente franjas de título/pie internas de las COPIAS (los originales V3.1 no se modifican); el contenido cartográfico queda intacto.",
   "assets_v3_1": {
-    "origen": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas",
+    "origen": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas",
     "insertados": {
       "mapa_general_integrado_v2.png": {
         "fuente": "mapa_general_institucional_v3_1.png",
@@ -26,10 +26,10 @@
     }
   },
   "capas_v21": {
-    "corrientes": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
-    "san_telmo_nucleo": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/san_telmo_nucleo_presentacion_v21.geojson",
-    "san_telmo_defensa": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/san_telmo_defensa_contextual_v21.geojson",
-    "puerto_madero_opciones": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/puerto_madero_opciones_presentacion_v21.geojson",
+    "corrientes": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
+    "san_telmo_nucleo": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/san_telmo_nucleo_presentacion_v21.geojson",
+    "san_telmo_defensa": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/san_telmo_defensa_contextual_v21.geojson",
+    "puerto_madero_opciones": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/HANDOFF_FABLE/puerto_madero_opciones_presentacion_v21.geojson",
     "puerto_madero_opcion_id": "PM_PRES_C"
   },
   "fondo": {

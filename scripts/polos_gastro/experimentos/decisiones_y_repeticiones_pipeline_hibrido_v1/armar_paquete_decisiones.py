@@ -20,12 +20,12 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[4]
-DOCS = ROOT / "docs/polos_gastro/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
-OUT = ROOT / "outputs/polos_gastro/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
+DOCS = ROOT / "docs/polos_gastro/historico/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
 PKG = OUT / "PAQUETE_DECISIONES_DIEGO"
-SCRIPTS = ROOT / "scripts/polos_gastro/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
-V1_OUT = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1"
-V1_MANIFEST = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/MANIFEST_ARCHIVOS.md"
+SCRIPTS = ROOT / "scripts/polos_gastro/historico/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1"
+V1_OUT = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1"
+V1_MANIFEST = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/MANIFEST_ARCHIVOS.md"
 
 DOCS_A_PAQUETE = [
     "REVISION_CRITICA_PROTOTIPOS_HIBRIDOS.md",
@@ -50,32 +50,32 @@ MAPAS_V1 = [
 ]
 # Insumos críticos v1 usados en esta tanda (se verifican contra el manifest v1).
 INSUMOS_CRITICOS = [
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/metadata_pipeline_hibrido_v1.json",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/metricas_estabilidad_desagregadas_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mezcla_fuentes_representaciones_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bootstrap_bloques_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_ablacion_fuentes_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bordes_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_comparacion_comunidades.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_comparacion_metodos.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_perfil_longitudinal.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_perfil_frente.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/tabla_comparacion_prototipos_hibridos_v1.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/diagnostico_places_por_zona_corregido.csv",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_nucleo_candidato.geojson",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_nucleos_candidatos.geojson",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_eje_candidato.geojson",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_frentes_candidatos.geojson",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/costanera_concentraciones_exploratorias.geojson",
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/inventario_capas_urbanas_locales.csv",
-] + ["outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/" + m for m in MAPAS_V1]
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/metadata_pipeline_hibrido_v1.json",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/metricas_estabilidad_desagregadas_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/mezcla_fuentes_representaciones_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bootstrap_bloques_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_ablacion_fuentes_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/robustez_bordes_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_comparacion_comunidades.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_comparacion_metodos.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_perfil_longitudinal.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_perfil_frente.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/tabla_comparacion_prototipos_hibridos_v1.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/diagnostico_places_por_zona_corregido.csv",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/san_telmo_nucleo_candidato.geojson",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/belgrano_nucleos_candidatos.geojson",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/corrientes_eje_candidato.geojson",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/puerto_madero_frentes_candidatos.geojson",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/costanera_concentraciones_exploratorias.geojson",
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/inventario_capas_urbanas_locales.csv",
+] + ["outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/mapas/" + m for m in MAPAS_V1]
 
 # Errata preexistente del empaquetado v1: el manifest v1 registró una versión anterior
 # (1573 bytes) de metadata_pipeline_hibrido_v1.json; las tres copias actuales (suelta,
 # carpeta del paquete y ZIP v1, este último intacto) son byte-idénticas entre sí con el
 # hash de abajo. No es un cambio de esta tanda; ver QA_FINAL_DECISIONES_Y_REPETICIONES.md.
 ERRATAS_PREEXISTENTES_V1 = {
-    "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/metadata_pipeline_hibrido_v1.json":
+    "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/metadata_pipeline_hibrido_v1.json":
         "2a453994653c77b223d656c56c5f33df818dd926594e886108f8c4d34933c8f3",
 }
 

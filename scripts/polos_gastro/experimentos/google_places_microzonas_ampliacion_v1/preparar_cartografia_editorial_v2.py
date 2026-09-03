@@ -13,7 +13,7 @@ from shapely.ops import unary_union
 
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1"
+BASE = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1"
 COMPLETA = BASE / "completa_v1"
 PAQUETE = COMPLETA / "paquete_editorial_v1"
 OUT = BASE / "cartografia_editorial_v2"
@@ -674,7 +674,7 @@ Estado: EXPERIMENTAL / NO OFICIAL.
 
 Generado con:
 
-`python scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/preparar_cartografia_editorial_v2.py`
+`python scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/preparar_cartografia_editorial_v2.py`
 """
     (OUT / "HANDOFF_CARTOGRAFIA_EDITORIAL_V2.md").write_text(handoff, encoding="utf-8")
 

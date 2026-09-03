@@ -25,14 +25,14 @@ from shapely.ops import unary_union
 ROOT = Path(__file__).resolve().parents[3]
 FECHA = "2026-07-12"
 SCRIPT_DIR = Path(__file__).resolve().parent
-OUT_PRE = ROOT / "outputs" / "polos_gastro" / "expansion_candidatos_v4_preflight"
-DOC_PRE = ROOT / "docs" / "polos_gastro" / "expansion_candidatos_v4_preflight"
-OUT_INT = ROOT / "outputs" / "polos_gastro" / "preparacion_integrada_expansion_v4"
-DOC_INT = ROOT / "docs" / "polos_gastro" / "preparacion_integrada_expansion_v4"
-DOC_EVI = ROOT / "docs" / "polos_gastro" / "evidencia_documental_expansion_v4"
-OUT_EVI = ROOT / "outputs" / "polos_gastro" / "evidencia_documental_expansion_v4"
-REV_PRE = ROOT / "outputs" / "polos_gastro" / "REVISION_PREFLIGHT_EXPANSION_CANDIDATOS_V4"
-REV_INT = ROOT / "outputs" / "polos_gastro" / "REVISION_PREPARACION_INTEGRADA_EXPANSION_V4"
+OUT_PRE = ROOT / "outputs" / "polos_gastro" / "historico" / "expansion_candidatos_v4_preflight"
+DOC_PRE = ROOT / "docs" / "polos_gastro" / "historico" / "expansion_candidatos_v4_preflight"
+OUT_INT = ROOT / "outputs" / "polos_gastro" / "historico" / "preparacion_integrada_expansion_v4"
+DOC_INT = ROOT / "docs" / "polos_gastro" / "historico" / "preparacion_integrada_expansion_v4"
+DOC_EVI = ROOT / "docs" / "polos_gastro" / "historico" / "evidencia_documental_expansion_v4"
+OUT_EVI = ROOT / "outputs" / "polos_gastro" / "historico" / "evidencia_documental_expansion_v4"
+REV_PRE = ROOT / "outputs" / "polos_gastro" / "historico" / "REVISION_PREFLIGHT_EXPANSION_CANDIDATOS_V4"
+REV_INT = ROOT / "outputs" / "polos_gastro" / "historico" / "REVISION_PREPARACION_INTEGRADA_EXPANSION_V4"
 ZIP_PRE = ROOT / "outputs" / "polos_gastro" / "REVISION_PREFLIGHT_EXPANSION_CANDIDATOS_V4.zip"
 ZIP_INT = ROOT / "outputs" / "polos_gastro" / "REVISION_PREPARACION_INTEGRADA_EXPANSION_V4.zip"
 
@@ -104,8 +104,8 @@ def load_config_final() -> dict:
     cfg["rol"] = "cartografo_territorial"
     cfg["integracion_documental"] = {
         "paquete": "evidencia_documental_expansion_v4",
-        "ruta_docs": "docs/polos_gastro/evidencia_documental_expansion_v4/",
-        "ruta_outputs": "outputs/polos_gastro/evidencia_documental_expansion_v4/",
+        "ruta_docs": "docs/polos_gastro/historico/evidencia_documental_expansion_v4/",
+        "ruta_outputs": "outputs/polos_gastro/historico/evidencia_documental_expansion_v4/",
         "reglas": [
             "Solo ABIERTA_Y_LEIDA define ejes/nodos de área",
             "Snippet = hipótesis/contexto",
@@ -431,9 +431,9 @@ class GeoEngine:
         # planes de celdas existentes
         plans = []
         for rel in [
-            "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
-            "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
-            "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv",
+            "outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
+            "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
+            "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv",
         ]:
             p = ROOT / rel
             if p.exists():
@@ -847,7 +847,7 @@ def inventory_insumos(cfg: dict) -> list[dict]:
     # add documentary package
     rows.append({
         "insumo_id": "INS-DOC-EXP-V4",
-        "ruta": "docs/polos_gastro/evidencia_documental_expansion_v4/",
+        "ruta": "docs/polos_gastro/historico/evidencia_documental_expansion_v4/",
         "tipo": "evidencia_documental",
         "filas_o_features": 15,
         "fecha": FECHA,
@@ -908,7 +908,7 @@ def main():
             })
     # empty dirs note
     inv_partial.append({
-        "ruta": "docs/polos_gastro/expansion_candidatos_v4_preflight/",
+        "ruta": "docs/polos_gastro/historico/expansion_candidatos_v4_preflight/",
         "tamaño": 0,
         "sha256": "",
         "estado": "VACIO_AL_INICIO",
@@ -917,7 +917,7 @@ def main():
         "observaciones": "Claude no dejo markdowns",
     })
     inv_partial.append({
-        "ruta": "outputs/polos_gastro/expansion_candidatos_v4_preflight/",
+        "ruta": "outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/",
         "tamaño": 0,
         "sha256": "",
         "estado": "VACIO_AL_INICIO_SALVO_SNAPSHOT",
@@ -946,14 +946,14 @@ def main():
 | Ubicación | Estado al recuperar |
 |---|---|
 | `scripts/.../config_expansion_candidatos_v4.json` | **Presente, JSON válido, 372 líneas** |
-| `docs/polos_gastro/expansion_candidatos_v4_preflight/` | **Vacío** (sin markdowns) |
-| `outputs/polos_gastro/expansion_candidatos_v4_preflight/` | **Vacío** (sin matrices/geojson) |
+| `docs/polos_gastro/historico/expansion_candidatos_v4_preflight/` | **Vacío** (sin markdowns) |
+| `outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/` | **Vacío** (sin matrices/geojson) |
 
 ## Snapshot
 
 Copia exacta del config Claude:
 
-`outputs/polos_gastro/expansion_candidatos_v4_preflight/config_expansion_candidatos_v4_claude_partial_snapshot.json`
+`outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/config_expansion_candidatos_v4_claude_partial_snapshot.json`
 
 SHA-256: `{sha256_file(OUT_PRE / 'config_expansion_candidatos_v4_claude_partial_snapshot.json')}`
 
@@ -1368,8 +1368,8 @@ SHA-256: `{sha256_file(OUT_PRE / 'config_expansion_candidatos_v4_claude_partial_
     build_revision_zip(REV_PRE, ZIP_PRE, DOC_PRE, OUT_PRE, exclude_sensitive=True)
     build_revision_zip(REV_INT, ZIP_INT, DOC_INT, OUT_INT, exclude_sensitive=True, extra_refs={
         "preflight_zip_sha256": sha256_file(ZIP_PRE) if ZIP_PRE.exists() else "",
-        "doc_evi": "docs/polos_gastro/evidencia_documental_expansion_v4/",
-        "out_evi": "outputs/polos_gastro/evidencia_documental_expansion_v4/",
+        "doc_evi": "docs/polos_gastro/historico/evidencia_documental_expansion_v4/",
+        "out_evi": "outputs/polos_gastro/historico/evidencia_documental_expansion_v4/",
         "snapshot_sha256": sha256_file(OUT_PRE / "config_expansion_candidatos_v4_claude_partial_snapshot.json"),
     })
 
@@ -1491,12 +1491,12 @@ def write_preflight_docs(cfg, cov_rows, plan_rows, vol, inv_partial):
 
 ## Integración documental
 
-Ver `docs/polos_gastro/preparacion_integrada_expansion_v4/` y evidencia Grok V4.
+Ver `docs/polos_gastro/historico/preparacion_integrada_expansion_v4/` y evidencia Grok V4.
 
 ## Reproducción
 
 ```text
-.venv/Scripts/python.exe scripts/polos_gastro/expansion_candidatos_v4_preflight/build_preflight_expansion_candidatos_v4.py
+.venv/Scripts/python.exe scripts/polos_gastro/historico/expansion_candidatos_v4_preflight/build_preflight_expansion_candidatos_v4.py
 ```
 """)
 
@@ -1553,9 +1553,9 @@ Ver `docs/polos_gastro/preparacion_integrada_expansion_v4/` y evidencia Grok V4.
 
 ## Scripts plantilla (solo lectura / copiar)
 
-- `scripts/polos_gastro/experimentos/google_places_microzonas_piloto/preparar_consultas_places_piloto.py`
-- `scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py`
-- `scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/refinar_celdas_saturadas_places.py`
+- `scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/preparar_consultas_places_piloto.py`
+- `scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py`
+- `scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/refinar_celdas_saturadas_places.py`
 """)
 
     write_md(DOC_PRE / "CONTRATO_UNIVERSO_PUNTOS_EXPANSION_V4.md", f"""# Contrato de universo de puntos — Expansión V4
@@ -1564,7 +1564,7 @@ Ver `docs/polos_gastro/preparacion_integrada_expansion_v4/` y evidencia Grok V4.
 
 ## Universo base reutilizable
 
-`outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv`
+`outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv`
 
 - 6.461 puntos (3.240 F01+F02; 3.221 Google Places)
 - Fecha Places: 2026-07-08/09
@@ -1686,14 +1686,14 @@ Boedo, Lacroze completa, Villa Pueyrredón: salida esperable `EVIDENCIA_INSUFICI
 
 | Insumo | Ruta |
 |---|---|
-| Config final | `outputs/polos_gastro/expansion_candidatos_v4_preflight/config_expansion_candidatos_v4.json` |
+| Config final | `outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/config_expansion_candidatos_v4.json` |
 | Áreas | `.../AREAS_CONSULTA_CANDIDATOS_V4.geojson` |
 | Cobertura | `.../MATRIZ_COBERTURA_EXISTENTE_Y_BRECHAS_V4.csv` |
 | Plan Places | `.../PLAN_CONSULTAS_PLACES_EXPANSION_V4.csv` ({n_plan} filas categoría-celda) |
 | Tandas | `.../PLAN_TANDAS_EXPANSION_V4.csv` |
 | Contratos | docs preflight |
-| Documental | `docs/polos_gastro/evidencia_documental_expansion_v4/` |
-| Integrado | `docs/polos_gastro/preparacion_integrada_expansion_v4/HANDOFF_CODEX_EJECUCION_EXPANSION_V4_INTEGRADO.md` |
+| Documental | `docs/polos_gastro/historico/evidencia_documental_expansion_v4/` |
+| Integrado | `docs/polos_gastro/historico/preparacion_integrada_expansion_v4/HANDOFF_CODEX_EJECUCION_EXPANSION_V4_INTEGRADO.md` |
 
 ## Tanda 1 (primera)
 
@@ -1717,8 +1717,8 @@ Sos `cartografo_territorial` / ejecutor de corrida territorial DataGastro.
 
 Ejecutar **solo la tanda autorizada** de expansión V4 según:
 
-- `outputs/polos_gastro/expansion_candidatos_v4_preflight/`
-- `docs/polos_gastro/preparacion_integrada_expansion_v4/DECISION_GATE_ANTES_DE_PLACES_V4.md`
+- `outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/`
+- `docs/polos_gastro/historico/preparacion_integrada_expansion_v4/DECISION_GATE_ANTES_DE_PLACES_V4.md`
 
 ## Prohibido
 
@@ -1902,9 +1902,9 @@ Releer fuentes `INDEXADA_SNIPPET_O_TITULO` antes de **publicación**.
 
 ## Paquetes fuente
 
-1. **Preflight técnico:** `docs|outputs/polos_gastro/expansion_candidatos_v4_preflight/`
-2. **Documental Grok:** `docs|outputs/polos_gastro/evidencia_documental_expansion_v4/`
-3. **Integrado (este):** `docs|outputs/polos_gastro/preparacion_integrada_expansion_v4/`
+1. **Preflight técnico:** `docs|outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/`
+2. **Documental Grok:** `docs|outputs/polos_gastro/historico/evidencia_documental_expansion_v4/`
+3. **Integrado (este):** `docs|outputs/polos_gastro/historico/preparacion_integrada_expansion_v4/`
 
 ## Orden operativo
 

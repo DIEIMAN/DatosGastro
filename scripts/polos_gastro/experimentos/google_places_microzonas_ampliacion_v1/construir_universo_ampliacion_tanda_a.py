@@ -2,7 +2,7 @@
 """Ampliacion Google Places v1 - Etapa 2: universo sanitizado para Tanda A.
 
 EXPERIMENTO CONTROLADO. Lee insumos ya existentes y escribe solo en
-`outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/`.
+`outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/`.
 No toca F01-F05, Fase 25, informes oficiales ni datos fuente.
 
 Calcula:
@@ -22,12 +22,12 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
 
-UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
+UNIVERSO_V1 = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
                / "universo" / "universo_entidades_v1.csv")
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
-PILOTO_INTERNO = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+PILOTO_INTERNO = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
                   / "google_places_microzonas_piloto" / "interno"
                   / "places_resultados_interno.csv")
 PLACES_INTERNO = SALIDA / "interno" / "places_resultados_interno_a_criticas.csv"

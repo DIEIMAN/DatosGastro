@@ -13,7 +13,7 @@ from shapely.ops import unary_union
 
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1"
+BASE = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1"
 V3 = BASE / "cartografia_decision_v3"
 V2 = BASE / "cartografia_editorial_v2"
 OUT = BASE / "cartografia_redibujo_editorial_v4"

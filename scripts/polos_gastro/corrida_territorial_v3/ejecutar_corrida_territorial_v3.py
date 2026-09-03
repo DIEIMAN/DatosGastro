@@ -35,30 +35,30 @@ from sklearn.cluster import HDBSCAN
 
 
 ROOT = Path(__file__).resolve().parents[3]
-SCRIPT_DIR = ROOT / "scripts/polos_gastro/corrida_territorial_v3"
-DOC = ROOT / "docs/polos_gastro/corrida_territorial_v3"
-OUT = ROOT / "outputs/polos_gastro/corrida_territorial_v3"
+SCRIPT_DIR = ROOT / "scripts/polos_gastro/historico/corrida_territorial_v3"
+DOC = ROOT / "docs/polos_gastro/historico/corrida_territorial_v3"
+OUT = ROOT / "outputs/polos_gastro/historico/corrida_territorial_v3"
 MAPS = OUT / "mapas"
 REVIEW = OUT / "REVISION_CORRIDA_TERRITORIAL_V3"
 EXTRACT_QA = OUT / "REVISION_CORRIDA_TERRITORIAL_V3_EXTRACCION_QA"
 ZIP_PATH = OUT / "REVISION_CORRIDA_TERRITORIAL_V3.zip"
 CONFIG_PATH = SCRIPT_DIR / "config_territorial_v3.json"
-PREFLIGHT_MATRIX = ROOT / "outputs/polos_gastro/preflight_cartografico_v3/MATRIZ_INSUMOS_Y_DEPENDENCIAS.csv"
+PREFLIGHT_MATRIX = ROOT / "outputs/polos_gastro/historico/preflight_cartografico_v3/MATRIZ_INSUMOS_Y_DEPENDENCIAS.csv"
 PROTECTED_YAML = ROOT / "docs/polos_gastro/PROTECTED_SURFACES.yaml"
-DOC_MATRIX = ROOT / "docs/polos_gastro/evidencia_documental_integrada_v1_1/MATRIZ_EVIDENCIA_DOCUMENTAL_INTEGRADA.csv"
-DOC_HANDOFF = ROOT / "docs/polos_gastro/evidencia_documental_integrada_v1_1/HANDOFF_DOCUMENTAL_CARTOGRAFO_V1_1.md"
-EDITORIAL_CONTRACT = ROOT / "docs/polos_gastro/preintegracion_editorial_v3/CONTRATO_OUTPUTS_CARTOGRAFICOS_PARA_INTEGRACION_V3.md"
+DOC_MATRIX = ROOT / "docs/polos_gastro/historico/evidencia_documental_integrada_v1_1/MATRIZ_EVIDENCIA_DOCUMENTAL_INTEGRADA.csv"
+DOC_HANDOFF = ROOT / "docs/polos_gastro/historico/evidencia_documental_integrada_v1_1/HANDOFF_DOCUMENTAL_CARTOGRAFO_V1_1.md"
+EDITORIAL_CONTRACT = ROOT / "docs/polos_gastro/historico/preintegracion_editorial_v3/CONTRATO_OUTPUTS_CARTOGRAFICOS_PARA_INTEGRACION_V3.md"
 CRS_M = "EPSG:5347"
 CRS_GEO = "EPSG:4326"
 
-POINTS = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
-MACRO = ROOT / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1/macrozonas_editoriales_candidatas_v1.geojson"
+POINTS = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
+MACRO = ROOT / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/macrozonas_editoriales_candidatas_v1.geojson"
 STREETS = ROOT / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
-BEL_GEO = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/belgrano_nucleos_candidatos_v2.geojson"
-BEL_MET = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/belgrano_estabilidad_nucleos_v2.csv"
-REC_GEO = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/recoleta_nucleos_analiticos_v21.geojson"
-REC_MET = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/recoleta_metricas_v21.csv"
-CN_BASE = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/costanera_componentes_v2.csv"
+BEL_GEO = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/belgrano_nucleos_candidatos_v2.geojson"
+BEL_MET = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/belgrano_estabilidad_nucleos_v2.csv"
+REC_GEO = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/recoleta_nucleos_analiticos_v21.geojson"
+REC_MET = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/recoleta_metricas_v21.csv"
+CN_BASE = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/costanera_componentes_v2.csv"
 
 COLORS = {
     "navy": "#153E5C", "blue": "#2878A8", "green": "#16845B", "gold": "#C58A2B",
@@ -150,19 +150,19 @@ def protected_paths() -> list[Path]:
         "PolosGastro", "docs/polos_gastro/fase25_microajustes_finales_oficina",
         "outputs/polos_gastro/fase25_microajustes_finales_oficina",
         "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_editorial_v2",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_decision_v3",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_design_v4_2",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21",
     ]
     files: list[Path] = []
     for rel in patterns:
@@ -589,8 +589,8 @@ no se realizaron consultas externas.
 
 ## Reproducibilidad
 
-Configuración: `scripts/polos_gastro/corrida_territorial_v3/config_territorial_v3.json`. Script:
-`scripts/polos_gastro/corrida_territorial_v3/ejecutar_corrida_territorial_v3.py`. Los {len(snapshot)}
+Configuración: `scripts/polos_gastro/historico/corrida_territorial_v3/config_territorial_v3.json`. Script:
+`scripts/polos_gastro/historico/corrida_territorial_v3/ejecutar_corrida_territorial_v3.py`. Los {len(snapshot)}
 insumos registrados tuvieron hash coincidente antes de ejecutar.
 """
     (DOC/"METODOLOGIA_CORRIDA_TERRITORIAL_V3.md").write_text(methodology,encoding="utf-8")
@@ -765,7 +765,7 @@ preflights, evidencia documental, Fase 25, Fase 26 ni PDFs.
 - Recoleta: REC-A.
 - Costanera Norte: CN-DEC10.
 
-El paquete de revisión está en `outputs/polos_gastro/corrida_territorial_v3/`.
+El paquete de revisión está en `outputs/polos_gastro/historico/corrida_territorial_v3/`.
 """
     (DOC/"README_CORRIDA_TERRITORIAL_V3.md").write_text(readme,encoding="utf-8")
 

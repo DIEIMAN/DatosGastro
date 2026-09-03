@@ -17,19 +17,19 @@
     "barrios": "data/raw/geo_barrios.geojson",
     "comunas": "data/raw/geo_comunas.geojson",
     "callejero": "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson",
-    "universo_completo": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
+    "universo_completo": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
     "f01_raw": "data/raw/f01_oferta_establecimientos_gastronomicos.csv",
     "f02_fact": "data/processed/fact_habilitacion_gastronomica.csv",
     "dim_ubicacion": "data/processed/dim_ubicacion.csv"
   },
   "polos_adoptados": {
-    "palermo": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
-    "corrientes": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
-    "san_telmo": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
-    "puerto_madero": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
-    "belgrano": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
-    "recoleta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
-    "costanera_norte": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson"
+    "palermo": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
+    "corrientes": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
+    "san_telmo": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
+    "puerto_madero": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
+    "belgrano": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
+    "recoleta": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
+    "costanera_norte": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson"
   },
   "insumos": [
     {
@@ -111,7 +111,7 @@
     },
     {
       "insumo_id": "INS-UNIV-COMPLETO",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv",
       "tipo": "universo_sanitizado",
       "proposito": "Universo combinado F01+F02+Places deduplicado (6.461 pts) de la corrida completa V1; insumo canonico de cobertura",
       "cobertura_temporal": "F01/F02 hasta 2025; Places 2026-07-08/09",
@@ -122,7 +122,7 @@
     },
     {
       "insumo_id": "INS-PLACES-NUEVOS",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/places_nuevos_completo_sanitizado.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/places_nuevos_completo_sanitizado.csv",
       "tipo": "places_sanitizado",
       "proposito": "Solo puntos Places nuevos (no matcheados con F01/F02) de la corrida completa V1",
       "cobertura_temporal": "2026-07-08/09",
@@ -133,7 +133,7 @@
     },
     {
       "insumo_id": "INS-PLACES-PILOTO",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/places_sanitizado.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/places/places_sanitizado.csv",
       "tipo": "places_sanitizado",
       "proposito": "Resultados sanitizados del piloto de microzonas (4 zonas)",
       "cobertura_temporal": "2026-07-08",
@@ -144,7 +144,7 @@
     },
     {
       "insumo_id": "INS-PLACES-A",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_a_criticas.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_a_criticas.csv",
       "tipo": "places_sanitizado",
       "proposito": "Tanda A (celdas criticas) de la ampliacion V1",
       "cobertura_temporal": "2026-07-09",
@@ -155,7 +155,7 @@
     },
     {
       "insumo_id": "INS-PLACES-B",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_b_consolidacion.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/places_sanitizado_b_consolidacion.csv",
       "tipo": "places_sanitizado",
       "proposito": "Tanda B (consolidacion) de la ampliacion V1",
       "cobertura_temporal": "2026-07-09",
@@ -166,7 +166,7 @@
     },
     {
       "insumo_id": "INS-PLACES-REFINO",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/refinamientos/places_sanitizado_refino_chacarita_saturadas_3x3.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/refinamientos/places_sanitizado_refino_chacarita_saturadas_3x3.csv",
       "tipo": "places_sanitizado",
       "proposito": "Refino 3x3 de celdas saturadas en Chacarita",
       "cobertura_temporal": "2026-07-09",
@@ -177,7 +177,7 @@
     },
     {
       "insumo_id": "INS-PLAN-PILOTO",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/places/plan_consultas_places.csv",
       "tipo": "plan_consultas",
       "proposito": "Grilla de celdas/radios usada en el piloto; modelo de costo por celda",
       "cobertura_temporal": "2026-07-08",
@@ -188,7 +188,7 @@
     },
     {
       "insumo_id": "INS-PLAN-A",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_a_criticas.csv",
       "tipo": "plan_consultas",
       "proposito": "Plan de celdas tanda A ampliacion",
       "cobertura_temporal": "2026-07-09",
@@ -199,7 +199,7 @@
     },
     {
       "insumo_id": "INS-PLAN-B",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/places/plan_consultas_b_consolidacion.csv",
       "tipo": "plan_consultas",
       "proposito": "Plan de celdas tanda B ampliacion",
       "cobertura_temporal": "2026-07-09",
@@ -210,7 +210,7 @@
     },
     {
       "insumo_id": "INS-CACHE-PILOTO",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/interno/places_resultados_interno.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/interno/places_resultados_interno.csv",
       "tipo": "cache_interno_places",
       "proposito": "Respuestas crudas del piloto (cache reproducible, con place_id y nombres)",
       "cobertura_temporal": "2026-07-08",
@@ -221,7 +221,7 @@
     },
     {
       "insumo_id": "INS-CACHE-COMPLETA",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/places_consolidados_interno.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/places_consolidados_interno.csv",
       "tipo": "cache_interno_places",
       "proposito": "Consolidado interno de todas las respuestas Places (piloto + A + B + refino); base de incrementalidad",
       "cobertura_temporal": "2026-07-08/09",
@@ -232,7 +232,7 @@
     },
     {
       "insumo_id": "INS-DEDUP-INTERNA",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/tabla_deduplicacion_interna.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/interno/completa_v1/tabla_deduplicacion_interna.csv",
       "tipo": "tabla_dedup",
       "proposito": "Trazabilidad fila a fila de la deduplicacion Places vs F01/F02",
       "cobertura_temporal": "2026-07-09",
@@ -243,7 +243,7 @@
     },
     {
       "insumo_id": "INS-DEDUP-RESUMEN",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/tabla_deduplicacion_resumen.csv",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/tabla_deduplicacion_resumen.csv",
       "tipo": "tabla_dedup",
       "proposito": "Resumen agregado de deduplicacion (tasas por zona); reutilizable para calibrar reglas",
       "cobertura_temporal": "2026-07-09",
@@ -254,7 +254,7 @@
     },
     {
       "insumo_id": "INS-QA-INTEGRACION",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/qa_integracion_completa_v1.json",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/qa_integracion_completa_v1.json",
       "tipo": "qa",
       "proposito": "QA de la integracion completa V1 (conteos, tasas de match)",
       "cobertura_temporal": "2026-07-09",
@@ -265,7 +265,7 @@
     },
     {
       "insumo_id": "INS-MICROZONAS-V1",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/POLIGONOS_MICROZONAS_COMPLETA_V1.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/POLIGONOS_MICROZONAS_COMPLETA_V1.geojson",
       "tipo": "output_clustering",
       "proposito": "78 poligonos de microzonas de la corrida completa V1; referencia de estructura fina existente",
       "cobertura_temporal": "2026-07-09",
@@ -276,7 +276,7 @@
     },
     {
       "insumo_id": "INS-MACROZONAS-V41",
-      "ruta": "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1/poligonos_v4_1_mapa_principal_dibujo.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_redibujo_editorial_v4_1/poligonos_v4_1_mapa_principal_dibujo.geojson",
       "tipo": "capa_editorial_cerrada",
       "proposito": "Capa editorial v4.1 (baseline cerrada) para estudiar transiciones; solo lectura",
       "cobertura_temporal": "2026-07",
@@ -287,7 +287,7 @@
     },
     {
       "insumo_id": "INS-POLO-BELGRANO",
-      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
+      "ruta": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/BELGRANO_PRESENTACION_V3_1.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Geometria vigente V3.1 del polo Belgrano; control de solapamiento",
       "cobertura_temporal": "2026-07-11",
@@ -298,7 +298,7 @@
     },
     {
       "insumo_id": "INS-POLO-RECOLETA",
-      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
+      "ruta": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/RECOLETA_PRESENTACION_V3_1.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Geometria vigente V3.1 del polo Recoleta; control de solapamiento",
       "cobertura_temporal": "2026-07-11",
@@ -309,7 +309,7 @@
     },
     {
       "insumo_id": "INS-POLO-COSTANERA",
-      "ruta": "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson",
+      "ruta": "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/capas/COSTANERA_NORTE_PRESENTACION_V3_1.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Geometria vigente V3.1 del polo Costanera Norte; control de solapamiento",
       "cobertura_temporal": "2026-07-11",
@@ -320,7 +320,7 @@
     },
     {
       "insumo_id": "INS-POLO-PALERMO",
-      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/palermo_soho_nucleos_presentacion_v21.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Geometria de presentacion V2.1 del polo Palermo; control de solapamiento",
       "cobertura_temporal": "2026-07-10",
@@ -331,7 +331,7 @@
     },
     {
       "insumo_id": "INS-POLO-CORRIENTES",
-      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/corrientes_corredor_presentacion_v21.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Corredor Corrientes V2.1 (incluye subzona Abasto); control clave para Z06",
       "cobertura_temporal": "2026-07-10",
@@ -342,7 +342,7 @@
     },
     {
       "insumo_id": "INS-POLO-SANTELMO",
-      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/san_telmo_nucleo_presentacion_v21.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Nucleo San Telmo V2.1; control de solapamiento",
       "cobertura_temporal": "2026-07-10",
@@ -353,7 +353,7 @@
     },
     {
       "insumo_id": "INS-POLO-PMADERO",
-      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/puerto_madero_opciones_presentacion_v21.geojson",
       "tipo": "polo_adoptado",
       "proposito": "Puerto Madero V2.1; control de solapamiento",
       "cobertura_temporal": "2026-07-10",
@@ -364,7 +364,7 @@
     },
     {
       "insumo_id": "INS-CASEROS-V21",
-      "ruta": "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/caseros_barracas_corredor_presentacion_v21.geojson",
+      "ruta": "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/caseros_barracas_corredor_presentacion_v21.geojson",
       "tipo": "analisis_previo_candidato",
       "proposito": "Corredor Caseros/Barracas ya analizado en V2.1 (no adoptado); punto de partida para Z04",
       "cobertura_temporal": "2026-07-10",
@@ -375,7 +375,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-CONSULTA",
-      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_piloto/preparar_consultas_places_piloto.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/preparar_consultas_places_piloto.py",
       "tipo": "script_consulta_places",
       "proposito": "Generador de grillas de consulta Places por celda (patron reutilizable)",
       "cobertura_temporal": "-",
@@ -386,7 +386,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-AMPLIACION",
-      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py",
       "tipo": "script_consulta_places",
       "proposito": "Version ampliada del generador de consultas con tandas A/B",
       "cobertura_temporal": "-",
@@ -397,7 +397,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-REFINO",
-      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/refinar_celdas_saturadas_places.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/refinar_celdas_saturadas_places.py",
       "tipo": "script_consulta_places",
       "proposito": "Refino 3x3 de celdas saturadas (>= tope de resultados); patron anti-saturacion",
       "cobertura_temporal": "-",
@@ -408,7 +408,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-UNIVERSO",
-      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/construir_integracion_completa_v1.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/construir_integracion_completa_v1.py",
       "tipo": "script_integracion_dedup",
       "proposito": "Integracion F01/F02 + Places con deduplicacion (reglas vigentes de match)",
       "cobertura_temporal": "-",
@@ -419,7 +419,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-CLUSTERING",
-      "ruta": "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/detectar_microzonas_completa_v1.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/detectar_microzonas_completa_v1.py",
       "tipo": "script_clustering",
       "proposito": "Clustering de microzonas (HDBSCAN-like por grilla) usado en la corrida completa V1",
       "cobertura_temporal": "-",
@@ -430,7 +430,7 @@
     },
     {
       "insumo_id": "INS-SCRIPT-HIBRIDO",
-      "ruta": "scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py",
+      "ruta": "scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/construir_pipeline_hibrido_v1.py",
       "tipo": "script_clustering",
       "proposito": "Pipeline hibrido por tipo territorial (nucleo/corredor/multiparte) con metodos de control",
       "cobertura_temporal": "-",
@@ -441,7 +441,7 @@
     },
     {
       "insumo_id": "INS-DOC-PLAN-PILOTO",
-      "ruta": "docs/polos_gastro/experimentos/google_places_microzonas_piloto/PLAN_API_GOOGLE_PLACES_PILOTO.md",
+      "ruta": "docs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/PLAN_API_GOOGLE_PLACES_PILOTO.md",
       "tipo": "doc_costos_trazabilidad",
       "proposito": "Plan del piloto: costos por consulta, limites, autorizacion, trazabilidad",
       "cobertura_temporal": "2026-07",
@@ -452,7 +452,7 @@
     },
     {
       "insumo_id": "INS-DOC-PLAN-AMPLIACION",
-      "ruta": "docs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/PLAN_AMPLIACION_GOOGLE_PLACES_V1.md",
+      "ruta": "docs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/PLAN_AMPLIACION_GOOGLE_PLACES_V1.md",
       "tipo": "doc_costos_trazabilidad",
       "proposito": "Plan de la ampliacion V1: presupuesto de consultas por tanda y criterios de corte",
       "cobertura_temporal": "2026-07",
@@ -463,7 +463,7 @@
     },
     {
       "insumo_id": "INS-DOC-CONSULTAS-FUTURAS",
-      "ruta": "docs/polos_gastro/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1/PLAN_CONSULTAS_QUIRURGICAS_PLACES_FUTURAS.md",
+      "ruta": "docs/polos_gastro/historico/experimentos/decisiones_y_repeticiones_pipeline_hibrido_v1/PLAN_CONSULTAS_QUIRURGICAS_PLACES_FUTURAS.md",
       "tipo": "doc_costos_trazabilidad",
       "proposito": "Politica vigente de consultas quirurgicas futuras (0 consultas sin autorizacion)",
       "cobertura_temporal": "2026-07-10",
@@ -474,7 +474,7 @@
     },
     {
       "insumo_id": "INS-DOC-EVAL-PLACES",
-      "ruta": "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/EVALUACION_PLACES_POST_ESCALADO_V21.md",
+      "ruta": "docs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/EVALUACION_PLACES_POST_ESCALADO_V21.md",
       "tipo": "doc_metodologico",
       "proposito": "Evaluacion del aporte de Places post escalado; calibra tolerancia a dependencia de Places",
       "cobertura_temporal": "2026-07-10",
@@ -1805,8 +1805,8 @@
   ],
   "integracion_documental": {
     "paquete": "evidencia_documental_expansion_v4",
-    "ruta_docs": "docs/polos_gastro/evidencia_documental_expansion_v4/",
-    "ruta_outputs": "outputs/polos_gastro/evidencia_documental_expansion_v4/",
+    "ruta_docs": "docs/polos_gastro/historico/evidencia_documental_expansion_v4/",
+    "ruta_outputs": "outputs/polos_gastro/historico/evidencia_documental_expansion_v4/",
     "reglas": [
       "Solo ABIERTA_Y_LEIDA define ejes/nodos de área",
       "Snippet = hipótesis/contexto",

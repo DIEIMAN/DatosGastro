@@ -66,24 +66,24 @@ PDF_OUT = OUT / "INFORME_POLOS_GASTRO_POLITICO_INTEGRADO_V2.pdf"
 PACK = OUT / "REVISION_INFORME_POLITICO_INTEGRADO_V2"
 ZIP_OUT = OUT / "REVISION_INFORME_POLITICO_INTEGRADO_V2.zip"
 
-V31_MAPAS = ROOT / "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas"
+V31_MAPAS = ROOT / "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas"
 PROTECTED_YAML = ROOT / "docs/polos_gastro/PROTECTED_SURFACES.yaml"
 DATE = "2026-07-12"
 
 # Predecesores controlados por hash (deben permanecer intactos).
 PREDECESSORS = [
-    "outputs/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/INFORME_POLOS_GASTRO_FASE25_POLITICA_EXPERIMENTAL_V1.pdf",
-    "scripts/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/generar_fase25_politica_experimental_v1.py",
-    "docs/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/contenido_fase25_politica_experimental_v1.yaml",
-    "docs/polos_gastro/experimentos/fase25_politica_e_integracion_editorial_v1/kpis_lock_preliminar.json",
+    "outputs/polos_gastro/historico/experimentos/fase25_politica_e_integracion_editorial_v1/INFORME_POLOS_GASTRO_FASE25_POLITICA_EXPERIMENTAL_V1.pdf",
+    "scripts/polos_gastro/historico/experimentos/fase25_politica_e_integracion_editorial_v1/generar_fase25_politica_experimental_v1.py",
+    "docs/polos_gastro/historico/experimentos/fase25_politica_e_integracion_editorial_v1/contenido_fase25_politica_experimental_v1.yaml",
+    "docs/polos_gastro/historico/experimentos/fase25_politica_e_integracion_editorial_v1/kpis_lock_preliminar.json",
     "outputs/polos_gastro/fase25_microajustes_finales_oficina/INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA_FASE25.pdf",
     "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-    "outputs/polos_gastro/corrida_territorial_v3/KPI_LOCK_CARTOGRAFICO_V3.csv",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.png",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/belgrano_institucional_v3_1.png",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/recoleta_institucional_v3_1.png",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_institucional_v3_1.png",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_media_pagina_v3_1.png",
+    "outputs/polos_gastro/historico/corrida_territorial_v3/KPI_LOCK_CARTOGRAFICO_V3.csv",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.png",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/belgrano_institucional_v3_1.png",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/recoleta_institucional_v3_1.png",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_institucional_v3_1.png",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_media_pagina_v3_1.png",
 ]
 
 # --- Identidad DGDGAS (heredada de la línea Fase 25 política; misma paleta) --------
@@ -745,16 +745,16 @@ def protected_digest() -> dict:
         "PolosGastro/**", "docs/polos_gastro/fase25_microajustes_finales_oficina/**",
         "outputs/polos_gastro/fase25_microajustes_finales_oficina/**",
         "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/**",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/**",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_*/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**",
-        "outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/**", "src/build_*.py",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/**",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/**",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_*/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/**",
+        "outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/**", "src/build_*.py",
     ]
     files = set()
     for pattern in patterns:

@@ -94,15 +94,15 @@ outputs/**/raster_pages/
 # === Piloto Google Places microzonas (2026-07-09) ===
 # Resultados internos de Places con place_id, dirección exacta y campos técnicos
 # (datos de terceros; guardrail 8). Solo se conserva localmente; nunca se versiona.
-outputs/polos_gastro/experimentos/google_places_microzonas_piloto/interno/
-outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/interno/
+outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/interno/
+outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/interno/
 
 # Estado temporal de Places de Grupo B; contenido local no versionable.
 outputs/polos_gastro/INFORMEFINAL/codex/grupo_b_ejecucion_v1/estado_temporal/
 outputs/polos_gastro/INFORMEFINAL/codex/grupo_c_ejecucion_v1/estado_temporal/
 
 # Metadatos técnicos internos de fase28 (KPI reservado + incidente de cache); no publicable.
-outputs/polos_gastro/FASE5-29/fase28_ajustes_finales_informe_politico_v2_1/metadatos/interno/
+outputs/polos_gastro/historico/FASE5-29/fase28_ajustes_finales_informe_politico_v2_1/metadatos/interno/
 
 # === Linea ATLAS_V2 (2026-08-05) ===
 # Se versionan las FUENTES, no los productos: scripts/, contenido/, capas/, matrices/,
@@ -174,8 +174,8 @@ outputs/BARRIDO_CIUDAD_2026-08/**/_cache_usig_datos_utiles.json
 # Llevan place_id real, nombre y direccion exacta de terceros. Nunca se versionan (guardrail 8).
 # Estaban sueltas -sin regla y sin rastrear- y un `git add -A` las levanto. La regla existe para
 # que el descuido no alcance: lo que protege un archivo es el .gitignore, no la prolijidad.
-outputs/polos_gastro/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
-outputs/polos_gastro/experimentos/experimentos_google_places/
+outputs/polos_gastro/historico/FASE5-29/fase11_google_places_piloto/tablas/*_interno.csv
+outputs/polos_gastro/historico/experimentos/experimentos_google_places/
 notebooks/06_informe_presentacion.ipynb
 
 # Crudos del dataset del Ente de Turismo (2026-08-07). El archivo trae `telefono` y `mail` de

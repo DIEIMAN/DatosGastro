@@ -23,7 +23,7 @@ Todos los parametros salen de config.PARAMETROS y quedan en
 `parametros_pipeline_v1.json` + `clustering/parametros_corrida.json`.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s03_clustering_macrozonas.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s03_clustering_macrozonas.py
 """
 
 from __future__ import annotations

@@ -18,7 +18,7 @@ Se comparan metricas antes/despues (n subclusters, ruido, diametro, area por sub
 se genera un mapa de dos paneles (monolito vs. segunda pasada) por caso.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s07_segunda_pasada.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s07_segunda_pasada.py
 """
 
 from __future__ import annotations

@@ -3,7 +3,7 @@
 
 EXPERIMENTAL. No toca Fase 25, mapas oficiales ni el pipeline F01-F05.
 Lee `data/processed/` en modo solo lectura; escribe unicamente en
-`outputs/polos_gastro/experimentos/pipeline_microzonas_v1/`.
+`outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1/`.
 
 Todos los parametros del prototipo viven aca, con su justificacion, y se
 exportan a `parametros_pipeline_v1.json` en cada corrida (regla: sin
@@ -19,8 +19,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[4]
 
 PROCESSED = REPO / "data" / "processed"
-SALIDA = REPO / "outputs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
-DOCS = REPO / "docs" / "polos_gastro" / "experimentos" / "pipeline_microzonas_v1"
+SALIDA = REPO / "outputs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
+DOCS = REPO / "docs" / "polos_gastro" / "historico" / "experimentos" / "pipeline_microzonas_v1"
 
 COMUNAS_GEOJSON = REPO / "PolosGastro" / "cartografia" / "comunas_caba.geojson"
 BARRIOS_GEOJSON = REPO / "PolosGastro" / "cartografia" / "barrios_caba.geojson"

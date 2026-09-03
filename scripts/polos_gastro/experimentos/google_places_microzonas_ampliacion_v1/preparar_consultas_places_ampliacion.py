@@ -31,7 +31,7 @@ sin raw JSON; place_id y campos técnicos solo en `interno/` (en .gitignore); el
 sanitizado no lleva place_id ni dirección.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/preparar_consultas_places_ampliacion.py
     (dry-run de todas las tandas; agregar --tanda a_criticas --execute --confirm-real-api
      SOLO con autorización explícita de Diego)
 """
@@ -49,9 +49,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[4]
 
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 DIR_PLACES = SALIDA / "places"
 DIR_INTERNO = SALIDA / "interno"   # en .gitignore: place_id, campos técnicos
 

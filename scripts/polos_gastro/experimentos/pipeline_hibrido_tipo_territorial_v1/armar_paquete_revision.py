@@ -17,8 +17,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1"
-DOC = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1"
 PACK = OUT / "REVISION_PROTOTIPOS_HIBRIDOS_V1"
 ZIP = OUT / "REVISION_PROTOTIPOS_HIBRIDOS_V1.zip"
 QA = OUT / "qa_paquete_revision.json"

@@ -25,7 +25,7 @@ fuente y nivel de confianza en el propio feature (y en detalle en
 `METODOLOGIA_MACROZONAS_V1.md`).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/construir_macrozonas_v1.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/construir_macrozonas_v1.py
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ from shapely.geometry import box
 from shapely.ops import unary_union
 
 REPO = Path(__file__).resolve().parents[4]
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 CALLEJERO_PATH = REPO / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 BARRIOS_PATH = REPO / "PolosGastro/cartografia/barrios_caba.geojson"
 COMUNAS_PATH = REPO / "PolosGastro/cartografia/comunas_caba.geojson"

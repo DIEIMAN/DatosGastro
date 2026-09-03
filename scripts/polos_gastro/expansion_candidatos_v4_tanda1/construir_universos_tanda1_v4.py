@@ -15,9 +15,9 @@ from shapely.geometry import MultiPoint
 from sklearn.cluster import HDBSCAN
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-UNIVERSE = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
-AREAS = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_preflight/AREAS_CONSULTA_CANDIDATOS_V4.geojson"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+UNIVERSE = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/UNIVERSO_COMPLETO_SANITIZADO.csv"
+AREAS = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_preflight/AREAS_CONSULTA_CANDIDATOS_V4.geojson"
 ZONES = {"Z01": "Villa Crespo", "Z02": "Chacarita", "Z03": "Caballito multinodo", "Z04": "Boulevard Caseros — Parque Lezama"}
 
 

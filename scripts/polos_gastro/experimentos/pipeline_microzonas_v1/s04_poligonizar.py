@@ -20,7 +20,7 @@ Salidas:
 - poligonos/mapas/comparativa_<macrozona>.png (grilla de metodos)
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s04_poligonizar.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s04_poligonizar.py
 """
 
 from __future__ import annotations

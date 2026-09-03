@@ -2,7 +2,7 @@
 """
 Fase 4A — Rediseño visual PolosGastro + mapa territorial estático.
 
-Genera, en outputs/polos_gastro/graficos/fase4a/ (NO sobrescribe los PNG anteriores):
+Genera, en outputs/polos_gastro/historico/graficos/fase4a/ (NO sobrescribe los PNG anteriores):
 - universo_polos_por_grupo_v2.png
 - precision_delimitacion_polos_v2.png
 - familias_territoriales_polos_v2.png  (rediseño: barras agrupadas)

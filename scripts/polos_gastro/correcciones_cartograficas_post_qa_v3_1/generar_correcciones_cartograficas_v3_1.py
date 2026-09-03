@@ -30,18 +30,18 @@ from shapely.geometry import MultiLineString, Polygon, mapping  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[3]
-DOCS = ROOT / "docs/polos_gastro/correcciones_cartograficas_post_qa_v3_1"
-OUT = ROOT / "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1"
+DOCS = ROOT / "docs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1"
+OUT = ROOT / "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1"
 MAPS = OUT / "mapas"
 LAYERS = OUT / "capas"
 META = OUT / "metadatos"
-SOURCE_V3 = ROOT / "outputs/polos_gastro/corrida_territorial_v3"
-V21 = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21"
+SOURCE_V3 = ROOT / "outputs/polos_gastro/historico/corrida_territorial_v3"
+V21 = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21"
 STREETS_PATH = ROOT / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 BARRIOS_PATH = ROOT / "data/raw/geo_barrios.geojson"
-CONTRACT = ROOT / "docs/polos_gastro/preintegracion_editorial_v3/CONTRATO_OUTPUTS_CARTOGRAFICOS_PARA_INTEGRACION_V3.md"
-QA_REPORT = ROOT / "docs/polos_gastro/auditoria_qa_territorial_v3/INFORME_AUDITORIA_QA_TERRITORIAL_V3.md"
-RED_REPORT = ROOT / "docs/polos_gastro/auditoria_externa_red_team_v3/INFORME_RED_TEAM_TERRITORIAL_V3.md"
+CONTRACT = ROOT / "docs/polos_gastro/historico/preintegracion_editorial_v3/CONTRATO_OUTPUTS_CARTOGRAFICOS_PARA_INTEGRACION_V3.md"
+QA_REPORT = ROOT / "docs/polos_gastro/historico/auditoria_qa_territorial_v3/INFORME_AUDITORIA_QA_TERRITORIAL_V3.md"
+RED_REPORT = ROOT / "docs/polos_gastro/historico/auditoria_externa_red_team_v3/INFORME_RED_TEAM_TERRITORIAL_V3.md"
 PROTECTED_YAML = ROOT / "docs/polos_gastro/PROTECTED_SURFACES.yaml"
 
 INSTITUTION = "Dirección General de Desarrollo Gastronómico"
@@ -428,7 +428,7 @@ Línea derivada de presentación creada por `cartografo_territorial`. No recalcu
 
 Desde la raíz del repositorio:
 
-`.venv/Scripts/python.exe scripts/polos_gastro/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py`
+`.venv/Scripts/python.exe scripts/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py`
 
 El script usa únicamente archivos locales. No usa red, APIs ni Places.
 """)
@@ -520,16 +520,16 @@ def protected_digest():
         "PolosGastro/**", "docs/polos_gastro/fase25_microajustes_finales_oficina/**",
         "outputs/polos_gastro/fase25_microajustes_finales_oficina/**",
         "scripts/polos_gastro/build_fase25_microajustes_finales_oficina.py",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/**",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/**",
-        "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/cartografia_*/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_repeticiones_v2/**",
-        "docs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**",
-        "outputs/polos_gastro/experimentos/pipeline_hibrido_integracion_v21/**",
-        "outputs/polos_gastro/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/**", "src/build_*.py",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/**",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/completa_v1/**",
+        "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/cartografia_*/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_repeticiones_v2/**",
+        "docs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/**",
+        "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_integracion_v21/**",
+        "outputs/polos_gastro/historico/REVISION_EVIDENCIA_DOCUMENTAL_POLOS_V1/**", "src/build_*.py",
     ]
     files = set()
     for pattern in patterns:

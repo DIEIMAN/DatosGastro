@@ -49,27 +49,27 @@ BASE_FASE = ROOT / "outputs/polos_gastro/fase27_informe_politico_integrado_v2"
 BASE_ASSETS = BASE_FASE / "assets"
 BASE_PDF = BASE_FASE / "INFORME_POLOS_GASTRO_POLITICO_INTEGRADO_V2.pdf"
 BASE_QA = BASE_FASE / "qa_png_INFORME_POLOS_GASTRO_POLITICO_INTEGRADO_V2"
-V31 = ROOT / "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1"
+V31 = ROOT / "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1"
 V31_MAPS = V31 / "mapas"
 V31_LAYERS = V31 / "capas"
 PROTECTED_YAML = ROOT / "docs/polos_gastro/PROTECTED_SURFACES.yaml"
 
 BASE_MODULE_PATH = ROOT / "scripts/polos_gastro/fase27_informe_politico_integrado_v2/generar_informe_politico_integrado_v2.py"
-CARTO_MODULE_PATH = ROOT / "scripts/polos_gastro/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py"
+CARTO_MODULE_PATH = ROOT / "scripts/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/generar_correcciones_cartograficas_v3_1.py"
 
 PROTECTED_ROOTS = [
     "docs/polos_gastro/fase27_informe_politico_integrado_v2",
     "outputs/polos_gastro/fase27_informe_politico_integrado_v2",
     "scripts/polos_gastro/fase27_informe_politico_integrado_v2",
-    "docs/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "scripts/polos_gastro/correcciones_cartograficas_post_qa_v3_1",
-    "docs/polos_gastro/auditoria_qa_territorial_v3",
-    "docs/polos_gastro/auditoria_externa_red_team_v3",
-    "docs/polos_gastro/preintegracion_editorial_v3",
-    "docs/polos_gastro/evidencia_documental_integrada_v1_1",
-    "outputs/polos_gastro/corrida_territorial_v3",
-    "scripts/polos_gastro/corrida_territorial_v3",
+    "docs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "scripts/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1",
+    "docs/polos_gastro/historico/auditoria_qa_territorial_v3",
+    "docs/polos_gastro/historico/auditoria_externa_red_team_v3",
+    "docs/polos_gastro/historico/preintegracion_editorial_v3",
+    "docs/polos_gastro/historico/evidencia_documental_integrada_v1_1",
+    "outputs/polos_gastro/historico/corrida_territorial_v3",
+    "scripts/polos_gastro/historico/corrida_territorial_v3",
 ]
 
 CRITICAL_INPUTS = [
@@ -78,14 +78,14 @@ CRITICAL_INPUTS = [
     "scripts/polos_gastro/fase27_informe_politico_integrado_v2/generar_informe_politico_integrado_v2.py",
     "scripts/polos_gastro/fase27_informe_politico_integrado_v2/contenido_informe_politico_integrado_v2.yaml",
     "scripts/polos_gastro/fase27_informe_politico_integrado_v2/config_integracion_v2.json",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.png",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.svg",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_institucional_v3_1.svg",
-    "outputs/polos_gastro/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_media_pagina_v3_1.svg",
-    "docs/polos_gastro/auditoria_qa_territorial_v3/INFORME_AUDITORIA_QA_TERRITORIAL_V3.md",
-    "docs/polos_gastro/auditoria_externa_red_team_v3/INFORME_RED_TEAM_TERRITORIAL_V3.md",
-    "docs/polos_gastro/preintegracion_editorial_v3/PLAN_INTEGRACION_EDITORIAL_V3.md",
-    "docs/polos_gastro/evidencia_documental_integrada_v1_1/README_EVIDENCIA_DOCUMENTAL_INTEGRADA.md",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.png",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/mapa_general_institucional_v3_1.svg",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_institucional_v3_1.svg",
+    "outputs/polos_gastro/historico/correcciones_cartograficas_post_qa_v3_1/mapas/costanera_norte_media_pagina_v3_1.svg",
+    "docs/polos_gastro/historico/auditoria_qa_territorial_v3/INFORME_AUDITORIA_QA_TERRITORIAL_V3.md",
+    "docs/polos_gastro/historico/auditoria_externa_red_team_v3/INFORME_RED_TEAM_TERRITORIAL_V3.md",
+    "docs/polos_gastro/historico/preintegracion_editorial_v3/PLAN_INTEGRACION_EDITORIAL_V3.md",
+    "docs/polos_gastro/historico/evidencia_documental_integrada_v1_1/README_EVIDENCIA_DOCUMENTAL_INTEGRADA.md",
 ]
 
 FORBIDDEN_PUBLIC = [

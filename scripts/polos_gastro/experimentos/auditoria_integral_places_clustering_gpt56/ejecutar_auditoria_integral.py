@@ -32,12 +32,12 @@ from sklearn.metrics import adjusted_rand_score, silhouette_score
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
-DOC = ROOT / "docs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
 GRAF = OUT / "graficos"
 
-PROTO = ROOT / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
-AMP = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1"
+PROTO = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
+AMP = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1"
 COMP = AMP / "completa_v1"
 V2 = AMP / "cartografia_editorial_v2"
 V3 = AMP / "cartografia_decision_v3"
@@ -88,9 +88,9 @@ def archivos_criticos() -> list[Path]:
     ]
     scripts = []
     for base in [
-        ROOT / "scripts/polos_gastro/experimentos/pipeline_microzonas_v1",
-        ROOT / "scripts/polos_gastro/experimentos/google_places_microzonas_piloto",
-        ROOT / "scripts/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1",
+        ROOT / "scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1",
+        ROOT / "scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto",
+        ROOT / "scripts/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1",
     ]:
         if base.exists():
             scripts.extend(sorted(base.glob("*.py")))

@@ -12,11 +12,11 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[4]
-EXP = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+EXP = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 COMPLETA = EXP / "completa_v1"
 REVISION = COMPLETA / "revision_editorial_v1"
 PAQUETE = COMPLETA / "paquete_editorial_v1"
-DOCS = ROOT / "docs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+DOCS = ROOT / "docs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 
 DEST = EXP / "REVISION_HUMANA_COMPLETA_V1"
 ZIP_PATH = EXP / "REVISION_HUMANA_COMPLETA_V1.zip"

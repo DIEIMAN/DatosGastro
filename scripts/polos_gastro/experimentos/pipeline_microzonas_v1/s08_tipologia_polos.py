@@ -23,7 +23,7 @@ multi-nucleo) son heuristicos y estan pensados para ORDENAR el debate editorial,
 cerrarlo.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s08_tipologia_polos.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s08_tipologia_polos.py
 """
 
 from __future__ import annotations

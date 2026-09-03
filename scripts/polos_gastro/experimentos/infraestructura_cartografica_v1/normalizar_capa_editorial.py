@@ -89,7 +89,7 @@ if __name__ == "__main__":
     from pathlib import Path
 
     REPO = Path(__file__).resolve().parents[4]
-    SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+    SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 
     rutas = [
         str(SALIDA / "poligono_real_palermo_soho.geojson"),

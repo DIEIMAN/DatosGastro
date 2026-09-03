@@ -6,10 +6,10 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]
-OUT = ROOT / "outputs/polos_gastro/expansion_candidatos_v4_tanda1"
-DOC = ROOT / "docs/polos_gastro/expansion_candidatos_v4_tanda1"
-EVID = ROOT / "outputs/polos_gastro/evidencia_documental_expansion_v4"
-INTEGRATED = ROOT / "outputs/polos_gastro/preparacion_integrada_expansion_v4"
+OUT = ROOT / "outputs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+DOC = ROOT / "docs/polos_gastro/historico/expansion_candidatos_v4_tanda1"
+EVID = ROOT / "outputs/polos_gastro/historico/evidencia_documental_expansion_v4"
+INTEGRATED = ROOT / "outputs/polos_gastro/historico/preparacion_integrada_expansion_v4"
 ZONES = {"Z01": "Villa Crespo", "Z02": "Chacarita", "Z03": "Caballito multinodo", "Z04": "Boulevard Caseros — Parque Lezama"}
 
 

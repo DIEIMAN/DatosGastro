@@ -37,22 +37,22 @@ from sklearn.neighbors import KernelDensity
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 ROOT = Path(__file__).resolve().parents[4]
-OUT = ROOT / "outputs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1"
-DOC = ROOT / "docs/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1"
+OUT = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1"
+DOC = ROOT / "docs/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1"
 MAPS = OUT / "mapas"
 INTERNAL = OUT / "interno_revision_deduplicacion"
 
-AMP = ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1"
+AMP = ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1"
 COMP = AMP / "completa_v1"
-AUDIT = ROOT / "outputs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
-PROTO = ROOT / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
+AUDIT = ROOT / "outputs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
+PROTO = ROOT / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
 V42 = AMP / "cartografia_design_v4_2"
 
 UNIVERSE = COMP / "UNIVERSO_COMPLETO_SANITIZADO.csv"
 CURRENT_POINTS = COMP / "MICROCLUSTERS_COMPLETA_V1.geojson"
 CURRENT_POLYGONS = COMP / "POLIGONOS_MICROZONAS_COMPLETA_V1.geojson"
 ENTITIES = PROTO / "universo/universo_entidades_v1.csv"
-MACROZONES = ROOT / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1/macrozonas_editoriales_candidatas_v1.geojson"
+MACROZONES = ROOT / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/macrozonas_editoriales_candidatas_v1.geojson"
 STREETS = ROOT / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 BARRIOS = ROOT / "PolosGastro/cartografia/barrios_caba.geojson"
 COMUNAS = ROOT / "PolosGastro/cartografia/comunas_caba.geojson"
@@ -106,9 +106,9 @@ def critical_inputs() -> list[Path]:
         ROOT / "outputs/polos_gastro/fase25_microajustes_finales_oficina/INFORME_POLOS_GASTRO_DGDGAS_11P_OFICINA_FASE25.pdf",
         V42 / "metadata_cartografia_v4_2.json",
         AMP / "cartografia_redibujo_editorial_v4_1/poligonos_v4_1_decision_dibujo.geojson",
-        ROOT / "docs/polos_gastro/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/INFORME_FASE26_COMPARATIVA_CARTOGRAFIA.md",
+        ROOT / "docs/polos_gastro/historico/experimentos/google_places_microzonas_ampliacion_v1/fase26_comparativa_cartografia/INFORME_FASE26_COMPARATIVA_CARTOGRAFIA.md",
     ]
-    audit_docs = ROOT / "docs/polos_gastro/experimentos/auditoria_integral_places_clustering_gpt56"
+    audit_docs = ROOT / "docs/polos_gastro/historico/experimentos/auditoria_integral_places_clustering_gpt56"
     explicit.extend(sorted(audit_docs.glob("*")))
     return sorted({p for p in explicit if p.is_file()})
 
@@ -420,7 +420,7 @@ def source_ablation(data: dict) -> pd.DataFrame:
 
 def load_raw_places() -> gpd.GeoDataFrame:
     paths = [
-        ROOT / "outputs/polos_gastro/experimentos/google_places_microzonas_piloto/interno/places_resultados_interno.csv",
+        ROOT / "outputs/polos_gastro/historico/experimentos/google_places_microzonas_piloto/interno/places_resultados_interno.csv",
         AMP / "interno/places_resultados_interno_a_criticas.csv",
         AMP / "interno/places_resultados_interno_b_consolidacion.csv",
         AMP / "interno/refinamientos/places_resultados_interno_refino_chacarita_saturadas_3x3.csv",
@@ -825,7 +825,7 @@ def write_docs(results: dict, places: pd.DataFrame, stability: pd.DataFrame, bor
 
 
 def manifest_and_metadata(results: dict, hashes: dict, finalize: bool):
-    files=sorted([p for base in (OUT,DOC,ROOT/'scripts/polos_gastro/experimentos/pipeline_hibrido_tipo_territorial_v1') for p in base.rglob('*') if p.is_file() and 'interno_revision_deduplicacion' not in p.parts])
+    files=sorted([p for base in (OUT,DOC,ROOT/'scripts/polos_gastro/historico/experimentos/pipeline_hibrido_tipo_territorial_v1') for p in base.rglob('*') if p.is_file() and 'interno_revision_deduplicacion' not in p.parts])
     rows=['# Manifest de archivos','',f'Archivos compartibles y técnicos: {len(files)}','', '| Ruta | Bytes | SHA-256 |','| --- | ---: | --- |']
     for p in files:
         rows.append(f"| `{p.relative_to(ROOT).as_posix()}` | {p.stat().st_size} | `{sha256(p)}` |")

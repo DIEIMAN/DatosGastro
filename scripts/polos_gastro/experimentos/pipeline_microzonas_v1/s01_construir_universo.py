@@ -2,7 +2,7 @@
 """Etapa 1 — Universo gastronomico V1 (entidades, no registros administrativos).
 
 EXPERIMENTAL. Lee `data/processed/` (solo lectura) y escribe en
-`outputs/polos_gastro/experimentos/pipeline_microzonas_v1/universo/`.
+`outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1/universo/`.
 
 Construye la tabla maestra de ENTIDADES gastronomicas a partir de F01 (oferta
 registrada) y F02 (habilitaciones historicas), con resolucion de entidades
@@ -10,7 +10,7 @@ espacial + textual (doc 03 s5). Semantica honesta: el universo mide oferta
 gastronomica registrada / con evidencia documental, JAMAS "locales activos".
 
 Reglas aplicadas (todas registradas en `log_reglas_universo_v1.json` y
-documentadas en docs/polos_gastro/experimentos/pipeline_microzonas_v1/):
+documentadas en docs/polos_gastro/historico/experimentos/pipeline_microzonas_v1/):
 
   R1  F01: filas `es_gastronomico = si`, join a dim_ubicacion.
   R2  F02: filas `es_gastronomico = si`, excluyendo Catering/Mercado/Feria
@@ -32,7 +32,7 @@ documentadas en docs/polos_gastro/experimentos/pipeline_microzonas_v1/):
       evidencia = union (banderas en_f01/en_f02, fechas min/max).
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/pipeline_microzonas_v1/s01_construir_universo.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/pipeline_microzonas_v1/s01_construir_universo.py
 """
 
 from __future__ import annotations

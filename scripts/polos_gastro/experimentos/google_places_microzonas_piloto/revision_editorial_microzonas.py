@@ -17,7 +17,7 @@ La columna `referencia_orientativa` usa hitos urbanos conocidos con coordenadas
 APROXIMADAS: es orientación editorial, siempre verificar sobre el mapa.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/google_places_microzonas_piloto/revision_editorial_microzonas.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/revision_editorial_microzonas.py
 """
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ import geopandas as gpd
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_piloto"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_piloto"
 POLIGONOS = SALIDA / "POLIGONOS_MICROZONAS_PILOTO.geojson"
 PUNTOS = SALIDA / "MICROCLUSTERS_PILOTO.geojson"
 OUT_DIR = SALIDA / "revision"

@@ -13,7 +13,7 @@ lo decida, Etapa Cal-6). Las 10 sin cambios mantienen su version_capa original
 ("v1_experimental") para dejar explicito que no fueron tocadas en esta ronda.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/ensamblar_macrozonas_candidatas_v1.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/ensamblar_macrozonas_candidatas_v1.py
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ from pathlib import Path
 import geopandas as gpd
 
 REPO = Path(__file__).resolve().parents[4]
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
 CORRECCIONES_DIR = SALIDA / "correcciones_bloqueantes"
 
 ACTUALIZACIONES = {

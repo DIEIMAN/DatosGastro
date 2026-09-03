@@ -9,7 +9,7 @@ EXPERIMENTAL. Genera:
      entidades dentro/cerca-fuera y contorno
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/infraestructura_cartografica_v1/generar_mapas_macrozonas_v1.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/infraestructura_cartografica_v1/generar_mapas_macrozonas_v1.py
 """
 
 from __future__ import annotations
@@ -26,8 +26,8 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 REPO = Path(__file__).resolve().parents[4]
-SALIDA = REPO / "outputs/polos_gastro/experimentos/infraestructura_cartografica_v1"
-PROTOTIPO = REPO / "outputs/polos_gastro/experimentos/pipeline_microzonas_v1"
+SALIDA = REPO / "outputs/polos_gastro/historico/experimentos/infraestructura_cartografica_v1"
+PROTOTIPO = REPO / "outputs/polos_gastro/historico/experimentos/pipeline_microzonas_v1"
 BARRIOS_PATH = REPO / "PolosGastro/cartografia/barrios_caba.geojson"
 CALLEJERO_PATH = REPO / "outputs/polos_gastro/fase15_mapas_callejeros_v3/assets/callejero_gcba_2026_06_02.geojson"
 

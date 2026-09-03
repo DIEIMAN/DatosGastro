@@ -726,11 +726,11 @@ def update_existing_docs(rows: list[dict[str, str]], chart_paths: dict[str, Path
 
 En Fase 3B se generaron visualizaciones conceptuales para ordenar el universo PolosGastro antes de un informe final:
 
-- `outputs/polos_gastro/graficos/universo_polos_por_grupo.png`
-- `outputs/polos_gastro/graficos/precision_delimitacion_polos.png`
-- `outputs/polos_gastro/graficos/familias_territoriales_polos.png`
-- `outputs/polos_gastro/graficos/mapa_conceptual_polos_gastro.png`
-- `outputs/polos_gastro/graficos/mapa_conceptual_polos_gastro_completo.png`
+- `outputs/polos_gastro/historico/graficos/universo_polos_por_grupo.png`
+- `outputs/polos_gastro/historico/graficos/precision_delimitacion_polos.png`
+- `outputs/polos_gastro/historico/graficos/familias_territoriales_polos.png`
+- `outputs/polos_gastro/historico/graficos/mapa_conceptual_polos_gastro.png`
+- `outputs/polos_gastro/historico/graficos/mapa_conceptual_polos_gastro_completo.png`
 
 Son visualizaciones conceptuales porque no usan geocodificación, no incorporan una base cartográfica definitiva y no convierten delimitaciones textuales en polígonos. Sirven para lectura interna, priorización y diseño del informe futuro.
 

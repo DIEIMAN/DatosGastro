@@ -19,7 +19,7 @@ Outputs: MICROCLUSTERS_PILOTO.geojson, POLIGONOS_MICROZONAS_PILOTO.geojson,
 qa_clusters_piloto.json.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/google_places_microzonas_piloto/detectar_microzonas_piloto.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/detectar_microzonas_piloto.py
 """
 from __future__ import annotations
 
@@ -36,9 +36,9 @@ from shapely.geometry import MultiPoint
 from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[4]
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_piloto"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_piloto"
 UNIVERSO = SALIDA / "UNIVERSO_PILOTO_SANITIZADO.csv"
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
 OUT_PUNTOS = SALIDA / "MICROCLUSTERS_PILOTO.geojson"
 OUT_POLIGONOS = SALIDA / "POLIGONOS_MICROZONAS_PILOTO.geojson"

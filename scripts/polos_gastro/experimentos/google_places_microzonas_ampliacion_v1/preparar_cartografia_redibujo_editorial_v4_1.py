@@ -21,7 +21,7 @@ from shapely.validation import make_valid
 
 
 ROOT = Path(__file__).resolve().parents[4]
-BASE = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_ampliacion_v1"
+BASE = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_ampliacion_v1"
 V4 = BASE / "cartografia_redibujo_editorial_v4"
 OUT = BASE / "cartografia_redibujo_editorial_v4_1"
 REVIEW = BASE / "REVISION_CLAUDE_PRE_FASE26_V4_1"

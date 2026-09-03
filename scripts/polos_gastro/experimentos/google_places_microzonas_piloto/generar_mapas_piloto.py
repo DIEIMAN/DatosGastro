@@ -5,7 +5,7 @@ EXPERIMENTAL. Un PNG por zona piloto con: contorno de macrozona(s), puntos F01+F
 puntos Google Places (si los hay), polígonos de microzonas aceptados y puntos ruido.
 
 Uso:
-    .venv/Scripts/python.exe scripts/polos_gastro/experimentos/google_places_microzonas_piloto/generar_mapas_piloto.py
+    .venv/Scripts/python.exe scripts/polos_gastro/historico/experimentos/google_places_microzonas_piloto/generar_mapas_piloto.py
 """
 from __future__ import annotations
 
@@ -20,8 +20,8 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
 ROOT = Path(__file__).resolve().parents[4]
-SALIDA = ROOT / "outputs" / "polos_gastro" / "experimentos" / "google_places_microzonas_piloto"
-MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "experimentos"
+SALIDA = ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos" / "google_places_microzonas_piloto"
+MACROZONAS = (ROOT / "outputs" / "polos_gastro" / "historico" / "experimentos"
               / "infraestructura_cartografica_v1" / "macrozonas_editoriales_candidatas_v1.geojson")
 PUNTOS = SALIDA / "MICROCLUSTERS_PILOTO.geojson"
 POLIGONOS = SALIDA / "POLIGONOS_MICROZONAS_PILOTO.geojson"
